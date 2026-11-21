@@ -4,12 +4,14 @@
   var WF = window.WF, E = WF.engine, D = WF.data, U = WF.util, esc = U.esc;
   function S() { return WF.store.data; }
   var app = document.getElementById("app"), tabs = document.getElementById("tabs"), toastEl = document.getElementById("toast");
-  var tick = null, H = {}, ui = WF.ui = {};
+  var tick = null, H = {}, ui = WF.ui = {}, openState = {};
 
   function stopTick() { if (tick) { clearInterval(tick); tick = null; } }
   var view = null;
   function show(html, tab, learn) {
     stopTick();
+    /* Aufgeklappte Bereiche merken, bevor neu gezeichnet wird. */
+    [].forEach.call(app.querySelectorAll("details[data-keep]"), function (d) { openState[d.dataset.keep] = d.open; });
     app.innerHTML = html;
     document.body.classList.toggle("learn", !!learn);
     tabs.hidden = !tab;
@@ -60,10 +62,12 @@
   app.addEventListener("change", function (e) { if (e.target.id === "rub") { S().settings.playC = e.target.value; WF.store.save(); if (view === home) home(); } });
   /* Eingabefelder mit data-input="name" rufen H[name](feld) bei jeder Eingabe auf (z. B. Suche). */
   app.addEventListener("input", function (e) { var f = e.target.dataset && H[e.target.dataset.input]; if (f) f(e.target); });
-  /* Aufgeklappte Bereiche (details mit data-keep) bleiben nach dem Neuzeichnen offen. */
-  var openState = {};
-  app.addEventListener("toggle", function (e) { var k = e.target.dataset && e.target.dataset.keep; if (k) openState[k] = e.target.open; }, true);
-  ui.keepOpen = function (k) { return openState[k] ? " open" : ""; };
+  /* Aufgeklappte Bereiche (details mit data-keep) bleiben nach dem Neuzeichnen offen; show() liest den Zustand vorher aus. */
+  ui.keepOpen = function (k) {
+    var d = app.querySelector('details[data-keep="' + k + '"]');
+    if (d) openState[k] = d.open;
+    return openState[k] ? " open" : "";
+  };
   function prefSeg(label, key, opts) {
     var cur = S().settings[key];
     return '<div class="cfg"><label>' + label + '</label><div class="seg" role="group" aria-label="' + esc(label) + '" style="grid-template-columns:repeat(3,1fr)">' + opts.map(function (o) { return '<button aria-pressed="' + (cur === o[0]) + '" class="' + (cur === o[0] ? "on" : "") + '" data-act="pref" data-k="' + key + '" data-v="' + o[0] + '">' + o[1] + "</button>"; }).join("") + "</div></div>";
