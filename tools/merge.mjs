@@ -106,4 +106,4 @@ console.log("\n" + (PROBE ? "PROBELAUF, nichts geändert. " : "") +
   "Neu: " + added.length + " · doppelt übersprungen: " + dupes.length + " · ähnlich, zur Prüfung: " + review.length + " · fehlerhaft: " + errors.length);
 if (errors.length) console.log("Fehlerhafte Fragen: " + base + ".fehler.json");
 if (review.length) console.log("Ähnliche Fragen: " + base + ".pruefen.json (ansehen; mit --auch-aehnliche trotzdem übernehmen)");
-if (added.length && !PROBE) console.log("Als Nächstes: node tools/check.mjs, dann VERSION in sw.js erhöhen und die App hochladen.");
+if (added.length && !PROBE) console.log("Als Nächstes: node tools/check.mjs, dann node tools/version.mjs und die App hochladen.");

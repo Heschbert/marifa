@@ -1,7 +1,7 @@
 # Wissensfundament – Aufbau und Erweiterung
 
 Kein Build-Schritt: Der Browser lädt die Dateien direkt. Geänderte Dateien werden einfach neu hochgeladen.
-Nach einem Update `VERSION` in `sw.js` erhöhen, damit Geräte mit der installierten App den alten Cache verwerfen.
+Vor jedem Hochladen die Version erhöhen: `node tools/version.mjs` (zählt hoch, z. B. 1.14 → 1.15) oder `node tools/version.mjs 2.0`. Das setzt `WF.VERSION` in `js/core.js` und den Cache-Namen in `sw.js`. Die Version steht unten im Profil; nach einem Update meldet die App „Neue Version … geladen“.
 
 ## Wo was steht
 - `js/main.js` – **einzige Liste aller Bausteine** (import-Zeilen). Feature an- oder abschalten = Zeile ein- oder auskommentieren.

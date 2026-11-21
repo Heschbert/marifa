@@ -32,6 +32,10 @@
   WF.emit = function (ev, p) { (WF.handlers[ev] || []).forEach(function (fn) { try { fn(p); } catch (e) { console.error(ev, e); } }); };
 
   /* Spielmodi sind eigenständige Bausteine. Neue Modi werden hier registriert. */
+  /* App-Version: nur mit „node tools/version.mjs <neu>“ ändern, das setzt auch sw.js. */
+  WF.VERSION = "1.14";
+  WF.BUILD = "2026-11-21";
+
   WF.registerMode = function (m) { WF.modes[m.id] = m; WF.modeOrder.push(m.id); };
 
   /* Einträge in der Oberfläche: Ein Feature trägt sich selbst an einer Stelle ein, ohne ui.js zu ändern.

@@ -94,5 +94,5 @@ node tools/check.mjs                            # Gesamtprüfung
 ```
 
 - Gleiche Fragen werden übersprungen, ähnliche landen zur Prüfung in `neue-fragen.pruefen.json`, fehlerhafte in `neue-fragen.fehler.json`.
-- Danach in `sw.js` die `VERSION` erhöhen und die App hochladen.
+- Danach `node tools/version.mjs` ausführen (Version +1) und die App hochladen.
 - Ohne Node.js auf dem Rechner: die JSON-Datei in einer Claude-Code-Sitzung mit diesem Projekt hochladen und einspielen lassen.

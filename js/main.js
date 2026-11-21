@@ -29,6 +29,7 @@ import "./conf.js";
 import "./timeline.js";
 import "./typein.js";
 import "./wall.js";
+import "./version.js";
 
 /* Start: Daten laden, dann die Oberfläche öffnen. */
 const WF = window.WF;
