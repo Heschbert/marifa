@@ -1,0 +1,157 @@
+{
+ "topics": [
+  {
+   "c": "Mathematik",
+   "slug": "mathematik",
+   "file": "mathematik.json",
+   "subs": [
+    "Kopfrechnen",
+    "Prozent & Zinsen",
+    "Algebra & Brüche",
+    "Geometrie",
+    "Wahrscheinlichkeit & Statistik",
+    "Logik & Zahlen"
+   ]
+  },
+  {
+   "c": "Geographie",
+   "slug": "geographie",
+   "file": "geographie.json",
+   "subs": [
+    "Europa",
+    "Asien",
+    "Afrika",
+    "Nord- & Mittelamerika",
+    "Südamerika",
+    "Ozeanien",
+    "Deutschland",
+    "Welt & Natur"
+   ]
+  },
+  {
+   "c": "Geschichte",
+   "slug": "geschichte",
+   "file": "geschichte.json",
+   "subs": [
+    "Antike & Mittelalter",
+    "Neuzeit (1450–1914)",
+    "20. Jahrhundert & Gegenwart"
+   ]
+  },
+  {
+   "c": "Naturwissenschaft & Technik",
+   "slug": "naturwissenschaft-technik",
+   "file": "naturwissenschaft-technik.json",
+   "subs": [
+    "Physik & Astronomie",
+    "Chemie & Biologie",
+    "Erde & Klima",
+    "Technik & IT"
+   ]
+  },
+  {
+   "c": "Gesundheit",
+   "slug": "gesundheit",
+   "file": "gesundheit.json",
+   "subs": [
+    "Erste Hilfe",
+    "Körper & Medizin",
+    "Ernährung & Lebensstil"
+   ]
+  },
+  {
+   "c": "Wirtschaft & Geld",
+   "slug": "wirtschaft-geld",
+   "file": "wirtschaft-geld.json",
+   "subs": [
+    "Sparen & Anlegen",
+    "Wirtschaft verstehen",
+    "Steuern, Verträge & Versicherungen"
+   ]
+  },
+  {
+   "c": "Politik & Recht",
+   "slug": "politik-recht",
+   "file": "politik-recht.json",
+   "subs": [
+    "Staat & Wahlen",
+    "Recht im Alltag",
+    "EU & Welt"
+   ]
+  },
+  {
+   "c": "Denken & Psychologie",
+   "slug": "denken-psychologie",
+   "file": "denken-psychologie.json",
+   "subs": [
+    "Denkfehler",
+    "Entscheiden & Argumentieren"
+   ]
+  },
+  {
+   "c": "Kultur & Sprache",
+   "slug": "kultur-sprache",
+   "file": "kultur-sprache.json",
+   "subs": [
+    "Philosophie & Ideen",
+    "Literatur, Kunst & Musik",
+    "Sprache & Rechtschreibung"
+   ]
+  },
+  {
+   "c": "Sport",
+   "slug": "sport",
+   "file": "sport.json",
+   "subs": [
+    "Fußball",
+    "Olympia & mehr"
+   ]
+  },
+  {
+   "c": "Film & Musik",
+   "slug": "film-musik",
+   "file": "film-musik.json",
+   "subs": [
+    "Film",
+    "Musik"
+   ]
+  },
+  {
+   "c": "Religion",
+   "slug": "religion",
+   "file": "religion.json",
+   "subs": [
+    "Weltreligionen",
+    "Bibel & Feste"
+   ]
+  },
+  {
+   "c": "Sprachen",
+   "slug": "sprachen",
+   "file": "sprachen.json",
+   "subs": [
+    "Sprachen der Welt",
+    "Wörter & Herkunft"
+   ]
+  },
+  {
+   "c": "Natur & Tiere",
+   "slug": "natur-tiere",
+   "file": "natur-tiere.json",
+   "subs": [
+    "Tiere",
+    "Pflanzen & Ökologie"
+   ]
+  }
+ ],
+ "extras": [
+  {
+   "file": "pairs.json",
+   "builder": "pairs"
+  },
+  {
+   "file": "geo.json",
+   "builder": "geo"
+  }
+ ]
+}

@@ -1,0 +1,293 @@
+/* Oberfläche: Bildschirme und Bedienung. Enthält keine Spiellogik, die steckt in engine.js und modes.js. */
+(function () {
+  "use strict";
+  var WF = window.WF, E = WF.engine, D = WF.data, U = WF.util, esc = U.esc;
+  function S() { return WF.store.data; }
+  var app = document.getElementById("app"), tabs = document.getElementById("tabs"), toastEl = document.getElementById("toast");
+  var tick = null, H = {}, ui = WF.ui = {};
+
+  function stopTick() { if (tick) { clearInterval(tick); tick = null; } }
+  var view = null;
+  function show(html, tab, learn) {
+    stopTick();
+    app.innerHTML = html;
+    document.body.classList.toggle("learn", !!learn);
+    tabs.hidden = !tab;
+    [].forEach.call(tabs.children, function (b) { b.classList.toggle("on", b.dataset.t === tab); });
+    window.scrollTo(0, 0);
+  }
+  function bar(p) { return '<div class="bar"><i style="width:' + Math.max(0, Math.min(100, p)) + '%"></i></div>'; }
+  function btn(act, label, o) {
+    o = o || {};
+    var d = "";
+    for (var k in (o.data || {})) d += " data-" + k + '="' + esc(o.data[k]) + '"';
+    return '<button class="btn' + (o.primary ? " primary" : "") + '" data-act="' + act + '"' + d + (o.off ? " disabled" : "") + ">" + esc(label) + (o.sub ? "<small>" + esc(o.sub) + "</small>" : "") + "</button>";
+  }
+  function toast(t) {
+    var el = document.createElement("div");
+    el.className = "toast";
+    el.innerHTML = "<b>" + esc(t.title) + "</b>" + (t.sub ? esc(t.sub) : "");
+    toastEl.appendChild(el);
+    setTimeout(function () { el.remove(); }, 2800);
+  }
+  WF.on("toast", toast);
+
+  ui.H = H; ui.show = show; ui.btn = btn; ui.bar = bar; ui.toast = toast;
+  ui.setView = function (f) { view = f; };
+
+  /* Gemeinsame Bausteine: Schwierigkeit und Rubrik sind überall gleich bedienbar. */
+  var DIFFS = [["auto", "Auto"], ["1", "Leicht"], ["2", "Mittel"], ["3", "Schwer"]];
+  ui.diffSeg = function () {
+    var d = S().settings.difficulty;
+    return '<div class="cfg"><label>Schwierigkeit</label><div class="seg">' + DIFFS.map(function (o) { return '<button class="' + (d === o[0] ? "on" : "") + '" data-act="diff" data-v="' + o[0] + '">' + o[1] + "</button>"; }).join("") + "</div>" +
+      '<p class="small mute" style="margin:-4px 0 0">' + (d === "auto" ? "Passt sich je Bereich an dein Können an." : "Bevorzugt Fragen dieser Stufe.") + "</p></div>";
+  };
+  ui.rubrikSel = function () {
+    var cur = S().settings.playC || "";
+    return '<div class="cfg"><label>Rubrik</label><select id="rub" class="inp"><option value="">Alle Themen</option>' + D.topics.map(function (t) { return '<option value="' + esc(t.c) + '"' + (t.c === cur ? " selected" : "") + ">" + esc(t.c) + "</option>"; }).join("") + "</select></div>";
+  };
+  ui.playC = function () { return S().settings.playC || null; };
+  app.addEventListener("change", function (e) { if (e.target.id === "rub") { S().settings.playC = e.target.value; WF.store.save(); } });
+  function prefSeg(label, key, opts) {
+    var cur = S().settings[key];
+    return '<div class="cfg"><label>' + label + '</label><div class="seg" style="grid-template-columns:repeat(3,1fr)">' + opts.map(function (o) { return '<button class="' + (cur === o[0] ? "on" : "") + '" data-act="pref" data-k="' + key + '" data-v="' + o[0] + '">' + o[1] + "</button>"; }).join("") + "</div></div>";
+  }
+  ui.applyPrefs = function () {
+    var st = S().settings, r = document.documentElement;
+    if (st.theme === "light" || st.theme === "dark") r.setAttribute("data-theme", st.theme); else r.removeAttribute("data-theme");
+    r.style.setProperty("--fs", { s: .92, m: 1, l: 1.12 }[st.font] || 1);
+  };
+  H.pref = function (d) { S().settings[d.k] = d.v; WF.store.save(); ui.applyPrefs(); profile(); };
+  function knowledgeMap() {
+    var h = '<div class="card">', worst = null;
+    D.topics.forEach(function (t) {
+      var n = E.totalIn(t.c), m = E.masteredIn(t.c), a = E.accIn(t.c);
+      h += '<div style="margin-bottom:12px"><div class="row sb small"><b>' + esc(t.c) + '</b><span class="mute">' + m + " / " + n + (a.t ? " · " + U.pct(a.r, a.t) + " %" : "") + "</span></div>" + bar(U.pct(m, n)) + "</div>";
+      t.subs.forEach(function (sb) { var sa = E.accIn(t.c, sb); if (sa.t >= 5 && (!worst || U.pct(sa.r, sa.t) < worst.p)) worst = { n: sb, p: U.pct(sa.r, sa.t) }; });
+    });
+    if (worst) h += '<p class="small" style="margin:0"><b>Schwächster Bereich:</b> ' + esc(worst.n) + " (" + worst.p + " % richtig)</p>";
+    return h + "</div>";
+  }
+  H.diff = function (d) { S().settings.difficulty = d.v; WF.store.save(); if (view) view(); };
+  ui.loading = function () { app.innerHTML = '<div class="center mute">Lädt …</div>'; tabs.hidden = true; };
+  ui.failed = function (m) { app.innerHTML = '<div class="center"><p>Die Fragen konnten nicht geladen werden.</p><p class="mute small">' + esc(m) + '</p>' + btn("boot", "Nochmal versuchen") + "</div>"; };
+  H.boot = function () { WF.boot(); };
+
+  ui.go = function (name, a, b) { ({ home: home, areas: areas, profile: profile, scope: scope })[name](a, b); };
+  tabs.addEventListener("click", function (e) { var b = e.target.closest("button"); if (b) ui.go(b.dataset.t); });
+  app.addEventListener("click", function (e) {
+    var t = e.target.closest("[data-act]");
+    if (!t || t.disabled) return;
+    var f = H[t.dataset.act];
+    if (f) f(t.dataset, t);
+  });
+
+  function start(id, c, s) {
+    if (!E.start(id, { c: c || null, s: s || null })) { toast({ title: "Keine passenden Fragen", sub: id === "missed" ? "Hier gibt es noch keine Fehler." : "" }); return; }
+    quiz();
+  }
+  H.start = function (d) { start(d.m, d.c, d.s); };
+
+  /* ---------- Spielen (Startseite, blau) ---------- */
+  function pills() {
+    var st = S(), L = E.levelOf(st.xp), strk = E.curStreak(), today = st.days[U.today()] || 0;
+    return '<div class="pills"><span class="pill">Level ' + L + " · " + E.titleOf(L) + '</span><span class="pill">Serie ' + strk + '</span><span class="pill">Heute ' + Math.min(today, E.consts.GOAL) + " / " + E.consts.GOAL + "</span></div>";
+  }
+  function row(act, ico, title, sub, data, off) {
+    var d = ""; for (var k in (data || {})) d += " data-" + k + '="' + esc(data[k]) + '"';
+    return '<button class="item' + (off ? " off" : "") + '" data-act="' + act + '"' + d + (off ? " disabled" : "") + '><span class="ico">' + ico + '</span><div class="grow"><div class="t">' + esc(title) + '</div><div class="small mute">' + esc(sub) + '</div></div><span class="chev">›</span></button>';
+  }
+  function home() {
+    view = home;
+    var st = S(), done = st.dailyDone[U.today()];
+    var h = "<h1>Spielen</h1>" + pills();
+    h += '<div class="hero"><h3>Tagesrätsel</h3><p>' + (done ? "Heute gelöst: " + done.s + " von " + E.consts.DAILY_N + ". Morgen gibt es ein neues." : "5 Fragen aus 5 Themen, für alle gleich.") + "</p>" + btn("start", done ? "Erledigt" : "Jetzt spielen", { off: !!done, data: { m: "daily" } }) + "</div>";
+    h += '<div class="card cfg" style="margin-bottom:12px">' + ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>";
+    h += row("play", "10", "Test", "10 Fragen mit Erklärung", { m: "classic" });
+    h += row("play", "60", "Blitz", "60 Sekunden · Rekord " + st.best.blitz, { m: "blitz" });
+    h += row("play", "♥", "Überleben", "3 Leben · Rekord " + st.best.survive, { m: "survive" });
+    h += row("duel", "2", "Duell", "Zu zweit an einem Handy, jeder stimmt für sich ab", {});
+    show(h, "home", false);
+  }
+  H.play = function (d) { start(d.m, ui.playC(), null); };
+
+  /* ---------- Lernen (orange) ---------- */
+  function areas() {
+    view = areas;
+    var st = S(), last = st.settings.last, noMissed = E.missedList({}).length === 0, nm = E.missedList({}).length;
+    var h = '<span class="mode-tag">Lernmodus</span><h1 style="margin-top:10px">Lernen</h1><p class="mute">Ohne Zeitdruck. Falsche Antworten kommen wieder, bis sie sitzen.</p>';
+    h += '<div class="hero"><h3>' + (last ? esc(last.s || last.c) : "Alle Themen") + "</h3><p>" + (last ? "Dort machst du weiter." : "Du lernst, was noch nicht sitzt.") + "</p>" + btn("start", last ? "Weiterlernen" : "Loslegen", { data: { m: "learn", c: last ? last.c || "" : "", s: last ? last.s || "" : "" } }) + "</div>";
+    var due = E.dueList({}).length, sv = E.savedList().length;
+    if (due) h += row("start", "⏰", "Heute fällig", due + (due === 1 ? " Frage" : " Fragen") + " zum Wiederholen", { m: "review", c: "", s: "" });
+    if (nm) h += row("start", "!", "Fehler wiederholen", nm + (nm === 1 ? " Frage" : " Fragen") + ", die zuletzt falsch waren", { m: "missed", c: "", s: "" });
+    if (sv) h += row("start", "★", "Merkliste", sv + (sv === 1 ? " Frage" : " Fragen") + " gemerkt", { m: "saved", c: "", s: "" });
+    h += '<div class="card cfg" style="margin:12px 0">' + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>";
+    h += "<h2>Themen</h2>";
+    D.topics.forEach(function (t) { h += progressItem(t.c, null, t.c, t.subs.length + " Bereiche"); });
+    show(h, "areas", true);
+  }
+  function progressItem(c, s, title, sub) {
+    var n = E.totalIn(c, s), m = E.masteredIn(c, s);
+    return '<button class="item" data-act="scope" data-c="' + esc(c) + '" data-s="' + esc(s || "") + '"><div class="grow"><div class="t">' + esc(title) + '</div><div class="small mute">' + esc(sub || "") + (n ? (sub ? " · " : "") + m + " von " + n + " gemeistert" : "") + "</div>" + (n ? bar(U.pct(m, n)) : "") + '</div><span class="chev">›</span></button>';
+  }
+  function scope(c, s) {
+    s = s || null;
+    view = function () { scope(c, s); };
+    var n = E.totalIn(c, s), m = E.masteredIn(c, s), acc = E.accIn(c, s), nm = E.missedList({ c: c, s: s }).length, d = { c: c, s: s || "" };
+    function dm(id) { return { m: id, c: d.c, s: d.s }; }
+    var h = '<button class="ghost" data-act="' + (s ? "scope" : "areas") + '" data-c="' + esc(c) + '" data-s="">‹ Zurück</button>';
+    h += "<h1>" + esc(s || c) + "</h1>";
+    h += '<p class="mute">' + (s ? esc(c) + " · " : "") + (n ? m + " von " + n + " Fragen gemeistert" : "Zufällig erzeugte Aufgaben") + (acc.t ? " · " + U.pct(acc.r, acc.t) + " % richtig" : "") + "</p>";
+    if (n) h += bar(U.pct(m, n));
+    h += '<div class="hero" style="margin-top:16px"><h3>Lernen</h3><p>Erst, was noch nicht sitzt.</p>' + btn("start", "Lernrunde starten", { data: dm("learn") }) + "</div>";
+    h += row("cards", "▤", "Karteikarten", "Antwort aufdecken, selbst bewerten", { c: d.c, s: d.s }, !n);
+    if (nm) h += row("start", "!", "Fehler wiederholen", nm + (nm === 1 ? " Frage" : " Fragen"), dm("missed"));
+    h += '<div class="card cfg" style="margin:12px 0">' + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>";
+    h += '<div class="playc"><h2>In diesem Bereich spielen</h2><div class="grid2">' + btn("start", "Test", { sub: "10 Fragen", data: dm("classic") }) + btn("start", "Blitz", { sub: "60 Sekunden", data: dm("blitz") }) + "</div>" + '<div style="margin-top:10px">' + btn("start", "Überleben", { sub: "3 Leben", data: dm("survive") }) + "</div></div>";
+    if (!s) {
+      h += "<h2>Bereiche</h2>";
+      D.subsOf(c).forEach(function (x) { h += progressItem(c, x, x, ""); });
+    }
+    show(h, "areas", true);
+  }
+  H.areas = function () { areas(); };
+  H.scope = function (d) { scope(d.c, d.s || null); };
+
+  /* ---------- Quiz ---------- */
+  function dots(d) { return "●".repeat(d) + "○".repeat(3 - d); }
+  function quiz() {
+    var s = E.s, m = s.m, x = E.cur(), info, prog = "";
+    if (m.lives) { var hs = ""; for (var i = 0; i < m.lives; i++) hs += i < s.lives ? "♥" : "♡"; info = '<span class="chip lives" id="lv">' + hs + "</span>"; }
+    else if (m.timer) { info = '<span class="chip" id="tm">' + Math.ceil(E.timeLeft()) + " s</span>"; prog = '<div class="bar"><i id="tb" style="width:' + (E.timeLeft() / m.timer * 100) + '%"></i></div>'; }
+    else { info = '<span class="chip">' + (s.idx + 1) + " / " + s.round.length + "</span>"; prog = bar(s.idx / s.round.length * 100); }
+    var h = '<div class="topbar"><button class="ghost" data-act="quit">✕ Beenden</button>' + (m.learn ? '<span class="mode-tag">Lernen</span>' : "") + (s.streak > 1 ? '<span class="chip">Serie ' + s.streak + "</span>" : "") + info + "</div>" + prog;
+    h += '<div class="qmeta">' + esc(x.c) + " · " + esc(x.s) + " · " + dots(x.d || 2) + (x.retry ? " · Wiederholung" : "") + "</div>";
+    h += '<p class="q">' + esc(x.q) + "</p>";
+    if (m.helps !== "none") {
+      var lim = m.helps === "limited";
+      h += '<div class="helps-label">Hilfen</div><div class="helps"><button data-act="fifty"' + (E.canHelp("fifty") ? "" : " disabled") + ">50:50" + (lim ? " (" + s.jokers.fifty + ")" : "") + '</button><button data-act="hint"' + (E.canHelp("hint") ? "" : " disabled") + ">Hinweis" + (lim ? " (" + s.jokers.hint + ")" : "") + "</button></div>";
+      if (x.hintShown) h += '<div class="hint">' + esc(x.h) + "</div>";
+    }
+    h += '<div id="opts">';
+    x.opts.forEach(function (o, i) {
+      var gone = x.hidden.indexOf(i) >= 0;
+      h += '<button class="ans' + (gone ? " gone" : "") + '" data-act="pick" data-i="' + i + '"' + (gone ? " disabled" : "") + ">" + esc(o.t) + "</button>";
+    });
+    h += '</div><div id="fb"></div>';
+    show(h, null, !!m.learn);
+    if (m.timer) tick = setInterval(function () {
+      var t = E.timeLeft(), tm = document.getElementById("tm"), tb = document.getElementById("tb");
+      if (tm) tm.textContent = Math.ceil(t) + " s";
+      if (tb) tb.style.width = (t / m.timer * 100) + "%";
+      if (t <= 0) { stopTick(); E.finish(); result(); }
+    }, 200);
+  }
+  H.fifty = function () { if (E.useFifty()) quiz(); };
+  H.hint = function () { if (E.useHint()) quiz(); };
+  H.pick = function (d) { var r = E.answer(+d.i); if (r) paint(r); };
+
+  function paint(r) {
+    var s = E.s, x = r.x, btns = app.querySelectorAll(".ans");
+    x.opts.forEach(function (o, i) {
+      var b = btns[i];
+      b.disabled = true;
+      if (b.classList.contains("gone")) return;
+      if (o.ok) b.classList.add("ok"); else if (i === r.picked) b.classList.add("bad"); else b.classList.add("dim");
+    });
+    var hp = app.querySelector(".helps"); if (hp) hp.remove();
+    var hl = app.querySelector(".helps-label"); if (hl) hl.remove();
+    var lv = document.getElementById("lv");
+    if (lv) { var hs = ""; for (var i = 0; i < s.m.lives; i++) hs += i < s.lives ? "♥" : "♡"; lv.textContent = hs; }
+    if (s.m.auto) { s.adv = setTimeout(next, r.ok ? 450 : 1300); return; }
+    var right = x.opts.filter(function (o) { return o.ok; })[0], picked = x.opts[r.picked];
+    var f = '<div class="fb ' + (r.ok ? "ok" : "bad") + '"><b class="h">' + (r.ok ? "Richtig" + (r.gain ? " · +" + r.gain + " XP" : "") : "Nicht ganz") + "</b>";
+    if (!r.ok) {
+      f += "<p>Richtig: <b>" + esc(right.t) + "</b></p>";
+      if (picked.why) f += "<p><b>Warum nicht „" + esc(picked.t) + "“?</b> " + esc(picked.why) + "</p>";
+    }
+    if (x.e) f += "<p>" + esc(x.e) + "</p>";
+    if (x.src) f += '<p class="small mute">Quelle: ' + esc(x.src) + "</p>";
+    f += '<p class="small" style="margin-top:8px;display:flex;gap:16px"><button class="link" data-act="save">' + (S().saved[x.id] ? "★ Gemerkt" : "☆ Merken") + '</button><button class="link" data-act="report">Frage melden</button></p>';
+    if (r.mastered) f += '<p class="small"><b>Gemeistert.</b> Das sitzt jetzt.</p>';
+    if (r.requeued) f += '<p class="small">Die Frage kommt gleich noch einmal.</p>';
+    var others = x.opts.filter(function (o, i) { return o.why && i !== r.picked && !o.ok; });
+    if (others.length) {
+      f += "<details><summary>Die anderen Antworten</summary><ul>";
+      others.forEach(function (o) { f += "<li><b>" + esc(o.t) + ":</b> " + esc(o.why) + "</li>"; });
+      f += "</ul></details>";
+    }
+    f += "</div>" + btn("next", r.last ? "Ergebnis ansehen" : "Weiter", { primary: true });
+    var box = document.getElementById("fb");
+    box.innerHTML = f;
+    box.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+  H.save = function (d, t) {
+    var x = E.cur(), sv = S().saved;
+    if (sv[x.id]) { delete sv[x.id]; t.textContent = "☆ Merken"; } else { sv[x.id] = 1; t.textContent = "★ Gemerkt"; }
+    WF.store.save();
+  };
+  H.report = function (d, t) {
+    var x = E.cur(), st = S();
+    (st.reports = st.reports || []).push({ id: x.id, q: x.q, at: U.today() });
+    WF.store.save(); t.outerHTML = '<span class="mute">Gemeldet, danke.</span>';
+  };
+  function next() { if (!E.s) return; E.next() === "result" ? result() : quiz(); }
+  H.next = next;
+  H.quit = function () {
+    var s = E.s;
+    E.clearAdv();
+    if (s.m.daily || s.score + s.wrong.length === 0) { s.over = true; home(); return; }
+    E.finish(); result();
+  };
+
+  /* ---------- Ergebnis ---------- */
+  function result() {
+    view = null;
+    var s = E.s, m = s.m, n = s.score + s.wrong.length;
+    var h = '<h1>' + esc(m.title) + (s.scope.s || s.scope.c ? " · " + esc(s.scope.s || s.scope.c) : "") + "</h1>";
+    h += '<div class="score">' + (m.timer || m.lives ? s.score + " richtig" : s.score + " von " + n) + "</div>";
+    h += '<p class="mute">+' + s.roundXP + " XP · beste Serie " + s.best + (s.record ? " · neuer Rekord" : "") + (s.mastNew ? " · " + s.mastNew + " neu gemeistert" : "") + "</p>";
+    s.newBadges.forEach(function (b) { h += '<div class="card"><b>Abzeichen: ' + esc(b.n) + "</b><br><span class=\"small mute\">" + esc(b.d) + "</span></div>"; });
+    h += '<div style="margin:16px 0">' + (m.daily ? btn("home", "Fertig", { primary: true }) : btn("again", "Nochmal", { primary: true }) + '<div style="height:8px"></div>' + btn("home", "Zur Startseite")) + "</div>";
+    if (s.wrong.length) {
+      h += "<h2>Das kannst du noch mitnehmen</h2>" + '<div class="card">';
+      s.wrong.forEach(function (w) {
+        h += '<div class="wrong"><b>' + esc(w.q) + "</b><br>Richtig: " + esc(w.right) + '<br><span class="mute">Deine Antwort: ' + esc(w.given) + (w.why ? " – " + esc(w.why) : "") + "</span>" + (w.e ? "<br>" + esc(w.e) : "") + "</div>";
+      });
+      h += "</div>";
+    }
+    show(h, null, !!m.learn);
+  }
+  H.home = function () { home(); };
+  H.again = function () { var s = E.s; start(s.m.id, s.scope.c, s.scope.s); };
+
+  /* ---------- Profil ---------- */
+  function profile() {
+    view = profile;
+    var st = S(), L = E.levelOf(st.xp), a = E.lvlStart(L), b = E.lvlStart(L + 1), t = st.tot, diff = st.settings.difficulty;
+    var h = "<h1>Profil</h1>" + '<div class="card"><div class="row sb"><div><b>Level ' + L + "</b> · " + E.titleOf(L) + '</div><div class="small mute">' + st.xp + " XP</div></div>" + '<div style="margin-top:10px">' + bar(U.pct(st.xp - a, b - a)) + "</div></div>";
+    h += '<div class="stats"><div class="stat"><b>' + t.r + "</b><span>richtig</span></div><div class=\"stat\"><b>" + U.pct(t.r, t.t) + " %</b><span>Trefferquote</span></div><div class=\"stat\"><b>" + st.streak.best + "</b><span>beste Serie (Tage)</span></div></div>";
+    h += "<h2>Wissenskarte</h2>" + knowledgeMap();
+    h += "<h2>Einstellungen</h2>" + '<div class="card">' + ui.diffSeg() + prefSeg("Schrift", "font", [["s", "Klein"], ["m", "Normal"], ["l", "Groß"]]) + prefSeg("Darstellung", "theme", [["auto", "Auto"], ["light", "Hell"], ["dark", "Dunkel"]]) + "</div>";
+    h += "<h2>Abzeichen · " + Object.keys(st.badges).length + " / " + WF.badges.length + "</h2>" + '<div class="badges">';
+    WF.badges.forEach(function (b) { h += '<div class="badge' + (st.badges[b.id] ? "" : " off") + '"><b>' + esc(b.n) + "</b><span>" + esc(b.d) + "</span></div>"; });
+    h += "</div><h2>Fortschritt sichern</h2>" + '<div class="card"><p class="small mute">Der Fortschritt liegt nur auf diesem Gerät. Mit dem Code ziehst du ihn auf ein anderes Gerät um.</p>';
+    h += '<div class="grid2">' + btn("exp", "Code erzeugen") + btn("copy", "Kopieren") + '</div><textarea id="code" placeholder="Hier erscheint dein Code oder füge einen Code ein" spellcheck="false" autocapitalize="off"></textarea>' + btn("imp", "Code laden") + "</div>";
+    h += "<h2>Zurücksetzen</h2>" + '<div id="rs">' + btn("reset1", "Fortschritt löschen") + "</div>";
+    show(h, "profile");
+  }
+  H.exp = function () { document.getElementById("code").value = WF.store.exportCode(); };
+  H.copy = function () {
+    var ta = document.getElementById("code");
+    if (!ta.value) ta.value = WF.store.exportCode();
+    ta.select();
+    try { navigator.clipboard.writeText(ta.value).then(function () { toast({ title: "Kopiert" }); }, function () { toast({ title: "Zum Kopieren Text markieren" }); }); } catch (e) { toast({ title: "Zum Kopieren Text markieren" }); }
+  };
+  H.imp = function () {
+    if (WF.store.importCode(document.getElementById("code").value)) { toast({ title: "Fortschritt geladen" }); home(); }
+    else toast({ title: "Code ungültig", sub: "Er muss mit WF1: beginnen." });
+  };
+  H.reset1 = function () { document.getElementById("rs").innerHTML = '<p class="small mute">Wirklich alles löschen? Das lässt sich nicht rückgängig machen.</p><div class="grid2">' + btn("reset2", "Ja, löschen") + btn("profile", "Abbrechen") + "</div>"; };
+  H.reset2 = function () { WF.store.reset(); toast({ title: "Zurückgesetzt" }); home(); };
+  H.profile = function () { profile(); };
+})();
