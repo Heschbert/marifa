@@ -40,6 +40,11 @@ Neue Felder im Speicher: in `fresh()` in `js/store.js` eintragen, dann bekommen 
 `data/schaetzen.json`: Liste aus `{ "id", "c" (Thema), "q", "a" (Zahl), "u" (Einheit), "e" (Erklärung), "kind": "year" (optional) }`.
 Punkte: höchstens 2 % / 10 % / 25 % daneben = 3 / 2 / 1 Punkte; bei Jahreszahlen 1 / 5 / 20 Jahre.
 
+## Neue Fragen hinzufügen
+- `LEITFADEN-FRAGEN.md`: Format und Qualitätsregeln, zum Weitergeben an einen Fragen-Agenten (z. B. Claude mit Websuche).
+- `node tools/merge.mjs neue-fragen.json --probe` prüft, `node tools/merge.mjs neue-fragen.json` spielt ein.
+  Gleiche Fragen werden übersprungen, ähnliche zur Prüfung abgelegt, fehlerhafte gesammelt.
+
 ## Testen
 Wegen `fetch` und ES-Modulen geht es nicht per Doppelklick auf `index.html`, sondern nur über einen Webserver,
 z. B. `python3 -m http.server` im Ordner, dann http://localhost:8000 öffnen.
