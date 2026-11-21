@@ -180,3 +180,60 @@ a:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visibl
 .tlres { margin: 6px 0 0; padding-left: 20px; }
 .tlres li { margin-bottom: 8px; }
 .okm { color: var(--ok); font-weight: 700; } .badm { color: var(--bad); font-weight: 700; }
+
+/* Spielerfarben (Duell). Kontrast weiße Schrift auf Farbe ≥ 4,5. */
+:root { --p0: #2f5bea; --p1: #a84a08; --p2: #12703a; --p3: #7c3aed; --brick-l: 48%; --brick-empty: #e3e6ec; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --brick-l: 58%; --brick-empty: #2a2f38; } }
+:root[data-theme="dark"] { --brick-l: 58%; --brick-empty: #2a2f38; }
+.p0 { --pc: var(--p0); } .p1 { --pc: var(--p1); } .p2 { --pc: var(--p2); } .p3 { --pc: var(--p3); }
+.av { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 99px; background: var(--pc); color: #fff; font-weight: 700; font-size: 13px; flex: none; vertical-align: middle; margin-right: 8px; }
+.av.big { width: 64px; height: 64px; font-size: 28px; margin: 0 auto 10px; display: grid; }
+.namerow { display: flex; align-items: center; gap: 4px; }
+.namerow .inp { margin: 4px 0 8px; }
+
+.handcard { background: var(--pc); color: #fff; border-radius: var(--r); padding: 28px 18px 18px; text-align: center; margin: 14px 0; }
+.handcard h1 { color: #fff; font-size: 34px; margin: 2px 0 6px; }
+.handcard p { margin: 0 0 4px; opacity: .92; }
+.handcard .av.big { background: rgba(255,255,255,.22); }
+.handbtn { margin-top: 16px; background: #fff; color: var(--pc); border: 0; }
+.pchip { display: inline-flex; align-items: center; color: var(--pc); font-weight: 700; }
+.pchip .av { width: 24px; height: 24px; font-size: 12px; margin-right: 6px; }
+
+.sboard { margin-top: 14px; display: grid; gap: 10px; }
+.sbrow { display: flex; align-items: center; gap: 4px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.pbar { margin-top: 6px; } .pbar i { background: var(--pc); }
+.lead { font-size: 11px; font-weight: 700; color: var(--pc); background: var(--soft); border-radius: 99px; padding: 1px 8px; margin-left: 4px; }
+.delta { font-weight: 700; font-size: 13px; } .delta.up { color: var(--ok); } .delta.down { color: var(--bad); }
+.who { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.whochip { font-size: 12px; font-weight: 700; color: #fff; background: var(--pc); border-radius: 99px; padding: 2px 9px; }
+.whochip.off { background: transparent; color: var(--pc); border: 1.5px solid var(--pc); }
+.estlist { padding-left: 20px; margin: 8px 0; } .estlist li { margin-bottom: 8px; }
+
+.podium { display: flex; align-items: flex-end; justify-content: center; gap: 10px; margin: 18px 0 8px; }
+.pod { flex: 1; max-width: 140px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.pod .av.big { width: 52px; height: 52px; font-size: 22px; margin-bottom: 4px; }
+.pod .step { width: 100%; background: var(--pc); color: #fff; font-weight: 800; font-size: 22px; border-radius: 10px 10px 4px 4px; display: grid; place-items: center; margin-top: 6px; }
+.pod.pl1 .step { height: 96px; } .pod.pl2 .step { height: 68px; } .pod.pl3 .step { height: 46px; }
+.stbl { width: 100%; border-collapse: collapse; font-size: 14px; }
+.stbl th { text-align: left; font-size: 12px; color: var(--mute); font-weight: 600; padding: 0 4px 8px; }
+.stbl td { padding: 8px 4px; border-top: 1px solid var(--line); white-space: nowrap; }
+.stbl td:first-child { white-space: normal; }
+.recap { padding-left: 20px; margin: 10px 0 0; font-size: 14px; } .recap li { margin-bottom: 12px; }
+.vs .stat { text-align: center; }
+.center { text-align: center; }
+
+/* Schätzen und freie Eingabe */
+.estin { display: flex; align-items: center; gap: 8px; }
+.estin .inp { margin: 4px 0 4px; font-size: 20px; font-weight: 600; }
+.estin .unit { font-weight: 600; color: var(--mute); white-space: nowrap; }
+.typebox { background: var(--card); border: 1.5px dashed var(--accent); border-radius: var(--r); padding: 14px; margin-bottom: 12px; }
+.typebox .inp { font-size: 18px; }
+.typebox .link { display: block; }
+
+/* Mauer */
+.wall { width: 100%; height: auto; display: block; }
+.wall .brick-empty { fill: var(--brick-empty); }
+.wall.small { width: 84px; flex: none; }
+.wallitem { align-items: center; }
+.sbrow .delta { display: inline-block; padding: 0 7px; border-radius: 99px; font-size: 12px; margin-right: 6px; }
+.sbrow .delta.up { background: var(--ok-bg); } .sbrow .delta.down { background: var(--bad-bg); }

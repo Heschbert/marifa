@@ -152,6 +152,10 @@
   {
    "file": "geo.json",
    "builder": "geo"
+  },
+  {
+   "file": "schaetzen.json",
+   "builder": "estimate"
   }
  ]
 }

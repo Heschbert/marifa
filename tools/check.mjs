@@ -94,6 +94,18 @@ for (const x of idx.extras || []) {
         if (keys[key]) err(at, k + ": doppelt (gleiche ID): " + r); keys[key] = 1;
       }));
     });
+  } else if (x.builder === "estimate") {
+    if (!Array.isArray(j)) { err(x.file, "muss eine Liste sein"); continue; }
+    j.forEach((q, i) => {
+      const at = x.file + " #" + (i + 1);
+      if (!q.id) err(at, "keine id"); else if (ids[q.id]) err(at, "id doppelt: " + q.id); else ids[q.id] = at;
+      if (!q.q) err(at, "Fragetext fehlt");
+      if (typeof q.a !== "number" || !isFinite(q.a)) err(at, "a muss eine Zahl sein");
+      if (q.a === 0) err(at, "a = 0 geht nicht (Abweichung wird relativ berechnet)");
+      if (!subsOf[q.c]) err(at, "Thema unbekannt: " + q.c);
+      if (!q.e) warn(at, "keine Erklärung");
+      total++;
+    });
   } else warn("index.json", "unbekannter Baustein „" + x.builder + "“ wird nicht geprüft");
 }
 

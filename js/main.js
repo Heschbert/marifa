@@ -16,7 +16,9 @@ import "./ui.js";
 import "./entries.js";
 
 /* Features (unabhängig voneinander, Reihenfolge egal) */
+import "./estimate.js";
 import "./duel.js";
+import "./duellink.js";
 import "./cards.js";
 import "./browse.js";
 import "./stats.js";
@@ -25,12 +27,14 @@ import "./share.js";
 import "./fx.js";
 import "./conf.js";
 import "./timeline.js";
+import "./typein.js";
+import "./wall.js";
 
 /* Start: Daten laden, dann die Oberfläche öffnen. */
 const WF = window.WF;
 function boot() {
   WF.ui.applyPrefs(); WF.ui.loading();
-  WF.data.load().then(() => WF.ui.go("home")).catch(e => { console.error(e); WF.ui.failed(String((e && e.message) || e)); });
+  WF.data.load().then(() => { WF.ui.go("home"); WF.emit("ready"); }).catch(e => { console.error(e); WF.ui.failed(String((e && e.message) || e)); });
 }
 WF.boot = boot;
 boot();

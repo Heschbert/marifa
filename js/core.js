@@ -36,7 +36,7 @@
 
   /* Einträge in der Oberfläche: Ein Feature trägt sich selbst an einer Stelle ein, ohne ui.js zu ändern.
      where: "home" (Spielen), "areas" (Lernen), "scope" (Themenseite), "result" (Ergebnis),
-            "profile" (Abschnitte im Profil), "settings" (Einstellungen im Profil).
+            "profiletop" (oben im Profil), "profile" (Abschnitte im Profil), "settings" (Einstellungen im Profil).
      render(ctx) liefert HTML oder "" (dann erscheint nichts). order sortiert aufsteigend. */
   WF.entries = {};
   WF.registerEntry = function (e) { (WF.entries[e.where] = WF.entries[e.where] || []).push(e); WF.entries[e.where].sort(function (a, b) { return (a.order || 50) - (b.order || 50); }); };

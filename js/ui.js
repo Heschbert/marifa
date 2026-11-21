@@ -180,17 +180,23 @@
     var h = '<div class="topbar"><button class="ghost" data-act="quit">✕ Beenden</button>' + (m.learn ? '<span class="mode-tag">Lernen</span>' : "") + (s.streak > 1 ? '<span class="chip">Serie ' + s.streak + "</span>" : "") + info + "</div>" + prog;
     h += '<div class="qmeta">' + esc(x.c) + " · " + esc(x.s) + " · " + dots(x.d || 2) + (x.retry ? " · Wiederholung" : "") + "</div>";
     h += '<p class="q">' + esc(x.q) + "</p>";
+    /* Ein Feature kann den Antwortbereich ersetzen (z. B. freie Eingabe, typein.js). */
+    var custom = WF.answerArea ? WF.answerArea(x, s) : null;
     if (m.helps !== "none") {
       var lim = m.helps === "limited";
-      h += '<div class="helps-label">Hilfen</div><div class="helps"><button data-act="fifty"' + (E.canHelp("fifty") ? "" : " disabled") + ">50:50" + (lim ? " (" + s.jokers.fifty + ")" : "") + '</button><button data-act="hint"' + (E.canHelp("hint") ? "" : " disabled") + ">Hinweis" + (lim ? " (" + s.jokers.hint + ")" : "") + "</button></div>";
+      h += '<div class="helps-label">Hilfen</div><div class="helps">' + (custom ? "" : '<button data-act="fifty"' + (E.canHelp("fifty") ? "" : " disabled") + ">50:50" + (lim ? " (" + s.jokers.fifty + ")" : "") + "</button>") + '<button data-act="hint"' + (E.canHelp("hint") ? "" : " disabled") + ">Hinweis" + (lim ? " (" + s.jokers.hint + ")" : "") + "</button></div>";
       if (x.hintShown) h += '<div class="hint">' + esc(x.h) + "</div>";
     }
-    h += '<div id="opts" role="group" aria-label="Antworten">';
-    x.opts.forEach(function (o, i) {
-      var gone = x.hidden.indexOf(i) >= 0;
-      h += '<button class="ans' + (gone ? " gone" : "") + '" data-act="pick" data-i="' + i + '"' + (gone ? " disabled" : "") + ">" + esc(o.t) + "</button>";
-    });
-    h += '</div><div id="fb" aria-live="polite"></div>';
+    if (custom) h += custom;
+    else {
+      h += '<div id="opts" role="group" aria-label="Antworten">';
+      x.opts.forEach(function (o, i) {
+        var gone = x.hidden.indexOf(i) >= 0;
+        h += '<button class="ans' + (gone ? " gone" : "") + '" data-act="pick" data-i="' + i + '"' + (gone ? " disabled" : "") + ">" + esc(o.t) + "</button>";
+      });
+      h += "</div>";
+    }
+    h += '<div id="fb" aria-live="polite"></div>';
     show(h, null, !!m.learn);
     if (m.timer) tick = setInterval(function () {
       var t = E.timeLeft(), tm = document.getElementById("tm"), tb = document.getElementById("tb");
@@ -204,10 +210,12 @@
   H.pick = function (d) { var r = E.answer(+d.i); if (r) paint(r); };
 
   ui.paint = function (r) { paint(r); };
+  ui.refreshQuiz = function () { quiz(); };
   function paint(r) {
     var s = E.s, x = r.x, btns = app.querySelectorAll(".ans");
     x.opts.forEach(function (o, i) {
       var b = btns[i];
+      if (!b) return;
       b.disabled = true;
       if (b.classList.contains("gone")) return;
       if (o.ok) b.classList.add("ok"); else if (i === r.picked) b.classList.add("bad"); else b.classList.add("dim");
@@ -219,10 +227,11 @@
     var lv = document.getElementById("lv");
     if (lv) { var hs = ""; for (var i = 0; i < s.m.lives; i++) hs += i < s.lives ? "♥" : "♡"; lv.textContent = hs; lv.setAttribute("aria-label", livesLabel(s)); }
     if (s.m.auto) { s.adv = setTimeout(next, r.ok ? 450 : 1300); return; }
-    var right = x.opts.filter(function (o) { return o.ok; })[0], picked = x.opts[r.picked];
+    var right = x.opts.filter(function (o) { return o.ok; })[0], picked = r.picked >= 0 ? x.opts[r.picked] : r.given;
     var f = '<div class="fb ' + (r.ok ? "ok" : "bad") + '"><b class="h">' + (r.ok ? "Richtig" + (r.gain ? " · +" + r.gain + " XP" : "") : "Nicht ganz") + "</b>";
     if (!r.ok) {
       f += "<p>Richtig: <b>" + esc(right.t) + "</b></p>";
+      if (r.typed) f += '<p class="small">Deine Eingabe: „' + esc(picked.t) + '“</p>';
       if (picked.why) f += "<p><b>Warum nicht „" + esc(picked.t) + "“?</b> " + esc(picked.why) + "</p>";
     }
     if (x.e) f += "<p>" + esc(x.e) + "</p>";
@@ -285,6 +294,7 @@
     var st = S(), L = E.levelOf(st.xp), a = E.lvlStart(L), b = E.lvlStart(L + 1), t = st.tot, diff = st.settings.difficulty;
     var h = "<h1>Profil</h1>" + '<div class="card"><div class="row sb"><div><b>Level ' + L + "</b> · " + E.titleOf(L) + '</div><div class="small mute">' + st.xp + " XP</div></div>" + '<div style="margin-top:10px">' + bar(U.pct(st.xp - a, b - a)) + "</div></div>";
     h += '<div class="stats"><div class="stat"><b>' + t.r + "</b><span>richtig</span></div><div class=\"stat\"><b>" + U.pct(t.r, t.t) + " %</b><span>Trefferquote</span></div><div class=\"stat\"><b>" + st.streak.best + "</b><span>beste Serie (Tage)</span></div></div>";
+    h += WF.slot("profiletop", { st: st });
     h += "<h2>Wissenskarte</h2>" + knowledgeMap();
     h += WF.slot("profile", { st: st });
     h += "<h2>Einstellungen</h2>" + '<div class="card">' + ui.diffSeg() + prefSeg("Schrift", "font", [["s", "Klein"], ["m", "Normal"], ["l", "Groß"]]) + prefSeg("Darstellung", "theme", [["auto", "Auto"], ["light", "Hell"], ["dark", "Dunkel"]]) + WF.slot("settings") + "</div>";

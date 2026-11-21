@@ -180,13 +180,15 @@
   /* ---------- Antwort ---------- */
   /* conf (optional): Selbsteinschätzung "g" geraten, "z" ziemlich sicher, "s" sicher.
      Richtig, aber geraten: zählt nicht als gewusst (keine höhere Stufe). Falsch, aber sicher: wird markiert. */
-  E.answer = function (i, conf) {
+  /* typed (optional): eingetippte Antwort { t: Text, ok: richtig? }, dann ist i = -1. Eingetippt und richtig zählt mehr XP. */
+  E.answer = function (i, conf, typed) {
     var s = E.s;
     if (!s || s.answered || s.over) return null;
     var x = E.cur(), m = s.m;
     if (x.hidden.indexOf(i) >= 0) return null;
     s.answered = true;
-    var st = S(), ok = x.opts[i].ok, ms = Date.now() - s.shownAt, retry = !!x.retry, gain = 0;
+    var given = i >= 0 ? x.opts[i] : { t: typed ? typed.t : "", ok: !!(typed && typed.ok), why: "" };
+    var st = S(), ok = given.ok, ms = Date.now() - s.shownAt, retry = !!x.retry, gain = 0;
     E.registerPlay();
     var cs = st.cats[x.c] || (st.cats[x.c] = { r: 0, t: 0 });
     var sk = x.c + "|" + x.s, ss = st.sub[sk] || (st.sub[sk] = { r: 0, t: 0 });
@@ -204,6 +206,7 @@
         gain = 10 + Math.min(s.streak - 1, 9) * 2 + (ms < 5000 ? 5 : 0);
       } else gain = 5;
       if (x.helped) gain = Math.ceil(gain / 2);
+      if (typed) gain += 5;
       if (conf === "g") gain = Math.ceil(gain / 2);
       if (rec && !x.helped && conf !== "g") E.schedule(rec, true);
       E.addXP(gain);
@@ -213,7 +216,7 @@
       if (rec && conf === "s") rec.cw = (rec.cw || 0) + 1;
       if (m.lives) s.lives--;
       if (!retry) s.log.push(0);
-      if (!retry) s.wrong.push({ q: x.q, given: x.opts[i].t, why: x.opts[i].why, right: x.opts.filter(function (o) { return o.ok; })[0].t, e: x.e });
+      if (!retry) s.wrong.push({ q: x.q, given: given.t, why: given.why, right: x.opts.filter(function (o) { return o.ok; })[0].t, e: x.e });
       if (m.requeue && (s.retries[x.id] || 0) < 2) {
         s.retries[x.id] = (s.retries[x.id] || 0) + 1;
         var copy = { id: x.id, c: x.c, s: x.s, q: x.q, e: x.e, h: x.h, d: x.d, gen: x.gen, retry: 1, helped: false, hidden: [], hintShown: false,
@@ -226,7 +229,7 @@
     var mastered = !!(rec && before < 3 && rec.b >= 3);
     if (mastered) s.mastNew++;
     var last = m.lives ? s.lives <= 0 : (!m.extend && s.idx === s.round.length - 1);
-    var res = { ok: ok, gain: gain, mastered: mastered, requeued: requeued, last: last, picked: i, x: x, conf: conf || null };
+    var res = { ok: ok, gain: gain, mastered: mastered, requeued: requeued, last: last, picked: i, given: given, typed: !!typed, x: x, conf: conf || null };
     WF.emit("answered", res);
     WF.store.save();
     return res;

@@ -10,14 +10,14 @@ Nach einem Update `VERSION` in `sw.js` erhöhen, damit Geräte mit der installie
 - `js/data.js` + `gen.js`, `geo.js`, `pairs.js` – Fragen laden bzw. erzeugen.
 - `js/engine.js` – Spiellogik ohne Oberfläche. `js/modes.js` – Spielmodi.
 - `js/ui.js` – Bildschirme Spielen, Lernen, Profil, Quiz, Ergebnis.
-- Features, je eine Datei: `duel`, `cards`, `browse` (Suche), `stats` (Verlauf), `reports` (gemeldete Fragen), `share` (Tagesrätsel teilen), `fx` (Vibration/Ton), `conf` (Wie sicher bist du?), `timeline` (Zeitstrahl), `badges`, `entries` (Menüeinträge der eingebauten Modi).
+- Features, je eine Datei: `duel`, `cards`, `browse` (Suche), `stats` (Verlauf), `reports` (gemeldete Fragen), `share` (Tagesrätsel teilen), `fx` (Vibration/Ton), `conf` (Wie sicher bist du?), `timeline` (Zeitstrahl), `estimate` (Schätzfragen + Modus Schätzen), `duellink` (Duell per Link), `typein` (freie Eingabe), `wall` (Mauer im Profil), `badges`, `entries` (Menüeinträge der eingebauten Modi).
 - `fonts/` – Schrift Inter, lokal (keine Verbindung zu Google).
 
 ## Neues Feature hinzufügen
 1. Datei `js/meinfeature.js` anlegen (Muster: `js/share.js`).
 2. Darin nach Bedarf:
    - `WF.registerEntry({ where, order, render(ctx) })` – Eintrag an einer Stelle der Oberfläche.
-     `where`: `home`, `areas`, `scope`, `result`, `profile`, `settings`. `render` gibt HTML oder `""` zurück.
+     `where`: `home`, `areas`, `scope`, `result`, `profiletop`, `profile`, `settings`. `render` gibt HTML oder `""` zurück.
    - `WF.ui.H.meineAktion = function (data, element) {…}` – reagiert auf Buttons mit `data-act="meineAktion"`.
      Eingabefelder mit `data-input="name"` rufen `H.name(feld)` bei jeder Eingabe auf.
    - `WF.on("answered" | "roundEnd" | "toast", fn)` – auf Ereignisse reagieren.
@@ -34,6 +34,10 @@ Neue Felder im Speicher: in `fresh()` in `js/store.js` eintragen, dann bekommen 
 - Vor dem Hochladen prüfen (Node.js nötig):
   - `node tools/check.mjs` – findet Fehler (fehlende/doppelte IDs, falsche Unterbereiche, nicht genau 4 Antworten …).
   - `node tools/check.mjs --fix-ids` – ergänzt fehlende IDs bei neuen Fragen.
+
+## Schätzfragen
+`data/schaetzen.json`: Liste aus `{ "id", "c" (Thema), "q", "a" (Zahl), "u" (Einheit), "e" (Erklärung), "kind": "year" (optional) }`.
+Punkte: höchstens 2 % / 10 % / 25 % daneben = 3 / 2 / 1 Punkte; bei Jahreszahlen 1 / 5 / 20 Jahre.
 
 ## Testen
 Wegen `fetch` und ES-Modulen geht es nicht per Doppelklick auf `index.html`, sondern nur über einen Webserver,
