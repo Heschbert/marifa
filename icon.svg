@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/><stop offset=".55" stop-color="#2f5bea"/><stop offset="1" stop-color="#0b1b5c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffd08a" stop-opacity=".95"/><stop offset=".45" stop-color="#ff9f4a" stop-opacity=".45"/><stop offset="1" stop-color="#ff9f4a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dfe6ff"/></linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <g transform="translate(512 512) scale(1.22) translate(-512 -540)">
+  <circle cx="512" cy="330" r="210" fill="url(#glow)"/>
+  <!-- Funke -->
+  <path d="M512 228 L536 306 L614 330 L536 354 L512 432 L488 354 L410 330 L488 306 Z" fill="#fff3dc"/>
+  <!-- Mauer: 3 Reihen, versetzt -->
+  <g fill="url(#brick)">
+    <rect x="262" y="700" width="160" height="88" rx="18"/><rect x="432" y="700" width="160" height="88" rx="18"/><rect x="602" y="700" width="160" height="88" rx="18"/>
+    <rect x="347" y="602" width="160" height="88" rx="18"/><rect x="517" y="602" width="160" height="88" rx="18"/>
+    <rect x="432" y="504" width="160" height="88" rx="18" fill="#ff9f4a"/>
+  </g>
+  </g>
+</svg>
