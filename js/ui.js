@@ -14,9 +14,17 @@
     document.body.classList.toggle("learn", !!learn);
     tabs.hidden = !tab;
     [].forEach.call(tabs.children, function (b) { b.classList.toggle("on", b.dataset.t === tab); });
+    [].forEach.call(tabs.children, function (b) { if (b.dataset.t === tab) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
     window.scrollTo(0, 0);
+    /* Bildschirmleser: Fokus auf die Überschrift bzw. Frage des neuen Bildschirms setzen. */
+    var head = app.querySelector("h1, .q");
+    if (head) { head.setAttribute("tabindex", "-1"); try { head.focus({ preventScroll: true }); } catch (e) {} }
   }
-  function bar(p) { return '<div class="bar"><i style="width:' + Math.max(0, Math.min(100, p)) + '%"></i></div>'; }
+  /* Kurze Ansage für Bildschirmleser (unsichtbar). */
+  var sr = document.getElementById("sr");
+  ui.say = function (t) { if (!sr) return; sr.textContent = ""; setTimeout(function () { sr.textContent = t; }, 50); };
+  ui.reduced = function () { return window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches; };
+  function bar(p, label) { p = Math.round(Math.max(0, Math.min(100, p))); return '<div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + p + '"' + (label ? ' aria-label="' + esc(label) + '"' : "") + '><i style="width:' + p + '%"></i></div>'; }
   function btn(act, label, o) {
     o = o || {};
     var d = "";
@@ -41,7 +49,7 @@
   var DIFFS = [["auto", "Auto"], ["1", "Leicht"], ["2", "Mittel"], ["3", "Schwer"]];
   ui.diffSeg = function () {
     var d = S().settings.difficulty;
-    return '<div class="cfg"><label>Schwierigkeit</label><div class="seg">' + DIFFS.map(function (o) { return '<button class="' + (d === o[0] ? "on" : "") + '" data-act="diff" data-v="' + o[0] + '">' + o[1] + "</button>"; }).join("") + "</div>" +
+    return '<div class="cfg"><label>Schwierigkeit</label><div class="seg" role="group" aria-label="Schwierigkeit">' + DIFFS.map(function (o) { return '<button aria-pressed="' + (d === o[0]) + '" class="' + (d === o[0] ? "on" : "") + '" data-act="diff" data-v="' + o[0] + '">' + o[1] + "</button>"; }).join("") + "</div>" +
       '<p class="small mute" style="margin:-4px 0 0">' + (d === "auto" ? "Passt sich je Bereich an dein Können an." : "Bevorzugt Fragen dieser Stufe.") + "</p></div>";
   };
   ui.rubrikSel = function () {
@@ -58,7 +66,7 @@
   ui.keepOpen = function (k) { return openState[k] ? " open" : ""; };
   function prefSeg(label, key, opts) {
     var cur = S().settings[key];
-    return '<div class="cfg"><label>' + label + '</label><div class="seg" style="grid-template-columns:repeat(3,1fr)">' + opts.map(function (o) { return '<button class="' + (cur === o[0] ? "on" : "") + '" data-act="pref" data-k="' + key + '" data-v="' + o[0] + '">' + o[1] + "</button>"; }).join("") + "</div></div>";
+    return '<div class="cfg"><label>' + label + '</label><div class="seg" role="group" aria-label="' + esc(label) + '" style="grid-template-columns:repeat(3,1fr)">' + opts.map(function (o) { return '<button aria-pressed="' + (cur === o[0]) + '" class="' + (cur === o[0] ? "on" : "") + '" data-act="pref" data-k="' + key + '" data-v="' + o[0] + '">' + o[1] + "</button>"; }).join("") + "</div></div>";
   }
   ui.applyPrefs = function () {
     var st = S().settings, r = document.documentElement;
@@ -103,7 +111,7 @@
   }
   function row(act, ico, title, sub, data, off) {
     var d = ""; for (var k in (data || {})) d += " data-" + k + '="' + esc(data[k]) + '"';
-    return '<button class="item' + (off ? " off" : "") + '" data-act="' + act + '"' + d + (off ? " disabled" : "") + '><span class="ico">' + ico + '</span><div class="grow"><div class="t">' + esc(title) + '</div><div class="small mute">' + esc(sub) + '</div></div><span class="chev">›</span></button>';
+    return '<button class="item' + (off ? " off" : "") + '" data-act="' + act + '"' + d + (off ? " disabled" : "") + '><span class="ico" aria-hidden="true">' + ico + '</span><div class="grow"><div class="t">' + esc(title) + '</div><div class="small mute">' + esc(sub) + '</div></div><span class="chev" aria-hidden="true">›</span></button>';
   }
   function home() {
     view = home;
@@ -133,7 +141,7 @@
   }
   function progressItem(c, s, title, sub) {
     var n = E.totalIn(c, s), m = E.masteredIn(c, s);
-    return '<button class="item" data-act="scope" data-c="' + esc(c) + '" data-s="' + esc(s || "") + '"><div class="grow"><div class="t">' + esc(title) + '</div><div class="small mute">' + esc(sub || "") + (n ? (sub ? " · " : "") + m + " von " + n + " gemeistert" : "") + "</div>" + (n ? bar(U.pct(m, n)) : "") + '</div><span class="chev">›</span></button>';
+    return '<button class="item" data-act="scope" data-c="' + esc(c) + '" data-s="' + esc(s || "") + '"><div class="grow"><div class="t">' + esc(title) + '</div><div class="small mute">' + esc(sub || "") + (n ? (sub ? " · " : "") + m + " von " + n + " gemeistert" : "") + "</div>" + (n ? bar(U.pct(m, n)) : "") + '</div><span class="chev" aria-hidden="true">›</span></button>';
   }
   function scope(c, s) {
     s = s || null;
@@ -158,12 +166,13 @@
   H.scope = function (d) { scope(d.c, d.s || null); };
 
   /* ---------- Quiz ---------- */
-  function dots(d) { return "●".repeat(d) + "○".repeat(3 - d); }
+  function dots(d) { return '<span aria-hidden="true">' + "●".repeat(d) + "○".repeat(3 - d) + '</span><span class="sr-only">Schwierigkeit ' + ["leicht", "mittel", "schwer"][d - 1] + "</span>"; }
+  function livesLabel(s) { return s.lives + " von " + s.m.lives + " Leben"; }
   function quiz() {
     var s = E.s, m = s.m, x = E.cur(), info, prog = "";
-    if (m.lives) { var hs = ""; for (var i = 0; i < m.lives; i++) hs += i < s.lives ? "♥" : "♡"; info = '<span class="chip lives" id="lv">' + hs + "</span>"; }
-    else if (m.timer) { info = '<span class="chip" id="tm">' + Math.ceil(E.timeLeft()) + " s</span>"; prog = '<div class="bar"><i id="tb" style="width:' + (E.timeLeft() / m.timer * 100) + '%"></i></div>'; }
-    else { info = '<span class="chip">' + (s.idx + 1) + " / " + s.round.length + "</span>"; prog = bar(s.idx / s.round.length * 100); }
+    if (m.lives) { var hs = ""; for (var i = 0; i < m.lives; i++) hs += i < s.lives ? "♥" : "♡"; info = '<span class="chip lives" id="lv" role="img" aria-label="' + livesLabel(s) + '">' + hs + "</span>"; }
+    else if (m.timer) { info = '<span class="chip" id="tm" role="timer" aria-live="off">' + Math.ceil(E.timeLeft()) + " s</span>"; prog = '<div class="bar" aria-hidden="true"><i id="tb" style="width:' + (E.timeLeft() / m.timer * 100) + '%"></i></div>'; }
+    else { info = '<span class="chip">' + (s.idx + 1) + " / " + s.round.length + "</span>"; prog = bar(s.idx / s.round.length * 100, "Fortschritt der Runde"); }
     var h = '<div class="topbar"><button class="ghost" data-act="quit">✕ Beenden</button>' + (m.learn ? '<span class="mode-tag">Lernen</span>' : "") + (s.streak > 1 ? '<span class="chip">Serie ' + s.streak + "</span>" : "") + info + "</div>" + prog;
     h += '<div class="qmeta">' + esc(x.c) + " · " + esc(x.s) + " · " + dots(x.d || 2) + (x.retry ? " · Wiederholung" : "") + "</div>";
     h += '<p class="q">' + esc(x.q) + "</p>";
@@ -172,12 +181,12 @@
       h += '<div class="helps-label">Hilfen</div><div class="helps"><button data-act="fifty"' + (E.canHelp("fifty") ? "" : " disabled") + ">50:50" + (lim ? " (" + s.jokers.fifty + ")" : "") + '</button><button data-act="hint"' + (E.canHelp("hint") ? "" : " disabled") + ">Hinweis" + (lim ? " (" + s.jokers.hint + ")" : "") + "</button></div>";
       if (x.hintShown) h += '<div class="hint">' + esc(x.h) + "</div>";
     }
-    h += '<div id="opts">';
+    h += '<div id="opts" role="group" aria-label="Antworten">';
     x.opts.forEach(function (o, i) {
       var gone = x.hidden.indexOf(i) >= 0;
       h += '<button class="ans' + (gone ? " gone" : "") + '" data-act="pick" data-i="' + i + '"' + (gone ? " disabled" : "") + ">" + esc(o.t) + "</button>";
     });
-    h += '</div><div id="fb"></div>';
+    h += '</div><div id="fb" aria-live="polite"></div>';
     show(h, null, !!m.learn);
     if (m.timer) tick = setInterval(function () {
       var t = E.timeLeft(), tm = document.getElementById("tm"), tb = document.getElementById("tb");
@@ -190,6 +199,7 @@
   H.hint = function () { if (E.useHint()) quiz(); };
   H.pick = function (d) { var r = E.answer(+d.i); if (r) paint(r); };
 
+  ui.paint = function (r) { paint(r); };
   function paint(r) {
     var s = E.s, x = r.x, btns = app.querySelectorAll(".ans");
     x.opts.forEach(function (o, i) {
@@ -197,11 +207,13 @@
       b.disabled = true;
       if (b.classList.contains("gone")) return;
       if (o.ok) b.classList.add("ok"); else if (i === r.picked) b.classList.add("bad"); else b.classList.add("dim");
+      if (o.ok || i === r.picked) b.setAttribute("aria-label", o.t + (o.ok ? (i === r.picked ? ", deine Antwort, richtig" : ", richtige Antwort") : ", deine Antwort, falsch"));
     });
+    ui.say(r.ok ? "Richtig." : "Falsch. Richtig ist: " + x.opts.filter(function (o) { return o.ok; })[0].t);
     var hp = app.querySelector(".helps"); if (hp) hp.remove();
     var hl = app.querySelector(".helps-label"); if (hl) hl.remove();
     var lv = document.getElementById("lv");
-    if (lv) { var hs = ""; for (var i = 0; i < s.m.lives; i++) hs += i < s.lives ? "♥" : "♡"; lv.textContent = hs; }
+    if (lv) { var hs = ""; for (var i = 0; i < s.m.lives; i++) hs += i < s.lives ? "♥" : "♡"; lv.textContent = hs; lv.setAttribute("aria-label", livesLabel(s)); }
     if (s.m.auto) { s.adv = setTimeout(next, r.ok ? 450 : 1300); return; }
     var right = x.opts.filter(function (o) { return o.ok; })[0], picked = x.opts[r.picked];
     var f = '<div class="fb ' + (r.ok ? "ok" : "bad") + '"><b class="h">' + (r.ok ? "Richtig" + (r.gain ? " · +" + r.gain + " XP" : "") : "Nicht ganz") + "</b>";
@@ -223,7 +235,8 @@
     f += "</div>" + btn("next", r.last ? "Ergebnis ansehen" : "Weiter", { primary: true });
     var box = document.getElementById("fb");
     box.innerHTML = f;
-    box.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    box.scrollIntoView({ behavior: ui.reduced() ? "auto" : "smooth", block: "nearest" });
+    var nb = box.querySelector('[data-act="next"]'); if (nb) try { nb.focus({ preventScroll: true }); } catch (e) {}
   }
   H.save = function (d, t) {
     var x = E.cur(), sv = S().saved;

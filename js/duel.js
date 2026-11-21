@@ -14,8 +14,8 @@
     var h = shell('<p class="mute">Beide sehen dieselbe Frage. Jeder tippt für sich, ohne dass der andere es sieht.</p>' +
       '<div class="card cfg" style="margin-bottom:12px">' + ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + '</div><div class="card"><label class="small mute">Name 1</label><input id="n1" class="inp" maxlength="16" value="' + esc(setup.n1) + '">' +
       '<label class="small mute">Name 2</label><input id="n2" class="inp" maxlength="16" value="' + esc(setup.n2) + '"></div>' +
-      '<h2>Fragen</h2><div class="seg" style="grid-template-columns:repeat(3,1fr)">' +
-      [5, 10, 15].map(function (n) { return '<button class="' + (setup.rounds === n ? "on" : "") + '" data-act="drounds" data-n="' + n + '">' + n + "</button>"; }).join("") + "</div>" +
+      '<h2>Fragen</h2><div class="seg" role="group" aria-label="Anzahl Fragen" style="grid-template-columns:repeat(3,1fr)">' +
+      [5, 10, 15].map(function (n) { return '<button aria-pressed="' + (setup.rounds === n) + '" class="' + (setup.rounds === n ? "on" : "") + '" data-act="drounds" data-n="' + n + '">' + n + "</button>"; }).join("") + "</div>" +
       '<div style="margin-top:16px">' + btn("dstart", "Los geht’s", { primary: true }) + "</div>" +
       '<div style="margin-top:8px">' + btn("home", "Zurück") + "</div>");
     ui.show(h, "home");

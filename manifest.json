@@ -1,11 +1,19 @@
 {
+ "id": "./",
  "name": "Wissensfundament",
  "short_name": "Wissen",
+ "description": "Allgemeinwissen lernen und spielen: über 2.000 Fragen mit Erklärungen, Wiederholung nach Plan, offline nutzbar.",
  "start_url": "./index.html",
+ "scope": "./",
  "display": "standalone",
  "background_color": "#f5f6f8",
  "theme_color": "#2f5bea",
  "lang": "de",
+ "dir": "ltr",
+ "categories": [
+  "education",
+  "games"
+ ],
  "icons": [
   {
    "src": "icon-192.png",
@@ -16,6 +24,12 @@
    "src": "icon-512.png",
    "sizes": "512x512",
    "type": "image/png"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
   }
  ]
 }

@@ -10,19 +10,18 @@
 <link rel="apple-touch-icon" href="icon-180.png">
 <meta name="apple-mobile-web-app-title" content="Wissen">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="app"></div>
-<nav id="tabs" hidden>
-  <button data-t="home"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>Spielen</button>
-  <button data-t="areas"><svg viewBox="0 0 24 24"><path d="M4 5h6a3 3 0 013 3v12a2 2 0 00-2-2H4zM20 5h-6a3 3 0 00-3 3v12a2 2 0 012-2h7z"/></svg>Lernen</button>
-  <button data-t="profile"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Profil</button>
+<nav id="tabs" aria-label="Hauptmenü" hidden>
+  <button data-t="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Spielen</button>
+  <button data-t="areas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6a3 3 0 013 3v12a2 2 0 00-2-2H4zM20 5h-6a3 3 0 00-3 3v12a2 2 0 012-2h7z"/></svg>Lernen</button>
+  <button data-t="profile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Profil</button>
 </nav>
-<div id="toast"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="sr" class="sr-only" aria-live="assertive"></div>
 <script type="module" src="js/main.js"></script>
 <script>try{if("serviceWorker"in navigator&&location.protocol==="https:")navigator.serviceWorker.register("sw.js").catch(function(){})}catch(e){}</script>
 </body>

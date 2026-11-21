@@ -91,7 +91,8 @@
   function weight(x) {
     if (x.gen) return 2 * diffMult(x);
     var r = S().qs[x.id];
-    return (r ? [6, 3, 1.5, 0.6, 0.25][Math.min(r.b, 4)] : 4) * diffMult(x);
+    /* cw: wie oft „sicher“ und trotzdem falsch. Solche Fragen kommen bevorzugt wieder, bis sie sitzen. */
+    return (r ? [6, 3, 1.5, 0.6, 0.25][Math.min(r.b, 4)] * (r.cw && r.b < 3 ? 1.6 : 1) : 4) * diffMult(x);
   }
   E.pool = function (scope) { return D.Q.filter(function (x) { return D.inScope(x, scope.c, scope.s); }); };
   E.order = function (list, balanced) {
@@ -100,7 +101,7 @@
   };
   function levelKey(x) {
     var base = 0;
-    if (!x.gen) { var r = S().qs[x.id]; base = r ? (r.b === 0 ? -1 : r.b) : 0; }
+    if (!x.gen) { var r = S().qs[x.id]; base = r ? (r.b === 0 ? (r.cw ? -1.5 : -1) : r.b) : 0; }
     return base + Math.abs((x.d || 2) - E.target(x.c, x.s)) * 0.4;
   }
   E.orderLearn = function (list) { return U.shuffle(list.slice()).sort(function (a, b) { return levelKey(a) - levelKey(b); }); };
@@ -177,7 +178,9 @@
   };
 
   /* ---------- Antwort ---------- */
-  E.answer = function (i) {
+  /* conf (optional): Selbsteinschätzung "g" geraten, "z" ziemlich sicher, "s" sicher.
+     Richtig, aber geraten: zählt nicht als gewusst (keine höhere Stufe). Falsch, aber sicher: wird markiert. */
+  E.answer = function (i, conf) {
     var s = E.s;
     if (!s || s.answered || s.over) return null;
     var x = E.cur(), m = s.m;
@@ -201,11 +204,13 @@
         gain = 10 + Math.min(s.streak - 1, 9) * 2 + (ms < 5000 ? 5 : 0);
       } else gain = 5;
       if (x.helped) gain = Math.ceil(gain / 2);
-      if (rec && !x.helped) E.schedule(rec, true);
+      if (conf === "g") gain = Math.ceil(gain / 2);
+      if (rec && !x.helped && conf !== "g") E.schedule(rec, true);
       E.addXP(gain);
     } else {
       s.streak = 0;
       if (rec) E.schedule(rec, false);
+      if (rec && conf === "s") rec.cw = (rec.cw || 0) + 1;
       if (m.lives) s.lives--;
       if (!retry) s.log.push(0);
       if (!retry) s.wrong.push({ q: x.q, given: x.opts[i].t, why: x.opts[i].why, right: x.opts.filter(function (o) { return o.ok; })[0].t, e: x.e });
@@ -221,7 +226,7 @@
     var mastered = !!(rec && before < 3 && rec.b >= 3);
     if (mastered) s.mastNew++;
     var last = m.lives ? s.lives <= 0 : (!m.extend && s.idx === s.round.length - 1);
-    var res = { ok: ok, gain: gain, mastered: mastered, requeued: requeued, last: last, picked: i, x: x };
+    var res = { ok: ok, gain: gain, mastered: mastered, requeued: requeued, last: last, picked: i, x: x, conf: conf || null };
     WF.emit("answered", res);
     WF.store.save();
     return res;

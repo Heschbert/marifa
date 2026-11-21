@@ -5,8 +5,8 @@
 
   function fresh() {
     return { qs: {}, cats: {}, sub: {}, xp: 0, days: {}, streak: { last: "", n: 0, best: 0 }, best: { blitz: 0, survive: 0 },
-             dailyDone: {}, badges: {}, saved: {}, reports: [], tot: { r: 0, t: 0 }, goalClaimed: {}, maxCombo: 0, hist: {}, idMig: 0,
-             settings: { difficulty: "auto", last: null, theme: "auto", font: "m", fx: "off" } };
+             dailyDone: {}, badges: {}, saved: {}, reports: [], tot: { r: 0, t: 0 }, goalClaimed: {}, maxCombo: 0, hist: {}, idMig: 0, calib: {}, tl: { games: 0, perfect: 0 },
+             settings: { difficulty: "auto", last: null, theme: "auto", font: "m", fx: "off", conf: "learn" } };
   }
   function normalize(s) {
     var f = fresh();
@@ -16,6 +16,7 @@
     if (!s.settings.theme) s.settings.theme = "auto";
     if (!s.settings.font) s.settings.font = "m";
     if (!s.settings.fx) s.settings.fx = "off";
+    if (!s.settings.conf) s.settings.conf = "learn";
     return s;
   }
   function load() {

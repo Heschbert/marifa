@@ -20,7 +20,8 @@
       res[0].forEach(function (r) {
         r.a.forEach(function (q) { list.push({ id: q.id || "", c: r.t.c, s: q.s, q: q.q, a: q.a, e: q.e, w: q.w || null, h: q.h || "", d: q.d || 2, src: q.src || "" }); });
       });
-      res[1].forEach(function (r) { list = list.concat(WF.builders[r.x.builder](r.j)); });
+      D.raw = {};
+      res[1].forEach(function (r) { D.raw[r.x.builder] = r.j; list = list.concat(WF.builders[r.x.builder](r.j)); });
       /* IDs: feste id aus der JSON-Datei, bei erzeugten Fragen aus dem Schlüssel (key). Nur ohne beides aus dem Fragetext.
          Frühere Versionen nutzten immer den Fragetext; idMap verweist von alt auf neu, damit der Lernstand erhalten bleibt. */
       var idMap = {}, seen = {};

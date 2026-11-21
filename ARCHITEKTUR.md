@@ -10,7 +10,8 @@ Nach einem Update `VERSION` in `sw.js` erhöhen, damit Geräte mit der installie
 - `js/data.js` + `gen.js`, `geo.js`, `pairs.js` – Fragen laden bzw. erzeugen.
 - `js/engine.js` – Spiellogik ohne Oberfläche. `js/modes.js` – Spielmodi.
 - `js/ui.js` – Bildschirme Spielen, Lernen, Profil, Quiz, Ergebnis.
-- Features, je eine Datei: `duel`, `cards`, `browse` (Suche), `stats` (Verlauf), `reports` (gemeldete Fragen), `share` (Tagesrätsel teilen), `fx` (Vibration/Ton), `badges`, `entries` (Menüeinträge der eingebauten Modi).
+- Features, je eine Datei: `duel`, `cards`, `browse` (Suche), `stats` (Verlauf), `reports` (gemeldete Fragen), `share` (Tagesrätsel teilen), `fx` (Vibration/Ton), `conf` (Wie sicher bist du?), `timeline` (Zeitstrahl), `badges`, `entries` (Menüeinträge der eingebauten Modi).
+- `fonts/` – Schrift Inter, lokal (keine Verbindung zu Google).
 
 ## Neues Feature hinzufügen
 1. Datei `js/meinfeature.js` anlegen (Muster: `js/share.js`).
@@ -29,6 +30,7 @@ Neue Felder im Speicher: in `fresh()` in `js/store.js` eintragen, dann bekommen 
 - Neues Thema: Eintrag in `data/index.json` und eine JSON-Datei.
 - Jede Frage hat eine feste `id`. Der Text darf geändert werden, der Lernstand bleibt erhalten. **Die `id` nie ändern.**
 - Bei Paar-Tabellen (`pairs.json`) hängt die ID an Thema + Unterbereich + erstem Feld der Zeile, bei `geo.json` am Land bzw. an Stadt + Land.
+- Ist die richtige Antwort deutlich länger als alle falschen, warnt das Prüfskript (Rate-Hinweis). Ist die Länge unvermeidlich (Eigennamen, Titel), `"lenOk": true` setzen.
 - Vor dem Hochladen prüfen (Node.js nötig):
   - `node tools/check.mjs` – findet Fehler (fehlende/doppelte IDs, falsche Unterbereiche, nicht genau 4 Antworten …).
   - `node tools/check.mjs --fix-ids` – ergänzt fehlende IDs bei neuen Fragen.

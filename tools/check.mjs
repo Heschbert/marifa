@@ -2,6 +2,7 @@
 /* Prüfskript für die Fragen in data/. Ändert nichts, außer mit --fix-ids.
    Aufruf:  node tools/check.mjs            prüfen
             node tools/check.mjs --fix-ids  fehlende IDs ergänzen (aus dem Fragetext, wie die App es früher tat)
+   Mit "lenOk": true lässt sich bei einer Frage die Längen-Warnung abschalten, wenn die Länge unvermeidlich ist (Eigennamen, Titel).
    Fehler (Exit-Code 1) brechen die App oder verfälschen den Lernstand. Warnungen sind Hinweise zur Qualität. */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -19,7 +20,7 @@ function load(f) { try { return JSON.parse(readFileSync(join(DATA, f), "utf8"));
 const idx = load("index.json");
 if (!idx) { report(); process.exit(1); }
 const subsOf = {}, ids = {}, texts = {}, keys = {};
-let total = 0;
+let total = 0, longest = 0, mcCount = 0;
 
 for (const t of idx.topics || []) {
   if (!t.c || !t.file || !Array.isArray(t.subs)) { err("index.json", "Thema unvollständig: " + JSON.stringify(t).slice(0, 80)); continue; }
@@ -30,13 +31,17 @@ for (const t of idx.topics || []) {
   let changed = false;
   list.forEach((q, i) => {
     const at = t.file + " #" + (i + 1), short = String(q.q || "").slice(0, 60);
-    total++;
+    total++; mcCount++;
     if (!q.q || typeof q.q !== "string") err(at, "Fragetext fehlt");
     if (!t.subs.includes(q.s)) err(at, "Unterbereich „" + q.s + "“ steht nicht in index.json (" + short + ")");
     if (!Array.isArray(q.a) || q.a.length !== 4) err(at, "braucht genau 4 Antworten (" + short + ")");
     else {
       if (q.a.some(a => !a || typeof a !== "string")) err(at, "leere Antwort (" + short + ")");
       if (new Set(q.a.map(a => String(a).trim())).size !== 4) err(at, "doppelte Antwort (" + short + ")");
+      /* Rate-Hinweis: Ist die richtige Antwort deutlich die längste, wählt man sie auch ohne Wissen. */
+      const lr = String(q.a[0]).length, lw = Math.max(...q.a.slice(1).map(a => String(a).length));
+      if (lr > lw) longest++;
+      if (lr >= lw * 1.5 && lr - lw >= 10 && !q.lenOk) warn(at, "richtige Antwort deutlich länger als alle falschen (" + lr + " zu " + lw + " Zeichen): " + short);
     }
     if (q.w) {
       if (!Array.isArray(q.w) || q.w.length !== (q.a || []).length) err(at, "w muss so viele Einträge wie a haben (" + short + ")");
@@ -99,5 +104,6 @@ function report() {
   const show = (title, l, max) => { if (!l.length) return; console.log("\n" + title + " (" + l.length + ")"); l.slice(0, max).forEach(m => console.log("  " + m)); if (l.length > max) console.log("  … und " + (l.length - max) + " weitere (--all zeigt alle)"); };
   const all = process.argv.includes("--all") ? 1e9 : 40;
   show("FEHLER", errors, all); show("Warnungen", warns, all);
+  if (mcCount) console.log("\nInfo: Bei " + longest + " von " + mcCount + " Fragen (" + Math.round(100 * longest / mcCount) + " %) ist die richtige Antwort die längste. Bei Zufall wären es etwa 25 %.");
   console.log("\nGeprüft: etwa " + total + " Fragen. " + (errors.length ? errors.length + " Fehler." : "Keine Fehler.") + " " + warns.length + " Warnungen.");
 }

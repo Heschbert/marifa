@@ -23,6 +23,8 @@ import "./stats.js";
 import "./reports.js";
 import "./share.js";
 import "./fx.js";
+import "./conf.js";
+import "./timeline.js";
 
 /* Start: Daten laden, dann die Oberfläche öffnen. */
 const WF = window.WF;

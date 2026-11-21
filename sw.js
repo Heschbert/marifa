@@ -1,5 +1,5 @@
 /* Offline-Cache: Dateien werden beim ersten Aufruf gespeichert. VERSION erhöhen, um Updates zu erzwingen. */
-const VERSION = "wf-v3";
+const VERSION = "wf-v4";
 self.addEventListener("install", e => { self.skipWaiting(); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== VERSION).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener("fetch", e => {

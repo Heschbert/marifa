@@ -1,9 +1,12 @@
+/* Schrift Inter (SIL Open Font License, siehe fonts/OFL-Inter.txt), lokal eingebunden: keine Verbindung zu Google. */
+@font-face { font-family: "Inter"; font-style: normal; font-display: swap; font-weight: 100 900; src: url(../fonts/inter-latin-ext-wght-normal.woff2) format("woff2"); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: "Inter"; font-style: normal; font-display: swap; font-weight: 100 900; src: url(../fonts/inter-latin-wght-normal.woff2) format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
 :root {
-  --bg: #f5f6f8; --card: #ffffff; --fg: #14171c; --mute: #667085; --line: #e3e6ec; --soft: #eef1f6;
+  --bg: #f5f6f8; --card: #ffffff; --fg: #14171c; --mute: #5f687c; --line: #e3e6ec; --soft: #eef1f6;
   --play: #2f5bea; --play-fg: #ffffff; --play-soft: #e8eefd;
-  --learn: #c2570c; --learn-fg: #ffffff; --learn-soft: #fdeedd;
+  --learn: #a84a08; --learn-fg: #ffffff; --learn-soft: #fdeedd;
   --accent: var(--play); --accent-fg: var(--play-fg); --accent-soft: var(--play-soft);
-  --ok: #15803d; --ok-bg: #e7f6ec; --bad: #c62828; --bad-bg: #fdecec;
+  --ok: #12703a; --ok-bg: #e7f6ec; --bad: #c62828; --bad-bg: #fdecec;
   --r: 14px; color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -156,3 +159,24 @@ select.inp { appearance: none; -webkit-appearance: none; background-image: linea
 .hit summary::-webkit-details-marker { display: none; }
 .hit[open] summary { margin-bottom: 8px; }
 input[type=search].inp { -webkit-appearance: none; appearance: none; }
+
+/* Barrierefreiheit */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+[tabindex="-1"]:focus { outline: none; }
+a:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
+/* Gewählte Antwort vor der Auflösung (Sicherheit, Zeitstrahl) */
+.ans.sel { border-color: var(--accent); background: var(--accent-soft); }
+.confbox { border: 1px dashed var(--accent); border-radius: var(--r); padding: 12px; margin: 4px 0 12px; background: var(--card); }
+.confbox .seg { margin: 0; }
+
+/* Zeitstrahl */
+.ans.tl { display: flex; align-items: center; gap: 12px; }
+.ans.tl .num { flex: none; width: 28px; height: 28px; border-radius: 99px; border: 1.5px dashed var(--line); display: grid; place-items: center; font-weight: 700; font-size: 14px; }
+.ans.tl.sel .num { border: 0; background: var(--accent); color: var(--accent-fg); }
+.tlres { margin: 6px 0 0; padding-left: 20px; }
+.tlres li { margin-bottom: 8px; }
+.okm { color: var(--ok); font-weight: 700; } .badm { color: var(--bad); font-weight: 700; }
