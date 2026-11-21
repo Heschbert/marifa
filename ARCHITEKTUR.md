@@ -31,6 +31,7 @@ Neue Felder im Speicher: in `fresh()` in `js/store.js` eintragen, dann bekommen 
 - Neues Thema: Eintrag in `data/index.json` und eine JSON-Datei.
 - Jede Frage hat eine feste `id`. Der Text darf geändert werden, der Lernstand bleibt erhalten. **Die `id` nie ändern.**
 - Bei Paar-Tabellen (`pairs.json`) hängt die ID an Thema + Unterbereich + erstem Feld der Zeile, bei `geo.json` am Land bzw. an Stadt + Land.
+- Verrät ein Hinweis die Lösung (Lösungswort im Hinweis), warnt das Prüfskript; harmlose Treffer mit `"hintOk": true` markieren. Hinweise erzeugter Fragen entstehen erst beim Mischen und verraten nie die Lösung.
 - Ist die richtige Antwort deutlich länger als alle falschen, warnt das Prüfskript (Rate-Hinweis). Ist die Länge unvermeidlich (Eigennamen, Titel), `"lenOk": true` setzen.
 - Vor dem Hochladen prüfen (Node.js nötig):
   - `node tools/check.mjs` – findet Fehler (fehlende/doppelte IDs, falsche Unterbereiche, nicht genau 4 Antworten …).

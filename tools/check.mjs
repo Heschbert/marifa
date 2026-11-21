@@ -2,6 +2,7 @@
 /* Prüfskript für die Fragen in data/. Ändert nichts, außer mit --fix-ids.
    Aufruf:  node tools/check.mjs            prüfen
             node tools/check.mjs --fix-ids  fehlende IDs ergänzen (aus dem Fragetext, wie die App es früher tat)
+   Mit "hintOk": true lässt sich die Hinweis-Warnung abschalten, wenn der Treffer harmlos ist.
    Mit "lenOk": true lässt sich bei einer Frage die Längen-Warnung abschalten, wenn die Länge unvermeidlich ist (Eigennamen, Titel).
    Fehler (Exit-Code 1) brechen die App oder verfälschen den Lernstand. Warnungen sind Hinweise zur Qualität. */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
@@ -52,6 +53,16 @@ for (const t of idx.topics || []) {
     } else warn(at, "keine Begründungen (w) (" + short + ")");
     if (!q.e) warn(at, "keine Erklärung (e) (" + short + ")");
     if (!q.h) warn(at, "kein Hinweis (h) (" + short + ")");
+    else if (Array.isArray(q.a) && !q.hintOk) {
+      /* Verrät der Hinweis die Lösung? Ein Wort der richtigen Antwort (ab 4 Buchstaben), das weder in der Frage
+         noch in einer falschen Antwort vorkommt, steht im Hinweis. */
+      const nrm = t => String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      const STOP = new Set("der die das den dem des ein eine einen und oder mit von vom zum zur fur auf aus bei nach uber unter ist sind wird werden nicht nur auch sich als wie".split(" "));
+      const wd = t => (nrm(t).match(/[a-z0-9]+/g) || []).filter(w => w.length >= 4 && !STOP.has(w));
+      const hw = new Set(wd(q.h)), qq = new Set(wd(q.q)), wrong = new Set(q.a.slice(1).flatMap(wd));
+      const leak = (String(q.a[0]).length >= 4 && nrm(q.h).includes(nrm(q.a[0]))) || wd(q.a[0]).some(w => hw.has(w) && !wrong.has(w) && !qq.has(w));
+      if (leak) warn(at, "Hinweis verrät vermutlich die Lösung: „" + q.h + "“ (" + short + ")");
+    }
     if (q.d !== undefined && ![1, 2, 3].includes(q.d)) err(at, "d muss 1, 2 oder 3 sein (" + short + ")");
     if (!q.id) {
       if (FIX && q.q) { list[i] = Object.assign({ id: hash(q.q) }, q); changed = true; }

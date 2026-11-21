@@ -10,7 +10,8 @@
   function gcd(a, b) { return b ? gcd(b, a % b) : a; }
   function fr(a, b) { var g = gcd(a, b); a /= g; b /= g; return b === 1 ? String(a) : a + "/" + b; }
   function sup(n) { var m = { 0: "⁰", 1: "¹", 2: "²", 3: "³", 4: "⁴", 5: "⁵", 6: "⁶", 7: "⁷", 8: "⁸", 9: "⁹" }; return String(n).split("").map(function (c) { return m[c]; }).join(""); }
-  function range(n) { var step = Math.pow(10, Math.max(1, String(n).length - 1)), lo = Math.floor(n / step) * step; return "Das Ergebnis liegt zwischen " + lo + " und " + (lo + step) + "."; }
+  /* Früher: „Das Ergebnis liegt zwischen … und …“ – das grenzte die Lösung oft eindeutig ein, daher leer. */
+  function range() { return ""; }
   function pick(a) { return a[ri(0, a.length - 1)]; }
   function num(n, fmt, wrong, e, h, q) { return { q: q, n: n, fmt: fmt || String, wrong: wrong || [], e: e, h: h }; }
 

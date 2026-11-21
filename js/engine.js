@@ -106,6 +106,27 @@
   }
   E.orderLearn = function (list) { return U.shuffle(list.slice()).sort(function (a, b) { return levelKey(a) - levelKey(b); }); };
 
+  /* Hinweise für erzeugte Fragen (Tabellen): erst wenn die Antwortmöglichkeiten feststehen.
+     Ein Anfangsbuchstabe oder Jahrhundert wird nur genannt, wenn ihn mindestens eine falsche Antwort teilt,
+     sonst wäre der Hinweis die Lösung. Andernfalls schließt der Hinweis eine falsche Antwort aus. */
+  function first(t) { return String(t).replace(/^(der|die|das|den)\s+/i, "").charAt(0).toUpperCase(); }
+  function yearOf(t) { var m = /^(\d+)( v\. Chr\.)?$/.exec(String(t)); return m ? (m[2] ? -1 : 1) * (+m[1]) : null; }
+  function century(y) { return y < 0 ? -Math.ceil(-y / 100) : Math.ceil(y / 100); }
+  function genHint(x, opts, rng) {
+    var right = opts.filter(function (o) { return o.ok; })[0], wrong = opts.filter(function (o) { return !o.ok; });
+    if (!right || !wrong.length) return x.h || "";
+    if (x.mkd) {
+      var ry = yearOf(right.t);
+      if (ry !== null && wrong.some(function (o) { var y = yearOf(o.t); return y !== null && century(y) === century(ry); })) return x.h || "";
+    } else {
+      var f = first(right.t);
+      if (wrong.some(function (o) { return first(o.t) === f; })) return "Beginnt mit „" + f + "“.";
+    }
+    var w = wrong[Math.floor((rng || Math.random)() * wrong.length)];
+    return "„" + w.t + "“ ist es nicht.";
+  }
+  E.genHint = genHint;
+
   E.prep = function (x, rng) {
     if (x.gen) return WF.gen.make(x);
     var opts;
@@ -122,7 +143,8 @@
     } else {
       opts = x.a.map(function (t, i) { return { t: t, ok: i === 0, why: (x.w && x.w[i]) || "" }; });
     }
-    return { id: x.id, src: x.src || "", c: x.c, s: x.s, q: x.q, e: x.e, h: x.h || "", d: x.d || 2, opts: U.shuffle(opts, rng), helped: false, hidden: [], hintShown: false };
+    var h = (x.pool || x.mkd) ? genHint(x, opts, rng) : (x.h || "");
+    return { id: x.id, src: x.src || "", c: x.c, s: x.s, q: x.q, e: x.e, h: h, d: x.d || 2, opts: U.shuffle(opts, rng), helped: false, hidden: [], hintShown: false };
   };
   E.dailyList = function () {
     var rng = U.mulberry(U.seedOf(U.today()));
