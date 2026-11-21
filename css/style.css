@@ -133,3 +133,26 @@ select.inp { appearance: none; -webkit-appearance: none; background-image: linea
 .item .ico { width: 36px; height: 36px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-weight: 700; flex: none; }
 .item.off { opacity: .5; }
 .seg3 { grid-template-columns: repeat(4, 1fr); }
+
+/* Startseite: Spieleinstellungen zusammengeklappt */
+.cfgbox { padding: 0; }
+.cfgbox summary { list-style: none; cursor: pointer; display: flex; flex-direction: column; gap: 1px; padding: 12px 44px 12px 16px; position: relative; }
+.cfgbox summary::-webkit-details-marker { display: none; }
+.cfgbox summary::after { content: "Ändern"; position: absolute; right: 16px; top: 50%; transform: translateY(-50%); color: var(--accent); font-weight: 600; font-size: 14px; }
+.cfgbox[open] summary::after { content: "Fertig"; }
+.cfgin { padding: 0 16px 16px; }
+
+/* Verlauf */
+.chart { display: grid; grid-template-columns: repeat(14, 1fr); gap: 4px; height: 120px; align-items: end; }
+.chart .col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; gap: 3px; min-width: 0; }
+.chart i { display: block; width: 100%; max-width: 18px; min-height: 2px; background: var(--accent); opacity: .55; border-radius: 4px 4px 2px 2px; }
+.chart i.today { opacity: 1; }
+.chart .v { font-size: 10px; color: var(--mute); line-height: 1; }
+.chart .d { font-size: 10px; color: var(--mute); line-height: 1; }
+
+/* Suche */
+.hit { padding: 12px 16px; margin-bottom: 8px; }
+.hit summary { cursor: pointer; list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.hit summary::-webkit-details-marker { display: none; }
+.hit[open] summary { margin-bottom: 8px; }
+input[type=search].inp { -webkit-appearance: none; appearance: none; }

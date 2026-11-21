@@ -17,7 +17,7 @@
     { id: "blitz15", n: "Blitzmerker",       d: "15 richtige im Blitz",           t: function (e) { var s = E.s; return e && s.m.id === "blitz" && s.score >= 15; } },
     { id: "surv20",  n: "Zäh",               d: "20 richtige im Überleben",       t: function (e) { var s = E.s; return e && s.m.id === "survive" && s.score >= 20; } },
     { id: "lvl5",    n: "Kenner",            d: "Level 5 erreichen",              t: function () { return E.levelOf(S().xp) >= 5; } },
-    { id: "daily5",  n: "Stammgast",         d: "5 Tagesrätsel lösen",            t: function () { return Object.keys(S().dailyDone).length >= 5; } },
+    { id: "daily5",  n: "Stammgast",         d: "5 Tagesrätsel lösen",            t: function () { var dd = S().dailyDone; return Object.keys(dd).filter(function (k) { return !dd[k].n || dd[k].n >= E.consts.DAILY_N; }).length >= 5; } },
     { id: "m25",     n: "Fundament",         d: "25 Fragen gemeistert",           t: function () { return E.masteredIn() >= 25; } },
     { id: "m100",    n: "Mauerwerk",         d: "100 Fragen gemeistert",          t: function () { return E.masteredIn() >= 100; } },
     { id: "geo50",   n: "Weltenbummler",     d: "50 Geographie-Fragen gemeistert", t: function () { return E.masteredIn("Geographie") >= 50; } },

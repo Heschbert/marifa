@@ -26,6 +26,7 @@
     if (b) setup.n2 = b.value.trim() || "Spieler 2";
   }
   H.duel = setupScreen;
+  WF.registerEntry({ where: "home", order: 40, render: function () { return ui.row("duel", "2", "Duell", "Zu zweit an einem Handy, jeder stimmt für sich ab", {}); } });
   H.drounds = function (d) { readNames(); setup.rounds = +d.n; setupScreen(); };
   H.dstart = function () {
     readNames();

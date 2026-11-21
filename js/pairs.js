@@ -1,5 +1,6 @@
 /* Paar-Tabellen: aus Zeilen "A|B|Hinweis" entstehen Fragen in beide Richtungen, mit erzeugten Falschantworten
-   samt Begründung. Für Jahreszahlen (year:true) werden benachbarte Jahre als Alternativen gebildet. */
+   samt Begründung. Die ID einer Frage hängt an Thema, Unterbereich und erstem Feld der Zeile, nicht am Fragetext.
+   Für Jahreszahlen (year:true) werden benachbarte Jahre als Alternativen gebildet. */
 (function () {
   "use strict";
   var WF = window.WF, U = WF.util;
@@ -23,7 +24,8 @@
       function why2(t) { var r = byA[t]; return r ? (S.why2 ? fill(S.why2, r) : t + ": " + r.bs + ".") : ""; }
       rows.forEach(function (r) {
         var e = fill(S.e || "%a: %b.", r) + (r.n && (S.e || "").indexOf("%n") < 0 ? " " + r.n : "");
-        var q1 = { c: S.c, s: S.s, q: fill(S.q1, r), ans: r.bs, why: why1, e: e, d: r.d };
+        var key = "pairs|" + S.c + "|" + S.s + "|" + r.a + "|";
+        var q1 = { key: key + "1", c: S.c, s: S.s, q: fill(S.q1, r), ans: r.bs, why: why1, e: e, d: r.d };
         if (year) {
           q1.h = "Das war im " + century(r.y) + ".";
           q1.mkd = function () {
@@ -37,7 +39,7 @@
         } else { q1.pool = bpool.filter(function (t) { return t !== r.bs; }); q1.h = hintText(r.bs); }
         out.push(q1);
         if (S.q2 && cnt[r.bs] === 1) {
-          out.push({ c: S.c, s: S.s, q: fill(S.q2, r), ans: r.a, pool: apool.filter(function (t) { return t !== r.a; }), why: why2, e: e, d: Math.min(3, r.d + (year ? 0 : 1)), h: year ? "Es geschah im " + century(r.y) + "." : hintText(r.a) });
+          out.push({ key: key + "2", c: S.c, s: S.s, q: fill(S.q2, r), ans: r.a, pool: apool.filter(function (t) { return t !== r.a; }), why: why2, e: e, d: Math.min(3, r.d + (year ? 0 : 1)), h: year ? "Es geschah im " + century(r.y) + "." : hintText(r.a) });
         }
       });
     });

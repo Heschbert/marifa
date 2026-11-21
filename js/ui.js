@@ -32,7 +32,9 @@
   }
   WF.on("toast", toast);
 
-  ui.H = H; ui.show = show; ui.btn = btn; ui.bar = bar; ui.toast = toast;
+  ui.H = H; ui.show = show; ui.btn = btn; ui.bar = bar; ui.toast = toast; ui.row = function () { return row.apply(null, arguments); };
+  ui.prefSeg = function () { return prefSeg.apply(null, arguments); }; ui.start = function (id, c, s) { start(id, c, s); };
+  ui.refresh = function () { if (view) view(); };
   ui.setView = function (f) { view = f; };
 
   /* Gemeinsame Bausteine: Schwierigkeit und Rubrik sind überall gleich bedienbar. */
@@ -47,7 +49,13 @@
     return '<div class="cfg"><label>Rubrik</label><select id="rub" class="inp"><option value="">Alle Themen</option>' + D.topics.map(function (t) { return '<option value="' + esc(t.c) + '"' + (t.c === cur ? " selected" : "") + ">" + esc(t.c) + "</option>"; }).join("") + "</select></div>";
   };
   ui.playC = function () { return S().settings.playC || null; };
-  app.addEventListener("change", function (e) { if (e.target.id === "rub") { S().settings.playC = e.target.value; WF.store.save(); } });
+  app.addEventListener("change", function (e) { if (e.target.id === "rub") { S().settings.playC = e.target.value; WF.store.save(); if (view === home) home(); } });
+  /* Eingabefelder mit data-input="name" rufen H[name](feld) bei jeder Eingabe auf (z. B. Suche). */
+  app.addEventListener("input", function (e) { var f = e.target.dataset && H[e.target.dataset.input]; if (f) f(e.target); });
+  /* Aufgeklappte Bereiche (details mit data-keep) bleiben nach dem Neuzeichnen offen. */
+  var openState = {};
+  app.addEventListener("toggle", function (e) { var k = e.target.dataset && e.target.dataset.keep; if (k) openState[k] = e.target.open; }, true);
+  ui.keepOpen = function (k) { return openState[k] ? " open" : ""; };
   function prefSeg(label, key, opts) {
     var cur = S().settings[key];
     return '<div class="cfg"><label>' + label + '</label><div class="seg" style="grid-template-columns:repeat(3,1fr)">' + opts.map(function (o) { return '<button class="' + (cur === o[0] ? "on" : "") + '" data-act="pref" data-k="' + key + '" data-v="' + o[0] + '">' + o[1] + "</button>"; }).join("") + "</div></div>";
@@ -101,12 +109,12 @@
     view = home;
     var st = S(), done = st.dailyDone[U.today()];
     var h = "<h1>Spielen</h1>" + pills();
-    h += '<div class="hero"><h3>Tagesrätsel</h3><p>' + (done ? "Heute gelöst: " + done.s + " von " + E.consts.DAILY_N + ". Morgen gibt es ein neues." : "5 Fragen aus 5 Themen, für alle gleich.") + "</p>" + btn("start", done ? "Erledigt" : "Jetzt spielen", { off: !!done, data: { m: "daily" } }) + "</div>";
-    h += '<div class="card cfg" style="margin-bottom:12px">' + ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>";
-    h += row("play", "10", "Test", "10 Fragen mit Erklärung", { m: "classic" });
-    h += row("play", "60", "Blitz", "60 Sekunden · Rekord " + st.best.blitz, { m: "blitz" });
-    h += row("play", "♥", "Überleben", "3 Leben · Rekord " + st.best.survive, { m: "survive" });
-    h += row("duel", "2", "Duell", "Zu zweit an einem Handy, jeder stimmt für sich ab", {});
+    var dtxt = !done ? "5 Fragen aus 5 Themen, für alle gleich." : (done.n && done.n < E.consts.DAILY_N ? "Heute abgebrochen nach " + done.n + (done.n === 1 ? " Frage, " : " Fragen, ") + done.s + " richtig." : "Heute gelöst: " + done.s + " von " + E.consts.DAILY_N + ".") + " Morgen gibt es ein neues.";
+    h += '<div class="hero"><h3>Tagesrätsel</h3><p>' + dtxt + "</p>" + btn("start", done ? "Erledigt" : "Jetzt spielen", { off: !!done, data: { m: "daily" } }) + "</div>";
+    var dl = { auto: "Auto", 1: "Leicht", 2: "Mittel", 3: "Schwer" }[st.settings.difficulty];
+    h += '<details class="card cfgbox" data-keep="homecfg"' + ui.keepOpen("homecfg") + '><summary><span class="mute small">Spielt mit</span><b>' + esc(st.settings.playC || "Alle Themen") + " · " + dl + "</b></summary>" +
+      '<div class="cfgin">' + ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div></details>";
+    h += WF.slot("home", { st: st });
     show(h, "home", false);
   }
   H.play = function (d) { start(d.m, ui.playC(), null); };
@@ -114,13 +122,10 @@
   /* ---------- Lernen (orange) ---------- */
   function areas() {
     view = areas;
-    var st = S(), last = st.settings.last, noMissed = E.missedList({}).length === 0, nm = E.missedList({}).length;
+    var st = S(), last = st.settings.last;
     var h = '<span class="mode-tag">Lernmodus</span><h1 style="margin-top:10px">Lernen</h1><p class="mute">Ohne Zeitdruck. Falsche Antworten kommen wieder, bis sie sitzen.</p>';
     h += '<div class="hero"><h3>' + (last ? esc(last.s || last.c) : "Alle Themen") + "</h3><p>" + (last ? "Dort machst du weiter." : "Du lernst, was noch nicht sitzt.") + "</p>" + btn("start", last ? "Weiterlernen" : "Loslegen", { data: { m: "learn", c: last ? last.c || "" : "", s: last ? last.s || "" : "" } }) + "</div>";
-    var due = E.dueList({}).length, sv = E.savedList().length;
-    if (due) h += row("start", "⏰", "Heute fällig", due + (due === 1 ? " Frage" : " Fragen") + " zum Wiederholen", { m: "review", c: "", s: "" });
-    if (nm) h += row("start", "!", "Fehler wiederholen", nm + (nm === 1 ? " Frage" : " Fragen") + ", die zuletzt falsch waren", { m: "missed", c: "", s: "" });
-    if (sv) h += row("start", "★", "Merkliste", sv + (sv === 1 ? " Frage" : " Fragen") + " gemerkt", { m: "saved", c: "", s: "" });
+    h += WF.slot("areas", { st: st });
     h += '<div class="card cfg" style="margin:12px 0">' + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>";
     h += "<h2>Themen</h2>";
     D.topics.forEach(function (t) { h += progressItem(t.c, null, t.c, t.subs.length + " Bereiche"); });
@@ -133,15 +138,14 @@
   function scope(c, s) {
     s = s || null;
     view = function () { scope(c, s); };
-    var n = E.totalIn(c, s), m = E.masteredIn(c, s), acc = E.accIn(c, s), nm = E.missedList({ c: c, s: s }).length, d = { c: c, s: s || "" };
+    var n = E.totalIn(c, s), m = E.masteredIn(c, s), acc = E.accIn(c, s), d = { c: c, s: s || "" };
     function dm(id) { return { m: id, c: d.c, s: d.s }; }
     var h = '<button class="ghost" data-act="' + (s ? "scope" : "areas") + '" data-c="' + esc(c) + '" data-s="">‹ Zurück</button>';
     h += "<h1>" + esc(s || c) + "</h1>";
     h += '<p class="mute">' + (s ? esc(c) + " · " : "") + (n ? m + " von " + n + " Fragen gemeistert" : "Zufällig erzeugte Aufgaben") + (acc.t ? " · " + U.pct(acc.r, acc.t) + " % richtig" : "") + "</p>";
     if (n) h += bar(U.pct(m, n));
     h += '<div class="hero" style="margin-top:16px"><h3>Lernen</h3><p>Erst, was noch nicht sitzt.</p>' + btn("start", "Lernrunde starten", { data: dm("learn") }) + "</div>";
-    h += row("cards", "▤", "Karteikarten", "Antwort aufdecken, selbst bewerten", { c: d.c, s: d.s }, !n);
-    if (nm) h += row("start", "!", "Fehler wiederholen", nm + (nm === 1 ? " Frage" : " Fragen"), dm("missed"));
+    h += WF.slot("scope", { c: c, s: s, n: n });
     h += '<div class="card cfg" style="margin:12px 0">' + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>";
     h += '<div class="playc"><h2>In diesem Bereich spielen</h2><div class="grid2">' + btn("start", "Test", { sub: "10 Fragen", data: dm("classic") }) + btn("start", "Blitz", { sub: "60 Sekunden", data: dm("blitz") }) + "</div>" + '<div style="margin-top:10px">' + btn("start", "Überleben", { sub: "3 Leben", data: dm("survive") }) + "</div></div>";
     if (!s) {
@@ -226,17 +230,13 @@
     if (sv[x.id]) { delete sv[x.id]; t.textContent = "☆ Merken"; } else { sv[x.id] = 1; t.textContent = "★ Gemerkt"; }
     WF.store.save();
   };
-  H.report = function (d, t) {
-    var x = E.cur(), st = S();
-    (st.reports = st.reports || []).push({ id: x.id, q: x.q, at: U.today() });
-    WF.store.save(); t.outerHTML = '<span class="mute">Gemeldet, danke.</span>';
-  };
+  /* H.report steht in reports.js */
   function next() { if (!E.s) return; E.next() === "result" ? result() : quiz(); }
   H.next = next;
   H.quit = function () {
     var s = E.s;
     E.clearAdv();
-    if (s.m.daily || s.score + s.wrong.length === 0) { s.over = true; home(); return; }
+    if (s.score + s.wrong.length === 0) { s.over = true; home(); return; }
     E.finish(); result();
   };
 
@@ -247,6 +247,7 @@
     var h = '<h1>' + esc(m.title) + (s.scope.s || s.scope.c ? " · " + esc(s.scope.s || s.scope.c) : "") + "</h1>";
     h += '<div class="score">' + (m.timer || m.lives ? s.score + " richtig" : s.score + " von " + n) + "</div>";
     h += '<p class="mute">+' + s.roundXP + " XP · beste Serie " + s.best + (s.record ? " · neuer Rekord" : "") + (s.mastNew ? " · " + s.mastNew + " neu gemeistert" : "") + "</p>";
+    h += WF.slot("result", { s: s });
     s.newBadges.forEach(function (b) { h += '<div class="card"><b>Abzeichen: ' + esc(b.n) + "</b><br><span class=\"small mute\">" + esc(b.d) + "</span></div>"; });
     h += '<div style="margin:16px 0">' + (m.daily ? btn("home", "Fertig", { primary: true }) : btn("again", "Nochmal", { primary: true }) + '<div style="height:8px"></div>' + btn("home", "Zur Startseite")) + "</div>";
     if (s.wrong.length) {
@@ -268,7 +269,8 @@
     var h = "<h1>Profil</h1>" + '<div class="card"><div class="row sb"><div><b>Level ' + L + "</b> · " + E.titleOf(L) + '</div><div class="small mute">' + st.xp + " XP</div></div>" + '<div style="margin-top:10px">' + bar(U.pct(st.xp - a, b - a)) + "</div></div>";
     h += '<div class="stats"><div class="stat"><b>' + t.r + "</b><span>richtig</span></div><div class=\"stat\"><b>" + U.pct(t.r, t.t) + " %</b><span>Trefferquote</span></div><div class=\"stat\"><b>" + st.streak.best + "</b><span>beste Serie (Tage)</span></div></div>";
     h += "<h2>Wissenskarte</h2>" + knowledgeMap();
-    h += "<h2>Einstellungen</h2>" + '<div class="card">' + ui.diffSeg() + prefSeg("Schrift", "font", [["s", "Klein"], ["m", "Normal"], ["l", "Groß"]]) + prefSeg("Darstellung", "theme", [["auto", "Auto"], ["light", "Hell"], ["dark", "Dunkel"]]) + "</div>";
+    h += WF.slot("profile", { st: st });
+    h += "<h2>Einstellungen</h2>" + '<div class="card">' + ui.diffSeg() + prefSeg("Schrift", "font", [["s", "Klein"], ["m", "Normal"], ["l", "Groß"]]) + prefSeg("Darstellung", "theme", [["auto", "Auto"], ["light", "Hell"], ["dark", "Dunkel"]]) + WF.slot("settings") + "</div>";
     h += "<h2>Abzeichen · " + Object.keys(st.badges).length + " / " + WF.badges.length + "</h2>" + '<div class="badges">';
     WF.badges.forEach(function (b) { h += '<div class="badge' + (st.badges[b.id] ? "" : " off") + '"><b>' + esc(b.n) + "</b><span>" + esc(b.d) + "</span></div>"; });
     h += "</div><h2>Fortschritt sichern</h2>" + '<div class="card"><p class="small mute">Der Fortschritt liegt nur auf diesem Gerät. Mit dem Code ziehst du ihn auf ein anderes Gerät um.</p>';

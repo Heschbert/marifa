@@ -1,8 +1,10 @@
-/* Karteikarten: Frage lesen, Antwort aufdecken, selbst bewerten. Wirkt auf den Lernstand der Frage. */
+/* Karteikarten: Frage lesen, Antwort aufdecken, selbst bewerten. Wirkt auf den Lernstand der Frage, auf Tagesserie und Tagesziel. */
 (function () {
   "use strict";
   var WF = window.WF, E = WF.engine, D = WF.data, U = WF.util, esc = U.esc, ui = WF.ui, H = ui.H, btn = ui.btn;
   var C = null;
+
+  WF.registerEntry({ where: "scope", order: 10, render: function (c) { return ui.row("cards", "▤", "Karteikarten", "Antwort aufdecken, selbst bewerten", { c: c.c, s: c.s || "" }, !c.n); } });
 
   H.cards = function (d) {
     var list = E.orderLearn(D.realList(d.c, d.s || null)).slice(0, 20).map(function (x) { return E.prep(x); });
@@ -22,6 +24,8 @@
   H.cshow = function () { card(true); };
   function rate(ok) {
     var x = C.list[C.i], st = WF.store.data, rec = st.qs[x.id] || (st.qs[x.id] = { b: 0 });
+    /* Zählt für Tagesserie und Tagesziel, aber nicht für die Trefferquote: die Bewertung ist eine Selbsteinschätzung. */
+    E.registerPlay();
     E.schedule(rec, ok); if (ok) { C.known++; E.addXP(3); }
     WF.store.save();
     C.i++;

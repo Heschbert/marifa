@@ -18,10 +18,20 @@
     }).then(function (res) {
       var list = [];
       res[0].forEach(function (r) {
-        r.a.forEach(function (q) { list.push({ c: r.t.c, s: q.s, q: q.q, a: q.a, e: q.e, w: q.w || null, h: q.h || "", d: q.d || 2, src: q.src || "" }); });
+        r.a.forEach(function (q) { list.push({ id: q.id || "", c: r.t.c, s: q.s, q: q.q, a: q.a, e: q.e, w: q.w || null, h: q.h || "", d: q.d || 2, src: q.src || "" }); });
       });
       res[1].forEach(function (r) { list = list.concat(WF.builders[r.x.builder](r.j)); });
-      list.forEach(function (x) { x.id = U.hash(x.q); });
+      /* IDs: feste id aus der JSON-Datei, bei erzeugten Fragen aus dem Schlüssel (key). Nur ohne beides aus dem Fragetext.
+         Frühere Versionen nutzten immer den Fragetext; idMap verweist von alt auf neu, damit der Lernstand erhalten bleibt. */
+      var idMap = {}, seen = {};
+      list.forEach(function (x) {
+        var legacy = U.hash(x.q);
+        x.id = x.id || (x.key ? "k_" + U.hash(x.key) : legacy);
+        if (x.id !== legacy) idMap[legacy] = x.id;
+        if (seen[x.id]) console.warn("Doppelte Fragen-ID " + x.id + ": " + x.q); seen[x.id] = 1;
+      });
+      D.idMap = idMap;
+      WF.store.migrateIds(idMap, 1);
       D.real = list; D.byId = {}; list.forEach(function (x) { D.byId[x.id] = x; });
       D.Q = list.concat(WF.gen.entries());
       D.bySub = {}; D.byCat = {}; D.catN = {};

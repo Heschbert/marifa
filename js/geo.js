@@ -49,11 +49,11 @@
       };
       rs.forEach(function (r) {
         var e = fill(w.ecap, r) + (r.n ? " " + r.n : "");
-        out.push({ c: "Geographie", s: sub, q: fill(w.cap, r), ans: r.b, pool: capPool, near: nb(r.a).map(function (c) { return capOf[c]; }).filter(Boolean), why: whyCap, e: e, h: hint(r.b), d: dOf(r.a) });
-        out.push({ c: "Geographie", s: sub, q: fill(w.rev, r), ans: r.a, pool: namePool, near: nb(r.a), why: whyRev, e: e, h: hint(r.a), d: Math.min(3, dOf(r.a) + 1) });
+        out.push({ key: "geo|cap|" + r.a, c: "Geographie", s: sub, q: fill(w.cap, r), ans: r.b, pool: capPool, near: nb(r.a).map(function (c) { return capOf[c]; }).filter(Boolean), why: whyCap, e: e, h: hint(r.b), d: dOf(r.a) });
+        out.push({ key: "geo|rev|" + r.a, c: "Geographie", s: sub, q: fill(w.rev, r), ans: r.a, pool: namePool, near: nb(r.a), why: whyRev, e: e, h: hint(r.a), d: Math.min(3, dOf(r.a) + 1) });
       });
       cs.forEach(function (r) {
-        out.push({ c: "Geographie", s: sub, q: fill(w.city, r), ans: r.b, pool: namePool, near: nb(r.b), why: whyCity, e: r.a + " liegt in " + r.b + ".", h: hint(r.b), d: 2 });
+        out.push({ key: "geo|city|" + r.a + "|" + r.b, c: "Geographie", s: sub, q: fill(w.city, r), ans: r.b, pool: namePool, near: nb(r.b), why: whyCity, e: r.a + " liegt in " + r.b + ".", h: hint(r.b), d: 2 });
       });
     });
     return out;

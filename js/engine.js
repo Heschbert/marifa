@@ -138,7 +138,7 @@
     var m = WF.modes[modeId];
     scope = scope || { c: null, s: null };
     var s = E.s = { m: m, scope: scope, round: [], idx: 0, score: 0, wrong: [], streak: 0, best: 0, lives: m.lives || 0, endAt: 0, roundXP: 0,
-                    newBadges: [], planned: 0, learned: {}, retries: {}, mastNew: 0, answered: false, over: false, record: false,
+                    newBadges: [], log: [], planned: 0, learned: {}, retries: {}, mastNew: 0, answered: false, over: false, record: false,
                     shownAt: Date.now(), adv: null, jokers: { fifty: m.helps === "limited" ? 1 : 0, hint: m.helps === "limited" ? 1 : 0 } };
     var list = m.build(s);
     s.round = m.prepped ? list : list.map(function (x) { return E.prep(x); });
@@ -194,6 +194,7 @@
     if (ok) {
       s.learned[x.id] = 1;
       if (!retry) {
+        s.log.push(1);
         s.score++; s.streak++; cs.r++; ss.r++; st.tot.r++;
         if (s.streak > s.best) s.best = s.streak;
         if (s.streak > st.maxCombo) st.maxCombo = s.streak;
@@ -206,6 +207,7 @@
       s.streak = 0;
       if (rec) E.schedule(rec, false);
       if (m.lives) s.lives--;
+      if (!retry) s.log.push(0);
       if (!retry) s.wrong.push({ q: x.q, given: x.opts[i].t, why: x.opts[i].why, right: x.opts.filter(function (o) { return o.ok; })[0].t, e: x.e });
       if (m.requeue && (s.retries[x.id] || 0) < 2) {
         s.retries[x.id] = (s.retries[x.id] || 0) + 1;
@@ -249,10 +251,12 @@
     E.clearAdv();
     if (s.m.id === "blitz" && s.score > st.best.blitz) { st.best.blitz = s.score; s.record = true; }
     if (s.m.id === "survive" && s.score > st.best.survive) { st.best.survive = s.score; s.record = true; }
-    if (s.m.daily && !st.dailyDone[U.today()] && s.score + s.wrong.length === s.round.length) {
-      st.dailyDone[U.today()] = { s: s.score };
-      E.addXP(30);
-      if (s.score === s.round.length) E.addXP(20);
+    /* Tagesrätsel: zählt als gespielt, sobald eine Frage beantwortet ist, auch bei Abbruch.
+       So lässt es sich nicht neu starten, nachdem man Antworten gesehen hat. Bonus-XP nur für vollständige Runden. */
+    var answered = s.score + s.wrong.length;
+    if (s.m.daily && !st.dailyDone[U.today()] && answered > 0) {
+      st.dailyDone[U.today()] = { s: s.score, n: answered, log: s.log.slice() };
+      if (answered === s.round.length) { E.addXP(30); if (s.score === s.round.length) E.addXP(20); }
     }
     WF.emit("roundEnd", s);
     WF.store.save();
