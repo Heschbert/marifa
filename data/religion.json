@@ -1642,5 +1642,357 @@
   "h": "Ihr Name bedeutet „Danksagung“.",
   "d": 3,
   "p": 3
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Welche drei Religionen werden als abrahamitisch bezeichnet?",
+  "a": [
+   "Judentum, Christentum, Islam",
+   "Hinduismus, Buddhismus, Islam",
+   "Judentum, Buddhismus, Sikhismus",
+   "Christentum, Daoismus, Shintō"
+  ],
+  "w": [
+   "",
+   "Hinduismus und Buddhismus berufen sich nicht auf Abraham.",
+   "Buddhismus und Sikhismus haben keinen Bezug zu Abraham.",
+   "Daoismus und Shintō stammen aus China und Japan, ohne Bezug zu Abraham."
+  ],
+  "e": "Judentum, Christentum und Islam sehen Abraham als Stammvater des Glaubens an den einen Gott.",
+  "h": "Alle drei sind monotheistisch.",
+  "d": 1,
+  "p": 1,
+  "id": "n079c45e"
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Was bedeutet Monotheismus?",
+  "a": [
+   "Glaube an einen Gott",
+   "Glaube an viele Götter zugleich",
+   "Glaube ohne jeden Gott",
+   "Verehrung der Ahnen"
+  ],
+  "w": [
+   "",
+   "Das ist Polytheismus.",
+   "Das ist Atheismus.",
+   "Ahnenverehrung ist eine eigene religiöse Praxis."
+  ],
+  "e": "„Mono“ heißt einzig, „theos“ Gott. Judentum, Christentum und Islam sind monotheistisch, der Hinduismus kennt viele Gottheiten.",
+  "h": "Griechisch „mono“.",
+  "d": 1,
+  "p": 1,
+  "id": "n4a4343d"
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Was ist das Nirwana im Buddhismus?",
+  "a": [
+   "Das Erlöschen von Gier und Leid",
+   "Das Paradies, in das man nach dem Tod kommt",
+   "Der Name des ersten Klosters",
+   "Ein jährliches Lichterfest"
+  ],
+  "w": [
+   "",
+   "Nirwana ist kein Ort wie ein Paradies, sondern ein Zustand.",
+   "Nirwana ist kein Kloster.",
+   "Nirwana ist kein Fest."
+  ],
+  "e": "Nirwana („Verlöschen“) bezeichnet das Ende von Gier, Hass und Verblendung und damit die Befreiung aus dem Kreislauf der Wiedergeburten.",
+  "h": "Ein Zustand, kein Ort.",
+  "d": 2,
+  "p": 1,
+  "id": "n756fb87"
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Was bedeutet „koscher“ im Judentum?",
+  "a": [
+   "Nach den Speisegesetzen erlaubt",
+   "Am Schabbat frisch gekocht und serviert",
+   "Vom Rabbiner gesegnet",
+   "Ohne jedes Fleisch zubereitet"
+  ],
+  "w": [
+   "",
+   "Am Schabbat wird nach jüdischem Gesetz gerade nicht gekocht.",
+   "Ein Segen allein macht Essen nicht koscher.",
+   "Auch Fleisch kann koscher sein, wenn es nach den Regeln geschlachtet wurde."
+  ],
+  "e": "Koscher heißt „tauglich“. Die Speisegesetze verbieten etwa Schweinefleisch und das Mischen von Milch und Fleisch.",
+  "h": "Es geht um Regeln für Essen.",
+  "d": 1,
+  "p": 1,
+  "id": "nc9318a8"
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Was bedeutet „halal“ im Islam?",
+  "a": [
+   "Erlaubt",
+   "Verboten",
+   "Heilig",
+   "Gesegnet"
+  ],
+  "w": [
+   "",
+   "Verboten heißt „haram“.",
+   "Heilig ist nicht die Bedeutung von halal.",
+   "Gesegnet ist nicht die Bedeutung von halal."
+  ],
+  "e": "Halal bedeutet erlaubt, haram verboten. Das gilt für Speisen, aber auch für Handlungen.",
+  "h": "Das Gegenteil heißt haram.",
+  "d": 1,
+  "p": 1,
+  "id": "nc6cc583"
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Welche Richtung ist im Islam die größte?",
+  "a": [
+   "Sunniten",
+   "Schiiten",
+   "Sufis",
+   "Ahmadiyya"
+  ],
+  "w": [
+   "",
+   "Schiiten machen etwa 10–15 % der Muslime aus.",
+   "Der Sufismus ist eine mystische Strömung, keine eigene Hauptrichtung.",
+   "Die Ahmadiyya ist eine kleine Gemeinschaft."
+  ],
+  "e": "Rund 85–90 % der Muslime weltweit sind Sunniten. Schiiten stellen in Iran, Irak und Bahrain die Mehrheit.",
+  "h": "Etwa neun von zehn Muslimen.",
+  "d": 1,
+  "p": 1,
+  "id": "nda0151f"
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Was bezeichnet das Kastensystem in Indien ursprünglich?",
+  "a": [
+   "Eine erbliche Gesellschaftsordnung",
+   "Eine Gruppe von Tempeln",
+   "Eine Form des Gebets",
+   "Eine Schule der Meditation"
+  ],
+  "w": [
+   "",
+   "Tempel sind keine Kasten.",
+   "Kasten sind keine Gebetsform.",
+   "Kasten sind keine Meditationsschule."
+  ],
+  "e": "Das Kastensystem teilte Menschen nach Geburt in Gruppen mit festen Rollen ein. Diskriminierung nach Kaste ist in Indiens Verfassung verboten, wirkt aber im Alltag teils fort.",
+  "h": "Man wird hineingeboren.",
+  "d": 2,
+  "id": "nc2cd438"
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Wie heißt das Gotteshaus im Judentum?",
+  "a": [
+   "Synagoge",
+   "Moschee",
+   "Pagode",
+   "Gurdwara"
+  ],
+  "w": [
+   "",
+   "Die Moschee ist das Gotteshaus im Islam.",
+   "Pagoden sind buddhistische Turmbauten.",
+   "Gurdwara heißt das Gotteshaus der Sikhs."
+  ],
+  "e": "Die Synagoge ist Ort für Gebet, Lesung der Tora und Lernen.",
+  "h": "Griechisch für „Versammlung“.",
+  "d": 1,
+  "p": 1,
+  "id": "n850da8b"
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Wozu verpflichten sich buddhistische Mönche traditionell?",
+  "a": [
+   "Ohne Besitz und ehelos zu leben",
+   "Jedes Jahr nach Mekka zu pilgern",
+   "Täglich Fleisch zu opfern",
+   "Eine Familie zu gründen"
+  ],
+  "w": [
+   "",
+   "Die Pilgerfahrt nach Mekka gehört zum Islam.",
+   "Tieropfer passen nicht zur buddhistischen Lehre der Gewaltlosigkeit.",
+   "Mönche leben traditionell ehelos."
+  ],
+  "e": "Buddhistische Mönche und Nonnen leben nach Ordensregeln: ehelos, ohne Privatbesitz, oft von Almosen.",
+  "h": "Verzicht ist zentral.",
+  "d": 2,
+  "id": "n97a0137"
+ },
+ {
+  "s": "Bibel & Feste",
+  "q": "Was erzählt das Gleichnis vom barmherzigen Samariter?",
+  "a": [
+   "Auch Fremden helfen",
+   "Fleißige Arbeit wird am Ende belohnt",
+   "Reiche kommen nicht in den Himmel",
+   "Man soll nicht schwören"
+  ],
+  "w": [
+   "",
+   "Das erzählt eher das Gleichnis von den Talenten.",
+   "Das betrifft eine andere Stelle mit dem Kamel und dem Nadelöhr.",
+   "Das steht in der Bergpredigt."
+  ],
+  "e": "Ein Verletzter wird von einem Priester und einem Leviten übergangen. Ein Samariter, damals ein Außenseiter, hilft ihm. Botschaft: Nächstenliebe gilt jedem.",
+  "h": "Es geht um Nächstenliebe.",
+  "d": 1,
+  "p": 1,
+  "id": "n8e2f7f4"
+ },
+ {
+  "s": "Bibel & Feste",
+  "q": "Was ist die „goldene Regel“?",
+  "a": [
+   "Andere so behandeln wie man selbst behandelt werden will",
+   "Gold ist wertvoller als Silber",
+   "Am Sonntag soll man ruhen",
+   "Man soll Gott über alles lieben und ihm allein dienen"
+  ],
+  "w": [
+   "",
+   "Das hat mit der goldenen Regel nichts zu tun.",
+   "Das ist das Sabbat- bzw. Sonntagsgebot.",
+   "Das ist das erste Gebot der Liebe, nicht die goldene Regel."
+  ],
+  "e": "Die goldene Regel findet sich in fast allen Religionen und Ethiken, etwa in der Bergpredigt und bei Konfuzius, oft verneint: „Was du nicht willst, dass man dir tu…“.",
+  "h": "Gilt in fast allen Kulturen.",
+  "d": 1,
+  "p": 1,
+  "id": "n62a45b3"
+ },
+ {
+  "s": "Bibel & Feste",
+  "q": "Was unterscheidet die evangelische von der katholischen Kirche unter anderem?",
+  "a": [
+   "Kein Papst als Oberhaupt",
+   "Keine Taufe",
+   "Keine Bibel",
+   "Kein Weihnachten"
+  ],
+  "w": [
+   "",
+   "Auch evangelische Christen taufen.",
+   "Die Bibel ist für Evangelische sogar besonders zentral.",
+   "Auch evangelische Christen feiern Weihnachten."
+  ],
+  "e": "Evangelische Kirchen erkennen den Papst nicht als Oberhaupt an, kennen zwei statt sieben Sakramente und erlauben Pfarrern die Ehe.",
+  "h": "Es geht um Rom.",
+  "d": 1,
+  "p": 1,
+  "id": "nb101a40"
+ },
+ {
+  "s": "Bibel & Feste",
+  "q": "Was feiern Christen an Karfreitag?",
+  "a": [
+   "Das Gedenken an die Kreuzigung",
+   "Die Auferstehung Jesu",
+   "Die Geburt Jesu",
+   "Die Ankunft des Heiligen Geistes"
+  ],
+  "w": [
+   "",
+   "Die Auferstehung feiert man an Ostern.",
+   "Die Geburt feiert man an Weihnachten.",
+   "Das wird an Pfingsten gefeiert."
+  ],
+  "e": "Karfreitag ist der Tag des Gedenkens an das Leiden und den Tod Jesu am Kreuz. In Deutschland ist er ein stiller Feiertag.",
+  "h": "Zwei Tage vor Ostersonntag.",
+  "d": 1,
+  "p": 1,
+  "id": "n9f6f211"
+ },
+ {
+  "s": "Bibel & Feste",
+  "q": "Woran erinnert Sankt Martin am 11. November?",
+  "a": [
+   "Er teilte seinen Mantel",
+   "Er übersetzte die Bibel ins Lateinische",
+   "Er gründete die erste Kirche Europas",
+   "Er besiegte einen Drachen"
+  ],
+  "w": [
+   "",
+   "Die Bibel übersetzten u. a. Hieronymus und Luther.",
+   "Die Gründung der Kirche wird nicht Martin zugeschrieben.",
+   "Den Drachen besiegt in der Legende der heilige Georg."
+  ],
+  "e": "Martin von Tours teilte der Legende nach als Soldat seinen Mantel mit einem frierenden Bettler. Daran erinnern Laternenumzüge.",
+  "h": "Laternen und ein Pferd.",
+  "d": 1,
+  "id": "n67d06f0"
+ },
+ {
+  "s": "Bibel & Feste",
+  "q": "Was ist eine Konfirmation?",
+  "a": [
+   "Bestätigung der Taufe",
+   "Die erste Beichte in der katholischen Kirche",
+   "Die Weihe eines Priesters",
+   "Ein jüdisches Fest mit 13 Jahren"
+  ],
+  "w": [
+   "",
+   "Die erste Beichte ist katholisch und keine Konfirmation.",
+   "Das ist die Priesterweihe.",
+   "Das ist die Bar oder Bat Mizwa."
+  ],
+  "e": "Jugendliche bekräftigen mit etwa 14 Jahren ihre Taufe. Das katholische Gegenstück ist die Firmung.",
+  "h": "Lateinisch „confirmatio“ = Bestärkung.",
+  "d": 1,
+  "id": "n29d67d3"
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Warum beginnt der Ramadan jedes Jahr an einem anderen Datum?",
+  "a": [
+   "Er folgt dem Mondkalender",
+   "Er wird jedes Jahr neu festgelegt und ausgelost",
+   "Er richtet sich nach der Ernte",
+   "Er folgt dem chinesischen Kalender"
+  ],
+  "w": [
+   "",
+   "Der Termin wird nicht ausgelost.",
+   "Die Ernte bestimmt den Termin nicht.",
+   "Der chinesische Kalender spielt keine Rolle."
+  ],
+  "e": "Das islamische Mondjahr ist etwa 11 Tage kürzer als das Sonnenjahr. Deshalb beginnt der Ramadan jedes Jahr früher.",
+  "h": "Etwa 354 Tage pro Jahr.",
+  "d": 2,
+  "id": "n628cc5e"
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Was ist Atheismus?",
+  "a": [
+   "Kein Glaube an Götter",
+   "Der Glaube an viele Götter",
+   "Die Verehrung der Natur",
+   "Eine Richtung des Buddhismus"
+  ],
+  "w": [
+   "",
+   "Das ist Polytheismus.",
+   "Das ist eher Pantheismus oder Naturreligion.",
+   "Atheismus ist keine buddhistische Schule."
+  ],
+  "e": "Atheisten glauben nicht an Götter. Agnostiker halten die Frage nach Gott für nicht entscheidbar. In Deutschland gehört inzwischen fast die Hälfte keiner Religionsgemeinschaft an.",
+  "h": "Griechisch „a“ = ohne.",
+  "d": 1,
+  "p": 1,
+  "id": "nff6bb03"
  }
 ]

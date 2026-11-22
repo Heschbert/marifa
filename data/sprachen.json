@@ -1637,5 +1637,247 @@
   "h": "Konsonanten im Hochdeutschen verändert.",
   "d": 3,
   "p": 3
+ },
+ {
+  "s": "Wörter & Herkunft",
+  "q": "Was bedeutet die Abkürzung „z. B.“?",
+  "a": [
+   "zum Beispiel",
+   "zur Bestätigung",
+   "zum Bedarf",
+   "zur Beachtung"
+  ],
+  "w": [
+   "",
+   "Dafür gibt es keine übliche Abkürzung „z. B.“.",
+   "Das ist keine gebräuchliche Bedeutung.",
+   "Dafür schreibt man nicht „z. B.“."
+  ],
+  "e": "„z. B.“ steht für „zum Beispiel“. Ähnlich: „u. a.“ (unter anderem), „d. h.“ (das heißt), „ggf.“ (gegebenenfalls).",
+  "h": "Steht oft vor einer Aufzählung.",
+  "d": 1,
+  "id": "n9337275"
+ },
+ {
+  "s": "Wörter & Herkunft",
+  "q": "Was bedeutet „etc.“?",
+  "a": [
+   "Und so weiter",
+   "Und Ähnliches mehr im Anhang",
+   "Siehe oben",
+   "Ende des Textes"
+  ],
+  "w": [
+   "",
+   "Ein Anhang ist damit nicht gemeint.",
+   "„Siehe oben“ kürzt man „s. o.“ ab.",
+   "„etc.“ beendet keinen Text."
+  ],
+  "e": "„etc.“ kommt vom lateinischen „et cetera“, „und das Übrige“. Auf Deutsch sagt man auch „usw.“.",
+  "h": "Lateinisch „et cetera“.",
+  "d": 1,
+  "id": "n52fd76a"
+ },
+ {
+  "s": "Wörter & Herkunft",
+  "q": "Was bedeutet „Status quo“?",
+  "a": [
+   "Der aktuelle Zustand",
+   "Ein hoher Rang",
+   "Eine Statistik",
+   "Ein Rechtsstreit"
+  ],
+  "w": [
+   "",
+   "Ein hoher Rang ist ein „Status“, aber nicht der „Status quo“.",
+   "Mit Statistik hat der Begriff nichts zu tun.",
+   "Ein Rechtsstreit ist ein Prozess."
+  ],
+  "e": "„Status quo“ ist lateinisch für „der Zustand, in dem“ – also wie es gerade ist.",
+  "h": "Wie es jetzt ist.",
+  "d": 1,
+  "p": 1,
+  "id": "n8384272"
+ },
+ {
+  "s": "Wörter & Herkunft",
+  "q": "Was bedeutet „de facto“?",
+  "a": [
+   "Tatsächlich",
+   "Laut Gesetz",
+   "Vorläufig",
+   "Im Zweifel"
+  ],
+  "w": [
+   "",
+   "„Laut Gesetz“ heißt „de jure“.",
+   "Vorläufig heißt „provisorisch“ oder „ad interim“.",
+   "„Im Zweifel“ ist „in dubio“."
+  ],
+  "e": "„De facto“ (tatsächlich) steht oft im Gegensatz zu „de jure“ (rechtlich). Beispiel: Jemand ist de jure Chef, de facto entscheidet aber ein anderer.",
+  "h": "Das Gegenteil ist „de jure“.",
+  "d": 2,
+  "p": 1,
+  "id": "n5cba46f"
+ },
+ {
+  "s": "Wörter & Herkunft",
+  "q": "Was ist ein Akronym wie „Laser“?",
+  "a": [
+   "Ein Kurzwort aus Anfangsbuchstaben",
+   "Ein Wort mit zwei Bedeutungen",
+   "Ein Wort, das rückwärts gleich ist",
+   "Ein Fremdwort aus dem Griechischen"
+  ],
+  "w": [
+   "",
+   "Das ist ein Homonym.",
+   "Das ist ein Palindrom.",
+   "Akronyme können aus jeder Sprache stammen."
+  ],
+  "e": "„Laser“ steht für „Light Amplification by Stimulated Emission of Radiation“. Weitere Beispiele: NATO, UNESCO.",
+  "h": "Aus den ersten Buchstaben gebildet.",
+  "d": 2,
+  "id": "n886686d"
+ },
+ {
+  "s": "Sprachen der Welt",
+  "q": "Was bedeutet „Danke“ auf Spanisch?",
+  "a": [
+   "Gracias",
+   "Merci",
+   "Grazie",
+   "Obrigado"
+  ],
+  "w": [
+   "",
+   "„Merci“ ist Französisch.",
+   "„Grazie“ ist Italienisch.",
+   "„Obrigado“ ist Portugiesisch."
+  ],
+  "e": "Spanisch wird von rund 500 Millionen Menschen als Muttersprache gesprochen – nach Mandarin die zweitmeisten.",
+  "h": "Spanien und Lateinamerika.",
+  "d": 1,
+  "id": "n9f0e5dc"
+ },
+ {
+  "s": "Sprachen der Welt",
+  "q": "Welche Sprache spricht man in Mexiko überwiegend?",
+  "a": [
+   "Spanisch",
+   "Portugiesisch",
+   "Englisch",
+   "Nahuatl"
+  ],
+  "w": [
+   "",
+   "Portugiesisch spricht man in Brasilien.",
+   "Englisch ist in Mexiko keine Mehrheitssprache.",
+   "Nahuatl wird von rund 1,6 Millionen gesprochen, ist aber keine Mehrheitssprache."
+  ],
+  "e": "Mexiko ist das Land mit den meisten Spanischsprechern der Welt. Daneben sind zahlreiche indigene Sprachen anerkannt.",
+  "h": "Das Land mit den meisten Sprechern dieser Sprache.",
+  "d": 1,
+  "id": "n02eb10e"
+ },
+ {
+  "s": "Sprachen der Welt",
+  "q": "Welche Sprache lernen in Deutschland die meisten Schülerinnen und Schüler als erste Fremdsprache?",
+  "a": [
+   "Englisch",
+   "Französisch",
+   "Latein",
+   "Spanisch"
+  ],
+  "w": [
+   "",
+   "Französisch ist meist die zweite Fremdsprache, außer in Grenzregionen.",
+   "Latein wird seltener und meist später gewählt.",
+   "Spanisch wächst, ist aber selten erste Fremdsprache."
+  ],
+  "e": "Englisch ist in fast allen Bundesländern ab der Grundschule erste Fremdsprache.",
+  "h": "Die Weltsprache.",
+  "d": 1,
+  "id": "naaee817"
+ },
+ {
+  "s": "Sprachen der Welt",
+  "q": "Was ist ein Dialekt?",
+  "a": [
+   "Eine regionale Sprachform",
+   "Eine ausgestorbene Sprache",
+   "Eine Fachsprache für Juristen und Behörden",
+   "Eine Sprache ohne Schrift"
+  ],
+  "w": [
+   "",
+   "Dialekte werden aktiv gesprochen.",
+   "Das ist eine Fachsprache, kein Dialekt.",
+   "Auch Sprachen ohne Schrift sind nicht automatisch Dialekte."
+  ],
+  "e": "Dialekte wie Bairisch oder Plattdeutsch sind regionale Varietäten. Ob etwas Dialekt oder eigene Sprache ist, ist oft auch eine politische Frage.",
+  "h": "Abhängig von der Gegend.",
+  "d": 1,
+  "id": "n45653e9"
+ },
+ {
+  "s": "Wörter & Herkunft",
+  "q": "Was bedeutet „Schadenfreude“, ein Wort, das auch im Englischen verwendet wird?",
+  "a": [
+   "Freude über fremdes Pech",
+   "Freude an der eigenen Arbeit",
+   "Angst vor Fehlern",
+   "Lust auf Reisen in die Ferne"
+  ],
+  "w": [
+   "",
+   "Das wäre eher „Arbeitsfreude“.",
+   "Das wäre eher „Versagensangst“.",
+   "Das ist „Fernweh“ oder „Wanderlust“."
+  ],
+  "e": "Deutsche Wörter wie „Schadenfreude“, „Angst“, „Zeitgeist“ und „Wanderlust“ wurden ins Englische übernommen.",
+  "h": "Nicht nett, aber menschlich.",
+  "d": 1,
+  "id": "n6b41728"
+ },
+ {
+  "s": "Wörter & Herkunft",
+  "q": "Was bedeutet das Wort „Telefon“ wörtlich?",
+  "a": [
+   "Fernstimme",
+   "Schnellsprecher",
+   "Drahtbote",
+   "Hörrohr"
+  ],
+  "w": [
+   "",
+   "„Tele“ heißt fern, nicht schnell.",
+   "Ein Draht steckt nicht im Wort.",
+   "Ein Rohr steckt nicht im Wort."
+  ],
+  "e": "Griechisch „tele“ = fern, „phone“ = Stimme, Ton. Ähnlich: Telegraf (Fernschreiber), Teleskop (Fernseher im Wortsinn).",
+  "h": "Griechisch „tele“ = fern.",
+  "d": 2,
+  "id": "n7036739"
+ },
+ {
+  "s": "Wörter & Herkunft",
+  "q": "Aus welcher Sprache stammen viele Wörter rund ums Essen wie „Restaurant“ und „Menü“?",
+  "a": [
+   "Französisch",
+   "Italienisch",
+   "Englisch",
+   "Spanisch"
+  ],
+  "w": [
+   "",
+   "Aus dem Italienischen kommen eher Pasta, Pizza, Espresso.",
+   "„Restaurant“ und „Menü“ kamen nicht über das Englische.",
+   "Aus dem Spanischen kommen eher Tapas oder Paella."
+  ],
+  "e": "Im 18. und 19. Jahrhundert prägte Frankreich die gehobene Küche Europas; viele Begriffe wurden übernommen.",
+  "h": "Haute Cuisine.",
+  "d": 1,
+  "id": "nfba4fbe"
  }
 ]

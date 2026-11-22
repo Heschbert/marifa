@@ -2555,5 +2555,150 @@
   "d": 1,
   "id": "nb9a1850",
   "p": 1
+ },
+ {
+  "s": "Pflanzen & Ökologie",
+  "q": "Was ist der Hauptgrund für das weltweite Artensterben?",
+  "a": [
+   "Zerstörung von Lebensräumen",
+   "Natürliche Vulkanausbrüche",
+   "Zu viele Nationalparks",
+   "Die Erdrotation"
+  ],
+  "w": [
+   "",
+   "Vulkane spielen dafür heute kaum eine Rolle.",
+   "Nationalparks schützen Arten.",
+   "Die Erdrotation hat damit nichts zu tun."
+  ],
+  "e": "Laut Weltbiodiversitätsrat IPBES (2019) ist die veränderte Land- und Meeresnutzung die wichtigste Ursache, gefolgt von direkter Ausbeutung, Klimawandel, Verschmutzung und invasiven Arten.",
+  "h": "Wo Tiere und Pflanzen leben.",
+  "d": 1,
+  "p": 1,
+  "id": "n6bdcca4"
+ },
+ {
+  "s": "Pflanzen & Ökologie",
+  "q": "Was ist eine invasive Art?",
+  "a": [
+   "Eine eingeschleppte, verdrängende Art",
+   "Eine Art, die nur nachts aktiv ist",
+   "Eine besonders seltene Art",
+   "Eine Art, die im Winter in den Süden wandert"
+  ],
+  "w": [
+   "",
+   "Nachtaktivität macht eine Art nicht invasiv.",
+   "Invasive Arten sind meist eher häufig.",
+   "Wanderungen machen eine Art nicht invasiv."
+  ],
+  "e": "Invasive Arten wie der Waschbär oder das Drüsige Springkraut wurden vom Menschen eingeführt und schaden heimischen Ökosystemen.",
+  "h": "Sie kommt von woanders.",
+  "d": 1,
+  "p": 1,
+  "id": "n24f320e"
+ },
+ {
+  "s": "Tiere",
+  "q": "Was sollte man tun, wenn man im Wald einem Wildschwein begegnet?",
+  "a": [
+   "Ruhig bleiben und langsam zurückweichen",
+   "Laut schreiend darauf zurennen",
+   "Es füttern, um es zu beruhigen",
+   "Sofort auf einen Baum klettern und warten"
+  ],
+  "w": [
+   "",
+   "Bedrängte Wildschweine können angreifen.",
+   "Füttern ist verboten und macht Tiere zutraulich und gefährlicher.",
+   "Das ist meist unnötig und riskant."
+  ],
+  "e": "Wildschweine sind scheu und greifen meist nur an, wenn sie sich bedrängt fühlen oder Junge schützen. Abstand halten, ruhig zurückziehen, Hunde an die Leine.",
+  "h": "Abstand geben.",
+  "d": 1,
+  "p": 1,
+  "id": "nb27c860"
+ },
+ {
+  "s": "Tiere",
+  "q": "Was ist der Unterschied zwischen Säugetieren und Vögeln bei der Fortpflanzung meist?",
+  "a": [
+   "Säugetiere gebären lebende Junge",
+   "Vögel säugen ihre Jungen mit Milch",
+   "Säugetiere legen immer Eier",
+   "Vögel haben keine Eltern"
+  ],
+  "w": [
+   "",
+   "Vögel säugen nicht; das tun Säugetiere.",
+   "Nur sehr wenige Säugetiere wie das Schnabeltier legen Eier.",
+   "Natürlich haben Vögel Eltern."
+  ],
+  "e": "Fast alle Säugetiere bringen lebende Junge zur Welt und säugen sie; Vögel legen Eier. Ausnahme: Schnabeltier und Ameisenigel legen Eier.",
+  "h": "Der Name verrät viel.",
+  "d": 1,
+  "id": "na6bad85"
+ },
+ {
+  "s": "Pflanzen & Ökologie",
+  "q": "Warum sollte man Pilze nur sammeln, wenn man sie sicher kennt?",
+  "a": [
+   "Giftige Doppelgänger",
+   "Pilze wachsen sonst nicht nach",
+   "Sammeln ist grundsätzlich verboten",
+   "Pilze verlieren sonst ihren Geschmack"
+  ],
+  "w": [
+   "",
+   "Mit dem Nachwachsen hat das nichts zu tun.",
+   "Sammeln in kleinen Mengen für den Eigenbedarf ist meist erlaubt.",
+   "Der Geschmack ändert sich dadurch nicht."
+  ],
+  "e": "Viele Speisepilze haben giftige Doppelgänger, etwa Champignon und Knollenblätterpilz. Im Zweifel eine Pilzberatung fragen; Pilz-Apps sind nicht zuverlässig genug.",
+  "h": "Verwechslungsgefahr.",
+  "d": 1,
+  "p": 1,
+  "id": "ncab1adf"
+ },
+ {
+  "s": "Pflanzen & Ökologie",
+  "q": "Welche Pflanze ist in vielen Gärten giftig für Kinder und Haustiere?",
+  "a": [
+   "Eibe",
+   "Basilikum",
+   "Sonnenblume",
+   "Erdbeere"
+  ],
+  "w": [
+   "",
+   "Basilikum ist ein Küchenkraut.",
+   "Sonnenblumen sind ungiftig.",
+   "Erdbeeren sind essbar."
+  ],
+  "e": "Fast alle Teile der Eibe sind stark giftig, außer dem roten Fruchtfleisch (der Samen darin ist giftig). Auch Oleander, Goldregen und Fingerhut sind giftig.",
+  "h": "Ein immergrüner Nadelbaum.",
+  "d": 2,
+  "id": "n85dd2a6"
+ },
+ {
+  "s": "Tiere",
+  "q": "Warum sind Insekten für Ökosysteme so wichtig?",
+  "a": [
+   "Bestäubung, Zersetzung, Nahrung",
+   "Sie produzieren den meisten Sauerstoff",
+   "Sie halten das Wetter stabil",
+   "Sie verhindern Erdbeben"
+  ],
+  "w": [
+   "",
+   "Sauerstoff produzieren vor allem Pflanzen und Algen.",
+   "Das Wetter bestimmen Insekten nicht.",
+   "Mit Erdbeben haben Insekten nichts zu tun."
+  ],
+  "e": "Insekten bestäuben Pflanzen, zersetzen totes Material und sind Nahrung für Vögel, Fledermäuse und Fische. Die Krefelder Studie (2017) fand in Schutzgebieten über 75 % Rückgang der Biomasse fliegender Insekten in 27 Jahren.",
+  "h": "Mehrere Rollen zugleich.",
+  "d": 1,
+  "p": 1,
+  "id": "n99cf09f"
  }
 ]

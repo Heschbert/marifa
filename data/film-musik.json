@@ -1710,10 +1710,10 @@
   "s": "Musik",
   "q": "Was ist ein Refrain?",
   "a": [
-   "Der wiederkehrende Teil eines Liedes",
+   "Der wiederkehrende Teil",
    "Das Instrumentalsolo in der Mitte",
    "Die erste Strophe eines Liedes",
-   "Das langsame Ausblenden am Ende"
+   "Das langsame Ausblenden am Ende eines Songs"
   ],
   "w": [
    "",
@@ -1767,5 +1767,165 @@
   "d": 1,
   "id": "na0472b7",
   "p": 1
+ },
+ {
+  "s": "Musik",
+  "q": "Welche Instrumentengruppe bilden Geige, Bratsche, Cello und Kontrabass?",
+  "a": [
+   "Streichinstrumente",
+   "Holzblasinstrumente",
+   "Schlaginstrumente",
+   "Tasteninstrumente"
+  ],
+  "w": [
+   "",
+   "Zu den Holzbläsern zählen Flöte, Oboe, Klarinette und Fagott.",
+   "Schlaginstrumente sind etwa Pauke und Trommel.",
+   "Tasteninstrumente sind etwa Klavier und Orgel."
+  ],
+  "e": "Die Streicher bilden das größte Register im Sinfonieorchester.",
+  "h": "Mit dem Bogen gespielt.",
+  "d": 1,
+  "id": "nf393fd7"
+ },
+ {
+  "s": "Musik",
+  "q": "Was ist ein Dur-Akkord im Vergleich zu einem Moll-Akkord meist?",
+  "a": [
+   "Heller, fröhlicher klingend",
+   "Immer lauter gespielt",
+   "Nur mit Blasinstrumenten spielbar",
+   "Ohne Grundton"
+  ],
+  "w": [
+   "",
+   "Mit Lautstärke hat Dur nichts zu tun.",
+   "Dur-Akkorde lassen sich auf jedem Instrument spielen.",
+   "Auch Dur-Akkorde haben einen Grundton."
+  ],
+  "e": "Dur und Moll unterscheiden sich in der Terz: große Terz (Dur) wirkt meist hell, kleine Terz (Moll) eher traurig – ein kulturell geprägter Eindruck.",
+  "h": "Es geht um die Stimmung.",
+  "d": 2,
+  "id": "n7104d6e"
+ },
+ {
+  "s": "Musik",
+  "q": "Welcher Musiker wird „King of Rock ’n’ Roll“ genannt?",
+  "a": [
+   "Elvis Presley",
+   "Chuck Berry",
+   "Little Richard",
+   "Buddy Holly"
+  ],
+  "w": [
+   "",
+   "Chuck Berry gilt als wichtiger Pionier, trägt aber nicht diesen Beinamen.",
+   "Little Richard nannte sich selbst „Architect of Rock ’n’ Roll“.",
+   "Buddy Holly starb 1959 jung und trug diesen Titel nicht."
+  ],
+  "e": "Elvis Presley wurde ab Mitte der 1950er weltberühmt und ist einer der meistverkauften Solokünstler.",
+  "h": "Graceland.",
+  "d": 1,
+  "id": "n288c8e9"
+ },
+ {
+  "s": "Musik",
+  "q": "Welche Band veröffentlichte das Album „Abbey Road“ (1969)?",
+  "a": [
+   "The Beatles",
+   "The Rolling Stones",
+   "The Who",
+   "The Kinks"
+  ],
+  "w": [
+   "",
+   "Die Stones veröffentlichten 1969 „Let It Bleed“.",
+   "The Who veröffentlichten 1969 „Tommy“.",
+   "The Kinks veröffentlichten 1969 „Arthur“."
+  ],
+  "e": "Das Cover mit den vier Bandmitgliedern auf dem Zebrastreifen in London ist eines der bekanntesten der Popgeschichte.",
+  "h": "Zebrastreifen in London.",
+  "d": 1,
+  "id": "nb881adf"
+ },
+ {
+  "s": "Film",
+  "q": "Was bedeutet „Spoiler“?",
+  "a": [
+   "Eine Vorwegnahme der Handlung",
+   "Ein Werbespot vor dem Hauptfilm im Kino",
+   "Ein Fehler beim Filmdreh",
+   "Eine besonders teure Szene"
+  ],
+  "w": [
+   "",
+   "Das ist ein Trailer oder Werbespot.",
+   "Ein Fehler beim Dreh ist ein „Filmfehler“ oder „Goof“.",
+   "Teure Szenen haben keinen eigenen Namen dieser Art."
+  ],
+  "e": "Ein Spoiler „verdirbt“ (englisch to spoil) die Spannung, indem er etwa das Ende verrät.",
+  "h": "Englisch „to spoil“.",
+  "d": 1,
+  "id": "nf5194f1"
+ },
+ {
+  "s": "Film",
+  "q": "Was ist ein Drehbuch?",
+  "a": [
+   "Die Textvorlage mit Szenen und Dialogen",
+   "Das Logbuch der Kamera",
+   "Der Vertrag der Schauspieler",
+   "Der Finanzplan einer Produktion mit allen Kosten"
+  ],
+  "w": [
+   "",
+   "Kameraprotokolle sind kein Drehbuch.",
+   "Verträge regeln Gagen und Rechte.",
+   "Den Finanzplan nennt man Budget."
+  ],
+  "e": "Das Drehbuch legt Handlung, Szenen und Dialoge fest. Danach planen Regie und Produktion den Dreh.",
+  "h": "Englisch „screenplay“.",
+  "d": 1,
+  "id": "n64a8484"
+ },
+ {
+  "s": "Film",
+  "q": "Welches Streaming-Prinzip steckt hinter Netflix und ähnlichen Diensten?",
+  "a": [
+   "Abo mit Filmen auf Abruf",
+   "Kauf einzelner DVDs per Post",
+   "Fernsehen nach festem Sendeplan",
+   "Kinokarten im Voraus buchen"
+  ],
+  "w": [
+   "",
+   "Den DVD-Versand gab es früher, ist aber nicht das Streaming-Prinzip.",
+   "Lineares Fernsehen hat feste Sendezeiten.",
+   "Kinokarten sind kein Streaming."
+  ],
+  "e": "Video-on-Demand: Gegen eine monatliche Gebühr kann man Inhalte jederzeit abrufen, statt an einen Sendeplan gebunden zu sein.",
+  "h": "Jederzeit abrufbar.",
+  "d": 1,
+  "id": "n36e7570"
+ },
+ {
+  "s": "Musik",
+  "q": "Welche Komponistin aus dem Mittelalter gilt als eine der ersten namentlich bekannten?",
+  "a": [
+   "Hildegard von Bingen",
+   "Clara Schumann",
+   "Fanny Hensel",
+   "Maria Theresia Paradis"
+  ],
+  "w": [
+   "",
+   "Clara Schumann lebte im 19. Jahrhundert.",
+   "Fanny Hensel, Schwester Mendelssohns, lebte im 19. Jahrhundert.",
+   "Maria Theresia Paradis lebte im 18. Jahrhundert."
+  ],
+  "e": "Die Benediktinerin Hildegard von Bingen (1098–1179) schrieb geistliche Gesänge und Schriften über Medizin und Natur.",
+  "h": "12. Jahrhundert, Kloster am Rhein.",
+  "d": 2,
+  "id": "nec30f15"
  }
 ]

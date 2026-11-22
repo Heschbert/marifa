@@ -3172,5 +3172,110 @@
   "d": 1,
   "id": "n790daf7",
   "p": 1
+ },
+ {
+  "s": "Recht im Alltag",
+  "q": "Was gilt für einen Kaufvertrag, den man per Handschlag mündlich schließt?",
+  "a": [
+   "Er ist grundsätzlich gültig",
+   "Er ist ohne Unterschrift nichtig",
+   "Er gilt nur mit Zeugen",
+   "Er gilt erst nach einer Woche"
+  ],
+  "w": [
+   "",
+   "Die meisten Verträge brauchen keine Schriftform.",
+   "Zeugen helfen beim Beweis, sind aber nicht nötig.",
+   "Eine Wartefrist gibt es nicht."
+  ],
+  "e": "Verträge sind in Deutschland grundsätzlich formfrei. Ausnahmen sind etwa Grundstückskauf (Notar) oder Kündigung eines Arbeitsvertrags (Schriftform). Schriftlich ist aber leichter zu beweisen.",
+  "h": "Formfreiheit.",
+  "d": 1,
+  "p": 1,
+  "id": "n3388c12"
+ },
+ {
+  "s": "Recht im Alltag",
+  "q": "Was solltest du tun, wenn du einen Unfall mit Blechschaden hattest?",
+  "a": [
+   "Absichern, Daten austauschen, Fotos machen",
+   "Sofort weiterfahren, um den Verkehr nicht zu stören",
+   "Die Schuld schriftlich anerkennen",
+   "Den anderen Wagen selbst reparieren"
+  ],
+  "w": [
+   "",
+   "Wer ohne Datenaustausch wegfährt, begeht Unfallflucht.",
+   "Ein Schuldanerkenntnis kann Probleme mit der Versicherung machen.",
+   "Reparaturen regeln die Versicherungen."
+  ],
+  "e": "Warnblinker an, Warnweste, Warndreieck aufstellen, Daten (Name, Kennzeichen, Versicherung) austauschen und Schäden fotografieren. Bei Verletzten 112, bei Streit die Polizei.",
+  "h": "Erst sichern, dann dokumentieren.",
+  "d": 1,
+  "p": 1,
+  "id": "nd95f55d"
+ },
+ {
+  "s": "Recht im Alltag",
+  "q": "Darf der Vermieter ohne Ankündigung die Wohnung betreten?",
+  "a": [
+   "Nein, nur mit Grund und Ankündigung",
+   "Ja, jederzeit mit eigenem Schlüssel",
+   "Ja, einmal pro Woche zur Kontrolle der Räume",
+   "Nur wenn der Mieter verreist ist"
+  ],
+  "w": [
+   "",
+   "Die Wohnung ist durch das Grundgesetz geschützt; der Vermieter braucht einen Grund.",
+   "Ein festes Besuchsrecht gibt es nicht.",
+   "Abwesenheit des Mieters ist kein Grund."
+  ],
+  "e": "Mit der Übergabe gehört die Wohnung dem Mieter zur Nutzung. Besichtigungen gibt es nur aus sachlichem Grund mit Ankündigung; ohne Ankündigung nur bei akuter Gefahr wie Wasserrohrbruch.",
+  "h": "Unverletzlichkeit der Wohnung.",
+  "d": 1,
+  "p": 1,
+  "id": "nee35a50"
+ },
+ {
+  "s": "Staat & Wahlen",
+  "q": "Was ist der Unterschied zwischen Bundestag und Bundesrat?",
+  "a": [
+   "Volk wählt Bundestag, Länder senden Bundesrat",
+   "Beide werden direkt vom Volk gewählt",
+   "Der Bundesrat wählt den Bundestag",
+   "Der Bundestag besteht aus den Ministerpräsidenten der Länder"
+  ],
+  "w": [
+   "",
+   "Der Bundesrat wird nicht direkt gewählt.",
+   "Der Bundesrat wählt den Bundestag nicht.",
+   "Die Ministerpräsidenten sitzen im Bundesrat, nicht im Bundestag."
+  ],
+  "e": "Der Bundestag ist das vom Volk gewählte Parlament. Im Bundesrat sitzen Mitglieder der Landesregierungen; so wirken die Länder an der Gesetzgebung mit.",
+  "h": "Volk und Länder.",
+  "d": 1,
+  "p": 1,
+  "id": "n0a4e0d1"
+ },
+ {
+  "s": "EU & Welt",
+  "q": "Was ist die Aufgabe des Europäischen Parlaments?",
+  "a": [
+   "Mit dem Rat Gesetze beschließen",
+   "Die EU-Außengrenzen bewachen",
+   "Den Euro drucken",
+   "Urteile über EU-Recht fällen und Strafen verhängen"
+  ],
+  "w": [
+   "",
+   "Grenzschutz ist Sache der Staaten und der Agentur Frontex.",
+   "Für den Euro ist die Zentralbank zuständig.",
+   "Urteile fällt der Europäische Gerichtshof."
+  ],
+  "e": "Das alle fünf Jahre gewählte Parlament entscheidet mit dem Rat der EU über Gesetze und den Haushalt und wählt die Kommissionspräsidentin oder den -präsidenten.",
+  "h": "Gesetzgebung mit dem Rat.",
+  "d": 1,
+  "p": 1,
+  "id": "nfddffba"
  }
 ]
