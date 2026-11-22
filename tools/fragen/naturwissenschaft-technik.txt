@@ -1,0 +1,125 @@
+# Überarbeitung Naturwissenschaft & Technik
+-134nc70
+-18ehyyj
+-1drmqhm
+-rvk8wm
+-1qdc118
+-93cj11
+-626466
+-ipmnkt
+-3lsq1p
+-1cjrcb7
+-1nndy33
+-xnkj6m
+-1ykk2ol
+~9azmri|Kohlendioxid|Methan|Ozon|Lachgas
+~3l967y|Rund 13,8 Milliarden Jahre|Rund 4,5 Milliarden Jahre|Rund 100 Millionen Jahre|Rund 46 Milliarden Jahre
+~1rimvxk|Es fehlt ein Medium wie Luft|Es ist dort viel zu kalt|Die Schwerkraft ist zu gering|Schall ist dort grundsätzlich zu schwach
+~1nwmaxn|Blaues Licht wird stärker gestreut|Der Himmel spiegelt das blaue Meer|Sauerstoff in der Luft ist selbst blau|Feiner Staub färbt das Sonnenlicht blau
+~wter1t|Masse bleibt gleich, Gewicht hängt von der Schwerkraft ab|Beides ist dasselbe und wird nur in anderen Einheiten gemessen|Das Gewicht bleibt überall im Universum gleich, die Masse nicht|Die Masse ändert sich mit der Temperatur, das Gewicht nicht
+~1y6rklb|Ein massereicher Stern kollabiert|Durch das Verdampfen eines großen Planeten|Durch den Zusammenstoß zweier großer Kometen|Durch das langsame Abkühlen eines Weißen Zwergs
+~1q5fiqv|Für den photoelektrischen Effekt|Für die Allgemeine Relativitätstheorie|Für die berühmte Formel E = m · c²|Für die Entdeckung der Brownschen Bewegung
+~1srr9hv|Fusion von Wasserstoff|Spaltung von Uran im Kern|Verbrennung von Kohlenstoff|Zerfall von radioaktivem Radium
+~14qq1hv|Ein Lichtteilchen|Ein Baustein im Inneren des Atomkerns|Ein negativ geladenes Teilchen der Atomhülle|Ein Teilchen der Dunklen Materie im Halo
+~7q04ie|Ort und Impuls sind nicht beide genau messbar|Messgeräte sind grundsätzlich zu ungenau|Die Zeit vergeht nicht überall gleich schnell|Teilchen verschwinden bei jeder einzelnen Messung
+~fxj4y|Widerstand null unter einer bestimmten Temperatur|Besonders gute Leitung bei sehr hoher Hitze|Strom, der schneller als Licht fließt|Das elektrische Aufladen von Isolatoren
+~1rf3tes|Licht ist im Wasser langsamer|Wasser zieht das Licht magnetisch an|Licht wird vom Wasser vollständig absorbiert|Die Frequenz des Lichts ändert sich
+~rvrgsw|Brechung und Spiegelung in Tropfen|Durch Streuung des Lichts an Staubteilchen|Durch Beugung des Lichts an Wolkenrändern|Durch Spiegelung des Lichts am Meer
+~8nog04|Spaltung schwerer Atomkerne|Fusion leichter Atomkerne|Verbrennung von Uran im Reaktor|Zerfall von Wasserstoff im Kern
+~1x47apk|Planeten bewegen sich auf Ellipsen|Planeten bewegen sich auf Kreisen um die Sonne|Die Sonne steht genau im Mittelpunkt der Bahn|Alle Planeten umrunden die Sonne gleich schnell
+~18shfrm|Auftrieb = Gewicht der verdrängten Flüssigkeit|Alle festen Körper sinken in Wasser|Der Auftrieb hängt von der Farbe des Körpers ab|Der Auftrieb wächst mit der Wassertiefe stark an
+~4tux2d|Extrem dichter Rest eines Sterns|Ein Stern, der nur aus Wasserstoff besteht|Ein Planet, der ganz aus Neutronen besteht|Ein Stern kurz vor seiner Entstehung
+~jagsi3|Schwingungen pro Sekunde|Umdrehungen pro Minute|Zurückgelegte Meter pro Sekunde|Wellenlänge in Metern
+~1oray35|Ein Werkzeug, das DNA gezielt schneidet|Ein neuartiger Impfstofftyp gegen Viren|Ein Verfahren, um DNA zu sequenzieren|Ein besonders starkes Elektronenmikroskop
+~1tigmu8|Atome eines Elements mit anderer Neutronenzahl|Atome mit unterschiedlicher Protonenzahl im Kern|Atome, die durch Elektronenabgabe elektrisch geladen sind|Moleküle, die aus zwei verschiedenen Elementen bestehen
+~7q9xci|Viren brauchen eine Wirtszelle|Viren sind deutlich größer als Bakterien|Viren haben einen eigenen Stoffwechsel|Viren sind vollständige Einzeller
+~1wtxpo6|Edelgase|Alkalimetalle|Halogene|Erdalkalimetalle
+~1qdyfma|Er senkt die Aktivierungsenergie|Er liefert die Energie für die Reaktion|Er verändert das Gleichgewicht dauerhaft|Er wird bei der Reaktion aufgebraucht
+~1fv9ach|Bei etwa 4 °C|Bei genau 0 °C|Bei 100 °C|Bei −4 °C
+~xbl97n|Eine Stoffmenge von 6 · 10²³ Teilchen|Ein Maß für das Volumen von Gasen|Ein Maß für die Konzentration einer Lösung|Eine Maßeinheit für die Masse
+~10f9epk|Sie liefern Energie (ATP)|Sie speichern das Erbgut der Zelle|Sie bauen Proteine aus Aminosäuren zusammen|Sie nehmen Licht für den Zucker auf
+~12dj5o5|Proteine, die Reaktionen beschleunigen|Vitamine, die der Körper nicht herstellen kann|Hormone, die einzelne Organe gezielt steuern|Fette, die Energie im Körper speichern
+~wvw5ln|Lebensgemeinschaft aus Pilz und Alge|Eine kleine, sehr alte Form von Moos|Eine Art Pilz, der nur auf Totholz wächst|Eine Algenart des Meeres
+~5dzon4|Antibiotika fördern resistente Bakterien|Weil der Mensch gegen Antibiotika resistent wird|Weil Antibiotika mit der Zeit im Körper verfallen|Weil Viren die Bakterien infizieren
+~mydet3|Konstanthalten innerer Bedingungen|Die Vermehrung und Teilung von Zellen|Die Anpassung einer Art über Generationen|Die Aufnahme von Nährstoffen im Darm
+~p9zr48|Ammoniak aus Stickstoff und Wasserstoff herstellen|Die Spaltung von Wasser in Wasserstoff und Sauerstoff|Die Gewinnung von Eisen aus Erz|Die Herstellung von Kunststoff aus Erdöl
+~5t5e8i|Sie binden Stickstoff aus der Luft|Sie zersetzen tote Pflanzenteile im Boden|Sie schützen die Pflanze vor Fressfeinden|Sie nehmen zusätzliches Wasser auf
+~1owh2iq|Klima ist der Mittelwert über etwa 30 Jahre|Klima ist das Wetter der kommenden Jahreszeit|Klima gilt nur für die tropischen Regionen|Klima ist die Durchschnittstemperatur eines Tages
+~v5jdaf|Die Anziehungskraft des Mondes|Der Wind über dem offenen Meer|Die Erdrotation allein|Die Sonne allein
+~1ljt3tt|Rund um den Pazifik|Ein Gebiet im Atlantik mit vielen Vulkaninseln|Eine Zone im Indischen Ozean mit häufigen Tsunamis|Eine Bruchzone rund um das Mittelmeer
+~eb4qx7|Sie filtert viel UV-Strahlung|Sie speichert die Wärme der Erde|Sie ist die eigentliche Quelle des Regens|Sie reflektiert Radiowellen zurück zur Erde
+~1dtufvx|Die Platten driften auseinander|Die Platten stoßen frontal zusammen|Die Platten schieben sich übereinander|Die Platten stehen dort völlig still
+~wxfn0c|Absinkende Luft, Wolken lösen sich auf|Aufsteigende Luft und starke Wolkenbildung|Starker Wind aus allen Richtungen|Plötzlicher starker Temperaturanstieg
+~1mt16m0|Er bringt warmes Wasser nach Nordeuropa|Er kühlt Europa im Sommer stark ab|Er erzeugt die Gezeiten an den Küsten|Er fließt durch den Indischen Ozean
+~5tqid8|Warmes Wasser im östlichen Pazifik|Eine Kaltwasserzunge im Nordatlantik|Ein stärkerer Monsun über Indien|Eine verlängerte Eiszeit im Norden
+~1fkmke5|Sekunden geteilt durch 3 ergibt km|Sekunden zwischen Blitz und Donner mal 3 ergibt Kilometer|Anzahl der Blitze pro Minute geteilt durch 3|Lautstärke des Donners in Dezibel geteilt durch 3
+~1w7lf7n|Das Rückstrahlvermögen|Die Luftfeuchtigkeit am Boden|Die Temperatur der Erdoberfläche|Den Luftdruck in der Atmosphäre
+~rko8so|Wasser dehnt sich aus, Landeis schmilzt|Weil Meereswasser mehr Salz bekommt|Weil das Meer mehr Wolken bildet|Weil das Land überall langsam absinkt
+~1avp1rf|Deutlich unter 2 °C, möglichst 1,5 °C|Eine Erwärmung von höchstens 5 °C|Ein Ende aller Emissionen bis zum Jahr 2020|Ein weltweites Verbot von Kohlekraftwerken
+~1222k49|Der Weltklimarat der UN|Eine private Umweltorganisation|Ein Bündnis von Energieunternehmen|Eine Messstation auf Hawaii
+~1rcgsww|Aus Resten von Pflanzen und Plankton|Aus verfestigter Vulkanasche|Aus gelösten Mineralien im Meer|Aus Einschlägen von Meteoriten
+~25emjo|Schwefeldioxid und Stickoxide|Kohlenstoffmonoxid und Ruß|Methan und Lachgas aus der Landwirtschaft|Edelgase wie Argon
+~1tl957c|Saures Wasser löst Kalkstein|Lava erkaltet in langen Röhren|Wind höhlt weiche Felsen aus|Erdbeben reißen große Hohlräume auf
+~1g7hryz|Ein saisonaler Wind mit Regenzeit|Ein tropischer Wirbelsturm über dem Meer|Ein Gewitter im Hochgebirge|Ein warmer Fallwind der Alpen
+~j3fh4p|Schnee verdichtet sich über Firn zu Eis|Durch Gefrieren von Regen am Boden|Durch Verdunsten von Wasser im Wind|Durch Zusammenfrieren von Seewasser
+~vwcvog|Es sagt wahrscheinliche nächste Wortteile voraus|Es durchsucht beim Antworten eine Faktendatenbank|Es folgt festen, programmierten Wenn-Dann-Regeln|Es kopiert gespeicherte Antworten
+~1amsoce|Für jeden Dienst ein eigenes, zufälliges Passwort|Passwörter müssen nie mehr gewechselt werden|Schutz vor jeder Art von Viren und Trojanern|Vollständige Anonymität im Netz
+~1nicy9y|Das Modell lernt auswendig und versagt bei Neuem|Das Modell ist zu klein, um Muster zu erkennen|Es gibt zu viele Daten für das Modell|Das Training dauert zu lange und wird abgebrochen
+~dpzaab|Ein Hardware-Schlüssel (FIDO2)|Ein Code per SMS aufs Handy|Eine geheime Sicherheitsfrage|Ein zweites, anderes Passwort
+~1hmeax1|Absender und Linkziel passen nicht|Rechtschreibfehler im Text allein|Eine fehlende persönliche Anrede|Eine lange Nachricht mit Anhang
+~1ojwxhf|Nur Absender und Empfänger können mitlesen|Die Daten werden nur auf dem Server verschlüsselt|Nur das Passwort selbst ist verschlüsselt|Alle Daten sind öffentlich einsehbar
+~1v3qji4|3 Kopien, 2 Medien, 1 an anderem Ort|3 Backups pro Tag auf 2 Servern in 1 Stadt|2 Passwörter, die man 1 Mal im Monat wechselt|1 Kopie auf 3 verschiedenen Medien im selben Raum
+~12qr2|An https:// und dem Schloss|An www am Anfang der Adresse|An der Endung .com|An einem grünen Hintergrund
+~j3v8no|Die KI erfindet plausible, falsche Angaben|Ein Absturz der Software bei zu vielen Anfragen|Ein Bild mit verzerrten Details|Ein Hackerangriff auf das Modell
+~1bjqc1h|Ein verschlüsselter Tunnel ins Netz|Ein Virenscanner für den Netzwerkverkehr|Eine Firewall im heimischen Router|Ein Programm zum Verwalten von Passwörtern
+~xhewi4|Flash-Speicher ohne bewegliche Teile|Sie hat rotierende Magnetscheiben|Sie verliert ohne Strom sofort alle Daten|Sie ist langsamer als jede HDD
+~rwd1qz|Sie kennzeichnet ein Gerät im Netz|Sie verschlüsselt die übertragenen Daten|Sie ist der Name einer Webseite|Sie begrenzt die Geschwindigkeit des Anschlusses
+~htri2p|Domainnamen in IP-Adressen übersetzen|Den gesamten Datenverkehr verschlüsseln|Vor Viren und Trojanern schützen|Domainnamen an Firmen vergeben
+~1wkwam7|Der Quelltext ist öffentlich|Die Software ist immer kostenlos|Jeder kann den Code sofort verändern|Die Software hat garantiert keine Fehler
+~wkl3hm|Eine Schrittfolge zur Lösung einer Aufgabe|Ein Computervirus mit Schadfunktion|Ein Speichermedium für Daten|Eine Programmiersprache für Anfänger
+~9vyb08|Daten liegen auf Servern im Internet|Daten liegen nur im Arbeitsspeicher|Daten werden per Funk durch die Luft gespeichert|Daten liegen nur auf dem eigenen Handy
+~10r4a3i|Schadsoftware, die Daten erpresst|Software, die ständig Werbung einblendet|Ein Programm, das Passwörter verwaltet|Ein Schutzprogramm gegen Viren
+~qvb49g|Menschen zum Verraten von Geheimnissen bringen|Das Programmieren sozialer Netzwerke|Die Planung großer Rechenzentren|Die Verwaltung von Nutzerkonten im Unternehmen
+~t2oq5f|Alle Passwörter systematisch ausprobieren|Das Abhören von WLAN-Verbindungen|Der Versand gefälschter Mails|Das Überlasten einer Webseite
+~19pl04w|Gespeichert wird nur ein Prüfwert|Das Passwort wird umkehrbar verschlüsselt|Das Passwort wird beim Login gelöscht|Das Passwort wird an den Nutzer zurückgeschickt
+~vorlbd|Jeder Block enthält den Hash des Vorgängers|Alle Blöcke stehen in einer zentralen Datenbank|Jeder Block wird beim Lesen gelöscht|Die Blöcke werden nach Größe sortiert
+~18ykz03|Eine Lücke, für die es noch keine Korrektur gibt|Eine Lücke, die am Tag null geschlossen wird|Eine Lücke, die nur in Betriebssystemen auftritt|Ein Angriff mit Nullen als Passwort
+~16p1ubo|Rechenknoten in Schichten, die Gewichte lernen|Aus einer Tabelle fester, programmierter Regeln|Aus einem einzigen sehr großen Algorithmus|Aus einer Kopie des menschlichen Gehirns
+~w0ba14|Ob eine Maschine im Gespräch menschlich wirkt|Wie schnell ein Computer rechnen kann|Ob ein Programm sicher geschrieben ist|Wie viel Speicher ein Computer besitzt
+~18az9b0|Er half, die Enigma zu entschlüsseln|Er erfand das Radar|Er konstruierte die erste Atombombe|Er entwickelte den ersten Transistor
+~ib1lp0|Transistoren pro Chip verdoppeln sich etwa alle 2 Jahre|Die Rechenleistung verdoppelt sich jeden Monat|Die Preise für Computer halbieren sich jährlich|Jeder Chip verbraucht jedes Jahr doppelt so viel Strom
+~1udxigv|Es kann 0 und 1 überlagern|Es kann nur den Wert 0 haben|Es speichert gleichzeitig acht Werte|Es braucht überhaupt keine Energie
+~103ighd|Höhere Datenraten, geringere Latenz|Er funktioniert ohne Sendemasten|Er benötigt überhaupt kein Netz|Er arbeitet ganz ohne Funkfrequenzen
+~gsmjtg|Sie macht aus Sonnenlicht Strom|Sie erzeugt Warmwasser aus Sonnenlicht|Sie speichert Windenergie als Gas|Sie verbrennt Biomasse zu Strom
+~1irphsn|Verhältnis von Nutzen zu Aufwand|Die Leistung eines Geräts in Watt|Die Lebensdauer einer Maschine in Jahren|Die Größe eines Geräts
+~nnenpn|Sie nutzt Umweltwärme|Sie erzeugt zusätzliche Energie aus dem Nichts|Sie verbrennt Gas besonders sauber|Sie speichert Wärme über viele Monate
+~1vqigp3|Lithium-Ionen wandern zwischen Elektroden|Er speichert Strom in Form von Gas|Er enthält Benzin und Strom zugleich|Er wandelt Sonnenlicht in Strom um
+~u94pti|Selbstzündung durch Verdichtung|Eine Zündkerze im Zylinder|Ein elektrischer Funke|Ein glühender Draht im Zylinder
+~1th20sj|Johannes Gutenberg|Martin Luther|Albrecht Dürer|Leonardo da Vinci
+# Neu
++{"s": "Physik & Astronomie", "q": "Warum gefriert eine Wasserflasche im Tiefkühlfach und platzt manchmal?", "a": ["Eis nimmt mehr Raum ein als Wasser", "Kälte zieht das Glas zusammen", "Wasser verdampft beim Gefrieren", "Der Druck im Gefrierfach steigt"], "w": ["", "Glas zieht sich zwar leicht zusammen, entscheidend ist aber die Ausdehnung des Eises.", "Beim Gefrieren verdampft kein Wasser.", "Der Luftdruck im Gefrierfach bleibt praktisch gleich."], "e": "Wasser dehnt sich beim Gefrieren um etwa 9 % aus. Deshalb schwimmt Eis und volle Flaschen können platzen.", "h": "Eis schwimmt auf Wasser.", "d": 1}
++{"s": "Physik & Astronomie", "q": "Was verbraucht im Haushalt typischerweise am meisten Energie?", "a": ["Heizen und Warmwasser", "Licht und Lampen", "Handy-Ladegeräte", "Der WLAN-Router"], "w": ["", "Beleuchtung macht mit LED nur einen kleinen Teil aus.", "Ladegeräte verbrauchen vergleichsweise sehr wenig.", "Router laufen zwar dauerhaft, verbrauchen aber wenig im Vergleich."], "e": "In deutschen Haushalten entfällt der größte Teil des Energieverbrauchs auf Raumwärme und Warmwasser. Dort lohnt Sparen am meisten.", "h": "Denk an den Winter.", "d": 1}
++{"s": "Chemie & Biologie", "q": "Warum helfen Antibiotika nicht gegen eine Erkältung?", "a": ["Erkältungen werden meist von Viren ausgelöst", "Erkältungen sind zu harmlos dafür", "Antibiotika wirken nur bei Kindern", "Erkältungen entstehen durch Kälte allein"], "w": ["", "Es liegt nicht an der Schwere, sondern am Erreger: Antibiotika wirken nur gegen Bakterien.", "Antibiotika wirken in jedem Alter gegen Bakterien.", "Kälte begünstigt Infekte, auslösend sind aber Viren."], "e": "Antibiotika bekämpfen Bakterien, nicht Viren. Unnötige Einnahme fördert Resistenzen.", "h": "Es kommt auf die Art des Erregers an.", "d": 1}
++{"s": "Chemie & Biologie", "q": "Warum sollte man Essig und chlorhaltige Reiniger nie mischen?", "a": ["Es kann giftiges Chlorgas entstehen", "Die Mischung wird sofort wirkungslos", "Es entsteht ein starker Kleber", "Die Mischung färbt alles dauerhaft"], "w": ["", "Gefährlich ist nicht die Wirkungslosigkeit, sondern das entstehende Gas.", "Es entsteht kein Kleber.", "Eine Verfärbung ist nicht das Problem."], "e": "Säuren wie Essig setzen aus chlorhaltigen Reinigern Chlorgas frei, das die Atemwege schwer schädigen kann.", "h": "Es entsteht etwas Gasförmiges.", "d": 1}
++{"s": "Erde & Klima", "q": "Welche Energiequelle lieferte 2024 den größten Teil des Stroms in Deutschland?", "a": ["Windkraft", "Braunkohle", "Kernkraft", "Erdgas"], "w": ["", "Braunkohle lag 2024 deutlich hinter der Windkraft.", "Die letzten Kernkraftwerke gingen im April 2023 vom Netz.", "Erdgas lieferte deutlich weniger als Wind."], "e": "Windkraft war 2024 die wichtigste Stromquelle in Deutschland; erneuerbare Energien deckten zusammen gut die Hälfte des Stromverbrauchs.", "h": "Es dreht sich etwas.", "d": 2}
++{"s": "Technik & IT", "q": "Was ist der beste Schutz vor Datenverlust auf dem Handy?", "a": ["Regelmäßige Backups", "Eine teure Schutzhülle", "Möglichst wenige Apps", "Das Handy nie ausschalten"], "w": ["", "Eine Hülle schützt vor Sturzschäden, nicht vor Datenverlust durch Defekt, Diebstahl oder Löschen.", "Weniger Apps verhindern keinen Datenverlust.", "Das Ausschalten hat mit Datenverlust nichts zu tun."], "e": "Nur eine aktuelle Sicherung an einem anderen Ort (z. B. Cloud oder Computer) rettet Fotos und Daten bei Verlust oder Defekt.", "h": "Eine Kopie an anderer Stelle.", "d": 1}
++{"s": "Technik & IT", "q": "Warum sollte man Software-Updates zügig installieren?", "a": ["Sie schließen oft Sicherheitslücken", "Sie machen jedes Gerät schneller", "Sie verlängern die Garantie", "Sie löschen alte Fotos automatisch"], "w": ["", "Updates können ein Gerät auch verlangsamen; der wichtigste Grund ist die Sicherheit.", "Mit der Garantie haben Updates nichts zu tun.", "Updates löschen keine persönlichen Daten."], "e": "Angreifer nutzen bekannte Lücken gezielt aus. Updates schließen diese Lücken, deshalb sind sie einer der wichtigsten Schutzmaßnahmen.", "h": "Es geht um Schutz vor Angriffen.", "d": 1}
+# Feinausgleich (automatisch)
+~8nog04|Spaltung schwerer Atomkerne|Fusion leichter Atomkerne|Verbrennung von Uran|Zerfall von Wasserstoff
+~jagsi3|Schwingungen pro Sekunde|Umdrehungen pro Minute|Meter pro Sekunde|Wellenlänge in Metern
+~1fv9ach|Bei etwa 4 °C|Bei 0 °C|Bei 100 °C|Bei −4 °C
+~xbl97n|Eine Stoffmenge von 6 · 10²³ Teilchen|Ein Maß für das Volumen von Gasen|Ein Maß für die Konzentration|Eine Maßeinheit für die Masse
+~wvw5ln|Lebensgemeinschaft aus Pilz und Alge|Eine kleine Form von Moos|Eine Art Pilz auf Totholz|Eine Algenart des Meeres
+~5t5e8i|Sie binden Stickstoff aus der Luft|Sie zersetzen tote Pflanzenteile|Sie schützen vor Fressfeinden|Sie nehmen Wasser auf
+~v5jdaf|Die Anziehungskraft des Mondes|Der Wind|Die Erdrotation allein|Die Sonne allein
+~wxfn0c|Absinkende Luft, Wolken lösen sich auf|Aufsteigende Luft, Wolkenbildung|Starker Wind aus allen Richtungen|Plötzlicher Temperaturanstieg
+~1avp1rf|Deutlich unter 2 °C, möglichst 1,5 °C|Eine Erwärmung von höchstens 5 °C|Ein Ende aller Emissionen bis 2020|Ein Verbot von Kohlekraftwerken
+~25emjo|Schwefeldioxid und Stickoxide|Kohlenstoffmonoxid und Ruß|Methan und Lachgas|Edelgase wie Argon
+~1g7hryz|Ein saisonaler Wind mit Regenzeit|Ein tropischer Wirbelsturm|Ein Gewitter im Hochgebirge|Ein warmer Fallwind der Alpen
+~rwd1qz|Sie kennzeichnet ein Gerät im Netz|Sie verschlüsselt Daten|Sie ist der Name einer Webseite|Sie begrenzt die Geschwindigkeit
+~htri2p|Domainnamen in IP-Adressen übersetzen|Es verschlüsselt den Datenverkehr|Es schützt vor Viren|Domainnamen an Firmen vergeben
+~qvb49g|Menschen zum Verraten von Geheimnissen bringen|Das Programmieren sozialer Netzwerke|Die Planung großer Rechenzentren|Die Verwaltung von Nutzerkonten
+~18ykz03|Eine Lücke, für die es noch keine Korrektur gibt|Eine Lücke, die am Tag null geschlossen wird|Eine Lücke nur in Betriebssystemen|Ein Angriff mit Nullen als Passwort
+~16p1ubo|Rechenknoten in Schichten, die Gewichte lernen|Aus einer Tabelle fester Regeln|Aus einem einzigen sehr großen Algorithmus|Aus einer Kopie des menschlichen Gehirns
+~103ighd|Höhere Datenraten, geringere Latenz|Er funktioniert ohne Sendemasten|Er benötigt kein Netz|Er arbeitet ohne Frequenzen
+?18ykz03|Den Herstellern bleibt keine Vorwarnzeit.
