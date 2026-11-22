@@ -1,0 +1,110 @@
+# Überarbeitung Gesundheit
+-1ygy80g
+-15h5r7y
+-xm5cmc
+-norckq
+-16fn2z8
+-dppj5x
+-1khmz6b
+-1veiv17
+-xkvdxv
+-vly38m
+~3e7oil|Arme (Schwäche beim Anheben)|Atmung (Atemnot erkennen)|Alter (zur Risikogruppe gehören)|Allergie (Auslöser klären)
+~12296fl|Fest auf die Wunde drücken|Die Wunde gründlich auswaschen|Den Arm oberhalb der Wunde abbinden|Die Wunde mit Wundpuder bedecken
+~2qhgga|Mit kühlem, fließendem Wasser kühlen|Butter oder Mehl auf die Haut auftragen|Eis direkt auf die Haut legen|Entstandene Blasen aufstechen
+~1ijg65x|Er leitet per Sprache an und schockt nur bei Bedarf|Er darf nur von Ärzten oder Sanitätern bedient werden|Er löst bei jedem Einsatz automatisch einen Schock aus|Er misst Blutdruck und Sauerstoffsättigung der Person
+~16oqplq|Übelkeit, Rücken- oder Oberbauchschmerz, Atemnot|Ausschließlich anhaltender, starker Kopfschmerz|Starker Juckreiz am gesamten Körper|Muskelzucken in beiden Beinen
+~1fd0rna|Bis zu fünf Schläge auf den Rücken|Sofort viel Wasser zu trinken geben|Den Mund mit dem Finger blind auswischen|Die Person flach auf den Rücken legen
+~18e6r0t|Oberbauchkompressionen|Rückenschläge zwischen die Schulterblätter|Brustkorbkompressionen mit zwei Fingern|Kopf-tief-Lage über dem Unterarm
+~1mdbazq|Außenseite des Oberschenkels|In den Oberarm an der Innenseite|In den Bauch neben dem Nabel|In die Wade des Unterschenkels
+~bmty39|Steckenlassen und rundherum polstern|Sofort mit einem Ruck herausziehen|Herausziehen und die Wunde auswaschen|Einfach mit Pflaster überkleben
+~1w1uoby|Bei lebensbedrohlicher Blutung, wenn Druck nicht hilft|Bei jeder blutenden Schnittwunde zur Sicherheit|Wenn die Wunde nur oberflächlich ist|Wenn gerade kein Pflaster vorhanden ist
+~1garym6|Kopf nach vorn, Nasenflügel zudrücken|Kopf weit in den Nacken legen und warten|Sich flach auf den Rücken legen und ruhig atmen|Nase kräftig schnäuzen, um Blut zu entfernen
+~1784gz0|In Zahnrettungsbox oder kalter H-Milch|Trocken in ein Taschentuch eingewickelt|In einem Glas mit Leitungswasser|Fest in Alufolie gewickelt und gekühlt
+~guzb4f|Gefahren entfernen, weich polstern|Einen Gegenstand zwischen die Zähne schieben|Die Arme und Beine kräftig festhalten|Die Person mit kaltem Wasser übergießen
+~gchibq|Traubenzucker oder süßen Saft geben|Insulin aus seinem Notfallset spritzen|Nichts geben und in Ruhe abwarten|Eine salzige Brühe zu trinken geben
+~14algpb|Je schneller behandelt, desto weniger Hirnschaden|Das Gehirn arbeitet nachts deutlich langsamer|Nach vier Stunden ist keine Hilfe mehr nötig|Hirnzellen regenerieren sich innerhalb einer Stunde
+~1ol0qk4|In den Schatten bringen und kühlen|Dick einpacken, damit die Person kräftig schwitzt|Sehr heiß duschen lassen|Starken Kaffee zu trinken geben
+~ss1h4c|Kräftiges Reiben der Gliedmaßen|In eine warme Decke einwickeln und isolieren|Ruhig und vorsichtig bewegen oder lagern|Nasse Kleidung vorsichtig wechseln
+~ff9dzc|Mit Pinzette oder Karte hautnah herausziehen|Mit Öl oder Klebstoff beträufeln und abwarten|Mit einem brennenden Streichholz abflammen|Abdrehen und den Kopf stecken lassen
+~4oaqo1|Mit viel klarem Wasser bei offenem Lid|Mit Augentropfen aus der Hausapotheke|Mit einem chemischen Neutralisierungsmittel|Gar nicht, das Auge fest zukneifen
+~1vb8v0x|Eigenschutz und Absichern|Der erste Verband|Die Fotodokumentation der Unfallstelle|Die Suche nach der Unfallursache
+~9hjylx|Wo, Was, Wie viele, Welche Verletzungen, Warten|Wer, Wann, Wie, Warum, Wohin|Wetter, Wind, Weg, Wache, Wasser|Wohnort, Wunde, Wachzustand, Werte, Wunsch
+~1nexarz|Nicht helfen, obwohl es zumutbar ist|Beim Helfen einen fachlichen Fehler machen|Keine gültige Erste-Hilfe-Ausbildung haben|Nur die Polizei nicht zusätzlich verständigen
+~bxglvm|Schnappatmung|Gleichmäßiges, tiefes und ruhiges Atmen|Kurzes, kräftiges Husten nach Verschlucken|Lautes, regelmäßiges Schnarchen
+~1ikqv8|Rechts unter dem Schlüsselbein und links seitlich|Beide Pads auf die Mitte des Brustbeins|Ein Pad auf den Bauch, eins auf den Rücken|Je ein Pad seitlich an beiden Oberarmen
+~g6fgi5|Bis Profis übernehmen oder die Person atmet|Genau zehn Minuten lang, danach ist es zwecklos|Bis der Helfer erschöpft ist und nicht mehr kann|Bis die Polizei eintrifft und den Ort sichert
+~yrf6ce|Oberkörper hoch, enge Kleidung öffnen|Flach liegen mit hochgelagerten Beinen|Aufstehen und ruhig umhergehen lassen|Auf den Bauch legen
+~1c1p5k4|116 117|112|110|115
+~140o33g|Möglichst nicht bewegen|Die Person zum Atmen vorsichtig aufsetzen|Den Kopf in eine bequeme Lage drehen|Zum Auto tragen und selbst in die Klinik fahren
+~15fjq3b|Nicht abziehen, sondern mitkühlen|Kräftig und schnell vollständig abreißen|Mit Alkohol vorsichtig lösen|Mit Brandsalbe einreiben
+~1rycqv8|Mit Wasser oder Decke löschen|Die Person wegrennen lassen|Kräftig in die Flammen pusten|Mit Kunststofffolie abdecken
+~rnowuf|Kopf überstrecken, sehen, hören, fühlen|Den Puls am Handgelenk tasten und zählen|Einen Spiegel vor Mund und Nase halten|Einen kalten Löffel an die Lippen halten
+~c3umuz|Den mittleren Blutzucker der letzten Monate|Den aktuellen Cholesterinspiegel im Blut|Die Höhe eines Entzündungswerts im Blut|Die Sauerstoffsättigung des Bluts in Ruhe
+~19l3kzg|Borreliose|Malaria|Tollwut|Pest
+~lz7q5c|Bauchspeicheldrüse|Leber|Niere|Milz
+~g4ejcs|Das Immunsystem zerstört insulinbildende Zellen|Der Körper reagiert zunehmend unempfindlich auf Insulin|Der Körper bildet viel zu viel Insulin|Die Niere scheidet zu viel Zucker aus
+~496l3h|Ein Herzkranzgefäß verschließt sich|Ein zu starker, schneller Herzschlag|Ein dauerhaft zu hoher Blutzucker|Eine Entzündung des Herzbeutels
+~1p3w6hc|Herz-Kreislauf-Erkrankungen|Infektionskrankheiten|Verkehrsunfälle im Straßenverkehr|Atemwegsinfekte
+~1a3bqd|Händedesinfektion gegen Kindbettfieber|Erste Impfung gegen Tollwut|Entdeckung des Hormons Insulin|Erfindung des Stethoskops zum Abhören
+~1wl2o35|Kropf (Struma)|Diabetes mellitus|Asthma bronchiale|Herzinfarkt
+~1qprleg|Lebensgefährliche Organstörung durch Infektion|Eine großflächige, eitrige Entzündung der Haut|Eine Vergiftung durch Chemikalien im Blut|Ein ausgedehnter Pilzbefall der Darmschleimhaut
+~94x39f|Infektionskrankheiten überwachen und verhüten|Zulassung neuer Arzneimittel und Impfstoffe|Ausbildung und Prüfung von Ärztinnen und Ärzten|Betrieb von Krankenhäusern und Universitätskliniken
+~1d24wgz|Das Immunsystem lernt den Erreger kennen|Der Körper erhält fertige Antibiotika gegen den Erreger|Der Erreger wird dauerhaft in die Zellen eingebaut|Der Körper erhält nur Vitamine, die die Abwehr stärken
+~7hj09l|Unter Therapie nicht nachweisbar = nicht übertragbar|Unbehandelt heißt unheilbar, behandelt heilbar|Ungeschützt heißt immer übertragbar, auch unter Therapie|Unbekannter Status heißt unwahrscheinliche Infektion
+~zscvto|Ungeschützter Sex|Händeschütteln mit Infizierten|Gemeinsame Benutzung einer Toilette|Mückenstiche
+~no62wr|Varizella-Zoster-Virus|Herpes-simplex-Virus|Masernvirus (Morbillivirus)|Epstein-Barr-Virus
+~g5ikeq|Grauer Star|Grüner Star (Glaukom)|Netzhautablösung|Makuladegeneration
+~lzhb47|Gewicht (kg) durch Größe (m) zum Quadrat|Körpergröße in cm geteilt durch Gewicht in kg|Körpergewicht mal Körpergröße|Taillenumfang geteilt durch Hüftumfang
+~95s7lx|Überreaktion des Immunsystems|Eine Infektion mit Viren oder Bakterien|Ein Mangel an Vitaminen und Mineralstoffen|Eine Vergiftung durch schädliche Stoffe
+~1n0upor|Weder Teilnehmer noch Studienteam wissen, wer was bekommt|Das Medikament wird an zwei Gruppen in doppelter Dosis getestet|Die Studie wird von zwei unabhängigen Instituten wiederholt|Weder Teilnehmende noch Ärzte wissen, welche Krankheit untersucht wird
+~ce1aem|Randomisierte kontrollierte Studie|Einzelfallbericht|Meinung eines Experten|Umfrage in sozialen Medien
+~1crxfsi|Die elektrische Aktivität des Herzens|Den Blutdruck in den Arterien|Den Blutzucker im Kapillarblut|Die Lungenfunktion beim Ausatmen
+~126uukz|Druck, wenn sich das Herz zusammenzieht|Druck in der Entspannungsphase des Herzens|Durchschnittsdruck|Druck in den Venen
+~jyf3n6|Es ist der wichtigste Atemmuskel|Es verdaut das Fett aus der Nahrung|Es produziert die Galle|Es steuert den Herzschlag
+~51uz9n|Sie markieren Erreger für die Abwehr|Sie transportieren Sauerstoff zu den Organen|Sie bauen Fette aus der Nahrung im Darm ab|Sie lassen das Blut bei Verletzungen gerinnen
+~rb5fpw|Es gibt keine risikofreie Menge|Ein Glas Wein täglich ist gesund|Bier in Maßen ist völlig unbedenklich|Nur Spirituosen sind schädlich
+~t7ezdk|Bis dahin garantiert der Hersteller die Qualität|Danach ist es gesundheitsgefährdend|Danach muss es sofort entsorgt werden|Es ist der letzte erlaubte Verkaufstag
+~11v7hs5|Vitamin B12|Vitamin C|Vitamin E|Biotin
+~8d0jin|Es ist Teil des roten Blutfarbstoffs|Es baut Knochen und Zähne auf und stärkt sie|Es senkt den Blutdruck und entspannt die Gefäße|Es steuert als Hormon den Schlaf-Wach-Rhythmus
+~oltpgz|Fettreicher Seefisch wie Lachs|Weißbrot und helle Brötchen aus Weizenmehl|Weißer Haushaltszucker und Süßigkeiten|Polierter Reis und Nudeln aus Hartweizen
+~1m5m9s|Ungesättigte Fette wie Olivenöl|Gesättigte Fette wie Butter und Schmalz|Gehärtete Fette|Frittierfette
+~9m8sxp|Fette aus der industriellen Härtung|Fette, die vor allem in Fisch vorkommen|Pflanzliche Öle wie Raps- und Olivenöl|Ein Zucker, der natürlicherweise in Milch vorkommt
+~1a0a2zi|Der Körper kann sie nicht selbst bilden|Der Körper stellt sie selbst her|Sie sind für den Körper giftig|Sie kommen ausschließlich in Fleisch vor
+~pfaoic|Etwa 4,2 kJ|Etwa 1 kJ|Etwa 10 kJ|Etwa 42 kJ
+~5q46ki|Gefahr von Säuglingsbotulismus|Weil er für Säuglinge zu süß ist|Weil er sehr häufig Allergien auslöst|Weil er die ersten Zähne angreift
+~1d1fpoc|Salmonellen|Botulismus|Tollwut|Malaria
+~1fk33ge|−18 °C|0 °C|−5 °C|+4 °C
+~19zi18p|Bacillus cereus|Salmonella|Listeria|Candida
+~1oedt7r|Das ganze Brot entsorgen|Den Schimmel großzügig abschneiden|Das Brot kräftig rösten|Das Brot einfrieren
+~1fgji8w|Feste Schlafenszeiten, dunkles, kühles Zimmer|Ein spätes, schweres Abendessen kurz vor dem Schlafen|Bildschirmzeit bis unmittelbar vor dem Einschlafen|Am Wochenende deutlich länger ausschlafen als sonst
+~13bvldj|Bakterien machen aus Zucker Säure|Durch zu viel Calcium aus Milchprodukten in der Nahrung|Durch nächtliches Zähneknirschen über viele Jahre|Durch häufiges Trinken von sehr kaltem Wasser
+~1o6f21w|Mindestens zweimal|Einmal im Monat|Jeden Tag|Nie
+~1fqxj02|Verzicht auf alle tierischen Produkte|Verzicht auf Fleisch und Wurst|Verzicht auf Fisch und Meeresfrüchte|Verzicht auf Zucker und Weißmehl
+~1lazs8s|Nährwertqualität von A bis E|Einteilung in Preisklassen von A bis E|Bewertung der Bio-Qualität eines Produkts|Angabe der Haltbarkeit in Stufen
+~jbvzjd|Als krebserregend für Menschen|Als gesundheitlich unbedenklich|Als gesundheitsfördernd|Als nicht bewertet
+~iu89oo|Wie stark es den Blutzucker erhöht|Wie viel Fett es pro 100 Gramm enthält|Wie viel Salz es pro Portion enthält|Wie lange es ungeöffnet haltbar ist
+~16rf22r|UV-400-Schutz|Möglichst dunkle Gläser|Ein möglichst hoher Preis|Die Bekanntheit der Marke
+# Neu
++{"s": "Körper & Medizin", "q": "Wann sollte man bei Brustschmerzen sofort die 112 rufen?", "a": ["Bei Druck in der Brust und Atemnot", "Erst nach einem Tag Abwarten", "Nur wenn man über 80 Jahre alt ist", "Nur wenn der Schmerz nachts auftritt"], "w": ["", "Bei Verdacht auf Herzinfarkt zählt jede Minute; Abwarten kann tödlich sein.", "Herzinfarkte treten in jedem Erwachsenenalter auf.", "Die Tageszeit spielt keine Rolle."], "e": "Anhaltender Druck oder Enge in der Brust, oft mit Atemnot, Schweiß oder Ausstrahlung in Arm oder Kiefer, kann ein Herzinfarkt sein. Dann sofort 112 rufen.", "h": "Zeit ist hier Herzmuskel.", "d": 1}
++{"s": "Körper & Medizin", "q": "Was senkt das Risiko für Herz-Kreislauf-Erkrankungen am stärksten?", "a": ["Nicht rauchen und sich viel bewegen", "Täglich Vitaminpillen nehmen", "Möglichst wenig Wasser trinken", "Kaffee komplett meiden"], "w": ["", "Vitaminpräparate senken bei gesunden Menschen das Herz-Kreislauf-Risiko laut Studien nicht.", "Zu wenig zu trinken schadet eher.", "Moderater Kaffeekonsum gilt für die meisten als unbedenklich."], "e": "Rauchverzicht, Bewegung, gesunde Ernährung, normales Gewicht und ein gut eingestellter Blutdruck sind die wichtigsten Schutzfaktoren.", "h": "Lebensstil statt Pillen.", "d": 1}
++{"s": "Ernährung & Lebensstil", "q": "Was ist die beste Maßnahme gegen Sonnenbrand im Hochsommer zur Mittagszeit?", "a": ["Schatten und Kleidung", "Eine sehr dunkle Sonnenbrille", "Vorher ins Solarium gehen", "Viel kaltes Wasser trinken"], "w": ["", "Eine Sonnenbrille schützt die Augen, nicht die Haut.", "Vorbräunen im Solarium schützt kaum und erhöht das Hautkrebsrisiko.", "Trinken ist wichtig, schützt die Haut aber nicht vor UV."], "e": "Zwischen etwa 11 und 15 Uhr ist die UV-Strahlung am stärksten. Schatten, Kleidung und Hut schützen am besten, Sonnencreme ergänzt.", "h": "Sonne meiden.", "d": 1}
++{"s": "Erste Hilfe", "q": "Du findest eine Person, die nicht reagiert und nicht normal atmet. Was ist das Wichtigste?", "a": ["112 rufen und sofort drücken", "Erst nach dem Ausweis suchen", "Die Person zuerst aufsetzen", "Abwarten, ob sie zu sich kommt"], "w": ["", "Ausweise sind jetzt unwichtig; jede Minute ohne Herzdruckmassage senkt die Überlebenschance.", "Aufsetzen hilft nicht, die Person braucht Herzdruckmassage auf hartem Untergrund.", "Ohne normale Atmung droht innerhalb von Minuten ein bleibender Hirnschaden."], "e": "Prüfen, Rufen, Drücken: Ohne normale Atmung sofort Notruf 112 und Herzdruckmassage, 100 bis 120 Mal pro Minute in der Mitte der Brust.", "h": "Zuerst Hilfe holen, dann selbst handeln.", "d": 1}
+# Feinausgleich (automatisch)
+~3e7oil|Arme (Schwäche beim Anheben)|Atmung (Atemnot erkennen)|Alter (Risikogruppe prüfen)|Allergie (Auslöser klären)
+~2qhgga|Mit kühlem, fließendem Wasser kühlen|Butter oder Mehl auftragen|Eis direkt auf die Haut legen|Entstandene Blasen aufstechen
+~ff9dzc|Mit Pinzette oder Karte hautnah herausziehen|Mit Öl oder Klebstoff beträufeln und warten|Mit einem Streichholz abflammen|Abdrehen und den Kopf stecken lassen
+~4oaqo1|Mit viel klarem Wasser bei offenem Lid|Mit Augentropfen aus der Hausapotheke|Mit Neutralisierungsmittel|Gar nicht, Auge zukneifen
+~15fjq3b|Nicht abziehen, sondern mitkühlen|Kräftig und schnell abreißen|Mit Alkohol vorsichtig lösen|Mit Brandsalbe einreiben
+~1rycqv8|Mit Wasser oder Decke löschen|Wegrennen lassen|Pusten|Mit Kunststofffolie abdecken
+~496l3h|Ein Herzkranzgefäß verschließt sich|Zu starker Herzschlag|Zu hoher Blutzucker|Entzündung des Herzbeutels
+~1p3w6hc|Herz-Kreislauf-Erkrankungen|Infektionskrankheiten|Verkehrsunfälle|Atemwegsinfekte
+~1wl2o35|Kropf (Struma)|Diabetes|Asthma|Herzinfarkt
+~no62wr|Varizella-Zoster-Virus|Herpes-simplex-Virus|Masernvirus|Epstein-Barr-Virus
+~126uukz|Druck, wenn sich das Herz zusammenzieht|Druck in der Entspannungsphase|Durchschnittsdruck|Druck in den Venen
+~jyf3n6|Es ist der wichtigste Atemmuskel|Es verdaut Fett|Es produziert Galle|Es steuert den Herzschlag
+~1m5m9s|Ungesättigte Fette wie Olivenöl|Gesättigte Fette wie Butter|Gehärtete Fette|Frittierfette
+~1a0a2zi|Der Körper kann sie nicht selbst bilden|Der Körper stellt sie selbst her|Sie sind giftig|Sie kommen nur in Fleisch vor
+~1oedt7r|Das ganze Brot entsorgen|Schimmel abschneiden|Rösten|Einfrieren
+~jbvzjd|Als krebserregend für Menschen|Als unbedenklich|Als gesundheitsfördernd|Als nicht bewertet
+?13bvldj|Denk an Süßigkeiten und Zahnbelag.
