@@ -19,7 +19,7 @@ QUIZ = {
  "Bier & Getränke": [
   ("Welche vier Zutaten erlaubt das deutsche Reinheitsgebot heute für untergäriges Bier?", ["Wasser, Malz, Hopfen, Hefe", "Wasser, Weizen, Zucker, Hefe", "Wasser, Malz, Zucker, Hopfen", "Wasser, Gerste, Honig, Hefe"]),
   ("In welchem Jahr wurde das bayerische Reinheitsgebot erlassen?", ["1516", "1616", "1416", "1871"]),
-  ("Was ist ein Stout?", ["Dunkles Bier mit Röstmalz", "Helles Weizenbier", "Starker Apfelwein", "Süßes Kräuterbier"]),
+  ("Was ist ein Stout?", ["Dunkles Bier mit Röstmalz", "Helles, trübes Weizenbier aus Bayern", "Starker Apfelwein", "Süßes Kräuterbier"]),
   ("Aus welchem Obst wird klassischer Cider gemacht?", ["Äpfel", "Birnen", "Trauben", "Kirschen"]),
   ("Welche Spirituose gehört in einen Irish Coffee?", ["Irischer Whiskey", "Brauner Rum", "Weinbrand", "Wodka"]),
   ("Wie viele Milliliter hat ein britisches Pint ungefähr?", ["568", "500", "473", "600"]),
