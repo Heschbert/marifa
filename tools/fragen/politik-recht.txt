@@ -1,0 +1,51 @@
+# Überarbeitung Politik & Recht
+-7bier5
+-14vwwnq
+-yldva3
+-1jg0it3
+-10yqy4q
+-pttl0a
+~1eiqt71|Die Bundesversammlung|Das Volk in direkter Wahl|Der Bundestag allein|Der Bundesrat
+~1ym8f60|Drei Direktmandate können sie ersetzen|Unter 5 % bedeutet immer den Ausschluss|Fünf Prozent der Wahlberechtigten müssen wählen|Jede Partei braucht fünf Abgeordnete
+~1jlku1l|Zwei Drittel in Bundestag und Bundesrat|Einfache Mehrheit im Bundestag|Drei Viertel aller Wahlberechtigten per Volksentscheid|Einstimmigkeit im Bundestag
+~1u56hk0|Abwahl nur durch Wahl eines Nachfolgers|Der Kanzler stellt dem Bundestag die Vertrauensfrage|Der Bundespräsident entlässt den Kanzler eigenmächtig|Das Volk stimmt per Abstimmung über den Kanzler ab
+~ec4zrh|Der Kanzler beantragt das Vertrauen des Bundestages|Das Volk stimmt in einem Referendum über die Regierung ab|Der Bundesrat entscheidet über den Kanzler|Das Verfassungsgericht prüft die Regierung
+~dnzfl3|Verfassungsbeschwerde|Revision gegen jedes Strafurteil|Einspruch gegen jeden Verwaltungsakt|Klage auf Schadensersatz
+~pano4l|Bundestag und Bundesrat je zur Hälfte|Der Bundespräsident allein auf Vorschlag der Regierung|Die Bundesregierung|Das Gericht selbst
+~1lnes22|Das Bundesverfassungsgericht|Der Bundestag mit Zweidrittelmehrheit|Der Bundespräsident|Die Bundesregierung
+~1cg7gbc|Mehrheitswahl in Wahlkreisen|Verhältniswahl über landesweite Parteilisten|Wahl durch Wahlmänner|Wahl durch das Oberhaus
+~1a1pzjq|Nein, ohne Angabe von Gründen|Ja, nur bei Krankheit|Ja, nur bei Auslandsaufenthalt|Briefwahl gibt es nicht
+~188xgr|An einem Sonntag oder Feiertag|Immer samstags|An einem Werktag|Immer am ersten Sonntag im Oktober
+~h838s0|Kommunale Selbstverwaltung|Eigene Bundesgesetzgebung|Eigene Strafgerichte mit Laienrichtern|Eine eigene Währung
+~pwg56l|Nur bei der Länderneugliederung|Bei jedem vom Bundestag beschlossenen Gesetz|Bei der Kanzlerwahl|Beim Bundeshaushalt
+~1ao8m4|Streit zwischen Bundestag und Bundesrat lösen|Streit zwischen Koalitionspartnern schlichten|Tarifkonflikte schlichten|Streit zwischen Bund und EU lösen
+~92y9dd|Wahl organisieren, Ergebnis feststellen|Die Kandidaten aller Parteien prüfen und auswählen|Wahlkreisgrenzen festlegen|Wahlwerbung der Parteien bezahlen
+~1i4hhcm|Bund und Länder teilen sich die Staatsgewalt|Alle Macht liegt beim Zentralstaat|Der Staat wird von einem Monarchen auf Lebenszeit geführt|Das Parlament wählt die Richter
+~62l7r|Im Reichstagsgebäude in Berlin|Im Bundeshaus am Rheinufer in Bonn|Im Bundeskanzleramt|Im Schloss Bellevue
+~12sflon|Komplett handschriftlich, unterschrieben|Am Computer geschrieben und unterschrieben|Mit zwei Zeugen und Stempel|Mündlich vor der Familie
+~1b8uevp|Die Hälfte des gesetzlichen Erbteils|Ein Drittel des Nachlasses|Der volle gesetzliche Erbteil wie ohne Testament|Ein Viertel des Nachlasses
+~1l4cefw|4 Wochen zum 15. oder zum Monatsende|2 Wochen zum Monatsende|3 Monate zum Ende eines Kalenderquartals|Eine Frist gibt es nicht
+~jmx137|Auskunft über deine gespeicherten Daten|Kostenlose Produkte im Tausch gegen Daten|Fristlose Kündigung jedes Vertrags|Gewinnbeteiligung an deinen Daten
+~11nlnwy|Die Neuvermietungsmiete in Mangelgebieten|Mieterhöhungen in allen laufenden Mietverträgen|Die Höhe der Nebenkosten|Die Miete für Gewerbeflächen
+~ydwxhf|Wirksame Käufe mit überlassenem Geld|Die Pflicht der Eltern, Taschengeld zu zahlen|Steuerpflicht für Taschengeld|Barzahlungspflicht für Kinder
+~1itjapl|Keine, nur das Standesamt zählt|Dieselbe wie die standesamtliche|Sie ersetzt die Anmeldung beim Amt|Sie gilt nur mit Zeugen
+~r6qqwp|Schriftform mit Unterschrift|Eine E-Mail|Eine mündliche Erklärung vor Zeugen|Eine SMS
+~14k92u1|Sie wird mit Bußgeld, nicht mit Strafe geahndet|Sie wird nur im Ausland verfolgt|Sie führt immer zu einer Haftstrafe ohne Bewährung|Sie verjährt nie
+~19nal5|Reparatur oder Ersatzlieferung|Sofortige Rückzahlung des Kaufpreises|Schadensersatz in doppelter Höhe|Preisminderung auf null
+~1h9z12p|Sie ist eine freiwillige Zusatzzusage|Die Garantie ist gesetzlich Pflicht|Die Garantie gilt nur für Gebrauchtwaren|Die Garantie gilt nur gegenüber dem Staat
+~qz9akb|Behandlungswünsche für den Ernstfall|Vermögensübertragung an Erben zu Lebzeiten|Anmeldung zur Organspende|Vertretung gegenüber Behörden
+~k8e8xg|Eine Vertrauensperson darf für dich handeln|Eine Behörde verwaltet dein Vermögen ab 65|Dein Erbe wird schon zu Lebzeiten verteilt|Dein Hausarzt entscheidet dann automatisch allein
+~1mnw7|Ja, sie ist gesetzlich vorgeschrieben|Nein, sie ist freiwillig|Nur bei Neuwagen|Nur für Fahrzeuge mit mehr als 100 PS Leistung
+~1qsinqx|Ob und mit wem man Verträge schließt, ist frei|Verträge brauchen immer eine staatliche Genehmigung|Verträge müssen immer schriftlich geschlossen werden|Der Inhalt jedes Vertrags ist gesetzlich festgelegt
+~1bfh783|Entscheidungen möglichst auf unterster Ebene|Der Bund trifft grundsätzlich alle Entscheidungen|Gerichte stehen über der gewählten Regierung|Die Länder dürfen den Bund überstimmen
+~3q9wn0|Ein Angriff auf eines betrifft alle|Die Einführung einer gemeinsamen Währung|Die Wehrpflicht aller Mitgliedstaaten|Die Freizügigkeit der Bürger im Bündnis
+~1p37gwq|Keine Kontrollen an Binnengrenzen|Eine gemeinsame Währung|Einen gemeinsamen Verteidigungsfall|Einheitliche Steuersätze
+~15hik4d|Der Rat der Europäischen Union|Das Europäische Parlament in Straßburg|Die Europäische Kommission|Der Europäische Gerichtshof
+~1yl8ptl|Parlamentsrechte gestärkt, Charta verbindlich|Gründung der Europäischen Wirtschaftsgemeinschaft|Einführung des Euro als Währung|Abschaffung des Rates der Union
+~1ozneul|Staats- und Regierungschefs der Mitglieder|Die Fachminister der Mitgliedstaaten|Die Abgeordneten des Europäischen Parlaments|Die Richter des EuGH
+~u2ysph|Ein ständiges Mitglied kann blockieren|Jeder Staat kann einen Beschluss aufheben|Die Vollversammlung kann Entscheidungen aufheben|Der Generalsekretär darf Beschlüsse ändern
+# Neu
++{"s": "Recht im Alltag", "q": "Was solltest du tun, wenn du einen Bußgeldbescheid für falsch hältst?", "a": ["Innerhalb von zwei Wochen Einspruch einlegen", "Ihn einfach ignorieren", "Sofort zahlen und später zurückfordern", "Bei der Polizei anrufen"], "w": ["", "Ignorieren führt dazu, dass der Bescheid rechtskräftig wird.", "Wer zahlt, akzeptiert den Bescheid in der Regel.", "Ein Anruf ersetzt keinen förmlichen Einspruch."], "e": "Gegen einen Bußgeldbescheid kann man innerhalb von zwei Wochen nach Zustellung schriftlich Einspruch bei der Behörde einlegen, die ihn erlassen hat.", "h": "Es gibt eine kurze Frist.", "d": 2}
++{"s": "Recht im Alltag", "q": "Musst du der Polizei bei einer Vernehmung als Beschuldigter etwas zur Sache sagen?", "a": ["Nein", "Ja, immer vollständig", "Nur, wenn ein Anwalt dabei ist", "Ja, sonst gilt man als schuldig"], "w": ["", "Beschuldigte haben ein Aussageverweigerungsrecht.", "Auch mit Anwalt besteht keine Pflicht zur Aussage zur Sache.", "Schweigen darf nicht als Schuldeingeständnis gewertet werden."], "e": "Beschuldigte müssen nur Angaben zur Person machen (Name, Anschrift usw.). Zur Sache dürfen sie schweigen; das darf ihnen nicht zum Nachteil ausgelegt werden.", "h": "Ein Grundrecht im Strafverfahren.", "d": 2}
++{"s": "Staat & Wahlen", "q": "Was bedeutet Rechtsstaat?", "a": ["Auch der Staat ist an Gesetze gebunden", "Der Staat schreibt alle Gesetze ohne Parlament", "Nur Richter dürfen Gesetze beschließen", "Die Polizei entscheidet über Strafen"], "w": ["", "Gesetze beschließen in Deutschland die Parlamente.", "Gerichte wenden Gesetze an, beschließen sie aber nicht.", "Über Strafen entscheiden unabhängige Gerichte."], "e": "Im Rechtsstaat sind alle staatlichen Stellen an Recht und Gesetz gebunden, und Bürger können staatliches Handeln vor unabhängigen Gerichten überprüfen lassen.", "h": "Niemand steht über dem Recht.", "d": 1}
+?1ym8f60|Es gibt eine Ausnahme für starke Wahlkreisergebnisse.

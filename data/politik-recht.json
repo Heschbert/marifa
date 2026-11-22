@@ -1,171 +1,3323 @@
 [
-{"id":"5jbohw","s":"Staat & Wahlen","q":"Wer wählt den Bundeskanzler?","a":["Der Bundestag","Das Volk direkt","Der Bundesrat","Die Bundesversammlung"],"w":["","Das Volk wählt nur den Bundestag, nicht den Kanzler.","Der Bundesrat vertritt die Länder und wählt keinen Kanzler.","Die Bundesversammlung wählt den Bundespräsidenten."],"e":"Nach Art. 63 GG wählt der Bundestag den Kanzler auf Vorschlag des Bundespräsidenten, ohne Aussprache.","h":"Parlament, nicht Volk.","d":1},
-{"id":"ypkctw","s":"Staat & Wahlen","q":"Welche Stimme bestimmt bei der Bundestagswahl, wie viele Sitze eine Partei im Bundestag bekommt?","a":["Die Zweitstimme","Die Erststimme","Beide zählen gleich","Keine, die Parteien einigen sich"],"w":["","Die Erststimme wählt den Wahlkreisabgeordneten, bestimmt aber nicht die Sitzzahl der Partei.","Beide zählen nicht gleich: Die Sitzverteilung folgt allein der Zweitstimme.","Die Sitze werden durch die Wahl vergeben, nicht durch Absprachen."],"e":"Seit der Wahlrechtsreform 2023 ist der Bundestag auf 630 Sitze begrenzt und die Zweitstimme bestimmt die Sitzzahl; ein Wahlkreissieg wird durch sie „gedeckt“.","h":"Die Stimme für die Parteiliste.","d":2},
-{"id":"15lbd0n","s":"Staat & Wahlen","q":"Wer entwickelte die klassische Lehre der Gewaltenteilung?","a":["Montesquieu","Rousseau","Hobbes","Voltaire"],"w":["","Rousseau schrieb über den Gesellschaftsvertrag und die Volkssouveränität.","Hobbes begründete im „Leviathan“ den starken, ungeteilten Staat.","Voltaire war Aufklärer und Kritiker der Kirche, kein Staatstheoretiker der Gewaltenteilung."],"e":"In „Vom Geist der Gesetze“ (1748) trennt Montesquieu gesetzgebende, ausführende und richterliche Gewalt.","h":"Französischer Baron, 18. Jahrhundert.","d":2},
-{"id":"1mznrhj","s":"Staat & Wahlen","q":"Mit welchem Satz beginnt Artikel 1 des Grundgesetzes?","a":["Die Würde des Menschen ist unantastbar.","Alle Staatsgewalt geht vom Volke aus.","Alle Menschen sind vor dem Gesetz gleich.","Deutschland ist ein Bundesstaat."],"w":["","Dieser Satz steht in Art. 20 Abs. 2 zur Volkssouveränität.","Der Gleichheitssatz steht in Art. 3 Abs. 1.","Art. 20 nennt Deutschland einen demokratischen und sozialen Bundesstaat."],"e":"Art. 1 Abs. 1 GG darf nach der Ewigkeitsklausel (Art. 79 Abs. 3) nicht geändert werden. Vor Artikel 1 steht noch die Präambel.","h":"Es geht um den obersten Wert der Verfassung.","d":1},
-{"id":"1eiqt71","s":"Staat & Wahlen","q":"Wer wählt den Bundespräsidenten?","a":["Die Bundesversammlung","Das Volk direkt","Der Bundestag allein","Der Bundesrat"],"w":["","Das Volk wählt den Bundespräsidenten nicht direkt.","Der Bundestag allein ist nur ein Teil der Bundesversammlung.","Der Bundesrat entsendet keine Wahlmänner allein; die Länder stellen Mitglieder der Versammlung."],"e":"Die Bundesversammlung besteht aus allen Bundestagsabgeordneten und ebenso vielen von den Länderparlamenten gewählten Mitgliedern.","h":"Tritt nur für diese Wahl zusammen.","d":1},
-{"id":"fxy3uj","s":"Staat & Wahlen","q":"Wie lang ist die Amtszeit des Bundespräsidenten?","a":["5 Jahre, einmalige Wiederwahl","4 Jahre, zweimalige Wiederwahl","8 Jahre ohne Wiederwahl","10 Jahre ohne Wiederwahl"],"w":["","Vier Jahre beträgt die Wahlperiode des Bundestags, nicht die des Präsidenten.","Eine achtjährige Amtszeit sieht das Grundgesetz nicht vor.","Eine zehnjährige Amtszeit sieht das Grundgesetz nicht vor."],"e":"Art. 54 GG: fünf Jahre, anschließende Wiederwahl nur einmal zulässig.","h":"Länger als eine Bundestagswahlperiode.","d":2},
-{"id":"1jeg7ft","s":"Staat & Wahlen","q":"Wo hat das Bundesverfassungsgericht seinen Sitz?","a":["Karlsruhe","Berlin","Leipzig","Kassel"],"w":["","Berlin ist Sitz von Bundestag, Bundesrat und Bundesregierung.","In Leipzig sitzt das Bundesverwaltungsgericht.","In Kassel sitzt das Bundessozialgericht."],"e":"Auch der Bundesgerichtshof sitzt in Karlsruhe, das Bundesverwaltungsgericht in Leipzig.","h":"Badische Stadt, „Residenz des Rechts“.","d":1},
-{"id":"1ym8f60","s":"Staat & Wahlen","q":"Was gilt bei der Fünf-Prozent-Hürde zur Bundestagswahl?","a":["Unter 5 % reicht ein Einzug nur mit drei Direktmandaten","Unter 5 % bedeutet immer den Ausschluss","Fünf Prozent der Wahlberechtigten müssen wählen","Jede Partei braucht fünf Abgeordnete"],"w":["","Nach dem Urteil des Bundesverfassungsgerichts von 2024 gilt weiterhin die Grundmandatsklausel mit drei Wahlkreissiegen.","Die Hürde bezieht sich auf die abgegebenen gültigen Zweitstimmen, nicht auf die Wahlbeteiligung.","Es gibt keine Mindestzahl an Abgeordneten, sondern eine Stimmenhürde."],"e":"Das Bundesverfassungsgericht ließ 2024 die 5-%-Hürde bestehen und erhielt die Grundmandatsklausel (drei Direktmandate) bis zu einer Neuregelung.","h":"Zweitstimmen und Direktmandate zählen.","d":3},
-{"id":"wgh1ua","s":"Staat & Wahlen","q":"Wie viele Richterinnen und Richter hat das Bundesverfassungsgericht?","a":["16","9","12","24"],"w":["","Neun Richter hat etwa der Supreme Court der USA.","Zwölf ist die Amtszeit in Jahren, nicht die Zahl der Richter.","24 wäre das Dreifache der Senatsgröße; jeder der zwei Senate hat acht Richter."],"e":"Jeder Senat hat acht Mitglieder, gewählt für zwölf Jahre ohne Wiederwahl.","h":"Zwei Senate.","d":2},
-{"id":"1caju06","s":"Staat & Wahlen","q":"Ab welchem Alter darf man bei der Bundestagswahl wählen?","a":["18 Jahren","16 Jahren","21 Jahren","14 Jahren"],"w":["","16 gilt bei manchen Landtags- und Kommunalwahlen sowie der Europawahl, nicht bei der Bundestagswahl.","21 Jahre war früher die Altersgrenze und wurde 1970 abgesenkt.","14 Jahre ist das Alter der Strafmündigkeit, kein Wahlalter."],"e":"Art. 38 GG: Wahlberechtigt ist, wer das 18. Lebensjahr vollendet hat; 1970 wurde das Wahlalter von 21 auf 18 gesenkt.","h":"Volljährigkeit.","d":1},
-{"id":"asav3k","s":"Staat & Wahlen","q":"Wie lange dauert eine reguläre Wahlperiode des Bundestags?","a":["4 Jahre","5 Jahre","6 Jahre","3 Jahre"],"w":["","Fünf Jahre dauert die Amtszeit des Bundespräsidenten.","Sechs Jahre sind es etwa beim US-Senat.","Drei Jahre sieht das Grundgesetz nicht vor."],"e":"Art. 39 GG regelt vier Jahre; vorzeitig endet sie nur durch Auflösung nach Art. 63 oder 68 GG.","h":"Weniger als die Amtszeit des Präsidenten.","d":1},
-{"id":"1excuac","s":"Staat & Wahlen","q":"Wie viele Länder hat die Bundesrepublik Deutschland?","a":["16","15","14","17"],"w":["","Mit der Wiedervereinigung 1990 wuchs die Zahl von 11 auf 16.","15 wäre ohne eines der Stadtstaaten oder neuen Länder.","Mit 17 Ländern käme ein weiteres hinzu; seit 1990 gibt es aber 16."],"e":"Drei sind Stadtstaaten: Berlin, Hamburg und Bremen; 1990 kamen fünf ostdeutsche Länder hinzu.","h":"Seit 1990 fünf mehr als zuvor.","d":1},
-{"id":"py8z93","s":"Staat & Wahlen","q":"Welche drei Länder sind Stadtstaaten?","a":["Berlin, Hamburg, Bremen","Berlin, Hamburg, Saarland","Berlin, Bremen, Sachsen","Hamburg, Bremen, Brandenburg"],"w":["","Das Saarland ist ein Flächenland.","Sachsen ist ein Flächenland.","Brandenburg ist ein Flächenland, das Berlin umschließt."],"e":"Stadtstaaten sind Länder, die nur aus einer Stadt bestehen; Bremen umfasst auch Bremerhaven.","h":"Zwei Hansestädte und die Hauptstadt.","d":1},
-{"id":"ltwhul","s":"Staat & Wahlen","q":"Wer ist in Deutschland für die Schulpolitik überwiegend zuständig?","a":["Die Länder","Der Bund","Die Europäische Union","Die Gemeinden allein"],"w":["","Der Bund hat nur wenige Zuständigkeiten, etwa bei der Ausbildungsförderung.","Die EU kann Bildungspolitik nur unterstützen, nicht regeln.","Gemeinden sind Schulträger, aber die Gesetze machen die Länder."],"e":"Die Kulturhoheit der Länder gilt als Kern ihrer Eigenstaatlichkeit; daher unterscheiden sich Schulsysteme.","h":"Kultusministerien.","d":1},
-{"id":"v1f0e","s":"Staat & Wahlen","q":"Welche Bundesorgane können Gesetzentwürfe in den Bundestag einbringen?","a":["Bundesregierung, Bundesrat und Abgeordnete","Nur die Bundesregierung","Nur Fraktionen mit Regierungsbeteiligung","Der Bundespräsident und das Verfassungsgericht"],"w":["","Auch Bundesrat und Mitglieder des Bundestages haben Initiativrecht.","Auch Oppositionsfraktionen können Gesetzentwürfe vorlegen.","Bundespräsident und Gericht haben kein Initiativrecht."],"e":"Art. 76 GG: Vorlagen kommen von der Bundesregierung, aus der Mitte des Bundestages oder vom Bundesrat.","h":"Drei Initiatoren.","d":2},
-{"id":"88707e","s":"Staat & Wahlen","q":"In welchem Artikel des Grundgesetzes steht „Alle Staatsgewalt geht vom Volke aus“?","a":["Art. 20","Art. 1","Art. 5","Art. 38"],"w":["","Art. 1 enthält die Menschenwürde.","Art. 5 schützt die Meinungsfreiheit.","Art. 38 regelt die Wahl der Abgeordneten."],"e":"Art. 20 Abs. 2 GG nennt die Volkssouveränität; Wahlen und Abstimmungen sind ihr Ausdruck.","h":"Zweistellig.","d":2},
-{"id":"bhpick","s":"Staat & Wahlen","q":"Welcher Artikel des Grundgesetzes schützt die Meinungsfreiheit?","a":["Art. 5","Art. 3","Art. 14","Art. 12"],"w":["","Art. 3 regelt die Gleichheit vor dem Gesetz.","Art. 14 schützt das Eigentum.","Art. 12 schützt die Berufsfreiheit."],"e":"Art. 5 GG schützt Meinungs-, Presse-, Rundfunk-, Kunst- und Wissenschaftsfreiheit; eine Zensur findet nicht statt.","h":"Artikel der Freiheitsrechte am Anfang.","d":2},
-{"id":"vc9sv1","s":"Staat & Wahlen","q":"Was verbirgt sich hinter der „Ewigkeitsklausel“ des Grundgesetzes?","a":["Bestimmte Grundsätze dürfen nie geändert werden","Das Grundgesetz gilt unbefristet ohne Änderungen","Die Bundesregierung kann nie abgesetzt werden","Das Grundgesetz kann nur durch Volksentscheid enden"],"w":["","Das Grundgesetz wurde schon oft geändert; geschützt sind nur Kernprinzipien.","Der Kanzler kann durch ein konstruktives Misstrauensvotum abgelöst werden.","Art. 146 sieht eine neue Verfassung per Volksentscheid vor, aber das ist nicht die Ewigkeitsklausel."],"e":"Art. 79 Abs. 3 GG schützt Menschenwürde, Bundesstaat und Grundprinzipien aus Art. 1 und 20 vor jeder Änderung.","h":"Regel für Verfassungsänderungen.","d":2},
-{"id":"1jlku1l","s":"Staat & Wahlen","q":"Welche Mehrheit braucht eine Änderung des Grundgesetzes?","a":["Zwei Drittel in Bundestag und Bundesrat","Einfache Mehrheit im Bundestag","Drei Viertel der Wahlberechtigten","Einstimmigkeit im Bundestag"],"w":["","Eine einfache Mehrheit reicht für normale Gesetze.","Eine Volksabstimmung ist für Änderungen nicht vorgesehen.","Einstimmigkeit verlangt Art. 79 nicht; zwei Drittel genügen."],"e":"Art. 79 Abs. 2 GG verlangt je zwei Drittel der Mitglieder von Bundestag und Bundesrat.","h":"Qualifizierte Mehrheit.","d":2},
-{"id":"1u56hk0","s":"Staat & Wahlen","q":"Was ist ein konstruktives Misstrauensvotum?","a":["Der Bundestag wählt einen Nachfolger und setzt den Kanzler ab","Der Kanzler stellt dem Bundestag die Vertrauensfrage","Der Bundespräsident entlässt den Kanzler eigenmächtig","Das Volk stimmt per Abstimmung über den Kanzler ab"],"w":["","Das ist die Vertrauensfrage nach Art. 68 GG.","Der Präsident kann den Kanzler nicht von sich aus entlassen.","Eine Abstimmung durch das Volk gibt es nicht."],"e":"Art. 67 GG: Der Bundestag kann den Kanzler nur abwählen, indem er mit Mehrheit zugleich einen Nachfolger wählt; so soll Weimar-Instabilität vermieden werden.","h":"Der Bundestag kann den Kanzler nicht einfach nur abwählen.","d":2},
-{"id":"ec4zrh","s":"Staat & Wahlen","q":"Was geschieht bei der Vertrauensfrage nach Art. 68 GG?","a":["Der Kanzler beantragt das Vertrauen des Bundestages","Das Volk stimmt über die Regierung ab","Der Bundesrat entscheidet über den Kanzler","Das Verfassungsgericht prüft die Regierung"],"w":["","Es gibt keine Volksabstimmung über die Regierung.","Der Bundesrat wählt oder entlässt keinen Kanzler.","Bei der Vertrauensfrage entscheidet allein der Bundestag; Karlsruhe ist nicht beteiligt."],"e":"Verliert der Kanzler die Vertrauensfrage, kann der Bundespräsident auf seinen Vorschlag den Bundestag binnen 21 Tagen auflösen.","h":"Der Kanzler fragt.","d":3},
-{"id":"14dsjd1","s":"Staat & Wahlen","q":"Zu welcher Gewalt zählen Bundesregierung und Verwaltung?","a":["Exekutive","Legislative","Judikative","Konstituante"],"w":["","Die Legislative macht Gesetze, also der Bundestag.","Die Judikative sind die Gerichte.","Die Konstituante ist eine verfassunggebende Versammlung."],"e":"Die Exekutive führt Gesetze aus; sie wird vom Parlament kontrolliert.","h":"Ausführen.","d":1},
-{"id":"p7z89s","s":"Staat & Wahlen","q":"Welche Gewalt wird von den Gerichten ausgeübt?","a":["Die Judikative","Die Exekutive","Die Legislative","Die Subsidiarität"],"w":["","Die Exekutive führt Gesetze aus.","Die Legislative erlässt Gesetze.","Subsidiarität ist ein Prinzip der Zuständigkeitsverteilung, keine Gewalt."],"e":"Art. 92 GG vertraut die rechtsprechende Gewalt den Richtern an; sie sind unabhängig.","h":"Rechtsprechende Gewalt.","d":1},
-{"id":"1crinuu","s":"Staat & Wahlen","q":"Welches Organ vertritt die Länder auf Bundesebene bei der Gesetzgebung?","a":["Der Bundesrat","Der Bundestag","Die Bundesversammlung","Der Vermittlungsausschuss"],"w":["","Der Bundestag vertritt das gesamte Volk.","Die Bundesversammlung wählt nur den Bundespräsidenten.","Der Vermittlungsausschuss löst Streit zwischen Bundestag und Bundesrat."],"e":"Im Bundesrat sitzen Mitglieder der Landesregierungen; die Länder wirken so an der Bundesgesetzgebung mit.","h":"Länderkammer.","d":1},
-{"id":"1e5cwtd","s":"Staat & Wahlen","q":"Wie viele Stimmen hat im Bundesrat ein Land mit mehr als sieben Millionen Einwohnern?","a":["6","3","4","8"],"w":["","Drei Stimmen hat jedes Land mindestens.","Vier Stimmen gibt es ab zwei Millionen Einwohnern.","Acht Stimmen sieht Art. 51 GG nicht vor."],"e":"Art. 51 GG staffelt von 3 bis 6 Stimmen; insgesamt hat der Bundesrat 69 Stimmen.","h":"Höchstwert der Staffelung.","d":3},
-{"id":"19ulzep","s":"Staat & Wahlen","q":"Was unterscheidet ein Zustimmungsgesetz von einem Einspruchsgesetz?","a":["Beim Zustimmungsgesetz muss der Bundesrat zustimmen","Beim Zustimmungsgesetz entscheidet nur der Bundestag","Beim Einspruchsgesetz muss der Bundespräsident zustimmen","Beim Einspruchsgesetz ist keine Abstimmung nötig"],"w":["","Beim Einspruchsgesetz kann der Bundestag einen Einspruch des Bundesrats überstimmen, beim Zustimmungsgesetz nicht.","Der Bundespräsident prüft und unterzeichnet jedes Gesetz.","Auch Einspruchsgesetze werden im Bundestag abgestimmt."],"e":"Zustimmungsgesetze brauchen das Ja des Bundesrates; ohne es scheitern sie. Einspruchsgesetze kann der Bundestag auch gegen den Bundesrat durchsetzen.","h":"Wer hat das letzte Wort?","d":3},
-{"id":"yif0aa","s":"Staat & Wahlen","q":"Wie viele Wahlkreise gibt es bei der Bundestagswahl?","a":["299","598","630","256"],"w":["","598 war die frühere Regelgröße des Bundestags, wovon die Hälfte Wahlkreise sind.","630 ist die neue Sitzzahl des Bundestags.","256 ist keine gesetzlich festgelegte Zahl."],"e":"Das Bundestagswahlgesetz teilt Deutschland in 299 Wahlkreise; in jedem gibt es ein Direktmandat.","h":"Etwa die Hälfte der Regelgröße vor 2023.","d":3},
-{"id":"1g7pj7c","s":"Staat & Wahlen","q":"Welcher Begriff gehört NICHT zu den fünf Wahlrechtsgrundsätzen des Grundgesetzes?","a":["Öffentlich","Allgemein","Gleich","Geheim"],"w":["","Allgemein bedeutet, dass grundsätzlich jeder wählen darf.","Gleich bedeutet gleiches Stimmgewicht.","Geheim bedeutet, dass die Wahl nicht einsehbar ist."],"e":"Art. 38 GG: allgemein, unmittelbar, frei, gleich und geheim; öffentliche Abstimmung widerspräche dem Wahlgeheimnis.","h":"Das Gegenteil von geheim.","d":2},
-{"id":"ah957m","s":"Staat & Wahlen","q":"Wer gewinnt ein Direktmandat im Wahlkreis?","a":["Wer die meisten Erststimmen erhält","Wer über 50 % der Erststimmen erhält","Wer die meisten Zweitstimmen erhält","Wer von der Partei bestimmt wird"],"w":["","Eine absolute Mehrheit ist nicht nötig, die relative Mehrheit reicht.","Zweitstimmen gelten der Parteiliste.","Die Partei stellt Kandidaten auf, die Wähler entscheiden."],"e":"Es gilt relative Mehrheitswahl; mit der Reform 2023 braucht das Mandat zusätzlich die Zweitstimmendeckung der Partei.","h":"Relative Mehrheit.","d":2},
-{"id":"172dnre","s":"Staat & Wahlen","q":"Wie viel Prozent der Abgeordneten sind nach der Geschäftsordnung für eine Fraktion nötig?","a":["5 %","10 %","3 %","25 %"],"w":["","Zehn Prozent sind nicht erforderlich.","Drei Prozent genügen nicht.","Ein Viertel ist die Schwelle für einen Untersuchungsausschuss und die abstrakte Normenkontrolle, nicht für Fraktionen."],"e":"Nach der Geschäftsordnung des Bundestags bilden Abgeordnete mit mindestens 5 % der Mitglieder eine Fraktion.","h":"Kleiner Bruchteil der Abgeordneten.","d":3},
-{"id":"g9uauq","s":"Staat & Wahlen","q":"Wem sind Bundestagsabgeordnete laut Grundgesetz unterworfen?","a":["Nur ihrem Gewissen","Dem Fraktionsvorsitzenden","Den Wählerinnen und Wählern des Wahlkreises","Dem Bundeskanzler"],"w":["","Fraktionsdisziplin ist üblich, rechtlich aber nicht bindend.","Wähler können keine Weisungen erteilen.","Abgeordnete kontrollieren den Kanzler, sie sind ihm nicht untergeordnet."],"e":"Art. 38 Abs. 1 GG: Abgeordnete sind Vertreter des ganzen Volkes, an Aufträge und Weisungen nicht gebunden.","h":"Freies Mandat.","d":2},
-{"id":"54it1o","s":"Staat & Wahlen","q":"Wer ernennt den vom Bundestag gewählten Bundeskanzler?","a":["Der Bundespräsident","Der Bundestagspräsident","Der Bundesratspräsident","Der Vorsitzende der stärksten Fraktion"],"w":["","Der Bundestagspräsident leitet die Sitzungen, ernennt aber den Kanzler nicht.","Der Bundesratspräsident vertritt zeitweise den Bundespräsidenten.","Eine Fraktion kann niemanden ernennen."],"e":"Der Bundespräsident ernennt den gewählten Kanzler (Art. 63 Abs. 2 GG) und händigt die Urkunde aus.","h":"Staatsoberhaupt.","d":2},
-{"id":"19zmzei","s":"Staat & Wahlen","q":"Welches Mindestalter gilt für die Wahl zum Bundespräsidenten?","a":["40 Jahre","35 Jahre","30 Jahre","18 Jahre"],"w":["","35 Jahre gilt etwa für das Amt des US-Präsidenten.","30 ist keine Altersgrenze des Grundgesetzes.","18 Jahre genügt für Bundestagswahlen."],"e":"Art. 54 GG: wählbar ist jeder Deutsche, der das Wahlrecht besitzt und das 40. Lebensjahr vollendet hat.","h":"Höher als bei Kanzler und Abgeordneten.","d":3},
-{"id":"opt9nf","s":"Staat & Wahlen","q":"Wer bestimmt nach dem Grundgesetz die Richtlinien der Politik?","a":["Der Bundeskanzler","Der Bundespräsident","Der Bundestag","Das Bundesverfassungsgericht"],"w":["","Der Bundespräsident repräsentiert den Staat.","Der Bundestag beschließt Gesetze.","Das Gericht prüft die Verfassungsmäßigkeit."],"e":"Art. 65 GG gibt dem Kanzler die Richtlinienkompetenz; die Minister leiten ihr Ressort selbstständig.","h":"Kanzlerprinzip.","d":2},
-{"id":"dnzfl3","s":"Staat & Wahlen","q":"Was kann man beim Bundesverfassungsgericht erheben?","a":["Verfassungsbeschwerde bei Verletzung von Grundrechten","Revision gegen jedes Strafurteil","Einspruch gegen jeden Verwaltungsakt","Klage auf Schadensersatz"],"w":["","Revision erfolgt bei den obersten Fachgerichten.","Einsprüche richten sich zuerst an die Behörde.","Schadensersatzklagen gehören vor die ordentlichen Gerichte."],"e":"Jeder kann nach erschöpftem Rechtsweg Verfassungsbeschwerde einlegen, wenn er sich in Grundrechten verletzt sieht (Art. 93 GG).","h":"Jedermann-Rechtsbehelf.","d":2},
-{"id":"pano4l","s":"Staat & Wahlen","q":"Wer wählt die Richter des Bundesverfassungsgerichts?","a":["Bundestag und Bundesrat je zur Hälfte","Der Bundespräsident allein","Die Bundesregierung","Das Gericht selbst"],"w":["","Der Bundespräsident ernennt sie nur formal.","Die Regierung hat keine Wahlbefugnis.","Eine Selbstergänzung gibt es nicht."],"e":"Mit Zweidrittelmehrheit wählen beide Organe je acht Richter; das soll Überparteilichkeit sichern.","h":"Beide Kammern.","d":3},
-{"id":"uxqz3q","s":"Staat & Wahlen","q":"Wie oft darf der Bundeskanzler wiedergewählt werden?","a":["Unbegrenzt oft","Höchstens zweimal","Nur einmal","Nur nach einer Pause"],"w":["","Eine Begrenzung auf zwei Amtszeiten kennt das Grundgesetz nicht.","Auch eine einmalige Begrenzung gibt es nicht; sie gilt für den Bundespräsidenten.","Eine Pflichtpause ist nicht vorgesehen."],"e":"Das Grundgesetz begrenzt die Amtszeit des Kanzlers nicht; sie endet mit der Wahlperiode oder dem Rücktritt.","h":"Keine Obergrenze.","d":3},
-{"id":"1lnes22","s":"Staat & Wahlen","q":"Wer kann in Deutschland eine Partei verbieten?","a":["Nur das Bundesverfassungsgericht","Der Bundestag mit Mehrheit","Der Bundespräsident","Die Bundesregierung"],"w":["","Der Bundestag kann nur einen Antrag stellen.","Der Präsident hat kein Verbotsrecht.","Die Regierung kann beantragen, aber nicht entscheiden."],"e":"Art. 21 GG: Über die Verfassungswidrigkeit einer Partei entscheidet allein das Bundesverfassungsgericht (Parteienprivileg).","h":"Parteienprivileg.","d":2},
-{"id":"12jl42q","s":"Staat & Wahlen","q":"Wie heißt das Wahlsystem, bei dem Parteien Sitze im Verhältnis zu ihren Stimmen erhalten?","a":["Verhältniswahl","Mehrheitswahl","Losverfahren","Akklamation"],"w":["","Bei der Mehrheitswahl gewinnt der Kandidat mit den meisten Stimmen den Wahlkreis.","Beim Losverfahren entscheidet der Zufall.","Akklamation ist Zustimmung durch Zuruf."],"e":"Bei der Verhältniswahl spiegelt die Sitzverteilung die Stimmenanteile; Deutschland kombiniert sie mit Wahlkreisen.","h":"Proporz.","d":2},
-{"id":"1cg7gbc","s":"Staat & Wahlen","q":"Welches Wahlsystem gilt für das britische Unterhaus?","a":["Mehrheitswahl in Wahlkreisen","Reine Verhältniswahl","Wahl durch Wahlmänner","Wahl durch das Oberhaus"],"w":["","Verhältniswahl ist etwa in den Niederlanden üblich.","Wahlmänner gibt es bei der US-Präsidentenwahl.","Das Oberhaus wird nicht gewählt."],"e":"Der Kandidat mit den meisten Stimmen im Wahlkreis gewinnt („first past the post“); die übrigen Stimmen verfallen.","h":"Der Erste gewinnt.","d":2},
-{"id":"1a1pzjq","s":"Staat & Wahlen","q":"Muss man bei der Bundestagswahl die Briefwahl begründen?","a":["Nein, sie kann ohne Grund beantragt werden","Ja, nur bei Krankheit","Ja, nur bei Auslandsaufenthalt","Briefwahl gibt es nicht"],"w":["","Seit 2008 ist keine Begründung mehr nötig.","Auch ein Auslandsaufenthalt ist keine Voraussetzung.","Briefwahl ist seit 1957 möglich."],"e":"Seit 2008 muss kein Grund mehr genannt werden; die Briefwahl muss rechtzeitig beantragt werden.","h":"Antrag genügt.","d":2},
-{"id":"188xgr","s":"Staat & Wahlen","q":"An welchem Wochentag finden Bundestagswahlen statt?","a":["An einem Sonntag oder gesetzlichen Feiertag","Immer samstags","An einem Werktag","Immer am ersten Sonntag im Oktober"],"w":["","Samstag ist kein gesetzlicher Wahltag.","Ein Werktag ist nicht vorgesehen.","Der Termin variiert und wird vom Bundespräsidenten festgesetzt."],"e":"§ 16 Bundeswahlgesetz: Wahltag ist ein Sonntag oder gesetzlicher Feiertag.","h":"Ruhetag.","d":2},
-{"id":"5cl9vs","s":"Staat & Wahlen","q":"Wann wurde das Grundgesetz verkündet?","a":["1949","1945","1955","1990"],"w":["","1945 endete der Zweite Weltkrieg.","1955 wurde die Bundesrepublik formal souverän.","1990 wurde Deutschland wiedervereinigt."],"e":"Der Parlamentarische Rat verabschiedete es am 8. Mai 1949, in Kraft trat es am 23./24. Mai 1949.","h":"Gründung der Bundesrepublik.","d":1},
-{"id":"17seaa","s":"Staat & Wahlen","q":"Wer war Präsident des Parlamentarischen Rates, der das Grundgesetz erarbeitete?","a":["Konrad Adenauer","Theodor Heuss","Ludwig Erhard","Kurt Schumacher"],"w":["","Heuss war Mitglied des Rates und wurde erster Bundespräsident.","Erhard war später Kanzler, nicht Ratspräsident.","Schumacher führte die SPD, war aber nicht im Rat."],"e":"Adenauer leitete den Rat ab September 1948; 1949 wurde er erster Bundeskanzler.","h":"Später erster Kanzler.","d":3},
-{"id":"h838s0","s":"Staat & Wahlen","q":"Was garantiert Art. 28 GG den Gemeinden?","a":["Kommunale Selbstverwaltung","Eigene Bundesgesetzgebung","Eigene Strafgerichte","Eine eigene Währung"],"w":["","Gesetze erlassen nur Bund und Länder.","Gerichte sind Sache von Bund und Ländern.","Währungshoheit liegt beim Euro-System."],"e":"Gemeinden regeln örtliche Angelegenheiten im Rahmen der Gesetze selbst, etwa Kitas, Wasserversorgung und Bauleitplanung.","h":"Eigenverantwortung vor Ort.","d":3},
-{"id":"sqdwe4","s":"Staat & Wahlen","q":"Wie nennt man den Regierungschef eines Bundeslandes?","a":["Ministerpräsident","Landrat","Bürgermeister","Landesbischof"],"w":["","Der Landrat leitet einen Landkreis.","Der Bürgermeister leitet eine Gemeinde.","Ein Landesbischof leitet eine Kirche."],"e":"In den Stadtstaaten heißen die Regierungschefs Regierender Bürgermeister, Erster Bürgermeister oder Präsident des Senats.","h":"Länderchef.","d":1},
-{"id":"1tg9l9f","s":"Staat & Wahlen","q":"Wann ist der Tag der Deutschen Einheit?","a":["3. Oktober","9. November","8. Mai","23. Mai"],"w":["","Am 9. November 1989 fiel die Mauer.","Der 8. Mai 1945 ist der Tag der Befreiung.","Am 23. Mai 1949 wurde das Grundgesetz verkündet."],"e":"Am 3. Oktober 1990 trat die DDR dem Geltungsbereich des Grundgesetzes bei; seit 1990 ist es gesetzlicher Feiertag.","h":"Beitritt 1990.","d":1},
-{"id":"pwg56l","s":"Staat & Wahlen","q":"Welche Volksabstimmungen sind auf Bundesebene im Grundgesetz vorgesehen?","a":["Nur bei der Länderneugliederung","Bei jedem Bundesgesetz","Bei der Kanzlerwahl","Beim Bundeshaushalt"],"w":["","Gesetze beschließt der Bundestag.","Der Kanzler wird vom Bundestag gewählt.","Haushaltsgesetze werden parlamentarisch beschlossen."],"e":"Art. 29 GG sieht Volksentscheide bei der Länderneugliederung vor; Art. 146 erwähnt einen Verfassungsbeschluss des Volkes.","h":"Repräsentative Demokratie.","d":3},
-{"id":"14vwwnq","s":"Staat & Wahlen","q":"Was schützt die Indemnität der Abgeordneten?","a":["Äußerungen und Abstimmungen im Plenum","Alle Straftaten im Amt","Privatschulden der Abgeordneten","Nebentätigkeiten der Abgeordneten"],"w":["","Die Indemnität deckt keine Straftaten außerhalb der Parlamentsarbeit.","Gläubigerschutz besteht nicht.","Nebentätigkeiten müssen angezeigt werden."],"e":"Art. 46 GG: Abgeordnete dürfen wegen ihrer Abstimmung oder Äußerung im Bundestag nicht verfolgt werden (außer bei verleumderischen Beleidigungen).","h":"Freies Wort im Parlament.","d":3},
-{"id":"1ao8m4","s":"Staat & Wahlen","q":"Welchen Zweck hat der Vermittlungsausschuss?","a":["Konflikte zwischen Bundestag und Bundesrat über Gesetze lösen","Streit zwischen Koalitionspartnern schlichten","Tarifkonflikte schlichten","Streit zwischen Bund und EU lösen"],"w":["","Koalitionsausschüsse tagen außerhalb des Parlaments.","Tarifstreit regeln Tarifparteien oder Schlichter.","Die Beziehung zur EU regeln Verträge und EuGH."],"e":"Er besteht aus je 16 Mitgliedern von Bundestag und Bundesrat und sucht Kompromisse bei strittigen Gesetzen.","h":"Zwischen beiden Kammern.","d":3},
-{"id":"32nkaq","s":"Staat & Wahlen","q":"Welches Gericht ist für Streitigkeiten zwischen Bund und Ländern zuständig?","a":["Das Bundesverfassungsgericht","Der Bundesgerichtshof","Das Bundesverwaltungsgericht","Der Europäische Gerichtshof"],"w":["","Der BGH ist oberstes Zivil- und Strafgericht.","Das BVerwG entscheidet Verwaltungsstreitigkeiten.","Der EuGH prüft EU-Recht."],"e":"Das Bundesverfassungsgericht entscheidet über Organstreit und Bund-Länder-Streit (Art. 93 GG).","h":"Hüter der Verfassung.","d":2},
-{"id":"yldva3","s":"Staat & Wahlen","q":"Was sind Überhangmandate nach altem Recht gewesen?","a":["Direktmandate über dem Zweitstimmenanspruch","Mandate ausländischer Abgeordneter","Mandate ohne Stimmrecht","Zusatzsitze für die Opposition"],"w":["","Das Wahlrecht kennt keine Abgeordneten ohne Staatsangehörigkeit.","Jedes Mandat hat Stimmrecht.","Die Opposition erhält keine Zusatzsitze."],"e":"Seit der Reform 2023 entfallen Überhang- und Ausgleichsmandate; das soll den Bundestag auf 630 Sitze deckeln.","h":"Zu viele Wahlkreissieger.","d":3},
-{"id":"92y9dd","s":"Staat & Wahlen","q":"Welche Aufgabe hat der Bundeswahlleiter?","a":["Wahl organisieren und Ergebnis feststellen","Kandidaten der Parteien auswählen","Wahlkreisgrenzen festlegen","Wahlwerbung der Parteien bezahlen"],"w":["","Parteien stellen Kandidaten auf.","Wahlkreise legt ein Gesetz fest, eine Kommission berät.","Wahlkampf bezahlen die Parteien selbst."],"e":"Das Amt hat traditionell die Präsidentin oder der Präsident des Statistischen Bundesamtes inne.","h":"Organisator.","d":3},
-{"id":"4vudnm","s":"Staat & Wahlen","q":"Wie heißt das Parlament eines Bundeslandes meistens?","a":["Landtag","Landesrat","Bundesrat","Kreistag"],"w":["","„Landesrat“ ist kein übliches Landesparlament.","Der Bundesrat ist ein Bundesorgan.","Der Kreistag ist ein kommunales Gremium."],"e":"In Berlin heißt es Abgeordnetenhaus, in Hamburg und Bremen Bürgerschaft.","h":"Hat mit einem Land zu tun.","d":1},
-{"id":"1i4hhcm","s":"Staat & Wahlen","q":"Was bedeutet Föderalismus?","a":["Staatsgewalt ist zwischen Bund und Ländern aufgeteilt","Alle Macht liegt beim Zentralstaat","Der Staat wird von einem Monarchen geführt","Das Parlament wählt die Richter"],"w":["","Das ist Zentralismus.","Das ist eine Monarchie.","Richterwahl ist eine Frage der Gewaltenteilung, nicht des Föderalismus."],"e":"Art. 20 GG nennt Deutschland einen Bundesstaat; Länder haben eigene Staatsqualität und eigene Zuständigkeiten.","h":"Deutschland ist ein Bundesstaat.","d":2},
-{"id":"62l7r","s":"Staat & Wahlen","q":"Wo tagt der Deutsche Bundestag?","a":["Im Reichstagsgebäude in Berlin","Im Bundeshaus in Bonn","Im Bundeskanzleramt","Im Schloss Bellevue"],"w":["","Das Bonner Bundeshaus war bis 1999 Sitz.","Das Kanzleramt ist Sitz der Regierung.","Schloss Bellevue ist Amtssitz des Bundespräsidenten."],"e":"Der Bundestag tagt seit 1999 im Reichstagsgebäude mit der Glaskuppel von Norman Foster.","h":"Kuppel.","d":1},
-{"id":"6icp1v","s":"Recht im Alltag","q":"Wie lange gilt in Deutschland die gesetzliche Gewährleistung auf neue Ware?","a":["2 Jahre","6 Monate","1 Jahr","5 Jahre"],"w":["","Sechs Monate galt bis 2022 die Beweislastumkehr, nicht die Frist.","Ein Jahr ist die heutige Beweislastumkehr, nicht die gesamte Frist.","Fünf Jahre gelten für Baumängel an Bauwerken."],"e":"§ 438 BGB: zwei Jahre ab Ablieferung; in den ersten 12 Monaten wird vermutet, dass der Mangel schon beim Kauf vorlag.","h":"Doppelt so lang wie die Beweislastumkehr.","d":1},
-{"id":"asi2v8","s":"Recht im Alltag","q":"Wie lange kann man einen Online-Kauf in der EU in der Regel widerrufen?","a":["14 Tage","7 Tage","30 Tage","Gar nicht"],"w":["","Sieben Tage waren die frühere deutsche Frist.","Die EU-weite Regelfrist beträgt 14 Tage, nicht 30.","Das Widerrufsrecht besteht bei Fernabsatz grundsätzlich."],"e":"Die Frist beginnt bei Waren mit dem Erhalt; seit dem 19. Juni 2026 müssen Online-Händler eine Widerrufsfunktion („Widerrufsbutton“) anbieten.","h":"Länger als eine Woche, kürzer als ein Monat.","d":1},
-{"id":"ydpccm","s":"Recht im Alltag","q":"Wie lang ist die regelmäßige Verjährungsfrist im Bürgerlichen Gesetzbuch?","a":["3 Jahre, beginnend am Jahresende","1 Jahr, beginnend sofort","10 Jahre, beginnend am Jahresende","30 Jahre, beginnend sofort"],"w":["","Ein Jahr ist keine regelmäßige Frist des BGB.","Zehn Jahre gelten nur für bestimmte Ansprüche, etwa bei Grundstücken.","Dreißig Jahre gelten bei rechtskräftig festgestellten Ansprüchen."],"e":"§§ 195, 199 BGB: drei Jahre ab dem Schluss des Jahres, in dem der Anspruch entstand und der Gläubiger davon erfuhr.","h":"Jahresende zählt.","d":2},
-{"id":"12sflon","s":"Recht im Alltag","q":"Wie errichtet man in Deutschland ein Testament ohne Notar gültig?","a":["Komplett handschriftlich und mit Unterschrift","Am Computer geschrieben und unterschrieben","Mit zwei Zeugen und Stempel","Mündlich vor der Familie"],"w":["","Ein getipptes Testament ist ohne Notar ungültig.","Zeugen genügen ohne Schriftform nur im Nottestament.","Mündliche Erklärungen gelten nur als Nottestament in Ausnahmefällen."],"e":"§ 2247 BGB verlangt ein eigenhändig geschriebenes und unterschriebenes Testament; Ort und Datum sind empfehlenswert.","h":"Eigenhändig.","d":2},
-{"id":"1b8uevp","s":"Recht im Alltag","q":"Wie hoch ist der Pflichtteil naher Angehöriger, die enterbt wurden?","a":["Die Hälfte des gesetzlichen Erbteils","Ein Drittel des Nachlasses","Der volle gesetzliche Erbteil","Ein Viertel des Nachlasses"],"w":["","Ein Drittel ist kein gesetzlich festgelegter Satz.","Der volle Erbteil wäre kein Pflichtteil, sondern ein Erbe.","Ein Viertel gilt nicht als allgemeiner Satz."],"e":"Der Pflichtteil (§ 2303 BGB) ist ein Geldanspruch gegen die Erben; er steht Kindern, Ehepartnern und unter Umständen Eltern zu.","h":"Enterbte Kinder gehen nicht ganz leer aus.","d":2},
-{"id":"17fgdr3","s":"Recht im Alltag","q":"Wie hoch darf eine Mietkaution bei Wohnraum in Deutschland höchstens sein?","a":["Drei Nettokaltmieten","Zwei Warmmieten","Eine Nettokaltmiete","Sechs Nettokaltmieten"],"w":["","Eine Warmmiete-Grenze kennt das BGB nicht.","Eine Monatsmiete wäre weniger als erlaubt.","Sechs Monatsmieten überschreiten die gesetzliche Grenze."],"e":"§ 551 BGB: höchstens drei Monatsmieten ohne Nebenkosten; der Mieter darf in drei gleichen Raten zahlen.","h":"Nettokalt, nicht warm.","d":2},
-{"id":"1l4cefw","s":"Recht im Alltag","q":"Wie lang ist die gesetzliche Grundkündigungsfrist für Arbeitnehmer?","a":["4 Wochen zum 15. oder zum Monatsende","2 Wochen zum Monatsende","3 Monate zum Quartalsende","Eine Frist gibt es nicht"],"w":["","Zwei Wochen gelten nur in der Probezeit.","Drei Monate Frist zum Quartalsende sind keine gesetzliche Grundfrist.","§ 622 BGB regelt eine Grundkündigungsfrist."],"e":"§ 622 BGB: vier Wochen zum 15. oder Monatsende; Arbeits- oder Tarifvertrag können längere Fristen regeln.","h":"Zwei feste Termine im Monat.","d":2},
-{"id":"1o3nnrl","s":"Recht im Alltag","q":"Wer erbt in Deutschland ohne Testament zuerst?","a":["Die Kinder und der Ehepartner","Die Eltern und die Geschwister","Der Staat als gesetzlicher Erbe","Die Enkel vor den Kindern"],"w":["","Eltern und Geschwister gehören zur zweiten Ordnung und erben nur, wenn Abkömmlinge fehlen.","Der Staat erbt nur, wenn niemand sonst erbt.","Enkel erben nur anstelle eines weggefallenen Kindes."],"e":"Verwandte erster Ordnung sind die Abkömmlinge; der Ehepartner erbt neben Kindern bei Zugewinngemeinschaft die Hälfte.","h":"Erste Ordnung.","d":2},
-{"id":"jmx137","s":"Recht im Alltag","q":"Welches Recht gibt dir die DSGVO gegenüber Unternehmen?","a":["Auskunft über die zu dir gespeicherten Daten","Kostenlose Produkte im Tausch gegen Daten","Fristlose Kündigung jedes Vertrags","Gewinnbeteiligung an deinen Daten"],"w":["","Die DSGVO regelt keine Gegenleistung.","Vertragskündigungen regelt das Vertragsrecht.","Eine Gewinnbeteiligung sieht die DSGVO nicht vor."],"e":"Art. 15 DSGVO: Auskunftsrecht; dazu kommen Berichtigung und unter Voraussetzungen Löschung (Art. 16, 17).","h":"Zentrale Kontrollmöglichkeit über eigene Daten.","d":2},
-{"id":"11nlnwy","s":"Recht im Alltag","q":"Was begrenzt die Mietpreisbremse?","a":["Die Neuvermietungsmiete in Mangelgebieten","Die Miete in laufenden Verträgen","Die Höhe der Nebenkosten","Die Miete für Gewerbeflächen"],"w":["","Laufende Verträge regelt die Kappungsgrenze.","Die Mietpreisbremse deckelt die Nettokaltmiete, nicht die Nebenkosten.","Sie gilt für Wohnraum, nicht für Gewerbe."],"e":"Bei Neuvermietung darf die Miete höchstens 10 % über der ortsüblichen Vergleichsmiete liegen; Ausnahmen gelten etwa für Neubauten.","h":"Gilt nur in Gebieten mit Wohnungsmangel.","d":2},
-{"id":"19ye7c1","s":"Recht im Alltag","q":"Ab welchem Alter ist man in Deutschland strafmündig?","a":["14 Jahre","12 Jahre","16 Jahre","18 Jahre"],"w":["","12 Jahre gelten in manchen anderen Ländern.","16 Jahre ist das Alter für manche Wahlen, nicht für die Strafmündigkeit.","18 Jahre ist die Volljährigkeit."],"e":"Unter 14 gilt man als schuldunfähig (§ 19 StGB); zwischen 14 und 17 gilt in der Regel Jugendstrafrecht.","h":"Zwischen Kind und Jugendlichem.","d":1},
-{"id":"14txxtx","s":"Recht im Alltag","q":"Welchen Mindestabstand empfiehlt die Faustregel bei 100 km/h zum Vordermann?","a":["Etwa 50 m","Etwa 10 m","Etwa 25 m","Etwa 200 m"],"w":["","Zehn Meter sind selbst in der Stadt zu wenig.","25 Meter sind zu kurz.","200 Meter wären mehr als nötig."],"e":"Gesetzlich gilt nur „ausreichender Abstand“ (§ 4 StVO); die Faustregel lautet halber Tacho oder zwei Sekunden.","h":"Faustformel mit dem Tacho.","d":2},
-{"id":"1wdiuy9","s":"Recht im Alltag","q":"Wie tief muss das Reifenprofil gesetzlich mindestens sein?","a":["1,6 mm","3 mm","4 mm","0,5 mm"],"w":["","Drei Millimeter sind nur eine Empfehlung für Sommerreifen.","Vier Millimeter sind die Empfehlung für Winterreifen.","Bei 0,5 mm wäre das Profil schon unter der Mindesttiefe von 1,6 mm."],"e":"Die Straßenverkehrs-Zulassungs-Ordnung verlangt mindestens 1,6 mm.","h":"Weniger als 2 mm.","d":2},
-{"id":"mtrcaq","s":"Recht im Alltag","q":"Ab wann ist man in Deutschland volljährig?","a":["Mit 18 Jahren","Mit 16 Jahren","Mit 21 Jahren","Mit 14 Jahren"],"w":["","Mit 16 darf man in einigen Ländern wählen, ist aber nicht volljährig.","21 Jahre war früher die Altersgrenze.","14 Jahre ist die Strafmündigkeit."],"e":"§ 2 BGB: Mit 18 beginnt die volle Geschäftsfähigkeit; 1975 wurde die Grenze von 21 gesenkt.","h":"Zwischen 17 und 19.","d":1},
-{"id":"jg77th","s":"Recht im Alltag","q":"Ab welchem Alter ist man beschränkt geschäftsfähig?","a":["Ab 7 Jahren","Ab 14 Jahren","Ab 10 Jahren","Ab 16 Jahren"],"w":["","Mit 14 beginnt die Strafmündigkeit.","Zehn ist keine Altersgrenze des BGB.","Mit 16 ist man testierfähig, nicht erstmals geschäftsfähig."],"e":"§ 106 BGB: Minderjährige ab sieben Jahren sind beschränkt geschäftsfähig und brauchen für viele Geschäfte die Zustimmung der Eltern.","h":"Etwa Grundschulalter.","d":2},
-{"id":"ydwxhf","s":"Recht im Alltag","q":"Was regelt der „Taschengeldparagraph“ § 110 BGB?","a":["Wirksame Käufe mit überlassenem Geld","Pflicht der Eltern zum Taschengeld","Steuerpflicht für Taschengeld","Barzahlungspflicht für Kinder"],"w":["","Eine Pflicht zum Taschengeld besteht nicht.","Steuerrecht ist hier nicht betroffen.","Auch Überweisungen sind möglich, wenn die Mittel überlassen wurden."],"e":"Ein Vertrag eines Minderjährigen gilt, wenn er ihn mit Mitteln erfüllt, die ihm überlassen wurden.","h":"Mit eigenen Mitteln.","d":2},
-{"id":"7fkzqq","s":"Recht im Alltag","q":"Welche Form braucht ein Kaufvertrag über bewegliche Sachen grundsätzlich?","a":["Keine bestimmte Form","Schriftform","Notarielle Beurkundung","Zwei Zeugen"],"w":["","Schriftform ist nur bei bestimmten Verträgen vorgeschrieben.","Notar braucht man etwa beim Grundstückskauf.","Zeugen sind nicht erforderlich."],"e":"Es gilt Formfreiheit: Ein mündlicher Kauf ist wirksam; Schriftform dient vor allem der Beweisbarkeit.","h":"Denk an den Kauf am Kiosk.","d":2},
-{"id":"1mlyi4i","s":"Recht im Alltag","q":"Wer muss einen Grundstückskaufvertrag beurkunden?","a":["Ein Notar","Das Grundbuchamt","Ein Rechtsanwalt","Das Finanzamt"],"w":["","Das Grundbuchamt trägt den Eigentümerwechsel erst ein.","Ein Anwalt kann beraten, nicht beurkunden.","Das Finanzamt erhebt Grunderwerbsteuer."],"e":"§ 311b BGB: Verträge über Grundstücke bedürfen der notariellen Beurkundung.","h":"Hoher Wert, besondere Warnfunktion.","d":2},
-{"id":"1itjapl","s":"Recht im Alltag","q":"Welche Wirkung hat in Deutschland eine kirchliche Trauung rechtlich?","a":["Keine, nur die standesamtliche Ehe zählt","Dieselbe wie die standesamtliche","Sie ersetzt die Anmeldung beim Amt","Sie gilt nur mit Zeugen"],"w":["","Die kirchliche Trauung hat zivilrechtlich keine Wirkung.","Sie ersetzt die standesamtliche Ehe nicht.","Zeugen sind kein Kriterium."],"e":"Die Ehe wird vor dem Standesamt geschlossen (§ 1310 BGB); die Kirche ist Zusatz, seit 2009 auch ohne vorherige Zivilehe möglich.","h":"Amt, nicht Kirche.","d":2},
-{"id":"1jsrsk7","s":"Recht im Alltag","q":"Welcher Güterstand gilt, wenn Eheleute nichts anderes vereinbaren?","a":["Zugewinngemeinschaft","Gütertrennung","Gütergemeinschaft","Errungenschaftsgemeinschaft"],"w":["","Gütertrennung muss per Ehevertrag vereinbart werden.","Gütergemeinschaft muss ebenfalls vereinbart werden.","Die Errungenschaftsgemeinschaft gilt im deutschen Recht nicht."],"e":"Bei der Zugewinngemeinschaft behält jeder sein Vermögen, der Zugewinn wird bei Scheidung ausgeglichen.","h":"Der Name verrät, was ausgeglichen wird.","d":2},
-{"id":"b6aedz","s":"Recht im Alltag","q":"Wie lange muss man in der Regel getrennt leben, bevor eine einvernehmliche Scheidung möglich ist?","a":["Ein Jahr","Sechs Monate","Zwei Jahre","Drei Jahre"],"w":["","Ein halbes Jahr genügt nur in Härtefällen.","Zwei Jahre sind keine gesetzliche Stufe; maßgeblich sind ein und drei Jahre.","Nach drei Jahren gilt das Scheitern auch ohne Zustimmung des Partners als unwiderlegbar."],"e":"§ 1566 BGB: Nach einem Jahr Trennung wird das Scheitern bei gemeinsamem Antrag vermutet; nach drei Jahren gilt es als unwiderlegbar.","h":"Wartezeit, die auch Bedenkzeit ist.","d":3},
-{"id":"3ql9qp","s":"Recht im Alltag","q":"Welche Kündigungsfrist hat ein Mieter bei unbefristetem Wohnraummietvertrag?","a":["3 Monate","1 Monat","6 Monate","Sie ist vertragsfrei"],"w":["","Ein Monat gilt etwa bei möblierten Zimmern.","Sechs Monate sind die Frist bei Eigenbedarf, wenn lange vermietet.","Die gesetzliche Frist gilt zwingend zugunsten des Mieters."],"e":"§ 573c BGB: drei Monate für Mieter, für Vermieter je nach Mietdauer drei bis neun Monate.","h":"Zwingend zugunsten des Mieters.","d":2},
-{"id":"12192gi","s":"Recht im Alltag","q":"Bis wann muss der Vermieter die Betriebskostenabrechnung spätestens zustellen?","a":["12 Monate nach Ende des Abrechnungszeitraums","3 Monate nach Ende des Abrechnungszeitraums","6 Monate nach Ende des Abrechnungszeitraums","24 Monate nach Ende des Abrechnungszeitraums"],"w":["","Drei Monate sind keine gesetzliche Frist.","Sechs Monate sind keine gesetzliche Frist.","Zwei Jahre sind zu lang; danach sind Nachforderungen ausgeschlossen."],"e":"§ 556 Abs. 3 BGB: Nach Ablauf der Frist sind Nachforderungen in der Regel ausgeschlossen.","h":"Ausschlussfrist.","d":3},
-{"id":"1r0w1mt","s":"Recht im Alltag","q":"Wie lang darf eine Probezeit im Arbeitsverhältnis höchstens sein?","a":["6 Monate","3 Monate","9 Monate","12 Monate"],"w":["","Drei Monate sind üblich, aber nicht Höchstgrenze.","Neun Monate überschreiten die Höchstgrenze.","Zwölf Monate überschreiten die gesetzliche Höchstgrenze."],"e":"§ 622 Abs. 3 BGB: Während einer vereinbarten Probezeit von höchstens sechs Monaten gilt eine Kündigungsfrist von zwei Wochen.","h":"Höchstgrenze im BGB-Kündigungsrecht.","d":2},
-{"id":"lj54uz","s":"Recht im Alltag","q":"Wie viele Urlaubstage stehen Arbeitnehmern bei einer Fünf-Tage-Woche mindestens zu?","a":["20 Tage","24 Tage","25 Tage","30 Tage"],"w":["","24 sind die gesetzlichen Werktage bei einer Sechs-Tage-Woche.","25 Tage sind keine gesetzliche Zahl.","30 Tage sind tarif- oder arbeitsvertraglich üblich."],"e":"§ 3 Bundesurlaubsgesetz: 24 Werktage bei sechs Tagen; umgerechnet 20 Arbeitstage bei fünf Tagen.","h":"Umrechnung von sechs auf fünf Tage.","d":2},
-{"id":"6t9i34","s":"Recht im Alltag","q":"Wie lange zahlt der Arbeitgeber im Krankheitsfall das Gehalt weiter?","a":["Bis zu 6 Wochen","Bis zu 2 Wochen","Bis zu 3 Monate","Bis zu 12 Monate"],"w":["","Zwei Wochen sind nicht ausreichend vorgesehen.","Drei Monate sind keine gesetzliche Dauer.","Danach zahlt die Krankenkasse Krankengeld bis zu 78 Wochen."],"e":"§ 3 Entgeltfortzahlungsgesetz: Entgeltfortzahlung bis zu sechs Wochen je Erkrankung.","h":"Anschließend Krankengeld.","d":2},
-{"id":"10hpvi2","s":"Recht im Alltag","q":"Ab welcher Betriebsgröße gilt grundsätzlich das Kündigungsschutzgesetz?","a":["Mehr als 10 Beschäftigte","Mehr als 5 Beschäftigte","Mehr als 50 Beschäftigte","Mehr als 100 Beschäftigte"],"w":["","Fünf Beschäftigte galten bis 2003.","Fünfzig ist keine Schwelle des KSchG.","Hundert Beschäftigte sind keine Schwelle des KSchG."],"e":"§ 23 KSchG: Der Kündigungsschutz greift in Betrieben mit mehr als zehn Beschäftigten, wenn man mehr als sechs Monate dort arbeitet.","h":"Kleinbetriebe sind ausgenommen.","d":3},
-{"id":"r6qqwp","s":"Recht im Alltag","q":"Welche Form braucht eine Kündigung eines Arbeitsverhältnisses?","a":["Schriftform mit Unterschrift","Eine E-Mail","Eine mündliche Erklärung","Eine SMS"],"w":["","E-Mail erfüllt die Schriftform nicht.","Mündliche Kündigung ist unwirksam.","SMS erfüllt die Schriftform nicht."],"e":"§ 623 BGB: Kündigungen und Aufhebungsverträge brauchen Schriftform, also ein Papierdokument mit Unterschrift.","h":"Papier.","d":2},
-{"id":"1x0qvv5","s":"Recht im Alltag","q":"Wie lange dauert der Mutterschutz nach der Geburt in der Regel?","a":["8 Wochen","4 Wochen","12 Wochen","6 Wochen"],"w":["","Sechs Wochen sind die Schutzfrist vor der Geburt.","Vier Wochen sind zu kurz.","Zwölf Wochen gelten bei Früh- und Mehrlingsgeburten sowie behinderten Kindern."],"e":"§ 3 Mutterschutzgesetz: sechs Wochen vor und acht Wochen nach der Geburt; bei Früh- oder Mehrlingsgeburten zwölf Wochen.","h":"Länger als vor der Geburt.","d":2},
-{"id":"1djprd2","s":"Recht im Alltag","q":"Wie lange kann Elternzeit pro Kind höchstens genommen werden?","a":["Bis zu 3 Jahre","Bis zu 1 Jahr","Bis zu 2 Jahre","Bis zu 5 Jahre"],"w":["","Ein Jahr entspricht ungefähr dem Elterngeld.","Zwei Jahre sind zu kurz.","Fünf Jahre Elternzeit pro Kind sieht das BEEG nicht vor."],"e":"§ 15 BEEG: Anspruch auf bis zu drei Jahre unbezahlte Freistellung je Elternteil.","h":"Länger als das Elterngeld.","d":2},
-{"id":"1e384vn","s":"Recht im Alltag","q":"Wie nennt das Strafgesetzbuch die Abwehr eines gegenwärtigen rechtswidrigen Angriffs?","a":["Notwehr","Notstand","Selbsthilfe","Einwilligung"],"w":["","Notstand betrifft Gefahren, die nicht von einem Angriff ausgehen.","Selbsthilfe nach § 229 BGB sichert eigene Ansprüche.","Einwilligung ist ein anderer Rechtfertigungsgrund."],"e":"§ 32 StGB: Die erforderliche Verteidigung ist gerechtfertigt; sie muss nicht verhältnismäßig sein, aber erforderlich.","h":"Verteidigung gegen einen Angreifer.","d":2},
-{"id":"14k92u1","s":"Recht im Alltag","q":"Was unterscheidet eine Ordnungswidrigkeit von einer Straftat?","a":["Sie wird mit Bußgeld, nicht mit Strafe geahndet","Sie wird nur im Ausland verfolgt","Sie führt immer zu Haft","Sie verjährt nie"],"w":["","Ordnungswidrigkeiten werden im Inland verfolgt.","Freiheitsstrafen gibt es nur bei Straftaten.","Verjährung gibt es auch hier, meist nach 3 Monaten bis 3 Jahren."],"e":"Ordnungswidrigkeiten wie Falschparken werden von Behörden mit Verwarnung oder Bußgeld geahndet; Straftaten verfolgt die Staatsanwaltschaft.","h":"Falschparken ist ein typisches Beispiel.","d":1},
-{"id":"vs8uq2","s":"Recht im Alltag","q":"Welche Straftat verjährt in Deutschland nicht?","a":["Mord","Raub","Diebstahl","Betrug"],"w":["","Raub verjährt nach 20 Jahren.","Diebstahl verjährt nach fünf Jahren.","Betrug verjährt nach fünf Jahren."],"e":"§ 78 Abs. 2 StGB: Mord und Völkermord verjähren nicht.","h":"Lebenslang.","d":3},
-{"id":"1xle1lk","s":"Recht im Alltag","q":"Nach wie vielen Jahren kann eine lebenslange Freiheitsstrafe frühestens zur Bewährung ausgesetzt werden?","a":["Nach 15 Jahren","Nach 10 Jahren","Nach 20 Jahren","Nach 25 Jahren"],"w":["","Nach zehn Jahren ist eine Aussetzung gesetzlich noch nicht möglich.","Zwanzig Jahre ist nicht die Mindestgrenze.","Fünfundzwanzig Jahre sind nicht vorgesehen."],"e":"§ 57a StGB: Aussetzung nach 15 Jahren, wenn nicht die besondere Schwere der Schuld eine längere Vollstreckung gebietet.","h":"Weniger als 20 Jahre.","d":3},
-{"id":"smtinx","s":"Recht im Alltag","q":"Was besagt der Grundsatz „in dubio pro reo“?","a":["Im Zweifel für den Angeklagten","Im Zweifel für die Anklage","Jeder muss seine Unschuld beweisen","Der Richter urteilt nach Gewohnheit"],"w":["","Gegenteil: Das Gericht darf bei Zweifeln nicht verurteilen.","Die Beweislast liegt beim Staat.","Gerichte entscheiden nach Gesetz."],"e":"Die Unschuldsvermutung ist in Art. 6 EMRK verankert: Wer nicht überführt wird, ist freizusprechen.","h":"Lateinisch.","d":1},
-{"id":"12ofqyb","s":"Recht im Alltag","q":"Wer sind Schöffen?","a":["Ehrenamtliche Laienrichter","Berufsrichter am Landgericht","Staatsanwälte","Rechtspfleger"],"w":["","Berufsrichter sind Juristen.","Staatsanwälte klagen an.","Rechtspfleger sind Beamte mit eigenen Aufgaben."],"e":"Schöffen urteilen in Strafverfahren gleichberechtigt mit Berufsrichtern und werden für fünf Jahre gewählt.","h":"Keine Juristen.","d":2},
-{"id":"yqc5j9","s":"Recht im Alltag","q":"Was prüft die Revision im Gegensatz zur Berufung?","a":["Nur Rechtsfehler","Nur Tatsachen","Beides vollständig","Nur Verfahrensdauer"],"w":["","Die Berufung prüft auch Tatsachen.","Die Revision prüft keine Tatsachen neu.","Die Dauer ist kein Prüfungsmaßstab."],"e":"In der Revision wird das Urteil nur auf Rechtsfehler untersucht.","h":"Recht, nicht Tatsachen.","d":3},
-{"id":"1jg0it3","s":"Recht im Alltag","q":"In welcher Stadt hat das Bundesarbeitsgericht seinen Sitz?","a":["Erfurt","Kassel","Leipzig","Karlsruhe"],"w":["","In Kassel sitzt das Bundessozialgericht.","In Leipzig sitzt das Bundesverwaltungsgericht.","In Karlsruhe sitzen BGH und BVerfG."],"e":"Das BAG zog 1999 von Kassel nach Erfurt.","h":"Thüringen.","d":3},
-{"id":"10yqy4q","s":"Recht im Alltag","q":"In welcher Stadt hat der Bundesfinanzhof seinen Sitz?","a":["München","Frankfurt am Main","Köln","Hannover"],"w":["","Frankfurt ist Sitz von EZB und Bundesbank.","Köln hat keinen obersten Bundesgerichtshof.","Hannover hat keinen obersten Bundesgerichtshof."],"e":"Der BFH sitzt in München, seit 1950 Sitz des Gerichts.","h":"Bayern.","d":3},
-{"id":"16bywk0","s":"Recht im Alltag","q":"Wie viele Gerichtsbarkeiten gibt es in Deutschland?","a":["Fünf","Drei","Sieben","Zwei"],"w":["","Drei Zweige wären zu wenig; neben den ordentlichen Gerichten gibt es vier Fachgerichtsbarkeiten.","Sieben Zweige gibt es nicht; es sind fünf.","Zwei Zweige würden nur Zivil- und Strafgerichte abdecken."],"e":"Ordentliche, Arbeits-, Verwaltungs-, Sozial- und Finanzgerichtsbarkeit.","h":"Neben der ordentlichen gibt es Arbeits-, Verwaltungs-, Sozial- und …","d":3},
-{"id":"7bier5","s":"Recht im Alltag","q":"Wie hoch kann ein Bußgeld nach der DSGVO maximal sein?","a":["20 Mio. Euro oder 4 % des Jahresumsatzes","1 Mio. Euro oder 1 % des Umsatzes","500.000 Euro","10 Mio. Euro oder 2 % des Umsatzes"],"w":["","Dieser Rahmen liegt weit unter dem gesetzlichen Höchstbetrag.","Ein Betrag in dieser Höhe ist im Gesetz so nicht vorgesehen.","10 Mio./2 % gilt für weniger schwere Verstöße."],"e":"Art. 83 DSGVO: bei schweren Verstößen bis 20 Mio. Euro oder 4 % des weltweiten Jahresumsatzes, je nachdem, welcher Betrag höher ist.","h":"Bei Konzernen zählt der Umsatz.","d":3},
-{"id":"19nal5","s":"Recht im Alltag","q":"Was kann der Käufer bei einem Sachmangel zunächst verlangen?","a":["Nacherfüllung durch Reparatur oder Ersatz","Sofortige Rückzahlung des Kaufpreises","Schadensersatz in doppelter Höhe","Preisminderung auf null"],"w":["","Rücktritt ist erst nach gescheiterter Nacherfüllung möglich.","Doppelter Schadensersatz existiert im deutschen Recht nicht.","Minderung ist wie Rücktritt erst nach fehlgeschlagener Nacherfüllung möglich."],"e":"§ 437 BGB: Vorrang hat die Nacherfüllung; erst danach kommen Rücktritt, Minderung oder Schadensersatz.","h":"Erst reparieren.","d":2},
-{"id":"1h9z12p","s":"Recht im Alltag","q":"Was unterscheidet eine Garantie von der gesetzlichen Gewährleistung?","a":["Die Garantie ist eine freiwillige Zusatzzusage","Die Garantie ist gesetzlich Pflicht","Die Garantie gilt nur für Gebrauchtwaren","Die Garantie gilt nur gegenüber dem Staat"],"w":["","Gesetzlich vorgeschrieben ist die Gewährleistung; eine Garantie ist freiwillig.","Garantien gibt es bei Neu- und Gebrauchtwaren.","Sie ist ein Vertragsversprechen gegenüber dem Käufer."],"e":"Garantien gibt der Hersteller oder Verkäufer freiwillig; die Gewährleistung des Verkäufers bleibt davon unberührt.","h":"Freiwilligkeit.","d":2},
-{"id":"1e136mc","s":"Recht im Alltag","q":"Ab wie viel Promille gilt für Autofahrer absolute Fahruntüchtigkeit?","a":["1,1 Promille","0,5 Promille","0,3 Promille","1,6 Promille"],"w":["","0,5 Promille ist die Ordnungswidrigkeits-Grenze.","0,3 Promille gilt bei Ausfallerscheinungen.","1,6 Promille gilt für Radfahrer."],"e":"Ab 1,1 Promille liegt immer eine Straftat vor (§ 316 StGB); für Radfahrer liegt die Grenze bei 1,6.","h":"Straftat, keine Ordnungswidrigkeit.","d":3},
-{"id":"1upol64","s":"Recht im Alltag","q":"Wie lange dauert die Probezeit bei der Fahrerlaubnis?","a":["Zwei Jahre","Ein Jahr","Drei Jahre","Fünf Jahre"],"w":["","Ein Jahr deckt nur die Hälfte der gesetzlichen Probezeit von zwei Jahren ab.","Drei Jahre sind es nach dem Gesetz nicht; die Probezeit endet nach zwei.","Fünf Jahre wären mehr als doppelt so lang wie die gesetzliche Probezeit."],"e":"§ 2a StVG: Die Probezeit beträgt zwei Jahre; bei Verstößen droht ein Aufbauseminar.","h":"Länger als ein Jahr.","d":3},
-{"id":"1icjff9","s":"Recht im Alltag","q":"Bei wie vielen Punkten im Fahreignungsregister wird die Fahrerlaubnis entzogen?","a":["8 Punkte","6 Punkte","10 Punkte","18 Punkte"],"w":["","Bei 6 Punkten wird man verwarnt.","Zehn Punkte sind keine Stufe des Systems.","18 Punkte galten nach dem alten System."],"e":"Seit 2014 gilt: 1 bis 3 Punkte keine Maßnahme, ab 4 Ermahnung, ab 6 Verwarnung, ab 8 Entzug.","h":"Niedriger als 18, höher als 6.","d":2},
-{"id":"krl53","s":"Recht im Alltag","q":"Welche Regel gilt an gleichrangigen Kreuzungen ohne Schilder?","a":["Rechts vor links","Links vor rechts","Der größere Wagen","Wer zuerst kommt"],"w":["","Links vor rechts gilt nicht; Vorfahrt hat, wer von rechts kommt.","Die Fahrzeuggröße ist nicht relevant.","Eine Regel „wer zuerst kommt“ kennt die StVO bei der Vorfahrt nicht."],"e":"§ 8 StVO: Wer von rechts kommt, hat Vorfahrt.","h":"Aus der ersten Fahrstunde.","d":1},
-{"id":"1kvczu5","s":"Recht im Alltag","q":"Ab welchem Alter darf man mit begleitetem Fahren die Klasse B fahren?","a":["17 Jahre","16 Jahre","18 Jahre","15 Jahre"],"w":["","Mit 16 beginnt die Fahrerlaubnisklasse AM für Mopeds.","18 Jahre ist das reguläre Alter.","Mit 15 ist nur die Mofa-Prüfbescheinigung möglich."],"e":"§ 48a FeV: Begleitetes Fahren ab 17 mit Begleitperson, ab 18 selbstständig.","h":"Ein Jahr vor der Volljährigkeit.","d":1},
-{"id":"1gma05r","s":"Recht im Alltag","q":"Welcher Gegenstand muss in Deutschland im Pkw mitgeführt werden?","a":["Warnweste","Feuerlöscher","Abschleppseil","Ersatzreifen"],"w":["","Feuerlöscher sind nicht vorgeschrieben.","Ein Abschleppseil ist nicht vorgeschrieben.","Ein Ersatzreifen ist nicht vorgeschrieben."],"e":"Pflicht sind Warndreieck, Verbandkasten und Warnweste.","h":"Sichtbarkeit.","d":2},
-{"id":"115794f","s":"Recht im Alltag","q":"Wie lange schützt das Urheberrecht ein Werk nach dem Tod des Urhebers?","a":["70 Jahre","50 Jahre","100 Jahre","25 Jahre"],"w":["","50 Jahre galten bis 1993.","Hundert Jahre Schutz nach dem Tod sieht das Urheberrechtsgesetz nicht vor.","25 Jahre sind weniger als die gesetzlichen 70 Jahre."],"e":"§ 64 UrhG: Das Urheberrecht erlischt 70 Jahre nach dem Tod des Urhebers.","h":"Länger als ein Menschenleben.","d":3},
-{"id":"qz9akb","s":"Recht im Alltag","q":"Wofür dient eine Patientenverfügung?","a":["Behandlungswünsche für den Ernstfall","Vermögensübertragung an Erben","Anmeldung zur Organspende","Vertretung gegenüber Behörden"],"w":["","Das regelt ein Testament oder eine Schenkung.","Dafür gibt es den Organspendeausweis.","Das regelt die Vorsorgevollmacht."],"e":"§ 1827 BGB: Eine schriftliche Patientenverfügung bindet Ärzte und Betreuer.","h":"Medizinischer Wille.","d":2},
-{"id":"k8e8xg","s":"Recht im Alltag","q":"Was regelt eine Vorsorgevollmacht?","a":["Eine Vertrauensperson handelt für dich, wenn du es nicht kannst","Eine Behörde verwaltet dein Vermögen ab 65","Dein Erbe wird schon zu Lebzeiten verteilt","Dein Hausarzt entscheidet dann automatisch allein"],"w":["","Eine Behörde übernimmt nur nach einer gerichtlichen Betreuung.","Das Erbe regelt ein Testament, erst nach dem Tod.","Ärzte brauchen die Einwilligung des Patienten oder Vertreters."],"e":"Mit ihr vermeidest du eine gerichtlich bestellte Betreuung, falls du Entscheidungen nicht mehr treffen kannst.","h":"Man bestimmt selbst, wer im Ernstfall entscheidet.","d":2},
-{"id":"1xn44wt","s":"Recht im Alltag","q":"Wie heißt das gerichtliche Verfahren für unbestrittene Geldforderungen, bei dem ein Bescheid ohne Verhandlung ergeht?","a":["Mahnverfahren","Schlichtungsverfahren","Revisionsverfahren","Strafbefehl"],"w":["","Schlichtung versucht eine gütliche Einigung.","Die Revision prüft Urteile auf Rechtsfehler, sie ist kein Verfahren für Geldforderungen.","Der Strafbefehl gehört ins Strafrecht."],"e":"Das gerichtliche Mahnverfahren (§ 688 ZPO) führt zum Vollstreckungsbescheid, wenn der Schuldner nicht widerspricht.","h":"Mahnbescheid.","d":3},
-{"id":"pfo0p3","s":"Recht im Alltag","q":"Was ist eine Abmahnung im Arbeitsrecht?","a":["Eine Rüge mit Warnung vor Kündigung","Eine fristlose Kündigung ohne Anhörung","Eine Gehaltskürzung als Strafe","Eine Versetzung an einen anderen Ort"],"w":["","Die Kündigung ist erst die Folge einer erfolglosen Abmahnung.","Eine Gehaltskürzung als Sanktion ist unzulässig.","Eine Versetzung ist eine Weisung, keine Abmahnung."],"e":"Bei verhaltensbedingter Kündigung ist meist zuerst eine Abmahnung nötig; sie rügt den Pflichtverstoß und warnt vor Folgen.","h":"Gelbe Karte.","d":2},
-{"id":"1mnw7","s":"Recht im Alltag","q":"Muss jeder Halter eines zugelassenen Pkw in Deutschland eine Haftpflichtversicherung haben?","a":["Ja, sie ist gesetzlich vorgeschrieben","Nein, sie ist freiwillig","Nur bei Neuwagen","Nur für Fahrzeuge über 100 PS"],"w":["","Ohne Versicherung gibt es keine Zulassung; der Betrieb ohne Schutz ist strafbar.","Die Pflicht gilt unabhängig vom Alter des Fahrzeugs.","Die Pflicht hängt nicht von der Motorleistung ab."],"e":"Das Pflichtversicherungsgesetz verlangt die Kfz-Haftpflicht, damit Unfallopfer ihre Schäden ersetzt bekommen.","h":"Opferschutz.","d":1},
-{"id":"1c2c0eg","s":"Recht im Alltag","q":"Welches Recht hat ein Mieter bei einem erheblichen Wohnungsmangel?","a":["Die Miete angemessen mindern","Die Miete vollständig einbehalten","Ohne Frist sofort ausziehen","Selbst renovieren und den Betrag abziehen"],"w":["","Eine volle Einbehaltung ist nur bei völliger Unbrauchbarkeit denkbar.","Eine Kündigung braucht grundsätzlich die Frist.","Selbstvornahme ist nur ausnahmsweise erlaubt."],"e":"§ 536 BGB: Bei Mängeln mindert sich die Miete kraft Gesetzes in angemessener Höhe.","h":"Kraft Gesetzes.","d":2},
-{"id":"1qsinqx","s":"Recht im Alltag","q":"Was bedeutet Vertragsfreiheit im Zivilrecht?","a":["Jeder entscheidet frei, ob und mit wem er Verträge schließt","Verträge brauchen immer eine staatliche Genehmigung","Verträge müssen immer schriftlich geschlossen werden","Der Inhalt jedes Vertrags ist gesetzlich festgelegt"],"w":["","Eine Genehmigung ist nur ausnahmsweise nötig.","Formfreiheit ist die Regel, Schriftform die Ausnahme.","Die Parteien gestalten den Inhalt grundsätzlich selbst."],"e":"Die Vertragsfreiheit umfasst Abschluss- und Gestaltungsfreiheit; sie folgt aus der Privatautonomie.","h":"Privatautonomie.","d":2},
-{"id":"qcblq2","s":"EU & Welt","q":"Welches Land ist KEIN ständiges Mitglied des UN-Sicherheitsrats?","a":["Indien","Frankreich","China","Großbritannien"],"w":["","Frankreich ist ständiges Mitglied mit Vetorecht.","China ist ständiges Mitglied mit Vetorecht.","Großbritannien ist ständiges Mitglied mit Vetorecht."],"e":"Ständig sind USA, Russland, China, Frankreich und Großbritannien, alle mit Vetorecht.","h":"Fünf Siegermächte von 1945.","d":1},
-{"id":"i74zmp","s":"EU & Welt","q":"Welches EU-Organ hat das Initiativrecht für neue Gesetze?","a":["Die Europäische Kommission","Das Europäische Parlament","Der Europäische Gerichtshof","Die Europäische Zentralbank"],"w":["","Das Parlament beschließt Gesetze mit dem Rat, schlägt sie aber meist nicht vor.","Der EuGH legt Recht aus, er macht keine Gesetze.","Die EZB steuert die Geldpolitik."],"e":"In der Regel legt die Kommission Vorschläge vor; Parlament und Rat beschließen.","h":"Hüterin der Verträge.","d":2},
-{"id":"1bfh783","s":"EU & Welt","q":"Was bedeutet das Subsidiaritätsprinzip?","a":["Entscheidungen fallen möglichst auf der untersten sinnvollen Ebene","Der Bund trifft grundsätzlich alle Entscheidungen","Gerichte stehen über der gewählten Regierung","Die Länder dürfen den Bund überstimmen"],"w":["","Das wäre Zentralismus.","Das widerspricht der Gewaltenteilung.","Ein Überstimmen gibt es so nicht."],"e":"Das Prinzip gilt in der EU (Art. 5 EUV) und im deutschen Föderalismus: Höhere Ebenen handeln nur, wenn es nötig ist.","h":"Das Prinzip stammt aus der katholischen Soziallehre.","d":2},
-{"id":"1bfi797","s":"EU & Welt","q":"In welcher Stadt wird der Friedensnobelpreis verliehen?","a":["Oslo","Stockholm","Genf","Den Haag"],"w":["","Die übrigen Nobelpreise werden in Stockholm verliehen.","Genf ist Sitz vieler UN-Organisationen, nicht des Nobelpreises.","Den Haag ist Sitz des Internationalen Gerichtshofs."],"e":"Alfred Nobel verfügte in seinem Testament, dass das norwegische Nobelkomitee den Friedenspreis vergibt.","h":"Nicht dort, wo die anderen Preise vergeben werden.","d":1},
-{"id":"3q9wn0","s":"EU & Welt","q":"Was regelt Artikel 5 des NATO-Vertrags?","a":["Der Angriff auf ein Mitglied gilt als Angriff auf alle","Die Einführung einer gemeinsamen Währung","Die Wehrpflicht aller Mitgliedstaaten","Die Freizügigkeit der Bürger im Bündnis"],"w":["","Eine gemeinsame Währung hat die NATO nicht.","Eine gemeinsame Wehrpflicht gibt es nicht.","Freizügigkeit regelt der Schengen-Raum."],"e":"Der Bündnisfall wurde bisher nur einmal ausgerufen, nach den Anschlägen vom 11. September 2001.","h":"Der Bündnisfall wurde nur nach dem 11. September 2001 ausgerufen.","d":2},
-{"id":"1ge5u4b","s":"EU & Welt","q":"Wie viele Mitgliedstaaten hat die EU (Stand 2026)?","a":["27","25","28","30"],"w":["","25 waren es von 2004 bis 2007.","28 waren es vor dem Brexit.","30 Mitglieder hat die EU nicht; es sind 27."],"e":"Seit dem Brexit 2020 hat die EU 27 Mitglieder; Kroatien trat 2013 als bisher letztes bei.","h":"Nach dem Brexit.","d":1},
-{"id":"1i28z0h","s":"EU & Welt","q":"Wo hat das Europäische Parlament seinen offiziellen Sitz?","a":["Straßburg","Brüssel","Luxemburg","Den Haag"],"w":["","In Brüssel tagen Ausschüsse und zusätzliche Plenarsitzungen.","In Luxemburg sitzt das Generalsekretariat.","Den Haag ist kein EU-Organsitz."],"e":"Der Sitz ist laut EU-Verträgen Straßburg; dort finden die Plenartagungen statt.","h":"Grenzstadt zu Deutschland.","d":1},
-{"id":"15ytjxp","s":"EU & Welt","q":"Wo hat die UNO ihren Hauptsitz?","a":["New York","Genf","Wien","Den Haag"],"w":["","In Genf liegt das zweitgrößte UN-Büro.","In Wien sitzen unter anderem die Atomenergiebehörde und OPEC.","Den Haag ist Sitz des IGH."],"e":"Weitere UN-Standorte sind Genf, Wien und Nairobi.","h":"Östliche US-Metropole.","d":1},
-{"id":"1p37gwq","s":"EU & Welt","q":"Was regelt der Schengen-Raum?","a":["Keine Grenzkontrollen an den Binnengrenzen","Eine gemeinsame Währung","Einen gemeinsamen Verteidigungsfall","Einheitliche Steuersätze"],"w":["","Der Euro ist eine eigene Vereinbarung.","Der Verteidigungsfall liegt in der NATO.","Steuern bleiben weitgehend national."],"e":"Das Schengener Abkommen von 1985 hebt systematische Grenzkontrollen zwischen den Teilnehmerstaaten auf.","h":"Grenzen.","d":2},
-{"id":"15hik4d","s":"EU & Welt","q":"Welche Institution vertritt in der EU die Regierungen der Mitgliedstaaten?","a":["Der Rat der Europäischen Union","Das Europäische Parlament","Die Europäische Kommission","Der Europäische Gerichtshof"],"w":["","Das Parlament vertritt die Bürgerinnen und Bürger.","Die Kommission vertritt das Gemeinwohl der EU.","Der EuGH wacht über das Recht."],"e":"Im Rat sitzen die Fachminister der Mitgliedstaaten; er beschließt zusammen mit dem Parlament.","h":"Minister der Länder.","d":2},
-{"id":"15a8nw3","s":"EU & Welt","q":"Welches Land gehört NICHT zur G7?","a":["China","Kanada","Italien","Japan"],"w":["","Kanada ist G7-Mitglied.","Italien ist G7-Mitglied.","Japan ist G7-Mitglied."],"e":"Die G7: USA, Japan, Deutschland, Vereinigtes Königreich, Frankreich, Italien, Kanada.","h":"Nicht im Westen.","d":1},
-{"id":"g8lddd","s":"EU & Welt","q":"Wie viele Länder gehören seit 2026 zum Euroraum?","a":["21","19","20","27"],"w":["","19 waren es von 2015 bis 2022.","20 waren es 2023 bis 2025.","27 ist die Zahl der EU-Mitglieder."],"e":"Bulgarien führte den Euro am 1. Januar 2026 ein und wurde das 21. Mitglied.","h":"Neueste Beitritte aus Südosteuropa.","d":3,"src":"EZB, 01.01.2026: ecb.europa.eu/press/pr/date/2026/html/ecb.pr260101~c830245e42.de.html"},
-{"id":"jammsh","s":"EU & Welt","q":"Welches Land gehörte NICHT zu den sechs Gründerstaaten der EWG?","a":["Spanien","Italien","Luxemburg","Belgien"],"w":["","Italien war Gründungsmitglied.","Luxemburg war Gründungsmitglied.","Belgien war Gründungsmitglied."],"e":"Gründer 1957 waren Belgien, Deutschland, Frankreich, Italien, Luxemburg und die Niederlande; Spanien trat 1986 bei.","h":"Iberische Halbinsel.","d":2},
-{"id":"1426x5w","s":"EU & Welt","q":"In welchem Vertrag wurde die Europäische Union gegründet?","a":["Vertrag von Maastricht","Vertrag von Lissabon","Römische Verträge","Vertrag von Versailles"],"w":["","Lissabon reformierte 2009 die EU.","Die Römischen Verträge gründeten 1957 die EWG.","Versailles beendete 1919 den Ersten Weltkrieg."],"e":"Der Maastricht-Vertrag trat am 1. November 1993 in Kraft und schuf die Union und den Weg zum Euro.","h":"Niederländische Stadt.","d":2},
-{"id":"1yl8ptl","s":"EU & Welt","q":"Was änderte der Vertrag von Lissabon (in Kraft seit 2009)?","a":["Parlamentsrechte gestärkt, Charta verbindlich","Gründung der Wirtschaftsgemeinschaft","Einführung des Euro als Währung","Abschaffung des Rates der Union"],"w":["","Die EWG wurde 1957 gegründet.","Der Euro wurde 1999 eingeführt.","Der Rat blieb bestehen."],"e":"Seit 2009 gilt das ordentliche Gesetzgebungsverfahren mit Parlament und Rat als Regelfall.","h":"Reformvertrag.","d":3},
-{"id":"okyni1","s":"EU & Welt","q":"Welche Voraussetzungen müssen EU-Beitrittskandidaten erfüllen?","a":["Die Kopenhagener Kriterien","Die Maastricht-Kriterien","Die Schengen-Kriterien","Die Genfer Kriterien"],"w":["","Maastricht-Kriterien betreffen den Euro-Beitritt.","Schengen betrifft Grenzkontrollen.","Genfer Konventionen betreffen Kriegsrecht."],"e":"Sie umfassen stabile Institutionen, Marktwirtschaft und die Übernahme des EU-Rechts.","h":"Beschlossen vom Europäischen Rat 1993.","d":3},
-{"id":"1so7a9l","s":"EU & Welt","q":"Wo hat der Europäische Gerichtshof (EuGH) seinen Sitz?","a":["Luxemburg","Brüssel","Straßburg","Den Haag"],"w":["","Brüssel ist Sitz der Kommission und des Rates.","Straßburg ist Sitz des Europäischen Parlaments.","Den Haag ist Sitz des IGH."],"e":"Der EuGH wacht über die einheitliche Auslegung des EU-Rechts.","h":"Kleiner Staat, großes Gericht.","d":2},
-{"id":"d9i4rm","s":"EU & Welt","q":"Wo hat die Europäische Zentralbank (EZB) ihren Sitz?","a":["Frankfurt am Main","Brüssel","Paris","Luxemburg"],"w":["","Brüssel ist Sitz von Kommission und Rat.","Paris ist Sitz der OECD.","Luxemburg ist Sitz des EuGH."],"e":"Die EZB wurde 1998 gegründet; ihr Hauptziel ist Preisstabilität.","h":"Auch die Bundesbank sitzt in dieser Stadt.","d":1},
-{"id":"1ozneul","s":"EU & Welt","q":"Wer bildet den Europäischen Rat?","a":["Die Staats- und Regierungschefs der Mitgliedstaaten","Die Fachminister der Mitgliedstaaten","Die Abgeordneten des Europäischen Parlaments","Die Richter des EuGH"],"w":["","Fachminister bilden den Rat der EU.","Abgeordnete bilden das Parlament.","Richter bilden den Gerichtshof."],"e":"Er gibt der Union allgemeine politische Impulse; er verabschiedet keine Gesetze.","h":"Gipfel.","d":2},
-{"id":"g6g5d8","s":"EU & Welt","q":"Seit wann wird das Europäische Parlament direkt gewählt?","a":["1979","1957","1993","2009"],"w":["","1957 wurde die EWG gegründet.","1993 trat der Maastricht-Vertrag in Kraft.","2009 trat der Lissabonner Vertrag in Kraft."],"e":"Die erste Direktwahl fand im Juni 1979 statt; die Wahlperiode beträgt fünf Jahre.","h":"Ende der 1970er.","d":2},
-{"id":"o0dnc9","s":"EU & Welt","q":"Was unterscheidet eine EU-Verordnung von einer Richtlinie?","a":["Die Verordnung gilt unmittelbar in allen Mitgliedstaaten","Die Verordnung muss in nationales Recht umgesetzt werden","Die Richtlinie gilt nur für Behörden","Die Richtlinie ist unverbindlich"],"w":["","Eine Umsetzung braucht die Richtlinie, nicht die Verordnung.","Richtlinien verpflichten die Mitgliedstaaten, ihre Gesetze anzupassen.","Richtlinien sind verbindlich bezüglich ihres Ziels."],"e":"Die DSGVO ist eine Verordnung und gilt direkt; Richtlinien müssen Staaten umsetzen.","h":"Direkt oder umzusetzen.","d":2},
-{"id":"qyf790","s":"EU & Welt","q":"Was ist die Unionsbürgerschaft?","a":["Automatisch mit der Staatsangehörigkeit","Erteilung nach Antrag in Brüssel","Ersatz der nationalen Staatsangehörigkeit","Geltung nur in Schengen-Staaten"],"w":["","Ein Antrag ist nicht nötig.","Sie tritt neben die nationale Staatsangehörigkeit.","Sie gilt in allen EU-Staaten."],"e":"Sie gewährt unter anderem Freizügigkeit und das Wahlrecht bei Europa- und Kommunalwahlen im Wohnsitzstaat.","h":"Zusatz zur nationalen Staatsangehörigkeit.","d":2},
-{"id":"1fc10a","s":"EU & Welt","q":"Welche vier Grundfreiheiten bilden den EU-Binnenmarkt?","a":["Waren, Personen, Dienstleistungen, Kapital","Waren, Arbeit, Boden, Kapital","Währung, Waren, Wehrpflicht, Wahlrecht","Handel, Zölle, Steuern, Renten"],"w":["","Arbeit und Boden sind Produktionsfaktoren.","Währung und Wehrpflicht gehören nicht dazu.","Das sind keine Grundfreiheiten."],"e":"Der Binnenmarkt besteht seit 1993 und lässt Waren, Menschen, Dienstleistungen und Kapital frei zirkulieren.","h":"Vier Bereiche des freien Verkehrs.","d":2},
-{"id":"cpnkat","s":"EU & Welt","q":"Wie viele Amtssprachen hat die EU (Stand 2026)?","a":["24","20","27","12"],"w":["","20 waren es 2004.","27 ist die Zahl der Mitgliedstaaten.","Zwölf wäre nur die Hälfte der heutigen Amtssprachen."],"e":"Seit 2022 ist auch Irisch vollwertige Amtssprache; Deutsch gehört dazu.","h":"Zwei Dutzend.","d":2},
-{"id":"1mr9ba","s":"EU & Welt","q":"Welcher Staat ist KEIN Mitglied der EU?","a":["Norwegen","Dänemark","Finnland","Irland"],"w":["","Dänemark ist seit 1973 Mitglied.","Finnland ist seit 1995 Mitglied.","Irland ist seit 1973 Mitglied."],"e":"Norwegen gehört zum EWR, aber nicht zur EU.","h":"Nordland.","d":1},
-{"id":"1t9jbf3","s":"EU & Welt","q":"Wann wurde die NATO gegründet?","a":["1949","1945","1955","1991"],"w":["","1945 wurde die UNO gegründet.","1955 gründete sich der Warschauer Pakt.","1991 endete der Warschauer Pakt."],"e":"Die Gründung war eine Antwort auf die Sicherheitslage nach dem Zweiten Weltkrieg; Deutschland trat 1955 bei.","h":"Ende der 1940er.","d":1},
-{"id":"6w1mlp","s":"EU & Welt","q":"Wo hat die NATO ihren Hauptsitz?","a":["Brüssel","Washington","Paris","Wien"],"w":["","Washington war Ort der Gründung.","Paris war früherer Sitz bis 1967.","Wien ist Sitz der OSZE."],"e":"Die Zentrale der NATO ist in Brüssel, Belgien.","h":"Hauptstadt Belgiens.","d":2},
-{"id":"1cgxidg","s":"EU & Welt","q":"Welches Gericht entscheidet über Streitigkeiten zwischen Staaten und sitzt in Den Haag?","a":["Der Internationale Gerichtshof","Der Internationale Strafgerichtshof","Der Europäische Gerichtshof","Der Europäische Menschenrechtsgerichtshof"],"w":["","Der IStGH verfolgt Einzelpersonen.","Der EuGH sitzt in Luxemburg.","Der EGMR sitzt in Straßburg."],"e":"Der IGH ist das Hauptrechtsorgan der UN.","h":"Staaten, nicht Personen.","d":3},
-{"id":"x39r78","s":"EU & Welt","q":"Wo sitzt der Europäische Gerichtshof für Menschenrechte?","a":["Straßburg","Luxemburg","Brüssel","Genf"],"w":["","In Luxemburg sitzt der EuGH der EU, nicht der Menschenrechtsgerichtshof.","Brüssel ist Sitz von Kommission und Rat der EU.","Genf ist ein UN-Standort, aber nicht Sitz des Europarat-Gerichts."],"e":"Er gehört zum Europarat und prüft Verstöße gegen die EMRK.","h":"Im Europarat, nicht in der EU.","d":3},
-{"id":"pze4nj","s":"EU & Welt","q":"Wann wurde die UNO gegründet?","a":["1945","1919","1957","1948"],"w":["","1919 entstand der Völkerbund.","1957 wurde die EWG gegründet.","1948 verabschiedete die UNO die Menschenrechtserklärung."],"e":"Die UN-Charta wurde 1945 in San Francisco unterzeichnet.","h":"Ende des Zweiten Weltkriegs.","d":1},
-{"id":"jec9ar","s":"EU & Welt","q":"Wie viele Mitgliedstaaten hat die UNO (Stand 2026)?","a":["193","154","195","205"],"w":["","154 ist nicht die Zahl der Mitgliedstaaten.","195 entspräche den 193 Mitgliedern plus den zwei Beobachterstaaten.","Eine so hohe Zahl erreicht die UNO nicht."],"e":"Der Südsudan trat 2011 als 193. Mitglied bei.","h":"Knapp unter 200.","d":3},
-{"id":"1hgoa7i","s":"EU & Welt","q":"Wie viele Mitglieder hat der UN-Sicherheitsrat?","a":["15","10","5","20"],"w":["","10 sind nur die nichtständigen Mitglieder.","5 sind nur die ständigen Mitglieder.","Mit 20 Mitgliedern wäre der Rat größer als die vorgesehenen 15."],"e":"Fünf ständige und zehn nichtständige, Letztere für zwei Jahre gewählt.","h":"Fünf plus zehn.","d":2},
-{"id":"u2ysph","s":"EU & Welt","q":"Was bedeutet das Vetorecht im UN-Sicherheitsrat?","a":["Ein ständiges Mitglied kann einen Beschluss blockieren","Jeder Staat kann einen Beschluss aufheben","Die Vollversammlung kann Entscheidungen aufheben","Der Generalsekretär darf Beschlüsse ändern"],"w":["","Veto steht nur den ständigen Mitgliedern zu.","Die Vollversammlung beschließt nur Empfehlungen.","Der Generalsekretär ist kein Gesetzgeber."],"e":"Ein Nein eines ständigen Mitglieds verhindert den Beschluss; Enthaltung gilt nicht als Veto.","h":"Fünf Mächte.","d":1},
-{"id":"uwgjgg","s":"EU & Welt","q":"Wer verabschiedete die Allgemeine Erklärung der Menschenrechte 1948?","a":["Die UN-Generalversammlung","Der Europarat","Die Europäische Kommission","Der Internationale Gerichtshof"],"w":["","Der Europarat verabschiedete 1950 die EMRK.","Die Kommission ist ein EU-Organ.","Der IGH ist ein Gericht."],"e":"Sie wurde am 10. Dezember 1948 verabschiedet; der 10. Dezember ist Tag der Menschenrechte.","h":"Zehnter Dezember.","d":2},
-{"id":"79f4md","s":"EU & Welt","q":"Wo hat die Weltgesundheitsorganisation (WHO) ihren Sitz?","a":["Genf","New York","Paris","Brüssel"],"w":["","New York: UN-Zentrale.","Paris: UNESCO.","Brüssel: EU und NATO."],"e":"Auch die Welthandelsorganisation hat ihren Sitz in Genf.","h":"Schweizer Stadt am See.","d":2},
-{"id":"gkgnpp","s":"EU & Welt","q":"Wo haben IWF und Weltbank ihren Sitz?","a":["Washington, D.C.","New York","Genf","London"],"w":["","New York: UN.","Genf: WHO und WTO.","London: Sitz der IMO."],"e":"Beide wurden 1944 in Bretton Woods gegründet.","h":"US-Hauptstadt.","d":2},
-{"id":"pttl0a","s":"EU & Welt","q":"Wo hat die OSZE ihren Sitz?","a":["Wien","Genf","Oslo","Warschau"],"w":["","Genf: viele UN-Organe.","Oslo: Nobelkomitee.","Warschau: Büro für Wahlbeobachtung."],"e":"Die OSZE geht auf die KSZE zurück und beobachtet Wahlen.","h":"Österreichische Hauptstadt.","d":2},
-{"id":"1wvlb1c","s":"EU & Welt","q":"Wo hat die OPEC ihren Sitz?","a":["Wien","Riad","Genf","Dubai"],"w":["","Riad ist Hauptstadt Saudi-Arabiens.","Genf ist Sitz der WTO.","Dubai liegt in den Emiraten, aber der OPEC-Sitz ist Wien."],"e":"Die OPEC wurde 1960 in Bagdad gegründet und zog 1965 nach Wien.","h":"Donaustadt.","d":3},
-{"id":"5fb9im","s":"EU & Welt","q":"Welche Organisation hat ihren Sitz in Addis Abeba?","a":["Die Afrikanische Union","Die ASEAN","Die OSZE","Die Arabische Liga"],"w":["","ASEAN sitzt in Jakarta.","Die OSZE sitzt in Wien.","Die Arabische Liga sitzt in Kairo."],"e":"Die AU löste 2002 die OAU ab.","h":"Äthiopien.","d":3},
-{"id":"6q8z41","s":"EU & Welt","q":"Wann fand das Brexit-Referendum statt?","a":["2016","2014","2018","2020"],"w":["","2014 war das schottische Unabhängigkeitsreferendum.","2018 verhandelten Regierung und EU das Austrittsabkommen.","2020 trat der Brexit in Kraft."],"e":"Am 23. Juni 2016 stimmten 51,9 % für den Austritt; am 31. Januar 2020 verließ das Königreich die EU.","h":"Juni.","d":2},
-{"id":"hpi403","s":"EU & Welt","q":"Welcher Artikel des EU-Vertrags regelt den Austritt aus der EU?","a":["Art. 50 EUV","Art. 49 EUV","Art. 5 EUV","Art. 2 EUV"],"w":["","Art. 49 regelt den Beitritt.","Art. 5 regelt Subsidiarität.","Art. 2 nennt die Werte der Union."],"e":"Art. 50 EUV: Der Austritt dauert zwei Jahre ab Mitteilung, sofern nichts Abweichendes vereinbart wird.","h":"Austrittsklausel, seit 2009 in den Verträgen.","d":3},
-{"id":"1c7pjsp","s":"EU & Welt","q":"Wie viele Sterne hat die Flagge der EU?","a":["12","27","15","10"],"w":["","27 ist die Zahl der Mitgliedstaaten.","15 waren die Mitglieder 1995.","Zehn Sterne zeigt die Flagge nicht; es sind zwölf."],"e":"Die Sterne stehen für Vollkommenheit und Einheit, nicht für die Mitgliederzahl.","h":"Zahl ohne Bezug zur Mitgliederzahl.","d":1},
-{"id":"5diewo","s":"EU & Welt","q":"Welches Musikstück ist die Europahymne?","a":["Ode an die Freude von Beethoven","Die Moldau von Smetana","Eine kleine Nachtmusik von Mozart","Die vier Jahreszeiten von Vivaldi"],"w":["","Die Moldau ist ein sinfonisches Werk des Tschechen Smetana.","Mozarts Serenade ist ein Orchesterstück ohne Hymnenrolle.","Vivaldis Konzerte sind Barockmusik ohne offiziellen Status."],"e":"Die Melodie stammt aus der 9. Sinfonie von Beethoven; der Text ist nicht festgelegt.","h":"Neunte Sinfonie.","d":1},
-{"id":"e0shwz","s":"EU & Welt","q":"Welcher Tag wird als Europatag gefeiert?","a":["9. Mai","3. Oktober","1. Januar","8. Mai"],"w":["","3. Oktober ist deutscher Feiertag.","1. Januar ist Neujahr.","8. Mai ist Kriegsende 1945."],"e":"Am 9. Mai 1950 legte Robert Schuman den Plan für die Montanunion vor.","h":"Schuman-Erklärung.","d":2},
-{"id":"175wqu4","s":"EU & Welt","q":"Was war die Montanunion (EGKS)?","a":["Gemeinschaft für Kohle und Stahl","Eine gemeinsame Währungsunion","Ein westliches Militärbündnis","Eine Freihandelszone für Autos"],"w":["","Eine Währungsunion kam erst mit dem Euro.","Ein Militärbündnis ist die NATO.","Autos waren nicht Gegenstand."],"e":"Sie wurde 1951 von sechs Staaten gegründet und legte den Grundstein der heutigen EU.","h":"Rohstoffe.","d":3},
-{"id":"163uing","s":"EU & Welt","q":"Was ist das Ziel der EZB-Geldpolitik?","a":["Preisstabilität bei 2 % Inflation","Ein möglichst hoher Euro-Kurs","Vollbeschäftigung in allen Ländern","Höchstzinsen für Sparer"],"w":["","Der Kurs ist nicht Ziel.","Beschäftigung ist nachrangig.","Zinsen sind Mittel, nicht Ziel."],"e":"Das Ziel ist seit 2021 symmetrisch 2 % mittelfristig.","h":"Knapp unter drei, über eins.","d":2},
-{"id":"gc3eqr","s":"EU & Welt","q":"Welche Grenze für Staatsverschuldung nennen die Maastricht-Kriterien?","a":["60 % des Bruttoinlandsprodukts","30 % des Bruttoinlandsprodukts","100 % des Bruttoinlandsprodukts","3 % des Bruttoinlandsprodukts"],"w":["","30 % sind nicht festgelegt.","100 % sind nicht festgelegt.","3 % betrifft das jährliche Defizit."],"e":"Neben 60 % Schuldenstand gilt 3 % Defizitgrenze.","h":"Mehr als die Hälfte.","d":3},
-{"id":"15ykylj","s":"EU & Welt","q":"Welches Ziel nennt das Pariser Klimaabkommen von 2015?","a":["Erwärmung deutlich unter 2 °C, möglichst 1,5 °C","Erwärmung auf 3 °C begrenzen","Abschaffung aller fossilen Brennstoffe bis 2030","Zahl der Autos halbieren"],"w":["","3 °C ist nicht das Ziel.","Der Ausstieg ist kein Datum des Abkommens.","Autos sind nicht Gegenstand."],"e":"Die Staaten legen eigene Beiträge (NDCs) vor.","h":"Zwei Grad.","d":3},
-{"id":"1t7srfq","s":"EU & Welt","q":"Welche Organisation ist seit 2023 Vollmitglied der G20?","a":["Die Afrikanische Union","Die Arabische Liga","Der Verband Südostasiatischer Nationen (ASEAN)","Die Organisation erdölexportierender Länder"],"w":["","Die Arabische Liga ist kein Mitglied der G20.","Die ASEAN ist kein Mitglied der G20.","Die OPEC ist kein Mitglied der G20."],"e":"Auch die EU ist Vollmitglied der G20.","h":"Kontinent.","d":3},
-{"id":"155ek3c","s":"EU & Welt","q":"Wie viele Wahlleute hat das Electoral College der USA?","a":["538","435","270","100"],"w":["","435 sind Abgeordnete des Repräsentantenhauses.","270 ist die nötige Mehrheit.","100 sind die Senatoren."],"e":"Die Zahl setzt sich aus 435 + 100 + 3 für Washington D.C. zusammen; 270 sind nötig.","h":"Summe aus Kongress.","d":2},
-{"id":"qytv10","s":"EU & Welt","q":"Wie viele Senatoren entsendet jeder US-Bundesstaat?","a":["2","1","3","Es hängt von der Bevölkerung ab"],"w":["","Einer ist zu wenig.","Drei sind zu viel.","Das gilt für das Repräsentantenhaus."],"e":"Der Senat hat 100 Mitglieder; Senatoren werden für sechs Jahre gewählt.","h":"Pro Staat gleich.","d":1},
-{"id":"l9c12r","s":"EU & Welt","q":"Wie heißen die beiden Kammern des britischen Parlaments?","a":["House of Commons und House of Lords","Senate und House","Bundestag und Bundesrat","Nationalrat und Ständerat"],"w":["","Das ist der US-Kongress.","Das ist Deutschland.","Das ist die Schweiz."],"e":"Das Unterhaus wird gewählt, das Oberhaus nicht.","h":"Eine Kammer ist gewählt, die andere nicht.","d":2},
-{"id":"1w7h3b8","s":"EU & Welt","q":"Wie heißt die Regierung der Schweiz?","a":["Bundesrat","Nationalrat","Ständerat","Bundeskanzler"],"w":["","Der Nationalrat ist eine Parlamentskammer.","Der Ständerat ist die andere Kammer.","Die Bundeskanzlei ist eine Stabsstelle."],"e":"Der Bundesrat besteht aus sieben gleichberechtigten Mitgliedern.","h":"Sieben.","d":3},
-{"id":"12jrnf8","s":"EU & Welt","q":"Welches Gericht verfolgt Einzelpersonen wegen Völkermords und Kriegsverbrechen?","a":["Der Internationale Strafgerichtshof","Der Internationale Gerichtshof","Der Europäische Gerichtshof","Der Bundesgerichtshof"],"w":["","Der IGH entscheidet zwischen Staaten.","Der EuGH prüft EU-Recht.","Der BGH ist ein deutsches Gericht."],"e":"Seine Grundlage ist das Römische Statut von 1998.","h":"Römisches Statut.","d":3},
-{"id":"1yc2xnn","s":"EU & Welt","q":"In welchem Jahr wurde die Genfer Flüchtlingskonvention beschlossen?","a":["1951","1948","1989","2000"],"w":["","1948: Menschenrechtserklärung.","1989: Fall der Mauer.","2000: Millenniumsgipfel."],"e":"Sie definiert, wer als Flüchtling gilt, und verbietet Zurückweisung bei Verfolgung.","h":"Nach dem Zweiten Weltkrieg.","d":3},
-{"id":"1i5nbz5","s":"EU & Welt","q":"Wo hat das Internationale Komitee vom Roten Kreuz seinen Sitz?","a":["Genf","Wien","Paris","Den Haag"],"w":["","Wien: IAEO.","Paris: UNESCO.","Den Haag: IGH."],"e":"Henry Dunant gründete es 1863; es wacht über die Genfer Konventionen.","h":"Schweiz.","d":2}
+ {
+  "id": "5jbohw",
+  "s": "Staat & Wahlen",
+  "q": "Wer wählt den Bundeskanzler?",
+  "a": [
+   "Der Bundestag",
+   "Das Volk direkt",
+   "Der Bundesrat",
+   "Die Bundesversammlung"
+  ],
+  "w": [
+   "",
+   "Das Volk wählt nur den Bundestag, nicht den Kanzler.",
+   "Der Bundesrat vertritt die Länder und wählt keinen Kanzler.",
+   "Die Bundesversammlung wählt den Bundespräsidenten."
+  ],
+  "e": "Nach Art. 63 GG wählt der Bundestag den Kanzler auf Vorschlag des Bundespräsidenten, ohne Aussprache.",
+  "h": "Parlament, nicht Volk.",
+  "d": 1
+ },
+ {
+  "id": "ypkctw",
+  "s": "Staat & Wahlen",
+  "q": "Welche Stimme bestimmt bei der Bundestagswahl, wie viele Sitze eine Partei im Bundestag bekommt?",
+  "a": [
+   "Die Zweitstimme",
+   "Die Erststimme",
+   "Beide zählen gleich",
+   "Keine, die Parteien einigen sich"
+  ],
+  "w": [
+   "",
+   "Die Erststimme wählt den Wahlkreisabgeordneten, bestimmt aber nicht die Sitzzahl der Partei.",
+   "Beide zählen nicht gleich: Die Sitzverteilung folgt allein der Zweitstimme.",
+   "Die Sitze werden durch die Wahl vergeben, nicht durch Absprachen."
+  ],
+  "e": "Seit der Wahlrechtsreform 2023 ist der Bundestag auf 630 Sitze begrenzt und die Zweitstimme bestimmt die Sitzzahl; ein Wahlkreissieg wird durch sie „gedeckt“.",
+  "h": "Die Stimme für die Parteiliste.",
+  "d": 2
+ },
+ {
+  "id": "15lbd0n",
+  "s": "Staat & Wahlen",
+  "q": "Wer entwickelte die klassische Lehre der Gewaltenteilung?",
+  "a": [
+   "Montesquieu",
+   "Rousseau",
+   "Hobbes",
+   "Voltaire"
+  ],
+  "w": [
+   "",
+   "Rousseau schrieb über den Gesellschaftsvertrag und die Volkssouveränität.",
+   "Hobbes begründete im „Leviathan“ den starken, ungeteilten Staat.",
+   "Voltaire war Aufklärer und Kritiker der Kirche, kein Staatstheoretiker der Gewaltenteilung."
+  ],
+  "e": "In „Vom Geist der Gesetze“ (1748) trennt Montesquieu gesetzgebende, ausführende und richterliche Gewalt.",
+  "h": "Französischer Baron, 18. Jahrhundert.",
+  "d": 2
+ },
+ {
+  "id": "1mznrhj",
+  "s": "Staat & Wahlen",
+  "q": "Mit welchem Satz beginnt Artikel 1 des Grundgesetzes?",
+  "a": [
+   "Die Würde des Menschen ist unantastbar.",
+   "Alle Staatsgewalt geht vom Volke aus.",
+   "Alle Menschen sind vor dem Gesetz gleich.",
+   "Deutschland ist ein Bundesstaat."
+  ],
+  "w": [
+   "",
+   "Dieser Satz steht in Art. 20 Abs. 2 zur Volkssouveränität.",
+   "Der Gleichheitssatz steht in Art. 3 Abs. 1.",
+   "Art. 20 nennt Deutschland einen demokratischen und sozialen Bundesstaat."
+  ],
+  "e": "Art. 1 Abs. 1 GG darf nach der Ewigkeitsklausel (Art. 79 Abs. 3) nicht geändert werden. Vor Artikel 1 steht noch die Präambel.",
+  "h": "Es geht um den obersten Wert der Verfassung.",
+  "d": 1
+ },
+ {
+  "id": "1eiqt71",
+  "s": "Staat & Wahlen",
+  "q": "Wer wählt den Bundespräsidenten?",
+  "a": [
+   "Die Bundesversammlung",
+   "Das Volk in direkter Wahl",
+   "Der Bundestag allein",
+   "Der Bundesrat"
+  ],
+  "w": [
+   "",
+   "Das Volk wählt den Bundespräsidenten nicht direkt.",
+   "Der Bundestag allein ist nur ein Teil der Bundesversammlung.",
+   "Der Bundesrat entsendet keine Wahlmänner allein; die Länder stellen Mitglieder der Versammlung."
+  ],
+  "e": "Die Bundesversammlung besteht aus allen Bundestagsabgeordneten und ebenso vielen von den Länderparlamenten gewählten Mitgliedern.",
+  "h": "Tritt nur für diese Wahl zusammen.",
+  "d": 1
+ },
+ {
+  "id": "fxy3uj",
+  "s": "Staat & Wahlen",
+  "q": "Wie lang ist die Amtszeit des Bundespräsidenten?",
+  "a": [
+   "5 Jahre, einmalige Wiederwahl",
+   "4 Jahre, zweimalige Wiederwahl",
+   "8 Jahre ohne Wiederwahl",
+   "10 Jahre ohne Wiederwahl"
+  ],
+  "w": [
+   "",
+   "Vier Jahre beträgt die Wahlperiode des Bundestags, nicht die des Präsidenten.",
+   "Eine achtjährige Amtszeit sieht das Grundgesetz nicht vor.",
+   "Eine zehnjährige Amtszeit sieht das Grundgesetz nicht vor."
+  ],
+  "e": "Art. 54 GG: fünf Jahre, anschließende Wiederwahl nur einmal zulässig.",
+  "h": "Länger als eine Bundestagswahlperiode.",
+  "d": 2
+ },
+ {
+  "id": "1jeg7ft",
+  "s": "Staat & Wahlen",
+  "q": "Wo hat das Bundesverfassungsgericht seinen Sitz?",
+  "a": [
+   "Karlsruhe",
+   "Berlin",
+   "Leipzig",
+   "Kassel"
+  ],
+  "w": [
+   "",
+   "Berlin ist Sitz von Bundestag, Bundesrat und Bundesregierung.",
+   "In Leipzig sitzt das Bundesverwaltungsgericht.",
+   "In Kassel sitzt das Bundessozialgericht."
+  ],
+  "e": "Auch der Bundesgerichtshof sitzt in Karlsruhe, das Bundesverwaltungsgericht in Leipzig.",
+  "h": "Badische Stadt, „Residenz des Rechts“.",
+  "d": 1
+ },
+ {
+  "id": "1ym8f60",
+  "s": "Staat & Wahlen",
+  "q": "Was gilt bei der Fünf-Prozent-Hürde zur Bundestagswahl?",
+  "a": [
+   "Drei Direktmandate können sie ersetzen",
+   "Unter 5 % bedeutet immer den Ausschluss",
+   "Fünf Prozent der Wahlberechtigten müssen wählen",
+   "Jede Partei braucht fünf Abgeordnete"
+  ],
+  "w": [
+   "",
+   "Nach dem Urteil des Bundesverfassungsgerichts von 2024 gilt weiterhin die Grundmandatsklausel mit drei Wahlkreissiegen.",
+   "Die Hürde bezieht sich auf die abgegebenen gültigen Zweitstimmen, nicht auf die Wahlbeteiligung.",
+   "Es gibt keine Mindestzahl an Abgeordneten, sondern eine Stimmenhürde."
+  ],
+  "e": "Das Bundesverfassungsgericht ließ 2024 die 5-%-Hürde bestehen und erhielt die Grundmandatsklausel (drei Direktmandate) bis zu einer Neuregelung.",
+  "h": "Es gibt eine Ausnahme für starke Wahlkreisergebnisse.",
+  "d": 3
+ },
+ {
+  "id": "wgh1ua",
+  "s": "Staat & Wahlen",
+  "q": "Wie viele Richterinnen und Richter hat das Bundesverfassungsgericht?",
+  "a": [
+   "16",
+   "9",
+   "12",
+   "24"
+  ],
+  "w": [
+   "",
+   "Neun Richter hat etwa der Supreme Court der USA.",
+   "Zwölf ist die Amtszeit in Jahren, nicht die Zahl der Richter.",
+   "24 wäre das Dreifache der Senatsgröße; jeder der zwei Senate hat acht Richter."
+  ],
+  "e": "Jeder Senat hat acht Mitglieder, gewählt für zwölf Jahre ohne Wiederwahl.",
+  "h": "Zwei Senate.",
+  "d": 2
+ },
+ {
+  "id": "1caju06",
+  "s": "Staat & Wahlen",
+  "q": "Ab welchem Alter darf man bei der Bundestagswahl wählen?",
+  "a": [
+   "18 Jahren",
+   "16 Jahren",
+   "21 Jahren",
+   "14 Jahren"
+  ],
+  "w": [
+   "",
+   "16 gilt bei manchen Landtags- und Kommunalwahlen sowie der Europawahl, nicht bei der Bundestagswahl.",
+   "21 Jahre war früher die Altersgrenze und wurde 1970 abgesenkt.",
+   "14 Jahre ist das Alter der Strafmündigkeit, kein Wahlalter."
+  ],
+  "e": "Art. 38 GG: Wahlberechtigt ist, wer das 18. Lebensjahr vollendet hat; 1970 wurde das Wahlalter von 21 auf 18 gesenkt.",
+  "h": "Volljährigkeit.",
+  "d": 1
+ },
+ {
+  "id": "asav3k",
+  "s": "Staat & Wahlen",
+  "q": "Wie lange dauert eine reguläre Wahlperiode des Bundestags?",
+  "a": [
+   "4 Jahre",
+   "5 Jahre",
+   "6 Jahre",
+   "3 Jahre"
+  ],
+  "w": [
+   "",
+   "Fünf Jahre dauert die Amtszeit des Bundespräsidenten.",
+   "Sechs Jahre sind es etwa beim US-Senat.",
+   "Drei Jahre sieht das Grundgesetz nicht vor."
+  ],
+  "e": "Art. 39 GG regelt vier Jahre; vorzeitig endet sie nur durch Auflösung nach Art. 63 oder 68 GG.",
+  "h": "Weniger als die Amtszeit des Präsidenten.",
+  "d": 1
+ },
+ {
+  "id": "1excuac",
+  "s": "Staat & Wahlen",
+  "q": "Wie viele Länder hat die Bundesrepublik Deutschland?",
+  "a": [
+   "16",
+   "15",
+   "14",
+   "17"
+  ],
+  "w": [
+   "",
+   "Mit der Wiedervereinigung 1990 wuchs die Zahl von 11 auf 16.",
+   "15 wäre ohne eines der Stadtstaaten oder neuen Länder.",
+   "Mit 17 Ländern käme ein weiteres hinzu; seit 1990 gibt es aber 16."
+  ],
+  "e": "Drei sind Stadtstaaten: Berlin, Hamburg und Bremen; 1990 kamen fünf ostdeutsche Länder hinzu.",
+  "h": "Seit 1990 fünf mehr als zuvor.",
+  "d": 1
+ },
+ {
+  "id": "py8z93",
+  "s": "Staat & Wahlen",
+  "q": "Welche drei Länder sind Stadtstaaten?",
+  "a": [
+   "Berlin, Hamburg, Bremen",
+   "Berlin, Hamburg, Saarland",
+   "Berlin, Bremen, Sachsen",
+   "Hamburg, Bremen, Brandenburg"
+  ],
+  "w": [
+   "",
+   "Das Saarland ist ein Flächenland.",
+   "Sachsen ist ein Flächenland.",
+   "Brandenburg ist ein Flächenland, das Berlin umschließt."
+  ],
+  "e": "Stadtstaaten sind Länder, die nur aus einer Stadt bestehen; Bremen umfasst auch Bremerhaven.",
+  "h": "Zwei Hansestädte und die Hauptstadt.",
+  "d": 1
+ },
+ {
+  "id": "ltwhul",
+  "s": "Staat & Wahlen",
+  "q": "Wer ist in Deutschland für die Schulpolitik überwiegend zuständig?",
+  "a": [
+   "Die Länder",
+   "Der Bund",
+   "Die Europäische Union",
+   "Die Gemeinden allein"
+  ],
+  "w": [
+   "",
+   "Der Bund hat nur wenige Zuständigkeiten, etwa bei der Ausbildungsförderung.",
+   "Die EU kann Bildungspolitik nur unterstützen, nicht regeln.",
+   "Gemeinden sind Schulträger, aber die Gesetze machen die Länder."
+  ],
+  "e": "Die Kulturhoheit der Länder gilt als Kern ihrer Eigenstaatlichkeit; daher unterscheiden sich Schulsysteme.",
+  "h": "Kultusministerien.",
+  "d": 1
+ },
+ {
+  "id": "v1f0e",
+  "s": "Staat & Wahlen",
+  "q": "Welche Bundesorgane können Gesetzentwürfe in den Bundestag einbringen?",
+  "a": [
+   "Bundesregierung, Bundesrat und Abgeordnete",
+   "Nur die Bundesregierung",
+   "Nur Fraktionen mit Regierungsbeteiligung",
+   "Der Bundespräsident und das Verfassungsgericht"
+  ],
+  "w": [
+   "",
+   "Auch Bundesrat und Mitglieder des Bundestages haben Initiativrecht.",
+   "Auch Oppositionsfraktionen können Gesetzentwürfe vorlegen.",
+   "Bundespräsident und Gericht haben kein Initiativrecht."
+  ],
+  "e": "Art. 76 GG: Vorlagen kommen von der Bundesregierung, aus der Mitte des Bundestages oder vom Bundesrat.",
+  "h": "Drei Initiatoren.",
+  "d": 2
+ },
+ {
+  "id": "88707e",
+  "s": "Staat & Wahlen",
+  "q": "In welchem Artikel des Grundgesetzes steht „Alle Staatsgewalt geht vom Volke aus“?",
+  "a": [
+   "Art. 20",
+   "Art. 1",
+   "Art. 5",
+   "Art. 38"
+  ],
+  "w": [
+   "",
+   "Art. 1 enthält die Menschenwürde.",
+   "Art. 5 schützt die Meinungsfreiheit.",
+   "Art. 38 regelt die Wahl der Abgeordneten."
+  ],
+  "e": "Art. 20 Abs. 2 GG nennt die Volkssouveränität; Wahlen und Abstimmungen sind ihr Ausdruck.",
+  "h": "Zweistellig.",
+  "d": 2
+ },
+ {
+  "id": "bhpick",
+  "s": "Staat & Wahlen",
+  "q": "Welcher Artikel des Grundgesetzes schützt die Meinungsfreiheit?",
+  "a": [
+   "Art. 5",
+   "Art. 3",
+   "Art. 14",
+   "Art. 12"
+  ],
+  "w": [
+   "",
+   "Art. 3 regelt die Gleichheit vor dem Gesetz.",
+   "Art. 14 schützt das Eigentum.",
+   "Art. 12 schützt die Berufsfreiheit."
+  ],
+  "e": "Art. 5 GG schützt Meinungs-, Presse-, Rundfunk-, Kunst- und Wissenschaftsfreiheit; eine Zensur findet nicht statt.",
+  "h": "Artikel der Freiheitsrechte am Anfang.",
+  "d": 2
+ },
+ {
+  "id": "vc9sv1",
+  "s": "Staat & Wahlen",
+  "q": "Was verbirgt sich hinter der „Ewigkeitsklausel“ des Grundgesetzes?",
+  "a": [
+   "Bestimmte Grundsätze dürfen nie geändert werden",
+   "Das Grundgesetz gilt unbefristet ohne Änderungen",
+   "Die Bundesregierung kann nie abgesetzt werden",
+   "Das Grundgesetz kann nur durch Volksentscheid enden"
+  ],
+  "w": [
+   "",
+   "Das Grundgesetz wurde schon oft geändert; geschützt sind nur Kernprinzipien.",
+   "Der Kanzler kann durch ein konstruktives Misstrauensvotum abgelöst werden.",
+   "Art. 146 sieht eine neue Verfassung per Volksentscheid vor, aber das ist nicht die Ewigkeitsklausel."
+  ],
+  "e": "Art. 79 Abs. 3 GG schützt Menschenwürde, Bundesstaat und Grundprinzipien aus Art. 1 und 20 vor jeder Änderung.",
+  "h": "Regel für Verfassungsänderungen.",
+  "d": 2
+ },
+ {
+  "id": "1jlku1l",
+  "s": "Staat & Wahlen",
+  "q": "Welche Mehrheit braucht eine Änderung des Grundgesetzes?",
+  "a": [
+   "Zwei Drittel in Bundestag und Bundesrat",
+   "Einfache Mehrheit im Bundestag",
+   "Drei Viertel aller Wahlberechtigten per Volksentscheid",
+   "Einstimmigkeit im Bundestag"
+  ],
+  "w": [
+   "",
+   "Eine einfache Mehrheit reicht für normale Gesetze.",
+   "Eine Volksabstimmung ist für Änderungen nicht vorgesehen.",
+   "Einstimmigkeit verlangt Art. 79 nicht; zwei Drittel genügen."
+  ],
+  "e": "Art. 79 Abs. 2 GG verlangt je zwei Drittel der Mitglieder von Bundestag und Bundesrat.",
+  "h": "Qualifizierte Mehrheit.",
+  "d": 2
+ },
+ {
+  "id": "1u56hk0",
+  "s": "Staat & Wahlen",
+  "q": "Was ist ein konstruktives Misstrauensvotum?",
+  "a": [
+   "Abwahl nur durch Wahl eines Nachfolgers",
+   "Der Kanzler stellt dem Bundestag die Vertrauensfrage",
+   "Der Bundespräsident entlässt den Kanzler eigenmächtig",
+   "Das Volk stimmt per Abstimmung über den Kanzler ab"
+  ],
+  "w": [
+   "",
+   "Das ist die Vertrauensfrage nach Art. 68 GG.",
+   "Der Präsident kann den Kanzler nicht von sich aus entlassen.",
+   "Eine Abstimmung durch das Volk gibt es nicht."
+  ],
+  "e": "Art. 67 GG: Der Bundestag kann den Kanzler nur abwählen, indem er mit Mehrheit zugleich einen Nachfolger wählt; so soll Weimar-Instabilität vermieden werden.",
+  "h": "Der Bundestag kann den Kanzler nicht einfach nur abwählen.",
+  "d": 2
+ },
+ {
+  "id": "ec4zrh",
+  "s": "Staat & Wahlen",
+  "q": "Was geschieht bei der Vertrauensfrage nach Art. 68 GG?",
+  "a": [
+   "Der Kanzler beantragt das Vertrauen des Bundestages",
+   "Das Volk stimmt in einem Referendum über die Regierung ab",
+   "Der Bundesrat entscheidet über den Kanzler",
+   "Das Verfassungsgericht prüft die Regierung"
+  ],
+  "w": [
+   "",
+   "Es gibt keine Volksabstimmung über die Regierung.",
+   "Der Bundesrat wählt oder entlässt keinen Kanzler.",
+   "Bei der Vertrauensfrage entscheidet allein der Bundestag; Karlsruhe ist nicht beteiligt."
+  ],
+  "e": "Verliert der Kanzler die Vertrauensfrage, kann der Bundespräsident auf seinen Vorschlag den Bundestag binnen 21 Tagen auflösen.",
+  "h": "Der Kanzler fragt.",
+  "d": 3
+ },
+ {
+  "id": "14dsjd1",
+  "s": "Staat & Wahlen",
+  "q": "Zu welcher Gewalt zählen Bundesregierung und Verwaltung?",
+  "a": [
+   "Exekutive",
+   "Legislative",
+   "Judikative",
+   "Konstituante"
+  ],
+  "w": [
+   "",
+   "Die Legislative macht Gesetze, also der Bundestag.",
+   "Die Judikative sind die Gerichte.",
+   "Die Konstituante ist eine verfassunggebende Versammlung."
+  ],
+  "e": "Die Exekutive führt Gesetze aus; sie wird vom Parlament kontrolliert.",
+  "h": "Ausführen.",
+  "d": 1
+ },
+ {
+  "id": "p7z89s",
+  "s": "Staat & Wahlen",
+  "q": "Welche Gewalt wird von den Gerichten ausgeübt?",
+  "a": [
+   "Die Judikative",
+   "Die Exekutive",
+   "Die Legislative",
+   "Die Subsidiarität"
+  ],
+  "w": [
+   "",
+   "Die Exekutive führt Gesetze aus.",
+   "Die Legislative erlässt Gesetze.",
+   "Subsidiarität ist ein Prinzip der Zuständigkeitsverteilung, keine Gewalt."
+  ],
+  "e": "Art. 92 GG vertraut die rechtsprechende Gewalt den Richtern an; sie sind unabhängig.",
+  "h": "Rechtsprechende Gewalt.",
+  "d": 1
+ },
+ {
+  "id": "1crinuu",
+  "s": "Staat & Wahlen",
+  "q": "Welches Organ vertritt die Länder auf Bundesebene bei der Gesetzgebung?",
+  "a": [
+   "Der Bundesrat",
+   "Der Bundestag",
+   "Die Bundesversammlung",
+   "Der Vermittlungsausschuss"
+  ],
+  "w": [
+   "",
+   "Der Bundestag vertritt das gesamte Volk.",
+   "Die Bundesversammlung wählt nur den Bundespräsidenten.",
+   "Der Vermittlungsausschuss löst Streit zwischen Bundestag und Bundesrat."
+  ],
+  "e": "Im Bundesrat sitzen Mitglieder der Landesregierungen; die Länder wirken so an der Bundesgesetzgebung mit.",
+  "h": "Länderkammer.",
+  "d": 1
+ },
+ {
+  "id": "1e5cwtd",
+  "s": "Staat & Wahlen",
+  "q": "Wie viele Stimmen hat im Bundesrat ein Land mit mehr als sieben Millionen Einwohnern?",
+  "a": [
+   "6",
+   "3",
+   "4",
+   "8"
+  ],
+  "w": [
+   "",
+   "Drei Stimmen hat jedes Land mindestens.",
+   "Vier Stimmen gibt es ab zwei Millionen Einwohnern.",
+   "Acht Stimmen sieht Art. 51 GG nicht vor."
+  ],
+  "e": "Art. 51 GG staffelt von 3 bis 6 Stimmen; insgesamt hat der Bundesrat 69 Stimmen.",
+  "h": "Höchstwert der Staffelung.",
+  "d": 3
+ },
+ {
+  "id": "19ulzep",
+  "s": "Staat & Wahlen",
+  "q": "Was unterscheidet ein Zustimmungsgesetz von einem Einspruchsgesetz?",
+  "a": [
+   "Beim Zustimmungsgesetz muss der Bundesrat zustimmen",
+   "Beim Zustimmungsgesetz entscheidet nur der Bundestag",
+   "Beim Einspruchsgesetz muss der Bundespräsident zustimmen",
+   "Beim Einspruchsgesetz ist keine Abstimmung nötig"
+  ],
+  "w": [
+   "",
+   "Beim Einspruchsgesetz kann der Bundestag einen Einspruch des Bundesrats überstimmen, beim Zustimmungsgesetz nicht.",
+   "Der Bundespräsident prüft und unterzeichnet jedes Gesetz.",
+   "Auch Einspruchsgesetze werden im Bundestag abgestimmt."
+  ],
+  "e": "Zustimmungsgesetze brauchen das Ja des Bundesrates; ohne es scheitern sie. Einspruchsgesetze kann der Bundestag auch gegen den Bundesrat durchsetzen.",
+  "h": "Wer hat das letzte Wort?",
+  "d": 3
+ },
+ {
+  "id": "yif0aa",
+  "s": "Staat & Wahlen",
+  "q": "Wie viele Wahlkreise gibt es bei der Bundestagswahl?",
+  "a": [
+   "299",
+   "598",
+   "630",
+   "256"
+  ],
+  "w": [
+   "",
+   "598 war die frühere Regelgröße des Bundestags, wovon die Hälfte Wahlkreise sind.",
+   "630 ist die neue Sitzzahl des Bundestags.",
+   "256 ist keine gesetzlich festgelegte Zahl."
+  ],
+  "e": "Das Bundestagswahlgesetz teilt Deutschland in 299 Wahlkreise; in jedem gibt es ein Direktmandat.",
+  "h": "Etwa die Hälfte der Regelgröße vor 2023.",
+  "d": 3
+ },
+ {
+  "id": "1g7pj7c",
+  "s": "Staat & Wahlen",
+  "q": "Welcher Begriff gehört NICHT zu den fünf Wahlrechtsgrundsätzen des Grundgesetzes?",
+  "a": [
+   "Öffentlich",
+   "Allgemein",
+   "Gleich",
+   "Geheim"
+  ],
+  "w": [
+   "",
+   "Allgemein bedeutet, dass grundsätzlich jeder wählen darf.",
+   "Gleich bedeutet gleiches Stimmgewicht.",
+   "Geheim bedeutet, dass die Wahl nicht einsehbar ist."
+  ],
+  "e": "Art. 38 GG: allgemein, unmittelbar, frei, gleich und geheim; öffentliche Abstimmung widerspräche dem Wahlgeheimnis.",
+  "h": "Das Gegenteil von geheim.",
+  "d": 2
+ },
+ {
+  "id": "ah957m",
+  "s": "Staat & Wahlen",
+  "q": "Wer gewinnt ein Direktmandat im Wahlkreis?",
+  "a": [
+   "Wer die meisten Erststimmen erhält",
+   "Wer über 50 % der Erststimmen erhält",
+   "Wer die meisten Zweitstimmen erhält",
+   "Wer von der Partei bestimmt wird"
+  ],
+  "w": [
+   "",
+   "Eine absolute Mehrheit ist nicht nötig, die relative Mehrheit reicht.",
+   "Zweitstimmen gelten der Parteiliste.",
+   "Die Partei stellt Kandidaten auf, die Wähler entscheiden."
+  ],
+  "e": "Es gilt relative Mehrheitswahl; mit der Reform 2023 braucht das Mandat zusätzlich die Zweitstimmendeckung der Partei.",
+  "h": "Relative Mehrheit.",
+  "d": 2
+ },
+ {
+  "id": "172dnre",
+  "s": "Staat & Wahlen",
+  "q": "Wie viel Prozent der Abgeordneten sind nach der Geschäftsordnung für eine Fraktion nötig?",
+  "a": [
+   "5 %",
+   "10 %",
+   "3 %",
+   "25 %"
+  ],
+  "w": [
+   "",
+   "Zehn Prozent sind nicht erforderlich.",
+   "Drei Prozent genügen nicht.",
+   "Ein Viertel ist die Schwelle für einen Untersuchungsausschuss und die abstrakte Normenkontrolle, nicht für Fraktionen."
+  ],
+  "e": "Nach der Geschäftsordnung des Bundestags bilden Abgeordnete mit mindestens 5 % der Mitglieder eine Fraktion.",
+  "h": "Kleiner Bruchteil der Abgeordneten.",
+  "d": 3
+ },
+ {
+  "id": "g9uauq",
+  "s": "Staat & Wahlen",
+  "q": "Wem sind Bundestagsabgeordnete laut Grundgesetz unterworfen?",
+  "a": [
+   "Nur ihrem Gewissen",
+   "Dem Fraktionsvorsitzenden",
+   "Den Wählerinnen und Wählern des Wahlkreises",
+   "Dem Bundeskanzler"
+  ],
+  "w": [
+   "",
+   "Fraktionsdisziplin ist üblich, rechtlich aber nicht bindend.",
+   "Wähler können keine Weisungen erteilen.",
+   "Abgeordnete kontrollieren den Kanzler, sie sind ihm nicht untergeordnet."
+  ],
+  "e": "Art. 38 Abs. 1 GG: Abgeordnete sind Vertreter des ganzen Volkes, an Aufträge und Weisungen nicht gebunden.",
+  "h": "Freies Mandat.",
+  "d": 2
+ },
+ {
+  "id": "54it1o",
+  "s": "Staat & Wahlen",
+  "q": "Wer ernennt den vom Bundestag gewählten Bundeskanzler?",
+  "a": [
+   "Der Bundespräsident",
+   "Der Bundestagspräsident",
+   "Der Bundesratspräsident",
+   "Der Vorsitzende der stärksten Fraktion"
+  ],
+  "w": [
+   "",
+   "Der Bundestagspräsident leitet die Sitzungen, ernennt aber den Kanzler nicht.",
+   "Der Bundesratspräsident vertritt zeitweise den Bundespräsidenten.",
+   "Eine Fraktion kann niemanden ernennen."
+  ],
+  "e": "Der Bundespräsident ernennt den gewählten Kanzler (Art. 63 Abs. 2 GG) und händigt die Urkunde aus.",
+  "h": "Staatsoberhaupt.",
+  "d": 2
+ },
+ {
+  "id": "19zmzei",
+  "s": "Staat & Wahlen",
+  "q": "Welches Mindestalter gilt für die Wahl zum Bundespräsidenten?",
+  "a": [
+   "40 Jahre",
+   "35 Jahre",
+   "30 Jahre",
+   "18 Jahre"
+  ],
+  "w": [
+   "",
+   "35 Jahre gilt etwa für das Amt des US-Präsidenten.",
+   "30 ist keine Altersgrenze des Grundgesetzes.",
+   "18 Jahre genügt für Bundestagswahlen."
+  ],
+  "e": "Art. 54 GG: wählbar ist jeder Deutsche, der das Wahlrecht besitzt und das 40. Lebensjahr vollendet hat.",
+  "h": "Höher als bei Kanzler und Abgeordneten.",
+  "d": 3
+ },
+ {
+  "id": "opt9nf",
+  "s": "Staat & Wahlen",
+  "q": "Wer bestimmt nach dem Grundgesetz die Richtlinien der Politik?",
+  "a": [
+   "Der Bundeskanzler",
+   "Der Bundespräsident",
+   "Der Bundestag",
+   "Das Bundesverfassungsgericht"
+  ],
+  "w": [
+   "",
+   "Der Bundespräsident repräsentiert den Staat.",
+   "Der Bundestag beschließt Gesetze.",
+   "Das Gericht prüft die Verfassungsmäßigkeit."
+  ],
+  "e": "Art. 65 GG gibt dem Kanzler die Richtlinienkompetenz; die Minister leiten ihr Ressort selbstständig.",
+  "h": "Kanzlerprinzip.",
+  "d": 2
+ },
+ {
+  "id": "dnzfl3",
+  "s": "Staat & Wahlen",
+  "q": "Was kann man beim Bundesverfassungsgericht erheben?",
+  "a": [
+   "Verfassungsbeschwerde",
+   "Revision gegen jedes Strafurteil",
+   "Einspruch gegen jeden Verwaltungsakt",
+   "Klage auf Schadensersatz"
+  ],
+  "w": [
+   "",
+   "Revision erfolgt bei den obersten Fachgerichten.",
+   "Einsprüche richten sich zuerst an die Behörde.",
+   "Schadensersatzklagen gehören vor die ordentlichen Gerichte."
+  ],
+  "e": "Jeder kann nach erschöpftem Rechtsweg Verfassungsbeschwerde einlegen, wenn er sich in Grundrechten verletzt sieht (Art. 93 GG).",
+  "h": "Jedermann-Rechtsbehelf.",
+  "d": 2
+ },
+ {
+  "id": "pano4l",
+  "s": "Staat & Wahlen",
+  "q": "Wer wählt die Richter des Bundesverfassungsgerichts?",
+  "a": [
+   "Bundestag und Bundesrat je zur Hälfte",
+   "Der Bundespräsident allein auf Vorschlag der Regierung",
+   "Die Bundesregierung",
+   "Das Gericht selbst"
+  ],
+  "w": [
+   "",
+   "Der Bundespräsident ernennt sie nur formal.",
+   "Die Regierung hat keine Wahlbefugnis.",
+   "Eine Selbstergänzung gibt es nicht."
+  ],
+  "e": "Mit Zweidrittelmehrheit wählen beide Organe je acht Richter; das soll Überparteilichkeit sichern.",
+  "h": "Beide Kammern.",
+  "d": 3
+ },
+ {
+  "id": "uxqz3q",
+  "s": "Staat & Wahlen",
+  "q": "Wie oft darf der Bundeskanzler wiedergewählt werden?",
+  "a": [
+   "Unbegrenzt oft",
+   "Höchstens zweimal",
+   "Nur einmal",
+   "Nur nach einer Pause"
+  ],
+  "w": [
+   "",
+   "Eine Begrenzung auf zwei Amtszeiten kennt das Grundgesetz nicht.",
+   "Auch eine einmalige Begrenzung gibt es nicht; sie gilt für den Bundespräsidenten.",
+   "Eine Pflichtpause ist nicht vorgesehen."
+  ],
+  "e": "Das Grundgesetz begrenzt die Amtszeit des Kanzlers nicht; sie endet mit der Wahlperiode oder dem Rücktritt.",
+  "h": "Keine Obergrenze.",
+  "d": 3
+ },
+ {
+  "id": "1lnes22",
+  "s": "Staat & Wahlen",
+  "q": "Wer kann in Deutschland eine Partei verbieten?",
+  "a": [
+   "Das Bundesverfassungsgericht",
+   "Der Bundestag mit Zweidrittelmehrheit",
+   "Der Bundespräsident",
+   "Die Bundesregierung"
+  ],
+  "w": [
+   "",
+   "Der Bundestag kann nur einen Antrag stellen.",
+   "Der Präsident hat kein Verbotsrecht.",
+   "Die Regierung kann beantragen, aber nicht entscheiden."
+  ],
+  "e": "Art. 21 GG: Über die Verfassungswidrigkeit einer Partei entscheidet allein das Bundesverfassungsgericht (Parteienprivileg).",
+  "h": "Parteienprivileg.",
+  "d": 2
+ },
+ {
+  "id": "12jl42q",
+  "s": "Staat & Wahlen",
+  "q": "Wie heißt das Wahlsystem, bei dem Parteien Sitze im Verhältnis zu ihren Stimmen erhalten?",
+  "a": [
+   "Verhältniswahl",
+   "Mehrheitswahl",
+   "Losverfahren",
+   "Akklamation"
+  ],
+  "w": [
+   "",
+   "Bei der Mehrheitswahl gewinnt der Kandidat mit den meisten Stimmen den Wahlkreis.",
+   "Beim Losverfahren entscheidet der Zufall.",
+   "Akklamation ist Zustimmung durch Zuruf."
+  ],
+  "e": "Bei der Verhältniswahl spiegelt die Sitzverteilung die Stimmenanteile; Deutschland kombiniert sie mit Wahlkreisen.",
+  "h": "Proporz.",
+  "d": 2
+ },
+ {
+  "id": "1cg7gbc",
+  "s": "Staat & Wahlen",
+  "q": "Welches Wahlsystem gilt für das britische Unterhaus?",
+  "a": [
+   "Mehrheitswahl in Wahlkreisen",
+   "Verhältniswahl über landesweite Parteilisten",
+   "Wahl durch Wahlmänner",
+   "Wahl durch das Oberhaus"
+  ],
+  "w": [
+   "",
+   "Verhältniswahl ist etwa in den Niederlanden üblich.",
+   "Wahlmänner gibt es bei der US-Präsidentenwahl.",
+   "Das Oberhaus wird nicht gewählt."
+  ],
+  "e": "Der Kandidat mit den meisten Stimmen im Wahlkreis gewinnt („first past the post“); die übrigen Stimmen verfallen.",
+  "h": "Der Erste gewinnt.",
+  "d": 2
+ },
+ {
+  "id": "1a1pzjq",
+  "s": "Staat & Wahlen",
+  "q": "Muss man bei der Bundestagswahl die Briefwahl begründen?",
+  "a": [
+   "Nein, ohne Angabe von Gründen",
+   "Ja, nur bei Krankheit",
+   "Ja, nur bei Auslandsaufenthalt",
+   "Briefwahl gibt es nicht"
+  ],
+  "w": [
+   "",
+   "Seit 2008 ist keine Begründung mehr nötig.",
+   "Auch ein Auslandsaufenthalt ist keine Voraussetzung.",
+   "Briefwahl ist seit 1957 möglich."
+  ],
+  "e": "Seit 2008 muss kein Grund mehr genannt werden; die Briefwahl muss rechtzeitig beantragt werden.",
+  "h": "Antrag genügt.",
+  "d": 2
+ },
+ {
+  "id": "188xgr",
+  "s": "Staat & Wahlen",
+  "q": "An welchem Wochentag finden Bundestagswahlen statt?",
+  "a": [
+   "An einem Sonntag oder Feiertag",
+   "Immer samstags",
+   "An einem Werktag",
+   "Immer am ersten Sonntag im Oktober"
+  ],
+  "w": [
+   "",
+   "Samstag ist kein gesetzlicher Wahltag.",
+   "Ein Werktag ist nicht vorgesehen.",
+   "Der Termin variiert und wird vom Bundespräsidenten festgesetzt."
+  ],
+  "e": "§ 16 Bundeswahlgesetz: Wahltag ist ein Sonntag oder gesetzlicher Feiertag.",
+  "h": "Ruhetag.",
+  "d": 2
+ },
+ {
+  "id": "5cl9vs",
+  "s": "Staat & Wahlen",
+  "q": "Wann wurde das Grundgesetz verkündet?",
+  "a": [
+   "1949",
+   "1945",
+   "1955",
+   "1990"
+  ],
+  "w": [
+   "",
+   "1945 endete der Zweite Weltkrieg.",
+   "1955 wurde die Bundesrepublik formal souverän.",
+   "1990 wurde Deutschland wiedervereinigt."
+  ],
+  "e": "Der Parlamentarische Rat verabschiedete es am 8. Mai 1949, in Kraft trat es am 23./24. Mai 1949.",
+  "h": "Gründung der Bundesrepublik.",
+  "d": 1
+ },
+ {
+  "id": "17seaa",
+  "s": "Staat & Wahlen",
+  "q": "Wer war Präsident des Parlamentarischen Rates, der das Grundgesetz erarbeitete?",
+  "a": [
+   "Konrad Adenauer",
+   "Theodor Heuss",
+   "Ludwig Erhard",
+   "Kurt Schumacher"
+  ],
+  "w": [
+   "",
+   "Heuss war Mitglied des Rates und wurde erster Bundespräsident.",
+   "Erhard war später Kanzler, nicht Ratspräsident.",
+   "Schumacher führte die SPD, war aber nicht im Rat."
+  ],
+  "e": "Adenauer leitete den Rat ab September 1948; 1949 wurde er erster Bundeskanzler.",
+  "h": "Später erster Kanzler.",
+  "d": 3
+ },
+ {
+  "id": "h838s0",
+  "s": "Staat & Wahlen",
+  "q": "Was garantiert Art. 28 GG den Gemeinden?",
+  "a": [
+   "Kommunale Selbstverwaltung",
+   "Eigene Bundesgesetzgebung",
+   "Eigene Strafgerichte mit Laienrichtern",
+   "Eine eigene Währung"
+  ],
+  "w": [
+   "",
+   "Gesetze erlassen nur Bund und Länder.",
+   "Gerichte sind Sache von Bund und Ländern.",
+   "Währungshoheit liegt beim Euro-System."
+  ],
+  "e": "Gemeinden regeln örtliche Angelegenheiten im Rahmen der Gesetze selbst, etwa Kitas, Wasserversorgung und Bauleitplanung.",
+  "h": "Eigenverantwortung vor Ort.",
+  "d": 3
+ },
+ {
+  "id": "sqdwe4",
+  "s": "Staat & Wahlen",
+  "q": "Wie nennt man den Regierungschef eines Bundeslandes?",
+  "a": [
+   "Ministerpräsident",
+   "Landrat",
+   "Bürgermeister",
+   "Landesbischof"
+  ],
+  "w": [
+   "",
+   "Der Landrat leitet einen Landkreis.",
+   "Der Bürgermeister leitet eine Gemeinde.",
+   "Ein Landesbischof leitet eine Kirche."
+  ],
+  "e": "In den Stadtstaaten heißen die Regierungschefs Regierender Bürgermeister, Erster Bürgermeister oder Präsident des Senats.",
+  "h": "Länderchef.",
+  "d": 1
+ },
+ {
+  "id": "1tg9l9f",
+  "s": "Staat & Wahlen",
+  "q": "Wann ist der Tag der Deutschen Einheit?",
+  "a": [
+   "3. Oktober",
+   "9. November",
+   "8. Mai",
+   "23. Mai"
+  ],
+  "w": [
+   "",
+   "Am 9. November 1989 fiel die Mauer.",
+   "Der 8. Mai 1945 ist der Tag der Befreiung.",
+   "Am 23. Mai 1949 wurde das Grundgesetz verkündet."
+  ],
+  "e": "Am 3. Oktober 1990 trat die DDR dem Geltungsbereich des Grundgesetzes bei; seit 1990 ist es gesetzlicher Feiertag.",
+  "h": "Beitritt 1990.",
+  "d": 1
+ },
+ {
+  "id": "pwg56l",
+  "s": "Staat & Wahlen",
+  "q": "Welche Volksabstimmungen sind auf Bundesebene im Grundgesetz vorgesehen?",
+  "a": [
+   "Nur bei der Länderneugliederung",
+   "Bei jedem vom Bundestag beschlossenen Gesetz",
+   "Bei der Kanzlerwahl",
+   "Beim Bundeshaushalt"
+  ],
+  "w": [
+   "",
+   "Gesetze beschließt der Bundestag.",
+   "Der Kanzler wird vom Bundestag gewählt.",
+   "Haushaltsgesetze werden parlamentarisch beschlossen."
+  ],
+  "e": "Art. 29 GG sieht Volksentscheide bei der Länderneugliederung vor; Art. 146 erwähnt einen Verfassungsbeschluss des Volkes.",
+  "h": "Repräsentative Demokratie.",
+  "d": 3
+ },
+ {
+  "id": "1ao8m4",
+  "s": "Staat & Wahlen",
+  "q": "Welchen Zweck hat der Vermittlungsausschuss?",
+  "a": [
+   "Streit zwischen Bundestag und Bundesrat lösen",
+   "Streit zwischen Koalitionspartnern schlichten",
+   "Tarifkonflikte schlichten",
+   "Streit zwischen Bund und EU lösen"
+  ],
+  "w": [
+   "",
+   "Koalitionsausschüsse tagen außerhalb des Parlaments.",
+   "Tarifstreit regeln Tarifparteien oder Schlichter.",
+   "Die Beziehung zur EU regeln Verträge und EuGH."
+  ],
+  "e": "Er besteht aus je 16 Mitgliedern von Bundestag und Bundesrat und sucht Kompromisse bei strittigen Gesetzen.",
+  "h": "Zwischen beiden Kammern.",
+  "d": 3
+ },
+ {
+  "id": "32nkaq",
+  "s": "Staat & Wahlen",
+  "q": "Welches Gericht ist für Streitigkeiten zwischen Bund und Ländern zuständig?",
+  "a": [
+   "Das Bundesverfassungsgericht",
+   "Der Bundesgerichtshof",
+   "Das Bundesverwaltungsgericht",
+   "Der Europäische Gerichtshof"
+  ],
+  "w": [
+   "",
+   "Der BGH ist oberstes Zivil- und Strafgericht.",
+   "Das BVerwG entscheidet Verwaltungsstreitigkeiten.",
+   "Der EuGH prüft EU-Recht."
+  ],
+  "e": "Das Bundesverfassungsgericht entscheidet über Organstreit und Bund-Länder-Streit (Art. 93 GG).",
+  "h": "Hüter der Verfassung.",
+  "d": 2
+ },
+ {
+  "id": "92y9dd",
+  "s": "Staat & Wahlen",
+  "q": "Welche Aufgabe hat der Bundeswahlleiter?",
+  "a": [
+   "Wahl organisieren, Ergebnis feststellen",
+   "Die Kandidaten aller Parteien prüfen und auswählen",
+   "Wahlkreisgrenzen festlegen",
+   "Wahlwerbung der Parteien bezahlen"
+  ],
+  "w": [
+   "",
+   "Parteien stellen Kandidaten auf.",
+   "Wahlkreise legt ein Gesetz fest, eine Kommission berät.",
+   "Wahlkampf bezahlen die Parteien selbst."
+  ],
+  "e": "Das Amt hat traditionell die Präsidentin oder der Präsident des Statistischen Bundesamtes inne.",
+  "h": "Organisator.",
+  "d": 3
+ },
+ {
+  "id": "4vudnm",
+  "s": "Staat & Wahlen",
+  "q": "Wie heißt das Parlament eines Bundeslandes meistens?",
+  "a": [
+   "Landtag",
+   "Landesrat",
+   "Bundesrat",
+   "Kreistag"
+  ],
+  "w": [
+   "",
+   "„Landesrat“ ist kein übliches Landesparlament.",
+   "Der Bundesrat ist ein Bundesorgan.",
+   "Der Kreistag ist ein kommunales Gremium."
+  ],
+  "e": "In Berlin heißt es Abgeordnetenhaus, in Hamburg und Bremen Bürgerschaft.",
+  "h": "Hat mit einem Land zu tun.",
+  "d": 1
+ },
+ {
+  "id": "1i4hhcm",
+  "s": "Staat & Wahlen",
+  "q": "Was bedeutet Föderalismus?",
+  "a": [
+   "Bund und Länder teilen sich die Staatsgewalt",
+   "Alle Macht liegt beim Zentralstaat",
+   "Der Staat wird von einem Monarchen auf Lebenszeit geführt",
+   "Das Parlament wählt die Richter"
+  ],
+  "w": [
+   "",
+   "Das ist Zentralismus.",
+   "Das ist eine Monarchie.",
+   "Richterwahl ist eine Frage der Gewaltenteilung, nicht des Föderalismus."
+  ],
+  "e": "Art. 20 GG nennt Deutschland einen Bundesstaat; Länder haben eigene Staatsqualität und eigene Zuständigkeiten.",
+  "h": "Deutschland ist ein Bundesstaat.",
+  "d": 2
+ },
+ {
+  "id": "62l7r",
+  "s": "Staat & Wahlen",
+  "q": "Wo tagt der Deutsche Bundestag?",
+  "a": [
+   "Im Reichstagsgebäude in Berlin",
+   "Im Bundeshaus am Rheinufer in Bonn",
+   "Im Bundeskanzleramt",
+   "Im Schloss Bellevue"
+  ],
+  "w": [
+   "",
+   "Das Bonner Bundeshaus war bis 1999 Sitz.",
+   "Das Kanzleramt ist Sitz der Regierung.",
+   "Schloss Bellevue ist Amtssitz des Bundespräsidenten."
+  ],
+  "e": "Der Bundestag tagt seit 1999 im Reichstagsgebäude mit der Glaskuppel von Norman Foster.",
+  "h": "Kuppel.",
+  "d": 1
+ },
+ {
+  "id": "6icp1v",
+  "s": "Recht im Alltag",
+  "q": "Wie lange gilt in Deutschland die gesetzliche Gewährleistung auf neue Ware?",
+  "a": [
+   "2 Jahre",
+   "6 Monate",
+   "1 Jahr",
+   "5 Jahre"
+  ],
+  "w": [
+   "",
+   "Sechs Monate galt bis 2022 die Beweislastumkehr, nicht die Frist.",
+   "Ein Jahr ist die heutige Beweislastumkehr, nicht die gesamte Frist.",
+   "Fünf Jahre gelten für Baumängel an Bauwerken."
+  ],
+  "e": "§ 438 BGB: zwei Jahre ab Ablieferung; in den ersten 12 Monaten wird vermutet, dass der Mangel schon beim Kauf vorlag.",
+  "h": "Doppelt so lang wie die Beweislastumkehr.",
+  "d": 1
+ },
+ {
+  "id": "asi2v8",
+  "s": "Recht im Alltag",
+  "q": "Wie lange kann man einen Online-Kauf in der EU in der Regel widerrufen?",
+  "a": [
+   "14 Tage",
+   "7 Tage",
+   "30 Tage",
+   "Gar nicht"
+  ],
+  "w": [
+   "",
+   "Sieben Tage waren die frühere deutsche Frist.",
+   "Die EU-weite Regelfrist beträgt 14 Tage, nicht 30.",
+   "Das Widerrufsrecht besteht bei Fernabsatz grundsätzlich."
+  ],
+  "e": "Die Frist beginnt bei Waren mit dem Erhalt; seit dem 19. Juni 2026 müssen Online-Händler eine Widerrufsfunktion („Widerrufsbutton“) anbieten.",
+  "h": "Länger als eine Woche, kürzer als ein Monat.",
+  "d": 1
+ },
+ {
+  "id": "ydpccm",
+  "s": "Recht im Alltag",
+  "q": "Wie lang ist die regelmäßige Verjährungsfrist im Bürgerlichen Gesetzbuch?",
+  "a": [
+   "3 Jahre, beginnend am Jahresende",
+   "1 Jahr, beginnend sofort",
+   "10 Jahre, beginnend am Jahresende",
+   "30 Jahre, beginnend sofort"
+  ],
+  "w": [
+   "",
+   "Ein Jahr ist keine regelmäßige Frist des BGB.",
+   "Zehn Jahre gelten nur für bestimmte Ansprüche, etwa bei Grundstücken.",
+   "Dreißig Jahre gelten bei rechtskräftig festgestellten Ansprüchen."
+  ],
+  "e": "§§ 195, 199 BGB: drei Jahre ab dem Schluss des Jahres, in dem der Anspruch entstand und der Gläubiger davon erfuhr.",
+  "h": "Jahresende zählt.",
+  "d": 2
+ },
+ {
+  "id": "12sflon",
+  "s": "Recht im Alltag",
+  "q": "Wie errichtet man in Deutschland ein Testament ohne Notar gültig?",
+  "a": [
+   "Komplett handschriftlich, unterschrieben",
+   "Am Computer geschrieben und unterschrieben",
+   "Mit zwei Zeugen und Stempel",
+   "Mündlich vor der Familie"
+  ],
+  "w": [
+   "",
+   "Ein getipptes Testament ist ohne Notar ungültig.",
+   "Zeugen genügen ohne Schriftform nur im Nottestament.",
+   "Mündliche Erklärungen gelten nur als Nottestament in Ausnahmefällen."
+  ],
+  "e": "§ 2247 BGB verlangt ein eigenhändig geschriebenes und unterschriebenes Testament; Ort und Datum sind empfehlenswert.",
+  "h": "Eigenhändig.",
+  "d": 2
+ },
+ {
+  "id": "1b8uevp",
+  "s": "Recht im Alltag",
+  "q": "Wie hoch ist der Pflichtteil naher Angehöriger, die enterbt wurden?",
+  "a": [
+   "Die Hälfte des gesetzlichen Erbteils",
+   "Ein Drittel des Nachlasses",
+   "Der volle gesetzliche Erbteil wie ohne Testament",
+   "Ein Viertel des Nachlasses"
+  ],
+  "w": [
+   "",
+   "Ein Drittel ist kein gesetzlich festgelegter Satz.",
+   "Der volle Erbteil wäre kein Pflichtteil, sondern ein Erbe.",
+   "Ein Viertel gilt nicht als allgemeiner Satz."
+  ],
+  "e": "Der Pflichtteil (§ 2303 BGB) ist ein Geldanspruch gegen die Erben; er steht Kindern, Ehepartnern und unter Umständen Eltern zu.",
+  "h": "Enterbte Kinder gehen nicht ganz leer aus.",
+  "d": 2
+ },
+ {
+  "id": "17fgdr3",
+  "s": "Recht im Alltag",
+  "q": "Wie hoch darf eine Mietkaution bei Wohnraum in Deutschland höchstens sein?",
+  "a": [
+   "Drei Nettokaltmieten",
+   "Zwei Warmmieten",
+   "Eine Nettokaltmiete",
+   "Sechs Nettokaltmieten"
+  ],
+  "w": [
+   "",
+   "Eine Warmmiete-Grenze kennt das BGB nicht.",
+   "Eine Monatsmiete wäre weniger als erlaubt.",
+   "Sechs Monatsmieten überschreiten die gesetzliche Grenze."
+  ],
+  "e": "§ 551 BGB: höchstens drei Monatsmieten ohne Nebenkosten; der Mieter darf in drei gleichen Raten zahlen.",
+  "h": "Nettokalt, nicht warm.",
+  "d": 2
+ },
+ {
+  "id": "1l4cefw",
+  "s": "Recht im Alltag",
+  "q": "Wie lang ist die gesetzliche Grundkündigungsfrist für Arbeitnehmer?",
+  "a": [
+   "4 Wochen zum 15. oder zum Monatsende",
+   "2 Wochen zum Monatsende",
+   "3 Monate zum Ende eines Kalenderquartals",
+   "Eine Frist gibt es nicht"
+  ],
+  "w": [
+   "",
+   "Zwei Wochen gelten nur in der Probezeit.",
+   "Drei Monate Frist zum Quartalsende sind keine gesetzliche Grundfrist.",
+   "§ 622 BGB regelt eine Grundkündigungsfrist."
+  ],
+  "e": "§ 622 BGB: vier Wochen zum 15. oder Monatsende; Arbeits- oder Tarifvertrag können längere Fristen regeln.",
+  "h": "Zwei feste Termine im Monat.",
+  "d": 2
+ },
+ {
+  "id": "1o3nnrl",
+  "s": "Recht im Alltag",
+  "q": "Wer erbt in Deutschland ohne Testament zuerst?",
+  "a": [
+   "Die Kinder und der Ehepartner",
+   "Die Eltern und die Geschwister",
+   "Der Staat als gesetzlicher Erbe",
+   "Die Enkel vor den Kindern"
+  ],
+  "w": [
+   "",
+   "Eltern und Geschwister gehören zur zweiten Ordnung und erben nur, wenn Abkömmlinge fehlen.",
+   "Der Staat erbt nur, wenn niemand sonst erbt.",
+   "Enkel erben nur anstelle eines weggefallenen Kindes."
+  ],
+  "e": "Verwandte erster Ordnung sind die Abkömmlinge; der Ehepartner erbt neben Kindern bei Zugewinngemeinschaft die Hälfte.",
+  "h": "Erste Ordnung.",
+  "d": 2
+ },
+ {
+  "id": "jmx137",
+  "s": "Recht im Alltag",
+  "q": "Welches Recht gibt dir die DSGVO gegenüber Unternehmen?",
+  "a": [
+   "Auskunft über deine gespeicherten Daten",
+   "Kostenlose Produkte im Tausch gegen Daten",
+   "Fristlose Kündigung jedes Vertrags",
+   "Gewinnbeteiligung an deinen Daten"
+  ],
+  "w": [
+   "",
+   "Die DSGVO regelt keine Gegenleistung.",
+   "Vertragskündigungen regelt das Vertragsrecht.",
+   "Eine Gewinnbeteiligung sieht die DSGVO nicht vor."
+  ],
+  "e": "Art. 15 DSGVO: Auskunftsrecht; dazu kommen Berichtigung und unter Voraussetzungen Löschung (Art. 16, 17).",
+  "h": "Zentrale Kontrollmöglichkeit über eigene Daten.",
+  "d": 2
+ },
+ {
+  "id": "11nlnwy",
+  "s": "Recht im Alltag",
+  "q": "Was begrenzt die Mietpreisbremse?",
+  "a": [
+   "Die Neuvermietungsmiete in Mangelgebieten",
+   "Mieterhöhungen in allen laufenden Mietverträgen",
+   "Die Höhe der Nebenkosten",
+   "Die Miete für Gewerbeflächen"
+  ],
+  "w": [
+   "",
+   "Laufende Verträge regelt die Kappungsgrenze.",
+   "Die Mietpreisbremse deckelt die Nettokaltmiete, nicht die Nebenkosten.",
+   "Sie gilt für Wohnraum, nicht für Gewerbe."
+  ],
+  "e": "Bei Neuvermietung darf die Miete höchstens 10 % über der ortsüblichen Vergleichsmiete liegen; Ausnahmen gelten etwa für Neubauten.",
+  "h": "Gilt nur in Gebieten mit Wohnungsmangel.",
+  "d": 2
+ },
+ {
+  "id": "19ye7c1",
+  "s": "Recht im Alltag",
+  "q": "Ab welchem Alter ist man in Deutschland strafmündig?",
+  "a": [
+   "14 Jahre",
+   "12 Jahre",
+   "16 Jahre",
+   "18 Jahre"
+  ],
+  "w": [
+   "",
+   "12 Jahre gelten in manchen anderen Ländern.",
+   "16 Jahre ist das Alter für manche Wahlen, nicht für die Strafmündigkeit.",
+   "18 Jahre ist die Volljährigkeit."
+  ],
+  "e": "Unter 14 gilt man als schuldunfähig (§ 19 StGB); zwischen 14 und 17 gilt in der Regel Jugendstrafrecht.",
+  "h": "Zwischen Kind und Jugendlichem.",
+  "d": 1
+ },
+ {
+  "id": "14txxtx",
+  "s": "Recht im Alltag",
+  "q": "Welchen Mindestabstand empfiehlt die Faustregel bei 100 km/h zum Vordermann?",
+  "a": [
+   "Etwa 50 m",
+   "Etwa 10 m",
+   "Etwa 25 m",
+   "Etwa 200 m"
+  ],
+  "w": [
+   "",
+   "Zehn Meter sind selbst in der Stadt zu wenig.",
+   "25 Meter sind zu kurz.",
+   "200 Meter wären mehr als nötig."
+  ],
+  "e": "Gesetzlich gilt nur „ausreichender Abstand“ (§ 4 StVO); die Faustregel lautet halber Tacho oder zwei Sekunden.",
+  "h": "Faustformel mit dem Tacho.",
+  "d": 2
+ },
+ {
+  "id": "1wdiuy9",
+  "s": "Recht im Alltag",
+  "q": "Wie tief muss das Reifenprofil gesetzlich mindestens sein?",
+  "a": [
+   "1,6 mm",
+   "3 mm",
+   "4 mm",
+   "0,5 mm"
+  ],
+  "w": [
+   "",
+   "Drei Millimeter sind nur eine Empfehlung für Sommerreifen.",
+   "Vier Millimeter sind die Empfehlung für Winterreifen.",
+   "Bei 0,5 mm wäre das Profil schon unter der Mindesttiefe von 1,6 mm."
+  ],
+  "e": "Die Straßenverkehrs-Zulassungs-Ordnung verlangt mindestens 1,6 mm.",
+  "h": "Weniger als 2 mm.",
+  "d": 2
+ },
+ {
+  "id": "mtrcaq",
+  "s": "Recht im Alltag",
+  "q": "Ab wann ist man in Deutschland volljährig?",
+  "a": [
+   "Mit 18 Jahren",
+   "Mit 16 Jahren",
+   "Mit 21 Jahren",
+   "Mit 14 Jahren"
+  ],
+  "w": [
+   "",
+   "Mit 16 darf man in einigen Ländern wählen, ist aber nicht volljährig.",
+   "21 Jahre war früher die Altersgrenze.",
+   "14 Jahre ist die Strafmündigkeit."
+  ],
+  "e": "§ 2 BGB: Mit 18 beginnt die volle Geschäftsfähigkeit; 1975 wurde die Grenze von 21 gesenkt.",
+  "h": "Zwischen 17 und 19.",
+  "d": 1
+ },
+ {
+  "id": "jg77th",
+  "s": "Recht im Alltag",
+  "q": "Ab welchem Alter ist man beschränkt geschäftsfähig?",
+  "a": [
+   "Ab 7 Jahren",
+   "Ab 14 Jahren",
+   "Ab 10 Jahren",
+   "Ab 16 Jahren"
+  ],
+  "w": [
+   "",
+   "Mit 14 beginnt die Strafmündigkeit.",
+   "Zehn ist keine Altersgrenze des BGB.",
+   "Mit 16 ist man testierfähig, nicht erstmals geschäftsfähig."
+  ],
+  "e": "§ 106 BGB: Minderjährige ab sieben Jahren sind beschränkt geschäftsfähig und brauchen für viele Geschäfte die Zustimmung der Eltern.",
+  "h": "Etwa Grundschulalter.",
+  "d": 2
+ },
+ {
+  "id": "ydwxhf",
+  "s": "Recht im Alltag",
+  "q": "Was regelt der „Taschengeldparagraph“ § 110 BGB?",
+  "a": [
+   "Wirksame Käufe mit überlassenem Geld",
+   "Die Pflicht der Eltern, Taschengeld zu zahlen",
+   "Steuerpflicht für Taschengeld",
+   "Barzahlungspflicht für Kinder"
+  ],
+  "w": [
+   "",
+   "Eine Pflicht zum Taschengeld besteht nicht.",
+   "Steuerrecht ist hier nicht betroffen.",
+   "Auch Überweisungen sind möglich, wenn die Mittel überlassen wurden."
+  ],
+  "e": "Ein Vertrag eines Minderjährigen gilt, wenn er ihn mit Mitteln erfüllt, die ihm überlassen wurden.",
+  "h": "Mit eigenen Mitteln.",
+  "d": 2
+ },
+ {
+  "id": "7fkzqq",
+  "s": "Recht im Alltag",
+  "q": "Welche Form braucht ein Kaufvertrag über bewegliche Sachen grundsätzlich?",
+  "a": [
+   "Keine bestimmte Form",
+   "Schriftform",
+   "Notarielle Beurkundung",
+   "Zwei Zeugen"
+  ],
+  "w": [
+   "",
+   "Schriftform ist nur bei bestimmten Verträgen vorgeschrieben.",
+   "Notar braucht man etwa beim Grundstückskauf.",
+   "Zeugen sind nicht erforderlich."
+  ],
+  "e": "Es gilt Formfreiheit: Ein mündlicher Kauf ist wirksam; Schriftform dient vor allem der Beweisbarkeit.",
+  "h": "Denk an den Kauf am Kiosk.",
+  "d": 2
+ },
+ {
+  "id": "1mlyi4i",
+  "s": "Recht im Alltag",
+  "q": "Wer muss einen Grundstückskaufvertrag beurkunden?",
+  "a": [
+   "Ein Notar",
+   "Das Grundbuchamt",
+   "Ein Rechtsanwalt",
+   "Das Finanzamt"
+  ],
+  "w": [
+   "",
+   "Das Grundbuchamt trägt den Eigentümerwechsel erst ein.",
+   "Ein Anwalt kann beraten, nicht beurkunden.",
+   "Das Finanzamt erhebt Grunderwerbsteuer."
+  ],
+  "e": "§ 311b BGB: Verträge über Grundstücke bedürfen der notariellen Beurkundung.",
+  "h": "Hoher Wert, besondere Warnfunktion.",
+  "d": 2
+ },
+ {
+  "id": "1itjapl",
+  "s": "Recht im Alltag",
+  "q": "Welche Wirkung hat in Deutschland eine kirchliche Trauung rechtlich?",
+  "a": [
+   "Keine, nur das Standesamt zählt",
+   "Dieselbe wie die standesamtliche",
+   "Sie ersetzt die Anmeldung beim Amt",
+   "Sie gilt nur mit Zeugen"
+  ],
+  "w": [
+   "",
+   "Die kirchliche Trauung hat zivilrechtlich keine Wirkung.",
+   "Sie ersetzt die standesamtliche Ehe nicht.",
+   "Zeugen sind kein Kriterium."
+  ],
+  "e": "Die Ehe wird vor dem Standesamt geschlossen (§ 1310 BGB); die Kirche ist Zusatz, seit 2009 auch ohne vorherige Zivilehe möglich.",
+  "h": "Amt, nicht Kirche.",
+  "d": 2
+ },
+ {
+  "id": "1jsrsk7",
+  "s": "Recht im Alltag",
+  "q": "Welcher Güterstand gilt, wenn Eheleute nichts anderes vereinbaren?",
+  "a": [
+   "Zugewinngemeinschaft",
+   "Gütertrennung",
+   "Gütergemeinschaft",
+   "Errungenschaftsgemeinschaft"
+  ],
+  "w": [
+   "",
+   "Gütertrennung muss per Ehevertrag vereinbart werden.",
+   "Gütergemeinschaft muss ebenfalls vereinbart werden.",
+   "Die Errungenschaftsgemeinschaft gilt im deutschen Recht nicht."
+  ],
+  "e": "Bei der Zugewinngemeinschaft behält jeder sein Vermögen, der Zugewinn wird bei Scheidung ausgeglichen.",
+  "h": "Der Name verrät, was ausgeglichen wird.",
+  "d": 2
+ },
+ {
+  "id": "b6aedz",
+  "s": "Recht im Alltag",
+  "q": "Wie lange muss man in der Regel getrennt leben, bevor eine einvernehmliche Scheidung möglich ist?",
+  "a": [
+   "Ein Jahr",
+   "Sechs Monate",
+   "Zwei Jahre",
+   "Drei Jahre"
+  ],
+  "w": [
+   "",
+   "Ein halbes Jahr genügt nur in Härtefällen.",
+   "Zwei Jahre sind keine gesetzliche Stufe; maßgeblich sind ein und drei Jahre.",
+   "Nach drei Jahren gilt das Scheitern auch ohne Zustimmung des Partners als unwiderlegbar."
+  ],
+  "e": "§ 1566 BGB: Nach einem Jahr Trennung wird das Scheitern bei gemeinsamem Antrag vermutet; nach drei Jahren gilt es als unwiderlegbar.",
+  "h": "Wartezeit, die auch Bedenkzeit ist.",
+  "d": 3
+ },
+ {
+  "id": "3ql9qp",
+  "s": "Recht im Alltag",
+  "q": "Welche Kündigungsfrist hat ein Mieter bei unbefristetem Wohnraummietvertrag?",
+  "a": [
+   "3 Monate",
+   "1 Monat",
+   "6 Monate",
+   "Sie ist vertragsfrei"
+  ],
+  "w": [
+   "",
+   "Ein Monat gilt etwa bei möblierten Zimmern.",
+   "Sechs Monate sind die Frist bei Eigenbedarf, wenn lange vermietet.",
+   "Die gesetzliche Frist gilt zwingend zugunsten des Mieters."
+  ],
+  "e": "§ 573c BGB: drei Monate für Mieter, für Vermieter je nach Mietdauer drei bis neun Monate.",
+  "h": "Zwingend zugunsten des Mieters.",
+  "d": 2
+ },
+ {
+  "id": "12192gi",
+  "s": "Recht im Alltag",
+  "q": "Bis wann muss der Vermieter die Betriebskostenabrechnung spätestens zustellen?",
+  "a": [
+   "12 Monate nach Ende des Abrechnungszeitraums",
+   "3 Monate nach Ende des Abrechnungszeitraums",
+   "6 Monate nach Ende des Abrechnungszeitraums",
+   "24 Monate nach Ende des Abrechnungszeitraums"
+  ],
+  "w": [
+   "",
+   "Drei Monate sind keine gesetzliche Frist.",
+   "Sechs Monate sind keine gesetzliche Frist.",
+   "Zwei Jahre sind zu lang; danach sind Nachforderungen ausgeschlossen."
+  ],
+  "e": "§ 556 Abs. 3 BGB: Nach Ablauf der Frist sind Nachforderungen in der Regel ausgeschlossen.",
+  "h": "Ausschlussfrist.",
+  "d": 3
+ },
+ {
+  "id": "1r0w1mt",
+  "s": "Recht im Alltag",
+  "q": "Wie lang darf eine Probezeit im Arbeitsverhältnis höchstens sein?",
+  "a": [
+   "6 Monate",
+   "3 Monate",
+   "9 Monate",
+   "12 Monate"
+  ],
+  "w": [
+   "",
+   "Drei Monate sind üblich, aber nicht Höchstgrenze.",
+   "Neun Monate überschreiten die Höchstgrenze.",
+   "Zwölf Monate überschreiten die gesetzliche Höchstgrenze."
+  ],
+  "e": "§ 622 Abs. 3 BGB: Während einer vereinbarten Probezeit von höchstens sechs Monaten gilt eine Kündigungsfrist von zwei Wochen.",
+  "h": "Höchstgrenze im BGB-Kündigungsrecht.",
+  "d": 2
+ },
+ {
+  "id": "lj54uz",
+  "s": "Recht im Alltag",
+  "q": "Wie viele Urlaubstage stehen Arbeitnehmern bei einer Fünf-Tage-Woche mindestens zu?",
+  "a": [
+   "20 Tage",
+   "24 Tage",
+   "25 Tage",
+   "30 Tage"
+  ],
+  "w": [
+   "",
+   "24 sind die gesetzlichen Werktage bei einer Sechs-Tage-Woche.",
+   "25 Tage sind keine gesetzliche Zahl.",
+   "30 Tage sind tarif- oder arbeitsvertraglich üblich."
+  ],
+  "e": "§ 3 Bundesurlaubsgesetz: 24 Werktage bei sechs Tagen; umgerechnet 20 Arbeitstage bei fünf Tagen.",
+  "h": "Umrechnung von sechs auf fünf Tage.",
+  "d": 2
+ },
+ {
+  "id": "6t9i34",
+  "s": "Recht im Alltag",
+  "q": "Wie lange zahlt der Arbeitgeber im Krankheitsfall das Gehalt weiter?",
+  "a": [
+   "Bis zu 6 Wochen",
+   "Bis zu 2 Wochen",
+   "Bis zu 3 Monate",
+   "Bis zu 12 Monate"
+  ],
+  "w": [
+   "",
+   "Zwei Wochen sind nicht ausreichend vorgesehen.",
+   "Drei Monate sind keine gesetzliche Dauer.",
+   "Danach zahlt die Krankenkasse Krankengeld bis zu 78 Wochen."
+  ],
+  "e": "§ 3 Entgeltfortzahlungsgesetz: Entgeltfortzahlung bis zu sechs Wochen je Erkrankung.",
+  "h": "Anschließend Krankengeld.",
+  "d": 2
+ },
+ {
+  "id": "10hpvi2",
+  "s": "Recht im Alltag",
+  "q": "Ab welcher Betriebsgröße gilt grundsätzlich das Kündigungsschutzgesetz?",
+  "a": [
+   "Mehr als 10 Beschäftigte",
+   "Mehr als 5 Beschäftigte",
+   "Mehr als 50 Beschäftigte",
+   "Mehr als 100 Beschäftigte"
+  ],
+  "w": [
+   "",
+   "Fünf Beschäftigte galten bis 2003.",
+   "Fünfzig ist keine Schwelle des KSchG.",
+   "Hundert Beschäftigte sind keine Schwelle des KSchG."
+  ],
+  "e": "§ 23 KSchG: Der Kündigungsschutz greift in Betrieben mit mehr als zehn Beschäftigten, wenn man mehr als sechs Monate dort arbeitet.",
+  "h": "Kleinbetriebe sind ausgenommen.",
+  "d": 3
+ },
+ {
+  "id": "r6qqwp",
+  "s": "Recht im Alltag",
+  "q": "Welche Form braucht eine Kündigung eines Arbeitsverhältnisses?",
+  "a": [
+   "Schriftform mit Unterschrift",
+   "Eine E-Mail",
+   "Eine mündliche Erklärung vor Zeugen",
+   "Eine SMS"
+  ],
+  "w": [
+   "",
+   "E-Mail erfüllt die Schriftform nicht.",
+   "Mündliche Kündigung ist unwirksam.",
+   "SMS erfüllt die Schriftform nicht."
+  ],
+  "e": "§ 623 BGB: Kündigungen und Aufhebungsverträge brauchen Schriftform, also ein Papierdokument mit Unterschrift.",
+  "h": "Papier.",
+  "d": 2
+ },
+ {
+  "id": "1x0qvv5",
+  "s": "Recht im Alltag",
+  "q": "Wie lange dauert der Mutterschutz nach der Geburt in der Regel?",
+  "a": [
+   "8 Wochen",
+   "4 Wochen",
+   "12 Wochen",
+   "6 Wochen"
+  ],
+  "w": [
+   "",
+   "Sechs Wochen sind die Schutzfrist vor der Geburt.",
+   "Vier Wochen sind zu kurz.",
+   "Zwölf Wochen gelten bei Früh- und Mehrlingsgeburten sowie behinderten Kindern."
+  ],
+  "e": "§ 3 Mutterschutzgesetz: sechs Wochen vor und acht Wochen nach der Geburt; bei Früh- oder Mehrlingsgeburten zwölf Wochen.",
+  "h": "Länger als vor der Geburt.",
+  "d": 2
+ },
+ {
+  "id": "1djprd2",
+  "s": "Recht im Alltag",
+  "q": "Wie lange kann Elternzeit pro Kind höchstens genommen werden?",
+  "a": [
+   "Bis zu 3 Jahre",
+   "Bis zu 1 Jahr",
+   "Bis zu 2 Jahre",
+   "Bis zu 5 Jahre"
+  ],
+  "w": [
+   "",
+   "Ein Jahr entspricht ungefähr dem Elterngeld.",
+   "Zwei Jahre sind zu kurz.",
+   "Fünf Jahre Elternzeit pro Kind sieht das BEEG nicht vor."
+  ],
+  "e": "§ 15 BEEG: Anspruch auf bis zu drei Jahre unbezahlte Freistellung je Elternteil.",
+  "h": "Länger als das Elterngeld.",
+  "d": 2
+ },
+ {
+  "id": "1e384vn",
+  "s": "Recht im Alltag",
+  "q": "Wie nennt das Strafgesetzbuch die Abwehr eines gegenwärtigen rechtswidrigen Angriffs?",
+  "a": [
+   "Notwehr",
+   "Notstand",
+   "Selbsthilfe",
+   "Einwilligung"
+  ],
+  "w": [
+   "",
+   "Notstand betrifft Gefahren, die nicht von einem Angriff ausgehen.",
+   "Selbsthilfe nach § 229 BGB sichert eigene Ansprüche.",
+   "Einwilligung ist ein anderer Rechtfertigungsgrund."
+  ],
+  "e": "§ 32 StGB: Die erforderliche Verteidigung ist gerechtfertigt; sie muss nicht verhältnismäßig sein, aber erforderlich.",
+  "h": "Verteidigung gegen einen Angreifer.",
+  "d": 2
+ },
+ {
+  "id": "14k92u1",
+  "s": "Recht im Alltag",
+  "q": "Was unterscheidet eine Ordnungswidrigkeit von einer Straftat?",
+  "a": [
+   "Sie wird mit Bußgeld, nicht mit Strafe geahndet",
+   "Sie wird nur im Ausland verfolgt",
+   "Sie führt immer zu einer Haftstrafe ohne Bewährung",
+   "Sie verjährt nie"
+  ],
+  "w": [
+   "",
+   "Ordnungswidrigkeiten werden im Inland verfolgt.",
+   "Freiheitsstrafen gibt es nur bei Straftaten.",
+   "Verjährung gibt es auch hier, meist nach 3 Monaten bis 3 Jahren."
+  ],
+  "e": "Ordnungswidrigkeiten wie Falschparken werden von Behörden mit Verwarnung oder Bußgeld geahndet; Straftaten verfolgt die Staatsanwaltschaft.",
+  "h": "Falschparken ist ein typisches Beispiel.",
+  "d": 1
+ },
+ {
+  "id": "vs8uq2",
+  "s": "Recht im Alltag",
+  "q": "Welche Straftat verjährt in Deutschland nicht?",
+  "a": [
+   "Mord",
+   "Raub",
+   "Diebstahl",
+   "Betrug"
+  ],
+  "w": [
+   "",
+   "Raub verjährt nach 20 Jahren.",
+   "Diebstahl verjährt nach fünf Jahren.",
+   "Betrug verjährt nach fünf Jahren."
+  ],
+  "e": "§ 78 Abs. 2 StGB: Mord und Völkermord verjähren nicht.",
+  "h": "Lebenslang.",
+  "d": 3
+ },
+ {
+  "id": "1xle1lk",
+  "s": "Recht im Alltag",
+  "q": "Nach wie vielen Jahren kann eine lebenslange Freiheitsstrafe frühestens zur Bewährung ausgesetzt werden?",
+  "a": [
+   "Nach 15 Jahren",
+   "Nach 10 Jahren",
+   "Nach 20 Jahren",
+   "Nach 25 Jahren"
+  ],
+  "w": [
+   "",
+   "Nach zehn Jahren ist eine Aussetzung gesetzlich noch nicht möglich.",
+   "Zwanzig Jahre ist nicht die Mindestgrenze.",
+   "Fünfundzwanzig Jahre sind nicht vorgesehen."
+  ],
+  "e": "§ 57a StGB: Aussetzung nach 15 Jahren, wenn nicht die besondere Schwere der Schuld eine längere Vollstreckung gebietet.",
+  "h": "Weniger als 20 Jahre.",
+  "d": 3
+ },
+ {
+  "id": "smtinx",
+  "s": "Recht im Alltag",
+  "q": "Was besagt der Grundsatz „in dubio pro reo“?",
+  "a": [
+   "Im Zweifel für den Angeklagten",
+   "Im Zweifel für die Anklage",
+   "Jeder muss seine Unschuld beweisen",
+   "Der Richter urteilt nach Gewohnheit"
+  ],
+  "w": [
+   "",
+   "Gegenteil: Das Gericht darf bei Zweifeln nicht verurteilen.",
+   "Die Beweislast liegt beim Staat.",
+   "Gerichte entscheiden nach Gesetz."
+  ],
+  "e": "Die Unschuldsvermutung ist in Art. 6 EMRK verankert: Wer nicht überführt wird, ist freizusprechen.",
+  "h": "Lateinisch.",
+  "d": 1
+ },
+ {
+  "id": "12ofqyb",
+  "s": "Recht im Alltag",
+  "q": "Wer sind Schöffen?",
+  "a": [
+   "Ehrenamtliche Laienrichter",
+   "Berufsrichter am Landgericht",
+   "Staatsanwälte",
+   "Rechtspfleger"
+  ],
+  "w": [
+   "",
+   "Berufsrichter sind Juristen.",
+   "Staatsanwälte klagen an.",
+   "Rechtspfleger sind Beamte mit eigenen Aufgaben."
+  ],
+  "e": "Schöffen urteilen in Strafverfahren gleichberechtigt mit Berufsrichtern und werden für fünf Jahre gewählt.",
+  "h": "Keine Juristen.",
+  "d": 2
+ },
+ {
+  "id": "yqc5j9",
+  "s": "Recht im Alltag",
+  "q": "Was prüft die Revision im Gegensatz zur Berufung?",
+  "a": [
+   "Nur Rechtsfehler",
+   "Nur Tatsachen",
+   "Beides vollständig",
+   "Nur Verfahrensdauer"
+  ],
+  "w": [
+   "",
+   "Die Berufung prüft auch Tatsachen.",
+   "Die Revision prüft keine Tatsachen neu.",
+   "Die Dauer ist kein Prüfungsmaßstab."
+  ],
+  "e": "In der Revision wird das Urteil nur auf Rechtsfehler untersucht.",
+  "h": "Recht, nicht Tatsachen.",
+  "d": 3
+ },
+ {
+  "id": "16bywk0",
+  "s": "Recht im Alltag",
+  "q": "Wie viele Gerichtsbarkeiten gibt es in Deutschland?",
+  "a": [
+   "Fünf",
+   "Drei",
+   "Sieben",
+   "Zwei"
+  ],
+  "w": [
+   "",
+   "Drei Zweige wären zu wenig; neben den ordentlichen Gerichten gibt es vier Fachgerichtsbarkeiten.",
+   "Sieben Zweige gibt es nicht; es sind fünf.",
+   "Zwei Zweige würden nur Zivil- und Strafgerichte abdecken."
+  ],
+  "e": "Ordentliche, Arbeits-, Verwaltungs-, Sozial- und Finanzgerichtsbarkeit.",
+  "h": "Neben der ordentlichen gibt es Arbeits-, Verwaltungs-, Sozial- und …",
+  "d": 3
+ },
+ {
+  "id": "19nal5",
+  "s": "Recht im Alltag",
+  "q": "Was kann der Käufer bei einem Sachmangel zunächst verlangen?",
+  "a": [
+   "Reparatur oder Ersatzlieferung",
+   "Sofortige Rückzahlung des Kaufpreises",
+   "Schadensersatz in doppelter Höhe",
+   "Preisminderung auf null"
+  ],
+  "w": [
+   "",
+   "Rücktritt ist erst nach gescheiterter Nacherfüllung möglich.",
+   "Doppelter Schadensersatz existiert im deutschen Recht nicht.",
+   "Minderung ist wie Rücktritt erst nach fehlgeschlagener Nacherfüllung möglich."
+  ],
+  "e": "§ 437 BGB: Vorrang hat die Nacherfüllung; erst danach kommen Rücktritt, Minderung oder Schadensersatz.",
+  "h": "Erst reparieren.",
+  "d": 2
+ },
+ {
+  "id": "1h9z12p",
+  "s": "Recht im Alltag",
+  "q": "Was unterscheidet eine Garantie von der gesetzlichen Gewährleistung?",
+  "a": [
+   "Sie ist eine freiwillige Zusatzzusage",
+   "Die Garantie ist gesetzlich Pflicht",
+   "Die Garantie gilt nur für Gebrauchtwaren",
+   "Die Garantie gilt nur gegenüber dem Staat"
+  ],
+  "w": [
+   "",
+   "Gesetzlich vorgeschrieben ist die Gewährleistung; eine Garantie ist freiwillig.",
+   "Garantien gibt es bei Neu- und Gebrauchtwaren.",
+   "Sie ist ein Vertragsversprechen gegenüber dem Käufer."
+  ],
+  "e": "Garantien gibt der Hersteller oder Verkäufer freiwillig; die Gewährleistung des Verkäufers bleibt davon unberührt.",
+  "h": "Freiwilligkeit.",
+  "d": 2
+ },
+ {
+  "id": "1e136mc",
+  "s": "Recht im Alltag",
+  "q": "Ab wie viel Promille gilt für Autofahrer absolute Fahruntüchtigkeit?",
+  "a": [
+   "1,1 Promille",
+   "0,5 Promille",
+   "0,3 Promille",
+   "1,6 Promille"
+  ],
+  "w": [
+   "",
+   "0,5 Promille ist die Ordnungswidrigkeits-Grenze.",
+   "0,3 Promille gilt bei Ausfallerscheinungen.",
+   "1,6 Promille gilt für Radfahrer."
+  ],
+  "e": "Ab 1,1 Promille liegt immer eine Straftat vor (§ 316 StGB); für Radfahrer liegt die Grenze bei 1,6.",
+  "h": "Straftat, keine Ordnungswidrigkeit.",
+  "d": 3
+ },
+ {
+  "id": "1upol64",
+  "s": "Recht im Alltag",
+  "q": "Wie lange dauert die Probezeit bei der Fahrerlaubnis?",
+  "a": [
+   "Zwei Jahre",
+   "Ein Jahr",
+   "Drei Jahre",
+   "Fünf Jahre"
+  ],
+  "w": [
+   "",
+   "Ein Jahr deckt nur die Hälfte der gesetzlichen Probezeit von zwei Jahren ab.",
+   "Drei Jahre sind es nach dem Gesetz nicht; die Probezeit endet nach zwei.",
+   "Fünf Jahre wären mehr als doppelt so lang wie die gesetzliche Probezeit."
+  ],
+  "e": "§ 2a StVG: Die Probezeit beträgt zwei Jahre; bei Verstößen droht ein Aufbauseminar.",
+  "h": "Länger als ein Jahr.",
+  "d": 3
+ },
+ {
+  "id": "1icjff9",
+  "s": "Recht im Alltag",
+  "q": "Bei wie vielen Punkten im Fahreignungsregister wird die Fahrerlaubnis entzogen?",
+  "a": [
+   "8 Punkte",
+   "6 Punkte",
+   "10 Punkte",
+   "18 Punkte"
+  ],
+  "w": [
+   "",
+   "Bei 6 Punkten wird man verwarnt.",
+   "Zehn Punkte sind keine Stufe des Systems.",
+   "18 Punkte galten nach dem alten System."
+  ],
+  "e": "Seit 2014 gilt: 1 bis 3 Punkte keine Maßnahme, ab 4 Ermahnung, ab 6 Verwarnung, ab 8 Entzug.",
+  "h": "Niedriger als 18, höher als 6.",
+  "d": 2
+ },
+ {
+  "id": "krl53",
+  "s": "Recht im Alltag",
+  "q": "Welche Regel gilt an gleichrangigen Kreuzungen ohne Schilder?",
+  "a": [
+   "Rechts vor links",
+   "Links vor rechts",
+   "Der größere Wagen",
+   "Wer zuerst kommt"
+  ],
+  "w": [
+   "",
+   "Links vor rechts gilt nicht; Vorfahrt hat, wer von rechts kommt.",
+   "Die Fahrzeuggröße ist nicht relevant.",
+   "Eine Regel „wer zuerst kommt“ kennt die StVO bei der Vorfahrt nicht."
+  ],
+  "e": "§ 8 StVO: Wer von rechts kommt, hat Vorfahrt.",
+  "h": "Aus der ersten Fahrstunde.",
+  "d": 1
+ },
+ {
+  "id": "1kvczu5",
+  "s": "Recht im Alltag",
+  "q": "Ab welchem Alter darf man mit begleitetem Fahren die Klasse B fahren?",
+  "a": [
+   "17 Jahre",
+   "16 Jahre",
+   "18 Jahre",
+   "15 Jahre"
+  ],
+  "w": [
+   "",
+   "Mit 16 beginnt die Fahrerlaubnisklasse AM für Mopeds.",
+   "18 Jahre ist das reguläre Alter.",
+   "Mit 15 ist nur die Mofa-Prüfbescheinigung möglich."
+  ],
+  "e": "§ 48a FeV: Begleitetes Fahren ab 17 mit Begleitperson, ab 18 selbstständig.",
+  "h": "Ein Jahr vor der Volljährigkeit.",
+  "d": 1
+ },
+ {
+  "id": "1gma05r",
+  "s": "Recht im Alltag",
+  "q": "Welcher Gegenstand muss in Deutschland im Pkw mitgeführt werden?",
+  "a": [
+   "Warnweste",
+   "Feuerlöscher",
+   "Abschleppseil",
+   "Ersatzreifen"
+  ],
+  "w": [
+   "",
+   "Feuerlöscher sind nicht vorgeschrieben.",
+   "Ein Abschleppseil ist nicht vorgeschrieben.",
+   "Ein Ersatzreifen ist nicht vorgeschrieben."
+  ],
+  "e": "Pflicht sind Warndreieck, Verbandkasten und Warnweste.",
+  "h": "Sichtbarkeit.",
+  "d": 2
+ },
+ {
+  "id": "115794f",
+  "s": "Recht im Alltag",
+  "q": "Wie lange schützt das Urheberrecht ein Werk nach dem Tod des Urhebers?",
+  "a": [
+   "70 Jahre",
+   "50 Jahre",
+   "100 Jahre",
+   "25 Jahre"
+  ],
+  "w": [
+   "",
+   "50 Jahre galten bis 1993.",
+   "Hundert Jahre Schutz nach dem Tod sieht das Urheberrechtsgesetz nicht vor.",
+   "25 Jahre sind weniger als die gesetzlichen 70 Jahre."
+  ],
+  "e": "§ 64 UrhG: Das Urheberrecht erlischt 70 Jahre nach dem Tod des Urhebers.",
+  "h": "Länger als ein Menschenleben.",
+  "d": 3
+ },
+ {
+  "id": "qz9akb",
+  "s": "Recht im Alltag",
+  "q": "Wofür dient eine Patientenverfügung?",
+  "a": [
+   "Behandlungswünsche für den Ernstfall",
+   "Vermögensübertragung an Erben zu Lebzeiten",
+   "Anmeldung zur Organspende",
+   "Vertretung gegenüber Behörden"
+  ],
+  "w": [
+   "",
+   "Das regelt ein Testament oder eine Schenkung.",
+   "Dafür gibt es den Organspendeausweis.",
+   "Das regelt die Vorsorgevollmacht."
+  ],
+  "e": "§ 1827 BGB: Eine schriftliche Patientenverfügung bindet Ärzte und Betreuer.",
+  "h": "Medizinischer Wille.",
+  "d": 2
+ },
+ {
+  "id": "k8e8xg",
+  "s": "Recht im Alltag",
+  "q": "Was regelt eine Vorsorgevollmacht?",
+  "a": [
+   "Eine Vertrauensperson darf für dich handeln",
+   "Eine Behörde verwaltet dein Vermögen ab 65",
+   "Dein Erbe wird schon zu Lebzeiten verteilt",
+   "Dein Hausarzt entscheidet dann automatisch allein"
+  ],
+  "w": [
+   "",
+   "Eine Behörde übernimmt nur nach einer gerichtlichen Betreuung.",
+   "Das Erbe regelt ein Testament, erst nach dem Tod.",
+   "Ärzte brauchen die Einwilligung des Patienten oder Vertreters."
+  ],
+  "e": "Mit ihr vermeidest du eine gerichtlich bestellte Betreuung, falls du Entscheidungen nicht mehr treffen kannst.",
+  "h": "Man bestimmt selbst, wer im Ernstfall entscheidet.",
+  "d": 2
+ },
+ {
+  "id": "1xn44wt",
+  "s": "Recht im Alltag",
+  "q": "Wie heißt das gerichtliche Verfahren für unbestrittene Geldforderungen, bei dem ein Bescheid ohne Verhandlung ergeht?",
+  "a": [
+   "Mahnverfahren",
+   "Schlichtungsverfahren",
+   "Revisionsverfahren",
+   "Strafbefehl"
+  ],
+  "w": [
+   "",
+   "Schlichtung versucht eine gütliche Einigung.",
+   "Die Revision prüft Urteile auf Rechtsfehler, sie ist kein Verfahren für Geldforderungen.",
+   "Der Strafbefehl gehört ins Strafrecht."
+  ],
+  "e": "Das gerichtliche Mahnverfahren (§ 688 ZPO) führt zum Vollstreckungsbescheid, wenn der Schuldner nicht widerspricht.",
+  "h": "Mahnbescheid.",
+  "d": 3
+ },
+ {
+  "id": "pfo0p3",
+  "s": "Recht im Alltag",
+  "q": "Was ist eine Abmahnung im Arbeitsrecht?",
+  "a": [
+   "Eine Rüge mit Warnung vor Kündigung",
+   "Eine fristlose Kündigung ohne Anhörung",
+   "Eine Gehaltskürzung als Strafe",
+   "Eine Versetzung an einen anderen Ort"
+  ],
+  "w": [
+   "",
+   "Die Kündigung ist erst die Folge einer erfolglosen Abmahnung.",
+   "Eine Gehaltskürzung als Sanktion ist unzulässig.",
+   "Eine Versetzung ist eine Weisung, keine Abmahnung."
+  ],
+  "e": "Bei verhaltensbedingter Kündigung ist meist zuerst eine Abmahnung nötig; sie rügt den Pflichtverstoß und warnt vor Folgen.",
+  "h": "Gelbe Karte.",
+  "d": 2
+ },
+ {
+  "id": "1mnw7",
+  "s": "Recht im Alltag",
+  "q": "Muss jeder Halter eines zugelassenen Pkw in Deutschland eine Haftpflichtversicherung haben?",
+  "a": [
+   "Ja, sie ist gesetzlich vorgeschrieben",
+   "Nein, sie ist freiwillig",
+   "Nur bei Neuwagen",
+   "Nur für Fahrzeuge mit mehr als 100 PS Leistung"
+  ],
+  "w": [
+   "",
+   "Ohne Versicherung gibt es keine Zulassung; der Betrieb ohne Schutz ist strafbar.",
+   "Die Pflicht gilt unabhängig vom Alter des Fahrzeugs.",
+   "Die Pflicht hängt nicht von der Motorleistung ab."
+  ],
+  "e": "Das Pflichtversicherungsgesetz verlangt die Kfz-Haftpflicht, damit Unfallopfer ihre Schäden ersetzt bekommen.",
+  "h": "Opferschutz.",
+  "d": 1
+ },
+ {
+  "id": "1c2c0eg",
+  "s": "Recht im Alltag",
+  "q": "Welches Recht hat ein Mieter bei einem erheblichen Wohnungsmangel?",
+  "a": [
+   "Die Miete angemessen mindern",
+   "Die Miete vollständig einbehalten",
+   "Ohne Frist sofort ausziehen",
+   "Selbst renovieren und den Betrag abziehen"
+  ],
+  "w": [
+   "",
+   "Eine volle Einbehaltung ist nur bei völliger Unbrauchbarkeit denkbar.",
+   "Eine Kündigung braucht grundsätzlich die Frist.",
+   "Selbstvornahme ist nur ausnahmsweise erlaubt."
+  ],
+  "e": "§ 536 BGB: Bei Mängeln mindert sich die Miete kraft Gesetzes in angemessener Höhe.",
+  "h": "Kraft Gesetzes.",
+  "d": 2
+ },
+ {
+  "id": "1qsinqx",
+  "s": "Recht im Alltag",
+  "q": "Was bedeutet Vertragsfreiheit im Zivilrecht?",
+  "a": [
+   "Ob und mit wem man Verträge schließt, ist frei",
+   "Verträge brauchen immer eine staatliche Genehmigung",
+   "Verträge müssen immer schriftlich geschlossen werden",
+   "Der Inhalt jedes Vertrags ist gesetzlich festgelegt"
+  ],
+  "w": [
+   "",
+   "Eine Genehmigung ist nur ausnahmsweise nötig.",
+   "Formfreiheit ist die Regel, Schriftform die Ausnahme.",
+   "Die Parteien gestalten den Inhalt grundsätzlich selbst."
+  ],
+  "e": "Die Vertragsfreiheit umfasst Abschluss- und Gestaltungsfreiheit; sie folgt aus der Privatautonomie.",
+  "h": "Privatautonomie.",
+  "d": 2
+ },
+ {
+  "id": "qcblq2",
+  "s": "EU & Welt",
+  "q": "Welches Land ist KEIN ständiges Mitglied des UN-Sicherheitsrats?",
+  "a": [
+   "Indien",
+   "Frankreich",
+   "China",
+   "Großbritannien"
+  ],
+  "w": [
+   "",
+   "Frankreich ist ständiges Mitglied mit Vetorecht.",
+   "China ist ständiges Mitglied mit Vetorecht.",
+   "Großbritannien ist ständiges Mitglied mit Vetorecht."
+  ],
+  "e": "Ständig sind USA, Russland, China, Frankreich und Großbritannien, alle mit Vetorecht.",
+  "h": "Fünf Siegermächte von 1945.",
+  "d": 1
+ },
+ {
+  "id": "i74zmp",
+  "s": "EU & Welt",
+  "q": "Welches EU-Organ hat das Initiativrecht für neue Gesetze?",
+  "a": [
+   "Die Europäische Kommission",
+   "Das Europäische Parlament",
+   "Der Europäische Gerichtshof",
+   "Die Europäische Zentralbank"
+  ],
+  "w": [
+   "",
+   "Das Parlament beschließt Gesetze mit dem Rat, schlägt sie aber meist nicht vor.",
+   "Der EuGH legt Recht aus, er macht keine Gesetze.",
+   "Die EZB steuert die Geldpolitik."
+  ],
+  "e": "In der Regel legt die Kommission Vorschläge vor; Parlament und Rat beschließen.",
+  "h": "Hüterin der Verträge.",
+  "d": 2
+ },
+ {
+  "id": "1bfh783",
+  "s": "EU & Welt",
+  "q": "Was bedeutet das Subsidiaritätsprinzip?",
+  "a": [
+   "Entscheidungen möglichst auf unterster Ebene",
+   "Der Bund trifft grundsätzlich alle Entscheidungen",
+   "Gerichte stehen über der gewählten Regierung",
+   "Die Länder dürfen den Bund überstimmen"
+  ],
+  "w": [
+   "",
+   "Das wäre Zentralismus.",
+   "Das widerspricht der Gewaltenteilung.",
+   "Ein Überstimmen gibt es so nicht."
+  ],
+  "e": "Das Prinzip gilt in der EU (Art. 5 EUV) und im deutschen Föderalismus: Höhere Ebenen handeln nur, wenn es nötig ist.",
+  "h": "Das Prinzip stammt aus der katholischen Soziallehre.",
+  "d": 2
+ },
+ {
+  "id": "1bfi797",
+  "s": "EU & Welt",
+  "q": "In welcher Stadt wird der Friedensnobelpreis verliehen?",
+  "a": [
+   "Oslo",
+   "Stockholm",
+   "Genf",
+   "Den Haag"
+  ],
+  "w": [
+   "",
+   "Die übrigen Nobelpreise werden in Stockholm verliehen.",
+   "Genf ist Sitz vieler UN-Organisationen, nicht des Nobelpreises.",
+   "Den Haag ist Sitz des Internationalen Gerichtshofs."
+  ],
+  "e": "Alfred Nobel verfügte in seinem Testament, dass das norwegische Nobelkomitee den Friedenspreis vergibt.",
+  "h": "Nicht dort, wo die anderen Preise vergeben werden.",
+  "d": 1
+ },
+ {
+  "id": "3q9wn0",
+  "s": "EU & Welt",
+  "q": "Was regelt Artikel 5 des NATO-Vertrags?",
+  "a": [
+   "Ein Angriff auf eines betrifft alle",
+   "Die Einführung einer gemeinsamen Währung",
+   "Die Wehrpflicht aller Mitgliedstaaten",
+   "Die Freizügigkeit der Bürger im Bündnis"
+  ],
+  "w": [
+   "",
+   "Eine gemeinsame Währung hat die NATO nicht.",
+   "Eine gemeinsame Wehrpflicht gibt es nicht.",
+   "Freizügigkeit regelt der Schengen-Raum."
+  ],
+  "e": "Der Bündnisfall wurde bisher nur einmal ausgerufen, nach den Anschlägen vom 11. September 2001.",
+  "h": "Der Bündnisfall wurde nur nach dem 11. September 2001 ausgerufen.",
+  "d": 2
+ },
+ {
+  "id": "1ge5u4b",
+  "s": "EU & Welt",
+  "q": "Wie viele Mitgliedstaaten hat die EU (Stand 2026)?",
+  "a": [
+   "27",
+   "25",
+   "28",
+   "30"
+  ],
+  "w": [
+   "",
+   "25 waren es von 2004 bis 2007.",
+   "28 waren es vor dem Brexit.",
+   "30 Mitglieder hat die EU nicht; es sind 27."
+  ],
+  "e": "Seit dem Brexit 2020 hat die EU 27 Mitglieder; Kroatien trat 2013 als bisher letztes bei.",
+  "h": "Nach dem Brexit.",
+  "d": 1
+ },
+ {
+  "id": "1i28z0h",
+  "s": "EU & Welt",
+  "q": "Wo hat das Europäische Parlament seinen offiziellen Sitz?",
+  "a": [
+   "Straßburg",
+   "Brüssel",
+   "Luxemburg",
+   "Den Haag"
+  ],
+  "w": [
+   "",
+   "In Brüssel tagen Ausschüsse und zusätzliche Plenarsitzungen.",
+   "In Luxemburg sitzt das Generalsekretariat.",
+   "Den Haag ist kein EU-Organsitz."
+  ],
+  "e": "Der Sitz ist laut EU-Verträgen Straßburg; dort finden die Plenartagungen statt.",
+  "h": "Grenzstadt zu Deutschland.",
+  "d": 1
+ },
+ {
+  "id": "15ytjxp",
+  "s": "EU & Welt",
+  "q": "Wo hat die UNO ihren Hauptsitz?",
+  "a": [
+   "New York",
+   "Genf",
+   "Wien",
+   "Den Haag"
+  ],
+  "w": [
+   "",
+   "In Genf liegt das zweitgrößte UN-Büro.",
+   "In Wien sitzen unter anderem die Atomenergiebehörde und OPEC.",
+   "Den Haag ist Sitz des IGH."
+  ],
+  "e": "Weitere UN-Standorte sind Genf, Wien und Nairobi.",
+  "h": "Östliche US-Metropole.",
+  "d": 1
+ },
+ {
+  "id": "1p37gwq",
+  "s": "EU & Welt",
+  "q": "Was regelt der Schengen-Raum?",
+  "a": [
+   "Keine Kontrollen an Binnengrenzen",
+   "Eine gemeinsame Währung",
+   "Einen gemeinsamen Verteidigungsfall",
+   "Einheitliche Steuersätze"
+  ],
+  "w": [
+   "",
+   "Der Euro ist eine eigene Vereinbarung.",
+   "Der Verteidigungsfall liegt in der NATO.",
+   "Steuern bleiben weitgehend national."
+  ],
+  "e": "Das Schengener Abkommen von 1985 hebt systematische Grenzkontrollen zwischen den Teilnehmerstaaten auf.",
+  "h": "Grenzen.",
+  "d": 2
+ },
+ {
+  "id": "15hik4d",
+  "s": "EU & Welt",
+  "q": "Welche Institution vertritt in der EU die Regierungen der Mitgliedstaaten?",
+  "a": [
+   "Der Rat der Europäischen Union",
+   "Das Europäische Parlament in Straßburg",
+   "Die Europäische Kommission",
+   "Der Europäische Gerichtshof"
+  ],
+  "w": [
+   "",
+   "Das Parlament vertritt die Bürgerinnen und Bürger.",
+   "Die Kommission vertritt das Gemeinwohl der EU.",
+   "Der EuGH wacht über das Recht."
+  ],
+  "e": "Im Rat sitzen die Fachminister der Mitgliedstaaten; er beschließt zusammen mit dem Parlament.",
+  "h": "Minister der Länder.",
+  "d": 2
+ },
+ {
+  "id": "15a8nw3",
+  "s": "EU & Welt",
+  "q": "Welches Land gehört NICHT zur G7?",
+  "a": [
+   "China",
+   "Kanada",
+   "Italien",
+   "Japan"
+  ],
+  "w": [
+   "",
+   "Kanada ist G7-Mitglied.",
+   "Italien ist G7-Mitglied.",
+   "Japan ist G7-Mitglied."
+  ],
+  "e": "Die G7: USA, Japan, Deutschland, Vereinigtes Königreich, Frankreich, Italien, Kanada.",
+  "h": "Nicht im Westen.",
+  "d": 1
+ },
+ {
+  "id": "g8lddd",
+  "s": "EU & Welt",
+  "q": "Wie viele Länder gehören seit 2026 zum Euroraum?",
+  "a": [
+   "21",
+   "19",
+   "20",
+   "27"
+  ],
+  "w": [
+   "",
+   "19 waren es von 2015 bis 2022.",
+   "20 waren es 2023 bis 2025.",
+   "27 ist die Zahl der EU-Mitglieder."
+  ],
+  "e": "Bulgarien führte den Euro am 1. Januar 2026 ein und wurde das 21. Mitglied.",
+  "h": "Neueste Beitritte aus Südosteuropa.",
+  "d": 3,
+  "src": "EZB, 01.01.2026: ecb.europa.eu/press/pr/date/2026/html/ecb.pr260101~c830245e42.de.html"
+ },
+ {
+  "id": "jammsh",
+  "s": "EU & Welt",
+  "q": "Welches Land gehörte NICHT zu den sechs Gründerstaaten der EWG?",
+  "a": [
+   "Spanien",
+   "Italien",
+   "Luxemburg",
+   "Belgien"
+  ],
+  "w": [
+   "",
+   "Italien war Gründungsmitglied.",
+   "Luxemburg war Gründungsmitglied.",
+   "Belgien war Gründungsmitglied."
+  ],
+  "e": "Gründer 1957 waren Belgien, Deutschland, Frankreich, Italien, Luxemburg und die Niederlande; Spanien trat 1986 bei.",
+  "h": "Iberische Halbinsel.",
+  "d": 2
+ },
+ {
+  "id": "1426x5w",
+  "s": "EU & Welt",
+  "q": "In welchem Vertrag wurde die Europäische Union gegründet?",
+  "a": [
+   "Vertrag von Maastricht",
+   "Vertrag von Lissabon",
+   "Römische Verträge",
+   "Vertrag von Versailles"
+  ],
+  "w": [
+   "",
+   "Lissabon reformierte 2009 die EU.",
+   "Die Römischen Verträge gründeten 1957 die EWG.",
+   "Versailles beendete 1919 den Ersten Weltkrieg."
+  ],
+  "e": "Der Maastricht-Vertrag trat am 1. November 1993 in Kraft und schuf die Union und den Weg zum Euro.",
+  "h": "Niederländische Stadt.",
+  "d": 2
+ },
+ {
+  "id": "1yl8ptl",
+  "s": "EU & Welt",
+  "q": "Was änderte der Vertrag von Lissabon (in Kraft seit 2009)?",
+  "a": [
+   "Parlamentsrechte gestärkt, Charta verbindlich",
+   "Gründung der Europäischen Wirtschaftsgemeinschaft",
+   "Einführung des Euro als Währung",
+   "Abschaffung des Rates der Union"
+  ],
+  "w": [
+   "",
+   "Die EWG wurde 1957 gegründet.",
+   "Der Euro wurde 1999 eingeführt.",
+   "Der Rat blieb bestehen."
+  ],
+  "e": "Seit 2009 gilt das ordentliche Gesetzgebungsverfahren mit Parlament und Rat als Regelfall.",
+  "h": "Reformvertrag.",
+  "d": 3
+ },
+ {
+  "id": "okyni1",
+  "s": "EU & Welt",
+  "q": "Welche Voraussetzungen müssen EU-Beitrittskandidaten erfüllen?",
+  "a": [
+   "Die Kopenhagener Kriterien",
+   "Die Maastricht-Kriterien",
+   "Die Schengen-Kriterien",
+   "Die Genfer Kriterien"
+  ],
+  "w": [
+   "",
+   "Maastricht-Kriterien betreffen den Euro-Beitritt.",
+   "Schengen betrifft Grenzkontrollen.",
+   "Genfer Konventionen betreffen Kriegsrecht."
+  ],
+  "e": "Sie umfassen stabile Institutionen, Marktwirtschaft und die Übernahme des EU-Rechts.",
+  "h": "Beschlossen vom Europäischen Rat 1993.",
+  "d": 3
+ },
+ {
+  "id": "1so7a9l",
+  "s": "EU & Welt",
+  "q": "Wo hat der Europäische Gerichtshof (EuGH) seinen Sitz?",
+  "a": [
+   "Luxemburg",
+   "Brüssel",
+   "Straßburg",
+   "Den Haag"
+  ],
+  "w": [
+   "",
+   "Brüssel ist Sitz der Kommission und des Rates.",
+   "Straßburg ist Sitz des Europäischen Parlaments.",
+   "Den Haag ist Sitz des IGH."
+  ],
+  "e": "Der EuGH wacht über die einheitliche Auslegung des EU-Rechts.",
+  "h": "Kleiner Staat, großes Gericht.",
+  "d": 2
+ },
+ {
+  "id": "d9i4rm",
+  "s": "EU & Welt",
+  "q": "Wo hat die Europäische Zentralbank (EZB) ihren Sitz?",
+  "a": [
+   "Frankfurt am Main",
+   "Brüssel",
+   "Paris",
+   "Luxemburg"
+  ],
+  "w": [
+   "",
+   "Brüssel ist Sitz von Kommission und Rat.",
+   "Paris ist Sitz der OECD.",
+   "Luxemburg ist Sitz des EuGH."
+  ],
+  "e": "Die EZB wurde 1998 gegründet; ihr Hauptziel ist Preisstabilität.",
+  "h": "Auch die Bundesbank sitzt in dieser Stadt.",
+  "d": 1
+ },
+ {
+  "id": "1ozneul",
+  "s": "EU & Welt",
+  "q": "Wer bildet den Europäischen Rat?",
+  "a": [
+   "Staats- und Regierungschefs der Mitglieder",
+   "Die Fachminister der Mitgliedstaaten",
+   "Die Abgeordneten des Europäischen Parlaments",
+   "Die Richter des EuGH"
+  ],
+  "w": [
+   "",
+   "Fachminister bilden den Rat der EU.",
+   "Abgeordnete bilden das Parlament.",
+   "Richter bilden den Gerichtshof."
+  ],
+  "e": "Er gibt der Union allgemeine politische Impulse; er verabschiedet keine Gesetze.",
+  "h": "Gipfel.",
+  "d": 2
+ },
+ {
+  "id": "g6g5d8",
+  "s": "EU & Welt",
+  "q": "Seit wann wird das Europäische Parlament direkt gewählt?",
+  "a": [
+   "1979",
+   "1957",
+   "1993",
+   "2009"
+  ],
+  "w": [
+   "",
+   "1957 wurde die EWG gegründet.",
+   "1993 trat der Maastricht-Vertrag in Kraft.",
+   "2009 trat der Lissabonner Vertrag in Kraft."
+  ],
+  "e": "Die erste Direktwahl fand im Juni 1979 statt; die Wahlperiode beträgt fünf Jahre.",
+  "h": "Ende der 1970er.",
+  "d": 2
+ },
+ {
+  "id": "o0dnc9",
+  "s": "EU & Welt",
+  "q": "Was unterscheidet eine EU-Verordnung von einer Richtlinie?",
+  "a": [
+   "Die Verordnung gilt unmittelbar in allen Mitgliedstaaten",
+   "Die Verordnung muss in nationales Recht umgesetzt werden",
+   "Die Richtlinie gilt nur für Behörden",
+   "Die Richtlinie ist unverbindlich"
+  ],
+  "w": [
+   "",
+   "Eine Umsetzung braucht die Richtlinie, nicht die Verordnung.",
+   "Richtlinien verpflichten die Mitgliedstaaten, ihre Gesetze anzupassen.",
+   "Richtlinien sind verbindlich bezüglich ihres Ziels."
+  ],
+  "e": "Die DSGVO ist eine Verordnung und gilt direkt; Richtlinien müssen Staaten umsetzen.",
+  "h": "Direkt oder umzusetzen.",
+  "d": 2
+ },
+ {
+  "id": "qyf790",
+  "s": "EU & Welt",
+  "q": "Was ist die Unionsbürgerschaft?",
+  "a": [
+   "Automatisch mit der Staatsangehörigkeit",
+   "Erteilung nach Antrag in Brüssel",
+   "Ersatz der nationalen Staatsangehörigkeit",
+   "Geltung nur in Schengen-Staaten"
+  ],
+  "w": [
+   "",
+   "Ein Antrag ist nicht nötig.",
+   "Sie tritt neben die nationale Staatsangehörigkeit.",
+   "Sie gilt in allen EU-Staaten."
+  ],
+  "e": "Sie gewährt unter anderem Freizügigkeit und das Wahlrecht bei Europa- und Kommunalwahlen im Wohnsitzstaat.",
+  "h": "Zusatz zur nationalen Staatsangehörigkeit.",
+  "d": 2
+ },
+ {
+  "id": "1fc10a",
+  "s": "EU & Welt",
+  "q": "Welche vier Grundfreiheiten bilden den EU-Binnenmarkt?",
+  "a": [
+   "Waren, Personen, Dienstleistungen, Kapital",
+   "Waren, Arbeit, Boden, Kapital",
+   "Währung, Waren, Wehrpflicht, Wahlrecht",
+   "Handel, Zölle, Steuern, Renten"
+  ],
+  "w": [
+   "",
+   "Arbeit und Boden sind Produktionsfaktoren.",
+   "Währung und Wehrpflicht gehören nicht dazu.",
+   "Das sind keine Grundfreiheiten."
+  ],
+  "e": "Der Binnenmarkt besteht seit 1993 und lässt Waren, Menschen, Dienstleistungen und Kapital frei zirkulieren.",
+  "h": "Vier Bereiche des freien Verkehrs.",
+  "d": 2
+ },
+ {
+  "id": "cpnkat",
+  "s": "EU & Welt",
+  "q": "Wie viele Amtssprachen hat die EU (Stand 2026)?",
+  "a": [
+   "24",
+   "20",
+   "27",
+   "12"
+  ],
+  "w": [
+   "",
+   "20 waren es 2004.",
+   "27 ist die Zahl der Mitgliedstaaten.",
+   "Zwölf wäre nur die Hälfte der heutigen Amtssprachen."
+  ],
+  "e": "Seit 2022 ist auch Irisch vollwertige Amtssprache; Deutsch gehört dazu.",
+  "h": "Zwei Dutzend.",
+  "d": 2
+ },
+ {
+  "id": "1mr9ba",
+  "s": "EU & Welt",
+  "q": "Welcher Staat ist KEIN Mitglied der EU?",
+  "a": [
+   "Norwegen",
+   "Dänemark",
+   "Finnland",
+   "Irland"
+  ],
+  "w": [
+   "",
+   "Dänemark ist seit 1973 Mitglied.",
+   "Finnland ist seit 1995 Mitglied.",
+   "Irland ist seit 1973 Mitglied."
+  ],
+  "e": "Norwegen gehört zum EWR, aber nicht zur EU.",
+  "h": "Nordland.",
+  "d": 1
+ },
+ {
+  "id": "1t9jbf3",
+  "s": "EU & Welt",
+  "q": "Wann wurde die NATO gegründet?",
+  "a": [
+   "1949",
+   "1945",
+   "1955",
+   "1991"
+  ],
+  "w": [
+   "",
+   "1945 wurde die UNO gegründet.",
+   "1955 gründete sich der Warschauer Pakt.",
+   "1991 endete der Warschauer Pakt."
+  ],
+  "e": "Die Gründung war eine Antwort auf die Sicherheitslage nach dem Zweiten Weltkrieg; Deutschland trat 1955 bei.",
+  "h": "Ende der 1940er.",
+  "d": 1
+ },
+ {
+  "id": "6w1mlp",
+  "s": "EU & Welt",
+  "q": "Wo hat die NATO ihren Hauptsitz?",
+  "a": [
+   "Brüssel",
+   "Washington",
+   "Paris",
+   "Wien"
+  ],
+  "w": [
+   "",
+   "Washington war Ort der Gründung.",
+   "Paris war früherer Sitz bis 1967.",
+   "Wien ist Sitz der OSZE."
+  ],
+  "e": "Die Zentrale der NATO ist in Brüssel, Belgien.",
+  "h": "Hauptstadt Belgiens.",
+  "d": 2
+ },
+ {
+  "id": "1cgxidg",
+  "s": "EU & Welt",
+  "q": "Welches Gericht entscheidet über Streitigkeiten zwischen Staaten und sitzt in Den Haag?",
+  "a": [
+   "Der Internationale Gerichtshof",
+   "Der Internationale Strafgerichtshof",
+   "Der Europäische Gerichtshof",
+   "Der Europäische Menschenrechtsgerichtshof"
+  ],
+  "w": [
+   "",
+   "Der IStGH verfolgt Einzelpersonen.",
+   "Der EuGH sitzt in Luxemburg.",
+   "Der EGMR sitzt in Straßburg."
+  ],
+  "e": "Der IGH ist das Hauptrechtsorgan der UN.",
+  "h": "Staaten, nicht Personen.",
+  "d": 3
+ },
+ {
+  "id": "x39r78",
+  "s": "EU & Welt",
+  "q": "Wo sitzt der Europäische Gerichtshof für Menschenrechte?",
+  "a": [
+   "Straßburg",
+   "Luxemburg",
+   "Brüssel",
+   "Genf"
+  ],
+  "w": [
+   "",
+   "In Luxemburg sitzt der EuGH der EU, nicht der Menschenrechtsgerichtshof.",
+   "Brüssel ist Sitz von Kommission und Rat der EU.",
+   "Genf ist ein UN-Standort, aber nicht Sitz des Europarat-Gerichts."
+  ],
+  "e": "Er gehört zum Europarat und prüft Verstöße gegen die EMRK.",
+  "h": "Im Europarat, nicht in der EU.",
+  "d": 3
+ },
+ {
+  "id": "pze4nj",
+  "s": "EU & Welt",
+  "q": "Wann wurde die UNO gegründet?",
+  "a": [
+   "1945",
+   "1919",
+   "1957",
+   "1948"
+  ],
+  "w": [
+   "",
+   "1919 entstand der Völkerbund.",
+   "1957 wurde die EWG gegründet.",
+   "1948 verabschiedete die UNO die Menschenrechtserklärung."
+  ],
+  "e": "Die UN-Charta wurde 1945 in San Francisco unterzeichnet.",
+  "h": "Ende des Zweiten Weltkriegs.",
+  "d": 1
+ },
+ {
+  "id": "jec9ar",
+  "s": "EU & Welt",
+  "q": "Wie viele Mitgliedstaaten hat die UNO (Stand 2026)?",
+  "a": [
+   "193",
+   "154",
+   "195",
+   "205"
+  ],
+  "w": [
+   "",
+   "154 ist nicht die Zahl der Mitgliedstaaten.",
+   "195 entspräche den 193 Mitgliedern plus den zwei Beobachterstaaten.",
+   "Eine so hohe Zahl erreicht die UNO nicht."
+  ],
+  "e": "Der Südsudan trat 2011 als 193. Mitglied bei.",
+  "h": "Knapp unter 200.",
+  "d": 3
+ },
+ {
+  "id": "1hgoa7i",
+  "s": "EU & Welt",
+  "q": "Wie viele Mitglieder hat der UN-Sicherheitsrat?",
+  "a": [
+   "15",
+   "10",
+   "5",
+   "20"
+  ],
+  "w": [
+   "",
+   "10 sind nur die nichtständigen Mitglieder.",
+   "5 sind nur die ständigen Mitglieder.",
+   "Mit 20 Mitgliedern wäre der Rat größer als die vorgesehenen 15."
+  ],
+  "e": "Fünf ständige und zehn nichtständige, Letztere für zwei Jahre gewählt.",
+  "h": "Fünf plus zehn.",
+  "d": 2
+ },
+ {
+  "id": "u2ysph",
+  "s": "EU & Welt",
+  "q": "Was bedeutet das Vetorecht im UN-Sicherheitsrat?",
+  "a": [
+   "Ein ständiges Mitglied kann blockieren",
+   "Jeder Staat kann einen Beschluss aufheben",
+   "Die Vollversammlung kann Entscheidungen aufheben",
+   "Der Generalsekretär darf Beschlüsse ändern"
+  ],
+  "w": [
+   "",
+   "Veto steht nur den ständigen Mitgliedern zu.",
+   "Die Vollversammlung beschließt nur Empfehlungen.",
+   "Der Generalsekretär ist kein Gesetzgeber."
+  ],
+  "e": "Ein Nein eines ständigen Mitglieds verhindert den Beschluss; Enthaltung gilt nicht als Veto.",
+  "h": "Fünf Mächte.",
+  "d": 1
+ },
+ {
+  "id": "uwgjgg",
+  "s": "EU & Welt",
+  "q": "Wer verabschiedete die Allgemeine Erklärung der Menschenrechte 1948?",
+  "a": [
+   "Die UN-Generalversammlung",
+   "Der Europarat",
+   "Die Europäische Kommission",
+   "Der Internationale Gerichtshof"
+  ],
+  "w": [
+   "",
+   "Der Europarat verabschiedete 1950 die EMRK.",
+   "Die Kommission ist ein EU-Organ.",
+   "Der IGH ist ein Gericht."
+  ],
+  "e": "Sie wurde am 10. Dezember 1948 verabschiedet; der 10. Dezember ist Tag der Menschenrechte.",
+  "h": "Zehnter Dezember.",
+  "d": 2
+ },
+ {
+  "id": "79f4md",
+  "s": "EU & Welt",
+  "q": "Wo hat die Weltgesundheitsorganisation (WHO) ihren Sitz?",
+  "a": [
+   "Genf",
+   "New York",
+   "Paris",
+   "Brüssel"
+  ],
+  "w": [
+   "",
+   "New York: UN-Zentrale.",
+   "Paris: UNESCO.",
+   "Brüssel: EU und NATO."
+  ],
+  "e": "Auch die Welthandelsorganisation hat ihren Sitz in Genf.",
+  "h": "Schweizer Stadt am See.",
+  "d": 2
+ },
+ {
+  "id": "gkgnpp",
+  "s": "EU & Welt",
+  "q": "Wo haben IWF und Weltbank ihren Sitz?",
+  "a": [
+   "Washington, D.C.",
+   "New York",
+   "Genf",
+   "London"
+  ],
+  "w": [
+   "",
+   "New York: UN.",
+   "Genf: WHO und WTO.",
+   "London: Sitz der IMO."
+  ],
+  "e": "Beide wurden 1944 in Bretton Woods gegründet.",
+  "h": "US-Hauptstadt.",
+  "d": 2
+ },
+ {
+  "id": "1wvlb1c",
+  "s": "EU & Welt",
+  "q": "Wo hat die OPEC ihren Sitz?",
+  "a": [
+   "Wien",
+   "Riad",
+   "Genf",
+   "Dubai"
+  ],
+  "w": [
+   "",
+   "Riad ist Hauptstadt Saudi-Arabiens.",
+   "Genf ist Sitz der WTO.",
+   "Dubai liegt in den Emiraten, aber der OPEC-Sitz ist Wien."
+  ],
+  "e": "Die OPEC wurde 1960 in Bagdad gegründet und zog 1965 nach Wien.",
+  "h": "Donaustadt.",
+  "d": 3
+ },
+ {
+  "id": "5fb9im",
+  "s": "EU & Welt",
+  "q": "Welche Organisation hat ihren Sitz in Addis Abeba?",
+  "a": [
+   "Die Afrikanische Union",
+   "Die ASEAN",
+   "Die OSZE",
+   "Die Arabische Liga"
+  ],
+  "w": [
+   "",
+   "ASEAN sitzt in Jakarta.",
+   "Die OSZE sitzt in Wien.",
+   "Die Arabische Liga sitzt in Kairo."
+  ],
+  "e": "Die AU löste 2002 die OAU ab.",
+  "h": "Äthiopien.",
+  "d": 3
+ },
+ {
+  "id": "6q8z41",
+  "s": "EU & Welt",
+  "q": "Wann fand das Brexit-Referendum statt?",
+  "a": [
+   "2016",
+   "2014",
+   "2018",
+   "2020"
+  ],
+  "w": [
+   "",
+   "2014 war das schottische Unabhängigkeitsreferendum.",
+   "2018 verhandelten Regierung und EU das Austrittsabkommen.",
+   "2020 trat der Brexit in Kraft."
+  ],
+  "e": "Am 23. Juni 2016 stimmten 51,9 % für den Austritt; am 31. Januar 2020 verließ das Königreich die EU.",
+  "h": "Juni.",
+  "d": 2
+ },
+ {
+  "id": "hpi403",
+  "s": "EU & Welt",
+  "q": "Welcher Artikel des EU-Vertrags regelt den Austritt aus der EU?",
+  "a": [
+   "Art. 50 EUV",
+   "Art. 49 EUV",
+   "Art. 5 EUV",
+   "Art. 2 EUV"
+  ],
+  "w": [
+   "",
+   "Art. 49 regelt den Beitritt.",
+   "Art. 5 regelt Subsidiarität.",
+   "Art. 2 nennt die Werte der Union."
+  ],
+  "e": "Art. 50 EUV: Der Austritt dauert zwei Jahre ab Mitteilung, sofern nichts Abweichendes vereinbart wird.",
+  "h": "Austrittsklausel, seit 2009 in den Verträgen.",
+  "d": 3
+ },
+ {
+  "id": "1c7pjsp",
+  "s": "EU & Welt",
+  "q": "Wie viele Sterne hat die Flagge der EU?",
+  "a": [
+   "12",
+   "27",
+   "15",
+   "10"
+  ],
+  "w": [
+   "",
+   "27 ist die Zahl der Mitgliedstaaten.",
+   "15 waren die Mitglieder 1995.",
+   "Zehn Sterne zeigt die Flagge nicht; es sind zwölf."
+  ],
+  "e": "Die Sterne stehen für Vollkommenheit und Einheit, nicht für die Mitgliederzahl.",
+  "h": "Zahl ohne Bezug zur Mitgliederzahl.",
+  "d": 1
+ },
+ {
+  "id": "5diewo",
+  "s": "EU & Welt",
+  "q": "Welches Musikstück ist die Europahymne?",
+  "a": [
+   "Ode an die Freude von Beethoven",
+   "Die Moldau von Smetana",
+   "Eine kleine Nachtmusik von Mozart",
+   "Die vier Jahreszeiten von Vivaldi"
+  ],
+  "w": [
+   "",
+   "Die Moldau ist ein sinfonisches Werk des Tschechen Smetana.",
+   "Mozarts Serenade ist ein Orchesterstück ohne Hymnenrolle.",
+   "Vivaldis Konzerte sind Barockmusik ohne offiziellen Status."
+  ],
+  "e": "Die Melodie stammt aus der 9. Sinfonie von Beethoven; der Text ist nicht festgelegt.",
+  "h": "Neunte Sinfonie.",
+  "d": 1
+ },
+ {
+  "id": "e0shwz",
+  "s": "EU & Welt",
+  "q": "Welcher Tag wird als Europatag gefeiert?",
+  "a": [
+   "9. Mai",
+   "3. Oktober",
+   "1. Januar",
+   "8. Mai"
+  ],
+  "w": [
+   "",
+   "3. Oktober ist deutscher Feiertag.",
+   "1. Januar ist Neujahr.",
+   "8. Mai ist Kriegsende 1945."
+  ],
+  "e": "Am 9. Mai 1950 legte Robert Schuman den Plan für die Montanunion vor.",
+  "h": "Schuman-Erklärung.",
+  "d": 2
+ },
+ {
+  "id": "175wqu4",
+  "s": "EU & Welt",
+  "q": "Was war die Montanunion (EGKS)?",
+  "a": [
+   "Gemeinschaft für Kohle und Stahl",
+   "Eine gemeinsame Währungsunion",
+   "Ein westliches Militärbündnis",
+   "Eine Freihandelszone für Autos"
+  ],
+  "w": [
+   "",
+   "Eine Währungsunion kam erst mit dem Euro.",
+   "Ein Militärbündnis ist die NATO.",
+   "Autos waren nicht Gegenstand."
+  ],
+  "e": "Sie wurde 1951 von sechs Staaten gegründet und legte den Grundstein der heutigen EU.",
+  "h": "Rohstoffe.",
+  "d": 3
+ },
+ {
+  "id": "163uing",
+  "s": "EU & Welt",
+  "q": "Was ist das Ziel der EZB-Geldpolitik?",
+  "a": [
+   "Preisstabilität bei 2 % Inflation",
+   "Ein möglichst hoher Euro-Kurs",
+   "Vollbeschäftigung in allen Ländern",
+   "Höchstzinsen für Sparer"
+  ],
+  "w": [
+   "",
+   "Der Kurs ist nicht Ziel.",
+   "Beschäftigung ist nachrangig.",
+   "Zinsen sind Mittel, nicht Ziel."
+  ],
+  "e": "Das Ziel ist seit 2021 symmetrisch 2 % mittelfristig.",
+  "h": "Knapp unter drei, über eins.",
+  "d": 2
+ },
+ {
+  "id": "gc3eqr",
+  "s": "EU & Welt",
+  "q": "Welche Grenze für Staatsverschuldung nennen die Maastricht-Kriterien?",
+  "a": [
+   "60 % des Bruttoinlandsprodukts",
+   "30 % des Bruttoinlandsprodukts",
+   "100 % des Bruttoinlandsprodukts",
+   "3 % des Bruttoinlandsprodukts"
+  ],
+  "w": [
+   "",
+   "30 % sind nicht festgelegt.",
+   "100 % sind nicht festgelegt.",
+   "3 % betrifft das jährliche Defizit."
+  ],
+  "e": "Neben 60 % Schuldenstand gilt 3 % Defizitgrenze.",
+  "h": "Mehr als die Hälfte.",
+  "d": 3
+ },
+ {
+  "id": "15ykylj",
+  "s": "EU & Welt",
+  "q": "Welches Ziel nennt das Pariser Klimaabkommen von 2015?",
+  "a": [
+   "Erwärmung deutlich unter 2 °C, möglichst 1,5 °C",
+   "Erwärmung auf 3 °C begrenzen",
+   "Abschaffung aller fossilen Brennstoffe bis 2030",
+   "Zahl der Autos halbieren"
+  ],
+  "w": [
+   "",
+   "3 °C ist nicht das Ziel.",
+   "Der Ausstieg ist kein Datum des Abkommens.",
+   "Autos sind nicht Gegenstand."
+  ],
+  "e": "Die Staaten legen eigene Beiträge (NDCs) vor.",
+  "h": "Zwei Grad.",
+  "d": 3
+ },
+ {
+  "id": "1t7srfq",
+  "s": "EU & Welt",
+  "q": "Welche Organisation ist seit 2023 Vollmitglied der G20?",
+  "a": [
+   "Die Afrikanische Union",
+   "Die Arabische Liga",
+   "Der Verband Südostasiatischer Nationen (ASEAN)",
+   "Die Organisation erdölexportierender Länder"
+  ],
+  "w": [
+   "",
+   "Die Arabische Liga ist kein Mitglied der G20.",
+   "Die ASEAN ist kein Mitglied der G20.",
+   "Die OPEC ist kein Mitglied der G20."
+  ],
+  "e": "Auch die EU ist Vollmitglied der G20.",
+  "h": "Kontinent.",
+  "d": 3
+ },
+ {
+  "id": "155ek3c",
+  "s": "EU & Welt",
+  "q": "Wie viele Wahlleute hat das Electoral College der USA?",
+  "a": [
+   "538",
+   "435",
+   "270",
+   "100"
+  ],
+  "w": [
+   "",
+   "435 sind Abgeordnete des Repräsentantenhauses.",
+   "270 ist die nötige Mehrheit.",
+   "100 sind die Senatoren."
+  ],
+  "e": "Die Zahl setzt sich aus 435 + 100 + 3 für Washington D.C. zusammen; 270 sind nötig.",
+  "h": "Summe aus Kongress.",
+  "d": 2
+ },
+ {
+  "id": "qytv10",
+  "s": "EU & Welt",
+  "q": "Wie viele Senatoren entsendet jeder US-Bundesstaat?",
+  "a": [
+   "2",
+   "1",
+   "3",
+   "Es hängt von der Bevölkerung ab"
+  ],
+  "w": [
+   "",
+   "Einer ist zu wenig.",
+   "Drei sind zu viel.",
+   "Das gilt für das Repräsentantenhaus."
+  ],
+  "e": "Der Senat hat 100 Mitglieder; Senatoren werden für sechs Jahre gewählt.",
+  "h": "Pro Staat gleich.",
+  "d": 1
+ },
+ {
+  "id": "l9c12r",
+  "s": "EU & Welt",
+  "q": "Wie heißen die beiden Kammern des britischen Parlaments?",
+  "a": [
+   "House of Commons und House of Lords",
+   "Senate und House",
+   "Bundestag und Bundesrat",
+   "Nationalrat und Ständerat"
+  ],
+  "w": [
+   "",
+   "Das ist der US-Kongress.",
+   "Das ist Deutschland.",
+   "Das ist die Schweiz."
+  ],
+  "e": "Das Unterhaus wird gewählt, das Oberhaus nicht.",
+  "h": "Eine Kammer ist gewählt, die andere nicht.",
+  "d": 2
+ },
+ {
+  "id": "1w7h3b8",
+  "s": "EU & Welt",
+  "q": "Wie heißt die Regierung der Schweiz?",
+  "a": [
+   "Bundesrat",
+   "Nationalrat",
+   "Ständerat",
+   "Bundeskanzler"
+  ],
+  "w": [
+   "",
+   "Der Nationalrat ist eine Parlamentskammer.",
+   "Der Ständerat ist die andere Kammer.",
+   "Die Bundeskanzlei ist eine Stabsstelle."
+  ],
+  "e": "Der Bundesrat besteht aus sieben gleichberechtigten Mitgliedern.",
+  "h": "Sieben.",
+  "d": 3
+ },
+ {
+  "id": "12jrnf8",
+  "s": "EU & Welt",
+  "q": "Welches Gericht verfolgt Einzelpersonen wegen Völkermords und Kriegsverbrechen?",
+  "a": [
+   "Der Internationale Strafgerichtshof",
+   "Der Internationale Gerichtshof",
+   "Der Europäische Gerichtshof",
+   "Der Bundesgerichtshof"
+  ],
+  "w": [
+   "",
+   "Der IGH entscheidet zwischen Staaten.",
+   "Der EuGH prüft EU-Recht.",
+   "Der BGH ist ein deutsches Gericht."
+  ],
+  "e": "Seine Grundlage ist das Römische Statut von 1998.",
+  "h": "Römisches Statut.",
+  "d": 3
+ },
+ {
+  "id": "1yc2xnn",
+  "s": "EU & Welt",
+  "q": "In welchem Jahr wurde die Genfer Flüchtlingskonvention beschlossen?",
+  "a": [
+   "1951",
+   "1948",
+   "1989",
+   "2000"
+  ],
+  "w": [
+   "",
+   "1948: Menschenrechtserklärung.",
+   "1989: Fall der Mauer.",
+   "2000: Millenniumsgipfel."
+  ],
+  "e": "Sie definiert, wer als Flüchtling gilt, und verbietet Zurückweisung bei Verfolgung.",
+  "h": "Nach dem Zweiten Weltkrieg.",
+  "d": 3
+ },
+ {
+  "id": "1i5nbz5",
+  "s": "EU & Welt",
+  "q": "Wo hat das Internationale Komitee vom Roten Kreuz seinen Sitz?",
+  "a": [
+   "Genf",
+   "Wien",
+   "Paris",
+   "Den Haag"
+  ],
+  "w": [
+   "",
+   "Wien: IAEO.",
+   "Paris: UNESCO.",
+   "Den Haag: IGH."
+  ],
+  "e": "Henry Dunant gründete es 1863; es wacht über die Genfer Konventionen.",
+  "h": "Schweiz.",
+  "d": 2
+ },
+ {
+  "s": "Recht im Alltag",
+  "q": "Was solltest du tun, wenn du einen Bußgeldbescheid für falsch hältst?",
+  "a": [
+   "Innerhalb von zwei Wochen Einspruch einlegen",
+   "Ihn einfach ignorieren",
+   "Sofort zahlen und später zurückfordern",
+   "Bei der Polizei anrufen"
+  ],
+  "w": [
+   "",
+   "Ignorieren führt dazu, dass der Bescheid rechtskräftig wird.",
+   "Wer zahlt, akzeptiert den Bescheid in der Regel.",
+   "Ein Anruf ersetzt keinen förmlichen Einspruch."
+  ],
+  "e": "Gegen einen Bußgeldbescheid kann man innerhalb von zwei Wochen nach Zustellung schriftlich Einspruch bei der Behörde einlegen, die ihn erlassen hat.",
+  "h": "Es gibt eine kurze Frist.",
+  "d": 2,
+  "id": "na14ac41"
+ },
+ {
+  "s": "Recht im Alltag",
+  "q": "Musst du der Polizei bei einer Vernehmung als Beschuldigter etwas zur Sache sagen?",
+  "a": [
+   "Nein",
+   "Ja, immer vollständig",
+   "Nur, wenn ein Anwalt dabei ist",
+   "Ja, sonst gilt man als schuldig"
+  ],
+  "w": [
+   "",
+   "Beschuldigte haben ein Aussageverweigerungsrecht.",
+   "Auch mit Anwalt besteht keine Pflicht zur Aussage zur Sache.",
+   "Schweigen darf nicht als Schuldeingeständnis gewertet werden."
+  ],
+  "e": "Beschuldigte müssen nur Angaben zur Person machen (Name, Anschrift usw.). Zur Sache dürfen sie schweigen; das darf ihnen nicht zum Nachteil ausgelegt werden.",
+  "h": "Ein Grundrecht im Strafverfahren.",
+  "d": 2,
+  "id": "n7ed14fe"
+ },
+ {
+  "s": "Staat & Wahlen",
+  "q": "Was bedeutet Rechtsstaat?",
+  "a": [
+   "Auch der Staat ist an Gesetze gebunden",
+   "Der Staat schreibt alle Gesetze ohne Parlament",
+   "Nur Richter dürfen Gesetze beschließen",
+   "Die Polizei entscheidet über Strafen"
+  ],
+  "w": [
+   "",
+   "Gesetze beschließen in Deutschland die Parlamente.",
+   "Gerichte wenden Gesetze an, beschließen sie aber nicht.",
+   "Über Strafen entscheiden unabhängige Gerichte."
+  ],
+  "e": "Im Rechtsstaat sind alle staatlichen Stellen an Recht und Gesetz gebunden, und Bürger können staatliches Handeln vor unabhängigen Gerichten überprüfen lassen.",
+  "h": "Niemand steht über dem Recht.",
+  "d": 1,
+  "id": "n790daf7"
+ }
 ]
