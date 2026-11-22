@@ -1,0 +1,137 @@
+# Überarbeitung Denken & Psychologie (Ziel: sinnvolles Alltagswissen, keine Spezialfragen, keine Längen-Verräter)
+# Entfernt: zu speziell oder doppelt
+-170vqa6
+-1o8z1w7
+-1cnkxpr
+-1g6mnp8
+-x0s3xg
+-16k80cl
+-15kuc05
+-d9k7kv
+-bwbx83
+-1idqyqa
+-1x0d325
+-1h8evm6
+-1ntz52u
+-194t8h4
+-4jtb2i
+# Antworten angeglichen (gleiche Begriffe, andere Länge)
+~10qoxm0|Bestätigungsfehler|Rückschaufehler (Hindsight Bias)|Ankereffekt (Anchoring)|Survivorship Bias (Überlebensirrtum)
+~1xm55ub|Konjunktionsfehlschluss|Spielerfehlschluss (Gambler's Fallacy)|Rückschaufehler|Halo-Effekt
+~16css13|Regression zur Mitte|Ankereffekt|Peter-Prinzip (Beförderung bis zur Unfähigkeit)|Halo-Effekt
+~15maez0|Gemeinsame Ursache: warmes Wetter|Eis essen verursacht Badeunfälle|Badeunfälle erhöhen den Eisverkauf|Reiner Zufall ohne jeden Hintergrund
+~1y2ti67|Post hoc ergo propter hoc|Ad hominem (gegen die Person)|Petitio principii|Argumentum ad populum
+~2osadj|Texas-Schütze-Fehlschluss|Survivorship Bias (Überlebensirrtum)|Halo-Effekt|Ankereffekt
+~93b80z|Self-serving Bias|Verlustaversion (Loss Aversion)|Ankereffekt|Sozialer Beweis
+~uqdwcx|Mere-Exposure-Effekt|Halo-Effekt|Barnum-Effekt|Verlustaversion (Loss Aversion)
+~g6dzi4|Spotlight-Effekt|Halo-Effekt|Ankereffekt|Zuschauereffekt (Bystander-Effekt)
+~17s1hxm|Kontrollillusion|Ankereffekt|Rückschaufehler (Hindsight Bias)|Halo-Effekt
+~1awvmg2|Optimismus-Verzerrung|Verlustaversion|Spotlight-Effekt|Rückschaufehler (Hindsight Bias)
+~1rdw9tk|Curse of Knowledge|Rückschaufehler (Hindsight Bias)|Ankereffekt|Halo-Effekt
+~lh8qb7|Repräsentativitätsheuristik|Verfügbarkeitsheuristik|Ankerheuristik (Anker und Anpassung)|Affektheuristik
+~yvij58|Better-than-average|Spotlight-Effekt|Rückschaufehler (Hindsight Bias)|Barnum-Effekt
+~xe7d|Verzerrte Stichprobe, vor allem Wohlhabende|Die Stichprobe war zu klein|Roosevelt lag knapp vorn und das war Zufall|Die Befragten logen systematisch
+~l4unl7|Illusorische Korrelation|Regression zur Mitte|Simpson-Paradoxon (Umkehreffekt)|Konjunktionsfehlschluss
+~nta28q|Ökologischer Fehlschluss|Zirkelschluss|Strohmann-Argument|Dammbruchargument (Slippery Slope)
+~ieispg|Relativ −50 %, absolut −0,1 Prozentpunkte|Absolute Risikominderung 50 Prozentpunkte|Relatives Risiko −0,1 %, absolute Minderung 50 %|Relatives Risiko −5 %, absolute Minderung 1 Prozentpunkt
+~1mwx44o|Straßenlaternen-Effekt|Spielerfehlschluss|Planungsfehlschluss (Planning Fallacy)|Halo-Effekt
+~gpusgb|Die Voreinstellung (Opt-out)|Unterschiedliche Religiosität|Höhere Bezahlung der Spender|Strengere Strafen für Verweigerer
+~i3tsuw|Mentale Buchführung|Kognitive Dissonanz|Hyperbolische Diskontierung|Rückschaufehler
+~1tqb54r|Illusory-Truth-Effekt|Pygmalion-Effekt (Erwartungseffekt)|Halo-Effekt|Placebo-Effekt
+~18tk36m|Hermann Ebbinghaus|Wilhelm Maximilian Wundt|Sigmund Freud|William James
+~1knoz9g|Eigengruppenbevorzugung|Fundamentaler Attributionsfehler|Halo-Effekt|Zuschauereffekt
+~195gvma|Überrechtfertigungseffekt|Halo-Effekt|Rückschaufehler|Mere-Exposure-Effekt (Vertrautheit)
+~76esmf|Patient und Arzt wissen nicht, wer was erhält|Weil sie die Kosten der Studie deutlich senkt|Weil zwei Medikamente gleichzeitig getestet werden|Weil nur Experten die Ergebnisse sehen dürfen
+~u31i22|Wird eine Kennzahl zum Ziel, misst sie schlecht|Gute Ziele lassen sich grundsätzlich immer messen|Kennzahlen werden mit der Zeit genauer|Mehr Daten führen immer zu besseren Entscheidungen
+~8rzx9y|prinzipiell widerlegbar ist|möglichst oft bestätigt wurde|von der Mehrheit der Experten geteilt wird|mathematisch bewiesen werden kann
+~yglvdv|Regeln erst abschaffen, wenn man ihren Zweck kennt|Jede bestehende Regel ohne Ausnahme konsequent befolgen|Im Zweifel alle Grenzen einreißen|Alles Neue grundsätzlich ablehnen
+~1iogvn1|Nicht Bosheit annehmen, wo Unachtsamkeit reicht|Hinter jedem Fehler steckt letztlich eine böse Absicht|Die einfachste Erklärung ist meistens auch die richtige|Wer schweigt, stimmt stillschweigend zu
+~xly49c|Strohmann-Argument|Ad hominem (gegen die Person)|Dammbruchargument|Zirkelschluss
+~2i6027|80 % der Wirkung aus 20 % der Ursachen|Man sollte immer 80 % Qualität liefern|20 % der Menschen sind Experten|Alle Aufgaben brauchen gleich viel Zeit
+~pw60sq|Angriff auf die Person statt aufs Argument|Berufung auf eine Autorität statt auf Gründe|Verweis auf die Mehrheitsmeinung|Appell an Gefühle des Publikums
+~1eeyw5c|Die Erklärung mit den wenigsten Annahmen vorziehen|Die komplizierteste Erklärung ist meist die richtige|Was sich nicht beweisen lässt, ist grundsätzlich falsch|Die Mehrheitsmeinung der Fachleute entscheidet
+~jfv9j7|Vorab durchspielen, woran es scheitern könnte|Eine Nachbesprechung nach dem Projektende|Ein Versicherungsvertrag gegen Projektrisiken|Eine Methode zur Schätzung der Dauer
+~ujdtds|Das gegnerische Argument in seiner stärksten Form wiedergeben|Ein Argument absichtlich verzerrt darstellen, um es zu widerlegen|Sich der Meinung einer Autorität anschließen|Den Gegner mit lauten Einwänden unterbrechen
+~1kxqcfc|Falsches Dilemma|Zirkelschluss|Strohmann|Tu quoque („Du auch“)
+~1sspaoj|Dammbruchargument|Falsches Dilemma|Ad hominem (gegen die Person)|Zirkelschluss
+~yfasx5|Unzuständige Autorität|Dammbruchargument|Zirkelschluss|Falsches Dilemma (Schwarz-Weiß)
+~4itxkf|Tu quoque („Du auch“)|Strohmann|Zirkelschluss|Dammbruchargument (Slippery Slope)
+~u0js68|Ein Argument gilt unabhängig von der Person|Weil Veganer grundsätzlich keine guten Argumente haben|Weil Veganer immer recht haben|Weil Ernährung nicht diskutierbar ist
+~l5vxab|A ist falsch (Modus tollens)|A ist wahr|B ist wahr|Kein gültiger Schluss möglich
+~19orqwm|Gültig (logisch valide)|Stichhaltig (sound)|Plausibel|Induktiv (verallgemeinernd)
+~19bisor|Vom Allgemeinen zwingend auf den Einzelfall|Aus Einzelfällen auf eine allgemeine Regel schließen|Von einer Beobachtung zur besten Erklärung schließen|Von einem Einzelfall auf einen anderen schließen
+~5gyg4g|Wer die Behauptung aufstellt|Wer sie anzweifelt|Immer beide Seiten zu gleichen Teilen|Die Mehrheit der Zuhörer
+~1owal1y|Die Beweislast trägt, wer etwas behauptet|Dass Teekannen im All möglich sind|Dass man Unsichtbares nicht erforschen kann|Dass Zweifel immer unbegründet sind
+~aqyrcz|Argumentum ad ignorantiam|Zirkelschluss|Strohmann|Falsches Dilemma (Schwarz-Weiß-Denken)
+~obgyrd|Genetischer Fehlschluss|Zirkelschluss|Tu quoque|Dammbruchargument (Slippery Slope)
+~1a7qxok|Aus dem, was ist, folgt, was sein soll|Natürliche Dinge sind immer gut und gesund|Gefühle sind immer natürlich|Von Tieren auf Menschen schließen
+~goy5qj|Appell an die Natur|Ad hominem (gegen die Person)|Strohmann|Tu quoque
+~sctjks|Äquivokation|Tautologie|Ambivalenz|Reduktion (Rückführung)
+~1jh5m9v|No-true-Scotsman|Zirkelschluss|Strohmann|Tu quoque („Du auch“)
+~debrb8|Kompositionsfehlschluss|Divisionsfehlschluss|Zirkelschluss|Strohmann-Argument (Verzerrung)
+~3e60mv|Verallgemeinerung|Falsches Dilemma|Ad hominem (gegen die Person)|Tu quoque
+~u1qoa5|Cherry Picking|Replikation|Triangulation|Meta-Analyse (Studienvergleich)
+~12tigsf|Nirwana-Trugschluss|Strohmann-Argument|Dammbruch-Argument (Slippery Slope)|Tu-quoque-Argument
+~7tkmr1|Durch gezielte Fragen Annahmen prüfen|Die eigene Meinung durch Vorträge vermitteln|Mehrheitsentscheidungen|Auswendiglernen von Thesen
+~19i6if5|Den gewichteten Durchschnitt der Ergebnisse|Das wahrscheinlichste einzelne Ergebnis|Das beste mögliche Ergebnis der Entscheidung|Das schlechteste mögliche Ergebnis der Entscheidung
+~1dqeycg|Gewinne und Verluste relativ zu einem Bezugspunkt|Gleichgewichte auf Märkten bei vollständiger Konkurrenz|Optimale Strategien von Spielern in Konfliktsituationen|Exakte Berechnung von Wahrscheinlichkeiten für Ereignisse
+~102psq1|Einseitiges Abweichen lohnt sich für keinen|Alle Spieler erhalten am Ende genau gleich viel|Der Gesamtnutzen aller Spieler ist maximal|Alle Spieler kooperieren miteinander
+~1fieba2|Der Wert der besten nicht gewählten Alternative|Die tatsächlich gezahlten Kosten|Kosten, die nach der Entscheidung noch anfallen|Kosten, die nicht rückholbar sind
+~1w4sbn8|Häufigkeit in der Grundgesamtheit|Die Fehlalarmquote eines medizinischen Tests|Die Trefferquote eines Tests|Die Streuung der Messwerte
+~13gpecg|Frei zugängliche Güter werden übernutzt|Gemeinschaftsbesitz ist stets effizient|Private Güter werden zu billig verkauft|Einzelne profitieren von Gemeinschaftsarbeit nicht
+~b73iqv|Der Median lag sehr nahe am wahren Gewicht|Die Schätzungen lagen im Mittel weit daneben|Nur Metzger schätzten das Gewicht richtig|Die Schätzungen lagen im Schnitt deutlich zu hoch
+~gngp0|Gruppendruck verdrängt kritische Einwände|Gruppen entscheiden stets besser als Einzelne|Gruppen sammeln immer mehr Informationen|Gruppen entscheiden immer nach Mehrheitsprinzip
+~k7g77z|Vergleich mit ähnlichen früheren Fällen|Befragung externer Beraterinnen und Berater|Entscheidung durch Außenstehende der Firma|Konzentration auf Details des Einzelprojekts
+~z93w1m|Grobe Schätzung über Teilschätzungen|Exakte Berechnung aus genauen Messdaten|Zufallsauswahl aus einer Grundgesamtheit|Messverfahren aus der Quantenphysik
+~qpvsuz|Sich vorab selbst festlegen|Eine Entscheidung immer wieder neu überdenken|Andere Personen für sich entscheiden lassen|Alle verfügbaren Optionen möglichst offenhalten
+~dc4gaz|Unwahrscheinliches braucht starke Belege|Außergewöhnliche Menschen haben immer recht|Nur Beweise von Fachleuten zählen überhaupt|Gewöhnliche Behauptungen brauchen keine Belege
+~1piaqaz|Modell eines eigennützig-rationalen Menschen|Mensch der Antike mit einfacher Wirtschaft|Modell eines stets sozial denkenden Menschen|Modell eines rein von Gefühlen geleiteten Menschen
+~1lyf4nv|Die Umkehrung ist eine eigene Aussage|Beide Aussagen sind logisch immer gleichbedeutend|Z ist in solchen Aussagen immer falsch|Wenn-Dann-Aussagen sind grundsätzlich immer falsch
+~1dss78s|über Paradigmenwechsel bei gehäuften Anomalien|durch kontinuierliches, stetiges Sammeln von Fakten|durch Abstimmung der Öffentlichkeit|durch Rückkehr zu alten Theorien
+~jdin3r|Appell an die Tradition|Appell an die Natur|Ad hominem|Appell an das Mitleid der Zuhörer
+~u3fs10|Nutzwertanalyse|SWOT-Analyse|Pareto-Analyse|Delphi-Methode (Expertenrunde)
+~1gnd5re|Die erste ausreichend gute Option wählen|Die objektiv beste Option stets finden|Zufällig auswählen|Entscheidungen möglichst lange hinausschieben
+# Neu: praktisches Alltagswissen
++{"s": "Denkfehler", "q": "Zwei Dinge treten oft gemeinsam auf. Was folgt daraus allein?", "a": ["Noch keine Ursache-Wirkungs-Beziehung", "Das eine verursacht sicher das andere", "Der Zusammenhang ist sicher Zufall", "Beide haben sicher dieselbe Ursache"], "w": ["", "Eine Korrelation kann auch durch Zufall oder eine dritte Ursache entstehen.", "Auch ein echter Zusammenhang ist möglich; Zufall ist nur eine von mehreren Erklärungen.", "Eine gemeinsame Ursache ist möglich, aber nicht bewiesen."], "e": "Korrelation ist nicht Kausalität: Ein Zusammenhang allein zeigt nicht, was die Ursache ist. Dafür braucht es Experimente oder weitere Belege.", "h": "Denk an den Merksatz über Korrelation.", "d": 1}
++{"s": "Denkfehler", "q": "Ein Online-Shop zeigt „Nur noch 2 Stück verfügbar!“. Welches Verkaufsprinzip wird hier genutzt?", "a": ["Knappheit", "Sozialer Beweis", "Ankereffekt", "Reziprozität"], "w": ["", "Sozialer Beweis wäre „Schon 500 Leute haben gekauft“.", "Ein Anker wäre ein hoher Vergleichspreis, der danach günstig wirken lässt.", "Reziprozität ist das Gefühl, etwas zurückgeben zu müssen, etwa nach einem Geschenk."], "e": "Was knapp scheint, wirkt wertvoller und drängt zu schnellen Entscheidungen. Robert Cialdini beschreibt Knappheit als eines der wichtigsten Überzeugungsprinzipien.", "h": "Es geht um die Menge, die noch übrig ist.", "d": 1}
++{"s": "Denkfehler", "q": "Ein Händler schenkt dir eine Kostprobe, danach fällt es schwerer, nichts zu kaufen. Welches Prinzip wirkt?", "a": ["Reziprozität", "Knappheit", "Autorität", "Ankereffekt"], "w": ["", "Knappheit wäre der Hinweis, dass etwas bald ausverkauft ist.", "Autorität wäre die Empfehlung eines Experten.", "Ein Anker wäre eine erste Zahl, die das Urteil prägt."], "e": "Menschen fühlen sich verpflichtet, Gefälligkeiten zu erwidern. Kleine Geschenke erhöhen deshalb die Kaufbereitschaft.", "h": "Etwas zurückgeben wollen.", "d": 2}
++{"s": "Entscheiden & Argumentieren", "q": "Welche Lernmethode hilft laut Forschung am besten gegen das Vergessen?", "a": ["Über Tage verteilt wiederholen", "Einmal sehr lange am Stück lernen", "Den Text mehrmals farbig markieren", "Nur am Abend vor der Prüfung lernen"], "w": ["", "Langes Lernen am Stück (Pauken) wirkt kurzfristig, wird aber schneller vergessen.", "Markieren allein bringt laut Studien wenig, weil man sich nicht aktiv erinnert.", "Das ist Pauken in letzter Minute, das Wissen geht danach schnell verloren."], "e": "Verteiltes Wiederholen (Spacing) ist einer der am besten belegten Lerneffekte. Marifa nutzt ihn mit dem Wiederholungsplan.", "h": "Zeitabstände spielen eine Rolle.", "d": 1}
++{"s": "Entscheiden & Argumentieren", "q": "Was ist der „Testeffekt“ beim Lernen?", "a": ["Sich abfragen festigt Wissen besser als Wiederlesen", "Tests erzeugen vor allem Stress und Vergessen", "Wiederlesen wirkt besser als jede Abfrage", "Prüfungen verschlechtern das Langzeitgedächtnis"], "w": ["", "Stress kann stören, doch aktives Abrufen verbessert das Behalten deutlich.", "Studien zeigen das Gegenteil: Abrufen schlägt Wiederlesen.", "Gerade das Abrufen stärkt das Langzeitgedächtnis."], "e": "Wer sich selbst abfragt, muss Wissen aktiv abrufen. Das stärkt die Erinnerung stärker als erneutes Lesen.", "h": "Aktives Erinnern statt passives Lesen.", "d": 2}
++{"s": "Denkfehler", "q": "Ein Preis von 9,99 € wirkt deutlich günstiger als 10 €. Woran liegt das vor allem?", "a": ["Wir lesen die erste Ziffer stärker", "Kunden runden Preise immer ab", "Gerade Preise sind verboten", "Cent-Beträge wirken teurer"], "w": ["", "Viele runden gerade nicht, sondern bleiben an der ersten Ziffer hängen.", "Gerade Preise sind erlaubt, nur weniger verkaufsfördernd.", "Das Gegenteil: Der Cent-Betrag lässt den Preis kleiner wirken."], "e": "Beim Schwellenpreis (9,99 statt 10) prägt die erste Ziffer den Eindruck stark. Händler nutzen das gezielt.", "h": "Es geht um die Leserichtung von links nach rechts.", "d": 1}
++{"s": "Denkfehler", "q": "„Mein Opa hat geraucht und wurde 95.“ Warum ist das kein guter Beleg gegen die Gefahr des Rauchens?", "a": ["Einzelfälle sagen wenig über Häufigkeiten", "Großväter sind keine verlässlichen Zeugen", "Rauchen schadet erst ab 100 Jahren", "Persönliche Geschichten sind immer gelogen"], "w": ["", "Es geht nicht um die Glaubwürdigkeit, sondern darum, dass ein Fall nichts über viele aussagt.", "Rauchen erhöht das Risiko vieler Krankheiten deutlich früher.", "Anekdoten können wahr sein, sie sind nur kein Beleg für eine allgemeine Aussage."], "e": "Eine Anekdote ist ein Einzelfall. Ob etwas gefährlich ist, zeigt erst der Vergleich vieler Menschen mit und ohne Risikofaktor.", "h": "Eine Ausnahme ist nicht die Regel.", "d": 1}
++{"s": "Denkfehler", "q": "Was ist der Placebo-Effekt?", "a": ["Wirkung durch Erwartung, ohne Wirkstoff", "Nebenwirkung eines echten Medikaments", "Wirkung, die nur bei Kindern auftritt", "Gewöhnung an ein Medikament"], "w": ["", "Nebenwirkungen entstehen durch Wirkstoffe; der Placebo-Effekt gerade ohne.", "Placebo-Effekte treten in allen Altersgruppen auf.", "Gewöhnung heißt Toleranz und ist etwas anderes."], "e": "Schon die Erwartung einer Behandlung kann Beschwerden messbar lindern. Deshalb vergleichen Studien neue Mittel mit Scheinmedikamenten.", "h": "Lateinisch: „Ich werde gefallen.“", "d": 1}
++{"s": "Entscheiden & Argumentieren", "q": "Was hilft nachweislich, gute Vorsätze wirklich umzusetzen?", "a": ["Konkrete Wenn-dann-Pläne fassen", "Den Vorsatz möglichst allgemein halten", "Erst bei voller Motivation beginnen", "Möglichst viele Ziele gleichzeitig angehen"], "w": ["", "Allgemeine Vorsätze („mehr Sport“) werden seltener umgesetzt als konkrete.", "Motivation schwankt; feste Pläne helfen gerade dann, wenn sie fehlt.", "Viele Ziele gleichzeitig verteilen die Kraft und senken die Erfolgschance."], "e": "Pläne wie „Wenn ich nach Hause komme, gehe ich joggen“ (Implementation Intentions, Peter Gollwitzer) erhöhen laut vielen Studien die Umsetzung deutlich.", "h": "Situation und Handlung fest verknüpfen.", "d": 2}
++{"s": "Entscheiden & Argumentieren", "q": "Eine Nachricht klingt unglaublich. Welche Frage prüft die Glaubwürdigkeit am besten?", "a": ["Wer sagt es, und welche Belege gibt es?", "Wie viele Likes hat der Beitrag?", "Ist der Text lang und ausführlich?", "Klingt es spontan überzeugend?"], "w": ["", "Viele Likes zeigen Verbreitung, nicht Richtigkeit.", "Länge sagt nichts über Wahrheit.", "Überzeugend klingen auch Falschmeldungen; das Bauchgefühl ist kein Beleg."], "e": "Quelle und Belege prüfen ist der Kern von Medienkompetenz: Wer steht dahinter, und lässt sich die Aussage an anderer Stelle bestätigen?", "h": "Herkunft und Nachweise.", "d": 1}
++{"s": "Entscheiden & Argumentieren", "q": "Wie heißt die Arbeitstechnik mit 25-Minuten-Blöcken und kurzen Pausen?", "a": ["Pomodoro-Technik", "Eisenhower-Matrix", "Pareto-Prinzip", "Kanban-Methode"], "w": ["", "Die Eisenhower-Matrix ordnet Aufgaben nach wichtig und dringend.", "Das Pareto-Prinzip ist die 80-zu-20-Regel.", "Kanban visualisiert Aufgaben auf einer Tafel mit Spalten."], "e": "Die Pomodoro-Technik (Francesco Cirillo) teilt Arbeit in kurze, konzentrierte Abschnitte. Benannt ist sie nach einer Küchenuhr in Tomatenform.", "h": "Italienisch für Tomate.", "d": 1}
+# Feinausgleich (automatisch)
+~1xm55ub|Konjunktionsfehlschluss|Spielerfehlschluss|Rückschaufehler|Halo-Effekt
+~16css13|Regression zur Mitte|Ankereffekt|Peter-Prinzip|Halo-Effekt
+~1y2ti67|Post hoc ergo propter hoc|Ad hominem|Petitio principii|Argumentum ad populum
+~2osadj|Texas-Schütze-Fehlschluss|Survivorship Bias|Halo-Effekt|Ankereffekt
+~93b80z|Self-serving Bias|Verlustaversion|Ankereffekt|Sozialer Beweis
+~uqdwcx|Mere-Exposure-Effekt|Halo-Effekt|Barnum-Effekt|Verlustaversion
+~g6dzi4|Spotlight-Effekt|Halo-Effekt|Ankereffekt|Zuschauereffekt
+~17s1hxm|Kontrollillusion|Ankereffekt|Rückschaufehler|Halo-Effekt
+~1awvmg2|Optimismus-Verzerrung|Verlustaversion|Spotlight-Effekt|Rückschaufehler
+~1rdw9tk|Curse of Knowledge|Rückschaufehler|Ankereffekt|Halo-Effekt
+~lh8qb7|Repräsentativitätsheuristik|Verfügbarkeitsheuristik|Ankerheuristik|Affektheuristik
+~yvij58|Better-than-average|Spotlight-Effekt|Rückschaufehler|Barnum-Effekt
+~l4unl7|Illusorische Korrelation|Regression zur Mitte|Simpson-Paradoxon|Konjunktionsfehlschluss
+~nta28q|Ökologischer Fehlschluss|Zirkelschluss|Strohmann-Argument|Dammbruchargument
+~1mwx44o|Straßenlaternen-Effekt|Spielerfehlschluss|Planungsfehlschluss|Halo-Effekt
+~1tqb54r|Illusory-Truth-Effekt|Pygmalion-Effekt|Halo-Effekt|Placebo-Effekt
+~1xcntbl|krachten (smashed)|fuhren (drove)|berührten|standen (stood)
+~195gvma|Überrechtfertigungseffekt|Halo-Effekt|Rückschaufehler|Mere-Exposure-Effekt
+~xly49c|Strohmann-Argument|Ad hominem|Dammbruchargument|Zirkelschluss
+~1kxqcfc|Falsches Dilemma|Zirkelschluss|Strohmann|Tu quoque
+~1sspaoj|Dammbruchargument|Falsches Dilemma|Ad hominem|Zirkelschluss
+~yfasx5|Unzuständige Autorität|Dammbruchargument|Zirkelschluss|Falsches Dilemma
+~4itxkf|Tu quoque („Du auch“)|Strohmann|Zirkelschluss|Dammbruchargument
+~19orqwm|Gültig (logisch valide)|Stichhaltig (sound)|Plausibel|Induktiv
+~aqyrcz|Argumentum ad ignorantiam|Zirkelschluss|Strohmann|Falsches Dilemma
+~obgyrd|Genetischer Fehlschluss|Zirkelschluss|Tu quoque|Dammbruchargument
+~goy5qj|Appell an die Natur|Ad hominem|Strohmann|Tu quoque
+~sctjks|Äquivokation|Tautologie|Ambivalenz|Reduktion
+~1jh5m9v|No-true-Scotsman|Zirkelschluss|Strohmann|Tu quoque
+~debrb8|Kompositionsfehlschluss|Divisionsfehlschluss|Zirkelschluss|Strohmann-Argument
+~3e60mv|Verallgemeinerung|Falsches Dilemma|Ad hominem|Tu quoque
