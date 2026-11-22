@@ -126,7 +126,11 @@
     var dl = { auto: "Auto", 1: "Leicht", 2: "Mittel", 3: "Schwer" }[st.settings.difficulty];
     h += '<details class="card cfgbox" data-keep="homecfg"' + ui.keepOpen("homecfg") + '><summary><span class="mute small">Spielt mit</span><b>' + esc(st.settings.playC || "Alle Themen") + " · " + dl + "</b></summary>" +
       '<div class="cfgin">' + ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div></details>";
-    h += WF.slot("home", { st: st });
+    var ctx = { st: st };
+    h += WF.slot("home", ctx, undefined, 10);
+    h += '<h2>Allein spielen</h2><div class="tiles">' + WF.slot("home", ctx, 10, 40) + "</div>";
+    var fr = WF.slot("home", ctx, 40);
+    if (fr) h += '<h2>Mit Freunden</h2><div class="tiles">' + fr + "</div>";
     show(h, "home", false);
   }
   H.play = function (d) { start(d.m, ui.playC(), null); };

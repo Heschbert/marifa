@@ -13,7 +13,7 @@
     [1, 2, 3].forEach(function (d) {
       var cand = D.real.filter(function (x) { return x.a && (x.d || 2) === d && (!c || x.c === c); });
       if (cand.length < 5) cand = D.real.filter(function (x) { return x.a && (x.d || 2) === d; });
-      U.shuffle(cand.slice()).forEach(function (x) { if (out.length < d * 5 && !used[x.id]) { used[x.id] = 1; out.push(E.prep(x)); } });
+      E.order(cand).forEach(function (x) { if (out.length < d * 5 && !used[x.id]) { used[x.id] = 1; out.push(E.prep(x)); } });
     });
     return out;
   }
@@ -49,7 +49,7 @@
     if (!ui.reduced()) btns[k].classList.add(ok ? "pop" : "shake");
     WF.emit("answered", { ok: ok, gain: 0, x: { retry: false, c: x.c }, ladder: true });
     E.registerPlay();
-    L.lastOk = ok;
+    L.lastOk = ok; E.markSeen(x.id); WF.store.save();
     var right = x.opts.filter(function (o) { return o.ok; })[0], f;
     if (ok) {
       var last = L.i === 14, sv = SAFE.indexOf(L.i) >= 0;

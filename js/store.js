@@ -5,7 +5,7 @@
 
   function fresh() {
     return { qs: {}, cats: {}, sub: {}, xp: 0, days: {}, streak: { last: "", n: 0, best: 0 }, best: { blitz: 0, survive: 0, est: 0 },
-             dailyDone: {}, badges: {}, saved: {}, reports: [], tot: { r: 0, t: 0 }, goalClaimed: {}, maxCombo: 0, hist: {}, idMig: 0, calib: {}, tl: { games: 0, perfect: 0 },
+             dailyDone: {}, badges: {}, saved: {}, reports: [], tot: { r: 0, t: 0 }, goalClaimed: {}, maxCombo: 0, hist: {}, seen: {}, idMig: 0, calib: {}, tl: { games: 0, perfect: 0 },
              settings: { difficulty: "auto", last: null, theme: "auto", font: "m", fx: "all", conf: "auto", typein: "mastered", autoNext: "auto" } };
   }
   function normalize(s) {
@@ -25,6 +25,7 @@
   }
   function load() {
     try { var s = JSON.parse(localStorage.getItem(KEY)); if (s && s.qs) return normalize(s); } catch (e) {}
+    WF.storeWasEmpty = true;
     return fresh();
   }
 

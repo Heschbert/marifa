@@ -49,3 +49,9 @@ Punkte: höchstens 2 % / 10 % / 25 % daneben = 3 / 2 / 1 Punkte; bei Jahreszahle
 ## Testen
 Wegen `fetch` und ES-Modulen geht es nicht per Doppelklick auf `index.html`, sondern nur über einen Webserver,
 z. B. `python3 -m http.server` im Ordner, dann http://localhost:8000 öffnen.
+
+## Seit 1.16
+- Fragenauswahl: `st.seen` merkt je Frage den Tag der letzten Anzeige. Heute/gestern Gesehenes wird stark zurückgestellt (engine.js `recency`), neue Fragen bevorzugt, „auto“-Schwierigkeit startet auf mittel.
+- `js/safe.js`: Speicher dauerhaft anmelden, Erinnerung „Fortschritt sichern“ (alle 7 Tage ab 30 Antworten), Hinweis „Sicherungscode laden“ bei leerem Spielstand.
+- Startseite: `WF.slot(where, ctx, von, bis)` filtert nach order. Home: < 10 Karten, 10–39 Kacheln „Allein spielen“, ab 40 „Mit Freunden“.
+- iPhone-Icon zusätzlich als `apple-touch-icon.png` im Hauptordner.

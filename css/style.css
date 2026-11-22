@@ -276,3 +276,46 @@ a:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visibl
 .ladder li.safe { font-weight: 700; color: var(--fg); }
 .ladder li.done { color: var(--ok); }
 .ladder li.cur { background: var(--accent); color: var(--accent-fg); font-weight: 700; }
+
+/* ---------- 1.16: frischeres Aussehen ---------- */
+:root { --r: 18px; --shadow: 0 1px 2px rgba(16,24,40,.05), 0 4px 14px rgba(16,24,40,.06); }
+:root[data-theme="dark"] { --shadow: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --shadow: none; } }
+h1 { font-size: 30px; font-weight: 800; }
+.card, .stat { border-color: transparent; box-shadow: var(--shadow); }
+.btn { border-radius: 14px; }
+.hero { background: linear-gradient(135deg, var(--play) 0%, #7a4bf0 100%); padding: 20px; box-shadow: 0 8px 24px rgba(47,91,234,.25); position: relative; overflow: hidden; }
+.hero::after { content: ""; position: absolute; right: -40px; top: -40px; width: 140px; height: 140px; border-radius: 50%; background: rgba(255,255,255,.12); pointer-events: none; }
+.hero h3 { font-size: 22px; font-weight: 800; }
+.mode-learn .hero, body.learn .hero { background: linear-gradient(135deg, var(--learn) 0%, #d9480f 100%); box-shadow: 0 8px 24px rgba(168,74,8,.2); }
+.pill { border-color: transparent; box-shadow: var(--shadow); color: var(--fg); }
+.item { border-color: transparent; box-shadow: var(--shadow); border-radius: 16px; }
+.note { border-left: 4px solid var(--accent); }
+.note .btn { margin-top: 6px; }
+
+/* Spielmodi als Kacheln */
+.tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.tiles .item { flex-direction: column; align-items: flex-start; gap: 10px; margin: 0; padding: 14px; min-height: 132px; }
+.tiles .item .chev { display: none; }
+.tiles .item .t { font-size: 16px; }
+.tiles .item .small { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; }
+.tiles .item .ico { width: 42px; height: 42px; border-radius: 13px; font-size: 17px; color: #fff; }
+.tiles .item:nth-child(6n+1) .ico { background: #2f5bea; }
+.tiles .item:nth-child(6n+2) .ico { background: #e8590c; }
+.tiles .item:nth-child(6n+3) .ico { background: #7a4bf0; }
+.tiles .item:nth-child(6n+4) .ico { background: #d6336c; }
+.tiles .item:nth-child(6n+5) .ico { background: #0c8599; }
+.tiles .item:nth-child(6n+6) .ico { background: #2b8a3e; }
+.tiles .item:active:not(:disabled) { transform: scale(.97); }
+.tiles .item { transition: transform .12s; }
+
+/* Antworten mit Buchstaben A–D */
+#opts { counter-reset: opt; }
+#opts .ans { display: flex; align-items: center; gap: 12px; border-radius: 16px; padding: 14px 14px; box-shadow: var(--shadow); border-color: transparent; min-height: 58px; }
+#opts .ans::before { counter-increment: opt; content: counter(opt, upper-alpha); flex: none; width: 30px; height: 30px; border-radius: 10px; background: var(--soft); color: var(--mute); display: grid; place-items: center; font-weight: 700; font-size: 14px; }
+#opts .ans.ok { border-color: var(--ok); }
+#opts .ans.ok::before { background: var(--ok); color: #fff; content: "✓"; }
+#opts .ans.bad { border-color: var(--bad); }
+#opts .ans.bad::before { background: var(--bad); color: #fff; content: "✗"; }
+.helps { border-style: solid; border-color: transparent; }
+.q { font-size: calc(23px * var(--fs, 1)); font-weight: 700; }

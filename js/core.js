@@ -33,7 +33,7 @@
 
   /* Spielmodi sind eigenständige Bausteine. Neue Modi werden hier registriert. */
   /* App-Version: nur mit „node tools/version.mjs <neu>“ ändern, das setzt auch sw.js. */
-  WF.VERSION = "1.15";
+  WF.VERSION = "1.16";
   WF.BUILD = "2026-11-22";
 
   WF.registerMode = function (m) { WF.modes[m.id] = m; WF.modeOrder.push(m.id); };
@@ -41,10 +41,11 @@
   /* Einträge in der Oberfläche: Ein Feature trägt sich selbst an einer Stelle ein, ohne ui.js zu ändern.
      where: "home" (Spielen), "areas" (Lernen), "scope" (Themenseite), "result" (Ergebnis),
             "profiletop" (oben im Profil), "profile" (Abschnitte im Profil), "settings" (Einstellungen im Profil).
-     render(ctx) liefert HTML oder "" (dann erscheint nichts). order sortiert aufsteigend. */
+     render(ctx) liefert HTML oder "" (dann erscheint nichts). order sortiert aufsteigend.
+     Startseite: order < 10 = Karten oben, 10–39 = Spielmodi allein, ab 40 = mit Freunden (Kacheln). */
   WF.entries = {};
   WF.registerEntry = function (e) { (WF.entries[e.where] = WF.entries[e.where] || []).push(e); WF.entries[e.where].sort(function (a, b) { return (a.order || 50) - (b.order || 50); }); };
-  WF.slot = function (where, ctx) {
-    return (WF.entries[where] || []).map(function (e) { try { return e.render(ctx || {}) || ""; } catch (err) { console.error(where, err); return ""; } }).join("");
+  WF.slot = function (where, ctx, from, to) {
+    return (WF.entries[where] || []).filter(function (e) { var o = e.order || 50; return (from === undefined || o >= from) && (to === undefined || o < to); }).map(function (e) { try { return e.render(ctx || {}) || ""; } catch (err) { console.error(where, err); return ""; } }).join("");
   };
 })();

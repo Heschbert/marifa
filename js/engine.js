@@ -78,29 +78,41 @@
   /* Stufen: 1 leicht, 2 mittel, 3 schwer. "auto" folgt der Trefferquote je Unterbereich. */
   E.target = function (c, s) {
     var d = S().settings.difficulty;
-    if (d === "auto") { var st = S().sub[c + "|" + s]; return (st && st.lv) || 1; }
+    if (d === "auto") { var st = S().sub[c + "|" + s]; return (st && st.lv) || 2; }
     return +d;
   };
   function diffMult(x) {
     var dd = Math.abs((x.d || 2) - E.target(x.c, x.s));
-    return dd === 0 ? 3 : dd === 1 ? 1 : 0.3;
+    return dd === 0 ? 2 : dd === 1 ? 1 : 0.5;
   }
   function trackLevel(x, ok) {
     var st = S(), k = x.c + "|" + x.s, sb = st.sub[k] || (st.sub[k] = { r: 0, t: 0 });
     sb.win = (sb.win || []).concat(ok ? 1 : 0).slice(-10);
     if (sb.win.length >= 10) {
-      var sum = sb.win.reduce(function (a, b) { return a + b; }, 0), lv = sb.lv || 1;
+      var sum = sb.win.reduce(function (a, b) { return a + b; }, 0), lv = sb.lv || 2;
       if (sum >= 8 && lv < 3) { sb.lv = lv + 1; sb.win = []; }
       else if (sum <= 4 && lv > 1) { sb.lv = lv - 1; sb.win = []; }
     }
   }
 
   /* ---------- Auswahl ---------- */
+  /* Zuletzt gesehen: st.seen = { id: Tagnummer }. Was heute oder gestern kam, wird stark zurückgestellt,
+     damit nicht jede Runde dieselben Fragen bringt. Einträge älter als 21 Tage werden beim Start entfernt. */
+  function dayNo() { return Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 864e5); }
+  E.markSeen = function (id) { var st = S(); (st.seen || (st.seen = {}))[id] = dayNo(); };
+  E.seenAge = function (id) { var v = (S().seen || {})[id]; return v === undefined ? 99 : dayNo() - v; };
+  E.pruneSeen = function () { var sn = S().seen || {}, t = dayNo(); Object.keys(sn).forEach(function (k) { if (t - sn[k] > 21) delete sn[k]; }); };
+  function recency(x, wrong) {
+    var a = E.seenAge(x.id);
+    if (wrong) return a === 0 ? 0.25 : 1;
+    return a === 0 ? 0.05 : a === 1 ? 0.25 : a === 2 ? 0.6 : 1;
+  }
   function weight(x) {
-    if (x.gen) return 2 * diffMult(x);
+    if (x.gen) return 2 * diffMult(x) * recency(x);
     var r = S().qs[x.id];
-    /* cw: wie oft „sicher“ und trotzdem falsch. Solche Fragen kommen bevorzugt wieder, bis sie sitzen. */
-    return (r ? [6, 3, 1.5, 0.6, 0.25][Math.min(r.b, 4)] * (r.cw && r.b < 3 ? 1.6 : 1) : 4) * diffMult(x);
+    /* cw: wie oft „sicher“ und trotzdem falsch. Solche Fragen kommen bevorzugt wieder, bis sie sitzen.
+       Neue Fragen (kein Eintrag) haben das höchste Gewicht, damit man mehr vom Bestand sieht. */
+    return (r ? [4, 2.5, 1.5, 0.6, 0.25][Math.min(r.b, 4)] * (r.cw && r.b < 3 ? 1.6 : 1) : 5) * diffMult(x) * recency(x, r && r.b === 0);
   }
   E.pool = function (scope) { return D.Q.filter(function (x) { return D.inScope(x, scope.c, scope.s); }); };
   E.order = function (list, balanced) {
@@ -109,7 +121,10 @@
   };
   function levelKey(x) {
     var base = 0;
-    if (!x.gen) { var r = S().qs[x.id]; base = r ? (r.b === 0 ? (r.cw ? -1.5 : -1) : r.b) : 0; }
+    var wrong = false;
+    if (!x.gen) { var r = S().qs[x.id]; wrong = r && r.b === 0; base = r ? (r.b === 0 ? (r.cw ? -1.5 : -1) : r.b) : 0; }
+    var a = E.seenAge(x.id);
+    base += wrong ? (a === 0 ? 1 : 0) : (a === 0 ? 4 : a === 1 ? 2 : 0);
     return base + Math.abs((x.d || 2) - E.target(x.c, x.s)) * 0.4;
   }
   E.orderLearn = function (list) { return U.shuffle(list.slice()).sort(function (a, b) { return levelKey(a) - levelKey(b); }); };
@@ -231,6 +246,7 @@
     if (!retry) { cs.t++; ss.t++; st.tot.t++; }
     var rec = null, before = 0;
     if (!x.gen) { rec = st.qs[x.id] || (st.qs[x.id] = { b: 0 }); before = rec.b; }
+    E.markSeen(x.id);
     var requeued = false;
     if (ok) {
       s.learned[x.id] = 1;
