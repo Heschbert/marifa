@@ -11,6 +11,18 @@ def rank(a): L = [len(x) for x in a]; return sum(1 for x in L[1:] if x < L[0])
 n = len(qs); target = round(n * 0.25)
 longest = sum(1 for q in qs if len(q["a"]) == 4 and rank(q["a"]) == 3)
 lines = []
+# 1) Wo die Überarbeitung falsche Antworten verlängert hat: ursprüngliche, kürzere Fassung zurückholen
+import subprocess
+try: orig = {q["id"]: q for q in json.loads(subprocess.run(["git", "show", "HEAD~" + (sys.argv[2] if len(sys.argv) > 2 else "0") + ":data/" + name + ".json"], cwd=base, capture_output=True, text=True).stdout)}
+except Exception: orig = {}
+for q in qs:
+    if longest >= target: break
+    o = orig.get(q["id"]); a = q["a"]
+    if not o or len(a) != 4 or rank(a) == 3 or len(o["a"]) != 4: continue
+    b = a[:1] + [o["a"][i] if len(o["a"][i]) < len(a[i]) else a[i] for i in range(1, 4)]
+    if rank(b) == 3 and b != a and len(set(b)) == 4:
+        q["a"] = b; longest += 1; lines.append("~" + q["id"] + "|" + "|".join(b))
+# 2) sonst Klammerzusätze kürzen
 for q in qs:
     if longest >= target: break
     a = q["a"]

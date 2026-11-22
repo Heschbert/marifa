@@ -1,0 +1,130 @@
+# Überarbeitung Wirtschaft & Geld
+-rrnawe
+-1ydezym
+-u53mbd
+-1hkzl7t
+-ytloy0
+-1r54qve
+-yxef72
+-15i1js2
+~1ouq2f7|Die laufenden Kosten pro Jahr|Die durchschnittliche Rendite des Fonds pro Jahr|Die einmalige Gebühr beim Kauf der Anteile|Das Ausfallrisiko der Fondsgesellschaft
+~1bmgske|Um das Risiko einzelner Pleiten zu senken|Um garantiert mehr Rendite zu erzielen|Um Steuern vollständig zu vermeiden|Um alle Kosten dauerhaft zu senken
+~10t8gcx|Aktie: Firmenanteil, Anleihe: Kredit|Aktie: Kredit, Anleihe: Firmenanteil|Aktie: Staatspapier, Anleihe: privates Wertpapier|Beide verbriefen einen Anteil am Unternehmen
+~16zu1c5|Wie schnell sie sich zu Geld machen lässt|Wie hoch die erwartete Rendite ausfällt|Wie sicher das Geld vor Verlusten geschützt ist|Wie niedrig die laufenden Gebühren ausfallen
+~jn0r4p|Drei bis sechs Monatsausgaben|Etwa eine Netto-Monatsmiete|Etwa ein volles Brutto-Jahresgehalt|Pauschal etwa 1.000 Euro für alle
+~18d4qfv|Mehr erwartete Rendite heißt mehr Risiko|Hohe Renditen sind in der Regel risikolos|Risiko und Rendite hängen nicht zusammen|Niedriges Risiko bringt die höchste Rendite
+~8nyrws|Bis 100.000 € pro Kunde und Bank|Unbegrenzt in jeder Höhe gesetzlich geschützt|Nur bis 10.000 € pro Kunde geschützt|Nur bis 1 Million € pro Kunde geschützt
+~1wxubu9|Erträge werden mitverzinst|Zinsen werden jedes Jahr um die Inflation gekürzt|Der Zinssatz verdoppelt sich in jedem Anlagejahr|Zinsen werden einmalig am Laufzeitende gezahlt
+~zwdfdz|Bei tiefen Kursen kauft man mehr Anteile|Die Gebühren sinken mit jeder Einzahlung automatisch|Der Durchschnittskurs steigt mit der Laufzeit garantiert|Man kauft immer zum günstigsten Kurs des Monats
+~h61kjw|Gewinnausschüttung an die Aktionäre|Feste Zinszahlung auf eine Anleihe des Unternehmens|Preisnachlass beim Kauf einer Aktie am Markt|Jährliche Depotgebühr der Bank für Aktionäre
+~j7cqi3|Die Stärke der Kursschwankungen|Die Höhe der jährlichen Dividende|Die Schnelligkeit des Börsenhandels|Die Größe und Bedeutung des Unternehmens
+~155amtt|Die Zielgewichtung wiederherstellen|Das gesamte Depot bei fallenden Kursen verkaufen|Alle Anlagen in die Gewinner-Aktie umschichten|Das Depot auf eine andere Bank übertragen
+~yp4bd8|Erträge werden wieder angelegt|Erträge werden monatlich ausgezahlt|Der Fonds investiert ausschließlich in Gold|Der Fonds hat überhaupt keine laufenden Kosten
+~184djcq|Bis zum Pauschbetrag keine Steuer abführen|Dauerhafte Befreiung aller Zinsen von der Steuer|Erhöhung des persönlichen Sparer-Pauschbetrags|Verschiebung der Steuer auf das Folgejahr
+~mii3fm|Höchst- bzw. Mindestpreis der Order|Die Zahl der Anteile, die am Tag gehandelt werden dürfen|Den Zeitpunkt der Kontoführungsgebühr|Die maximale Haltedauer der Aktie im Depot
+~1n54vmf|Festgeld ist für eine feste Laufzeit gebunden|Festgeld ist jederzeit abziehbar, Tagesgeld nicht|Festgeld wird ausschließlich in bar geführt|Festgeld schwankt wie eine Aktie täglich im Wert
+~1oq22r7|Nach dem Ansparen gibt es ein Darlehen zu festem Zins|Man erhält nach Vertragsabschluss sofort eine Immobilie|Der Staat übernimmt sämtliche monatlichen Raten|Das Guthaben ist wie bei Aktien an Börsenkurse gekoppelt
+~bjdxow|Staatliche Zulagen für private Vorsorge|Eine Zusatzrente ausschließlich für Beamte|Eine vom Arbeitgeber bezahlte Betriebsrente|Eine Pflichtrente für alle Selbstständigen
+~223sq7|Ein Teil des Bruttogehalts fließt in die Vorsorge|Der Arbeitgeber zahlt den Betrag zusätzlich aus eigener Tasche|Der Staat überweist den Betrag direkt aufs Konto|Beiträge werden vom Nettogehalt nach Steuern gezahlt
+~q9rdrx|Die Beiträge der Beschäftigten zahlen die Renten|Jeder zahlt nur in einen eigenen Kapitalstock ein|Allein aus Erträgen von Staatsvermögen|Durch regelmäßige Zahlungen der Banken
+~1078vj1|Es wirft keine Zinsen oder Dividenden ab|Es zahlt jährlich feste Zinsen wie eine Anleihe|Es zahlt eine Dividende wie Aktien|Sein Wert ist durch den Staat garantiert
+~u9dob3|Der Börsenkrach an der Wall Street|Die Einführung einer europäischen Gemeinschaftswährung|Der Zusammenbruch der Bank von England|Der Beginn des Zweiten Weltkriegs
+~1x1054l|Niederlande|Frankreich|Spanien|Großbritannien
+~1d1v5bw|Alte Anleger werden mit Geld neuer bezahlt|Gewinne stammen aus erfolgreichen Anlagen|Der Staat garantiert allen Anlegern Zinsen|Anleger tauschen untereinander Wertpapiere
+~1df7765|Eine längere Phase steigender Kurse|Eine längere Phase fallender Kurse|Ein Markt ganz ohne nennenswertes Handelsvolumen|Ein Markt ausschließlich für Rohstoffe
+~inucd1|Eine weltweit eindeutige Wertpapierkennung|Die Steuernummer des Herausgebers|Die Mindestanlagesumme des Papiers|Die jährliche Dividendenhöhe des Papiers in Prozent
+~1t6ls08|Nur mit Gewinnen aus Aktienverkäufen|Mit allen Kapitalerträgen wie Zinsen und Dividenden|Sie sind steuerlich überhaupt nicht nutzbar|Sie werden vom Staat erstattet
+~y2i0ai|Den nicht ausgegebenen Teil des Einkommens|Den Zinssatz für klassische Sparbücher|Den Anteil der Haushalte mit einem eigenen Sparbuch|Die Höhe der gesetzlichen Einlagensicherung
+~1brs5q|Kleiner Einsatz bewegt eine größere Summe|Das Risiko wird dadurch ungefähr halbiert|Der Einsatz ist dadurch vollständig garantiert|Die Gebühr sinkt mit jedem einzelnen Handel
+~15jcudd|Aktienkurs mal Zahl der Aktien|Jahresumsatz mal aktueller Aktienkurs|Gewinn geteilt durch Anzahl der Aktien|Buchwert geteilt durch das Eigenkapital
+~cynsnw|Aktien großer, etablierter Firmen|Aktien kleiner, junger Start-ups|Staatsanleihen mit Höchstbonität|Wertpapiere, die nicht an der Börse gehandelt werden
+~1wu0zeu|Die Bundesrepublik Deutschland|Die Europäische Zentralbank|Die Deutsche Bank AG|Die Bundesländer gemeinsam
+~1ai68u8|Der Wert der besten Alternative, auf die man verzichtet|Kosten, die bei jeder Entscheidung zusätzlich anfallen|Versteckte Gebühren in einem Vertrag|Kosten, die man später zurückerstattet bekommt
+~1tv3e10|Preisstabilität (2 % Inflation)|Vollbeschäftigung im gesamten Euroraum|Begrenzung der Staatsverschuldung der Mitglieder|Stabile Aktien- und Immobilienkurse
+~1qwi4b9|Wert aller Waren und Dienstleistungen eines Jahres|Gesamtvermögen aller Einwohner eines Landes|Gesamteinnahmen des Staates in einem Jahr|Durchschnittlicher Wohlstand je Einwohner
+~1ve694w|Ein Markt mit wenigen großen Anbietern|Ein Markt mit nur einem einzigen Anbieter|Ein Markt mit nur einem Käufer|Ein Markt ohne Preisbildung
+~v7ja6q|Sie werden für Euro-Käufer günstiger|Sie werden für Euro-Käufer teurer|Sie bleiben vollständig unverändert|Sie steigen nur für Exporte in die USA
+~i17oss|Zins für Banken bei der Zentralbank|Der Zins auf klassische Sparbücher|Der Zins auf zehnjährige Staatsanleihen|Der durchschnittliche Zins auf Baukredite
+~16fskrb|Kurse von 40 großen deutschen Firmen|Kursentwicklung aller deutschen Aktien|Die Inflationsrate in Deutschland|Die Arbeitslosenquote in Deutschland
+~cztjjp|Ein anhaltend sinkendes Preisniveau|Ein starker Anstieg des allgemeinen Preisniveaus|Ein plötzlicher Absturz der Aktienkurse|Die Abwertung einer Währung gegenüber anderen
+~1s5ukwa|Eine Preis- oder Mengenabsprache|Eine staatliche Preisregulierung für bestimmte Waren|Ein Zusammenschluss von Verbrauchern|Ein Unternehmen mit mehreren Standorten
+~1xk052k|Stagnierende Wirtschaft bei hoher Inflation|Wirtschaftswachstum bei gleichzeitig sinkenden Preisen|Starkes Wachstum bei geringer Inflation|Hohe Arbeitslosigkeit bei fallenden Zinsen
+~1nr69zw|Typische Ausgaben der Haushalte|Waren, die der Staat jährlich selbst einkauft|Ausschließlich Luxusgüter der Haushalte|Ausschließlich Lebensmittel der Haushalte
+~1pgiwh5|Löhne und Preise treiben sich gegenseitig hoch|Sinkende Löhne führen zu sinkenden Steuern|Steigende Preise senken immer die Löhne|Löhne und Preise sind voneinander unabhängig
+~16ys33x|Schutz der eigenen Wirtschaft, etwa durch Zölle|Völlig freien Handel ohne Abgaben|Die Gründung einer Währungsunion|Die Förderung des Welthandels durch Subventionen
+~zi83xk|Komparative Kostenvorteile|Staatliche Preisfestsetzung als Pflicht|Das Gesetz der abnehmenden Bevölkerung|Die Lehre von der unsichtbaren Hand
+~1ktawi3|Handelsregeln durchsetzen, Streit schlichten|Kredite an Entwicklungsländer vergeben|Währungskurse verbindlich festlegen|Weltweite Mindestlöhne verbindlich bestimmen
+~1x1ht0w|Die Zentralbank kauft massenhaft Wertpapiere|Die Zentralbank erhöht die Leitzinsen stark|Der Staat senkt die Einkommensteuern|Banken müssen mehr Eigenkapital halten
+~1ehjps1|Lehman Brothers|Goldman Sachs|Deutsche Bank|Morgan Stanley Bank
+~1904o47|Nur mit seiner Einlage|Mit seinem gesamten Privatvermögen|Gar nicht, auch nicht mit der Einlage|Nur mit seinem laufenden Einkommen
+~snvxy0|Kosten unabhängig von der Produktionsmenge|Kosten, die nur bei laufender Produktion anfallen|Kosten, die gleichbleibend pro Stück sind|Kosten, die der Staat übernimmt
+~1rzs2kx|Ab hier decken Erlöse die Gesamtkosten|Die Menge, bei der der Umsatz am höchsten ist|Die Menge, bei der die Fixkosten null sind|Der Preis, bei dem die Nachfrage ganz endet
+~1qb659o|Die Ungleichheit von Einkommen oder Vermögen|Die Höhe der Inflation in einem Land|Die Geschwindigkeit des Wirtschaftswachstums|Die Arbeitslosigkeit
+~zje1o2|Nicht eingepreiste Folgen für Dritte|Kosten, die nur im Ausland entstehen|Preise, die vom Ausland bestimmt werden|Steuern auf Exporte und Importe
+~eq04wy|Niemand kann von der Nutzung ausgeschlossen werden|Es wird immer vom Staat selbst hergestellt|Es gehört allen gleichermaßen im Besitz|Es ist ohne Kosten herzustellen
+~5xgayh|Die Regierung über Steuern und Ausgaben|Die Zentralbank über die Leitzinsen|Die Geschäftsbanken über ihre Kredite|Die Gewerkschaften über Tarifverträge
+~19lq3ri|Staatliche Finanzhilfen für Firmen|Zölle auf eingeführte Waren|Beiträge zur Sozialversicherung|Preise auf dem Schwarzmarkt
+~19x9trk|Frankfurt am Main|Brüssel|Luxemburg|Straßburg im Elsass
+~dn4wf5|Zins plus Nebenkosten als Jahreswert|Nur den reinen Sollzins pro Jahr|Nur die einmaligen Bearbeitungsgebühren|Den Zins abzüglich der erwarteten Inflation
+~nm6vpi|Eine zusätzliche Rückzahlung|Eine Strafgebühr bei verspäteter Zahlung|Eine Erhöhung des vereinbarten Zinssatzes|Ein Aufschub der Zahlung um einige Monate
+~p8o7an|Private Haftpflichtversicherung|Hausratversicherung|Rechtsschutzversicherung|Private Unfallversicherung (Freizeit)
+~809sxr|Vor Einkommensausfall|Vor hohen Kosten für Zahnersatz|Vor Schäden durch Einbruch und Diebstahl|Vor den Kosten eines Rechtsstreits
+~1m6x0ex|Jederzeit mit einem Monat Frist|Nur zum Ende des jeweiligen Kalenderjahres|Nur mit einer Frist von drei Monaten|Gar nicht mehr
+~rpggyu|Kontoüberziehung, meist teuer|Ein langfristiger Kredit für den Hausbau|Ein zinsloser Kredit für Berufseinsteiger|Ein Kredit, den der Arbeitgeber gewährt
+~xk6bni|Ausgaben, um Berufseinkommen zu erzielen|Ausgaben für private Anschaffungen|Kosten für die Werbung eines Unternehmens|Gebühren für die Arbeit des Finanzamts
+~1qf6bu9|Spenden an gemeinnützige Vereine|Fahrtkosten zur ersten Tätigkeitsstätte|Kosten für Arbeitsmittel|Verluste aus Aktienverkäufen
+~1bljfb4|Keine Umsatzsteuer, kein Vorsteuerabzug|Keine Einkommensteuer auf alle Gewinne|Alle Umsätze sind grundsätzlich steuerfrei|Gilt nur für Unternehmen im Ausland
+~lh5wts|Firmen ziehen gezahlte Umsatzsteuer ab|Verbraucher fordern die Mehrwertsteuer zurück|Die Steuer wird vor dem Kauf bezahlt|Der Staat zahlt Vorsteuer an die Käufer
+~1gatjpj|Die Bundesländer|Der Bund|Die Gemeinden|Die Europäische Union
+~149o1g1|Ehepartner und Kinder sind beitragsfrei mitversichert|Alle Verwandten sind kostenlos mitversichert|Familien zahlen nur den halben Beitrag|Nur leibliche Kinder sind mitversichert
+~1mk3ll8|Beitragshöhe nach unfallfreien Jahren|Sie legt die Fahrzeugklasse fest|Sie ist die Höhe der Selbstbeteiligung|Sie bestimmt die Länge der Vertragslaufzeit
+~1i5m049|Einrichtung bei Einbruch oder Feuer|Das Gebäude, in dem man wohnt|Schäden, die man anderen zufügt|Schäden am eigenen Auto nach einem Unfall
+~x2lcqs|Beim Tod der versicherten Person|Am Ende der Laufzeit in jedem Fall|Mit dem Eintritt in die Rente|Bei jedem Arztbesuch
+~1wxnwjo|Die Versicherungssumme ist zu niedrig|Es besteht bei keinem Anbieter Schutz|Die Versicherung zahlt immer die volle Summe|Der Beitrag ist besonders niedrig gewählt
+~50d7qt|Einen Teil des Schadens zahlt man selbst|Die Versicherung zahlt immer doppelt|Der Versicherte zahlt keinen Beitrag|Die Versicherung gilt nur für Selbstständige
+~xwj7f6|Man haftet für fremde Schulden|Man erhält Zinsen auf ein Sparguthaben|Man bekommt Steuern vom Finanzamt erstattet|Man übernimmt die Kosten für eine Versicherung
+~7h2hjp|Einen Grundbetrag vor Pfändung|Das komplette Guthaben vor jeder Pfändung|Nur Guthaben aus gesetzlichen Rentenzahlungen|Nur Guthaben bei Online-Banken
+~19ptfu6|Gleiche Rate, der Zinsanteil sinkt|Die Tilgung bleibt jedes Jahr gleich, die Rate sinkt|Es wird erst am Ende alles auf einmal zurückgezahlt|Der Zins steigt mit der Laufzeit
+~13johqd|Der Zins ist für eine Zeit garantiert|Die Bank bindet den Kredit an eine Immobilie|Der Kreditnehmer ist dauerhaft an die Bank gebunden|Der Kredit wird automatisch verlängert
+~59ghdx|Steuer auf das halbe Einkommen, dann verdoppelt|Jeder Partner zahlt nur die halbe Steuer|Der Staat zahlt die Steuer für Ehepaare|Ehepaare sind von der Einkommensteuer ganz befreit
+~h3bx1v|Die Hälfte des gesetzlichen Erbteils|Ein Drittel des gesamten Nachlasses|Das gesamte Erbe ohne Abzüge|Ein Viertel des Nachlasses
+~e3ytqk|Vorformulierte Vertragsbedingungen|Gesetzliche Regeln für Vertragsstrafen|Ein Vertrag zwischen Staat und Bürger|Vorschriften für die Steuererklärung
+~1ydc4fz|Hinterziehung verschweigt Angaben|Hinterziehung ist erlaubt, Vermeidung nicht|Beides ist grundsätzlich legal|Beides ist nur Unternehmen verboten
+# Neu
++{"s": "Sparen & Anlegen", "q": "Was ist meist die teuerste Art, kurzfristig Schulden zu machen?", "a": ["Den Dispo überziehen", "Einen Ratenkredit aufnehmen", "Ein Baudarlehen nutzen", "Bei Freunden zinslos leihen"], "w": ["", "Ratenkredite sind meist deutlich günstiger als der Dispo.", "Baudarlehen sind durch die Immobilie besichert und daher vergleichsweise günstig.", "Ein zinsloses Darlehen kostet keine Zinsen."], "e": "Dispozinsen liegen oft über 10 % im Jahr. Wer länger im Minus ist, wechselt besser in einen günstigeren Ratenkredit.", "h": "Es geht um das Konto im Minus.", "d": 1}
++{"s": "Sparen & Anlegen", "q": "Was ist eine gute Faustregel, bevor man in Aktien investiert?", "a": ["Erst Notgroschen, dann anlegen", "Erst alles in eine Aktie stecken", "Dispo nutzen, um mehr zu kaufen", "Nur Geld anlegen, das man morgen braucht"], "w": ["", "Alles auf eine Aktie zu setzen ist sehr riskant; Streuung senkt das Risiko.", "Auf Kredit zu investieren erhöht das Risiko stark und kostet hohe Zinsen.", "Geld, das man bald braucht, gehört nicht in schwankende Anlagen."], "e": "Ein Notgroschen von etwa drei bis sechs Monatsausgaben schützt davor, Aktien in einem Kurstief verkaufen zu müssen.", "h": "Erst die Reserve, dann die Rendite.", "d": 1}
++{"s": "Sparen & Anlegen", "q": "Was beschreibt ein Sparplan auf einen ETF?", "a": ["Regelmäßig einen festen Betrag anlegen", "Einmalig eine große Summe investieren", "Jeden Monat Aktien auf Kredit kaufen", "Nur bei steigenden Kursen nachkaufen"], "w": ["", "Das wäre eine Einmalanlage.", "Ein Sparplan nutzt eigenes Geld, keinen Kredit.", "Ein Sparplan kauft gerade unabhängig vom Kursverlauf."], "e": "Ein ETF-Sparplan investiert zum Beispiel monatlich 50 €. Das ist bequem, günstig und streut das Einstiegsrisiko über die Zeit.", "h": "Es geht um Regelmäßigkeit.", "d": 1}
++{"s": "Wirtschaft verstehen", "q": "Was passiert in der Regel, wenn die Zentralbank die Leitzinsen erhöht?", "a": ["Kredite werden teurer", "Sparzinsen sinken sofort", "Die Inflation steigt deutlich", "Bargeld wird abgeschafft"], "w": ["", "Meist steigen auch die Sparzinsen, wenn auch verzögert.", "Höhere Zinsen sollen die Inflation gerade bremsen.", "Mit Bargeld hat der Leitzins nichts zu tun."], "e": "Höhere Leitzinsen verteuern Kredite, bremsen Nachfrage und Investitionen und sollen so die Inflation senken.", "h": "Geld leihen wird …", "d": 1}
++{"s": "Wirtschaft verstehen", "q": "Was bedeutet „Inflation von 5 %“?", "a": ["Preise steigen im Schnitt um 5 % pro Jahr", "Löhne steigen jedes Jahr automatisch um 5 %", "Die Wirtschaft wächst um 5 % pro Jahr", "Die Zentralbank verlangt 5 % Zinsen"], "w": ["", "Löhne steigen nicht automatisch mit; das hängt von Verhandlungen ab.", "Das wäre Wirtschaftswachstum, nicht Inflation.", "Das wäre der Leitzins."], "e": "Inflation misst den Anstieg des allgemeinen Preisniveaus. Bei 5 % kostet ein Warenkorb nach einem Jahr etwa 5 % mehr.", "h": "Es geht um Preise.", "d": 1}
++{"s": "Steuern, Verträge & Versicherungen", "q": "Welche zwei Versicherungen gelten für fast alle Erwachsenen als besonders wichtig?", "a": ["Haftpflicht und Berufsunfähigkeit", "Handy- und Brillenversicherung", "Reisegepäck- und Glasversicherung", "Sterbegeld- und Fahrradversicherung"], "w": ["", "Solche Kleinversicherungen decken meist nur überschaubare Schäden.", "Diese Schäden kann man meist selbst tragen.", "Diese gelten als verzichtbar oder nur in besonderen Fällen sinnvoll."], "e": "Verbraucherschützer empfehlen, zuerst existenzbedrohende Risiken abzusichern: Schäden an anderen (Haftpflicht) und den Verlust der Arbeitskraft.", "h": "Absichern, was existenzbedrohend wäre.", "d": 1}
++{"s": "Steuern, Verträge & Versicherungen", "q": "Was solltest du tun, bevor du einen Vertrag an der Haustür unterschreibst?", "a": ["In Ruhe Angebote vergleichen", "Sofort unterschreiben, sonst ist es weg", "Nur auf das Lächeln des Verkäufers achten", "Die Ausweisnummer mitgeben"], "w": ["", "Zeitdruck ist ein typischer Verkaufstrick.", "Sympathie ersetzt keinen Preisvergleich.", "Persönliche Daten sollte man nicht vorschnell herausgeben."], "e": "Haustürgeschäfte kann man zwar 14 Tage widerrufen, doch besser ist es, gar nicht unter Druck zu unterschreiben und Angebote zu vergleichen.", "h": "Zeit lassen ist kein Fehler.", "d": 1}
+# Feinausgleich (automatisch)
+~p8o7an|Private Haftpflichtversicherung|Hausratversicherung|Rechtsschutzversicherung|Private Unfallversicherung
+?18d4qfv|Denk an Lotto und Sparbuch.
+?1d1v5bw|Das System braucht ständig Nachschub.
+?19ptfu6|Lateinisch annus: das Jahr.
+?n27166c6|Denk an Unvorhergesehenes.
+?n4dae8fc|Denk an einen Dauerauftrag.
+?n68a24a1|Denk an den Einkauf im Supermarkt.
+# Feinausgleich (automatisch)
+~jn0r4p|Drei bis sechs Monatsausgaben|Etwa eine Netto-Monatsmiete|Etwa ein volles Jahresgehalt|Etwa 1.000 Euro pauschal
+~j7cqi3|Die Stärke der Kursschwankungen|Die Höhe der Dividende|Die Schnelligkeit des Handels|Die Größe des Unternehmens
+~1x1054l|Niederlande|Frankreich|Spanien|England
+~1df7765|Eine längere Phase steigender Kurse|Eine längere Phase fallender Kurse|Einen Markt ohne Handelsvolumen|Einen Markt nur für Rohstoffe
+~inucd1|Eine weltweit eindeutige Wertpapierkennung|Die Steuernummer des Herausgebers|Die Mindestanlagesumme des Papiers|Die jährliche Dividendenhöhe des Papiers
+~y2i0ai|Den nicht ausgegebenen Teil des Einkommens|Den Zinssatz für Sparbücher|Den Anteil der Haushalte mit Sparbuch|Die Höhe der Einlagensicherung
+~1brs5q|Kleiner Einsatz bewegt eine größere Summe|Das Risiko wird dadurch halbiert|Der Einsatz ist dadurch garantiert|Die Gebühr sinkt mit jedem Handel
+~cynsnw|Aktien großer, etablierter Firmen|Aktien kleiner Start-ups|Staatsanleihen mit Höchstbonität|Wertpapiere ohne Handel
+~1ve694w|Ein Markt mit wenigen großen Anbietern|Ein Markt mit nur einem Anbieter|Ein Markt mit nur einem Käufer|Ein Markt ohne Preisbildung
+~v7ja6q|Sie werden für Euro-Käufer günstiger|Sie werden für Euro-Käufer teurer|Sie bleiben unverändert|Sie steigen nur für Exporte
+~1xk052k|Stagnierende Wirtschaft bei hoher Inflation|Wirtschaftswachstum bei sinkenden Preisen|Starkes Wachstum bei geringer Inflation|Hohe Arbeitslosigkeit bei fallenden Zinsen
+~1ktawi3|Handelsregeln durchsetzen, Streit schlichten|Kredite an Entwicklungsländer vergeben|Währungskurse verbindlich festlegen|Weltweite Mindestlöhne bestimmen
+~1ehjps1|Lehman Brothers|Goldman Sachs|Deutsche Bank|Morgan Stanley
+~snvxy0|Kosten unabhängig von der Produktionsmenge|Kosten, die nur bei Produktion anfallen|Kosten, die gleichbleibend pro Stück sind|Kosten, die der Staat zahlt
+~19x9trk|Frankfurt am Main|Brüssel|Luxemburg|Paris
+~xk6bni|Ausgaben, um Berufseinkommen zu erzielen|Ausgaben für private Anschaffungen|Kosten für Werbung eines Unternehmens|Gebühren für das Finanzamt
+~1qf6bu9|Spenden an gemeinnützige Vereine|Fahrtkosten zur Arbeit|Kosten für Arbeitsmittel|Verluste aus Aktienverkäufen
+~1gatjpj|Die Bundesländer|Der Bund|Die Gemeinden|Die EU
+~1i5m049|Einrichtung bei Einbruch oder Feuer|Das Gebäude, in dem man wohnt|Schäden, die man anderen zufügt|Schäden am eigenen Auto
+~x2lcqs|Beim Tod der versicherten Person|Am Ende der Laufzeit immer|Beim Eintritt der Rente|Bei jedem Arztbesuch
+~59ghdx|Steuer auf das halbe Einkommen, dann verdoppelt|Jeder Partner zahlt nur die halbe Steuer|Der Staat zahlt die Steuer für Ehepaare|Ehepaare sind von der Steuer befreit

@@ -2,6 +2,7 @@
 # Zeilenformat:
 #   -ID                                   Frage entfernen (überspitzt, unpassend, doppelt)
 #   ~ID|richtig|falsch|falsch|falsch      Antworttexte ersetzen (Reihenfolge wie bisher, die Erklärungen w bleiben gültig)
+#   ?ID|neuer Hinweis                      Hinweis ersetzen
 #   +{"s": …, "q": …, "a": [richtig, …], "w": [...], "e": …, "h": …, "d": 1-3}   neue Frage (ID wird aus dem Text erzeugt)
 # Aufruf: python3 tools/fragen-anwenden.py <datei ohne .json>   (z. B. denken-psychologie)
 import json, sys, os, hashlib
@@ -23,6 +24,9 @@ for line in open(os.path.join(base, "tools", "fragen", name + ".txt"), encoding=
         if not q: print("unbekannt:", p[0]); continue
         assert len(p) - 1 == len(q["a"]), p[0]
         q["a"] = p[1:]; rep += 1
+    elif line[0] == "?":
+        p = line[1:].split("|", 1); q = byid.get(p[0])
+        if q: q["h"] = p[1]
     elif line[0] == "+":
         q = json.loads(line[1:])
         q["id"] = "n" + hashlib.md5(q["q"].encode()).hexdigest()[:7]

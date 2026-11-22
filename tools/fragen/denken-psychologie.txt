@@ -135,3 +135,5 @@
 ~1jh5m9v|No-true-Scotsman|Zirkelschluss|Strohmann|Tu quoque
 ~debrb8|Kompositionsfehlschluss|Divisionsfehlschluss|Zirkelschluss|Strohmann-Argument
 ~3e60mv|Verallgemeinerung|Falsches Dilemma|Ad hominem|Tu quoque
+?ieispg|Zwei Arten, ein Risiko anzugeben.
+?1dqeycg|Kahneman erhielt dafür 2002 den Nobelpreis.
