@@ -1,8 +1,8 @@
 {
  "id": "./",
- "name": "Wissensfundament",
- "short_name": "Wissen",
- "description": "Allgemeinwissen lernen und spielen: über 2.000 Fragen mit Erklärungen, Wiederholung nach Plan, offline nutzbar.",
+ "name": "Marifa",
+ "short_name": "Marifa",
+ "description": "Marifa (arabisch: Wissen): Allgemeinwissen spielen und Fachwissen in Kursen lernen. Offline nutzbar.",
  "start_url": "./index.html",
  "scope": "./",
  "display": "standalone",

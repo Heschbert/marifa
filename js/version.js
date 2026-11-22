@@ -15,6 +15,6 @@
   });
 
   WF.registerEntry({ where: "profile", order: 99, render: function () {
-    return '<p class="small mute center" style="margin:24px 0 0">Wissensfundament · Version ' + esc(WF.VERSION) + " · Stand " + esc(date(WF.BUILD)) + "</p>";
+    return '<p class="small mute center" style="margin:24px 0 0">Marifa · Version ' + esc(WF.VERSION) + " · Stand " + esc(date(WF.BUILD)) + "</p>";
   } });
 })();

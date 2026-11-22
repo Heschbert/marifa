@@ -13,7 +13,8 @@
     /* Aufgeklappte Bereiche merken, bevor neu gezeichnet wird. */
     [].forEach.call(app.querySelectorAll("details[data-keep]"), function (d) { openState[d.dataset.keep] = d.open; });
     app.innerHTML = html;
-    document.body.classList.toggle("learn", !!learn);
+    document.body.classList.toggle("learn", learn === true);
+    document.body.classList.toggle("course", learn === "course");
     tabs.hidden = !tab;
     [].forEach.call(tabs.children, function (b) { b.classList.toggle("on", b.dataset.t === tab); });
     [].forEach.call(tabs.children, function (b) { if (b.dataset.t === tab) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
@@ -110,7 +111,8 @@
   ui.failed = function (m) { app.innerHTML = '<div class="center"><p>Die Fragen konnten nicht geladen werden.</p><p class="mute small">' + esc(m) + '</p>' + btn("boot", "Nochmal versuchen") + "</div>"; };
   H.boot = function () { WF.boot(); };
 
-  ui.go = function (name, a, b) { ({ home: home, areas: areas, profile: profile, scope: scope })[name](a, b); };
+  ui.views = ui.views || {};
+  ui.go = function (name, a, b) { (({ home: home, areas: areas, profile: profile, scope: scope })[name] || ui.views[name])(a, b); };
   tabs.addEventListener("click", function (e) { var b = e.target.closest("button"); if (b) ui.go(b.dataset.t); });
   app.addEventListener("click", function (e) {
     var t = e.target.closest("[data-act]");

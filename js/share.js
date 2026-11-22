@@ -6,7 +6,7 @@
   function text(r, day) {
     var n = WF.engine.consts.DAILY_N, log = r.log || [];
     var boxes = log.map(function (ok) { return ok ? "🟩" : "🟥"; }).join("") + Array(Math.max(0, n - log.length) + 1).join("⬜");
-    return "Wissensfundament · Tagesrätsel " + day.split("-").reverse().join(".") + "\n" + r.s + " von " + n + "\n" + boxes;
+    return "Marifa · Tagesrätsel " + day.split("-").reverse().join(".") + "\n" + r.s + " von " + n + "\n" + boxes;
   }
   H.share = function () {
     var day = U.today(), r = WF.store.data.dailyDone[day];

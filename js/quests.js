@@ -45,7 +45,7 @@
     if (r.timeline || r.link || r.x.retry) return;
     bump("ans", 1);
     if (r.ok) { bump("right", 1); if (r.x && r.x.c) bump("topic", 1, false, r.x.c); }
-    var s = E.s;
+    var s = r.course ? null : E.s;
     if (s && !s.over && r.ok) { bump("combo", s.streak, true); bump("combo8", s.streak, true); if (s.m.id === "blitz") bump("blitz", s.score, true); }
   });
   WF.on("roundEnd", function (s) {

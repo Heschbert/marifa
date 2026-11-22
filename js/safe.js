@@ -29,7 +29,7 @@
 
   WF.registerEntry({ where: "home", order: 3, render: function () {
     var st = S();
-    if (!st.tot.t) return '<div class="card note"><b>' + (lost ? "Fortschritt nicht gefunden" : "Schon mal gespielt?") + '</b><p class="small mute">' +
+    if (!st.tot.t && !st.course) return '<div class="card note"><b>' + (lost ? "Fortschritt nicht gefunden" : "Schon mal gespielt?") + '</b><p class="small mute">' +
       (lost ? "Auf diesem Gerät ist kein Spielstand gespeichert. Hast du einen Sicherungscode, kannst du ihn laden." : "Mit einem Sicherungscode holst du deinen alten Spielstand zurück.") + "</p>" + btn("bkload", "Sicherungscode laden") + "</div>";
     if (st.tot.t >= 30 && daysSince(st.backupAt) >= 7) return '<div class="card note"><b>Fortschritt sichern</b><p class="small mute">' + st.tot.t +
       " Antworten liegen nur auf diesem Gerät. Wird die App vom Home-Bildschirm gelöscht, ist alles weg. Ein Code in deinen Notizen schützt davor.</p>" + btn("bk", "Code kopieren", { primary: true }) + "</div>";

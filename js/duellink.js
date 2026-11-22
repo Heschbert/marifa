@@ -73,7 +73,7 @@
   function doneA() {
     var o = L.o; o.r = bits(L.res);
     L.url = link("d", o);
-    L.text = o.n + " fordert dich bei Wissensfundament heraus: " + sum(L.res) + " von " + L.res.length + " richtig. Schaffst du mehr?";
+    L.text = o.n + " fordert dich bei Marifa heraus: " + sum(L.res) + " von " + L.res.length + " richtig. Schaffst du mehr?";
     ui.show("<h1>Deine Herausforderung</h1>" + '<div class="score">' + sum(L.res) + " von " + L.res.length + "</div>" +
       '<p class="mute">Schick jetzt den Link. Wenn dein Gegenüber fertig ist, kann es dir das Ergebnis zurückschicken.</p>' +
       btn("dlshare", "Link teilen", { primary: true }) + '<textarea id="dllink" readonly aria-label="Link zur Herausforderung">' + esc(L.url) + "</textarea>" +
@@ -98,7 +98,7 @@
   }
   H.dlshare = function () {
     var url = L.url, text = L.text;
-    if (navigator.share) { navigator.share({ title: "Wissensfundament", text: text, url: url }).catch(function () {}); return; }
+    if (navigator.share) { navigator.share({ title: "Marifa", text: text, url: url }).catch(function () {}); return; }
     try { navigator.clipboard.writeText(text + "\n" + url).then(function () { ui.toast({ title: "Link kopiert", sub: "Jetzt in einen Chat einfügen." }); }, sel); } catch (e) { sel(); }
     function sel() { var ta = document.getElementById("dllink"); if (ta) ta.select(); ui.toast({ title: "Link oben markieren und kopieren" }); }
   };

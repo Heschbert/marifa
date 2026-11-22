@@ -56,3 +56,9 @@ z. B. `python3 -m http.server` im Ordner, dann http://localhost:8000 öffnen.
 - Startseite: `WF.slot(where, ctx, von, bis)` filtert nach order. Home: < 10 Karten, 10–39 Kacheln „Allein spielen“, ab 40 „Mit Freunden“.
 - iPhone-Icon zusätzlich als `apple-touch-icon.png` im Hauptordner.
 - 1.18: Mauer (`wall.js`) entfernt. Fortschritt = Wissensstand (`E.levelPct`: Stufe 1 = ⅓, 2 = ⅔, ab 3 = ganz), steigt schon mit der ersten richtigen Antwort. Ergebnis zeigt „+n neu gewusst“ je Thema (game.js).
+
+## Seit 2.0 (Marifa)
+- App heißt **Marifa**. Speicher-Schlüssel bleibt `wissensfundament-v2`, damit kein Fortschritt verloren geht.
+- `js/courses.js`: Kursbereich (Tab „Kurse“). Daten in `data/courses/`, Format in `LEITFADEN-KURSE.md`, Prüfung mit `node tools/check-courses.mjs`.
+- Fortschritt je Kurs in `st.course[id]`. Kursantworten zählen für XP, Tagesziel, Serie und Tagesaufgaben, nicht für die Allgemeinwissen-Statistik.
+- Weitere Ansichten: `ui.views[name]` wird von `ui.go(name)` und den Tabs gefunden. `ui.show(html, tab, "course")` setzt die Kursfarbe.
