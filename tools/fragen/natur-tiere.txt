@@ -1,0 +1,16 @@
+# Überarbeitung Natur & Tiere
+-lbe5vg
+-gxaaqk
+-1ivyn1c
+-bp8pw4
+-9s7uah
+~fwkj2o|Lebewesen samt ihrer Umwelt|Eine Sammlung gleicher Arten|Ein künstlich angelegter Lebensraum|Ein geschütztes Naturgebiet
+~yksntv|Bedrohte Tier- und Pflanzenarten|Giftige Pilze und Pflanzen Europas|Gesperrte Naturschutzgebiete|Seltene Gesteine und Mineralien
+~1gvig4d|Vielfalt des Lebens|Zahl der Tiere in einem Gebiet|Anteil der Wälder an der Fläche|Menge des Sauerstoffs in der Luft
+~wl0y8w|An tropischen Küsten|In Hochgebirgen der Tropen|In Trockenwüsten Afrikas|In Mooren der Tundra
+~j4rucx|Zersetzte organische Bodensubstanz|Verwittertes Gestein|Mineralisches Bodenwasser|Tonreicher, verdichteter Unterboden aus Lehm
+# Neu
++{"s": "Tiere", "q": "Welches Tier verursacht weltweit die meisten menschlichen Todesfälle?", "a": ["Die Stechmücke", "Der Hai", "Die Giftschlange", "Das Krokodil"], "w": ["", "Haie töten weltweit nur wenige Menschen pro Jahr.", "Schlangen töten viele Menschen, aber deutlich weniger als Mücken.", "Krokodile sind gefährlich, aber selten tödlich im Vergleich."], "e": "Mücken übertragen Krankheiten wie Malaria und Dengue, die jährlich Hunderttausende Todesfälle verursachen. Allein an Malaria starben laut WHO 2023 rund 600.000 Menschen.", "h": "Klein, aber tödlich durch Krankheitserreger.", "d": 1}
++{"s": "Tiere", "q": "Du findest einen fast flüggen Jungvogel am Boden, der hüpft. Was ist meist richtig?", "a": ["Ihn in Ruhe lassen", "Ihn mit nach Hause nehmen", "Ihm Wasser einflößen", "Ihn zurück ins Nest setzen"], "w": ["", "Die Eltern füttern ihn meist weiter; zu Hause stirbt er oft.", "Wasser einflößen kann den Vogel ersticken lassen.", "Ästlinge springen meist sofort wieder heraus."], "e": "Ästlinge verlassen das Nest, bevor sie richtig fliegen können, und werden von den Eltern am Boden weiter gefüttert. Nur bei Verletzung oder akuter Gefahr eingreifen.", "h": "Die Eltern sind meist in der Nähe.", "d": 2}
++{"s": "Pflanzen & Ökologie", "q": "Welcher Pilz verursacht in Mitteleuropa die meisten tödlichen Pilzvergiftungen?", "a": ["Grüner Knollenblätterpilz", "Roter Fliegenpilz", "Gemeiner Steinpilz", "Echter Pfifferling"], "w": ["", "Der Fliegenpilz ist giftig, aber selten tödlich.", "Steinpilze sind beliebte Speisepilze.", "Pfifferlinge sind Speisepilze."], "e": "Schon ein einzelner Grüner Knollenblätterpilz kann tödlich sein; die Symptome setzen oft erst nach vielen Stunden ein. Bei Verdacht sofort den Giftnotruf anrufen.", "h": "Er wird mit Champignons verwechselt.", "d": 2}
++{"s": "Pflanzen & Ökologie", "q": "Warum sind Bienen und andere Bestäuber für die Ernährung wichtig?", "a": ["Viele Nutzpflanzen brauchen Bestäubung", "Sie erzeugen den Sauerstoff der Luft", "Sie düngen die Felder mit Honig", "Sie fressen alle Schädlinge"], "w": ["", "Sauerstoff erzeugen Pflanzen und Algen, nicht Insekten.", "Honig wird nicht als Dünger eingesetzt.", "Die meisten Bestäuber fressen keine Schädlinge."], "e": "Laut Weltbiodiversitätsrat IPBES sind rund 75 % der wichtigsten Nahrungspflanzen zumindest teilweise auf tierische Bestäuber angewiesen, etwa Äpfel, Kirschen und Raps.", "h": "Ohne sie gäbe es viel weniger Obst.", "d": 1}
