@@ -77,7 +77,8 @@
   ],
   "e": "Die Kyrilliza ist nach dem Slawenapostel Kyrill benannt und entstand im 9./10. Jahrhundert.",
   "h": "Benannt nach Kyrill.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1nl0q7p",
@@ -117,7 +118,8 @@
   ],
   "e": "Auch Hebräisch, Persisch und Urdu werden von rechts nach links geschrieben.",
   "h": "Auch Hebräisch läuft so.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "el5vvl",
@@ -157,7 +159,8 @@
   ],
   "e": "Mandarin hat rund eine Milliarde Muttersprachler, Spanisch knapp 500 Millionen und Englisch rund 400 Millionen. Die Zahlen schwanken je nach Zählweise.",
   "h": "Eine Sprache Chinas.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1fnto3o",
@@ -177,7 +180,8 @@
   ],
   "e": "Englisch kommt auf etwa 1,5 Milliarden Sprecher, weil es weltweit als Zweitsprache gelernt wird.",
   "h": "Die wichtigste Zweitsprache.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "qjhioz",
@@ -197,7 +201,8 @@
   ],
   "e": "Papua-Neuguinea hat rund 840 lebende Sprachen (Ethnologue 2024) bei nur wenigen Millionen Einwohnern.",
   "h": "Ein Inselstaat in Ozeanien.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1213d7o",
@@ -257,7 +262,8 @@
   ],
   "e": "Sejong der Große ließ Hangul um 1443 entwickeln, 1446 wurde es verkündet; heute hat es 24 Grundbuchstaben.",
   "h": "Ein koreanischer Herrscher des 15. Jahrhunderts.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "134frfj",
@@ -297,7 +303,8 @@
   ],
   "e": "Atatürk ersetzte 1928 die arabische Schrift durch das lateinische Alphabet.",
   "h": "Fünf Jahre nach der Republikgründung.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1th06ba",
@@ -317,7 +324,8 @@
   ],
   "e": "Maltesisch entstand aus einem arabischen Dialekt, ist aber in lateinischer Schrift geschrieben und von Italienisch beeinflusst.",
   "h": "Gesprochen auf einer Mittelmeerinsel.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1p3l7wd",
@@ -417,7 +425,8 @@
   ],
   "e": "Die indogermanische (indoeuropäische) Familie erstreckt sich von Island bis Indien.",
   "h": "Von Island bis Indien.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "11k73ss",
@@ -437,7 +446,8 @@
   ],
   "e": "Eliezer Ben-Jehuda trieb im ausgehenden 19. Jahrhundert die Wiederbelebung voran; heute ist Ivrit Amtssprache Israels.",
   "h": "Sprache der Tora.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "h6alno",
@@ -477,7 +487,8 @@
   ],
   "e": "Pinyin wurde in den 1950er Jahren in China offiziell eingeführt.",
   "h": "Der Name bedeutet „Laute zusammenfügen“.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "o0w7ll",
@@ -497,7 +508,8 @@
   ],
   "e": "Devanagari ist eine Silbenschrift mit einer durchgehenden Kopflinie und wird auch für Sanskrit und Marathi genutzt.",
   "h": "Schrift mit Querstrich am oberen Rand.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1gm3yq2",
@@ -557,7 +569,8 @@
   ],
   "e": "Singapur hat vier Amtssprachen: Englisch, Malaiisch, Mandarin und Tamil.",
   "h": "Größte chinesische Sprache.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "k3k1r5",
@@ -617,7 +630,8 @@
   ],
   "e": "Navajo Code Talkers übermittelten im Pazifikkrieg Nachrichten, die japanische Dechiffrierer nie knackten.",
   "h": "Sprache eines Volkes im Südwesten der USA.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "aph2j",
@@ -637,7 +651,8 @@
   ],
   "e": "Quechua ist heute mit Millionen Sprechern die meistgesprochene indigene Sprache Amerikas.",
   "h": "Sprache der Anden.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1bokqfc",
@@ -677,7 +692,8 @@
   ],
   "e": "Isländer können mittelalterliche Sagas weitgehend ohne Übersetzung lesen.",
   "h": "Inselsprache im Nordatlantik.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "xy53hg",
@@ -697,7 +713,8 @@
   ],
   "e": "Linear B ist eine frühe Form des Griechischen, aufgeschrieben auf Kreta und in Mykene.",
   "h": "Silbenschrift der Bronzezeit.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1bi60m6",
@@ -717,7 +734,8 @@
   ],
   "e": "Niederdeutsch (Plattdeutsch) sagt „Water“ und „maken“, Hochdeutsch „Wasser“ und „machen“.",
   "h": "Auch „Platt“ genannt.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1rbyui0",
@@ -777,7 +795,8 @@
   ],
   "e": "Hocharabisch wird geschrieben und in Medien gesprochen, im Alltag nutzt man Dialekte.",
   "h": "„Zwei Zungen“.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1ecead0",
@@ -837,7 +856,8 @@
   ],
   "e": "Das Zitat stammt aus den Oden des römischen Dichters Horaz.",
   "h": "Ein Vers von Horaz über die Zeit.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "p625mx",
@@ -877,7 +897,8 @@
   ],
   "e": "Von griechisch „demos“ (Volk) und „kratia“ (Herrschaft).",
   "h": "Zwei griechische Wortteile.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1nycgdt",
@@ -897,7 +918,8 @@
   ],
   "e": "Beispiele sind „Computer“ oder „Meeting“ im Deutschen.",
   "h": "„Meeting“ oder „Computer“ sind Beispiele.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "4mbm0f",
@@ -1097,7 +1119,8 @@
   ],
   "e": "„Denim“ kommt von französisch „serge de Nîmes“, ein Stoff aus Nîmes.",
   "h": "Eine Stadt in Südfrankreich.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "2hvtgz",
@@ -1117,7 +1140,8 @@
   ],
   "e": "Von Hindi/Urdu „pājāma“ (Beinkleid); Europäer übernahmen die weite Hose in Indien.",
   "h": "Ursprünglich eine Hose.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "psgsvo",
@@ -1137,7 +1161,8 @@
   ],
   "e": "Türkisch „yoğurt“ bezeichnet eine gesäuerte Milch.",
   "h": "Ein Wort mit weichem „ğ“.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "rlsqu2",
@@ -1157,7 +1182,8 @@
   ],
   "e": "Karel Čapek benutzte das Wort in „R.U.R.“ (1920/21); sein Bruder Josef hatte es vorgeschlagen.",
   "h": "Arbeit im Dienst eines Gutsherrn.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "rv8zjp",
@@ -1197,7 +1223,8 @@
   ],
   "e": "„Handy“ und „Beamer“ sind deutsche Bildungen aus englischem Material; Engländer sagen „mobile phone“ und „projector“.",
   "h": "Zum Beispiel „Handy“ oder „Beamer“.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "2a8vy5",
@@ -1257,7 +1284,8 @@
   ],
   "e": "Konrad Duden schuf das Regelwerk, das 1901 für ganz Deutschland verbindlich wurde.",
   "h": "Der Name wurde zur Marke.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1maenfw",
@@ -1277,7 +1305,8 @@
   ],
   "e": "Das Wörterbuch wurde 1961 abgeschlossen, über 100 Jahre nach dem Tod beider Brüder.",
   "h": "Auch Märchensammler.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "7xv5o4",
@@ -1297,27 +1326,8 @@
   ],
   "e": "Der Begriff stammt von griechisch „etymon“ (wahre Bedeutung) und „logos“ (Lehre).",
   "h": "„Etymon“ heißt „das Wahre“.",
-  "d": 1
- },
- {
-  "id": "5u5p7k",
-  "s": "Wörter & Herkunft",
-  "q": "Wie nennt man Wörter, die einen Laut nachahmen, etwa „Kuckuck“?",
-  "a": [
-   "Lautmalerei",
-   "Ellipse",
-   "Metapher",
-   "Ironie"
-  ],
-  "w": [
-   "",
-   "Eine Ellipse lässt Satzteile weg.",
-   "Eine Metapher ist ein bildlicher Ausdruck.",
-   "Ironie meint das Gegenteil des Gesagten."
-  ],
-  "e": "Fachbegriff: Onomatopoesie; weitere Beispiele sind „Zischen“ und „Miau“.",
-  "h": "Der Fachbegriff beginnt mit „Onomato-“.",
-  "d": 2
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1qxgamt",
@@ -1377,7 +1387,8 @@
   ],
   "e": "Griechisch „hippos“ (Pferd) und „potamos“ (Fluss); das Wort bezeichnet das Nilpferd.",
   "h": "Pferd plus Fluss.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "xj63yo",
@@ -1397,7 +1408,8 @@
   ],
   "e": "„Pecunia“ (Geld) geht auf „pecus“ (Vieh) zurück, weil Vieh einst Zahlungsmittel war.",
   "h": "Reichtum wurde in Tieren gemessen.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1ph6ecw",
@@ -1437,7 +1449,8 @@
   ],
   "e": "Spanisch „tomate“ geht auf Nahuatl „tomatl“ zurück, die Sprache der Azteken.",
   "h": "Sprache der Azteken.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1v63tar",
@@ -1457,7 +1470,8 @@
   ],
   "e": "Inuit „qajaq“ bezeichnet das Jagdboot aus Fellen; auch „Anorak“ kommt aus der Arktis.",
   "h": "Ein Wort aus der Arktis.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1pch1si",
@@ -1517,7 +1531,8 @@
   ],
   "e": "Von tahitianisch „tatau“; Seeleute brachten das Wort im 18. Jahrhundert nach Europa.",
   "h": "Südsee.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1kxmjnz",
@@ -1537,7 +1552,8 @@
   ],
   "e": "Das Wort kommt von italienisch „tartufolo“ (Trüffel).",
   "h": "Wie eine Trüffel unter der Erde.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1612nww",
@@ -1557,7 +1573,8 @@
   ],
   "e": "Beispiele sind „googeln“ und „Selfie“; viele Neologismen verschwinden später wieder.",
   "h": "„Neo“ bedeutet „neu“.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1h27abr",
@@ -1597,7 +1614,8 @@
   ],
   "e": "Beispiele sind „Diesel“, „Zeppelin“ und „Boykott“.",
   "h": "Aus „auf den Namen“.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "13c5zxz",
@@ -1617,46 +1635,7 @@
   ],
   "e": "Im Hochdeutschen wurde „p“ zu „pf“, im Englischen blieb „p“; ähnlich „Apfel“ und „apple“.",
   "h": "Konsonanten im Hochdeutschen verändert.",
-  "d": 3
- },
- {
-  "s": "Sprachen der Welt",
-  "q": "Welche Sprache hat weltweit die meisten Sprecher, Mutter- und Fremdsprachler zusammen?",
-  "a": [
-   "Englisch",
-   "Mandarin-Chinesisch",
-   "Spanisch",
-   "Hindi"
-  ],
-  "w": [
-   "",
-   "Mandarin hat die meisten Muttersprachler, aber weniger Sprecher insgesamt.",
-   "Spanisch ist bei Muttersprachlern auf Platz 2, insgesamt dahinter.",
-   "Hindi liegt insgesamt auf Platz 3."
-  ],
-  "e": "Laut Ethnologue (2025) sprechen rund 1,5 Milliarden Menschen Englisch, die meisten davon als Fremdsprache. Bei Muttersprachlern liegt Mandarin vorn.",
-  "h": "Die häufigste Fremdsprache.",
-  "d": 1,
-  "id": "ne1de516"
- },
- {
-  "s": "Wörter & Herkunft",
-  "q": "Aus welcher Sprache kommt das Wort „Kindergarten“, das auch im Englischen benutzt wird?",
-  "a": [
-   "Deutsch",
-   "Niederländisch",
-   "Dänisch",
-   "Schwedisch"
-  ],
-  "w": [
-   "",
-   "Das Wort stammt nicht aus dem Niederländischen.",
-   "Das Wort stammt nicht aus dem Dänischen.",
-   "Das Wort stammt nicht aus dem Schwedischen."
-  ],
-  "e": "Friedrich Fröbel prägte den Begriff 1840. Andere deutsche Lehnwörter im Englischen sind z. B. „angst“, „zeitgeist“ und „kitsch“.",
-  "h": "Friedrich Fröbel.",
-  "d": 1,
-  "id": "n4ad91f3"
+  "d": 3,
+  "p": 3
  }
 ]

@@ -17,7 +17,8 @@
   ],
   "e": "Die Iberische Halbinsel ist nach den Iberern benannt und wird im Nordosten von den Pyrenäen begrenzt.",
   "h": "Benannt nach einem antiken Volk.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "9kink8",
@@ -77,7 +78,8 @@
   ],
   "e": "Die Vatikanstadt ist mit etwa 0,44 km² kleiner als die meisten Parks und liegt mitten in Rom.",
   "h": "Er liegt vollständig innerhalb einer Hauptstadt.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "r7zh4s",
@@ -157,7 +159,8 @@
   ],
   "e": "Der Nordatlantikstrom, die Fortsetzung des Golfstroms, bringt warmes Wasser nach Europa. Deshalb ist Norwegen viel milder als Gebiete auf gleicher Breite in Kanada.",
   "h": "Er ist die Fortsetzung des Golfstroms.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "dvz9hx",
@@ -177,7 +180,8 @@
   ],
   "e": "Der Mistral weht mit bis zu über 100 km/h aus Norden zum Mittelmeer und prägt die Provence.",
   "h": "Er trägt den Namen „Meister“ in provenzalischer Sprache.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1sysquw",
@@ -197,7 +201,8 @@
   ],
   "e": "Die Meseta liegt auf durchschnittlich rund 600 bis 700 m Höhe und nimmt etwa zwei Fünftel der Iberischen Halbinsel ein.",
   "h": "Ihr Name bedeutet „kleiner Tisch“.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1dg20g0",
@@ -217,7 +222,8 @@
   ],
   "e": "Die Karpaten bilden einen rund 1.500 km langen Bogen durch Mittel- und Osteuropa; höchster Gipfel ist die Gerlachovský štít (2.655 m).",
   "h": "Der Bogen reicht von der Slowakei bis Rumänien.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1sia2h0",
@@ -297,7 +303,8 @@
   ],
   "e": "Estland, Lettland und Litauen liegen am Ostufer der Ostsee und waren bis 1991 Teil der Sowjetunion.",
   "h": "Alle drei liegen an der Ostsee.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1uv91hf",
@@ -317,7 +324,8 @@
   ],
   "e": "Das Marmarameer liegt vollständig in der Türkei und verbindet über Bosporus und Dardanellen Schwarzes Meer und Mittelmeer.",
   "h": "Es liegt komplett in der Türkei.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "18b2blf",
@@ -397,7 +405,8 @@
   ],
   "e": "Lappland ist die Heimat der Samen und reicht von Nordnorwegen bis zur russischen Kola-Halbinsel.",
   "h": "Es liegt im äußersten Norden der Skandinavischen Halbinsel.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "v1v5sk",
@@ -437,7 +446,8 @@
   ],
   "e": "Der Gotthard-Basistunnel in der Schweiz ist rund 57 km lang und wurde 2016 eröffnet.",
   "h": "Er führt durch die Alpen.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1hfno3z",
@@ -557,7 +567,8 @@
   ],
   "e": "Der Aletschgletscher in der Schweiz ist rund 20 km lang und gehört zum UNESCO-Welterbe.",
   "h": "Er liegt in der Schweiz.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "ncr5yu",
@@ -597,7 +608,8 @@
   ],
   "e": "Die Straße von Messina ist an der engsten Stelle rund 3 km breit.",
   "h": "Eine Stadt am Ufer trägt denselben Namen.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "zkjisd",
@@ -738,7 +750,8 @@
   ],
   "e": "Rund 26 % der Niederlande liegen unter dem Meeresspiegel, rund 60 % sind hochwassergefährdet. Deiche, Polder und Sperrwerke schützen das Land.",
   "h": "Ein Viertel.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "w71788",
@@ -898,7 +911,8 @@
   ],
   "e": "Der Jangtse (rund 6.300 km) fließt vom Hochland von Tibet bis zum Ostchinesischen Meer bei Shanghai.",
   "h": "Er mündet bei Shanghai.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "k1031k",
@@ -938,7 +952,8 @@
   ],
   "e": "Der Südwestmonsun bringt von Juni bis September feuchte Luft vom Indischen Ozean und lässt die Flüsse anschwellen.",
   "h": "Er kommt von Südwest.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "7loa2b",
@@ -958,7 +973,8 @@
   ],
   "e": "Der Mekong fließt durch China, Myanmar, Laos, Thailand, Kambodscha und Vietnam.",
   "h": "Mindestens fünf, maximal sieben.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "14gg6qv",
@@ -978,7 +994,8 @@
   ],
   "e": "Der Fluss transportiert gewaltige Mengen gelben Löss. Er wird daher auch „Chinas Sorge“ genannt, wegen Überschwemmungen.",
   "h": "Das Sediment stammt aus Nordchina.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1xnf7h3",
@@ -998,7 +1015,8 @@
   ],
   "e": "Russland, Kasachstan, Turkmenistan, Iran und Aserbaidschan grenzen daran. Es ist mit rund 371.000 km² der größte See der Erde.",
   "h": "Russland und Iran gehören dazu.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "gmh7mr",
@@ -1018,7 +1036,8 @@
   ],
   "e": "Seit den 1960er-Jahren wurden Amudarja und Syrdarja für Baumwollfelder angezapft. Der Aralsee verlor den Großteil seiner Fläche.",
   "h": "Es hat mit Baumwolle zu tun.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "11swr8l",
@@ -1218,7 +1237,8 @@
   ],
   "e": "Die Philippinen haben rund 7.600 Inseln, von denen nur etwa 2.000 bewohnt sind. Luzon und Mindanao sind die größten.",
   "h": "Weniger als Indonesien, aber über 7.000.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "wo41u9",
@@ -1278,7 +1298,8 @@
   ],
   "e": "Rund 3 % der Fläche (Ostthrakien) liegen in Europa, der Rest in Asien. Istanbul liegt auf beiden Seiten des Bosporus.",
   "h": "Der Bosporus verläuft mitten durch Istanbul.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1r2lj6d",
@@ -1298,7 +1319,8 @@
   ],
   "e": "Die Mongolei hat rund 2 Einwohner pro km², etwa die Hälfte der Bevölkerung lebt in der Hauptstadtregion Ulan Bator.",
   "h": "Es liegt zwischen Russland und China.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "13ouxj1",
@@ -1318,7 +1340,8 @@
   ],
   "e": "Die rund 1.200 Koralleninseln der Malediven sind vom steigenden Meeresspiegel besonders bedroht.",
   "h": "Die Inseln bestehen aus Korallen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "uab7f",
@@ -1418,7 +1441,8 @@
   ],
   "e": "Die Strecke durchquert sieben Zeitzonen und gilt als längste durchgehende Bahnstrecke der Erde.",
   "h": "Sie durchquert sieben Zeitzonen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1ni3gor",
@@ -1458,7 +1482,8 @@
   ],
   "e": "Beide Orte liegen im Bundesstaat Meghalaya. Dort stauen sich Monsunwolken am Gebirge.",
   "h": "Im Nordosten des Landes.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "8tfjx1",
@@ -1478,7 +1503,8 @@
   ],
   "e": "Die Lena ist rund 4.400 km lang und bildet ein riesiges Delta. Sie liegt fast ganz in Russland.",
   "h": "Ein Randmeer des Arktischen Ozeans.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "poeuh1",
@@ -1498,7 +1524,8 @@
   ],
   "e": "Bhutan führte in den 1970er-Jahren das Konzept des Bruttonationalglücks ein, das Wirtschaft, Kultur und Umwelt einbezieht.",
   "h": "Ein kleines Land zwischen China und Indien.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "rnsrq0",
@@ -1578,7 +1605,8 @@
   ],
   "e": "Der Nil ist rund 6.650 km lang und mündet ins Mittelmeer. Sein Einzugsgebiet umfasst elf Staaten.",
   "h": "Er mündet im Mittelmeer.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "19tkhp6",
@@ -1638,7 +1666,8 @@
   ],
   "e": "Der 1869 eröffnete Kanal ist rund 193 km lang und verkürzt den Seeweg zwischen Europa und Asien erheblich.",
   "h": "Er liegt in Ägypten.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1ne5cmu",
@@ -1658,7 +1687,8 @@
   ],
   "e": "Sahel bedeutet „Ufer“ und beschreibt einen Streifen aus Trockensavanne, der anfällig für Dürre ist.",
   "h": "Der Name bedeutet Ufer.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1tm4hrb",
@@ -1858,7 +1888,8 @@
   ],
   "e": "Kap Agulhas liegt rund 150 km südöstlich des Kaps der Guten Hoffnung und markiert die Grenze von Atlantik und Indischem Ozean.",
   "h": "Er liegt nicht am bekannteren Kap.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "12egun",
@@ -1878,7 +1909,8 @@
   ],
   "e": "Der Tschadsee verlor durch Dürre und Wasserentnahme über 90 % seiner früheren Fläche. Vier Staaten grenzen an ihn.",
   "h": "Er liegt im Sahel.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "13peou8",
@@ -1958,7 +1990,8 @@
   ],
   "e": "Die DR Kongo liefert rund 70 % des weltweiten Kobalts, das in Akkus gebraucht wird.",
   "h": "Es wird in Akkus verwendet.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "155xn7p",
@@ -1998,7 +2031,8 @@
   ],
   "e": "Swahili wird von rund 100 Millionen Menschen gesprochen und ist Amtssprache in Tansania und Kenia.",
   "h": "Eine Handelssprache der Küste.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1jjvcgx",
@@ -2018,7 +2052,8 @@
   ],
   "e": "Der Harmattan bringt Staub und trockene Luft bis an den Golf von Guinea.",
   "h": "Er weht von Nordost.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1sljo9z",
@@ -2058,7 +2093,8 @@
   ],
   "e": "Zwischen Spanien und Marokko trennen nur rund 14 km den Atlantik vom Mittelmeer.",
   "h": "Gut ein Dutzend Kilometer.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "193e9dr",
@@ -2198,7 +2234,8 @@
   ],
   "e": "Die Danakil-Senke liegt bis rund 125 m unter dem Meeresspiegel. Die mittleren Tagestemperaturen liegen bei rund 35 °C.",
   "h": "Sie liegt an einer Plattengrenze.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "mw8b7q",
@@ -2238,7 +2275,8 @@
   ],
   "e": "Kanada ist rund 9,98 Millionen km² groß; nur Russland ist größer.",
   "h": "Nur ein Land ist größer.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "akcpg3",
@@ -2318,7 +2356,8 @@
   ],
   "e": "Das Badwater Basin liegt rund 86 m unter dem Meeresspiegel. Im Death Valley wurden 1913 rund 56,7 °C gemessen.",
   "h": "Ein Tal, das nach dem Tod benannt ist.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1fnhesi",
@@ -2359,7 +2398,8 @@
   ],
   "e": "Der rund 82 km lange Kanal wurde 1914 eröffnet und nutzt Schleusen, um die Landenge zu überwinden.",
   "h": "Er liegt in einem Land, das nach ihm benannt ist.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1xw054",
@@ -2439,7 +2479,8 @@
   ],
   "e": "Grönland ist ein autonomer Teil des Königreichs Dänemark und geografisch Teil Nordamerikas.",
   "h": "Es hat Selbstverwaltung innerhalb eines Königreichs.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "4wqu5b",
@@ -2619,7 +2660,8 @@
   ],
   "e": "Der Nicaraguasee ist rund 8.000 km² groß und beherbergt die Süßwasserhaie.",
   "h": "Er liegt im Staat mit dem gleichen Namen.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1w1ho8e",
@@ -2659,7 +2701,8 @@
   ],
   "e": "Die Hudsonbai ist rund 1,2 Millionen km² groß und im Winter weitgehend vom Eis bedeckt.",
   "h": "Ein Binnenmeer des Nordens.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "13jitdg",
@@ -2679,7 +2722,8 @@
   ],
   "e": "Die Nordwestpassage wird durch das Abschmelzen von Meereis zunehmend nutzbar.",
   "h": "Der Weg führt durch Kanadas Norden.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1nro0l",
@@ -2719,7 +2763,8 @@
   ],
   "e": "Die Athabasca-Ölsande in Alberta gehören zu den größten Ölreserven der Erde.",
   "h": "Die Provinz grenzt an die Rocky Mountains.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1n596tn",
@@ -2859,7 +2904,8 @@
   ],
   "e": "Die Monarchfalter überwintern in den Bergwäldern Mexikos. Es sind mehrere Generationen, die den Weg bewältigen.",
   "h": "Er ist orange und schwarz.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "fvab29",
@@ -2879,7 +2925,8 @@
   ],
   "e": "Baja California ist rund 1.250 km lang und ein schmaler Streifen zwischen Pazifik und Golf.",
   "h": "Eine lange schmale Halbinsel im Westen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "k5oxe0",
@@ -2919,7 +2966,8 @@
   ],
   "e": "Rund 60 % des Amazonas-Regenwalds liegen in Brasilien. Das Becken umfasst rund 6 Millionen km².",
   "h": "Das größte Land des Kontinents.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "j6cdta",
@@ -2959,7 +3007,8 @@
   ],
   "e": "Der Titicacasee liegt auf rund 3.800 m Höhe an der Grenze von Peru und Bolivien.",
   "h": "Er liegt an einer Grenze.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "16mh8vs",
@@ -2979,7 +3028,8 @@
   ],
   "e": "Der Salar de Uyuni ist rund 10.000 km² groß und enthält einen großen Teil der bekannten Lithiumreserven.",
   "h": "Spiegelt bei Regen den Himmel.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "wsm8el",
@@ -2999,7 +3049,8 @@
   ],
   "e": "Die Magellanstraße wurde 1520 von Fernando Magellan entdeckt und verband lange den Atlantik und Pazifik.",
   "h": "Benannt nach einem Weltumsegler.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "gim4b7",
@@ -3159,7 +3210,8 @@
   ],
   "e": "Die Llanos sind große Grasebenen mit Rinderzucht und jahreszeitlichen Überschwemmungen.",
   "h": "Am Orinoco.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "19eztca",
@@ -3179,7 +3231,8 @@
   ],
   "e": "Das Pantanal ist rund 150.000 km² groß und beherbergt Jaguare, Kaimane und viele Vogelarten.",
   "h": "Der Name kommt von „Sumpf“.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1rhecih",
@@ -3219,7 +3272,8 @@
   ],
   "e": "Chile ist rund 4.300 km lang, aber nie breiter als etwa 440 km, zwischen Anden und Pazifik.",
   "h": "Lang und sehr schmal.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "umbivp",
@@ -3359,7 +3413,8 @@
   ],
   "e": "Wegen der Erdabplattung liegt der Gipfel des Chimborazo in Ecuador rund 2 km weiter vom Erdmittelpunkt als der des Everest.",
   "h": "Die Erde ist am Äquator breiter.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "2dpjab",
@@ -3419,7 +3474,8 @@
   ],
   "e": "Der Ojos del Salado liegt an der Grenze zwischen Chile und Argentinien und ist der höchste Vulkan der Erde.",
   "h": "Er liegt in der Atacama-Region.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1n8b463",
@@ -3459,7 +3515,8 @@
   ],
   "e": "Argentinien und das Vereinigte Königreich kämpften 1982 um die Falklandinseln (Islas Malvinas).",
   "h": "Argentinien nennt sie Malvinas.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "nlojrm",
@@ -3579,7 +3636,8 @@
   ],
   "e": "Sucre ist die verfassungsmäßige Hauptstadt, Regierung und Parlament sitzen in La Paz, dem höchstgelegenen Regierungssitz der Erde.",
   "h": "Auf rund 3.600 m Höhe.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1o78tnj",
@@ -3679,7 +3737,8 @@
   ],
   "e": "Der Murray ist rund 2.500 km lang. Das Becken bewässert einen großen Teil der australischen Landwirtschaft.",
   "h": "Er bewässert die Landwirtschaft des Südostens.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1yfr2ny",
@@ -3739,7 +3798,8 @@
   ],
   "e": "Der Aoraki ist 3.724 m hoch und liegt in den Neuseeländischen Alpen auf der Südinsel.",
   "h": "Er liegt auf der Südinsel.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "vckxl2",
@@ -3759,7 +3819,8 @@
   ],
   "e": "Aotearoa wird meist mit „Land der langen weißen Wolke“ übersetzt und ist neben New Zealand ein offizieller Name.",
   "h": "Es geht um etwas am Himmel.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1dfcjk3",
@@ -3799,7 +3860,8 @@
   ],
   "e": "Melanesien liegt im Südwesten, Mikronesien im Nordwesten und Polynesien im Osten des Pazifiks.",
   "h": "Alle enden auf -nesien.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "wlumfk",
@@ -3839,7 +3901,8 @@
   ],
   "e": "Tasmanien ist rund 68.000 km² groß und Heimat des Tasmanischen Teufels.",
   "h": "Heimat des Tasmanischen Teufels.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "1fps9av",
@@ -3919,7 +3982,8 @@
   ],
   "e": "Über 700 Eukalyptus-Arten wachsen in Australien; die Blätter sind die Nahrung der Koalas.",
   "h": "Nahrung der Koalas.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "47gxrb",
@@ -3939,7 +4003,8 @@
   ],
   "e": "Das Gebirge ist rund 3.500 km lang und trennt die feuchte Küste von dem trockenen Landesinneren.",
   "h": "Es trennt Küste und Landesinnere.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "xgiou4",
@@ -3979,7 +4044,8 @@
   ],
   "e": "Papua-Neuguinea ist das sprachenreichste Land der Erde. Amtssprachen sind Englisch, Tok Pisin und Hiri Motu.",
   "h": "Sprachenreichstes Land der Erde.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "aettbc",
@@ -4079,7 +4145,8 @@
   ],
   "e": "Der Lake Eyre liegt rund 15 m unter dem Meeresspiegel und füllt sich nur selten mit Wasser.",
   "h": "Er füllt sich nur selten.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "9vpgz5",
@@ -4099,7 +4166,8 @@
   ],
   "e": "Rund 70 % der Fläche Australiens sind Trocken- oder Halbtrockengebiete.",
   "h": "Gemeint ist ein Kontinent mit Outback.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1rl0742",
@@ -4139,7 +4207,8 @@
   ],
   "e": "Die Cookstraße ist an der engsten Stelle rund 22 km breit und nach James Cook benannt.",
   "h": "Ein Entdecker trägt den Namen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1n6peu0",
@@ -4159,7 +4228,8 @@
   ],
   "e": "Die Bass-Straße ist rund 240 km breit und nach dem Chirurgen George Bass benannt.",
   "h": "Nach einem Schiffsarzt benannt.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1y4xbm3",
@@ -4179,7 +4249,8 @@
   ],
   "e": "Die Torresstraße ist rund 150 km breit und enthält viele kleine Inseln, die zu Australien gehören.",
   "h": "Im Norden Australiens.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1hmrs0q",
@@ -4219,7 +4290,8 @@
   ],
   "e": "Drei davon sind Stadtstaaten: Berlin, Hamburg und Bremen.",
   "h": "Eine Zahl über 15.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "wrn8u0",
@@ -4239,7 +4311,8 @@
   ],
   "e": "Berlin, Hamburg und Bremen (mit Bremerhaven) sind zugleich Stadt und Bundesland.",
   "h": "Sie sind zugleich Stadt und Bundesland.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "nxg7gk",
@@ -4259,7 +4332,8 @@
   ],
   "e": "Die Zugspitze (2.962 m) liegt an der Grenze zu Österreich im Wettersteingebirge.",
   "h": "Sie liegt an der Grenze zu Österreich.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1y6kp02",
@@ -4279,7 +4353,8 @@
   ],
   "e": "Dänemark, Polen, Tschechien, Österreich, die Schweiz, Frankreich, Luxemburg, Belgien und die Niederlande.",
   "h": "Zwischen acht und zehn.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "rwfj9l",
@@ -4299,7 +4374,8 @@
   ],
   "e": "Der Rhein ist in Deutschland rund 865 km lang, die Elbe rund 727 km, die Donau rund 647 km.",
   "h": "Er entspringt in den Alpen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "8omqlp",
@@ -4339,7 +4415,8 @@
   ],
   "e": "Ein Grenzverlauf im See ist bis heute nicht vertraglich festgelegt.",
   "h": "Drei Anrainer.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "8sgl5d",
@@ -4359,7 +4436,8 @@
   ],
   "e": "Berlin hat rund 3,7 Millionen Einwohner und ist die größte Stadt der EU.",
   "h": "Zugleich Hauptstadt.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "5vn1um",
@@ -4379,7 +4457,8 @@
   ],
   "e": "NRW hat rund 18 Millionen Einwohner, etwa jeder fünfte Deutsche lebt dort.",
   "h": "Es liegt im Westen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "q6uthu",
@@ -4399,7 +4478,8 @@
   ],
   "e": "Bayern hat rund 70.500 km², Niedersachsen rund 47.700 km².",
   "h": "Es liegt im Süden.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "vvfelw",
@@ -4479,7 +4559,8 @@
   ],
   "e": "Brigach und Breg vereinigen sich bei Donaueschingen im Schwarzwald zur Donau.",
   "h": "Beide entspringen im Schwarzwald.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "hx5zay",
@@ -4559,7 +4640,8 @@
   ],
   "e": "Das Elbsandsteingebirge hat Felsformationen wie die Bastei. Es grenzt an Tschechien.",
   "h": "Es liegt an der Grenze zu Tschechien.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "hwip4v",
@@ -4679,7 +4761,8 @@
   ],
   "e": "Der Chiemsee ist rund 80 km² groß und wird „Bayerisches Meer“ genannt.",
   "h": "Er wird auch „Bayerisches Meer“ genannt.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1ju64fd",
@@ -4799,7 +4882,8 @@
   ],
   "e": "Rheinhessen hat rund 26.000 ha Rebfläche. Es liegt zwischen Mainz, Worms und Bingen.",
   "h": "Es liegt in Rheinland-Pfalz.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1d6rz3t",
@@ -4819,7 +4903,8 @@
   ],
   "e": "Die Hallertau liegt nördlich von München und liefert den Großteil des deutschen Hopfens.",
   "h": "Sie liegt nördlich von München.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "14u4z6o",
@@ -4839,7 +4924,8 @@
   ],
   "e": "Die Magdeburger Börde hat Schwarzerde und gehört zu den fruchtbarsten Böden Deutschlands.",
   "h": "Besonders gute Böden.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "12ofpdt",
@@ -4899,7 +4985,8 @@
   ],
   "e": "Der Neckar entspringt bei Schwenningen im Moor und mündet bei Mannheim in den Rhein.",
   "h": "Er beginnt in Baden-Württemberg.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "jwlutq",
@@ -4919,7 +5006,8 @@
   ],
   "e": "Der Feldberg ist 1.493 m hoch und der höchste Berg Baden-Württembergs.",
   "h": "Auch Wintersportgebiet.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "k5n2el",
@@ -4939,7 +5027,8 @@
   ],
   "e": "Deutschland liegt im Übergang zwischen Seeklima im Westen und Kontinentalklima im Osten.",
   "h": "Westwinde bringen Regen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "r4s782",
@@ -4979,7 +5068,8 @@
   ],
   "e": "Der Main ist rund 527 km lang und fließt durch Bayreuth, Würzburg und Frankfurt.",
   "h": "Er fließt durch Frankfurt.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "yah1mj",
@@ -5019,7 +5109,8 @@
   ],
   "e": "Indien hat China 2023 überholt und hat rund 1,4 Milliarden Einwohner.",
   "h": "Ein Land in Südasien.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1pqfe8u",
@@ -5099,7 +5190,8 @@
   ],
   "e": "Der Ural verläuft rund 2.500 km von der Arktis nach Kasachstan und gilt als Grenze Europas im Osten.",
   "h": "Er verläuft in Nord-Süd-Richtung durch Russland.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1sylp4w",
@@ -5119,7 +5211,8 @@
   ],
   "e": "Der Amazonas transportiert etwa ein Fünftel des Flusswassers, das weltweit ins Meer fließt.",
   "h": "Sein Becken ist riesig und regenreich.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "2ug0wf",
@@ -5139,7 +5232,8 @@
   ],
   "e": "Der Kilimandscharo in Tansania ist 5.895 m hoch.",
   "h": "Er liegt in Tansania.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "7yu6y6",
@@ -5179,7 +5273,8 @@
   ],
   "e": "Der Mont Blanc (rund 4.806 m) liegt an der Grenze zwischen Frankreich und Italien.",
   "h": "Er liegt an der Grenze zweier Länder.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1567nl8",
@@ -5199,7 +5294,8 @@
   ],
   "e": "Die Sahara ist rund 9 Millionen km² groß. Die größte Wüste überhaupt ist die Antarktis.",
   "h": "Sie liegt in Nordafrika.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "12zsuyw",
@@ -5239,7 +5335,8 @@
   ],
   "e": "Das Challengertief im Marianengraben liegt knapp 11.000 m unter dem Meeresspiegel, die Messungen schwanken um einige Dutzend Meter.",
   "h": "Er liegt im Pazifik.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "vv5uab",
@@ -5379,7 +5476,8 @@
   ],
   "e": "Australien/Ozeanien umfasst nur rund 8 Millionen km², Europa rund 10 Millionen.",
   "h": "Ein Kontinent mit nur einem Staat auf dem Festland.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1lkv0w",
@@ -5439,7 +5537,8 @@
   ],
   "e": "Die Wolga ist rund 3.500 km lang und mündet ins Kaspische Meer.",
   "h": "Er mündet ins Kaspische Meer.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1prx0n0",
@@ -5479,7 +5578,8 @@
   ],
   "e": "Indonesien ist der größte Inselstaat der Erde.",
   "h": "Der größte Inselstaat.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "163ivtr",
@@ -5499,7 +5599,8 @@
   ],
   "e": "Rund 90 % der Erdbeben und über die Hälfte der aktiven Vulkane liegen am Pazifischen Feuerring.",
   "h": "Der Name beschreibt einen Kreis.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1grwj94",
@@ -5519,7 +5620,8 @@
   ],
   "e": "Der Pazifik bedeckt rund 165 Millionen km² und damit etwa ein Drittel der Erdoberfläche.",
   "h": "Er ist größer als alle Landflächen zusammen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "qdofuz",
@@ -5599,7 +5701,8 @@
   ],
   "e": "Der Wendekreis des Krebses liegt bei rund 23,4° Nord und markiert den nördlichsten Punkt mit senkrechter Sonne.",
   "h": "Etwa 23,4° nördlich des Äquators.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "mzxkt5",
@@ -5619,27 +5722,8 @@
   ],
   "e": "Nördlich von etwa 66,5° N geht die Sonne um die Sonnenwende nicht unter. Im Winter gibt es dort Polarnacht.",
   "h": "Die Sonne geht nicht unter.",
-  "d": 1
- },
- {
-  "id": "hityqf",
-  "s": "Welt & Natur",
-  "q": "Wie viel Prozent der Erdoberfläche sind von Wasser bedeckt?",
-  "a": [
-   "Rund 71 %",
-   "Rund 50 %",
-   "Rund 90 %",
-   "Rund 30 %"
-  ],
-  "w": [
-   "",
-   "Das ist zu wenig.",
-   "Das ist zu viel.",
-   "Das entspricht der Landfläche."
-  ],
-  "e": "Rund 71 % der Erdoberfläche sind von Meeren bedeckt, die Landfläche beträgt rund 29 %.",
-  "h": "Etwa zwei Drittel plus.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1fjqhya",
@@ -5659,7 +5743,8 @@
   ],
   "e": "Im Durchschnitt enthalten 1.000 g Meerwasser rund 35 g Salz, meist Natriumchlorid.",
   "h": "35 Gramm pro Kilogramm.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1oxt43k",
@@ -5679,7 +5764,8 @@
   ],
   "e": "Das Tote Meer enthält rund 30 % Salz, wodurch seine Dichte deutlich höher ist als die des Körpers.",
   "h": "Es hat viel höhere Dichte.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1liqjct",
@@ -5699,7 +5785,8 @@
   ],
   "e": "Die Anziehung von Mond und in geringerem Maße Sonne erzeugt zwei Flutberge. Bei Voll- und Neumond entsteht Springflut.",
   "h": "Ein Himmelskörper in der Nähe.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "115hg64",
@@ -5739,7 +5826,8 @@
   ],
   "e": "Pro Magnitudenstufe steigt die Amplitude um das Zehnfache und die Energie um das rund 32-Fache.",
   "h": "Zehnfache Amplitude, aber mehr Energie.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "dbs03g",
@@ -5779,7 +5867,8 @@
   ],
   "e": "Am 21. Juli 1983 wurden an der Wostok-Station −89,2 °C gemessen.",
   "h": "Das Eisschild liegt hoch.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "nnd253",
@@ -5839,7 +5928,8 @@
   ],
   "e": "Der Mauna Kea auf Hawaii misst vom Meeresboden rund 10.200 m. Nur rund 4.200 m ragen über das Meer.",
   "h": "Er liegt auf einer Vulkaninsel.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "frgt9j",
@@ -5859,7 +5949,8 @@
   ],
   "e": "Der Mittelozeanische Rücken ist rund 65.000 km lang. An ihm entsteht neue Meereskruste.",
   "h": "Dort driften Platten auseinander.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1iyrhha",
@@ -5899,7 +5990,8 @@
   ],
   "e": "Das Holozän begann vor rund 11.700 Jahren nach der letzten Kaltzeit. Die Weichsel-Kaltzeit endete damals.",
   "h": "Unsere Zeit gehört dazu.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1uc4ia4",
@@ -5919,7 +6011,8 @@
   ],
   "e": "Russland hat rund 17,1 Millionen km² und ist damit fast doppelt so groß wie Kanada.",
   "h": "Er erstreckt sich über elf Zeitzonen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "v8qsbk",
@@ -5959,6 +6052,7 @@
   ],
   "e": "Der Fichtelberg ist 1.215 m hoch und der höchste Berg Sachsens und der neuen Länder.",
   "h": "Er liegt an der Grenze zu Tschechien.",
-  "d": 3
+  "d": 3,
+  "p": 3
  }
 ]

@@ -17,7 +17,8 @@
   ],
   "e": "Der Takt liegt bei 100–120 Kompressionen pro Minute, etwa im Rhythmus von „Stayin’ Alive“ (ERC/GRC 2025).",
   "h": "Etwa zwei Drücker pro Sekunde.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "3e7oil",
@@ -37,7 +38,8 @@
   ],
   "e": "F = Face (hängender Mundwinkel), A = Arms (Armschwäche), S = Speech (Sprachstörung), T = Time: sofort 112 rufen.",
   "h": "Es geht um eine Körperregion, die man nach vorn hält.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "q4w3xm",
@@ -57,7 +59,8 @@
   ],
   "e": "Die Seitenlage hält bei einer bewusstlosen Person mit normaler Atmung die Atemwege frei, die Atmung wird weiter kontrolliert.",
   "h": "Die Atmung funktioniert noch.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "4pqeam",
@@ -77,7 +80,8 @@
   ],
   "e": "Die 112 erreicht in allen EU-Staaten Rettungsdienst und Feuerwehr und ist kostenlos.",
   "h": "Drei Ziffern, zweimal die Eins.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "12296fl",
@@ -98,7 +102,8 @@
   "e": "Direkter Druck, am besten mit einem Druckverband, stoppt die meisten Blutungen. Dazu 112 wählen. Hochhalten oder Abdrücken an anderer Stelle empfehlen die aktuellen Leitlinien nicht mehr.",
   "h": "Die Hand ist das erste Werkzeug.",
   "d": 2,
-  "src": "ERC-Leitlinien 2025, Erste Hilfe: cprguidelines.eu/assets/guidelines/ERC-Guidelines-2025-First-Aid-public-comments-1.pdf"
+  "src": "ERC-Leitlinien 2025, Erste Hilfe: cprguidelines.eu/assets/guidelines/ERC-Guidelines-2025-First-Aid-public-comments-1.pdf",
+  "p": 1
  },
  {
   "id": "fzuvhb",
@@ -118,7 +123,8 @@
   ],
   "e": "Das Verhältnis 30:2 gilt für Erwachsene. Wer sich die Beatmung nicht zutraut, drückt ohne Unterbrechung weiter.",
   "h": "Etwa eine halbe Minute Drücken vorweg.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "2qhgga",
@@ -138,7 +144,8 @@
   ],
   "e": "Kühlen mit fließendem Wasser (ca. 20 °C) für etwa 10–20 Minuten lindert Schmerz und begrenzt den Schaden.",
   "h": "Je schneller, desto besser, aber ohne Eis.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1ijg65x",
@@ -158,7 +165,8 @@
   ],
   "e": "Ein AED analysiert den Herzrhythmus selbst und gibt einen Schock nur bei einem schockbaren Rhythmus wie Kammerflimmern frei. Er ist für Laien gemacht: einfach einschalten und den Ansagen folgen.",
   "h": "Das Gerät gibt die Anweisungen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "16oqplq",
@@ -178,7 +186,8 @@
   ],
   "e": "Frauen haben öfter „untypische“ Zeichen wie Übelkeit, Rücken- oder Oberbauchschmerz. Bei Verdacht gilt: sofort 112.",
   "h": "Die Beschwerden sitzen nicht nur in der Brust.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "5cx43m",
@@ -218,7 +227,8 @@
   ],
   "e": "Der Druckpunkt liegt in der Mitte der Brust, auf der unteren Hälfte des Brustbeins, mit gestreckten Armen.",
   "h": "Mitte der Brust, nicht links.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1fd0rna",
@@ -238,7 +248,8 @@
   ],
   "e": "Bei unwirksamem Husten: bis zu fünf Rückenschläge, danach bis zu fünf Oberbauchkompressionen im Wechsel, bei Bewusstlosigkeit Wiederbelebung.",
   "h": "Der Rücken kommt vor dem Bauch.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "18e6r0t",
@@ -359,7 +370,8 @@
   ],
   "e": "Der Kopf wird nach vorn geneigt, damit das Blut abfließt, und die Nase etwa zehn Minuten zugehalten.",
   "h": "Das Blut soll nicht in den Rachen laufen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1784gz0",
@@ -419,7 +431,8 @@
   ],
   "e": "Bei Unterzucker helfen schnell verfügbare Kohlenhydrate. Bewusstlosen gibt man nichts zu essen oder zu trinken.",
   "h": "Der Körper braucht Zucker.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "14algpb",
@@ -439,7 +452,8 @@
   ],
   "e": "Beim Schlaganfall sterben pro Minute viele Nervenzellen ab. Deshalb sofort 112 wählen, die Uhrzeit des Beginns merken.",
   "h": "Bei einem Schlaganfall zählt jede Minute.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1ol0qk4",
@@ -459,7 +473,8 @@
   ],
   "e": "Ein Hitzschlag ist ein Notfall: kühlen, 112 rufen, Bewusstlose in die stabile Seitenlage.",
   "h": "Die Körpertemperatur muss sinken.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "ss1h4c",
@@ -499,7 +514,8 @@
   ],
   "e": "Die Zecke wird nicht gequetscht, danach desinfiziert man die Stelle und beobachtet sie in den Folgewochen.",
   "h": "Schnell und vorsichtig, ohne Hausmittel.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "4oaqo1",
@@ -579,7 +595,8 @@
   ],
   "e": "Erbrechen auslösen kann zusätzlich schaden. Besser Giftinformationszentrum oder 112 anrufen.",
   "h": "Einfach geht nicht immer.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "14ey1mo",
@@ -599,7 +616,8 @@
   ],
   "e": "Eigenschutz geht vor: Sicherung ausschalten oder Stecker ziehen, dann Erste Hilfe leisten und 112 rufen.",
   "h": "Erst sich selbst schützen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1vb8v0x",
@@ -619,7 +637,8 @@
   ],
   "e": "Warnweste, Warnblinker und Warndreieck sichern die Stelle. Danach Notruf, Erste Hilfe und Betreuung.",
   "h": "Nur wer sicher ist, kann helfen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "7sd5n",
@@ -660,7 +679,8 @@
   ],
   "e": "Wo ist es passiert? Was ist passiert? Wie viele Betroffene? Welche Verletzungen? Warten auf Rückfragen.",
   "h": "Die Leitstelle beendet das Gespräch.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1nexarz",
@@ -700,7 +720,8 @@
   ],
   "e": "Schnappatmung ist keine normale Atmung. Die Person wird wiederbelebt: Notruf und Druckmassage.",
   "h": "Kein normales Atmen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1ikqv8",
@@ -740,7 +761,8 @@
   ],
   "e": "Die Wiederbelebung läuft ohne Unterbrechung weiter. Bei mehreren Helfern wechselt man sich etwa alle zwei Minuten ab.",
   "h": "Nicht aufgeben.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "yrf6ce",
@@ -800,7 +822,8 @@
   ],
   "e": "Die 116 117 ist bundesweit für nicht lebensbedrohliche Beschwerden außerhalb der Sprechzeiten gedacht.",
   "h": "Sieben Ziffern.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "um4mj3",
@@ -900,7 +923,8 @@
   ],
   "e": "Die Batterie kann innerhalb von Stunden schwer verätzen. Sofort Notruf oder Klinik, nicht erbrechen lassen.",
   "h": "Gefährlicher als gedacht.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "w4ojl2",
@@ -920,7 +944,8 @@
   ],
   "e": "Kohlenmonoxid bindet an Hämoglobin und verdrängt Sauerstoff. Bei Verdacht: Raum verlassen, lüften, 112 anrufen.",
   "h": "Man bemerkt das Gas mit den Sinnen nicht.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "rnowuf",
@@ -980,7 +1005,8 @@
   ],
   "e": "Auch reine Herzdruckmassage rettet Leben. Wichtig ist, überhaupt anzufangen und den Notruf abzusetzen.",
   "h": "Nichts tun ist der größte Fehler.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1djob6p",
@@ -1020,7 +1046,8 @@
   ],
   "e": "Praxiswerte ab 140/90 mmHg gelten als Hypertonie, bei Selbstmessung zu Hause liegt die Grenze bei 135/85 mmHg.",
   "h": "Zwei Zahlen, die erste beginnt mit 14.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "mndsct",
@@ -1040,7 +1067,8 @@
   ],
   "e": "Bei Grippe oder Erkältung helfen Antibiotika nicht. Unnötiger Einsatz fördert Resistenzen.",
   "h": "Penicillin wirkt gegen eine bestimmte Erregergruppe.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "c3umuz",
@@ -1100,7 +1128,8 @@
   ],
   "e": "Laut RKI und BZgA sind 20–30 Sekunden einzuplanen. Dabei alle Flächen einseifen, auch Daumen und Fingerspitzen.",
   "h": "Etwa zweimal „Happy Birthday“.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1cp68g",
@@ -1120,7 +1149,8 @@
   ],
   "e": "Zwischen 37,5 und 38,0 °C spricht man von erhöhter Temperatur, ab 38,0 °C von Fieber.",
   "h": "Eine Zahl mit 38.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "19l3kzg",
@@ -1200,7 +1230,8 @@
   ],
   "e": "Leitlinien raten zu Bewegung und Alltagsaktivität, das beschleunigt die Genesung.",
   "h": "Bewegung ist die beste Medizin.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "lz7q5c",
@@ -1321,7 +1352,8 @@
   ],
   "e": "Ein Blutgerinnsel verschließt ein Herzkranzgefäß, Herzmuskelgewebe stirbt ab.",
   "h": "Ein Gefäß wird verstopft.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "xe1kli",
@@ -1361,7 +1393,8 @@
   ],
   "e": "Herz-Kreislauf-Erkrankungen führen die globale Todesursachenstatistik der WHO an.",
   "h": "Herzinfarkt und Schlaganfall gehören zu dieser Gruppe.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1jhfuqg",
@@ -1381,7 +1414,8 @@
   ],
   "e": "Röntgen erhielt dafür 1901 den ersten Nobelpreis für Physik. Im Deutschen heißen sie nach ihm Röntgenstrahlen.",
   "h": "Unbekannte Strahlung, daher ein Buchstabe.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "1a3bqd",
@@ -1401,7 +1435,8 @@
   ],
   "e": "Semmelweis führte Mitte des 19. Jahrhunderts das Händewaschen mit Chlorkalk in der Geburtshilfe ein.",
   "h": "Wiener Arzt.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "aabaum",
@@ -1421,7 +1456,8 @@
   ],
   "e": "Der Eid geht auf Hippokrates zurück und ist Vorbild für ärztliche Gelöbnisse wie die Deklaration von Genf.",
   "h": "Antike.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "iclah8",
@@ -1501,7 +1537,8 @@
   ],
   "e": "Der Steigbügel ist etwa 3 mm lang und überträgt Schall ans Innenohr.",
   "h": "Im Ohr.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "129lilt",
@@ -1521,7 +1558,8 @@
   ],
   "e": "Der Femur macht rund ein Viertel der Körpergröße aus.",
   "h": "Im Bein.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "7tye1p",
@@ -1581,7 +1619,8 @@
   ],
   "e": "Zahnschmelz besteht zu rund 96 % aus Mineralien, hauptsächlich Hydroxylapatit.",
   "h": "Außen am Zahn.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "u0s2r0",
@@ -1601,7 +1640,8 @@
   ],
   "e": "Adrenalin wird im Nebennierenmark ausgeschüttet und aktiviert den Körper bei Stress.",
   "h": "Sitzt auf der Niere.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1wl2o35",
@@ -1641,7 +1681,8 @@
   ],
   "e": "Melatonin wird bei Dunkelheit vermehrt ausgeschüttet und fördert die Müdigkeit.",
   "h": "Dunkelheit.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1qprleg",
@@ -1741,7 +1782,8 @@
   ],
   "e": "Der Erreger sind Plasmodien. Weibliche Anophelesmücken übertragen sie.",
   "h": "Weibliche Mücke.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1d24wgz",
@@ -1761,7 +1803,8 @@
   ],
   "e": "Impfstoffe enthalten abgeschwächte oder inaktivierte Erreger oder Bruchstücke, die eine Immunantwort auslösen.",
   "h": "Die Abwehr wird vorbereitet, bevor der echte Erreger kommt.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "o0e5o3",
@@ -1861,7 +1904,8 @@
   ],
   "e": "Nach den Windpocken bleibt das Virus in Nervenzellen und kann später als Gürtelrose zurückkehren.",
   "h": "Ein Herpesvirus, das lebenslang im Körper bleibt.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "g5ikeq",
@@ -1921,7 +1965,8 @@
   ],
   "e": "Bei Parkinson sterben dopaminbildende Nervenzellen in der Substantia nigra ab.",
   "h": "Botenstoff im Gehirn.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "2peg3s",
@@ -1941,7 +1986,8 @@
   ],
   "e": "Rauchen ist die mit Abstand häufigste Ursache von Lungenkrebs, auch Passivrauchen erhöht das Risiko.",
   "h": "Zigaretten.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1q93b9h",
@@ -1961,7 +2007,8 @@
   ],
   "e": "Ab 35 Jahren übernehmen die Krankenkassen alle zwei Jahre die Untersuchung.",
   "h": "Zwei Jahre.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "lzhb47",
@@ -2041,7 +2088,8 @@
   ],
   "e": "Placebos dienen als Vergleich in Studien, weil Erwartung allein schon Beschwerden lindern kann.",
   "h": "Lateinisch: ich werde gefallen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1n0upor",
@@ -2081,7 +2129,8 @@
   ],
   "e": "Bei RCTs werden Teilnehmende zufällig auf Gruppen verteilt.",
   "h": "Zufall.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "1crxfsi",
@@ -2121,7 +2170,8 @@
   ],
   "e": "Die MRT erzeugt Bilder ohne ionisierende Strahlung.",
   "h": "Nicht Röntgen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "144lqk3",
@@ -2161,7 +2211,8 @@
   ],
   "e": "Die Spende dauert wenige Minuten, der Körper ersetzt das Volumen innerhalb von Tagen.",
   "h": "Ein halber Liter.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "126uukz",
@@ -2361,7 +2412,8 @@
   ],
   "e": "Das Risiko steigt mit der Menge, die WHO sieht keine völlig sichere Alkoholmenge für die Gesundheit.",
   "h": "Die WHO ist bei Alkohol sehr streng.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "4ynqtp",
@@ -2381,7 +2433,8 @@
   ],
   "e": "Unter 5 % brächte nach der WHO zusätzlichen gesundheitlichen Nutzen. Freie Zucker sind etwa in Softdrinks und Süßigkeiten.",
   "h": "Etwa jede zehnte Kalorie.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "jr835b",
@@ -2421,7 +2474,8 @@
   ],
   "e": "Das Verbrauchsdatum bei leicht verderblichen Lebensmitteln wie Hackfleisch ist dagegen verbindlich.",
   "h": "M wie Mindest.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "jrxtkq",
@@ -2441,7 +2495,8 @@
   ],
   "e": "Mindestens 70 °C im Kern für mindestens zwei Minuten, das Fleisch soll durchgängig weißlich sein.",
   "h": "Die Zahl liegt unter 80.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "1x278x3",
@@ -2501,7 +2556,8 @@
   ],
   "e": "Alternativ 75–150 Minuten intensive Aktivität, dazu zweimal Muskelkräftigung.",
   "h": "Zweieinhalb bis fünf Stunden.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1o8l7p1",
@@ -2541,7 +2597,8 @@
   ],
   "e": "Weniger als 5 g Salz entsprechen etwa einem Teelöffel. Zu viel Salz erhöht den Blutdruck.",
   "h": "Ein Teelöffel.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1l8fclr",
@@ -2581,7 +2638,8 @@
   ],
   "e": "Skorbut plagte früher Seeleute, die lange keine frischen Früchte aßen.",
   "h": "Seeleute.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "11v7hs5",
@@ -2601,7 +2659,8 @@
   ],
   "e": "B12 kommt fast nur in tierischen Lebensmitteln vor, die DGE empfiehlt Präparate bei veganer Ernährung.",
   "h": "Bakterien und tierische Produkte.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1h177ia",
@@ -2621,7 +2680,8 @@
   ],
   "e": "Vitamin A wird für die Sehpigmente der Netzhaut gebraucht.",
   "h": "Karotte.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1ij91ll",
@@ -2841,7 +2901,8 @@
   ],
   "e": "1 kcal entspricht etwa 4,184 kJ.",
   "h": "Etwas mehr als das Vierfache.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1ioi79k",
@@ -2881,7 +2942,8 @@
   ],
   "e": "Es gibt keine sichere Alkoholmenge, Alkohol kann das fetale Alkoholsyndrom auslösen.",
   "h": "Nichts.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "5q46ki",
@@ -2901,7 +2963,8 @@
   ],
   "e": "Honig kann Sporen von Clostridium botulinum enthalten, die im Säuglingsdarm auswachsen können.",
   "h": "Ein Bakterium, dessen Sporen im Säuglingsdarm auskeimen können.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "1d1fpoc",
@@ -2941,7 +3004,8 @@
   ],
   "e": "Empfohlen sind etwa 4–7 °C.",
   "h": "Einstellig.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1fk33ge",
@@ -2981,7 +3045,8 @@
   ],
   "e": "Reis sollte nach dem Kochen rasch gekühlt werden, Sporen können sonst auswachsen und Giftstoffe bilden.",
   "h": "Sporen.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1oedt7r",
@@ -3001,7 +3066,8 @@
   ],
   "e": "Schimmel kann Giftstoffe (Mykotoxine) bilden, das BfR rät zum Wegwerfen des ganzen Brotes.",
   "h": "Nicht retten.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1caycus",
@@ -3041,7 +3107,8 @@
   ],
   "e": "Feste Zeiten, Dunkelheit und eine kühle Umgebung gehören zur Schlafhygiene.",
   "h": "Rhythmus.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "iedpvy",
@@ -3061,7 +3128,8 @@
   ],
   "e": "REM steht für „Rapid Eye Movement“, die Augen bewegen sich schnell unter den Lidern.",
   "h": "Augen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "bpy30l",
@@ -3101,7 +3169,8 @@
   ],
   "e": "Zweimal täglich zwei Minuten mit fluoridhaltiger Zahnpasta, dazu die Zahnzwischenräume reinigen.",
   "h": "Morgens und abends.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "13bvldj",
@@ -3121,7 +3190,8 @@
   ],
   "e": "Bakterien im Zahnbelag setzen aus Zucker Säuren frei, die den Schmelz demineralisieren.",
   "h": "Denk an Süßigkeiten und Zahnbelag.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "4o1zn0",
@@ -3141,7 +3211,8 @@
   ],
   "e": "Bei hohem Sonnenstand ist der Weg durch die Atmosphäre kurz, die Strahlung am stärksten.",
   "h": "Sonnenhöchststand.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "14jmcyu",
@@ -3161,7 +3232,8 @@
   ],
   "e": "UVA dringt tiefer in die Haut und fördert Hautalterung.",
   "h": "A wie Alterung.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "6oa6ty",
@@ -3181,7 +3253,8 @@
   ],
   "e": "Dauerhafter Lärm um 85 dB(A) schädigt die Haarzellen im Innenohr.",
   "h": "Lärmschutz.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "1sp7u58",
@@ -3221,7 +3294,8 @@
   ],
   "e": "Nach WHO sollte man lange Sitzphasen unterbrechen, schon kurze Bewegung bringt Nutzen.",
   "h": "Pausen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1o6f21w",
@@ -3341,7 +3415,8 @@
   ],
   "e": "In der EU müssen 14 Stoffe wie Gluten, Milch, Eier und Nüsse hervorgehoben werden.",
   "h": "Vierzehn.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1lazs8s",
@@ -3401,7 +3476,8 @@
   ],
   "e": "Vitamin K ist für die Bildung von Gerinnungsfaktoren in der Leber nötig.",
   "h": "K.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "xkagwq",
@@ -3541,7 +3617,8 @@
   "e": "Anhaltender Druck oder Enge in der Brust, oft mit Atemnot, Schweiß oder Ausstrahlung in Arm oder Kiefer, kann ein Herzinfarkt sein. Dann sofort 112 rufen.",
   "h": "Zeit ist hier Herzmuskel.",
   "d": 1,
-  "id": "n5497626"
+  "id": "n5497626",
+  "p": 1
  },
  {
   "s": "Körper & Medizin",
@@ -3561,7 +3638,8 @@
   "e": "Rauchverzicht, Bewegung, gesunde Ernährung, normales Gewicht und ein gut eingestellter Blutdruck sind die wichtigsten Schutzfaktoren.",
   "h": "Lebensstil statt Pillen.",
   "d": 1,
-  "id": "n61d504f"
+  "id": "n61d504f",
+  "p": 1
  },
  {
   "s": "Ernährung & Lebensstil",
@@ -3581,7 +3659,8 @@
   "e": "Zwischen etwa 11 und 15 Uhr ist die UV-Strahlung am stärksten. Schatten, Kleidung und Hut schützen am besten, Sonnencreme ergänzt.",
   "h": "Sonne meiden.",
   "d": 1,
-  "id": "nabe66ea"
+  "id": "nabe66ea",
+  "p": 1
  },
  {
   "s": "Erste Hilfe",
@@ -3601,6 +3680,7 @@
   "e": "Prüfen, Rufen, Drücken: Ohne normale Atmung sofort Notruf 112 und Herzdruckmassage, 100 bis 120 Mal pro Minute in der Mitte der Brust.",
   "h": "Zuerst Hilfe holen, dann selbst handeln.",
   "d": 1,
-  "id": "na425f3f"
+  "id": "na425f3f",
+  "p": 1
  }
 ]

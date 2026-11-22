@@ -14,3 +14,7 @@
 ~h6alno|Tonhöhen ändern die Bedeutung|Eine Schrift ohne Zeichen|Es gibt nur drei Vokale|Verben mit vielen Endungen
 ~155z3cm|Eine vereinfachte Behelfssprache|Eine ausgestorbene Sprache|Eine künstliche Plansprache|Ein Dialekt des Englischen
 ?jvdctn|Zum Beispiel „Handy“ oder „Beamer“.
+# Dubletten
+-ne1de516
+-n4ad91f3
+-5u5p7k

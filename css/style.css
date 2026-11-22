@@ -246,6 +246,7 @@ a:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visibl
 .floatxp { position: absolute; right: 16px; top: 50%; font-weight: 800; color: var(--ok); animation: floatxp 1s ease forwards; pointer-events: none; }
 @keyframes floatxp { from { opacity: 1; transform: translateY(-50%); } to { opacity: 0; transform: translateY(-160%); } }
 .multi { display: inline-block; background: var(--ok); color: #fff; border-radius: 99px; padding: 0 8px; font-size: 13px; margin-left: 4px; }
+.core { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--learn); border: 1px solid currentColor; border-radius: 99px; padding: 0 7px; margin-right: 4px; vertical-align: 1px; }
 .qtime { height: 4px; background: var(--soft); border-radius: 99px; overflow: hidden; margin-top: 6px; }
 .qtime i { display: block; height: 100%; width: 100%; background: var(--accent); opacity: .5; transform-origin: left; animation: qtime 15s linear forwards; }
 .qtime.stop i { animation-play-state: paused; }

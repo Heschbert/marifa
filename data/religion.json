@@ -17,7 +17,8 @@
   ],
   "e": "Pew zählte 2020 rund 2,3 Milliarden Christen (28,8 %), danach Muslime (25,6 %) und Hindus (14,9 %).",
   "h": "Auf die Zahl der Anhänger kommt es an, nicht auf die Verbreitung in einzelnen Ländern.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1xwxdkj",
@@ -37,7 +38,8 @@
   ],
   "e": "Der Koran hat 114 Suren und gilt Muslimen als dem Propheten Mohammed durch den Erzengel Gabriel offenbart.",
   "h": "Das Wort bedeutet „Rezitation“.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1y53d1z",
@@ -57,7 +59,8 @@
   ],
   "e": "Die fünf Säulen sind Schahada, Salat, Zakat, Sawm und Hadsch.",
   "h": "So viele wie Finger an einer Hand.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "154cqzf",
@@ -77,7 +80,8 @@
   ],
   "e": "Siddhartha Gautama lebte nach der Überlieferung vor rund 2.500 Jahren im Norden Indiens und wird „der Buddha“ (Erwachte) genannt.",
   "h": "Sein Ehrentitel bedeutet „der Erwachte“.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1a2nvi5",
@@ -117,7 +121,8 @@
   ],
   "e": "In Jerusalem liegen Tempelberg, Grabeskirche und Felsendom; alle drei Religionen verbinden damit heilige Stätten.",
   "h": "Klagemauer, Grabeskirche und Felsendom liegen dort.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "dapan8",
@@ -137,7 +142,8 @@
   ],
   "e": "Im Ramadan, dem neunten Monat des Mondkalenders, wird von der Morgendämmerung bis zum Sonnenuntergang gefastet.",
   "h": "Der neunte Monat des islamischen Mondjahres.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1i0j3km",
@@ -197,7 +203,8 @@
   ],
   "e": "Id al-Adha erinnert an Ibrahims Bereitschaft zum Opfer und beendet die Hadsch.",
   "h": "Es fällt in den letzten Monat des islamischen Jahres.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1vk2ea7",
@@ -237,7 +244,8 @@
   ],
   "e": "Die Hadsch ist eine der fünf Säulen und für Gläubige einmal im Leben Pflicht, wenn sie dazu in der Lage sind.",
   "h": "Eine der fünf Säulen, einmal im Leben.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "p78ky2",
@@ -257,7 +265,8 @@
   ],
   "e": "Schiiten sehen Ali, Mohammeds Cousin und Schwiegersohn, und seine Nachkommen als rechtmäßige Nachfolger; Sunniten akzeptierten Abu Bakr als Kalifen.",
   "h": "Es ging um die Führung der Gemeinde nach 632.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "mir5lc",
@@ -277,7 +286,8 @@
   ],
   "e": "Al-Fatiha („Die Eröffnende“) hat sieben Verse und wird in jedem Pflichtgebet gesprochen.",
   "h": "Der Name bedeutet „Die Eröffnende“.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "17xvwke",
@@ -297,7 +307,8 @@
   ],
   "e": "Der Koran ist in 114 Suren gegliedert, geordnet grob nach absteigender Länge.",
   "h": "Eine Zahl knapp über 100.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "gjkuec",
@@ -317,7 +328,8 @@
   ],
   "e": "Sie handeln von Leiden (Dukkha), seiner Ursache, seinem Ende und dem Weg dorthin.",
   "h": "Buddha begann mit der Frage nach dem Leid.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "13u7vha",
@@ -337,7 +349,8 @@
   ],
   "e": "Rechte Ansicht, Absicht, Rede, Handlung, Lebensunterhalt, Anstrengung, Achtsamkeit und Sammlung.",
   "h": "Die Zahl steckt im Namen.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "1fhztcf",
@@ -377,7 +390,8 @@
   ],
   "e": "Nach dem zehnten Guru, Gobind Singh, gilt das Buch selbst als ewiger Guru.",
   "h": "Das Buch wird selbst als ewiger Lehrer verehrt.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "6drsws",
@@ -417,7 +431,8 @@
   ],
   "e": "Der Goldene Tempel (Harmandir Sahib) liegt in Amritsar im Punjab.",
   "h": "Sein Dach ist mit Blattgold belegt.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "19h2x0d",
@@ -437,7 +452,8 @@
   ],
   "e": "Brahma gilt als Schöpfer, Vishnu als Erhalter und Shiva als Zerstörer und Erneuerer.",
   "h": "Schöpfer, Erhalter, Zerstörer.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "rf6ai",
@@ -477,7 +493,8 @@
   ],
   "e": "Karma bedeutet „Tat“ und beschreibt, wie Handlungen zu Folgen führen, auch in künftigen Leben.",
   "h": "Wörtlich „Tat“.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "1ak8mkb",
@@ -517,7 +534,8 @@
   ],
   "e": "Der Ganges gilt als Göttin Ganga; Varanasi ist die heilige Stadt an seinem Ufer.",
   "h": "Fließt an Varanasi vorbei.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "q46q09",
@@ -537,7 +555,8 @@
   ],
   "e": "Ahimsa (Gewaltlosigkeit) ist zentral; strenge Dschainas ernähren sich vegetarisch und achten selbst auf Kleinstlebewesen.",
   "h": "Das Sanskritwort heißt Ahimsa.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "14fjs61",
@@ -557,7 +576,8 @@
   ],
   "e": "Shintō („Weg der Kami“) kennt keinen Gründer und keine feste Lehre; Heiligtümer erkennt man am Torii.",
   "h": "Der Name bedeutet „Weg der Götter“.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1jwb4wu",
@@ -577,7 +597,8 @@
   ],
   "e": "Das Daodejing wird Laozi zugeschrieben und hat 81 kurze Kapitel; zentral ist das Dao, der „Weg“.",
   "h": "Der Titel enthält den „Weg“.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "12zkygw",
@@ -597,7 +618,8 @@
   ],
   "e": "Parsen sind Nachkommen persischer Zoroastrier, die nach Gujarat und später Bombay kamen.",
   "h": "Der Name erinnert an Persien.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1iy5ook",
@@ -617,7 +639,8 @@
   ],
   "e": "Zarathustra verkündete Ahura Mazda als obersten Gott; die heilige Schrift ist die Avesta.",
   "h": "Bei Nietzsche sprach er ebenfalls.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "k65riv",
@@ -637,7 +660,8 @@
   ],
   "e": "Der Schabbat beginnt Freitagabend bei Sonnenuntergang und endet Samstagabend.",
   "h": "Er beginnt am Vorabend.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "lzve6f",
@@ -677,7 +701,8 @@
   ],
   "e": "Tanach steht für Tora, Newiim (Propheten) und Ketuwim (Schriften).",
   "h": "Das Wort ist ein Akronym aus drei Teilen.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1iizuh9",
@@ -697,7 +722,8 @@
   ],
   "e": "Mit 13 Jahren werden Jungen religiös mündig und lesen erstmals aus der Tora.",
   "h": "Eine Zahl, die als Unglückszahl gilt.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "aefghh",
@@ -717,7 +743,8 @@
   ],
   "e": "Der Bahai-Glaube wurde von Bahaullah (1817–1892) begründet; ihr Weltzentrum liegt in Haifa.",
   "h": "Gründer: Bahaullah.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1ihbyql",
@@ -797,7 +824,8 @@
   ],
   "e": "Der Muezzin ruft den Adhan fünfmal täglich zu den Gebetszeiten.",
   "h": "Von der Moschee aus gerufen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "qmpwlf",
@@ -817,7 +845,8 @@
   ],
   "e": "Ostern fällt auf den ersten Sonntag nach dem ersten Frühlingsvollmond (frühestens 22. März, spätestens 25. April).",
   "h": "Das Fest mit dem beweglichen Datum im Frühjahr.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "u2jmz1",
@@ -837,7 +866,8 @@
   ],
   "e": "Pfingsten fällt auf den 50. Tag nach Ostern (griechisch „pentekoste“, der Fünfzigste).",
   "h": "Der Name stammt von „fünfzig“.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "zg3585",
@@ -857,7 +887,8 @@
   ],
   "e": "Das Neue Testament hat 27 Bücher in allen großen Kirchen; die evangelische Bibel zählt insgesamt 66, die katholische 73.",
   "h": "Eine Zahl zwischen 20 und 30.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "j58ist",
@@ -997,7 +1028,8 @@
   ],
   "e": "Himmelfahrt ist stets ein Donnerstag, der 40. Tag der Osterzeit (Ostersonntag mitgezählt).",
   "h": "Eine Zahl, die in der Bibel häufig vorkommt.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1pwv051",
@@ -1057,7 +1089,8 @@
   ],
   "e": "Der Psalter umfasst 150 Lieder und Gebete, traditionell König David zugeschrieben.",
   "h": "Eine runde Zahl über hundert.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "13yfbpe",
@@ -1097,7 +1130,8 @@
   ],
   "e": "Der Dekalog steht in 2. Mose 20 und 5. Mose 5; „Deka“ ist griechisch für zehn.",
   "h": "„Deka“ steckt im Namen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1cjqpzg",
@@ -1157,7 +1191,8 @@
   ],
   "e": "Das Vaterunser steht in Matthäus 6 und Lukas 11.",
   "h": "Beginnt mit einer Anrede an Gott.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1n8po49",
@@ -1177,7 +1212,8 @@
   ],
   "e": "Der 25. Dezember ist seit dem 4. Jahrhundert in Rom als Geburtsfest belegt; orthodoxe Kirchen nach dem Julianischen Kalender feiern am 7. Januar.",
   "h": "Eine Krippe gehört dazu.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "7t2osh",
@@ -1257,7 +1293,8 @@
   ],
   "e": "Luther kritisierte den Verkauf von Ablassbriefen, mit denen unter anderem der Bau des Petersdoms mitfinanziert wurde.",
   "h": "Es ging um Geld für Sündenvergebung.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "xry64l",
@@ -1277,7 +1314,8 @@
   ],
   "e": "Hieronymus arbeitete ab 382 im Auftrag von Papst Damasus; die Vulgata blieb jahrhundertelang Standardbibel.",
   "h": "Er lebte zuletzt in Bethlehem.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1ljbk9g",
@@ -1297,7 +1335,8 @@
   ],
   "e": "Die Septuaginta („Siebzig“) entstand ab dem 3. Jahrhundert v. Chr. in Alexandria.",
   "h": "Der Name nennt eine Zahl.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1rk7oek",
@@ -1377,7 +1416,8 @@
   ],
   "e": "Dreizehn Briefe tragen Paulus’ Namen; sieben gelten als unumstritten echt.",
   "h": "Früher hieß er Saulus.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "oomd1r",
@@ -1397,7 +1437,8 @@
   ],
   "e": "Fronleichnam ist am Donnerstag nach dem Dreifaltigkeitssonntag, 60 Tage nach Ostern.",
   "h": "Ein Donnerstag im Frühsommer.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "drpzmi",
@@ -1417,7 +1458,8 @@
   ],
   "e": "Nikolaus war Bischof von Myra im heutigen Süden der Türkei, Todestag 6. Dezember (4. Jahrhundert).",
   "h": "Sein Ort liegt heute in der Türkei.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "khlgs2",
@@ -1497,7 +1539,8 @@
   ],
   "e": "Die Schlange steht in 1. Mose 3 für die Versuchung im Garten Eden.",
   "h": "Kriecht am Boden.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "147rb67",
@@ -1597,66 +1640,7 @@
   ],
   "e": "Die Eucharistiefeier (Messe) erinnert an das letzte Mahl Jesu mit Brot und Wein.",
   "h": "Ihr Name bedeutet „Danksagung“.",
-  "d": 3
- },
- {
-  "s": "Weltreligionen",
-  "q": "Was ist der Ramadan?",
-  "a": [
-   "Ein Fastenmonat im Islam",
-   "Ein jüdisches Lichterfest",
-   "Ein hinduistisches Frühlingsfest",
-   "Eine buddhistische Pilgerreise"
-  ],
-  "w": [
-   "",
-   "Das jüdische Lichterfest heißt Chanukka.",
-   "Das hinduistische Frühlingsfest heißt Holi.",
-   "Ramadan ist keine Pilgerreise; die islamische Pilgerfahrt heißt Hadsch."
-  ],
-  "e": "Im Ramadan, dem neunten Monat des islamischen Mondkalenders, fasten gläubige Muslime von der Morgendämmerung bis Sonnenuntergang. Er endet mit dem Fest des Fastenbrechens.",
-  "h": "Tagsüber wird nicht gegessen.",
-  "d": 1,
-  "id": "nb44936d"
- },
- {
-  "s": "Weltreligionen",
-  "q": "Welche Religion hat weltweit die meisten Anhänger?",
-  "a": [
-   "Christentum",
-   "Islam",
-   "Hinduismus",
-   "Buddhismus"
-  ],
-  "w": [
-   "",
-   "Der Islam ist die zweitgrößte Religion mit rund einem Viertel der Weltbevölkerung.",
-   "Der Hinduismus ist die drittgrößte Religion.",
-   "Der Buddhismus hat deutlich weniger Anhänger."
-  ],
-  "e": "Laut Pew Research (Daten für 2020) bekennen sich rund 29 % der Menschen zum Christentum, etwa 25 % zum Islam und rund 15 % zum Hinduismus. Der Islam wächst schneller.",
-  "h": "Etwa 2,3 Milliarden Menschen.",
-  "d": 1,
-  "id": "nf32ae5d"
- },
- {
-  "s": "Bibel & Feste",
-  "q": "Was erinnert Ostern im Christentum?",
-  "a": [
-   "Die Auferstehung Jesu",
-   "Die Geburt Jesu",
-   "Die Taufe Jesu im Jordan",
-   "Den Einzug in Jerusalem"
-  ],
-  "w": [
-   "",
-   "Die Geburt feiert man an Weihnachten.",
-   "Die Taufe Jesu wird im Januar gefeiert.",
-   "Der Einzug in Jerusalem ist Palmsonntag, eine Woche vor Ostern."
-  ],
-  "e": "Ostern ist das höchste christliche Fest: Es feiert die Auferstehung Jesu nach der Kreuzigung an Karfreitag.",
-  "h": "Nach Karfreitag.",
-  "d": 1,
-  "id": "n67ee85d"
+  "d": 3,
+  "p": 3
  }
 ]

@@ -17,7 +17,8 @@
   ],
   "e": "Die abgeschossenen Flugzeuge fehlten in der Stichprobe. Treffer an den Stellen der Heimkehrer waren überlebbar, verstärkt werden sollten die unbeschädigten Stellen.",
   "h": "Wessen Daten fehlen in der Auswertung?",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "wk2kbq",
@@ -37,7 +38,8 @@
   ],
   "e": "Das Geld ist in beiden Fällen weg. Entscheidend ist nur, was ab jetzt die bessere Option ist.",
   "h": "Das Geld ist so oder so weg. Zählt das für die Entscheidung?",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "396qmr",
@@ -57,7 +59,8 @@
   ],
   "e": "Die erste genannte Zahl wirkt als Bezugspunkt, an dem spätere Schätzungen hängen bleiben (Tversky und Kahneman, 1974).",
   "h": "Schiffsteil, der festhält",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "19bxt5l",
@@ -77,7 +80,8 @@
   ],
   "e": "Zentraler Baustein der Prospect Theory von Kahneman und Tversky (1979): Ein Verlust von 100 € schmerzt mehr, als ein Gewinn von 100 € freut.",
   "h": "Verlieren tut mehr weh",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "5bbrii",
@@ -97,7 +101,8 @@
   ],
   "e": "Im Nachhinein wirkt alles zwangsläufig. Das verleitet dazu, die eigene Vorhersagekraft zu überschätzen.",
   "h": "„Ich wusste es schon immer“",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "mghr4c",
@@ -117,7 +122,8 @@
   ],
   "e": "Von Kahneman und Tversky 1979 beschrieben. Gegenmittel: Referenzklassen nutzen, also schauen, wie lange ähnliche Vorhaben tatsächlich gedauert haben.",
   "h": "Zu optimistischer Zeitplan",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "10qoxm0",
@@ -137,7 +143,8 @@
   ],
   "e": "Gegenmittel: gezielt nach Argumenten suchen, die gegen die eigene Annahme sprechen.",
   "h": "Bestätigung gesucht",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1ie0col",
@@ -177,7 +184,8 @@
   ],
   "e": "Was uns leicht einfällt, halten wir für häufig. Tatsächlich sind Autounfälle pro Kilometer viel gefährlicher.",
   "h": "Leicht erinnerbar",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1rwjwke",
@@ -197,7 +205,8 @@
   ],
   "e": "Die Formulierung rahmt dieselbe Information als Gewinn oder Verlust (Tversky und Kahneman, 1981).",
   "h": "Verpackung der Information",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "ejnstd",
@@ -217,7 +226,8 @@
   ],
   "e": "Von Robert Cialdini popularisiert. Deshalb wirken Bewertungen und volle Restaurants so überzeugend.",
   "h": "Die Menge kann nicht irren?",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1kjhte7",
@@ -237,7 +247,8 @@
   ],
   "e": "Von 1000 Personen sind 10 krank (9 erkannt), 990 gesund (rund 89 falsche Alarme). Also 9 von 98 positiv Getesteten, etwa 9 %.",
   "h": "Natürliche Häufigkeiten rechnen",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "1xm55ub",
@@ -277,7 +288,8 @@
   ],
   "e": "Würfe sind unabhängig, die Chance auf Zahl liegt bei jedem Wurf bei 50 %. Berühmt: Monte Carlo 1913, Schwarz kam 26-mal in Folge.",
   "h": "Zufall hat kein Gedächtnis",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "16css13",
@@ -317,7 +329,8 @@
   ],
   "e": "Korrelation beweist keine Kausalität. Eine Störvariable (Confounder) beeinflusst beide Größen.",
   "h": "Dritte Größe",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1y2ti67",
@@ -337,7 +350,8 @@
   ],
   "e": "Lateinisch für „danach, also deswegen“. Zeitliche Abfolge allein belegt keine Ursache.",
   "h": "Danach heißt nicht deswegen",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "9xurug",
@@ -357,7 +371,8 @@
   ],
   "e": "Gruppenweise Trends können sich beim Zusammenfassen umkehren, wenn die Gruppengrößen verschieden sind. Bekannt: Zulassungsdaten Berkeley 1973.",
   "h": "Aggregation kippt den Trend",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "2osadj",
@@ -397,7 +412,8 @@
   ],
   "e": "Wir erklären fremdes Verhalten zu stark mit Persönlichkeit und unterschätzen die Situation (Lee Ross, 1977). Bei uns selbst verhält es sich umgekehrt.",
   "h": "Person statt Situation",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "93b80z",
@@ -457,7 +473,8 @@
   ],
   "e": "Samuelson und Zeckhauser prägten den Begriff 1988. Zusammen mit Verlustaversion erklärt sie viele Standardeffekte.",
   "h": "Alles soll so bleiben",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "uqdwcx",
@@ -537,7 +554,8 @@
   ],
   "e": "Darley und Latané (1968) erklärten ihn mit Verantwortungsdiffusion. Der Mordfall Genovese 1964 wurde in den Medien übertrieben dargestellt.",
   "h": "Verantwortung verteilt sich",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "17s1hxm",
@@ -697,7 +715,8 @@
   ],
   "e": "System 1 denkt schnell und intuitiv, System 2 langsam und anstrengend. Kahneman erhielt 2002 den Wirtschaftsnobelpreis.",
   "h": "Nobelpreisträger 2002",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1lmzqq2",
@@ -717,7 +736,8 @@
   ],
   "e": "Die erste Wahl hat 1/3. Die übrige Wahrscheinlichkeit von 2/3 bündelt sich auf die andere Tür, weil der Moderator wissentlich eine Ziegentür öffnet.",
   "h": "Vorwissen des Moderators",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1mtsb2k",
@@ -737,7 +757,8 @@
   ],
   "e": "Es gibt 253 mögliche Paare. Der Zahlenwert ist als Geburtstagsparadoxon bekannt.",
   "h": "Paare zählen, nicht Personen",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "957uux",
@@ -837,7 +858,8 @@
   ],
   "e": "Die Adressen stammten aus Telefon- und Autoregistern, wohlhabendere Wähler waren überrepräsentiert. Gallup lag mit kleiner, repräsentativer Stichprobe richtig.",
   "h": "Wer wurde gefragt?",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "g7jm2s",
@@ -997,7 +1019,8 @@
   ],
   "e": "Relative Zahlen klingen dramatisch. Bekannt: 1995 stieg das Thrombose-Risiko einer Pille „um 100 %“, absolut von 1 auf 2 pro 7000 Frauen.",
   "h": "Zwei Arten, ein Risiko anzugeben.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1mwx44o",
@@ -1097,7 +1120,8 @@
   ],
   "e": "Hasher, Goldstein und Toppino (1977): Vertrautheit wird mit Wahrheit verwechselt. Schon bekannte Falschaussagen profitieren davon.",
   "h": "Wiederholung",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1ais3gc",
@@ -1137,7 +1161,8 @@
   ],
   "e": "Der größte Teil des Gelernten geht schnell verloren, danach flacht die Kurve ab. Wiederholung in Abständen wirkt dagegen.",
   "h": "Silben ohne Sinn",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1xcntbl",
@@ -1157,7 +1182,8 @@
   ],
   "e": "Die Formulierung einer Frage verändert die Erinnerung (Suggestivfrage, Misinformation-Effekt) und hat Folgen für Zeugenaussagen.",
   "h": "Starkes Verb",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "meqdlt",
@@ -1277,7 +1303,8 @@
   ],
   "e": "Verblindung verhindert, dass Erwartungen (Placebo, Versuchsleiter-Effekt) das Ergebnis verfälschen.",
   "h": "Niemand weiß es",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "u31i22",
@@ -1377,7 +1404,8 @@
   ],
   "e": "Man widerlegt eine Karikatur der Position statt der Position selbst.",
   "h": "Pappkamerad",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "2i6027",
@@ -1417,7 +1445,8 @@
   ],
   "e": "Ob ein Argument stimmt, hängt nicht davon ab, wer es vorbringt. Wörtlich: „gegen den Menschen“.",
   "h": "Gegen den Menschen",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1irg8yn",
@@ -1457,7 +1486,8 @@
   ],
   "e": "Wilhelm von Ockham, 14. Jahrhundert. Faustregel, kein Beweis.",
   "h": "Sparsamkeit",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "jfv9j7",
@@ -1577,7 +1607,8 @@
   ],
   "e": "Verbreitung einer Überzeugung ist kein Beleg für ihre Wahrheit. Früher glaubten alle, die Erde sei Zentrum des Universums.",
   "h": "Volkes Stimme",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "yfasx5",
@@ -1837,7 +1868,8 @@
   ],
   "e": "Wer behauptet, muss belegen. Fehler: Beweislast umkehren („Beweis mir das Gegenteil“).",
   "h": "Wer behauptet, belegt",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1owal1y",
@@ -1857,7 +1889,8 @@
   ],
   "e": "Russell (1952): Man kann die Teekanne nicht widerlegen, daraus folgt aber nicht, dass man sie annehmen muss.",
   "h": "Kein Gegenbeweis nötig",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "aqyrcz",
@@ -1957,7 +1990,8 @@
   ],
   "e": "Ein Wort wechselt unbemerkt seine Bedeutung. Der Schluss ist nur durch diese Mehrdeutigkeit scheinbar gültig.",
   "h": "Doppelte Bedeutung",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1jh5m9v",
@@ -1977,7 +2011,8 @@
   ],
   "e": "Eine Aussage wird durch nachträgliche Umdefinition immun gegen Gegenbeispiele (Antony Flew, 1975).",
   "h": "Definition nachträglich ändern",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "debrb8",
@@ -2037,7 +2072,8 @@
   ],
   "e": "Gegenmittel: systematische Übersichten (Meta-Analysen) statt Einzelstudien.",
   "h": "Nur die besten Stücke",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "12tigsf",
@@ -2097,7 +2133,8 @@
   ],
   "e": "Der Gegner kann nicht jede Behauptung rechtzeitig widerlegen. Benannt nach Duane Gish, einem Kreationisten.",
   "h": "Überrollen mit Behauptungen",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "fl1tk7",
@@ -2117,7 +2154,8 @@
   ],
   "e": "Ethos: Glaubwürdigkeit des Redners, Pathos: Gefühle des Publikums, Logos: sachliche Argumente.",
   "h": "Glaubwürdigkeit, Gefühl, Vernunft",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "7tkmr1",
@@ -2157,7 +2195,8 @@
   ],
   "e": "Beispiel: 50 % auf 100 € ergibt 50 €. Er betrachtet nur Mittelwerte, nicht die Streuung.",
   "h": "Gewichteter Mittelwert",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1wc5r7r",
@@ -2257,7 +2296,8 @@
   ],
   "e": "John Nash (Nobelpreis 1994) zeigte, dass jedes endliche Spiel mindestens ein solches Gleichgewicht hat (gemischte Strategien erlaubt).",
   "h": "Keine einseitige Verbesserung",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "alc7a6",
@@ -2297,7 +2337,8 @@
   ],
   "e": "Simon (Nobelpreis 1978): Begrenzte Rationalität. Wegen Zeit- und Informationsgrenzen suchen Menschen nach „gut genug“.",
   "h": "Gut genug",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1fieba2",
@@ -2317,7 +2358,8 @@
   ],
   "e": "Jede Wahl verzichtet auf Alternativen. Wer abends lernt, verzichtet etwa auf Freizeit.",
   "h": "Entgangener Nutzen",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1ekimuw",
@@ -2377,7 +2419,8 @@
   ],
   "e": "Sie bildet den Ausgangspunkt jeder Schätzung. Wer sie ignoriert, begeht den Basisratenfehler.",
   "h": "Wie häufig insgesamt?",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "13gpecg",
@@ -2397,7 +2440,8 @@
   ],
   "e": "Jeder Hirte profitiert von einer zusätzlichen Kuh, die Kosten der Überweidung tragen alle. Elinor Ostrom (Nobelpreis 2009) zeigte, dass Gemeinschaften dies oft regeln können.",
   "h": "Gemeinweide",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1o6o7pg",
@@ -2437,7 +2481,8 @@
   ],
   "e": "Stärken und Schwächen sind intern, Chancen und Risiken extern. Ein Vier-Felder-Raster zur Lagebeurteilung.",
   "h": "Vier Begriffe",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "1mdc1ft",
@@ -2457,7 +2502,8 @@
   ],
   "e": "Sakichi Toyoda entwickelte sie. Beispiel: Maschine steht, weil Sicherung durchgebrannt, weil Lager überlastet, weil Schmierung fehlte, usw.",
   "h": "Die Methode fragt nicht nur einmal nach.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "b73iqv",
@@ -2477,7 +2523,8 @@
   ],
   "e": "Weisheit der vielen: Unabhängige Fehler heben sich im Durchschnitt auf (Galton, Nature 1907). Das gilt nur bei Unabhängigkeit und Vielfalt der Urteile (Surowiecki, 2004).",
   "h": "Weisheit der Menge",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "gngp0",
@@ -2517,7 +2564,8 @@
   ],
   "e": "Der Anwalt des Teufels sollte Einwände gegen eine Heiligsprechung vorbringen. Heute: Rolle des Widersprechenden zur Prüfung von Entscheidungen.",
   "h": "Der Begriff stammt aus einem kirchlichen Verfahren.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "k7g77z",
@@ -2577,7 +2625,8 @@
   ],
   "e": "Odysseus ließ sich an den Mast binden. Beispiele: Sparplan per Dauerauftrag, Handy im anderen Zimmer.",
   "h": "Am Mast festgebunden",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1dweagb",
@@ -2637,7 +2686,8 @@
   ],
   "e": "Blaise Pascal (17. Jh.): Bei unendlichem Gewinn wiegt die geringe Wahrscheinlichkeit auf. Sie gilt als frühes Beispiel für Entscheidungstheorie.",
   "h": "Wette auf Gott",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1piaqaz",
@@ -2657,7 +2707,8 @@
   ],
   "e": "Vereinfachtes Modell der klassischen Ökonomie. Die Verhaltensökonomik zeigt, wo Menschen davon abweichen.",
   "h": "Rationaler Nutzenmaximierer",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "1ptn2wu",
@@ -2717,7 +2768,8 @@
   ],
   "e": "Beispiele: kopernikanische Wende, Relativitätstheorie. Normale Wissenschaft löst Rätsel im bestehenden Paradigma.",
   "h": "Paradigma",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "jdin3r",
@@ -2777,7 +2829,8 @@
   "e": "Korrelation ist nicht Kausalität: Ein Zusammenhang allein zeigt nicht, was die Ursache ist. Dafür braucht es Experimente oder weitere Belege.",
   "h": "Denk an den Merksatz über Korrelation.",
   "d": 1,
-  "id": "nf0a95c3"
+  "id": "nf0a95c3",
+  "p": 1
  },
  {
   "s": "Denkfehler",
@@ -2797,7 +2850,8 @@
   "e": "Was knapp scheint, wirkt wertvoller und drängt zu schnellen Entscheidungen. Robert Cialdini beschreibt Knappheit als eines der wichtigsten Überzeugungsprinzipien.",
   "h": "Es geht um die Menge, die noch übrig ist.",
   "d": 1,
-  "id": "n51a7b1c"
+  "id": "n51a7b1c",
+  "p": 1
  },
  {
   "s": "Denkfehler",
@@ -2817,7 +2871,8 @@
   "e": "Menschen fühlen sich verpflichtet, Gefälligkeiten zu erwidern. Kleine Geschenke erhöhen deshalb die Kaufbereitschaft.",
   "h": "Etwas zurückgeben wollen.",
   "d": 2,
-  "id": "n35fa53c"
+  "id": "n35fa53c",
+  "p": 1
  },
  {
   "s": "Entscheiden & Argumentieren",
@@ -2837,7 +2892,8 @@
   "e": "Verteiltes Wiederholen (Spacing) ist einer der am besten belegten Lerneffekte. Marifa nutzt ihn mit dem Wiederholungsplan.",
   "h": "Zeitabstände spielen eine Rolle.",
   "d": 1,
-  "id": "ncea376b"
+  "id": "ncea376b",
+  "p": 1
  },
  {
   "s": "Entscheiden & Argumentieren",
@@ -2857,7 +2913,8 @@
   "e": "Wer sich selbst abfragt, muss Wissen aktiv abrufen. Das stärkt die Erinnerung stärker als erneutes Lesen.",
   "h": "Aktives Erinnern statt passives Lesen.",
   "d": 2,
-  "id": "nb3da99f"
+  "id": "nb3da99f",
+  "p": 1
  },
  {
   "s": "Denkfehler",
@@ -2877,7 +2934,8 @@
   "e": "Beim Schwellenpreis (9,99 statt 10) prägt die erste Ziffer den Eindruck stark. Händler nutzen das gezielt.",
   "h": "Es geht um die Leserichtung von links nach rechts.",
   "d": 1,
-  "id": "n4ff5392"
+  "id": "n4ff5392",
+  "p": 1
  },
  {
   "s": "Denkfehler",
@@ -2897,7 +2955,8 @@
   "e": "Eine Anekdote ist ein Einzelfall. Ob etwas gefährlich ist, zeigt erst der Vergleich vieler Menschen mit und ohne Risikofaktor.",
   "h": "Eine Ausnahme ist nicht die Regel.",
   "d": 1,
-  "id": "n8e159f0"
+  "id": "n8e159f0",
+  "p": 1
  },
  {
   "s": "Denkfehler",
@@ -2917,7 +2976,8 @@
   "e": "Schon die Erwartung einer Behandlung kann Beschwerden messbar lindern. Deshalb vergleichen Studien neue Mittel mit Scheinmedikamenten.",
   "h": "Lateinisch: „Ich werde gefallen.“",
   "d": 1,
-  "id": "n467e900"
+  "id": "n467e900",
+  "p": 1
  },
  {
   "s": "Entscheiden & Argumentieren",
@@ -2937,7 +2997,8 @@
   "e": "Pläne wie „Wenn ich nach Hause komme, gehe ich joggen“ (Implementation Intentions, Peter Gollwitzer) erhöhen laut vielen Studien die Umsetzung deutlich.",
   "h": "Situation und Handlung fest verknüpfen.",
   "d": 2,
-  "id": "n63e37f2"
+  "id": "n63e37f2",
+  "p": 1
  },
  {
   "s": "Entscheiden & Argumentieren",
@@ -2957,7 +3018,8 @@
   "e": "Quelle und Belege prüfen ist der Kern von Medienkompetenz: Wer steht dahinter, und lässt sich die Aussage an anderer Stelle bestätigen?",
   "h": "Herkunft und Nachweise.",
   "d": 1,
-  "id": "n0942b16"
+  "id": "n0942b16",
+  "p": 1
  },
  {
   "s": "Entscheiden & Argumentieren",

@@ -78,7 +78,8 @@
   ],
   "e": "Maßgeblich ist der Moment des Zuspiels: Der Angreifer darf nicht näher am Tor sein als Ball und vorletzter Gegner. Der Torwart zählt meist als einer der beiden.",
   "h": "Der Torwart zählt mit.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "qkstt8",
@@ -180,7 +181,8 @@
   ],
   "e": "Zwei Halbzeiten à 45 Minuten, dazu Nachspielzeit. Eine Verlängerung dauert 2 × 15 Minuten.",
   "h": "Zweimal 45.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "b2ehyo",
@@ -362,7 +364,8 @@
   ],
   "e": "Gerd Müller traf 365-mal in 427 Spielen, alle für den FC Bayern. Er wurde siebenmal Torschützenkönig.",
   "h": "Er spielte nur für einen Bundesligaklub.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "a4kzk3",
@@ -462,7 +465,8 @@
   ],
   "e": "Dänemark rückte kurzfristig für das wegen des Krieges ausgeschlossene Jugoslawien nach und schlug im Finale Deutschland 2:0.",
   "h": "Skandinavisches Überraschungsteam.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1cukys5",
@@ -522,7 +526,8 @@
   ],
   "e": "Pelé wurde im Oktober 1940 geboren und schoss 1958 im Finale gegen Schweden zwei Tore.",
   "h": "Noch minderjährig.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1yr1xiu",
@@ -562,7 +567,8 @@
   ],
   "e": "Der Begriff stammt aus dem Cricket. Ein Spieler erzielt drei Tore in einem Spiel.",
   "h": "Ursprung im Cricket.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1iqsqwt",
@@ -582,7 +588,8 @@
   ],
   "e": "Die Football Association gründete sich 1863 in London und trennte damit Fußball von Rugby.",
   "h": "Association Football.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1ecsy10",
@@ -622,7 +629,8 @@
   ],
   "e": "Leicester gewann 2015/16 unter Claudio Ranieri erstmals die Premier League.",
   "h": "Füchse.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1l09bs9",
@@ -642,7 +650,8 @@
   ],
   "e": "Juventus ist mit über 30 Meistertiteln Rekordmeister Italiens.",
   "h": "Schwarz-weiß gestreift.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1y9711z",
@@ -682,7 +691,8 @@
   ],
   "e": "Beckenbauer wurde 1974 als Kapitän und 1990 als Teamchef Weltmeister. Das gelang sonst nur Mário Zagallo und Didier Deschamps.",
   "h": "Erst Kapitän, dann Trainer.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1iu5kgy",
@@ -782,7 +792,8 @@
   ],
   "e": "Die FIFA sitzt seit 1932 in Zürich. Die UEFA hat ihren Sitz in Nyon.",
   "h": "Größte Stadt der Schweiz.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1we17r6",
@@ -802,7 +813,8 @@
   ],
   "e": "Brasilien gewann 1970 den dritten Titel und durfte die Trophäe behalten. Seit 1974 gibt es den FIFA-Weltpokal.",
   "h": "Dritter Titel.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "w0wd4d",
@@ -822,7 +834,8 @@
   ],
   "e": "Der Elfmeterpunkt liegt 11 m vor dem Tor, das sind 12 Yards. Daher der Name.",
   "h": "Der Name verrät es.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1yvbara",
@@ -862,7 +875,8 @@
   ],
   "e": "Die Spiele 1896 fanden in Athen statt, unter anderem im Panathenäischen Stadion.",
   "h": "Wiege der Antike.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "14lrsq",
@@ -882,7 +896,8 @@
   ],
   "e": "Sommerspiele laufen im Vier-Jahres-Takt, Winterspiele ebenfalls. Seit 1994 liegen sie zwei Jahre auseinander.",
   "h": "Ein Olympiade-Zyklus.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "xhxeth",
@@ -922,7 +937,8 @@
   ],
   "e": "Die Länge wurde 1921 nach dem Olympialauf von London 1908 standardisiert und beträgt 26 Meilen und 385 Yards.",
   "h": "Nach London 1908.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1hzz7kp",
@@ -1102,7 +1118,8 @@
   ],
   "e": "Die Flamme wird in Olympia im Heraion mit einem Hohlspiegel durch Sonnenlicht entzündet.",
   "h": "Antike Stätte auf dem Peloponnes.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "hs3z9m",
@@ -1142,7 +1159,8 @@
   ],
   "e": "Das IOC sitzt seit 1915 in Lausanne am Genfer See, das als Olympische Hauptstadt gilt.",
   "h": "Am Genfer See.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "4xkt3y",
@@ -1162,7 +1180,8 @@
   ],
   "e": "Der französische Pädagoge Coubertin rief 1894 den Kongress in Paris ein, der das IOC gründete.",
   "h": "Ein Franzose.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "lv9ocg",
@@ -1222,7 +1241,8 @@
   ],
   "e": "Ironman: 3,8 km Schwimmen, 180 km Radfahren, 42,195 km Laufen.",
   "h": "112 Meilen.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "vw4qn0",
@@ -1262,7 +1282,8 @@
   ],
   "e": "Becker war der jüngste Herreneinzel-Sieger in Wimbledon, geboren im November 1967.",
   "h": "Noch nicht volljährig.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "q0dtkm",
@@ -1282,7 +1303,8 @@
   ],
   "e": "Der Davis Cup wurde 1900 von Dwight Davis gestiftet und wird als Länderwettbewerb gespielt.",
   "h": "Gestiftet von einem Amerikaner.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "kw6ato",
@@ -1322,7 +1344,8 @@
   ],
   "e": "Seit 2010 gibt es 25, 18, 15, 12, 10, 8, 6, 4, 2 und 1 Punkte für die Top Ten.",
   "h": "Seit 2010.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1xdfwto",
@@ -1442,7 +1465,8 @@
   ],
   "e": "Bikila siegte 1960 barfuß und wiederholte den Sieg 1964 in Tokio mit Schuhen.",
   "h": "Barfuß.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "z2jsj5",
@@ -1482,7 +1506,8 @@
   ],
   "e": "Comăneci erhielt am Stufenbarren die erste glatte 10,0. Die Anzeige konnte nur „1,00“ darstellen.",
   "h": "Rumänin.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "w4ip7r",
@@ -1562,7 +1587,8 @@
   ],
   "e": "Die Steine bestehen aus Granit von der schottischen Insel Ailsa Craig und wiegen bis zu 20 kg.",
   "h": "Aus Schottland.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1wmi20g",
@@ -1582,7 +1608,8 @@
   ],
   "e": "Die Tournee beginnt Ende Dezember in Oberstdorf und endet Anfang Januar in Bischofshofen.",
   "h": "Im Allgäu.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "19oej7i",
@@ -1602,7 +1629,8 @@
   ],
   "e": "Bei den Spielen 1900 in Paris starteten die ersten Frauen, zum Beispiel im Tennis und Golf.",
   "h": "Zweite Spiele der Neuzeit.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "6i1lyt",
@@ -1642,7 +1670,8 @@
   ],
   "e": "Das Maglia Rosa geht auf die rosa Seiten der Zeitung „La Gazzetta dello Sport“ zurück.",
   "h": "Zeitungsfarbe.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "kub3ec",
@@ -1662,7 +1691,8 @@
   ],
   "e": "Das Bull zählt 50 Punkte und gilt als Doppelfeld. Der Ring darum bringt 25 Punkte.",
   "h": "Mitte der Scheibe.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "7qfi9a",
@@ -1702,6 +1732,7 @@
   "e": "Wer im selben Spiel eine zweite Gelbe Karte erhält, sieht Gelb-Rot und muss vom Platz. Die Mannschaft spielt dann in Unterzahl weiter.",
   "h": "Zweimal Gelb.",
   "d": 1,
-  "id": "na03111a"
+  "id": "na03111a",
+  "p": 1
  }
 ]

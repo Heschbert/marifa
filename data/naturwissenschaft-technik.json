@@ -97,7 +97,8 @@
   ],
   "e": "Die Erde ist etwa 4,5 Milliarden Jahre alt.",
   "h": "Zwischen 13 und 14 Milliarden.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1rimvxk",
@@ -137,7 +138,8 @@
   ],
   "e": "Spannung gleich Widerstand mal Stromstärke.",
   "h": "Drei Größen: Spannung, Widerstand, Stromstärke.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1nwmaxn",
@@ -217,7 +219,8 @@
   ],
   "e": "Auf dem Mond wiegst du etwa ein Sechstel, deine Masse bleibt gleich.",
   "h": "Auf dem Mond ändert sich nur eines.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1fsj8gd",
@@ -237,7 +240,8 @@
   ],
   "e": "Watt misst die Leistung, Newton die Kraft, Pascal den Druck.",
   "h": "Benannt nach einem englischen Physiker.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "xszuag",
@@ -257,7 +261,8 @@
   ],
   "e": "Genau sind es 299.792.458 m/s. Nichts mit Masse kann diese Geschwindigkeit erreichen.",
   "h": "Eine Drei mit fünf Nullen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "9nsbm8",
@@ -318,7 +323,8 @@
   ],
   "e": "Das entspricht 0 Kelvin. Kälter geht es nicht, weil die Teilchenbewegung auf ein Minimum fällt.",
   "h": "Die Kelvin-Skala beginnt dort.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "17uz98r",
@@ -338,7 +344,8 @@
   ],
   "e": "Die Protonenzahl bestimmt das Element, die Elektronen bilden die Hülle.",
   "h": "Positiv geladene und ungeladene Teilchen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1nro2mo",
@@ -378,7 +385,8 @@
   ],
   "e": "Proxima Centauri ist etwa 4,2 Lichtjahre entfernt und gehört zum Alpha-Centauri-System.",
   "h": "Er liegt im Sternbild Centaurus.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1wsonmd",
@@ -458,7 +466,8 @@
   ],
   "e": "Die Lichtquanten-Erklärung half bei der Entwicklung der Quantenphysik.",
   "h": "Es war ein Quanteneffekt bei Licht.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1pvmqlz",
@@ -498,7 +507,8 @@
   ],
   "e": "Ein Krankenwagen klingt beim Vorbeifahren erst höher, dann tiefer.",
   "h": "Denke an eine Sirene.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "18pdwyd",
@@ -518,7 +528,8 @@
   ],
   "e": "Je weiter eine Galaxie entfernt ist, desto schneller entfernt sie sich.",
   "h": "Die Wellenlänge wird länger.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1srr9hv",
@@ -538,7 +549,8 @@
   ],
   "e": "Bei Temperaturen von rund 15 Millionen Grad im Kern verschmelzen Wasserstoffkerne.",
   "h": "Leichte Kerne verschmelzen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1y3v8gl",
@@ -698,7 +710,8 @@
   ],
   "e": "Je genauer der Ort bekannt ist, desto unschärfer ist der Impuls.",
   "h": "Ein Grundprinzip der Quantenmechanik.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "tauihx",
@@ -718,7 +731,8 @@
   ],
   "e": "Es gilt P = U · I.",
   "h": "Spannung mal Stromstärke.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "dxm6z9",
@@ -758,7 +772,8 @@
   ],
   "e": "Entdeckt wurde sie 1911 von Heike Kamerlingh Onnes bei Quecksilber nahe 4 Kelvin.",
   "h": "Es geht um Kälte.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1rf3tes",
@@ -858,7 +873,8 @@
   ],
   "e": "Er untersuchte Uransalze, die Fotoplatten schwärzten.",
   "h": "Er teilte sich 1903 den Nobelpreis mit den Curies.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1x47apk",
@@ -878,7 +894,8 @@
   ],
   "e": "Es stammt von Johannes Kepler (1609).",
   "h": "Kepler widerlegte die perfekten Kreisbahnen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1iye0ql",
@@ -898,7 +915,8 @@
   ],
   "e": "Die Sonne steht im Mittelpunkt, die Erde ist ein Planet.",
   "h": "Das Werk heißt De revolutionibus.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "17r61gf",
@@ -938,7 +956,8 @@
   ],
   "e": "Etwa 27 % sind Dunkle Materie und etwa 68 % Dunkle Energie (Planck-Daten).",
   "h": "Sehr wenig.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "yhe7zy",
@@ -1018,7 +1037,8 @@
   ],
   "e": "Ein Teelöffel davon wöge Milliarden Tonnen.",
   "h": "Ein Pulsar ist ein Beispiel.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "9623fq",
@@ -1038,7 +1058,8 @@
   ],
   "e": "Die Korona ist erstaunlicherweise heißer als die Oberfläche.",
   "h": "Zwischen 5.000 und 6.000.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "jagsi3",
@@ -1078,7 +1099,8 @@
   ],
   "e": "Ein Gerät mit 1 kW Leistung braucht in einer Stunde 1 kWh, das sind 3,6 Megajoule.",
   "h": "Leistung mal Zeit.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "d3nokk",
@@ -1098,7 +1120,8 @@
   ],
   "e": "Die mRNA wird nach kurzer Zeit abgebaut und gelangt nicht in den Zellkern.",
   "h": "Die Zelle bekommt eine Anleitung, keinen fertigen Wirkstoff.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "egelj0",
@@ -1198,7 +1221,8 @@
   ],
   "e": "Unter 7 ist es sauer, darüber basisch. Die Skala ist logarithmisch.",
   "h": "Genau in der Mitte der Skala.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1tigmu8",
@@ -1258,47 +1282,8 @@
   ],
   "e": "Deshalb helfen Antibiotika nicht gegen Viren.",
   "h": "Viren haben keinen eigenen Stoffwechsel.",
-  "d": 2
- },
- {
-  "id": "1ykk77r",
-  "s": "Chemie & Biologie",
-  "q": "Welches Gas nehmen Pflanzen bei der Photosynthese auf?",
-  "a": [
-   "Kohlendioxid",
-   "Sauerstoff",
-   "Stickstoff",
-   "Wasserstoff"
-  ],
-  "w": [
-   "",
-   "Sauerstoff geben sie dabei ab.",
-   "Stickstoff nehmen Pflanzen als Nitrat über die Wurzel auf.",
-   "Wasserstoff stammt aus dem Wasser, nicht aus der Luft."
-  ],
-  "e": "Sie bilden daraus mit Licht und Wasser Zucker und geben Sauerstoff ab.",
-  "h": "CO₂.",
-  "d": 1
- },
- {
-  "id": "1ty82c3",
-  "s": "Chemie & Biologie",
-  "q": "Wie viele Herzkammern hat das menschliche Herz?",
-  "a": [
-   "4",
-   "2",
-   "3",
-   "6"
-  ],
-  "w": [
-   "",
-   "Zwei sind es bei den Vorhöfen.",
-   "Drei Kammern haben viele Reptilien.",
-   "Es sind weniger."
-  ],
-  "e": "Zwei Vorhöfe und zwei Kammern.",
-  "h": "Zwei mal zwei.",
-  "d": 1
+  "d": 2,
+  "p": 1
  },
  {
   "id": "b2578r",
@@ -1418,7 +1403,8 @@
   ],
   "e": "Er sagte sogar noch unbekannte Elemente voraus.",
   "h": "Ein russischer Chemiker.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "ohmjf8",
@@ -1438,26 +1424,6 @@
   ],
   "e": "Wasserstoff hat die Ordnungszahl 1.",
   "h": "Ordnungszahl 1.",
-  "d": 1
- },
- {
-  "id": "12beq07",
-  "s": "Chemie & Biologie",
-  "q": "Welches Gas macht den größten Teil der Erdatmosphäre aus?",
-  "a": [
-   "Stickstoff",
-   "Sauerstoff",
-   "Kohlendioxid",
-   "Argon"
-  ],
-  "w": [
-   "",
-   "Sauerstoff macht etwa 21 % aus.",
-   "CO₂ macht nur etwa 0,04 % aus.",
-   "Argon macht etwa 0,9 % aus."
-  ],
-  "e": "Stickstoff macht rund 78 % aus.",
-  "h": "Knapp vier Fünftel.",
   "d": 1
  },
  {
@@ -1558,7 +1524,8 @@
   ],
   "e": "Ein Mol Wasser wiegt etwa 18 g.",
   "h": "Die Zahl ist nach Avogadro benannt.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1fjbg47",
@@ -1678,7 +1645,8 @@
   ],
   "e": "Seine Regeln veröffentlichte er 1866, sie wurden erst um 1900 wiederentdeckt.",
   "h": "Ein Augustinermönch aus Brünn.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "1giqfqd",
@@ -1698,47 +1666,8 @@
   ],
   "e": "Rosalind Franklins Röntgenbeugungsbilder lieferten wichtige Daten.",
   "h": "Zwei Namen im Modell von 1953.",
-  "d": 2
- },
- {
-  "id": "g2r7qs",
-  "s": "Chemie & Biologie",
-  "q": "Welchen Farbstoff nutzen Pflanzen, um Licht für die Photosynthese aufzunehmen?",
-  "a": [
-   "Chlorophyll",
-   "Hämoglobin",
-   "Melanin",
-   "Karotin"
-  ],
-  "w": [
-   "",
-   "Hämoglobin ist der rote Blutfarbstoff.",
-   "Melanin ist ein Pigment der Haut.",
-   "Carotin hilft zusätzlich, ist aber nicht der Hauptfarbstoff."
-  ],
-  "e": "Chlorophyll absorbiert vor allem rotes und blaues Licht, grünes wird reflektiert.",
-  "h": "Blattgrün.",
-  "d": 2
- },
- {
-  "id": "2y3x4f",
-  "s": "Chemie & Biologie",
-  "q": "Wo findet die Photosynthese in der Pflanzenzelle statt?",
-  "a": [
-   "In den Chloroplasten",
-   "In den Mitochondrien",
-   "Im Zellkern",
-   "In den Vakuolen"
-  ],
-  "w": [
-   "",
-   "Dort findet die Zellatmung statt.",
-   "Dort liegt das Erbgut.",
-   "Vakuolen speichern Stoffe und Wasser."
-  ],
-  "e": "Chloroplasten enthalten Chlorophyll.",
-  "h": "Grüne Organellen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "12dj5o5",
@@ -1858,7 +1787,8 @@
   ],
   "e": "Beispiel ist Homo sapiens aus Gattung und Art.",
   "h": "Ein schwedischer Naturforscher des 18. Jahrhunderts.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "4q3n0s",
@@ -1881,26 +1811,6 @@
   "d": 2
  },
  {
-  "id": "wvw5ln",
-  "s": "Chemie & Biologie",
-  "q": "Was ist eine Flechte?",
-  "a": [
-   "Lebensgemeinschaft aus Pilz und Alge",
-   "Eine kleine Form von Moos",
-   "Eine Art Pilz auf Totholz",
-   "Eine Algenart des Meeres"
-  ],
-  "w": [
-   "",
-   "Moose sind eigene Pflanzen ohne diese Lebensgemeinschaft.",
-   "Auch Pilze allein sind keine Flechten.",
-   "Die Alge ist nur ein Partner der Flechte."
-  ],
-  "e": "Der Pilz liefert Schutz, der Partner liefert durch Photosynthese Zucker.",
-  "h": "Symbiose.",
-  "d": 3
- },
- {
   "id": "5dzon4",
   "s": "Chemie & Biologie",
   "q": "Wie entstehen Antibiotikaresistenzen?",
@@ -1918,7 +1828,8 @@
   ],
   "e": "Resistente Bakterien überleben und vermehren sich.",
   "h": "Evolution im Kleinen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "mydet3",
@@ -1939,46 +1850,6 @@
   "e": "Beispiele sind Körpertemperatur von etwa 37 °C und Blutzucker.",
   "h": "Gleichgewicht im Körper.",
   "d": 3
- },
- {
-  "id": "1q7zk3v",
-  "s": "Chemie & Biologie",
-  "q": "Welche Krankheit entsteht durch Vitamin-C-Mangel?",
-  "a": [
-   "Skorbut",
-   "Rachitis",
-   "Beriberi",
-   "Anämie"
-  ],
-  "w": [
-   "",
-   "Rachitis entsteht durch Vitamin-D-Mangel.",
-   "Beriberi entsteht durch Vitamin-B1-Mangel.",
-   "Anämie entsteht häufig durch Eisenmangel."
-  ],
-  "e": "Früher litten Seefahrer daran, die keine frischen Früchte hatten.",
-  "h": "Seefahrerkrankheit.",
-  "d": 2
- },
- {
-  "id": "ftusv4",
-  "s": "Chemie & Biologie",
-  "q": "Welches Vitamin kann der Körper mithilfe von Sonnenlicht in der Haut bilden?",
-  "a": [
-   "Vitamin D",
-   "Vitamin C",
-   "Vitamin A",
-   "Vitamin B12"
-  ],
-  "w": [
-   "",
-   "Vitamin C muss mit der Nahrung aufgenommen werden.",
-   "Vitamin A wird aus der Nahrung gewonnen.",
-   "B12 stammt aus Tierprodukten."
-  ],
-  "e": "UV-B-Strahlung setzt die Bildung in Gang.",
-  "h": "Sonnenvitamin.",
-  "d": 2
  },
  {
   "id": "p9zr48",
@@ -2021,26 +1892,6 @@
   "d": 2
  },
  {
-  "id": "11v6jns",
-  "s": "Chemie & Biologie",
-  "q": "Wo findet in der Lunge der Gasaustausch statt?",
-  "a": [
-   "In den Lungenbläschen",
-   "In den Bronchien der Lunge",
-   "In der Luftröhre des Halses",
-   "Im Zwerchfell unter der Lunge"
-  ],
-  "w": [
-   "",
-   "Sie leiten die Luft nur weiter.",
-   "Sie ist nur ein Leitungsrohr.",
-   "Das ist der Atemmuskel."
-  ],
-  "e": "Dort gelangt Sauerstoff ins Blut und Kohlendioxid in die Atemluft.",
-  "h": "Sehr dünne Wände.",
-  "d": 2
- },
- {
   "id": "1il2xad",
   "s": "Chemie & Biologie",
   "q": "Wer erhielt Nobelpreise sowohl in Physik als auch in Chemie?",
@@ -2058,7 +1909,8 @@
   ],
   "e": "Sie erhielt 1903 den Physik- und 1911 den Chemienobelpreis.",
   "h": "Entdeckerin von Polonium und Radium.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "eyy6lo",
@@ -2078,27 +1930,8 @@
   ],
   "e": "Ozon hat die Formel O₃, Luftsauerstoff ist O₂.",
   "h": "O und eine Zahl.",
-  "d": 2
- },
- {
-  "id": "5t5e8i",
-  "s": "Chemie & Biologie",
-  "q": "Wozu dienen Knöllchenbakterien bei Hülsenfrüchten?",
-  "a": [
-   "Sie binden Stickstoff aus der Luft",
-   "Sie zersetzen tote Pflanzenteile",
-   "Sie schützen vor Fressfeinden",
-   "Sie nehmen Wasser auf"
-  ],
-  "w": [
-   "",
-   "Dafür sorgen andere Bodenorganismen.",
-   "Mit Schutz haben sie nichts zu tun.",
-   "Wasser nehmen die Wurzeln auf."
-  ],
-  "e": "Bohnen und Klee düngen so den Boden mit Stickstoffverbindungen.",
-  "h": "Symbiose in der Wurzel.",
-  "d": 3
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1owh2iq",
@@ -2118,7 +1951,8 @@
   ],
   "e": "Ein kalter Winter widerlegt deshalb nicht die Erwärmung. Er ist ein Wetterereignis.",
   "h": "Langer Zeitraum.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "9azmri",
@@ -2138,7 +1972,8 @@
   ],
   "e": "Methan wirkt pro Molekül stärker, CO₂ ist aber insgesamt der größte Treiber.",
   "h": "Entsteht bei Verbrennung fossiler Stoffe.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "10hrsgx",
@@ -2178,27 +2013,8 @@
   ],
   "e": "Im Winter der Nordhalbkugel ist die Erde der Sonne sogar am nächsten, Anfang Januar.",
   "h": "Etwa 23,4 Grad.",
-  "d": 2
- },
- {
-  "id": "v5jdaf",
-  "s": "Erde & Klima",
-  "q": "Was verursacht die Gezeiten hauptsächlich?",
-  "a": [
-   "Die Anziehungskraft des Mondes",
-   "Der Wind",
-   "Die Erdrotation allein",
-   "Die Sonne allein"
-  ],
-  "w": [
-   "",
-   "Der Wind erzeugt Wellen, aber keine Gezeiten.",
-   "Sie wirkt mit, doch die Ursache ist die Anziehung.",
-   "Die Sonne wirkt mit, doch der Mond ist stärker."
-  ],
-  "e": "Auch die Sonne wirkt mit. Der Mond ist wegen seiner Nähe der stärkere Faktor.",
-  "h": "Zweimal am Tag.",
-  "d": 1
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1fxl3ak",
@@ -2218,27 +2034,8 @@
   ],
   "e": "Ohne ihn läge die mittlere Temperatur bei etwa −18 °C statt bei etwa 15 °C.",
   "h": "Ohne ihn wäre es eisig.",
-  "d": 2
- },
- {
-  "id": "1ljt3tt",
-  "s": "Erde & Klima",
-  "q": "Wo liegt der „Pazifische Feuerring“?",
-  "a": [
-   "Rund um den Pazifik",
-   "Ein Gebiet im Atlantik mit vielen Vulkaninseln",
-   "Eine Zone im Indischen Ozean mit häufigen Tsunamis",
-   "Eine Bruchzone rund um das Mittelmeer"
-  ],
-  "w": [
-   "",
-   "Dort liegen eher Island und die Azoren.",
-   "Dort gibt es Tsunamis, aber der Ring umfasst den Pazifik.",
-   "Das Mittelmeer hat eine eigene Zone, aber nicht den Feuerring."
-  ],
-  "e": "Hier stoßen viele Erdplatten aufeinander.",
-  "h": "Von Chile über Japan bis Neuseeland.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1gfx0qv",
@@ -2278,7 +2075,8 @@
   ],
   "e": "Ohne sie wäre Leben an Land durch UV-Strahlung stark gefährdet.",
   "h": "Sonnenschutz der Erde.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "co6d6u",
@@ -2301,26 +2099,6 @@
   "d": 2
  },
  {
-  "id": "lrhnfv",
-  "s": "Erde & Klima",
-  "q": "In welchem Zustand befindet sich der äußere Erdkern?",
-  "a": [
-   "Flüssig",
-   "Fest",
-   "Gasförmig",
-   "Plasma"
-  ],
-  "w": [
-   "",
-   "Fest ist der innere Kern.",
-   "Bei dem Druck gibt es kein Gas.",
-   "Es herrscht kein Plasmazustand."
-  ],
-  "e": "Seine Strömung erzeugt das Erdmagnetfeld.",
-  "h": "Das erkennt man an Erdbebenwellen.",
-  "d": 3
- },
- {
   "id": "en9ljy",
   "s": "Erde & Klima",
   "q": "Welcher Berg ist der höchste der Erde über dem Meeresspiegel?",
@@ -2339,66 +2117,6 @@
   "e": "Der Everest ist etwa 8.849 Meter hoch.",
   "h": "Im Himalaya.",
   "d": 1
- },
- {
-  "id": "fdz34o",
-  "s": "Erde & Klima",
-  "q": "Welcher ist der größte Ozean der Erde?",
-  "a": [
-   "Pazifischer Ozean",
-   "Atlantischer Ozean",
-   "Indischer Ozean",
-   "Arktischer Ozean"
-  ],
-  "w": [
-   "",
-   "Er ist der zweitgrößte.",
-   "Er ist der drittgrößte.",
-   "Er ist der kleinste."
-  ],
-  "e": "Er bedeckt etwa ein Drittel der Erdoberfläche.",
-  "h": "Größer als alle Landflächen zusammen.",
-  "d": 1
- },
- {
-  "id": "1c9w92d",
-  "s": "Erde & Klima",
-  "q": "Wo liegt der tiefste bekannte Punkt der Ozeane?",
-  "a": [
-   "Im Marianengraben",
-   "Im Puerto-Rico-Graben",
-   "Im Java-Graben",
-   "Im Kurilengraben"
-  ],
-  "w": [
-   "",
-   "Er liegt im Atlantik und ist deutlich weniger tief.",
-   "Er gehört zu den tiefen Gräben, ist aber nicht der tiefste.",
-   "Er ist tief, aber nicht der tiefste."
-  ],
-  "e": "Das Challengertief ist rund 11.000 Meter tief.",
-  "h": "Im westlichen Pazifik.",
-  "d": 2
- },
- {
-  "id": "blbss3",
-  "s": "Erde & Klima",
-  "q": "Welche Wüste ist die größte der Erde, wenn man alle Trockenregionen nach Niederschlag zählt?",
-  "a": [
-   "Die Antarktis",
-   "Die Sahara",
-   "Die Arktis",
-   "Die Gobi"
-  ],
-  "w": [
-   "",
-   "Die Sahara ist die größte Heißwüste.",
-   "Sie ist kleiner als die Antarktis.",
-   "Sie ist deutlich kleiner."
-  ],
-  "e": "Als Wüste gilt ein Gebiet mit sehr wenig Niederschlag, die Antarktis misst etwa 14 Millionen km².",
-  "h": "Kalte Wüste.",
-  "d": 3
  },
  {
   "id": "12bwvmc",
@@ -2438,7 +2156,8 @@
   ],
   "e": "Die Mohs-Skala reicht von 1 (Talk) bis 10 (Diamant).",
   "h": "Höchste Stufe.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "3dgzt3",
@@ -2458,7 +2177,8 @@
   ],
   "e": "Granit erstarrt langsam tief in der Erde aus Magma. Granit gehört zu den Tiefengesteinen.",
   "h": "Aus Schmelze.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1nmmsw2",
@@ -2521,26 +2241,6 @@
   "d": 2
  },
  {
-  "id": "y7rvmh",
-  "s": "Erde & Klima",
-  "q": "Wodurch werden Tsunamis meist ausgelöst?",
-  "a": [
-   "Durch Seebeben",
-   "Durch starken Wind",
-   "Durch Gezeiten",
-   "Durch Hurrikane"
-  ],
-  "w": [
-   "",
-   "Wind erzeugt nur Wellen an der Oberfläche.",
-   "Gezeiten sind regelmäßige Strömungen.",
-   "Hurrikane erzeugen Sturmfluten, aber keine Tsunamis."
-  ],
-  "e": "Es kommt zu einer plötzlichen Verschiebung des Meeresbodens.",
-  "h": "Wellen aus der Tiefe.",
-  "d": 1
- },
- {
   "id": "1dtufvx",
   "s": "Erde & Klima",
   "q": "Was geschieht am Mittelatlantischen Rücken?",
@@ -2558,26 +2258,6 @@
   ],
   "e": "Island liegt direkt auf dieser Grenze.",
   "h": "Island liegt mittendrin und wächst langsam.",
-  "d": 2
- },
- {
-  "id": "8lxnkb",
-  "s": "Erde & Klima",
-  "q": "Wie entstand der Himalaya?",
-  "a": [
-   "Durch Kollision von Indien und Eurasien",
-   "Durch eine Reihe großer Vulkanausbrüche",
-   "Durch das Aufbrechen des Meeresbodens",
-   "Durch Gletscher, die den Boden hoben"
-  ],
-  "w": [
-   "",
-   "Er ist ein Faltengebirge, kein Vulkangebirge.",
-   "Es geschah durch Zusammenstoß.",
-   "Gletscher tragen eher ab."
-  ],
-  "e": "Die Kollision begann vor etwa 50 Millionen Jahren und hält an.",
-  "h": "Zusammenstoß.",
   "d": 2
  },
  {
@@ -2638,47 +2318,8 @@
   ],
   "e": "Deshalb drehen Hochs im Uhrzeigersinn.",
   "h": "Deshalb drehen Hochs auf der Nordhalbkugel im Uhrzeigersinn.",
-  "d": 2
- },
- {
-  "id": "1mt16m0",
-  "s": "Erde & Klima",
-  "q": "Welche Wirkung hat der Golfstrom?",
-  "a": [
-   "Er bringt warmes Wasser nach Nordeuropa",
-   "Er kühlt Europa im Sommer stark ab",
-   "Er erzeugt die Gezeiten an den Küsten",
-   "Er fließt durch den Indischen Ozean"
-  ],
-  "w": [
-   "",
-   "Er transportiert wärmeres Wasser nach Norden.",
-   "Gezeiten kommen von Mond und Sonne.",
-   "Er gehört zum Atlantik."
-  ],
-  "e": "Er trägt zum milden Klima Westeuropas bei.",
-  "h": "Er kommt aus der Karibik.",
-  "d": 2
- },
- {
-  "id": "5tqid8",
-  "s": "Erde & Klima",
-  "q": "Was kennzeichnet das Klimaphänomen El Niño?",
-  "a": [
-   "Warmes Wasser im östlichen Pazifik",
-   "Eine Kaltwasserzunge im Nordatlantik",
-   "Ein stärkerer Monsun über Indien",
-   "Eine verlängerte Eiszeit im Norden"
-  ],
-  "w": [
-   "",
-   "Das beschreibt keinen El Niño.",
-   "Er wird eher geschwächt.",
-   "Es geht um mehrjährige Schwankungen."
-  ],
-  "e": "Er tritt etwa alle zwei bis sieben Jahre auf und verändert Niederschläge weltweit.",
-  "h": "Spanisch für das Kind.",
-  "d": 3
+  "d": 2,
+  "p": 3
  },
  {
   "id": "m6xioz",
@@ -2738,7 +2379,8 @@
   ],
   "e": "Schall braucht etwa drei Sekunden pro Kilometer, das Licht des Blitzes ist praktisch sofort da.",
   "h": "Licht schneller als Schall.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1w7lf7n",
@@ -2758,7 +2400,8 @@
   ],
   "e": "Frischer Schnee hat eine hohe Albedo, dunkles Wasser eine niedrige.",
   "h": "Spiegel.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "rko8so",
@@ -2778,7 +2421,8 @@
   ],
   "e": "Zwei Effekte: thermische Ausdehnung und Zufluss von schmelzenden Gletschern und Eisschilden.",
   "h": "Zwei Ursachen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "j1hwt8",
@@ -2798,27 +2442,8 @@
   ],
   "e": "Schwimmendes Eis verdrängt schon sein Gewicht an Wasser (Archimedes).",
   "h": "Eiswürfel im Glas.",
-  "d": 3
- },
- {
-  "id": "1avp1rf",
-  "s": "Erde & Klima",
-  "q": "Was legt das Übereinkommen von Paris 2015 als Ziel fest?",
-  "a": [
-   "Deutlich unter 2 °C, möglichst 1,5 °C",
-   "Eine Erwärmung von höchstens 5 °C",
-   "Ein Ende aller Emissionen bis 2020",
-   "Ein Verbot von Kohlekraftwerken"
-  ],
-  "w": [
-   "",
-   "Das wäre weit über dem Ziel.",
-   "Ein solches Datum nennt der Vertrag nicht.",
-   "Ein solches Verbot enthält er nicht."
-  ],
-  "e": "Das Ziel gilt im Vergleich zur vorindustriellen Zeit.",
-  "h": "Eine Zahl mit Komma.",
-  "d": 2
+  "d": 3,
+  "p": 1
  },
  {
   "id": "1222k49",
@@ -2858,7 +2483,8 @@
   ],
   "e": "Seit etwa 1750 ist der Wert um rund die Hälfte gestiegen, derzeit über 420 ppm.",
   "h": "Zwei Siebener.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1rcgsww",
@@ -2878,7 +2504,8 @@
   ],
   "e": "Deshalb setzen sie bei der Verbrennung gebundenes CO₂ frei.",
   "h": "Biomasse.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "25emjo",
@@ -2938,7 +2565,8 @@
   ],
   "e": "Taut er auf, kann er CO₂ und Methan freisetzen.",
   "h": "Dauerfrost.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1hm2594",
@@ -2961,26 +2589,6 @@
   "d": 1
  },
  {
-  "id": "a4yho5",
-  "s": "Erde & Klima",
-  "q": "Wie groß ist der Erdumfang am Äquator ungefähr?",
-  "a": [
-   "Etwa 40.000 km",
-   "Etwa 4.000 km",
-   "Etwa 400.000 km",
-   "Etwa 12.700 km"
-  ],
-  "w": [
-   "",
-   "Das wäre nur ein Zehntel des tatsächlichen Wertes.",
-   "Das ist die Entfernung zum Mond.",
-   "Das ist der Durchmesser der Erde."
-  ],
-  "e": "Der Meter wurde ursprünglich als Teil des Erdumfangs definiert.",
-  "h": "Vierzig mal tausend.",
-  "d": 2
- },
- {
   "id": "1tl957c",
   "s": "Erde & Klima",
   "q": "Wodurch entstehen Karsthöhlen?",
@@ -3001,26 +2609,6 @@
   "d": 3
  },
  {
-  "id": "1g7hryz",
-  "s": "Erde & Klima",
-  "q": "Was ist ein Monsun?",
-  "a": [
-   "Ein saisonaler Wind mit Regenzeit",
-   "Ein tropischer Wirbelsturm",
-   "Ein Gewitter im Hochgebirge",
-   "Ein warmer Fallwind der Alpen"
-  ],
-  "w": [
-   "",
-   "Das ist ein Zyklon.",
-   "Es ist ein großräumiges Windsystem.",
-   "Das ist der Föhn."
-  ],
-  "e": "Der Sommermonsun in Südasien bringt starke Regenfälle.",
-  "h": "Arabisch für Jahreszeit.",
-  "d": 2
- },
- {
   "id": "lmcwrf",
   "s": "Erde & Klima",
   "q": "Welches natürliche Treibhausgas hat den größten Anteil am natürlichen Treibhauseffekt?",
@@ -3038,27 +2626,8 @@
   ],
   "e": "Wasserdampf trägt etwa die Hälfte oder mehr bei, hängt aber von der Temperatur ab.",
   "h": "Verdunstung.",
-  "d": 3
- },
- {
-  "id": "1ylsx27",
-  "s": "Erde & Klima",
-  "q": "Wie nennt man tropische Wirbelstürme im Nordwestpazifik?",
-  "a": [
-   "Taifun",
-   "Hurrikan",
-   "Zyklon",
-   "Tornado"
-  ],
-  "w": [
-   "",
-   "So heißen sie im Atlantik und Nordostpazifik.",
-   "So heißen sie im Indischen Ozean.",
-   "Das ist ein kleinräumiger Wirbel an Land."
-  ],
-  "e": "Es sind dieselbe Art Sturm, nur mit regionalen Namen.",
-  "h": "Japan und Philippinen.",
-  "d": 2
+  "d": 3,
+  "p": 3
  },
  {
   "id": "j3fh4p",
@@ -3098,7 +2667,8 @@
   ],
   "e": "Deshalb kann es plausibel klingende Fehler machen. Wichtige Fakten gehören geprüft.",
   "h": "Das Modell rechnet mit Wahrscheinlichkeiten.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1amsoce",
@@ -3118,7 +2688,8 @@
   ],
   "e": "Wiederverwendete Passwörter sind ein häufiger Grund für übernommene Konten.",
   "h": "Ein Tresor.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1nicy9y",
@@ -3158,7 +2729,8 @@
   ],
   "e": "Er schützt auch vor Phishing, weil er die echte Webseite prüft.",
   "h": "Ein physischer Gegenstand.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1xm6qit",
@@ -3178,7 +2750,8 @@
   ],
   "e": "Eine lange Passphrase schlägt kurze, komplizierte Wörter.",
   "h": "Viele Zeichen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1hmeax1",
@@ -3198,7 +2771,8 @@
   ],
   "e": "Sicherer ist es, die Webseite selbst aufzurufen, statt dem Link zu folgen.",
   "h": "Adresse prüfen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1ojwxhf",
@@ -3218,7 +2792,8 @@
   ],
   "e": "Auch der Anbieter des Dienstes kann die Nachrichten nicht entschlüsseln.",
   "h": "Nur die Enden haben Schlüssel.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1v3qji4",
@@ -3238,7 +2813,8 @@
   ],
   "e": "So überlebt deine Datensicherung einen Defekt, einen Diebstahl oder einen Brand.",
   "h": "Drei, zwei, eins.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "hpo00a",
@@ -3278,7 +2854,8 @@
   ],
   "e": "HTTPS schützt die Übertragung, sagt aber nichts darüber, ob die Seite vertrauenswürdig ist.",
   "h": "Adresszeile.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "j3v8no",
@@ -3298,7 +2875,8 @@
   ],
   "e": "Wichtige Fakten aus KI-Antworten gehören deshalb geprüft.",
   "h": "Erfundene Fakten.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1bjqc1h",
@@ -3498,7 +3076,8 @@
   ],
   "e": "Es ging 1969 in den USA in Betrieb.",
   "h": "Behörde des US-Verteidigungsministeriums.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "r06qpn",
@@ -3518,7 +3097,8 @@
   ],
   "e": "Sie beschreibt die Struktur von Webseiten.",
   "h": "Auszeichnungssprache.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1wkwam7",
@@ -3558,7 +3138,8 @@
   ],
   "e": "Der Kernel wird bis heute von einer großen Gemeinschaft weiterentwickelt.",
   "h": "Ein Finne.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "wkl3hm",
@@ -3618,7 +3199,8 @@
   ],
   "e": "Eine wichtige Gegenmaßnahme sind Offline-Backups.",
   "h": "Die Erpresser wollen Geld, meist in Kryptowährung.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "qvb49g",
@@ -3638,7 +3220,8 @@
   ],
   "e": "Der Mensch ist oft das schwächste Glied.",
   "h": "Täuschung.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "t2oq5f",
@@ -3818,7 +3401,8 @@
   ],
   "e": "Sie schrieb in den 1840er Jahren Notizen zu Babbages Analytical Engine.",
   "h": "Tochter eines Dichters.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "ib1lp0",
@@ -3838,7 +3422,8 @@
   ],
   "e": "Gordon Moore beschrieb die Beobachtung 1965 zunächst mit einer jährlichen Verdopplung und korrigierte sie 1975 auf etwa zwei Jahre.",
   "h": "Verdopplung.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1udxigv",
@@ -3878,7 +3463,8 @@
   ],
   "e": "Es ist ein Standard für Anschlüsse.",
   "h": "Bus.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "103ighd",
@@ -3958,7 +3544,8 @@
   ],
   "e": "Solarzellen nutzen den Photoeffekt in Halbleitern.",
   "h": "Licht zu Strom.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1irphsn",
@@ -3998,7 +3585,8 @@
   ],
   "e": "Mit 1 kWh Strom entstehen oft 3 bis 4 kWh Wärme.",
   "h": "Wie ein Kühlschrank rückwärts.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "1vqigp3",
@@ -4078,7 +3666,8 @@
   ],
   "e": "Sie trieb die Industrielle Revolution an.",
   "h": "Eine Einheit trägt seinen Namen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1th20sj",
@@ -4158,7 +3747,8 @@
   ],
   "e": "Das Netz arbeitet mit Wechselstrom.",
   "h": "Zwei Dreier.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "s": "Physik & Astronomie",
@@ -4198,7 +3788,8 @@
   "e": "In deutschen Haushalten entfällt der größte Teil des Energieverbrauchs auf Raumwärme und Warmwasser. Dort lohnt Sparen am meisten.",
   "h": "Denk an den Winter.",
   "d": 1,
-  "id": "n8160840"
+  "id": "n8160840",
+  "p": 1
  },
  {
   "s": "Chemie & Biologie",
@@ -4218,7 +3809,8 @@
   "e": "Antibiotika bekämpfen Bakterien, nicht Viren. Unnötige Einnahme fördert Resistenzen.",
   "h": "Es kommt auf die Art des Erregers an.",
   "d": 1,
-  "id": "nb6a2623"
+  "id": "nb6a2623",
+  "p": 1
  },
  {
   "s": "Chemie & Biologie",
@@ -4238,7 +3830,8 @@
   "e": "Säuren wie Essig setzen aus chlorhaltigen Reinigern Chlorgas frei, das die Atemwege schwer schädigen kann.",
   "h": "Es entsteht etwas Gasförmiges.",
   "d": 1,
-  "id": "n9a68676"
+  "id": "n9a68676",
+  "p": 1
  },
  {
   "s": "Erde & Klima",
@@ -4278,7 +3871,8 @@
   "e": "Nur eine aktuelle Sicherung an einem anderen Ort (z. B. Cloud oder Computer) rettet Fotos und Daten bei Verlust oder Defekt.",
   "h": "Eine Kopie an anderer Stelle.",
   "d": 1,
-  "id": "nc24d411"
+  "id": "nc24d411",
+  "p": 1
  },
  {
   "s": "Technik & IT",
@@ -4298,6 +3892,7 @@
   "e": "Angreifer nutzen bekannte Lücken gezielt aus. Updates schließen diese Lücken, deshalb sind sie einer der wichtigsten Schutzmaßnahmen.",
   "h": "Es geht um Schutz vor Angriffen.",
   "d": 1,
-  "id": "n2e25ee2"
+  "id": "n2e25ee2",
+  "p": 1
  }
 ]

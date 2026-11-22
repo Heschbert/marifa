@@ -16,3 +16,7 @@
 ~gjkuec|Lehre vom Leiden und seinem Ende|Vier Gebote für Mönche|Vier Götter des Himmels|Vier heilige Berge Asiens
 ~1n641jo|Die Wirkung von Handlungen auf die Zukunft|Die Befreiung aus dem Kreislauf|Die Wiedergeburt selbst|Die göttliche Weltordnung
 ~q46q09|Gewaltlosigkeit gegenüber allen Lebewesen|Verehrung des Feuers|Glaube an einen Schöpfergott|Pflicht zur Pilgerfahrt
+# Dubletten
+-nb44936d
+-nf32ae5d
+-n67ee85d

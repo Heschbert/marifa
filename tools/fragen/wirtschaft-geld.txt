@@ -128,3 +128,5 @@
 ~1i5m049|Einrichtung bei Einbruch oder Feuer|Das Gebäude, in dem man wohnt|Schäden, die man anderen zufügt|Schäden am eigenen Auto
 ~x2lcqs|Beim Tod der versicherten Person|Am Ende der Laufzeit immer|Beim Eintritt der Rente|Bei jedem Arztbesuch
 ~59ghdx|Steuer auf das halbe Einkommen, dann verdoppelt|Jeder Partner zahlt nur die halbe Steuer|Der Staat zahlt die Steuer für Ehepaare|Ehepaare sind von der Steuer befreit
+# Dublette zu Geschichte
+-utud1d

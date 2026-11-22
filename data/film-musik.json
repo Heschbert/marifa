@@ -117,7 +117,8 @@
   ],
   "e": "Die goldene Statuette heißt seit 1999 „Lola“. Der Name erinnert an berühmte Lola-Figuren des deutschen Films, etwa aus „Der blaue Engel“ und „Lola rennt“.",
   "h": "Ein Frauenname.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1qfd15t",
@@ -137,7 +138,8 @@
   ],
   "e": "Welles war bei seinem Debüt 25 Jahre alt. Der Film gilt in vielen Umfragen als einer der besten aller Zeiten.",
   "h": "Ein Debüt mit 25.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "gdlk50",
@@ -340,7 +342,8 @@
   "h": "Regie: Paul Thomas Anderson.",
   "d": 2,
   "lenOk": true,
-  "src": "ABC/AP, 16.03.2026: abc7.com/post/oscars-2026-battle-another-wins-best-picture-98th-academy-awards/18719481/"
+  "src": "ABC/AP, 16.03.2026: abc7.com/post/oscars-2026-battle-another-wins-best-picture-98th-academy-awards/18719481/",
+  "p": 3
  },
  {
   "id": "aq1kul",
@@ -360,7 +363,8 @@
   ],
   "e": "Hepburn gewann 1934, 1968, 1969 und 1982. Kein anderer Mensch hat vier Schauspiel-Oscars.",
   "h": "Vier Mal zwischen 1934 und 1982.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1wbebrk",
@@ -400,7 +404,8 @@
   ],
   "e": "Auguste und Louis Lumière zeigten am 28. Dezember 1895 im Grand Café den Cinématographe.",
   "h": "Ein französisches Geschwisterpaar.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "bb51hy",
@@ -420,7 +425,8 @@
   ],
   "e": "Die Rakete in das Auge des Mondes ist eine der bekanntesten Szenen der Filmgeschichte.",
   "h": "Trickfilmpionier.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "n7entw",
@@ -580,7 +586,8 @@
   ],
   "e": "Seit dem Tonfilm gelten 24 Bilder pro Sekunde als Standard.",
   "h": "Zweimal zwölf.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1xb4l0q",
@@ -600,7 +607,8 @@
   ],
   "e": "Der Löwe heißt Leo und brüllt vor MGM-Filmen seit den 1920er Jahren.",
   "h": "Löwe Leo.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "5btbgv",
@@ -661,7 +669,8 @@
   ],
   "e": "Pixar arbeitete bei „Toy Story“ mit Disney zusammen.",
   "h": "Lampe im Logo.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1kyozkk",
@@ -681,7 +690,8 @@
   ],
   "e": "Der Film gewann 2003 den Oscar als bester Animationsfilm.",
   "h": "Studio Ghibli.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1cbr375",
@@ -761,7 +771,8 @@
   ],
   "e": "Bigelow gewann für „Tödliches Kommando“ (The Hurt Locker).",
   "h": "Irak-Kriegsfilm.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1uf4eoa",
@@ -801,7 +812,8 @@
   ],
   "e": "Der César wird seit 1976 verliehen.",
   "h": "Name eines Bildhauers.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1h6ne1p",
@@ -901,7 +913,8 @@
   ],
   "e": "Uraufführung 1824 in Wien. Die Melodie ist die Hymne der Europäischen Union.",
   "h": "Chorsinfonie.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "cuxz0r",
@@ -1041,7 +1054,8 @@
   ],
   "e": "Die Scala wurde 1778 eröffnet.",
   "h": "Italiens Opernhaus Nummer eins.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "vrkwe8",
@@ -1061,7 +1075,8 @@
   ],
   "e": "Die „Moldau“ ist Teil des Zyklus „Mein Vaterland“ (Má vlast) von 1874.",
   "h": "Tschechischer Fluss.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1or2sb8",
@@ -1081,7 +1096,8 @@
   ],
   "e": "Bach kam 1685 in Eisenach in Thüringen zur Welt und starb 1750 in Leipzig.",
   "h": "Wartburg-Stadt.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1fnzl6z",
@@ -1101,7 +1117,8 @@
   ],
   "e": "Die Oktave umfasst zwölf Halbtöne: sieben weiße und fünf schwarze Tasten.",
   "h": "Zähle auf dem Klavier alle Tasten bis zur nächsten gleichnamigen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1qsynlo",
@@ -1221,7 +1238,8 @@
   ],
   "e": "„Messiah“ wurde 1742 in Dublin uraufgeführt. Bei dem Halleluja-Chor stehen Zuhörer traditionell auf.",
   "h": "Englisch: Messiah.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1rysdc7",
@@ -1321,7 +1339,8 @@
   ],
   "e": "Das Festival findet seit 1990 im Dorf Wacken im Kreis Steinburg statt.",
   "h": "Im hohen Norden.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1lnu8e8",
@@ -1421,7 +1440,8 @@
   ],
   "e": "Der Violinschlüssel ist ein G-Schlüssel und legt das g′ auf die zweite Linie fest.",
   "h": "Auch G-Schlüssel.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "1ppaqlx",
@@ -1481,7 +1501,8 @@
   ],
   "e": "Pentatonische Tonleitern kommen in vielen Kulturen vor, etwa in Blues und Volksmusik.",
   "h": "Von griech. „penta“.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "aixhos",
@@ -1521,7 +1542,8 @@
   ],
   "e": "„Kind of Blue“ gilt als Meilenstein des modalen Jazz.",
   "h": "Blaue Stimmung.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1ata0xo",
@@ -1541,7 +1563,8 @@
   ],
   "e": "Der Boléro besteht aus einem Thema, das sich steigert und mit dem Orchester wächst.",
   "h": "Franzose.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1duc1il",
@@ -1701,7 +1724,8 @@
   "e": "Der Refrain (Kehrvers) kehrt mit gleichem Text und gleicher Melodie mehrfach wieder, zwischen den Strophen.",
   "h": "Spätestens beim zweiten Mal singt das Publikum mit.",
   "d": 1,
-  "id": "n1975098"
+  "id": "n1975098",
+  "p": 1
  },
  {
   "s": "Musik",
@@ -1741,6 +1765,7 @@
   "e": "Die Freiwillige Selbstkontrolle der Filmwirtschaft (FSK) gibt Altersstufen 0, 6, 12, 16 und 18 vor. Ab 6 Jahren dürfen Kinder „ab 12“-Filme im Kino in Begleitung eines Elternteils sehen.",
   "h": "Es geht um das Alter.",
   "d": 1,
-  "id": "na0472b7"
+  "id": "na0472b7",
+  "p": 1
  }
 ]

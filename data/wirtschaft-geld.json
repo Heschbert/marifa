@@ -17,7 +17,8 @@
   ],
   "e": "Der Realzins ist ungefähr Nominalzins minus Inflation, hier also etwa minus 1 %.",
   "h": "Zinsen minus Inflation.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1ouq2f7",
@@ -37,7 +38,8 @@
   ],
   "e": "Über Jahrzehnte macht der Unterschied zwischen 0,2 % und 1,5 % TER einen großen Teil des Endvermögens aus.",
   "h": "Die drei Buchstaben stehen für „Total Expense Ratio“.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1180zot",
@@ -57,7 +59,8 @@
   ],
   "e": "Passives Nachbilden hält die Kosten niedrig, Kursverluste des Index trägt man dennoch mit.",
   "h": "Ein Fondsmanager trifft keine eigenen Auswahlentscheidungen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1bmgske",
@@ -77,7 +80,8 @@
   ],
   "e": "Ein einzelnes Unternehmen kann auf null fallen, ein breiter Markt praktisch nicht.",
   "h": "Nicht alle Eier in einen Korb.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "10t8gcx",
@@ -97,7 +101,8 @@
   ],
   "e": "Aktionäre sind Miteigentümer, Anleihegläubiger bekommen Zinsen und die Rückzahlung, solange der Schuldner zahlen kann.",
   "h": "Eigentum gegen Kredit.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "16zu1c5",
@@ -137,7 +142,8 @@
   ],
   "e": "Er soll Jobverlust oder größere Reparaturen abfedern, ohne dass man Geldanlagen verkaufen muss.",
   "h": "Ein Vierteljahr bis ein halbes Jahr.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "13qyful",
@@ -177,7 +183,8 @@
   ],
   "e": "Ein KGV von 20 heißt: Man zahlt das 20-Fache des Jahresgewinns je Aktie.",
   "h": "Kurs durch Gewinn.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "9x3vgg",
@@ -198,7 +205,8 @@
   "e": "Beim Split 2:1 hältst du doppelt so viele Aktien zum halben Kurs.",
   "h": "Eine Pizza in mehr Stücke schneiden ergibt nicht mehr Pizza.",
   "d": 2,
-  "hintOk": true
+  "hintOk": true,
+  "p": 3
  },
  {
   "id": "18d4qfv",
@@ -218,7 +226,8 @@
   ],
   "e": "Wer ein Angebot mit hoher Rendite und angeblich null Risiko sieht, sollte misstrauisch werden.",
   "h": "Denk an Lotto und Sparbuch.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "8nyrws",
@@ -238,7 +247,8 @@
   ],
   "e": "Die gesetzliche Einlagensicherung gilt je Kunde und Bank in der EU, einzelne Banken bieten freiwillig mehr.",
   "h": "Sechsstellig, aber nicht unbegrenzt.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1wxubu9",
@@ -258,7 +268,8 @@
   ],
   "e": "Bei 5 % Zins werden aus 1.000 € nach 10 Jahren rund 1.629 € statt 1.500 € ohne Zinseszins.",
   "h": "Zinsen auf Zinsen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "rqmmk",
@@ -278,7 +289,8 @@
   ],
   "e": "72 geteilt durch den Zinssatz in Prozent ergibt die Verdopplungszeit in Jahren: 72 : 6 = 12.",
   "h": "72 durch Zinssatz.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "zwdfdz",
@@ -298,7 +310,8 @@
   ],
   "e": "Wer jeden Monat denselben Betrag investiert, kauft bei fallenden Kursen mehr Anteile und glättet so den Einstandspreis.",
   "h": "Fester Betrag, wechselnde Stückzahl.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "h61kjw",
@@ -338,7 +351,8 @@
   ],
   "e": "Der Kupon wird auf den Nennwert gerechnet, daher sind Kupon und aktuelle Rendite nur bei Kurs 100 % gleich.",
   "h": "Kommt vom Zinsschein.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "fdvtxc",
@@ -438,7 +452,8 @@
   ],
   "e": "Verheiratete haben gemeinsam 2.000 €. Mit einem Freistellungsauftrag nutzt man ihn bei der Bank.",
   "h": "Vierstellig, seit 2023.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "184djcq",
@@ -458,7 +473,8 @@
   ],
   "e": "Mehrere Banken können den Betrag aufteilen, insgesamt darf er nicht überschritten werden.",
   "h": "Er hat mit dem jährlichen Sparerfreibetrag zu tun.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "65oyuu",
@@ -478,7 +494,8 @@
   ],
   "e": "Ein enger Spread zeigt meist hohe Liquidität, ein breiter versteckte Handelskosten.",
   "h": "Geld- und Briefkurs.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "mii3fm",
@@ -578,7 +595,8 @@
   ],
   "e": "Beiträge können steuerlich absetzbar sein, aber das Kapital ist weder beleihbar noch kapitalisierbar.",
   "h": "Nur Rente, kein Kapital.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "223sq7",
@@ -638,7 +656,8 @@
   ],
   "e": "Zur Basisversorgung zählen auch Beamtenversorgung und Basisrente.",
   "h": "Fundament.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "r5kd61",
@@ -698,7 +717,8 @@
   ],
   "e": "Alle drei Ziele lassen sich nicht gleichzeitig maximieren, es besteht ein Zielkonflikt.",
   "h": "Verfügbarkeit gehört dazu.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "u9dob3",
@@ -738,7 +758,8 @@
   ],
   "e": "Die Preise für Tulpenzwiebeln stiegen extrem und brachen 1637 ein, ein frühes Beispiel für eine Spekulationsblase.",
   "h": "Holland.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1d1v5bw",
@@ -758,7 +779,8 @@
   ],
   "e": "Es bricht zusammen, sobald nicht genug neue Anleger kommen, benannt nach Charles Ponzi.",
   "h": "Das System braucht ständig Nachschub.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1df7765",
@@ -778,7 +800,8 @@
   ],
   "e": "Der Bulle stößt mit den Hörnern nach oben, der Bär schlägt mit den Tatzen nach unten.",
   "h": "Bulle steigt.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "inucd1",
@@ -798,7 +821,8 @@
   ],
   "e": "Deutsche Wertpapiere beginnen mit DE und haben zwölf Stellen.",
   "h": "International Securities Identification Number.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1a4mvss",
@@ -818,7 +842,8 @@
   ],
   "e": "Sie gleicht aus, dass der Fonds auf Unternehmensebene bereits Steuern zahlt.",
   "h": "Dreißig Prozent.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1t6ls08",
@@ -858,7 +883,8 @@
   ],
   "e": "Sie wird auf einen Basisertrag gerechnet und im Folgejahr von der Bank abgeführt.",
   "h": "Sie fällt auch bei thesaurierenden Fonds an, ohne Verkauf.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "y2i0ai",
@@ -958,7 +984,8 @@
   ],
   "e": "Der Begriff stammt vom Pokern, wo blaue Chips den höchsten Wert hatten.",
   "h": "Große Namen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "wi0vyz",
@@ -978,7 +1005,8 @@
   ],
   "e": "AAA gilt als beste Note der Skala, etwa bei S&P.",
   "h": "Dreimal A.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1wu0zeu",
@@ -1018,7 +1046,8 @@
   ],
   "e": "Wer einen Abend mit einer Serie verbringt, zahlt dafür mit dem, was er sonst hätte tun können.",
   "h": "Der entgangene Nutzen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1tv3e10",
@@ -1058,7 +1087,8 @@
   ],
   "e": "Es sagt nichts über Verteilung, Umwelt oder unbezahlte Arbeit.",
   "h": "Leistung innerhalb der Grenzen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1bm5grx",
@@ -1158,7 +1188,8 @@
   ],
   "e": "Für denselben Betrag bekommt man weniger Waren und Dienstleistungen.",
   "h": "Geld wird weniger wert.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "i17oss",
@@ -1178,7 +1209,8 @@
   ],
   "e": "Er steuert indirekt Kredit- und Sparzinsen.",
   "h": "Die EZB legt ihn fest.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "16fskrb",
@@ -1261,26 +1293,6 @@
   "d": 1
  },
  {
-  "id": "utud1d",
-  "s": "Wirtschaft verstehen",
-  "q": "Wer war der erste Bundeswirtschaftsminister der Bundesrepublik Deutschland?",
-  "a": [
-   "Ludwig Erhard",
-   "Konrad Adenauer",
-   "Helmut Schmidt",
-   "Karl Schiller"
-  ],
-  "w": [
-   "",
-   "Adenauer war der erste Bundeskanzler.",
-   "Helmut Schmidt wurde erst Jahrzehnte später Kanzler.",
-   "Karl Schiller war Wirtschaftsminister, aber erst ab 1966."
-  ],
-  "e": "Erhard (Minister 1949 bis 1963) steht für das Wirtschaftswunder und die Soziale Marktwirtschaft.",
-  "h": "Wohlstand für alle.",
-  "d": 2
- },
- {
   "id": "158wjbo",
   "s": "Wirtschaft verstehen",
   "q": "Wer prägte das Bild der „unsichtbaren Hand“ des Marktes?",
@@ -1358,7 +1370,8 @@
   ],
   "e": "Die Rentenmark war durch Grundbesitz und Industrie gedeckt und stabilisierte das Geld.",
   "h": "Eine Billion Mark.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1vk1wni",
@@ -1378,7 +1391,8 @@
   ],
   "e": "Zuerst gab es den Euro 1999 für Konten und Überweisungen, Münzen und Scheine folgten 2002.",
   "h": "Zwei Tausend zwei.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1ai6xc7",
@@ -1439,7 +1453,8 @@
   ],
   "e": "Sie steht seit 2009 in den Artikeln 109 und 115.",
   "h": "Höchstes Gesetz.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "72qbz1",
@@ -1459,7 +1474,8 @@
   ],
   "e": "Das Statistische Bundesamt (Destatis) in Wiesbaden erfasst die Preise für einen festgelegten Warenkorb.",
   "h": "Wiesbaden.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1nr69zw",
@@ -1499,7 +1515,8 @@
   ],
   "e": "Danach folgen Rezession bzw. Talsohle und dann wieder der Aufschwung.",
   "h": "Nach oben kommt unten.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1cvhs7p",
@@ -1579,7 +1596,8 @@
   ],
   "e": "Jedes Land profitiert, wenn es sich auf das spezialisiert, was es relativ am besten kann.",
   "h": "Wein gegen Tuch.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1ktawi3",
@@ -1599,7 +1617,8 @@
   ],
   "e": "Sie hat ihren Sitz in Genf und entstand 1995 aus dem GATT.",
   "h": "Die Organisation sitzt in Genf und entstand aus dem GATT.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "15jj7da",
@@ -1619,7 +1638,8 @@
   ],
   "e": "Die Obergrenze ist im Protokoll festgelegt, die Währung wurde 2009 gestartet.",
   "h": "Eine Zahl mit zwei Ziffern.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "19eljqe",
@@ -1659,7 +1679,8 @@
   ],
   "e": "Dadurch sollen Zinsen sinken und mehr Geld in die Wirtschaft fließen.",
   "h": "Anleihenkäufe.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1ehjps1",
@@ -1679,7 +1700,8 @@
   ],
   "e": "Lehman meldete am 15. September 2008 Insolvenz an.",
   "h": "Fünfzehnter September.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1904o47",
@@ -1799,7 +1821,8 @@
   ],
   "e": "Der Wert 0 bedeutet völlige Gleichverteilung, 1 maximale Ungleichheit.",
   "h": "Zwischen null und eins.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "zje1o2",
@@ -1919,7 +1942,8 @@
   ],
   "e": "Die Fed wurde 1913 gegründet und hat ein doppeltes Mandat aus stabilen Preisen und Beschäftigung.",
   "h": "Kurz: die Fed.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "12ao0pu",
@@ -1979,7 +2003,8 @@
   ],
   "e": "Steigende Produktivität ermöglicht auf Dauer höhere Löhne ohne höhere Preise.",
   "h": "Leistung pro Stunde.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "19x9trk",
@@ -2019,7 +2044,8 @@
   ],
   "e": "Dazu kommt gegebenenfalls Kirchensteuer, die Bank führt die Steuer direkt ab.",
   "h": "Ein Viertel.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "dn4wf5",
@@ -2039,7 +2065,8 @@
   ],
   "e": "Er ist der Wert, mit dem man Kreditangebote vergleicht.",
   "h": "Gesamtkosten.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1a1z8h",
@@ -2099,7 +2126,8 @@
   ],
   "e": "Sie schützt vor existenzbedrohenden Forderungen und kostet meist wenig.",
   "h": "Schadenersatz.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "809sxr",
@@ -2119,7 +2147,8 @@
   ],
   "e": "Die gesetzliche Erwerbsminderungsrente reicht oft nicht, um den Lebensstandard zu halten.",
   "h": "Einkommen sichern.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "qora7s",
@@ -2180,7 +2209,8 @@
   "e": "Die Datenkopie ist gesetzlich kostenlos. Wie oft man sie gratis anfordern kann, legt das Gesetz nicht fest; die Verbraucherzentrale rät, mindestens einmal im Jahr nachzusehen.",
   "h": "Das Recht stammt aus der Datenschutz-Grundverordnung.",
   "d": 1,
-  "src": "Verbraucherzentrale, Scoring und Auskunfteien: verbraucherzentrale.de/scoring"
+  "src": "Verbraucherzentrale, Scoring und Auskunfteien: verbraucherzentrale.de/scoring",
+  "p": 1
  },
  {
   "id": "1m6x0ex",
@@ -2200,7 +2230,8 @@
   ],
   "e": "Die Erstlaufzeit darf weiterhin bis zu zwei Jahre betragen, danach gilt die Monatsfrist.",
   "h": "Gesetz für faire Verbraucherverträge.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "rpggyu",
@@ -2220,7 +2251,8 @@
   ],
   "e": "Als Dauerlösung ist er meist sehr teuer.",
   "h": "Dispo.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "14mzb6m",
@@ -2241,7 +2273,8 @@
   "e": "7 % gilt für viele Lebensmittel, seit dem 1. Januar 2026 auch für Speisen in Restaurants.",
   "h": "Neunzehn.",
   "d": 1,
-  "src": "IHK Dresden, Jan. 2026: ihk.de/dresden/servicenavigation/presse-publikationen/meldungen/dauerhafte-steuersenkung-auf-speisen-seit-1-januar-in-kraft-6929266"
+  "src": "IHK Dresden, Jan. 2026: ihk.de/dresden/servicenavigation/presse-publikationen/meldungen/dauerhafte-steuersenkung-auf-speisen-seit-1-januar-in-kraft-6929266",
+  "p": 1
  },
  {
   "id": "uxry1z",
@@ -2261,7 +2294,8 @@
   ],
   "e": "Auf einen steuerfreien Grundfreibetrag folgen steigende Sätze bis zum Spitzensteuersatz von 42 %, darüber 45 %.",
   "h": "Mehr verdienen, höherer Satz.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1r43rw",
@@ -2301,7 +2335,8 @@
   ],
   "e": "Bei der Klasse VI gibt es keinen Grundfreibetrag, daher fällt mehr Lohnsteuer an.",
   "h": "Letzte Klasse.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1k0xu1k",
@@ -2342,7 +2377,8 @@
   ],
   "e": "Beispiele sind Fahrtkosten zur Arbeit oder Arbeitsmittel, sie mindern das zu versteuernde Einkommen.",
   "h": "Berufsausgaben.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1qf6bu9",
@@ -2382,7 +2418,8 @@
   ],
   "e": "Wegen hoher Freigrenzen zahlen ihn die meisten Steuerzahler seit 2021 nicht mehr.",
   "h": "Fünf Komma fünf.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1wrb95b",
@@ -2442,7 +2479,8 @@
   ],
   "e": "Die Frist beginnt mit Bekanntgabe des Bescheids, der Einspruch ist kostenlos.",
   "h": "Vier Wochen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "blete6",
@@ -2462,7 +2500,8 @@
   ],
   "e": "Mit Steuerberater gilt eine längere Frist, eine Fristverlängerung gibt es nur in Ausnahmefällen.",
   "h": "Hochsommer.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1bljfb4",
@@ -2482,7 +2521,8 @@
   ],
   "e": "Der Vorteil sind weniger Verwaltungsaufwand, der Nachteil, dass bezahlte Vorsteuer nicht erstattet wird.",
   "h": "Kleine Umsätze.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "lh5wts",
@@ -2502,7 +2542,8 @@
   ],
   "e": "So wird nur der Mehrwert besteuert, deshalb heißt sie Mehrwertsteuer.",
   "h": "So wird nur der Mehrwert besteuert.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "wiw8ay",
@@ -2522,7 +2563,8 @@
   ],
   "e": "Der Freibetrag gilt zusätzlich zum Versorgungsfreibetrag.",
   "h": "Eine halbe Million.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "137vrba",
@@ -2562,7 +2604,8 @@
   ],
   "e": "Die Sätze unterscheiden sich je nach Bundesland, die Einnahmen stehen den Ländern zu.",
   "h": "Länder.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "c3r0vn",
@@ -2582,7 +2625,8 @@
   ],
   "e": "Die Gemeinden erhalten die Einnahmen und bestimmen so die Höhe der Steuer.",
   "h": "Vor Ort.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "8oia9f",
@@ -2622,7 +2666,8 @@
   ],
   "e": "Die Berufsgenossenschaften finanzieren sich über Beiträge der Arbeitgeber.",
   "h": "Nur eine Seite.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1tej3u3",
@@ -2682,7 +2727,8 @@
   ],
   "e": "Sie reguliert Schäden, die man mit dem Auto anderen zufügt.",
   "h": "Pflicht.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "14m3sue",
@@ -2802,7 +2848,8 @@
   ],
   "e": "Dafür sinkt meist der Beitrag.",
   "h": "Eigener Anteil.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "72ldw2",
@@ -2842,7 +2889,8 @@
   ],
   "e": "Das gilt nicht für alle Waren, z. B. nicht für individuell angefertigte oder schnell verderbliche.",
   "h": "Zwei Wochen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1426u3a",
@@ -2862,7 +2910,8 @@
   ],
   "e": "Seit 2022 gilt die Beweislastumkehr zugunsten des Käufers im ersten Jahr.",
   "h": "Ab Übergabe.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1a7utyo",
@@ -2962,7 +3011,8 @@
   ],
   "e": "Der Bürge haftet mit seinem gesamten Vermögen, daher ist das Risiko hoch.",
   "h": "Für andere einstehen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "7h2hjp",
@@ -3022,7 +3072,8 @@
   ],
   "e": "Der Tilgungsanteil steigt dafür.",
   "h": "Lateinisch annus: das Jahr.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "13johqd",
@@ -3042,7 +3093,8 @@
   ],
   "e": "Danach folgt eine Anschlussfinanzierung zu den dann geltenden Zinsen.",
   "h": "Zinsen fix.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "5bwfqg",
@@ -3082,7 +3134,8 @@
   ],
   "e": "Bei nicht autorisierten Lastschriften gilt eine deutlich längere Frist von 13 Monaten.",
   "h": "Zwei Monate.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "11uwfcy",
@@ -3102,7 +3155,8 @@
   ],
   "e": "Sie beginnt mit DE, danach folgen zwei Prüfziffern, Bankleitzahl und Kontonummer.",
   "h": "Zwei mehr als zwanzig.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "59ghdx",
@@ -3162,7 +3216,8 @@
   ],
   "e": "Unangemessene Klauseln sind nach den §§ 305 ff. BGB unwirksam.",
   "h": "Kleingedrucktes.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1ydc4fz",
@@ -3222,7 +3277,8 @@
   "e": "Dispozinsen liegen oft über 10 % im Jahr. Wer länger im Minus ist, wechselt besser in einen günstigeren Ratenkredit.",
   "h": "Es geht um das Konto im Minus.",
   "d": 1,
-  "id": "nac97697"
+  "id": "nac97697",
+  "p": 1
  },
  {
   "s": "Sparen & Anlegen",
@@ -3242,7 +3298,8 @@
   "e": "Ein Notgroschen von etwa drei bis sechs Monatsausgaben schützt davor, Aktien in einem Kurstief verkaufen zu müssen.",
   "h": "Denk an Unvorhergesehenes.",
   "d": 1,
-  "id": "n27166c6"
+  "id": "n27166c6",
+  "p": 1
  },
  {
   "s": "Sparen & Anlegen",
@@ -3262,7 +3319,8 @@
   "e": "Ein ETF-Sparplan investiert zum Beispiel monatlich 50 €. Das ist bequem, günstig und streut das Einstiegsrisiko über die Zeit.",
   "h": "Denk an einen Dauerauftrag.",
   "d": 1,
-  "id": "n4dae8fc"
+  "id": "n4dae8fc",
+  "p": 1
  },
  {
   "s": "Wirtschaft verstehen",
@@ -3282,7 +3340,8 @@
   "e": "Höhere Leitzinsen verteuern Kredite, bremsen Nachfrage und Investitionen und sollen so die Inflation senken.",
   "h": "Geld leihen wird …",
   "d": 1,
-  "id": "n3068023"
+  "id": "n3068023",
+  "p": 1
  },
  {
   "s": "Wirtschaft verstehen",
@@ -3302,7 +3361,8 @@
   "e": "Inflation misst den Anstieg des allgemeinen Preisniveaus. Bei 5 % kostet ein Warenkorb nach einem Jahr etwa 5 % mehr.",
   "h": "Denk an den Einkauf im Supermarkt.",
   "d": 1,
-  "id": "n68a24a1"
+  "id": "n68a24a1",
+  "p": 1
  },
  {
   "s": "Steuern, Verträge & Versicherungen",
@@ -3322,7 +3382,8 @@
   "e": "Verbraucherschützer empfehlen, zuerst existenzbedrohende Risiken abzusichern: Schäden an anderen (Haftpflicht) und den Verlust der Arbeitskraft.",
   "h": "Absichern, was existenzbedrohend wäre.",
   "d": 1,
-  "id": "n3462344"
+  "id": "n3462344",
+  "p": 1
  },
  {
   "s": "Steuern, Verträge & Versicherungen",
@@ -3342,6 +3403,7 @@
   "e": "Haustürgeschäfte kann man zwar 14 Tage widerrufen, doch besser ist es, gar nicht unter Druck zu unterschreiben und Angebote zu vergleichen.",
   "h": "Zeit lassen ist kein Fehler.",
   "d": 1,
-  "id": "n9b3ba44"
+  "id": "n9b3ba44",
+  "p": 1
  }
 ]

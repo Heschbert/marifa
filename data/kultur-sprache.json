@@ -17,7 +17,8 @@
   ],
   "e": "Kant (1785, „Grundlegung zur Metaphysik der Sitten“) prüft Handlungsregeln auf ihre Verallgemeinerbarkeit.",
   "h": "Stell dir vor, jeder täte es.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1s02rt5",
@@ -37,7 +38,8 @@
   ],
   "e": "„Sapere aude!“ aus dem Aufsatz „Was ist Aufklärung?“ meint den Ausgang aus selbstverschuldeter Unmündigkeit.",
   "h": "Lateinisch: „Sapere aude“.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "8mjw2g",
@@ -57,7 +59,8 @@
   ],
   "e": "Sokrates (469–399 v. Chr.) kannte sich selbst als Nichtwissenden; überliefert ist das durch Platons „Apologie“.",
   "h": "Er wurde 399 v. Chr. in Athen zum Tod verurteilt.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "4not95",
@@ -117,7 +120,8 @@
   ],
   "e": "Das „cogito, ergo sum“ steht in Descartes’ „Discours de la méthode“ (1637) und ist die Gewissheit, an der man nicht zweifeln kann.",
   "h": "Der Autor war Franzose und Rationalist.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1vtme7g",
@@ -137,7 +141,8 @@
   ],
   "e": "Hobbes begründet den Staat durch einen Vertrag, der den „Krieg aller gegen alle“ im Naturzustand beendet.",
   "h": "Der Autor war Engländer des 17. Jahrhunderts.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1cw35rp",
@@ -217,7 +222,8 @@
   ],
   "e": "Kant fragt darin, was wir a priori erkennen können, und begründet den Kritizismus.",
   "h": "Er lebte in Königsberg.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "15g1k56",
@@ -237,7 +243,8 @@
   ],
   "e": "Das Manifest endet mit dem Aufruf „Proletarier aller Länder, vereinigt euch!“.",
   "h": "Ein Zweiergespann aus Trier und Barmen.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "11ah8ow",
@@ -277,7 +284,8 @@
   ],
   "e": "Das Absurde entsteht aus dem Gegensatz zwischen Sinnsuche und schweigender Welt; man müsse sich Sisyphos „als glücklichen Menschen vorstellen“.",
   "h": "Der Autor erhielt 1957 den Literaturnobelpreis.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1oltga8",
@@ -297,7 +305,8 @@
   ],
   "e": "Heidegger fragt nach dem Sinn von Sein und analysiert dazu das menschliche „Dasein“.",
   "h": "Titel mit zwei Grundbegriffen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1qfsvei",
@@ -317,26 +326,6 @@
   ],
   "e": "Rousseau beginnt mit „Der Mensch wird frei geboren, und überall liegt er in Ketten“ und stellt den Gemeinwillen (volonté générale) ins Zentrum.",
   "h": "Er stammte aus Genf.",
-  "d": 2
- },
- {
-  "id": "oubjlf",
-  "s": "Philosophie & Ideen",
-  "q": "Wer entwickelte die Lehre der Gewaltenteilung in „Vom Geist der Gesetze“ (1748)?",
-  "a": [
-   "Montesquieu",
-   "Locke",
-   "Voltaire",
-   "Rousseau"
-  ],
-  "w": [
-   "",
-   "Locke trennte Legislative und Exekutive, aber die Dreiteilung stammt von Montesquieu.",
-   "Voltaire prägte die Toleranzidee.",
-   "Rousseau setzte auf Volkssouveränität statt Gewaltenteilung."
-  ],
-  "e": "Gesetzgebung, Ausführung und Rechtsprechung sollen getrennt sein, damit keine Macht missbraucht wird.",
-  "h": "Drei Gewalten.",
   "d": 2
  },
  {
@@ -377,7 +366,8 @@
   ],
   "e": "Heraklit sah im ständigen Wandel das Grundprinzip; das Wort „panta rhei“ ist eine spätere Zusammenfassung.",
   "h": "Er heißt „der Dunkle“.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1w4khuo",
@@ -397,7 +387,8 @@
   ],
   "e": "Thales (um 600 v. Chr.) gilt als erster Philosoph der westlichen Tradition.",
   "h": "Stichwort: Meer.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1b7qd2t",
@@ -417,7 +408,8 @@
   ],
   "e": "Leukipp und Demokrit lehrten unteilbare Teilchen (atomos) und leeren Raum.",
   "h": "„Atomos“ heißt „unteilbar“.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "kbhnz",
@@ -457,7 +449,8 @@
   ],
   "e": "Diogenes lebte der Überlieferung nach in einem Fass und verachtete Besitz und Konventionen.",
   "h": "Das Wort „zynisch“ hat hier seinen Ursprung.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "yblqnl",
@@ -477,7 +470,8 @@
   ],
   "e": "Skeptiker wie Pyrrhon von Elis enthalten sich des Urteils, um zur Seelenruhe zu gelangen.",
   "h": "Griechisch für „Zurückhaltung“.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "2e7vb0",
@@ -517,7 +511,8 @@
   ],
   "e": "Das Wort bedeutet „Nicht-Ort“ und beschreibt eine erfundene ideale Insel.",
   "h": "Ein englischer Lordkanzler unter Heinrich VIII.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "vf3rga",
@@ -537,7 +532,8 @@
   ],
   "e": "„Deus sive Natura“; Spinoza (1632–1677) entwickelt seine Ethik nach geometrischer Methode.",
   "h": "Spinoza war ein Pantheist.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "qi173p",
@@ -577,7 +573,8 @@
   ],
   "e": "Apollinisch steht für Maß und Form, dionysisch für Rausch und Auflösung; beide prägen die griechische Tragödie.",
   "h": "Zwei Götter der Antike.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "56lpwb",
@@ -597,7 +594,8 @@
   ],
   "e": "Der Däne Kierkegaard (1813–1855) betonte die Freiheit und Angst des Einzelnen („Der Begriff Angst“).",
   "h": "Ein Philosoph aus Kopenhagen.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1ig5pn2",
@@ -637,7 +635,8 @@
   ],
   "e": "Habermas (Werk 1981) betont Verständigung im herrschaftsfreien Diskurs als Grundlage der Gesellschaft.",
   "h": "Er lehrte in Frankfurt.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1nb2az5",
@@ -657,7 +656,8 @@
   ],
   "e": "Beispiel: „Alle Schwäne sind weiß“ wird durch einen schwarzen Schwan widerlegt („Logik der Forschung“, 1934).",
   "h": "Es geht um Widerlegung.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1k8f062",
@@ -677,7 +677,8 @@
   ],
   "e": "Wissenschaft verläuft in Phasen der Normalwissenschaft, die von Umbrüchen unterbrochen werden, etwa vom ptolemäischen zum kopernikanischen Weltbild.",
   "h": "Das Wort „Paradigma“ wurde hier populär.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1yq4v3t",
@@ -737,7 +738,8 @@
   ],
   "e": "Gott sei das, worüber hinaus nichts Größeres gedacht werden kann, und müsse darum auch existieren (Proslogion, 1078).",
   "h": "Es folgt allein aus dem Begriff.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1cifjj2",
@@ -777,7 +779,8 @@
   ],
   "e": "Der Begriff stammt aus dem 17. Jahrhundert und geht auf das griechische „on“ (das Seiende) zurück.",
   "h": "Wortteil „onto“.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "agczwt",
@@ -897,7 +900,8 @@
   ],
   "e": "Darf man eine Weiche stellen und einen Menschen opfern, um fünf zu retten? Foot und später Thomson diskutierten diese Frage.",
   "h": "Ein Straßenbahnwagen rollt auf Menschen zu.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1mn7vxw",
@@ -937,7 +941,8 @@
   ],
   "e": "Der Satz beschließt Wittgensteins „Logisch-philosophische Abhandlung“.",
   "h": "Der letzte Satz des Buchs.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1f1t3ci",
@@ -957,7 +962,8 @@
   ],
   "e": "Protagoras (5. Jh. v. Chr.) war Sophist und vertrat damit einen Relativismus.",
   "h": "Ein Sophist.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "sdbsvl",
@@ -977,7 +983,8 @@
   ],
   "e": "Die Gefangenen sehen nur Schatten; wer ins Licht tritt, erkennt die Ideen (Politeia, Buch VII).",
   "h": "Ein Gleichnis über Bildung.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "ijang1",
@@ -1057,7 +1064,8 @@
   ],
   "e": "Jonas fordert Verantwortung für künftige Generationen und warnt vor den Folgen der Technik.",
   "h": "Zukunftsethik.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "cn6buw",
@@ -1217,7 +1225,8 @@
   ],
   "e": "Picasso malte 1907 „Les Demoiselles d’Avignon“, ein Schlüsselwerk des Kubismus.",
   "h": "Ein Spanier.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1el8kk7",
@@ -1378,7 +1387,8 @@
   ],
   "e": "Büchner (1813–1837) schrieb außerdem „Dantons Tod“ und „Lenz“; der Georg-Büchner-Preis ist nach ihm benannt.",
   "h": "Starb mit 23 Jahren.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1xgpgdf",
@@ -1398,7 +1408,8 @@
   ],
   "e": "Der Roman erschien 1894/95; der Titel wurde zur Chiffre für ein Frauenschicksal des Realismus.",
   "h": "Ein Roman des Realismus.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1fdswly",
@@ -1618,7 +1629,8 @@
   ],
   "e": "Der Student Rodion Raskolnikow tötet eine Pfandleiherin und leidet unter Schuld (1866).",
   "h": "Ein Student in Sankt Petersburg.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1jm4ml",
@@ -1638,7 +1650,8 @@
   ],
   "e": "Der Roman erschien 1949 und prägte Begriffe wie „Big Brother“.",
   "h": "Ein Überwachungsstaat.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1tpd844",
@@ -1658,7 +1671,8 @@
   ],
   "e": "Der Roman (1967) erzählt die Geschichte der Familie Buendía im fiktiven Macondo; García Márquez erhielt 1982 den Nobelpreis.",
   "h": "Wunderbares im Alltag.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1kty3pq",
@@ -1678,7 +1692,8 @@
   ],
   "e": "Der Tag wird als „Bloomsday“ nach Leopold Bloom gefeiert; der Roman erschien 1922.",
   "h": "Ein Sommertag, an dem Fans heute in Dublin „Bloomsday“ feiern.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "12m44aa",
@@ -1718,7 +1733,8 @@
   ],
   "e": "Der erste Band erschien 1812, der zweite 1815; später kamen weitere Auflagen mit insgesamt über 200 Märchen.",
   "h": "Napoleonische Zeit.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "lefxso",
@@ -1738,7 +1754,8 @@
   ],
   "e": "Die Erzählung gehört zur Schwarzen Romantik; Freud nutzte sie für den Begriff des „Unheimlichen“.",
   "h": "Ein Gruselerzähler der Romantik.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "exohj2",
@@ -1798,7 +1815,8 @@
   ],
   "e": "Michelangelo malte die Decke 1508 bis 1512, darunter „Die Erschaffung Adams“.",
   "h": "Ein Bildhauer.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "9n06hl",
@@ -1858,7 +1876,8 @@
   ],
   "e": "Das Werk von 1931 gilt als Ikone des Surrealismus.",
   "h": "Ein Katalane.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "ynubt1",
@@ -1958,7 +1977,8 @@
   ],
   "e": "Dürer (1471–1528) war Maler, Kupferstecher und Theoretiker der Renaissance.",
   "h": "Ein Künstler der Renaissance.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1cq98qh",
@@ -2038,7 +2058,8 @@
   ],
   "e": "Kandinsky gilt als einer der Begründer der abstrakten Malerei.",
   "h": "Ein Tier und eine Farbe.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "11by9bv",
@@ -2058,7 +2079,8 @@
   ],
   "e": "Beuys (1921–1986) prägte den „erweiterten Kunstbegriff“ und die „soziale Plastik“.",
   "h": "Hut und Filz.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "11d06v7",
@@ -2138,7 +2160,8 @@
   ],
   "e": "Das Gebäude mit Titanverkleidung gilt als Hauptwerk des Dekonstruktivismus.",
   "h": "Ein Kanadier.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "fev9iq",
@@ -2178,7 +2201,8 @@
   ],
   "e": "Das Köchelverzeichnis (KV, 1862) ordnet Mozarts Werke zeitlich, etwa KV 525 für „Eine kleine Nachtmusik“.",
   "h": "Die Abkürzung KV.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "f0gix5",
@@ -2198,7 +2222,8 @@
   ],
   "e": "Schubert begann sie 1822 und ließ sie unvollendet; sie wurde erst 1865 uraufgeführt.",
   "h": "Ein Beiname.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1jg3pnu",
@@ -2218,26 +2243,6 @@
   ],
   "e": "Der Ring besteht aus vier Opern („Das Rheingold“, „Die Walküre“, „Siegfried“, „Götterdämmerung“) und wurde 1876 in Bayreuth uraufgeführt.",
   "h": "Vier Abende.",
-  "d": 2
- },
- {
-  "id": "1x0dfrb",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Von welchem Komponisten stammt die Oper „Carmen“ (1875)?",
-  "a": [
-   "Georges Bizet",
-   "Giuseppe Verdi",
-   "Giacomo Puccini",
-   "Jacques Offenbach"
-  ],
-  "w": [
-   "",
-   "Verdi schrieb „Rigoletto“.",
-   "Puccini schrieb „La Bohème“.",
-   "Offenbach schrieb „Hoffmanns Erzählungen“."
-  ],
-  "e": "Die Oper spielt in Sevilla; „Habanera“ und „Torero-Lied“ sind bekannte Nummern.",
-  "h": "Ein Franzose.",
   "d": 2
  },
  {
@@ -2261,26 +2266,6 @@
   "d": 2
  },
  {
-  "id": "agmi6c",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Von wem stammt das Ballett „Schwanensee“?",
-  "a": [
-   "Pjotr Tschaikowski",
-   "Sergei Prokofjew",
-   "Igor Strawinsky",
-   "Antonín Dvořák"
-  ],
-  "w": [
-   "",
-   "Prokofjew schrieb „Romeo und Julia“.",
-   "Strawinsky schrieb „Der Feuervogel“.",
-   "Dvořák schrieb die Sinfonie „Aus der Neuen Welt“."
-  ],
-  "e": "Das Ballett (1877) gehört mit „Nussknacker“ und „Dornröschen“ zu Tschaikowskis Balletten.",
-  "h": "Ein Russe.",
-  "d": 1
- },
- {
   "id": "xv5s7n",
   "s": "Literatur, Kunst & Musik",
   "q": "Welches Werk Igor Strawinskys löste 1913 in Paris einen Skandal aus?",
@@ -2298,7 +2283,8 @@
   ],
   "e": "Die wilden Rhythmen und die Choreografie von Nijinsky provozierten bei der Premiere Tumulte.",
   "h": "Ein Frühlingsritual.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "r45lqm",
@@ -2318,7 +2304,8 @@
   ],
   "e": "Der Boléro (1928) wiederholt ein Thema und steigert sich durch Instrumentierung bis zum Schluss.",
   "h": "Ein Tanzrhythmus.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1enwgba",
@@ -2358,47 +2345,8 @@
   ],
   "e": "Barock (etwa 1600–1750) kennt den Generalbass, der Cembalo und Cello kombiniert; Hauptmeister sind Bach, Händel, Vivaldi.",
   "h": "Basso continuo.",
-  "d": 2
- },
- {
-  "id": "1flsatu",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Was bedeutet in der Musik die Vortragsbezeichnung „forte“?",
-  "a": [
-   "Laut",
-   "Leise",
-   "Schnell",
-   "Langsam"
-  ],
-  "w": [
-   "",
-   "Das heißt „piano“.",
-   "Das heißt „allegro“.",
-   "Das heißt „adagio“."
-  ],
-  "e": "Die Vortragsbezeichnungen stammen aus dem Italienischen; „fortissimo“ bedeutet sehr laut.",
-  "h": "Das Gegenteil von piano.",
-  "d": 1
- },
- {
-  "id": "1vymjbc",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Aus wie vielen Linien besteht ein Notensystem?",
-  "a": [
-   "Fünf",
-   "Vier",
-   "Sechs",
-   "Drei"
-  ],
-  "w": [
-   "",
-   "Vier Linien haben mittelalterliche Notensysteme für Gregorianik.",
-   "Sechs Saiten hat eine Gitarre, nicht ein Notensystem.",
-   "Das ist keine übliche Notenschrift."
-  ],
-  "e": "Auf fünf Linien und vier Zwischenräumen werden die Noten notiert.",
-  "h": "Wie die Finger einer Hand.",
-  "d": 1
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1jeqko1",
@@ -2419,86 +2367,6 @@
   "e": "Die Saiten sind in Quinten g, d’, a’, e’’ gestimmt.",
   "h": "Quinten.",
   "d": 1
- },
- {
-  "id": "1eglke2",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Welche Tonart hat keine Vorzeichen?",
-  "a": [
-   "C-Dur",
-   "G-Dur",
-   "F-Dur",
-   "D-Dur"
-  ],
-  "w": [
-   "",
-   "G-Dur hat ein Kreuz (fis).",
-   "F-Dur hat ein b (b).",
-   "D-Dur hat zwei Kreuze (fis, cis)."
-  ],
-  "e": "C-Dur und a-Moll haben keine Vorzeichen; sie liegen auf den weißen Tasten.",
-  "h": "Weiße Tasten.",
-  "d": 2
- },
- {
-  "id": "1d2ela3",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Welcher Walzer von Johann Strauss (Sohn) wurde zur inoffiziellen Hymne Österreichs?",
-  "a": [
-   "An der schönen blauen Donau",
-   "Kaiserwalzer",
-   "Radetzky-Marsch",
-   "G’schichten aus dem Wienerwald"
-  ],
-  "w": [
-   "",
-   "Er ist ein bekannter Walzer, aber nicht die inoffizielle Hymne.",
-   "Er ist ein Marsch von Johann Strauss (Vater).",
-   "Ein bekannter Walzer von Strauss (Sohn), aber nicht die inoffizielle Hymne."
-  ],
-  "e": "Der Walzer (1867) wird beim Neujahrskonzert in Wien traditionell zum Schluss gespielt.",
-  "h": "Ein Fluss.",
-  "d": 2
- },
- {
-  "id": "dqbnvg",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Welches Album von Miles Davis erschien 1959 und gilt als Meilenstein des modalen Jazz?",
-  "a": [
-   "Kind of Blue",
-   "Bitches Brew",
-   "A Love Supreme",
-   "Time Out"
-  ],
-  "w": [
-   "",
-   "Das ist ein Album von 1970 im Fusion-Stil.",
-   "Das ist ein Album von John Coltrane (1965).",
-   "Das ist ein Album des Dave Brubeck Quartet (1959)."
-  ],
-  "e": "Das Album basiert auf modalem Jazz; „So What“ ist das Eröffnungsstück.",
-  "h": "Modaler Jazz.",
-  "d": 3
- },
- {
-  "id": "19aeyvd",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Welche britische Band stammt aus Liverpool?",
-  "a": [
-   "The Beatles",
-   "The Rolling Stones",
-   "The Kinks",
-   "Queen"
-  ],
-  "w": [
-   "",
-   "Sie stammen aus London.",
-   "Sie stammen ebenfalls aus London.",
-   "Sie stammen aus London."
-  ],
-  "e": "Die Beatles (John Lennon, Paul McCartney, George Harrison, Ringo Starr) gründeten sich Anfang der 1960er-Jahre in Liverpool.",
-  "h": "Vier Pilzköpfe.",
-  "d": 2
  },
  {
   "id": "1cx695t",
@@ -2541,26 +2409,6 @@
   "d": 1
  },
  {
-  "id": "15jcqge",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Wer erhielt 2016 den Literaturnobelpreis?",
-  "a": [
-   "Bob Dylan",
-   "Leonard Cohen",
-   "Paul Simon",
-   "Philip Roth"
-  ],
-  "w": [
-   "",
-   "Cohen wurde nicht ausgezeichnet, er starb im November 2016.",
-   "Simon erhielt ihn nicht.",
-   "Roth galt oft als Kandidat, bekam den Preis aber nie."
-  ],
-  "e": "Dylan wurde „für neue poetische Ausdrucksformen innerhalb der großen amerikanischen Songtradition“ ausgezeichnet.",
-  "h": "Ein Liedermacher.",
-  "d": 2
- },
- {
   "id": "1gs5a36",
   "s": "Literatur, Kunst & Musik",
   "q": "Welchen Begriff nutzt Bertolt Brecht für seine Technik, Zuschauer zur kritischen Distanz zu bringen?",
@@ -2578,7 +2426,8 @@
   ],
   "e": "Brechts „episches Theater“ will Illusionen zerstören, damit das Publikum nachdenkt.",
   "h": "V-Effekt.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1e978nl",
@@ -2598,7 +2447,8 @@
   ],
   "e": "Das Stück von Bertolt Brecht enthält die „Moritat von Mackie Messer“.",
   "h": "Der Autor war Brecht.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1idshqg",
@@ -2618,27 +2468,8 @@
   ],
   "e": "Brahms wählte Bibeltexte in Luthers Übersetzung und nicht die lateinische Totenmesse (Uraufführung 1868).",
   "h": "Deutsche Bibeltexte.",
-  "d": 3
- },
- {
-  "id": "s4yblc",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Welche deutsche Stadt ist durch ein Musikfest mit Wagner-Opern bekannt?",
-  "a": [
-   "Bayreuth",
-   "Salzburg",
-   "Leipzig",
-   "Bonn"
-  ],
-  "w": [
-   "",
-   "Die Salzburger Festspiele ehren vor allem Mozart.",
-   "Leipzig ist Bachs Wirkungsstätte.",
-   "Bonn ist Beethovens Geburtsstadt."
-  ],
-  "e": "Die Bayreuther Festspiele wurden 1876 von Richard Wagner begründet.",
-  "h": "Ein Festspielhaus auf dem Grünen Hügel.",
-  "d": 2
+  "d": 3,
+  "p": 3
  },
  {
   "id": "ip6s1r",
@@ -2658,7 +2489,8 @@
   ],
   "e": "Clara Wieck (1819–1896) zählte zu den bedeutendsten Pianistinnen ihrer Zeit.",
   "h": "Tochter von Friedrich Wieck.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "xb32qt",
@@ -2701,26 +2533,6 @@
   "d": 1
  },
  {
-  "id": "vpit9v",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Wie viele Amtssprachen hat die Schweiz?",
-  "a": [
-   "4",
-   "3",
-   "2",
-   "5"
-  ],
-  "w": [
-   "",
-   "Es sind mehr als drei, denn auch Rätoromanisch zählt.",
-   "Deutsch und Französisch allein reichen nicht.",
-   "Mehr als vier gibt es nicht."
-  ],
-  "e": "Deutsch, Französisch, Italienisch und Rätoromanisch; Letzteres gilt nur im Verkehr mit Rätoromanen als Amtssprache des Bundes.",
-  "h": "Vier Landessprachen.",
-  "d": 1
- },
- {
   "id": "c7wcg9",
   "s": "Sprache & Rechtschreibung",
   "q": "Zu welcher Sprachfamilie gehört Ungarisch?",
@@ -2758,27 +2570,8 @@
   ],
   "e": "„Die Sonne bewegt sich scheinbar um die Erde.“ Für „offenbar“ passt „anscheinend“.",
   "h": "Es ist nicht wirklich so.",
-  "d": 2
- },
- {
-  "id": "ajxht7",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Welche Sprache hat die meisten Muttersprachler?",
-  "a": [
-   "Mandarin",
-   "Englisch",
-   "Spanisch",
-   "Hindi"
-  ],
-  "w": [
-   "",
-   "Englisch hat die meisten Sprecher insgesamt, aber weniger Muttersprachler.",
-   "Spanisch liegt bei den Muttersprachlern auf Platz zwei oder drei.",
-   "Hindi hat sehr viele Sprecher, aber weniger Muttersprachler als Mandarin."
-  ],
-  "e": "Mandarin hat rund 900 bis 950 Millionen Muttersprachler (Stand 2025, je nach Zählung).",
-  "h": "Gesprochen in China.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "zdb2yz",
@@ -2798,7 +2591,8 @@
   ],
   "e": "„Das Buch, das ich lese“ lässt sich mit „welches“ ersetzen; „Ich hoffe, dass du kommst“ nicht.",
   "h": "Ersetze das Wort.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "p92m0e",
@@ -2818,7 +2612,8 @@
   ],
   "e": "Standard: „wegen des Wetters“; der Dativ („wegen dem Wetter“) gilt als umgangssprachlich.",
   "h": "Des Wetters.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1da6qmd",
@@ -2838,7 +2633,8 @@
   ],
   "e": "Das Wort kommt aus dem Griechischen (rhythmós); Merkhilfe: zwei „h“ und ein „y“.",
   "h": "Zwei „h“.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "bju2sx",
@@ -2858,27 +2654,8 @@
   ],
   "e": "„Seit gestern seid ihr hier.“ Merkregel: „seid“ gehört zu „ihr seid“ (wie „du bist“).",
   "h": "Ihr seid.",
-  "d": 1
- },
- {
-  "id": "dsyf99",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Welche Sprache ist in Brasilien Amtssprache?",
-  "a": [
-   "Portugiesisch",
-   "Spanisch",
-   "Brasilianisch",
-   "Englisch"
-  ],
-  "w": [
-   "",
-   "Spanisch wird in den Nachbarländern gesprochen.",
-   "Eine Sprache dieses Namens gibt es nicht.",
-   "Englisch ist keine Amtssprache in Brasilien."
-  ],
-  "e": "Brasilien ist das einzige Land Südamerikas mit Portugiesisch als Amtssprache.",
-  "h": "Kolonialsprache.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1c6n4o1",
@@ -2938,7 +2715,8 @@
   ],
   "e": "Nominativ, Genitiv, Dativ, Akkusativ.",
   "h": "Nominativ bis Akkusativ.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "hsfsqq",
@@ -2958,7 +2736,8 @@
   ],
   "e": "„Ich helfe meinem Freund.“ Wem helfe ich? Meinem Freund.",
   "h": "Dativ.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1aychs0",
@@ -2978,7 +2757,8 @@
   ],
   "e": "„Das Auto meines Vaters.“ Wessen Auto? Meines Vaters.",
   "h": "Besitz.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "wsk3qc",
@@ -3039,7 +2819,8 @@
   ],
   "e": "Das Grundwort bestimmt das Genus: die Hand + der Schuh = der Handschuh.",
   "h": "Hinten steht der Artikel.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "b5n7sz",
@@ -3079,7 +2860,8 @@
   ],
   "e": "„Er sagte, er sei müde.“ Der Konjunktiv II steht für Irreales („Wenn ich Zeit hätte …“).",
   "h": "„sei“ statt „ist“.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "2jsu19",
@@ -3119,7 +2901,8 @@
   ],
   "e": "Nach „heute“, „gestern“, „morgen“ schreibt man Tageszeiten groß: „gestern Nachmittag“, aber „morgen früh“.",
   "h": "Abend ist ein Nomen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1j482m7",
@@ -3139,7 +2922,8 @@
   ],
   "e": "Seit 2006 schreibt man das Verb „leidtun“ zusammen; im Satz bleibt „leid“ klein.",
   "h": "Kein Substantiv.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "cexky1",
@@ -3159,7 +2943,8 @@
   ],
   "e": "Substantivierte Adjektive in festen Wendungen werden großgeschrieben: im Allgemeinen, im Folgenden, im Großen und Ganzen.",
   "h": "Beide groß.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1243qq6",
@@ -3179,7 +2964,8 @@
   ],
   "e": "Nach kurzem Vokal steht „ss“ (Fluss, Haus), nach langem Vokal oder Diphthong „ß“ (Fuß, Maß, Straße).",
   "h": "Kurzer Vokal.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "mdar3c",
@@ -3199,7 +2985,8 @@
   ],
   "e": "Seit 1996 werden bei Zusammensetzungen alle drei Konsonanten geschrieben: Schifffahrt, Stofffetzen.",
   "h": "Drei f.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "j3m8am",
@@ -3219,7 +3006,8 @@
   ],
   "e": "Seit 1996 schreibt man „Quäntchen“, in Anlehnung an „Quantum“.",
   "h": "Verwandt mit Quantum.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "r6z8te",
@@ -3239,7 +3027,8 @@
   ],
   "e": "Die Schreibung folgt der Stammverwandtschaft mit „Stange“.",
   "h": "Stammverwandt mit Stange.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "1re2sd4",
@@ -3319,7 +3108,8 @@
   ],
   "e": "Im Deutschen steht beim Genitiv von Eigennamen kein Apostroph; nur bei Namen auf s, ß, x und z: „Hans’ Auto“.",
   "h": "Kein Apostroph.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "luv2ld",
@@ -3339,7 +3129,8 @@
   ],
   "e": "Der Rat für deutsche Rechtschreibung nahm den Großbuchstaben ẞ 2017 auf: STRASSE oder STRAẞE.",
   "h": "Ein Zeitpunkt nach 2010.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "z74wv2",
@@ -3359,27 +3150,8 @@
   ],
   "e": "Der Rat wurde 2004 gegründet und hat seinen Sitz am Leibniz-Institut für Deutsche Sprache in Mannheim.",
   "h": "Eine Stadt im Rhein-Neckar-Raum.",
-  "d": 3
- },
- {
-  "id": "b86fjr",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Welche Schrift verwendet Russisch?",
-  "a": [
-   "Kyrillisch",
-   "Lateinisch",
-   "Griechisch",
-   "Arabisch"
-  ],
-  "w": [
-   "",
-   "Die lateinische Schrift nutzen etwa Polnisch und Tschechisch.",
-   "Die griechische Schrift nutzt das Griechische.",
-   "Die arabische Schrift nutzen Arabisch und Persisch."
-  ],
-  "e": "Die kyrillische Schrift geht auf Kyrill und Method zurück und wird auch für Bulgarisch und Serbisch genutzt.",
-  "h": "Schrift der Slawen.",
-  "d": 1
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1e21pi1",
@@ -3399,47 +3171,8 @@
   ],
   "e": "26 Grundbuchstaben plus Ä, Ö, Ü und ß ergeben 30.",
   "h": "26 + 4.",
-  "d": 2
- },
- {
-  "id": "17yjnr0",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Wer übersetzte die Bibel ins Deutsche und prägte damit die Schriftsprache?",
-  "a": [
-   "Martin Luther",
-   "Johannes Gutenberg",
-   "Ulrich Zwingli",
-   "Philipp Melanchthon"
-  ],
-  "w": [
-   "",
-   "Gutenberg erfand den Buchdruck.",
-   "Zwingli reformierte in Zürich.",
-   "Melanchthon half bei der Revision, übersetzte aber nicht selbst."
-  ],
-  "e": "Luther übersetzte das Neue Testament 1522 auf der Wartburg; die ganze Bibel erschien 1534.",
-  "h": "Wartburg.",
-  "d": 1
- },
- {
-  "id": "oypkeb",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Welche Sprachfamilie umfasst Deutsch, Hindi und Latein?",
-  "a": [
-   "Indogermanisch",
-   "Austronesisch",
-   "Semitisch",
-   "Uralisch"
-  ],
-  "w": [
-   "",
-   "Dazu gehören Malaiisch und Tagalog.",
-   "Dazu zählen Arabisch und Hebräisch.",
-   "Dazu zählen Finnisch und Ungarisch."
-  ],
-  "e": "Die indogermanische Familie reicht von Island bis Indien; Gemeinsamkeiten zeigen sich in Wörtern wie „Mutter“ (lat. mater, Sanskrit mātar-). Man nennt sie auch indoeuropäisch.",
-  "h": "Von Island bis Indien.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "ogathe",
@@ -3482,26 +3215,6 @@
   "d": 2
  },
  {
-  "id": "re0mxe",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Was gilt als Besonderheit des Baskischen?",
-  "a": [
-   "Es hat keine lebenden Verwandten",
-   "Es gehört zu den romanischen Sprachen",
-   "Es gehört zu den germanischen Sprachen",
-   "Es gehört zu den keltischen Sprachen"
-  ],
-  "w": [
-   "",
-   "Baskisch hat keine Wurzel im Latein.",
-   "Baskisch ist nicht mit Deutsch verwandt.",
-   "Keltisch sind etwa Irisch und Walisisch."
-  ],
-  "e": "Baskisch ist ein Sprachisolat in Nordspanien und Südwestfrankreich.",
-  "h": "Sprachisolat.",
-  "d": 3
- },
- {
   "id": "124ey77",
   "s": "Sprache & Rechtschreibung",
   "q": "Wie heißt die koreanische Schrift?",
@@ -3522,26 +3235,6 @@
   "d": 2
  },
  {
-  "id": "7lbhmf",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Wie hat sich Afrikaans entwickelt?",
-  "a": [
-   "Aus dem Niederländischen",
-   "Es ist aus dem Englischen hervorgegangen",
-   "Es ist aus dem Deutschen hervorgegangen",
-   "Es ist aus dem Portugiesischen hervorgegangen"
-  ],
-  "w": [
-   "",
-   "Englisch beeinflusste es, aber der Ursprung ist niederländisch.",
-   "Deutsch beeinflusste es kaum.",
-   "Portugiesisch beeinflusste es nicht."
-  ],
-  "e": "Afrikaans entstand ab dem 17. Jahrhundert aus den Dialekten niederländischer Siedler in Südafrika.",
-  "h": "Kapkolonie.",
-  "d": 2
- },
- {
   "id": "13sgt5j",
   "s": "Sprache & Rechtschreibung",
   "q": "Welche Sprache hat in der EU die meisten Muttersprachler?",
@@ -3559,46 +3252,6 @@
   ],
   "e": "Deutsch ist mit etwa einem Sechstel bis einem Fünftel der EU-Bevölkerung die häufigste Muttersprache.",
   "h": "Das Land in der Mitte.",
-  "d": 2
- },
- {
-  "id": "cpnjgk",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Wie viele Amtssprachen hat die EU (Stand 2025)?",
-  "a": [
-   "24",
-   "11",
-   "20",
-   "27"
-  ],
-  "w": [
-   "",
-   "So viele waren es 1995.",
-   "So viele waren es 2004 nach der Osterweiterung.",
-   "Das ist die Zahl der Mitgliedstaaten, nicht der Sprachen."
-  ],
-  "e": "Seit 2013 (Kroatisch) sind es 24; Irisch ist seit 2022 vollwertige Amtssprache.",
-  "h": "Weniger als Mitgliedstaaten.",
-  "d": 3
- },
- {
-  "id": "1h5ba5h",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Was bezeichnet der Begriff „Lingua franca“?",
-  "a": [
-   "Eine gemeinsame Verkehrssprache",
-   "Eine ausgestorbene Sprache, die nur noch geschrieben wird",
-   "Die offizielle Amtssprache eines einzelnen Landes",
-   "Eine Geheimsprache, die nur eine Gruppe versteht"
-  ],
-  "w": [
-   "",
-   "Das wäre eine tote Sprache.",
-   "Das ist eine Landessprache.",
-   "Das wäre eine Gruppensprache."
-  ],
-  "e": "Ursprünglich eine romanisch geprägte Mischsprache im Mittelmeerraum; heute übernimmt oft Englisch diese Rolle.",
-  "h": "Wörtlich „fränkische Sprache“.",
   "d": 2
  },
  {
@@ -3699,7 +3352,8 @@
   ],
   "e": "Beispiele: „todmüde“, „ein Meer von Tränen“.",
   "h": "Das Gegenteil: Untertreibung.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "zcjr3q",
@@ -3719,7 +3373,8 @@
   ],
   "e": "„Das Leben ist eine Reise.“ Hier fehlt das Vergleichswort, das Bild wird übertragen.",
   "h": "Bild aus anderem Bereich.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1xe8ykw",
@@ -3739,7 +3394,8 @@
   ],
   "e": "„Entschlafen“ statt „sterben“, „freisetzen“ statt „entlassen“.",
   "h": "Gut klingend.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1ua4iy6",
@@ -3759,7 +3415,8 @@
   ],
   "e": "Beispiel: „Wir wollen frei sein, wir wollen glücklich sein.“",
   "h": "Wiederholung vorn.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "14ql6oy",
@@ -3779,7 +3436,8 @@
   ],
   "e": "„Haus“ und „raus“ unterscheiden sich im Phonem /h/ gegenüber /r/.",
   "h": "Laut.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "kne3w3",
@@ -3799,7 +3457,8 @@
   ],
   "e": "„Un-glück-lich“ hat drei Morpheme.",
   "h": "Bedeutung.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1h6gqqe",
@@ -3819,7 +3478,8 @@
   ],
   "e": "Diphthonge sind Doppellaute: au, ei, eu/äu.",
   "h": "Zwei Vokale.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1r4wqem",
@@ -3862,26 +3522,6 @@
   "d": 2
  },
  {
-  "id": "1v9xyal",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Welches deutsche Wort wurde in den englischen Wortschatz übernommen?",
-  "a": [
-   "Kindergarten",
-   "Pizza",
-   "Karaoke",
-   "Ballett"
-  ],
-  "w": [
-   "",
-   "Das Wort stammt aus dem Italienischen.",
-   "Das Wort stammt aus dem Japanischen.",
-   "Das Wort stammt aus dem Französischen."
-  ],
-  "e": "Auch „Rucksack“, „Zeitgeist“ und „Wanderlust“ sind im Englischen bekannt.",
-  "h": "Kinder und ein Garten.",
-  "d": 1
- },
- {
   "id": "dualm",
   "s": "Sprache & Rechtschreibung",
   "q": "Was bezeichnet der Austriazismus „Jänner“?",
@@ -3919,7 +3559,8 @@
   ],
   "e": "Schwäbisch zählt zum Oberdeutschen und gilt als alemannischer Dialekt im weiteren Sinn.",
   "h": "Wie Baden.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1u73yhr",
@@ -3939,7 +3580,8 @@
   ],
   "e": "Das Behindertengleichstellungsgesetz erkannte sie 2002 als eigenständige Sprache an.",
   "h": "21. Jahrhundert.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1ti0cl2",
@@ -3979,27 +3621,8 @@
   ],
   "e": "Standard-Mandarin hat vier Töne plus einen neutralen Ton; so kann „ma“ je nach Ton Mutter, Hanf, Pferd oder schimpfen bedeuten.",
   "h": "Vier Töne.",
-  "d": 3
- },
- {
-  "id": "ki4par",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Welche Sprache ist laut Gesamtzahl der Sprecher die größte der Welt (Stand 2025)?",
-  "a": [
-   "Englisch",
-   "Mandarin",
-   "Spanisch",
-   "Hindi"
-  ],
-  "w": [
-   "",
-   "Mandarin hat mehr Muttersprachler, aber weniger Sprecher insgesamt.",
-   "Spanisch liegt auf einem der Plätze dahinter.",
-   "Hindi liegt auf einem der Plätze dahinter."
-  ],
-  "e": "Englisch wird von rund 1,5 Milliarden Menschen gesprochen, weil viele es als Zweitsprache nutzen.",
-  "h": "Zweitsprache.",
-  "d": 1
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1o9k1yr",
@@ -4059,7 +3682,8 @@
   "e": "„jemandem etwas sagen“: Die Person steht im Dativ (dir), die Sache im Akkusativ (es).",
   "h": "Wem sagt man etwas?",
   "d": 1,
-  "id": "n1e99e35"
+  "id": "n1e99e35",
+  "p": 1
  },
  {
   "s": "Sprache & Rechtschreibung",
@@ -4079,27 +3703,8 @@
   "e": "„Standard“ kommt aus dem Englischen/Altfranzösischen und endet auf d. „Standarte“ (Fahne) ist ein anderes Wort.",
   "h": "Wie im Englischen.",
   "d": 1,
-  "id": "na7223b4"
- },
- {
-  "s": "Sprache & Rechtschreibung",
-  "q": "Was ist richtig: „Das Treffen ist wegen …“",
-  "a": [
-   "des Regens ausgefallen",
-   "dem Regen ausgefallen",
-   "den Regen ausgefallen",
-   "der Regen ausgefallen"
-  ],
-  "w": [
-   "",
-   "Umgangssprachlich verbreitet, standardsprachlich aber Genitiv.",
-   "Akkusativ ist nach „wegen“ falsch.",
-   "Nominativ ist nach „wegen“ falsch."
-  ],
-  "e": "Nach „wegen“ steht standardsprachlich der Genitiv. Der Dativ ist umgangssprachlich verbreitet und laut Duden regional teils üblich.",
-  "h": "Genitiv.",
-  "d": 2,
-  "id": "n6db203c"
+  "id": "na7223b4",
+  "p": 1
  },
  {
   "s": "Literatur, Kunst & Musik",
@@ -4119,7 +3724,8 @@
   "e": "Goethes „Faust I“ erschien 1808 und gilt als bedeutendstes Werk der deutschen Literatur.",
   "h": "Weimarer Klassik.",
   "d": 1,
-  "id": "n4ee925b"
+  "id": "n4ee925b",
+  "p": 1
  },
  {
   "s": "Literatur, Kunst & Musik",
@@ -4139,46 +3745,7 @@
   "e": "Leonardo da Vinci malte das Bild Anfang des 16. Jahrhunderts; es hängt im Louvre in Paris.",
   "h": "Ein Universalgenie der Renaissance.",
   "d": 1,
-  "id": "n8633ebc"
- },
- {
-  "s": "Philosophie & Ideen",
-  "q": "Was ist ein Strohmann-Argument?",
-  "a": [
-   "Man widerlegt eine verzerrte Version der Gegenposition",
-   "Man beruft sich auf eine Autorität",
-   "Man greift die Person statt der Sache an",
-   "Man wiederholt dieselbe Aussage immer wieder"
-  ],
-  "w": [
-   "",
-   "Das ist das Autoritätsargument.",
-   "Das ist ein Argumentum ad hominem.",
-   "Das ist keine Strohmann-Taktik, sondern bloße Wiederholung."
-  ],
-  "e": "Beim Strohmann wird die Position des Gegenübers so verzerrt dargestellt, dass sie leicht zu widerlegen ist. Gegenmittel: die Position fair zusammenfassen, bevor man antwortet.",
-  "h": "Ein Gegner aus Stroh fällt leicht um.",
-  "d": 2,
-  "id": "n4ec2476"
- },
- {
-  "s": "Philosophie & Ideen",
-  "q": "Was beschreibt „Ockhams Rasiermesser“?",
-  "a": [
-   "Die einfachste Erklärung ist meist vorzuziehen",
-   "Jede Theorie muss scharf formuliert sein",
-   "Zweifel müssen immer radikal sein",
-   "Man soll Argumente in Teile zerlegen"
-  ],
-  "w": [
-   "",
-   "Es geht um Sparsamkeit der Annahmen, nicht um Formulierung.",
-   "Das wäre eher der methodische Zweifel bei Descartes.",
-   "Das beschreibt Analyse, nicht Ockhams Prinzip."
-  ],
-  "e": "Von mehreren Erklärungen, die gleich gut passen, ist die mit den wenigsten Annahmen vorzuziehen. Es ist eine Faustregel, kein Beweis.",
-  "h": "Unnötiges wegschneiden.",
-  "d": 2,
-  "id": "n2a9e19e"
+  "id": "n8633ebc",
+  "p": 1
  }
 ]

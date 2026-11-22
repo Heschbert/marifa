@@ -129,7 +129,10 @@
     if (wrong) return a === 0 ? 0.25 : 1;
     return a === 0 ? 0.05 : a === 1 ? 0.25 : a === 2 ? 0.6 : 1;
   }
-  function weight(x) {
+  /* Wichtigkeit p: 1 = Kernwissen (kommt öfter), 2 = nützlich, 3 = Wissenswertes/Trivia (seltener) */
+  function prio(x) { return x.p === 1 ? 1.6 : x.p === 3 ? 0.55 : 1; }
+  function weight(x) { return weight0(x) * prio(x); }
+  function weight0(x) {
     if (x.gen) return 2 * diffMult(x) * recency(x);
     var r = S().qs[x.id];
     /* cw: wie oft „sicher“ und trotzdem falsch. Solche Fragen kommen bevorzugt wieder, bis sie sitzen.
@@ -149,7 +152,7 @@
     if (!x.gen) { var r = S().qs[x.id]; wrong = r && r.b === 0; base = r ? (r.b === 0 ? (r.cw ? -1.5 : -1) : r.b) : 0; }
     var a = E.seenAge(x.id);
     base += wrong ? (a === 0 ? 1 : 0) : (a === 0 ? 4 : a === 1 ? 2 : 0);
-    return base + Math.abs((x.d || 2) - E.target(x.c, x.s)) * 0.4;
+    return base + Math.abs((x.d || 2) - E.target(x.c, x.s)) * 0.4 + ((x.p || 2) - 2) * 0.6;
   }
   E.orderLearn = function (list) { return U.shuffle(list.slice()).sort(function (a, b) { return levelKey(a) - levelKey(b); }); };
 
@@ -191,7 +194,7 @@
       opts = x.a.map(function (t, i) { return { t: t, ok: i === 0, why: (x.w && x.w[i]) || "" }; });
     }
     var h = (x.pool || x.mkd) && !x.fixedHint ? genHint(x, opts, rng) : (x.h || "");
-    return { id: x.id, src: x.src || "", c: x.c, s: x.s, q: x.q, img: x.img, imgAlt: x.imgAlt, big: x.big, e: x.e, h: h, d: x.d || 2, opts: U.shuffle(opts, rng), helped: false, hidden: [], hintShown: false };
+    return { id: x.id, src: x.src || "", c: x.c, s: x.s, q: x.q, img: x.img, imgAlt: x.imgAlt, big: x.big, e: x.e, h: h, d: x.d || 2, p: x.p || 2, opts: U.shuffle(opts, rng), helped: false, hidden: [], hintShown: false };
   };
   E.dailyList = function () {
     var rng = U.mulberry(U.seedOf(U.today()));

@@ -310,7 +310,7 @@
       if (r.typed) f += '<p class="small">Deine Eingabe: „' + esc(picked.t) + '“</p>';
       if (picked.why) f += "<p><b>Warum nicht " + WF.util.oq(picked.t) + "?</b> " + esc(picked.why) + "</p>";
     }
-    if (x.e) f += "<p>" + esc(x.e) + "</p>";
+    if (x.e) f += "<p>" + (x.p === 1 ? '<span class="core">Kernwissen</span> ' : "") + esc(x.e) + "</p>";
     if (x.src) f += '<p class="small mute">Quelle: ' + esc(x.src) + "</p>";
     f += '<p class="small" style="margin-top:8px;display:flex;gap:16px"><button class="link" data-act="save">' + (S().saved[x.id] ? "★ Gemerkt" : "☆ Merken") + '</button><button class="link" data-act="report">Frage melden</button></p>';
     if (r.mastered) f += '<p class="small"><b>Gemeistert.</b> Das sitzt jetzt.</p>';

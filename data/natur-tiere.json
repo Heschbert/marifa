@@ -57,7 +57,8 @@
   ],
   "e": "Zwei Kiemenherzen pumpen Blut durch die Kiemen, ein Körperherz versorgt den Rest.",
   "h": "Zwei plus eins.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1s6tuod",
@@ -177,7 +178,8 @@
   ],
   "e": "Riesenschildkröten gehören zu den langlebigsten Wirbeltieren; einzelne Tiere wurden deutlich über 150 Jahre alt.",
   "h": "Mehr als ein Jahrhundert.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1fxb15f",
@@ -217,7 +219,8 @@
   ],
   "e": "Wiederkäuer haben Pansen, Netzmagen, Blättermagen und Labmagen und würgen Futter zum erneuten Kauen hoch.",
   "h": "Pansen und Labmagen gehören dazu.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "esdw2h",
@@ -317,7 +320,8 @@
   ],
   "e": "Fledermäuse sind die einzigen Säugetiere, die aktiv fliegen; sie säugen ihre Jungen.",
   "h": "Sie bringen lebende Junge zur Welt.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "neozl7",
@@ -437,7 +441,8 @@
   ],
   "e": "Kolibris schlagen ihre Flügel in Achterbewegung und können in der Luft stehen und rückwärts fliegen.",
   "h": "Schwirrflug.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "6hthgf",
@@ -477,7 +482,8 @@
   ],
   "e": "Die Kreuzotter hat ein Zickzackband auf dem Rücken; ihr Biss ist selten, aber giftig.",
   "h": "Zickzackband.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1ciagmw",
@@ -597,7 +603,8 @@
   ],
   "e": "Schimpansen und Bonobos teilen etwa 98 bis 99 % ihrer DNA mit dem Menschen.",
   "h": "Menschenaffe Afrikas.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "14ucvw",
@@ -617,7 +624,8 @@
   ],
   "e": "Delfine atmen mit Lungen an der Luft, gebären lebende Junge und säugen sie.",
   "h": "Atmet über ein Blasloch.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "i7cge8",
@@ -657,7 +665,8 @@
   ],
   "e": "Stachelhäuter haben eine fünfstrahlige Symmetrie, ein Kalkskelett und ein Wassergefäßsystem.",
   "h": "Seeigel sind verwandt.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "18n3ayj",
@@ -677,7 +686,8 @@
   ],
   "e": "Nesseltiere besitzen Nesselzellen, mit denen sie Beute fangen und sich verteidigen.",
   "h": "Nesselzellen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "6p1nv8",
@@ -697,7 +707,8 @@
   ],
   "e": "Die Küstenseeschwalbe pendelt zwischen Arktis und Antarktis und legt bis etwa 50.000 km im Jahr zurück.",
   "h": "Polarvogel mit rotem Schnabel.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1pvj9by",
@@ -737,7 +748,8 @@
   ],
   "e": "Haie und Rochen gehören zu den Knorpelfischen; das leichte Skelett spart Gewicht.",
   "h": "Weich, biegsam.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1oxj9dj",
@@ -757,7 +769,8 @@
   ],
   "e": "Chitin ist ein stabiles Polysaccharid, das auch bei Spinnen, Krebsen und Pilzen vorkommt.",
   "h": "Ähnelt Plastik.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "g46a4k",
@@ -777,7 +790,8 @@
   ],
   "e": "Über eine Million Streifengnus folgen jährlich den Regenfällen zwischen Serengeti und Masai Mara.",
   "h": "Streifen am Hals.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1hged7m",
@@ -817,7 +831,8 @@
   ],
   "e": "Europäische Aale ziehen zum Laichen in die Sargassosee im Atlantik; ihre Larven treiben mit dem Golfstrom zurück.",
   "h": "Westatlantik.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "slj783",
@@ -857,7 +872,8 @@
   ],
   "e": "Die Zunge schnellt in Bruchteilen von Sekunden vor und haftet mit Schleim an Insekten.",
   "h": "Klebrig und schnell.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "16e2pj6",
@@ -877,7 +893,8 @@
   ],
   "e": "Ameisensäure (Methansäure) wurde zuerst aus Ameisen gewonnen und trägt ihren Namen daher.",
   "h": "Im Namen steckt das Tier.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "5rlhbh",
@@ -937,7 +954,8 @@
   ],
   "e": "Haushunde stammen vom Wolf ab; die Domestikation begann vor mindestens etwa 15.000 Jahren.",
   "h": "Heult nachts.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "plm99z",
@@ -957,7 +975,8 @@
   ],
   "e": "Das Bankivahuhn aus Südostasien ist die Hauptstammform; auch andere Dschungelhühner haben Erbgut beigesteuert.",
   "h": "Dschungelhuhn.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1l0gtu",
@@ -977,7 +996,8 @@
   ],
   "e": "Der flugunfähige Dodo starb im 17. Jahrhundert aus, nachdem Seefahrer Ratten und Schweine mitbrachten.",
   "h": "Indischer Ozean.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "hmn74q",
@@ -997,7 +1017,8 @@
   ],
   "e": "Barten sind Hornplatten, in denen Krill und Plankton hängen bleiben; Blauwal und Buckelwal besitzen sie.",
   "h": "Sieb im Maul.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "6s48a6",
@@ -1037,7 +1058,8 @@
   ],
   "e": "Fast alle Säugetiere haben sieben Halswirbel, von der Maus bis zur Giraffe; bei Giraffen sind sie nur stark verlängert.",
   "h": "Wie beim Menschen.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1mbmaru",
@@ -1117,7 +1139,8 @@
   ],
   "e": "Fliegen sind Zweiflügler; die Hinterflügel sind zu Schwingkölbchen umgebildet, die beim Flug stabilisieren.",
   "h": "Die Fliegen tragen ihre Flügelzahl sogar im Namen ihrer Ordnung.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "mt5bs0",
@@ -1157,7 +1180,8 @@
   ],
   "e": "Ein Joey kommt etwa 1 g schwer zur Welt und klettert selbst in den Beutel der Mutter.",
   "h": "Beutelbewohner.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "b04b3p",
@@ -1177,7 +1201,8 @@
   ],
   "e": "Aus Kohlendioxid (CO₂) und Wasser bauen Pflanzen mit Lichtenergie Traubenzucker auf und setzen Sauerstoff frei.",
   "h": "Es entsteht auch beim Atmen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "jp0o5t",
@@ -1217,7 +1242,8 @@
   ],
   "e": "Ein Ökosystem besteht aus Biozönose und Biotop, die über Stoff- und Energieflüsse verbunden sind, z. B. See oder Wald.",
   "h": "Biotop und Biozönose gehören zusammen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1h46u3m",
@@ -1257,7 +1283,8 @@
   ],
   "e": "Die Rinde der Korkeiche wird alle neun bis zwölf Jahre geschält; der Baum überlebt das.",
   "h": "Mittelmeerraum, Portugal.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "yksntv",
@@ -1277,7 +1304,8 @@
   ],
   "e": "Die Rote Liste der IUCN stuft Arten von „nicht gefährdet“ bis „ausgestorben“ ein.",
   "h": "Warnfarbe.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "cqu97r",
@@ -1297,7 +1325,8 @@
   ],
   "e": "Rund 71 % der Erdoberfläche sind Wasser, überwiegend Ozeane.",
   "h": "Etwa drei Viertel.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "11hruxx",
@@ -1337,7 +1366,8 @@
   ],
   "e": "Biodiversität umfasst Artenvielfalt, genetische Vielfalt und die Vielfalt der Ökosysteme.",
   "h": "Das Wort setzt sich aus „bios“ (Leben) und „diversitas“ zusammen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "oncsmt",
@@ -1397,7 +1427,8 @@
   ],
   "e": "Aus 6 CO₂ und 6 H₂O entstehen Glukose (Traubenzucker) und 6 O₂.",
   "h": "Süß.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1d4mwjl",
@@ -1537,7 +1568,8 @@
   ],
   "e": "Kohle, Öl und Gas bestehen aus Kohlenstoff, der bei der Verbrennung zu CO₂ oxidiert.",
   "h": "Eine Kohlenstoffverbindung.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "da4awu",
@@ -1557,7 +1589,8 @@
   ],
   "e": "Grüne Pflanzen und Algen sind Produzenten; sie stehen am Anfang jeder Nahrungskette.",
   "h": "Sie stellen her.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "wqfn17",
@@ -1577,7 +1610,8 @@
   ],
   "e": "Pilze, Bakterien und Regenwürmer machen aus Laub und Kadavern wieder Mineralstoffe für Pflanzen.",
   "h": "Zersetzer.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1qdz6lv",
@@ -1637,7 +1671,8 @@
   ],
   "e": "Der Saft des Riesen-Bärenklaus löst mit Licht Verbrennungen (Fotodermatitis) aus; er stammt aus dem Kaukasus.",
   "h": "Bis zu 3 m hoch.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "ec6ax",
@@ -1657,7 +1692,8 @@
   ],
   "e": "Moore binden etwa doppelt so viel Kohlenstoff wie alle Wälder; entwässert, setzen sie ihn als CO₂ frei.",
   "h": "Torf besteht aus Pflanzenresten.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "u0wdlw",
@@ -1677,7 +1713,8 @@
   ],
   "e": "Pollen gelangen durch Insekten, Wind oder Wasser zur Narbe; erst danach wächst der Pollenschlauch.",
   "h": "Honigbienen tun es.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1knm9il",
@@ -1737,7 +1774,8 @@
   ],
   "e": "Kartoffelknollen sind verdickte Sprossteile; die „Augen“ sind Knospen, aus denen neue Triebe wachsen.",
   "h": "Spross, nicht Wurzel.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1dioeja",
@@ -1777,7 +1815,8 @@
   ],
   "e": "Das rote Fleisch ist verdickter Blütenboden; die eigentlichen Früchte sind die Nüsschen darauf.",
   "h": "Echte Früchte.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "545iqa",
@@ -1798,7 +1837,8 @@
   "e": "Die Kiefer macht rund ein Fünftel der Waldfläche aus; die Fichte ging durch Dürre und Borkenkäfer stark zurück.",
   "h": "Stand 2022.",
   "d": 3,
-  "src": "Thünen-Institut, BWI 2022: thuenen.de/media/institute/wo/Waldmonitoring/THG/Dokumente/BWI-2022_Broschuere_bf-neu.pdf"
+  "src": "Thünen-Institut, BWI 2022: thuenen.de/media/institute/wo/Waldmonitoring/THG/Dokumente/BWI-2022_Broschuere_bf-neu.pdf",
+  "p": 3
  },
  {
   "id": "jug6z7",
@@ -1858,7 +1898,8 @@
   ],
   "e": "Bei Hitzestress stoßen Korallen ihre Algen ab und werden weiß; die Riffe können absterben.",
   "h": "Hitze.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1b6f840",
@@ -1898,7 +1939,8 @@
   ],
   "e": "Fluorchlorkohlenwasserstoffe aus Spraydosen und Kühlgeräten wurden 1987 durch das Montrealer Protokoll verboten.",
   "h": "Früher in Spraydosen.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "z7865a",
@@ -1918,7 +1960,8 @@
   ],
   "e": "Phosphat und Nitrat fördern Algenblüten; beim Abbau verbraucht sich Sauerstoff und Fische sterben.",
   "h": "Gut genährt.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "1g5emfn",
@@ -2018,7 +2061,8 @@
   ],
   "e": "In der Tundra taut der Boden nur oberflächlich; es wachsen Moose, Flechten und Zwergsträucher.",
   "h": "Nördlich des Polarkreises.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "15i7hjz",
@@ -2038,7 +2082,8 @@
   ],
   "e": "Die Taiga, der boreale Nadelwald, bildet einen Gürtel über Kanada, Skandinavien und Sibirien.",
   "h": "Nadelwald des Nordens.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "86z1nn",
@@ -2058,7 +2103,8 @@
   ],
   "e": "Der Clownfisch ist durch Schleim vor den Nesselzellen geschützt und vertreibt Fressfeinde der Anemone.",
   "h": "Nesselnde Wirte.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "lzoefc",
@@ -2098,7 +2144,8 @@
   ],
   "e": "Viele Orchideen und Bromelien im Regenwald sind Epiphyten, die Licht in den Baumkronen suchen.",
   "h": "Epi = auf.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "yx5gpx",
@@ -2198,7 +2245,8 @@
   ],
   "e": "Bei Nacktsamern liegen die Samen frei auf den Zapfenschuppen; Fichte, Kiefer und Tanne gehören dazu.",
   "h": "Samen offen.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1jfx01b",
@@ -2238,7 +2286,8 @@
   ],
   "e": "Chlorophyll absorbiert vor allem Rot und Blau; Grün wird reflektiert, deshalb sehen Blätter grün aus.",
   "h": "Blätter zeigen sie.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "10ggynw",
@@ -2258,7 +2307,8 @@
   ],
   "e": "Mikroskopische Algen und Cyanobakterien im Meer produzieren schätzungsweise 50 bis 80 % des Sauerstoffs.",
   "h": "Mikroalgen.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "13pqo4h",
@@ -2298,7 +2348,8 @@
   ],
   "e": "Der Nationalpark Bayerischer Wald wurde 1970 gegründet und gilt als erster Nationalpark Deutschlands.",
   "h": "Gegründet 1970.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "j4rucx",
@@ -2378,7 +2429,8 @@
   ],
   "e": "Der Küstenmammutbaum „Hyperion“ in Kalifornien misst über 115 m.",
   "h": "Redwood.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "11ujdwu",
@@ -2438,7 +2490,8 @@
   "e": "Mücken übertragen Krankheiten wie Malaria und Dengue, die jährlich Hunderttausende Todesfälle verursachen. Allein an Malaria starben laut WHO 2023 rund 600.000 Menschen.",
   "h": "Klein, aber tödlich durch Krankheitserreger.",
   "d": 1,
-  "id": "n4fd95cb"
+  "id": "n4fd95cb",
+  "p": 1
  },
  {
   "s": "Tiere",
@@ -2458,7 +2511,8 @@
   "e": "Ästlinge verlassen das Nest, bevor sie richtig fliegen können, und werden von den Eltern am Boden weiter gefüttert. Nur bei Verletzung oder akuter Gefahr eingreifen.",
   "h": "Die Eltern sind meist in der Nähe.",
   "d": 2,
-  "id": "n37cc890"
+  "id": "n37cc890",
+  "p": 1
  },
  {
   "s": "Pflanzen & Ökologie",
@@ -2478,7 +2532,8 @@
   "e": "Schon ein einzelner Grüner Knollenblätterpilz kann tödlich sein; die Symptome setzen oft erst nach vielen Stunden ein. Bei Verdacht sofort den Giftnotruf anrufen.",
   "h": "Er wird mit Champignons verwechselt.",
   "d": 2,
-  "id": "nf3b69e9"
+  "id": "nf3b69e9",
+  "p": 1
  },
  {
   "s": "Pflanzen & Ökologie",
@@ -2498,6 +2553,7 @@
   "e": "Laut Weltbiodiversitätsrat IPBES sind rund 75 % der wichtigsten Nahrungspflanzen zumindest teilweise auf tierische Bestäuber angewiesen, etwa Äpfel, Kirschen und Raps.",
   "h": "Ohne sie gäbe es viel weniger Obst.",
   "d": 1,
-  "id": "nb9a1850"
+  "id": "nb9a1850",
+  "p": 1
  }
 ]

@@ -17,7 +17,8 @@
   ],
   "e": "König Johann Ohneland musste sich 1215 an Rechtsregeln binden, Willkür war eingeschränkt. Sie gilt als Wurzel des englischen Verfassungsdenkens.",
   "h": "Der Name bedeutet „Große Urkunde“.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1c1v3e4",
@@ -57,7 +58,8 @@
   ],
   "e": "Octavian erhielt 27 v. Chr. den Titel Augustus und begründete das Prinzipat.",
   "h": "Caesars Adoptivsohn.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1q8d1uv",
@@ -77,7 +79,8 @@
   ],
   "e": "Der Schwarze Tod erreichte Europa um 1347 über Handelsschiffe aus dem Schwarzmeerraum. Er kostete schätzungsweise 25 Millionen Menschen das Leben.",
   "h": "Der „Schwarze Tod“.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "u7ovov",
@@ -157,7 +160,8 @@
   ],
   "e": "Bürger ritzten einen Namen auf Tonscherben, bei mindestens 6000 Stimmen musste der Genannte die Stadt verlassen. So sollte Tyrannis verhindert werden. Die Verbannung dauerte zehn Jahre.",
   "h": "Namen auf Tonscherben.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "517mx0",
@@ -177,7 +181,8 @@
   ],
   "e": "Der Attische Seebund unter Athen kämpfte gegen den Peloponnesischen Bund unter Sparta. Sparta gewann mit persischem Geld, die Poliswelt war danach geschwächt.",
   "h": "Seebund gegen Landmacht.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "17iuo5l",
@@ -197,7 +202,8 @@
   ],
   "e": "Unter Themistokles lockten die Athener die persische Flotte in die enge Bucht von Salamis. Damit scheiterte der Feldzug des Xerxes.",
   "h": "Themistokles' Flottenplan.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "ctdt8o",
@@ -277,7 +283,8 @@
   ],
   "e": "Cato beendete angeblich jede Senatsrede damit. 146 v. Chr. wurde Karthago im Dritten Punischen Krieg tatsächlich zerstört.",
   "h": "„Im Übrigen meine ich ...“",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1pnrdgd",
@@ -337,7 +344,8 @@
   ],
   "e": "Der Cheruskerfürst Arminius lockte das Heer in einen Hinterhalt. Rom gab danach die Pläne für eine Provinz bis zur Elbe auf.",
   "h": "Arminius war sein Gegner.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1r4txi",
@@ -397,7 +405,8 @@
   ],
   "e": "Das Werk prägte als „Römisches Recht“ die europäischen Rechtsordnungen bis in die Neuzeit. Justinian regierte das Oströmische Reich.",
   "h": "Ostrom, 6. Jahrhundert.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "qwfvdn",
@@ -420,26 +429,6 @@
   "d": 2
  },
  {
-  "id": "206kpg",
-  "s": "Antike & Mittelalter",
-  "q": "Was bezeichnet die Hidschra im Islam?",
-  "a": [
-   "Mohammeds Auswanderung nach Medina",
-   "Die Pilgerfahrt der Muslime nach Mekka",
-   "Das tägliche Pflichtgebet in Richtung Mekka",
-   "Die erste Offenbarung des Korans an Mohammed"
-  ],
-  "w": [
-   "",
-   "Das ist der Hadsch.",
-   "Das ist das Salat.",
-   "Sie begann in der Höhle von Hira, nicht mit der Auswanderung."
-  ],
-  "e": "Die Hidschra von 622 gilt als Beginn der islamischen Zeitrechnung. In Medina entstand die erste muslimische Gemeinde.",
-  "h": "Beginn der Zeitrechnung.",
-  "d": 2
- },
- {
   "id": "1pzvwxt",
   "s": "Antike & Mittelalter",
   "q": "Wer stoppte 732 bei Tours und Poitiers einen arabischen Vorstoß nach Gallien?",
@@ -457,7 +446,8 @@
   ],
   "e": "Karl Martell war Hausmeier der Merowinger. Sein Sohn Pippin begründete die Dynastie der Karolinger.",
   "h": "Der „Hammer“.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "y1l3md",
@@ -477,7 +467,8 @@
   ],
   "e": "Die gut lesbare Schrift verbreitete sich von Klosterschulen aus. Humanisten griffen sie später wieder auf.",
   "h": "Hofschule Karls.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "15i0rrn",
@@ -497,7 +488,8 @@
   ],
   "e": "Aus Ost-, West- und Mittelreich entwickelten sich später Deutschland, Frankreich und Italien. Der Vertrag gilt als Beginn getrennter Entwicklungen.",
   "h": "Drei Enkel, drei Reiche.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1r7yv6x",
@@ -557,7 +549,8 @@
   ],
   "e": "Kaiser Karl IV. legte fest, wer den römisch-deutschen König wählt. Das Gesetz galt bis 1806.",
   "h": "Es geht um die Wahl des römisch-deutschen Königs.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "daf9iw",
@@ -677,7 +670,8 @@
   ],
   "e": "Der Vierte Kreuzzug wurde von Venedig gelenkt und endete mit der Eroberung der christlichen Hauptstadt. Das vertiefte die Spaltung zur Ostkirche.",
   "h": "Christen gegen Christen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "oz0h2n",
@@ -737,7 +731,8 @@
   ],
   "e": "Jeanne d'Arc führte französische Truppen und ermöglichte die Krönung Karls VII. 1431 wurde sie in Rouen als Ketzerin verbrannt.",
   "h": "„Jungfrau von Orléans“.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "2yq6i6",
@@ -777,7 +772,8 @@
   ],
   "e": "Der Name geht auf Simon den Magier zurück. Die Kirchenreformer des 11. Jahrhunderts bekämpften Simonie und Priesterehe.",
   "h": "Kauf von Ämtern.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "lrzr96",
@@ -897,7 +893,8 @@
   ],
   "e": "Die Phönizier schrieben nur Konsonanten, die Griechen fügten Vokale hinzu. Daraus entstanden lateinische und kyrillische Schrift.",
   "h": "Seefahrer aus Tyros.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1gbzvz",
@@ -957,7 +954,8 @@
   ],
   "e": "Nach dem Kalinga-Krieg wandte sich Ashoka der Gewaltlosigkeit zu. Er ließ Edikte in Stein meißeln.",
   "h": "Kalinga-Krieg.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "195c1nj",
@@ -997,7 +995,8 @@
   ],
   "e": "Siedlungsreste in L'Anse aux Meadows (Neufundland) belegen die Wikingerpräsenz. Das war fast 500 Jahre vor Kolumbus.",
   "h": "Sohn Eriks des Roten.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "e6geqq",
@@ -1037,7 +1036,8 @@
   ],
   "e": "Sein Hauptwerk ist die „Summa theologiae“. Er prägte die Scholastik.",
   "h": "Doctor angelicus.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1qfzdip",
@@ -1057,7 +1057,8 @@
   ],
   "e": "Bologna war vor allem für Rechtswissenschaft berühmt. Die „Universitas“ war ursprünglich eine Körperschaft von Lehrenden und Lernenden.",
   "h": "Recht und Italien.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1i1td4r",
@@ -1077,7 +1078,8 @@
   ],
   "e": "Seine Regel bestimmte Gebet, Arbeit und Gehorsam. Sie wurde Grundlage des abendländischen Mönchtums.",
   "h": "Ora et labora.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1bs16om",
@@ -1097,7 +1099,8 @@
   ],
   "e": "Bonifatius organisierte die Kirche im Frankenreich und wurde 754 in Friesland erschlagen. Er liegt in Fulda begraben.",
   "h": "Aus Wessex.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "7ylwg9",
@@ -1137,7 +1140,8 @@
   ],
   "e": "Kublai gründete 1271 die Yuan-Dynastie. Marco Polo soll an seinem Hof gewesen sein.",
   "h": "Gründer der Yuan.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1bcd7k4",
@@ -1157,7 +1161,8 @@
   ],
   "e": "Mansa Musa soll so viel Gold verteilt haben, dass dessen Wert in Kairo sank. Timbuktu wurde zum Zentrum der Gelehrsamkeit.",
   "h": "Gold, Timbuktu.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "6tqqig",
@@ -1177,47 +1182,8 @@
   ],
   "e": "Hus kritisierte kirchliche Missstände. Seine Hinrichtung löste die Hussitenkriege in Böhmen aus.",
   "h": "Aus Böhmen.",
-  "d": 2
- },
- {
-  "id": "hc5qsd",
-  "s": "Neuzeit (1450–1914)",
-  "q": "Wer erfand um 1450 in Mainz den Buchdruck mit beweglichen Metalllettern in Europa?",
-  "a": [
-   "Johannes Gutenberg",
-   "Albrecht Dürer",
-   "Martin Luther",
-   "Johannes Kepler"
-  ],
-  "w": [
-   "",
-   "Er war Maler und Grafiker und nutzte den Druck für Holzschnitte und Kupferstiche.",
-   "Er nutzte den Buchdruck für die Reformation, erfand ihn aber nicht.",
-   "Er war Astronom und lebte rund 150 Jahre später."
-  ],
-  "e": "Der Buchdruck machte Wissen massenhaft verfügbar und beschleunigte die Reformation. Die 42-zeilige Bibel gilt als sein Meisterwerk.",
-  "h": "Mainz.",
-  "d": 1
- },
- {
-  "id": "qxxrel",
-  "s": "Neuzeit (1450–1914)",
-  "q": "Wer schrieb 1776 „Der Wohlstand der Nationen“ und prägte das Bild der „unsichtbaren Hand“?",
-  "a": [
-   "Adam Smith",
-   "Karl Marx",
-   "John Maynard Keynes",
-   "David Ricardo"
-  ],
-  "w": [
-   "",
-   "Er schrieb 1867 „Das Kapital“ und kritisierte den Kapitalismus.",
-   "Er prägte im 20. Jahrhundert die staatliche Konjunkturpolitik.",
-   "Er entwickelte u. a. die Theorie der komparativen Kostenvorteile."
-  ],
-  "e": "Das Werk gilt als Grundlage der modernen Volkswirtschaftslehre. Smith sah im Eigennutz der Einzelnen einen Motor für das Gemeinwohl.",
-  "h": "Schotte, Aufklärung.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "qeyxs7",
@@ -1237,7 +1203,8 @@
   ],
   "e": "Dampfmaschine, Textilfabriken und Kohle machten dort ab dem späten 18. Jahrhundert den Anfang.",
   "h": "Insel.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "18tujgn",
@@ -1257,7 +1224,8 @@
   ],
   "e": "Ob Luther die Thesen wirklich an die Tür der Schlosskirche schlug, ist umstritten. Gedruckt verbreiteten sie sich rasch.",
   "h": "Wittenberg.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "lkixsb",
@@ -1277,7 +1245,8 @@
   ],
   "e": "Wilhelm I. wurde in Versailles zum Kaiser ausgerufen, Bismarck war Reichskanzler.",
   "h": "Eiserner Kanzler.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "sg9ett",
@@ -1320,26 +1289,6 @@
   "d": 2
  },
  {
-  "id": "7f5ejq",
-  "s": "Neuzeit (1450–1914)",
-  "q": "Wer verbesserte ab 1769 die Dampfmaschine entscheidend?",
-  "a": [
-   "James Watt",
-   "Thomas Newcomen",
-   "George Stephenson",
-   "Nikolaus Otto"
-  ],
-  "w": [
-   "",
-   "Er baute 1712 die erste praktisch nutzbare Dampfmaschine.",
-   "Er baute Lokomotiven.",
-   "Er entwickelte den Viertaktmotor."
-  ],
-  "e": "Der separate Kondensator machte die Maschine viel effizienter. Die Leistungseinheit Watt ist nach ihm benannt.",
-  "h": "Kondensator.",
-  "d": 2
- },
- {
   "id": "2w62xe",
   "s": "Neuzeit (1450–1914)",
   "q": "Welche Schlagworte prägten die Französische Revolution?",
@@ -1357,7 +1306,8 @@
   ],
   "e": "„Liberté, Égalité, Fraternité“ ist bis heute Wahlspruch Frankreichs. Die Erklärung der Menschen- und Bürgerrechte stammt von 1789.",
   "h": "Auf Französisch.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1p2vue3",
@@ -1437,7 +1387,8 @@
   ],
   "e": "Napoleon wollte Großbritannien wirtschaftlich schwächen. Das Embargo schadete aber auch dem Kontinent und trug zum Russlandfeldzug bei.",
   "h": "Embargo.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "pt8zi8",
@@ -1457,7 +1408,8 @@
   ],
   "e": "Metternich strebte ein Gleichgewicht der Mächte und die Wiederherstellung der alten Ordnung an. Die Zeit nach 1815 wird „Vormärz“ genannt.",
   "h": "Gleichgewicht der Mächte.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "11q55ye",
@@ -1497,7 +1449,8 @@
   ],
   "e": "Die großdeutsche Lösung hätte Österreich einbezogen. 1871 setzte sich die kleindeutsche durch.",
   "h": "Ohne den Habsburgerstaat.",
-  "d": 1
+  "d": 1,
+  "p": 3
  },
  {
   "id": "agu9cg",
@@ -1517,7 +1470,8 @@
   ],
   "e": "Bismarck kürzte den Bericht über ein Gespräch in Bad Ems und verschärfte so den Ton. Frankreich erklärte den Krieg.",
   "h": "Bad Ems.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "wxp7jc",
@@ -1537,7 +1491,8 @@
   ],
   "e": "Bismarck sah die Zentrumspartei als Reichsfeind. Der Konflikt wurde in den 1880ern entschärft.",
   "h": "Zentrum und Papst.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "xtciyf",
@@ -1557,7 +1512,8 @@
   ],
   "e": "Die Sozialgesetze sollten die Arbeiter an den Staat binden und die Sozialdemokratie schwächen. Sie sind Vorbild für Sozialstaaten.",
   "h": "Zuerst Gesundheit.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1bkmffs",
@@ -1617,7 +1573,8 @@
   ],
   "e": "China hatte den Opiumhandel verboten. Im Frieden von Nanking 1842 musste es Hongkong abtreten.",
   "h": "Hongkong.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1jkbeph",
@@ -1637,7 +1594,8 @@
   ],
   "e": "1868 kam der Tenno wieder an die Macht. Japan industrialisierte sich rasch nach westlichem Vorbild.",
   "h": "1868.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1ec4cdz",
@@ -1657,7 +1615,8 @@
   ],
   "e": "Die „Schwarzen Schiffe“ beendeten die Abschottung unter dem Shogunat. Die ungleichen Verträge lösten Reformen aus.",
   "h": "US-Marine.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "c6nb16",
@@ -1677,7 +1636,8 @@
   ],
   "e": "Sie besagte, die USA seien zur Ausdehnung über den Kontinent bestimmt. Die Folgen für die indigene Bevölkerung waren verheerend.",
   "h": "Vorherbestimmung.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "3mv11x",
@@ -1697,7 +1657,8 @@
   ],
   "e": "Die USA wandten sich gegen neue europäische Kolonien in der westlichen Hemisphäre. Später wurde sie als Anspruch auf Vormacht gelesen.",
   "h": "Präsident Monroe richtete sich gegen neue Kolonien.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "2epwvq",
@@ -1737,7 +1698,8 @@
   ],
   "e": "Sie erklärte Sklaven in den Rebellenstaaten für frei. Der 13. Zusatzartikel schaffte die Sklaverei 1865 endgültig ab.",
   "h": "Präsident.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "703wzn",
@@ -1797,7 +1759,8 @@
   ],
   "e": "Jefferson wurde später dritter Präsident der USA. Der Text beruft sich auf Naturrechte.",
   "h": "Virginia.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1m2bvkp",
@@ -1817,7 +1780,8 @@
   ],
   "e": "Die Revolution führte 1804 zum ersten freien Staat von früher Versklavten. Louverture starb 1803 in französischer Haft.",
   "h": "Aus Saint-Domingue.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "dyw00w",
@@ -1837,7 +1801,8 @@
   ],
   "e": "Bolívar strebte ein vereintes Südamerika an. Das Projekt Großkolumbien zerfiel jedoch.",
   "h": "„El Libertador“.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "caih0v",
@@ -1877,7 +1842,8 @@
   ],
   "e": "Marx und Engels riefen zur internationalen Solidarität der Arbeiter auf. Der Satz wurde zum Leitspruch der Arbeiterbewegung.",
   "h": "Am Schluss.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "10sortd",
@@ -1960,26 +1926,6 @@
   "d": 2
  },
  {
-  "id": "6vb68g",
-  "s": "Neuzeit (1450–1914)",
-  "q": "Welche Bahnform haben Planeten nach Keplers erstem Gesetz?",
-  "a": [
-   "Eine Ellipse",
-   "Ein Kreis",
-   "Eine Parabel",
-   "Eine Spirale"
-  ],
-  "w": [
-   "",
-   "Aristoteles und Kopernikus nahmen Kreise an.",
-   "Sie ist eine offene Bahnkurve.",
-   "Das wäre keine geschlossene Bahn."
-  ],
-  "e": "Die Sonne steht in einem Brennpunkt der Ellipse. Kepler widerlegte damit die Kreisbahnen.",
-  "h": "Brennpunkt.",
-  "d": 2
- },
- {
   "id": "1ejvz50",
   "s": "Neuzeit (1450–1914)",
   "q": "Was bedeutet das Wort Renaissance wörtlich?",
@@ -1997,7 +1943,8 @@
   ],
   "e": "Die Epoche knüpfte an Kunst und Denken der Antike an. Sie begann im 14. Jahrhundert in Italien.",
   "h": "Antike.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1sfs6b4",
@@ -2037,7 +1984,8 @@
   ],
   "e": "Las Casas schrieb über die Verwüstung der Indios. Er löste eine Debatte über Menschenrechte aus.",
   "h": "Bischof von Chiapas.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1d650f7",
@@ -2097,7 +2045,8 @@
   ],
   "e": "Er baute das Heer stark aus und sparte am Hof. Sein Sohn nutzte die Armee für Eroberungen.",
   "h": "Heer.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "150ck3",
@@ -2157,7 +2106,8 @@
   ],
   "e": "Wenige Reiche hatten so viel Gewicht wie viele Arme. Es galt bis 1918.",
   "h": "Steuerklassen.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1tnxy7q",
@@ -2177,7 +2127,8 @@
   ],
   "e": "Peter modernisierte Russland nach westlichem Vorbild. Die Stadt liegt an der Newa.",
   "h": "Newa.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1ytdr9u",
@@ -2197,7 +2148,8 @@
   ],
   "e": "Nach der Niederlage im Krimkrieg galt Russland als rückständig. Die Befreiung war mit hohen Ablösezahlungen verbunden.",
   "h": "Befreier-Zar.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "18c6k4n",
@@ -2280,46 +2232,6 @@
   "d": 2
  },
  {
-  "id": "1nzvly6",
-  "s": "Neuzeit (1450–1914)",
-  "q": "Wer entwickelte die Lehre der Gewaltenteilung in gesetzgebende, ausführende und richterliche Gewalt?",
-  "a": [
-   "Montesquieu",
-   "Rousseau",
-   "Voltaire",
-   "Thomas Hobbes"
-  ],
-  "w": [
-   "",
-   "Er schrieb über die Volkssouveränität.",
-   "Er kämpfte für Toleranz und Meinungsfreiheit.",
-   "Er rechtfertigte einen starken Staat („Leviathan“)."
-  ],
-  "e": "In „Vom Geist der Gesetze“ (1748) forderte er die Trennung der Gewalten. Sie ist Grundlage moderner Verfassungen.",
-  "h": "„Vom Geist der Gesetze“.",
-  "d": 2
- },
- {
-  "id": "r7xoan",
-  "s": "Neuzeit (1450–1914)",
-  "q": "Welches Werk Rousseaus von 1762 begründete die Idee der Volkssouveränität?",
-  "a": [
-   "Der Gesellschaftsvertrag",
-   "Der Leviathan",
-   "Zwei Abhandlungen über die Regierung",
-   "Der Geist der Gesetze"
-  ],
-  "w": [
-   "",
-   "Er stammt von Hobbes.",
-   "Sie stammen von Locke.",
-   "Er stammt von Montesquieu."
-  ],
-  "e": "Rousseau sah im Gemeinwillen die Quelle der Gesetze. Seine Ideen beeinflussten die Französische Revolution.",
-  "h": "Contrat social.",
-  "d": 3
- },
- {
   "id": "p6woiy",
   "s": "Neuzeit (1450–1914)",
   "q": "Welcher Satz wird Ludwig XIV. zugeschrieben und steht für den Absolutismus?",
@@ -2360,26 +2272,6 @@
   "d": 3
  },
  {
-  "id": "pklpjj",
-  "s": "Neuzeit (1450–1914)",
-  "q": "Welche Aufforderung formulierte Kant als Wahlspruch der Aufklärung?",
-  "a": [
-   "„Habe Mut, dich deines Verstandes zu bedienen“",
-   "„Ich denke, also bin ich“",
-   "„Der Mensch ist zur Freiheit verurteilt“",
-   "„Erkenne dich selbst“"
-  ],
-  "w": [
-   "",
-   "Der Satz stammt von Descartes.",
-   "Der Satz stammt von Sartre aus dem 20. Jahrhundert.",
-   "Er stand am Apollotempel in Delphi."
-  ],
-  "e": "Aufklärung ist nach Kant der Ausgang aus selbstverschuldeter Unmündigkeit. Der Wahlspruch lautet lateinisch „Sapere aude“.",
-  "h": "Sapere aude.",
-  "d": 1
- },
- {
   "id": "vzb09g",
   "s": "Neuzeit (1450–1914)",
   "q": "Wessen Expedition umsegelte 1519–1522 erstmals die Erde, ihr Anführer starb jedoch auf den Philippinen?",
@@ -2397,7 +2289,8 @@
   ],
   "e": "Elcano führte das letzte Schiff zurück nach Spanien. Nur 18 von rund 240 Männern kamen an.",
   "h": "Magalhães.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "3vvmey",
@@ -2417,27 +2310,8 @@
   ],
   "e": "Portugal sicherte sich damit den Gewürzhandel. Der Weg um Afrika ersetzte die Landwege.",
   "h": "Kalikut.",
-  "d": 2
- },
- {
-  "id": "nakrr6",
-  "s": "20. Jahrhundert & Gegenwart",
-  "q": "Welches Land gehörte 1951 NICHT zu den sechs Gründern der Montanunion?",
-  "a": [
-   "Spanien",
-   "Frankreich",
-   "Italien",
-   "Luxemburg"
-  ],
-  "w": [
-   "",
-   "Es war Mitgründer und Initiator durch den Schuman-Plan.",
-   "Es gehörte zu den sechs Gründern.",
-   "Es gehörte zu den Benelux-Gründern."
-  ],
-  "e": "Gründer waren Deutschland, Frankreich, Italien, Belgien, die Niederlande und Luxemburg. Spanien trat erst 1986 der EG bei.",
-  "h": "Westeuropa.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1fh2rbn",
@@ -2457,7 +2331,8 @@
   ],
   "e": "Von 1948 bis 1952 flossen rund 13 Milliarden Dollar. Die Hilfe sollte auch den Einfluss des Kommunismus eindämmen.",
   "h": "George Marshall.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1b0y5zd",
@@ -2477,7 +2352,8 @@
   ],
   "e": "Der legale Weg erleichterte die Machtübernahme. Binnen Monaten wurde die Demokratie abgeschafft.",
   "h": "30. Januar 1933.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "qpchm1",
@@ -2517,7 +2393,8 @@
   ],
   "e": "Frankreich besetzte 1923 das Ruhrgebiet, die Regierung finanzierte den Widerstand mit der Notenpresse. Die Rentenmark beendete die Inflation.",
   "h": "Ein Gebiet an der Ruhr spielte eine Rolle, dazu die Notenpresse.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "vh16c1",
@@ -2537,7 +2414,8 @@
   ],
   "e": "Mit dem Aufruf vom 12. November 1918 wurde das Wahlrecht für alle über 20 eingeführt. Bei der Wahl im Januar 1919 durften Frauen erstmals wählen.",
   "h": "Revolutionsregierung.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "11s37at",
@@ -2557,7 +2435,8 @@
   ],
   "e": "Die NATO verpflichtet zum Beistand nach Artikel 5. Deutschland trat 1955 bei.",
   "h": "Nordatlantik.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1hocq0b",
@@ -2577,7 +2456,8 @@
   ],
   "e": "Das Attentat am 28. Juni 1914 setzte eine Kette von Bündnisfällen in Gang.",
   "h": "Ein Anschlag auf dem Balkan.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1u0nybw",
@@ -2617,7 +2497,8 @@
   ],
   "e": "Bei Verdun gab es rund 700.000 Tote und Verwundete, an der Somme über eine Million. Der Krieg war ein Abnutzungskrieg.",
   "h": "Fort im Osten Frankreichs.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "105oen7",
@@ -2657,7 +2538,8 @@
   ],
   "e": "Nach der Oktoberrevolution entstand die Sowjetunion. Die Zarenfamilie wurde 1918 ermordet.",
   "h": "Wladimir Iljitsch.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "19aa3v4",
@@ -2677,7 +2559,8 @@
   ],
   "e": "Russland musste große Gebiete abtreten. Nach der deutschen Niederlage im November 1918 wurde der Vertrag annulliert.",
   "h": "Ostfront.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "13q0b5t",
@@ -2697,7 +2580,8 @@
   ],
   "e": "Der Matrosenaufstand weitete sich auf das Reich aus. Am 9. November wurde die Abdankung Wilhelms II. verkündet, die Republik ausgerufen.",
   "h": "Hafenstadt.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1mnr3tt",
@@ -2717,7 +2601,8 @@
   ],
   "e": "Der „Kriegsschuldartikel“ wurde in Deutschland als Schmach empfunden. Er belastete die Weimarer Republik.",
   "h": "Schuldartikel.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1f8k4c5",
@@ -2737,7 +2622,8 @@
   ],
   "e": "Die Legende belastete die Demokratie und war falsch. Die Oberste Heeresleitung hatte 1918 selbst den Waffenstillstand gefordert.",
   "h": "Hindenburg.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "ypblz5",
@@ -2757,7 +2643,8 @@
   ],
   "e": "Der Senat lehnte den Versailler Vertrag ab. Der Völkerbund blieb dadurch geschwächt.",
   "h": "14 Punkte.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "12qvw7d",
@@ -2777,7 +2664,8 @@
   ],
   "e": "Der Artikel 48 wurde ab 1930 für Präsidialkabinette genutzt. Das untergrub das Parlament.",
   "h": "Notstand.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "rigr6t",
@@ -2817,7 +2705,8 @@
   ],
   "e": "Damit war die Gewaltenteilung außer Kraft gesetzt. Nur die SPD stimmte dagegen.",
   "h": "Das Parlament gab seine wichtigste Aufgabe ab.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1rz8caz",
@@ -2857,7 +2746,8 @@
   ],
   "e": "Das Reichsbürgergesetz und das Blutschutzgesetz machten Juden zu Menschen zweiter Klasse. Sie waren eine Stufe auf dem Weg zum Holocaust.",
   "h": "Rassegesetze.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "oy1knp",
@@ -2877,7 +2767,8 @@
   ],
   "e": "Großbritannien und Frankreich gaben nach, um Krieg zu vermeiden (Appeasement). Hitler besetzte 1939 die ganze Tschechoslowakei.",
   "h": "Chamberlain.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "ft51l7",
@@ -2897,7 +2788,8 @@
   ],
   "e": "Der Nichtangriffspakt enthielt geheime Zusatzprotokolle über die Aufteilung Polens. Er wurde im August 1939 geschlossen.",
   "h": "Molotow und Ribbentrop.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "14sjsml",
@@ -2917,7 +2809,8 @@
   ],
   "e": "Der Name geht auf Friedrich Barbarossa zurück. Der Krieg im Osten wurde als Vernichtungskrieg geführt.",
   "h": "Staufer.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "b7derz",
@@ -2937,7 +2830,8 @@
   ],
   "e": "Die Rote Armee ging danach in die Offensive. Rund 90.000 deutsche Soldaten gerieten in Gefangenschaft.",
   "h": "Wolga.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "m0wcg6",
@@ -2957,7 +2851,8 @@
   ],
   "e": "Japan griff am 7. Dezember 1941 an. Deutschland erklärte den USA wenige Tage später den Krieg.",
   "h": "Hawaii.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "dg99tl",
@@ -2977,7 +2872,8 @@
   ],
   "e": "Der D-Day am 6. Juni 1944 eröffnete die Westfront. Es war die größte amphibische Operation der Geschichte.",
   "h": "D-Day.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "bdht7c",
@@ -2997,7 +2893,8 @@
   ],
   "e": "Unter Leitung von Robert Oppenheimer entstanden die Bomben in Los Alamos. Sie wurden 1945 auf Hiroshima und Nagasaki abgeworfen.",
   "h": "Los Alamos.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "5jgo1m",
@@ -3017,7 +2914,8 @@
   ],
   "e": "Die Prozesse 1945/46 gaben dem Völkerstrafrecht Impulse. Zwölf Angeklagte erhielten das Todesurteil. Die Anklagepunkte waren Verschwörung, Verbrechen gegen den Frieden, Kriegsverbrechen und Verbrechen gegen die Menschlichkeit.",
   "h": "Völkerstrafrecht.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "6e6u8n",
@@ -3037,7 +2935,8 @@
   ],
   "e": "Auf der Krim legten sie die Aufteilung Deutschlands und die Nachkriegsordnung fest. Frankreich bekam eine Besatzungszone.",
   "h": "Krim.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "gnat9d",
@@ -3077,7 +2976,8 @@
   ],
   "e": "Die USA wollten Länder wie Griechenland und die Türkei unterstützen. Das war der Beginn der Containment-Politik.",
   "h": "Containment.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1uqz8rn",
@@ -3097,7 +2997,8 @@
   ],
   "e": "Flugzeuge, die „Rosinenbomber“, brachten Lebensmittel und Kohle. Die Sowjetunion gab die Blockade auf.",
   "h": "Rosinenbomber.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "uej19z",
@@ -3117,7 +3018,8 @@
   ],
   "e": "Die Währungsreform legte die Grundlage für das Wirtschaftswunder. Der Anlass für die Blockade war der Streit um die Währung.",
   "h": "Die Währungsreform war Anlass für die Berlin-Blockade.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1q0nrd2",
@@ -3138,26 +3040,6 @@
   "e": "Erhard setzte auf Soziale Marktwirtschaft und folgte 1963 Adenauer als Kanzler.",
   "h": "Zigarre.",
   "d": 2
- },
- {
-  "id": "b0thd5",
-  "s": "20. Jahrhundert & Gegenwart",
-  "q": "Welcher Artikel des Grundgesetzes lautet „Die Würde des Menschen ist unantastbar“?",
-  "a": [
-   "Artikel 1",
-   "Artikel 20",
-   "Artikel 5",
-   "Artikel 3"
-  ],
-  "w": [
-   "",
-   "Er regelt die Staatsprinzipien.",
-   "Er schützt die Meinungsfreiheit.",
-   "Er schützt die Gleichheit."
-  ],
-  "e": "Er steht an der Spitze und gilt nach Artikel 79 als unveränderlich. Das Grundgesetz trat 1949 in Kraft.",
-  "h": "Erster Satz.",
-  "d": 1
  },
  {
   "id": "etl1xo",
@@ -3217,7 +3099,8 @@
   ],
   "e": "Aus Streiks von Bauarbeitern wurde eine Massenbewegung. Sowjetische Panzer schlugen ihn nieder.",
   "h": "Arbeiter.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1fc0dq7",
@@ -3237,7 +3120,8 @@
   ],
   "e": "Bis dahin waren rund 2,7 Millionen Menschen geflohen. Die Mauer stand bis 1989.",
   "h": "Millionen Menschen hatten die DDR bis dahin verlassen.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "19jx6y4",
@@ -3277,7 +3161,8 @@
   ],
   "e": "Der Rat für gegenseitige Wirtschaftshilfe wurde 1949 gegründet. Er sollte die Planwirtschaften verzahnen.",
   "h": "Moskau.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "7b5i4a",
@@ -3297,7 +3182,8 @@
   ],
   "e": "Schabowski verkündete, Reisen seien „sofort“ möglich. Tausende strömten an die Grenzübergänge.",
   "h": "Zettel.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "tuuu4a",
@@ -3317,7 +3203,8 @@
   ],
   "e": "Ausgangspunkt waren Friedensgebete in der Nikolaikirche. Der Ruf „Wir sind das Volk“ wurde zum Symbol.",
   "h": "Nikolaikirche.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "17wsx9n",
@@ -3337,7 +3224,8 @@
   ],
   "e": "Am 3. Oktober 1990 traten die Länder der DDR bei. Das Grundgesetz gilt seither für ganz Deutschland.",
   "h": "Alter Artikel.",
-  "d": 3
+  "d": 3,
+  "p": 1
  },
  {
   "id": "1brwlar",
@@ -3357,7 +3245,8 @@
   ],
   "e": "Die vier Siegermächte und beide deutsche Staaten bestätigten die Grenzen. Er ersetzte einen Friedensvertrag.",
   "h": "Zwei deutsche Staaten, vier Mächte.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "vki7zq",
@@ -3377,47 +3266,8 @@
   ],
   "e": "Glasnost bedeutet Offenheit, Perestroika Umbau. Die Reformen beschleunigten den Zerfall des Ostblocks.",
   "h": "Offenheit und Umbau.",
-  "d": 2
- },
- {
-  "id": "z2wakg",
-  "s": "20. Jahrhundert & Gegenwart",
-  "q": "Welcher Vertrag von 1992 schuf die Europäische Union?",
-  "a": [
-   "Der Vertrag von Maastricht",
-   "Der Vertrag von Rom",
-   "Der Vertrag von Lissabon",
-   "Das Schengener Abkommen"
-  ],
-  "w": [
-   "",
-   "Er begründete 1957 die EWG.",
-   "Er trat 2009 in Kraft.",
-   "Es regelt die Grenzkontrollen."
-  ],
-  "e": "Er legte auch den Weg zur Währungsunion fest. Der Euro kam 1999 als Buchgeld.",
-  "h": "Niederländische Stadt.",
-  "d": 2
- },
- {
-  "id": "19ag3py",
-  "s": "20. Jahrhundert & Gegenwart",
-  "q": "Was regelt das Schengener Abkommen?",
-  "a": [
-   "Weniger Kontrollen an Binnengrenzen",
-   "Die Einführung des Euro als gemeinsamer Währung",
-   "Die Aufnahme neuer Mitglieder in die EU",
-   "Die Gemeinsame Agrarpolitik der EU-Staaten"
-  ],
-  "w": [
-   "",
-   "Das regelt der Maastricht-Vertrag.",
-   "Dafür gelten die Kopenhagener Kriterien.",
-   "Sie ist eigenständig geregelt."
-  ],
-  "e": "1985 unterzeichnet, 1995 in Kraft getreten. Der Name stammt von einem Ort in Luxemburg.",
-  "h": "Reisefreiheit.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1xak3ow",
@@ -3437,27 +3287,8 @@
   ],
   "e": "Die Erklärung wurde 1948 beschlossen. Sie ist rechtlich nicht bindend, hat aber Verfassungen beeinflusst.",
   "h": "First Lady.",
-  "d": 2
- },
- {
-  "id": "1a7yf7m",
-  "s": "20. Jahrhundert & Gegenwart",
-  "q": "Welcher Staat gehört NICHT zu den fünf ständigen Mitgliedern des UN-Sicherheitsrats?",
-  "a": [
-   "Deutschland",
-   "Frankreich",
-   "China",
-   "Großbritannien"
-  ],
-  "w": [
-   "",
-   "Es hat ein Vetorecht.",
-   "Es hat ein Vetorecht.",
-   "Es hat ein Vetorecht."
-  ],
-  "e": "Ständige Mitglieder sind USA, Russland, China, Frankreich und Großbritannien. Sie besitzen ein Vetorecht.",
-  "h": "Siegermächte.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "evrstu",
@@ -3517,7 +3348,8 @@
   ],
   "e": "Jerusalem sollte unter internationale Verwaltung kommen. Die arabische Seite lehnte den Plan ab.",
   "h": "Resolution 181.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "1ihnb5l",
@@ -3597,7 +3429,8 @@
   ],
   "e": "Mandela war 27 Jahre in Haft. Er und de Klerk erhielten 1993 den Friedensnobelpreis.",
   "h": "Robben Island.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1d3kxtt",
@@ -3657,7 +3490,8 @@
   ],
   "e": "Sie war nicht rechtlich bindend. Dissidenten beriefen sich später auf die Menschenrechte. Ost und West vereinbarten darin Grundsätze zu Grenzen, Menschenrechten und Zusammenarbeit.",
   "h": "Helsinki.",
-  "d": 3
+  "d": 3,
+  "p": 3
  },
  {
   "id": "1pqjj87",
@@ -3677,27 +3511,8 @@
   ],
   "e": "Reagan und Gorbatschow unterzeichneten den Vertrag. Er endete 2019 nach dem Rückzug der USA.",
   "h": "Reagan und Gorbatschow.",
-  "d": 3
- },
- {
-  "id": "1yq0xa9",
-  "s": "20. Jahrhundert & Gegenwart",
-  "q": "Wer umkreiste 1961 als erster Mensch die Erde?",
-  "a": [
-   "Juri Gagarin",
-   "Alan Shepard",
-   "Neil Armstrong",
-   "Walentina Tereschkowa"
-  ],
-  "w": [
-   "",
-   "Er flog 1961 nur auf einer suborbitalen Bahn.",
-   "Er betrat 1969 den Mond.",
-   "Sie war 1963 die erste Frau im All."
-  ],
-  "e": "Er flog an Bord von Wostok 1. Die Sowjetunion hatte schon 1957 Sputnik gestartet.",
-  "h": "Wostok.",
-  "d": 1
+  "d": 3,
+  "p": 3
  },
  {
   "id": "22i35k",
@@ -3717,7 +3532,8 @@
   ],
   "e": "Der „Deutsche Herbst“ endete mit den Selbstmorden der Gefangenen in Stammheim. Die Entführung der „Landshut“ wurde beendet.",
   "h": "Baader-Meinhof.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1o9cubo",
@@ -3737,7 +3553,8 @@
   ],
   "e": "Ein Polizist erschoss Ohnesorg bei einer Demonstration gegen den Schah. Es folgten Proteste in der Bundesrepublik.",
   "h": "Schah-Besuch.",
-  "d": 2
+  "d": 2,
+  "p": 3
  },
  {
   "id": "1iyvhoq",
@@ -3778,7 +3595,8 @@
   "e": "Die Bombe verletzte Hitler nur leicht. Der Umsturzversuch scheiterte.",
   "h": "Wolfsschanze.",
   "d": 2,
-  "lenOk": true
+  "lenOk": true,
+  "p": 1
  },
  {
   "id": "e56ipu",
@@ -3798,7 +3616,8 @@
   ],
   "e": "Die Anschläge töteten rund 3000 Menschen. Daraufhin begann der Krieg in Afghanistan.",
   "h": "Bin Laden.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "id": "7u3n10",
@@ -3858,7 +3677,8 @@
   ],
   "e": "Die Kriege in Kroatien, Bosnien und im Kosovo forderten viele Opfer. Er bestand aus sechs Teilrepubliken.",
   "h": "Balkan.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "1egp4mb",
@@ -3918,7 +3738,8 @@
   ],
   "e": "Die Kommunisten siegten im Bürgerkrieg. Das Ausrufen geschah am Tor des Himmlischen Friedens.",
   "h": "Peking.",
-  "d": 1
+  "d": 1,
+  "p": 1
  },
  {
   "id": "u47jqf",
@@ -3958,7 +3779,8 @@
   ],
   "e": "Apartheid bedeutet „Getrenntheit“ auf Afrikaans. Sie wurde 1948 gesetzlich eingeführt.",
   "h": "Afrikaans.",
-  "d": 2
+  "d": 2,
+  "p": 1
  },
  {
   "s": "20. Jahrhundert & Gegenwart",
@@ -3978,7 +3800,8 @@
   "e": "Mit dem deutschen Überfall auf Polen am 1. September 1939 begann der Zweite Weltkrieg in Europa.",
   "h": "Ein Angriff auf das östliche Nachbarland.",
   "d": 1,
-  "id": "n6f7ee83"
+  "id": "n6f7ee83",
+  "p": 1
  },
  {
   "s": "20. Jahrhundert & Gegenwart",
@@ -3998,7 +3821,8 @@
   "e": "Mit der bedingungslosen Kapitulation der Wehrmacht endete der Krieg in Europa am 8. Mai 1945.",
   "h": "Im Frühling.",
   "d": 1,
-  "id": "n3bcae38"
+  "id": "n3bcae38",
+  "p": 1
  },
  {
   "s": "20. Jahrhundert & Gegenwart",
@@ -4018,7 +3842,8 @@
   "e": "Die Nationalsozialisten ermordeten systematisch rund sechs Millionen europäische Juden sowie viele weitere Verfolgte wie Sinti und Roma.",
   "h": "Auf Hebräisch heißt er Schoa.",
   "d": 1,
-  "id": "n1afc2eb"
+  "id": "n1afc2eb",
+  "p": 1
  },
  {
   "s": "20. Jahrhundert & Gegenwart",
@@ -4038,7 +3863,8 @@
   "e": "Am 3. Oktober 1990 trat die DDR der Bundesrepublik bei. Der Tag ist seitdem Nationalfeiertag.",
   "h": "Heute ein Feiertag im Herbst.",
   "d": 1,
-  "id": "nb731eb2"
+  "id": "nb731eb2",
+  "p": 1
  },
  {
   "s": "Neuzeit (1450–1914)",
@@ -4058,7 +3884,8 @@
   "e": "Der Buchdruck mit beweglichen Lettern machte Bücher billig und schnell herstellbar und beförderte Reformation und Wissenschaft.",
   "h": "Gutenberg.",
   "d": 1,
-  "id": "n59aac55"
+  "id": "n59aac55",
+  "p": 1
  },
  {
   "s": "Antike & Mittelalter",
@@ -4078,6 +3905,7 @@
   "e": "Im 5. Jahrhundert v. Chr. entschieden in Athen die männlichen Bürger direkt über Gesetze. Frauen, Sklaven und Fremde waren ausgeschlossen.",
   "h": "Griechisch: Herrschaft des Volkes.",
   "d": 1,
-  "id": "n214b8f7"
+  "id": "n214b8f7",
+  "p": 1
  }
 ]
