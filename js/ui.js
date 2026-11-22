@@ -78,15 +78,26 @@
     r.style.setProperty("--fs", { s: .92, m: 1, l: 1.12 }[st.font] || 1);
   };
   H.pref = function (d) { S().settings[d.k] = d.v; WF.store.save(); ui.applyPrefs(); profile(); };
+  /* Farbe je Thema (gleiche Reihenfolge wie die Kacheln auf der Startseite) */
+  var PAL = ["#2f5bea", "#e8590c", "#7a4bf0", "#d6336c", "#0c8599", "#2b8a3e", "#c2410c", "#4c6ef5"];
+  ui.topicColor = function (c) { for (var i = 0; i < D.topics.length; i++) if (D.topics[i].c === c) return PAL[i % PAL.length]; return PAL[0]; };
+  function ring(pct, col, label) {
+    return '<span class="ring" style="--p:' + pct + ";--c:" + col + '" aria-hidden="true"><b>' + label + "</b></span>";
+  }
+  ui.ring = ring;
+  /* „Was kann ich schon?“: je Thema ein Ring (Anteil gemeistert), darunter gesehen und Trefferquote. */
   function knowledgeMap() {
-    var h = '<div class="card">', worst = null;
+    var worst = null, totN = 0, totM = 0, totS = 0, tiles = "";
     D.topics.forEach(function (t) {
-      var n = E.totalIn(t.c), m = E.masteredIn(t.c), a = E.accIn(t.c);
-      h += '<div style="margin-bottom:12px"><div class="row sb small"><b>' + esc(t.c) + '</b><span class="mute">' + m + " / " + n + (a.t ? " · " + U.pct(a.r, a.t) + " %" : "") + "</span></div>" + bar(U.pct(m, n)) + "</div>";
-      t.subs.forEach(function (sb) { var sa = E.accIn(t.c, sb); if (sa.t >= 5 && (!worst || U.pct(sa.r, sa.t) < worst.p)) worst = { n: sb, p: U.pct(sa.r, sa.t) }; });
+      var n = E.totalIn(t.c), m = E.masteredIn(t.c), sn = E.seenIn(t.c), a = E.accIn(t.c), p = U.pct(m, n);
+      totN += n; totM += m; totS += sn;
+      tiles += '<button class="kt" data-act="scope" data-c="' + esc(t.c) + '" data-s="">' + ring(p, ui.topicColor(t.c), p + "%") + '<span class="t">' + esc(t.c) + '</span><span class="small mute">' + sn + " von " + n + " gesehen" + (a.t ? " · " + U.pct(a.r, a.t) + " % richtig" : "") + "</span></button>";
+      t.subs.forEach(function (sb) { var sa = E.accIn(t.c, sb); if (sa.t >= 5 && (!worst || U.pct(sa.r, sa.t) < worst.p)) worst = { c: t.c, n: sb, p: U.pct(sa.r, sa.t) }; });
     });
-    if (worst) h += '<p class="small" style="margin:0"><b>Schwächster Bereich:</b> ' + esc(worst.n) + " (" + worst.p + " % richtig)</p>";
-    return h + "</div>";
+    var h = '<div class="card ksum">' + ring(U.pct(totM, totN), "var(--play)", U.pct(totM, totN) + "%") + '<div class="grow"><b>' + totM + " von " + totN + ' Fragen gemeistert</b><p class="small mute" style="margin:2px 0 0">' + totS + " gesehen · gemeistert heißt: mehrmals richtig, auch nach Tagen.</p></div></div>";
+    h += '<div class="ktiles">' + tiles + "</div>";
+    if (worst) h += '<div class="card note" style="margin-top:12px"><b>Schwächster Bereich: ' + esc(worst.n) + '</b><p class="small mute">' + worst.p + " % richtig</p>" + btn("start", "Gezielt üben", { primary: true, data: { m: "learn", c: worst.c, s: worst.n } }) + "</div>";
+    return h;
   }
   H.diff = function (d) { S().settings.difficulty = d.v; WF.store.save(); if (view) view(); };
   ui.loading = function () { app.innerHTML = '<div class="center mute">Lädt …</div>'; tabs.hidden = true; };
@@ -148,8 +159,8 @@
     show(h, "areas", true);
   }
   function progressItem(c, s, title, sub) {
-    var n = E.totalIn(c, s), m = E.masteredIn(c, s);
-    return '<button class="item" data-act="scope" data-c="' + esc(c) + '" data-s="' + esc(s || "") + '"><div class="grow"><div class="t">' + esc(title) + '</div><div class="small mute">' + esc(sub || "") + (n ? (sub ? " · " : "") + m + " von " + n + " gemeistert" : "") + "</div>" + (n ? bar(U.pct(m, n)) : "") + '</div><span class="chev" aria-hidden="true">›</span></button>';
+    var n = E.totalIn(c, s), m = E.masteredIn(c, s), p = U.pct(m, n);
+    return '<button class="item" data-act="scope" data-c="' + esc(c) + '" data-s="' + esc(s || "") + '">' + (n ? ring(p, ui.topicColor(c), p + "%") : "") + '<div class="grow"><div class="t">' + esc(title) + '</div><div class="small mute">' + esc(sub || "") + (n ? (sub ? " · " : "") + m + " von " + n + " gemeistert" : "") + "</div>" + (n ? bar(U.pct(m, n)) : "") + '</div><span class="chev" aria-hidden="true">›</span></button>';
   }
   function scope(c, s) {
     s = s || null;
@@ -318,7 +329,7 @@
     var h = "<h1>Profil</h1>" + '<div class="card"><div class="row sb"><div><b>Level ' + L + "</b> · " + E.titleOf(L) + '</div><div class="small mute">' + st.xp + " XP</div></div>" + '<div style="margin-top:10px">' + bar(U.pct(st.xp - a, b - a)) + "</div></div>";
     h += '<div class="stats"><div class="stat"><b>' + t.r + "</b><span>richtig</span></div><div class=\"stat\"><b>" + U.pct(t.r, t.t) + " %</b><span>Trefferquote</span></div><div class=\"stat\"><b>" + st.streak.best + "</b><span>beste Serie (Tage)</span></div></div>";
     h += WF.slot("profiletop", { st: st });
-    h += "<h2>Wissenskarte</h2>" + knowledgeMap();
+    h += "<h2>Was kann ich schon?</h2>" + knowledgeMap();
     h += WF.slot("profile", { st: st });
     h += "<h2>Einstellungen</h2>" + '<div class="card">' + ui.diffSeg() + prefSeg("Schrift", "font", [["s", "Klein"], ["m", "Normal"], ["l", "Groß"]]) + prefSeg("Darstellung", "theme", [["auto", "Auto"], ["light", "Hell"], ["dark", "Dunkel"]]) + WF.slot("settings") + "</div>";
     h += "<h2>Abzeichen · " + Object.keys(st.badges).length + " / " + WF.badges.length + "</h2>" + '<div class="badges">';

@@ -63,6 +63,11 @@
     for (var i = 0; i < l.length; i++) { var r = qs[l[i].id]; if (r && r.b >= 3) n++; }
     return n;
   };
+  E.seenIn = function (c, s) {
+    var qs = S().qs, n = 0, l = D.realList(c, s);
+    for (var i = 0; i < l.length; i++) if (qs[l[i].id]) n++;
+    return n;
+  };
   E.accIn = function (c, s) {
     var st = S();
     if (c && s) return st.sub[c + "|" + s] || { r: 0, t: 0 };
