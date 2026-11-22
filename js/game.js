@@ -1,7 +1,7 @@
 /* Spielgefühl rund um die Runde: Sterne auf dem Ergebnisbildschirm, „Rekord geknackt!“ während der Runde. */
 (function () {
   "use strict";
-  var WF = window.WF, E = WF.engine, ui = WF.ui;
+  var WF = window.WF, E = WF.engine, ui = WF.ui, U = WF.util;
   function S() { return WF.store.data; }
 
   /* Schwellen für 1, 2, 3 Sterne. Blitz und Überleben zählen richtige Antworten, sonst Trefferquote in Prozent. */
@@ -20,6 +20,19 @@
     h += "</div>";
     if (st.next) h += '<p class="small mute center" style="margin-top:0">Noch ' + st.next + " " + st.unit + " bis zum " + (st.n + 1) + ". Stern</p>";
     return h;
+  } });
+
+  /* Fortschritt dieser Runde: welche Themen sind gewachsen? Zählt Fragen, die vorher neu oder zuletzt falsch waren. */
+  WF.on("answered", function (r) {
+    var s = E.s; if (!s || !r.ok || !r.x || r.x.retry || r.x.gen || r.before === undefined || r.before >= 1) return;
+    var g = s.grow || (s.grow = {}); g[r.x.c] = (g[r.x.c] || 0) + 1;
+  });
+  WF.registerEntry({ where: "result", order: 2, render: function (c) {
+    var g = c.s.grow; if (!g) return "";
+    var ks = Object.keys(g).sort(function (a, b) { return g[b] - g[a]; }), n = 0; ks.forEach(function (k) { n += g[k]; });
+    var h = '<div class="card grow-card"><b>+' + n + (n === 1 ? " Frage" : " Fragen") + ' neu gewusst</b><div class="growlist">';
+    ks.slice(0, 4).forEach(function (k) { var p = E.levelPct(k); h += '<div class="row">' + ui.ring(p, ui.topicColor(k), E.fmtPct(p) + "%") + '<div class="grow"><div class="small"><b>' + U.esc(k) + '</b></div><div class="small mute">+' + g[k] + " · Wissensstand " + E.fmtPct(p) + " %</div></div></div>"; });
+    return h + "</div></div>";
   } });
 
   /* Rekord in Blitz und Überleben: einmal pro Runde melden, sobald der alte Bestwert übertroffen ist. */

@@ -231,10 +231,6 @@ a:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visibl
 .typebox .link { display: block; }
 
 /* Mauer */
-.wall { width: 100%; height: auto; display: block; }
-.wall .brick-empty { fill: var(--brick-empty); }
-.wall.small { width: 84px; flex: none; }
-.wallitem { align-items: center; }
 .sbrow .delta { display: inline-block; padding: 0 7px; border-radius: 99px; font-size: 12px; margin-right: 6px; }
 .sbrow .delta.up { background: var(--ok-bg); } .sbrow .delta.down { background: var(--bad-bg); }
 
@@ -334,3 +330,6 @@ h1 { font-size: 30px; font-weight: 800; }
 .kt .t { font-weight: 700; line-height: 1.25; }
 .kt .small { line-height: 1.3; }
 .kt:active { transform: scale(.97); }
+.grow-card .growlist { display: grid; gap: 10px; margin-top: 10px; }
+.grow-card .ring { width: 40px; height: 40px; }
+.grow-card .ring b { font-size: 11px; }

@@ -28,7 +28,6 @@ import "./fx.js";
 import "./conf.js";
 import "./timeline.js";
 import "./typein.js";
-import "./wall.js";
 import "./version.js";
 import "./game.js";
 import "./quests.js";

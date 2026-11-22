@@ -33,12 +33,17 @@
     for (var k in (o.data || {})) d += " data-" + k + '="' + esc(o.data[k]) + '"';
     return '<button class="btn' + (o.primary ? " primary" : "") + '" data-act="' + act + '"' + d + (o.off ? " disabled" : "") + ">" + esc(label) + (o.sub ? "<small>" + esc(o.sub) + "</small>" : "") + "</button>";
   }
-  function toast(t) {
+  /* Meldungen nacheinander statt übereinander. Bei vielen auf einmal wird jede kürzer gezeigt (höchstens 6 in der Schlange). */
+  var tq = [], tBusy = false;
+  function toast(t) { if (tq.length < 6) tq.push(t); if (!tBusy) nextToast(); }
+  function nextToast() {
+    var t = tq.shift(); if (!t) { tBusy = false; return; }
+    tBusy = true;
     var el = document.createElement("div");
     el.className = "toast";
     el.innerHTML = "<b>" + esc(t.title) + "</b>" + (t.sub ? esc(t.sub) : "");
     toastEl.appendChild(el);
-    setTimeout(function () { el.remove(); }, 2800);
+    setTimeout(function () { el.remove(); nextToast(); }, tq.length > 2 ? 1500 : 2400);
   }
   WF.on("toast", toast);
 
@@ -82,19 +87,20 @@
   var PAL = ["#2f5bea", "#e8590c", "#7a4bf0", "#d6336c", "#0c8599", "#2b8a3e", "#c2410c", "#4c6ef5"];
   ui.topicColor = function (c) { for (var i = 0; i < D.topics.length; i++) if (D.topics[i].c === c) return PAL[i % PAL.length]; return PAL[0]; };
   function ring(pct, col, label) {
-    return '<span class="ring" style="--p:' + pct + ";--c:" + col + '" aria-hidden="true"><b>' + label + "</b></span>";
+    return '<span class="ring" style="--p:' + (pct > 0 ? Math.max(pct, 3) : 0) + ";--c:" + col + '" aria-hidden="true"><b>' + label + "</b></span>";
   }
   ui.ring = ring;
   /* „Was kann ich schon?“: je Thema ein Ring (Anteil gemeistert), darunter gesehen und Trefferquote. */
   function knowledgeMap() {
     var worst = null, totN = 0, totM = 0, totS = 0, tiles = "";
     D.topics.forEach(function (t) {
-      var n = E.totalIn(t.c), m = E.masteredIn(t.c), sn = E.seenIn(t.c), a = E.accIn(t.c), p = U.pct(m, n);
-      totN += n; totM += m; totS += sn;
-      tiles += '<button class="kt" data-act="scope" data-c="' + esc(t.c) + '" data-s="">' + ring(p, ui.topicColor(t.c), p + "%") + '<span class="t">' + esc(t.c) + '</span><span class="small mute">' + sn + " von " + n + " gesehen" + (a.t ? " · " + U.pct(a.r, a.t) + " % richtig" : "") + "</span></button>";
+      var n = E.totalIn(t.c), k = E.knownIn(t.c), p = E.levelPct(t.c), a = E.accIn(t.c);
+      totN += n; totM += p * n; totS += k;
+      tiles += '<button class="kt" data-act="scope" data-c="' + esc(t.c) + '" data-s="">' + ring(p, ui.topicColor(t.c), E.fmtPct(p) + "%") + '<span class="t">' + esc(t.c) + '</span><span class="small mute">' + k + " von " + n + " gewusst" + (a.t ? " · " + U.pct(a.r, a.t) + " % richtig" : "") + "</span></button>";
       t.subs.forEach(function (sb) { var sa = E.accIn(t.c, sb); if (sa.t >= 5 && (!worst || U.pct(sa.r, sa.t) < worst.p)) worst = { c: t.c, n: sb, p: U.pct(sa.r, sa.t) }; });
     });
-    var h = '<div class="card ksum">' + ring(U.pct(totM, totN), "var(--play)", U.pct(totM, totN) + "%") + '<div class="grow"><b>' + totM + " von " + totN + ' Fragen gemeistert</b><p class="small mute" style="margin:2px 0 0">' + totS + " gesehen · gemeistert heißt: mehrmals richtig, auch nach Tagen.</p></div></div>";
+    var tp = totN ? totM / totN : 0;
+    var h = '<div class="card ksum">' + ring(tp, "var(--play)", E.fmtPct(tp) + "%") + '<div class="grow"><b>Wissensstand ' + E.fmtPct(tp) + ' %</b><p class="small mute" style="margin:2px 0 0">' + totS + " von " + totN + " Fragen gewusst. Jede richtige Antwort füllt den Ring, Wiederholen nach Tagen füllt ihn ganz.</p></div></div>";
     h += '<div class="ktiles">' + tiles + "</div>";
     if (worst) h += '<div class="card note" style="margin-top:12px"><b>Schwächster Bereich: ' + esc(worst.n) + '</b><p class="small mute">' + worst.p + " % richtig</p>" + btn("start", "Gezielt üben", { primary: true, data: { m: "learn", c: worst.c, s: worst.n } }) + "</div>";
     return h;
@@ -159,18 +165,18 @@
     show(h, "areas", true);
   }
   function progressItem(c, s, title, sub) {
-    var n = E.totalIn(c, s), m = E.masteredIn(c, s), p = U.pct(m, n);
-    return '<button class="item" data-act="scope" data-c="' + esc(c) + '" data-s="' + esc(s || "") + '">' + (n ? ring(p, ui.topicColor(c), p + "%") : "") + '<div class="grow"><div class="t">' + esc(title) + '</div><div class="small mute">' + esc(sub || "") + (n ? (sub ? " · " : "") + m + " von " + n + " gemeistert" : "") + "</div>" + (n ? bar(U.pct(m, n)) : "") + '</div><span class="chev" aria-hidden="true">›</span></button>';
+    var n = E.totalIn(c, s), k = E.knownIn(c, s), p = E.levelPct(c, s);
+    return '<button class="item" data-act="scope" data-c="' + esc(c) + '" data-s="' + esc(s || "") + '">' + (n ? ring(p, ui.topicColor(c), E.fmtPct(p) + "%") : "") + '<div class="grow"><div class="t">' + esc(title) + '</div><div class="small mute">' + esc(sub || "") + (n ? (sub ? " · " : "") + k + " von " + n + " gewusst" : "") + '</div></div><span class="chev" aria-hidden="true">›</span></button>';
   }
   function scope(c, s) {
     s = s || null;
     view = function () { scope(c, s); };
-    var n = E.totalIn(c, s), m = E.masteredIn(c, s), acc = E.accIn(c, s), d = { c: c, s: s || "" };
+    var n = E.totalIn(c, s), k = E.knownIn(c, s), lp = E.levelPct(c, s), acc = E.accIn(c, s), d = { c: c, s: s || "" };
     function dm(id) { return { m: id, c: d.c, s: d.s }; }
     var h = '<button class="ghost" data-act="' + (s ? "scope" : "areas") + '" data-c="' + esc(c) + '" data-s="">‹ Zurück</button>';
     h += "<h1>" + esc(s || c) + "</h1>";
-    h += '<p class="mute">' + (s ? esc(c) + " · " : "") + (n ? m + " von " + n + " Fragen gemeistert" : "Zufällig erzeugte Aufgaben") + (acc.t ? " · " + U.pct(acc.r, acc.t) + " % richtig" : "") + "</p>";
-    if (n) h += bar(U.pct(m, n));
+    if (n) h += '<div class="card ksum">' + ring(lp, ui.topicColor(c), E.fmtPct(lp) + "%") + '<div class="grow"><b>Wissensstand ' + E.fmtPct(lp) + ' %</b><p class="small mute" style="margin:2px 0 0">' + (s ? esc(c) + " · " : "") + k + " von " + n + " gewusst" + (acc.t ? " · " + U.pct(acc.r, acc.t) + " % richtig" : "") + "</p></div></div>";
+    else h += '<p class="mute">' + (s ? esc(c) + " · " : "") + "Zufällig erzeugte Aufgaben</p>";
     h += '<div class="hero" style="margin-top:16px"><h3>Lernen</h3><p>Erst, was noch nicht sitzt.</p>' + btn("start", "Lernrunde starten", { data: dm("learn") }) + "</div>";
     h += WF.slot("scope", { c: c, s: s, n: n });
     h += '<div class="card cfg" style="margin:12px 0">' + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>";

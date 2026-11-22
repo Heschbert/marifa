@@ -63,6 +63,20 @@
     for (var i = 0; i < l.length; i++) { var r = qs[l[i].id]; if (r && r.b >= 3) n++; }
     return n;
   };
+  /* Wissensstand: jede Frage zählt nach ihrer Stufe (zuletzt richtig 1 → ein Drittel, 2 → zwei Drittel, ab 3 → ganz).
+     Steigt also schon mit der ersten richtigen Antwort, nicht erst nach Tagen. */
+  var LV = [0, 1 / 3, 2 / 3, 1, 1];
+  E.levelPct = function (c, s) {
+    var qs = S().qs, l = D.realList(c, s), sum = 0;
+    for (var i = 0; i < l.length; i++) { var r = qs[l[i].id]; if (r) sum += LV[Math.min(r.b, 4)]; }
+    return l.length ? sum / l.length * 100 : 0;
+  };
+  E.knownIn = function (c, s) {
+    var qs = S().qs, n = 0, l = D.realList(c, s);
+    for (var i = 0; i < l.length; i++) { var r = qs[l[i].id]; if (r && r.b >= 1) n++; }
+    return n;
+  };
+  E.fmtPct = function (p) { return p > 0 && p < 10 ? (Math.floor(p * 10) / 10).toString().replace(".", ",") : String(Math.floor(p)); };
   E.seenIn = function (c, s) {
     var qs = S().qs, n = 0, l = D.realList(c, s);
     for (var i = 0; i < l.length; i++) if (qs[l[i].id]) n++;
@@ -287,7 +301,7 @@
     var mastered = !!(rec && before < 3 && rec.b >= 3);
     if (mastered) s.mastNew++;
     var last = m.lives ? s.lives <= 0 : (!m.extend && s.idx === s.round.length - 1);
-    var res = { ok: ok, gain: gain, mastered: mastered, requeued: requeued, last: last, picked: i, given: given, typed: !!typed, x: x, conf: conf || null, slow: slow, mult: E.mult(s.streak), streak: s.streak };
+    var res = { before: rec ? before : -1, ok: ok, gain: gain, mastered: mastered, requeued: requeued, last: last, picked: i, given: given, typed: !!typed, x: x, conf: conf || null, slow: slow, mult: E.mult(s.streak), streak: s.streak };
     WF.emit("answered", res);
     WF.store.save();
     return res;
