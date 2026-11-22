@@ -4,8 +4,8 @@
   "s": "Philosophie & Ideen",
   "q": "Was fordert Kants kategorischer Imperativ im Kern?",
   "a": [
-   "Nur nach Regeln handeln, die für alle gelten könnten",
-   "Das größte Glück der größten Zahl von Menschen anstreben",
+   "Nur nach Regeln handeln, die man als allgemeines Gesetz wollen kann",
+   "Das größte Glück der meisten anstreben",
    "Anderen nicht antun, was man selbst nicht will",
    "Nach Macht und Erfolg streben"
   ],
@@ -24,9 +24,9 @@
   "s": "Philosophie & Ideen",
   "q": "Welchen Wahlspruch der Aufklärung formulierte Kant 1784?",
   "a": [
-   "Habe Mut, dich deines Verstandes zu bedienen",
+   "Habe Mut, dich deines eigenen Verstandes zu bedienen",
    "Ich denke, also bin ich",
-   "Gott ist tot, wir haben ihn getötet, du und ich",
+   "Gott ist tot, wir haben ihn getötet",
    "Alles fließt, nichts bleibt"
   ],
   "w": [
@@ -144,8 +144,8 @@
   "s": "Philosophie & Ideen",
   "q": "Welche Frage steht im Utilitarismus im Mittelpunkt?",
   "a": [
-   "Was bringt den meisten das größte Glück?",
-   "Welche Regel gilt ausnahmslos für alle Menschen?",
+   "Welche Handlung bringt das größte Glück für die meisten?",
+   "Welche Regel gilt ohne Ausnahme?",
    "Was verlangt ein göttliches Gebot?",
    "Was entspricht der Natur des Menschen?"
   ],
@@ -545,7 +545,7 @@
   "q": "Welchen Gedanken vertritt Leibniz zur Welt?",
   "a": [
    "Sie ist die beste aller möglichen Welten",
-   "Sie ist die schlechteste aller denkbaren Welten",
+   "Sie ist die schlechteste aller Welten",
    "Sie ist nur Illusion",
    "Sie hat keinen Sinn"
   ],
@@ -625,7 +625,7 @@
   "q": "Welche Theorie ist mit Jürgen Habermas verbunden?",
   "a": [
    "Theorie des kommunikativen Handelns",
-   "Kritischer Rationalismus nach Karl Popper",
+   "Kritischer Rationalismus",
    "Phänomenologie",
    "Pragmatismus"
   ],
@@ -686,7 +686,7 @@
   "a": [
    "Der Schleier des Nichtwissens",
    "Der Wille zur Macht",
-   "Die unsichtbare Hand des Marktes",
+   "Die unsichtbare Hand",
    "Der Naturzustand"
   ],
   "w": [
@@ -784,8 +784,8 @@
   "s": "Philosophie & Ideen",
   "q": "Womit befasst sich die Erkenntnistheorie (Epistemologie)?",
   "a": [
-   "Mit Quellen und Grenzen von Wissen",
-   "Mit dem Wesen des Schönen in Kunst und Natur",
+   "Mit Quellen, Grenzen und Gültigkeit von Wissen",
+   "Mit dem Wesen des Schönen",
    "Mit moralischen Normen",
    "Mit dem Ursprung des Universums"
   ],
@@ -925,9 +925,9 @@
   "q": "Welcher Satz aus dem „Tractatus“ (1921) stammt von Wittgenstein?",
   "a": [
    "Wovon man nicht sprechen kann, darüber muss man schweigen",
-   "Das Leben ist ein Spiel, dessen Regeln niemand kennt",
+   "Das Leben ist ein Spiel",
    "Der Mensch ist ein Wolf dem Menschen",
-   "Die Grenzen meiner Welt sind unbegrenzt und offen für jeden"
+   "Die Grenzen meiner Welt sind unbegrenzt"
   ],
   "w": [
    "",
@@ -984,7 +984,7 @@
   "s": "Philosophie & Ideen",
   "q": "Welches Prinzip steht in John Stuart Mills „Über die Freiheit“ (1859) im Zentrum?",
   "a": [
-   "Freiheit endet beim Schaden für andere",
+   "Freiheit endet dort, wo anderen Schaden zugefügt wird",
    "Freiheit gilt nur für Staatsbürger",
    "Freiheit ist die Einsicht in die Notwendigkeit",
    "Freiheit besteht in Gehorsam"
@@ -1004,7 +1004,7 @@
   "s": "Philosophie & Ideen",
   "q": "Welche Grundlehre ist im Konfuzianismus zentral?",
   "a": [
-   "Menschlichkeit und Pflicht gegenüber anderen",
+   "Pflicht und Menschlichkeit in sozialen Beziehungen",
    "Rückzug aus der Gesellschaft",
    "Verneinung des Leidens durch Nirwana",
    "Vorherrschaft des Staates über das Individuum"
@@ -1026,7 +1026,7 @@
   "a": [
    "Das Dao, der natürliche Weg",
    "Die Vier Edlen Wahrheiten",
-   "Der Gesellschaftsvertrag zwischen Bürgern und Staat",
+   "Der Gesellschaftsvertrag",
    "Die Ideenlehre"
   ],
   "w": [
@@ -1178,26 +1178,6 @@
   "e": "In der Erzählung von 1915 wacht Gregor Samsa als Käfer auf.",
   "h": "Ein Prager Autor.",
   "d": 2
- },
- {
-  "id": "lvvwhg",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Von wem stammt die Oper „Die Zauberflöte“?",
-  "a": [
-   "Wolfgang Amadeus Mozart",
-   "Richard Wagner",
-   "Ludwig van Beethoven",
-   "Giuseppe Verdi"
-  ],
-  "w": [
-   "",
-   "Wagner schrieb „Lohengrin“ und „Tristan und Isolde“.",
-   "Beethoven schrieb nur eine Oper („Fidelio“).",
-   "Verdi schrieb „Aida“ und „La traviata“."
-  ],
-  "e": "Die Oper wurde 1791 in Wien uraufgeführt, kurz vor Mozarts Tod.",
-  "h": "Emanuel Schikaneder schrieb das Libretto.",
-  "d": 1
  },
  {
   "id": "1wq4eel",
@@ -2199,26 +2179,6 @@
   "e": "Das Köchelverzeichnis (KV, 1862) ordnet Mozarts Werke zeitlich, etwa KV 525 für „Eine kleine Nachtmusik“.",
   "h": "Die Abkürzung KV.",
   "d": 3
- },
- {
-  "id": "5dr7a2",
-  "s": "Literatur, Kunst & Musik",
-  "q": "Welcher Dichter schrieb den Text der „Ode an die Freude“, die Beethoven in der Neunten vertonte?",
-  "a": [
-   "Friedrich Schiller",
-   "Johann Wolfgang von Goethe",
-   "Friedrich Hölderlin",
-   "Novalis"
-  ],
-  "w": [
-   "",
-   "Goethe schrieb „Faust“, die Ode stammt nicht von ihm.",
-   "Hölderlin schrieb „Hyperion“.",
-   "Novalis schrieb „Hymnen an die Nacht“."
-  ],
-  "e": "Schiller dichtete 1785 die „Ode an die Freude“; Beethoven vertonte sie 1824; sie ist die Europahymne.",
-  "h": "Ein Dramatiker.",
-  "d": 2
  },
  {
   "id": "f0gix5",
@@ -3382,26 +3342,6 @@
   "d": 3
  },
  {
-  "id": "uysfk2",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Wer brachte 1880 das erste „Vollständige Orthographische Wörterbuch der deutschen Sprache“ heraus?",
-  "a": [
-   "Konrad Duden",
-   "Jacob Grimm",
-   "Wilhelm Wahrig",
-   "Johann Christoph Adelung"
-  ],
-  "w": [
-   "",
-   "Grimm begann das Deutsche Wörterbuch.",
-   "Wahrig brachte ein anderes Wörterbuch heraus (1966).",
-   "Adelung veröffentlichte schon im 18. Jahrhundert ein Wörterbuch."
-  ],
-  "e": "Der Gymnasiallehrer Konrad Duden vereinheitlichte die Rechtschreibung; 1901 wurde sie Grundlage der amtlichen Regeln.",
-  "h": "Er hieß wie sein Wörterbuch.",
-  "d": 2
- },
- {
   "id": "z74wv2",
   "s": "Sprache & Rechtschreibung",
   "q": "Wo hat der Rat für deutsche Rechtschreibung seinen Sitz?",
@@ -3420,26 +3360,6 @@
   "e": "Der Rat wurde 2004 gegründet und hat seinen Sitz am Leibniz-Institut für Deutsche Sprache in Mannheim.",
   "h": "Eine Stadt im Rhein-Neckar-Raum.",
   "d": 3
- },
- {
-  "id": "aq87hb",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Welche Brüder begannen das „Deutsche Wörterbuch“, das 1854 erschien?",
-  "a": [
-   "Jacob und Wilhelm Grimm",
-   "Alexander und Wilhelm von Humboldt",
-   "August Wilhelm und Friedrich Schlegel",
-   "Heinrich und Thomas Mann"
-  ],
-  "w": [
-   "",
-   "Die Brüder Humboldt waren Forscher, schrieben kein Wörterbuch.",
-   "Die Brüder Schlegel waren Dichter und Kritiker der Romantik.",
-   "Die Brüder Mann waren Schriftsteller des 20. Jahrhunderts."
-  ],
-  "e": "Der erste Band erschien 1854; das Werk wurde erst 1961 vollendet.",
-  "h": "Die Märchensammler.",
-  "d": 2
  },
  {
   "id": "b86fjr",
@@ -3582,26 +3502,6 @@
   "d": 3
  },
  {
-  "id": "ppljm7",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Welche Schriftsysteme nutzt Japanisch?",
-  "a": [
-   "Kanji, Hiragana und Katakana",
-   "Nur Kanji",
-   "Hangul und Kanji",
-   "Kyrillisch und Hiragana"
-  ],
-  "w": [
-   "",
-   "Japanisch nutzt mehrere Systeme.",
-   "Hangul wird im Koreanischen verwendet.",
-   "Kyrillisch passt nicht zum Japanischen."
-  ],
-  "e": "Kanji sind chinesische Zeichen, Hiragana und Katakana Silbenschriften; dazu tritt oft Rōmaji.",
-  "h": "Drei Systeme.",
-  "d": 2
- },
- {
   "id": "124ey77",
   "s": "Sprache & Rechtschreibung",
   "q": "Wie heißt die koreanische Schrift?",
@@ -3639,26 +3539,6 @@
   ],
   "e": "Afrikaans entstand ab dem 17. Jahrhundert aus den Dialekten niederländischer Siedler in Südafrika.",
   "h": "Kapkolonie.",
-  "d": 2
- },
- {
-  "id": "odeh7p",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Wer entwickelte die Plansprache Esperanto?",
-  "a": [
-   "Ludwik Zamenhof",
-   "Johann Martin Schleyer",
-   "Leibniz",
-   "Otto Jespersen"
-  ],
-  "w": [
-   "",
-   "Schleyer schuf Volapük.",
-   "Er dachte über eine Universalsprache nach, entwickelte aber keine.",
-   "Jespersen schuf die Plansprache Novial."
-  ],
-  "e": "Zamenhof veröffentlichte Esperanto 1887; es soll als neutrale Zweitsprache dienen.",
-  "h": "Ein Arzt aus Białystok.",
   "d": 2
  },
  {
@@ -4020,26 +3900,6 @@
   "e": "In Österreich sagt man „Jänner“ statt „Januar“.",
   "h": "Erster Monat.",
   "d": 2
- },
- {
-  "id": "m45xni",
-  "s": "Sprache & Rechtschreibung",
-  "q": "Welches sprachliche Ereignis erklärt Unterschiede wie „Water“ und „Wasser“?",
-  "a": [
-   "Die zweite Lautverschiebung",
-   "Die Rechtschreibreform von 1996",
-   "Die Große Vokalverschiebung im Englischen",
-   "Die Bibelübersetzung Martin Luthers"
-  ],
-  "w": [
-   "",
-   "Sie betraf nur die Schreibung.",
-   "Sie betraf das Englische des 15. Jahrhunderts.",
-   "Sie prägte die Schriftsprache, nicht die Dialektgrenzen."
-  ],
-  "e": "Sie trennte ab etwa dem 6. Jahrhundert die hochdeutschen von den niederdeutschen Dialekten (Benrather Linie: „machen/maken“).",
-  "h": "Etwa ab 600.",
-  "d": 3
  },
  {
   "id": "mk20n1",

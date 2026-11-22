@@ -1,0 +1,13 @@
+# Überarbeitung Film & Musik
+-18fp5z8
+-1dgykmz
+-1fof722
+~gdlk50|Ein offenes, spannendes Ende|Ein Film über Bergsteiger und Kletterer|Eine Szene vor dem Abspann|Eine Rückblende am Anfang
+~4yh8i5|Er schneidet das Material|Er plant die Kamerabewegungen|Er leitet die Schauspieler am Set an|Er finanziert die Produktion
+~c43ons|Ein Objekt, das die Handlung antreibt|Ein kurzer Auftritt des Regisseurs im eigenen Film|Ein typischer Filmschluss|Ein Filmzitat im Dialog
+~44b0bt|Die Schnittfassung des Regisseurs|Der erste Rohschnitt|Die gekürzte Fassung für das Fernsehen|Eine gekürzte Kinofassung
+# Neu
++{"s": "Musik", "q": "Was ist ein Refrain?", "a": ["Der wiederkehrende Teil eines Liedes", "Das Instrumentalsolo in der Mitte", "Die erste Strophe eines Liedes", "Das langsame Ausblenden am Ende"], "w": ["", "Ein Solo ist ein instrumentaler Teil, der meist nicht wiederkehrt.", "Strophen haben meist wechselnde Texte.", "Das nennt man Fade-out."], "e": "Der Refrain (Kehrvers) kehrt mit gleichem Text und gleicher Melodie mehrfach wieder, zwischen den Strophen.", "h": "Spätestens beim zweiten Mal singt das Publikum mit.", "d": 1}
++{"s": "Musik", "q": "Welche Musikrichtung entstand in den 1970ern auf Jamaika und wurde durch Bob Marley weltbekannt?", "a": ["Reggae", "Salsa", "Calypso", "Bossa Nova"], "w": ["", "Salsa entstand vor allem in New York aus kubanischen Wurzeln.", "Calypso stammt aus Trinidad und Tobago.", "Bossa Nova stammt aus Brasilien."], "e": "Reggae entwickelte sich Ende der 1960er aus Ska und Rocksteady; Bob Marley machte ihn in den 1970ern international bekannt.", "h": "„One Love“.", "d": 1}
++{"s": "Film", "q": "Was bedeutet die FSK-Freigabe „ab 12“?", "a": ["Kinder ab 12 dürfen den Film sehen", "Der Film dauert 12 Minuten", "Der Film hat 12 Kapitel", "Er läuft nur ab 12 Uhr"], "w": ["", "Mit der Laufzeit hat die FSK nichts zu tun.", "Die Freigabe bezieht sich nicht auf Kapitel.", "Uhrzeiten regelt die FSK nicht."], "e": "Die Freiwillige Selbstkontrolle der Filmwirtschaft (FSK) gibt Altersstufen 0, 6, 12, 16 und 18 vor. Ab 6 Jahren dürfen Kinder „ab 12“-Filme im Kino in Begleitung eines Elternteils sehen.", "h": "Es geht um das Alter.", "d": 1}
+~cy5x6u|Johann Strauss|Franz Lehár|Johannes Brahms|Joseph Haydn

@@ -1,89 +1,1746 @@
 [
-{"id":"1av63ja","s":"Film","q":"Wer führte Regie bei „Der Pate“ (1972)?","a":["Francis Ford Coppola","Martin Scorsese","Steven Spielberg","Stanley Kubrick"],"w":["","Scorsese drehte „Taxi Driver“ und „GoodFellas“.","Spielberg drehte „Der weiße Hai“ und „E.T.“.","Kubrick drehte „2001“ und „Shining“."],"e":"Die Mafia-Saga nach Mario Puzos Roman gewann den Oscar als bester Film der Verleihung 1973.","h":"Italo-amerikanischer Regisseur.","d":1},
-{"id":"cjwq3a","s":"Film","q":"Welcher Film gewann 2020 als erster nicht englischsprachiger den Oscar als bester Film?","a":["Parasite","Roma","Cinema Paradiso","Das Leben der Anderen"],"w":["","„Roma“ war 2019 nominiert, gewann aber nicht.","„Cinema Paradiso“ gewann 1990 den Auslands-Oscar.","„Das Leben der Anderen“ gewann 2007 den Auslands-Oscar."],"e":"Der südkoreanische Film von Bong Joon-ho gewann vier Oscars, darunter den für die beste Regie.","h":"Aus Südkorea.","d":2},
-{"id":"cueh7e","s":"Film","q":"Wie heißt Fritz Langs Stummfilm von 1927 über eine Zukunftsstadt?","a":["Metropolis","Nosferatu","M","Dr. Mabuse"],"w":["","„Nosferatu“ drehte F. W. Murnau 1922.","„M“ ist ein Tonfilm von Lang aus dem Jahr 1931.","„Dr. Mabuse, der Spieler“ ist von 1922 und handelt von einem Verbrecher."],"e":"Der Film zeigt eine Klassengesellschaft mit Arbeitern in der Unterwelt und gilt als Meilenstein der Science-Fiction.","h":"Stadt der Zukunft.","d":2},
-{"id":"ozkjru","s":"Film","q":"Bei welchem Festival wird die Goldene Palme vergeben?","a":["Cannes","Venedig","Berlin","Sundance"],"w":["","Venedig vergibt den Goldenen Löwen.","Berlin vergibt den Goldenen Bären.","Sundance vergibt Jurypreise, aber keine Goldene Palme."],"e":"Die Filmfestspiele von Cannes finden jedes Jahr im Mai an der Côte d’Azur statt.","h":"Südfrankreich.","d":1},
-{"id":"1wmyd8l","s":"Film","q":"Wer führte Regie bei „E.T.“ und „Jurassic Park“?","a":["Steven Spielberg","George Lucas","James Cameron","Ridley Scott"],"w":["","Lucas schuf „Star Wars“ und produzierte „Indiana Jones“.","Cameron drehte „Terminator“ und „Titanic“.","Scott drehte „Alien“ und „Gladiator“."],"e":"Spielberg drehte „E.T.“ 1982 und „Jurassic Park“ 1993.","h":"Auch „Der weiße Hai“.","d":1},
-{"id":"fiznt2","s":"Film","q":"Wie heißt der Deutsche Filmpreis im Volksmund?","a":["Lola","Bambi","Goldene Kamera","Grimme-Preis"],"w":["","Der Bambi ist ein Medienpreis.","Die Goldene Kamera ist ein Fernsehpreis.","Der Grimme-Preis ist ein Fernsehpreis."],"e":"Die goldene Statuette heißt seit 1999 „Lola“. Der Name erinnert an berühmte Lola-Figuren des deutschen Films, etwa aus „Der blaue Engel“ und „Lola rennt“.","h":"Ein Frauenname.","d":2},
-{"id":"1qfd15t","s":"Film","q":"Wer führte Regie bei „Citizen Kane“ (1941) und spielte die Hauptrolle?","a":["Orson Welles","Alfred Hitchcock","Billy Wilder","John Ford"],"w":["","Hitchcock drehte „Psycho“ und „Vertigo“.","Wilder drehte „Manche mögen’s heiß“.","Ford drehte vor allem Western."],"e":"Welles war bei seinem Debüt 25 Jahre alt. Der Film gilt in vielen Umfragen als einer der besten aller Zeiten.","h":"Ein Debüt mit 25.","d":2},
-{"id":"gdlk50","s":"Film","q":"Was ist ein Cliffhanger?","a":["Ein offenes, spannendes Ende","Ein Film über Bergsteiger","Eine Szene vor dem Abspann","Eine Rückblende am Anfang"],"w":["","Der Begriff meint keine Bergsteigerfilme, sondern ein Erzählprinzip.","Szenen vor dem Abspann heißen Epilog oder Post-Credit-Szene.","Rückblenden heißen Flashback."],"e":"Der Begriff kommt von „cliff“ (Klippe): Die Spannung hält den Zuschauer „am Abgrund“. Die Geschichte bricht an offener Stelle ab.","h":"Zuschauer will mehr.","d":2},
-{"id":"1fof722","s":"Film","q":"In welchem Jahr kam „The Jazz Singer“, der erste lange Spielfilm mit synchronen Dialog- und Gesangsszenen, heraus?","a":["1927","1936","1912","1948"],"w":["","1936 erschien Chaplins „Moderne Zeiten“, noch weitgehend ohne Dialog.","1912 war noch tiefste Stummfilmzeit.","1948 war der Tonfilm längst Standard."],"e":"Der Film leitete das Ende der Stummfilmzeit ein.","h":"Ende der Zwanziger.","d":2},
-{"id":"6dk8ub","s":"Film","q":"Welcher Film gewann bei der Oscar-Verleihung 2004 elf Oscars, darunter den für den besten Film?","a":["Der Herr der Ringe: Die Rückkehr des Königs","Der Herr der Ringe: Die Gefährten","Der Herr der Ringe: Die zwei Türme","Titanic"],"w":["","Der erste Teil gewann 2002 vier Oscars, aber nicht den für den besten Film.","Der zweite Teil gewann 2003 zwei Oscars, aber nicht den für den besten Film.","„Titanic“ gewann ebenfalls elf Oscars, aber bei der Verleihung 1998."],"e":"Der dritte Teil der Trilogie gewann alle elf Nominierungen, ein Rekord, den vorher „Ben Hur“ und „Titanic“ erreicht hatten.","h":"Fantasy-Trilogie.","d":2},
-{"id":"b7q3rp","s":"Film","q":"Wer spielte Jack Dawson in „Titanic“ (1997)?","a":["Leonardo DiCaprio","Brad Pitt","Matt Damon","Johnny Depp"],"w":["","Pitt spielte in „Fight Club“.","Damon spielte „Good Will Hunting“.","Depp spielte Jack Sparrow."],"e":"Kate Winslet spielte Rose. James Cameron führte Regie.","h":"Zusammen mit Kate Winslet.","d":1},
-{"id":"ukxlwy","s":"Film","q":"Wer führte Regie bei „Pulp Fiction“ (1994)?","a":["Quentin Tarantino","Martin Scorsese","David Fincher","Guy Ritchie"],"w":["","Scorsese drehte „Taxi Driver“.","Fincher drehte „Fight Club“.","Ritchie drehte „Snatch“."],"e":"Der Film gewann die Goldene Palme in Cannes 1994.","h":"Episodenfilm.","d":1},
-{"id":"jnwlwj","s":"Film","q":"Welcher Regisseur drehte „Inception“ und „Oppenheimer“?","a":["Christopher Nolan","Denis Villeneuve","Ridley Scott","Darren Aronofsky"],"w":["","Villeneuve drehte „Dune“.","Scott drehte „Gladiator“.","Aronofsky drehte „Black Swan“."],"e":"Nolan gewann für „Oppenheimer“ 2024 den Regie-Oscar.","h":"Auch „The Dark Knight“.","d":1},
-{"id":"xh76jz","s":"Film","q":"In welchem Jahr kam der erste „Star Wars“-Film in die Kinos?","a":["1977","1975","1980","1983"],"w":["","1975 erschien „Der weiße Hai“.","1980 kam „Das Imperium schlägt zurück“.","1983 kam „Die Rückkehr der Jedi-Ritter“."],"e":"George Lucas’ Film erschien im Mai 1977 und begründete ein Franchise.","h":"Es war in der zweiten Hälfte der 1970er.","d":2},
-{"id":"5ckbzh","s":"Film","q":"Wer führte Regie bei „Das Boot“ (1981)?","a":["Wolfgang Petersen","Wim Wenders","Werner Herzog","Roland Emmerich"],"w":["","Wenders drehte „Paris, Texas“.","Herzog drehte „Aguirre“.","Emmerich drehte „Independence Day“."],"e":"Der Film spielt auf einem U-Boot im Zweiten Weltkrieg und wurde sechsmal für den Oscar nominiert.","h":"Ein U-Boot.","d":2},
-{"id":"1w491rq","s":"Film","q":"Welcher deutsche Regisseur gewann 2007 mit „Das Leben der Anderen“ den Auslands-Oscar?","a":["Florian Henckel von Donnersmarck","Tom Tykwer","Fatih Akin","Edgar Reitz"],"w":["","Tykwer drehte „Lola rennt“.","Akin drehte „Gegen die Wand“.","Reitz drehte „Heimat“."],"e":"Der Film erzählt von der Überwachung durch die Stasi in der DDR.","h":"Stasi-Drama.","d":3,"lenOk":true},
-{"id":"1590s71","s":"Film","q":"Welcher deutsche Film gewann 2023 den Oscar als bester internationaler Film?","a":["Im Westen nichts Neues","Das Boot","Toni Erdmann","Systemsprenger"],"w":["","„Das Boot“ war nominiert, gewann aber keinen Oscar.","„Toni Erdmann“ war 2017 nominiert, gewann aber nicht.","„Systemsprenger“ war Deutschlands Beitrag 2020, wurde aber nicht nominiert."],"e":"Die Verfilmung von Remarques Roman gewann vier Oscars. Regie führte Edward Berger.","h":"Remarque.","d":3},
-{"id":"ajyvcc","s":"Film","q":"Welcher Film gewann 2026 den Oscar als bester Film (98. Verleihung, 15. März 2026)?","a":["One Battle After Another","Sinners","Hamnet","Frankenstein"],"w":["","„Sinners“ gewann unter anderem den Hauptdarsteller-Oscar für Michael B. Jordan.","„Hamnet“ gewann den Hauptdarstellerinnen-Oscar für Jessie Buckley.","„Frankenstein“ von Guillermo del Toro gewann nicht den Hauptpreis."],"e":"Paul Thomas Anderson gewann zudem den Regie-Oscar.","h":"Regie: Paul Thomas Anderson.","d":2,"lenOk":true,"src":"ABC/AP, 16.03.2026: abc7.com/post/oscars-2026-battle-another-wins-best-picture-98th-academy-awards/18719481/"},
-{"id":"aq1kul","s":"Film","q":"Welche Schauspielerin gewann viermal den Oscar als beste Hauptdarstellerin (Stand 2026)?","a":["Katharine Hepburn","Meryl Streep","Frances McDormand","Ingrid Bergman"],"w":["","Streep gewann dreimal, davon zweimal als Hauptdarstellerin.","McDormand gewann dreimal als Hauptdarstellerin.","Bergman gewann dreimal, einmal als Nebendarstellerin."],"e":"Hepburn gewann 1934, 1968, 1969 und 1982. Kein anderer Mensch hat vier Schauspiel-Oscars.","h":"Vier Mal zwischen 1934 und 1982.","d":3},
-{"id":"1wbebrk","s":"Film","q":"Wofür steht der Begriff „Film noir“?","a":["Düstere Kriminalfilme","Expressionistische Horrorfilme","Frühe Stummfilme","Schwarzhumorige Komödien"],"w":["","Expressionistische Horrorfilme prägten die Stummfilmzeit.","Stummfilme sind kein eigenes Genre.","Schwarze Komödien haben mit „noir“ nichts zu tun."],"e":"Der Begriff kommt aus dem Französischen und bezeichnet Kriminalfilme der 1940er und 1950er mit Schatten, Zynismus und Antihelden.","h":"Französisch für „schwarz“.","d":2},
-{"id":"15l7ex","s":"Film","q":"Wer führte im Dezember 1895 in Paris erstmals öffentlich Filme gegen Eintritt vor?","a":["Die Brüder Lumière","Thomas Edison","Georges Méliès","Louis Daguerre"],"w":["","Edison entwickelte das Kinetoskop, ein Guckkastengerät.","Méliès drehte später die ersten Fantasiefilme.","Daguerre erfand 1839 die Daguerreotypie."],"e":"Auguste und Louis Lumière zeigten am 28. Dezember 1895 im Grand Café den Cinématographe.","h":"Ein französisches Geschwisterpaar.","d":2},
-{"id":"bb51hy","s":"Film","q":"Wer drehte 1902 den frühen Science-Fiction-Film „Die Reise zum Mond“?","a":["Georges Méliès","Fritz Lang","Thomas Edison","Charlie Chaplin"],"w":["","Lang drehte „Metropolis“ erst 1927.","Edison war Erfinder und Produzent, drehte aber nicht diesen Film.","Chaplin wurde erst in den 1910er Jahren bekannt."],"e":"Die Rakete in das Auge des Mondes ist eine der bekanntesten Szenen der Filmgeschichte.","h":"Trickfilmpionier.","d":3},
-{"id":"n7entw","s":"Film","q":"Welche Filmfigur machte Charlie Chaplin weltberühmt?","a":["Der Tramp","Der Butler","Der Detektiv","Der Clown"],"w":["","Der Butler ist keine seiner Figuren.","Der Detektiv ist nicht seine Hauptfigur.","Der Clown ist nicht seine Hauptfigur."],"e":"Chaplin trug Schnurrbart, Melone, Stock und zu große Schuhe.","h":"Melone und Stock.","d":1},
-{"id":"18fp5z8","s":"Film","q":"Wer führte Regie bei „Der blaue Engel“ (1930) mit Marlene Dietrich?","a":["Josef von Sternberg","Fritz Lang","G. W. Pabst","Ernst Lubitsch"],"w":["","Lang drehte „Metropolis“.","Pabst drehte „Die Büchse der Pandora“.","Lubitsch war der Regisseur von „Sein oder Nichtsein“."],"e":"Der Film machte Marlene Dietrich international bekannt und gilt als einer der ersten deutschen Tonfilme.","h":"Österreichisch-amerikanisch.","d":3},
-{"id":"1kw5s6f","s":"Film","q":"Wer führte Regie bei „Taxi Driver“ (1976)?","a":["Martin Scorsese","Francis Ford Coppola","Brian De Palma","Sidney Lumet"],"w":["","Coppola drehte „Der Pate“.","De Palma drehte „Scarface“.","Lumet drehte „Hundstage“."],"e":"Robert De Niro spielt den Taxifahrer Travis Bickle.","h":"De Niro am Steuer.","d":2},
-{"id":"129ns50","s":"Film","q":"Wer führte Regie bei „Psycho“ (1960)?","a":["Alfred Hitchcock","Stanley Kubrick","Orson Welles","Billy Wilder"],"w":["","Kubrick drehte „Shining“.","Welles drehte „Citizen Kane“.","Wilder drehte „Das Appartement“."],"e":"Die Duschszene mit Janet Leigh gilt als eine der bekanntesten der Filmgeschichte.","h":"Master of Suspense.","d":1},
-{"id":"7ee3ue","s":"Film","q":"Wer schrieb die Romanvorlage zu „Der Herr der Ringe“?","a":["J. R. R. Tolkien","C. S. Lewis","George R. R. Martin","J. K. Rowling"],"w":["","Lewis schrieb „Die Chroniken von Narnia“.","Martin schrieb „Das Lied von Eis und Feuer“.","Rowling schrieb „Harry Potter“."],"e":"Tolkiens Roman erschien 1954 und 1955. Peter Jackson verfilmte ihn 2001 bis 2003.","h":"Oxford-Professor.","d":1},
-{"id":"uwqz72","s":"Film","q":"Welcher Spielberg-Film von 1975 gilt als erster Sommer-Blockbuster?","a":["Der weiße Hai","E.T.","Duell","Unheimliche Begegnung der dritten Art"],"w":["","„E.T.“ erschien erst 1982.","„Duell“ war 1971 ein Fernsehfilm.","„Unheimliche Begegnung der dritten Art“ erschien 1977."],"e":"„Der weiße Hai“ spielte als erster Film mehr als 100 Millionen Dollar in den USA ein.","h":"Ein Hai vor Amity Island.","d":2},
-{"id":"4yh8i5","s":"Film","q":"Welche Aufgabe hat der Cutter oder Editor bei einem Film?","a":["Er montiert das gedrehte Material","Er plant die Kamerabewegungen","Er leitet die Schauspieler","Er finanziert die Produktion"],"w":["","Die Kamerabewegung plant der Kameramann.","Die Schauspieler leitet der Regisseur.","Die Finanzierung übernimmt der Produzent."],"e":"Der Schnitt bringt Szenen in Reihenfolge, Rhythmus und Tempo. Er gilt oft als „zweite Regie“.","h":"Schere und Rhythmus.","d":1},
-{"id":"c43ons","s":"Film","q":"Was bezeichnet Alfred Hitchcock als „MacGuffin“?","a":["Ein Objekt, das die Handlung antreibt","Eine Szene mit Cameo","Ein typischer Filmschluss","Ein Filmzitat im Dialog"],"w":["","Einen kurzen Auftritt nannte Hitchcock selbst Cameo.","Der MacGuffin ist kein Filmschluss.","Er hat nichts mit Zitaten zu tun."],"e":"Der MacGuffin ist Anlass der Handlung, etwa ein Koffer oder Dokument. Für die Figuren zählt er, für die Zuschauer kaum.","h":"Das Ding, das alle wollen.","d":3},
-{"id":"19e2gl3","s":"Film","q":"Mit wie vielen Bildern pro Sekunde werden Kinofilme klassisch gedreht und gezeigt?","a":["24","16","30","60"],"w":["","16 Bilder pro Sekunde war die Stummfilmgeschwindigkeit.","30 Bilder sind der US-Videostandard.","60 Bilder sind nicht Kinostandard."],"e":"Seit dem Tonfilm gelten 24 Bilder pro Sekunde als Standard.","h":"Zweimal zwölf.","d":2},
-{"id":"1xb4l0q","s":"Film","q":"Welches Filmstudio hat einen brüllenden Löwen als Logo?","a":["Metro-Goldwyn-Mayer","Paramount","Universal","Warner Bros."],"w":["","Paramount hat einen Berg mit Sternen als Logo.","Universal hat eine Weltkugel als Logo.","Warner hat einen Schild als Logo."],"e":"Der Löwe heißt Leo und brüllt vor MGM-Filmen seit den 1920er Jahren.","h":"Löwe Leo.","d":2},
-{"id":"5btbgv","s":"Film","q":"Wie heißt die in Mumbai ansässige Hindi-Filmindustrie?","a":["Bollywood","Nollywood","Hollywood","Tollywood"],"w":["","Nollywood ist die nigerianische Filmindustrie.","Hollywood steht in Los Angeles.","Tollywood ist die Telugu-Filmindustrie."],"e":"Der Name verbindet Bombay (heute Mumbai) und Hollywood.","h":"Früher Bombay.","d":1},
-{"id":"12g33f9","s":"Film","q":"Welcher war der erste abendfüllende Zeichentrickfilm von Disney (1937)?","a":["Schneewittchen und die sieben Zwerge","Pinocchio","Bambi","Dumbo"],"w":["","„Pinocchio“ erschien 1940.","„Bambi“ erschien 1942.","„Dumbo“ erschien 1941."],"e":"Der Film war ein riesiger Erfolg und begründete Disneys Aufstieg.","h":"Ein Märchen der Brüder Grimm.","d":2,"lenOk":true},
-{"id":"3x91qg","s":"Film","q":"Welches Studio produzierte „Toy Story“ (1995), den ersten komplett computeranimierten Spielfilm?","a":["Pixar","DreamWorks","Blue Sky","Illumination"],"w":["","DreamWorks gründete 1994, schuf „Shrek“ 2001.","Blue Sky schuf „Ice Age“ 2002.","Illumination schuf „Ich – Einfach unverbesserlich“ 2010."],"e":"Pixar arbeitete bei „Toy Story“ mit Disney zusammen.","h":"Lampe im Logo.","d":2},
-{"id":"1kyozkk","s":"Film","q":"Wer führte Regie bei „Chihiros Reise ins Zauberland“ (2001)?","a":["Hayao Miyazaki","Isao Takahata","Makoto Shinkai","Satoshi Kon"],"w":["","Takahata drehte „Die letzten Glühwürmchen“.","Shinkai drehte „Your Name“.","Kon drehte „Perfect Blue“."],"e":"Der Film gewann 2003 den Oscar als bester Animationsfilm.","h":"Studio Ghibli.","d":2},
-{"id":"1cbr375","s":"Film","q":"Wer spielte 1962 in „Dr. No“ erstmals James Bond im Kino?","a":["Sean Connery","Roger Moore","Pierce Brosnan","George Lazenby"],"w":["","Moore spielte Bond erstmals 1973.","Brosnan spielte Bond erstmals 1995.","Lazenby spielte Bond 1969 einmal."],"e":"Der Schotte Connery spielte Bond bis 1971 in sechs Filmen der offiziellen Reihe, 1983 noch einmal außerhalb davon.","h":"Ein Schotte.","d":2},
-{"id":"djimyy","s":"Film","q":"Wer schuf die Romanfigur James Bond?","a":["Ian Fleming","John le Carré","Graham Greene","Arthur Conan Doyle"],"w":["","Le Carré schrieb „Der Spion, der aus der Kälte kam“.","Greene schrieb „Der dritte Mann“.","Doyle schuf Sherlock Holmes."],"e":"Fleming veröffentlichte 1953 „Casino Royale“.","h":"Ehemaliger Geheimdienstler.","d":2},
-{"id":"b6dfyf","s":"Film","q":"Wer gewann 2020 den Oscar als bester Hauptdarsteller für „Joker“?","a":["Joaquin Phoenix","Heath Ledger","Jared Leto","Jack Nicholson"],"w":["","Ledger gewann posthum den Nebendarsteller-Oscar für „The Dark Knight“.","Leto spielte den Joker in „Suicide Squad“.","Nicholson spielte den Joker in „Batman“ 1989."],"e":"Phoenix gewann den Oscar bei der 92. Verleihung im Februar 2020.","h":"Hauptrolle.","d":2},
-{"id":"8chzm6","s":"Film","q":"Wer gewann 2010 als erste Frau den Regie-Oscar?","a":["Kathryn Bigelow","Jane Campion","Sofia Coppola","Greta Gerwig"],"w":["","Campion gewann 2022 den Regie-Oscar.","Coppola wurde 2004 nominiert, gewann aber nicht.","Gerwig wurde bisher nicht für die Regie nominiert."],"e":"Bigelow gewann für „Tödliches Kommando“ (The Hurt Locker).","h":"Irak-Kriegsfilm.","d":2},
-{"id":"1uf4eoa","s":"Film","q":"Wer spielte Vito Corleone in „Der Pate“ (1972) und gewann dafür den Oscar?","a":["Marlon Brando","Al Pacino","Robert De Niro","Robert Duvall"],"w":["","Pacino spielte Michael Corleone.","De Niro spielte den jungen Vito in Teil II.","Duvall spielte Tom Hagen."],"e":"Brando lehnte den Oscar ab und schickte eine Vertreterin.","h":"Der Pate persönlich.","d":2},
-{"id":"jmohs","s":"Film","q":"Wie heißt der französische Filmpreis, vergleichbar mit dem Oscar?","a":["César","Goya","BAFTA","David di Donatello"],"w":["","Der Goya ist der spanische Filmpreis.","Der BAFTA ist der britische Filmpreis.","Der David di Donatello ist der italienische Filmpreis."],"e":"Der César wird seit 1976 verliehen.","h":"Name eines Bildhauers.","d":3},
-{"id":"1h6ne1p","s":"Film","q":"Wer spielte Neo in „Matrix“ (1999)?","a":["Keanu Reeves","Brad Pitt","Tom Cruise","Johnny Depp"],"w":["","Pitt spielte „Fight Club“.","Cruise spielte „Mission: Impossible“.","Depp spielte Jack Sparrow."],"e":"Regie führten die Wachowskis. Die Hauptrolle spielte Keanu Reeves.","h":"Rote oder blaue Pille.","d":1},
-{"id":"1yjwdab","s":"Film","q":"Wer drehte „Lola rennt“ (1998)?","a":["Tom Tykwer","Wim Wenders","Fatih Akin","Doris Dörrie"],"w":["","Wenders drehte „Der Himmel über Berlin“.","Akin drehte „Gegen die Wand“.","Dörrie drehte „Männer“."],"e":"Der Film mit Franka Potente wurde international erfolgreich.","h":"Läuft durch Berlin.","d":2},
-{"id":"zaqv7x","s":"Film","q":"Mit welchem Film begann 2008 das Marvel Cinematic Universe?","a":["Iron Man","Der unglaubliche Hulk","Thor","The Avengers"],"w":["","„Der unglaubliche Hulk“ erschien im selben Jahr als zweiter Film.","„Thor“ erschien 2011.","„The Avengers“ erschien 2012."],"e":"„Iron Man“ mit Robert Downey Jr. kam im Mai 2008 in die Kinos.","h":"Mann im Anzug.","d":2},
-{"id":"44b0bt","s":"Film","q":"Was ist ein „Director’s Cut“?","a":["Die vom Regisseur gewünschte Schnittfassung","Der erste Rohschnitt","Die Fassung für das Fernsehen","Eine gekürzte Kinofassung"],"w":["","Der Rohschnitt heißt Rough Cut.","Fernsehfassungen entstehen meist durch Kürzungen.","Gekürzte Fassungen widersprechen meist dem Begriff."],"e":"Ein Director’s Cut zeigt den Film so, wie der Regisseur ihn vorgesehen hat.","h":"Wunschfassung.","d":2},
-{"id":"a66es9","s":"Musik","q":"Welcher Komponist schrieb die 9. Sinfonie mit der „Ode an die Freude“?","a":["Ludwig van Beethoven","Wolfgang Amadeus Mozart","Johann Sebastian Bach","Franz Schubert"],"w":["","Mozart schrieb 41 Sinfonien, aber keine „Ode an die Freude“.","Bach schrieb keine Sinfonien im klassischen Sinn.","Schubert schrieb die „Unvollendete“."],"e":"Uraufführung 1824 in Wien. Die Melodie ist die Hymne der Europäischen Union.","h":"Chorsinfonie.","d":1},
-{"id":"cuxz0r","s":"Musik","q":"In welcher Stadt wurde Mozart geboren?","a":["Salzburg","Wien","Prag","Linz"],"w":["","Wien war sein Wohnort ab 1781 und sein Sterbeort.","Prag war Ort der Uraufführung von „Don Giovanni“.","Linz ist Namensgeber der „Linzer Sinfonie“."],"e":"Mozart kam 1756 in Salzburg zur Welt und starb 1791 in Wien.","h":"Stadt der Festspiele.","d":1},
-{"id":"1v4ymat","s":"Musik","q":"Welche Band veröffentlichte 1973 „The Dark Side of the Moon“?","a":["Pink Floyd","Led Zeppelin","The Rolling Stones","Queen"],"w":["","Led Zeppelin veröffentlichte 1971 „IV“.","Die Rolling Stones veröffentlichten 1972 „Exile on Main St.“.","Queen veröffentlichte 1975 „A Night at the Opera“."],"e":"Das Album blieb über 900 Wochen in den US-Charts und zählt zu den meistverkauften aller Zeiten.","h":"Prisma auf dem Cover.","d":2},
-{"id":"n7qug5","s":"Musik","q":"Wie viele Tasten hat ein Standardklavier?","a":["88","66","76","99"],"w":["","66 Tasten sind keine Klavierstandardzahl.","76 Tasten haben manche Keyboards.","99 Tasten hat kein Standardklavier."],"e":"52 weiße und 36 schwarze Tasten, zusammen sieben Oktaven und eine kleine Terz.","h":"Sieben Oktaven und mehr.","d":1},
-{"id":"127ukcb","s":"Musik","q":"Aus welchem Land stammt der Tango?","a":["Argentinien","Spanien","Kuba","Brasilien"],"w":["","Spanien hat den Flamenco hervorgebracht.","Kuba ist Heimat von Son und Salsa.","Brasilien ist Heimat von Samba."],"e":"Er entstand Ende des 19. Jahrhunderts in den Hafenvierteln von Buenos Aires und Montevideo.","h":"Hafenviertel am Río de la Plata.","d":2},
-{"id":"1i402s","s":"Musik","q":"Was bedeutet „forte“ in der Notenschrift?","a":["Laut","Schnell","Leise","Langsam"],"w":["","„Allegro“ bedeutet schnell.","„Piano“ bedeutet leise.","„Adagio“ bedeutet langsam."],"e":"Das Klavier heißt eigentlich „Pianoforte“: leise und laut. Die Abkürzung für forte ist f.","h":"Gegenteil von piano.","d":1},
-{"id":"1tm2uy8","s":"Musik","q":"Welcher Komponist schrieb die Oper „Die Zauberflöte“?","a":["Wolfgang Amadeus Mozart","Richard Wagner","Giuseppe Verdi","Richard Strauss"],"w":["","Wagner schrieb „Tristan und Isolde“.","Verdi schrieb „Aida“.","Strauss schrieb „Der Rosenkavalier“."],"e":"Uraufführung 1791, gut zwei Monate vor Mozarts Tod.","h":"Königin der Nacht.","d":1},
-{"id":"1ktry6n","s":"Musik","q":"Wie heißt das berühmte Opernhaus in Mailand?","a":["La Scala","Semperoper","Covent Garden","Metropolitan"],"w":["","Die Semperoper steht in Dresden.","Covent Garden steht in London.","Die Metropolitan Opera steht in New York."],"e":"Die Scala wurde 1778 eröffnet.","h":"Italiens Opernhaus Nummer eins.","d":2},
-{"id":"vrkwe8","s":"Musik","q":"Welcher Komponist schrieb „Die Moldau“?","a":["Bedřich Smetana","Antonín Dvořák","Leoš Janáček","Franz Liszt"],"w":["","Dvořák schrieb die Sinfonie „Aus der Neuen Welt“.","Janáček schrieb „Jenůfa“.","Liszt schrieb „Les Préludes“."],"e":"Die „Moldau“ ist Teil des Zyklus „Mein Vaterland“ (Má vlast) von 1874.","h":"Tschechischer Fluss.","d":3},
-{"id":"1or2sb8","s":"Musik","q":"In welcher Stadt wurde Johann Sebastian Bach geboren?","a":["Eisenach","Leipzig","Köthen","Weimar"],"w":["","In Leipzig wirkte er als Thomaskantor.","In Köthen war er Hofkapellmeister.","In Weimar war er Hoforganist."],"e":"Bach kam 1685 in Eisenach in Thüringen zur Welt und starb 1750 in Leipzig.","h":"Wartburg-Stadt.","d":3},
-{"id":"1fnzl6z","s":"Musik","q":"Aus wie vielen Halbtonschritten besteht eine Oktave?","a":["Zwölf","Acht","Zehn","Vierzehn"],"w":["","Acht Töne hat die Dur-Tonleiter, nicht acht Halbtöne.","Zehn Halbtöne ergeben eine kleine Septime.","Vierzehn Halbtöne ergeben eine None."],"e":"Die Oktave umfasst zwölf Halbtöne: sieben weiße und fünf schwarze Tasten.","h":"Zähle auf dem Klavier alle Tasten bis zur nächsten gleichnamigen.","d":2},
-{"id":"1qsynlo","s":"Musik","q":"Zu welcher Instrumentengruppe gehört die Querflöte?","a":["Holzblasinstrumente","Blechblasinstrumente","Streichinstrumente","Zupfinstrumente"],"w":["","Blechblasinstrumente sind etwa Trompete und Posaune.","Streichinstrumente werden mit dem Bogen gespielt.","Zupfinstrumente sind etwa Harfe und Gitarre."],"e":"Die Querflöte gehört zu den Holzblasinstrumenten, obwohl sie heute meist aus Metall besteht.","h":"Name verrät Material der Vergangenheit.","d":2},
-{"id":"l9ukwn","s":"Musik","q":"Wer komponierte die Oper „Carmen“?","a":["Georges Bizet","Giuseppe Verdi","Giacomo Puccini","Jacques Offenbach"],"w":["","Verdi schrieb „La Traviata“.","Puccini schrieb „La Bohème“.","Offenbach schrieb „Hoffmanns Erzählungen“."],"e":"Carmen wurde 1875 in Paris uraufgeführt und spielt in Sevilla.","h":"Franzose.","d":2},
-{"id":"4waesq","s":"Musik","q":"In welcher Stadt finden die Richard-Wagner-Festspiele statt?","a":["Bayreuth","Salzburg","München","Dresden"],"w":["","Salzburg ist Festspielort für Mozart und Strauss.","München hat die Opernfestspiele, aber nicht die Wagner-Festspiele.","Dresden hat die Semperoper, aber keine Wagner-Festspiele."],"e":"Wagner ließ das Festspielhaus auf dem Grünen Hügel bauen. Die ersten Festspiele fanden 1876 statt.","h":"Oberfranken.","d":2},
-{"id":"cy5x6u","s":"Musik","q":"Wer komponierte „An der schönen blauen Donau“?","a":["Johann Strauss (Sohn)","Franz Lehár","Johannes Brahms","Joseph Haydn"],"w":["","Lehár schrieb „Die lustige Witwe“.","Brahms schrieb den „Ungarischen Tanz Nr. 5“.","Haydn schrieb die Melodie der Kaiserhymne."],"e":"Der Walzer von 1867 gilt als inoffizielle Hymne Österreichs.","h":"Walzerkönig.","d":2},
-{"id":"1cytj1q","s":"Musik","q":"Welches Orchester spielt jedes Jahr das Neujahrskonzert in Wien?","a":["Die Wiener Philharmoniker","Die Wiener Symphoniker","Die Berliner Philharmoniker","Die Dresdner Staatskapelle"],"w":["","Die Wiener Symphoniker sind ein anderes Wiener Orchester.","Die Berliner Philharmoniker spielen das Silvesterkonzert in Berlin.","Die Dresdner Staatskapelle spielt in Dresden."],"e":"Das Neujahrskonzert findet seit 1941 im Goldenen Saal des Musikvereins statt.","h":"Goldener Saal.","d":2},
-{"id":"1e7hsd1","s":"Musik","q":"Wie heißt Georg Friedrich Händels berühmtes Oratorium mit dem „Halleluja“-Chor?","a":["Der Messias","Die Schöpfung","Elias","Matthäus-Passion"],"w":["","„Die Schöpfung“ schrieb Haydn.","„Elias“ schrieb Mendelssohn.","Die „Matthäus-Passion“ schrieb Bach."],"e":"„Messiah“ wurde 1742 in Dublin uraufgeführt. Bei dem Halleluja-Chor stehen Zuhörer traditionell auf.","h":"Englisch: Messiah.","d":2},
-{"id":"1rysdc7","s":"Musik","q":"Welches Michael-Jackson-Album von 1982 zählt zu den meistverkauften Alben aller Zeiten?","a":["Thriller","Bad","Dangerous","Off the Wall"],"w":["","„Bad“ erschien 1987.","„Dangerous“ erschien 1991.","„Off the Wall“ erschien 1979."],"e":"Von „Thriller“ wurden weltweit über 70 Millionen Exemplare verkauft.","h":"Gruselvideo.","d":2},
-{"id":"3z2yv","s":"Musik","q":"Welche Sängerin wird „Queen of Soul“ genannt?","a":["Aretha Franklin","Tina Turner","Whitney Houston","Diana Ross"],"w":["","Tina Turner wird „Queen of Rock ’n’ Roll“ genannt.","Houston wird „The Voice“ genannt.","Ross war Sängerin der Supremes."],"e":"Franklin sang „Respect“ (1967) und starb 2018.","h":"„Respect“.","d":2},
-{"id":"1222ug2","s":"Musik","q":"Wer erhielt 2016 den Nobelpreis für Literatur?","a":["Bob Dylan","Leonard Cohen","Paul Simon","Bruce Springsteen"],"w":["","Cohen starb 2016, erhielt aber nie den Nobelpreis.","Simon wurde nicht ausgezeichnet.","Springsteen wurde nicht ausgezeichnet."],"e":"Dylan war der erste Musiker, der den Preis erhielt, für „neue poetische Ausdrucksformen“.","h":"Ein Songwriter.","d":2},
-{"id":"1wt8phk","s":"Musik","q":"Wie hieß das berühmte Festival 1969 im US-Bundesstaat New York?","a":["Woodstock","Monterey","Altamont","Isle of Wight"],"w":["","Monterey Pop fand 1967 in Kalifornien statt.","Altamont fand im Dezember 1969 in Kalifornien statt.","Isle of Wight fand 1970 in England statt."],"e":"Woodstock fand im August 1969 auf einer Farm bei Bethel statt. Etwa 400.000 Besucher kamen.","h":"Drei Tage Frieden und Musik.","d":1},
-{"id":"1tkeuvw","s":"Musik","q":"In welchem Bundesland liegt das Heavy-Metal-Festival Wacken Open Air?","a":["Schleswig-Holstein","Niedersachsen","Bayern","Mecklenburg-Vorpommern"],"w":["","Niedersachsen grenzt an Schleswig-Holstein, Wacken liegt dort aber nicht.","Bayern hat andere Festivals, etwa Rock im Park.","Mecklenburg-Vorpommern hat Festivals wie „Fusion“."],"e":"Das Festival findet seit 1990 im Dorf Wacken im Kreis Steinburg statt.","h":"Im hohen Norden.","d":2},
-{"id":"1lnu8e8","s":"Musik","q":"Welche Deutsche gewann 2010 den Eurovision Song Contest mit „Satellite“?","a":["Lena Meyer-Landrut","Nicole","Helene Fischer","Sarah Connor"],"w":["","Nicole gewann 1982 mit „Ein bisschen Frieden“.","Fischer trat nie beim ESC an.","Connor trat nie beim ESC an."],"e":"Der ESC 2010 fand in Oslo statt. Lena trat 2011 erneut an.","h":"Oslo 2010.","d":2},
-{"id":"l23dgi","s":"Musik","q":"Welche schwedische Band gewann 1974 den Eurovision Song Contest mit „Waterloo“?","a":["ABBA","Roxette","Europe","Ace of Base"],"w":["","Roxette wurde in den 1980ern bekannt.","Europe wurde mit „The Final Countdown“ bekannt.","Ace of Base wurde in den 1990ern bekannt."],"e":"ABBA wurde nach dem ESC-Sieg weltbekannt.","h":"Vier Anfangsbuchstaben.","d":1},
-{"id":"1o6t3kj","s":"Musik","q":"In welchem New Yorker Stadtteil entstand in den 1970er Jahren der Hip-Hop?","a":["Bronx","Harlem","Brooklyn","Queens"],"w":["","Harlem ist Heimat der Harlem Renaissance.","Brooklyn wurde später durch Rapper bekannt.","Queens wurde später durch Rapper bekannt."],"e":"DJ Kool Herc legte 1973 bei einer Party in der Bronx die ersten Breakbeats auf.","h":"DJ Kool Herc.","d":2},
-{"id":"1059zkr","s":"Musik","q":"Wie viele Linien hat das Notensystem?","a":["Fünf","Vier","Sechs","Sieben"],"w":["","Vier Linien hat das mittelalterliche Notensystem.","Sechs Linien hat das System der Gitarrentabulatur.","Sieben Linien hat das Notensystem nicht."],"e":"Notenlinien werden von unten nach oben gezählt. Hilfslinien erweitern den Tonraum.","h":"Eine Hand voll.","d":1},
-{"id":"avy09l","s":"Musik","q":"Welcher Notenschlüssel steht meist am Anfang für hohe Instrumente wie Geige oder Flöte?","a":["Violinschlüssel","Bassschlüssel","Altschlüssel","Tenorschlüssel"],"w":["","Der Bassschlüssel steht für tiefe Instrumente.","Der Altschlüssel steht für die Bratsche.","Der Tenorschlüssel steht für Fagott und Cello."],"e":"Der Violinschlüssel ist ein G-Schlüssel und legt das g′ auf die zweite Linie fest.","h":"Auch G-Schlüssel.","d":1},
-{"id":"1ppaqlx","s":"Musik","q":"Was bedeutet die Tempoangabe „Adagio“?","a":["Langsam und ruhig","Schnell und lebhaft","Laut und kräftig","Leise und zart"],"w":["","Schnell und lebhaft bedeutet „Allegro“.","Laut und kräftig bedeutet „forte“.","Leise und zart bedeutet „piano“."],"e":"Adagio kommt aus dem Italienischen und bedeutet „gemächlich“.","h":"Gegenteil von Allegro.","d":2},
-{"id":"1szdplc","s":"Musik","q":"Welche Dur-Tonleiter hat keine Vorzeichen?","a":["C-Dur","G-Dur","F-Dur","A-Dur"],"w":["","G-Dur hat ein Kreuz.","F-Dur hat ein b.","A-Dur hat drei Kreuze."],"e":"Die Töne c bis h entsprechen den weißen Tasten des Klaviers.","h":"Nur weiße Tasten.","d":2},
-{"id":"1xdhsst","s":"Musik","q":"Aus wie vielen Tönen besteht eine Pentatonik?","a":["Fünf","Vier","Sechs","Sieben"],"w":["","Vier Töne haben Tetrachorde.","Sechs Töne hat die Ganztonleiter.","Sieben Töne haben Dur und Moll."],"e":"Pentatonische Tonleitern kommen in vielen Kulturen vor, etwa in Blues und Volksmusik.","h":"Von griech. „penta“.","d":2},
-{"id":"aixhos","s":"Musik","q":"In welcher Stadt entstand um 1900 der Jazz?","a":["New Orleans","Chicago","New York","Memphis"],"w":["","Chicago wurde in den 1920ern ein Zentrum des Jazz.","New York wurde in den 1930ern ein Zentrum des Jazz.","Memphis wurde durch Blues und Rock ’n’ Roll bekannt."],"e":"In New Orleans verschmolzen Blues, Ragtime und Marschmusik. Louis Armstrong wurde dort geboren.","h":"Mississippi-Mündung.","d":2},
-{"id":"quiqiz","s":"Musik","q":"Welches Album von Miles Davis erschien 1959 und zählt zu den meistverkauften Jazz-Alben?","a":["Kind of Blue","Bitches Brew","Birth of the Cool","Time Out"],"w":["","„Bitches Brew“ erschien 1970.","„Birth of the Cool“ erschien 1957 als Zusammenstellung.","„Time Out“ ist von Dave Brubeck."],"e":"„Kind of Blue“ gilt als Meilenstein des modalen Jazz.","h":"Blaue Stimmung.","d":3},
-{"id":"1ata0xo","s":"Musik","q":"Wer komponierte den „Boléro“ (1928)?","a":["Maurice Ravel","Claude Debussy","Erik Satie","Camille Saint-Saëns"],"w":["","Debussy schrieb „Clair de Lune“.","Satie schrieb die „Gymnopédies“.","Saint-Saëns schrieb „Karneval der Tiere“."],"e":"Der Boléro besteht aus einem Thema, das sich steigert und mit dem Orchester wächst.","h":"Franzose.","d":2},
-{"id":"1duc1il","s":"Musik","q":"Wer komponierte das Ballett „Schwanensee“?","a":["Pjotr Tschaikowski","Igor Strawinsky","Sergei Prokofjew","Modest Mussorgski"],"w":["","Strawinsky schrieb „Der Feuervogel“.","Prokofjew schrieb „Romeo und Julia“.","Mussorgski schrieb „Bilder einer Ausstellung“."],"e":"Tschaikowski schrieb das Ballett 1875/76. Es folgten „Dornröschen“ und „Der Nussknacker“.","h":"Russischer Romantiker.","d":2},
-{"id":"pyx4x9","s":"Musik","q":"In welchem Takt steht ein Walzer?","a":["Dreivierteltakt","Zweivierteltakt","Viervierteltakt","Sechsachteltakt"],"w":["","Der Zweivierteltakt ist typisch für Marsch und Polka.","Der Viervierteltakt ist typisch für Pop.","Der Sechsachteltakt ist typisch für Jig und Tarantella."],"e":"Der Walzer hat drei Schläge pro Takt: eins, zwei, drei.","h":"Drei Schläge.","d":1},
-{"id":"qqze4","s":"Musik","q":"Wer schrieb den Text der „Ode an die Freude“, die Beethoven vertonte?","a":["Friedrich Schiller","Johann Wolfgang von Goethe","Heinrich Heine","Friedrich Hölderlin"],"w":["","Goethe schrieb „Faust“.","Heine schrieb „Die Loreley“.","Hölderlin schrieb „Hyperion“."],"e":"Schiller schrieb das Gedicht 1785. Beethoven verwendete einen Teil davon im Schlusssatz.","h":"Dichter von „Die Räuber“.","d":2},
-{"id":"1dgykmz","s":"Musik","q":"Auf welche Frequenz legt die internationale Norm ISO 16 den Kammerton a′ fest?","a":["440 Hertz","435 Hertz","442 Hertz","415 Hertz"],"w":["","435 Hertz galt in Frankreich ab 1859 als „Diapason normal“.","442 Hertz wird von vielen Orchestern bevorzugt.","415 Hertz ist die gängige Stimmung für Barockmusik."],"e":"Die Norm von 1975 setzt a′ auf 440 Hertz. Orchester stimmen oft etwas höher.","h":"Zwischen 430 und 450.","d":3},
-{"id":"1qfhfxr","s":"Musik","q":"Welche Band schrieb „Smoke on the Water“ (1972)?","a":["Deep Purple","Black Sabbath","Led Zeppelin","Uriah Heep"],"w":["","Black Sabbath schrieb „Paranoid“.","Led Zeppelin schrieb „Stairway to Heaven“.","Uriah Heep schrieb „Easy Livin’“."],"e":"Das Riff handelt von einem Brand im Casino von Montreux am Genfer See.","h":"Berühmtes Gitarrenriff.","d":2},
-{"id":"eea7mk","s":"Musik","q":"Von wem stammt die Melodie der deutschen Nationalhymne?","a":["Joseph Haydn","Ludwig van Beethoven","Wolfgang Amadeus Mozart","Richard Wagner"],"w":["","Beethoven schrieb die „Ode an die Freude“.","Mozart schrieb „Eine kleine Nachtmusik“.","Wagner schrieb „Der Ring des Nibelungen“."],"e":"Haydn komponierte die Melodie 1797 als Kaiserhymne. August Heinrich Hoffmann von Fallersleben schrieb 1841 den Text.","h":"Österreichischer Klassiker.","d":2},
-{"id":"fovubi","s":"Musik","q":"Aus welcher Stadt stammen die Beatles?","a":["Liverpool","London","Manchester","Birmingham"],"w":["","London war ihr späterer Wohnsitz.","Manchester ist die Heimat von Oasis.","Birmingham ist die Heimat von Black Sabbath."],"e":"Die Beatles gründeten sich um 1960 in Liverpool und spielten in Hamburg.","h":"Hafenstadt.","d":1},
-{"id":"1bd12cd","s":"Musik","q":"Welche Band veröffentlichte 1975 „Bohemian Rhapsody“?","a":["Queen","Led Zeppelin","The Who","Pink Floyd"],"w":["","Led Zeppelin veröffentlichte „Stairway to Heaven“.","The Who veröffentlichte „Baba O’Riley“.","Pink Floyd veröffentlichte „Wish You Were Here“."],"e":"Der Song des Albums „A Night at the Opera“ dauert knapp sechs Minuten.","h":"Freddie Mercury.","d":1}
+ {
+  "id": "1av63ja",
+  "s": "Film",
+  "q": "Wer führte Regie bei „Der Pate“ (1972)?",
+  "a": [
+   "Francis Ford Coppola",
+   "Martin Scorsese",
+   "Steven Spielberg",
+   "Stanley Kubrick"
+  ],
+  "w": [
+   "",
+   "Scorsese drehte „Taxi Driver“ und „GoodFellas“.",
+   "Spielberg drehte „Der weiße Hai“ und „E.T.“.",
+   "Kubrick drehte „2001“ und „Shining“."
+  ],
+  "e": "Die Mafia-Saga nach Mario Puzos Roman gewann den Oscar als bester Film der Verleihung 1973.",
+  "h": "Italo-amerikanischer Regisseur.",
+  "d": 1
+ },
+ {
+  "id": "cjwq3a",
+  "s": "Film",
+  "q": "Welcher Film gewann 2020 als erster nicht englischsprachiger den Oscar als bester Film?",
+  "a": [
+   "Parasite",
+   "Roma",
+   "Cinema Paradiso",
+   "Das Leben der Anderen"
+  ],
+  "w": [
+   "",
+   "„Roma“ war 2019 nominiert, gewann aber nicht.",
+   "„Cinema Paradiso“ gewann 1990 den Auslands-Oscar.",
+   "„Das Leben der Anderen“ gewann 2007 den Auslands-Oscar."
+  ],
+  "e": "Der südkoreanische Film von Bong Joon-ho gewann vier Oscars, darunter den für die beste Regie.",
+  "h": "Aus Südkorea.",
+  "d": 2
+ },
+ {
+  "id": "cueh7e",
+  "s": "Film",
+  "q": "Wie heißt Fritz Langs Stummfilm von 1927 über eine Zukunftsstadt?",
+  "a": [
+   "Metropolis",
+   "Nosferatu",
+   "M",
+   "Dr. Mabuse"
+  ],
+  "w": [
+   "",
+   "„Nosferatu“ drehte F. W. Murnau 1922.",
+   "„M“ ist ein Tonfilm von Lang aus dem Jahr 1931.",
+   "„Dr. Mabuse, der Spieler“ ist von 1922 und handelt von einem Verbrecher."
+  ],
+  "e": "Der Film zeigt eine Klassengesellschaft mit Arbeitern in der Unterwelt und gilt als Meilenstein der Science-Fiction.",
+  "h": "Stadt der Zukunft.",
+  "d": 2
+ },
+ {
+  "id": "ozkjru",
+  "s": "Film",
+  "q": "Bei welchem Festival wird die Goldene Palme vergeben?",
+  "a": [
+   "Cannes",
+   "Venedig",
+   "Berlin",
+   "Sundance"
+  ],
+  "w": [
+   "",
+   "Venedig vergibt den Goldenen Löwen.",
+   "Berlin vergibt den Goldenen Bären.",
+   "Sundance vergibt Jurypreise, aber keine Goldene Palme."
+  ],
+  "e": "Die Filmfestspiele von Cannes finden jedes Jahr im Mai an der Côte d’Azur statt.",
+  "h": "Südfrankreich.",
+  "d": 1
+ },
+ {
+  "id": "1wmyd8l",
+  "s": "Film",
+  "q": "Wer führte Regie bei „E.T.“ und „Jurassic Park“?",
+  "a": [
+   "Steven Spielberg",
+   "George Lucas",
+   "James Cameron",
+   "Ridley Scott"
+  ],
+  "w": [
+   "",
+   "Lucas schuf „Star Wars“ und produzierte „Indiana Jones“.",
+   "Cameron drehte „Terminator“ und „Titanic“.",
+   "Scott drehte „Alien“ und „Gladiator“."
+  ],
+  "e": "Spielberg drehte „E.T.“ 1982 und „Jurassic Park“ 1993.",
+  "h": "Auch „Der weiße Hai“.",
+  "d": 1
+ },
+ {
+  "id": "fiznt2",
+  "s": "Film",
+  "q": "Wie heißt der Deutsche Filmpreis im Volksmund?",
+  "a": [
+   "Lola",
+   "Bambi",
+   "Goldene Kamera",
+   "Grimme-Preis"
+  ],
+  "w": [
+   "",
+   "Der Bambi ist ein Medienpreis.",
+   "Die Goldene Kamera ist ein Fernsehpreis.",
+   "Der Grimme-Preis ist ein Fernsehpreis."
+  ],
+  "e": "Die goldene Statuette heißt seit 1999 „Lola“. Der Name erinnert an berühmte Lola-Figuren des deutschen Films, etwa aus „Der blaue Engel“ und „Lola rennt“.",
+  "h": "Ein Frauenname.",
+  "d": 2
+ },
+ {
+  "id": "1qfd15t",
+  "s": "Film",
+  "q": "Wer führte Regie bei „Citizen Kane“ (1941) und spielte die Hauptrolle?",
+  "a": [
+   "Orson Welles",
+   "Alfred Hitchcock",
+   "Billy Wilder",
+   "John Ford"
+  ],
+  "w": [
+   "",
+   "Hitchcock drehte „Psycho“ und „Vertigo“.",
+   "Wilder drehte „Manche mögen’s heiß“.",
+   "Ford drehte vor allem Western."
+  ],
+  "e": "Welles war bei seinem Debüt 25 Jahre alt. Der Film gilt in vielen Umfragen als einer der besten aller Zeiten.",
+  "h": "Ein Debüt mit 25.",
+  "d": 2
+ },
+ {
+  "id": "gdlk50",
+  "s": "Film",
+  "q": "Was ist ein Cliffhanger?",
+  "a": [
+   "Ein offenes, spannendes Ende",
+   "Ein Film über Bergsteiger und Kletterer",
+   "Eine Szene vor dem Abspann",
+   "Eine Rückblende am Anfang"
+  ],
+  "w": [
+   "",
+   "Der Begriff meint keine Bergsteigerfilme, sondern ein Erzählprinzip.",
+   "Szenen vor dem Abspann heißen Epilog oder Post-Credit-Szene.",
+   "Rückblenden heißen Flashback."
+  ],
+  "e": "Der Begriff kommt von „cliff“ (Klippe): Die Spannung hält den Zuschauer „am Abgrund“. Die Geschichte bricht an offener Stelle ab.",
+  "h": "Zuschauer will mehr.",
+  "d": 2
+ },
+ {
+  "id": "6dk8ub",
+  "s": "Film",
+  "q": "Welcher Film gewann bei der Oscar-Verleihung 2004 elf Oscars, darunter den für den besten Film?",
+  "a": [
+   "Der Herr der Ringe: Die Rückkehr des Königs",
+   "Der Herr der Ringe: Die Gefährten",
+   "Der Herr der Ringe: Die zwei Türme",
+   "Titanic"
+  ],
+  "w": [
+   "",
+   "Der erste Teil gewann 2002 vier Oscars, aber nicht den für den besten Film.",
+   "Der zweite Teil gewann 2003 zwei Oscars, aber nicht den für den besten Film.",
+   "„Titanic“ gewann ebenfalls elf Oscars, aber bei der Verleihung 1998."
+  ],
+  "e": "Der dritte Teil der Trilogie gewann alle elf Nominierungen, ein Rekord, den vorher „Ben Hur“ und „Titanic“ erreicht hatten.",
+  "h": "Fantasy-Trilogie.",
+  "d": 2
+ },
+ {
+  "id": "b7q3rp",
+  "s": "Film",
+  "q": "Wer spielte Jack Dawson in „Titanic“ (1997)?",
+  "a": [
+   "Leonardo DiCaprio",
+   "Brad Pitt",
+   "Matt Damon",
+   "Johnny Depp"
+  ],
+  "w": [
+   "",
+   "Pitt spielte in „Fight Club“.",
+   "Damon spielte „Good Will Hunting“.",
+   "Depp spielte Jack Sparrow."
+  ],
+  "e": "Kate Winslet spielte Rose. James Cameron führte Regie.",
+  "h": "Zusammen mit Kate Winslet.",
+  "d": 1
+ },
+ {
+  "id": "ukxlwy",
+  "s": "Film",
+  "q": "Wer führte Regie bei „Pulp Fiction“ (1994)?",
+  "a": [
+   "Quentin Tarantino",
+   "Martin Scorsese",
+   "David Fincher",
+   "Guy Ritchie"
+  ],
+  "w": [
+   "",
+   "Scorsese drehte „Taxi Driver“.",
+   "Fincher drehte „Fight Club“.",
+   "Ritchie drehte „Snatch“."
+  ],
+  "e": "Der Film gewann die Goldene Palme in Cannes 1994.",
+  "h": "Episodenfilm.",
+  "d": 1
+ },
+ {
+  "id": "jnwlwj",
+  "s": "Film",
+  "q": "Welcher Regisseur drehte „Inception“ und „Oppenheimer“?",
+  "a": [
+   "Christopher Nolan",
+   "Denis Villeneuve",
+   "Ridley Scott",
+   "Darren Aronofsky"
+  ],
+  "w": [
+   "",
+   "Villeneuve drehte „Dune“.",
+   "Scott drehte „Gladiator“.",
+   "Aronofsky drehte „Black Swan“."
+  ],
+  "e": "Nolan gewann für „Oppenheimer“ 2024 den Regie-Oscar.",
+  "h": "Auch „The Dark Knight“.",
+  "d": 1
+ },
+ {
+  "id": "xh76jz",
+  "s": "Film",
+  "q": "In welchem Jahr kam der erste „Star Wars“-Film in die Kinos?",
+  "a": [
+   "1977",
+   "1975",
+   "1980",
+   "1983"
+  ],
+  "w": [
+   "",
+   "1975 erschien „Der weiße Hai“.",
+   "1980 kam „Das Imperium schlägt zurück“.",
+   "1983 kam „Die Rückkehr der Jedi-Ritter“."
+  ],
+  "e": "George Lucas’ Film erschien im Mai 1977 und begründete ein Franchise.",
+  "h": "Es war in der zweiten Hälfte der 1970er.",
+  "d": 2
+ },
+ {
+  "id": "5ckbzh",
+  "s": "Film",
+  "q": "Wer führte Regie bei „Das Boot“ (1981)?",
+  "a": [
+   "Wolfgang Petersen",
+   "Wim Wenders",
+   "Werner Herzog",
+   "Roland Emmerich"
+  ],
+  "w": [
+   "",
+   "Wenders drehte „Paris, Texas“.",
+   "Herzog drehte „Aguirre“.",
+   "Emmerich drehte „Independence Day“."
+  ],
+  "e": "Der Film spielt auf einem U-Boot im Zweiten Weltkrieg und wurde sechsmal für den Oscar nominiert.",
+  "h": "Ein U-Boot.",
+  "d": 2
+ },
+ {
+  "id": "1w491rq",
+  "s": "Film",
+  "q": "Welcher deutsche Regisseur gewann 2007 mit „Das Leben der Anderen“ den Auslands-Oscar?",
+  "a": [
+   "Florian Henckel von Donnersmarck",
+   "Tom Tykwer",
+   "Fatih Akin",
+   "Edgar Reitz"
+  ],
+  "w": [
+   "",
+   "Tykwer drehte „Lola rennt“.",
+   "Akin drehte „Gegen die Wand“.",
+   "Reitz drehte „Heimat“."
+  ],
+  "e": "Der Film erzählt von der Überwachung durch die Stasi in der DDR.",
+  "h": "Stasi-Drama.",
+  "d": 3,
+  "lenOk": true
+ },
+ {
+  "id": "1590s71",
+  "s": "Film",
+  "q": "Welcher deutsche Film gewann 2023 den Oscar als bester internationaler Film?",
+  "a": [
+   "Im Westen nichts Neues",
+   "Das Boot",
+   "Toni Erdmann",
+   "Systemsprenger"
+  ],
+  "w": [
+   "",
+   "„Das Boot“ war nominiert, gewann aber keinen Oscar.",
+   "„Toni Erdmann“ war 2017 nominiert, gewann aber nicht.",
+   "„Systemsprenger“ war Deutschlands Beitrag 2020, wurde aber nicht nominiert."
+  ],
+  "e": "Die Verfilmung von Remarques Roman gewann vier Oscars. Regie führte Edward Berger.",
+  "h": "Remarque.",
+  "d": 3
+ },
+ {
+  "id": "ajyvcc",
+  "s": "Film",
+  "q": "Welcher Film gewann 2026 den Oscar als bester Film (98. Verleihung, 15. März 2026)?",
+  "a": [
+   "One Battle After Another",
+   "Sinners",
+   "Hamnet",
+   "Frankenstein"
+  ],
+  "w": [
+   "",
+   "„Sinners“ gewann unter anderem den Hauptdarsteller-Oscar für Michael B. Jordan.",
+   "„Hamnet“ gewann den Hauptdarstellerinnen-Oscar für Jessie Buckley.",
+   "„Frankenstein“ von Guillermo del Toro gewann nicht den Hauptpreis."
+  ],
+  "e": "Paul Thomas Anderson gewann zudem den Regie-Oscar.",
+  "h": "Regie: Paul Thomas Anderson.",
+  "d": 2,
+  "lenOk": true,
+  "src": "ABC/AP, 16.03.2026: abc7.com/post/oscars-2026-battle-another-wins-best-picture-98th-academy-awards/18719481/"
+ },
+ {
+  "id": "aq1kul",
+  "s": "Film",
+  "q": "Welche Schauspielerin gewann viermal den Oscar als beste Hauptdarstellerin (Stand 2026)?",
+  "a": [
+   "Katharine Hepburn",
+   "Meryl Streep",
+   "Frances McDormand",
+   "Ingrid Bergman"
+  ],
+  "w": [
+   "",
+   "Streep gewann dreimal, davon zweimal als Hauptdarstellerin.",
+   "McDormand gewann dreimal als Hauptdarstellerin.",
+   "Bergman gewann dreimal, einmal als Nebendarstellerin."
+  ],
+  "e": "Hepburn gewann 1934, 1968, 1969 und 1982. Kein anderer Mensch hat vier Schauspiel-Oscars.",
+  "h": "Vier Mal zwischen 1934 und 1982.",
+  "d": 3
+ },
+ {
+  "id": "1wbebrk",
+  "s": "Film",
+  "q": "Wofür steht der Begriff „Film noir“?",
+  "a": [
+   "Düstere Kriminalfilme",
+   "Expressionistische Horrorfilme",
+   "Frühe Stummfilme",
+   "Schwarzhumorige Komödien"
+  ],
+  "w": [
+   "",
+   "Expressionistische Horrorfilme prägten die Stummfilmzeit.",
+   "Stummfilme sind kein eigenes Genre.",
+   "Schwarze Komödien haben mit „noir“ nichts zu tun."
+  ],
+  "e": "Der Begriff kommt aus dem Französischen und bezeichnet Kriminalfilme der 1940er und 1950er mit Schatten, Zynismus und Antihelden.",
+  "h": "Französisch für „schwarz“.",
+  "d": 2
+ },
+ {
+  "id": "15l7ex",
+  "s": "Film",
+  "q": "Wer führte im Dezember 1895 in Paris erstmals öffentlich Filme gegen Eintritt vor?",
+  "a": [
+   "Die Brüder Lumière",
+   "Thomas Edison",
+   "Georges Méliès",
+   "Louis Daguerre"
+  ],
+  "w": [
+   "",
+   "Edison entwickelte das Kinetoskop, ein Guckkastengerät.",
+   "Méliès drehte später die ersten Fantasiefilme.",
+   "Daguerre erfand 1839 die Daguerreotypie."
+  ],
+  "e": "Auguste und Louis Lumière zeigten am 28. Dezember 1895 im Grand Café den Cinématographe.",
+  "h": "Ein französisches Geschwisterpaar.",
+  "d": 2
+ },
+ {
+  "id": "bb51hy",
+  "s": "Film",
+  "q": "Wer drehte 1902 den frühen Science-Fiction-Film „Die Reise zum Mond“?",
+  "a": [
+   "Georges Méliès",
+   "Fritz Lang",
+   "Thomas Edison",
+   "Charlie Chaplin"
+  ],
+  "w": [
+   "",
+   "Lang drehte „Metropolis“ erst 1927.",
+   "Edison war Erfinder und Produzent, drehte aber nicht diesen Film.",
+   "Chaplin wurde erst in den 1910er Jahren bekannt."
+  ],
+  "e": "Die Rakete in das Auge des Mondes ist eine der bekanntesten Szenen der Filmgeschichte.",
+  "h": "Trickfilmpionier.",
+  "d": 3
+ },
+ {
+  "id": "n7entw",
+  "s": "Film",
+  "q": "Welche Filmfigur machte Charlie Chaplin weltberühmt?",
+  "a": [
+   "Der Tramp",
+   "Der Butler",
+   "Der Detektiv",
+   "Der Clown"
+  ],
+  "w": [
+   "",
+   "Der Butler ist keine seiner Figuren.",
+   "Der Detektiv ist nicht seine Hauptfigur.",
+   "Der Clown ist nicht seine Hauptfigur."
+  ],
+  "e": "Chaplin trug Schnurrbart, Melone, Stock und zu große Schuhe.",
+  "h": "Melone und Stock.",
+  "d": 1
+ },
+ {
+  "id": "1kw5s6f",
+  "s": "Film",
+  "q": "Wer führte Regie bei „Taxi Driver“ (1976)?",
+  "a": [
+   "Martin Scorsese",
+   "Francis Ford Coppola",
+   "Brian De Palma",
+   "Sidney Lumet"
+  ],
+  "w": [
+   "",
+   "Coppola drehte „Der Pate“.",
+   "De Palma drehte „Scarface“.",
+   "Lumet drehte „Hundstage“."
+  ],
+  "e": "Robert De Niro spielt den Taxifahrer Travis Bickle.",
+  "h": "De Niro am Steuer.",
+  "d": 2
+ },
+ {
+  "id": "129ns50",
+  "s": "Film",
+  "q": "Wer führte Regie bei „Psycho“ (1960)?",
+  "a": [
+   "Alfred Hitchcock",
+   "Stanley Kubrick",
+   "Orson Welles",
+   "Billy Wilder"
+  ],
+  "w": [
+   "",
+   "Kubrick drehte „Shining“.",
+   "Welles drehte „Citizen Kane“.",
+   "Wilder drehte „Das Appartement“."
+  ],
+  "e": "Die Duschszene mit Janet Leigh gilt als eine der bekanntesten der Filmgeschichte.",
+  "h": "Master of Suspense.",
+  "d": 1
+ },
+ {
+  "id": "7ee3ue",
+  "s": "Film",
+  "q": "Wer schrieb die Romanvorlage zu „Der Herr der Ringe“?",
+  "a": [
+   "J. R. R. Tolkien",
+   "C. S. Lewis",
+   "George R. R. Martin",
+   "J. K. Rowling"
+  ],
+  "w": [
+   "",
+   "Lewis schrieb „Die Chroniken von Narnia“.",
+   "Martin schrieb „Das Lied von Eis und Feuer“.",
+   "Rowling schrieb „Harry Potter“."
+  ],
+  "e": "Tolkiens Roman erschien 1954 und 1955. Peter Jackson verfilmte ihn 2001 bis 2003.",
+  "h": "Oxford-Professor.",
+  "d": 1
+ },
+ {
+  "id": "uwqz72",
+  "s": "Film",
+  "q": "Welcher Spielberg-Film von 1975 gilt als erster Sommer-Blockbuster?",
+  "a": [
+   "Der weiße Hai",
+   "E.T.",
+   "Duell",
+   "Unheimliche Begegnung der dritten Art"
+  ],
+  "w": [
+   "",
+   "„E.T.“ erschien erst 1982.",
+   "„Duell“ war 1971 ein Fernsehfilm.",
+   "„Unheimliche Begegnung der dritten Art“ erschien 1977."
+  ],
+  "e": "„Der weiße Hai“ spielte als erster Film mehr als 100 Millionen Dollar in den USA ein.",
+  "h": "Ein Hai vor Amity Island.",
+  "d": 2
+ },
+ {
+  "id": "4yh8i5",
+  "s": "Film",
+  "q": "Welche Aufgabe hat der Cutter oder Editor bei einem Film?",
+  "a": [
+   "Er schneidet das Material",
+   "Er plant die Kamerabewegungen",
+   "Er leitet die Schauspieler am Set an",
+   "Er finanziert die Produktion"
+  ],
+  "w": [
+   "",
+   "Die Kamerabewegung plant der Kameramann.",
+   "Die Schauspieler leitet der Regisseur.",
+   "Die Finanzierung übernimmt der Produzent."
+  ],
+  "e": "Der Schnitt bringt Szenen in Reihenfolge, Rhythmus und Tempo. Er gilt oft als „zweite Regie“.",
+  "h": "Schere und Rhythmus.",
+  "d": 1
+ },
+ {
+  "id": "c43ons",
+  "s": "Film",
+  "q": "Was bezeichnet Alfred Hitchcock als „MacGuffin“?",
+  "a": [
+   "Ein Objekt, das die Handlung antreibt",
+   "Ein kurzer Auftritt des Regisseurs im eigenen Film",
+   "Ein typischer Filmschluss",
+   "Ein Filmzitat im Dialog"
+  ],
+  "w": [
+   "",
+   "Einen kurzen Auftritt nannte Hitchcock selbst Cameo.",
+   "Der MacGuffin ist kein Filmschluss.",
+   "Er hat nichts mit Zitaten zu tun."
+  ],
+  "e": "Der MacGuffin ist Anlass der Handlung, etwa ein Koffer oder Dokument. Für die Figuren zählt er, für die Zuschauer kaum.",
+  "h": "Das Ding, das alle wollen.",
+  "d": 3
+ },
+ {
+  "id": "19e2gl3",
+  "s": "Film",
+  "q": "Mit wie vielen Bildern pro Sekunde werden Kinofilme klassisch gedreht und gezeigt?",
+  "a": [
+   "24",
+   "16",
+   "30",
+   "60"
+  ],
+  "w": [
+   "",
+   "16 Bilder pro Sekunde war die Stummfilmgeschwindigkeit.",
+   "30 Bilder sind der US-Videostandard.",
+   "60 Bilder sind nicht Kinostandard."
+  ],
+  "e": "Seit dem Tonfilm gelten 24 Bilder pro Sekunde als Standard.",
+  "h": "Zweimal zwölf.",
+  "d": 2
+ },
+ {
+  "id": "1xb4l0q",
+  "s": "Film",
+  "q": "Welches Filmstudio hat einen brüllenden Löwen als Logo?",
+  "a": [
+   "Metro-Goldwyn-Mayer",
+   "Paramount",
+   "Universal",
+   "Warner Bros."
+  ],
+  "w": [
+   "",
+   "Paramount hat einen Berg mit Sternen als Logo.",
+   "Universal hat eine Weltkugel als Logo.",
+   "Warner hat einen Schild als Logo."
+  ],
+  "e": "Der Löwe heißt Leo und brüllt vor MGM-Filmen seit den 1920er Jahren.",
+  "h": "Löwe Leo.",
+  "d": 2
+ },
+ {
+  "id": "5btbgv",
+  "s": "Film",
+  "q": "Wie heißt die in Mumbai ansässige Hindi-Filmindustrie?",
+  "a": [
+   "Bollywood",
+   "Nollywood",
+   "Hollywood",
+   "Tollywood"
+  ],
+  "w": [
+   "",
+   "Nollywood ist die nigerianische Filmindustrie.",
+   "Hollywood steht in Los Angeles.",
+   "Tollywood ist die Telugu-Filmindustrie."
+  ],
+  "e": "Der Name verbindet Bombay (heute Mumbai) und Hollywood.",
+  "h": "Früher Bombay.",
+  "d": 1
+ },
+ {
+  "id": "12g33f9",
+  "s": "Film",
+  "q": "Welcher war der erste abendfüllende Zeichentrickfilm von Disney (1937)?",
+  "a": [
+   "Schneewittchen und die sieben Zwerge",
+   "Pinocchio",
+   "Bambi",
+   "Dumbo"
+  ],
+  "w": [
+   "",
+   "„Pinocchio“ erschien 1940.",
+   "„Bambi“ erschien 1942.",
+   "„Dumbo“ erschien 1941."
+  ],
+  "e": "Der Film war ein riesiger Erfolg und begründete Disneys Aufstieg.",
+  "h": "Ein Märchen der Brüder Grimm.",
+  "d": 2,
+  "lenOk": true
+ },
+ {
+  "id": "3x91qg",
+  "s": "Film",
+  "q": "Welches Studio produzierte „Toy Story“ (1995), den ersten komplett computeranimierten Spielfilm?",
+  "a": [
+   "Pixar",
+   "DreamWorks",
+   "Blue Sky",
+   "Illumination"
+  ],
+  "w": [
+   "",
+   "DreamWorks gründete 1994, schuf „Shrek“ 2001.",
+   "Blue Sky schuf „Ice Age“ 2002.",
+   "Illumination schuf „Ich – Einfach unverbesserlich“ 2010."
+  ],
+  "e": "Pixar arbeitete bei „Toy Story“ mit Disney zusammen.",
+  "h": "Lampe im Logo.",
+  "d": 2
+ },
+ {
+  "id": "1kyozkk",
+  "s": "Film",
+  "q": "Wer führte Regie bei „Chihiros Reise ins Zauberland“ (2001)?",
+  "a": [
+   "Hayao Miyazaki",
+   "Isao Takahata",
+   "Makoto Shinkai",
+   "Satoshi Kon"
+  ],
+  "w": [
+   "",
+   "Takahata drehte „Die letzten Glühwürmchen“.",
+   "Shinkai drehte „Your Name“.",
+   "Kon drehte „Perfect Blue“."
+  ],
+  "e": "Der Film gewann 2003 den Oscar als bester Animationsfilm.",
+  "h": "Studio Ghibli.",
+  "d": 2
+ },
+ {
+  "id": "1cbr375",
+  "s": "Film",
+  "q": "Wer spielte 1962 in „Dr. No“ erstmals James Bond im Kino?",
+  "a": [
+   "Sean Connery",
+   "Roger Moore",
+   "Pierce Brosnan",
+   "George Lazenby"
+  ],
+  "w": [
+   "",
+   "Moore spielte Bond erstmals 1973.",
+   "Brosnan spielte Bond erstmals 1995.",
+   "Lazenby spielte Bond 1969 einmal."
+  ],
+  "e": "Der Schotte Connery spielte Bond bis 1971 in sechs Filmen der offiziellen Reihe, 1983 noch einmal außerhalb davon.",
+  "h": "Ein Schotte.",
+  "d": 2
+ },
+ {
+  "id": "djimyy",
+  "s": "Film",
+  "q": "Wer schuf die Romanfigur James Bond?",
+  "a": [
+   "Ian Fleming",
+   "John le Carré",
+   "Graham Greene",
+   "Arthur Conan Doyle"
+  ],
+  "w": [
+   "",
+   "Le Carré schrieb „Der Spion, der aus der Kälte kam“.",
+   "Greene schrieb „Der dritte Mann“.",
+   "Doyle schuf Sherlock Holmes."
+  ],
+  "e": "Fleming veröffentlichte 1953 „Casino Royale“.",
+  "h": "Ehemaliger Geheimdienstler.",
+  "d": 2
+ },
+ {
+  "id": "b6dfyf",
+  "s": "Film",
+  "q": "Wer gewann 2020 den Oscar als bester Hauptdarsteller für „Joker“?",
+  "a": [
+   "Joaquin Phoenix",
+   "Heath Ledger",
+   "Jared Leto",
+   "Jack Nicholson"
+  ],
+  "w": [
+   "",
+   "Ledger gewann posthum den Nebendarsteller-Oscar für „The Dark Knight“.",
+   "Leto spielte den Joker in „Suicide Squad“.",
+   "Nicholson spielte den Joker in „Batman“ 1989."
+  ],
+  "e": "Phoenix gewann den Oscar bei der 92. Verleihung im Februar 2020.",
+  "h": "Hauptrolle.",
+  "d": 2
+ },
+ {
+  "id": "8chzm6",
+  "s": "Film",
+  "q": "Wer gewann 2010 als erste Frau den Regie-Oscar?",
+  "a": [
+   "Kathryn Bigelow",
+   "Jane Campion",
+   "Sofia Coppola",
+   "Greta Gerwig"
+  ],
+  "w": [
+   "",
+   "Campion gewann 2022 den Regie-Oscar.",
+   "Coppola wurde 2004 nominiert, gewann aber nicht.",
+   "Gerwig wurde bisher nicht für die Regie nominiert."
+  ],
+  "e": "Bigelow gewann für „Tödliches Kommando“ (The Hurt Locker).",
+  "h": "Irak-Kriegsfilm.",
+  "d": 2
+ },
+ {
+  "id": "1uf4eoa",
+  "s": "Film",
+  "q": "Wer spielte Vito Corleone in „Der Pate“ (1972) und gewann dafür den Oscar?",
+  "a": [
+   "Marlon Brando",
+   "Al Pacino",
+   "Robert De Niro",
+   "Robert Duvall"
+  ],
+  "w": [
+   "",
+   "Pacino spielte Michael Corleone.",
+   "De Niro spielte den jungen Vito in Teil II.",
+   "Duvall spielte Tom Hagen."
+  ],
+  "e": "Brando lehnte den Oscar ab und schickte eine Vertreterin.",
+  "h": "Der Pate persönlich.",
+  "d": 2
+ },
+ {
+  "id": "jmohs",
+  "s": "Film",
+  "q": "Wie heißt der französische Filmpreis, vergleichbar mit dem Oscar?",
+  "a": [
+   "César",
+   "Goya",
+   "BAFTA",
+   "David di Donatello"
+  ],
+  "w": [
+   "",
+   "Der Goya ist der spanische Filmpreis.",
+   "Der BAFTA ist der britische Filmpreis.",
+   "Der David di Donatello ist der italienische Filmpreis."
+  ],
+  "e": "Der César wird seit 1976 verliehen.",
+  "h": "Name eines Bildhauers.",
+  "d": 3
+ },
+ {
+  "id": "1h6ne1p",
+  "s": "Film",
+  "q": "Wer spielte Neo in „Matrix“ (1999)?",
+  "a": [
+   "Keanu Reeves",
+   "Brad Pitt",
+   "Tom Cruise",
+   "Johnny Depp"
+  ],
+  "w": [
+   "",
+   "Pitt spielte „Fight Club“.",
+   "Cruise spielte „Mission: Impossible“.",
+   "Depp spielte Jack Sparrow."
+  ],
+  "e": "Regie führten die Wachowskis. Die Hauptrolle spielte Keanu Reeves.",
+  "h": "Rote oder blaue Pille.",
+  "d": 1
+ },
+ {
+  "id": "1yjwdab",
+  "s": "Film",
+  "q": "Wer drehte „Lola rennt“ (1998)?",
+  "a": [
+   "Tom Tykwer",
+   "Wim Wenders",
+   "Fatih Akin",
+   "Doris Dörrie"
+  ],
+  "w": [
+   "",
+   "Wenders drehte „Der Himmel über Berlin“.",
+   "Akin drehte „Gegen die Wand“.",
+   "Dörrie drehte „Männer“."
+  ],
+  "e": "Der Film mit Franka Potente wurde international erfolgreich.",
+  "h": "Läuft durch Berlin.",
+  "d": 2
+ },
+ {
+  "id": "zaqv7x",
+  "s": "Film",
+  "q": "Mit welchem Film begann 2008 das Marvel Cinematic Universe?",
+  "a": [
+   "Iron Man",
+   "Der unglaubliche Hulk",
+   "Thor",
+   "The Avengers"
+  ],
+  "w": [
+   "",
+   "„Der unglaubliche Hulk“ erschien im selben Jahr als zweiter Film.",
+   "„Thor“ erschien 2011.",
+   "„The Avengers“ erschien 2012."
+  ],
+  "e": "„Iron Man“ mit Robert Downey Jr. kam im Mai 2008 in die Kinos.",
+  "h": "Mann im Anzug.",
+  "d": 2
+ },
+ {
+  "id": "44b0bt",
+  "s": "Film",
+  "q": "Was ist ein „Director’s Cut“?",
+  "a": [
+   "Die Schnittfassung des Regisseurs",
+   "Der erste Rohschnitt",
+   "Die gekürzte Fassung für das Fernsehen",
+   "Eine gekürzte Kinofassung"
+  ],
+  "w": [
+   "",
+   "Der Rohschnitt heißt Rough Cut.",
+   "Fernsehfassungen entstehen meist durch Kürzungen.",
+   "Gekürzte Fassungen widersprechen meist dem Begriff."
+  ],
+  "e": "Ein Director’s Cut zeigt den Film so, wie der Regisseur ihn vorgesehen hat.",
+  "h": "Wunschfassung.",
+  "d": 2
+ },
+ {
+  "id": "a66es9",
+  "s": "Musik",
+  "q": "Welcher Komponist schrieb die 9. Sinfonie mit der „Ode an die Freude“?",
+  "a": [
+   "Ludwig van Beethoven",
+   "Wolfgang Amadeus Mozart",
+   "Johann Sebastian Bach",
+   "Franz Schubert"
+  ],
+  "w": [
+   "",
+   "Mozart schrieb 41 Sinfonien, aber keine „Ode an die Freude“.",
+   "Bach schrieb keine Sinfonien im klassischen Sinn.",
+   "Schubert schrieb die „Unvollendete“."
+  ],
+  "e": "Uraufführung 1824 in Wien. Die Melodie ist die Hymne der Europäischen Union.",
+  "h": "Chorsinfonie.",
+  "d": 1
+ },
+ {
+  "id": "cuxz0r",
+  "s": "Musik",
+  "q": "In welcher Stadt wurde Mozart geboren?",
+  "a": [
+   "Salzburg",
+   "Wien",
+   "Prag",
+   "Linz"
+  ],
+  "w": [
+   "",
+   "Wien war sein Wohnort ab 1781 und sein Sterbeort.",
+   "Prag war Ort der Uraufführung von „Don Giovanni“.",
+   "Linz ist Namensgeber der „Linzer Sinfonie“."
+  ],
+  "e": "Mozart kam 1756 in Salzburg zur Welt und starb 1791 in Wien.",
+  "h": "Stadt der Festspiele.",
+  "d": 1
+ },
+ {
+  "id": "1v4ymat",
+  "s": "Musik",
+  "q": "Welche Band veröffentlichte 1973 „The Dark Side of the Moon“?",
+  "a": [
+   "Pink Floyd",
+   "Led Zeppelin",
+   "The Rolling Stones",
+   "Queen"
+  ],
+  "w": [
+   "",
+   "Led Zeppelin veröffentlichte 1971 „IV“.",
+   "Die Rolling Stones veröffentlichten 1972 „Exile on Main St.“.",
+   "Queen veröffentlichte 1975 „A Night at the Opera“."
+  ],
+  "e": "Das Album blieb über 900 Wochen in den US-Charts und zählt zu den meistverkauften aller Zeiten.",
+  "h": "Prisma auf dem Cover.",
+  "d": 2
+ },
+ {
+  "id": "n7qug5",
+  "s": "Musik",
+  "q": "Wie viele Tasten hat ein Standardklavier?",
+  "a": [
+   "88",
+   "66",
+   "76",
+   "99"
+  ],
+  "w": [
+   "",
+   "66 Tasten sind keine Klavierstandardzahl.",
+   "76 Tasten haben manche Keyboards.",
+   "99 Tasten hat kein Standardklavier."
+  ],
+  "e": "52 weiße und 36 schwarze Tasten, zusammen sieben Oktaven und eine kleine Terz.",
+  "h": "Sieben Oktaven und mehr.",
+  "d": 1
+ },
+ {
+  "id": "127ukcb",
+  "s": "Musik",
+  "q": "Aus welchem Land stammt der Tango?",
+  "a": [
+   "Argentinien",
+   "Spanien",
+   "Kuba",
+   "Brasilien"
+  ],
+  "w": [
+   "",
+   "Spanien hat den Flamenco hervorgebracht.",
+   "Kuba ist Heimat von Son und Salsa.",
+   "Brasilien ist Heimat von Samba."
+  ],
+  "e": "Er entstand Ende des 19. Jahrhunderts in den Hafenvierteln von Buenos Aires und Montevideo.",
+  "h": "Hafenviertel am Río de la Plata.",
+  "d": 2
+ },
+ {
+  "id": "1i402s",
+  "s": "Musik",
+  "q": "Was bedeutet „forte“ in der Notenschrift?",
+  "a": [
+   "Laut",
+   "Schnell",
+   "Leise",
+   "Langsam"
+  ],
+  "w": [
+   "",
+   "„Allegro“ bedeutet schnell.",
+   "„Piano“ bedeutet leise.",
+   "„Adagio“ bedeutet langsam."
+  ],
+  "e": "Das Klavier heißt eigentlich „Pianoforte“: leise und laut. Die Abkürzung für forte ist f.",
+  "h": "Gegenteil von piano.",
+  "d": 1
+ },
+ {
+  "id": "1tm2uy8",
+  "s": "Musik",
+  "q": "Welcher Komponist schrieb die Oper „Die Zauberflöte“?",
+  "a": [
+   "Wolfgang Amadeus Mozart",
+   "Richard Wagner",
+   "Giuseppe Verdi",
+   "Richard Strauss"
+  ],
+  "w": [
+   "",
+   "Wagner schrieb „Tristan und Isolde“.",
+   "Verdi schrieb „Aida“.",
+   "Strauss schrieb „Der Rosenkavalier“."
+  ],
+  "e": "Uraufführung 1791, gut zwei Monate vor Mozarts Tod.",
+  "h": "Königin der Nacht.",
+  "d": 1
+ },
+ {
+  "id": "1ktry6n",
+  "s": "Musik",
+  "q": "Wie heißt das berühmte Opernhaus in Mailand?",
+  "a": [
+   "La Scala",
+   "Semperoper",
+   "Covent Garden",
+   "Metropolitan"
+  ],
+  "w": [
+   "",
+   "Die Semperoper steht in Dresden.",
+   "Covent Garden steht in London.",
+   "Die Metropolitan Opera steht in New York."
+  ],
+  "e": "Die Scala wurde 1778 eröffnet.",
+  "h": "Italiens Opernhaus Nummer eins.",
+  "d": 2
+ },
+ {
+  "id": "vrkwe8",
+  "s": "Musik",
+  "q": "Welcher Komponist schrieb „Die Moldau“?",
+  "a": [
+   "Bedřich Smetana",
+   "Antonín Dvořák",
+   "Leoš Janáček",
+   "Franz Liszt"
+  ],
+  "w": [
+   "",
+   "Dvořák schrieb die Sinfonie „Aus der Neuen Welt“.",
+   "Janáček schrieb „Jenůfa“.",
+   "Liszt schrieb „Les Préludes“."
+  ],
+  "e": "Die „Moldau“ ist Teil des Zyklus „Mein Vaterland“ (Má vlast) von 1874.",
+  "h": "Tschechischer Fluss.",
+  "d": 3
+ },
+ {
+  "id": "1or2sb8",
+  "s": "Musik",
+  "q": "In welcher Stadt wurde Johann Sebastian Bach geboren?",
+  "a": [
+   "Eisenach",
+   "Leipzig",
+   "Köthen",
+   "Weimar"
+  ],
+  "w": [
+   "",
+   "In Leipzig wirkte er als Thomaskantor.",
+   "In Köthen war er Hofkapellmeister.",
+   "In Weimar war er Hoforganist."
+  ],
+  "e": "Bach kam 1685 in Eisenach in Thüringen zur Welt und starb 1750 in Leipzig.",
+  "h": "Wartburg-Stadt.",
+  "d": 3
+ },
+ {
+  "id": "1fnzl6z",
+  "s": "Musik",
+  "q": "Aus wie vielen Halbtonschritten besteht eine Oktave?",
+  "a": [
+   "Zwölf",
+   "Acht",
+   "Zehn",
+   "Vierzehn"
+  ],
+  "w": [
+   "",
+   "Acht Töne hat die Dur-Tonleiter, nicht acht Halbtöne.",
+   "Zehn Halbtöne ergeben eine kleine Septime.",
+   "Vierzehn Halbtöne ergeben eine None."
+  ],
+  "e": "Die Oktave umfasst zwölf Halbtöne: sieben weiße und fünf schwarze Tasten.",
+  "h": "Zähle auf dem Klavier alle Tasten bis zur nächsten gleichnamigen.",
+  "d": 2
+ },
+ {
+  "id": "1qsynlo",
+  "s": "Musik",
+  "q": "Zu welcher Instrumentengruppe gehört die Querflöte?",
+  "a": [
+   "Holzblasinstrumente",
+   "Blechblasinstrumente",
+   "Streichinstrumente",
+   "Zupfinstrumente"
+  ],
+  "w": [
+   "",
+   "Blechblasinstrumente sind etwa Trompete und Posaune.",
+   "Streichinstrumente werden mit dem Bogen gespielt.",
+   "Zupfinstrumente sind etwa Harfe und Gitarre."
+  ],
+  "e": "Die Querflöte gehört zu den Holzblasinstrumenten, obwohl sie heute meist aus Metall besteht.",
+  "h": "Name verrät Material der Vergangenheit.",
+  "d": 2
+ },
+ {
+  "id": "l9ukwn",
+  "s": "Musik",
+  "q": "Wer komponierte die Oper „Carmen“?",
+  "a": [
+   "Georges Bizet",
+   "Giuseppe Verdi",
+   "Giacomo Puccini",
+   "Jacques Offenbach"
+  ],
+  "w": [
+   "",
+   "Verdi schrieb „La Traviata“.",
+   "Puccini schrieb „La Bohème“.",
+   "Offenbach schrieb „Hoffmanns Erzählungen“."
+  ],
+  "e": "Carmen wurde 1875 in Paris uraufgeführt und spielt in Sevilla.",
+  "h": "Franzose.",
+  "d": 2
+ },
+ {
+  "id": "4waesq",
+  "s": "Musik",
+  "q": "In welcher Stadt finden die Richard-Wagner-Festspiele statt?",
+  "a": [
+   "Bayreuth",
+   "Salzburg",
+   "München",
+   "Dresden"
+  ],
+  "w": [
+   "",
+   "Salzburg ist Festspielort für Mozart und Strauss.",
+   "München hat die Opernfestspiele, aber nicht die Wagner-Festspiele.",
+   "Dresden hat die Semperoper, aber keine Wagner-Festspiele."
+  ],
+  "e": "Wagner ließ das Festspielhaus auf dem Grünen Hügel bauen. Die ersten Festspiele fanden 1876 statt.",
+  "h": "Oberfranken.",
+  "d": 2
+ },
+ {
+  "id": "cy5x6u",
+  "s": "Musik",
+  "q": "Wer komponierte „An der schönen blauen Donau“?",
+  "a": [
+   "Johann Strauss",
+   "Franz Lehár",
+   "Johannes Brahms",
+   "Joseph Haydn"
+  ],
+  "w": [
+   "",
+   "Lehár schrieb „Die lustige Witwe“.",
+   "Brahms schrieb den „Ungarischen Tanz Nr. 5“.",
+   "Haydn schrieb die Melodie der Kaiserhymne."
+  ],
+  "e": "Der Walzer von 1867 gilt als inoffizielle Hymne Österreichs.",
+  "h": "Walzerkönig.",
+  "d": 2
+ },
+ {
+  "id": "1cytj1q",
+  "s": "Musik",
+  "q": "Welches Orchester spielt jedes Jahr das Neujahrskonzert in Wien?",
+  "a": [
+   "Die Wiener Philharmoniker",
+   "Die Wiener Symphoniker",
+   "Die Berliner Philharmoniker",
+   "Die Dresdner Staatskapelle"
+  ],
+  "w": [
+   "",
+   "Die Wiener Symphoniker sind ein anderes Wiener Orchester.",
+   "Die Berliner Philharmoniker spielen das Silvesterkonzert in Berlin.",
+   "Die Dresdner Staatskapelle spielt in Dresden."
+  ],
+  "e": "Das Neujahrskonzert findet seit 1941 im Goldenen Saal des Musikvereins statt.",
+  "h": "Goldener Saal.",
+  "d": 2
+ },
+ {
+  "id": "1e7hsd1",
+  "s": "Musik",
+  "q": "Wie heißt Georg Friedrich Händels berühmtes Oratorium mit dem „Halleluja“-Chor?",
+  "a": [
+   "Der Messias",
+   "Die Schöpfung",
+   "Elias",
+   "Matthäus-Passion"
+  ],
+  "w": [
+   "",
+   "„Die Schöpfung“ schrieb Haydn.",
+   "„Elias“ schrieb Mendelssohn.",
+   "Die „Matthäus-Passion“ schrieb Bach."
+  ],
+  "e": "„Messiah“ wurde 1742 in Dublin uraufgeführt. Bei dem Halleluja-Chor stehen Zuhörer traditionell auf.",
+  "h": "Englisch: Messiah.",
+  "d": 2
+ },
+ {
+  "id": "1rysdc7",
+  "s": "Musik",
+  "q": "Welches Michael-Jackson-Album von 1982 zählt zu den meistverkauften Alben aller Zeiten?",
+  "a": [
+   "Thriller",
+   "Bad",
+   "Dangerous",
+   "Off the Wall"
+  ],
+  "w": [
+   "",
+   "„Bad“ erschien 1987.",
+   "„Dangerous“ erschien 1991.",
+   "„Off the Wall“ erschien 1979."
+  ],
+  "e": "Von „Thriller“ wurden weltweit über 70 Millionen Exemplare verkauft.",
+  "h": "Gruselvideo.",
+  "d": 2
+ },
+ {
+  "id": "3z2yv",
+  "s": "Musik",
+  "q": "Welche Sängerin wird „Queen of Soul“ genannt?",
+  "a": [
+   "Aretha Franklin",
+   "Tina Turner",
+   "Whitney Houston",
+   "Diana Ross"
+  ],
+  "w": [
+   "",
+   "Tina Turner wird „Queen of Rock ’n’ Roll“ genannt.",
+   "Houston wird „The Voice“ genannt.",
+   "Ross war Sängerin der Supremes."
+  ],
+  "e": "Franklin sang „Respect“ (1967) und starb 2018.",
+  "h": "„Respect“.",
+  "d": 2
+ },
+ {
+  "id": "1222ug2",
+  "s": "Musik",
+  "q": "Wer erhielt 2016 den Nobelpreis für Literatur?",
+  "a": [
+   "Bob Dylan",
+   "Leonard Cohen",
+   "Paul Simon",
+   "Bruce Springsteen"
+  ],
+  "w": [
+   "",
+   "Cohen starb 2016, erhielt aber nie den Nobelpreis.",
+   "Simon wurde nicht ausgezeichnet.",
+   "Springsteen wurde nicht ausgezeichnet."
+  ],
+  "e": "Dylan war der erste Musiker, der den Preis erhielt, für „neue poetische Ausdrucksformen“.",
+  "h": "Ein Songwriter.",
+  "d": 2
+ },
+ {
+  "id": "1wt8phk",
+  "s": "Musik",
+  "q": "Wie hieß das berühmte Festival 1969 im US-Bundesstaat New York?",
+  "a": [
+   "Woodstock",
+   "Monterey",
+   "Altamont",
+   "Isle of Wight"
+  ],
+  "w": [
+   "",
+   "Monterey Pop fand 1967 in Kalifornien statt.",
+   "Altamont fand im Dezember 1969 in Kalifornien statt.",
+   "Isle of Wight fand 1970 in England statt."
+  ],
+  "e": "Woodstock fand im August 1969 auf einer Farm bei Bethel statt. Etwa 400.000 Besucher kamen.",
+  "h": "Drei Tage Frieden und Musik.",
+  "d": 1
+ },
+ {
+  "id": "1tkeuvw",
+  "s": "Musik",
+  "q": "In welchem Bundesland liegt das Heavy-Metal-Festival Wacken Open Air?",
+  "a": [
+   "Schleswig-Holstein",
+   "Niedersachsen",
+   "Bayern",
+   "Mecklenburg-Vorpommern"
+  ],
+  "w": [
+   "",
+   "Niedersachsen grenzt an Schleswig-Holstein, Wacken liegt dort aber nicht.",
+   "Bayern hat andere Festivals, etwa Rock im Park.",
+   "Mecklenburg-Vorpommern hat Festivals wie „Fusion“."
+  ],
+  "e": "Das Festival findet seit 1990 im Dorf Wacken im Kreis Steinburg statt.",
+  "h": "Im hohen Norden.",
+  "d": 2
+ },
+ {
+  "id": "1lnu8e8",
+  "s": "Musik",
+  "q": "Welche Deutsche gewann 2010 den Eurovision Song Contest mit „Satellite“?",
+  "a": [
+   "Lena Meyer-Landrut",
+   "Nicole",
+   "Helene Fischer",
+   "Sarah Connor"
+  ],
+  "w": [
+   "",
+   "Nicole gewann 1982 mit „Ein bisschen Frieden“.",
+   "Fischer trat nie beim ESC an.",
+   "Connor trat nie beim ESC an."
+  ],
+  "e": "Der ESC 2010 fand in Oslo statt. Lena trat 2011 erneut an.",
+  "h": "Oslo 2010.",
+  "d": 2
+ },
+ {
+  "id": "l23dgi",
+  "s": "Musik",
+  "q": "Welche schwedische Band gewann 1974 den Eurovision Song Contest mit „Waterloo“?",
+  "a": [
+   "ABBA",
+   "Roxette",
+   "Europe",
+   "Ace of Base"
+  ],
+  "w": [
+   "",
+   "Roxette wurde in den 1980ern bekannt.",
+   "Europe wurde mit „The Final Countdown“ bekannt.",
+   "Ace of Base wurde in den 1990ern bekannt."
+  ],
+  "e": "ABBA wurde nach dem ESC-Sieg weltbekannt.",
+  "h": "Vier Anfangsbuchstaben.",
+  "d": 1
+ },
+ {
+  "id": "1o6t3kj",
+  "s": "Musik",
+  "q": "In welchem New Yorker Stadtteil entstand in den 1970er Jahren der Hip-Hop?",
+  "a": [
+   "Bronx",
+   "Harlem",
+   "Brooklyn",
+   "Queens"
+  ],
+  "w": [
+   "",
+   "Harlem ist Heimat der Harlem Renaissance.",
+   "Brooklyn wurde später durch Rapper bekannt.",
+   "Queens wurde später durch Rapper bekannt."
+  ],
+  "e": "DJ Kool Herc legte 1973 bei einer Party in der Bronx die ersten Breakbeats auf.",
+  "h": "DJ Kool Herc.",
+  "d": 2
+ },
+ {
+  "id": "1059zkr",
+  "s": "Musik",
+  "q": "Wie viele Linien hat das Notensystem?",
+  "a": [
+   "Fünf",
+   "Vier",
+   "Sechs",
+   "Sieben"
+  ],
+  "w": [
+   "",
+   "Vier Linien hat das mittelalterliche Notensystem.",
+   "Sechs Linien hat das System der Gitarrentabulatur.",
+   "Sieben Linien hat das Notensystem nicht."
+  ],
+  "e": "Notenlinien werden von unten nach oben gezählt. Hilfslinien erweitern den Tonraum.",
+  "h": "Eine Hand voll.",
+  "d": 1
+ },
+ {
+  "id": "avy09l",
+  "s": "Musik",
+  "q": "Welcher Notenschlüssel steht meist am Anfang für hohe Instrumente wie Geige oder Flöte?",
+  "a": [
+   "Violinschlüssel",
+   "Bassschlüssel",
+   "Altschlüssel",
+   "Tenorschlüssel"
+  ],
+  "w": [
+   "",
+   "Der Bassschlüssel steht für tiefe Instrumente.",
+   "Der Altschlüssel steht für die Bratsche.",
+   "Der Tenorschlüssel steht für Fagott und Cello."
+  ],
+  "e": "Der Violinschlüssel ist ein G-Schlüssel und legt das g′ auf die zweite Linie fest.",
+  "h": "Auch G-Schlüssel.",
+  "d": 1
+ },
+ {
+  "id": "1ppaqlx",
+  "s": "Musik",
+  "q": "Was bedeutet die Tempoangabe „Adagio“?",
+  "a": [
+   "Langsam und ruhig",
+   "Schnell und lebhaft",
+   "Laut und kräftig",
+   "Leise und zart"
+  ],
+  "w": [
+   "",
+   "Schnell und lebhaft bedeutet „Allegro“.",
+   "Laut und kräftig bedeutet „forte“.",
+   "Leise und zart bedeutet „piano“."
+  ],
+  "e": "Adagio kommt aus dem Italienischen und bedeutet „gemächlich“.",
+  "h": "Gegenteil von Allegro.",
+  "d": 2
+ },
+ {
+  "id": "1szdplc",
+  "s": "Musik",
+  "q": "Welche Dur-Tonleiter hat keine Vorzeichen?",
+  "a": [
+   "C-Dur",
+   "G-Dur",
+   "F-Dur",
+   "A-Dur"
+  ],
+  "w": [
+   "",
+   "G-Dur hat ein Kreuz.",
+   "F-Dur hat ein b.",
+   "A-Dur hat drei Kreuze."
+  ],
+  "e": "Die Töne c bis h entsprechen den weißen Tasten des Klaviers.",
+  "h": "Nur weiße Tasten.",
+  "d": 2
+ },
+ {
+  "id": "1xdhsst",
+  "s": "Musik",
+  "q": "Aus wie vielen Tönen besteht eine Pentatonik?",
+  "a": [
+   "Fünf",
+   "Vier",
+   "Sechs",
+   "Sieben"
+  ],
+  "w": [
+   "",
+   "Vier Töne haben Tetrachorde.",
+   "Sechs Töne hat die Ganztonleiter.",
+   "Sieben Töne haben Dur und Moll."
+  ],
+  "e": "Pentatonische Tonleitern kommen in vielen Kulturen vor, etwa in Blues und Volksmusik.",
+  "h": "Von griech. „penta“.",
+  "d": 2
+ },
+ {
+  "id": "aixhos",
+  "s": "Musik",
+  "q": "In welcher Stadt entstand um 1900 der Jazz?",
+  "a": [
+   "New Orleans",
+   "Chicago",
+   "New York",
+   "Memphis"
+  ],
+  "w": [
+   "",
+   "Chicago wurde in den 1920ern ein Zentrum des Jazz.",
+   "New York wurde in den 1930ern ein Zentrum des Jazz.",
+   "Memphis wurde durch Blues und Rock ’n’ Roll bekannt."
+  ],
+  "e": "In New Orleans verschmolzen Blues, Ragtime und Marschmusik. Louis Armstrong wurde dort geboren.",
+  "h": "Mississippi-Mündung.",
+  "d": 2
+ },
+ {
+  "id": "quiqiz",
+  "s": "Musik",
+  "q": "Welches Album von Miles Davis erschien 1959 und zählt zu den meistverkauften Jazz-Alben?",
+  "a": [
+   "Kind of Blue",
+   "Bitches Brew",
+   "Birth of the Cool",
+   "Time Out"
+  ],
+  "w": [
+   "",
+   "„Bitches Brew“ erschien 1970.",
+   "„Birth of the Cool“ erschien 1957 als Zusammenstellung.",
+   "„Time Out“ ist von Dave Brubeck."
+  ],
+  "e": "„Kind of Blue“ gilt als Meilenstein des modalen Jazz.",
+  "h": "Blaue Stimmung.",
+  "d": 3
+ },
+ {
+  "id": "1ata0xo",
+  "s": "Musik",
+  "q": "Wer komponierte den „Boléro“ (1928)?",
+  "a": [
+   "Maurice Ravel",
+   "Claude Debussy",
+   "Erik Satie",
+   "Camille Saint-Saëns"
+  ],
+  "w": [
+   "",
+   "Debussy schrieb „Clair de Lune“.",
+   "Satie schrieb die „Gymnopédies“.",
+   "Saint-Saëns schrieb „Karneval der Tiere“."
+  ],
+  "e": "Der Boléro besteht aus einem Thema, das sich steigert und mit dem Orchester wächst.",
+  "h": "Franzose.",
+  "d": 2
+ },
+ {
+  "id": "1duc1il",
+  "s": "Musik",
+  "q": "Wer komponierte das Ballett „Schwanensee“?",
+  "a": [
+   "Pjotr Tschaikowski",
+   "Igor Strawinsky",
+   "Sergei Prokofjew",
+   "Modest Mussorgski"
+  ],
+  "w": [
+   "",
+   "Strawinsky schrieb „Der Feuervogel“.",
+   "Prokofjew schrieb „Romeo und Julia“.",
+   "Mussorgski schrieb „Bilder einer Ausstellung“."
+  ],
+  "e": "Tschaikowski schrieb das Ballett 1875/76. Es folgten „Dornröschen“ und „Der Nussknacker“.",
+  "h": "Russischer Romantiker.",
+  "d": 2
+ },
+ {
+  "id": "pyx4x9",
+  "s": "Musik",
+  "q": "In welchem Takt steht ein Walzer?",
+  "a": [
+   "Dreivierteltakt",
+   "Zweivierteltakt",
+   "Viervierteltakt",
+   "Sechsachteltakt"
+  ],
+  "w": [
+   "",
+   "Der Zweivierteltakt ist typisch für Marsch und Polka.",
+   "Der Viervierteltakt ist typisch für Pop.",
+   "Der Sechsachteltakt ist typisch für Jig und Tarantella."
+  ],
+  "e": "Der Walzer hat drei Schläge pro Takt: eins, zwei, drei.",
+  "h": "Drei Schläge.",
+  "d": 1
+ },
+ {
+  "id": "qqze4",
+  "s": "Musik",
+  "q": "Wer schrieb den Text der „Ode an die Freude“, die Beethoven vertonte?",
+  "a": [
+   "Friedrich Schiller",
+   "Johann Wolfgang von Goethe",
+   "Heinrich Heine",
+   "Friedrich Hölderlin"
+  ],
+  "w": [
+   "",
+   "Goethe schrieb „Faust“.",
+   "Heine schrieb „Die Loreley“.",
+   "Hölderlin schrieb „Hyperion“."
+  ],
+  "e": "Schiller schrieb das Gedicht 1785. Beethoven verwendete einen Teil davon im Schlusssatz.",
+  "h": "Dichter von „Die Räuber“.",
+  "d": 2
+ },
+ {
+  "id": "1qfhfxr",
+  "s": "Musik",
+  "q": "Welche Band schrieb „Smoke on the Water“ (1972)?",
+  "a": [
+   "Deep Purple",
+   "Black Sabbath",
+   "Led Zeppelin",
+   "Uriah Heep"
+  ],
+  "w": [
+   "",
+   "Black Sabbath schrieb „Paranoid“.",
+   "Led Zeppelin schrieb „Stairway to Heaven“.",
+   "Uriah Heep schrieb „Easy Livin’“."
+  ],
+  "e": "Das Riff handelt von einem Brand im Casino von Montreux am Genfer See.",
+  "h": "Berühmtes Gitarrenriff.",
+  "d": 2
+ },
+ {
+  "id": "eea7mk",
+  "s": "Musik",
+  "q": "Von wem stammt die Melodie der deutschen Nationalhymne?",
+  "a": [
+   "Joseph Haydn",
+   "Ludwig van Beethoven",
+   "Wolfgang Amadeus Mozart",
+   "Richard Wagner"
+  ],
+  "w": [
+   "",
+   "Beethoven schrieb die „Ode an die Freude“.",
+   "Mozart schrieb „Eine kleine Nachtmusik“.",
+   "Wagner schrieb „Der Ring des Nibelungen“."
+  ],
+  "e": "Haydn komponierte die Melodie 1797 als Kaiserhymne. August Heinrich Hoffmann von Fallersleben schrieb 1841 den Text.",
+  "h": "Österreichischer Klassiker.",
+  "d": 2
+ },
+ {
+  "id": "fovubi",
+  "s": "Musik",
+  "q": "Aus welcher Stadt stammen die Beatles?",
+  "a": [
+   "Liverpool",
+   "London",
+   "Manchester",
+   "Birmingham"
+  ],
+  "w": [
+   "",
+   "London war ihr späterer Wohnsitz.",
+   "Manchester ist die Heimat von Oasis.",
+   "Birmingham ist die Heimat von Black Sabbath."
+  ],
+  "e": "Die Beatles gründeten sich um 1960 in Liverpool und spielten in Hamburg.",
+  "h": "Hafenstadt.",
+  "d": 1
+ },
+ {
+  "id": "1bd12cd",
+  "s": "Musik",
+  "q": "Welche Band veröffentlichte 1975 „Bohemian Rhapsody“?",
+  "a": [
+   "Queen",
+   "Led Zeppelin",
+   "The Who",
+   "Pink Floyd"
+  ],
+  "w": [
+   "",
+   "Led Zeppelin veröffentlichte „Stairway to Heaven“.",
+   "The Who veröffentlichte „Baba O’Riley“.",
+   "Pink Floyd veröffentlichte „Wish You Were Here“."
+  ],
+  "e": "Der Song des Albums „A Night at the Opera“ dauert knapp sechs Minuten.",
+  "h": "Freddie Mercury.",
+  "d": 1
+ },
+ {
+  "s": "Musik",
+  "q": "Was ist ein Refrain?",
+  "a": [
+   "Der wiederkehrende Teil eines Liedes",
+   "Das Instrumentalsolo in der Mitte",
+   "Die erste Strophe eines Liedes",
+   "Das langsame Ausblenden am Ende"
+  ],
+  "w": [
+   "",
+   "Ein Solo ist ein instrumentaler Teil, der meist nicht wiederkehrt.",
+   "Strophen haben meist wechselnde Texte.",
+   "Das nennt man Fade-out."
+  ],
+  "e": "Der Refrain (Kehrvers) kehrt mit gleichem Text und gleicher Melodie mehrfach wieder, zwischen den Strophen.",
+  "h": "Spätestens beim zweiten Mal singt das Publikum mit.",
+  "d": 1,
+  "id": "n1975098"
+ },
+ {
+  "s": "Musik",
+  "q": "Welche Musikrichtung entstand in den 1970ern auf Jamaika und wurde durch Bob Marley weltbekannt?",
+  "a": [
+   "Reggae",
+   "Salsa",
+   "Calypso",
+   "Bossa Nova"
+  ],
+  "w": [
+   "",
+   "Salsa entstand vor allem in New York aus kubanischen Wurzeln.",
+   "Calypso stammt aus Trinidad und Tobago.",
+   "Bossa Nova stammt aus Brasilien."
+  ],
+  "e": "Reggae entwickelte sich Ende der 1960er aus Ska und Rocksteady; Bob Marley machte ihn in den 1970ern international bekannt.",
+  "h": "„One Love“.",
+  "d": 1,
+  "id": "na6086a9"
+ },
+ {
+  "s": "Film",
+  "q": "Was bedeutet die FSK-Freigabe „ab 12“?",
+  "a": [
+   "Kinder ab 12 dürfen den Film sehen",
+   "Der Film dauert 12 Minuten",
+   "Der Film hat 12 Kapitel",
+   "Er läuft nur ab 12 Uhr"
+  ],
+  "w": [
+   "",
+   "Mit der Laufzeit hat die FSK nichts zu tun.",
+   "Die Freigabe bezieht sich nicht auf Kapitel.",
+   "Uhrzeiten regelt die FSK nicht."
+  ],
+  "e": "Die Freiwillige Selbstkontrolle der Filmwirtschaft (FSK) gibt Altersstufen 0, 6, 12, 16 und 18 vor. Ab 6 Jahren dürfen Kinder „ab 12“-Filme im Kino in Begleitung eines Elternteils sehen.",
+  "h": "Es geht um das Alter.",
+  "d": 1,
+  "id": "na0472b7"
+ }
 ]

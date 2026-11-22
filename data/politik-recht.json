@@ -85,7 +85,7 @@
   "q": "Wer wählt den Bundespräsidenten?",
   "a": [
    "Die Bundesversammlung",
-   "Das Volk in direkter Wahl",
+   "Das Volk direkt",
    "Der Bundestag allein",
    "Der Bundesrat"
   ],
@@ -366,7 +366,7 @@
   "a": [
    "Zwei Drittel in Bundestag und Bundesrat",
    "Einfache Mehrheit im Bundestag",
-   "Drei Viertel aller Wahlberechtigten per Volksentscheid",
+   "Drei Viertel der Wahlberechtigten",
    "Einstimmigkeit im Bundestag"
   ],
   "w": [
@@ -405,7 +405,7 @@
   "q": "Was geschieht bei der Vertrauensfrage nach Art. 68 GG?",
   "a": [
    "Der Kanzler beantragt das Vertrauen des Bundestages",
-   "Das Volk stimmt in einem Referendum über die Regierung ab",
+   "Das Volk stimmt über die Regierung ab",
    "Der Bundesrat entscheidet über den Kanzler",
    "Das Verfassungsgericht prüft die Regierung"
   ],
@@ -705,7 +705,7 @@
   "q": "Wer wählt die Richter des Bundesverfassungsgerichts?",
   "a": [
    "Bundestag und Bundesrat je zur Hälfte",
-   "Der Bundespräsident allein auf Vorschlag der Regierung",
+   "Der Bundespräsident allein",
    "Die Bundesregierung",
    "Das Gericht selbst"
   ],
@@ -744,8 +744,8 @@
   "s": "Staat & Wahlen",
   "q": "Wer kann in Deutschland eine Partei verbieten?",
   "a": [
-   "Das Bundesverfassungsgericht",
-   "Der Bundestag mit Zweidrittelmehrheit",
+   "Nur das Bundesverfassungsgericht",
+   "Der Bundestag mit Mehrheit",
    "Der Bundespräsident",
    "Die Bundesregierung"
   ],
@@ -785,7 +785,7 @@
   "q": "Welches Wahlsystem gilt für das britische Unterhaus?",
   "a": [
    "Mehrheitswahl in Wahlkreisen",
-   "Verhältniswahl über landesweite Parteilisten",
+   "Reine Verhältniswahl",
    "Wahl durch Wahlmänner",
    "Wahl durch das Oberhaus"
   ],
@@ -804,7 +804,7 @@
   "s": "Staat & Wahlen",
   "q": "Muss man bei der Bundestagswahl die Briefwahl begründen?",
   "a": [
-   "Nein, ohne Angabe von Gründen",
+   "Nein, sie kann ohne Grund beantragt werden",
    "Ja, nur bei Krankheit",
    "Ja, nur bei Auslandsaufenthalt",
    "Briefwahl gibt es nicht"
@@ -824,7 +824,7 @@
   "s": "Staat & Wahlen",
   "q": "An welchem Wochentag finden Bundestagswahlen statt?",
   "a": [
-   "An einem Sonntag oder Feiertag",
+   "An einem Sonntag oder gesetzlichen Feiertag",
    "Immer samstags",
    "An einem Werktag",
    "Immer am ersten Sonntag im Oktober"
@@ -886,7 +886,7 @@
   "a": [
    "Kommunale Selbstverwaltung",
    "Eigene Bundesgesetzgebung",
-   "Eigene Strafgerichte mit Laienrichtern",
+   "Eigene Strafgerichte",
    "Eine eigene Währung"
   ],
   "w": [
@@ -945,7 +945,7 @@
   "q": "Welche Volksabstimmungen sind auf Bundesebene im Grundgesetz vorgesehen?",
   "a": [
    "Nur bei der Länderneugliederung",
-   "Bei jedem vom Bundestag beschlossenen Gesetz",
+   "Bei jedem Bundesgesetz",
    "Bei der Kanzlerwahl",
    "Beim Bundeshaushalt"
   ],
@@ -964,7 +964,7 @@
   "s": "Staat & Wahlen",
   "q": "Welchen Zweck hat der Vermittlungsausschuss?",
   "a": [
-   "Streit zwischen Bundestag und Bundesrat lösen",
+   "Konflikte zwischen Bundestag und Bundesrat über Gesetze lösen",
    "Streit zwischen Koalitionspartnern schlichten",
    "Tarifkonflikte schlichten",
    "Streit zwischen Bund und EU lösen"
@@ -1004,8 +1004,8 @@
   "s": "Staat & Wahlen",
   "q": "Welche Aufgabe hat der Bundeswahlleiter?",
   "a": [
-   "Wahl organisieren, Ergebnis feststellen",
-   "Die Kandidaten aller Parteien prüfen und auswählen",
+   "Wahl organisieren und Ergebnis feststellen",
+   "Kandidaten der Parteien auswählen",
    "Wahlkreisgrenzen festlegen",
    "Wahlwerbung der Parteien bezahlen"
   ],
@@ -1044,9 +1044,9 @@
   "s": "Staat & Wahlen",
   "q": "Was bedeutet Föderalismus?",
   "a": [
-   "Bund und Länder teilen sich die Staatsgewalt",
+   "Staatsgewalt ist zwischen Bund und Ländern aufgeteilt",
    "Alle Macht liegt beim Zentralstaat",
-   "Der Staat wird von einem Monarchen auf Lebenszeit geführt",
+   "Der Staat wird von einem Monarchen geführt",
    "Das Parlament wählt die Richter"
   ],
   "w": [
@@ -1065,7 +1065,7 @@
   "q": "Wo tagt der Deutsche Bundestag?",
   "a": [
    "Im Reichstagsgebäude in Berlin",
-   "Im Bundeshaus am Rheinufer in Bonn",
+   "Im Bundeshaus in Bonn",
    "Im Bundeskanzleramt",
    "Im Schloss Bellevue"
   ],
@@ -1144,7 +1144,7 @@
   "s": "Recht im Alltag",
   "q": "Wie errichtet man in Deutschland ein Testament ohne Notar gültig?",
   "a": [
-   "Komplett handschriftlich, unterschrieben",
+   "Komplett handschriftlich und mit Unterschrift",
    "Am Computer geschrieben und unterschrieben",
    "Mit zwei Zeugen und Stempel",
    "Mündlich vor der Familie"

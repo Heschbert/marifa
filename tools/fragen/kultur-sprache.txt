@@ -67,3 +67,23 @@
 +{"s": "Philosophie & Ideen", "q": "Was beschreibt „Ockhams Rasiermesser“?", "a": ["Die einfachste Erklärung ist meist vorzuziehen", "Jede Theorie muss scharf formuliert sein", "Zweifel müssen immer radikal sein", "Man soll Argumente in Teile zerlegen"], "w": ["", "Es geht um Sparsamkeit der Annahmen, nicht um Formulierung.", "Das wäre eher der methodische Zweifel bei Descartes.", "Das beschreibt Analyse, nicht Ockhams Prinzip."], "e": "Von mehreren Erklärungen, die gleich gut passen, ist die mit den wenigsten Annahmen vorzuziehen. Es ist eine Faustregel, kein Beweis.", "h": "Unnötiges wegschneiden.", "d": 2}
 ?46t1xk|Stell dir vor, jeder täte es.
 ?1qtx1j6|Mehr Wörter als nötig.
+# Dubletten zu anderen Bereichen
+-odeh7p
+-ppljm7
+-m45xni
+-uysfk2
+-aq87hb
+-lvvwhg
+-5dr7a2
+# Rückausgleich gegen Überkorrektur (automatisch)
+~46t1xk|Nur nach Regeln handeln, die man als allgemeines Gesetz wollen kann|Das größte Glück der meisten anstreben|Anderen nicht antun, was man selbst nicht will|Nach Macht und Erfolg streben
+~1s02rt5|Habe Mut, dich deines eigenen Verstandes zu bedienen|Ich denke, also bin ich|Gott ist tot, wir haben ihn getötet|Alles fließt, nichts bleibt
+~1cw35rp|Welche Handlung bringt das größte Glück für die meisten?|Welche Regel gilt ohne Ausnahme?|Was verlangt ein göttliches Gebot?|Was entspricht der Natur des Menschen?
+~qi173p|Sie ist die beste aller möglichen Welten|Sie ist die schlechteste aller Welten|Sie ist nur Illusion|Sie hat keinen Sinn
+~1ytin50|Theorie des kommunikativen Handelns|Kritischer Rationalismus|Phänomenologie|Pragmatismus
+~1yq4v3t|Der Schleier des Nichtwissens|Der Wille zur Macht|Die unsichtbare Hand|Der Naturzustand
+~agczwt|Mit Quellen, Grenzen und Gültigkeit von Wissen|Mit dem Wesen des Schönen|Mit moralischen Normen|Mit dem Ursprung des Universums
+~lnbv00|Wovon man nicht sprechen kann, darüber muss man schweigen|Das Leben ist ein Spiel|Der Mensch ist ein Wolf dem Menschen|Die Grenzen meiner Welt sind unbegrenzt
+~ijang1|Freiheit endet dort, wo anderen Schaden zugefügt wird|Freiheit gilt nur für Staatsbürger|Freiheit ist die Einsicht in die Notwendigkeit|Freiheit besteht in Gehorsam
+~kadtbs|Pflicht und Menschlichkeit in sozialen Beziehungen|Rückzug aus der Gesellschaft|Verneinung des Leidens durch Nirwana|Vorherrschaft des Staates über das Individuum
+~c34s60|Das Dao, der natürliche Weg|Die Vier Edlen Wahrheiten|Der Gesellschaftsvertrag|Die Ideenlehre

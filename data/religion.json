@@ -1,83 +1,1662 @@
 [
-{"id":"8z90td","s":"Weltreligionen","q":"Welche Religion hatte 2020 laut Pew Research weltweit die meisten Anhänger?","a":["Christentum","Islam","Hinduismus","Buddhismus"],"w":["","Der Islam lag 2020 mit etwa 25,6 % der Weltbevölkerung auf Platz zwei.","Der Hinduismus folgt mit etwa 15 % erst an dritter Stelle.","Der Buddhismus kommt auf nur etwa 4 % der Weltbevölkerung."],"e":"Pew zählte 2020 rund 2,3 Milliarden Christen (28,8 %), danach Muslime (25,6 %) und Hindus (14,9 %).","h":"Auf die Zahl der Anhänger kommt es an, nicht auf die Verbreitung in einzelnen Ländern.","d":2},
-{"id":"1xwxdkj","s":"Weltreligionen","q":"Wie heißt die heilige Schrift des Islams?","a":["Koran","Tora","Veda","Talmud"],"w":["","Die Tora sind die fünf Bücher Mose im Judentum.","Die Veda sind die ältesten heiligen Texte des Hinduismus.","Der Talmud ist die Sammlung rabbinischer Lehrdiskussionen im Judentum."],"e":"Der Koran hat 114 Suren und gilt Muslimen als dem Propheten Mohammed durch den Erzengel Gabriel offenbart.","h":"Das Wort bedeutet „Rezitation“.","d":1},
-{"id":"1y53d1z","s":"Weltreligionen","q":"Wie viele Säulen hat der Islam?","a":["Fünf","Drei","Sieben","Zehn"],"w":["","Es sind fünf, nicht drei: Bekenntnis, Gebet, Almosen, Fasten, Pilgerfahrt.","Sieben ist falsch, der Islam zählt fünf Säulen.","Zehn ist falsch, das erinnert eher an die Zehn Gebote."],"e":"Die fünf Säulen sind Schahada, Salat, Zakat, Sawm und Hadsch.","h":"So viele wie Finger an einer Hand.","d":1},
-{"id":"154cqzf","s":"Weltreligionen","q":"Wer gilt als Begründer des Buddhismus?","a":["Siddhartha Gautama","Konfuzius","Laozi","Zarathustra"],"w":["","Konfuzius war ein chinesischer Philosoph und gilt als Namensgeber des Konfuzianismus.","Laozi wird traditionell als Begründer des Daoismus genannt.","Zarathustra gilt als Stifter des Zoroastrismus in Iran."],"e":"Siddhartha Gautama lebte nach der Überlieferung vor rund 2.500 Jahren im Norden Indiens und wird „der Buddha“ (Erwachte) genannt.","h":"Sein Ehrentitel bedeutet „der Erwachte“.","d":1},
-{"id":"1a2nvi5","s":"Weltreligionen","q":"Wie heißt das jüdische Lichterfest?","a":["Chanukka","Pessach","Jom Kippur","Purim"],"w":["","Pessach erinnert an den Auszug aus Ägypten.","Jom Kippur ist der Versöhnungstag mit Fasten.","Purim erinnert an die Rettung der Juden im Buch Ester."],"e":"Chanukka dauert acht Tage und erinnert an die Wiedereinweihung des Tempels in Jerusalem; man zündet Kerzen am Leuchter an.","h":"Acht Tage lang wird ein Leuchter angezündet.","d":1},
-{"id":"1lijzsh","s":"Weltreligionen","q":"Welche Stadt gilt Juden, Christen und Muslimen als heilig?","a":["Jerusalem","Mekka","Rom","Medina"],"w":["","Mekka ist vor allem für Muslime heilig, Ziel der Hadsch.","Rom ist vor allem für Katholiken bedeutsam, Sitz des Papstes.","Medina ist für Muslime heilig, nicht für Juden und Christen."],"e":"In Jerusalem liegen Tempelberg, Grabeskirche und Felsendom; alle drei Religionen verbinden damit heilige Stätten.","h":"Klagemauer, Grabeskirche und Felsendom liegen dort.","d":1},
-{"id":"dapan8","s":"Weltreligionen","q":"Wie heißt der Fastenmonat der Muslime?","a":["Ramadan","Muharram","Safar","Schawwal"],"w":["","Muharram ist der erste Monat des islamischen Kalenders.","Safar ist der zweite Monat des islamischen Kalenders.","Schawwal ist der Monat nach dem Ramadan, er beginnt mit dem Fastenbrechen."],"e":"Im Ramadan, dem neunten Monat des Mondkalenders, wird von der Morgendämmerung bis zum Sonnenuntergang gefastet.","h":"Der neunte Monat des islamischen Mondjahres.","d":1},
-{"id":"1i0j3km","s":"Weltreligionen","q":"Was bezeichnet das Wort „Tora“ im engeren Sinn?","a":["Die fünf Bücher Mose","Das Neue Testament","Die Sammlung der Hadithe","Die Sprüche des Konfuzius"],"w":["","Das Neue Testament ist der zweite Teil der christlichen Bibel.","Hadithe sind Überlieferungen aus dem Leben Mohammeds im Islam.","Die Sprüche des Konfuzius heißen Gespräche (Lunyu)."],"e":"Die Tora umfasst Genesis, Exodus, Levitikus, Numeri und Deuteronomium und steht am Anfang der Hebräischen Bibel.","h":"Das Wort bedeutet „Weisung“ oder „Lehre“.","d":2},
-{"id":"roqfb8","s":"Weltreligionen","q":"Wie heißt das Fest zum Ende des Ramadan?","a":["Id al-Fitr","Id al-Adha","Aschura","Mawlid"],"w":["","Id al-Adha ist das Opferfest am Ende der Pilgerzeit.","Aschura ist ein Gedenktag, bei Schiiten der Trauertag um Husain.","Mawlid erinnert an den Geburtstag des Propheten Mohammed."],"e":"Das Fest des Fastenbrechens beginnt am 1. Schawwal und heißt im Deutschen oft Zuckerfest.","h":"Es wird auch Zuckerfest genannt.","d":1},
-{"id":"zyoth8","s":"Weltreligionen","q":"Wie heißt das Opferfest, das am 10. Tag des Monats Dhu l-Hiddscha beginnt?","a":["Id al-Adha","Id al-Fitr","Lailat al-Qadr","Neujahrsfest"],"w":["","Id al-Fitr beendet den Ramadan.","Lailat al-Qadr ist die Nacht der Bestimmung im Ramadan.","Das islamische Neujahr beginnt am 1. Muharram."],"e":"Id al-Adha erinnert an Ibrahims Bereitschaft zum Opfer und beendet die Hadsch.","h":"Es fällt in den letzten Monat des islamischen Jahres.","d":3},
-{"id":"1vk2ea7","s":"Weltreligionen","q":"Welches Ereignis markiert den Beginn der islamischen Zeitrechnung?","a":["Die Hidschra von Mekka nach Medina","Die erste Offenbarung am Berg Hira","Die Eroberung Mekkas","Die erste Pilgerfahrt Mohammeds"],"w":["","Die erste Offenbarung geschah schon vor der Hidschra und ist kein Epochenjahr.","Die Eroberung Mekkas folgte erst im Jahr 8 nach der Hidschra.","Die Abschiedspilgerfahrt fand erst kurz vor Mohammeds Tod statt."],"e":"Die Auswanderung von Mekka nach Medina im Jahr 622 n. Chr. ist das Jahr 1 des islamischen Kalenders.","h":"Das Jahr liegt im frühen 7. Jahrhundert.","d":3},
-{"id":"9vqp4l","s":"Weltreligionen","q":"Wie nennt man die Pilgerfahrt nach Mekka?","a":["Hadsch","Zakat","Salat","Schahada"],"w":["","Zakat ist die Almosenabgabe.","Salat ist das Pflichtgebet.","Schahada ist das Glaubensbekenntnis."],"e":"Die Hadsch ist eine der fünf Säulen und für Gläubige einmal im Leben Pflicht, wenn sie dazu in der Lage sind.","h":"Eine der fünf Säulen, einmal im Leben.","d":1},
-{"id":"p78ky2","s":"Weltreligionen","q":"Worin unterscheiden sich Sunniten und Schiiten ursprünglich?","a":["In der Frage der Nachfolge Mohammeds","In der Zahl der täglichen Gebete","In der heiligen Schrift","In der Sprache des Korans"],"w":["","Beide Richtungen beten fünfmal täglich, nur Details unterscheiden sich.","Beide verwenden denselben Koran.","Beide lesen den Koran auf Arabisch."],"e":"Schiiten sehen Ali, Mohammeds Cousin und Schwiegersohn, und seine Nachkommen als rechtmäßige Nachfolger; Sunniten akzeptierten Abu Bakr als Kalifen.","h":"Es ging um die Führung der Gemeinde nach 632.","d":3},
-{"id":"mir5lc","s":"Weltreligionen","q":"Wie heißt die erste Sure des Korans?","a":["Al-Fatiha","Al-Baqara","Al-Ikhlas","Yasin"],"w":["","Al-Baqara ist die zweite und längste Sure.","Al-Ikhlas ist die 112. Sure.","Yasin ist die 36. Sure."],"e":"Al-Fatiha („Die Eröffnende“) hat sieben Verse und wird in jedem Pflichtgebet gesprochen.","h":"Der Name bedeutet „Die Eröffnende“.","d":3},
-{"id":"17xvwke","s":"Weltreligionen","q":"Wie viele Suren hat der Koran?","a":["114","99","66","150"],"w":["","99 ist die Zahl der schönen Namen Gottes, nicht der Suren.","66 ist die Zahl der Bücher der evangelischen Bibel.","150 ist die Zahl der Psalmen der Bibel."],"e":"Der Koran ist in 114 Suren gegliedert, geordnet grob nach absteigender Länge.","h":"Eine Zahl knapp über 100.","d":3},
-{"id":"gjkuec","s":"Weltreligionen","q":"Was sind die „Vier Edlen Wahrheiten“ im Buddhismus?","a":["Lehre vom Leiden und seinem Ende","Vier Gebote für Mönche","Vier Götter des Himmels","Vier heilige Berge Asiens"],"w":["","Die Gebote für Mönche stehen im Vinaya, nicht in den Wahrheiten.","Der Buddhismus lehrt keine vier Hauptgötter.","Vier heilige Berge sind keine Lehre, sondern Pilgerorte in anderen Traditionen."],"e":"Sie handeln von Leiden (Dukkha), seiner Ursache, seinem Ende und dem Weg dorthin.","h":"Buddha begann mit der Frage nach dem Leid.","d":2},
-{"id":"13u7vha","s":"Weltreligionen","q":"Wie viele Glieder hat der Edle Achtfache Pfad?","a":["Acht","Vier","Zehn","Zwölf"],"w":["","Vier ist die Zahl der Edlen Wahrheiten, nicht der Pfadglieder.","Zehn ist falsch, der Name nennt die Zahl.","Zwölf ist die Zahl der Glieder des abhängigen Entstehens."],"e":"Rechte Ansicht, Absicht, Rede, Handlung, Lebensunterhalt, Anstrengung, Achtsamkeit und Sammlung.","h":"Die Zahl steckt im Namen.","d":1},
-{"id":"14kebju","s":"Weltreligionen","q":"Welche drei Hauptrichtungen unterscheidet man im Buddhismus?","a":["Theravada, Mahayana, Vajrayana","Zen, Reiner Boden, Nichiren","Sunna, Schia, Charidschiten","Shaiva, Vaishnava, Shakta"],"w":["","Das sind japanische Schulen, nicht die drei Hauptrichtungen.","Das sind Strömungen im Islam.","Das sind Richtungen im Hinduismus."],"e":"Theravada herrscht in Sri Lanka und Südostasien, Mahayana in Ostasien, Vajrayana besonders in Tibet.","h":"Die Namen enden alle auf „-yana“, Fahrzeug.","d":3},
-{"id":"1fhztcf","s":"Weltreligionen","q":"Welches Oberhaupt gilt im tibetischen Buddhismus als zentrale geistliche Autorität der Gelug-Schule?","a":["Dalai Lama","Papst","Großmufti","Patriarch"],"w":["","Der Papst ist Oberhaupt der katholischen Kirche.","Der Großmufti ist ein islamischer Rechtsgelehrter.","Der Patriarch ist ein Titel in orthodoxen Kirchen."],"e":"Der Dalai Lama gilt als Wiedergeburt seiner Vorgänger; seit 1642 war er auch weltliches Oberhaupt Tibets.","h":"Ein Titel mit mongolischem Wortteil für „Ozean“.","d":2},
-{"id":"11jrs7f","s":"Weltreligionen","q":"Wie heißt die heilige Schrift der Sikhs?","a":["Guru Granth Sahib","Bhagavad Gita","Avesta","Tripitaka"],"w":["","Die Bhagavad Gita ist ein Text des Hinduismus.","Die Avesta ist die Schrift des Zoroastrismus.","Das Tripitaka ist der buddhistische Palikanon."],"e":"Nach dem zehnten Guru, Gobind Singh, gilt das Buch selbst als ewiger Guru.","h":"Das Buch wird selbst als ewiger Lehrer verehrt.","d":3},
-{"id":"6drsws","s":"Weltreligionen","q":"Wer gilt als Gründer des Sikhismus?","a":["Guru Nanak","Guru Gobind Singh","Kabir","Ramakrishna"],"w":["","Guru Gobind Singh war der zehnte Guru und gründete 1699 die Khalsa.","Kabir war ein indischer Dichter-Mystiker des 15. Jahrhunderts.","Ramakrishna war ein bengalischer Hindu-Mystiker des 19. Jahrhunderts."],"e":"Guru Nanak (1469–1539) lehrte im Punjab einen einzigen Gott; ihm folgten neun weitere Gurus.","h":"Der erste von zehn Gurus.","d":3},
-{"id":"oq93vv","s":"Weltreligionen","q":"Wie heißt das Hauptheiligtum der Sikhs in Amritsar?","a":["Goldener Tempel","Lotustempel","Zahntempel","Bodhi-Tempel"],"w":["","Der Lotustempel in Neu-Delhi gehört zum Bahai-Glauben.","Der Zahntempel liegt in Kandy, Sri Lanka, und ist buddhistisch.","Der Mahabodhi-Tempel in Bodh Gaya ist buddhistisch."],"e":"Der Goldene Tempel (Harmandir Sahib) liegt in Amritsar im Punjab.","h":"Sein Dach ist mit Blattgold belegt.","d":2},
-{"id":"19h2x0d","s":"Weltreligionen","q":"Welche Götter bilden die Trimurti des Hinduismus?","a":["Brahma, Vishnu, Shiva","Rama, Krishna, Hanuman","Indra, Agni, Varuna","Ganesha, Lakshmi, Kali"],"w":["","Rama, Krishna und Hanuman sind Avatare oder Gefährten, keine Trimurti.","Indra, Agni und Varuna sind vedische Götter.","Ganesha, Lakshmi und Kali sind beliebte Gottheiten, bilden aber nicht die Trimurti."],"e":"Brahma gilt als Schöpfer, Vishnu als Erhalter und Shiva als Zerstörer und Erneuerer.","h":"Schöpfer, Erhalter, Zerstörer.","d":2},
-{"id":"rf6ai","s":"Weltreligionen","q":"Wie heißen die ältesten heiligen Texte des Hinduismus?","a":["Veden","Upanishaden","Puranas","Sutras"],"w":["","Die Upanishaden sind jüngere philosophische Texte am Ende der Veden-Tradition.","Die Puranas sind spätere Sammlungen von Götter- und Weltgeschichten.","Sutras sind Lehrsprüche, später als die Veden."],"e":"Die Veden entstanden in Sanskrit, der Rigveda ist der älteste Teil.","h":"Der Name bedeutet „Wissen“.","d":3},
-{"id":"1n641jo","s":"Weltreligionen","q":"Was bezeichnet „Karma“ im Hinduismus und Buddhismus?","a":["Die Wirkung von Handlungen auf die Zukunft","Die Befreiung aus dem Kreislauf","Die Wiedergeburt selbst","Die göttliche Weltordnung"],"w":["","Die Befreiung aus dem Kreislauf heißt Moksha (Hinduismus) oder Nirvana (Buddhismus).","Die Wiedergeburt heißt Samsara.","Die kosmische Ordnung heißt Dharma."],"e":"Karma bedeutet „Tat“ und beschreibt, wie Handlungen zu Folgen führen, auch in künftigen Leben.","h":"Wörtlich „Tat“.","d":3},
-{"id":"1ak8mkb","s":"Weltreligionen","q":"Wie heißt das hinduistische Lichterfest?","a":["Diwali","Holi","Vesak","Navaratri"],"w":["","Holi ist das Farbenfest im Frühling.","Vesak ist das buddhistische Fest zu Buddhas Geburt, Erleuchtung und Tod.","Navaratri ist ein Fest der neun Nächte zu Ehren der Göttin."],"e":"Diwali wird im Herbst gefeiert; Lichter symbolisieren den Sieg des Lichts über die Dunkelheit.","h":"Kleine Öllampen werden entzündet.","d":2},
-{"id":"1kruh90","s":"Weltreligionen","q":"In welchem Fluss baden Hindus besonders zur rituellen Reinigung?","a":["Ganges","Indus","Brahmaputra","Narmada"],"w":["","Der Indus liegt hauptsächlich in Pakistan und gab Indien den Namen.","Der Brahmaputra fließt durch Tibet, Indien und Bangladesch.","Die Narmada ist ein heiliger Fluss, aber weniger zentral."],"e":"Der Ganges gilt als Göttin Ganga; Varanasi ist die heilige Stadt an seinem Ufer.","h":"Fließt an Varanasi vorbei.","d":1},
-{"id":"q46q09","s":"Weltreligionen","q":"Was ist das Hauptmerkmal des Dschainismus?","a":["Gewaltlosigkeit gegenüber allen Lebewesen","Verehrung des Feuers","Glaube an einen Schöpfergott","Pflicht zur Pilgerfahrt"],"w":["","Feuer steht im Zoroastrismus im Zentrum.","Der Dschainismus kennt keinen Schöpfergott.","Eine Pflichtpilgerfahrt kennt der Islam."],"e":"Ahimsa (Gewaltlosigkeit) ist zentral; strenge Dschainas ernähren sich vegetarisch und achten selbst auf Kleinstlebewesen.","h":"Das Sanskritwort heißt Ahimsa.","d":3},
-{"id":"14fjs61","s":"Weltreligionen","q":"Wie heißt die Religion Japans, in der „Kami“ verehrt werden?","a":["Shintō","Daoismus","Konfuzianismus","Zen"],"w":["","Der Daoismus stammt aus China.","Der Konfuzianismus stammt aus China und ist eine Ethik.","Zen ist eine buddhistische Schule."],"e":"Shintō („Weg der Kami“) kennt keinen Gründer und keine feste Lehre; Heiligtümer erkennt man am Torii.","h":"Der Name bedeutet „Weg der Götter“.","d":2},
-{"id":"1jwb4wu","s":"Weltreligionen","q":"Welches Werk gilt als Grundtext des Daoismus?","a":["Daodejing","Bhagavad Gita","Lunyu","Avesta"],"w":["","Die Bhagavad Gita ist ein hinduistischer Text.","Das Lunyu enthält Sprüche des Konfuzius.","Die Avesta ist heilige Schrift der Parsen."],"e":"Das Daodejing wird Laozi zugeschrieben und hat 81 kurze Kapitel; zentral ist das Dao, der „Weg“.","h":"Der Titel enthält den „Weg“.","d":3},
-{"id":"12zkygw","s":"Weltreligionen","q":"Wie nennt man die Anhänger des Zoroastrismus in Indien?","a":["Parsen","Jainas","Sikhs","Bahai"],"w":["","Jainas folgen dem Dschainismus.","Sikhs folgen dem Sikhismus.","Bahai folgen der Bahai-Religion."],"e":"Parsen sind Nachkommen persischer Zoroastrier, die nach Gujarat und später Bombay kamen.","h":"Der Name erinnert an Persien.","d":3},
-{"id":"1iy5ook","s":"Weltreligionen","q":"Wer gilt als Stifter des Zoroastrismus?","a":["Zarathustra","Mani","Mazdak","Kyros"],"w":["","Mani gründete den Manichäismus.","Mazdak war ein persischer Reformer des 5. Jahrhunderts.","Kyros II. war Gründer des Perserreichs, kein Religionsstifter."],"e":"Zarathustra verkündete Ahura Mazda als obersten Gott; die heilige Schrift ist die Avesta.","h":"Bei Nietzsche sprach er ebenfalls.","d":2},
-{"id":"k65riv","s":"Weltreligionen","q":"Wie heißt der wöchentliche jüdische Ruhetag?","a":["Schabbat","Sukkot","Schawuot","Rosch Haschana"],"w":["","Sukkot ist das Laubhüttenfest.","Schawuot ist das Wochenfest.","Rosch Haschana ist das jüdische Neujahr."],"e":"Der Schabbat beginnt Freitagabend bei Sonnenuntergang und endet Samstagabend.","h":"Er beginnt am Vorabend.","d":2},
-{"id":"lzve6f","s":"Weltreligionen","q":"Wie heißt der höchste jüdische Feiertag mit Fasten und Versöhnung?","a":["Jom Kippur","Purim","Chanukka","Tischa beAw"],"w":["","Purim ist ein fröhliches Fest zur Erinnerung an Ester.","Chanukka ist das Lichterfest.","Tischa beAw ist ein Trauertag zur Tempelzerstörung."],"e":"Jom Kippur („Versöhnungstag“) folgt zehn Tage nach Rosch Haschana.","h":"Der Name bedeutet „Tag der Sühne“.","d":2},
-{"id":"1xx0ej3","s":"Weltreligionen","q":"Wie nennt man die Hebräische Bibel mit ihrem Fachbegriff?","a":["Tanach","Talmud","Midrasch","Mischna"],"w":["","Der Talmud ist die Sammlung rabbinischer Diskussionen.","Midrasch sind Auslegungen biblischer Texte.","Die Mischna ist die schriftliche Fassung der mündlichen Lehre."],"e":"Tanach steht für Tora, Newiim (Propheten) und Ketuwim (Schriften).","h":"Das Wort ist ein Akronym aus drei Teilen.","d":3},
-{"id":"1iizuh9","s":"Weltreligionen","q":"Welches Alter erreichen Jungen im Judentum bei der Bar Mizwa?","a":["13 Jahre","12 Jahre","16 Jahre","18 Jahre"],"w":["","12 Jahre ist das Alter der Bat Mizwa in manchen Traditionen.","16 Jahre ist keine Altersgrenze im Judentum.","18 Jahre ist die zivile Volljährigkeit, nicht die religiöse."],"e":"Mit 13 Jahren werden Jungen religiös mündig und lesen erstmals aus der Tora.","h":"Eine Zahl, die als Unglückszahl gilt.","d":3},
-{"id":"aefghh","s":"Weltreligionen","q":"Welche Religion hat ihren Ursprung im Iran des 19. Jahrhunderts und lehrt die Einheit der Menschheit?","a":["Bahai","Alevitentum","Drusentum","Ahmadiyya"],"w":["","Das Alevitentum entstand im Mittelalter in Anatolien.","Die Drusen entstanden im 11. Jahrhundert in Ägypten.","Die Ahmadiyya entstand im 19. Jahrhundert in Indien."],"e":"Der Bahai-Glaube wurde von Bahaullah (1817–1892) begründet; ihr Weltzentrum liegt in Haifa.","h":"Gründer: Bahaullah.","d":3},
-{"id":"1ihbyql","s":"Weltreligionen","q":"Welches Land hat die meisten Hindus?","a":["Indien","Nepal","Indonesien","Bangladesch"],"w":["","Nepal hat einen hohen Anteil, aber deutlich weniger Menschen.","Indonesien hat Hindus vor allem auf Bali, insgesamt nur wenige.","Bangladesch hat eine hinduistische Minderheit."],"e":"Rund 94 % aller Hindus leben in Indien (Pew 2020).","h":"Auch das bevölkerungsreichste Land.","d":2},
-{"id":"1djkg15","s":"Weltreligionen","q":"Wie heißt das Land mit den meisten Muslimen?","a":["Indonesien","Saudi-Arabien","Iran","Ägypten"],"w":["","Saudi-Arabien beherbergt Mekka, hat aber deutlich weniger Muslime.","Der Iran ist mehrheitlich schiitisch, aber kleiner.","Ägypten hat viele Muslime, jedoch weniger als Indonesien."],"e":"Indonesien hat mit über 200 Millionen die größte muslimische Bevölkerung (Stand 2020).","h":"Ein Inselstaat in Südostasien.","d":2},
-{"id":"11f80xt","s":"Weltreligionen","q":"Was ist die Kaaba?","a":["Heiligtum in Mekka","Moschee in Medina","Grab Mohammeds","Berg der Offenbarung"],"w":["","Die Prophetenmoschee in Medina ist ein anderes Heiligtum.","Mohammeds Grab liegt in Medina.","Der Berg Hira nahe Mekka gilt als Ort der ersten Offenbarung."],"e":"Die würfelförmige Kaaba in der Heiligen Moschee ist die Gebetsrichtung (Qibla) aller Muslime.","h":"Ein schwarzer, würfelförmiger Bau.","d":2},
-{"id":"135zfkn","s":"Weltreligionen","q":"Welche Bezeichnung trägt der islamische Gebetsruf?","a":["Adhan","Fatwa","Dschihad","Imam"],"w":["","Eine Fatwa ist ein islamisches Rechtsgutachten.","Dschihad bedeutet „Anstrengung“.","Ein Imam leitet das Gebet."],"e":"Der Muezzin ruft den Adhan fünfmal täglich zu den Gebetszeiten.","h":"Von der Moschee aus gerufen.","d":2},
-{"id":"qmpwlf","s":"Bibel & Feste","q":"Welches Fest feiern Christen zur Auferstehung Jesu?","a":["Ostern","Pfingsten","Weihnachten","Advent"],"w":["","Pfingsten erinnert an die Sendung des Heiligen Geistes.","Weihnachten feiert die Geburt Jesu.","Advent ist die Vorbereitungszeit vor Weihnachten."],"e":"Ostern fällt auf den ersten Sonntag nach dem ersten Frühlingsvollmond (frühestens 22. März, spätestens 25. April).","h":"Das Fest mit dem beweglichen Datum im Frühjahr.","d":1},
-{"id":"u2jmz1","s":"Bibel & Feste","q":"Was wird an Pfingsten gefeiert?","a":["Die Ausgießung des Geistes","Die Geburt Jesu Christi","Die Himmelfahrt Jesu Christi","Die Kreuzigung Jesu Christi"],"w":["","Die Geburt Jesu wird an Weihnachten gefeiert.","Die Himmelfahrt wird am 40. Tag nach Ostern gefeiert.","Die Kreuzigung wird am Karfreitag begangen."],"e":"Pfingsten fällt auf den 50. Tag nach Ostern (griechisch „pentekoste“, der Fünfzigste).","h":"Der Name stammt von „fünfzig“.","d":1},
-{"id":"zg3585","s":"Bibel & Feste","q":"Wie viele Bücher hat das Neue Testament?","a":["27","39","66","12"],"w":["","39 Bücher hat das Alte Testament in der evangelischen Zählung.","66 Bücher hat die gesamte evangelische Bibel.","12 ist die Zahl der Apostel, nicht der Bücher."],"e":"Das Neue Testament hat 27 Bücher in allen großen Kirchen; die evangelische Bibel zählt insgesamt 66, die katholische 73.","h":"Eine Zahl zwischen 20 und 30.","d":2},
-{"id":"j58ist","s":"Bibel & Feste","q":"Wer baute der Bibel zufolge die Arche?","a":["Noah","Mose","Abraham","Josef"],"w":["","Mose führte die Israeliten aus Ägypten.","Abraham gilt als Stammvater der Israeliten.","Josef wurde nach Ägypten verkauft und stieg dort auf."],"e":"Nach Genesis 6–9 rettete Noah seine Familie und je ein Tierpaar vor der Sintflut.","h":"Danach erschien ein Regenbogen.","d":1},
-{"id":"vty2wp","s":"Bibel & Feste","q":"Wer gehört nicht zu den vier Evangelisten?","a":["Paulus","Markus","Lukas","Johannes"],"w":["","Markus verfasste das älteste Evangelium.","Lukas verfasste ein Evangelium und die Apostelgeschichte.","Johannes verfasste das vierte Evangelium."],"e":"Die Evangelisten sind Matthäus, Markus, Lukas und Johannes; Paulus schrieb Briefe an Gemeinden.","h":"Er schrieb Briefe, kein Evangelium.","d":1},
-{"id":"ehyvoh","s":"Bibel & Feste","q":"Was bedeutet das Wort „Advent“?","a":["Ankunft","Fastenzeit","Erntedank","Lichterfest"],"w":["","Fastenzeit heißt die Zeit vor Ostern.","Erntedank wird im Herbst gefeiert.","Das Lichterfest ist Chanukka im Judentum."],"e":"Vom lateinischen „adventus“; gemeint ist die Ankunft Christi, der Advent umfasst vier Sonntage vor Weihnachten.","h":"Ein lateinisches Wort aus „kommen“.","d":1},
-{"id":"hov9i4","s":"Bibel & Feste","q":"Womit beginnt die christliche Fastenzeit?","a":["Aschermittwoch","Karfreitag","Palmsonntag","Fronleichnam"],"w":["","Karfreitag erinnert an die Kreuzigung, am Ende der Fastenzeit.","Palmsonntag eröffnet die Karwoche.","Fronleichnam wird im Frühsommer gefeiert."],"e":"Die Fastenzeit dauert 40 Tage bis Ostern, Sonntage werden nicht mitgezählt.","h":"Der Tag nach dem Fasching.","d":1},
-{"id":"k8pubd","s":"Bibel & Feste","q":"Wer übersetzte die gesamte Bibel ins Deutsche (1534)?","a":["Martin Luther","Johannes Gutenberg","Ulrich Zwingli","Philipp Melanchthon"],"w":["","Gutenberg druckte um 1455 die lateinische Bibel.","Zwingli reformierte in Zürich und übersetzte mit Kollegen die Zürcher Bibel.","Melanchthon war Luthers Mitarbeiter, nicht der Hauptübersetzer."],"e":"Luthers Neues Testament erschien 1522 (Wartburg), die ganze Bibel 1534.","h":"Er lebte in Wittenberg.","d":2},
-{"id":"85s48p","s":"Bibel & Feste","q":"Woran erinnert das jüdische Pessachfest?","a":["Den Auszug aus Ägypten","Die Weihe des Tempels","Das jüdische Neujahr","Die Gabe der Tora"],"w":["","Die Weihe des Tempels ist das Thema von Chanukka.","Das Neujahr heißt Rosch Haschana.","Die Gabe der Tora feiert Schawuot."],"e":"Beim Sederabend wird die Befreiung aus der Sklaverei erzählt; man isst Mazzen statt Gesäuertem.","h":"Brot ohne Sauerteig spielt eine Rolle.","d":1},
-{"id":"1ui0kjj","s":"Bibel & Feste","q":"An welchem Tag feiern Christen traditionell Christi Himmelfahrt?","a":["40 Tage nach Ostern","7 Tage nach Ostern","50 Tage nach Ostern","3 Tage nach Ostern"],"w":["","Sieben Tage nach Ostern ist der Weiße Sonntag.","50 Tage nach Ostern ist Pfingsten.","Drei Tage nach Ostern wäre kein Fest, die Auferstehung ist schon Ostersonntag."],"e":"Himmelfahrt ist stets ein Donnerstag, der 40. Tag der Osterzeit (Ostersonntag mitgezählt).","h":"Eine Zahl, die in der Bibel häufig vorkommt.","d":2},
-{"id":"1pwv051","s":"Bibel & Feste","q":"Welches ist das erste Buch der Bibel?","a":["Genesis","Exodus","Psalmen","Matthäus"],"w":["","Exodus ist das zweite Buch Mose.","Die Psalmen stehen weit hinten im Alten Testament.","Matthäus eröffnet das Neue Testament."],"e":"Genesis (1. Mose) erzählt von Schöpfung, Sündenfall, Sintflut und den Erzvätern.","h":"Der Name bedeutet „Ursprung“.","d":1},
-{"id":"1sy8nhm","s":"Bibel & Feste","q":"Welches ist das letzte Buch der christlichen Bibel?","a":["Offenbarung des Johannes","Apostelgeschichte","Hebräerbrief","Judasbrief"],"w":["","Die Apostelgeschichte steht nach den Evangelien.","Der Hebräerbrief steht vor den Katholischen Briefen.","Der Judasbrief steht direkt vor der Offenbarung."],"e":"Die Offenbarung (Apokalypse) schließt das Neue Testament ab.","h":"Das Buch enthält die sieben Siegel.","d":2},
-{"id":"d4d6q3","s":"Bibel & Feste","q":"Wie viele Psalmen enthält das biblische Buch der Psalmen?","a":["150","100","66","120"],"w":["","100 ist zu niedrig.","66 ist die Zahl der Bücher der evangelischen Bibel.","120 ist zu niedrig."],"e":"Der Psalter umfasst 150 Lieder und Gebete, traditionell König David zugeschrieben.","h":"Eine runde Zahl über hundert.","d":3},
-{"id":"13yfbpe","s":"Bibel & Feste","q":"Wer führte die Israeliten der Bibel zufolge aus Ägypten?","a":["Mose","Josua","David","Elia"],"w":["","Josua führte das Volk später ins Gelobte Land.","David wurde später König Israels.","Elia war ein Prophet im Nordreich Israel."],"e":"Mose empfing am Berg Sinai die Zehn Gebote (2. Mose 19–20).","h":"Er teilte das Rote Meer.","d":1},
-{"id":"1d1he5l","s":"Bibel & Feste","q":"Wie viele Gebote umfasst der Dekalog?","a":["Zehn","Sieben","Zwölf","Dreizehn"],"w":["","Sieben sind die Noachidischen Gebote im Judentum.","Zwölf ist die Zahl der Stämme Israels.","Dreizehn ist die Zahl der Glaubensartikel nach Maimonides."],"e":"Der Dekalog steht in 2. Mose 20 und 5. Mose 5; „Deka“ ist griechisch für zehn.","h":"„Deka“ steckt im Namen.","d":2},
-{"id":"1cjqpzg","s":"Bibel & Feste","q":"Wer besiegte der Bibel zufolge den Riesen Goliat?","a":["David","Saul","Simson","Gideon"],"w":["","Saul war der erste König Israels und scheute den Kampf.","Simson war ein Richter mit großer Körperkraft.","Gideon besiegte mit 300 Mann die Midianiter."],"e":"David besiegte Goliat mit einer Steinschleuder (1. Samuel 17) und wurde später König.","h":"Ein junger Hirte.","d":1},
-{"id":"1v5l8lg","s":"Bibel & Feste","q":"Wie heißt die Predigt Jesu, die mit den Seligpreisungen beginnt?","a":["Bergpredigt","Feldrede","Abschiedsrede","Areopagrede"],"w":["","Die Feldrede steht im Lukasevangelium, mit ähnlichem Inhalt.","Die Abschiedsreden stehen im Johannesevangelium.","Die Areopagrede hielt Paulus in Athen."],"e":"Die Bergpredigt steht in Matthäus 5–7 und enthält das Vaterunser.","h":"Ort: ein Berg.","d":2},
-{"id":"l652qn","s":"Bibel & Feste","q":"Wie heißt das wichtigste Gebet der Christen, das Jesus seine Jünger lehrte?","a":["Vaterunser","Ave Maria","Glaubensbekenntnis","Magnifikat"],"w":["","Das Ave Maria ist ein Mariengebet.","Das Glaubensbekenntnis stammt aus altkirchlichen Konzilien.","Das Magnifikat ist der Lobgesang Marias."],"e":"Das Vaterunser steht in Matthäus 6 und Lukas 11.","h":"Beginnt mit einer Anrede an Gott.","d":1},
-{"id":"1n8po49","s":"Bibel & Feste","q":"Was feiern Christen am 25. Dezember?","a":["Die Geburt Jesu","Die Taufe Jesu","Die Anbetung der Könige","Die Beschneidung Jesu"],"w":["","Die Taufe Jesu wird nach dem Dreikönigstag gefeiert.","Die Anbetung der Könige wird am 6. Januar gefeiert.","Die Beschneidung Jesu wird am 1. Januar gefeiert."],"e":"Der 25. Dezember ist seit dem 4. Jahrhundert in Rom als Geburtsfest belegt; orthodoxe Kirchen nach dem Julianischen Kalender feiern am 7. Januar.","h":"Eine Krippe gehört dazu.","d":1},
-{"id":"7t2osh","s":"Bibel & Feste","q":"Was wird am 6. Januar in vielen Kirchen gefeiert?","a":["Erscheinung des Herrn","Maria Lichtmess","Aschermittwoch","Allerheiligen"],"w":["","Maria Lichtmess ist am 2. Februar.","Aschermittwoch liegt im Februar oder März.","Allerheiligen ist am 1. November."],"e":"Das Dreikönigsfest (Epiphanias) erinnert an die Weisen aus dem Morgenland.","h":"Auch Dreikönigstag genannt.","d":3},
-{"id":"170qc11","s":"Bibel & Feste","q":"Welches Fest erinnert an das Abendmahl und die Einsetzung des Sakraments?","a":["Gründonnerstag","Karfreitag","Ostermontag","Palmsonntag"],"w":["","Karfreitag erinnert an die Kreuzigung.","Ostermontag erinnert an die Emmausjünger.","Palmsonntag erinnert an den Einzug in Jerusalem."],"e":"Am Gründonnerstag gedenkt man des letzten Mahls Jesu mit den Jüngern.","h":"Der Donnerstag vor Ostern.","d":3},
-{"id":"1fypi8l","s":"Bibel & Feste","q":"Wann wird der Reformationstag begangen?","a":["31. Oktober","1. November","6. Dezember","25. Dezember"],"w":["","Am 1. November ist Allerheiligen.","Am 6. Dezember ist Nikolaus.","Am 25. Dezember ist Weihnachten."],"e":"Am 31. Oktober 1517 soll Luther seine 95 Thesen gegen den Ablasshandel in Wittenberg veröffentlicht haben.","h":"Der Tag vor Allerheiligen.","d":1},
-{"id":"vyh32n","s":"Bibel & Feste","q":"Worum ging es in Luthers 95 Thesen von 1517?","a":["Um den Ablasshandel","Um die Bibelübersetzung","Um die Priesterehe","Um den Papstprimat"],"w":["","Die Bibelübersetzung folgte erst 1522 bis 1534.","Die Priesterehe thematisierte Luther später.","Der Papstprimat wurde erst später zentral."],"e":"Luther kritisierte den Verkauf von Ablassbriefen, mit denen unter anderem der Bau des Petersdoms mitfinanziert wurde.","h":"Es ging um Geld für Sündenvergebung.","d":2},
-{"id":"xry64l","s":"Bibel & Feste","q":"Wer übersetzte die Bibel im 4. Jahrhundert ins Lateinische (Vulgata)?","a":["Hieronymus","Augustinus","Ambrosius","Benedikt"],"w":["","Augustinus war Kirchenlehrer und Bischof von Hippo.","Ambrosius war Bischof von Mailand.","Benedikt gründete den Benediktinerorden."],"e":"Hieronymus arbeitete ab 382 im Auftrag von Papst Damasus; die Vulgata blieb jahrhundertelang Standardbibel.","h":"Er lebte zuletzt in Bethlehem.","d":3},
-{"id":"1ljbk9g","s":"Bibel & Feste","q":"Wie heißt die älteste griechische Übersetzung des Alten Testaments?","a":["Septuaginta","Vulgata","Peschitta","Lutherbibel"],"w":["","Die Vulgata ist die lateinische Übersetzung.","Die Peschitta ist die syrische Übersetzung.","Die Lutherbibel ist deutsch."],"e":"Die Septuaginta („Siebzig“) entstand ab dem 3. Jahrhundert v. Chr. in Alexandria.","h":"Der Name nennt eine Zahl.","d":3},
-{"id":"1rk7oek","s":"Bibel & Feste","q":"Wie viele Apostel zählt die Bibel?","a":["Zwölf","Sieben","Zehn","Siebzig"],"w":["","Sieben sind die ersten Diakone in der Apostelgeschichte.","Zehn ist falsch, Jesus berief zwölf Apostel.","Siebzig (oder zweiundsiebzig) Jünger sendet Jesus bei Lukas aus."],"e":"Die Zwölf entsprechen den zwölf Stämmen Israels.","h":"Eine Dutzendzahl.","d":1},
-{"id":"rirfdd","s":"Bibel & Feste","q":"Welcher Apostel verriet Jesus?","a":["Judas Iskariot","Petrus","Thomas","Andreas"],"w":["","Petrus verleugnete Jesus, verriet ihn aber nicht.","Thomas zweifelte an der Auferstehung.","Andreas war Fischer und Bruder des Petrus."],"e":"Judas verriet Jesus laut den Evangelien für dreißig Silberstücke.","h":"Dreißig Silberstücke.","d":1},
-{"id":"dl2n3z","s":"Bibel & Feste","q":"Wer gilt nach katholischer Tradition als erster Bischof von Rom?","a":["Petrus","Paulus","Johannes","Jakobus"],"w":["","Paulus war Missionar und wirkte ebenfalls in Rom, gilt aber nicht als erster Bischof.","Johannes gilt nicht als Bischof von Rom, sondern der Tradition nach als Bischof von Ephesus.","Jakobus gilt als erster Bischof von Jerusalem."],"e":"Katholiken sehen in Petrus den ersten Bischof von Rom; der Petersdom steht über seinem Grab.","h":"Der „Fels“.","d":2},
-{"id":"1nlsfc8","s":"Bibel & Feste","q":"Wer schrieb nach der Tradition die meisten Briefe des Neuen Testaments?","a":["Paulus","Petrus","Johannes","Jakobus"],"w":["","Petrus werden zwei Briefe zugeschrieben.","Johannes werden drei Briefe zugeschrieben.","Jakobus wird ein Brief zugeschrieben."],"e":"Dreizehn Briefe tragen Paulus’ Namen; sieben gelten als unumstritten echt.","h":"Früher hieß er Saulus.","d":2},
-{"id":"oomd1r","s":"Bibel & Feste","q":"Wann wird Fronleichnam gefeiert?","a":["60 Tage nach Ostern","40 Tage nach Ostern","50 Tage nach Ostern","10 Tage nach Pfingsten"],"w":["","40 Tage nach Ostern ist Himmelfahrt.","50 Tage nach Ostern ist Pfingsten.","Zehn Tage nach Pfingsten gibt es kein Hochfest."],"e":"Fronleichnam ist am Donnerstag nach dem Dreifaltigkeitssonntag, 60 Tage nach Ostern.","h":"Ein Donnerstag im Frühsommer.","d":3},
-{"id":"drpzmi","s":"Bibel & Feste","q":"Wer gilt als Namensgeber des Nikolaustags am 6. Dezember?","a":["Nikolaus von Myra","Nikolaus von Kues","Nikolaus Kopernikus","Nikolaus Lenau"],"w":["","Nikolaus von Kues war ein Kardinal und Philosoph des 15. Jahrhunderts.","Nikolaus Kopernikus war Astronom.","Nikolaus Lenau war ein Dichter des 19. Jahrhunderts."],"e":"Nikolaus war Bischof von Myra im heutigen Süden der Türkei, Todestag 6. Dezember (4. Jahrhundert).","h":"Sein Ort liegt heute in der Türkei.","d":2},
-{"id":"khlgs2","s":"Bibel & Feste","q":"Wie heißt die Zeit zwischen Aschermittwoch und Ostern?","a":["Fastenzeit","Osterzeit","Adventszeit","Weihnachtszeit"],"w":["","Die Osterzeit folgt auf Ostern und dauert bis Pfingsten.","Die Adventszeit liegt vor Weihnachten.","Die Weihnachtszeit folgt auf Heiligabend."],"e":"Die Fastenzeit dauert 40 Tage (ohne Sonntage); die Karwoche bildet ihren Abschluss.","h":"Vorbereitung auf Ostern.","d":2},
-{"id":"1jt8j8t","s":"Bibel & Feste","q":"Wer war der Bibel zufolge der erste Mensch?","a":["Adam","Kain","Set","Henoch"],"w":["","Kain war Adams erster Sohn.","Set war Adams dritter Sohn.","Henoch war ein Nachkomme Kains oder Sets."],"e":"Nach Genesis 2 formte Gott Adam aus Erde („adama“) und gab ihm Eva als Gefährtin.","h":"Sein Name bedeutet „Mensch“ oder „Erde“.","d":1},
-{"id":"nnx3ig","s":"Bibel & Feste","q":"Wer ermordete der Bibel zufolge seinen Bruder Abel?","a":["Kain","Esau","Joab","Absalom"],"w":["","Esau war Jakobs Zwillingsbruder und kein Mörder.","Joab war Davids Heerführer.","Absalom war ein Sohn Davids."],"e":"Kain und Abel waren die ersten Söhne Adams und Evas (1. Mose 4).","h":"Der erste Brudermord der Bibel.","d":1},
-{"id":"lwelq6","s":"Bibel & Feste","q":"Welches Tier verführte laut Genesis Eva zum Essen der verbotenen Frucht?","a":["Schlange","Esel","Taube","Rabe"],"w":["","Der Esel spricht bei Bileam, nicht im Garten Eden.","Die Taube bringt Noah den Ölzweig.","Der Rabe wird bei Noah als erster Vogel ausgesandt."],"e":"Die Schlange steht in 1. Mose 3 für die Versuchung im Garten Eden.","h":"Kriecht am Boden.","d":1},
-{"id":"147rb67","s":"Bibel & Feste","q":"Welcher Stamm- oder Erzvater sollte der Bibel zufolge seinen Sohn Isaak opfern?","a":["Abraham","Jakob","Noah","Lot"],"w":["","Jakob war Isaaks Sohn.","Noah lebte lange vor Isaak.","Lot war Abrahams Neffe."],"e":"Die Opferung Isaaks (1. Mose 22) endete mit der Bereitstellung eines Widders; Muslime beziehen die Erzählung auf Ismail.","h":"Er gilt für Juden, Christen und Muslime als Stammvater.","d":2},
-{"id":"4m7487","s":"Bibel & Feste","q":"In welcher Stadt wurde Jesus nach den Evangelien geboren?","a":["Bethlehem","Nazaret","Jerusalem","Kapernaum"],"w":["","In Nazaret wuchs Jesus auf.","In Jerusalem wurde er gekreuzigt.","In Kapernaum wirkte er am See Genezareth."],"e":"Matthäus und Lukas nennen Bethlehem in Judäa als Geburtsort.","h":"Die Stadt Davids.","d":1},
-{"id":"1uynljx","s":"Bibel & Feste","q":"Wie heißt der Fluss, in dem Jesus von Johannes getauft wurde?","a":["Jordan","Nil","Euphrat","Tigris"],"w":["","Der Nil fließt durch Ägypten.","Der Euphrat fließt durch Mesopotamien.","Der Tigris fließt durch Mesopotamien."],"e":"Der Jordan mündet ins Tote Meer.","h":"Er mündet ins Tote Meer.","d":2},
-{"id":"2qaq1","s":"Bibel & Feste","q":"Was feiert die katholische Kirche an Allerheiligen?","a":["Alle Heiligen","Alle Verstorbenen","Alle Päpste","Alle Märtyrer der Reformation"],"w":["","Der Verstorbenen gedenkt man an Allerseelen, am 2. November.","Eine Päpste-Gedenkfeier gibt es nicht.","Dafür gibt es keinen eigenen Feiertag."],"e":"Allerheiligen ist am 1. November, Allerseelen am 2. November.","h":"Der Tag nach Halloween.","d":2},
-{"id":"183x4xy","s":"Bibel & Feste","q":"Wie heißt der Gottesdienst zur Feier des Abendmahls in der katholischen Kirche?","a":["Eucharistiefeier","Vesper","Laudes","Komplet"],"w":["","Die Vesper ist das Abendgebet.","Die Laudes sind das Morgenlob.","Die Komplet ist das Nachtgebet."],"e":"Die Eucharistiefeier (Messe) erinnert an das letzte Mahl Jesu mit Brot und Wein.","h":"Ihr Name bedeutet „Danksagung“.","d":3}
+ {
+  "id": "8z90td",
+  "s": "Weltreligionen",
+  "q": "Welche Religion hatte 2020 laut Pew Research weltweit die meisten Anhänger?",
+  "a": [
+   "Christentum",
+   "Islam",
+   "Hinduismus",
+   "Buddhismus"
+  ],
+  "w": [
+   "",
+   "Der Islam lag 2020 mit etwa 25,6 % der Weltbevölkerung auf Platz zwei.",
+   "Der Hinduismus folgt mit etwa 15 % erst an dritter Stelle.",
+   "Der Buddhismus kommt auf nur etwa 4 % der Weltbevölkerung."
+  ],
+  "e": "Pew zählte 2020 rund 2,3 Milliarden Christen (28,8 %), danach Muslime (25,6 %) und Hindus (14,9 %).",
+  "h": "Auf die Zahl der Anhänger kommt es an, nicht auf die Verbreitung in einzelnen Ländern.",
+  "d": 2
+ },
+ {
+  "id": "1xwxdkj",
+  "s": "Weltreligionen",
+  "q": "Wie heißt die heilige Schrift des Islams?",
+  "a": [
+   "Koran",
+   "Tora",
+   "Veda",
+   "Talmud"
+  ],
+  "w": [
+   "",
+   "Die Tora sind die fünf Bücher Mose im Judentum.",
+   "Die Veda sind die ältesten heiligen Texte des Hinduismus.",
+   "Der Talmud ist die Sammlung rabbinischer Lehrdiskussionen im Judentum."
+  ],
+  "e": "Der Koran hat 114 Suren und gilt Muslimen als dem Propheten Mohammed durch den Erzengel Gabriel offenbart.",
+  "h": "Das Wort bedeutet „Rezitation“.",
+  "d": 1
+ },
+ {
+  "id": "1y53d1z",
+  "s": "Weltreligionen",
+  "q": "Wie viele Säulen hat der Islam?",
+  "a": [
+   "Fünf",
+   "Drei",
+   "Sieben",
+   "Zehn"
+  ],
+  "w": [
+   "",
+   "Es sind fünf, nicht drei: Bekenntnis, Gebet, Almosen, Fasten, Pilgerfahrt.",
+   "Sieben ist falsch, der Islam zählt fünf Säulen.",
+   "Zehn ist falsch, das erinnert eher an die Zehn Gebote."
+  ],
+  "e": "Die fünf Säulen sind Schahada, Salat, Zakat, Sawm und Hadsch.",
+  "h": "So viele wie Finger an einer Hand.",
+  "d": 1
+ },
+ {
+  "id": "154cqzf",
+  "s": "Weltreligionen",
+  "q": "Wer gilt als Begründer des Buddhismus?",
+  "a": [
+   "Siddhartha Gautama",
+   "Konfuzius",
+   "Laozi",
+   "Zarathustra"
+  ],
+  "w": [
+   "",
+   "Konfuzius war ein chinesischer Philosoph und gilt als Namensgeber des Konfuzianismus.",
+   "Laozi wird traditionell als Begründer des Daoismus genannt.",
+   "Zarathustra gilt als Stifter des Zoroastrismus in Iran."
+  ],
+  "e": "Siddhartha Gautama lebte nach der Überlieferung vor rund 2.500 Jahren im Norden Indiens und wird „der Buddha“ (Erwachte) genannt.",
+  "h": "Sein Ehrentitel bedeutet „der Erwachte“.",
+  "d": 1
+ },
+ {
+  "id": "1a2nvi5",
+  "s": "Weltreligionen",
+  "q": "Wie heißt das jüdische Lichterfest?",
+  "a": [
+   "Chanukka",
+   "Pessach",
+   "Jom Kippur",
+   "Purim"
+  ],
+  "w": [
+   "",
+   "Pessach erinnert an den Auszug aus Ägypten.",
+   "Jom Kippur ist der Versöhnungstag mit Fasten.",
+   "Purim erinnert an die Rettung der Juden im Buch Ester."
+  ],
+  "e": "Chanukka dauert acht Tage und erinnert an die Wiedereinweihung des Tempels in Jerusalem; man zündet Kerzen am Leuchter an.",
+  "h": "Acht Tage lang wird ein Leuchter angezündet.",
+  "d": 1
+ },
+ {
+  "id": "1lijzsh",
+  "s": "Weltreligionen",
+  "q": "Welche Stadt gilt Juden, Christen und Muslimen als heilig?",
+  "a": [
+   "Jerusalem",
+   "Mekka",
+   "Rom",
+   "Medina"
+  ],
+  "w": [
+   "",
+   "Mekka ist vor allem für Muslime heilig, Ziel der Hadsch.",
+   "Rom ist vor allem für Katholiken bedeutsam, Sitz des Papstes.",
+   "Medina ist für Muslime heilig, nicht für Juden und Christen."
+  ],
+  "e": "In Jerusalem liegen Tempelberg, Grabeskirche und Felsendom; alle drei Religionen verbinden damit heilige Stätten.",
+  "h": "Klagemauer, Grabeskirche und Felsendom liegen dort.",
+  "d": 1
+ },
+ {
+  "id": "dapan8",
+  "s": "Weltreligionen",
+  "q": "Wie heißt der Fastenmonat der Muslime?",
+  "a": [
+   "Ramadan",
+   "Muharram",
+   "Safar",
+   "Schawwal"
+  ],
+  "w": [
+   "",
+   "Muharram ist der erste Monat des islamischen Kalenders.",
+   "Safar ist der zweite Monat des islamischen Kalenders.",
+   "Schawwal ist der Monat nach dem Ramadan, er beginnt mit dem Fastenbrechen."
+  ],
+  "e": "Im Ramadan, dem neunten Monat des Mondkalenders, wird von der Morgendämmerung bis zum Sonnenuntergang gefastet.",
+  "h": "Der neunte Monat des islamischen Mondjahres.",
+  "d": 1
+ },
+ {
+  "id": "1i0j3km",
+  "s": "Weltreligionen",
+  "q": "Was bezeichnet das Wort „Tora“ im engeren Sinn?",
+  "a": [
+   "Die fünf Bücher Mose",
+   "Das Neue Testament",
+   "Die Sammlung der Hadithe",
+   "Die Sprüche des Konfuzius"
+  ],
+  "w": [
+   "",
+   "Das Neue Testament ist der zweite Teil der christlichen Bibel.",
+   "Hadithe sind Überlieferungen aus dem Leben Mohammeds im Islam.",
+   "Die Sprüche des Konfuzius heißen Gespräche (Lunyu)."
+  ],
+  "e": "Die Tora umfasst Genesis, Exodus, Levitikus, Numeri und Deuteronomium und steht am Anfang der Hebräischen Bibel.",
+  "h": "Das Wort bedeutet „Weisung“ oder „Lehre“.",
+  "d": 2
+ },
+ {
+  "id": "roqfb8",
+  "s": "Weltreligionen",
+  "q": "Wie heißt das Fest zum Ende des Ramadan?",
+  "a": [
+   "Id al-Fitr",
+   "Id al-Adha",
+   "Aschura",
+   "Mawlid"
+  ],
+  "w": [
+   "",
+   "Id al-Adha ist das Opferfest am Ende der Pilgerzeit.",
+   "Aschura ist ein Gedenktag, bei Schiiten der Trauertag um Husain.",
+   "Mawlid erinnert an den Geburtstag des Propheten Mohammed."
+  ],
+  "e": "Das Fest des Fastenbrechens beginnt am 1. Schawwal und heißt im Deutschen oft Zuckerfest.",
+  "h": "Es wird auch Zuckerfest genannt.",
+  "d": 1
+ },
+ {
+  "id": "zyoth8",
+  "s": "Weltreligionen",
+  "q": "Wie heißt das Opferfest, das am 10. Tag des Monats Dhu l-Hiddscha beginnt?",
+  "a": [
+   "Id al-Adha",
+   "Id al-Fitr",
+   "Lailat al-Qadr",
+   "Neujahrsfest"
+  ],
+  "w": [
+   "",
+   "Id al-Fitr beendet den Ramadan.",
+   "Lailat al-Qadr ist die Nacht der Bestimmung im Ramadan.",
+   "Das islamische Neujahr beginnt am 1. Muharram."
+  ],
+  "e": "Id al-Adha erinnert an Ibrahims Bereitschaft zum Opfer und beendet die Hadsch.",
+  "h": "Es fällt in den letzten Monat des islamischen Jahres.",
+  "d": 3
+ },
+ {
+  "id": "1vk2ea7",
+  "s": "Weltreligionen",
+  "q": "Welches Ereignis markiert den Beginn der islamischen Zeitrechnung?",
+  "a": [
+   "Die Hidschra von Mekka nach Medina",
+   "Die erste Offenbarung am Berg Hira",
+   "Die Eroberung Mekkas",
+   "Die erste Pilgerfahrt Mohammeds"
+  ],
+  "w": [
+   "",
+   "Die erste Offenbarung geschah schon vor der Hidschra und ist kein Epochenjahr.",
+   "Die Eroberung Mekkas folgte erst im Jahr 8 nach der Hidschra.",
+   "Die Abschiedspilgerfahrt fand erst kurz vor Mohammeds Tod statt."
+  ],
+  "e": "Die Auswanderung von Mekka nach Medina im Jahr 622 n. Chr. ist das Jahr 1 des islamischen Kalenders.",
+  "h": "Das Jahr liegt im frühen 7. Jahrhundert.",
+  "d": 3
+ },
+ {
+  "id": "9vqp4l",
+  "s": "Weltreligionen",
+  "q": "Wie nennt man die Pilgerfahrt nach Mekka?",
+  "a": [
+   "Hadsch",
+   "Zakat",
+   "Salat",
+   "Schahada"
+  ],
+  "w": [
+   "",
+   "Zakat ist die Almosenabgabe.",
+   "Salat ist das Pflichtgebet.",
+   "Schahada ist das Glaubensbekenntnis."
+  ],
+  "e": "Die Hadsch ist eine der fünf Säulen und für Gläubige einmal im Leben Pflicht, wenn sie dazu in der Lage sind.",
+  "h": "Eine der fünf Säulen, einmal im Leben.",
+  "d": 1
+ },
+ {
+  "id": "p78ky2",
+  "s": "Weltreligionen",
+  "q": "Worin unterscheiden sich Sunniten und Schiiten ursprünglich?",
+  "a": [
+   "In der Frage der Nachfolge Mohammeds",
+   "In der Zahl der täglichen Gebete",
+   "In der heiligen Schrift",
+   "In der Sprache des Korans"
+  ],
+  "w": [
+   "",
+   "Beide Richtungen beten fünfmal täglich, nur Details unterscheiden sich.",
+   "Beide verwenden denselben Koran.",
+   "Beide lesen den Koran auf Arabisch."
+  ],
+  "e": "Schiiten sehen Ali, Mohammeds Cousin und Schwiegersohn, und seine Nachkommen als rechtmäßige Nachfolger; Sunniten akzeptierten Abu Bakr als Kalifen.",
+  "h": "Es ging um die Führung der Gemeinde nach 632.",
+  "d": 3
+ },
+ {
+  "id": "mir5lc",
+  "s": "Weltreligionen",
+  "q": "Wie heißt die erste Sure des Korans?",
+  "a": [
+   "Al-Fatiha",
+   "Al-Baqara",
+   "Al-Ikhlas",
+   "Yasin"
+  ],
+  "w": [
+   "",
+   "Al-Baqara ist die zweite und längste Sure.",
+   "Al-Ikhlas ist die 112. Sure.",
+   "Yasin ist die 36. Sure."
+  ],
+  "e": "Al-Fatiha („Die Eröffnende“) hat sieben Verse und wird in jedem Pflichtgebet gesprochen.",
+  "h": "Der Name bedeutet „Die Eröffnende“.",
+  "d": 3
+ },
+ {
+  "id": "17xvwke",
+  "s": "Weltreligionen",
+  "q": "Wie viele Suren hat der Koran?",
+  "a": [
+   "114",
+   "99",
+   "66",
+   "150"
+  ],
+  "w": [
+   "",
+   "99 ist die Zahl der schönen Namen Gottes, nicht der Suren.",
+   "66 ist die Zahl der Bücher der evangelischen Bibel.",
+   "150 ist die Zahl der Psalmen der Bibel."
+  ],
+  "e": "Der Koran ist in 114 Suren gegliedert, geordnet grob nach absteigender Länge.",
+  "h": "Eine Zahl knapp über 100.",
+  "d": 3
+ },
+ {
+  "id": "gjkuec",
+  "s": "Weltreligionen",
+  "q": "Was sind die „Vier Edlen Wahrheiten“ im Buddhismus?",
+  "a": [
+   "Lehre vom Leiden und seinem Ende",
+   "Vier Gebote für Mönche",
+   "Vier Götter des Himmels",
+   "Vier heilige Berge Asiens"
+  ],
+  "w": [
+   "",
+   "Die Gebote für Mönche stehen im Vinaya, nicht in den Wahrheiten.",
+   "Der Buddhismus lehrt keine vier Hauptgötter.",
+   "Vier heilige Berge sind keine Lehre, sondern Pilgerorte in anderen Traditionen."
+  ],
+  "e": "Sie handeln von Leiden (Dukkha), seiner Ursache, seinem Ende und dem Weg dorthin.",
+  "h": "Buddha begann mit der Frage nach dem Leid.",
+  "d": 2
+ },
+ {
+  "id": "13u7vha",
+  "s": "Weltreligionen",
+  "q": "Wie viele Glieder hat der Edle Achtfache Pfad?",
+  "a": [
+   "Acht",
+   "Vier",
+   "Zehn",
+   "Zwölf"
+  ],
+  "w": [
+   "",
+   "Vier ist die Zahl der Edlen Wahrheiten, nicht der Pfadglieder.",
+   "Zehn ist falsch, der Name nennt die Zahl.",
+   "Zwölf ist die Zahl der Glieder des abhängigen Entstehens."
+  ],
+  "e": "Rechte Ansicht, Absicht, Rede, Handlung, Lebensunterhalt, Anstrengung, Achtsamkeit und Sammlung.",
+  "h": "Die Zahl steckt im Namen.",
+  "d": 1
+ },
+ {
+  "id": "1fhztcf",
+  "s": "Weltreligionen",
+  "q": "Welches Oberhaupt gilt im tibetischen Buddhismus als zentrale geistliche Autorität der Gelug-Schule?",
+  "a": [
+   "Dalai Lama",
+   "Papst",
+   "Großmufti",
+   "Patriarch"
+  ],
+  "w": [
+   "",
+   "Der Papst ist Oberhaupt der katholischen Kirche.",
+   "Der Großmufti ist ein islamischer Rechtsgelehrter.",
+   "Der Patriarch ist ein Titel in orthodoxen Kirchen."
+  ],
+  "e": "Der Dalai Lama gilt als Wiedergeburt seiner Vorgänger; seit 1642 war er auch weltliches Oberhaupt Tibets.",
+  "h": "Ein Titel mit mongolischem Wortteil für „Ozean“.",
+  "d": 2
+ },
+ {
+  "id": "11jrs7f",
+  "s": "Weltreligionen",
+  "q": "Wie heißt die heilige Schrift der Sikhs?",
+  "a": [
+   "Guru Granth Sahib",
+   "Bhagavad Gita",
+   "Avesta",
+   "Tripitaka"
+  ],
+  "w": [
+   "",
+   "Die Bhagavad Gita ist ein Text des Hinduismus.",
+   "Die Avesta ist die Schrift des Zoroastrismus.",
+   "Das Tripitaka ist der buddhistische Palikanon."
+  ],
+  "e": "Nach dem zehnten Guru, Gobind Singh, gilt das Buch selbst als ewiger Guru.",
+  "h": "Das Buch wird selbst als ewiger Lehrer verehrt.",
+  "d": 3
+ },
+ {
+  "id": "6drsws",
+  "s": "Weltreligionen",
+  "q": "Wer gilt als Gründer des Sikhismus?",
+  "a": [
+   "Guru Nanak",
+   "Guru Gobind Singh",
+   "Kabir",
+   "Ramakrishna"
+  ],
+  "w": [
+   "",
+   "Guru Gobind Singh war der zehnte Guru und gründete 1699 die Khalsa.",
+   "Kabir war ein indischer Dichter-Mystiker des 15. Jahrhunderts.",
+   "Ramakrishna war ein bengalischer Hindu-Mystiker des 19. Jahrhunderts."
+  ],
+  "e": "Guru Nanak (1469–1539) lehrte im Punjab einen einzigen Gott; ihm folgten neun weitere Gurus.",
+  "h": "Der erste von zehn Gurus.",
+  "d": 3
+ },
+ {
+  "id": "oq93vv",
+  "s": "Weltreligionen",
+  "q": "Wie heißt das Hauptheiligtum der Sikhs in Amritsar?",
+  "a": [
+   "Goldener Tempel",
+   "Lotustempel",
+   "Zahntempel",
+   "Bodhi-Tempel"
+  ],
+  "w": [
+   "",
+   "Der Lotustempel in Neu-Delhi gehört zum Bahai-Glauben.",
+   "Der Zahntempel liegt in Kandy, Sri Lanka, und ist buddhistisch.",
+   "Der Mahabodhi-Tempel in Bodh Gaya ist buddhistisch."
+  ],
+  "e": "Der Goldene Tempel (Harmandir Sahib) liegt in Amritsar im Punjab.",
+  "h": "Sein Dach ist mit Blattgold belegt.",
+  "d": 2
+ },
+ {
+  "id": "19h2x0d",
+  "s": "Weltreligionen",
+  "q": "Welche Götter bilden die Trimurti des Hinduismus?",
+  "a": [
+   "Brahma, Vishnu, Shiva",
+   "Rama, Krishna, Hanuman",
+   "Indra, Agni, Varuna",
+   "Ganesha, Lakshmi, Kali"
+  ],
+  "w": [
+   "",
+   "Rama, Krishna und Hanuman sind Avatare oder Gefährten, keine Trimurti.",
+   "Indra, Agni und Varuna sind vedische Götter.",
+   "Ganesha, Lakshmi und Kali sind beliebte Gottheiten, bilden aber nicht die Trimurti."
+  ],
+  "e": "Brahma gilt als Schöpfer, Vishnu als Erhalter und Shiva als Zerstörer und Erneuerer.",
+  "h": "Schöpfer, Erhalter, Zerstörer.",
+  "d": 2
+ },
+ {
+  "id": "rf6ai",
+  "s": "Weltreligionen",
+  "q": "Wie heißen die ältesten heiligen Texte des Hinduismus?",
+  "a": [
+   "Veden",
+   "Upanishaden",
+   "Puranas",
+   "Sutras"
+  ],
+  "w": [
+   "",
+   "Die Upanishaden sind jüngere philosophische Texte am Ende der Veden-Tradition.",
+   "Die Puranas sind spätere Sammlungen von Götter- und Weltgeschichten.",
+   "Sutras sind Lehrsprüche, später als die Veden."
+  ],
+  "e": "Die Veden entstanden in Sanskrit, der Rigveda ist der älteste Teil.",
+  "h": "Der Name bedeutet „Wissen“.",
+  "d": 3
+ },
+ {
+  "id": "1n641jo",
+  "s": "Weltreligionen",
+  "q": "Was bezeichnet „Karma“ im Hinduismus und Buddhismus?",
+  "a": [
+   "Die Wirkung von Handlungen auf die Zukunft",
+   "Die Befreiung aus dem Kreislauf",
+   "Die Wiedergeburt selbst",
+   "Die göttliche Weltordnung"
+  ],
+  "w": [
+   "",
+   "Die Befreiung aus dem Kreislauf heißt Moksha (Hinduismus) oder Nirvana (Buddhismus).",
+   "Die Wiedergeburt heißt Samsara.",
+   "Die kosmische Ordnung heißt Dharma."
+  ],
+  "e": "Karma bedeutet „Tat“ und beschreibt, wie Handlungen zu Folgen führen, auch in künftigen Leben.",
+  "h": "Wörtlich „Tat“.",
+  "d": 3
+ },
+ {
+  "id": "1ak8mkb",
+  "s": "Weltreligionen",
+  "q": "Wie heißt das hinduistische Lichterfest?",
+  "a": [
+   "Diwali",
+   "Holi",
+   "Vesak",
+   "Navaratri"
+  ],
+  "w": [
+   "",
+   "Holi ist das Farbenfest im Frühling.",
+   "Vesak ist das buddhistische Fest zu Buddhas Geburt, Erleuchtung und Tod.",
+   "Navaratri ist ein Fest der neun Nächte zu Ehren der Göttin."
+  ],
+  "e": "Diwali wird im Herbst gefeiert; Lichter symbolisieren den Sieg des Lichts über die Dunkelheit.",
+  "h": "Kleine Öllampen werden entzündet.",
+  "d": 2
+ },
+ {
+  "id": "1kruh90",
+  "s": "Weltreligionen",
+  "q": "In welchem Fluss baden Hindus besonders zur rituellen Reinigung?",
+  "a": [
+   "Ganges",
+   "Indus",
+   "Brahmaputra",
+   "Narmada"
+  ],
+  "w": [
+   "",
+   "Der Indus liegt hauptsächlich in Pakistan und gab Indien den Namen.",
+   "Der Brahmaputra fließt durch Tibet, Indien und Bangladesch.",
+   "Die Narmada ist ein heiliger Fluss, aber weniger zentral."
+  ],
+  "e": "Der Ganges gilt als Göttin Ganga; Varanasi ist die heilige Stadt an seinem Ufer.",
+  "h": "Fließt an Varanasi vorbei.",
+  "d": 1
+ },
+ {
+  "id": "q46q09",
+  "s": "Weltreligionen",
+  "q": "Was ist das Hauptmerkmal des Dschainismus?",
+  "a": [
+   "Gewaltlosigkeit gegenüber allen Lebewesen",
+   "Verehrung des Feuers",
+   "Glaube an einen Schöpfergott",
+   "Pflicht zur Pilgerfahrt"
+  ],
+  "w": [
+   "",
+   "Feuer steht im Zoroastrismus im Zentrum.",
+   "Der Dschainismus kennt keinen Schöpfergott.",
+   "Eine Pflichtpilgerfahrt kennt der Islam."
+  ],
+  "e": "Ahimsa (Gewaltlosigkeit) ist zentral; strenge Dschainas ernähren sich vegetarisch und achten selbst auf Kleinstlebewesen.",
+  "h": "Das Sanskritwort heißt Ahimsa.",
+  "d": 3
+ },
+ {
+  "id": "14fjs61",
+  "s": "Weltreligionen",
+  "q": "Wie heißt die Religion Japans, in der „Kami“ verehrt werden?",
+  "a": [
+   "Shintō",
+   "Daoismus",
+   "Konfuzianismus",
+   "Zen"
+  ],
+  "w": [
+   "",
+   "Der Daoismus stammt aus China.",
+   "Der Konfuzianismus stammt aus China und ist eine Ethik.",
+   "Zen ist eine buddhistische Schule."
+  ],
+  "e": "Shintō („Weg der Kami“) kennt keinen Gründer und keine feste Lehre; Heiligtümer erkennt man am Torii.",
+  "h": "Der Name bedeutet „Weg der Götter“.",
+  "d": 2
+ },
+ {
+  "id": "1jwb4wu",
+  "s": "Weltreligionen",
+  "q": "Welches Werk gilt als Grundtext des Daoismus?",
+  "a": [
+   "Daodejing",
+   "Bhagavad Gita",
+   "Lunyu",
+   "Avesta"
+  ],
+  "w": [
+   "",
+   "Die Bhagavad Gita ist ein hinduistischer Text.",
+   "Das Lunyu enthält Sprüche des Konfuzius.",
+   "Die Avesta ist heilige Schrift der Parsen."
+  ],
+  "e": "Das Daodejing wird Laozi zugeschrieben und hat 81 kurze Kapitel; zentral ist das Dao, der „Weg“.",
+  "h": "Der Titel enthält den „Weg“.",
+  "d": 3
+ },
+ {
+  "id": "12zkygw",
+  "s": "Weltreligionen",
+  "q": "Wie nennt man die Anhänger des Zoroastrismus in Indien?",
+  "a": [
+   "Parsen",
+   "Jainas",
+   "Sikhs",
+   "Bahai"
+  ],
+  "w": [
+   "",
+   "Jainas folgen dem Dschainismus.",
+   "Sikhs folgen dem Sikhismus.",
+   "Bahai folgen der Bahai-Religion."
+  ],
+  "e": "Parsen sind Nachkommen persischer Zoroastrier, die nach Gujarat und später Bombay kamen.",
+  "h": "Der Name erinnert an Persien.",
+  "d": 3
+ },
+ {
+  "id": "1iy5ook",
+  "s": "Weltreligionen",
+  "q": "Wer gilt als Stifter des Zoroastrismus?",
+  "a": [
+   "Zarathustra",
+   "Mani",
+   "Mazdak",
+   "Kyros"
+  ],
+  "w": [
+   "",
+   "Mani gründete den Manichäismus.",
+   "Mazdak war ein persischer Reformer des 5. Jahrhunderts.",
+   "Kyros II. war Gründer des Perserreichs, kein Religionsstifter."
+  ],
+  "e": "Zarathustra verkündete Ahura Mazda als obersten Gott; die heilige Schrift ist die Avesta.",
+  "h": "Bei Nietzsche sprach er ebenfalls.",
+  "d": 2
+ },
+ {
+  "id": "k65riv",
+  "s": "Weltreligionen",
+  "q": "Wie heißt der wöchentliche jüdische Ruhetag?",
+  "a": [
+   "Schabbat",
+   "Sukkot",
+   "Schawuot",
+   "Rosch Haschana"
+  ],
+  "w": [
+   "",
+   "Sukkot ist das Laubhüttenfest.",
+   "Schawuot ist das Wochenfest.",
+   "Rosch Haschana ist das jüdische Neujahr."
+  ],
+  "e": "Der Schabbat beginnt Freitagabend bei Sonnenuntergang und endet Samstagabend.",
+  "h": "Er beginnt am Vorabend.",
+  "d": 2
+ },
+ {
+  "id": "lzve6f",
+  "s": "Weltreligionen",
+  "q": "Wie heißt der höchste jüdische Feiertag mit Fasten und Versöhnung?",
+  "a": [
+   "Jom Kippur",
+   "Purim",
+   "Chanukka",
+   "Tischa beAw"
+  ],
+  "w": [
+   "",
+   "Purim ist ein fröhliches Fest zur Erinnerung an Ester.",
+   "Chanukka ist das Lichterfest.",
+   "Tischa beAw ist ein Trauertag zur Tempelzerstörung."
+  ],
+  "e": "Jom Kippur („Versöhnungstag“) folgt zehn Tage nach Rosch Haschana.",
+  "h": "Der Name bedeutet „Tag der Sühne“.",
+  "d": 2
+ },
+ {
+  "id": "1xx0ej3",
+  "s": "Weltreligionen",
+  "q": "Wie nennt man die Hebräische Bibel mit ihrem Fachbegriff?",
+  "a": [
+   "Tanach",
+   "Talmud",
+   "Midrasch",
+   "Mischna"
+  ],
+  "w": [
+   "",
+   "Der Talmud ist die Sammlung rabbinischer Diskussionen.",
+   "Midrasch sind Auslegungen biblischer Texte.",
+   "Die Mischna ist die schriftliche Fassung der mündlichen Lehre."
+  ],
+  "e": "Tanach steht für Tora, Newiim (Propheten) und Ketuwim (Schriften).",
+  "h": "Das Wort ist ein Akronym aus drei Teilen.",
+  "d": 3
+ },
+ {
+  "id": "1iizuh9",
+  "s": "Weltreligionen",
+  "q": "Welches Alter erreichen Jungen im Judentum bei der Bar Mizwa?",
+  "a": [
+   "13 Jahre",
+   "12 Jahre",
+   "16 Jahre",
+   "18 Jahre"
+  ],
+  "w": [
+   "",
+   "12 Jahre ist das Alter der Bat Mizwa in manchen Traditionen.",
+   "16 Jahre ist keine Altersgrenze im Judentum.",
+   "18 Jahre ist die zivile Volljährigkeit, nicht die religiöse."
+  ],
+  "e": "Mit 13 Jahren werden Jungen religiös mündig und lesen erstmals aus der Tora.",
+  "h": "Eine Zahl, die als Unglückszahl gilt.",
+  "d": 3
+ },
+ {
+  "id": "aefghh",
+  "s": "Weltreligionen",
+  "q": "Welche Religion hat ihren Ursprung im Iran des 19. Jahrhunderts und lehrt die Einheit der Menschheit?",
+  "a": [
+   "Bahai",
+   "Alevitentum",
+   "Drusentum",
+   "Ahmadiyya"
+  ],
+  "w": [
+   "",
+   "Das Alevitentum entstand im Mittelalter in Anatolien.",
+   "Die Drusen entstanden im 11. Jahrhundert in Ägypten.",
+   "Die Ahmadiyya entstand im 19. Jahrhundert in Indien."
+  ],
+  "e": "Der Bahai-Glaube wurde von Bahaullah (1817–1892) begründet; ihr Weltzentrum liegt in Haifa.",
+  "h": "Gründer: Bahaullah.",
+  "d": 3
+ },
+ {
+  "id": "1ihbyql",
+  "s": "Weltreligionen",
+  "q": "Welches Land hat die meisten Hindus?",
+  "a": [
+   "Indien",
+   "Nepal",
+   "Indonesien",
+   "Bangladesch"
+  ],
+  "w": [
+   "",
+   "Nepal hat einen hohen Anteil, aber deutlich weniger Menschen.",
+   "Indonesien hat Hindus vor allem auf Bali, insgesamt nur wenige.",
+   "Bangladesch hat eine hinduistische Minderheit."
+  ],
+  "e": "Rund 94 % aller Hindus leben in Indien (Pew 2020).",
+  "h": "Auch das bevölkerungsreichste Land.",
+  "d": 2
+ },
+ {
+  "id": "1djkg15",
+  "s": "Weltreligionen",
+  "q": "Wie heißt das Land mit den meisten Muslimen?",
+  "a": [
+   "Indonesien",
+   "Saudi-Arabien",
+   "Iran",
+   "Ägypten"
+  ],
+  "w": [
+   "",
+   "Saudi-Arabien beherbergt Mekka, hat aber deutlich weniger Muslime.",
+   "Der Iran ist mehrheitlich schiitisch, aber kleiner.",
+   "Ägypten hat viele Muslime, jedoch weniger als Indonesien."
+  ],
+  "e": "Indonesien hat mit über 200 Millionen die größte muslimische Bevölkerung (Stand 2020).",
+  "h": "Ein Inselstaat in Südostasien.",
+  "d": 2
+ },
+ {
+  "id": "11f80xt",
+  "s": "Weltreligionen",
+  "q": "Was ist die Kaaba?",
+  "a": [
+   "Heiligtum in Mekka",
+   "Moschee in Medina",
+   "Grab Mohammeds",
+   "Berg der Offenbarung"
+  ],
+  "w": [
+   "",
+   "Die Prophetenmoschee in Medina ist ein anderes Heiligtum.",
+   "Mohammeds Grab liegt in Medina.",
+   "Der Berg Hira nahe Mekka gilt als Ort der ersten Offenbarung."
+  ],
+  "e": "Die würfelförmige Kaaba in der Heiligen Moschee ist die Gebetsrichtung (Qibla) aller Muslime.",
+  "h": "Ein schwarzer, würfelförmiger Bau.",
+  "d": 2
+ },
+ {
+  "id": "135zfkn",
+  "s": "Weltreligionen",
+  "q": "Welche Bezeichnung trägt der islamische Gebetsruf?",
+  "a": [
+   "Adhan",
+   "Fatwa",
+   "Dschihad",
+   "Imam"
+  ],
+  "w": [
+   "",
+   "Eine Fatwa ist ein islamisches Rechtsgutachten.",
+   "Dschihad bedeutet „Anstrengung“.",
+   "Ein Imam leitet das Gebet."
+  ],
+  "e": "Der Muezzin ruft den Adhan fünfmal täglich zu den Gebetszeiten.",
+  "h": "Von der Moschee aus gerufen.",
+  "d": 2
+ },
+ {
+  "id": "qmpwlf",
+  "s": "Bibel & Feste",
+  "q": "Welches Fest feiern Christen zur Auferstehung Jesu?",
+  "a": [
+   "Ostern",
+   "Pfingsten",
+   "Weihnachten",
+   "Advent"
+  ],
+  "w": [
+   "",
+   "Pfingsten erinnert an die Sendung des Heiligen Geistes.",
+   "Weihnachten feiert die Geburt Jesu.",
+   "Advent ist die Vorbereitungszeit vor Weihnachten."
+  ],
+  "e": "Ostern fällt auf den ersten Sonntag nach dem ersten Frühlingsvollmond (frühestens 22. März, spätestens 25. April).",
+  "h": "Das Fest mit dem beweglichen Datum im Frühjahr.",
+  "d": 1
+ },
+ {
+  "id": "u2jmz1",
+  "s": "Bibel & Feste",
+  "q": "Was wird an Pfingsten gefeiert?",
+  "a": [
+   "Die Ausgießung des Geistes",
+   "Die Geburt Jesu Christi",
+   "Die Himmelfahrt Jesu Christi",
+   "Die Kreuzigung Jesu Christi"
+  ],
+  "w": [
+   "",
+   "Die Geburt Jesu wird an Weihnachten gefeiert.",
+   "Die Himmelfahrt wird am 40. Tag nach Ostern gefeiert.",
+   "Die Kreuzigung wird am Karfreitag begangen."
+  ],
+  "e": "Pfingsten fällt auf den 50. Tag nach Ostern (griechisch „pentekoste“, der Fünfzigste).",
+  "h": "Der Name stammt von „fünfzig“.",
+  "d": 1
+ },
+ {
+  "id": "zg3585",
+  "s": "Bibel & Feste",
+  "q": "Wie viele Bücher hat das Neue Testament?",
+  "a": [
+   "27",
+   "39",
+   "66",
+   "12"
+  ],
+  "w": [
+   "",
+   "39 Bücher hat das Alte Testament in der evangelischen Zählung.",
+   "66 Bücher hat die gesamte evangelische Bibel.",
+   "12 ist die Zahl der Apostel, nicht der Bücher."
+  ],
+  "e": "Das Neue Testament hat 27 Bücher in allen großen Kirchen; die evangelische Bibel zählt insgesamt 66, die katholische 73.",
+  "h": "Eine Zahl zwischen 20 und 30.",
+  "d": 2
+ },
+ {
+  "id": "j58ist",
+  "s": "Bibel & Feste",
+  "q": "Wer baute der Bibel zufolge die Arche?",
+  "a": [
+   "Noah",
+   "Mose",
+   "Abraham",
+   "Josef"
+  ],
+  "w": [
+   "",
+   "Mose führte die Israeliten aus Ägypten.",
+   "Abraham gilt als Stammvater der Israeliten.",
+   "Josef wurde nach Ägypten verkauft und stieg dort auf."
+  ],
+  "e": "Nach Genesis 6–9 rettete Noah seine Familie und je ein Tierpaar vor der Sintflut.",
+  "h": "Danach erschien ein Regenbogen.",
+  "d": 1
+ },
+ {
+  "id": "vty2wp",
+  "s": "Bibel & Feste",
+  "q": "Wer gehört nicht zu den vier Evangelisten?",
+  "a": [
+   "Paulus",
+   "Markus",
+   "Lukas",
+   "Johannes"
+  ],
+  "w": [
+   "",
+   "Markus verfasste das älteste Evangelium.",
+   "Lukas verfasste ein Evangelium und die Apostelgeschichte.",
+   "Johannes verfasste das vierte Evangelium."
+  ],
+  "e": "Die Evangelisten sind Matthäus, Markus, Lukas und Johannes; Paulus schrieb Briefe an Gemeinden.",
+  "h": "Er schrieb Briefe, kein Evangelium.",
+  "d": 1
+ },
+ {
+  "id": "ehyvoh",
+  "s": "Bibel & Feste",
+  "q": "Was bedeutet das Wort „Advent“?",
+  "a": [
+   "Ankunft",
+   "Fastenzeit",
+   "Erntedank",
+   "Lichterfest"
+  ],
+  "w": [
+   "",
+   "Fastenzeit heißt die Zeit vor Ostern.",
+   "Erntedank wird im Herbst gefeiert.",
+   "Das Lichterfest ist Chanukka im Judentum."
+  ],
+  "e": "Vom lateinischen „adventus“; gemeint ist die Ankunft Christi, der Advent umfasst vier Sonntage vor Weihnachten.",
+  "h": "Ein lateinisches Wort aus „kommen“.",
+  "d": 1
+ },
+ {
+  "id": "hov9i4",
+  "s": "Bibel & Feste",
+  "q": "Womit beginnt die christliche Fastenzeit?",
+  "a": [
+   "Aschermittwoch",
+   "Karfreitag",
+   "Palmsonntag",
+   "Fronleichnam"
+  ],
+  "w": [
+   "",
+   "Karfreitag erinnert an die Kreuzigung, am Ende der Fastenzeit.",
+   "Palmsonntag eröffnet die Karwoche.",
+   "Fronleichnam wird im Frühsommer gefeiert."
+  ],
+  "e": "Die Fastenzeit dauert 40 Tage bis Ostern, Sonntage werden nicht mitgezählt.",
+  "h": "Der Tag nach dem Fasching.",
+  "d": 1
+ },
+ {
+  "id": "k8pubd",
+  "s": "Bibel & Feste",
+  "q": "Wer übersetzte die gesamte Bibel ins Deutsche (1534)?",
+  "a": [
+   "Martin Luther",
+   "Johannes Gutenberg",
+   "Ulrich Zwingli",
+   "Philipp Melanchthon"
+  ],
+  "w": [
+   "",
+   "Gutenberg druckte um 1455 die lateinische Bibel.",
+   "Zwingli reformierte in Zürich und übersetzte mit Kollegen die Zürcher Bibel.",
+   "Melanchthon war Luthers Mitarbeiter, nicht der Hauptübersetzer."
+  ],
+  "e": "Luthers Neues Testament erschien 1522 (Wartburg), die ganze Bibel 1534.",
+  "h": "Er lebte in Wittenberg.",
+  "d": 2
+ },
+ {
+  "id": "85s48p",
+  "s": "Bibel & Feste",
+  "q": "Woran erinnert das jüdische Pessachfest?",
+  "a": [
+   "Den Auszug aus Ägypten",
+   "Die Weihe des Tempels in Jerusalem",
+   "Das jüdische Neujahr",
+   "Die Gabe der Tora"
+  ],
+  "w": [
+   "",
+   "Die Weihe des Tempels ist das Thema von Chanukka.",
+   "Das Neujahr heißt Rosch Haschana.",
+   "Die Gabe der Tora feiert Schawuot."
+  ],
+  "e": "Beim Sederabend wird die Befreiung aus der Sklaverei erzählt; man isst Mazzen statt Gesäuertem.",
+  "h": "Brot ohne Sauerteig spielt eine Rolle.",
+  "d": 1
+ },
+ {
+  "id": "1ui0kjj",
+  "s": "Bibel & Feste",
+  "q": "An welchem Tag feiern Christen traditionell Christi Himmelfahrt?",
+  "a": [
+   "40 Tage nach Ostern",
+   "7 Tage nach Ostern",
+   "50 Tage nach Ostern",
+   "3 Tage nach Ostern"
+  ],
+  "w": [
+   "",
+   "Sieben Tage nach Ostern ist der Weiße Sonntag.",
+   "50 Tage nach Ostern ist Pfingsten.",
+   "Drei Tage nach Ostern wäre kein Fest, die Auferstehung ist schon Ostersonntag."
+  ],
+  "e": "Himmelfahrt ist stets ein Donnerstag, der 40. Tag der Osterzeit (Ostersonntag mitgezählt).",
+  "h": "Eine Zahl, die in der Bibel häufig vorkommt.",
+  "d": 2
+ },
+ {
+  "id": "1pwv051",
+  "s": "Bibel & Feste",
+  "q": "Welches ist das erste Buch der Bibel?",
+  "a": [
+   "Genesis",
+   "Exodus",
+   "Psalmen",
+   "Matthäus"
+  ],
+  "w": [
+   "",
+   "Exodus ist das zweite Buch Mose.",
+   "Die Psalmen stehen weit hinten im Alten Testament.",
+   "Matthäus eröffnet das Neue Testament."
+  ],
+  "e": "Genesis (1. Mose) erzählt von Schöpfung, Sündenfall, Sintflut und den Erzvätern.",
+  "h": "Der Name bedeutet „Ursprung“.",
+  "d": 1
+ },
+ {
+  "id": "1sy8nhm",
+  "s": "Bibel & Feste",
+  "q": "Welches ist das letzte Buch der christlichen Bibel?",
+  "a": [
+   "Offenbarung des Johannes",
+   "Apostelgeschichte des Lukas über die Urkirche",
+   "Hebräerbrief",
+   "Judasbrief"
+  ],
+  "w": [
+   "",
+   "Die Apostelgeschichte steht nach den Evangelien.",
+   "Der Hebräerbrief steht vor den Katholischen Briefen.",
+   "Der Judasbrief steht direkt vor der Offenbarung."
+  ],
+  "e": "Die Offenbarung (Apokalypse) schließt das Neue Testament ab.",
+  "h": "Das Buch enthält die sieben Siegel.",
+  "d": 2
+ },
+ {
+  "id": "d4d6q3",
+  "s": "Bibel & Feste",
+  "q": "Wie viele Psalmen enthält das biblische Buch der Psalmen?",
+  "a": [
+   "150",
+   "100",
+   "66",
+   "120"
+  ],
+  "w": [
+   "",
+   "100 ist zu niedrig.",
+   "66 ist die Zahl der Bücher der evangelischen Bibel.",
+   "120 ist zu niedrig."
+  ],
+  "e": "Der Psalter umfasst 150 Lieder und Gebete, traditionell König David zugeschrieben.",
+  "h": "Eine runde Zahl über hundert.",
+  "d": 3
+ },
+ {
+  "id": "13yfbpe",
+  "s": "Bibel & Feste",
+  "q": "Wer führte die Israeliten der Bibel zufolge aus Ägypten?",
+  "a": [
+   "Mose",
+   "Josua",
+   "David",
+   "Elia"
+  ],
+  "w": [
+   "",
+   "Josua führte das Volk später ins Gelobte Land.",
+   "David wurde später König Israels.",
+   "Elia war ein Prophet im Nordreich Israel."
+  ],
+  "e": "Mose empfing am Berg Sinai die Zehn Gebote (2. Mose 19–20).",
+  "h": "Er teilte das Rote Meer.",
+  "d": 1
+ },
+ {
+  "id": "1d1he5l",
+  "s": "Bibel & Feste",
+  "q": "Wie viele Gebote umfasst der Dekalog?",
+  "a": [
+   "Zehn",
+   "Sieben",
+   "Zwölf",
+   "Dreizehn"
+  ],
+  "w": [
+   "",
+   "Sieben sind die Noachidischen Gebote im Judentum.",
+   "Zwölf ist die Zahl der Stämme Israels.",
+   "Dreizehn ist die Zahl der Glaubensartikel nach Maimonides."
+  ],
+  "e": "Der Dekalog steht in 2. Mose 20 und 5. Mose 5; „Deka“ ist griechisch für zehn.",
+  "h": "„Deka“ steckt im Namen.",
+  "d": 2
+ },
+ {
+  "id": "1cjqpzg",
+  "s": "Bibel & Feste",
+  "q": "Wer besiegte der Bibel zufolge den Riesen Goliat?",
+  "a": [
+   "David",
+   "Saul",
+   "Simson",
+   "Gideon"
+  ],
+  "w": [
+   "",
+   "Saul war der erste König Israels und scheute den Kampf.",
+   "Simson war ein Richter mit großer Körperkraft.",
+   "Gideon besiegte mit 300 Mann die Midianiter."
+  ],
+  "e": "David besiegte Goliat mit einer Steinschleuder (1. Samuel 17) und wurde später König.",
+  "h": "Ein junger Hirte.",
+  "d": 1
+ },
+ {
+  "id": "1v5l8lg",
+  "s": "Bibel & Feste",
+  "q": "Wie heißt die Predigt Jesu, die mit den Seligpreisungen beginnt?",
+  "a": [
+   "Bergpredigt",
+   "Feldrede",
+   "Abschiedsrede",
+   "Areopagrede"
+  ],
+  "w": [
+   "",
+   "Die Feldrede steht im Lukasevangelium, mit ähnlichem Inhalt.",
+   "Die Abschiedsreden stehen im Johannesevangelium.",
+   "Die Areopagrede hielt Paulus in Athen."
+  ],
+  "e": "Die Bergpredigt steht in Matthäus 5–7 und enthält das Vaterunser.",
+  "h": "Ort: ein Berg.",
+  "d": 2
+ },
+ {
+  "id": "l652qn",
+  "s": "Bibel & Feste",
+  "q": "Wie heißt das wichtigste Gebet der Christen, das Jesus seine Jünger lehrte?",
+  "a": [
+   "Vaterunser",
+   "Ave Maria",
+   "Glaubensbekenntnis",
+   "Magnifikat"
+  ],
+  "w": [
+   "",
+   "Das Ave Maria ist ein Mariengebet.",
+   "Das Glaubensbekenntnis stammt aus altkirchlichen Konzilien.",
+   "Das Magnifikat ist der Lobgesang Marias."
+  ],
+  "e": "Das Vaterunser steht in Matthäus 6 und Lukas 11.",
+  "h": "Beginnt mit einer Anrede an Gott.",
+  "d": 1
+ },
+ {
+  "id": "1n8po49",
+  "s": "Bibel & Feste",
+  "q": "Was feiern Christen am 25. Dezember?",
+  "a": [
+   "Die Geburt Jesu",
+   "Die Taufe Jesu",
+   "Die Anbetung der Könige",
+   "Die Beschneidung Jesu"
+  ],
+  "w": [
+   "",
+   "Die Taufe Jesu wird nach dem Dreikönigstag gefeiert.",
+   "Die Anbetung der Könige wird am 6. Januar gefeiert.",
+   "Die Beschneidung Jesu wird am 1. Januar gefeiert."
+  ],
+  "e": "Der 25. Dezember ist seit dem 4. Jahrhundert in Rom als Geburtsfest belegt; orthodoxe Kirchen nach dem Julianischen Kalender feiern am 7. Januar.",
+  "h": "Eine Krippe gehört dazu.",
+  "d": 1
+ },
+ {
+  "id": "7t2osh",
+  "s": "Bibel & Feste",
+  "q": "Was wird am 6. Januar in vielen Kirchen gefeiert?",
+  "a": [
+   "Erscheinung des Herrn",
+   "Maria Lichtmess (Darstellung des Herrn)",
+   "Aschermittwoch",
+   "Allerheiligen"
+  ],
+  "w": [
+   "",
+   "Maria Lichtmess ist am 2. Februar.",
+   "Aschermittwoch liegt im Februar oder März.",
+   "Allerheiligen ist am 1. November."
+  ],
+  "e": "Das Dreikönigsfest (Epiphanias) erinnert an die Weisen aus dem Morgenland.",
+  "h": "Auch Dreikönigstag genannt.",
+  "d": 3
+ },
+ {
+  "id": "170qc11",
+  "s": "Bibel & Feste",
+  "q": "Welches Fest erinnert an das Abendmahl und die Einsetzung des Sakraments?",
+  "a": [
+   "Gründonnerstag",
+   "Karfreitag",
+   "Ostermontag",
+   "Palmsonntag"
+  ],
+  "w": [
+   "",
+   "Karfreitag erinnert an die Kreuzigung.",
+   "Ostermontag erinnert an die Emmausjünger.",
+   "Palmsonntag erinnert an den Einzug in Jerusalem."
+  ],
+  "e": "Am Gründonnerstag gedenkt man des letzten Mahls Jesu mit den Jüngern.",
+  "h": "Der Donnerstag vor Ostern.",
+  "d": 3
+ },
+ {
+  "id": "1fypi8l",
+  "s": "Bibel & Feste",
+  "q": "Wann wird der Reformationstag begangen?",
+  "a": [
+   "31. Oktober",
+   "1. November",
+   "6. Dezember",
+   "25. Dezember"
+  ],
+  "w": [
+   "",
+   "Am 1. November ist Allerheiligen.",
+   "Am 6. Dezember ist Nikolaus.",
+   "Am 25. Dezember ist Weihnachten."
+  ],
+  "e": "Am 31. Oktober 1517 soll Luther seine 95 Thesen gegen den Ablasshandel in Wittenberg veröffentlicht haben.",
+  "h": "Der Tag vor Allerheiligen.",
+  "d": 1
+ },
+ {
+  "id": "vyh32n",
+  "s": "Bibel & Feste",
+  "q": "Worum ging es in Luthers 95 Thesen von 1517?",
+  "a": [
+   "Um den Ablasshandel",
+   "Um die Bibelübersetzung",
+   "Um die Priesterehe",
+   "Um den Papstprimat"
+  ],
+  "w": [
+   "",
+   "Die Bibelübersetzung folgte erst 1522 bis 1534.",
+   "Die Priesterehe thematisierte Luther später.",
+   "Der Papstprimat wurde erst später zentral."
+  ],
+  "e": "Luther kritisierte den Verkauf von Ablassbriefen, mit denen unter anderem der Bau des Petersdoms mitfinanziert wurde.",
+  "h": "Es ging um Geld für Sündenvergebung.",
+  "d": 2
+ },
+ {
+  "id": "xry64l",
+  "s": "Bibel & Feste",
+  "q": "Wer übersetzte die Bibel im 4. Jahrhundert ins Lateinische (Vulgata)?",
+  "a": [
+   "Hieronymus",
+   "Augustinus",
+   "Ambrosius",
+   "Benedikt"
+  ],
+  "w": [
+   "",
+   "Augustinus war Kirchenlehrer und Bischof von Hippo.",
+   "Ambrosius war Bischof von Mailand.",
+   "Benedikt gründete den Benediktinerorden."
+  ],
+  "e": "Hieronymus arbeitete ab 382 im Auftrag von Papst Damasus; die Vulgata blieb jahrhundertelang Standardbibel.",
+  "h": "Er lebte zuletzt in Bethlehem.",
+  "d": 3
+ },
+ {
+  "id": "1ljbk9g",
+  "s": "Bibel & Feste",
+  "q": "Wie heißt die älteste griechische Übersetzung des Alten Testaments?",
+  "a": [
+   "Septuaginta",
+   "Vulgata",
+   "Peschitta",
+   "Lutherbibel"
+  ],
+  "w": [
+   "",
+   "Die Vulgata ist die lateinische Übersetzung.",
+   "Die Peschitta ist die syrische Übersetzung.",
+   "Die Lutherbibel ist deutsch."
+  ],
+  "e": "Die Septuaginta („Siebzig“) entstand ab dem 3. Jahrhundert v. Chr. in Alexandria.",
+  "h": "Der Name nennt eine Zahl.",
+  "d": 3
+ },
+ {
+  "id": "1rk7oek",
+  "s": "Bibel & Feste",
+  "q": "Wie viele Apostel zählt die Bibel?",
+  "a": [
+   "Zwölf",
+   "Sieben",
+   "Zehn",
+   "Siebzig"
+  ],
+  "w": [
+   "",
+   "Sieben sind die ersten Diakone in der Apostelgeschichte.",
+   "Zehn ist falsch, Jesus berief zwölf Apostel.",
+   "Siebzig (oder zweiundsiebzig) Jünger sendet Jesus bei Lukas aus."
+  ],
+  "e": "Die Zwölf entsprechen den zwölf Stämmen Israels.",
+  "h": "Eine Dutzendzahl.",
+  "d": 1
+ },
+ {
+  "id": "rirfdd",
+  "s": "Bibel & Feste",
+  "q": "Welcher Apostel verriet Jesus?",
+  "a": [
+   "Judas Iskariot",
+   "Petrus",
+   "Thomas",
+   "Andreas"
+  ],
+  "w": [
+   "",
+   "Petrus verleugnete Jesus, verriet ihn aber nicht.",
+   "Thomas zweifelte an der Auferstehung.",
+   "Andreas war Fischer und Bruder des Petrus."
+  ],
+  "e": "Judas verriet Jesus laut den Evangelien für dreißig Silberstücke.",
+  "h": "Dreißig Silberstücke.",
+  "d": 1
+ },
+ {
+  "id": "dl2n3z",
+  "s": "Bibel & Feste",
+  "q": "Wer gilt nach katholischer Tradition als erster Bischof von Rom?",
+  "a": [
+   "Petrus",
+   "Paulus",
+   "Johannes",
+   "Jakobus"
+  ],
+  "w": [
+   "",
+   "Paulus war Missionar und wirkte ebenfalls in Rom, gilt aber nicht als erster Bischof.",
+   "Johannes gilt nicht als Bischof von Rom, sondern der Tradition nach als Bischof von Ephesus.",
+   "Jakobus gilt als erster Bischof von Jerusalem."
+  ],
+  "e": "Katholiken sehen in Petrus den ersten Bischof von Rom; der Petersdom steht über seinem Grab.",
+  "h": "Der „Fels“.",
+  "d": 2
+ },
+ {
+  "id": "1nlsfc8",
+  "s": "Bibel & Feste",
+  "q": "Wer schrieb nach der Tradition die meisten Briefe des Neuen Testaments?",
+  "a": [
+   "Paulus",
+   "Petrus",
+   "Johannes",
+   "Jakobus"
+  ],
+  "w": [
+   "",
+   "Petrus werden zwei Briefe zugeschrieben.",
+   "Johannes werden drei Briefe zugeschrieben.",
+   "Jakobus wird ein Brief zugeschrieben."
+  ],
+  "e": "Dreizehn Briefe tragen Paulus’ Namen; sieben gelten als unumstritten echt.",
+  "h": "Früher hieß er Saulus.",
+  "d": 2
+ },
+ {
+  "id": "oomd1r",
+  "s": "Bibel & Feste",
+  "q": "Wann wird Fronleichnam gefeiert?",
+  "a": [
+   "60 Tage nach Ostern",
+   "40 Tage nach Ostern",
+   "50 Tage nach Ostern",
+   "10 Tage nach Pfingsten"
+  ],
+  "w": [
+   "",
+   "40 Tage nach Ostern ist Himmelfahrt.",
+   "50 Tage nach Ostern ist Pfingsten.",
+   "Zehn Tage nach Pfingsten gibt es kein Hochfest."
+  ],
+  "e": "Fronleichnam ist am Donnerstag nach dem Dreifaltigkeitssonntag, 60 Tage nach Ostern.",
+  "h": "Ein Donnerstag im Frühsommer.",
+  "d": 3
+ },
+ {
+  "id": "drpzmi",
+  "s": "Bibel & Feste",
+  "q": "Wer gilt als Namensgeber des Nikolaustags am 6. Dezember?",
+  "a": [
+   "Nikolaus von Myra",
+   "Nikolaus von Kues",
+   "Nikolaus Kopernikus",
+   "Nikolaus Lenau"
+  ],
+  "w": [
+   "",
+   "Nikolaus von Kues war ein Kardinal und Philosoph des 15. Jahrhunderts.",
+   "Nikolaus Kopernikus war Astronom.",
+   "Nikolaus Lenau war ein Dichter des 19. Jahrhunderts."
+  ],
+  "e": "Nikolaus war Bischof von Myra im heutigen Süden der Türkei, Todestag 6. Dezember (4. Jahrhundert).",
+  "h": "Sein Ort liegt heute in der Türkei.",
+  "d": 2
+ },
+ {
+  "id": "khlgs2",
+  "s": "Bibel & Feste",
+  "q": "Wie heißt die Zeit zwischen Aschermittwoch und Ostern?",
+  "a": [
+   "Fastenzeit",
+   "Osterzeit",
+   "Adventszeit",
+   "Weihnachtszeit"
+  ],
+  "w": [
+   "",
+   "Die Osterzeit folgt auf Ostern und dauert bis Pfingsten.",
+   "Die Adventszeit liegt vor Weihnachten.",
+   "Die Weihnachtszeit folgt auf Heiligabend."
+  ],
+  "e": "Die Fastenzeit dauert 40 Tage (ohne Sonntage); die Karwoche bildet ihren Abschluss.",
+  "h": "Vorbereitung auf Ostern.",
+  "d": 2
+ },
+ {
+  "id": "1jt8j8t",
+  "s": "Bibel & Feste",
+  "q": "Wer war der Bibel zufolge der erste Mensch?",
+  "a": [
+   "Adam",
+   "Kain",
+   "Set",
+   "Henoch"
+  ],
+  "w": [
+   "",
+   "Kain war Adams erster Sohn.",
+   "Set war Adams dritter Sohn.",
+   "Henoch war ein Nachkomme Kains oder Sets."
+  ],
+  "e": "Nach Genesis 2 formte Gott Adam aus Erde („adama“) und gab ihm Eva als Gefährtin.",
+  "h": "Sein Name bedeutet „Mensch“ oder „Erde“.",
+  "d": 1
+ },
+ {
+  "id": "nnx3ig",
+  "s": "Bibel & Feste",
+  "q": "Wer ermordete der Bibel zufolge seinen Bruder Abel?",
+  "a": [
+   "Kain",
+   "Esau",
+   "Joab",
+   "Absalom"
+  ],
+  "w": [
+   "",
+   "Esau war Jakobs Zwillingsbruder und kein Mörder.",
+   "Joab war Davids Heerführer.",
+   "Absalom war ein Sohn Davids."
+  ],
+  "e": "Kain und Abel waren die ersten Söhne Adams und Evas (1. Mose 4).",
+  "h": "Der erste Brudermord der Bibel.",
+  "d": 1
+ },
+ {
+  "id": "lwelq6",
+  "s": "Bibel & Feste",
+  "q": "Welches Tier verführte laut Genesis Eva zum Essen der verbotenen Frucht?",
+  "a": [
+   "Schlange",
+   "Esel",
+   "Taube",
+   "Rabe"
+  ],
+  "w": [
+   "",
+   "Der Esel spricht bei Bileam, nicht im Garten Eden.",
+   "Die Taube bringt Noah den Ölzweig.",
+   "Der Rabe wird bei Noah als erster Vogel ausgesandt."
+  ],
+  "e": "Die Schlange steht in 1. Mose 3 für die Versuchung im Garten Eden.",
+  "h": "Kriecht am Boden.",
+  "d": 1
+ },
+ {
+  "id": "147rb67",
+  "s": "Bibel & Feste",
+  "q": "Welcher Stamm- oder Erzvater sollte der Bibel zufolge seinen Sohn Isaak opfern?",
+  "a": [
+   "Abraham",
+   "Jakob",
+   "Noah",
+   "Lot"
+  ],
+  "w": [
+   "",
+   "Jakob war Isaaks Sohn.",
+   "Noah lebte lange vor Isaak.",
+   "Lot war Abrahams Neffe."
+  ],
+  "e": "Die Opferung Isaaks (1. Mose 22) endete mit der Bereitstellung eines Widders; Muslime beziehen die Erzählung auf Ismail.",
+  "h": "Er gilt für Juden, Christen und Muslime als Stammvater.",
+  "d": 2
+ },
+ {
+  "id": "4m7487",
+  "s": "Bibel & Feste",
+  "q": "In welcher Stadt wurde Jesus nach den Evangelien geboren?",
+  "a": [
+   "Bethlehem",
+   "Nazaret",
+   "Jerusalem",
+   "Kapernaum"
+  ],
+  "w": [
+   "",
+   "In Nazaret wuchs Jesus auf.",
+   "In Jerusalem wurde er gekreuzigt.",
+   "In Kapernaum wirkte er am See Genezareth."
+  ],
+  "e": "Matthäus und Lukas nennen Bethlehem in Judäa als Geburtsort.",
+  "h": "Die Stadt Davids.",
+  "d": 1
+ },
+ {
+  "id": "1uynljx",
+  "s": "Bibel & Feste",
+  "q": "Wie heißt der Fluss, in dem Jesus von Johannes getauft wurde?",
+  "a": [
+   "Jordan",
+   "Nil",
+   "Euphrat",
+   "Tigris"
+  ],
+  "w": [
+   "",
+   "Der Nil fließt durch Ägypten.",
+   "Der Euphrat fließt durch Mesopotamien.",
+   "Der Tigris fließt durch Mesopotamien."
+  ],
+  "e": "Der Jordan mündet ins Tote Meer.",
+  "h": "Er mündet ins Tote Meer.",
+  "d": 2
+ },
+ {
+  "id": "2qaq1",
+  "s": "Bibel & Feste",
+  "q": "Was feiert die katholische Kirche an Allerheiligen?",
+  "a": [
+   "Alle Heiligen",
+   "Alle Verstorbenen",
+   "Alle Päpste",
+   "Alle Märtyrer der Reformation"
+  ],
+  "w": [
+   "",
+   "Der Verstorbenen gedenkt man an Allerseelen, am 2. November.",
+   "Eine Päpste-Gedenkfeier gibt es nicht.",
+   "Dafür gibt es keinen eigenen Feiertag."
+  ],
+  "e": "Allerheiligen ist am 1. November, Allerseelen am 2. November.",
+  "h": "Der Tag nach Halloween.",
+  "d": 2
+ },
+ {
+  "id": "183x4xy",
+  "s": "Bibel & Feste",
+  "q": "Wie heißt der Gottesdienst zur Feier des Abendmahls in der katholischen Kirche?",
+  "a": [
+   "Eucharistiefeier",
+   "Vesper",
+   "Laudes",
+   "Komplet"
+  ],
+  "w": [
+   "",
+   "Die Vesper ist das Abendgebet.",
+   "Die Laudes sind das Morgenlob.",
+   "Die Komplet ist das Nachtgebet."
+  ],
+  "e": "Die Eucharistiefeier (Messe) erinnert an das letzte Mahl Jesu mit Brot und Wein.",
+  "h": "Ihr Name bedeutet „Danksagung“.",
+  "d": 3
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Was ist der Ramadan?",
+  "a": [
+   "Ein Fastenmonat im Islam",
+   "Ein jüdisches Lichterfest",
+   "Ein hinduistisches Frühlingsfest",
+   "Eine buddhistische Pilgerreise"
+  ],
+  "w": [
+   "",
+   "Das jüdische Lichterfest heißt Chanukka.",
+   "Das hinduistische Frühlingsfest heißt Holi.",
+   "Ramadan ist keine Pilgerreise; die islamische Pilgerfahrt heißt Hadsch."
+  ],
+  "e": "Im Ramadan, dem neunten Monat des islamischen Mondkalenders, fasten gläubige Muslime von der Morgendämmerung bis Sonnenuntergang. Er endet mit dem Fest des Fastenbrechens.",
+  "h": "Tagsüber wird nicht gegessen.",
+  "d": 1,
+  "id": "nb44936d"
+ },
+ {
+  "s": "Weltreligionen",
+  "q": "Welche Religion hat weltweit die meisten Anhänger?",
+  "a": [
+   "Christentum",
+   "Islam",
+   "Hinduismus",
+   "Buddhismus"
+  ],
+  "w": [
+   "",
+   "Der Islam ist die zweitgrößte Religion mit rund einem Viertel der Weltbevölkerung.",
+   "Der Hinduismus ist die drittgrößte Religion.",
+   "Der Buddhismus hat deutlich weniger Anhänger."
+  ],
+  "e": "Laut Pew Research (Daten für 2020) bekennen sich rund 29 % der Menschen zum Christentum, etwa 25 % zum Islam und rund 15 % zum Hinduismus. Der Islam wächst schneller.",
+  "h": "Etwa 2,3 Milliarden Menschen.",
+  "d": 1,
+  "id": "nf32ae5d"
+ },
+ {
+  "s": "Bibel & Feste",
+  "q": "Was erinnert Ostern im Christentum?",
+  "a": [
+   "Die Auferstehung Jesu",
+   "Die Geburt Jesu",
+   "Die Taufe Jesu im Jordan",
+   "Den Einzug in Jerusalem"
+  ],
+  "w": [
+   "",
+   "Die Geburt feiert man an Weihnachten.",
+   "Die Taufe Jesu wird im Januar gefeiert.",
+   "Der Einzug in Jerusalem ist Palmsonntag, eine Woche vor Ostern."
+  ],
+  "e": "Ostern ist das höchste christliche Fest: Es feiert die Auferstehung Jesu nach der Kreuzigung an Karfreitag.",
+  "h": "Nach Karfreitag.",
+  "d": 1,
+  "id": "n67ee85d"
+ }
 ]

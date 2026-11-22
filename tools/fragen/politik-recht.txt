@@ -49,3 +49,19 @@
 +{"s": "Recht im Alltag", "q": "Musst du der Polizei bei einer Vernehmung als Beschuldigter etwas zur Sache sagen?", "a": ["Nein", "Ja, immer vollständig", "Nur, wenn ein Anwalt dabei ist", "Ja, sonst gilt man als schuldig"], "w": ["", "Beschuldigte haben ein Aussageverweigerungsrecht.", "Auch mit Anwalt besteht keine Pflicht zur Aussage zur Sache.", "Schweigen darf nicht als Schuldeingeständnis gewertet werden."], "e": "Beschuldigte müssen nur Angaben zur Person machen (Name, Anschrift usw.). Zur Sache dürfen sie schweigen; das darf ihnen nicht zum Nachteil ausgelegt werden.", "h": "Ein Grundrecht im Strafverfahren.", "d": 2}
 +{"s": "Staat & Wahlen", "q": "Was bedeutet Rechtsstaat?", "a": ["Auch der Staat ist an Gesetze gebunden", "Der Staat schreibt alle Gesetze ohne Parlament", "Nur Richter dürfen Gesetze beschließen", "Die Polizei entscheidet über Strafen"], "w": ["", "Gesetze beschließen in Deutschland die Parlamente.", "Gerichte wenden Gesetze an, beschließen sie aber nicht.", "Über Strafen entscheiden unabhängige Gerichte."], "e": "Im Rechtsstaat sind alle staatlichen Stellen an Recht und Gesetz gebunden, und Bürger können staatliches Handeln vor unabhängigen Gerichten überprüfen lassen.", "h": "Niemand steht über dem Recht.", "d": 1}
 ?1ym8f60|Es gibt eine Ausnahme für starke Wahlkreisergebnisse.
+# Rückausgleich gegen Überkorrektur (automatisch)
+~1eiqt71|Die Bundesversammlung|Das Volk direkt|Der Bundestag allein|Der Bundesrat
+~1jlku1l|Zwei Drittel in Bundestag und Bundesrat|Einfache Mehrheit im Bundestag|Drei Viertel der Wahlberechtigten|Einstimmigkeit im Bundestag
+~ec4zrh|Der Kanzler beantragt das Vertrauen des Bundestages|Das Volk stimmt über die Regierung ab|Der Bundesrat entscheidet über den Kanzler|Das Verfassungsgericht prüft die Regierung
+~pano4l|Bundestag und Bundesrat je zur Hälfte|Der Bundespräsident allein|Die Bundesregierung|Das Gericht selbst
+~1lnes22|Nur das Bundesverfassungsgericht|Der Bundestag mit Mehrheit|Der Bundespräsident|Die Bundesregierung
+~1cg7gbc|Mehrheitswahl in Wahlkreisen|Reine Verhältniswahl|Wahl durch Wahlmänner|Wahl durch das Oberhaus
+~1a1pzjq|Nein, sie kann ohne Grund beantragt werden|Ja, nur bei Krankheit|Ja, nur bei Auslandsaufenthalt|Briefwahl gibt es nicht
+~188xgr|An einem Sonntag oder gesetzlichen Feiertag|Immer samstags|An einem Werktag|Immer am ersten Sonntag im Oktober
+~h838s0|Kommunale Selbstverwaltung|Eigene Bundesgesetzgebung|Eigene Strafgerichte|Eine eigene Währung
+~pwg56l|Nur bei der Länderneugliederung|Bei jedem Bundesgesetz|Bei der Kanzlerwahl|Beim Bundeshaushalt
+~1ao8m4|Konflikte zwischen Bundestag und Bundesrat über Gesetze lösen|Streit zwischen Koalitionspartnern schlichten|Tarifkonflikte schlichten|Streit zwischen Bund und EU lösen
+~92y9dd|Wahl organisieren und Ergebnis feststellen|Kandidaten der Parteien auswählen|Wahlkreisgrenzen festlegen|Wahlwerbung der Parteien bezahlen
+~1i4hhcm|Staatsgewalt ist zwischen Bund und Ländern aufgeteilt|Alle Macht liegt beim Zentralstaat|Der Staat wird von einem Monarchen geführt|Das Parlament wählt die Richter
+~62l7r|Im Reichstagsgebäude in Berlin|Im Bundeshaus in Bonn|Im Bundeskanzleramt|Im Schloss Bellevue
+~12sflon|Komplett handschriftlich und mit Unterschrift|Am Computer geschrieben und unterschrieben|Mit zwei Zeugen und Stempel|Mündlich vor der Familie

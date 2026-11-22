@@ -1,0 +1,16 @@
+# Überarbeitung Sprachen
+~1nu0owb|Indogermanische Sprachen|Uralische Sprachen|Semitische Sprachen|Turksprachen und Mongolisch
+~h6alno|Die Tonhöhe ändert die Bedeutung|Eine Schrift ganz ohne Schriftzeichen|Es gibt nur drei Vokale|Verben mit vielen Endungen
+~155z3cm|Eine vereinfachte Behelfssprache|Eine ausgestorbene Sprache|Eine künstlich erfundene Plansprache|Ein Dialekt des Englischen
+~1nycgdt|Ein Wort aus dem Englischen|Ein englischer Regionaldialekt|Eine Störung beim Sprechen|Ein Reimschema im Gedicht
+~15h1zln|Vom Namen al-Chwarizmi|Vom mathematischen Begriff „Algebra“|Von „Logarithmus“|Vom Namen Euklid
+~jvdctn|Englisch klingend, aber nicht englisch|Ein falsch geschriebenes englisches Wort|Ein englisches Wort mit deutscher Endung|Ein Wort aus dem britischen Englisch
+~7xv5o4|Herkunft und Geschichte von Wörtern|Den Bau von Sätzen|Die Aussprache von Lauten und Silben|Die Bedeutung von Zeichen
+# Neu
++{"s": "Sprachen der Welt", "q": "Welche Sprache hat weltweit die meisten Sprecher, Mutter- und Fremdsprachler zusammen?", "a": ["Englisch", "Mandarin-Chinesisch", "Spanisch", "Hindi"], "w": ["", "Mandarin hat die meisten Muttersprachler, aber weniger Sprecher insgesamt.", "Spanisch ist bei Muttersprachlern auf Platz 2, insgesamt dahinter.", "Hindi liegt insgesamt auf Platz 3."], "e": "Laut Ethnologue (2025) sprechen rund 1,5 Milliarden Menschen Englisch, die meisten davon als Fremdsprache. Bei Muttersprachlern liegt Mandarin vorn.", "h": "Die häufigste Fremdsprache.", "d": 1}
++{"s": "Wörter & Herkunft", "q": "Aus welcher Sprache kommt das Wort „Kindergarten“, das auch im Englischen benutzt wird?", "a": ["Deutsch", "Niederländisch", "Dänisch", "Schwedisch"], "w": ["", "Das Wort stammt nicht aus dem Niederländischen.", "Das Wort stammt nicht aus dem Dänischen.", "Das Wort stammt nicht aus dem Schwedischen."], "e": "Friedrich Fröbel prägte den Begriff 1840. Andere deutsche Lehnwörter im Englischen sind z. B. „angst“, „zeitgeist“ und „kitsch“.", "h": "Friedrich Fröbel.", "d": 1}
+# Rückausgleich gegen Überkorrektur (automatisch)
+~1nu0owb|Indogermanische Sprachen|Uralische Sprachen|Semitische Sprachen|Turksprachen
+~h6alno|Tonhöhen ändern die Bedeutung|Eine Schrift ohne Zeichen|Es gibt nur drei Vokale|Verben mit vielen Endungen
+~155z3cm|Eine vereinfachte Behelfssprache|Eine ausgestorbene Sprache|Eine künstliche Plansprache|Ein Dialekt des Englischen
+?jvdctn|Zum Beispiel „Handy“ oder „Beamer“.

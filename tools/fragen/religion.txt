@@ -1,0 +1,18 @@
+# Überarbeitung Religion
+-14kebju
+~p78ky2|In der Nachfolge Mohammeds|In der Zahl der täglichen Pflichtgebete|In der heiligen Schrift|In der Sprache des Korans
+~gjkuec|Lehre vom Leiden und seinem Ende|Vier Gebote für buddhistische Mönche und Nonnen|Vier Götter des Himmels|Vier heilige Berge Asiens
+~1n641jo|Die Folgen des eigenen Handelns|Die Befreiung aus dem Kreislauf der Wiedergeburten|Die Wiedergeburt selbst|Die göttliche Weltordnung
+~q46q09|Gewaltlosigkeit gegenüber allem Leben|Verehrung des Feuers als göttlicher Kraft|Glaube an einen Schöpfergott|Pflicht zur Pilgerfahrt
+~85s48p|Den Auszug aus Ägypten|Die Weihe des Tempels in Jerusalem|Das jüdische Neujahr|Die Gabe der Tora
+~1sy8nhm|Offenbarung des Johannes|Apostelgeschichte des Lukas über die Urkirche|Hebräerbrief|Judasbrief
+~7t2osh|Erscheinung des Herrn|Maria Lichtmess (Darstellung des Herrn)|Aschermittwoch|Allerheiligen
+# Neu
++{"s": "Weltreligionen", "q": "Was ist der Ramadan?", "a": ["Ein Fastenmonat im Islam", "Ein jüdisches Lichterfest", "Ein hinduistisches Frühlingsfest", "Eine buddhistische Pilgerreise"], "w": ["", "Das jüdische Lichterfest heißt Chanukka.", "Das hinduistische Frühlingsfest heißt Holi.", "Ramadan ist keine Pilgerreise; die islamische Pilgerfahrt heißt Hadsch."], "e": "Im Ramadan, dem neunten Monat des islamischen Mondkalenders, fasten gläubige Muslime von der Morgendämmerung bis Sonnenuntergang. Er endet mit dem Fest des Fastenbrechens.", "h": "Tagsüber wird nicht gegessen.", "d": 1}
++{"s": "Weltreligionen", "q": "Welche Religion hat weltweit die meisten Anhänger?", "a": ["Christentum", "Islam", "Hinduismus", "Buddhismus"], "w": ["", "Der Islam ist die zweitgrößte Religion mit rund einem Viertel der Weltbevölkerung.", "Der Hinduismus ist die drittgrößte Religion.", "Der Buddhismus hat deutlich weniger Anhänger."], "e": "Laut Pew Research (Daten für 2020) bekennen sich rund 29 % der Menschen zum Christentum, etwa 25 % zum Islam und rund 15 % zum Hinduismus. Der Islam wächst schneller.", "h": "Etwa 2,3 Milliarden Menschen.", "d": 1}
++{"s": "Bibel & Feste", "q": "Was erinnert Ostern im Christentum?", "a": ["Die Auferstehung Jesu", "Die Geburt Jesu", "Die Taufe Jesu im Jordan", "Den Einzug in Jerusalem"], "w": ["", "Die Geburt feiert man an Weihnachten.", "Die Taufe Jesu wird im Januar gefeiert.", "Der Einzug in Jerusalem ist Palmsonntag, eine Woche vor Ostern."], "e": "Ostern ist das höchste christliche Fest: Es feiert die Auferstehung Jesu nach der Kreuzigung an Karfreitag.", "h": "Nach Karfreitag.", "d": 1}
+# Rückausgleich gegen Überkorrektur (automatisch)
+~p78ky2|In der Frage der Nachfolge Mohammeds|In der Zahl der täglichen Gebete|In der heiligen Schrift|In der Sprache des Korans
+~gjkuec|Lehre vom Leiden und seinem Ende|Vier Gebote für Mönche|Vier Götter des Himmels|Vier heilige Berge Asiens
+~1n641jo|Die Wirkung von Handlungen auf die Zukunft|Die Befreiung aus dem Kreislauf|Die Wiedergeburt selbst|Die göttliche Weltordnung
+~q46q09|Gewaltlosigkeit gegenüber allen Lebewesen|Verehrung des Feuers|Glaube an einen Schöpfergott|Pflicht zur Pilgerfahrt
