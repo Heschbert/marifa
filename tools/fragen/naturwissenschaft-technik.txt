@@ -123,3 +123,4 @@
 ~16p1ubo|Rechenknoten in Schichten, die Gewichte lernen|Aus einer Tabelle fester Regeln|Aus einem einzigen sehr großen Algorithmus|Aus einer Kopie des menschlichen Gehirns
 ~103ighd|Höhere Datenraten, geringere Latenz|Er funktioniert ohne Sendemasten|Er benötigt kein Netz|Er arbeitet ohne Frequenzen
 ?18ykz03|Den Herstellern bleibt keine Vorwarnzeit.
+?18ykz03|Der Name zählt die Tage seit Bekanntwerden.
