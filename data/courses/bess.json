@@ -1566,7 +1566,8 @@
        "e": "20 MWh × 40 €/MWh = 800 €. Vereinfachtes Beispiel ohne Verschleiß und Gebühren.",
        "id": "bess.m3.l1.q6"
       }
-     ]
+     ],
+     "vol": true
     },
     {
      "id": "bess.m3.l2",
@@ -1725,7 +1726,8 @@
        "e": "EPEX SPOT ist eine Strombörse, das Marktstammdatenregister ein Anlagenregister.",
        "id": "bess.m3.l2.q7"
       }
-     ]
+     ],
+     "vol": true
     },
     {
      "id": "bess.m3.l3",
@@ -1839,7 +1841,8 @@
        "e": "Die Qualität des Optimierers entscheidet stark über den Ertrag.",
        "id": "bess.m3.l3.q5"
       }
-     ]
+     ],
+     "vol": true
     },
     {
      "id": "bess.m3.l4",
@@ -1953,7 +1956,8 @@
        "e": "Laut pv magazine war Deutschland im Q1 2026 in Europa führend bei Tolling-Vereinbarungen.",
        "id": "bess.m3.l4.q5"
       }
-     ]
+     ],
+     "vol": true
     }
    ]
   },
@@ -2107,7 +2111,8 @@
        "e": "Deshalb fordern Netzbetreiber Reife- und Realisierungsnachweise.",
        "id": "bess.m4.l1.q6"
       }
-     ]
+     ],
+     "vol": true
     },
     {
      "id": "bess.m4.l2",
@@ -2237,7 +2242,8 @@
        "e": "20.000 kW × 60 €/kW = 1,2 Mio. €. Beispielwert; der echte Satz steht im Preisblatt des Netzbetreibers.",
        "id": "bess.m4.l2.q6"
       }
-     ]
+     ],
+     "vol": true
     },
     {
      "id": "bess.m4.l3",
@@ -2359,7 +2365,8 @@
        "e": "Privilegiert heißt nicht genehmigungsfrei.",
        "id": "bess.m4.l3.q5"
       }
-     ]
+     ],
+     "vol": true
     },
     {
      "id": "bess.m4.l4",
@@ -2484,7 +2491,8 @@
        "e": "Angriffswege, Abstände und Einsatztaktik müssen zum Standort passen.",
        "id": "bess.m4.l4.q5"
       }
-     ]
+     ],
+     "vol": true
     }
    ]
   },
@@ -2628,7 +2636,8 @@
        "e": "Details im aktuellen BNetzA-Dokument prüfen.",
        "id": "bess.m5.l1.q6"
       }
-     ]
+     ],
+     "vol": true
     },
     {
      "id": "bess.m5.l2",
@@ -2787,7 +2796,8 @@
        "e": "Die Einordnung hängt stark vom Einzelfall ab.",
        "id": "bess.m5.l2.q7"
       }
-     ]
+     ],
+     "vol": true
     },
     {
      "id": "bess.m5.l3",
@@ -2909,7 +2919,8 @@
        "e": "Die Pauschaloption ist die vereinfachte Alternative für kleine Anlagen.",
        "id": "bess.m5.l3.q5"
       }
-     ]
+     ],
+     "vol": true
     }
    ]
   },
@@ -3551,7 +3562,8 @@
        "e": "Siehe Modul Netzanschluss & Genehmigung.",
        "id": "bess.m7.l1.q5"
       }
-     ]
+     ],
+     "vol": true
     },
     {
      "id": "bess.m7.l2",
@@ -3679,7 +3691,8 @@
        "e": "Netzfrequenz und Wetter haben mit der Lieferkette nichts zu tun.",
        "id": "bess.m7.l2.q5"
       }
-     ]
+     ],
+     "vol": true
     },
     {
      "id": "bess.m7.l3",
@@ -3816,7 +3829,8 @@
        "e": "Laut IHK seit 7. Oktober 2025.",
        "id": "bess.m7.l3.q6"
       }
-     ]
+     ],
+     "vol": true
     },
     {
      "id": "bess.m7.l4",
@@ -3922,7 +3936,8 @@
        "e": "Banken prüfen gerade die schlechten Fälle.",
        "id": "bess.m7.l4.q4"
       }
-     ]
+     ],
+     "vol": true
     }
    ]
   },

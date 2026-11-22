@@ -402,3 +402,11 @@ body.course .hero { background: linear-gradient(135deg, #2b8a3e 0%, #66a80f 100%
 .xptable { width: 100%; border-collapse: collapse; font-size: 14px; }
 .xptable td { padding: 6px 0; border-top: 1px solid var(--soft); }
 .xptable td:last-child { text-align: right; font-weight: 600; white-space: nowrap; }
+.vol { border-left: 4px solid var(--mute); padding: 10px 14px; }
+.volold { border-left: 4px solid #e8590c; background: color-mix(in srgb, #e8590c 8%, var(--card)); padding: 10px 14px; }
+.gl { padding: 12px 14px; margin-bottom: 8px; }
+.gl .link { margin-top: 6px; font-size: 12px; }
+.cnext .grid2 { margin-top: 6px; }
+.cnext .grid2 .btn { margin-top: 0; }
+.cnext .grid2 .btn:not(:first-child) { background: var(--card); color: var(--fg); border-color: var(--line); }
+input.search { width: 100%; font: inherit; padding: 12px 14px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--card); color: var(--fg); margin: 8px 0 4px; }

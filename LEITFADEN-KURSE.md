@@ -26,7 +26,7 @@ Module ohne Lektionen erscheinen als „In Vorbereitung“. So ist der ganze Leh
 
 - Kurs: `id`, `title`, `sub`, `audience`, `stand` (z. B. "11/2026"), `review` (wer hat fachlich geprüft), `levels`, `modules`.
 - Modul: `id`, `level`, `title`, `desc`, `lessons`.
-- Lektion: `id`, `title`, `min`, `body` (Absätze; "## " am Anfang = Zwischenüberschrift), `key` (Kernaussagen),
+- Lektion: `vol` (optional, true = Regeln/Marktdaten, App zeigt Prüfalter), `id`, `title`, `min`, `body` (Absätze; "## " am Anfang = Zwischenüberschrift), `key` (Kernaussagen),
   `src` (Quellen: `{ "n": Name, "u": Link }`), `cards` (`{ id, f: Vorderseite, b: Rückseite }`), `qs` (Fragen).
 - Fragen (`e` = Erklärung ist Pflicht):
   - `mc`: `o` Optionen, `a` Index der richtigen

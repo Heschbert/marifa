@@ -63,3 +63,4 @@ z. B. `python3 -m http.server` im Ordner, dann http://localhost:8000 öffnen.
 - Fortschritt je Kurs in `st.course[id]`. Kursantworten zählen für XP, Tagesziel, Serie und Tagesaufgaben, nicht für die Allgemeinwissen-Statistik.
 - Weitere Ansichten: `ui.views[name]` wird von `ui.go(name)` und den Tabs gefunden. `ui.show(html, tab, "course")` setzt die Kursfarbe.
 - 2.2: Ergebniskopf mit Sternen (Slot `resulthead`, Schwellen 40/60/90 %), erledigtes Tagesrätsel als schmale Zeile, Tagesaufgaben mit Ringen (Blitz-Ziel 7), `js/levels.js`: Levelübersicht (30 Level, `E.MAXLVL`).
+- 2.3: Kurs „Künstliche Intelligenz“ (`tools/kurs-ki.py` → `data/courses/ki.json`). Kursbereich: Glossar (A–Z, Suche), Lektionen mit `vol: true` zeigen Stand und warnen ab 6 Monaten, Tagesaufgabe „course“ (nur mit Kursfortschritt), Startseitenkarte mit fälligen Wiederholungen. `data/courses/index.json` wird von Hand gepflegt.

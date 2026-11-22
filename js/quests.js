@@ -17,12 +17,15 @@
     { id: "learn", t: 1, txt: function () { return "Eine Lernrunde beenden"; } },
     { id: "est", t: 1, txt: function () { return "Eine Schätzrunde spielen"; } },
     { id: "tl", t: 1, txt: function () { return "Einen Zeitstrahl spielen"; } },
-    { id: "ladder", t: 1, txt: function () { return "Die Wissensleiter spielen"; } }
+    { id: "ladder", t: 1, txt: function () { return "Die Wissensleiter spielen"; } },
+    { id: "course", t: 5, need: "course", txt: function () { return "5 Kursfragen oder Karteikarten"; } }
   ];
   function today() {
     var st = S(), d = U.today();
     if (!st.quests || st.quests.day !== d) {
-      var rng = U.mulberry(U.seedOf("quests" + d)), pool = U.shuffle(TYPES.slice(), rng), pick = [], ids = {};
+      /* Kursaufgabe nur für alle, die schon einen Kurs begonnen haben */
+      var inCourse = !!(st.course && Object.keys(st.course).length);
+      var rng = U.mulberry(U.seedOf("quests" + d)), pool = U.shuffle(TYPES.filter(function (t) { return t.need !== "course" || inCourse; }), rng), pick = [], ids = {};
       pool.forEach(function (t) { if (pick.length < 3 && !(t.id.indexOf("combo") === 0 && ids.combo)) { pick.push(t); if (t.id.indexOf("combo") === 0) ids.combo = 1; } });
       var cats = D.cats();
       st.quests = { day: d, chest: false, list: pick.map(function (t) { return { id: t.id, p: 0, t: t.t, c: t.id === "topic" ? cats[Math.floor(rng() * cats.length)] : null }; }) };
@@ -44,6 +47,7 @@
   }
   WF.on("answered", function (r) {
     if (r.estimate) return;
+    if (r.course && !r.x.retry) bump("course", 1);
     if (r.timeline || r.link || r.x.retry) return;
     bump("ans", 1);
     if (r.ok) { bump("right", 1); if (r.x && r.x.c) bump("topic", 1, false, r.x.c); }
@@ -58,6 +62,7 @@
   WF.on("timelineEnd", function () { bump("tl", 1); });
   WF.on("estimateEnd", function () { bump("est", 1); });
   WF.on("ladderEnd", function () { bump("ladder", 1); });
+  WF.on("courseCard", function () { bump("course", 1); });
 
   /* Truhe: zufällige Belohnung, gewichtet */
   var REWARDS = [[40, "xp", 50], [25, "xp", 100], [15, "xp", 200], [20, "freeze", 1]];
@@ -74,7 +79,7 @@
   };
 
   /* Startseite: kompakte Liste mit Fortschrittsringen. Sind alle erledigt und die Truhe offen, nur noch eine Zeile. */
-  var ICO = { ans: "?", right: "✓", combo: "🔥", combo8: "🔥", topic: "◆", daily: "☀", blitz: "60", learn: "📖", est: "≈", tl: "↹", ladder: "⇧" };
+  var ICO = { course: "🎓", ans: "?", right: "✓", combo: "🔥", combo8: "🔥", topic: "◆", daily: "☀", blitz: "60", learn: "📖", est: "≈", tl: "↹", ladder: "⇧" };
   WF.registerEntry({ where: "home", order: 2, render: function () {
     var Q = today(), done = Q.list.filter(function (q) { return q.p >= q.t; }).length, fr = S().streak.freeze || 0;
     if (done === 3 && Q.chest) return '<div class="card daydone"><span class="ico" aria-hidden="true">🎁</span><div class="grow"><b>Tagesaufgaben erledigt</b><div class="small mute">Gewonnen: ' + esc(Q.chest) + (fr ? " · Serienschutz " + fr : "") + " · morgen gibt es neue</div></div></div>";

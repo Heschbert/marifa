@@ -179,7 +179,11 @@ course = {
   {"id": "bess.m8", "level": 3, "title": "Forschung & neue Konzepte", "desc": "Virtuelle Speicher, neue Zellchemien, aktuelle Studienlage.", "lessons": M8}
  ]
 }
+# Lektionen mit Regulatorik und Marktdaten veralten schnell: als "vol" markieren (App zeigt dann das Prüfalter)
+for m in course["modules"]:
+    if m["id"] in ("bess.m3", "bess.m4", "bess.m5", "bess.m7"):
+        for l in m["lessons"]: l["vol"] = True
 json.dump(course, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
-json.dump({"courses": [{"id": "bess", "file": "bess.json"}]}, open(sys.argv[2], "w"), ensure_ascii=False, indent=1)
+# data/courses/index.json wird von Hand gepflegt (alle Kurse)
 al=[l for m in course["modules"] for l in m["lessons"]]
 print(len(al), "Lektionen", sum(len(l["qs"]) for l in al), "Fragen", sum(len(l["cards"]) for l in al), "Karten")

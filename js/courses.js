@@ -61,6 +61,17 @@
     if (!list || !list.length) return "";
     return '<ul class="srcs">' + list.map(function (s) { return "<li>" + (s.u ? '<a href="' + esc(s.u) + '" target="_blank" rel="noopener">' + esc(s.n) + "</a>" : esc(s.n)) + "</li>"; }).join("") + "</ul>";
   }
+  /* Alter des Inhaltsstands in Monaten ("11/2026" → Monate bis heute). Lektionen mit vol: true veralten schnell. */
+  function ageMonths(c) {
+    var m = /^(\d{1,2})\/(\d{4})$/.exec(c.stand || ""); if (!m) return 0;
+    var d = new Date(); return (d.getFullYear() - +m[2]) * 12 + (d.getMonth() + 1 - +m[1]);
+  }
+  function volNote(c, l) {
+    if (!l.vol) return "";
+    var old = ageMonths(c) >= 6;
+    return '<div class="card ' + (old ? "volold" : "vol") + '"><b>' + (old ? "⚠ Stand älter als 6 Monate" : "Stand " + esc(c.stand)) + '</b><p class="small mute" style="margin:2px 0 0">' +
+      (old ? "Diese Lektion behandelt Regeln oder Marktdaten, die sich oft ändern (Stand " + esc(c.stand) + "). Vor Entscheidungen die Quellen prüfen." : "Regeln oder Marktdaten, die sich oft ändern. Vor Entscheidungen die Quellen prüfen.") + "</p></div>";
+  }
   function withCourses(f) { if (C.loaded) return f(); ui.loading(); C.load().then(f).catch(function (e) { ui.failed(String(e && e.message || e)); }); }
 
   /* ---------- Bildschirme ---------- */
@@ -85,6 +96,9 @@
     h += '<div class="card ksum">' + ui.ring(pr, "var(--course)", Math.round(pr) + "%") + '<div class="grow"><b>Kursfortschritt ' + Math.round(pr) + ' %</b><p class="small mute" style="margin:2px 0 0">Zielgruppe: ' + esc(c.audience) + " · Stand " + esc(c.stand) + "</p></div></div>";
     if (last) h += '<div class="hero"><h3>Weiter mit</h3><p>' + esc(last.title) + "</p>" + btn("cles", "Lektion öffnen", { data: { c: cid, l: last.id } }) + "</div>";
     if (n) h += ui.row("crev", "↻", "Wiederholen", n + " fällig (" + d.q.length + " Fragen, " + d.k.length + " Karten)", { c: cid });
+    h += ui.row("cgloss", "A–Z", "Glossar", c.cards.length + " Begriffe zum Nachschlagen", { c: cid });
+    var vols = 0; c.modules.forEach(function (m) { m.lessons.forEach(function (l) { if (l.vol) vols++; }); });
+    if (vols && ageMonths(c) >= 6) h += '<div class="card volold"><b>⚠ Teile des Kurses sind älter als 6 Monate</b><p class="small mute" style="margin:2px 0 0">' + vols + " Lektionen mit Regeln oder Marktdaten haben den Stand " + esc(c.stand) + ". Bitte vor Entscheidungen prüfen.</p></div>";
     c.levels.forEach(function (lv) {
       var mods = c.modules.filter(function (m) { return m.level === lv.id; }); if (!mods.length) return;
       h += "<h2>Stufe " + lv.id + " · " + esc(lv.title) + "</h2>";
@@ -125,6 +139,7 @@
     ui.setView(function () { withCourses(function () { lesson(cid, lid); }); });
     P(cid).last = lid; WF.store.save();
     var h = '<button class="ghost" data-act="cmod" data-c="' + esc(cid) + '" data-m="' + esc(l.mod.id) + '">‹ ' + esc(l.mod.title) + "</button><h1>" + esc(l.title) + '</h1><p class="small mute">' + l.min + " Minuten Lesezeit · Stand " + esc(c.stand) + "</p>";
+    h += volNote(c, l);
     h += '<article class="lesson">';
     l.body.forEach(function (t) { h += t.indexOf("## ") === 0 ? "<h3>" + esc(t.slice(3)) + "</h3>" : "<p>" + esc(t) + "</p>"; });
     h += "</article>";
@@ -133,6 +148,27 @@
     h += '<div class="grid2" style="margin-top:12px">' + btn("ccards", "Karteikarten", { sub: l.cards.length + " Karten", data: { c: cid, l: lid } }) + btn("cprac", "Übung starten", { primary: true, sub: l.qs.length + " Fragen", data: { c: cid, l: lid } }) + "</div>";
     ui.show(h, "courses", "course");
   }
+  /* Glossar: alle Karteikarten des Kurses A–Z, mit Suche */
+  function gloss(cid, q) {
+    var c = C.byId[cid]; if (!c) return list();
+    ui.setView(function () { withCourses(function () { gloss(cid, q); }); });
+    var h = '<button class="ghost" data-act="crs1" data-c="' + esc(cid) + '">‹ ' + esc(c.title) + '</button><h1>Glossar</h1>' +
+      '<input class="search" id="gq" data-input="cgq" data-c="' + esc(cid) + '" placeholder="Begriff suchen …" autocomplete="off" value="' + esc(q || "") + '"><div id="glist">' + glossList(c, q) + "</div>";
+    ui.show(h, "courses", "course");
+    var i = document.getElementById("gq"); if (i && q) { i.focus(); i.setSelectionRange(q.length, q.length); }
+  }
+  function glossList(c, q) {
+    var t = (q || "").toLowerCase().trim(), items = c.cards.slice().sort(function (a, b) { return a.f.localeCompare(b.f, "de"); }), seen = {}, h = "", letter = "";
+    items.forEach(function (k) {
+      if (seen[k.f]) return; seen[k.f] = 1;
+      if (t && (k.f + " " + k.b).toLowerCase().indexOf(t) < 0) return;
+      var L = k.f.charAt(0).toUpperCase(); if (!t && L !== letter) { letter = L; h += "<h2>" + esc(L) + "</h2>"; }
+      h += '<div class="card gl"><b>' + esc(k.f) + '</b><p class="small" style="margin:4px 0 0">' + esc(k.b) + '</p><button class="link small" data-act="cles" data-c="' + esc(c.id) + '" data-l="' + esc(k.lesson.id) + '">' + esc(k.lesson.title) + " ›</button></div>";
+    });
+    return h || '<p class="mute">Kein Begriff gefunden.</p>';
+  }
+  H.cgloss = function (d) { withCourses(function () { gloss(d.c, ""); }); };
+  H.cgq = function (inp) { var c = C.byId[inp.dataset.c]; if (c) document.getElementById("glist").innerHTML = glossList(c, inp.value); };
   ui.views = ui.views || {};
   ui.views.courses = function () { withCourses(list); };
   H.crs = function () { withCourses(list); };
@@ -311,7 +347,7 @@
   };
   H.kans = function (d) {
     var k = K.list[K.i], ok = d.v === "1", p = P(K.cfg.c.id);
-    if (!K.again[k.id]) { var r = p.cards[k.id] || (p.cards[k.id] = { b: 0 }); E.schedule(r, ok); if (ok) { K.known++; E.addXP(2); } E.registerPlay(); }
+    if (!K.again[k.id]) { var r = p.cards[k.id] || (p.cards[k.id] = { b: 0 }); E.schedule(r, ok); if (ok) { K.known++; E.addXP(2); } E.registerPlay(); WF.emit("courseCard", { ok: ok }); }
     if (!ok && !K.again[k.id]) { K.again[k.id] = 1; K.list.push(k); }
     WF.store.save();
     K.i++; if (K.i >= K.list.length) return kEnd(); kShow();
@@ -327,9 +363,14 @@
   /* ---------- Einträge in anderen Bereichen ---------- */
   WF.registerEntry({ where: "home", order: 6, render: function () {
     if (!C.loaded) return "";
-    var best = null;
-    C.list.forEach(function (c) { var p = P(c.id), l = p.last && c.lById[p.last]; if (l && !best) best = { c: c, l: l }; });
-    return best ? '<div class="card cnext"><span class="small mute">Kurs · ' + esc(best.c.title) + "</span><b>" + esc(best.l.title) + "</b>" + btn("cles", "Weiterlernen", { data: { c: best.c.id, l: best.l.id } }) + "</div>" : "";
+    var best = null, dueC = null, dueN = 0;
+    C.list.forEach(function (c) {
+      var p = P(c.id), l = p.last && c.lById[p.last]; if (l && !best) best = { c: c, l: l };
+      var d = due(c), n = d.q.length + d.k.length; if (n > dueN) { dueN = n; dueC = c; }
+    });
+    if (!best) return "";
+    return '<div class="card cnext"><span class="small mute">Kurs · ' + esc(best.c.title) + "</span><b>" + esc(best.l.title) + "</b>" +
+      '<div class="grid2">' + btn("cles", "Weiterlernen", { data: { c: best.c.id, l: best.l.id } }) + (dueN ? btn("crev", "Wiederholen", { sub: dueN + " fällig", data: { c: dueC.id } }) : btn("crs1", "Zum Kurs", { data: { c: best.c.id } })) + "</div></div>";
   } });
   WF.registerEntry({ where: "profiletop", order: 5, render: function () {
     if (!C.loaded) return "";
