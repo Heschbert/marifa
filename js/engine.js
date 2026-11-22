@@ -7,10 +7,13 @@
   var C = E.consts = { ROUND: 10, GOAL: 10, DAILY_N: 5, BLITZ_S: 60, LIVES: 3 };
 
   /* ---------- Level, XP, Serie ---------- */
+  /* Level 1–30. XP für Level L: 50 × L × (L − 1). Level 30 ist das Höchstlevel. */
   var TITLES = ["Neugierig", "Wissbegierig", "Aufgeweckt", "Belesen", "Kenner", "Allrounder", "Querdenker", "Experte", "Gelehrter", "Universalgenie"];
+  var TIERS = [[11, "Wissensmeister"], [15, "Weiser"], [20, "Großmeister"], [25, "Legende"], [30, "Marifa-Meister"]];
+  E.MAXLVL = 30;
   E.lvlStart = function (L) { return 50 * L * (L - 1); };
-  E.levelOf = function (xp) { var L = 1; while (xp >= E.lvlStart(L + 1)) L++; return L; };
-  E.titleOf = function (L) { return TITLES[Math.min(L - 1, TITLES.length - 1)]; };
+  E.levelOf = function (xp) { var L = 1; while (L < E.MAXLVL && xp >= E.lvlStart(L + 1)) L++; return L; };
+  E.titleOf = function (L) { if (L <= TITLES.length) return TITLES[L - 1]; var t = TITLES[TITLES.length - 1]; TIERS.forEach(function (x) { if (L >= x[0]) t = x[1]; }); return t; };
   function daysAgo(n) { var d = new Date(); d.setDate(d.getDate() - n); return U.dkey(d); }
   /* Serienschutz: ein verpasster Tag wird überbrückt, wenn ein Schutz vorhanden ist (freeze). */
   E.curStreak = function () { var s = S().streak; return (s.last === U.today() || s.last === U.yesterday() || (s.last === daysAgo(2) && (s.freeze || 0) > 0)) ? s.n : 0; };

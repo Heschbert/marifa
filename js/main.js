@@ -34,6 +34,7 @@ import "./quests.js";
 import "./ladder.js";
 import "./safe.js";
 import "./courses.js";
+import "./levels.js";
 
 /* Start: Daten laden, dann die Oberfläche öffnen. */
 const WF = window.WF;

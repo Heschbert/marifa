@@ -107,8 +107,8 @@
     return h;
   }
   H.diff = function (d) { S().settings.difficulty = d.v; WF.store.save(); if (view) view(); };
-  ui.loading = function () { app.innerHTML = '<div class="center mute">Lädt …</div>'; tabs.hidden = true; };
-  ui.failed = function (m) { app.innerHTML = '<div class="center"><p>Die Fragen konnten nicht geladen werden.</p><p class="mute small">' + esc(m) + '</p>' + btn("boot", "Nochmal versuchen") + "</div>"; };
+  ui.loading = function () { app.innerHTML = '<div class="loadc mute">Lädt …</div>'; tabs.hidden = true; };
+  ui.failed = function (m) { app.innerHTML = '<div class="loadc"><p>Die Fragen konnten nicht geladen werden.</p><p class="mute small">' + esc(m) + '</p>' + btn("boot", "Nochmal versuchen") + "</div>"; };
   H.boot = function () { WF.boot(); };
 
   ui.views = ui.views || {};
@@ -130,7 +130,7 @@
   /* ---------- Spielen (Startseite, blau) ---------- */
   function pills() {
     var st = S(), L = E.levelOf(st.xp), strk = E.curStreak(), today = st.days[U.today()] || 0;
-    return '<div class="pills"><span class="pill">Level ' + L + " · " + E.titleOf(L) + '</span><span class="pill">Serie ' + strk + '</span><span class="pill">Heute ' + Math.min(today, E.consts.GOAL) + " / " + E.consts.GOAL + "</span></div>";
+    return '<div class="pills"><button class="pill lvl" data-act="levels" aria-label="Levelübersicht öffnen">Level ' + L + " · " + E.titleOf(L) + ' ›</button><span class="pill">Serie ' + strk + '</span><span class="pill">Heute ' + Math.min(today, E.consts.GOAL) + " / " + E.consts.GOAL + "</span></div>";
   }
   function row(act, ico, title, sub, data, off) {
     var d = ""; for (var k in (data || {})) d += " data-" + k + '="' + esc(data[k]) + '"';
@@ -141,7 +141,9 @@
     var st = S(), done = st.dailyDone[U.today()];
     var h = "<h1>Spielen</h1>" + pills();
     var dtxt = !done ? "5 Fragen aus 5 Themen, für alle gleich." : (done.n && done.n < E.consts.DAILY_N ? "Heute abgebrochen nach " + done.n + (done.n === 1 ? " Frage, " : " Fragen, ") + done.s + " richtig." : "Heute gelöst: " + done.s + " von " + E.consts.DAILY_N + ".") + " Morgen gibt es ein neues.";
-    h += '<div class="hero"><h3>Tagesrätsel</h3><p>' + dtxt + "</p>" + btn("start", done ? "Erledigt" : "Jetzt spielen", { off: !!done, data: { m: "daily" } }) + "</div>";
+    /* Offenes Tagesrätsel als großer Banner, erledigtes nur als schmale Zeile */
+    if (!done) h += '<div class="hero"><h3>Tagesrätsel</h3><p>' + dtxt + "</p>" + btn("start", "Jetzt spielen", { data: { m: "daily" } }) + "</div>";
+    else h += '<div class="card daydone"><span class="ico" aria-hidden="true">✓</span><div class="grow"><b>Tagesrätsel erledigt</b><div class="small mute">' + esc(dtxt) + "</div></div>" + (done.log ? '<button class="link" data-act="share">Teilen</button>' : "") + "</div>";
     var dl = { auto: "Auto", 1: "Leicht", 2: "Mittel", 3: "Schwer" }[st.settings.difficulty];
     h += '<details class="card cfgbox" data-keep="homecfg"' + ui.keepOpen("homecfg") + '><summary><span class="mute small">Spielt mit</span><b>' + esc(st.settings.playC || "Alle Themen") + " · " + dl + "</b></summary>" +
       '<div class="cfgin">' + ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div></details>";
@@ -313,8 +315,9 @@
     view = null;
     var s = E.s, m = s.m, n = s.score + s.wrong.length;
     var h = '<h1>' + esc(m.title) + (s.scope.s || s.scope.c ? " · " + esc(s.scope.s || s.scope.c) : "") + "</h1>";
-    h += '<div class="score">' + (m.timer || m.lives ? s.score + " richtig" : s.score + " von " + n) + "</div>";
-    h += '<p class="mute">+' + s.roundXP + " XP · beste Serie " + s.best + (s.record ? " · neuer Rekord" : "") + (s.mastNew ? " · " + s.mastNew + " neu gemeistert" : "") + "</p>";
+    /* Kopf: Ergebnis links, Sterne rechts (Sterne kommen aus game.js über den Slot "resulthead") */
+    h += '<div class="card reshead"><div class="grow"><div class="score">' + (m.timer || m.lives ? s.score + " richtig" : s.score + " von " + n) + "</div>" +
+      '<p class="small mute" style="margin:2px 0 0">+' + s.roundXP + " XP · beste Serie " + s.best + (s.record ? " · neuer Rekord" : "") + (s.mastNew ? " · " + s.mastNew + " neu gemeistert" : "") + "</p></div>" + WF.slot("resulthead", { s: s }) + "</div>";
     h += WF.slot("result", { s: s });
     s.newBadges.forEach(function (b) { h += '<div class="card"><b>Abzeichen: ' + esc(b.n) + "</b><br><span class=\"small mute\">" + esc(b.d) + "</span></div>"; });
     h += '<div style="margin:16px 0">' + (m.daily ? btn("home", "Fertig", { primary: true }) : btn("again", "Nochmal", { primary: true }) + '<div style="height:8px"></div>' + btn("home", "Zur Startseite")) + "</div>";
@@ -334,7 +337,7 @@
   function profile() {
     view = profile;
     var st = S(), L = E.levelOf(st.xp), a = E.lvlStart(L), b = E.lvlStart(L + 1), t = st.tot, diff = st.settings.difficulty;
-    var h = "<h1>Profil</h1>" + '<div class="card"><div class="row sb"><div><b>Level ' + L + "</b> · " + E.titleOf(L) + '</div><div class="small mute">' + st.xp + " XP</div></div>" + '<div style="margin-top:10px">' + bar(U.pct(st.xp - a, b - a)) + "</div></div>";
+    var h = "<h1>Profil</h1>" + '<button class="card lvcard" data-act="levels" style="display:block;width:100%;text-align:left;border:0"><div class="row sb"><div><b>Level ' + L + "</b> · " + E.titleOf(L) + '</div><div class="small mute">' + st.xp + " XP ›</div></div>" + '<div style="margin-top:10px">' + bar(L >= E.MAXLVL ? 100 : U.pct(st.xp - a, b - a)) + '</div><div class="small mute" style="margin-top:6px">' + (L >= E.MAXLVL ? "Höchstlevel erreicht" : "Noch " + (b - st.xp) + " XP bis Level " + (L + 1) + " · Alle Level ansehen") + "</div></button>";
     h += '<div class="stats"><div class="stat"><b>' + t.r + "</b><span>richtig</span></div><div class=\"stat\"><b>" + U.pct(t.r, t.t) + " %</b><span>Trefferquote</span></div><div class=\"stat\"><b>" + st.streak.best + "</b><span>beste Serie (Tage)</span></div></div>";
     h += WF.slot("profiletop", { st: st });
     h += "<h2>Was kann ich schon?</h2>" + knowledgeMap();

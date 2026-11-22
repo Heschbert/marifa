@@ -18,5 +18,4 @@
   };
   function shareBtn() { return WF.store.data.dailyDone[U.today()] ? '<div style="margin:12px 0">' + ui.btn("share", "Ergebnis teilen") + "</div>" : ""; }
   WF.registerEntry({ where: "result", order: 10, render: function (c) { return c.s.m.daily ? shareBtn() : ""; } });
-  WF.registerEntry({ where: "home", order: 5, render: function () { var r = WF.store.data.dailyDone[U.today()]; return r && r.log ? '<div style="margin:-4px 0 12px">' + ui.btn("share", "Tagesrätsel-Ergebnis teilen") + "</div>" : ""; } });
 })();

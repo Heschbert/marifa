@@ -62,3 +62,4 @@ z. B. `python3 -m http.server` im Ordner, dann http://localhost:8000 öffnen.
 - `js/courses.js`: Kursbereich (Tab „Kurse“). Daten in `data/courses/`, Format in `LEITFADEN-KURSE.md`, Prüfung mit `node tools/check-courses.mjs`.
 - Fortschritt je Kurs in `st.course[id]`. Kursantworten zählen für XP, Tagesziel, Serie und Tagesaufgaben, nicht für die Allgemeinwissen-Statistik.
 - Weitere Ansichten: `ui.views[name]` wird von `ui.go(name)` und den Tabs gefunden. `ui.show(html, tab, "course")` setzt die Kursfarbe.
+- 2.2: Ergebniskopf mit Sternen (Slot `resulthead`, Schwellen 40/60/90 %), erledigtes Tagesrätsel als schmale Zeile, Tagesaufgaben mit Ringen (Blitz-Ziel 7), `js/levels.js`: Levelübersicht (30 Level, `E.MAXLVL`).

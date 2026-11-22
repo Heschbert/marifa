@@ -8,12 +8,12 @@
   /* Aufgabentypen. t = Ziel, ev = wie Fortschritt entsteht. */
   var TYPES = [
     { id: "ans", t: 20, txt: function () { return "20 Fragen beantworten"; } },
-    { id: "right", t: 15, txt: function () { return "15 Fragen richtig beantworten"; } },
+    { id: "right", t: 12, txt: function () { return "12 Fragen richtig beantworten"; } },
     { id: "combo", t: 5, txt: function () { return "5 richtige Antworten in Folge"; } },
     { id: "combo8", t: 8, txt: function () { return "8 richtige Antworten in Folge"; } },
     { id: "topic", t: 5, txt: function (q) { return "5 richtige Antworten in " + q.c; } },
     { id: "daily", t: 1, txt: function () { return "Das Tagesrätsel spielen"; } },
-    { id: "blitz", t: 10, txt: function () { return "Im Blitz 10 richtige in einer Runde"; } },
+    { id: "blitz", t: 7, txt: function () { return "Im Blitz 7 richtige in einer Runde"; } },
     { id: "learn", t: 1, txt: function () { return "Eine Lernrunde beenden"; } },
     { id: "est", t: 1, txt: function () { return "Eine Schätzrunde spielen"; } },
     { id: "tl", t: 1, txt: function () { return "Einen Zeitstrahl spielen"; } },
@@ -28,6 +28,8 @@
       st.quests = { day: d, chest: false, list: pick.map(function (t) { return { id: t.id, p: 0, t: t.t, c: t.id === "topic" ? cats[Math.floor(rng() * cats.length)] : null }; }) };
       WF.store.save();
     }
+    /* Ziele aus TYPES übernehmen (falls sie mit einem Update gesenkt wurden) */
+    st.quests.list.forEach(function (q) { var t = typeOf(q); if (t && q.t !== t.t) q.t = Math.min(q.t, t.t); });
     return st.quests;
   }
   function typeOf(q) { return TYPES.filter(function (t) { return t.id === q.id; })[0]; }
@@ -68,19 +70,21 @@
     else { var xp = rw[1] === "xp" ? rw[2] : 100; E.addXP(xp); txt = "+" + xp + " XP"; }
     Q.chest = txt; WF.store.save();
     ui.go("home");
-    var el = document.querySelector(".chestbox"); if (el) el.classList.add("opened");
+    ui.toast({ title: "Truhe geöffnet", sub: txt });
   };
 
+  /* Startseite: kompakte Liste mit Fortschrittsringen. Sind alle erledigt und die Truhe offen, nur noch eine Zeile. */
+  var ICO = { ans: "?", right: "✓", combo: "🔥", combo8: "🔥", topic: "◆", daily: "☀", blitz: "60", learn: "📖", est: "≈", tl: "↹", ladder: "⇧" };
   WF.registerEntry({ where: "home", order: 2, render: function () {
     var Q = today(), done = Q.list.filter(function (q) { return q.p >= q.t; }).length, fr = S().streak.freeze || 0;
-    var h = '<div class="card quests"><div class="row sb"><b>Tagesaufgaben</b><span class="small mute">' + done + " / 3" + (fr ? " · 🛡 " + fr : "") + "</span></div>";
+    if (done === 3 && Q.chest) return '<div class="card daydone"><span class="ico" aria-hidden="true">🎁</span><div class="grow"><b>Tagesaufgaben erledigt</b><div class="small mute">Gewonnen: ' + esc(Q.chest) + (fr ? " · Serienschutz " + fr : "") + " · morgen gibt es neue</div></div></div>";
+    var h = '<div class="card quests"><div class="qhead"><b>Tagesaufgaben</b><span class="small mute">' + done + " von 3" + (fr ? " · 🛡 " + fr : "") + "</span></div>";
     Q.list.forEach(function (q) {
-      var ok = q.p >= q.t;
-      h += '<div class="quest' + (ok ? " done" : "") + '"><div class="row sb small"><span>' + (ok ? "✓ " : "") + esc(typeOf(q).txt(q)) + '</span><span class="mute">' + q.p + "/" + q.t + "</span></div>" + ui.bar(q.p / q.t * 100, typeOf(q).txt(q)) + "</div>";
+      var ok = q.p >= q.t, p = Math.round(q.p / q.t * 100);
+      h += '<div class="qrow' + (ok ? " done" : "") + '">' + ui.ring(p, "var(--accent)", ok ? "✓" : ICO[q.id] || "•") + '<div class="grow"><div class="t">' + esc(typeOf(q).txt(q)) + "</div></div><span class=\"xp\">" + q.p + " / " + q.t + "</span></div>";
     });
-    if (Q.chest) h += '<div class="chestbox opened"><span class="chest" aria-hidden="true">🎁</span><span>Heute gewonnen: <b>' + esc(Q.chest) + "</b></span></div>";
-    else if (done === 3) h += '<div class="chestbox ready">' + btn("chest", "🎁 Truhe öffnen", { primary: true }) + "</div>";
-    else h += '<p class="small mute" style="margin:8px 0 0">Alle drei erledigen öffnet eine Truhe mit Belohnung.</p>';
+    if (done === 3) h += '<div class="chestline"><span aria-hidden="true">🎁</span><b>Truhe bereit</b>' + btn("chest", "Öffnen", { primary: true }) + "</div>";
+    else h += '<div class="chestline"><span aria-hidden="true">🎁</span><span class="mute">Alle 3 erledigen öffnet eine Truhe: XP oder Serienschutz.</span></div>';
     return h + "</div>";
   } });
 })();
