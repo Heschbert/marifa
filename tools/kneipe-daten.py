@@ -82,10 +82,10 @@ NIE = ["Ich hab noch nie einen Flug verpasst.", "Ich hab noch nie auf einer Hoch
  "Ich hab noch nie im Kino geweint.", "Ich hab noch nie einen Kaktus umgebracht.", "Ich hab noch nie Karaoke gesungen.", "Ich hab noch nie eine Nachricht an die falsche Person geschickt.",
  "Ich hab noch nie den Geburtstag eines guten Freundes vergessen.", "Ich hab noch nie ein Buch nicht zu Ende gelesen.", "Ich hab noch nie bei einem Brettspiel geschummelt.", "Ich hab noch nie einen ganzen Tag im Bett verbracht.",
  "Ich hab noch nie ein Pub-Quiz gewonnen.", "Ich hab noch nie Sushi gegessen.", "Ich hab noch nie ein Instrument gelernt.", "Ich hab noch nie eine Serie an einem Wochenende durchgeschaut.",
- "Ich hab noch nie einen Marathon gelaufen.", "Ich hab noch nie in einem anderen Land gearbeitet.", "Ich hab noch nie einen Prominenten getroffen.", "Ich hab noch nie beim Lachen Getränk durch die Nase bekommen.",
+ "Ich bin noch nie einen Marathon gelaufen.", "Ich hab noch nie in einem anderen Land gearbeitet.", "Ich hab noch nie einen Prominenten getroffen.", "Ich hab noch nie beim Lachen Getränk durch die Nase bekommen.",
  "Ich hab noch nie mein Handy in die Toilette fallen lassen.", "Ich hab noch nie einen Liebesbrief geschrieben.", "Ich hab noch nie im Meer nachts gebadet.", "Ich hab noch nie eine Wette verloren und musste etwas Peinliches tun.",
  "Ich hab noch nie eine ganze Pizza allein gegessen.", "Ich hab noch nie ein Tattoo bereut.", "Ich hab noch nie den Wecker überhört und war deshalb zu spät.", "Ich hab noch nie in der Öffentlichkeit gesungen.",
- "Ich hab noch nie einen Sonnenaufgang auf einem Berg gesehen.", "Ich hab noch nie vergessen, wo ich geparkt habe.", "Ich hab noch nie Fallschirm oder Bungee gesprungen.", "Ich hab noch nie eine Pflanze gerettet, die alle aufgegeben hatten.",
+ "Ich hab noch nie einen Sonnenaufgang auf einem Berg gesehen.", "Ich hab noch nie vergessen, wo ich geparkt habe.", "Ich bin noch nie Fallschirm oder Bungee gesprungen.", "Ich hab noch nie eine Pflanze gerettet, die alle aufgegeben hatten.",
  "Ich hab noch nie in einem Escape Room festgesteckt.", "Ich hab noch nie eine Sprache nur aus Filmen gelernt.", "Ich hab noch nie meinen Namen falsch geschrieben bekommen und nichts gesagt.", "Ich hab noch nie den Schlüssel von innen stecken lassen."]
 EHER = ["Wer würde eher beim Pub-Quiz alles googeln?", "Wer würde eher einen Flug verpassen?", "Wer würde eher spontan nach Irland auswandern?", "Wer würde eher als Erstes auf der Tanzfläche stehen?",
  "Wer würde eher eine Zombie-Apokalypse überleben?", "Wer würde eher eine Band gründen?", "Wer würde eher im Lotto gewinnen und es allen verheimlichen?", "Wer würde eher beim Karaoke das Mikro nicht mehr hergeben?",
@@ -101,6 +101,37 @@ PFLICHT = ["Sing den Refrain deines Lieblingslieds.", "Erzähl einen Witz. Wenn 
  "Imitier eine Person aus der Runde, die anderen raten.", "Zeig das letzte Foto in deiner Galerie (oder trink zwei Schlucke).", "Erfinde einen Trinkspruch und bring ihn aus.", "Tausche für eine Runde den Platz mit der Person links.",
  "Rede eine Minute über ein Thema, das die Runde bestimmt.", "Bestell die nächste Runde Wasser für alle.", "Mach eine Luftgitarren-Performance zu einem Lied der Runde.", "Nenne in 10 Sekunden fünf irische Wörter oder Namen.",
  "Sprich die nächste Runde nur in Reimen.", "Lass die Runde deinen Status für eine Stunde schreiben (harmlos!).", "Balanciere einen Bierdeckel auf dem Kopf, bis du wieder dran bist.", "Erzähl die Geschichte, wie ihr euch kennengelernt habt, als Märchen."]
+
+
+# Stufen für die Partyspiele: mild (harmlos), frech, hot (18+, anzüglich, nur unter Erwachsenen, alles freiwillig)
+NIE_FRECH = ["Ich hab noch nie einen Ex online gestalkt.", "Ich hab noch nie betrunken eine Nachricht geschickt und sie am nächsten Tag bereut.", "Ich hab noch nie jemanden geküsst, dessen Namen ich nicht kannte.",
+ "Ich hab noch nie ein Date nur wegen des Essens angenommen.", "Ich hab noch nie auf einer Hochzeit rumgeknutscht.", "Ich hab noch nie eine Urlaubsaffäre gehabt.", "Ich hab noch nie jemanden über eine Dating-App getroffen.",
+ "Ich hab noch nie auf jemanden aus dieser Runde gestanden.", "Ich hab noch nie nackt gebadet.", "Ich hab noch nie einen kompletten Filmriss gehabt.", "Ich hab noch nie eine Nummer unter falschem Namen gespeichert.",
+ "Ich hab noch nie heimlich im Handy meines Partners gelesen.", "Ich hab noch nie ein Date sitzen lassen.", "Ich bin noch nie in einem fremden Bett aufgewacht und nicht gewusst, wo ich bin.", "Ich hab noch nie mit jemandem geflirtet, nur um ein Getränk ausgegeben zu bekommen.",
+ "Ich hab noch nie zwei Dates am selben Tag gehabt.", "Ich hab noch nie den Namen meines Dates vergessen.", "Ich hab noch nie mit dem Ex eines Freundes geflirtet."]
+NIE_HOT = ["Ich hab noch nie an einem öffentlichen Ort rumgemacht.", "Ich hab noch nie einen One-Night-Stand gehabt.", "Ich hab noch nie Sex im Auto gehabt.", "Ich hab noch nie ein Nacktfoto verschickt.",
+ "Ich bin noch nie beim Sex erwischt worden.", "Ich hab noch nie Handschellen oder eine Augenbinde benutzt.", "Ich hab noch nie mit einem Ex geschlafen, nachdem Schluss war.", "Ich hab noch nie einen Dreier gehabt.",
+ "Ich hab noch nie beim Sex den falschen Namen gesagt.", "Ich hab noch nie Sex am Strand gehabt.", "Ich hab noch nie im Zug oder Flugzeug rumgemacht.", "Ich bin noch nie beim ersten Date im Bett gelandet.",
+ "Ich hab noch nie ein Sexspielzeug gekauft.", "Ich hab noch nie mit jemandem gesextet, den ich nie getroffen habe.", "Ich hab noch nie eine Fantasie ausgelebt, über die ich sonst nie rede.", "Ich hab noch nie Strip-Poker gespielt.",
+ "Ich hab noch nie Sex an einem Ort gehabt, an dem man uns hätte sehen können.", "Ich hab noch nie ein erotisches Rollenspiel gemacht."]
+EHER_FRECH = ["Wer würde eher betrunken den Ex anrufen?", "Wer würde eher mit dem Barkeeper flirten, um Freibier zu bekommen?", "Wer würde eher ein Tinder-Date zum Familienessen mitbringen?", "Wer würde eher als Erstes nackt in den Pool springen?",
+ "Wer würde eher im Club die Nummer vom Türsteher bekommen?", "Wer würde eher eine heimliche Affäre geheim halten können?", "Wer würde eher im Rausch ein Tattoo stechen lassen?", "Wer würde eher nach der Party bei jemand Fremdem aufwachen?",
+ "Wer würde eher für Geld ein Wochenende nackt leben?", "Wer würde eher auf einer Hochzeit mit der Bedienung verschwinden?", "Wer würde eher eine Dating-App für die Mutter einrichten?", "Wer würde eher beim ersten Date schon vom Heiraten reden?"]
+EHER_HOT = ["Wer würde eher Sex an einem öffentlichen Ort haben?", "Wer würde eher ein privates Sexvideo drehen?", "Wer würde eher einen Dreier vorschlagen?", "Wer würde eher so laut sein, dass die Nachbarn klopfen?",
+ "Wer würde eher ein Nacktfoto an die falsche Person schicken?", "Wer würde eher in einen Swingerclub gehen?", "Wer würde eher heute Nacht einen One-Night-Stand haben?", "Wer würde eher beim Strip-Poker als Letztes noch angezogen sein?",
+ "Wer würde eher ein Rollenspiel mit Kostüm vorschlagen?", "Wer würde eher Sexspielzeug im Handgepäck vergessen?", "Wer hat hier die wildeste Fantasie?", "Wer würde eher beim Sex einschlafen?"]
+WAHRHEIT_FRECH = ["Wer hier ist am attraktivsten?", "Was war dein peinlichster Flirtversuch?", "Mit wem aus der Runde würdest du am ehesten auf ein Date gehen?", "Was war deine schlimmste Ausrede, um ein Date abzusagen?",
+ "Wem hast du zuletzt eine anzügliche Nachricht geschickt?", "Was ist dein größter Turn-off?", "Wann hast du zuletzt jemanden geküsst, und wen?", "Welche Lüge hast du einem Partner erzählt?",
+ "Was war der seltsamste Ort, an dem du geknutscht hast?", "Welche Person aus deinem Handy würdest du nie anrufen, aber gern daten?"]
+WAHRHEIT_HOT = ["Wo war der aufregendste Ort, an dem du Sex hattest?", "Was ist deine geheime Fantasie?", "Was war dein peinlichstes Erlebnis im Bett?", "Mit wie vielen Menschen hattest du ungefähr schon Sex?",
+ "Was ist das Verrückteste, das du im Bett gemacht hast?", "Welchen One-Night-Stand bereust du?", "Wen hier würdest du für eine Nacht wählen?", "Was ist dein größter Turn-on?",
+ "Welche Stellung magst du am liebsten?", "Was wolltest du schon immer mal im Bett ausprobieren?"]
+PFLICHT_FRECH = ["Flirte 30 Sekunden mit der Person rechts von dir.", "Gib jemandem deiner Wahl einen Kuss auf die Wange.", "Zeig deinen besten Verführungsblick, bis jemand lacht.", "Lies deine letzte Chat-Nachricht laut vor.",
+ "Tanze 20 Sekunden sexy auf dem Stuhl.", "Mach jeder Person ein Kompliment über ihr Aussehen.", "Flüstere jemandem etwas Anzügliches ins Ohr.", "Zeig deinen letzten Flirt-Chat oder trink drei Schlucke.",
+ "Rufe deinen Schwarm an und sag Hallo (oder trink drei).", "Lass die Runde deine nächste Dating-App-Bio schreiben."]
+PFLICHT_HOT = ["Zieh ein Kleidungsstück aus.", "Gib der Person links eine Nackenmassage.", "Küsse jemanden aus der Runde, wenn beide wollen, sonst trink drei.", "Stöhne theatralisch zehn Sekunden lang.",
+ "Beschreibe deinen letzten Sex in drei Wörtern.", "Setz dich bis zu deiner nächsten Runde auf den Schoß einer Person deiner Wahl.", "Mach einen 30-Sekunden-Lapdance für jemanden, der zustimmt.", "Tausche ein Kleidungsstück mit jemandem.",
+ "Zeig, wie du jemanden verführen würdest, an der Person rechts (nur mit Einverständnis).", "Lass dir von jemandem mit verbundenen Augen etwas ins Ohr flüstern und rate, wer es war."]
 
 KOENIG = [["A", "Wasserfall", "Alle trinken gleichzeitig. Wer zieht, hört als Erster auf, dann die Person links usw."],
  ["2", "Du", "Bestimme jemanden, der zwei Schlucke trinkt."],
@@ -127,5 +158,6 @@ def check():
     print("Pub-Quiz:", n, "Fragen, richtige Antwort am längsten:", round(long / n * 100), "%")
 check()
 json.dump({"quiz": [{"t": t, "qs": [{"q": q, "o": o} for q, o in qs]} for t, qs in QUIZ.items()],
-           "nie": NIE, "eher": EHER, "wahrheit": WAHRHEIT, "pflicht": PFLICHT, "koenig": KOENIG},
+           "nie": {"mild": NIE, "frech": NIE_FRECH, "hot": NIE_HOT}, "eher": {"mild": EHER, "frech": EHER_FRECH, "hot": EHER_HOT},
+           "wahrheit": {"mild": WAHRHEIT, "frech": WAHRHEIT_FRECH, "hot": WAHRHEIT_HOT}, "pflicht": {"mild": PFLICHT, "frech": PFLICHT_FRECH, "hot": PFLICHT_HOT}, "koenig": KOENIG},
           open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

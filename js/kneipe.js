@@ -62,8 +62,9 @@
   H.pqq = function () { Q.picked = null; pqQ(); };
   function pqQ() {
     var R = Q.rounds[Q.r], x = R.qs[Q.i];
-    var h = '<div class="pqtop"><button class="ghost pubback" data-act="pqend">✕ Beenden</button><span>' + esc(R.t) + " · " + (Q.i + 1) + "/6</span></div>";
-    h += '<p class="pubq">' + esc(x.q) + '</p><div class="pqopts">';
+    var dots = ""; for (var k2 = 0; k2 < 6; k2++) dots += '<i class="' + (k2 < Q.i ? "done" : k2 === Q.i ? "cur" : "") + '"></i>';
+    var h = '<div class="pqtop"><button class="ghost pubback" data-act="pqend">✕ Beenden</button><span class="pqdots">' + dots + "</span></div>";
+    h += '<div class="chalk"><span class="chalk-t">' + esc(R.t) + " · Frage " + (Q.i + 1) + '</span><p class="pubq">' + esc(x.q) + '</p></div><div class="pqopts">';
     x.o.forEach(function (o, k) {
       var cls = Q.solo && Q.picked !== null ? (o.ok ? " ok" : k === Q.picked ? " bad" : " dim") : "";
       h += '<button class="pqopt' + cls + '" data-act="pqpick" data-k="' + k + '"' + (Q.solo ? "" : " disabled") + "><b>" + "ABCD"[k] + "</b>" + esc(o.t) + "</button>";
@@ -205,17 +206,22 @@
   /* Ich hab noch nie & Co.: Kartenstapel mit drei Varianten */
   var N = null;
   var NT = [["nie", "Ich hab noch nie"], ["eher", "Wer würde eher"], ["wp", "Wahrheit oder Pflicht"]];
-  H.nie = function () { N = N || { t: "nie", bag: {}, cur: "" }; nieDraw(); };
-  function pull(key) { var bag = N.bag[key]; if (!bag || !bag.length) bag = N.bag[key] = U.shuffle(K[key].slice()); return bag.pop(); }
+  /* Stufen: mild (harmlos), frech, hot (18+). Gewählte Stufe wird gemerkt. */
+  var LV = [["mild", "Harmlos"], ["frech", "Frech"], ["hot", "Versaut 18+"]];
+  H.nie = function () { N = N || { t: "nie", bag: {}, cur: "", lv: WF.store.data.settings.pubLv || "mild" }; nieDraw(); };
+  function pull(key) { var k = key + "|" + N.lv, bag = N.bag[k]; if (!bag || !bag.length) bag = N.bag[k] = U.shuffle(K[key][N.lv].slice()); return bag.pop(); }
+  H.nielv = function (d) { N.lv = d.lv; WF.store.data.settings.pubLv = d.lv; WF.store.save(); nieDraw(); };
   function nieDraw() { N.cur = N.t === "wp" ? "" : pull(N.t); nieView(true); }
   function nieView(anim) {
     var h = back() + '<h1 class="pubh">Ich hab noch nie &amp; Co.</h1><div class="pubseg">';
     NT.forEach(function (t) { h += '<button class="' + (N.t === t[0] ? "on" : "") + '" data-act="niet" data-t="' + t[0] + '">' + t[1] + "</button>"; });
+    h += '</div><div class="pubseg lvseg">';
+    LV.forEach(function (l) { h += '<button class="' + (N.lv === l[0] ? "on" : "") + (l[0] === "hot" ? " hot" : "") + '" data-act="nielv" data-lv="' + l[0] + '">' + l[1] + "</button>"; });
     h += "</div>";
     var hint = { nie: "Wer es schon mal gemacht hat, trinkt.", eher: "Auf drei zeigen alle auf eine Person. Wer die meisten Finger abbekommt, trinkt.", wp: "Wähle Wahrheit oder Pflicht. Wer kneift, trinkt zwei." }[N.t];
     if (N.t === "wp" && !N.cur) h += '<div class="niecard"><p>Wahrheit oder Pflicht?</p></div><div class="pubgrid"><button class="pubbtn alt" data-act="niew">Wahrheit</button><button class="pubbtn" data-act="niep">Pflicht</button></div>';
     else h += '<div class="niecard' + (anim && !ui.reduced() ? " in" : "") + '"><p>' + esc(N.cur) + '</p></div><button class="pubbtn" data-act="ninext">Nächste Karte</button>';
-    h += '<p class="pubnote">' + esc(hint) + "</p>";
+    h += '<p class="pubnote">' + esc(hint) + (N.lv === "hot" ? " Alles nur, wenn alle Beteiligten wollen. Wer nicht mag, sagt Nein und trinkt stattdessen." : "") + "</p>";
     show(h);
   }
   H.niet = function (d) { N.t = d.t; nieDraw(); };

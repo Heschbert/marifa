@@ -582,3 +582,26 @@ body.pub { --bg: #0e2a1f; --card: #1d3a2c; --fg: #f3ead7; --mute: #c9bd9f; --lin
 @keyframes slidein { from { transform: translateX(40px) rotate(4deg); opacity: 0; } }
 .pubentry { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; border: 2px solid #d4a017; border-radius: 18px; padding: 14px; background: linear-gradient(180deg, #24473a, #12301f); color: #f3ead7; box-shadow: var(--shadow); }
 .pubentry span { font-size: 30px; color: #5bbd72; } .pubentry b { font-family: Georgia, serif; font-size: 20px; display: block; } .pubentry small { color: #c9bd9f; } .pubentry i { margin-left: auto; font-style: normal; font-size: 22px; color: #d4a017; } .pubentry div { flex: 1; }
+/* Pub-Quiz: Tafel, mehr Luft */
+.pubwrap { padding-top: 4px; }
+.pubwrap h1.pubh { margin: 10px 0 14px; font-size: 30px; }
+.pqtop { margin-bottom: 18px; }
+.pqdots { display: flex; gap: 6px; }
+.pqdots i { width: 9px; height: 9px; border-radius: 50%; background: #3f5c4a; }
+.pqdots i.done { background: #5bbd72; } .pqdots i.cur { background: #f2c94c; transform: scale(1.3); }
+.chalk { position: relative; margin: 8px 0 26px; padding: 26px 20px 30px; border-radius: 18px; background: radial-gradient(circle at 30% 20%, #2c3a33, #1a231f 70%); border: 10px solid #5a3519; box-shadow: inset 0 0 30px rgba(0,0,0,.5), 0 10px 24px rgba(0,0,0,.35); animation: chalkin .4s ease both; }
+@keyframes chalkin { from { transform: translateY(10px) rotate(-.6deg); opacity: 0; } }
+.chalk-t { display: block; color: #f2c94c; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; }
+.chalk .pubq { margin: 0; font-size: 25px; color: #f6f1e4; text-shadow: 0 0 1px rgba(255,255,255,.4); }
+.pqopts { gap: 12px; }
+.pqopt { padding: 16px; min-height: 60px; font-size: 17px; border-radius: 16px; }
+.pqopt b { width: 32px; height: 32px; font-size: 15px; }
+.pqround { padding: 64px 0 28px; }
+.pqround h1 { font-size: 40px; animation: chalkin .5s ease both; }
+.pqround p { color: var(--mute); font-style: italic; font-family: Georgia, serif; }
+.pubcard { padding: 16px 18px; margin: 16px 0; }
+.pqteam { margin-top: 10px; }
+.pqans li { margin-bottom: 16px; line-height: 1.35; }
+.pubbtn { margin-top: 18px; }
+.lvseg button.hot.on { background: #c92a2a; border-color: #c92a2a; color: #fff; }
+.lvseg { margin-top: 0; }
