@@ -7,9 +7,9 @@
   var WF = window.WF, E = WF.engine, C = E.consts;
 
   WF.registerMode({
-    id: "learn", title: "Lernen", learn: true, helps: "free", requeue: true,
-    desc: "Erst, was du noch nicht sicher kannst. Falsche Antworten kommen in derselben Runde wieder, bis sie sitzen.",
-    build: function (s) { return E.orderLearn(E.pool(s.scope)).slice(0, C.ROUND); }
+    id: "learn", title: "Lernen", learn: true, helps: "free", requeue: true, extend: true,
+    desc: "Ohne Ende, bis du aufhörst. Erst, was du noch nicht sicher kannst; falsche Antworten kommen wieder, bis sie sitzen.",
+    build: function (s) { return E.orderLearn(E.pool(s.scope)).slice(0, s.n || C.ROUND); }
   });
   WF.registerMode({
     id: "review", title: "Fällige Wiederholung", learn: true, helps: "free", requeue: true, scoped: false,
@@ -24,7 +24,7 @@
   WF.registerMode({
     id: "classic", title: "Test", helps: "limited",
     desc: "10 Fragen mit Erklärung",
-    build: function (s) { return E.order(E.pool(s.scope), !s.scope.c).slice(0, C.ROUND); }
+    build: function (s) { return E.order(E.pool(s.scope), !s.scope.c).slice(0, s.n || C.ROUND); }
   });
   WF.registerMode({
     id: "blitz", title: "Blitz", helps: "none", timer: C.BLITZ_S, extend: true, auto: true,

@@ -10,12 +10,15 @@
   var view = null;
   function show(html, tab, learn) {
     stopTick();
+    if (ui.glow && !(E.s && !E.s.over && html.indexOf('id="opts"') >= 0)) ui.glow(0);
     /* Aufgeklappte Bereiche merken, bevor neu gezeichnet wird. */
     [].forEach.call(app.querySelectorAll("details[data-keep]"), function (d) { openState[d.dataset.keep] = d.open; });
     app.innerHTML = html;
     document.body.classList.toggle("learn", learn === true);
     document.body.classList.toggle("course", learn === "course");
+    document.body.classList.toggle("pub", learn === "pub");
     tabs.hidden = !tab;
+    document.body.classList.toggle("hastabs", !!tab);
     [].forEach.call(tabs.children, function (b) { b.classList.toggle("on", b.dataset.t === tab); });
     [].forEach.call(tabs.children, function (b) { if (b.dataset.t === tab) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
     window.scrollTo(0, 0);
@@ -48,9 +51,38 @@
   }
   WF.on("toast", toast);
 
+  /* Feier-Anzeige für Level, Abzeichen, Modul, Zertifikat, Rekord: mittig, gut sichtbar, schließt nach 3,5 s
+     oder per Tippen. Mehrere kommen nacheinander. */
+  var cq = [], cBusy = false;
+  function celebrate(c) { if (cq.length < 5) cq.push(c); if (!cBusy) nextCeleb(); }
+  function nextCeleb() {
+    var c = cq.shift(); if (!c) { cBusy = false; return; }
+    cBusy = true;
+    var el = document.createElement("div");
+    el.className = "celeb k-" + (c.kind || "x");
+    el.setAttribute("role", "dialog"); el.setAttribute("aria-live", "assertive");
+    var sparks = ""; if (!ui.reduced()) for (var i = 0; i < 14; i++) sparks += '<i style="--a:' + (i * 360 / 14) + 'deg;--d:' + (i % 3) * 0.06 + 's"></i>';
+    el.innerHTML = '<div class="celeb-card"><div class="celeb-icon">' + sparks + "<b>" + esc(c.icon || "★") + '</b></div><div class="celeb-t">' + esc(c.title) + '</div><div class="celeb-s">' + esc(c.sub || "") + '</div><div class="celeb-tap">Tippen zum Schließen</div></div>';
+    document.body.appendChild(el);
+    var gone = false, close = function () { if (gone) return; gone = true; el.classList.add("out"); setTimeout(function () { el.remove(); nextCeleb(); }, 220); };
+    el.addEventListener("click", close);
+    setTimeout(close, 3500);
+  }
+  ui.celebrate = celebrate;
+  WF.on("celebrate", celebrate);
+
+  /* Combo-Glow: leuchtender Rand, der mit jeder richtigen Antwort in Folge stärker wird */
+  var glowEl = document.createElement("div"); glowEl.id = "glow"; glowEl.setAttribute("aria-hidden", "true"); document.body.appendChild(glowEl);
+  ui.glow = function (streak) {
+    var lv = streak >= 10 ? 4 : streak >= 6 ? 3 : streak >= 3 ? 2 : streak >= 1 ? 1 : 0;
+    glowEl.className = lv ? "g" + lv : "";
+  };
+
   ui.H = H; ui.show = show; ui.btn = btn; ui.bar = bar; ui.toast = toast; ui.row = function () { return row.apply(null, arguments); };
   ui.prefSeg = function () { return prefSeg.apply(null, arguments); }; ui.start = function (id, c, s) { start(id, c, s); };
   ui.refresh = function () { if (view) view(); };
+  /* Nur neu zeichnen, wenn gerade eine Hauptseite mit Menüleiste zu sehen ist (nicht mitten im Spiel oder Duell) */
+  ui.refreshTab = function () { if (view && !tabs.hidden) view(); };
   ui.setView = function (f) { view = f; };
 
   /* Gemeinsame Bausteine: Schwierigkeit und Rubrik sind überall gleich bedienbar. */
@@ -97,12 +129,13 @@
     D.topics.forEach(function (t) {
       var n = E.totalIn(t.c), k = E.knownIn(t.c), p = E.levelPct(t.c), a = E.accIn(t.c);
       totN += n; totM += p * n; totS += k;
-      tiles += '<button class="kt" data-act="scope" data-c="' + esc(t.c) + '" data-s="">' + ring(p, ui.topicColor(t.c), E.fmtPct(p) + "%") + '<span class="t">' + esc(t.c) + '</span><span class="small mute">' + k + " von " + n + " gewusst" + (a.t ? " · " + U.pct(a.r, a.t) + " % richtig" : "") + "</span></button>";
+      tiles += '<button class="kt" data-act="stat" data-c="' + esc(t.c) + '">' + ring(p, ui.topicColor(t.c), E.fmtPct(p) + "%") + '<span class="t">' + esc(t.c) + '</span><span class="small mute">' + k + " von " + n + " gewusst" + (a.t ? " · " + U.pct(a.r, a.t) + " % richtig" : "") + "</span></button>";
       t.subs.forEach(function (sb) { var sa = E.accIn(t.c, sb); if (sa.t >= 5 && (!worst || U.pct(sa.r, sa.t) < worst.p)) worst = { c: t.c, n: sb, p: U.pct(sa.r, sa.t) }; });
     });
     var tp = totN ? totM / totN : 0;
     var h = '<div class="card ksum">' + ring(tp, "var(--play)", E.fmtPct(tp) + "%") + '<div class="grow"><b>Wissensstand ' + E.fmtPct(tp) + ' %</b><p class="small mute" style="margin:2px 0 0">' + totS + " von " + totN + " Fragen gewusst. Jede richtige Antwort füllt den Ring, Wiederholen nach Tagen füllt ihn ganz.</p></div></div>";
     h += '<div class="ktiles">' + tiles + "</div>";
+    h += '<div style="margin-top:10px">' + btn("stat", "Alle Statistiken ansehen", { data: { c: "" } }) + "</div>";
     if (worst) h += '<div class="card note" style="margin-top:12px"><b>Schwächster Bereich: ' + esc(worst.n) + '</b><p class="small mute">' + worst.p + " % richtig</p>" + btn("start", "Gezielt üben", { primary: true, data: { m: "learn", c: worst.c, s: worst.n } }) + "</div>";
     return h;
   }
@@ -126,6 +159,10 @@
     quiz();
   }
   H.start = function (d) { start(d.m, d.c, d.s); };
+  ui.startWith = function (id, scope, opts) {
+    if (!E.start(id, scope, opts)) { toast({ title: "Keine passenden Fragen" }); return; }
+    quiz();
+  };
 
   /* ---------- Spielen (Startseite, blau) ---------- */
   function pills() {
@@ -201,6 +238,7 @@
     var s = E.s, m = s.m, x = E.cur(), info, prog = "";
     if (m.lives) { var hs = ""; for (var i = 0; i < m.lives; i++) hs += i < s.lives ? "♥" : "♡"; info = '<span class="chip lives" id="lv" role="img" aria-label="' + livesLabel(s) + '">' + hs + "</span>"; }
     else if (m.timer) { info = '<span class="chip" id="tm" role="timer" aria-live="off">' + Math.ceil(E.timeLeft()) + " s</span>"; prog = '<div class="bar" aria-hidden="true"><i id="tb" style="width:' + (E.timeLeft() / m.timer * 100) + '%"></i></div>'; }
+    else if (m.extend) { info = '<span class="chip">' + (s.score + s.wrong.length) + " beantwortet</span>"; }
     else { info = '<span class="chip">' + (s.idx + 1) + " / " + s.round.length + "</span>"; prog = bar(s.idx / s.round.length * 100, "Fortschritt der Runde"); }
     if (!m.learn && !m.timer) prog += '<div class="qtime" id="qt" aria-hidden="true"><i></i></div>';
     var h = '<div class="topbar"><button class="ghost" data-act="quit">✕ Beenden</button>' + (m.learn ? '<span class="mode-tag">Lernen</span>' : "") + (s.streak > 1 ? '<span class="chip combo" id="combo">' + comboTxt(s.streak) + "</span>" : '<span class="chip combo" id="combo" hidden></span>') + info + "</div>" + prog;
@@ -250,18 +288,19 @@
       if (o.ok || i === r.picked) b.setAttribute("aria-label", o.t + (o.ok ? (i === r.picked ? ", deine Antwort, richtig" : ", richtige Antwort") : ", deine Antwort, falsch"));
     });
     ui.say(r.ok ? "Richtig." : "Falsch. Richtig ist: " + x.opts.filter(function (o) { return o.ok; })[0].t);
-    var hp = app.querySelector(".helps"); if (hp) hp.remove();
-    var hl = app.querySelector(".helps-label"); if (hl) hl.remove();
+    /* Hilfen bleiben an ihrem Platz (nur gesperrt), damit nichts nach oben springt */
+    [].forEach.call(app.querySelectorAll(".helps button"), function (b) { b.disabled = true; });
     var lv = document.getElementById("lv");
     if (lv) { var hs = ""; for (var i = 0; i < s.m.lives; i++) hs += i < s.lives ? "♥" : "♡"; lv.textContent = hs; lv.setAttribute("aria-label", livesLabel(s)); }
     /* Spielgefühl: Animation, fliegende Punkte, Combo-Anzeige, Zeitbalken anhalten */
     var qt = document.getElementById("qt"); if (qt) qt.classList.add("stop");
+    ui.glow(r.ok ? s.streak : 0);
     var cb = document.getElementById("combo");
     if (cb) { if (r.ok && s.streak > 1) { cb.hidden = false; cb.textContent = comboTxt(s.streak); cb.classList.remove("bump"); void cb.offsetWidth; cb.classList.add("bump"); } else if (!r.ok) cb.hidden = true; }
     var pb = r.picked >= 0 ? btns[r.picked] : null;
     if (pb && !ui.reduced()) { pb.classList.add(r.ok ? "pop" : "shake"); if (r.ok && r.gain) { var fl = document.createElement("span"); fl.className = "floatxp"; fl.textContent = "+" + r.gain; pb.appendChild(fl); } }
     if (s.m.auto) { s.adv = setTimeout(next, r.ok ? 450 : 1300); return; }
-    var auto = r.ok && S().settings.autoNext !== "stay";
+    var auto = false; /* Automatisch weiter nur im Blitz (s.m.auto, siehe oben): sonst bleibt die Auflösung stehen */
     var right = x.opts.filter(function (o) { return o.ok; })[0], picked = r.picked >= 0 ? x.opts[r.picked] : r.given;
     var f = '<div class="fb ' + (r.ok ? "ok" : "bad") + '"><b class="h">' + (r.ok ? "Richtig" + (r.gain ? " · +" + r.gain + " XP" : "") + (r.mult > 1 ? ' <span class="multi">×' + r.mult + "</span>" : "") : "Nicht ganz") + "</b>";
     if (r.slow) f += '<p class="small">Länger überlegt? Die Frage kommt bald wieder, bis sie sitzt.</p>';
@@ -283,17 +322,21 @@
       f += "</ul></details>";
     }
     if (auto) f += "</div>";
-    f += "</div>" + btn("next", r.last ? "Ergebnis ansehen" : "Weiter", { primary: true });
+    f += "</div>";
     var box = document.getElementById("fb");
     box.innerHTML = f;
-    box.scrollIntoView({ behavior: ui.reduced() ? "auto" : "smooth", block: "nearest" });
-    var nb = box.querySelector('[data-act="next"]'); if (nb) try { nb.focus({ preventScroll: true }); } catch (e) {}
+    /* „Weiter“ klebt unten am Bildschirm; die Seite scrollt nicht von selbst (weniger Bewegung) */
+    box.insertAdjacentHTML("afterend", '<div class="nextbar">' + btn("next", r.last ? "Ergebnis ansehen" : "Weiter", { primary: true }) + "</div>");
+    var nb0 = app.querySelector(".nextbar");
+    if (box.getBoundingClientRect().top > window.innerHeight - 120 && nb0) nb0.insertAdjacentHTML("afterbegin", '<button class="fbhint" data-act="fbjump">↓ Erklärung</button>');
+    var nb = app.querySelector('.nextbar [data-act="next"]'); if (nb) try { nb.focus({ preventScroll: true }); } catch (e) {}
     if (auto && nb) {
       nb.classList.add("autobar"); nb.insertAdjacentHTML("beforeend", '<i aria-hidden="true"></i>');
       s.adv = setTimeout(next, 1800);
       box.addEventListener("click", function (ev) { if (!ev.target.closest('[data-act="next"]')) { E.clearAdv(); nb.classList.remove("autobar"); } });
     }
   }
+  H.fbjump = function (d, t) { var b = document.getElementById("fb"); if (b) b.scrollIntoView({ behavior: "auto", block: "start" }); t.remove(); };
   H.fbmore = function (d, t) { E.clearAdv(); var m = app.querySelector(".fbmore"); if (m) m.hidden = false; t.remove(); var nb = app.querySelector(".autobar"); if (nb) nb.classList.remove("autobar"); };
   H.save = function (d, t) {
     var x = E.cur(), sv = S().saved;
@@ -314,7 +357,7 @@
   function result() {
     view = null;
     var s = E.s, m = s.m, n = s.score + s.wrong.length;
-    var h = '<h1>' + esc(m.title) + (s.scope.s || s.scope.c ? " · " + esc(s.scope.s || s.scope.c) : "") + "</h1>";
+    var h = '<h1>' + esc(m.title) + (s.scope.sel ? " · Eigene Auswahl" : s.scope.s || s.scope.c ? " · " + esc(s.scope.s || s.scope.c) : "") + "</h1>";
     /* Kopf: Ergebnis links, Sterne rechts (Sterne kommen aus game.js über den Slot "resulthead") */
     h += '<div class="card reshead"><div class="grow"><div class="score">' + (m.timer || m.lives ? s.score + " richtig" : s.score + " von " + n) + "</div>" +
       '<p class="small mute" style="margin:2px 0 0">+' + s.roundXP + " XP · beste Serie " + s.best + (s.record ? " · neuer Rekord" : "") + (s.mastNew ? " · " + s.mastNew + " neu gemeistert" : "") + "</p></div>" + WF.slot("resulthead", { s: s }) + "</div>";
@@ -331,7 +374,7 @@
     show(h, null, !!m.learn);
   }
   H.home = function () { home(); };
-  H.again = function () { var s = E.s; start(s.m.id, s.scope.c, s.scope.s); };
+  H.again = function () { var s = E.s; ui.startWith(s.m.id, s.scope, s.opts); };
 
   /* ---------- Profil ---------- */
   function profile() {

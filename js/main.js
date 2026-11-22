@@ -35,6 +35,8 @@ import "./quests.js";
 import "./ladder.js";
 import "./safe.js";
 import "./courses.js";
+import "./setup.js";
+import "./kneipe.js";
 import "./levels.js";
 
 /* Start: Daten laden, dann die Oberfläche öffnen. */

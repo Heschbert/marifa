@@ -52,8 +52,7 @@
 
   WF.registerEntry({ where: "settings", order: 5, render: function () {
     return ui.prefSeg("Sicherheit", "conf", [["auto", "Automatisch"], ["learn", "Beim Lernen fragen"], ["all", "Immer fragen"]]) +
-      '<p class="small mute" style="margin:-6px 0 12px">Automatisch: Wer bei einer richtigen Antwort lange zögert, bekommt die Frage früher wieder. Fragen heißt: vor dem Auflösen „geraten, ziemlich sicher, sicher?“.</p>' +
-      ui.prefSeg("Nach richtiger Antwort", "autoNext", [["auto", "Automatisch weiter"], ["stay", "Erklärung zeigen"]]);
+      '<p class="small mute" style="margin:-6px 0 12px">Automatisch: Wer bei einer richtigen Antwort lange zögert, bekommt die Frage früher wieder. Fragen heißt: vor dem Auflösen „geraten, ziemlich sicher, sicher?“.</p>';
   } });
 
   WF.registerEntry({ where: "profile", order: 20, render: function () {

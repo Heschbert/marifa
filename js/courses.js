@@ -306,13 +306,13 @@
       var r = p.mods[k.mod.id] || (p.mods[k.mod.id] = { best: 0, pass: false }), firstPass = pass && !r.pass;
       if (!aborted) r.best = Math.max(r.best, pct);
       if (pass) r.pass = true;
-      if (firstPass) { E.addXP(50); WF.emit("toast", { title: "Modul bestanden", sub: k.mod.title + " · +50 XP" }); }
+      if (firstPass) { E.addXP(50); WF.emit("celebrate", { icon: "✓", kind: "course", title: "Modul bestanden", sub: k.mod.title + " · +50 XP" }); }
       msg = pass ? "Bestanden. Das nächste Modul ist frei." : aborted ? "Abgebrochen." : "Noch nicht bestanden. Ab " + PASS + " % geht es weiter.";
     }
     if (k.kind === "final") {
       var f = p.final, firstF = pass && !(f && f.pass);
       if (pass) p.final = { pass: true, best: Math.max(pct, (f && f.best) || 0), at: (f && f.pass && f.at) || U.today() };
-      if (firstF) { E.addXP(150); WF.emit("toast", { title: "Zertifikat erhalten", sub: c.title + " · +150 XP" }); }
+      if (firstF) { E.addXP(150); WF.emit("celebrate", { icon: "🎓", kind: "course", title: "Zertifikat erhalten", sub: c.title + " · +150 XP" }); }
       msg = pass ? "Bestanden. Dein Zertifikat steht im Kurs und im Profil." : aborted ? "Abgebrochen." : "Noch nicht bestanden. Ab " + PASS + " % gibt es das Zertifikat.";
     }
     WF.store.save();
@@ -385,5 +385,5 @@
     C.list.forEach(function (c) { var f = P(c.id).final; if (f && f.pass) h += '<div class="card cert"><b>🎓 ' + esc(c.title) + '</b><p class="small mute">Zertifikat vom ' + esc(f.at.split("-").reverse().join(".")) + " · " + f.best + " %</p></div>"; });
     return h ? "<h2>Zertifikate</h2>" + h : "";
   } });
-  WF.on("ready", function () { C.load().then(function () { ui.refresh(); }).catch(function (e) { console.error(e); }); });
+  WF.on("ready", function () { C.load().then(function () { ui.refreshTab(); }).catch(function (e) { console.error(e); }); });
 })();

@@ -117,7 +117,7 @@ for (const x of idx.extras || []) {
       if (!q.e) warn(at, "keine Erklärung");
       total++;
     });
-  } else warn("index.json", "unbekannter Baustein „" + x.builder + "“ wird nicht geprüft");
+  } else if (x.builder !== "flags") warn("index.json", "unbekannter Baustein „" + x.builder + "“ wird nicht geprüft");
 }
 
 report();

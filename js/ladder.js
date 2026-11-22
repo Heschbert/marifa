@@ -55,26 +55,34 @@
       var last = L.i === 14, sv = SAFE.indexOf(L.i) >= 0;
       f = '<div class="fb ok"><b class="h">Richtig · ' + PTS[L.i] + " Punkte" + (sv ? " · Sicherheitsstufe erreicht" : "") + "</b>" + (x.e ? '<p class="small">' + esc(x.e) + "</p>" : "") + "</div>";
       f += last ? btn("lend", "Ganz oben! Abschließen", { primary: true, data: { p: PTS[14] } }) :
-        '<div class="grid2">' + btn("lend", "Aufhören", { sub: PTS[L.i] + " Punkte sichern", data: { p: PTS[L.i] } }) + btn("lnext", "Weiter", { primary: true, sub: "um " + PTS[L.i + 1] + " Punkte" }) + "</div>";
+        '<div class="grid2">' + btn("lend", "Aufhören", { sub: PTS[L.i] + " Punkte sichern", data: { p: PTS[L.i], stopped: 1 } }) + btn("lnext", "Weiter", { primary: true, sub: "um " + PTS[L.i + 1] + " Punkte" }) + "</div>";
     } else {
       var s = safeBelow(L.i), keep = s >= 0 ? PTS[s] : 0; L.keep = keep;
       f = '<div class="fb bad"><b class="h">Leider falsch</b><p>Richtig: <b>' + WF.util.ot(right.t) + "</b></p>" + (x.e ? '<p class="small">' + esc(x.e) + "</p>" : "") + "<p>Du fällst zurück auf " + keep + " Punkte.</p></div>" + btn("lend", "Ergebnis", { primary: true, data: { p: keep } });
     }
     document.getElementById("fb").innerHTML = f;
-    document.getElementById("fb").scrollIntoView({ behavior: ui.reduced() ? "auto" : "smooth", block: "nearest" });
   };
   H.lnext = function () { L.i++; L.hidden = []; L.answered = false; q(); };
   H.lquit = function () {
     if (L.i === 0 && !L.answered) return ui.go("home");
-    H.lend({ p: L.answered ? (L.lastOk ? PTS[L.i] : L.keep || 0) : PTS[L.i - 1] });
+    H.lend({ p: L.answered ? (L.lastOk ? PTS[L.i] : L.keep || 0) : PTS[L.i - 1], stopped: L.answered ? (L.lastOk ? 1 : 0) : 1 });
   };
   H.lend = function (d) {
     var p = +d.p || 0, st = S(); st.best.ladder = st.best.ladder || 0;
     var rec = p > st.best.ladder; if (rec) st.best.ladder = p;
     var xp = Math.round(p / 10); if (xp) E.addXP(xp); WF.store.save();
     WF.emit("ladderEnd", { p: p });
-    ui.show("<h1>Wissensleiter</h1>" + '<div class="score">' + p + " Punkte</div><p class=\"mute\">+" + xp + " XP" + (rec ? " · neuer Rekord" : "") + "</p>" +
-      '<div style="margin:16px 0">' + btn("ladder", "Nochmal", { primary: true }) + '<div style="height:8px"></div>' + btn("home", "Zur Startseite") + "</div>", null);
+    /* Erreichte Stufe: Anzahl richtig beantworteter Stufen */
+    var top = L ? (L.answered && L.lastOk ? L.i + 1 : L.i) : 0, top15 = top >= 15;
+    var msg = top15 ? "Ganz oben angekommen!" : p === 0 ? "Diesmal leider leer ausgegangen." : d.stopped ? "Klug aufgehört und gesichert." : "Auf die Sicherheitsstufe gefallen.";
+    var lad = '<div class="lend-ladder" aria-hidden="true">';
+    for (var k = 0; k < PTS.length; k++) lad += '<i class="' + (k < top ? "on" : "") + (SAFE.indexOf(k) >= 0 ? " safe" : "") + '" style="height:' + (14 + k * 4) + 'px"></i>';
+    lad += "</div>";
+    ui.show('<div class="lend">' + '<div class="lend-medal' + (top15 ? " gold" : p ? "" : " zero") + '"><b>' + p + "</b><span>Punkte</span></div>" +
+      "<h1>" + esc(msg) + '</h1><p class="mute">Stufe ' + top + " von 15" + (st.best.ladder ? " · Rekord " + st.best.ladder : "") + "</p>" + lad +
+      '<div class="lend-chips"><span class="chip">+' + xp + " XP</span>" + (rec ? '<span class="chip recchip">Neuer Rekord</span>' : "") + "</div></div>" +
+      '<div class="nextbar">' + btn("ladder", "Nochmal", { primary: true }) + '<div style="height:8px"></div>' + btn("home", "Zur Startseite") + "</div>", null);
+    if (rec && p > 0) WF.emit("celebrate", { icon: "⇧", kind: "record", title: "Neuer Rekord", sub: "Wissensleiter · " + p + " Punkte" });
   };
   WF.registerEntry({ where: "home", order: 25, render: function (c) {
     return ui.row("ladder", "⇧", "Wissensleiter", "15 Stufen, immer schwerer · aufhören oder alles riskieren" + (c.st.best.ladder ? " · Rekord " + c.st.best.ladder : ""), {});

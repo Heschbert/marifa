@@ -32,7 +32,7 @@
       if (!S().badges[b.id] && b.t(!!e)) {
         S().badges[b.id] = Date.now();
         if (E.s) E.s.newBadges.push(b);
-        WF.emit("toast", { title: "Abzeichen: " + b.n, sub: b.d });
+        WF.emit("celebrate", { icon: "🏅", kind: "badge", title: b.n, sub: "Neues Abzeichen · " + b.d });
       }
     });
   }

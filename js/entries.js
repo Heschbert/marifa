@@ -6,9 +6,9 @@
   function n(k, one, many) { return k + " " + (k === 1 ? one : many); }
 
   /* Spielen */
-  WF.registerEntry({ where: "home", order: 10, render: function () { return ui.row("play", "10", "Test", "10 Fragen mit Erklärung", { m: "classic" }); } });
-  WF.registerEntry({ where: "home", order: 20, render: function (c) { return ui.row("play", "60", "Blitz", "60 Sekunden · Rekord " + c.st.best.blitz, { m: "blitz" }); } });
-  WF.registerEntry({ where: "home", order: 30, render: function (c) { return ui.row("play", "♥", "Überleben", "3 Leben · Rekord " + c.st.best.survive, { m: "survive" }); } });
+  WF.registerEntry({ where: "home", order: 10, render: function () { return ui.row("setup", "10", "Test", "10 Fragen mit Erklärung · einstellbar", { m: "classic" }); } });
+  WF.registerEntry({ where: "home", order: 20, render: function (c) { return ui.row("setup", "60", "Blitz", "60 Sekunden · Rekord " + c.st.best.blitz, { m: "blitz" }); } });
+  WF.registerEntry({ where: "home", order: 30, render: function (c) { return ui.row("setup", "♥", "Überleben", "3 Leben · Rekord " + c.st.best.survive, { m: "survive" }); } });
 
   /* Lernen */
   WF.registerEntry({ where: "areas", order: 10, render: function () {

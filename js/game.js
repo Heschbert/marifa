@@ -4,22 +4,24 @@
   var WF = window.WF, E = WF.engine, ui = WF.ui, U = WF.util;
   function S() { return WF.store.data; }
 
-  /* Schwellen für 1, 2, 3 Sterne. Blitz und Überleben zählen richtige Antworten, sonst Trefferquote in Prozent. */
-  var STARS = { blitz: [6, 10, 15], survive: [5, 10, 20] };
-  function stars(s) {
-    var id = s.m.id, n = s.score + s.wrong.length;
-    if (STARS[id]) { var t = STARS[id], v = s.score; return { n: v >= t[2] ? 3 : v >= t[1] ? 2 : v >= t[0] ? 1 : 0, next: v >= t[2] ? 0 : (v >= t[1] ? t[2] : v >= t[0] ? t[1] : t[0]) - v, unit: "richtige" }; }
-    if (!n) return null;
-    var p = s.score / n, need = function (q) { return Math.max(0, Math.ceil(q * n - s.score)); };
-    /* 1 Stern ab 40 %, 2 ab 60 %, 3 ab 90 % (3 von 5 = 2 Sterne, 9 von 10 = 3 Sterne) */
-    return { n: p >= 0.9 ? 3 : p >= 0.6 ? 2 : p >= 0.4 ? 1 : 0, next: p >= 0.9 ? 0 : need(p >= 0.6 ? 0.9 : p >= 0.4 ? 0.6 : 0.4), unit: "richtige mehr" };
+  /* Bewertung mit 5 Sternen in halben Schritten.
+     Fragen-Runden: Trefferquote × 5 (3 von 5 = 60 % = 3 Sterne, 9 von 10 = 4,5 Sterne).
+     Blitz: 15 richtige = 5 Sterne, Überleben: 20 richtige = 5 Sterne. */
+  var FULL = { blitz: 15, survive: 20 };
+  function rating(s) {
+    var n = s.score + s.wrong.length, v;
+    if (FULL[s.m.id]) v = Math.min(1, s.score / FULL[s.m.id]);
+    else { if (!n) return null; v = s.score / n; }
+    return { stars: Math.round(v * 10) / 2, pct: Math.round(v * 100), timed: !!FULL[s.m.id] };
   }
+  WF.starsHtml = function (n, cls) {
+    var h = '<span class="stars5' + (cls ? " " + cls : "") + '" role="img" aria-label="' + String(n).replace(".", ",") + ' von 5 Sternen">';
+    for (var i = 0; i < 5; i++) h += '<span class="st5 ' + (n >= i + 1 ? "full" : n >= i + 0.5 ? "half" : "") + '" style="animation-delay:' + (i * 0.08) + 's">★</span>';
+    return h + "</span>";
+  };
   WF.registerEntry({ where: "resulthead", order: 1, render: function (c) {
-    var st = stars(c.s); if (!st) return "";
-    var h = '<div class="rstars"><div class="stars" role="img" aria-label="' + st.n + ' von 3 Sternen">';
-    for (var i = 0; i < 3; i++) h += '<span class="star' + (i < st.n ? " on" : "") + '" style="animation-delay:' + (i * 0.18) + 's">★</span>';
-    h += "</div>" + (st.next ? '<span class="small mute">+' + st.next + " für " + (st.n + 1) + " ★</span>" : '<span class="small mute">Bestwertung</span>') + "</div>";
-    return h;
+    var r = rating(c.s); if (!r) return "";
+    return '<div class="rstars">' + WF.starsHtml(r.stars) + '<span class="small mute">' + String(r.stars).replace(".", ",") + " von 5" + (r.timed ? "" : " · " + r.pct + " %") + "</span></div>";
   } });
 
   /* Fortschritt dieser Runde: welche Themen sind gewachsen? Zählt Fragen, die vorher neu oder zuletzt falsch waren. */

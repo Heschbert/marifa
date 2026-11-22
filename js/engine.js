@@ -26,7 +26,7 @@
     S().xp += n;
     if (E.s) E.s.roundXP += n;
     var after = E.levelOf(S().xp);
-    if (after > before) WF.emit("toast", { title: "Level " + after, sub: E.titleOf(after) });
+    if (after > before) WF.emit("celebrate", { icon: String(after), kind: "level", title: "Level " + after, sub: E.titleOf(after) });
   };
   E.registerPlay = function () {
     var st = S(), t = U.today(), s = st.streak;
@@ -136,7 +136,9 @@
        Neue Fragen (kein Eintrag) haben das höchste Gewicht, damit man mehr vom Bestand sieht. */
     return (r ? [4, 2.5, 1.5, 0.6, 0.25][Math.min(r.b, 4)] * (r.cw && r.b < 3 ? 1.6 : 1) : 5) * diffMult(x) * recency(x, r && r.b === 0);
   }
-  E.pool = function (scope) { return D.Q.filter(function (x) { return D.inScope(x, scope.c, scope.s); }); };
+  /* scope.sel: eigene Auswahl aus Themen ("Geschichte") und Bereichen ("Geschichte|Antike & Mittelalter") */
+  E.inSel = function (x, sel) { return sel.indexOf(x.c) >= 0 || sel.indexOf(x.c + "|" + x.s) >= 0; };
+  E.pool = function (scope) { return D.Q.filter(function (x) { return scope.sel ? E.inSel(x, scope.sel) : D.inScope(x, scope.c, scope.s); }); };
   E.order = function (list, balanced) {
     return list.map(function (x) { var w = weight(x); if (balanced) w = w / D.catN[x.c]; return { x: x, k: Math.log(Math.random()) / w }; })
       .sort(function (a, b) { return b.k - a.k; }).map(function (o) { return o.x; });
@@ -202,12 +204,22 @@
   /* ---------- Runde ---------- */
   E.clearAdv = function () { if (E.s && E.s.adv) { clearTimeout(E.s.adv); E.s.adv = null; } };
 
-  E.start = function (modeId, scope) {
-    var m = WF.modes[modeId];
+  /* opts (aus dem Einstellungsbildschirm vor dem Spiel): n = Fragen pro Runde, timer = Sekunden (Blitz),
+     lives = Leben (Überleben), helps = "limited" | "none", endless = Lernen ohne Ende. Abweichende Zeit oder Leben zählen nicht für Rekorde. */
+  E.start = function (modeId, scope, opts) {
+    var base = WF.modes[modeId], m = {}, k;
+    opts = opts || {};
+    for (k in base) m[k] = base[k];
+    if (opts.timer) m.timer = opts.timer;
+    if (opts.lives) m.lives = opts.lives;
+    if (opts.helps) m.helps = opts.helps;
+    if (opts.endless !== undefined && m.learn) m.extend = !!opts.endless;
     scope = scope || { c: null, s: null };
     var s = E.s = { m: m, scope: scope, round: [], idx: 0, score: 0, wrong: [], streak: 0, best: 0, lives: m.lives || 0, endAt: 0, roundXP: 0,
                     newBadges: [], log: [], planned: 0, learned: {}, retries: {}, mastNew: 0, answered: false, over: false, record: false,
                     shownAt: Date.now(), adv: null, jokers: { fifty: m.helps === "limited" ? 1 : 0, hint: m.helps === "limited" ? 1 : 0 } };
+    s.n = opts.n || C.ROUND; s.opts = opts;
+    s.custom = (m.timer || 0) !== (base.timer || 0) || (m.lives || 0) !== (base.lives || 0);
     var list = m.build(s);
     s.round = m.prepped ? list : list.map(function (x) { return E.prep(x); });
     s.planned = s.round.length;
@@ -318,7 +330,8 @@
     if (s.m.lives && s.lives <= 0) { E.finish(); return "result"; }
     if (s.idx >= s.round.length - 1) {
       if (s.m.extend) {
-        var more = E.order(E.pool(s.scope), !s.scope.c).slice(0, 30).map(function (x) { return E.prep(x); });
+        var src = s.m.learn ? E.orderLearn(E.pool(s.scope)) : E.order(E.pool(s.scope), !s.scope.c);
+        var more = src.slice(0, 30).map(function (x) { return E.prep(x); });
         if (!more.length) { E.finish(); return "result"; }
         s.round = s.round.concat(more);
       } else { E.finish(); return "result"; }
@@ -332,8 +345,8 @@
     if (s.over) return;
     s.over = true;
     E.clearAdv();
-    if (s.m.id === "blitz" && s.score > st.best.blitz) { st.best.blitz = s.score; s.record = true; }
-    if (s.m.id === "survive" && s.score > st.best.survive) { st.best.survive = s.score; s.record = true; }
+    if (!s.custom && s.m.id === "blitz" && s.score > st.best.blitz) { st.best.blitz = s.score; s.record = true; }
+    if (!s.custom && s.m.id === "survive" && s.score > st.best.survive) { st.best.survive = s.score; s.record = true; }
     /* Tagesrätsel: zählt als gespielt, sobald eine Frage beantwortet ist, auch bei Abbruch.
        So lässt es sich nicht neu starten, nachdem man Antworten gesehen hat. Bonus-XP nur für vollständige Runden. */
     var answered = s.score + s.wrong.length;
