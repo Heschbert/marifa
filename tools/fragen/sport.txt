@@ -1,0 +1,9 @@
+# Überarbeitung Sport
+-1ghe95u
+-uiiwi5
+-18glny0
+-8l64v9
+-dt5xq5
+-hpxm1m
+# Neu
++{"s": "Fußball", "q": "Wann zeigt der Schiedsrichter im Fußball die Gelb-Rote Karte?", "a": ["Bei der zweiten Verwarnung", "Bei einem Handspiel im Strafraum", "Bei einem Tor aus dem Abseits", "Bei der ersten Verwarnung"], "w": ["", "Ein Handspiel im Strafraum führt zu einem Strafstoß, nicht automatisch zu Gelb-Rot.", "Ein Abseitstor wird nicht gegeben; eine Karte gibt es dafür nicht.", "Bei der ersten Verwarnung gibt es Gelb."], "e": "Wer im selben Spiel eine zweite Gelbe Karte erhält, sieht Gelb-Rot und muss vom Platz. Die Mannschaft spielt dann in Unterzahl weiter.", "h": "Zweimal Gelb.", "d": 1}

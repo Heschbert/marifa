@@ -1,0 +1,19 @@
+# Überarbeitung Geographie
+-1c8rho0
+-1o3kczl
+~10u2318|Deutsch, Französisch, Italienisch, Rätoromanisch|Deutsch, Französisch, Italienisch, Spanisch|Deutsch, Englisch, Französisch, Italienisch|Deutsch, Französisch, Rätoromanisch, Lateinisch und Englisch
+~1f49yjw|Durch Gletscher|Durch Vulkanausbrüche und Lavaströme|Durch Brandung des Meeres|Durch Erdbebenspalten
+~41l7p|Es versickert im Landesinneren|Es mündet in den Indischen Ozean|Es ist ein Delta im Mittelmeer|Es entsteht durch Gletscher
+~11faxcn|Erdplatten driften auseinander|Durch einen Meteoriteneinschlag vor Millionen Jahren|Durch Gletscher|Durch Flusserosion
+~1rhecih|Wegen des Vertrags von Tordesillas|Wegen der Entdeckung des Kontinents durch Kolumbus|Wegen der Unabhängigkeit 1830|Wegen der Besiedlung durch Niederländer
+~1n8b463|Riesige Bodenzeichnungen|Ein Flussnetz|Ein uraltes Straßensystem der Inka im Hochland|Eine Verwerfung
+~swsdej|In Zentralaustralien|In Neuseeland|In Tasmanien|In Westaustralien an der Küste
+~wlumfk|Korallen wachsen um eine versunkene Insel|Ein Vulkan bildet einen Ring aus erstarrter Lava|Eis schmilzt und lässt Land übrig|Treibholz sammelt sich an
+~7ne5dk|An der Küste, vor allem im Südosten|Im trockenen Outback im Landesinneren|In der Mitte des Kontinents|In Tasmanien
+~1oxt43k|Wegen des hohen Salzgehalts|Wegen der ungewöhnlich hohen Wassertemperatur|Wegen starker Strömungen|Wegen der geringen Tiefe
+~1qdiz46|Durch einen Hotspot im Erdmantel|Durch Korallenwachstum|Durch die Kollision zweier Erdplatten|Durch einen Meteoriteneinschlag
+# Rückausgleich gegen Überkorrektur (automatisch)
+~10u2318|Deutsch, Französisch, Italienisch, Rätoromanisch|Deutsch, Französisch, Italienisch, Spanisch|Deutsch, Englisch, Französisch, Italienisch|Deutsch, Französisch, Rätoromanisch, Latein
+~11faxcn|Durch das Auseinanderdriften von Erdplatten|Durch einen Meteoriteneinschlag|Durch Gletscher|Durch Flusserosion
+~1qdiz46|Durch einen Hotspot im Erdmantel|Durch Korallenwachstum|Durch Kollision zweier Platten|Durch einen Meteoriteneinschlag
+~1n8b463|Riesige Bodenzeichnungen in der Wüste|Ein Flussnetz|Ein Straßensystem der Inka|Eine Verwerfung
