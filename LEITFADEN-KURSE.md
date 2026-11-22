@@ -51,5 +51,5 @@ bestehende IDs nicht umnummerieren.
 Vokabeln: Lektion = Wortfeld, `body` kurz (Grammatik-Hinweis), `cards` = Wort ↔ Übersetzung,
 `qs` = Übersetzung wählen (`mc`) oder Satzglieder ordnen (`order`). Alles andere bleibt gleich.
 
-Die Quelldatei des Batteriespeicher-Kurses liegt als Python-Skript in `tools/kurs-bess-quelle.py`
+Die Quelldateien des Batteriespeicher-Kurses liegen als Python-Skripte in `tools/kurs-bess-quelle.py` (Modul 1) und `tools/kurs-bess-m2-8.py`
 (erzeugt `bess.json`). Neue Kurse können direkt als JSON geschrieben werden.

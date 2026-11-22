@@ -159,23 +159,27 @@ l5 = L("bess.m1.l5", "Sicherheit: Thermisches Durchgehen, BMS und Normen", 5, [
   mc("Warum brauchen Batteriecontainer Gasdetektion und Druckentlastung?", ["Beim thermischen Durchgehen können brennbare Gase entstehen", "Um die Luftfeuchte für die Garantie zu messen", "Aus Gründen des Lärmschutzes", "Weil die Zellen im Normalbetrieb Gas verbrauchen"], 0, "Sammeln sich brennbare Gase, droht eine Explosion. Detektion und Entlastung senken dieses Risiko."),
   mc("Was regelt IEC 62619?", ["Sicherheitsanforderungen an Lithium-Zellen und -Batterien für industrielle Anwendungen", "Die Regeln des europäischen Strommarkts", "Baugenehmigungen für Speicher", "Die Höhe der Netzentgelte"], 0, "Die Norm gilt für industrielle Anwendungen, dazu zählen auch stationäre Speicher.")])
 
+import os
+exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "kurs-bess-m2-8.py"), encoding="utf-8").read())
+
 course = {
  "id": "bess", "title": "Batteriespeicher", "sub": "Von der Zelle bis zur Vermarktung: Technik, Regulatorik und Geschäftsmodelle stationärer Speicher",
  "audience": "Projektentwicklung, Industrie, Energiewirtschaft (Deutschland/EU)",
  "stand": "11/2026", "version": 1,
- "review": "Inhalte mit Quellen erstellt. Eine fachliche Prüfung durch eine externe Fachperson steht noch aus.",
+ "review": "Inhalte mit Quellen erstellt (Recherche-Stand 11/2026). Regulatorik und Marktzahlen ändern sich häufig und stammen teils aus Fachpresse und Kanzleibeiträgen. Eine fachliche Prüfung durch eine externe Fachperson steht noch aus.",
  "levels": [{"id": 1, "title": "Grundlagen"}, {"id": 2, "title": "Fortgeschritten"}, {"id": 3, "title": "Experte"}],
  "modules": [
   {"id": "bess.m1", "level": 1, "title": "Technik & Kennzahlen", "desc": "Aufbau, Zellchemie, Kennzahlen, Alterung und Sicherheit.", "lessons": [l1, l2, l3, l4, l5]},
-  {"id": "bess.m2", "level": 1, "title": "Anwendungen: Behind- und Front-of-the-Meter", "desc": "Peak Shaving, Eigenverbrauch, Großspeicher am Netz, Kombination mit PV und Wind.", "lessons": []},
-  {"id": "bess.m3", "level": 2, "title": "Vermarktung & Betriebsmodelle", "desc": "Day-Ahead, Intraday, Regelleistung (FCR, aFRR), Arbitrage, Tolling, Flexibilität.", "lessons": []},
-  {"id": "bess.m4", "level": 2, "title": "Netzanschluss & Genehmigung", "desc": "Netzanschlussverfahren, Baukostenzuschuss, Baugenehmigung, Brandschutzkonzept.", "lessons": []},
-  {"id": "bess.m5", "level": 2, "title": "Steuern, Abgaben & Hauptzollamt", "desc": "Stromsteuer, Netzentgelte, Befreiungen für Speicher und ihre Voraussetzungen.", "lessons": []},
-  {"id": "bess.m6", "level": 3, "title": "Projektplanung & Wirtschaftlichkeit", "desc": "Dimensionierung, Business Case, Verträge, Garantien, Ausschreibung.", "lessons": []},
-  {"id": "bess.m7", "level": 3, "title": "Markt & Hersteller", "desc": "Lieferketten EU und China, Integratoren, Preisentwicklung, Herausforderungen.", "lessons": []},
-  {"id": "bess.m8", "level": 3, "title": "Forschung & neue Konzepte", "desc": "Virtuelle Speicher, neue Zellchemien, aktuelle Studienlage.", "lessons": []}
+  {"id": "bess.m2", "level": 1, "title": "Anwendungen: Behind- und Front-of-the-Meter", "desc": "Peak Shaving, Eigenverbrauch, Großspeicher am Netz, Kombination mit PV und Wind.", "lessons": M2},
+  {"id": "bess.m3", "level": 2, "title": "Vermarktung & Betriebsmodelle", "desc": "Day-Ahead, Intraday, Regelleistung (FCR, aFRR), Arbitrage, Tolling, Flexibilität.", "lessons": M3},
+  {"id": "bess.m4", "level": 2, "title": "Netzanschluss & Genehmigung", "desc": "Netzanschlussverfahren, Baukostenzuschuss, Baugenehmigung, Brandschutzkonzept.", "lessons": M4},
+  {"id": "bess.m5", "level": 2, "title": "Steuern, Abgaben & Hauptzollamt", "desc": "Stromsteuer, Netzentgelte, Befreiungen für Speicher und ihre Voraussetzungen.", "lessons": M5},
+  {"id": "bess.m6", "level": 3, "title": "Projektplanung & Wirtschaftlichkeit", "desc": "Dimensionierung, Business Case, Verträge, Garantien, Ausschreibung.", "lessons": M6},
+  {"id": "bess.m7", "level": 3, "title": "Markt & Hersteller", "desc": "Lieferketten EU und China, Integratoren, Preisentwicklung, Herausforderungen.", "lessons": M7},
+  {"id": "bess.m8", "level": 3, "title": "Forschung & neue Konzepte", "desc": "Virtuelle Speicher, neue Zellchemien, aktuelle Studienlage.", "lessons": M8}
  ]
 }
 json.dump(course, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
 json.dump({"courses": [{"id": "bess", "file": "bess.json"}]}, open(sys.argv[2], "w"), ensure_ascii=False, indent=1)
-print(sum(len(l["qs"]) for l in [l1,l2,l3,l4,l5]), sum(len(l["cards"]) for l in [l1,l2,l3,l4,l5]))
+al=[l for m in course["modules"] for l in m["lessons"]]
+print(len(al), "Lektionen", sum(len(l["qs"]) for l in al), "Fragen", sum(len(l["cards"]) for l in al), "Karten")

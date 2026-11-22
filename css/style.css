@@ -334,12 +334,12 @@ h1 { font-size: 30px; font-weight: 800; }
 .grow-card .ring { width: 40px; height: 40px; }
 .grow-card .ring b { font-size: 11px; }
 
-/* ---------- Kurse (grün-türkis) ---------- */
-:root { --course: #0c8599; --course-fg: #ffffff; --course-soft: #e3f6f8; }
-:root[data-theme="dark"] { --course: #3bc9db; --course-fg: #04161a; --course-soft: #0f2d33; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --course: #3bc9db; --course-fg: #04161a; --course-soft: #0f2d33; } }
+/* ---------- Kurse (grün) ---------- */
+:root { --course: #2b8a3e; --course-fg: #ffffff; --course-soft: #e6f4ea; }
+:root[data-theme="dark"] { --course: #69db7c; --course-fg: #07170b; --course-soft: #12301a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --course: #69db7c; --course-fg: #07170b; --course-soft: #12301a; } }
 body.course { --accent: var(--course); --accent-fg: var(--course-fg); --accent-soft: var(--course-soft); background: color-mix(in srgb, var(--course-soft) 45%, var(--bg)); }
-body.course .hero { background: linear-gradient(135deg, var(--course) 0%, #1971c2 100%); box-shadow: 0 8px 24px rgba(12,133,153,.22); }
+body.course .hero { background: linear-gradient(135deg, #2b8a3e 0%, #66a80f 100%); box-shadow: 0 8px 24px rgba(43,138,62,.24); }
 #tabs button[data-t=courses].on { color: var(--course); }
 .lesson { margin: 14px 0; }
 .lesson p { font-size: calc(16px * var(--fs, 1)); line-height: 1.6; margin: 0 0 12px; }

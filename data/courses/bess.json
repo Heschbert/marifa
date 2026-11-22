@@ -5,7 +5,7 @@
  "audience": "Projektentwicklung, Industrie, Energiewirtschaft (Deutschland/EU)",
  "stand": "11/2026",
  "version": 1,
- "review": "Inhalte mit Quellen erstellt. Eine fachliche Prüfung durch eine externe Fachperson steht noch aus.",
+ "review": "Inhalte mit Quellen erstellt (Recherche-Stand 11/2026). Regulatorik und Marktzahlen ändern sich häufig und stammen teils aus Fachpresse und Kanzleibeiträgen. Eine fachliche Prüfung durch eine externe Fachperson steht noch aus.",
  "levels": [
   {
    "id": 1,
@@ -917,49 +917,3479 @@
    "level": 1,
    "title": "Anwendungen: Behind- und Front-of-the-Meter",
    "desc": "Peak Shaving, Eigenverbrauch, Großspeicher am Netz, Kombination mit PV und Wind.",
-   "lessons": []
+   "lessons": [
+    {
+     "id": "bess.m2.l1",
+     "title": "Behind-the-Meter: Speicher im Industriebetrieb",
+     "min": 5,
+     "body": [
+      "Ein Behind-the-Meter-Speicher steht beim Verbraucher hinter dessen Netzanschluss. Er dient zuerst dem Betrieb selbst, kann aber zusätzlich am Markt eingesetzt werden.",
+      "## Lastspitzen kappen",
+      "Größere Stromkunden mit Leistungsmessung zahlen beim Netzentgelt nicht nur für die bezogene Energie (Arbeitspreis), sondern auch für ihre höchste gemessene Leistung im Jahr (Leistungspreis). Schon eine einzige Spitze kann den Leistungspreis für das ganze Jahr bestimmen. Der Speicher entlädt genau dann, wenn die Last eine Grenze überschreitet, und senkt so die Jahreshöchstleistung (Peak Shaving).",
+      "## Eigenverbrauch und Notstrom",
+      "Mit eigener Photovoltaik lädt der Speicher tagsüber Überschüsse und gibt sie später ab. Mit passender Technik kann er außerdem kritische Verbraucher bei Netzausfall versorgen (Notstrom bzw. Ersatzstrom). Die Netzentgeltsystematik wird von der Bundesnetzagentur derzeit überarbeitet (Verfahren AgNes); vor Investitionen den aktuellen Stand prüfen."
+     ],
+     "key": [
+      "Leistungspreis hängt an der Jahreshöchstleistung.",
+      "Peak Shaving senkt diese Spitze.",
+      "Eigenverbrauch PV und Notstrom sind weitere BTM-Nutzen.",
+      "Netzentgelt-Regeln werden überarbeitet (AgNes): Stand prüfen."
+     ],
+     "src": [
+      {
+       "n": "Fieldfisher: BNetzA schwenkt um – vorerst kein Ende des Netzentgeltprivilegs (AgNes)",
+       "u": "https://www.fieldfisher.com/de-de/locations/germany/insights/bnetza-schwenkt-um-doch-vorerst-kein-ende-des-netzentgeltprivilegs-fuer-batteriespeicher"
+      },
+      {
+       "n": "Allgemeines Fachwissen der Energiewirtschaft (Definitionen); vertiefend: EWI- und dena-Analysen 2026",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m2.l1.k1",
+       "f": "Leistungspreis",
+       "b": "Teil des Netzentgelts, berechnet nach der höchsten gemessenen Leistung im Abrechnungsjahr."
+      },
+      {
+       "id": "bess.m2.l1.k2",
+       "f": "Arbeitspreis",
+       "b": "Teil des Netzentgelts, berechnet nach der bezogenen Energiemenge (kWh)."
+      },
+      {
+       "id": "bess.m2.l1.k3",
+       "f": "Peak Shaving",
+       "b": "Lastspitzen mit dem Speicher kappen, um die Jahreshöchstleistung und damit den Leistungspreis zu senken."
+      },
+      {
+       "id": "bess.m2.l1.k4",
+       "f": "Eigenverbrauchsoptimierung",
+       "b": "PV-Überschüsse speichern und später selbst nutzen statt einzuspeisen."
+      },
+      {
+       "id": "bess.m2.l1.k5",
+       "f": "AgNes",
+       "b": "Verfahren der Bundesnetzagentur zur Reform der Netzentgeltsystematik (laufend, Stand 2026)."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wovon hängt der Leistungspreis beim Netzentgelt eines leistungsgemessenen Kunden ab?",
+       "o": [
+        "Von der höchsten gemessenen Leistung im Jahr",
+        "Von der Zahl der Zähler",
+        "Vom Börsenstrompreis",
+        "Von der Fläche des Betriebsgeländes"
+       ],
+       "a": 0,
+       "e": "Schon eine einzelne Spitze kann den Leistungspreis für das ganze Jahr bestimmen.",
+       "id": "bess.m2.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wann entlädt ein Speicher beim Peak Shaving?",
+       "o": [
+        "Wenn die Last eine festgelegte Grenze überschreitet",
+        "Immer nachts",
+        "Nur bei negativen Strompreisen",
+        "Nur bei Netzausfall"
+       ],
+       "a": 0,
+       "e": "Ziel ist, die Spitze unter einer Grenze zu halten. Dazu muss der Speicher zu diesem Zeitpunkt ausreichend geladen sein.",
+       "id": "bess.m2.l1.q2"
+      },
+      {
+       "t": "num",
+       "q": "Ein Betrieb senkt seine Jahreshöchstleistung mit dem Speicher von 5.000 kW auf 4.200 kW. Der Leistungspreis beträgt 100 €/kW und Jahr. Wie viel Euro spart er pro Jahr?",
+       "a": 80000,
+       "unit": "€",
+       "tol": 0,
+       "e": "800 kW × 100 €/kW = 80.000 € pro Jahr. Beispielwerte; echte Preise stehen im Preisblatt des Netzbetreibers.",
+       "id": "bess.m2.l1.q3"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Nutzen bietet ein Behind-the-Meter-Speicher typischerweise? (mehrere richtig)",
+       "o": [
+        "Lastspitzen kappen",
+        "Mehr eigenen Solarstrom nutzen",
+        "Notstrom für kritische Verbraucher",
+        "Netzanschluss überflüssig machen",
+        "Stromsteuer vollständig abschaffen"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Der Netzanschluss bleibt nötig, und steuerliche Fragen hängen von der Ausgestaltung ab.",
+       "id": "bess.m2.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist beim Peak Shaving das größte Betriebsrisiko?",
+       "o": [
+        "Der Speicher ist im Moment der Spitze leer, die Spitze wird nicht gekappt",
+        "Der Speicher wird zu voll",
+        "Der Zähler läuft rückwärts",
+        "Der Strompreis steigt"
+       ],
+       "a": 0,
+       "e": "Eine verpasste Spitze kann die Ersparnis eines ganzen Jahres kosten. Deshalb wird Reserve für Spitzen vorgehalten, bevor man zusätzlich am Markt handelt.",
+       "id": "bess.m2.l1.q5"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist bei der Planung von Netzentgelt-Einsparungen derzeit besonders zu beachten?",
+       "o": [
+        "Die Netzentgeltsystematik wird von der Bundesnetzagentur überarbeitet (AgNes)",
+        "Netzentgelte wurden abgeschafft",
+        "Netzentgelte gelten nur für Haushalte",
+        "Netzentgelte sind bundesweit für alle gleich hoch"
+       ],
+       "a": 0,
+       "e": "Einsparungen hängen an Regeln, die sich ändern können. Annahmen im Business Case deshalb mit Stand und Szenarien hinterlegen.",
+       "id": "bess.m2.l1.q6"
+      }
+     ]
+    },
+    {
+     "id": "bess.m2.l2",
+     "title": "Front-of-the-Meter: Großspeicher am Netz",
+     "min": 5,
+     "body": [
+      "Front-of-the-Meter-Speicher sind eigenständige Anlagen mit eigenem Netzanschluss, häufig im Mittel-, Hoch- oder Höchstspannungsnetz. Sie verdienen ihr Geld nicht durch eingesparte Kosten eines Verbrauchers, sondern durch Handel und Dienstleistungen.",
+      "## Erlösquellen",
+      "Typisch sind Arbitrage am Day-Ahead- und Intraday-Markt (günstig laden, teuer verkaufen) und Regelleistung für die Übertragungsnetzbetreiber. Die Kombination mehrerer Erlösquellen heißt Revenue Stacking. Die Einzelheiten folgen im Modul Vermarktung.",
+      "## Bedeutung für das Stromsystem",
+      "Großspeicher verschieben Energie aus Stunden mit viel Wind- und Solarstrom in Stunden mit hoher Nachfrage, stabilisieren die Netzfrequenz und können Netzengpässe entlasten, wenn sie netzdienlich betrieben werden. Ob ein marktgetriebener Betrieb auch netzdienlich ist, hängt vom Standort und der Situation ab; das ist eine der aktuellen Fragen in Regulierung und Forschung.",
+      "## Größenordnungen",
+      "Großspeicher in Deutschland haben häufig Leistungen im zweistelligen bis dreistelligen Megawattbereich und Speicherdauern von etwa ein bis zwei Stunden; längere Dauern nehmen zu (Stand 2026)."
+     ],
+     "key": [
+      "FTM = eigener Netzanschluss, Erlöse aus Handel und Regelleistung.",
+      "Revenue Stacking = mehrere Erlösquellen kombinieren.",
+      "Marktbetrieb ist nicht automatisch netzdienlich.",
+      "Typisch 1–2 Stunden Dauer, Trend zu länger."
+     ],
+     "src": [
+      {
+       "n": "pv magazine (05/2026): Längere Speicherdauern etablieren sich auf dem deutschen Tolling-Markt",
+       "u": "https://www.pv-magazine.de/2026/05/07/batteriespeicher-mit-laengerer-speicherdauer-etablieren-sich-auf-dem-deutschen-tolling-markt/"
+      },
+      {
+       "n": "EWI Köln (04/2026): Endbericht Einsatz von Großbatteriespeichern",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      },
+      {
+       "n": "Allgemeines Fachwissen der Energiewirtschaft (Definitionen); vertiefend: EWI- und dena-Analysen 2026",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m2.l2.k1",
+       "f": "Revenue Stacking",
+       "b": "Kombination mehrerer Erlösquellen, z. B. Arbitrage und Regelleistung."
+      },
+      {
+       "id": "bess.m2.l2.k2",
+       "f": "Arbitrage",
+       "b": "Günstig laden, teuer verkaufen; Gewinn aus Preisunterschieden über die Zeit."
+      },
+      {
+       "id": "bess.m2.l2.k3",
+       "f": "Netzdienlich",
+       "b": "Betrieb, der Netzengpässe entlastet statt verschärft. Hängt von Standort und Situation ab."
+      },
+      {
+       "id": "bess.m2.l2.k4",
+       "f": "Stand-alone-Speicher",
+       "b": "Speicher ohne eigene Erzeugungsanlage am Standort, nur mit Netzanschluss."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Womit verdient ein Front-of-the-Meter-Speicher typischerweise Geld?",
+       "o": [
+        "Mit Arbitrage am Strommarkt und Regelleistung",
+        "Mit eingesparten Leistungspreisen eines Betriebs",
+        "Mit dem Verkauf von Zertifikaten für Gebäude",
+        "Mit Einspeisevergütung nach festen Sätzen"
+       ],
+       "a": 0,
+       "e": "Eingesparte Leistungspreise sind ein Behind-the-Meter-Nutzen.",
+       "id": "bess.m2.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet Revenue Stacking?",
+       "o": [
+        "Mehrere Erlösquellen kombinieren",
+        "Erlöse über mehrere Jahre stapeln, ohne sie auszuzahlen",
+        "Speicher übereinander stapeln",
+        "Nur eine einzige Erlösquelle nutzen"
+       ],
+       "a": 0,
+       "e": "Ein Optimierer verteilt die Kapazität auf die jeweils lukrativste Verwendung.",
+       "id": "bess.m2.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Ist ein marktgetriebener Speicherbetrieb automatisch netzdienlich?",
+       "o": [
+        "Nein, das hängt von Standort und Situation ab",
+        "Ja, immer",
+        "Nein, nie",
+        "Nur bei Speichern unter 1 MW"
+       ],
+       "a": 0,
+       "e": "Lädt ein Speicher in einer Engpassregion, wenn der Preis niedrig ist, kann er einen Engpass auch verschärfen.",
+       "id": "bess.m2.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Speicherdauer ist bei deutschen Großspeichern (Stand 2026) häufig?",
+       "o": [
+        "Etwa 1 bis 2 Stunden, mit Trend zu länger",
+        "Etwa 15 Minuten",
+        "Etwa 24 Stunden",
+        "Etwa eine Woche"
+       ],
+       "a": 0,
+       "e": "Längere Dauern nehmen zu, unter anderem weil Tolling-Verträge sie nachfragen.",
+       "id": "bess.m2.l2.q4"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Beiträge können Großspeicher zum Stromsystem leisten? (mehrere richtig)",
+       "o": [
+        "Energie zeitlich verschieben",
+        "Netzfrequenz stabilisieren",
+        "Netzengpässe entlasten, wenn netzdienlich betrieben",
+        "Erneuerbare Erzeugung ersetzen",
+        "Den Netzausbau grundsätzlich überflüssig machen"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Speicher erzeugen keine Energie und ersetzen den Netzausbau nicht grundsätzlich, sie können ihn aber ergänzen.",
+       "id": "bess.m2.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "bess.m2.l3",
+     "title": "Speicher zusammen mit Solar- und Windparks",
+     "min": 5,
+     "body": [
+      "Speicher werden oft am selben Netzanschluss wie ein Solar- oder Windpark gebaut (Co-Location). Das spart Anschlusskosten und kann Abregelung vermeiden.",
+      "## Graustrom und Grünstrom",
+      "Lange war schwierig: Wer einen Speicher hinter einer geförderten EEG-Anlage auch mit Netzstrom (Graustrom) lädt, riskierte die Förderung für den eingespeicherten Solarstrom, weil sich die Strommengen nicht sauber trennen ließen. Die Bundesnetzagentur hat dazu die Festlegung MiSpeL (Marktintegration von Speichern und Ladepunkten) erlassen (Pressemitteilung vom 01.10.2026).",
+      "## Die zwei Optionen der MiSpeL",
+      "Die Abgrenzungsoption steht allen offen und ermittelt die Strommengen genau über Messung. Die Pauschaloption ist ein vereinfachtes Verfahren für kleine Anlagen (unter anderem PV bis 30 kWp, Speicher und bidirektionale Wallboxen in Haushalten und Kleingewerbe); sie braucht laut Bundesnetzagentur noch eine beihilferechtliche Genehmigung der EU. Übergangsregeln gelten bis 30.09.2027.",
+      "## Überbauung des Netzanschlusses",
+      "Weil Solar- und Windparks selten gleichzeitig mit voller Leistung einspeisen, kann ein Speicher am gemeinsamen Anschluss Energie aufnehmen, die sonst wegen der Anschlussgrenze verloren ginge. Das lohnt sich vor allem, wenn Netzanschlüsse knapp und teuer sind."
+     ],
+     "key": [
+      "Co-Location = Speicher am selben Anschluss wie PV/Wind.",
+      "Graustrom-Laden gefährdete früher die EEG-Förderung.",
+      "MiSpeL: Abgrenzungsoption (Messung) und Pauschaloption (klein, EU-Genehmigung ausstehend).",
+      "Gemeinsamer Anschluss kann überbaut werden."
+     ],
+     "src": [
+      {
+       "n": "Bundesnetzagentur: Festlegung zur Marktintegration von Speichern und Ladepunkten (MiSpeL)",
+       "u": "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/ErneuerbareEnergien/EEG_Aufsicht/MiSpeL/start.html"
+      },
+      {
+       "n": "Bundesnetzagentur, Pressemitteilung 01.10.2026: MiSpeL erlassen",
+       "u": "https://bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20261001_Mispel.html"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m2.l3.k1",
+       "f": "Co-Location",
+       "b": "Speicher am selben Netzanschluss wie ein Solar- oder Windpark."
+      },
+      {
+       "id": "bess.m2.l3.k2",
+       "f": "Graustrom",
+       "b": "Strom aus dem Netz (nicht aus der eigenen erneuerbaren Anlage)."
+      },
+      {
+       "id": "bess.m2.l3.k3",
+       "f": "MiSpeL",
+       "b": "Festlegung der Bundesnetzagentur zur Marktintegration von Speichern und Ladepunkten (erlassen 10/2026)."
+      },
+      {
+       "id": "bess.m2.l3.k4",
+       "f": "Abgrenzungsoption",
+       "b": "MiSpeL-Weg für alle: Strommengen werden über Messung genau abgegrenzt."
+      },
+      {
+       "id": "bess.m2.l3.k5",
+       "f": "Pauschaloption",
+       "b": "Vereinfachter MiSpeL-Weg für kleine Anlagen; braucht noch EU-Beihilfegenehmigung (Stand 10/2026)."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was bedeutet Co-Location bei Batteriespeichern?",
+       "o": [
+        "Der Speicher teilt sich den Netzanschluss mit einem Solar- oder Windpark",
+        "Zwei Speicher teilen sich einen Container",
+        "Der Speicher steht im Ausland",
+        "Der Speicher wird gemietet"
+       ],
+       "a": 0,
+       "e": "Der gemeinsame Anschluss spart Kosten und kann Abregelung vermeiden.",
+       "id": "bess.m2.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welches Problem löst die MiSpeL-Festlegung der Bundesnetzagentur?",
+       "o": [
+        "Die Abgrenzung von Grün- und Graustrom in Speichern, damit Förderung und Netzladen vereinbar sind",
+        "Die Brandschutzauflagen für Speicher",
+        "Die Wahl der Zellchemie",
+        "Die Höhe der Stromsteuer"
+       ],
+       "a": 0,
+       "e": "Ohne saubere Abgrenzung konnte Netzladen die EEG-Förderung gefährden.",
+       "id": "bess.m2.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Für wen ist die Abgrenzungsoption der MiSpeL gedacht?",
+       "o": [
+        "Für alle Anlagenbetreiber, mit genauer Messung der Strommengen",
+        "Nur für Haushalte",
+        "Nur für Anlagen über 100 MW",
+        "Nur für Windparks auf See"
+       ],
+       "a": 0,
+       "e": "Die vereinfachte Pauschaloption gilt dagegen nur für kleine Anlagen.",
+       "id": "bess.m2.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was fehlt der MiSpeL-Pauschaloption laut Bundesnetzagentur noch (Stand 10/2026)?",
+       "o": [
+        "Eine beihilferechtliche Genehmigung der EU",
+        "Eine Zustimmung jedes Netzbetreibers",
+        "Ein Bundestagsbeschluss pro Anlage",
+        "Nichts, sie gilt uneingeschränkt"
+       ],
+       "a": 0,
+       "e": "Bis zur EU-Genehmigung ist der Starttermin dieser Option offen.",
+       "id": "bess.m2.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum kann ein Speicher an einem gemeinsamen Netzanschluss mit einem Solarpark Energie retten?",
+       "o": [
+        "Er nimmt Erzeugung auf, die die Anschlussgrenze überschreitet und sonst abgeregelt würde",
+        "Er erhöht die Sonneneinstrahlung",
+        "Er macht die Module effizienter",
+        "Er senkt die Einspeisevergütung"
+       ],
+       "a": 0,
+       "e": "So lässt sich ein Anschluss überbauen: mehr Erzeugungsleistung als Anschlussleistung.",
+       "id": "bess.m2.l3.q5"
+      },
+      {
+       "t": "mc",
+       "q": "Bis wann gelten laut Bundesnetzagentur Übergangsregeln der MiSpeL?",
+       "o": [
+        "Bis 30.09.2027",
+        "Bis 31.12.2025",
+        "Bis 2040",
+        "Es gibt keine Übergangsregeln"
+       ],
+       "a": 0,
+       "e": "Stand der Pressemitteilung vom 01.10.2026. Vor Projektentscheidungen den aktuellen Stand prüfen.",
+       "id": "bess.m2.l3.q6"
+      }
+     ]
+    },
+    {
+     "id": "bess.m2.l4",
+     "title": "Use Cases im Vergleich: Welcher Speicher für welchen Zweck?",
+     "min": 4,
+     "body": [
+      "Der Anwendungsfall bestimmt die Auslegung. Wichtige Stellgrößen sind Leistung, Speicherdauer, Zyklen pro Jahr und die Reaktionsgeschwindigkeit.",
+      "## Typische Auslegungen",
+      "Regelleistung wie FCR braucht schnelle Reaktion, aber wenig Energie im Verhältnis zur Leistung. Arbitrage profitiert von längerer Dauer, weil mehr Energie in die teuren Stunden verschoben werden kann. Peak Shaving richtet sich nach der Dauer und Höhe der Lastspitzen des Betriebs. Notstrom braucht genug Energie für die geforderte Überbrückungszeit.",
+      "## Zyklen und Lebensdauer",
+      "Häufiges Handeln bringt mehr Erlöse, verbraucht aber Lebensdauer. Garantien begrenzen meist die Zyklen. Ein guter Betrieb wägt jeden Zyklus gegen den Verschleiß ab.",
+      "## Die richtige Frage zuerst",
+      "Am Anfang steht nicht „Wie groß soll der Speicher sein?“, sondern „Welches Problem soll er lösen und womit verdient er Geld?“. Daraus folgen Leistung, Dauer, Standort und Vertrag."
+     ],
+     "key": [
+      "Use Case bestimmt Leistung, Dauer und Zyklen.",
+      "Regelleistung: schnell, wenig Energie pro MW.",
+      "Arbitrage: längere Dauer lohnt.",
+      "Jeder Zyklus kostet Lebensdauer."
+     ],
+     "src": [
+      {
+       "n": "Allgemeines Fachwissen der Energiewirtschaft (Definitionen); vertiefend: EWI- und dena-Analysen 2026",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      },
+      {
+       "n": "Smith u. a. (NREL), Life Prediction Model for Grid-Connected Li-ion Battery Energy Storage System, 2017",
+       "u": "https://www.osti.gov/biblio/1378083"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m2.l4.k1",
+       "f": "Auslegung",
+       "b": "Festlegen von Leistung (MW), Energie (MWh) und Betriebsweise passend zum Anwendungsfall."
+      },
+      {
+       "id": "bess.m2.l4.k2",
+       "f": "Zyklenbudget",
+       "b": "Durch Garantie oder Wirtschaftlichkeit begrenzte Anzahl an Vollzyklen pro Jahr."
+      },
+      {
+       "id": "bess.m2.l4.k3",
+       "f": "Überbrückungszeit",
+       "b": "Dauer, die ein Notstromsystem die Versorgung übernehmen muss."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welcher Anwendungsfall braucht im Verhältnis zur Leistung am wenigsten Energie?",
+       "o": [
+        "Regelleistung wie FCR",
+        "Arbitrage über viele Stunden",
+        "Notstrom für einen ganzen Tag",
+        "Saisonale Speicherung"
+       ],
+       "a": 0,
+       "e": "FCR verlangt schnelle Reaktion; die Energie muss nur für einen begrenzten Abrufzeitraum reichen.",
+       "id": "bess.m2.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum profitiert Arbitrage von längerer Speicherdauer?",
+       "o": [
+        "Mehr Energie kann in die teuren Stunden verschoben werden",
+        "Längere Speicher sind immer billiger",
+        "Die Zellen werden dadurch kühler",
+        "Der Wirkungsgrad steigt auf 100 %"
+       ],
+       "a": 0,
+       "e": "Bei 1 Stunde Dauer kann nur die teuerste Stunde bedient werden, bei 4 Stunden die vier teuersten.",
+       "id": "bess.m2.l4.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist der Zielkonflikt bei häufigem Zyklisieren?",
+       "o": [
+        "Mehr Erlöse, aber mehr Verschleiß",
+        "Mehr Verschleiß, aber weniger Erlöse",
+        "Kein Zielkonflikt",
+        "Höhere Stromsteuer"
+       ],
+       "a": 0,
+       "e": "Ein guter Betrieb lässt Zyklen aus, deren Erlös den Verschleiß nicht deckt.",
+       "id": "bess.m2.l4.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was sollte bei der Speicherplanung zuerst geklärt werden?",
+       "o": [
+        "Welches Problem der Speicher löst und womit er Geld verdient",
+        "Die Farbe des Containers",
+        "Der Hersteller der Zellen",
+        "Die Zahl der Module"
+       ],
+       "a": 0,
+       "e": "Daraus ergeben sich Leistung, Dauer, Standort und Vertrag.",
+       "id": "bess.m2.l4.q4"
+      },
+      {
+       "t": "order",
+       "q": "Ordne diese Anwendungen nach typischer Speicherdauer, die kürzeste zuerst.",
+       "o": [
+        "Primärregelleistung (FCR)",
+        "Tagesarbitrage",
+        "Notstrom für eine ganze Schicht",
+        "Saisonale Speicherung"
+       ],
+       "e": "FCR braucht nur kurze Energiereserven, saisonale Speicherung Wochen bis Monate (dafür sind Batterien heute meist nicht wirtschaftlich).",
+       "id": "bess.m2.l4.q5"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "bess.m3",
    "level": 2,
    "title": "Vermarktung & Betriebsmodelle",
    "desc": "Day-Ahead, Intraday, Regelleistung (FCR, aFRR), Arbitrage, Tolling, Flexibilität.",
-   "lessons": []
+   "lessons": [
+    {
+     "id": "bess.m3.l1",
+     "title": "Day-Ahead und Intraday: Handel mit Strom",
+     "min": 5,
+     "body": [
+      "## Day-Ahead",
+      "Am Day-Ahead-Markt wird Strom für jeden Zeitabschnitt des Folgetags in einer täglichen Auktion gehandelt. Die europäischen Märkte sind gekoppelt (SDAC). Seit dem Liefertag 1. Oktober 2025 gibt es dort 15-Minuten-Produkte statt Stundenprodukten. Für Speicher heißt das: feinere Preisunterschiede innerhalb einer Stunde werden handelbar.",
+      "## Intraday",
+      "Am Intraday-Markt wird bis kurz vor Lieferung weitergehandelt, kontinuierlich und in Auktionen. Hier gleichen Händler Abweichungen aus, etwa bei veränderten Wind- und Solarprognosen. Preissprünge sind oft größer als am Day-Ahead-Markt.",
+      "## Arbitrage rechnen",
+      "Arbitrage lohnt nur, wenn der Preisunterschied die Verluste deckt. Bei 85 % Wirkungsgrad kostet jede verkaufte MWh 1 ÷ 0,85 ≈ 1,18 MWh eingekaufte Energie. Wer zu 50 €/MWh einkauft, braucht einen Verkaufspreis von mindestens etwa 59 €/MWh, ohne Verschleiß und Gebühren. Negative Preise sind für Speicher besonders attraktiv: Laden bringt dann sogar Geld."
+     ],
+     "key": [
+      "Day-Ahead: tägliche Auktion für den Folgetag, seit 1.10.2025 in 15-Minuten-Produkten.",
+      "Intraday: Handel bis kurz vor Lieferung.",
+      "Arbitrage lohnt nur, wenn der Spread die Verluste deckt.",
+      "Negative Preise: Laden bringt Geld."
+     ],
+     "src": [
+      {
+       "n": "EPEX SPOT: 15-Minuten-Produkte im europäischen Day-Ahead-Markt eingeführt",
+       "u": "https://www.epexspot.com/en/news/successful-implementation-15-minute-market-time-unit-mtu-sdac"
+      },
+      {
+       "n": "NREL, Annual Technology Baseline 2020: Speicher (Annahme 85 % Wirkungsgrad, nach Cole & Frazier 2020)",
+       "u": "https://atb-archive.nrel.gov/electricity/2020/index.php?t=st"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m3.l1.k1",
+       "f": "Day-Ahead-Markt",
+       "b": "Tägliche Auktion für den Folgetag; seit 1.10.2025 mit 15-Minuten-Produkten (SDAC)."
+      },
+      {
+       "id": "bess.m3.l1.k2",
+       "f": "Intraday-Markt",
+       "b": "Handel bis kurz vor Lieferung, kontinuierlich und in Auktionen."
+      },
+      {
+       "id": "bess.m3.l1.k3",
+       "f": "SDAC",
+       "b": "Single Day-Ahead Coupling: gekoppelter europäischer Day-Ahead-Markt."
+      },
+      {
+       "id": "bess.m3.l1.k4",
+       "f": "Spread",
+       "b": "Preisunterschied zwischen Lade- und Entladezeitpunkt."
+      },
+      {
+       "id": "bess.m3.l1.k5",
+       "f": "Break-even-Spread",
+       "b": "Mindestspread, der die Wirkungsgradverluste deckt: Einkaufspreis ÷ Wirkungsgrad."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Seit wann gibt es im europäischen Day-Ahead-Markt 15-Minuten-Produkte?",
+       "o": [
+        "Seit dem Liefertag 1. Oktober 2025",
+        "Seit 2010",
+        "Seit 1. Januar 2030",
+        "Es gibt nur Stundenprodukte"
+       ],
+       "a": 0,
+       "e": "Der Start war ursprünglich früher geplant und wurde verschoben; live ging er für den Liefertag 1.10.2025.",
+       "id": "bess.m3.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür wird der Intraday-Markt vor allem genutzt?",
+       "o": [
+        "Um kurzfristige Abweichungen, etwa bei Wind- und Solarprognosen, auszugleichen",
+        "Um Strom für das nächste Jahr zu kaufen",
+        "Um Regelleistung zu beschaffen",
+        "Um Netzentgelte zu bezahlen"
+       ],
+       "a": 0,
+       "e": "Der Handel läuft bis kurz vor Lieferung.",
+       "id": "bess.m3.l1.q2"
+      },
+      {
+       "t": "num",
+       "q": "Ein Speicher hat 85 % Wirkungsgrad und lädt zu 50 €/MWh. Welcher Verkaufspreis in €/MWh deckt gerade die Verluste? (auf ganze Euro gerundet)",
+       "a": 59,
+       "unit": "€/MWh",
+       "tol": 1,
+       "e": "50 ÷ 0,85 ≈ 58,8 €/MWh, gerundet 59 €/MWh. Verschleiß und Gebühren kommen noch dazu.",
+       "id": "bess.m3.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum sind negative Strompreise für Speicher attraktiv?",
+       "o": [
+        "Beim Laden erhält der Speicher Geld",
+        "Die Zellen altern dann nicht",
+        "Der Wirkungsgrad steigt",
+        "Es fallen keine Steuern an"
+       ],
+       "a": 0,
+       "e": "Negative Preise entstehen bei Überangebot, etwa an sonnigen und windigen Feiertagen.",
+       "id": "bess.m3.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bringen 15-Minuten-Produkte einem Speicher?",
+       "o": [
+        "Preisunterschiede innerhalb einer Stunde werden handelbar",
+        "Sie verdoppeln automatisch die Kapazität",
+        "Sie ersetzen die Regelleistung",
+        "Sie schaffen die Netzentgelte ab"
+       ],
+       "a": 0,
+       "e": "Speicher reagieren schnell und können kurze Preisspitzen nutzen.",
+       "id": "bess.m3.l1.q5"
+      },
+      {
+       "t": "num",
+       "q": "Ein 10-MW/20-MWh-Speicher lädt einmal voll und entlädt einmal voll. Der Spread nach Verlusten beträgt 40 €/MWh auf die entladene Energie. Wie viel Euro Rohertrag bringt dieser Zyklus?",
+       "a": 800,
+       "unit": "€",
+       "tol": 0,
+       "e": "20 MWh × 40 €/MWh = 800 €. Vereinfachtes Beispiel ohne Verschleiß und Gebühren.",
+       "id": "bess.m3.l1.q6"
+      }
+     ]
+    },
+    {
+     "id": "bess.m3.l2",
+     "title": "Regelleistung: FCR, aFRR und mFRR",
+     "min": 6,
+     "body": [
+      "Die Netzfrequenz liegt in Europa bei 50 Hz. Weicht sie ab, setzen die Übertragungsnetzbetreiber Regelleistung ein. In Deutschland wird sie gemeinsam über die Plattform regelleistung.net beschafft.",
+      "## FCR (Primärregelleistung)",
+      "FCR reagiert automatisch und dezentral auf die Frequenz. Bei 200 mHz Abweichung oder mehr ist sie voll aktiviert; die volle Leistung muss innerhalb von 30 Sekunden bereitstehen. Das Produkt ist symmetrisch: positive und negative Leistung werden zusammen angeboten. Batteriespeicher sind dafür technisch ideal.",
+      "## aFRR (Sekundärregelleistung)",
+      "aFRR wird vom Netzbetreiber automatisch abgerufen und muss nach europäischer Harmonisierung innerhalb von 5 Minuten voll erbracht werden. Positive und negative aFRR werden getrennt angeboten. Die Leistung wird in sechs 4-Stunden-Blöcken pro Tag vergeben; dazu kommt ein Markt für die tatsächlich abgerufene Energie.",
+      "## mFRR (Minutenreserve)",
+      "mFRR löst die automatischen Produkte ab und deckt längere Störungen ab (Größenordnung 15 Minuten Aktivierungszeit).",
+      "## Die Speicher-Herausforderung",
+      "Ein Gebot für einen 4-Stunden-Block verlangt, dass der Speicher im Ernstfall die zugesagte Leistung über den Block halten kann. Mit nur 1–2 Stunden Dauer bieten Speicher deshalb oft weniger Leistung an, als sie technisch könnten."
+     ],
+     "key": [
+      "FCR: 30 s, voll bei ±200 mHz, symmetrisch.",
+      "aFRR: 5 min, positiv/negativ getrennt, 4-h-Blöcke + Energiemarkt.",
+      "mFRR: längere Störungen.",
+      "Speicher müssen ihre Gebote an die Energiereserve anpassen."
+     ],
+     "src": [
+      {
+       "n": "APG: Primärregelung (FCR) – Produktmerkmale",
+       "u": "https://markt.apg.at/en/power-grid/balancing/primary-control/"
+      },
+      {
+       "n": "Next Kraftwerke: Sekundärregelleistung (aFRR) erklärt",
+       "u": "https://www.next-kraftwerke.com/knowledge/afrr"
+      },
+      {
+       "n": "Modo Energy: Germany aFRR explained",
+       "u": "https://modoenergy.com/research/de/germany-september-2025-afrr-explained-ancillary-services-opportunity-grid-frequency-service"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m3.l2.k1",
+       "f": "FCR",
+       "b": "Frequency Containment Reserve (Primärregelleistung): automatisch, 30 s, voll bei ±200 mHz, symmetrisch."
+      },
+      {
+       "id": "bess.m3.l2.k2",
+       "f": "aFRR",
+       "b": "Automatic Frequency Restoration Reserve (Sekundärregelleistung): 5 min, positiv und negativ getrennt."
+      },
+      {
+       "id": "bess.m3.l2.k3",
+       "f": "mFRR",
+       "b": "Manual Frequency Restoration Reserve (Minutenreserve): für längere Störungen."
+      },
+      {
+       "id": "bess.m3.l2.k4",
+       "f": "regelleistung.net",
+       "b": "Gemeinsame Ausschreibungsplattform der deutschen Übertragungsnetzbetreiber für Regelleistung."
+      },
+      {
+       "id": "bess.m3.l2.k5",
+       "f": "Symmetrisches Produkt",
+       "b": "Positive und negative Leistung müssen zusammen angeboten werden (so bei FCR)."
+      },
+      {
+       "id": "bess.m3.l2.k6",
+       "f": "Präqualifikation",
+       "b": "Technischer Nachweis beim Übertragungsnetzbetreiber, dass eine Anlage Regelleistung zuverlässig erbringen kann."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Innerhalb welcher Zeit muss FCR voll aktiviert sein?",
+       "o": [
+        "30 Sekunden",
+        "5 Minuten",
+        "15 Minuten",
+        "1 Stunde"
+       ],
+       "a": 0,
+       "e": "5 Minuten gelten für aFRR, etwa 15 Minuten für mFRR.",
+       "id": "bess.m3.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Bei welcher Frequenzabweichung ist FCR voll aktiviert?",
+       "o": [
+        "Ab 200 mHz",
+        "Ab 2 Hz",
+        "Ab 10 mHz",
+        "Ab 50 Hz"
+       ],
+       "a": 0,
+       "e": "Bei ±200 mHz Abweichung ist die FCR vollständig ausgeschöpft.",
+       "id": "bess.m3.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet „symmetrisch“ beim Produkt FCR?",
+       "o": [
+        "Positive und negative Leistung werden zusammen angeboten",
+        "Laden und Entladen kosten gleich viel",
+        "Alle Anbieter bekommen den gleichen Preis",
+        "Die Leistung ist auf zwei Standorte verteilt"
+       ],
+       "a": 0,
+       "e": "Bei aFRR können positive und negative Leistung dagegen getrennt angeboten werden.",
+       "id": "bess.m3.l2.q3"
+      },
+      {
+       "t": "order",
+       "q": "Ordne die Regelleistungsarten nach ihrer Aktivierungszeit, die schnellste zuerst.",
+       "o": [
+        "FCR",
+        "aFRR",
+        "mFRR"
+       ],
+       "e": "FCR 30 Sekunden, aFRR 5 Minuten, mFRR rund 15 Minuten.",
+       "id": "bess.m3.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "In welchen Blöcken wird aFRR-Leistung in Deutschland vergeben?",
+       "o": [
+        "Sechs 4-Stunden-Blöcke pro Tag",
+        "Ein Block pro Jahr",
+        "Zwölf 2-Stunden-Blöcke pro Woche",
+        "Ein Block pro Monat"
+       ],
+       "a": 0,
+       "e": "Pro Block gibt es ein positives und ein negatives Produkt.",
+       "id": "bess.m3.l2.q5"
+      },
+      {
+       "t": "mc",
+       "q": "Warum bieten Speicher mit 1–2 Stunden Dauer oft weniger aFRR-Leistung an, als sie technisch könnten?",
+       "o": [
+        "Sie müssen die Zusage im Ernstfall über den ganzen 4-Stunden-Block halten können",
+        "Weil aFRR nur nachts abgerufen wird",
+        "Weil die Präqualifikation nur halbe Leistung erlaubt",
+        "Weil Batterien kein aFRR liefern dürfen"
+       ],
+       "a": 0,
+       "e": "Die angebotene Leistung wird an die verfügbare Energie angepasst.",
+       "id": "bess.m3.l2.q6"
+      },
+      {
+       "t": "mc",
+       "q": "Über welche Plattform beschaffen die deutschen Übertragungsnetzbetreiber Regelleistung?",
+       "o": [
+        "regelleistung.net",
+        "EPEX SPOT",
+        "Marktstammdatenregister",
+        "Bundesanzeiger"
+       ],
+       "a": 0,
+       "e": "EPEX SPOT ist eine Strombörse, das Marktstammdatenregister ein Anlagenregister.",
+       "id": "bess.m3.l2.q7"
+      }
+     ]
+    },
+    {
+     "id": "bess.m3.l3",
+     "title": "Erlöse, Kannibalisierung und Optimierer",
+     "min": 5,
+     "body": [
+      "## Sinkende Erlöse in gesättigten Märkten",
+      "Je mehr Speicher in einen Markt drängen, desto stärker sinken dort die Preise: Kannibalisierung. Bei FCR stieg die präqualifizierte Batterieleistung in Deutschland von etwa 0,81 GW Anfang 2024 auf etwa 1,35 GW Anfang 2026. Laut einer Auswertung (pv magazine, 01/2026) fielen die FCR-Erlöse für ein 2-Stunden-System um über 90 % und spielen in einem optimierten Fahrplan kaum noch eine Rolle. Insgesamt gingen die Erlöspotenziale 2025 zurück.",
+      "## Was jetzt zählt",
+      "Damit verschiebt sich das Geschäft zu Arbitrage am Day-Ahead- und Intraday-Markt und zu aFRR. Die optionale Einführung von 15-Minuten-Produkten bei aFRR erleichtert Speichern den Zugang.",
+      "## Optimierer und Vermarkter",
+      "Die Entscheidung, wann welche Kapazität in welchem Markt eingesetzt wird, treffen spezialisierte Optimierer oder Vermarkter mit Prognosen und Algorithmen. Ihre Qualität entscheidet stark über den Ertrag. Verträge regeln Erlösaufteilung, Gebühren, Verfügbarkeit und Haftung."
+     ],
+     "key": [
+      "Mehr Speicher im Markt = sinkende Preise (Kannibalisierung).",
+      "FCR ist für Batterien weitgehend gesättigt (Stand 2026).",
+      "Schwerpunkt verschiebt sich zu Arbitrage und aFRR.",
+      "Der Optimierer bestimmt den Ertrag maßgeblich."
+     ],
+     "src": [
+      {
+       "n": "pv magazine (01/2026): Erlöspotenziale für Batteriespeicher sind 2025 zurückgegangen",
+       "u": "https://www.pv-magazine.de/2026/01/23/erloespotenziale-fuer-stationaere-batteriespeicher-in-deutschland-sind-2025-zurueckgegangen/"
+      },
+      {
+       "n": "Modo Energy: Germany aFRR explained",
+       "u": "https://modoenergy.com/research/de/germany-september-2025-afrr-explained-ancillary-services-opportunity-grid-frequency-service"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m3.l3.k1",
+       "f": "Kannibalisierung",
+       "b": "Mehr Anbieter im selben Markt senken dort die Preise und Erlöse."
+      },
+      {
+       "id": "bess.m3.l3.k2",
+       "f": "Optimierer",
+       "b": "Dienstleister, der den Speicher mit Prognosen und Algorithmen in den lukrativsten Märkten einsetzt."
+      },
+      {
+       "id": "bess.m3.l3.k3",
+       "f": "Merchant",
+       "b": "Vermarktung ohne feste Vergütung, volle Chance und volles Preisrisiko."
+      },
+      {
+       "id": "bess.m3.l3.k4",
+       "f": "FCR-Sättigung",
+       "b": "Präqualifizierte Batterieleistung in DE stieg von ca. 0,81 GW (Anfang 2024) auf ca. 1,35 GW (Anfang 2026)."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was versteht man unter Kannibalisierung bei Speichern?",
+       "o": [
+        "Mehr Speicher im selben Markt senken die Preise und Erlöse",
+        "Speicher nutzen Teile anderer Speicher",
+        "Speicher verbrauchen ihren eigenen Strom",
+        "Speicher werden recycelt"
+       ],
+       "a": 0,
+       "e": "Das betrifft besonders kleine Märkte wie FCR.",
+       "id": "bess.m3.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie entwickelten sich die FCR-Erlöse für ein 2-Stunden-System laut pv magazine (01/2026)?",
+       "o": [
+        "Sie fielen um über 90 %",
+        "Sie verdoppelten sich",
+        "Sie blieben gleich",
+        "Sie stiegen um 10 %"
+       ],
+       "a": 0,
+       "e": "FCR spielt in einem optimierten Fahrplan kaum noch eine Rolle.",
+       "id": "bess.m3.l3.q2"
+      },
+      {
+       "t": "num",
+       "q": "Die präqualifizierte Batterieleistung für FCR stieg von etwa 0,81 GW auf etwa 1,35 GW. Um wie viel GW ist das gestiegen? (zwei Nachkommastellen)",
+       "a": 0.54,
+       "unit": "GW",
+       "tol": 0.005,
+       "e": "1,35 − 0,81 = 0,54 GW, also um rund zwei Drittel.",
+       "id": "bess.m3.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wohin verschiebt sich das Erlösgeschäft von Batteriespeichern (Stand 2026)?",
+       "o": [
+        "Zu Arbitrage am Day-Ahead- und Intraday-Markt und zu aFRR",
+        "Zurück zu FCR",
+        "Zu Einspeisevergütungen",
+        "Zum Verkauf von Kapazitätszertifikaten"
+       ],
+       "a": 0,
+       "e": "FCR ist weitgehend gesättigt.",
+       "id": "bess.m3.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wer entscheidet im Betrieb typischerweise, in welchem Markt der Speicher eingesetzt wird?",
+       "o": [
+        "Ein Optimierer bzw. Vermarkter mit Prognosen und Algorithmen",
+        "Der Netzbetreiber",
+        "Die Bundesnetzagentur",
+        "Der Zellhersteller"
+       ],
+       "a": 0,
+       "e": "Die Qualität des Optimierers entscheidet stark über den Ertrag.",
+       "id": "bess.m3.l3.q5"
+      }
+     ]
+    },
+    {
+     "id": "bess.m3.l4",
+     "title": "Tolling, Floors und Finanzierbarkeit",
+     "min": 5,
+     "body": [
+      "## Tolling",
+      "Beim Tolling überlässt der Speicherbesitzer die Vermarktung einem Abnehmer, etwa einem Energieversorger. Dafür erhält er eine feste Vergütung pro MW installierter Leistung über mehrere Jahre. Das Marktrisiko trägt dann der Abnehmer. Tolling ist in Deutschland ein relativ neues Modell; laut pv magazine war Deutschland im ersten Quartal 2026 in Europa führend bei Tolling-Vereinbarungen, und längere Speicherdauern setzen sich dort durch.",
+      "## Floor und Merchant",
+      "Ein Floor ist eine Mindestvergütung: Der Vermarkter garantiert einen Mindesterlös, oberhalb davon werden Erlöse geteilt. Beim reinen Merchant-Betrieb trägt der Betreiber Chance und Risiko vollständig.",
+      "## Warum das für die Finanzierung zählt",
+      "Banken finanzieren lieber planbare Zahlungsströme. Branchenberichte zeigen, dass Banken zunehmend Toll- oder Floor-Strukturen verlangen; eine Kombination aus Tolling und Merchant-Anteil macht große Speicher finanzierbar."
+     ],
+     "key": [
+      "Tolling: feste Vergütung pro MW, Marktrisiko beim Abnehmer.",
+      "Floor: Mindesterlös plus Erlösteilung.",
+      "Merchant: volle Chance, volles Risiko.",
+      "Banken bevorzugen Toll- oder Floor-Strukturen."
+     ],
+     "src": [
+      {
+       "n": "pv magazine (05/2026): Längere Speicherdauern etablieren sich auf dem deutschen Tolling-Markt",
+       "u": "https://www.pv-magazine.de/2026/05/07/batteriespeicher-mit-laengerer-speicherdauer-etablieren-sich-auf-dem-deutschen-tolling-markt/"
+      },
+      {
+       "n": "Solarserver (08/2026): Virtueller Batterie-Toll – 55 MW für Vattenfall",
+       "u": "https://www.solarserver.de/2026/08/19/virtueller-batterie-toll-55-mw-fuer-vattenfall/"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m3.l4.k1",
+       "f": "Tolling",
+       "b": "Fixe Vergütung pro MW für die Überlassung der Vermarktung; Marktrisiko trägt der Abnehmer."
+      },
+      {
+       "id": "bess.m3.l4.k2",
+       "f": "Floor",
+       "b": "Garantierter Mindesterlös, oberhalb werden Erlöse geteilt."
+      },
+      {
+       "id": "bess.m3.l4.k3",
+       "f": "Merchant-Risiko",
+       "b": "Erlös hängt vollständig von den Marktpreisen ab."
+      },
+      {
+       "id": "bess.m3.l4.k4",
+       "f": "Bankability",
+       "b": "Finanzierbarkeit durch Banken; steigt mit planbaren Zahlungsströmen."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wer trägt beim Tolling das Marktrisiko?",
+       "o": [
+        "Der Abnehmer bzw. Vermarkter",
+        "Der Speicherbesitzer",
+        "Der Netzbetreiber",
+        "Die Bundesnetzagentur"
+       ],
+       "a": 0,
+       "e": "Der Besitzer erhält eine feste Vergütung pro MW.",
+       "id": "bess.m3.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Floor in der Speichervermarktung?",
+       "o": [
+        "Ein garantierter Mindesterlös mit Erlösteilung darüber",
+        "Der Boden des Batteriecontainers",
+        "Die niedrigste erlaubte Ladung",
+        "Ein Mindestpreis an der Börse"
+       ],
+       "a": 0,
+       "e": "Floors begrenzen das Risiko nach unten, lassen aber Teil an Chancen.",
+       "id": "bess.m3.l4.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum verlangen Banken zunehmend Toll- oder Floor-Strukturen?",
+       "o": [
+        "Weil sie planbare Zahlungsströme für die Finanzierung brauchen",
+        "Weil sie selbst Strom handeln wollen",
+        "Weil es gesetzlich vorgeschrieben ist",
+        "Weil Merchant-Erlöse verboten sind"
+       ],
+       "a": 0,
+       "e": "Planbare Erlöse senken das Kreditrisiko.",
+       "id": "bess.m3.l4.q3"
+      },
+      {
+       "t": "num",
+       "q": "Ein Toll zahlt 100.000 € pro MW und Jahr. Der Speicher hat 50 MW. Wie viel Euro erhält der Besitzer pro Jahr?",
+       "a": 5000000,
+       "unit": "€",
+       "tol": 0,
+       "e": "50 MW × 100.000 €/MW = 5 Mio. € pro Jahr. Der Wert ist ein Rechenbeispiel, keine Marktangabe.",
+       "id": "bess.m3.l4.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Aussage zum Tolling in Deutschland stimmt (Stand 2026)?",
+       "o": [
+        "Es ist relativ neu, wächst aber stark",
+        "Es ist seit Jahrzehnten Standard",
+        "Es ist verboten",
+        "Es gibt es nur für Pumpspeicher"
+       ],
+       "a": 0,
+       "e": "Laut pv magazine war Deutschland im Q1 2026 in Europa führend bei Tolling-Vereinbarungen.",
+       "id": "bess.m3.l4.q5"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "bess.m4",
    "level": 2,
    "title": "Netzanschluss & Genehmigung",
    "desc": "Netzanschlussverfahren, Baukostenzuschuss, Baugenehmigung, Brandschutzkonzept.",
-   "lessons": []
+   "lessons": [
+    {
+     "id": "bess.m4.l1",
+     "title": "Der Netzanschluss: Engpass Nummer eins",
+     "min": 5,
+     "body": [
+      "Ohne Netzanschluss kein Speicher. Großspeicher werden je nach Größe an das Verteilnetz (Mittel- oder Hochspannung) oder an das Übertragungsnetz (Höchstspannung, Übertragungsnetzbetreiber) angeschlossen.",
+      "## Die Anfrageflut",
+      "Die Nachfrage übersteigt die Kapazität bei Weitem. Laut pv magazine (08/2026) wurden insgesamt rund 574 GW Anschluss für Batteriespeicher angefragt, aber nur rund 54 GW zugesagt. Zum Vergleich: Deutschlands Spitzenlast liegt in der Größenordnung von 80 GW. Viele Anfragen sind spekulativ oder Mehrfachanfragen.",
+      "## Vom Windhund zum Reifegrad",
+      "Früher wurden Anfragen nach Eingang bearbeitet (Windhundprinzip). Die Übertragungsnetzbetreiber haben seit 1. April 2026 ein Reifegradverfahren eingeführt: Projekte, die weiter entwickelt sind (etwa Flächensicherung, Genehmigungsstand), werden bevorzugt. Es gilt für Batteriespeicher und Großverbraucher wie Industrie, Rechenzentren und Elektrolyseure. Auch Verteilnetzbetreiber fordern Realisierungsnachweise.",
+      "## Flexible Anschlüsse",
+      "Wo Netz knapp ist, bieten Netzbetreiber zunehmend Anschlüsse an, bei denen die Leistung zeitweise begrenzt werden darf. Das erhöht die Chance auf einen Anschluss, schränkt aber den Betrieb ein und muss im Business Case berücksichtigt werden."
+     ],
+     "key": [
+      "Netzanschluss ist der größte Engpass.",
+      "574 GW angefragt, 54 GW zugesagt (pv magazine 08/2026).",
+      "ÜNB: Reifegradverfahren seit 1.4.2026 statt Windhund.",
+      "Flexible Anschlüsse: mehr Chance, weniger Freiheit."
+     ],
+     "src": [
+      {
+       "n": "pv magazine (08/2026): Netzanschlüsse für Batteriespeicher – 574 GW angefragt, 54 GW zugesagt",
+       "u": "https://www.pv-magazine.de/2026/08/25/netzanschluesse-fuer-batteriespeicher-574-gigawatt-angefragt-54-gigawatt-zugesagt/"
+      },
+      {
+       "n": "pv magazine (02/2026): Übertragungsnetzbetreiber führen Reifegradverfahren ein",
+       "u": "https://www.pv-magazine.de/2026/02/05/uebertragungsnetzbetreiber-fuehren-reifegradverfahren-fuer-netzanschluesse-von-batteriespeichern-und-grossverbrauchern-ein/"
+      },
+      {
+       "n": "Bundesnetzagentur (11/2025): Zahlen zu Anschlussanfragen und -zusagen für Batteriespeicher",
+       "u": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2025/20251112_Batteriespeicher.html"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m4.l1.k1",
+       "f": "Windhundprinzip",
+       "b": "Bearbeitung von Netzanschlussanfragen nach Eingangszeitpunkt."
+      },
+      {
+       "id": "bess.m4.l1.k2",
+       "f": "Reifegradverfahren",
+       "b": "Vergabe von Netzanschlüssen nach Projektreife; bei den ÜNB seit 1.4.2026."
+      },
+      {
+       "id": "bess.m4.l1.k3",
+       "f": "Übertragungsnetzbetreiber (ÜNB)",
+       "b": "50Hertz, Amprion, TenneT, TransnetBW: betreiben das Höchstspannungsnetz."
+      },
+      {
+       "id": "bess.m4.l1.k4",
+       "f": "Flexibler Netzanschluss",
+       "b": "Anschluss, bei dem die Leistung zeitweise begrenzt werden darf."
+      },
+      {
+       "id": "bess.m4.l1.k5",
+       "f": "Realisierungsnachweis",
+       "b": "Nachweis, dass ein Projekt ernsthaft umgesetzt wird; von Verteilnetzbetreibern gefordert."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist laut Branche der größte Engpass für neue Großspeicher in Deutschland?",
+       "o": [
+        "Der Netzanschluss",
+        "Die Verfügbarkeit von Containern",
+        "Der Mangel an Software",
+        "Die Farbe der Module"
+       ],
+       "a": 0,
+       "e": "Die angefragte Leistung übersteigt die zugesagte um ein Vielfaches.",
+       "id": "bess.m4.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was hat das Reifegradverfahren der Übertragungsnetzbetreiber abgelöst?",
+       "o": [
+        "Das Windhundprinzip (Bearbeitung nach Eingang)",
+        "Die Baugenehmigung",
+        "Die Präqualifikation",
+        "Die Stromsteuer"
+       ],
+       "a": 0,
+       "e": "Seit 1.4.2026 zählt der Entwicklungsstand eines Projekts.",
+       "id": "bess.m4.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viel Anschlussleistung für Batteriespeicher wurde laut pv magazine (08/2026) zugesagt, bei rund 574 GW Anfragen?",
+       "o": [
+        "Rund 54 GW",
+        "Rund 574 GW",
+        "Rund 5 GW",
+        "Rund 300 GW"
+       ],
+       "a": 0,
+       "e": "Viele Anfragen sind spekulativ oder Mehrfachanfragen.",
+       "id": "bess.m4.l1.q3"
+      },
+      {
+       "t": "multi",
+       "q": "Für welche Vorhaben gilt das Reifegradverfahren der ÜNB? (mehrere richtig)",
+       "o": [
+        "Batteriespeicher",
+        "Rechenzentren",
+        "Elektrolyseure",
+        "Kleine Hausspeicher",
+        "Balkonkraftwerke"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Für Kraftwerke gilt weiterhin die Kraftwerks-Netzanschlussverordnung; kleine Anlagen betrifft es nicht.",
+       "id": "bess.m4.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist der Nachteil eines flexiblen Netzanschlusses?",
+       "o": [
+        "Die Leistung darf zeitweise begrenzt werden, das schränkt den Betrieb ein",
+        "Er ist immer teurer als ein fester Anschluss",
+        "Er darf nur nachts genutzt werden",
+        "Er verbietet Regelleistung"
+       ],
+       "a": 0,
+       "e": "Die Einschränkungen gehören in den Business Case.",
+       "id": "bess.m4.l1.q5"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Aussage zu den vielen Netzanschlussanfragen trifft zu?",
+       "o": [
+        "Viele sind spekulativ oder Mehrfachanfragen",
+        "Alle werden sicher gebaut",
+        "Sie betreffen nur Hausspeicher",
+        "Sie sind gesetzlich auf 1 GW begrenzt"
+       ],
+       "a": 0,
+       "e": "Deshalb fordern Netzbetreiber Reife- und Realisierungsnachweise.",
+       "id": "bess.m4.l1.q6"
+      }
+     ]
+    },
+    {
+     "id": "bess.m4.l2",
+     "title": "Baukostenzuschuss: Was der BGH entschieden hat",
+     "min": 5,
+     "body": [
+      "Der Baukostenzuschuss (BKZ) ist eine Einmalzahlung an den Netzbetreiber für den Ausbau des vorgelagerten Netzes. Er wird für Verbraucher nach der bestellten Anschlussleistung bemessen, häufig nach dem sogenannten Leistungspreismodell.",
+      "## Streitfrage Speicher",
+      "Lange war umstritten, ob Batteriespeicher einen BKZ zahlen müssen, weil sie Strom ja nur zwischenspeichern. Der Bundesgerichtshof hat am 15. Juli 2025 entschieden (EnVR 1/24, „Batteriespeicher II“): Es liegt im Entscheidungsspielraum des Verteilnetzbetreibers, für netzgekoppelte Batteriespeicher einen BKZ nach dem Leistungspreismodell zu erheben. Das Gericht sah Speicher als anders als andere Letztverbraucher, betonte aber die Lenkungsfunktion des BKZ.",
+      "## Einordnung",
+      "Die Bundesnetzagentur vertritt die Auffassung, dass ein BKZ auch für netzgekoppelte Speicher oberhalb der Niederspannung zu erheben ist. Laut Kanzlei-Einschätzungen dürfte eine Erhebung bei Speichern ab 100 MW weiterhin unzulässig sein (dort gelten andere Anschlussregeln). Offen ist, ob die Entscheidung auf Mischspeicher übertragbar ist. Der BKZ kann je nach Netzgebiet einen erheblichen Teil der Projektkosten ausmachen."
+     ],
+     "key": [
+      "BKZ = Einmalzahlung für vorgelagerten Netzausbau.",
+      "BGH 15.7.2025 (EnVR 1/24): BKZ für Speicher nach Leistungspreismodell zulässig.",
+      "BNetzA: BKZ oberhalb Niederspannung.",
+      "Speicher ab 100 MW und Mischspeicher: Rechtslage differenziert/offen."
+     ],
+     "src": [
+      {
+       "n": "CMS: BGH – Baukostenzuschüsse für Batteriespeicher sind zulässig (EnVR 1/24, 15.07.2025)",
+       "u": "https://cms.law/de/deu/legal-updates/bgh-baukostenzuschuesse-fuer-batteriespeicher-sind-zulaessig"
+      },
+      {
+       "n": "BGH, Beschluss vom 15.07.2025, EnVR 1/24 (Volltext)",
+       "u": "https://rewis.io/urteile/urteil/jvn-15-07-2025-envr-124/"
+      },
+      {
+       "n": "Bundesnetzagentur: FAQ Speicher (Baukostenzuschuss)",
+       "u": "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Speicher/_faq/faq_table4.html"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m4.l2.k1",
+       "f": "Baukostenzuschuss (BKZ)",
+       "b": "Einmalige Beteiligung an den Kosten des vorgelagerten Netzausbaus, bemessen nach Anschlussleistung."
+      },
+      {
+       "id": "bess.m4.l2.k2",
+       "f": "Leistungspreismodell",
+       "b": "Von der BNetzA beschriebene Methode, den BKZ aus dem Leistungspreis des Netzgebiets abzuleiten."
+      },
+      {
+       "id": "bess.m4.l2.k3",
+       "f": "EnVR 1/24",
+       "b": "BGH-Beschluss vom 15.7.2025: BKZ für netzgekoppelte Batteriespeicher zulässig."
+      },
+      {
+       "id": "bess.m4.l2.k4",
+       "f": "Mischspeicher",
+       "b": "Speicher, der sowohl Netzstrom als auch Strom aus eigener Erzeugung speichert."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was hat der BGH am 15. Juli 2025 zum Baukostenzuschuss für Batteriespeicher entschieden?",
+       "o": [
+        "Verteilnetzbetreiber dürfen ihn nach dem Leistungspreismodell erheben",
+        "Er ist für Speicher generell verboten",
+        "Er gilt nur für Hausspeicher",
+        "Er muss vom Bund übernommen werden"
+       ],
+       "a": 0,
+       "e": "Az. EnVR 1/24, das OLG-Urteil wurde aufgehoben.",
+       "id": "bess.m4.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür zahlt man einen Baukostenzuschuss?",
+       "o": [
+        "Für den Ausbau des vorgelagerten Netzes",
+        "Für die Stromsteuer",
+        "Für die Baugenehmigung",
+        "Für die Regelleistungs-Präqualifikation"
+       ],
+       "a": 0,
+       "e": "Er ist eine Einmalzahlung, nicht zu verwechseln mit laufenden Netzentgelten.",
+       "id": "bess.m4.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Auffassung vertritt die Bundesnetzagentur zum BKZ für Speicher?",
+       "o": [
+        "Er ist für netzgekoppelte Speicher oberhalb der Niederspannung zu erheben",
+        "Er ist für Speicher immer unzulässig",
+        "Er gilt nur in der Niederspannung",
+        "Die BNetzA äußert sich nicht dazu"
+       ],
+       "a": 0,
+       "e": "So steht es in den FAQ der Bundesnetzagentur.",
+       "id": "bess.m4.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Frage blieb nach dem BGH-Beschluss laut Fachpresse offen?",
+       "o": [
+        "Ob er auf Mischspeicher übertragbar ist",
+        "Ob Speicher überhaupt Strom speichern",
+        "Ob es Verteilnetzbetreiber gibt",
+        "Ob der BGH zuständig war"
+       ],
+       "a": 0,
+       "e": "Der Fall betraf einen rein netzgekoppelten Speicher.",
+       "id": "bess.m4.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Für welche Speichergröße dürfte laut Kanzlei-Einschätzungen ein BKZ weiterhin unzulässig sein?",
+       "o": [
+        "Ab 100 MW",
+        "Unter 1 kW",
+        "Nur Speicher in Bayern",
+        "Speicher mit NMC-Zellen"
+       ],
+       "a": 0,
+       "e": "Für sehr große Anlagen gelten andere Anschlussregeln. Im Einzelfall rechtlich prüfen lassen.",
+       "id": "bess.m4.l2.q5"
+      },
+      {
+       "t": "num",
+       "q": "Ein Netzbetreiber verlangt einen BKZ von 60 €/kW. Der Speicher soll 20 MW Anschlussleistung bekommen. Wie hoch ist der BKZ in Euro?",
+       "a": 1200000,
+       "unit": "€",
+       "tol": 0,
+       "e": "20.000 kW × 60 €/kW = 1,2 Mio. €. Beispielwert; der echte Satz steht im Preisblatt des Netzbetreibers.",
+       "id": "bess.m4.l2.q6"
+      }
+     ]
+    },
+    {
+     "id": "bess.m4.l3",
+     "title": "Baurecht: Privilegierung im Außenbereich",
+     "min": 5,
+     "body": [
+      "Großspeicher stehen oft im Außenbereich, also außerhalb von Ortschaften und Bebauungsplänen. Dort ist Bauen nur zulässig, wenn das Vorhaben privilegiert ist oder ein Bebauungsplan aufgestellt wird.",
+      "## Neue Privilegierung (Ende 2025)",
+      "Bis Ende 2025 fehlte eine ausdrückliche Regel, die Verwaltungspraxis war uneinheitlich. Der Bundestag hat am 13. November 2025 eine Privilegierung in § 35 Abs. 1 BauGB beschlossen und am 4. Dezember 2025 nochmals geändert. Es gibt zwei Tatbestände: Nr. 11 für Speicher in räumlich-funktionalem Zusammenhang mit einer vorhandenen Erneuerbare-Energien-Anlage und Nr. 12 für eigenständige (Stand-alone-)Speicher unter mehreren zusätzlichen Voraussetzungen.",
+      "## In der Praxis",
+      "Die genauen Voraussetzungen von Nr. 12 sollten im aktuellen Gesetzeswortlaut geprüft werden; im Gesetzgebungsverfahren wurde etwa diskutiert, wie ein Abstandsradius zu verstehen ist. Nicht privilegierte Vorhaben brauchen weiterhin regelmäßig einen Bebauungsplan. Unabhängig davon prüft die Behörde Brandschutz, Schall, Natur- und Wasserschutz."
+     ],
+     "key": [
+      "Außenbereich: Bauen nur privilegiert oder mit Bebauungsplan.",
+      "§ 35 Abs. 1 Nr. 11 BauGB: Speicher bei vorhandener EE-Anlage.",
+      "§ 35 Abs. 1 Nr. 12 BauGB: Stand-alone-Speicher mit Zusatzvoraussetzungen.",
+      "Wortlaut prüfen: Regel wurde Ende 2025 zweimal geändert."
+     ],
+     "src": [
+      {
+       "n": "Gleiss Lutz: Außenbereichsprivilegierung für Batteriespeicher – neue Nr. 11 und 12 in § 35 BauGB",
+       "u": "https://www.gleisslutz.com/de/know-how/aussenbereichsprivilegierung-fuer-batteriespeicher-neue-nr-11-und-12-35-baugb-erleichtern-genehmigungen-und-schaffen"
+      },
+      {
+       "n": "CMS: Erneute Änderung des Privilegierungstatbestands für Batteriespeicher",
+       "u": "https://cms.law/de/deu/legal-updates/endlich-klarheit-fuer-batteriespeicher-oder-doch-nicht-erneute-aenderung-des-privilegierungstatbestands"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m4.l3.k1",
+       "f": "Außenbereich",
+       "b": "Gebiet außerhalb im Zusammenhang bebauter Ortsteile und ohne Bebauungsplan."
+      },
+      {
+       "id": "bess.m4.l3.k2",
+       "f": "Privilegierung",
+       "b": "Gesetzliche Zulässigkeit eines Vorhabens im Außenbereich (§ 35 Abs. 1 BauGB)."
+      },
+      {
+       "id": "bess.m4.l3.k3",
+       "f": "§ 35 Abs. 1 Nr. 11 BauGB",
+       "b": "Speicher in räumlich-funktionalem Zusammenhang mit vorhandener EE-Anlage."
+      },
+      {
+       "id": "bess.m4.l3.k4",
+       "f": "§ 35 Abs. 1 Nr. 12 BauGB",
+       "b": "Eigenständige Speicher, privilegiert unter zusätzlichen Voraussetzungen."
+      },
+      {
+       "id": "bess.m4.l3.k5",
+       "f": "Bebauungsplan",
+       "b": "Gemeindliche Satzung, die festlegt, was wo gebaut werden darf."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wann ist ein Vorhaben im Außenbereich grundsätzlich zulässig?",
+       "o": [
+        "Wenn es privilegiert ist oder ein Bebauungsplan es erlaubt",
+        "Immer, wenn der Eigentümer zustimmt",
+        "Nie",
+        "Nur mit Zustimmung des Netzbetreibers"
+       ],
+       "a": 0,
+       "e": "Deshalb ist die Privilegierung für Großspeicher so wichtig.",
+       "id": "bess.m4.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was regelt § 35 Abs. 1 Nr. 11 BauGB seit Ende 2025?",
+       "o": [
+        "Speicher in räumlich-funktionalem Zusammenhang mit einer vorhandenen Erneuerbare-Energien-Anlage",
+        "Hausspeicher in Wohngebieten",
+        "Windräder auf See",
+        "Rechenzentren"
+       ],
+       "a": 0,
+       "e": "Nr. 12 betrifft dagegen eigenständige Speicher.",
+       "id": "bess.m4.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was gilt für eigenständige Speicher nach § 35 Abs. 1 Nr. 12 BauGB?",
+       "o": [
+        "Sie sind privilegiert, wenn zusätzliche Voraussetzungen erfüllt sind",
+        "Sie sind ohne jede Bedingung privilegiert",
+        "Sie sind im Außenbereich verboten",
+        "Sie brauchen keine Genehmigung"
+       ],
+       "a": 0,
+       "e": "Die Voraussetzungen im aktuellen Wortlaut prüfen.",
+       "id": "bess.m4.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wann hat der Bundestag die Speicher-Privilegierung zunächst beschlossen?",
+       "o": [
+        "Am 13. November 2025",
+        "Am 1. Januar 2020",
+        "Am 4. August 2029",
+        "Sie ist noch nicht beschlossen"
+       ],
+       "a": 0,
+       "e": "Am 4. Dezember 2025 wurde die Regel nochmals geändert.",
+       "id": "bess.m4.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was prüft die Baubehörde unabhängig von der Privilegierung weiterhin?",
+       "o": [
+        "Brandschutz, Schall, Natur- und Wasserschutz",
+        "Nur die Farbe der Container",
+        "Nur die Zellchemie",
+        "Gar nichts mehr"
+       ],
+       "a": 0,
+       "e": "Privilegiert heißt nicht genehmigungsfrei.",
+       "id": "bess.m4.l3.q5"
+      }
+     ]
+    },
+    {
+     "id": "bess.m4.l4",
+     "title": "Brandschutz, Schall und Genehmigungsunterlagen",
+     "min": 5,
+     "body": [
+      "Für die Baugenehmigung braucht ein Großspeicher ein schlüssiges Konzept, wie Risiken für Menschen, Nachbarn und Umwelt beherrscht werden.",
+      "## Brandschutzkonzept",
+      "Zentrale Fragen sind: Wie wird verhindert, dass sich ein thermisches Durchgehen von einem Container auf den nächsten ausbreitet (Abstände, Brandwände)? Wie werden Gase erkannt und abgeführt? Wie greift die Feuerwehr an, und wie lange dauert ein Brand? Prüfberichte nach UL 9540A helfen, das Ausbreitungsverhalten zu belegen. Die Feuerwehr sollte früh eingebunden werden.",
+      "## Löschwasser und Umwelt",
+      "Beim Brand kann belastetes Löschwasser anfallen. Konzepte zur Rückhaltung schützen Boden und Gewässer.",
+      "## Schall",
+      "Wechselrichter, Transformatoren und vor allem Kühlaggregate erzeugen Geräusche. Für die Nachbarschaft gelten die Immissionsrichtwerte der TA Lärm; nachts sind sie strenger. Ein Schallgutachten gehört deshalb meist zu den Unterlagen.",
+      "## Akzeptanz",
+      "Frühe Information der Gemeinde und Anwohner verringert Widerstand. Fragen zu Brand und Lärm kommen fast immer."
+     ],
+     "key": [
+      "Brandschutz: Ausbreitung verhindern, Gase managen, Feuerwehr einbinden.",
+      "UL-9540A-Berichte belegen das Ausbreitungsverhalten.",
+      "Löschwasserrückhaltung schützt Boden und Wasser.",
+      "Schall: TA Lärm, nachts strenger; Kühlung ist oft die Hauptquelle."
+     ],
+     "src": [
+      {
+       "n": "UL Solutions: UL 9540A Test Method",
+       "u": "https://www.ul.com/services/ul-9540a-test-method"
+      },
+      {
+       "n": "Tesla Energy Library: Zusammenfassung UL 9540A (vier Prüfebenen)",
+       "u": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/General/Compliance/SafetyStandardsLithiumIonElectrochemical/en-us/GUID-2927B686-2691-4A8F-9643-D57B21F9AB61.html"
+      },
+      {
+       "n": "Allgemeines Fachwissen der Energiewirtschaft (Definitionen); vertiefend: EWI- und dena-Analysen 2026",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m4.l4.k1",
+       "f": "Brandschutzkonzept",
+       "b": "Nachweis, wie Brandentstehung, Ausbreitung und Löschung beherrscht werden."
+      },
+      {
+       "id": "bess.m4.l4.k2",
+       "f": "Löschwasserrückhaltung",
+       "b": "Auffangen von belastetem Löschwasser zum Schutz von Boden und Gewässern."
+      },
+      {
+       "id": "bess.m4.l4.k3",
+       "f": "TA Lärm",
+       "b": "Technische Anleitung zum Schutz gegen Lärm mit Immissionsrichtwerten, nachts strenger."
+      },
+      {
+       "id": "bess.m4.l4.k4",
+       "f": "Schallgutachten",
+       "b": "Berechnung der Geräuschbelastung an den nächsten Wohnhäusern."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist das zentrale Ziel eines Brandschutzkonzepts für Großspeicher?",
+       "o": [
+        "Die Ausbreitung eines Brandes auf weitere Einheiten zu verhindern",
+        "Brände vollständig unmöglich zu machen",
+        "Die Kühlung abzuschalten",
+        "Die Versicherung zu ersetzen"
+       ],
+       "a": 0,
+       "e": "Ein Brand einer Einheit lässt sich nie ganz ausschließen; entscheidend ist die Begrenzung.",
+       "id": "bess.m4.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Komponente ist bei Großspeichern oft die Hauptschallquelle?",
+       "o": [
+        "Kühlaggregate",
+        "Batteriezellen",
+        "Kabel",
+        "Der Zaun"
+       ],
+       "a": 0,
+       "e": "Auch Wechselrichter und Transformatoren tragen bei.",
+       "id": "bess.m4.l4.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum braucht ein Großspeicher eine Löschwasserrückhaltung?",
+       "o": [
+        "Belastetes Löschwasser darf Boden und Gewässer nicht verunreinigen",
+        "Um die Zellen zu kühlen",
+        "Um Strom zu sparen",
+        "Weil Wasser den Wirkungsgrad erhöht"
+       ],
+       "a": 0,
+       "e": "Beim Brand können Schadstoffe ins Löschwasser gelangen.",
+       "id": "bess.m4.l4.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Regel gilt für Lärm an den nächsten Wohnhäusern?",
+       "o": [
+        "Die Immissionsrichtwerte der TA Lärm, nachts strenger",
+        "Es gibt keine Regeln",
+        "Nur tagsüber gibt es Grenzen",
+        "Nur die Regeln des Netzbetreibers"
+       ],
+       "a": 0,
+       "e": "Ein Schallgutachten weist die Einhaltung nach.",
+       "id": "bess.m4.l4.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wann sollte die Feuerwehr in die Planung eingebunden werden?",
+       "o": [
+        "Früh, schon bei der Konzeptentwicklung",
+        "Erst nach Inbetriebnahme",
+        "Nur im Brandfall",
+        "Gar nicht"
+       ],
+       "a": 0,
+       "e": "Angriffswege, Abstände und Einsatztaktik müssen zum Standort passen.",
+       "id": "bess.m4.l4.q5"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "bess.m5",
    "level": 2,
    "title": "Steuern, Abgaben & Hauptzollamt",
    "desc": "Stromsteuer, Netzentgelte, Befreiungen für Speicher und ihre Voraussetzungen.",
-   "lessons": []
+   "lessons": [
+    {
+     "id": "bess.m5.l1",
+     "title": "Netzentgelte: Die Befreiung bis 2029",
+     "min": 5,
+     "body": [
+      "Wer Strom aus dem Netz bezieht, zahlt normalerweise Netzentgelte. Für Speicher gibt es eine wichtige Ausnahme in § 118 Abs. 6 EnWG.",
+      "## Die Regel",
+      "Neue Stromspeicher, die bis zum 4. August 2029 in Betrieb genommen werden, sind für 20 Jahre ab Inbetriebnahme von den Netzentgelten für den Bezug des zu speichernden Stroms befreit. Die Frist wurde 2023 um drei Jahre bis 2029 verlängert.",
+      "## Aktuelle Entwicklung (Stand 11/2026)",
+      "Die Bundesnetzagentur überarbeitet im Verfahren AgNes die Netzentgeltsystematik. Sie wollte die Befreiung zunächst vorzeitig beenden, hat das aber laut Fachpresse vorerst zurückgenommen: Eine Netzentgelterhebung für Speicher soll erst nach Auslaufen der Sonderregeln beginnen. Ein Fachbeitrag (pv magazine, 09/2026) weist auf einen weiteren Stichtag im Entwurf hin (eine Meldung gegenüber dem Netzbetreiber, März 2027). Die Details sind vor jeder Projektentscheidung im aktuellen BNetzA-Dokument zu prüfen.",
+      "## Bedeutung",
+      "Ohne die Befreiung müsste ein Speicher beim Laden Netzentgelte zahlen, obwohl er den Strom später wieder einspeist. Für den Business Case ist der Inbetriebnahmezeitpunkt deshalb kritisch."
+     ],
+     "key": [
+      "§ 118 Abs. 6 EnWG: IBN bis 4.8.2029 → 20 Jahre netzentgeltfrei für den Ladestrom.",
+      "BNetzA (AgNes) hat vorzeitiges Ende vorerst zurückgenommen.",
+      "Mögliche weitere Frist im Entwurf (Meldung März 2027): prüfen.",
+      "Inbetriebnahmedatum ist geschäftskritisch."
+     ],
+     "src": [
+      {
+       "n": "pv magazine (05/2026): Netzentgeltbefreiung für Batteriespeicher bleibt – aber das Fenster schließt sich",
+       "u": "https://www.pv-magazine.de/2026/05/28/netzentgeltbefreiung-fuer-batteriespeicher-bleibt-aber-das-fenster-schliesst-sich/"
+      },
+      {
+       "n": "pv magazine (09/2026): Wer bei Batteriespeichern nur auf 2029 schaut, übersieht den zweiten Stichtag",
+       "u": "https://www.pv-magazine.de/2026/09/02/wer-bei-batteriespeichern-nur-auf-2029-schaut-uebersieht-den-entscheidenden-zweiten-stichtag/"
+      },
+      {
+       "n": "Fieldfisher: BNetzA schwenkt um – vorerst kein Ende des Netzentgeltprivilegs (AgNes)",
+       "u": "https://www.fieldfisher.com/de-de/locations/germany/insights/bnetza-schwenkt-um-doch-vorerst-kein-ende-des-netzentgeltprivilegs-fuer-batteriespeicher"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m5.l1.k1",
+       "f": "§ 118 Abs. 6 EnWG",
+       "b": "Netzentgeltbefreiung für den Ladestrom neuer Speicher: IBN bis 4.8.2029, 20 Jahre lang."
+      },
+      {
+       "id": "bess.m5.l1.k2",
+       "f": "Inbetriebnahme (IBN)",
+       "b": "Zeitpunkt, ab dem die Anlage betrieben wird; entscheidet über die Befreiung."
+      },
+      {
+       "id": "bess.m5.l1.k3",
+       "f": "AgNes",
+       "b": "BNetzA-Verfahren zur Reform der Netzentgelte; betrifft auch Speicher (laufend)."
+      },
+      {
+       "id": "bess.m5.l1.k4",
+       "f": "Netzentgelt",
+       "b": "Entgelt für die Nutzung des Stromnetzes; ohne Befreiung auch beim Laden fällig."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Bis wann müssen neue Speicher in Betrieb gehen, um nach § 118 Abs. 6 EnWG befreit zu sein?",
+       "o": [
+        "Bis 4. August 2029",
+        "Bis 31. Dezember 2025",
+        "Bis 1. Januar 2035",
+        "Es gibt keine Frist"
+       ],
+       "a": 0,
+       "e": "Die Frist wurde 2023 um drei Jahre verlängert.",
+       "id": "bess.m5.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie lange gilt die Netzentgeltbefreiung nach § 118 Abs. 6 EnWG?",
+       "o": [
+        "20 Jahre ab Inbetriebnahme",
+        "5 Jahre",
+        "Unbegrenzt",
+        "Nur im ersten Betriebsjahr"
+       ],
+       "a": 0,
+       "e": "Sie betrifft den Bezug des zu speichernden Stroms.",
+       "id": "bess.m5.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Worauf bezieht sich die Befreiung?",
+       "o": [
+        "Auf die Netzentgelte für den Bezug des zu speichernden Stroms",
+        "Auf die Stromsteuer",
+        "Auf die Baugenehmigung",
+        "Auf den Baukostenzuschuss"
+       ],
+       "a": 0,
+       "e": "Den BKZ betrifft sie nicht; dazu hat der BGH 2025 entschieden.",
+       "id": "bess.m5.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was hat die Bundesnetzagentur im AgNes-Verfahren laut Fachpresse (Stand 2026) zunächst geplant und dann vorerst zurückgenommen?",
+       "o": [
+        "Ein vorzeitiges Ende der Netzentgeltbefreiung für Speicher",
+        "Ein Verbot von Großspeichern",
+        "Eine Pflicht zu NMC-Zellen",
+        "Die Abschaffung der Regelleistung"
+       ],
+       "a": 0,
+       "e": "Eine Erhebung soll erst nach Auslaufen der Sonderregeln beginnen.",
+       "id": "bess.m5.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist das Inbetriebnahmedatum für den Business Case so wichtig?",
+       "o": [
+        "Es entscheidet, ob die 20-jährige Netzentgeltbefreiung gilt",
+        "Es bestimmt die Zellchemie",
+        "Es legt den Strompreis fest",
+        "Es ist nur für die Statistik relevant"
+       ],
+       "a": 0,
+       "e": "Verzögerungen über den Stichtag hinaus können die Wirtschaftlichkeit stark verändern.",
+       "id": "bess.m5.l1.q5"
+      },
+      {
+       "t": "mc",
+       "q": "Worauf weist ein Fachbeitrag (pv magazine, 09/2026) zusätzlich hin?",
+       "o": [
+        "Auf einen weiteren Stichtag im Entwurf (Meldung gegenüber dem Netzbetreiber, März 2027)",
+        "Auf eine Verlängerung bis 2050",
+        "Auf die Abschaffung der BNetzA",
+        "Auf eine Steuer auf Speicher"
+       ],
+       "a": 0,
+       "e": "Details im aktuellen BNetzA-Dokument prüfen.",
+       "id": "bess.m5.l1.q6"
+      }
+     ]
+    },
+    {
+     "id": "bess.m5.l2",
+     "title": "Stromsteuer und Hauptzollamt",
+     "min": 6,
+     "body": [
+      "Die Stromsteuer wird vom Zoll verwaltet; zuständig ist das Hauptzollamt. Der Regelsatz beträgt 20,50 € pro MWh (§ 3 StromStG).",
+      "## Das Problem der Doppelbesteuerung",
+      "Ein Speicher bezieht Strom und gibt ihn später wieder ab. Ohne Sonderregel könnte derselbe Strom zweimal besteuert werden. Das Stromsteuerrecht wurde zum 1. Januar 2026 reformiert (Novelle, verabschiedet Dezember 2025). Laut Fachbeiträgen unterliegt Strom, der bereits versteuert wurde oder steuerfrei entnommen werden durfte, bei der Rückverstromung nicht erneut der Stromsteuer; für Zwischenspeicherung ist § 5 Abs. 4 StromStG maßgeblich.",
+      "## Versorger und Erlaubnis",
+      "Wer als Versorger Strom an Letztverbraucher leistet, braucht nach § 4 StromStG eine Erlaubnis des Hauptzollamts. Für Speicher, in denen Versorger Strom zwischenspeichern und ins Netz einspeisen, gilt nach § 9 StromStG: Sie gelten insoweit als Teil des Versorgungsnetzes. Nach der Reform kann ein Betreiber unter Voraussetzungen als nicht stromsteuerlicher Versorger gelten (allgemeine Erlaubnis nach § 10 Abs. 3 StromStV); fehlen etwa Messeinrichtungen zur Abgrenzung, kann das ausscheiden.",
+      "## Praxis",
+      "Stromsteuerfragen sind Einzelfallfragen. Vor Inbetriebnahme sollte mit dem zuständigen Hauptzollamt bzw. einer Steuerberatung geklärt werden, welcher Status gilt und welche Anzeigen und Messungen nötig sind."
+     ],
+     "key": [
+      "Stromsteuer: Zoll/Hauptzollamt, Regelsatz 20,50 €/MWh.",
+      "Reform zum 1.1.2026 gegen Doppelbesteuerung bei Rückverstromung.",
+      "Versorger brauchen Erlaubnis (§ 4 StromStG); Speicher von Versorgern zählen zum Netz (§ 9).",
+      "Messung zur Abgrenzung ist entscheidend; früh mit dem Hauptzollamt klären."
+     ],
+     "src": [
+      {
+       "n": "Stromsteuergesetz (StromStG), gesetze-im-internet.de",
+       "u": "https://www.gesetze-im-internet.de/stromstg/BJNR037810999.html"
+      },
+      {
+       "n": "Stromsteuer-Durchführungsverordnung (StromStV), gesetze-im-internet.de",
+       "u": "https://www.gesetze-im-internet.de/stromstv/BJNR079400000.html"
+      },
+      {
+       "n": "Taylor Wessing (01/2026): Stromsteuer-Novelle 2025/2026",
+       "u": "https://www.taylorwessing.com/de/insights-and-events/insights/2026/01/stromsteuer-novelle-2025-2026"
+      },
+      {
+       "n": "Rödl & Partner (02/2026): Stromsteuernovelle 2026 – eingeschränkter Versorgerstatus",
+       "u": "https://www.roedl.com/insights/stromsteuernovelle-2026-umstellung-eingeschraenkter-versorgerstatus/"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m5.l2.k1",
+       "f": "Hauptzollamt",
+       "b": "Zuständige Behörde für die Stromsteuer."
+      },
+      {
+       "id": "bess.m5.l2.k2",
+       "f": "Stromsteuer-Regelsatz",
+       "b": "20,50 € pro MWh (§ 3 StromStG)."
+      },
+      {
+       "id": "bess.m5.l2.k3",
+       "f": "Versorger (StromStG)",
+       "b": "Wer Strom an Letztverbraucher leistet; braucht eine Erlaubnis nach § 4 StromStG."
+      },
+      {
+       "id": "bess.m5.l2.k4",
+       "f": "§ 5 Abs. 4 StromStG",
+       "b": "Regel zur Zwischenspeicherung von Strom in Speichern (nach der Novelle 2026)."
+      },
+      {
+       "id": "bess.m5.l2.k5",
+       "f": "§ 9 StromStG (Speicher)",
+       "b": "Speicher, in denen Versorger Strom zwischenspeichern und ins Netz einspeisen, gelten insoweit als Teil des Versorgungsnetzes."
+      },
+      {
+       "id": "bess.m5.l2.k6",
+       "f": "Stromsteuer-Novelle 2026",
+       "b": "Reform zum 1.1.2026; u. a. keine erneute Besteuerung bei der Rückverstromung bereits versteuerten Stroms."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Behörde ist für die Stromsteuer zuständig?",
+       "o": [
+        "Das Hauptzollamt",
+        "Die Bundesnetzagentur",
+        "Das Finanzamt der Gemeinde",
+        "Der Netzbetreiber"
+       ],
+       "a": 0,
+       "e": "Die Stromsteuer ist eine Verbrauchsteuer und wird vom Zoll verwaltet.",
+       "id": "bess.m5.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "Wie hoch ist der Regelsatz der Stromsteuer in Euro pro MWh?",
+       "a": 20.5,
+       "unit": "€/MWh",
+       "tol": 0.001,
+       "e": "20,50 €/MWh nach § 3 StromStG (Stand 11/2026; für 2027 wird über Senkungen diskutiert).",
+       "id": "bess.m5.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welches Problem soll die Stromsteuer-Novelle zum 1.1.2026 bei Speichern lösen?",
+       "o": [
+        "Die Doppelbesteuerung bei der Rückverstromung",
+        "Die Netzentgeltbefreiung",
+        "Den Baukostenzuschuss",
+        "Die Brandschutzauflagen"
+       ],
+       "a": 0,
+       "e": "Bereits versteuerter Strom soll bei der Rückverstromung nicht erneut besteuert werden.",
+       "id": "bess.m5.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wer braucht nach § 4 StromStG eine Erlaubnis des Hauptzollamts?",
+       "o": [
+        "Wer als Versorger Strom an Letztverbraucher leistet",
+        "Jeder Haushalt mit Kühlschrank",
+        "Nur Netzbetreiber",
+        "Niemand"
+       ],
+       "a": 0,
+       "e": "Nach der Reform kann ein Speicherbetreiber unter Voraussetzungen als Nicht-Versorger gelten.",
+       "id": "bess.m5.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was regelt § 9 StromStG für Speicher von Versorgern?",
+       "o": [
+        "Sie gelten insoweit als Teil des Versorgungsnetzes",
+        "Sie sind steuerpflichtige Letztverbraucher",
+        "Sie sind verboten",
+        "Sie zahlen doppelte Stromsteuer"
+       ],
+       "a": 0,
+       "e": "Gemeint sind Speicher, in denen Versorger Strom zwischenspeichern und ins Netz einspeisen.",
+       "id": "bess.m5.l2.q5"
+      },
+      {
+       "t": "mc",
+       "q": "Was kann nach der Reform den Status als Nicht-Versorger verhindern?",
+       "o": [
+        "Fehlende Messeinrichtungen zur Abgrenzung steuerfreier und steuerpflichtiger Mengen",
+        "Ein zu großer Container",
+        "LFP-Zellen",
+        "Ein Standort im Außenbereich"
+       ],
+       "a": 0,
+       "e": "Ohne saubere Messung lässt sich nicht abgrenzen, was wie zu besteuern ist.",
+       "id": "bess.m5.l2.q6"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist bei Stromsteuerfragen eines Speichers in der Praxis zu empfehlen?",
+       "o": [
+        "Vor Inbetriebnahme mit dem Hauptzollamt bzw. einer Steuerberatung klären",
+        "Abwarten, bis der Zoll sich meldet",
+        "Einfach keine Steuer zahlen",
+        "Den Netzbetreiber entscheiden lassen"
+       ],
+       "a": 0,
+       "e": "Die Einordnung hängt stark vom Einzelfall ab.",
+       "id": "bess.m5.l2.q7"
+      }
+     ]
+    },
+    {
+     "id": "bess.m5.l3",
+     "title": "Umlagen, Messung und Abgrenzung",
+     "min": 4,
+     "body": [
+      "Neben Netzentgelt und Stromsteuer gibt es Umlagen auf den Strompreis, etwa nach dem Energiefinanzierungsgesetz (EnFG). Für Speicher gilt der Grundsatz: Strom, der nur zwischengespeichert und wieder eingespeist wird, soll nicht wie Endverbrauch belastet werden. Die genaue Anwendung hängt von der Messung ab.",
+      "## Warum Messung alles entscheidet",
+      "Ein Speicher verbraucht auch selbst Strom: für Kühlung, Steuerung und durch Verluste. Dieser Eigenverbrauch und die Verluste werden rechtlich oft anders behandelt als der zwischengespeicherte Strom. Wer Mengen nicht sauber messen und zuordnen kann, riskiert, dass Privilegien nicht greifen.",
+      "## Messkonzept",
+      "Deshalb gehört zu jedem Speicherprojekt ein Messkonzept: Welche Zähler messen Netzbezug, Netzeinspeisung, Hilfsenergie und, bei Co-Location, die Erzeugung? Die MiSpeL-Abgrenzungsoption baut genau darauf auf."
+     ],
+     "key": [
+      "Zwischengespeicherter Strom soll nicht wie Endverbrauch belastet werden.",
+      "Hilfsenergie und Verluste werden oft anders behandelt.",
+      "Ohne Messkonzept greifen Privilegien nicht sicher.",
+      "Messkonzept: Bezug, Einspeisung, Hilfsenergie, ggf. Erzeugung."
+     ],
+     "src": [
+      {
+       "n": "Bundesnetzagentur: Festlegung zur Marktintegration von Speichern und Ladepunkten (MiSpeL)",
+       "u": "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/ErneuerbareEnergien/EEG_Aufsicht/MiSpeL/start.html"
+      },
+      {
+       "n": "Taylor Wessing (01/2026): Stromsteuer-Novelle 2025/2026",
+       "u": "https://www.taylorwessing.com/de/insights-and-events/insights/2026/01/stromsteuer-novelle-2025-2026"
+      },
+      {
+       "n": "Allgemeines Fachwissen der Energiewirtschaft (Definitionen); vertiefend: EWI- und dena-Analysen 2026",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m5.l3.k1",
+       "f": "Messkonzept",
+       "b": "Plan, welche Zähler welche Strommengen erfassen (Bezug, Einspeisung, Hilfsenergie, Erzeugung)."
+      },
+      {
+       "id": "bess.m5.l3.k2",
+       "f": "Hilfsenergie",
+       "b": "Strom für Kühlung, Steuerung, Beleuchtung des Speichers; rechtlich oft Eigenverbrauch."
+      },
+      {
+       "id": "bess.m5.l3.k3",
+       "f": "EnFG",
+       "b": "Energiefinanzierungsgesetz: regelt Umlagen auf den Strompreis und Ausnahmen."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Warum ist ein Messkonzept für Speicher so wichtig?",
+       "o": [
+        "Weil Privilegien nur greifen, wenn Strommengen sauber zugeordnet werden",
+        "Weil sonst der Container nicht passt",
+        "Weil die Zellen sonst altern",
+        "Weil der Netzbetreiber sonst keinen Strom liefert"
+       ],
+       "a": 0,
+       "e": "Zwischengespeicherter Strom, Hilfsenergie und Verluste werden unterschiedlich behandelt.",
+       "id": "bess.m5.l3.q1"
+      },
+      {
+       "t": "multi",
+       "q": "Was sollte ein Messkonzept eines Speichers mit PV am gleichen Anschluss erfassen? (mehrere richtig)",
+       "o": [
+        "Netzbezug",
+        "Netzeinspeisung",
+        "Hilfsenergie",
+        "Erzeugung der PV-Anlage",
+        "Die Außentemperatur der Nachbargemeinde"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "e": "Nur mit allen Strömen lässt sich abgrenzen.",
+       "id": "bess.m5.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie werden Hilfsenergie und Verluste eines Speichers rechtlich oft behandelt?",
+       "o": [
+        "Anders als der zwischengespeicherte Strom, häufig wie Eigenverbrauch",
+        "Genau wie Einspeisung",
+        "Gar nicht",
+        "Wie Regelleistung"
+       ],
+       "a": 0,
+       "e": "Deshalb müssen sie getrennt erfasst werden.",
+       "id": "bess.m5.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Grundsatz gilt für zwischengespeicherten und wieder eingespeisten Strom?",
+       "o": [
+        "Er soll nicht wie Endverbrauch belastet werden",
+        "Er wird doppelt belastet",
+        "Er ist verboten",
+        "Er zählt als Erzeugung aus Erneuerbaren"
+       ],
+       "a": 0,
+       "e": "Die genaue Anwendung hängt von Gesetz, Festlegung und Messung ab.",
+       "id": "bess.m5.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Auf welchem Prinzip baut die MiSpeL-Abgrenzungsoption auf?",
+       "o": [
+        "Auf genauer Messung der Strommengen",
+        "Auf Schätzungen pro Jahr",
+        "Auf der Zahl der Container",
+        "Auf dem Börsenpreis"
+       ],
+       "a": 0,
+       "e": "Die Pauschaloption ist die vereinfachte Alternative für kleine Anlagen.",
+       "id": "bess.m5.l3.q5"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "bess.m6",
    "level": 3,
    "title": "Projektplanung & Wirtschaftlichkeit",
    "desc": "Dimensionierung, Business Case, Verträge, Garantien, Ausschreibung.",
-   "lessons": []
+   "lessons": [
+    {
+     "id": "bess.m6.l1",
+     "title": "Projektphasen von der Fläche bis zum Betrieb",
+     "min": 5,
+     "body": [
+      "Ein Großspeicherprojekt durchläuft typische Phasen. Die Reihenfolge überlappt in der Praxis, aber die Logik ist immer ähnlich.",
+      "## Entwicklung",
+      "Zuerst werden Fläche und Netzanschluss gesichert, denn ohne beides ist alles andere wertlos. Dann folgen Genehmigungen (Baurecht, Brandschutz, Schall) und die Vermarktungsstrategie.",
+      "## Beschaffung und Finanzierung",
+      "Es folgen die Ausschreibung von Batteriesystem, Umrichtern und Bau (oft als EPC-Vertrag aus einer Hand) sowie ein Wartungsvertrag (LTSA, Long Term Service Agreement). Mit gesicherten Verträgen fällt die Investitionsentscheidung (FID, Final Investment Decision).",
+      "## Bau und Betrieb",
+      "Nach Bau und Inbetriebnahme mit Abnahmetests beginnt der kommerzielle Betrieb (COD, Commercial Operation Date). Über die Lebensdauer kommen Wartung, Optimierung, Augmentation und am Ende Rückbau und Recycling."
+     ],
+     "key": [
+      "Fläche und Netzanschluss zuerst sichern.",
+      "EPC = Bau aus einer Hand, LTSA = langfristige Wartung.",
+      "FID = Investitionsentscheidung.",
+      "COD = Beginn des kommerziellen Betriebs."
+     ],
+     "src": [
+      {
+       "n": "Allgemeines Fachwissen der Energiewirtschaft (Definitionen); vertiefend: EWI- und dena-Analysen 2026",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m6.l1.k1",
+       "f": "EPC",
+       "b": "Engineering, Procurement, Construction: Planung, Beschaffung und Bau aus einer Hand."
+      },
+      {
+       "id": "bess.m6.l1.k2",
+       "f": "LTSA",
+       "b": "Long Term Service Agreement: langfristiger Wartungs- und Servicevertrag."
+      },
+      {
+       "id": "bess.m6.l1.k3",
+       "f": "FID",
+       "b": "Final Investment Decision: endgültige Investitionsentscheidung."
+      },
+      {
+       "id": "bess.m6.l1.k4",
+       "f": "COD",
+       "b": "Commercial Operation Date: Beginn des kommerziellen Betriebs."
+      },
+      {
+       "id": "bess.m6.l1.k5",
+       "f": "Abnahmetest",
+       "b": "Prüfung vor Übergabe, ob Leistung, Kapazität und Wirkungsgrad den Vertrag erfüllen."
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Bringe die Projektphasen in eine typische Reihenfolge.",
+       "o": [
+        "Fläche und Netzanschluss sichern",
+        "Genehmigungen einholen",
+        "Investitionsentscheidung (FID)",
+        "Bau und Inbetriebnahme",
+        "Kommerzieller Betrieb (COD)"
+       ],
+       "e": "Ohne Fläche und Netzanschluss lohnen sich die weiteren Schritte nicht.",
+       "id": "bess.m6.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet EPC?",
+       "o": [
+        "Planung, Beschaffung und Bau aus einer Hand",
+        "Eine Zellchemie",
+        "Ein Regelleistungsprodukt",
+        "Eine Steuerart"
+       ],
+       "a": 0,
+       "e": "Engineering, Procurement, Construction.",
+       "id": "bess.m6.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was regelt ein LTSA?",
+       "o": [
+        "Die langfristige Wartung und den Service",
+        "Den Netzanschluss",
+        "Den Stromeinkauf",
+        "Die Baugenehmigung"
+       ],
+       "a": 0,
+       "e": "Long Term Service Agreement, oft mit Verfügbarkeitsgarantien.",
+       "id": "bess.m6.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist die FID?",
+       "o": [
+        "Die endgültige Investitionsentscheidung",
+        "Die Frequenzabweichung",
+        "Ein Brandschutzgutachten",
+        "Die erste Abschlagszahlung"
+       ],
+       "a": 0,
+       "e": "Final Investment Decision.",
+       "id": "bess.m6.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche zwei Dinge sollten in der Entwicklung zuerst gesichert werden?",
+       "o": [
+        "Fläche und Netzanschluss",
+        "Zellhersteller und Containerfarbe",
+        "Stromsteuer und Logo",
+        "Versicherung und Website"
+       ],
+       "a": 0,
+       "e": "Ohne beide ist das Projekt nicht umsetzbar.",
+       "id": "bess.m6.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "bess.m6.l2",
+     "title": "Business Case: CAPEX, OPEX und Kennzahlen",
+     "min": 6,
+     "body": [
+      "## Kosten",
+      "CAPEX sind die Investitionskosten: Batteriesystem, Umrichter, Transformator, Netzanschluss inklusive Baukostenzuschuss, Bau, Planung. OPEX sind laufende Kosten: Wartung (LTSA), Versicherung, Pacht, Vermarktungsgebühren, Hilfsenergie, Verwaltung.",
+      "## Erlöse und Annahmen",
+      "Die Erlöse kommen aus Vermarktung oder Toll. Wichtige Annahmen sind Wirkungsgrad, Zyklen pro Jahr, Degradation, Verfügbarkeit, Augmentation und die regulatorischen Rahmenbedingungen (Netzentgelte, Steuern). Weil diese Annahmen unsicher sind, rechnet man Szenarien.",
+      "## Kennzahlen",
+      "Der Kapitalwert (NPV) ist die Summe aller abgezinsten Zahlungsströme; positiv heißt: Das Projekt verdient mehr als die geforderte Verzinsung. Der interne Zinsfuß (IRR) ist der Zinssatz, bei dem der NPV null wird. Die Levelized Cost of Storage (LCOS) sind die Kosten pro ausgespeicherter MWh über die Lebensdauer. Die einfache Amortisationszeit sagt, nach wie vielen Jahren die Investition zurückgeflossen ist, ignoriert aber Zinsen."
+     ],
+     "key": [
+      "CAPEX = Investition, OPEX = laufende Kosten.",
+      "Annahmen unsicher → Szenarien rechnen.",
+      "NPV > 0: verdient mehr als geforderte Verzinsung; IRR: Zinssatz mit NPV = 0.",
+      "LCOS = Kosten je ausgespeicherter MWh."
+     ],
+     "src": [
+      {
+       "n": "NREL, Annual Technology Baseline: Utility-Scale Battery Storage (2024)",
+       "u": "https://atb.nrel.gov/electricity/2024/utility-scale_battery_storage"
+      },
+      {
+       "n": "Allgemeines Fachwissen der Energiewirtschaft (Definitionen); vertiefend: EWI- und dena-Analysen 2026",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m6.l2.k1",
+       "f": "CAPEX",
+       "b": "Capital Expenditure: Investitionskosten."
+      },
+      {
+       "id": "bess.m6.l2.k2",
+       "f": "OPEX",
+       "b": "Operational Expenditure: laufende Betriebskosten."
+      },
+      {
+       "id": "bess.m6.l2.k3",
+       "f": "NPV (Kapitalwert)",
+       "b": "Summe aller abgezinsten Zahlungsströme. Positiv = Projekt verdient mehr als die geforderte Verzinsung."
+      },
+      {
+       "id": "bess.m6.l2.k4",
+       "f": "IRR (interner Zinsfuß)",
+       "b": "Zinssatz, bei dem der Kapitalwert null wird."
+      },
+      {
+       "id": "bess.m6.l2.k5",
+       "f": "LCOS",
+       "b": "Levelized Cost of Storage: Lebenszeitkosten pro ausgespeicherter MWh."
+      },
+      {
+       "id": "bess.m6.l2.k6",
+       "f": "Amortisationszeit",
+       "b": "Jahre, bis die Investition zurückgeflossen ist (einfach: ohne Zinsen)."
+      }
+     ],
+     "qs": [
+      {
+       "t": "multi",
+       "q": "Was gehört zu den CAPEX eines Großspeichers? (mehrere richtig)",
+       "o": [
+        "Batteriesystem",
+        "Netzanschluss inklusive Baukostenzuschuss",
+        "Transformator",
+        "Jährliche Versicherungsprämie",
+        "Laufende Vermarktungsgebühren"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Versicherung und Vermarktungsgebühren sind laufende Kosten (OPEX).",
+       "id": "bess.m6.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was sagt ein positiver Kapitalwert (NPV) aus?",
+       "o": [
+        "Das Projekt verdient mehr als die geforderte Verzinsung",
+        "Das Projekt macht Verlust",
+        "Der Speicher ist voll geladen",
+        "Die Steuer ist bezahlt"
+       ],
+       "a": 0,
+       "e": "Der NPV hängt stark vom gewählten Zinssatz ab.",
+       "id": "bess.m6.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist der interne Zinsfuß (IRR)?",
+       "o": [
+        "Der Zinssatz, bei dem der Kapitalwert null wird",
+        "Der Zinssatz der Zentralbank",
+        "Die Rendite im ersten Jahr",
+        "Der Wirkungsgrad in Prozent"
+       ],
+       "a": 0,
+       "e": "Liegt der IRR über der geforderten Rendite, ist das Projekt attraktiv.",
+       "id": "bess.m6.l2.q3"
+      },
+      {
+       "t": "num",
+       "q": "Ein Speicher kostet 30 Mio. € und bringt nach Abzug der laufenden Kosten 4 Mio. € pro Jahr. Nach wie vielen Jahren ist die einfache Amortisation erreicht? (eine Nachkommastelle)",
+       "a": 7.5,
+       "unit": "Jahre",
+       "tol": 0.05,
+       "e": "30 ÷ 4 = 7,5 Jahre. Die einfache Amortisation ignoriert Zinsen und Degradation.",
+       "id": "bess.m6.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was misst die LCOS?",
+       "o": [
+        "Die Kosten pro ausgespeicherter MWh über die Lebensdauer",
+        "Die Leistung des Umrichters",
+        "Den Ladezustand",
+        "Die Zahl der Netzbetreiber"
+       ],
+       "a": 0,
+       "e": "Levelized Cost of Storage.",
+       "id": "bess.m6.l2.q5"
+      },
+      {
+       "t": "mc",
+       "q": "Warum rechnet man im Business Case Szenarien?",
+       "o": [
+        "Weil Annahmen wie Erlöse, Degradation und Regulierung unsicher sind",
+        "Weil Banken keine Zahlen lesen",
+        "Weil es gesetzlich verlangt ist",
+        "Weil der Speicher sonst nicht startet"
+       ],
+       "a": 0,
+       "e": "Typisch sind Basis-, Gut- und Schlechtfall.",
+       "id": "bess.m6.l2.q6"
+      }
+     ]
+    },
+    {
+     "id": "bess.m6.l3",
+     "title": "Verträge und Garantien",
+     "min": 5,
+     "body": [
+      "Verträge verteilen Risiken. Ein Projektentwickler muss verstehen, wer wofür haftet.",
+      "## Liefer- und EPC-Vertrag",
+      "Wichtig sind Liefertermine, Vertragsstrafen bei Verzug, Abnahmekriterien (Leistung, Kapazität, Wirkungsgrad) und Gewährleistung. Bei Verzug über einen regulatorischen Stichtag (etwa die Netzentgeltbefreiung bis 4.8.2029) kann der Schaden besonders hoch sein.",
+      "## Leistungsgarantien",
+      "Typisch sind eine Kapazitätsgarantie (Restkapazität nach Jahren unter festgelegten Bedingungen), eine Verfügbarkeitsgarantie (Anteil der Zeit, in der der Speicher betriebsbereit ist) und eine Wirkungsgradgarantie. Garantien gelten nur, wenn die Betriebsbedingungen eingehalten werden: Zyklen pro Jahr, Temperaturen, Ladezustandsfenster, C-Raten.",
+      "## Schnittstellen",
+      "Das größte Risiko liegt oft an den Schnittstellen: Wenn Batterie, Umrichter und Steuerung von verschiedenen Lieferanten kommen, ist bei Fehlern unklar, wer verantwortlich ist. Ein Integrator oder EPC-Vertrag aus einer Hand reduziert dieses Risiko, kostet aber meist mehr."
+     ],
+     "key": [
+      "Verzug über Stichtage kann teuer werden.",
+      "Garantien: Kapazität, Verfügbarkeit, Wirkungsgrad.",
+      "Garantien gelten nur bei Einhaltung der Betriebsbedingungen.",
+      "Schnittstellenrisiko: aus einer Hand ist teurer, aber klarer."
+     ],
+     "src": [
+      {
+       "n": "Smith u. a. (NREL), Life Prediction Model for Grid-Connected Li-ion Battery Energy Storage System, 2017",
+       "u": "https://www.osti.gov/biblio/1378083"
+      },
+      {
+       "n": "pv magazine (05/2026): Netzentgeltbefreiung für Batteriespeicher bleibt – aber das Fenster schließt sich",
+       "u": "https://www.pv-magazine.de/2026/05/28/netzentgeltbefreiung-fuer-batteriespeicher-bleibt-aber-das-fenster-schliesst-sich/"
+      },
+      {
+       "n": "Allgemeines Fachwissen der Energiewirtschaft (Definitionen); vertiefend: EWI- und dena-Analysen 2026",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m6.l3.k1",
+       "f": "Kapazitätsgarantie",
+       "b": "Zusage einer Restkapazität nach bestimmten Jahren unter festgelegten Bedingungen."
+      },
+      {
+       "id": "bess.m6.l3.k2",
+       "f": "Verfügbarkeitsgarantie",
+       "b": "Zusage, dass der Speicher einen Anteil der Zeit betriebsbereit ist."
+      },
+      {
+       "id": "bess.m6.l3.k3",
+       "f": "Vertragsstrafe",
+       "b": "Pauschaler Schadensersatz, z. B. bei Lieferverzug."
+      },
+      {
+       "id": "bess.m6.l3.k4",
+       "f": "Schnittstellenrisiko",
+       "b": "Unklare Verantwortung, wenn Komponenten verschiedener Lieferanten zusammenspielen."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wann gilt eine Kapazitätsgarantie typischerweise nur?",
+       "o": [
+        "Wenn die vereinbarten Betriebsbedingungen eingehalten werden",
+        "Immer, egal wie betrieben wird",
+        "Nur im ersten Monat",
+        "Nur bei Strompreisen über 100 €/MWh"
+       ],
+       "a": 0,
+       "e": "Zyklen, Temperatur, SoC-Fenster und C-Raten sind typische Bedingungen.",
+       "id": "bess.m6.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was misst eine Verfügbarkeitsgarantie?",
+       "o": [
+        "Den Anteil der Zeit, in der der Speicher betriebsbereit ist",
+        "Die Lieferzeit der Container",
+        "Den Börsenpreis",
+        "Den Wirkungsgrad des Transformators"
+       ],
+       "a": 0,
+       "e": "Ausfallzeiten kosten Erlöse; die Garantie verteilt dieses Risiko.",
+       "id": "bess.m6.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum kann Lieferverzug bei Speichern besonders teuer werden?",
+       "o": [
+        "Weil regulatorische Stichtage wie die Netzentgeltbefreiung verpasst werden können",
+        "Weil Container rosten",
+        "Weil die Zellen sonst schneller laden",
+        "Weil die Stromsteuer täglich steigt"
+       ],
+       "a": 0,
+       "e": "Deshalb gehören Vertragsstrafen und Puffer in die Planung.",
+       "id": "bess.m6.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist das Schnittstellenrisiko?",
+       "o": [
+        "Unklare Verantwortung, wenn Komponenten verschiedener Lieferanten zusammenspielen",
+        "Das Risiko eines Kabelbruchs",
+        "Das Risiko negativer Preise",
+        "Das Risiko eines Brandes"
+       ],
+       "a": 0,
+       "e": "Ein EPC aus einer Hand reduziert es, kostet aber meist mehr.",
+       "id": "bess.m6.l3.q4"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Garantien sind bei Großspeichern typisch? (mehrere richtig)",
+       "o": [
+        "Kapazitätsgarantie",
+        "Verfügbarkeitsgarantie",
+        "Wirkungsgradgarantie",
+        "Strompreisgarantie des Herstellers",
+        "Wettergarantie"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Strompreise garantiert kein Hersteller; dafür gibt es Toll- oder Floor-Verträge.",
+       "id": "bess.m6.l3.q5"
+      }
+     ]
+    },
+    {
+     "id": "bess.m6.l4",
+     "title": "Dimensionierung und Betriebsstrategie",
+     "min": 5,
+     "body": [
+      "## Leistung und Dauer festlegen",
+      "Die Netzanschlussleistung begrenzt meist die Leistung des Speichers. Die Dauer folgt aus der Vermarktungsstrategie: Für Arbitrage und viele Toll-Verträge werden längere Dauern attraktiver, für Regelleistung reicht weniger. Mehr Dauer kostet mehr CAPEX pro MW, bringt aber mehr Energie pro Zyklus.",
+      "## Überdimensionierung oder Augmentation",
+      "Weil die Kapazität über die Jahre sinkt, muss entschieden werden: Baut man anfangs mehr Energie ein (Überdimensionierung) oder ergänzt man später Module (Augmentation)? Augmentation verschiebt Kosten in die Zukunft, wo Batterien günstiger sein können, braucht aber Platz und kompatible Technik.",
+      "## Betriebsstrategie",
+      "Ein guter Fahrplan berücksichtigt Erlöse, Verschleiß, Garantiegrenzen und Netzrestriktionen gleichzeitig. Ein Zyklus lohnt nur, wenn der Erlös die Kosten für Verluste und Alterung übersteigt."
+     ],
+     "key": [
+      "Netzanschluss begrenzt die Leistung.",
+      "Dauer folgt aus der Vermarktungsstrategie.",
+      "Kapazitätsverlust: anfangs überdimensionieren oder später augmentieren.",
+      "Zyklus nur, wenn Erlös > Verluste + Alterung."
+     ],
+     "src": [
+      {
+       "n": "pv magazine (05/2026): Längere Speicherdauern etablieren sich auf dem deutschen Tolling-Markt",
+       "u": "https://www.pv-magazine.de/2026/05/07/batteriespeicher-mit-laengerer-speicherdauer-etablieren-sich-auf-dem-deutschen-tolling-markt/"
+      },
+      {
+       "n": "Smith u. a. (NREL), Life Prediction Model for Grid-Connected Li-ion Battery Energy Storage System, 2017",
+       "u": "https://www.osti.gov/biblio/1378083"
+      },
+      {
+       "n": "Allgemeines Fachwissen der Energiewirtschaft (Definitionen); vertiefend: EWI- und dena-Analysen 2026",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m6.l4.k1",
+       "f": "Überdimensionierung",
+       "b": "Anfangs mehr Energie einbauen, um den späteren Kapazitätsverlust auszugleichen."
+      },
+      {
+       "id": "bess.m6.l4.k2",
+       "f": "Augmentation",
+       "b": "Später Module ergänzen, um die vertragliche Kapazität zu halten."
+      },
+      {
+       "id": "bess.m6.l4.k3",
+       "f": "Degradationskosten",
+       "b": "Wert der Lebensdauer, die ein Zyklus verbraucht."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was begrenzt bei Großspeichern meist die maximale Leistung?",
+       "o": [
+        "Die Netzanschlussleistung",
+        "Die Farbe der Container",
+        "Die Zahl der Mitarbeiter",
+        "Der Stromsteuersatz"
+       ],
+       "a": 0,
+       "e": "Mehr Wechselrichterleistung als Anschlussleistung bringt am Netz nichts.",
+       "id": "bess.m6.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Vorteil spricht für Augmentation statt Überdimensionierung?",
+       "o": [
+        "Kosten werden in die Zukunft verschoben, wenn Batterien günstiger sein können",
+        "Sie braucht keinen Platz",
+        "Sie verhindert jede Alterung",
+        "Sie erhöht den Wirkungsgrad auf 100 %"
+       ],
+       "a": 0,
+       "e": "Nachteil: Platz und kompatible Technik müssen vorgehalten werden.",
+       "id": "bess.m6.l4.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wann lohnt sich ein zusätzlicher Zyklus?",
+       "o": [
+        "Wenn der Erlös die Kosten für Verluste und Alterung übersteigt",
+        "Immer",
+        "Nie",
+        "Nur am Wochenende"
+       ],
+       "a": 0,
+       "e": "Gute Optimierer rechnen Degradationskosten ein.",
+       "id": "bess.m6.l4.q3"
+      },
+      {
+       "t": "num",
+       "q": "Ein Speicher soll nach 10 Jahren noch 100 MWh liefern. Erwartet wird ein SoH von 80 % nach 10 Jahren. Wie viel MWh muss man bei Überdimensionierung anfangs einbauen?",
+       "a": 125,
+       "unit": "MWh",
+       "tol": 0,
+       "e": "100 ÷ 0,8 = 125 MWh. Vereinfachte Rechnung ohne SoC-Fenster und Verluste.",
+       "id": "bess.m6.l4.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum steigt bei längerer Speicherdauer der CAPEX pro MW?",
+       "o": [
+        "Weil pro MW mehr Batterieenergie eingebaut wird",
+        "Weil die Netzentgelte steigen",
+        "Weil der Transformator kleiner wird",
+        "Weil die Steuer pro MW steigt"
+       ],
+       "a": 0,
+       "e": "Dafür steht pro Zyklus mehr Energie zur Verfügung.",
+       "id": "bess.m6.l4.q5"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "bess.m7",
    "level": 3,
    "title": "Markt & Hersteller",
    "desc": "Lieferketten EU und China, Integratoren, Preisentwicklung, Herausforderungen.",
-   "lessons": []
+   "lessons": [
+    {
+     "id": "bess.m7.l1",
+     "title": "Der deutsche Speichermarkt in Zahlen",
+     "min": 5,
+     "body": [
+      "Deutschland baut Batteriespeicher in hohem Tempo aus. Die Zahlen unterscheiden sich je nach Quelle, Stichtag und Abgrenzung (Heimspeicher, Gewerbespeicher, Großspeicher). Bei Zahlen immer Quelle und Datum nennen.",
+      "## Heim- und Großspeicher",
+      "Der größte Teil der installierten Kapazität steckt in Heimspeichern. Laut einer RWTH-Auswertung (Ende März 2026) waren es insgesamt rund 27 GWh, davon etwa 22 GWh in Heimspeichern und gut 6 GWh in Großspeichern. Die KfW nennt (Stand Juni 2026, Quelle Battery Charts) insgesamt rund 19 GW Leistung und etwa 29 GWh Kapazität.",
+      "## Wachstum der Großspeicher",
+      "Laut Fraunhofer ISE stieg die Großspeicherkapazität 2025 von 2,3 auf 3,7 GWh, ein Plus von etwa 60 %. Viele weitere Projekte sind in Entwicklung; der Engpass ist meist der Netzanschluss.",
+      "## Europa",
+      "In der EU wurden laut Energy-Storage.news 2025 rund 15 GWh netzgekoppelte Großspeicher installiert, das waren etwa 55 % der neu installierten Speicherkapazität des Jahres."
+     ],
+     "key": [
+      "Zahlen: immer Quelle, Datum und Abgrenzung nennen.",
+      "Heimspeicher haben den größten Kapazitätsanteil.",
+      "Großspeicher DE 2025: von 2,3 auf 3,7 GWh (+60 %, Fraunhofer ISE).",
+      "EU 2025: rund 15 GWh Großspeicher neu."
+     ],
+     "src": [
+      {
+       "n": "KfW Research, Fokus Nr. 555 (08/2026): Batteriespeicher",
+       "u": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-Fokus-Volkswirtschaft/Fokus-2026/Fokus-Nr.-555-August-2026-Batteriespeicher.pdf"
+      },
+      {
+       "n": "pv magazine (01/2026): Weniger neue Batteriespeicher 2025, aber mit mehr Kapazität",
+       "u": "https://www.pv-magazine.de/2026/01/06/weniger-neue-batteriespeicher-2025-installiert-aber-mit-mehr-kapazitaet/"
+      },
+      {
+       "n": "Energy-Storage.news: EU-Speichermarkt 2025",
+       "u": "https://www.energy-storage.news/european-union-battery-storage-market-entered-new-phase-of-scale-and-maturity-in-2025-but-still-has-a-long-way-to-go/"
+      },
+      {
+       "n": "U.S. International Trade Administration: German Battery Storage Market",
+       "u": "https://www.trade.gov/market-intelligence/german-battery-storage-market"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m7.l1.k1",
+       "f": "Battery Charts",
+       "b": "Datenplattform der RWTH Aachen zu Batteriespeichern in Deutschland."
+      },
+      {
+       "id": "bess.m7.l1.k2",
+       "f": "Heimspeicher",
+       "b": "Speicher in Wohngebäuden, meist mit PV; größter Kapazitätsanteil in DE."
+      },
+      {
+       "id": "bess.m7.l1.k3",
+       "f": "Großspeicher",
+       "b": "Netzgekoppelte Speicher im MW-Bereich; DE 2025: von 2,3 auf 3,7 GWh."
+      },
+      {
+       "id": "bess.m7.l1.k4",
+       "f": "Abgrenzung",
+       "b": "Ob Zahlen Heim-, Gewerbe- oder Großspeicher umfassen; Ursache vieler Widersprüche."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Warum unterscheiden sich Zahlen zum Speichermarkt oft?",
+       "o": [
+        "Wegen unterschiedlicher Quellen, Stichtage und Abgrenzungen",
+        "Weil Speicher nicht gezählt werden dürfen",
+        "Weil alle Zahlen geschätzt sind",
+        "Weil es keine Statistik gibt"
+       ],
+       "a": 0,
+       "e": "Deshalb Quelle, Datum und Abgrenzung immer mitnennen.",
+       "id": "bess.m7.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Speicherart hat in Deutschland den größten Anteil an der Kapazität?",
+       "o": [
+        "Heimspeicher",
+        "Großspeicher",
+        "Pumpspeicher im Ausland",
+        "Speicher in Elektroautos"
+       ],
+       "a": 0,
+       "e": "Laut RWTH (03/2026) etwa 22 von 27 GWh.",
+       "id": "bess.m7.l1.q2"
+      },
+      {
+       "t": "num",
+       "q": "Laut Fraunhofer ISE stieg die Großspeicherkapazität 2025 von 2,3 auf 3,7 GWh. Um wie viel GWh?",
+       "a": 1.4,
+       "unit": "GWh",
+       "tol": 0.001,
+       "e": "3,7 − 2,3 = 1,4 GWh, ein Plus von etwa 60 %.",
+       "id": "bess.m7.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viel netzgekoppelte Großspeicher wurden laut Energy-Storage.news 2025 in der EU installiert?",
+       "o": [
+        "Rund 15 GWh",
+        "Rund 150 GWh",
+        "Rund 1,5 GWh",
+        "Rund 500 GWh"
+       ],
+       "a": 0,
+       "e": "Das waren etwa 55 % der 2025 neu installierten Speicherkapazität.",
+       "id": "bess.m7.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bremst laut Branche den Großspeicherausbau in Deutschland am stärksten?",
+       "o": [
+        "Der Netzanschluss",
+        "Mangel an Interesse",
+        "Fehlende Zellchemien",
+        "Fehlende Software"
+       ],
+       "a": 0,
+       "e": "Siehe Modul Netzanschluss & Genehmigung.",
+       "id": "bess.m7.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "bess.m7.l2",
+     "title": "Hersteller, Integratoren und Lieferketten",
+     "min": 5,
+     "body": [
+      "In der Wertschöpfungskette unterscheidet man Zellhersteller, Hersteller von Batteriesystemen und Umrichtern sowie Integratoren, die alles zu einem funktionierenden Speicher zusammenführen und oft auch Garantie und Service übernehmen.",
+      "## Wer liefert?",
+      "Bei LFP-Zellen dominieren chinesische Hersteller den Weltmarkt; bekannte Namen sind CATL und BYD. Bei Integratoren nennt ein RSM-Bericht (06/2026) für Europa 2025 Sungrow, Nidec und Tesla auf den ersten Plätzen, weltweit Tesla vor Sungrow. Konkrete Marktanteile schwanken je nach Quelle stark.",
+      "## Lieferkettenrisiken",
+      "Die Abhängigkeit von wenigen Ländern bringt Risiken: Handelskonflikte, Zölle, Lieferzeiten, Wechselkurse. Hinzu kommen Fragen der Cybersicherheit, weil Speicher fernüberwacht und ferngesteuert werden. Europäische Fertigung wächst, ist aber bei Zellen noch klein.",
+      "## Auswahlkriterien",
+      "Neben dem Preis zählen: Referenzen in vergleichbaren Projekten, Finanzkraft des Herstellers (wer steht in 15 Jahren für die Garantie ein?), Prüfberichte (z. B. UL 9540A), Service in Europa und Datenzugang."
+     ],
+     "key": [
+      "Zellhersteller → Systeme/Umrichter → Integrator.",
+      "LFP-Zellen: chinesische Hersteller dominieren.",
+      "Integratoren Europa 2025 laut RSM: Sungrow, Nidec, Tesla.",
+      "Kriterien: Referenzen, Finanzkraft, Prüfberichte, Service, Datenzugang."
+     ],
+     "src": [
+      {
+       "n": "RSM (06/2026): BESS Market Outlook",
+       "u": "https://www.rsm.global/netherlands/sites/default/files/media/Nieuwsitems/2026/RSM%20Report%20BESS%20Market%20Outlook%20june%202026.pdf"
+      },
+      {
+       "n": "Energy-Storage.news: EU-Speichermarkt 2025",
+       "u": "https://www.energy-storage.news/european-union-battery-storage-market-entered-new-phase-of-scale-and-maturity-in-2025-but-still-has-a-long-way-to-go/"
+      },
+      {
+       "n": "UL Solutions: UL 9540A Test Method",
+       "u": "https://www.ul.com/services/ul-9540a-test-method"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m7.l2.k1",
+       "f": "Integrator",
+       "b": "Firma, die Zellen, Umrichter, Steuerung zu einem Speichersystem zusammenführt und oft Garantie übernimmt."
+      },
+      {
+       "id": "bess.m7.l2.k2",
+       "f": "Finanzkraft des Herstellers",
+       "b": "Wichtig, weil Garantien über 10–20 Jahre nur so viel wert sind wie der Garantiegeber."
+      },
+      {
+       "id": "bess.m7.l2.k3",
+       "f": "Lieferkettenrisiko",
+       "b": "Abhängigkeit von wenigen Ländern/Lieferanten: Zölle, Lieferzeit, Handelskonflikte."
+      },
+      {
+       "id": "bess.m7.l2.k4",
+       "f": "Cybersicherheit",
+       "b": "Schutz der fernüberwachten und ferngesteuerten Anlage vor unbefugtem Zugriff."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was macht ein Integrator?",
+       "o": [
+        "Er führt Zellen, Umrichter und Steuerung zu einem Speichersystem zusammen",
+        "Er stellt nur Zellen her",
+        "Er betreibt das Übertragungsnetz",
+        "Er erhebt die Stromsteuer"
+       ],
+       "a": 0,
+       "e": "Oft übernimmt er auch Garantie und Service.",
+       "id": "bess.m7.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Länder dominieren die weltweite Produktion von LFP-Zellen?",
+       "o": [
+        "China",
+        "Deutschland",
+        "Brasilien",
+        "Kanada"
+       ],
+       "a": 0,
+       "e": "Bekannte Hersteller sind CATL und BYD.",
+       "id": "bess.m7.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Integratoren nennt der RSM-Bericht (06/2026) für Europa 2025 auf den ersten Plätzen?",
+       "o": [
+        "Sungrow, Nidec, Tesla",
+        "Siemens, Bosch, BASF",
+        "Apple, Samsung, Sony",
+        "Vattenfall, RWE, EnBW"
+       ],
+       "a": 0,
+       "e": "Weltweit führt laut demselben Bericht Tesla vor Sungrow.",
+       "id": "bess.m7.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist die Finanzkraft eines Herstellers bei der Auswahl wichtig?",
+       "o": [
+        "Garantien über viele Jahre sind nur so viel wert wie der Garantiegeber",
+        "Weil reiche Hersteller schneller liefern",
+        "Weil es gesetzlich vorgeschrieben ist",
+        "Weil sonst die Stromsteuer steigt"
+       ],
+       "a": 0,
+       "e": "Ein insolventer Hersteller kann keine Garantie mehr erfüllen.",
+       "id": "bess.m7.l2.q4"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Risiken entstehen aus der Lieferkette? (mehrere richtig)",
+       "o": [
+        "Zölle und Handelskonflikte",
+        "Lange Lieferzeiten",
+        "Cybersicherheitsfragen bei Fernsteuerung",
+        "Höhere Netzfrequenz",
+        "Mehr Sonnenstunden"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Netzfrequenz und Wetter haben mit der Lieferkette nichts zu tun.",
+       "id": "bess.m7.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "bess.m7.l3",
+     "title": "EU-Batterieverordnung und Nachhaltigkeit",
+     "min": 5,
+     "body": [
+      "Die EU-Batterieverordnung (EU) 2023/1542 regelt Batterien über den ganzen Lebenszyklus. Sie trat am 17. August 2023 in Kraft und gilt grundsätzlich seit 18. Februar 2024; die Pflichten sind gestaffelt.",
+      "## Wichtige Pflichten für Industriebatterien",
+      "Ab 18. Februar 2027 braucht jede in Verkehr gebrachte Industriebatterie mit mehr als 2 kWh einen digitalen Batteriepass (elektronische Akte, über QR-Code abrufbar). Er enthält Angaben zu Herkunft, Zusammensetzung, Leistung und Haltbarkeit. Die Sorgfaltspflichten für Rohstoffe in der Lieferkette wurden auf den 18. August 2027 verschoben. Erklärungen zum CO₂-Fußabdruck gelten zuerst für Batterien von Elektrofahrzeugen; für Industriebatterien folgen sie gestaffelt (Frist im Verordnungstext prüfen).",
+      "## Deutschland",
+      "In Deutschland wurde das alte Batteriegesetz laut IHK am 7. Oktober 2025 durch das Batterierecht-Durchführungsgesetz (BattDG) ersetzt.",
+      "## Am Lebensende",
+      "Hersteller haben Rücknahmepflichten. Alte Batterien werden recycelt; Rohstoffe wie Lithium, Kupfer und Aluminium werden zurückgewonnen. Ein Second Life (Weiterverwendung von E-Auto-Batterien in stationären Speichern) ist möglich, aber technisch und wirtschaftlich anspruchsvoll."
+     ],
+     "key": [
+      "EU-Batterieverordnung 2023/1542: gilt seit 18.2.2024, Pflichten gestaffelt.",
+      "Batteriepass ab 18.2.2027 für Industriebatterien > 2 kWh.",
+      "Sorgfaltspflichten verschoben auf 18.8.2027.",
+      "DE: BattDG ersetzt das Batteriegesetz (7.10.2025)."
+     ],
+     "src": [
+      {
+       "n": "WKO: EU-Batterienverordnung 2023/1542 – Überblick und Fristen",
+       "u": "https://www.wko.at/abfall/neue-eu-batterienverordnung-verlautbart-2023-1542-eu"
+      },
+      {
+       "n": "IHK Halle-Dessau: EU-Batterieverordnung und Batterierecht-Durchführungsgesetz",
+       "u": "https://www.ihk.de/halle/produktmarken/umwelt-und-energie/elektrogeraete-und-batterien/eu-batterieverordnung-in-arbeit-5683656"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m7.l3.k1",
+       "f": "EU-Batterieverordnung",
+       "b": "(EU) 2023/1542: Regeln für Batterien über den ganzen Lebenszyklus; gilt seit 18.2.2024."
+      },
+      {
+       "id": "bess.m7.l3.k2",
+       "f": "Batteriepass",
+       "b": "Digitale Akte mit QR-Code; Pflicht ab 18.2.2027 für Industriebatterien über 2 kWh."
+      },
+      {
+       "id": "bess.m7.l3.k3",
+       "f": "Sorgfaltspflichten",
+       "b": "Prüfung der Rohstofflieferkette; Beginn verschoben auf 18.8.2027."
+      },
+      {
+       "id": "bess.m7.l3.k4",
+       "f": "BattDG",
+       "b": "Batterierecht-Durchführungsgesetz; ersetzt in DE das Batteriegesetz (laut IHK seit 7.10.2025)."
+      },
+      {
+       "id": "bess.m7.l3.k5",
+       "f": "Second Life",
+       "b": "Weiterverwendung gebrauchter Fahrzeugbatterien in stationären Speichern."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Ab wann brauchen Industriebatterien mit mehr als 2 kWh einen digitalen Batteriepass?",
+       "o": [
+        "Ab 18. Februar 2027",
+        "Ab 1. Januar 2024",
+        "Ab 2035",
+        "Nie, nur Autobatterien"
+       ],
+       "a": 0,
+       "e": "Der Pass ist über einen QR-Code abrufbar.",
+       "id": "bess.m7.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Seit wann gilt die EU-Batterieverordnung grundsätzlich?",
+       "o": [
+        "Seit 18. Februar 2024",
+        "Seit 1990",
+        "Ab 2030",
+        "Sie ist noch nicht in Kraft"
+       ],
+       "a": 0,
+       "e": "In Kraft getreten ist sie am 17. August 2023; die Pflichten sind gestaffelt.",
+       "id": "bess.m7.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Auf wann wurden die Sorgfaltspflichten für Rohstoffe verschoben?",
+       "o": [
+        "Auf den 18. August 2027",
+        "Auf den 1. Januar 2024",
+        "Auf 2040",
+        "Sie wurden gestrichen"
+       ],
+       "a": 0,
+       "e": "Die Verschiebung betrug zwei Jahre.",
+       "id": "bess.m7.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Für welche Batterien gilt die Erklärung zum CO₂-Fußabdruck zuerst?",
+       "o": [
+        "Für Batterien von Elektrofahrzeugen",
+        "Für Hausspeicher",
+        "Für Knopfzellen",
+        "Für alle gleichzeitig"
+       ],
+       "a": 0,
+       "e": "Für Industriebatterien folgen die Pflichten gestaffelt.",
+       "id": "bess.m7.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist mit Second Life gemeint?",
+       "o": [
+        "Gebrauchte E-Auto-Batterien in stationären Speichern weiterverwenden",
+        "Den Speicher zweimal am Tag laden",
+        "Eine zweite Baugenehmigung",
+        "Eine Versicherung"
+       ],
+       "a": 0,
+       "e": "Möglich, aber wegen uneinheitlicher Batterien technisch und wirtschaftlich anspruchsvoll.",
+       "id": "bess.m7.l3.q5"
+      },
+      {
+       "t": "mc",
+       "q": "Welches Gesetz ersetzt in Deutschland laut IHK das Batteriegesetz?",
+       "o": [
+        "Das Batterierecht-Durchführungsgesetz (BattDG)",
+        "Das EnWG",
+        "Das StromStG",
+        "Das BauGB"
+       ],
+       "a": 0,
+       "e": "Laut IHK seit 7. Oktober 2025.",
+       "id": "bess.m7.l3.q6"
+      }
+     ]
+    },
+    {
+     "id": "bess.m7.l4",
+     "title": "Herausforderungen der Branche",
+     "min": 4,
+     "body": [
+      "Der Speichermarkt wächst, aber Projektentwickler stehen vor mehreren gleichzeitigen Herausforderungen.",
+      "## Die großen Themen (Stand 2026)",
+      "Erstens der Netzanschluss: viel mehr Anfragen als Kapazität. Zweitens sinkende Erlöse in einzelnen Märkten durch Kannibalisierung, etwa bei FCR. Drittens regulatorische Unsicherheit: Netzentgelte (AgNes), Baukostenzuschuss, Steuern und Baurecht haben sich 2025/2026 mehrfach geändert. Viertens Finanzierung: Banken verlangen planbare Erlöse. Fünftens Akzeptanz vor Ort, vor allem beim Brandschutz. Sechstens Abhängigkeit von Lieferketten.",
+      "## Was hilft",
+      "Frühe Sicherung von Netzanschluss und Fläche, robuste Business Cases mit Szenarien, Verträge mit klarer Risikoverteilung, offene Kommunikation mit Gemeinden und laufende Beobachtung der Regulierung."
+     ],
+     "key": [
+      "Netzanschluss, Kannibalisierung, Regulierung, Finanzierung, Akzeptanz, Lieferkette.",
+      "Regeln haben sich 2025/2026 mehrfach geändert.",
+      "Robuste Szenarien und klare Verträge helfen."
+     ],
+     "src": [
+      {
+       "n": "pv magazine (08/2026): Netzanschlüsse für Batteriespeicher – 574 GW angefragt, 54 GW zugesagt",
+       "u": "https://www.pv-magazine.de/2026/08/25/netzanschluesse-fuer-batteriespeicher-574-gigawatt-angefragt-54-gigawatt-zugesagt/"
+      },
+      {
+       "n": "pv magazine (01/2026): Erlöspotenziale für Batteriespeicher sind 2025 zurückgegangen",
+       "u": "https://www.pv-magazine.de/2026/01/23/erloespotenziale-fuer-stationaere-batteriespeicher-in-deutschland-sind-2025-zurueckgegangen/"
+      },
+      {
+       "n": "Fieldfisher: BNetzA schwenkt um – vorerst kein Ende des Netzentgeltprivilegs (AgNes)",
+       "u": "https://www.fieldfisher.com/de-de/locations/germany/insights/bnetza-schwenkt-um-doch-vorerst-kein-ende-des-netzentgeltprivilegs-fuer-batteriespeicher"
+      },
+      {
+       "n": "CMS: BGH – Baukostenzuschüsse für Batteriespeicher sind zulässig (EnVR 1/24, 15.07.2025)",
+       "u": "https://cms.law/de/deu/legal-updates/bgh-baukostenzuschuesse-fuer-batteriespeicher-sind-zulaessig"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m7.l4.k1",
+       "f": "Regulatorisches Risiko",
+       "b": "Risiko, dass sich Regeln (Netzentgelte, Steuern, Baurecht) während der Projektlaufzeit ändern."
+      },
+      {
+       "id": "bess.m7.l4.k2",
+       "f": "Akzeptanz",
+       "b": "Zustimmung der Gemeinde und Anwohner; oft geprägt von Brand- und Lärmfragen."
+      }
+     ],
+     "qs": [
+      {
+       "t": "multi",
+       "q": "Welche Herausforderungen nennt die Branche 2026 für Großspeicher? (mehrere richtig)",
+       "o": [
+        "Knappe Netzanschlüsse",
+        "Sinkende Erlöse in gesättigten Märkten",
+        "Regulatorische Unsicherheit",
+        "Zu viel verfügbare Netzkapazität",
+        "Zu hohe FCR-Erlöse"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Netzkapazität ist knapp, FCR-Erlöse sind stark gefallen.",
+       "id": "bess.m7.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Regelbereiche haben sich 2025/2026 für Speicher mehrfach geändert?",
+       "o": [
+        "Netzentgelte, Baukostenzuschuss, Stromsteuer und Baurecht",
+        "Nur die Zellchemie",
+        "Nur die Farbe der Container",
+        "Nichts hat sich geändert"
+       ],
+       "a": 0,
+       "e": "Deshalb gehört die laufende Beobachtung der Regulierung zum Projektmanagement.",
+       "id": "bess.m7.l4.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was hilft gegen Akzeptanzprobleme vor Ort?",
+       "o": [
+        "Frühe, offene Kommunikation mit Gemeinde und Anwohnern",
+        "Möglichst spät informieren",
+        "Den Speicher verstecken",
+        "Auf Brandschutz verzichten"
+       ],
+       "a": 0,
+       "e": "Brand und Lärm sind fast immer die ersten Fragen.",
+       "id": "bess.m7.l4.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wie begegnet man unsicheren Annahmen im Business Case?",
+       "o": [
+        "Mit Szenarien und robusten Verträgen",
+        "Mit einer einzigen optimistischen Rechnung",
+        "Indem man Annahmen weglässt",
+        "Indem man nur den besten Fall zeigt"
+       ],
+       "a": 0,
+       "e": "Banken prüfen gerade die schlechten Fälle.",
+       "id": "bess.m7.l4.q4"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "bess.m8",
    "level": 3,
    "title": "Forschung & neue Konzepte",
    "desc": "Virtuelle Speicher, neue Zellchemien, aktuelle Studienlage.",
-   "lessons": []
+   "lessons": [
+    {
+     "id": "bess.m8.l1",
+     "title": "Virtuelle Speicher: Wie funktionieren sie?",
+     "min": 5,
+     "body": [
+      "Ein virtueller Speicher ist kein einzelnes Gerät. Mehrere reale Speicher an verschiedenen Standorten werden über eine Software zu einem Portfolio gebündelt. Der Abnehmer steuert nicht einen bestimmten Speicher, sondern eine zugesagte Leistung und Energie aus dem Portfolio.",
+      "## Beispiel aus der Praxis",
+      "Terralayr bündelt acht dezentrale Großspeicher in Deutschland über die Plattform „LAYR“ zu einem virtuellen Portfolio. Vattenfall nutzt daraus 55 MW Flexibilität für Stromhandel und Regelenergie; der Hochlauf erfolgte 2026 stufenweise (erste 5 MW im Januar). Schon 2025 meldete RWE, ab 2026 für fünf Jahre eine virtuelle Batterie mit 50 MW bzw. 100 MWh von Terralayr zu vermarkten.",
+      "## Vorteile",
+      "Für den Abnehmer: Ausfall eines Standorts trifft ihn weniger, Kapazität lässt sich flexibel zusammenstellen. Für Speicherbesitzer: Zugang zu großen Abnehmern über Toll-Verträge, auch mit kleineren Anlagen.",
+      "## Abgrenzung",
+      "Ähnlich, aber nicht gleich ist das virtuelle Kraftwerk: Es bündelt viele kleine dezentrale Anlagen (z. B. Heimspeicher, Wärmepumpen, Biogas) und vermarktet sie gemeinsam."
+     ],
+     "key": [
+      "Virtueller Speicher = mehrere reale Speicher als ein Portfolio.",
+      "Abnehmer kauft zugesagte Leistung/Energie, nicht einen Standort.",
+      "Beispiel: Terralayr/Vattenfall 55 MW aus 8 Speichern (2026).",
+      "Virtuelles Kraftwerk = viele kleine Anlagen gemeinsam vermarktet."
+     ],
+     "src": [
+      {
+       "n": "Solarserver (08/2026): Virtueller Batterie-Toll – 55 MW für Vattenfall",
+       "u": "https://www.solarserver.de/2026/08/19/virtueller-batterie-toll-55-mw-fuer-vattenfall/"
+      },
+      {
+       "n": "Solarserver (05/2025): RWE vermarktet virtuelle 50-MW-Batterie von Terralayr",
+       "u": "https://www.solarserver.de/2025/05/28/rwe-vermarktet-virtuelle-50-mw-batterie-von-terralayr/"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m8.l1.k1",
+       "f": "Virtueller Speicher",
+       "b": "Bündelung mehrerer realer Speicher per Software zu einem steuerbaren Portfolio."
+      },
+      {
+       "id": "bess.m8.l1.k2",
+       "f": "Multi-Asset-Toll",
+       "b": "Toll-Vertrag über ein Portfolio mehrerer Speicher statt einer einzelnen Anlage."
+      },
+      {
+       "id": "bess.m8.l1.k3",
+       "f": "Virtuelles Kraftwerk",
+       "b": "Bündelung vieler kleiner dezentraler Anlagen zur gemeinsamen Vermarktung."
+      },
+      {
+       "id": "bess.m8.l1.k4",
+       "f": "Terralayr / LAYR",
+       "b": "Anbieter und Plattform, die 2026 acht Speicher zu einem virtuellen Portfolio für Vattenfall bündeln (55 MW)."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist ein virtueller Speicher?",
+       "o": [
+        "Ein per Software gebündeltes Portfolio mehrerer realer Speicher",
+        "Ein Speicher, der nur im Computer simuliert wird",
+        "Ein Speicher ohne Batterie",
+        "Ein Cloud-Speicher für Daten"
+       ],
+       "a": 0,
+       "e": "Die Speicher sind real, nur die Steuerung ist gebündelt.",
+       "id": "bess.m8.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was steuert der Abnehmer bei einem virtuellen Speicher?",
+       "o": [
+        "Eine zugesagte Leistung und Energie aus dem Portfolio",
+        "Einen bestimmten einzelnen Speicher",
+        "Die Zellchemie",
+        "Den Netzbetreiber"
+       ],
+       "a": 0,
+       "e": "Welcher Standort liefert, entscheidet die Plattform.",
+       "id": "bess.m8.l1.q2"
+      },
+      {
+       "t": "num",
+       "q": "Wie viel MW Flexibilität nutzt Vattenfall laut Solarserver (08/2026) aus dem virtuellen Portfolio von Terralayr?",
+       "a": 55,
+       "unit": "MW",
+       "tol": 0,
+       "e": "55 MW aus acht dezentralen Großspeichern in Deutschland.",
+       "id": "bess.m8.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Vorteil ergibt sich für den Abnehmer eines virtuellen Speichers?",
+       "o": [
+        "Der Ausfall eines einzelnen Standorts trifft ihn weniger",
+        "Er braucht keine Verträge",
+        "Er erhält Strom kostenlos",
+        "Er muss keine Regelleistung präqualifizieren"
+       ],
+       "a": 0,
+       "e": "Das Risiko verteilt sich auf mehrere Anlagen.",
+       "id": "bess.m8.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was unterscheidet ein virtuelles Kraftwerk von einem virtuellen Speicher?",
+       "o": [
+        "Es bündelt viele kleine Anlagen unterschiedlicher Art, nicht nur Großspeicher",
+        "Es hat keine Software",
+        "Es arbeitet nur mit Kohle",
+        "Es gibt keinen Unterschied"
+       ],
+       "a": 0,
+       "e": "Beispiele: Heimspeicher, Wärmepumpen, Biogasanlagen.",
+       "id": "bess.m8.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "bess.m8.l2",
+     "title": "Neue Zellchemien und Langzeitspeicher",
+     "min": 5,
+     "body": [
+      "## Natrium-Ionen",
+      "Natrium-Ionen-Zellen kommen ohne Lithium aus. Sie gelten als günstig und rohstoffsicher, haben aber eine geringere Energiedichte als LFP. Im stationären Bereich, wo Gewicht weniger zählt, gelten sie als aussichtsreich; der Marktanteil ist (Stand 2026) noch klein.",
+      "## Festkörperbatterien",
+      "Festkörperbatterien ersetzen den flüssigen Elektrolyten durch einen festen. Sie versprechen mehr Energiedichte und Sicherheit und werden vor allem für Elektroautos entwickelt. Für stationäre Speicher spielen sie heute praktisch keine Rolle.",
+      "## Langzeitspeicher",
+      "Lithium-Ionen-Speicher sind für Stunden ausgelegt. Für längere Zeiträume werden andere Technologien erforscht oder erprobt: Redox-Flow-Batterien (Energie in flüssigen Elektrolyten in Tanks, Leistung und Energie getrennt skalierbar), Eisen-Luft-Batterien (sehr günstige Rohstoffe, Dauer über viele Stunden bis Tage, niedriger Wirkungsgrad) sowie thermische und mechanische Speicher.",
+      "## Einordnung",
+      "Neue Technologien müssen sich an Kosten, Lebensdauer, Sicherheit und Bankability messen lassen. Banken finanzieren lieber erprobte Technik; das bremst Neuheiten."
+     ],
+     "key": [
+      "Natrium-Ionen: günstig, rohstoffsicher, geringere Energiedichte.",
+      "Festkörper: vor allem E-Auto, stationär heute kaum relevant.",
+      "Langzeit: Redox-Flow, Eisen-Luft u. a.",
+      "Neue Technik braucht Bankability."
+     ],
+     "src": [
+      {
+       "n": "Battery University, BU-205: Types of Lithium-ion",
+       "u": "https://batteryuniversity.com/article/types-of-lithium-ion"
+      },
+      {
+       "n": "Allgemeines Fachwissen der Energiewirtschaft (Definitionen); vertiefend: EWI- und dena-Analysen 2026",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m8.l2.k1",
+       "f": "Redox-Flow-Batterie",
+       "b": "Energie in flüssigen Elektrolyten in Tanks; Leistung und Energie getrennt skalierbar."
+      },
+      {
+       "id": "bess.m8.l2.k2",
+       "f": "Eisen-Luft-Batterie",
+       "b": "Langzeitspeicher mit sehr günstigen Rohstoffen, lange Dauer, niedriger Wirkungsgrad."
+      },
+      {
+       "id": "bess.m8.l2.k3",
+       "f": "Festkörperbatterie",
+       "b": "Fester statt flüssiger Elektrolyt; vor allem für E-Autos in Entwicklung."
+      },
+      {
+       "id": "bess.m8.l2.k4",
+       "f": "Langzeitspeicher",
+       "b": "Speicher für viele Stunden bis Tage oder länger."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist das Besondere an Redox-Flow-Batterien?",
+       "o": [
+        "Leistung und Energie lassen sich getrennt skalieren",
+        "Sie haben die höchste Energiedichte",
+        "Sie brauchen keinen Elektrolyten",
+        "Sie bestehen aus Lithium-Metall"
+       ],
+       "a": 0,
+       "e": "Mehr Energie heißt einfach größere Tanks.",
+       "id": "bess.m8.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür werden Festkörperbatterien heute vor allem entwickelt?",
+       "o": [
+        "Für Elektroautos",
+        "Für Großspeicher am Netz",
+        "Für Pumpspeicher",
+        "Für Uhren"
+       ],
+       "a": 0,
+       "e": "Stationär spielen sie praktisch noch keine Rolle.",
+       "id": "bess.m8.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein typischer Nachteil von Eisen-Luft-Batterien?",
+       "o": [
+        "Ein niedriger Wirkungsgrad",
+        "Sehr teure Rohstoffe",
+        "Nur wenige Minuten Speicherdauer",
+        "Sie brauchen Kobalt"
+       ],
+       "a": 0,
+       "e": "Dafür sind die Rohstoffe sehr günstig und lange Dauern möglich.",
+       "id": "bess.m8.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was bremst neue Speichertechnologien oft, auch wenn sie technisch vielversprechend sind?",
+       "o": [
+        "Fehlende Bankability: Banken finanzieren lieber erprobte Technik",
+        "Ein gesetzliches Verbot",
+        "Fehlendes Interesse der Forschung",
+        "Zu hohe Netzfrequenz"
+       ],
+       "a": 0,
+       "e": "Erst Referenzprojekte schaffen Vertrauen.",
+       "id": "bess.m8.l2.q4"
+      },
+      {
+       "t": "order",
+       "q": "Ordne nach typischer Speicherdauer, die kürzeste zuerst.",
+       "o": [
+        "Lithium-Ionen-Großspeicher",
+        "Redox-Flow-Batterie",
+        "Eisen-Luft-Batterie"
+       ],
+       "e": "Lithium-Ionen meist 1–4 Stunden, Redox-Flow oft länger, Eisen-Luft zielt auf viele Stunden bis Tage. Typische Werte; Einzelprojekte weichen ab.",
+       "id": "bess.m8.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "bess.m8.l3",
+     "title": "Netzbildende Speicher und Systemstabilität",
+     "min": 5,
+     "body": [
+      "Früher lieferten große Kraftwerke mit rotierenden Generatoren die Momentanreserve: Ihre Schwungmasse dämpft Frequenzänderungen automatisch. Mit weniger Großkraftwerken fehlt diese Trägheit zunehmend.",
+      "## Netzfolgend und netzbildend",
+      "Die meisten Wechselrichter sind netzfolgend (grid-following): Sie richten sich nach Spannung und Frequenz des Netzes. Netzbildende Wechselrichter (grid-forming) geben selbst eine Spannung vor und können sich wie eine Spannungsquelle verhalten. Damit können Speicher Momentanreserve nachbilden, das Netz in schwachen Bereichen stützen und beim Wiederaufbau nach einem Ausfall helfen.",
+      "## Stand",
+      "Netzbildende Speicher sind ein aktuelles Thema bei Netzbetreibern, Herstellern und in der Forschung. Anforderungen und Vergütung für solche Dienste werden derzeit entwickelt; vor Projektentscheidungen den aktuellen Stand der Netzbetreiber-Anforderungen prüfen."
+     ],
+     "key": [
+      "Momentanreserve kam früher von rotierenden Generatoren.",
+      "Netzfolgend: folgt dem Netz. Netzbildend: gibt Spannung vor.",
+      "Netzbildende Speicher können Trägheit nachbilden und Netze stützen.",
+      "Anforderungen und Vergütung entstehen gerade."
+     ],
+     "src": [
+      {
+       "n": "Allgemeines Fachwissen der Energiewirtschaft (Definitionen); vertiefend: EWI- und dena-Analysen 2026",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      },
+      {
+       "n": "dena (2026): Analyse Großbatteriespeicher",
+       "u": "https://www.dena.de/fileadmin/dena/Publikationen/PDFs/2026/Analyse_Grossbatteriespeicher_UA.pdf"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m8.l3.k1",
+       "f": "Momentanreserve",
+       "b": "Sofortige Dämpfung von Frequenzänderungen durch Trägheit, früher durch rotierende Generatoren."
+      },
+      {
+       "id": "bess.m8.l3.k2",
+       "f": "Grid-following",
+       "b": "Netzfolgender Wechselrichter: richtet sich nach Spannung und Frequenz des Netzes."
+      },
+      {
+       "id": "bess.m8.l3.k3",
+       "f": "Grid-forming",
+       "b": "Netzbildender Wechselrichter: gibt selbst Spannung vor, kann Trägheit nachbilden."
+      },
+      {
+       "id": "bess.m8.l3.k4",
+       "f": "Schwarzstart",
+       "b": "Wiederaufbau des Netzes nach einem großflächigen Ausfall."
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Woher kam früher die Momentanreserve im Stromnetz?",
+       "o": [
+        "Aus der Schwungmasse rotierender Generatoren großer Kraftwerke",
+        "Aus Batteriespeichern",
+        "Aus Solarmodulen",
+        "Aus Stromzählern"
+       ],
+       "a": 0,
+       "e": "Mit weniger Großkraftwerken sinkt diese Trägheit.",
+       "id": "bess.m8.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was unterscheidet einen netzbildenden von einem netzfolgenden Wechselrichter?",
+       "o": [
+        "Er gibt selbst eine Spannung vor, statt nur dem Netz zu folgen",
+        "Er arbeitet nur nachts",
+        "Er braucht keine Batterie",
+        "Er ist immer kleiner"
+       ],
+       "a": 0,
+       "e": "Damit kann er Trägheit nachbilden und schwache Netze stützen.",
+       "id": "bess.m8.l3.q2"
+      },
+      {
+       "t": "multi",
+       "q": "Wobei können netzbildende Speicher helfen? (mehrere richtig)",
+       "o": [
+        "Momentanreserve nachbilden",
+        "Schwache Netzbereiche stützen",
+        "Beim Netzwiederaufbau nach einem Ausfall",
+        "Die Stromsteuer senken",
+        "Die Zellalterung stoppen"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Steuern und Alterung haben damit nichts zu tun.",
+       "id": "bess.m8.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wie ist der Stand bei Anforderungen und Vergütung für netzbildende Speicher (2026)?",
+       "o": [
+        "Sie werden derzeit entwickelt; aktuellen Stand prüfen",
+        "Sie sind seit Jahrzehnten fest geregelt",
+        "Sie sind verboten",
+        "Es gibt keinen Bedarf"
+       ],
+       "a": 0,
+       "e": "Ein aktives Feld bei Netzbetreibern, Herstellern und Forschung.",
+       "id": "bess.m8.l3.q4"
+      }
+     ]
+    },
+    {
+     "id": "bess.m8.l4",
+     "title": "Studienlage: Wie liest man Analysen richtig?",
+     "min": 4,
+     "body": [
+      "Zum Thema Großspeicher erscheinen laufend Studien von Forschungsinstituten, Agenturen, Banken und Beratungen. 2026 zum Beispiel ein Endbericht des EWI Köln zum Einsatz von Großbatteriespeichern, eine Analyse der dena und ein Fokus-Papier von KfW Research.",
+      "## Kritisch lesen",
+      "Wichtige Fragen an jede Studie: Wer hat sie beauftragt und finanziert? Welche Annahmen stecken drin (Preise, Ausbau, Regulierung)? Welcher Stichtag gilt? Welche Abgrenzung (Heim-, Groß-, alle Speicher)? Sind die Ergebnisse Szenarien oder Prognosen?",
+      "## Daten statt Meinungen",
+      "Primärdaten (Bundesnetzagentur, Marktstammdatenregister, Börsen, Übertragungsnetzbetreiber) sind verlässlicher als Zusammenfassungen in Pressemitteilungen. Fachmedien sind schnell, aber nicht immer vollständig; Kanzlei- und Verbandstexte sind sachkundig, vertreten aber oft Interessen.",
+      "## In diesem Kurs",
+      "Alle Lektionen nennen ihre Quellen und den Stand. Viele Quellen sind Fachpresse oder Kanzleibeiträge; vor Entscheidungen immer den Primärtext prüfen."
+     ],
+     "key": [
+      "Auftraggeber, Annahmen, Stichtag, Abgrenzung prüfen.",
+      "Szenario ≠ Prognose.",
+      "Primärdaten vor Zusammenfassungen.",
+      "Fachpresse schnell, Kanzleien/Verbände sachkundig, aber interessengeleitet."
+     ],
+     "src": [
+      {
+       "n": "EWI Köln (04/2026): Endbericht Einsatz von Großbatteriespeichern",
+       "u": "https://www.ewi.uni-koeln.de/cms/wp-content/uploads/2026/05/20260430_Endbericht_Einsatz_von_Grossbatteriespeichern.pdf"
+      },
+      {
+       "n": "dena (2026): Analyse Großbatteriespeicher",
+       "u": "https://www.dena.de/fileadmin/dena/Publikationen/PDFs/2026/Analyse_Grossbatteriespeicher_UA.pdf"
+      },
+      {
+       "n": "KfW Research, Fokus Nr. 555 (08/2026): Batteriespeicher",
+       "u": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-Fokus-Volkswirtschaft/Fokus-2026/Fokus-Nr.-555-August-2026-Batteriespeicher.pdf"
+      }
+     ],
+     "cards": [
+      {
+       "id": "bess.m8.l4.k1",
+       "f": "Szenario",
+       "b": "Was-wäre-wenn-Rechnung unter bestimmten Annahmen; keine Vorhersage."
+      },
+      {
+       "id": "bess.m8.l4.k2",
+       "f": "Prognose",
+       "b": "Erwartete Entwicklung; ebenfalls annahmenabhängig."
+      },
+      {
+       "id": "bess.m8.l4.k3",
+       "f": "Primärdaten",
+       "b": "Daten direkt von der Quelle, z. B. BNetzA, Marktstammdatenregister, Börse."
+      },
+      {
+       "id": "bess.m8.l4.k4",
+       "f": "Interessengeleitete Quelle",
+       "b": "Text, der (auch) die Position eines Auftraggebers oder Verbands vertritt."
+      }
+     ],
+     "qs": [
+      {
+       "t": "multi",
+       "q": "Welche Fragen sollte man jeder Studie stellen? (mehrere richtig)",
+       "o": [
+        "Wer hat sie beauftragt?",
+        "Welche Annahmen stecken drin?",
+        "Welcher Stichtag gilt?",
+        "Wie schön ist das Titelbild?",
+        "Wie viele Seiten hat sie?"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Länge und Gestaltung sagen nichts über die Qualität.",
+       "id": "bess.m8.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist der Unterschied zwischen Szenario und Prognose?",
+       "o": [
+        "Ein Szenario rechnet Annahmen durch, eine Prognose beschreibt die erwartete Entwicklung",
+        "Es gibt keinen Unterschied",
+        "Ein Szenario ist immer richtig",
+        "Eine Prognose braucht keine Annahmen"
+       ],
+       "a": 0,
+       "e": "Beide hängen von Annahmen ab.",
+       "id": "bess.m8.l4.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Quelle ist für die Zahl der in Deutschland registrierten Speicher am verlässlichsten?",
+       "o": [
+        "Primärdaten wie das Marktstammdatenregister",
+        "Ein Social-Media-Beitrag",
+        "Eine Werbebroschüre",
+        "Ein Forumsbeitrag"
+       ],
+       "a": 0,
+       "e": "Auch Primärdaten haben Grenzen, etwa Meldeverzug.",
+       "id": "bess.m8.l4.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist bei Kanzlei- und Verbandstexten zu beachten?",
+       "o": [
+        "Sie sind sachkundig, vertreten aber oft Interessen",
+        "Sie sind immer neutral",
+        "Sie sind immer falsch",
+        "Sie dürfen nicht zitiert werden"
+       ],
+       "a": 0,
+       "e": "Deshalb vor Entscheidungen den Primärtext prüfen.",
+       "id": "bess.m8.l4.q4"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
