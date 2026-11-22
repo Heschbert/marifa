@@ -183,6 +183,10 @@ course = {
 for m in course["modules"]:
     if m["id"] in ("bess.m3", "bess.m4", "bess.m5", "bess.m7"):
         for l in m["lessons"]: l["vol"] = True
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import kurs_antworten
+print("Antworten angeglichen:", kurs_antworten.anwenden(course))
+print("Bilder:", kurs_antworten.bilder(course))
 json.dump(course, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
 # data/courses/index.json wird von Hand gepflegt (alle Kurse)
 al=[l for m in course["modules"] for l in m["lessons"]]

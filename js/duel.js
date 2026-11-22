@@ -89,7 +89,7 @@
     var p = cur(), q = G.qs[G.i], x = q.x, pk = G.picks[order()[G.turn]] || {};
     var h = '<div class="topbar"><span class="chip pchip p' + p.c + '">' + av(p) + esc(p.name) + '</span><span class="chip">' + (G.i + 1) + " / " + G.qs.length + "</span></div>";
     if (q.t === "est") {
-      h += '<div class="qmeta">Schätzfrage · ' + esc(x.c) + '</div><p class="q">' + esc(x.q) + "</p>" +
+      h += '<div class="qmeta">Schätzfrage · ' + esc(x.c) + '</div><p class="q">' + WF.util.qh(x) + "</p>" +
         '<form id="destf">' + WF.est.inputFor(x, "destv") + '<p class="small mute" id="desterr" aria-live="polite"></p><button type="submit" class="btn primary">Schätzung abgeben</button></form>';
       ui.show(h, null);
       var inp = document.getElementById("destv"); if (inp) try { inp.focus(); } catch (e) {}
@@ -101,12 +101,12 @@
       });
       return;
     }
-    h += '<div class="qmeta">' + esc(x.c) + " · " + esc(x.s) + '</div><p class="q">' + esc(x.q) + "</p>";
+    h += '<div class="qmeta">' + esc(x.c) + " · " + esc(x.s) + '</div><p class="q">' + WF.util.qh(x) + "</p>";
     if (p.joker && !pk.hidden) h += '<div class="helps"><button data-act="djok">50:50-Joker einsetzen (1)</button></div>';
     h += '<div id="opts" role="group" aria-label="Antworten">';
     x.opts.forEach(function (o, i) {
       var gone = pk.hidden && pk.hidden.indexOf(i) >= 0;
-      h += '<button class="ans' + (gone ? " gone" : "") + (sel === i ? " sel" : "") + '" data-act="dpick" data-i="' + i + '"' + (gone ? " disabled" : "") + ' aria-pressed="' + (sel === i) + '">' + esc(o.t) + "</button>";
+      h += '<button class="ans' + (gone ? " gone" : "") + (sel === i ? " sel" : "") + '" data-act="dpick" data-i="' + i + '"' + (gone ? " disabled" : "") + ' aria-pressed="' + (sel === i) + '">' + WF.util.ot(o.t) + "</button>";
     });
     h += "</div>";
     if (G.c.mode === "bet" && sel !== undefined) {
@@ -141,12 +141,12 @@
         var pts = r.off === best ? 2 : r.p >= 2 ? 1 : 0;
         delta[i] = pts; G.pl[i].score += pts; G.pl[i].estPts += pts; rec.res[i] = pts > 0;
       });
-      h = '<div class="qmeta">Auflösung · Schätzfrage</div><p class="q">' + esc(x.q) + '</p><div class="fb ok"><b class="h">Richtig: ' + esc(WF.est.answerText(x)) + "</b>" +
+      h = '<div class="qmeta">Auflösung · Schätzfrage</div><p class="q">' + WF.util.qh(x) + '</p><div class="fb ok"><b class="h">Richtig: ' + esc(WF.est.answerText(x)) + "</b>" +
         '<ol class="estlist">' + G.pl.map(function (p, i) { return { p: p, i: i, r: sc[i] }; }).sort(function (a, b) { return a.r.off - b.r.off; }).map(function (o) {
           return "<li>" + av(o.p) + "<b>" + esc(o.p.name) + "</b>: " + esc(WF.est.fmt(G.picks[o.i].v)) + (x.u ? " " + esc(x.u) : "") + ' <span class="small mute">' + esc(o.r.txt) + "</span>" + (delta[o.i] ? ' <span class="delta up">+' + delta[o.i] + "</span>" : "") + "</li>";
         }).join("") + "</ol>" + (x.e ? '<p class="small">' + esc(x.e) + "</p>" : "") + '<p class="small mute">Am nächsten dran: 2 Punkte. Höchstens 10 % daneben: 1 Punkt.</p></div>';
     } else {
-      h = '<div class="qmeta">Auflösung · ' + esc(x.c) + '</div><p class="q">' + esc(x.q) + "</p>";
+      h = '<div class="qmeta">Auflösung · ' + esc(x.c) + '</div><p class="q">' + WF.util.qh(x) + "</p>";
       G.picks.forEach(function (pk, i) {
         var p = G.pl[i], ok = x.opts[pk.i].ok, bet = G.c.mode === "bet" ? pk.bet || 1 : 1;
         p.mcN++;
@@ -155,13 +155,13 @@
       });
       x.opts.forEach(function (o, i) {
         var who = G.pl.filter(function (p, k) { return G.picks[k].i === i; });
-        h += '<div class="ans ' + (o.ok ? "ok" : who.length ? "bad" : "dim") + '">' + esc(o.t) + (who.length ? '<div class="who">' + who.map(function (p) {
+        h += '<div class="ans ' + (o.ok ? "ok" : who.length ? "bad" : "dim") + '">' + WF.util.ot(o.t) + (who.length ? '<div class="who">' + who.map(function (p) {
           var pk = G.picks[p.c]; return '<span class="whochip p' + p.c + '">' + esc(p.name) + (G.c.mode === "bet" ? " · Einsatz " + pk.bet : "") + (pk.fifty ? " · 50:50" : "") + "</span>"; }).join("") + "</div>" : "") + "</div>";
       });
       h += '<div class="fb">' + (x.e ? "<p>" + esc(x.e) + "</p>" : "");
       var whys = {};
       G.picks.forEach(function (pk) { var o = x.opts[pk.i]; if (!o.ok && o.why) whys[o.t] = o.why; });
-      Object.keys(whys).forEach(function (t) { h += '<p class="small"><b>Warum nicht „' + esc(t) + '“?</b> ' + esc(whys[t]) + "</p>"; });
+      Object.keys(whys).forEach(function (t) { h += '<p class="small"><b>Warum nicht ' + WF.util.oq(t) + '?</b> ' + esc(whys[t]) + "</p>"; });
       h += "</div>";
     }
     G.hist.push(rec);

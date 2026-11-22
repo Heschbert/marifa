@@ -108,8 +108,8 @@
        "q": "Welche Einheit beschreibt die gespeicherte Energiemenge?",
        "o": [
         "MWh",
-        "MW",
-        "kV",
+        "MVA",
+        "kWp",
         "Hz"
        ],
        "a": 0,
@@ -120,10 +120,10 @@
        "t": "mc",
        "q": "Was bedeutet „Behind-the-Meter“?",
        "o": [
-        "Der Speicher steht hinter dem Netzanschluss bzw. Zähler eines Verbrauchers",
-        "Der Speicher steht direkt am Übertragungsnetz",
-        "Der Speicher bietet ausschließlich Regelenergie an",
-        "Der Speicher gehört dem Netzbetreiber"
+        "Hinter dem Zähler eines Verbrauchers",
+        "Direkt am Übertragungsnetz, ohne eigenen Verbraucher",
+        "Ausschließlich zur Bereitstellung von Regelenergie",
+        "Im Besitz und Betrieb des Netzbetreibers"
        ],
        "a": 0,
        "e": "BTM-Speicher stehen beim Verbraucher, z. B. in einem Industriebetrieb, hinter dessen Zähler.",
@@ -164,10 +164,10 @@
        "t": "mc",
        "q": "Welche Aufgabe hat der Umrichter (PCS)?",
        "o": [
-        "Er wandelt zwischen Gleichstrom der Batterie und Wechselstrom des Netzes",
-        "Er überwacht jede einzelne Zellspannung",
-        "Er plant den Fahrplan nach Strompreisen",
-        "Er kühlt die Batteriemodule"
+        "Wandelt Gleich- in Wechselstrom und zurück",
+        "Überwacht jede einzelne Zellspannung im Modul",
+        "Plant den Fahrplan nach aktuellen Strompreisen",
+        "Kühlt die Batteriemodule bei hoher Last"
        ],
        "a": 0,
        "e": "Zellspannungen überwacht das BMS, den Fahrplan macht das EMS, die Kühlung das Thermomanagement.",
@@ -194,6 +194,23 @@
        "a": 0,
        "e": "Das EMS steuert den Betrieb. Das BMS schützt die Zellen und kann das EMS dabei begrenzen.",
        "id": "bess.m1.l1.q8"
+      }
+     ],
+     "figs": [
+      {
+       "src": "img/kurs/bess-aufbau.svg",
+       "cap": "Die Bausteine eines Batteriespeichers.",
+       "after": 2
+      },
+      {
+       "src": "img/kurs/bess-leistung-energie.svg",
+       "cap": "Leistung (Höhe) mal Dauer (Breite) ergibt die Energie (Fläche).",
+       "after": 4
+      },
+      {
+       "src": "img/kurs/bess-btm-ftm.svg",
+       "cap": "Links beim Verbraucher, rechts als eigenständige Anlage am Netz.",
+       "after": 6
       }
      ]
     },
@@ -323,10 +340,10 @@
        "t": "mc",
        "q": "Warum ist die höhere Energiedichte von NMC im stationären Speicher weniger wichtig?",
        "o": [
-        "Gewicht und Platz sind dort meist weniger kritisch als im Fahrzeug",
-        "NMC ist für stationäre Speicher verboten",
-        "Die Energiedichte beeinflusst nur die Ladezeit",
-        "Stationäre Speicher werden nie voll geladen"
+        "Gewicht und Platz sind dort weniger kritisch",
+        "NMC ist für stationäre Anlagen nicht zugelassen",
+        "Energiedichte beeinflusst dort nur die Ladezeit der Zellen",
+        "Stationäre Speicher werden grundsätzlich nie voll geladen"
        ],
        "a": 0,
        "e": "Ein Container auf einer Freifläche darf schwerer und größer sein als eine Batterie im Auto.",
@@ -337,9 +354,9 @@
        "q": "Welche Eigenschaft erschwert bei LFP die Bestimmung des Ladezustands?",
        "o": [
         "Die sehr flache Spannungskurve",
-        "Eine hohe Selbstentladung",
-        "Der Memory-Effekt",
-        "Eine zu hohe Zellspannung"
+        "Eine hohe Selbstentladung im Stillstand",
+        "Der Memory-Effekt bei Teilladungen",
+        "Eine stark schwankende Zellspannung"
        ],
        "a": 0,
        "e": "Weil sich die Spannung kaum ändert, verrät sie wenig über den Ladezustand. Das BMS rechnet deshalb zusätzlich mit Strommessung und Modellen.",
@@ -349,10 +366,10 @@
        "t": "mc",
        "q": "Was ist der wichtigste Vorteil von Natrium-Ionen-Zellen?",
        "o": [
-        "Der Rohstoff Natrium ist reichlich und günstig verfügbar",
-        "Sie haben die höchste Energiedichte aller Zellen",
-        "Sie brauchen keinerlei Batteriemanagement",
-        "Sie haben die doppelte Zellspannung von LFP"
+        "Reichlich und günstig verfügbarer Rohstoff",
+        "Die höchste Energiedichte aller Zellchemien",
+        "Kein Batteriemanagementsystem mehr nötig",
+        "Doppelt so hohe Zellspannung wie LFP"
        ],
        "a": 0,
        "e": "Die Energiedichte liegt unter LFP. Der Vorteil liegt bei Rohstoff und Kosten.",
@@ -471,10 +488,10 @@
        "t": "mc",
        "q": "Was beschreibt der SoH (State of Health)?",
        "o": [
-        "Die heutige Kapazität im Verhältnis zur Anfangskapazität",
-        "Den aktuellen Ladezustand",
+        "Heutige Kapazität im Verhältnis zur Anfangskapazität",
+        "Der aktuelle Ladezustand in Prozent der Kapazität",
         "Die Entladetiefe eines Zyklus",
-        "Die Temperatur der Zellen"
+        "Die mittlere Zelltemperatur über die Betriebsdauer"
        ],
        "a": 0,
        "e": "Den Ladezustand beschreibt der SoC, die Entladetiefe der DoD.",
@@ -537,10 +554,10 @@
        "t": "mc",
        "q": "Warum ist bei Angeboten die nutzbare Energie am Netzanschlusspunkt wichtiger als die Nennenergie der Zellen?",
        "o": [
-        "Weil SoC-Grenzen und Verluste die lieferbare Energie verringern",
-        "Weil die Nennenergie in MW angegeben wird",
-        "Weil Zellen nie entladen werden",
-        "Weil Netzbetreiber nur Nennwerte akzeptieren"
+        "SoC-Grenzen und Verluste verringern die lieferbare Energie",
+        "Die Nennenergie wird in MW statt in MWh angegeben",
+        "Die Nennenergie gilt nur bei Temperaturen unter null Grad",
+        "Netzbetreiber akzeptieren nur Nennwerte"
        ],
        "a": 0,
        "e": "Erlöse entstehen mit der Energie, die tatsächlich ins Netz geht.",
@@ -557,6 +574,13 @@
        ],
        "e": "2C = 30 min, 1C = 1 h, 0,5C = 2 h, 0,25C = 4 h.",
        "id": "bess.m1.l3.q9"
+      }
+     ],
+     "figs": [
+      {
+       "src": "img/kurs/bess-crate.svg",
+       "cap": "Je kleiner die C-Rate, desto länger dauert die Entladung.",
+       "after": 1
       }
      ]
     },
@@ -628,9 +652,9 @@
        "q": "Was ist kalendarische Alterung?",
        "o": [
         "Kapazitätsverlust über die Zeit, auch ohne Nutzung",
-        "Kapazitätsverlust nur durch Laden und Entladen",
-        "Ein Fehler in der Zeitsteuerung des EMS",
-        "Alterung, die nur im Winter auftritt"
+        "Kapazitätsverlust allein durch Laden und Entladen",
+        "Ein Fehler in der Zeitsteuerung",
+        "Alterung, die nur in den Wintermonaten auftritt"
        ],
        "a": 0,
        "e": "Auch ein ungenutzter Speicher altert, vor allem bei Wärme und hohem Ladezustand.",
@@ -667,10 +691,10 @@
        "t": "mc",
        "q": "Was ist Lithium-Plating?",
        "o": [
-        "Ablagerung von metallischem Lithium an der Anode",
-        "Eine Schutzbeschichtung des Gehäuses",
-        "Ein Recyclingverfahren",
-        "Das Verschweißen von Zellen zu Modulen"
+        "Metallisches Lithium lagert sich an der Anode ab",
+        "Eine Schutzbeschichtung auf dem Zellgehäuse",
+        "Ein Recyclingverfahren für Lithium",
+        "Das Verschweißen einzelner Zellen zu Modulen"
        ],
        "a": 0,
        "e": "Es tritt vor allem beim Laden in Kälte oder mit hohem Strom auf.",
@@ -680,10 +704,10 @@
        "t": "mc",
        "q": "Was bedeutet Augmentation bei Batteriespeichern?",
        "o": [
-        "Nachträglich Module ergänzen, um Kapazitätsverlust auszugleichen",
-        "Die Netzanschlussleistung erhöhen",
-        "Ein Software-Update für das BMS",
-        "Den Transformator austauschen"
+        "Später Module ergänzen gegen Kapazitätsverlust",
+        "Die Netzanschlussleistung nachträglich erhöhen lassen",
+        "Ein Software-Update für das Batteriemanagementsystem",
+        "Den Transformator gegen ein größeres Modell tauschen"
        ],
        "a": 0,
        "e": "Die Alternative ist, gleich zu Beginn mehr Kapazität einzubauen (Überdimensionierung).",
@@ -694,9 +718,9 @@
        "q": "Wie kann sich der Kapazitätsverlust gegen Lebensende verhalten?",
        "o": [
         "Er kann sich nach einem Knickpunkt beschleunigen",
-        "Er hört vollständig auf",
-        "Die Kapazität steigt wieder an",
-        "Er verläuft immer exakt linear"
+        "Er hört nach einigen Jahren vollständig auf",
+        "Die Kapazität steigt gegen Ende wieder leicht an",
+        "Er verläuft über die ganze Lebensdauer exakt linear"
        ],
        "a": 0,
        "e": "Deshalb sind Lebensdauerprognosen mit Unsicherheit behaftet und Garantiebedingungen wichtig.",
@@ -706,10 +730,10 @@
        "t": "mc",
        "q": "Was begrenzen Herstellergarantien für Batteriespeicher typischerweise?",
        "o": [
-        "Zyklen bzw. Energiedurchsatz pro Jahr und Betriebsbedingungen",
-        "Den Strompreis am Markt",
-        "Die Zahl der Netzbetreiber",
-        "Die Höhe der Netzentgelte"
+        "Zyklen bzw. Durchsatz pro Jahr und Betriebsbedingungen",
+        "Den Strompreis, zu dem gehandelt werden darf",
+        "Die Zahl der Netzbetreiber im Versorgungsgebiet",
+        "Die Höhe der jährlich zu zahlenden Netzentgelte"
        ],
        "a": 0,
        "e": "Wer mehr zyklisiert als vereinbart oder außerhalb der Temperaturgrenzen betreibt, riskiert die Garantie.",
@@ -720,9 +744,9 @@
        "q": "Zwei Entladungen um je die Hälfte der nutzbaren Kapazität entsprechen …",
        "o": [
         "einem äquivalenten Vollzyklus",
-        "zwei Vollzyklen",
+        "zwei vollständigen Vollzyklen",
         "einem halben Vollzyklus",
-        "vier Vollzyklen"
+        "vier halben Vollzyklen"
        ],
        "a": 0,
        "e": "Gezählt wird die entladene Energie: 2 × 50 % = 100 % = ein Vollzyklus.",
@@ -804,10 +828,10 @@
        "t": "mc",
        "q": "Was ist thermisches Durchgehen (Thermal Runaway)?",
        "o": [
-        "Eine selbstverstärkende Erwärmung einer Zelle bis zu Gasfreisetzung und Brand",
-        "Die Überhitzung des Transformators",
-        "Das Abschalten des Wechselrichters bei Hitze",
-        "Eine zu stark eingestellte Kühlung"
+        "Selbstverstärkende Erwärmung einer Zelle bis zum Brand",
+        "Überhitzung des Transformators bei Volllast",
+        "Abschaltung des Wechselrichters bei zu hoher Außentemperatur",
+        "Eine zu stark eingestellte Kühlung, die Zellen unterkühlt"
        ],
        "a": 0,
        "e": "Die Zelle erzeugt dabei selbst mehr Wärme, als abgeführt werden kann.",
@@ -835,10 +859,10 @@
        "t": "mc",
        "q": "Wozu dient UL 9540A?",
        "o": [
-        "Zu prüfen, wie sich ein thermisches Durchgehen in einem Speichersystem ausbreitet",
-        "Den Netzanschluss eines Speichers zu genehmigen",
-        "Das Recycling von Zellen zu zertifizieren",
-        "Den Wirkungsgrad zu messen"
+        "Prüft die Brandausbreitung bei thermischem Durchgehen",
+        "Regelt das Verfahren für den Netzanschluss von Speichern",
+        "Zertifiziert das Recycling ausgedienter Batteriezellen",
+        "Legt die Messmethode für den Wirkungsgrad fest"
        ],
        "a": 0,
        "e": "Die Ergebnisse fließen in den Brand- und Explosionsschutz der Aufstellung ein.",
@@ -860,10 +884,10 @@
        "t": "mc",
        "q": "Was bedeutet Balancing im BMS?",
        "o": [
-        "Die Ladezustände der einzelnen Zellen angleichen",
-        "Netzfrequenz und Speicher abgleichen",
-        "Das Gewicht im Container verteilen",
-        "Strompreise ausgleichen"
+        "Ladezustände der Zellen angleichen",
+        "Netzfrequenz und Speicherleistung abgleichen",
+        "Gewicht der Module im Container verteilen",
+        "Strompreise zwischen Märkten ausgleichen"
        ],
        "a": 0,
        "e": "Ohne Balancing würde die schwächste Zelle die nutzbare Kapazität des ganzen Strangs begrenzen.",
@@ -873,10 +897,10 @@
        "t": "mc",
        "q": "Welche Aussage zu LFP und Sicherheit stimmt?",
        "o": [
-        "LFP ist thermisch stabiler als NMC, aber nicht unbrennbar",
-        "LFP kann grundsätzlich nicht brennen",
-        "LFP brennt leichter als NMC",
-        "LFP-Speicher brauchen kein BMS"
+        "Stabiler als NMC, aber nicht unbrennbar",
+        "LFP kann grundsätzlich nicht in Brand geraten",
+        "LFP brennt leichter und heißer als NMC",
+        "LFP-Speicher kommen ohne Batteriemanagement aus"
        ],
        "a": 0,
        "e": "Auch LFP-Anlagen brauchen BMS, Brandschutz und Gasmanagement.",
@@ -886,10 +910,10 @@
        "t": "mc",
        "q": "Warum brauchen Batteriecontainer Gasdetektion und Druckentlastung?",
        "o": [
-        "Beim thermischen Durchgehen können brennbare Gase entstehen",
-        "Um die Luftfeuchte für die Garantie zu messen",
-        "Aus Gründen des Lärmschutzes",
-        "Weil die Zellen im Normalbetrieb Gas verbrauchen"
+        "Beim Durchgehen entstehen brennbare Gase",
+        "Um die Luftfeuchte für die Garantie zu dokumentieren",
+        "Aus Lärmschutzgründen bei laufender Kühlung",
+        "Weil Zellen im Normalbetrieb Gas für die Reaktion verbrauchen"
        ],
        "a": 0,
        "e": "Sammeln sich brennbare Gase, droht eine Explosion. Detektion und Entlastung senken dieses Risiko.",
@@ -899,10 +923,10 @@
        "t": "mc",
        "q": "Was regelt IEC 62619?",
        "o": [
-        "Sicherheitsanforderungen an Lithium-Zellen und -Batterien für industrielle Anwendungen",
-        "Die Regeln des europäischen Strommarkts",
-        "Baugenehmigungen für Speicher",
-        "Die Höhe der Netzentgelte"
+        "Sicherheitsanforderungen an Lithium-Industriebatterien",
+        "Regeln für den grenzüberschreitenden Stromhandel in der EU",
+        "Anforderungen an die Baugenehmigung von Speicherprojekten",
+        "Berechnung der Netzentgelte für Speicher"
        ],
        "a": 0,
        "e": "Die Norm gilt für industrielle Anwendungen, dazu zählen auch stationäre Speicher.",
@@ -978,9 +1002,9 @@
        "q": "Wovon hängt der Leistungspreis beim Netzentgelt eines leistungsgemessenen Kunden ab?",
        "o": [
         "Von der höchsten gemessenen Leistung im Jahr",
-        "Von der Zahl der Zähler",
-        "Vom Börsenstrompreis",
-        "Von der Fläche des Betriebsgeländes"
+        "Von der Zahl der installierten Stromzähler",
+        "Vom durchschnittlichen Börsenstrompreis des Jahres",
+        "Von der Grundstücksfläche des Betriebsgeländes"
        ],
        "a": 0,
        "e": "Schon eine einzelne Spitze kann den Leistungspreis für das ganze Jahr bestimmen.",
@@ -991,9 +1015,9 @@
        "q": "Wann entlädt ein Speicher beim Peak Shaving?",
        "o": [
         "Wenn die Last eine festgelegte Grenze überschreitet",
-        "Immer nachts",
-        "Nur bei negativen Strompreisen",
-        "Nur bei Netzausfall"
+        "Immer nachts zwischen 22 und 6 Uhr",
+        "Nur bei negativen Börsenstrompreisen",
+        "Ausschließlich bei einem Netzausfall"
        ],
        "a": 0,
        "e": "Ziel ist, die Spitze unter einer Grenze zu halten. Dazu muss der Speicher zu diesem Zeitpunkt ausreichend geladen sein.",
@@ -1030,10 +1054,10 @@
        "t": "mc",
        "q": "Was ist beim Peak Shaving das größte Betriebsrisiko?",
        "o": [
-        "Der Speicher ist im Moment der Spitze leer, die Spitze wird nicht gekappt",
-        "Der Speicher wird zu voll",
-        "Der Zähler läuft rückwärts",
-        "Der Strompreis steigt"
+        "Der Speicher ist bei der Spitze leer",
+        "Der Speicher wird dauerhaft zu voll geladen",
+        "Der Stromzähler läuft durch die Entladung rückwärts",
+        "Der Strompreis steigt durch das Kappen der Spitze"
        ],
        "a": 0,
        "e": "Eine verpasste Spitze kann die Ersparnis eines ganzen Jahres kosten. Deshalb wird Reserve für Spitzen vorgehalten, bevor man zusätzlich am Markt handelt.",
@@ -1043,10 +1067,10 @@
        "t": "mc",
        "q": "Was ist bei der Planung von Netzentgelt-Einsparungen derzeit besonders zu beachten?",
        "o": [
-        "Die Netzentgeltsystematik wird von der Bundesnetzagentur überarbeitet (AgNes)",
-        "Netzentgelte wurden abgeschafft",
-        "Netzentgelte gelten nur für Haushalte",
-        "Netzentgelte sind bundesweit für alle gleich hoch"
+        "Die BNetzA überarbeitet die Netzentgelte (AgNes)",
+        "Netzentgelte wurden zum Jahresbeginn ganz abgeschafft",
+        "Netzentgelte gelten künftig nur noch für Haushalte",
+        "Netzentgelte sind bundesweit für alle Kunden gleich hoch"
        ],
        "a": 0,
        "e": "Einsparungen hängen an Regeln, die sich ändern können. Annahmen im Business Case deshalb mit Stand und Szenarien hinterlegen.",
@@ -1140,10 +1164,10 @@
        "t": "mc",
        "q": "Ist ein marktgetriebener Speicherbetrieb automatisch netzdienlich?",
        "o": [
-        "Nein, das hängt von Standort und Situation ab",
-        "Ja, immer",
-        "Nein, nie",
-        "Nur bei Speichern unter 1 MW"
+        "Nein, das hängt von Standort und Lage ab",
+        "Ja, ein Speicher entlastet das Netz grundsätzlich immer",
+        "Nein, marktgetriebener Betrieb belastet das Netz immer",
+        "Nur bei Speichern mit weniger als 1 MW Leistung"
        ],
        "a": 0,
        "e": "Lädt ein Speicher in einer Engpassregion, wenn der Preis niedrig ist, kann er einen Engpass auch verschärfen.",
@@ -1153,10 +1177,10 @@
        "t": "mc",
        "q": "Welche Speicherdauer ist bei deutschen Großspeichern (Stand 2026) häufig?",
        "o": [
-        "Etwa 1 bis 2 Stunden, mit Trend zu länger",
-        "Etwa 15 Minuten",
-        "Etwa 24 Stunden",
-        "Etwa eine Woche"
+        "Etwa 1 bis 2 Stunden, Trend zu länger",
+        "Etwa 15 Minuten, Trend zu noch kürzer",
+        "Etwa 24 Stunden, also ein ganzer Tag",
+        "Etwa eine Woche für saisonale Verschiebung"
        ],
        "a": 0,
        "e": "Längere Dauern nehmen zu, unter anderem weil Tolling-Verträge sie nachfragen.",
@@ -1243,10 +1267,10 @@
        "t": "mc",
        "q": "Was bedeutet Co-Location bei Batteriespeichern?",
        "o": [
-        "Der Speicher teilt sich den Netzanschluss mit einem Solar- oder Windpark",
+        "Speicher teilt sich den Anschluss mit PV oder Wind",
         "Zwei Speicher teilen sich einen Container",
-        "Der Speicher steht im Ausland",
-        "Der Speicher wird gemietet"
+        "Der Speicher steht im Ausland und wird importiert",
+        "Der Speicher wird von einem Dritten gemietet"
        ],
        "a": 0,
        "e": "Der gemeinsame Anschluss spart Kosten und kann Abregelung vermeiden.",
@@ -1256,10 +1280,10 @@
        "t": "mc",
        "q": "Welches Problem löst die MiSpeL-Festlegung der Bundesnetzagentur?",
        "o": [
-        "Die Abgrenzung von Grün- und Graustrom in Speichern, damit Förderung und Netzladen vereinbar sind",
-        "Die Brandschutzauflagen für Speicher",
-        "Die Wahl der Zellchemie",
-        "Die Höhe der Stromsteuer"
+        "Abgrenzung von Grün- und Graustrom im Speicher",
+        "Die Brandschutzauflagen für Großspeicher",
+        "Die Wahl der zulässigen Zellchemie",
+        "Die Höhe der Stromsteuer auf Speicherstrom"
        ],
        "a": 0,
        "e": "Ohne saubere Abgrenzung konnte Netzladen die EEG-Förderung gefährden.",
@@ -1269,10 +1293,10 @@
        "t": "mc",
        "q": "Für wen ist die Abgrenzungsoption der MiSpeL gedacht?",
        "o": [
-        "Für alle Anlagenbetreiber, mit genauer Messung der Strommengen",
-        "Nur für Haushalte",
-        "Nur für Anlagen über 100 MW",
-        "Nur für Windparks auf See"
+        "Für alle, mit genauer Messung der Mengen",
+        "Nur für Haushalte mit kleiner PV-Anlage",
+        "Nur für Anlagen mit über 100 MW Leistung",
+        "Nur für Windparks auf See mit Speicher"
        ],
        "a": 0,
        "e": "Die vereinfachte Pauschaloption gilt dagegen nur für kleine Anlagen.",
@@ -1282,10 +1306,10 @@
        "t": "mc",
        "q": "Was fehlt der MiSpeL-Pauschaloption laut Bundesnetzagentur noch (Stand 10/2026)?",
        "o": [
-        "Eine beihilferechtliche Genehmigung der EU",
-        "Eine Zustimmung jedes Netzbetreibers",
-        "Ein Bundestagsbeschluss pro Anlage",
-        "Nichts, sie gilt uneingeschränkt"
+        "Eine EU-Beihilfegenehmigung",
+        "Eine Zustimmung jedes einzelnen Netzbetreibers",
+        "Ein eigener Bundestagsbeschluss für jede Anlage",
+        "Nichts, sie gilt bereits uneingeschränkt"
        ],
        "a": 0,
        "e": "Bis zur EU-Genehmigung ist der Starttermin dieser Option offen.",
@@ -1295,10 +1319,10 @@
        "t": "mc",
        "q": "Warum kann ein Speicher an einem gemeinsamen Netzanschluss mit einem Solarpark Energie retten?",
        "o": [
-        "Er nimmt Erzeugung auf, die die Anschlussgrenze überschreitet und sonst abgeregelt würde",
+        "Er nimmt Erzeugung über der Anschlussgrenze auf",
         "Er erhöht die Sonneneinstrahlung",
-        "Er macht die Module effizienter",
-        "Er senkt die Einspeisevergütung"
+        "Er steigert den Wirkungsgrad der Solarmodule",
+        "Er senkt die Einspeisevergütung des Solarparks"
        ],
        "a": 0,
        "e": "So lässt sich ein Anschluss überbauen: mehr Erzeugungsleistung als Anschlussleistung.",
@@ -1383,10 +1407,10 @@
        "t": "mc",
        "q": "Warum profitiert Arbitrage von längerer Speicherdauer?",
        "o": [
-        "Mehr Energie kann in die teuren Stunden verschoben werden",
-        "Längere Speicher sind immer billiger",
-        "Die Zellen werden dadurch kühler",
-        "Der Wirkungsgrad steigt auf 100 %"
+        "Mehr Energie lässt sich in teure Stunden verschieben",
+        "Längere Speicher sind pro MWh immer billiger",
+        "Die Zellen bleiben bei langer Dauer kühler",
+        "Der Wirkungsgrad steigt auf 100 Prozent"
        ],
        "a": 0,
        "e": "Bei 1 Stunde Dauer kann nur die teuerste Stunde bedient werden, bei 4 Stunden die vier teuersten.",
@@ -1409,10 +1433,10 @@
        "t": "mc",
        "q": "Was sollte bei der Speicherplanung zuerst geklärt werden?",
        "o": [
-        "Welches Problem der Speicher löst und womit er Geld verdient",
-        "Die Farbe des Containers",
-        "Der Hersteller der Zellen",
-        "Die Zahl der Module"
+        "Welches Problem er löst und womit er Geld verdient",
+        "Welche Farbe die Container haben sollen",
+        "Welcher Zellhersteller am bekanntesten ist",
+        "Wie viele Module in einen Container passen"
        ],
        "a": 0,
        "e": "Daraus ergeben sich Leistung, Dauer, Standort und Vertrag.",
@@ -1500,10 +1524,10 @@
        "t": "mc",
        "q": "Seit wann gibt es im europäischen Day-Ahead-Markt 15-Minuten-Produkte?",
        "o": [
-        "Seit dem Liefertag 1. Oktober 2025",
-        "Seit 2010",
-        "Seit 1. Januar 2030",
-        "Es gibt nur Stundenprodukte"
+        "Seit Liefertag 1. Oktober 2025",
+        "Seit Einführung der Strombörse im Jahr 2000",
+        "Ab dem Liefertag 1. Januar 2030",
+        "Gar nicht, es gibt nur Stundenprodukte"
        ],
        "a": 0,
        "e": "Der Start war ursprünglich früher geplant und wurde verschoben; live ging er für den Liefertag 1.10.2025.",
@@ -1513,10 +1537,10 @@
        "t": "mc",
        "q": "Wofür wird der Intraday-Markt vor allem genutzt?",
        "o": [
-        "Um kurzfristige Abweichungen, etwa bei Wind- und Solarprognosen, auszugleichen",
-        "Um Strom für das nächste Jahr zu kaufen",
-        "Um Regelleistung zu beschaffen",
-        "Um Netzentgelte zu bezahlen"
+        "Kurzfristige Abweichungen, z. B. Wetterprognosen, ausgleichen",
+        "Strom für das gesamte nächste Kalenderjahr kaufen",
+        "Regelleistung für die Netzbetreiber beschaffen",
+        "Netzentgelte mit dem Netzbetreiber abrechnen"
        ],
        "a": 0,
        "e": "Der Handel läuft bis kurz vor Lieferung.",
@@ -1536,9 +1560,9 @@
        "q": "Warum sind negative Strompreise für Speicher attraktiv?",
        "o": [
         "Beim Laden erhält der Speicher Geld",
-        "Die Zellen altern dann nicht",
-        "Der Wirkungsgrad steigt",
-        "Es fallen keine Steuern an"
+        "Die Zellen altern bei negativen Preisen nicht",
+        "Der Wirkungsgrad steigt bei negativen Preisen",
+        "Bei negativen Preisen fallen keine Steuern an"
        ],
        "a": 0,
        "e": "Negative Preise entstehen bei Überangebot, etwa an sonnigen und windigen Feiertagen.",
@@ -1548,9 +1572,9 @@
        "t": "mc",
        "q": "Was bringen 15-Minuten-Produkte einem Speicher?",
        "o": [
-        "Preisunterschiede innerhalb einer Stunde werden handelbar",
-        "Sie verdoppeln automatisch die Kapazität",
-        "Sie ersetzen die Regelleistung",
+        "Preisunterschiede innerhalb einer Stunde handelbar",
+        "Die Speicherkapazität verdoppelt sich automatisch",
+        "Sie ersetzen den Markt für Regelleistung",
         "Sie schaffen die Netzentgelte ab"
        ],
        "a": 0,
@@ -1567,7 +1591,14 @@
        "id": "bess.m3.l1.q6"
       }
      ],
-     "vol": true
+     "vol": true,
+     "figs": [
+      {
+       "src": "img/kurs/bess-arbitrage.svg",
+       "cap": "Vereinfachter Tagesverlauf: laden bei niedrigen, entladen bei hohen Preisen.",
+       "after": 5
+      }
+     ]
     },
     {
      "id": "bess.m3.l2",
@@ -1642,9 +1673,9 @@
        "q": "Innerhalb welcher Zeit muss FCR voll aktiviert sein?",
        "o": [
         "30 Sekunden",
-        "5 Minuten",
-        "15 Minuten",
-        "1 Stunde"
+        "300 Sekunden",
+        "900 Sekunden",
+        "3 Sekunden"
        ],
        "a": 0,
        "e": "5 Minuten gelten für aFRR, etwa 15 Minuten für mFRR.",
@@ -1655,9 +1686,9 @@
        "q": "Bei welcher Frequenzabweichung ist FCR voll aktiviert?",
        "o": [
         "Ab 200 mHz",
-        "Ab 2 Hz",
+        "Ab 2.000 mHz",
         "Ab 10 mHz",
-        "Ab 50 Hz"
+        "Ab 500 mHz"
        ],
        "a": 0,
        "e": "Bei ±200 mHz Abweichung ist die FCR vollständig ausgeschöpft.",
@@ -1667,9 +1698,9 @@
        "t": "mc",
        "q": "Was bedeutet „symmetrisch“ beim Produkt FCR?",
        "o": [
-        "Positive und negative Leistung werden zusammen angeboten",
-        "Laden und Entladen kosten gleich viel",
-        "Alle Anbieter bekommen den gleichen Preis",
+        "Positive und negative Leistung zusammen anbieten",
+        "Laden und Entladen kosten am Markt gleich viel",
+        "Alle Anbieter erhalten denselben Einheitspreis",
         "Die Leistung ist auf zwei Standorte verteilt"
        ],
        "a": 0,
@@ -1704,10 +1735,10 @@
        "t": "mc",
        "q": "Warum bieten Speicher mit 1–2 Stunden Dauer oft weniger aFRR-Leistung an, als sie technisch könnten?",
        "o": [
-        "Sie müssen die Zusage im Ernstfall über den ganzen 4-Stunden-Block halten können",
-        "Weil aFRR nur nachts abgerufen wird",
-        "Weil die Präqualifikation nur halbe Leistung erlaubt",
-        "Weil Batterien kein aFRR liefern dürfen"
+        "Zusage muss den ganzen 4-Stunden-Block halten",
+        "aFRR wird ausschließlich nachts abgerufen",
+        "Präqualifikation erlaubt nur halbe Leistung",
+        "Batterien dürfen kein aFRR anbieten"
        ],
        "a": 0,
        "e": "Die angebotene Leistung wird an die verfügbare Energie angepasst.",
@@ -1727,7 +1758,14 @@
        "id": "bess.m3.l2.q7"
       }
      ],
-     "vol": true
+     "vol": true,
+     "figs": [
+      {
+       "src": "img/kurs/bess-regelleistung.svg",
+       "cap": "Die drei Regelleistungsarten nach Aktivierungszeit (schematisch).",
+       "after": 6
+      }
+     ]
     },
     {
      "id": "bess.m3.l3",
@@ -1784,10 +1822,10 @@
        "t": "mc",
        "q": "Was versteht man unter Kannibalisierung bei Speichern?",
        "o": [
-        "Mehr Speicher im selben Markt senken die Preise und Erlöse",
-        "Speicher nutzen Teile anderer Speicher",
+        "Mehr Speicher im selben Markt senken die Preise",
+        "Speicher nutzen Ersatzteile anderer Speicher",
         "Speicher verbrauchen ihren eigenen Strom",
-        "Speicher werden recycelt"
+        "Ausgediente Speicher werden zu neuen recycelt"
        ],
        "a": 0,
        "e": "Das betrifft besonders kleine Märkte wie FCR.",
@@ -1797,10 +1835,10 @@
        "t": "mc",
        "q": "Wie entwickelten sich die FCR-Erlöse für ein 2-Stunden-System laut pv magazine (01/2026)?",
        "o": [
-        "Sie fielen um über 90 %",
-        "Sie verdoppelten sich",
-        "Sie blieben gleich",
-        "Sie stiegen um 10 %"
+        "Um über 90 % gefallen",
+        "Etwa verdoppelt",
+        "Ungefähr gleich geblieben",
+        "Um rund 10 % gestiegen"
        ],
        "a": 0,
        "e": "FCR spielt in einem optimierten Fahrplan kaum noch eine Rolle.",
@@ -1819,10 +1857,10 @@
        "t": "mc",
        "q": "Wohin verschiebt sich das Erlösgeschäft von Batteriespeichern (Stand 2026)?",
        "o": [
-        "Zu Arbitrage am Day-Ahead- und Intraday-Markt und zu aFRR",
-        "Zurück zu FCR",
-        "Zu Einspeisevergütungen",
-        "Zum Verkauf von Kapazitätszertifikaten"
+        "Zu Arbitrage (Day-Ahead, Intraday) und aFRR",
+        "Zurück zur Primärregelleistung (FCR) als Hauptmarkt",
+        "Zu festen Einspeisevergütungen nach dem EEG",
+        "Zum Verkauf von Kapazitätszertifikaten an Netzbetreiber"
        ],
        "a": 0,
        "e": "FCR ist weitgehend gesättigt.",
@@ -1832,10 +1870,10 @@
        "t": "mc",
        "q": "Wer entscheidet im Betrieb typischerweise, in welchem Markt der Speicher eingesetzt wird?",
        "o": [
-        "Ein Optimierer bzw. Vermarkter mit Prognosen und Algorithmen",
-        "Der Netzbetreiber",
-        "Die Bundesnetzagentur",
-        "Der Zellhersteller"
+        "Ein Optimierer bzw. Vermarkter",
+        "Der zuständige Verteilnetzbetreiber",
+        "Die Bundesnetzagentur im Einzelfall",
+        "Der Zellhersteller per Fernzugriff"
        ],
        "a": 0,
        "e": "Die Qualität des Optimierers entscheidet stark über den Ertrag.",
@@ -1900,8 +1938,8 @@
        "q": "Wer trägt beim Tolling das Marktrisiko?",
        "o": [
         "Der Abnehmer bzw. Vermarkter",
-        "Der Speicherbesitzer",
-        "Der Netzbetreiber",
+        "Der Besitzer des Speichers",
+        "Der Übertragungsnetzbetreiber",
         "Die Bundesnetzagentur"
        ],
        "a": 0,
@@ -1912,10 +1950,10 @@
        "t": "mc",
        "q": "Was ist ein Floor in der Speichervermarktung?",
        "o": [
-        "Ein garantierter Mindesterlös mit Erlösteilung darüber",
+        "Mindesterlös mit Erlösteilung darüber",
         "Der Boden des Batteriecontainers",
-        "Die niedrigste erlaubte Ladung",
-        "Ein Mindestpreis an der Börse"
+        "Die niedrigste erlaubte Ladung der Zellen",
+        "Ein gesetzlicher Mindestpreis an der Strombörse"
        ],
        "a": 0,
        "e": "Floors begrenzen das Risiko nach unten, lassen aber Teil an Chancen.",
@@ -1925,10 +1963,10 @@
        "t": "mc",
        "q": "Warum verlangen Banken zunehmend Toll- oder Floor-Strukturen?",
        "o": [
-        "Weil sie planbare Zahlungsströme für die Finanzierung brauchen",
-        "Weil sie selbst Strom handeln wollen",
-        "Weil es gesetzlich vorgeschrieben ist",
-        "Weil Merchant-Erlöse verboten sind"
+        "Sie brauchen planbare Zahlungsströme",
+        "Sie wollen den Strom selbst an der Börse handeln",
+        "Es ist im Energiewirtschaftsgesetz vorgeschrieben",
+        "Merchant-Erlöse sind für Banken gesetzlich verboten"
        ],
        "a": 0,
        "e": "Planbare Erlöse senken das Kreditrisiko.",
@@ -1947,10 +1985,10 @@
        "t": "mc",
        "q": "Welche Aussage zum Tolling in Deutschland stimmt (Stand 2026)?",
        "o": [
-        "Es ist relativ neu, wächst aber stark",
-        "Es ist seit Jahrzehnten Standard",
-        "Es ist verboten",
-        "Es gibt es nur für Pumpspeicher"
+        "Relativ neu, aber stark wachsend",
+        "Seit Jahrzehnten der Standard im Strommarkt",
+        "In Deutschland gesetzlich verboten",
+        "Nur für Pumpspeicherkraftwerke üblich"
        ],
        "a": 0,
        "e": "Laut pv magazine war Deutschland im Q1 2026 in Europa führend bei Tolling-Vereinbarungen.",
@@ -2045,10 +2083,10 @@
        "t": "mc",
        "q": "Was hat das Reifegradverfahren der Übertragungsnetzbetreiber abgelöst?",
        "o": [
-        "Das Windhundprinzip (Bearbeitung nach Eingang)",
-        "Die Baugenehmigung",
-        "Die Präqualifikation",
-        "Die Stromsteuer"
+        "Das Windhundprinzip",
+        "Die Baugenehmigung nach Landesbauordnung",
+        "Die Präqualifikation für Regelleistung",
+        "Die Stromsteuer-Erlaubnis"
        ],
        "a": 0,
        "e": "Seit 1.4.2026 zählt der Entwicklungsstand eines Projekts.",
@@ -2089,10 +2127,10 @@
        "t": "mc",
        "q": "Was ist der Nachteil eines flexiblen Netzanschlusses?",
        "o": [
-        "Die Leistung darf zeitweise begrenzt werden, das schränkt den Betrieb ein",
-        "Er ist immer teurer als ein fester Anschluss",
-        "Er darf nur nachts genutzt werden",
-        "Er verbietet Regelleistung"
+        "Leistung darf zeitweise begrenzt werden",
+        "Er kostet grundsätzlich das Doppelte eines festen Anschlusses",
+        "Er darf ausschließlich nachts genutzt werden",
+        "Er schließt die Teilnahme an Regelleistung aus"
        ],
        "a": 0,
        "e": "Die Einschränkungen gehören in den Business Case.",
@@ -2102,10 +2140,10 @@
        "t": "mc",
        "q": "Welche Aussage zu den vielen Netzanschlussanfragen trifft zu?",
        "o": [
-        "Viele sind spekulativ oder Mehrfachanfragen",
-        "Alle werden sicher gebaut",
-        "Sie betreffen nur Hausspeicher",
-        "Sie sind gesetzlich auf 1 GW begrenzt"
+        "Viele sind spekulativ oder doppelt gestellt",
+        "Alle angefragten Projekte werden sicher gebaut",
+        "Sie betreffen nahezu ausschließlich Hausspeicher",
+        "Sie sind gesetzlich auf insgesamt 1 GW begrenzt"
        ],
        "a": 0,
        "e": "Deshalb fordern Netzbetreiber Reife- und Realisierungsnachweise.",
@@ -2172,10 +2210,10 @@
        "t": "mc",
        "q": "Was hat der BGH am 15. Juli 2025 zum Baukostenzuschuss für Batteriespeicher entschieden?",
        "o": [
-        "Verteilnetzbetreiber dürfen ihn nach dem Leistungspreismodell erheben",
-        "Er ist für Speicher generell verboten",
-        "Er gilt nur für Hausspeicher",
-        "Er muss vom Bund übernommen werden"
+        "Netzbetreiber dürfen ihn nach Leistungspreismodell erheben",
+        "Er ist für Speicher generell und dauerhaft verboten",
+        "Er gilt ausschließlich für Hausspeicher bis 30 kW",
+        "Er muss künftig vollständig vom Bund übernommen werden"
        ],
        "a": 0,
        "e": "Az. EnVR 1/24, das OLG-Urteil wurde aufgehoben.",
@@ -2198,10 +2236,10 @@
        "t": "mc",
        "q": "Welche Auffassung vertritt die Bundesnetzagentur zum BKZ für Speicher?",
        "o": [
-        "Er ist für netzgekoppelte Speicher oberhalb der Niederspannung zu erheben",
-        "Er ist für Speicher immer unzulässig",
-        "Er gilt nur in der Niederspannung",
-        "Die BNetzA äußert sich nicht dazu"
+        "Zu erheben oberhalb der Niederspannung",
+        "Für Speicher grundsätzlich immer unzulässig",
+        "Nur in der Niederspannung zu erheben",
+        "Die BNetzA hat sich dazu nie geäußert"
        ],
        "a": 0,
        "e": "So steht es in den FAQ der Bundesnetzagentur.",
@@ -2212,9 +2250,9 @@
        "q": "Welche Frage blieb nach dem BGH-Beschluss laut Fachpresse offen?",
        "o": [
         "Ob er auf Mischspeicher übertragbar ist",
-        "Ob Speicher überhaupt Strom speichern",
-        "Ob es Verteilnetzbetreiber gibt",
-        "Ob der BGH zuständig war"
+        "Ob Batteriespeicher überhaupt Strom speichern",
+        "Ob es in Deutschland Verteilnetzbetreiber gibt",
+        "Ob der BGH für den Fall zuständig war"
        ],
        "a": 0,
        "e": "Der Fall betraf einen rein netzgekoppelten Speicher.",
@@ -2304,10 +2342,10 @@
        "t": "mc",
        "q": "Wann ist ein Vorhaben im Außenbereich grundsätzlich zulässig?",
        "o": [
-        "Wenn es privilegiert ist oder ein Bebauungsplan es erlaubt",
-        "Immer, wenn der Eigentümer zustimmt",
-        "Nie",
-        "Nur mit Zustimmung des Netzbetreibers"
+        "Wenn privilegiert oder per Bebauungsplan erlaubt",
+        "Immer, sobald der Grundstückseigentümer zustimmt",
+        "Nie, im Außenbereich darf grundsätzlich nichts gebaut werden",
+        "Nur mit Zustimmung des zuständigen Netzbetreibers"
        ],
        "a": 0,
        "e": "Deshalb ist die Privilegierung für Großspeicher so wichtig.",
@@ -2317,10 +2355,10 @@
        "t": "mc",
        "q": "Was regelt § 35 Abs. 1 Nr. 11 BauGB seit Ende 2025?",
        "o": [
-        "Speicher in räumlich-funktionalem Zusammenhang mit einer vorhandenen Erneuerbare-Energien-Anlage",
-        "Hausspeicher in Wohngebieten",
-        "Windräder auf See",
-        "Rechenzentren"
+        "Speicher bei vorhandener Erneuerbare-Energien-Anlage",
+        "Hausspeicher in reinen Wohngebieten",
+        "Windenergieanlagen auf See",
+        "Rechenzentren mit Notstromversorgung"
        ],
        "a": 0,
        "e": "Nr. 12 betrifft dagegen eigenständige Speicher.",
@@ -2330,10 +2368,10 @@
        "t": "mc",
        "q": "Was gilt für eigenständige Speicher nach § 35 Abs. 1 Nr. 12 BauGB?",
        "o": [
-        "Sie sind privilegiert, wenn zusätzliche Voraussetzungen erfüllt sind",
-        "Sie sind ohne jede Bedingung privilegiert",
-        "Sie sind im Außenbereich verboten",
-        "Sie brauchen keine Genehmigung"
+        "Privilegiert, wenn Zusatzvoraussetzungen erfüllt sind",
+        "Ohne jede weitere Bedingung privilegiert",
+        "Im Außenbereich ausnahmslos verboten",
+        "Von jeder Genehmigungspflicht befreit"
        ],
        "a": 0,
        "e": "Die Voraussetzungen im aktuellen Wortlaut prüfen.",
@@ -2357,9 +2395,9 @@
        "q": "Was prüft die Baubehörde unabhängig von der Privilegierung weiterhin?",
        "o": [
         "Brandschutz, Schall, Natur- und Wasserschutz",
-        "Nur die Farbe der Container",
-        "Nur die Zellchemie",
-        "Gar nichts mehr"
+        "Nur noch die Farbe und Höhe der Container",
+        "Ausschließlich die gewählte Zellchemie",
+        "Gar nichts mehr, privilegiert heißt genehmigt"
        ],
        "a": 0,
        "e": "Privilegiert heißt nicht genehmigungsfrei.",
@@ -2430,10 +2468,10 @@
        "t": "mc",
        "q": "Was ist das zentrale Ziel eines Brandschutzkonzepts für Großspeicher?",
        "o": [
-        "Die Ausbreitung eines Brandes auf weitere Einheiten zu verhindern",
-        "Brände vollständig unmöglich zu machen",
-        "Die Kühlung abzuschalten",
-        "Die Versicherung zu ersetzen"
+        "Brandausbreitung auf weitere Einheiten verhindern",
+        "Brände in jeder Zelle ausschließen",
+        "Die Kühlung im Brandfall automatisch abschalten",
+        "Eine Brandversicherung für die Anlage ersetzen"
        ],
        "a": 0,
        "e": "Ein Brand einer Einheit lässt sich nie ganz ausschließen; entscheidend ist die Begrenzung.",
@@ -2456,10 +2494,10 @@
        "t": "mc",
        "q": "Warum braucht ein Großspeicher eine Löschwasserrückhaltung?",
        "o": [
-        "Belastetes Löschwasser darf Boden und Gewässer nicht verunreinigen",
-        "Um die Zellen zu kühlen",
-        "Um Strom zu sparen",
-        "Weil Wasser den Wirkungsgrad erhöht"
+        "Belastetes Löschwasser soll Boden und Gewässer nicht verunreinigen",
+        "Um die Zellen im Normalbetrieb zusätzlich mit Wasser zu kühlen",
+        "Um bei Hitze Strom für die Klimaanlage zu sparen",
+        "Weil Wasser den Wirkungsgrad der Anlage spürbar erhöht"
        ],
        "a": 0,
        "e": "Beim Brand können Schadstoffe ins Löschwasser gelangen.",
@@ -2469,10 +2507,10 @@
        "t": "mc",
        "q": "Welche Regel gilt für Lärm an den nächsten Wohnhäusern?",
        "o": [
-        "Die Immissionsrichtwerte der TA Lärm, nachts strenger",
-        "Es gibt keine Regeln",
-        "Nur tagsüber gibt es Grenzen",
-        "Nur die Regeln des Netzbetreibers"
+        "Immissionsrichtwerte der TA Lärm, nachts strenger",
+        "Es gelten keinerlei Regeln für Anlagengeräusche",
+        "Grenzwerte gibt es nur tagsüber, nachts nicht",
+        "Allein die technischen Regeln des Netzbetreibers"
        ],
        "a": 0,
        "e": "Ein Schallgutachten weist die Einhaltung nach.",
@@ -2483,9 +2521,9 @@
        "q": "Wann sollte die Feuerwehr in die Planung eingebunden werden?",
        "o": [
         "Früh, schon bei der Konzeptentwicklung",
-        "Erst nach Inbetriebnahme",
-        "Nur im Brandfall",
-        "Gar nicht"
+        "Erst nach der Inbetriebnahme der Anlage",
+        "Nur im tatsächlichen Brandfall",
+        "Gar nicht, das ist Sache des Herstellers"
        ],
        "a": 0,
        "e": "Angriffswege, Abstände und Einsatztaktik müssen zum Standort passen.",
@@ -2588,10 +2626,10 @@
        "t": "mc",
        "q": "Worauf bezieht sich die Befreiung?",
        "o": [
-        "Auf die Netzentgelte für den Bezug des zu speichernden Stroms",
-        "Auf die Stromsteuer",
-        "Auf die Baugenehmigung",
-        "Auf den Baukostenzuschuss"
+        "Netzentgelte für den Ladestrom",
+        "Die Stromsteuer auf den gesamten Verbrauch",
+        "Die Gebühren für die Baugenehmigung",
+        "Den einmaligen Baukostenzuschuss"
        ],
        "a": 0,
        "e": "Den BKZ betrifft sie nicht; dazu hat der BGH 2025 entschieden.",
@@ -2601,10 +2639,10 @@
        "t": "mc",
        "q": "Was hat die Bundesnetzagentur im AgNes-Verfahren laut Fachpresse (Stand 2026) zunächst geplant und dann vorerst zurückgenommen?",
        "o": [
-        "Ein vorzeitiges Ende der Netzentgeltbefreiung für Speicher",
-        "Ein Verbot von Großspeichern",
-        "Eine Pflicht zu NMC-Zellen",
-        "Die Abschaffung der Regelleistung"
+        "Ein vorzeitiges Ende der Netzentgeltbefreiung",
+        "Ein generelles Verbot neuer Großspeicher",
+        "Eine Pflicht zu NMC-Zellen in Großspeichern",
+        "Die vollständige Abschaffung der Regelleistung"
        ],
        "a": 0,
        "e": "Eine Erhebung soll erst nach Auslaufen der Sonderregeln beginnen.",
@@ -2614,10 +2652,10 @@
        "t": "mc",
        "q": "Warum ist das Inbetriebnahmedatum für den Business Case so wichtig?",
        "o": [
-        "Es entscheidet, ob die 20-jährige Netzentgeltbefreiung gilt",
-        "Es bestimmt die Zellchemie",
-        "Es legt den Strompreis fest",
-        "Es ist nur für die Statistik relevant"
+        "Er entscheidet über die 20-jährige Befreiung",
+        "Es bestimmt die zulässige Zellchemie",
+        "Es legt den künftigen Strompreis fest",
+        "Es ist nur für die amtliche Statistik relevant"
        ],
        "a": 0,
        "e": "Verzögerungen über den Stichtag hinaus können die Wirtschaftlichkeit stark verändern.",
@@ -2627,10 +2665,10 @@
        "t": "mc",
        "q": "Worauf weist ein Fachbeitrag (pv magazine, 09/2026) zusätzlich hin?",
        "o": [
-        "Auf einen weiteren Stichtag im Entwurf (Meldung gegenüber dem Netzbetreiber, März 2027)",
-        "Auf eine Verlängerung bis 2050",
-        "Auf die Abschaffung der BNetzA",
-        "Auf eine Steuer auf Speicher"
+        "Eine Meldefrist beim Netzbetreiber (März 2027)",
+        "Eine Verlängerung der Befreiung bis zum Jahr 2050",
+        "Die geplante Auflösung der Bundesnetzagentur",
+        "Eine neue Sondersteuer auf jeden Batteriespeicher"
        ],
        "a": 0,
        "e": "Details im aktuellen BNetzA-Dokument prüfen.",
@@ -2735,10 +2773,10 @@
        "t": "mc",
        "q": "Welches Problem soll die Stromsteuer-Novelle zum 1.1.2026 bei Speichern lösen?",
        "o": [
-        "Die Doppelbesteuerung bei der Rückverstromung",
-        "Die Netzentgeltbefreiung",
-        "Den Baukostenzuschuss",
-        "Die Brandschutzauflagen"
+        "Doppelbesteuerung bei der Rückverstromung",
+        "Die Befreiung von Netzentgelten für den Ladestrom",
+        "Den Baukostenzuschuss für Großspeicher",
+        "Die Brandschutzauflagen für Container"
        ],
        "a": 0,
        "e": "Bereits versteuerter Strom soll bei der Rückverstromung nicht erneut besteuert werden.",
@@ -2748,10 +2786,10 @@
        "t": "mc",
        "q": "Wer braucht nach § 4 StromStG eine Erlaubnis des Hauptzollamts?",
        "o": [
-        "Wer als Versorger Strom an Letztverbraucher leistet",
-        "Jeder Haushalt mit Kühlschrank",
-        "Nur Netzbetreiber",
-        "Niemand"
+        "Wer als Versorger Strom an Kunden leistet",
+        "Jeder Haushalt, der Strom aus dem Netz bezieht",
+        "Ausschließlich die Übertragungsnetzbetreiber",
+        "Niemand, die Erlaubnispflicht wurde abgeschafft"
        ],
        "a": 0,
        "e": "Nach der Reform kann ein Speicherbetreiber unter Voraussetzungen als Nicht-Versorger gelten.",
@@ -2762,9 +2800,9 @@
        "q": "Was regelt § 9 StromStG für Speicher von Versorgern?",
        "o": [
         "Sie gelten insoweit als Teil des Versorgungsnetzes",
-        "Sie sind steuerpflichtige Letztverbraucher",
-        "Sie sind verboten",
-        "Sie zahlen doppelte Stromsteuer"
+        "Sie gelten als steuerpflichtige Letztverbraucher",
+        "Sie sind in Deutschland nicht zulässig",
+        "Sie zahlen die Stromsteuer doppelt"
        ],
        "a": 0,
        "e": "Gemeint sind Speicher, in denen Versorger Strom zwischenspeichern und ins Netz einspeisen.",
@@ -2774,9 +2812,9 @@
        "t": "mc",
        "q": "Was kann nach der Reform den Status als Nicht-Versorger verhindern?",
        "o": [
-        "Fehlende Messeinrichtungen zur Abgrenzung steuerfreier und steuerpflichtiger Mengen",
-        "Ein zu großer Container",
-        "LFP-Zellen",
+        "Fehlende Messung zur Abgrenzung der Strommengen",
+        "Ein Container mit mehr als 40 Fuß Länge",
+        "Der Einsatz von LFP-Zellen statt NMC-Zellen",
         "Ein Standort im Außenbereich"
        ],
        "a": 0,
@@ -2787,10 +2825,10 @@
        "t": "mc",
        "q": "Was ist bei Stromsteuerfragen eines Speichers in der Praxis zu empfehlen?",
        "o": [
-        "Vor Inbetriebnahme mit dem Hauptzollamt bzw. einer Steuerberatung klären",
-        "Abwarten, bis der Zoll sich meldet",
-        "Einfach keine Steuer zahlen",
-        "Den Netzbetreiber entscheiden lassen"
+        "Vorab mit Hauptzollamt oder Steuerberatung klären",
+        "Abwarten, bis sich der Zoll von selbst meldet",
+        "Bis zur ersten Prüfung gar keine Steuer zahlen",
+        "Die Einordnung dem Netzbetreiber überlassen"
        ],
        "a": 0,
        "e": "Die Einordnung hängt stark vom Einzelfall ab.",
@@ -2852,10 +2890,10 @@
        "t": "mc",
        "q": "Warum ist ein Messkonzept für Speicher so wichtig?",
        "o": [
-        "Weil Privilegien nur greifen, wenn Strommengen sauber zugeordnet werden",
-        "Weil sonst der Container nicht passt",
-        "Weil die Zellen sonst altern",
-        "Weil der Netzbetreiber sonst keinen Strom liefert"
+        "Ohne saubere Zuordnung greifen Privilegien nicht",
+        "Sonst passt der Container nicht auf das Fundament",
+        "Ohne Messung altern die Zellen deutlich schneller",
+        "Sonst liefert der Netzbetreiber keinen Strom"
        ],
        "a": 0,
        "e": "Zwischengespeicherter Strom, Hilfsenergie und Verluste werden unterschiedlich behandelt.",
@@ -2884,10 +2922,10 @@
        "t": "mc",
        "q": "Wie werden Hilfsenergie und Verluste eines Speichers rechtlich oft behandelt?",
        "o": [
-        "Anders als der zwischengespeicherte Strom, häufig wie Eigenverbrauch",
-        "Genau wie Einspeisung",
-        "Gar nicht",
-        "Wie Regelleistung"
+        "Anders als Speicherstrom, oft wie Eigenverbrauch",
+        "Genau wie die Einspeisung ins Netz",
+        "Gar nicht, sie ist rechtlich irrelevant",
+        "Wie Regelleistung für den Netzbetreiber"
        ],
        "a": 0,
        "e": "Deshalb müssen sie getrennt erfasst werden.",
@@ -2898,9 +2936,9 @@
        "q": "Welcher Grundsatz gilt für zwischengespeicherten und wieder eingespeisten Strom?",
        "o": [
         "Er soll nicht wie Endverbrauch belastet werden",
-        "Er wird doppelt belastet",
-        "Er ist verboten",
-        "Er zählt als Erzeugung aus Erneuerbaren"
+        "Er wird beim Laden und Entladen doppelt belastet",
+        "Er ist in Deutschland grundsätzlich verboten",
+        "Er gilt als Erzeugung aus erneuerbaren Energien"
        ],
        "a": 0,
        "e": "Die genaue Anwendung hängt von Gesetz, Festlegung und Messung ab.",
@@ -2910,10 +2948,10 @@
        "t": "mc",
        "q": "Auf welchem Prinzip baut die MiSpeL-Abgrenzungsoption auf?",
        "o": [
-        "Auf genauer Messung der Strommengen",
-        "Auf Schätzungen pro Jahr",
-        "Auf der Zahl der Container",
-        "Auf dem Börsenpreis"
+        "Genaue Messung der Strommengen",
+        "Pauschale Schätzung einmal pro Jahr",
+        "Anzahl der installierten Container",
+        "Durchschnittlicher Börsenstrompreis"
        ],
        "a": 0,
        "e": "Die Pauschaloption ist die vereinfachte Alternative für kleine Anlagen.",
@@ -3001,9 +3039,9 @@
        "q": "Was bedeutet EPC?",
        "o": [
         "Planung, Beschaffung und Bau aus einer Hand",
-        "Eine Zellchemie",
-        "Ein Regelleistungsprodukt",
-        "Eine Steuerart"
+        "Eine besonders langlebige Zellchemie",
+        "Ein Produkt am Regelleistungsmarkt",
+        "Eine Steuerart für Energiespeicher"
        ],
        "a": 0,
        "e": "Engineering, Procurement, Construction.",
@@ -3013,10 +3051,10 @@
        "t": "mc",
        "q": "Was regelt ein LTSA?",
        "o": [
-        "Die langfristige Wartung und den Service",
-        "Den Netzanschluss",
-        "Den Stromeinkauf",
-        "Die Baugenehmigung"
+        "Langfristige Wartung und Service",
+        "Den Netzanschluss beim Netzbetreiber",
+        "Den Stromeinkauf an der Börse",
+        "Die Baugenehmigung der Gemeinde"
        ],
        "a": 0,
        "e": "Long Term Service Agreement, oft mit Verfügbarkeitsgarantien.",
@@ -3027,9 +3065,9 @@
        "q": "Was ist die FID?",
        "o": [
         "Die endgültige Investitionsentscheidung",
-        "Die Frequenzabweichung",
-        "Ein Brandschutzgutachten",
-        "Die erste Abschlagszahlung"
+        "Die maximale Frequenzabweichung im Netz",
+        "Ein vorgeschriebenes Brandschutzgutachten",
+        "Die erste Abschlagszahlung an den Lieferanten"
        ],
        "a": 0,
        "e": "Final Investment Decision.",
@@ -3047,6 +3085,13 @@
        "a": 0,
        "e": "Ohne beide ist das Projekt nicht umsetzbar.",
        "id": "bess.m6.l1.q5"
+      }
+     ],
+     "figs": [
+      {
+       "src": "img/kurs/bess-phasen.svg",
+       "cap": "Typische Reihenfolge, in der Praxis überlappen die Phasen.",
+       "after": 2
       }
      ]
     },
@@ -3133,10 +3178,10 @@
        "t": "mc",
        "q": "Was sagt ein positiver Kapitalwert (NPV) aus?",
        "o": [
-        "Das Projekt verdient mehr als die geforderte Verzinsung",
-        "Das Projekt macht Verlust",
-        "Der Speicher ist voll geladen",
-        "Die Steuer ist bezahlt"
+        "Verdient mehr als die geforderte Verzinsung",
+        "Das Projekt macht über die Laufzeit Verlust",
+        "Der Speicher ist zum Stichtag voll geladen",
+        "Alle fälligen Steuern sind bereits bezahlt"
        ],
        "a": 0,
        "e": "Der NPV hängt stark vom gewählten Zinssatz ab.",
@@ -3146,10 +3191,10 @@
        "t": "mc",
        "q": "Was ist der interne Zinsfuß (IRR)?",
        "o": [
-        "Der Zinssatz, bei dem der Kapitalwert null wird",
-        "Der Zinssatz der Zentralbank",
-        "Die Rendite im ersten Jahr",
-        "Der Wirkungsgrad in Prozent"
+        "Zinssatz, bei dem der Kapitalwert null wird",
+        "Der aktuelle Leitzins der Europäischen Zentralbank",
+        "Die Rendite im ersten Betriebsjahr des Speichers",
+        "Der Wirkungsgrad der Anlage in Prozent"
        ],
        "a": 0,
        "e": "Liegt der IRR über der geforderten Rendite, ist das Projekt attraktiv.",
@@ -3168,10 +3213,10 @@
        "t": "mc",
        "q": "Was misst die LCOS?",
        "o": [
-        "Die Kosten pro ausgespeicherter MWh über die Lebensdauer",
-        "Die Leistung des Umrichters",
-        "Den Ladezustand",
-        "Die Zahl der Netzbetreiber"
+        "Lebenszeitkosten je ausgespeicherter MWh",
+        "Die maximale Leistung des Umrichters",
+        "Der durchschnittliche Ladezustand im Jahr",
+        "Die Zahl der Netzbetreiber im Netzgebiet"
        ],
        "a": 0,
        "e": "Levelized Cost of Storage.",
@@ -3181,10 +3226,10 @@
        "t": "mc",
        "q": "Warum rechnet man im Business Case Szenarien?",
        "o": [
-        "Weil Annahmen wie Erlöse, Degradation und Regulierung unsicher sind",
-        "Weil Banken keine Zahlen lesen",
-        "Weil es gesetzlich verlangt ist",
-        "Weil der Speicher sonst nicht startet"
+        "Weil Erlöse, Alterung und Regeln unsicher sind",
+        "Weil Banken grundsätzlich keine Zahlen lesen",
+        "Weil es das Handelsgesetzbuch vorschreibt",
+        "Weil der Speicher sonst nicht anläuft"
        ],
        "a": 0,
        "e": "Typisch sind Basis-, Gut- und Schlechtfall.",
@@ -3252,9 +3297,9 @@
        "t": "mc",
        "q": "Wann gilt eine Kapazitätsgarantie typischerweise nur?",
        "o": [
-        "Wenn die vereinbarten Betriebsbedingungen eingehalten werden",
-        "Immer, egal wie betrieben wird",
-        "Nur im ersten Monat",
+        "Nur bei Einhaltung der Betriebsbedingungen",
+        "Immer, unabhängig davon wie betrieben wird",
+        "Nur im ersten Betriebsmonat nach Übergabe",
         "Nur bei Strompreisen über 100 €/MWh"
        ],
        "a": 0,
@@ -3265,10 +3310,10 @@
        "t": "mc",
        "q": "Was misst eine Verfügbarkeitsgarantie?",
        "o": [
-        "Den Anteil der Zeit, in der der Speicher betriebsbereit ist",
-        "Die Lieferzeit der Container",
-        "Den Börsenpreis",
-        "Den Wirkungsgrad des Transformators"
+        "Anteil der Zeit, in der er betriebsbereit ist",
+        "Die Lieferzeit der Container ab Bestellung",
+        "Der durchschnittliche Börsenpreis im Jahr",
+        "Der Wirkungsgrad des Transformators bei Volllast"
        ],
        "a": 0,
        "e": "Ausfallzeiten kosten Erlöse; die Garantie verteilt dieses Risiko.",
@@ -3278,10 +3323,10 @@
        "t": "mc",
        "q": "Warum kann Lieferverzug bei Speichern besonders teuer werden?",
        "o": [
-        "Weil regulatorische Stichtage wie die Netzentgeltbefreiung verpasst werden können",
-        "Weil Container rosten",
-        "Weil die Zellen sonst schneller laden",
-        "Weil die Stromsteuer täglich steigt"
+        "Regulatorische Stichtage können verpasst werden",
+        "Weil eingelagerte Container rosten",
+        "Weil die Zellen bei Verzug schneller laden",
+        "Weil die Stromsteuer jeden Tag weiter steigt"
        ],
        "a": 0,
        "e": "Deshalb gehören Vertragsstrafen und Puffer in die Planung.",
@@ -3291,10 +3336,10 @@
        "t": "mc",
        "q": "Was ist das Schnittstellenrisiko?",
        "o": [
-        "Unklare Verantwortung, wenn Komponenten verschiedener Lieferanten zusammenspielen",
-        "Das Risiko eines Kabelbruchs",
-        "Das Risiko negativer Preise",
-        "Das Risiko eines Brandes"
+        "Unklare Verantwortung zwischen Lieferanten",
+        "Das Risiko eines Kabelbruchs bei der Montage",
+        "Das Risiko stark negativer Strompreise",
+        "Das Risiko eines Brandes im Container"
        ],
        "a": 0,
        "e": "Ein EPC aus einer Hand reduziert es, kostet aber meist mehr.",
@@ -3376,8 +3421,8 @@
        "o": [
         "Die Netzanschlussleistung",
         "Die Farbe der Container",
-        "Die Zahl der Mitarbeiter",
-        "Der Stromsteuersatz"
+        "Die Zahl der Mitarbeiter vor Ort",
+        "Der Satz der Stromsteuer"
        ],
        "a": 0,
        "e": "Mehr Wechselrichterleistung als Anschlussleistung bringt am Netz nichts.",
@@ -3387,10 +3432,10 @@
        "t": "mc",
        "q": "Welcher Vorteil spricht für Augmentation statt Überdimensionierung?",
        "o": [
-        "Kosten werden in die Zukunft verschoben, wenn Batterien günstiger sein können",
-        "Sie braucht keinen Platz",
-        "Sie verhindert jede Alterung",
-        "Sie erhöht den Wirkungsgrad auf 100 %"
+        "Spätere, womöglich günstigere Batteriekäufe",
+        "Sie benötigt keinerlei Platz",
+        "Sie verhindert jede weitere Alterung",
+        "Sie hebt den Wirkungsgrad auf 100 %"
        ],
        "a": 0,
        "e": "Nachteil: Platz und kompatible Technik müssen vorgehalten werden.",
@@ -3400,10 +3445,10 @@
        "t": "mc",
        "q": "Wann lohnt sich ein zusätzlicher Zyklus?",
        "o": [
-        "Wenn der Erlös die Kosten für Verluste und Alterung übersteigt",
-        "Immer",
-        "Nie",
-        "Nur am Wochenende"
+        "Wenn der Erlös Verluste und Alterung übersteigt",
+        "Immer, jeder Zyklus bringt Gewinn",
+        "Nie, Zyklen schaden nur",
+        "Nur an Wochenenden und Feiertagen"
        ],
        "a": 0,
        "e": "Gute Optimierer rechnen Degradationskosten ein.",
@@ -3422,10 +3467,10 @@
        "t": "mc",
        "q": "Warum steigt bei längerer Speicherdauer der CAPEX pro MW?",
        "o": [
-        "Weil pro MW mehr Batterieenergie eingebaut wird",
-        "Weil die Netzentgelte steigen",
-        "Weil der Transformator kleiner wird",
-        "Weil die Steuer pro MW steigt"
+        "Pro MW wird mehr Batterieenergie eingebaut",
+        "Weil die Netzentgelte mit der Dauer steigen",
+        "Weil der Transformator kleiner ausfallen muss",
+        "Weil die Stromsteuer pro MW berechnet wird"
        ],
        "a": 0,
        "e": "Dafür steht pro Zyklus mehr Energie zur Verfügung.",
@@ -3505,10 +3550,10 @@
        "t": "mc",
        "q": "Warum unterscheiden sich Zahlen zum Speichermarkt oft?",
        "o": [
-        "Wegen unterschiedlicher Quellen, Stichtage und Abgrenzungen",
-        "Weil Speicher nicht gezählt werden dürfen",
-        "Weil alle Zahlen geschätzt sind",
-        "Weil es keine Statistik gibt"
+        "Unterschiedliche Quellen, Stichtage und Abgrenzungen",
+        "Speicher dürfen in Deutschland nicht gezählt werden",
+        "Alle veröffentlichten Zahlen sind frei geschätzt",
+        "Es gibt keine offizielle Speicherstatistik"
        ],
        "a": 0,
        "e": "Deshalb Quelle, Datum und Abgrenzung immer mitnennen.",
@@ -3625,10 +3670,10 @@
        "t": "mc",
        "q": "Was macht ein Integrator?",
        "o": [
-        "Er führt Zellen, Umrichter und Steuerung zu einem Speichersystem zusammen",
-        "Er stellt nur Zellen her",
-        "Er betreibt das Übertragungsnetz",
-        "Er erhebt die Stromsteuer"
+        "Führt Zellen, Umrichter und Steuerung zusammen",
+        "Stellt nur Batteriezellen her",
+        "Betreibt das deutsche Übertragungsnetz",
+        "Erhebt die Stromsteuer beim Betreiber"
        ],
        "a": 0,
        "e": "Oft übernimmt er auch Garantie und Service.",
@@ -3664,10 +3709,10 @@
        "t": "mc",
        "q": "Warum ist die Finanzkraft eines Herstellers bei der Auswahl wichtig?",
        "o": [
-        "Garantien über viele Jahre sind nur so viel wert wie der Garantiegeber",
-        "Weil reiche Hersteller schneller liefern",
-        "Weil es gesetzlich vorgeschrieben ist",
-        "Weil sonst die Stromsteuer steigt"
+        "Garantien sind nur so viel wert wie der Garantiegeber",
+        "Finanzstarke Hersteller liefern grundsätzlich schneller",
+        "Es ist gesetzlich für jede Ausschreibung vorgeschrieben",
+        "Sonst steigt die Stromsteuer für den Betreiber"
        ],
        "a": 0,
        "e": "Ein insolventer Hersteller kann keine Garantie mehr erfüllen.",
@@ -3782,9 +3827,9 @@
        "q": "Auf wann wurden die Sorgfaltspflichten für Rohstoffe verschoben?",
        "o": [
         "Auf den 18. August 2027",
-        "Auf den 1. Januar 2024",
-        "Auf 2040",
-        "Sie wurden gestrichen"
+        "Auf den 31. Dezember 2025",
+        "Auf den 1. Januar 2040",
+        "Sie wurden ersatzlos gestrichen"
        ],
        "a": 0,
        "e": "Die Verschiebung betrug zwei Jahre.",
@@ -3794,10 +3839,10 @@
        "t": "mc",
        "q": "Für welche Batterien gilt die Erklärung zum CO₂-Fußabdruck zuerst?",
        "o": [
-        "Für Batterien von Elektrofahrzeugen",
-        "Für Hausspeicher",
-        "Für Knopfzellen",
-        "Für alle gleichzeitig"
+        "Für Batterien von E-Fahrzeugen",
+        "Für Heimspeicher mit Solaranlage",
+        "Für Knopfzellen in Uhren",
+        "Für alle Batterien zur gleichen Zeit"
        ],
        "a": 0,
        "e": "Für Industriebatterien folgen die Pflichten gestaffelt.",
@@ -3807,10 +3852,10 @@
        "t": "mc",
        "q": "Was ist mit Second Life gemeint?",
        "o": [
-        "Gebrauchte E-Auto-Batterien in stationären Speichern weiterverwenden",
-        "Den Speicher zweimal am Tag laden",
-        "Eine zweite Baugenehmigung",
-        "Eine Versicherung"
+        "Alte E-Auto-Batterien stationär weiternutzen",
+        "Den Speicher zweimal am Tag voll laden",
+        "Eine zweite Baugenehmigung beantragen",
+        "Eine Zusatzversicherung abschließen"
        ],
        "a": 0,
        "e": "Möglich, aber wegen uneinheitlicher Batterien technisch und wirtschaftlich anspruchsvoll.",
@@ -3821,9 +3866,9 @@
        "q": "Welches Gesetz ersetzt in Deutschland laut IHK das Batteriegesetz?",
        "o": [
         "Das Batterierecht-Durchführungsgesetz (BattDG)",
-        "Das EnWG",
-        "Das StromStG",
-        "Das BauGB"
+        "Das Energiewirtschaftsgesetz (EnWG)",
+        "Das Kreislaufwirtschaftsgesetz (KrWG)",
+        "Das Elektro- und Elektronikgerätegesetz (ElektroG)"
        ],
        "a": 0,
        "e": "Laut IHK seit 7. Oktober 2025.",
@@ -3901,10 +3946,10 @@
        "t": "mc",
        "q": "Welche Regelbereiche haben sich 2025/2026 für Speicher mehrfach geändert?",
        "o": [
-        "Netzentgelte, Baukostenzuschuss, Stromsteuer und Baurecht",
-        "Nur die Zellchemie",
-        "Nur die Farbe der Container",
-        "Nichts hat sich geändert"
+        "Netzentgelte, BKZ, Stromsteuer und Baurecht",
+        "Ausschließlich die zulässige Zellchemie",
+        "Nur die Farbe und Höhe der Container",
+        "Nichts, die Regeln sind stabil"
        ],
        "a": 0,
        "e": "Deshalb gehört die laufende Beobachtung der Regulierung zum Projektmanagement.",
@@ -3914,10 +3959,10 @@
        "t": "mc",
        "q": "Was hilft gegen Akzeptanzprobleme vor Ort?",
        "o": [
-        "Frühe, offene Kommunikation mit Gemeinde und Anwohnern",
-        "Möglichst spät informieren",
-        "Den Speicher verstecken",
-        "Auf Brandschutz verzichten"
+        "Früh und offen mit Gemeinde und Anwohnern sprechen",
+        "Möglichst spät und nur auf Nachfrage informieren",
+        "Den Speicher hinter Hecken verstecken",
+        "Auf Brandschutz verzichten, um Kosten zu sparen"
        ],
        "a": 0,
        "e": "Brand und Lärm sind fast immer die ersten Fragen.",
@@ -4003,10 +4048,10 @@
        "t": "mc",
        "q": "Was ist ein virtueller Speicher?",
        "o": [
-        "Ein per Software gebündeltes Portfolio mehrerer realer Speicher",
-        "Ein Speicher, der nur im Computer simuliert wird",
-        "Ein Speicher ohne Batterie",
-        "Ein Cloud-Speicher für Daten"
+        "Mehrere reale Speicher als gebündeltes Portfolio",
+        "Ein nur im Computer simulierter Speicher",
+        "Ein Speicher ganz ohne Batteriezellen",
+        "Ein Cloud-Speicher für Betriebsdaten"
        ],
        "a": 0,
        "e": "Die Speicher sind real, nur die Steuerung ist gebündelt.",
@@ -4016,10 +4061,10 @@
        "t": "mc",
        "q": "Was steuert der Abnehmer bei einem virtuellen Speicher?",
        "o": [
-        "Eine zugesagte Leistung und Energie aus dem Portfolio",
-        "Einen bestimmten einzelnen Speicher",
-        "Die Zellchemie",
-        "Den Netzbetreiber"
+        "Zugesagte Leistung und Energie aus dem Portfolio",
+        "Einen bestimmten Speicherstandort",
+        "Die Zellchemie der beteiligten Speicher",
+        "Den zuständigen Verteilnetzbetreiber"
        ],
        "a": 0,
        "e": "Welcher Standort liefert, entscheidet die Plattform.",
@@ -4038,10 +4083,10 @@
        "t": "mc",
        "q": "Welcher Vorteil ergibt sich für den Abnehmer eines virtuellen Speichers?",
        "o": [
-        "Der Ausfall eines einzelnen Standorts trifft ihn weniger",
-        "Er braucht keine Verträge",
-        "Er erhält Strom kostenlos",
-        "Er muss keine Regelleistung präqualifizieren"
+        "Ausfall eines Standorts trifft ihn weniger",
+        "Er braucht keinerlei Verträge",
+        "Er erhält den Strom kostenlos",
+        "Er muss nichts präqualifizieren"
        ],
        "a": 0,
        "e": "Das Risiko verteilt sich auf mehrere Anlagen.",
@@ -4051,10 +4096,10 @@
        "t": "mc",
        "q": "Was unterscheidet ein virtuelles Kraftwerk von einem virtuellen Speicher?",
        "o": [
-        "Es bündelt viele kleine Anlagen unterschiedlicher Art, nicht nur Großspeicher",
-        "Es hat keine Software",
-        "Es arbeitet nur mit Kohle",
-        "Es gibt keinen Unterschied"
+        "Es bündelt viele kleine, verschiedene Anlagen",
+        "Es arbeitet ganz ohne Steuerungssoftware",
+        "Es nutzt nur Kohlekraftwerke",
+        "Es gibt keinen Unterschied zwischen beiden"
        ],
        "a": 0,
        "e": "Beispiele: Heimspeicher, Wärmepumpen, Biogasanlagen.",
@@ -4119,10 +4164,10 @@
        "t": "mc",
        "q": "Was ist das Besondere an Redox-Flow-Batterien?",
        "o": [
-        "Leistung und Energie lassen sich getrennt skalieren",
-        "Sie haben die höchste Energiedichte",
-        "Sie brauchen keinen Elektrolyten",
-        "Sie bestehen aus Lithium-Metall"
+        "Leistung und Energie getrennt skalierbar",
+        "Höchste Energiedichte aller Batterietypen",
+        "Funktioniert ganz ohne flüssigen oder festen Elektrolyten",
+        "Besteht aus Lithium-Metall-Anoden"
        ],
        "a": 0,
        "e": "Mehr Energie heißt einfach größere Tanks.",
@@ -4158,10 +4203,10 @@
        "t": "mc",
        "q": "Was bremst neue Speichertechnologien oft, auch wenn sie technisch vielversprechend sind?",
        "o": [
-        "Fehlende Bankability: Banken finanzieren lieber erprobte Technik",
-        "Ein gesetzliches Verbot",
-        "Fehlendes Interesse der Forschung",
-        "Zu hohe Netzfrequenz"
+        "Banken finanzieren lieber erprobte Technik",
+        "Ein gesetzliches Verbot neuer Speichertechnik",
+        "Fehlendes Interesse in der Forschung",
+        "Eine zu hohe Netzfrequenz in Europa"
        ],
        "a": 0,
        "e": "Erst Referenzprojekte schaffen Vertrauen.",
@@ -4234,10 +4279,10 @@
        "t": "mc",
        "q": "Woher kam früher die Momentanreserve im Stromnetz?",
        "o": [
-        "Aus der Schwungmasse rotierender Generatoren großer Kraftwerke",
-        "Aus Batteriespeichern",
-        "Aus Solarmodulen",
-        "Aus Stromzählern"
+        "Aus der Schwungmasse großer Generatoren",
+        "Aus den Batteriespeichern der Haushalte",
+        "Aus den Solarmodulen auf Dächern",
+        "Aus den Stromzählern der Kunden"
        ],
        "a": 0,
        "e": "Mit weniger Großkraftwerken sinkt diese Trägheit.",
@@ -4247,10 +4292,10 @@
        "t": "mc",
        "q": "Was unterscheidet einen netzbildenden von einem netzfolgenden Wechselrichter?",
        "o": [
-        "Er gibt selbst eine Spannung vor, statt nur dem Netz zu folgen",
-        "Er arbeitet nur nachts",
-        "Er braucht keine Batterie",
-        "Er ist immer kleiner"
+        "Gibt selbst Spannung vor, statt nur zu folgen",
+        "Arbeitet ausschließlich in der Nacht",
+        "Braucht keine angeschlossene Batterie",
+        "Ist kleiner als netzfolgende Geräte"
        ],
        "a": 0,
        "e": "Damit kann er Trägheit nachbilden und schwache Netze stützen.",
@@ -4278,10 +4323,10 @@
        "t": "mc",
        "q": "Wie ist der Stand bei Anforderungen und Vergütung für netzbildende Speicher (2026)?",
        "o": [
-        "Sie werden derzeit entwickelt; aktuellen Stand prüfen",
-        "Sie sind seit Jahrzehnten fest geregelt",
-        "Sie sind verboten",
-        "Es gibt keinen Bedarf"
+        "Werden entwickelt, aktuellen Stand prüfen",
+        "Seit Jahrzehnten fest und europaweit einheitlich geregelt",
+        "Grundsätzlich verboten",
+        "Es gibt dafür keinen Bedarf"
        ],
        "a": 0,
        "e": "Ein aktives Feld bei Netzbetreibern, Herstellern und Forschung.",
@@ -4367,10 +4412,10 @@
        "t": "mc",
        "q": "Was ist der Unterschied zwischen Szenario und Prognose?",
        "o": [
-        "Ein Szenario rechnet Annahmen durch, eine Prognose beschreibt die erwartete Entwicklung",
-        "Es gibt keinen Unterschied",
+        "Szenario: Was-wäre-wenn; Prognose: erwartete Entwicklung",
+        "Es gibt zwischen beiden keinen Unterschied",
         "Ein Szenario ist immer richtig",
-        "Eine Prognose braucht keine Annahmen"
+        "Eine Prognose kommt ohne jede Annahme aus"
        ],
        "a": 0,
        "e": "Beide hängen von Annahmen ab.",
@@ -4381,9 +4426,9 @@
        "q": "Welche Quelle ist für die Zahl der in Deutschland registrierten Speicher am verlässlichsten?",
        "o": [
         "Primärdaten wie das Marktstammdatenregister",
-        "Ein Social-Media-Beitrag",
-        "Eine Werbebroschüre",
-        "Ein Forumsbeitrag"
+        "Ein Beitrag in sozialen Medien",
+        "Eine Werbebroschüre eines großen Speicherherstellers",
+        "Ein anonymer Forumsbeitrag"
        ],
        "a": 0,
        "e": "Auch Primärdaten haben Grenzen, etwa Meldeverzug.",
@@ -4393,10 +4438,10 @@
        "t": "mc",
        "q": "Was ist bei Kanzlei- und Verbandstexten zu beachten?",
        "o": [
-        "Sie sind sachkundig, vertreten aber oft Interessen",
-        "Sie sind immer neutral",
-        "Sie sind immer falsch",
-        "Sie dürfen nicht zitiert werden"
+        "Sachkundig, aber oft interessengeleitet",
+        "Immer völlig neutral, unabhängig und vollständig",
+        "Grundsätzlich fehlerhaft",
+        "Dürfen nicht zitiert werden"
        ],
        "a": 0,
        "e": "Deshalb vor Entscheidungen den Primärtext prüfen.",

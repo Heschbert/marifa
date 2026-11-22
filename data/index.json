@@ -25,6 +25,7 @@
     "Südamerika",
     "Ozeanien",
     "Deutschland",
+    "Flaggen",
     "Welt & Natur"
    ]
   },
@@ -156,6 +157,10 @@
   {
    "file": "schaetzen.json",
    "builder": "estimate"
+  },
+  {
+   "file": "geo.json",
+   "builder": "flags"
   }
  ]
 }

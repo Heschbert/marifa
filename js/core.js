@@ -25,6 +25,11 @@
     for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(rng() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
     return a;
   };
+  /* Fragetext als HTML, mit optionalem großen Bild (x.img, z. B. Flaggen-Emoji) darüber */
+  /* Antworttexte der Form "flag:de" werden als flaches Flaggenbild angezeigt (img/flags, MIT-Lizenz flag-icons). */
+  U.ot = function (t) { var m = /^flag:([a-z]{2})$/.exec(String(t)); return m ? '<img class="flagimg" src="img/flags/' + m[1] + '.svg" alt="Flagge" draggable="false">' : U.esc(t); };
+  U.oq = function (t) { return /^flag:/.test(String(t)) ? U.ot(t) : "„" + U.esc(t) + "“"; };
+  U.qh = function (x) { return (x.img ? '<span class="qimg" role="img" aria-label="' + U.esc(x.imgAlt || "Bild") + '">' + U.ot(x.img) + "</span>" : "") + U.esc(x.q); };
   U.hash = function (s) { var h = 5381; for (var i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0; return (h >>> 0).toString(36); };
 
   /* Ereignisse: Module melden sich mit WF.on an und werden über WF.emit benachrichtigt. */
@@ -33,7 +38,7 @@
 
   /* Spielmodi sind eigenständige Bausteine. Neue Modi werden hier registriert. */
   /* App-Version: nur mit „node tools/version.mjs <neu>“ ändern, das setzt auch sw.js. */
-  WF.VERSION = "2.3";
+  WF.VERSION = "2.4";
   WF.BUILD = "2026-11-22";
 
   WF.registerMode = function (m) { WF.modes[m.id] = m; WF.modeOrder.push(m.id); };

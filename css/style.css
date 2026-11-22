@@ -410,3 +410,18 @@ body.course .hero { background: linear-gradient(135deg, #2b8a3e 0%, #66a80f 100%
 .cnext .grid2 .btn { margin-top: 0; }
 .cnext .grid2 .btn:not(:first-child) { background: var(--card); color: var(--fg); border-color: var(--line); }
 input.search { width: 100%; font: inherit; padding: 12px 14px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--card); color: var(--fg); margin: 8px 0 4px; }
+
+/* ---------- 2.4: Bildfragen (Flaggen), Kursbilder, Freischaltung ---------- */
+.qimg { display: block; font-size: 96px; line-height: 1.1; margin: 4px 0 10px; text-align: center; }
+#opts.bigopts { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+#opts.bigopts .ans { justify-content: center; font-size: 56px; line-height: 1.1; min-height: 96px; margin: 0; padding: 10px; }
+#opts.bigopts .ans::before { position: absolute; top: 8px; left: 8px; width: 22px; height: 22px; font-size: 11px; border-radius: 7px; }
+.fig { margin: 16px 0; padding: 12px; background: var(--card); border-radius: 16px; box-shadow: var(--shadow); }
+.fig img { display: block; width: 100%; height: auto; }
+.fig figcaption { font-size: 13px; color: var(--mute); margin-top: 8px; text-align: center; }
+.unlock { display: flex; align-items: center; gap: 10px; }
+.unlock .grow { font-size: 14px; }
+.qimg .flagimg { width: 168px; height: 126px; }
+.flagimg { display: inline-block; width: 84px; height: 63px; object-fit: cover; border-radius: 4px; box-shadow: 0 0 0 1px rgba(0,0,0,.12); vertical-align: middle; }
+#opts.bigopts .ans { font-size: 16px; }
+.wrong .flagimg, .fb .flagimg { width: 48px; height: 36px; }

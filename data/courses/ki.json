@@ -84,10 +84,10 @@
        "t": "mc",
        "q": "Wie hängen KI, maschinelles Lernen und Deep Learning zusammen?",
        "o": [
-        "Deep Learning ist Teil des maschinellen Lernens, und das ist Teil der KI",
-        "Es sind drei getrennte Gebiete",
-        "KI ist Teil des Deep Learnings",
-        "Maschinelles Lernen ist Teil des Deep Learnings"
+        "Deep Learning ⊂ maschinelles Lernen ⊂ KI",
+        "Drei voneinander getrennte Forschungsgebiete",
+        "KI ist ein Teilgebiet des Deep Learnings",
+        "ML ist ein Teilgebiet des Deep Learnings"
        ],
        "a": 0,
        "e": "Die Begriffe sind ineinander geschachtelt, vom allgemeinsten zum speziellsten.",
@@ -97,10 +97,10 @@
        "t": "mc",
        "q": "Was unterscheidet maschinelles Lernen von klassischer Programmierung?",
        "o": [
-        "Das System lernt Regeln aus Beispielen, statt sie vorgegeben zu bekommen",
-        "Es braucht keinen Computer",
-        "Es arbeitet ohne Daten",
-        "Es ist immer fehlerfrei"
+        "Es lernt Regeln aus Beispielen",
+        "Es kommt ganz ohne Computer aus",
+        "Es arbeitet vollständig ohne Daten",
+        "Es liefert immer fehlerfreie Ergebnisse"
        ],
        "a": 0,
        "e": "Klassische Software folgt Regeln, die ein Mensch geschrieben hat.",
@@ -110,10 +110,10 @@
        "t": "mc",
        "q": "Wofür eignet sich maschinelles Lernen besonders?",
        "o": [
-        "Für Aufgaben, deren Regeln schwer aufzuschreiben sind, etwa Gesichter erkennen",
-        "Für einfache Rechenaufgaben wie 2 + 2",
-        "Für Aufgaben ohne Daten",
-        "Für Aufgaben, die immer gleich ablaufen"
+        "Aufgaben mit schwer aufschreibbaren Regeln",
+        "Einfache Rechenaufgaben wie zwei plus zwei",
+        "Aufgaben, für die es überhaupt keine Daten gibt",
+        "Abläufe, die immer exakt gleich ablaufen"
        ],
        "a": 0,
        "e": "Bei einfachen, klaren Regeln ist klassische Software meist besser und billiger.",
@@ -123,10 +123,10 @@
        "t": "mc",
        "q": "Welche Aussage zu AGI trifft zu?",
        "o": [
-        "Sie ist umstritten und nicht allgemein anerkannt definiert",
-        "Sie existiert seit 1956",
-        "Sie ist ein Begriff für Taschenrechner",
-        "Sie ist gesetzlich verboten"
+        "Umstritten und nicht klar definiert",
+        "Existiert bereits seit dem Jahr 1956",
+        "Ein Fachbegriff für Taschenrechner",
+        "In der EU seit 2024 gesetzlich verboten"
        ],
        "a": 0,
        "e": "Ob und wann sie kommt, wird kontrovers diskutiert.",
@@ -143,6 +143,13 @@
        ],
        "e": "Ein Transformer-Sprachmodell ist ein spezielles Deep-Learning-Modell.",
        "id": "ki.m1.l1.q5"
+      }
+     ],
+     "figs": [
+      {
+       "src": "img/kurs/ki-begriffe.svg",
+       "cap": "Die Begriffe sind ineinander geschachtelt.",
+       "after": 2
       }
      ]
     },
@@ -228,10 +235,10 @@
        "t": "mc",
        "q": "Was ist ein „KI-Winter“?",
        "o": [
-        "Eine Phase der Ernüchterung mit weniger Forschungsgeld",
-        "Ein KI-System für Wettervorhersagen",
-        "Ein Wettbewerb im Winter",
-        "Ein Rechenzentrum im Norden"
+        "Phase der Ernüchterung mit weniger Forschungsgeld",
+        "Ein KI-System für Wettervorhersagen im Winter",
+        "Ein jährlicher Programmierwettbewerb im Dezember",
+        "Ein kühl gelegenes Rechenzentrum"
        ],
        "a": 0,
        "e": "Auf überzogene Erwartungen folgten mehrfach solche Phasen.",
@@ -241,10 +248,10 @@
        "t": "mc",
        "q": "Was machte den Durchbruch von AlexNet 2012 möglich?",
        "o": [
-        "Viele Daten und Rechenleistung auf Grafikkarten",
-        "Ein neues Betriebssystem",
-        "Regelbasierte Expertensysteme",
-        "Quantencomputer"
+        "Viele Daten und Rechenleistung auf GPUs",
+        "Ein neues, schnelleres Betriebssystem",
+        "Regelbasierte Expertensysteme aus den 80ern",
+        "Die ersten praxistauglichen Quantencomputer"
        ],
        "a": 0,
        "e": "Die Grundideen waren älter; erst Daten und GPUs machten tiefe Netze praktikabel.",
@@ -255,9 +262,9 @@
        "q": "Wofür steht die Veröffentlichung „Attention Is All You Need“ (2017)?",
        "o": [
         "Die Transformer-Architektur",
-        "Das erste Perzeptron",
-        "Die Backpropagation",
-        "Den Dartmouth-Workshop"
+        "Das erste lernfähige Perzeptron",
+        "Das Verfahren der Backpropagation",
+        "Die Ergebnisse des Dartmouth-Workshops"
        ],
        "a": 0,
        "e": "Transformer sind die Grundlage heutiger Sprachmodelle.",
@@ -367,10 +374,10 @@
        "t": "mc",
        "q": "Wie werden große Sprachmodelle vortrainiert?",
        "o": [
-        "Selbstüberwacht: Sie sagen das nächste Wort (Token) eines Textes vorher",
-        "Nur mit von Menschen beschrifteten Daten",
-        "Nur durch Belohnung in Spielen",
-        "Gar nicht, sie sind programmiert"
+        "Selbstüberwacht: nächstes Token vorhersagen",
+        "Nur mit von Menschen beschrifteten Beispielen",
+        "Nur über Belohnungen in Computerspielen",
+        "Gar nicht, ihr Wissen wird programmiert"
        ],
        "a": 0,
        "e": "So lassen sich riesige unbeschriftete Textmengen nutzen.",
@@ -380,10 +387,10 @@
        "t": "mc",
        "q": "Was lernt ein Agent beim bestärkenden Lernen?",
        "o": [
-        "Eine Strategie, die die Belohnung über die Zeit maximiert",
-        "Die Labels auswendig",
-        "Die Farbe von Bildern",
-        "Nur Clustering"
+        "Eine Strategie für maximale Belohnung",
+        "Die Labels der Trainingsdaten auswendig",
+        "Die Farbwerte einzelner Bildpunkte",
+        "Ausschließlich Gruppen ähnlicher Daten"
        ],
        "a": 0,
        "e": "Bekanntes Beispiel: AlphaGo (2016).",
@@ -393,10 +400,10 @@
        "t": "mc",
        "q": "Ein Händler möchte Kunden ohne vorgegebene Kategorien in ähnliche Gruppen einteilen. Was passt?",
        "o": [
-        "Clustering (unüberwachtes Lernen)",
-        "Regression",
-        "Bestärkendes Lernen",
-        "Überwachte Klassifikation"
+        "Clustering (unüberwacht)",
+        "Regression mit Preisangabe",
+        "Bestärkendes Lernen mit Belohnung",
+        "Überwachte Klassifikation mit Labels"
        ],
        "a": 0,
        "e": "Es gibt keine Labels, die Gruppen entstehen aus den Daten.",
@@ -467,10 +474,10 @@
        "t": "mc",
        "q": "Woran erkennt man Overfitting typischerweise?",
        "o": [
-        "Der Fehler auf Trainingsdaten sinkt, auf Validierungsdaten steigt er",
-        "Beide Fehler sinken gleichmäßig",
-        "Das Training dauert zu kurz",
-        "Das Modell hat zu wenige Parameter"
+        "Trainingsfehler sinkt, Validierungsfehler steigt",
+        "Beide Fehler sinken gleichmäßig und stetig",
+        "Das Training ist sofort beendet",
+        "Das Modell hat sehr wenige Parameter"
        ],
        "a": 0,
        "e": "Das Modell lernt Besonderheiten der Trainingsdaten statt allgemeiner Muster.",
@@ -480,10 +487,10 @@
        "t": "mc",
        "q": "Warum darf das Modell die Testdaten vorher nicht sehen?",
        "o": [
-        "Sonst misst man Auswendiglernen statt echter Leistung",
-        "Weil Testdaten geheim sind",
-        "Weil sie zu groß sind",
-        "Weil Testdaten keine Labels haben"
+        "Sonst misst man Auswendiglernen statt Können",
+        "Weil Testdaten aus Datenschutzgründen geheim sind",
+        "Weil Testdaten zu groß für den Speicher sind",
+        "Weil Testdaten grundsätzlich keine Labels haben"
        ],
        "a": 0,
        "e": "Nur ungesehene Daten zeigen, wie gut das Modell generalisiert.",
@@ -493,10 +500,10 @@
        "t": "mc",
        "q": "Was passiert bei der Inferenz?",
        "o": [
-        "Das fertige Modell erzeugt Antworten auf neue Eingaben",
-        "Das Modell wird von Grund auf trainiert",
-        "Die Daten werden beschriftet",
-        "Die Hardware wird gekühlt"
+        "Das fertige Modell beantwortet neue Eingaben",
+        "Das Modell wird von Grund auf neu trainiert",
+        "Die Trainingsdaten werden von Menschen beschriftet",
+        "Die Grafikkarten werden zwischendurch gekühlt"
        ],
        "a": 0,
        "e": "Inferenz passiert bei jeder Anfrage, Training nur selten.",
@@ -508,8 +515,8 @@
        "o": [
         "Schlechte Daten führen zu schlechten Modellen",
         "Modelle löschen schlechte Daten automatisch",
-        "Müll wird recycelt",
-        "Mehr Daten sind immer besser, egal welche"
+        "Datenmüll wird vom Modell recycelt",
+        "Mehr Daten sind immer besser"
        ],
        "a": 0,
        "e": "Ein Modell kann nur lernen, was in den Daten steckt.",
@@ -525,6 +532,13 @@
        ],
        "e": "Erst lernen, dann einstellen und vergleichen, ganz am Ende ehrlich prüfen.",
        "id": "ki.m1.l4.q5"
+      }
+     ],
+     "figs": [
+      {
+       "src": "img/kurs/ki-overfitting.svg",
+       "cap": "Steigt der Validierungsfehler wieder, beginnt Overfitting.",
+       "after": 5
       }
      ]
     }
@@ -598,9 +612,9 @@
        "q": "Was ist ein Embedding?",
        "o": [
         "Ein gelernter Vektor, der Bedeutung abbildet",
-        "Ein eingebettetes Video",
+        "Ein in eine Webseite eingebettetes Video",
         "Ein Verschlüsselungsverfahren",
-        "Eine Grafikkarte"
+        "Eine besonders schnelle Grafikkarte"
        ],
        "a": 0,
        "e": "Ähnliche Bedeutungen liegen im Vektorraum nah beieinander.",
@@ -623,10 +637,10 @@
        "t": "mc",
        "q": "Wofür nutzt man die Kosinus-Ähnlichkeit?",
        "o": [
-        "Um zu messen, wie ähnlich zwei Vektoren sind",
-        "Um Bilder zu drehen",
-        "Um Strom zu sparen",
-        "Um Texte zu übersetzen"
+        "Ähnlichkeit zweier Vektoren messen",
+        "Bilder um einen Winkel drehen",
+        "Strom beim Training sparen",
+        "Texte in andere Sprachen übersetzen"
        ],
        "a": 0,
        "e": "Sie misst den Winkel zwischen den Vektoren.",
@@ -636,10 +650,10 @@
        "t": "mc",
        "q": "Welchen Vorteil hat semantische Suche gegenüber Stichwortsuche?",
        "o": [
-        "Sie findet inhaltlich Passendes, auch mit anderen Wörtern",
-        "Sie ist immer schneller",
-        "Sie braucht keine Daten",
-        "Sie findet nur exakte Treffer"
+        "Findet Passendes auch mit anderen Wörtern",
+        "Sie ist in jedem Fall schneller",
+        "Sie braucht überhaupt keine Daten",
+        "Sie findet ausschließlich exakte Treffer"
        ],
        "a": 0,
        "e": "„Auto mieten“ findet so auch „Mietwagen“.",
@@ -649,10 +663,10 @@
        "t": "mc",
        "q": "Wie wird ein Farbbild für ein Modell dargestellt?",
        "o": [
-        "Als Tabelle von Pixeln mit Zahlen für Rot, Grün und Blau",
-        "Als Text",
-        "Als Tonaufnahme",
-        "Gar nicht, Modelle sehen Bilder direkt"
+        "Als Pixeltabelle mit Rot-, Grün- und Blauwerten",
+        "Als beschreibender Text zu jedem Bildbereich",
+        "Als Tonaufnahme der Bildinformation",
+        "Gar nicht, Modelle sehen direkt"
        ],
        "a": 0,
        "e": "Auch Bilder sind für das Modell nur Zahlen.",
@@ -712,10 +726,10 @@
        "t": "mc",
        "q": "Was macht die Softmax-Funktion?",
        "o": [
-        "Sie wandelt Rohwerte in Wahrscheinlichkeiten um, die zusammen 100 % ergeben",
-        "Sie macht Bilder weicher",
-        "Sie komprimiert Dateien",
-        "Sie löscht falsche Antworten"
+        "Rohwerte → Wahrscheinlichkeiten (Summe 100 %)",
+        "Macht Bilder weicher und rauschärmer",
+        "Komprimiert Modelldateien",
+        "Löscht falsche Antworten aus der Ausgabe"
        ],
        "a": 0,
        "e": "Größere Logits bekommen überproportional mehr Wahrscheinlichkeit.",
@@ -725,10 +739,10 @@
        "t": "mc",
        "q": "Warum kann ein Sprachmodell auf dieselbe Frage unterschiedlich antworten?",
        "o": [
-        "Es wählt das nächste Token gewichtet zufällig aus einer Verteilung",
-        "Es hat ein schlechtes Gedächtnis",
+        "Es wählt das nächste Token gewichtet zufällig",
+        "Es hat ein schlechtes Kurzzeitgedächtnis",
         "Es wird nach jeder Frage neu trainiert",
-        "Weil das Internet sich ändert"
+        "Weil sich das Internet ständig verändert"
        ],
        "a": 0,
        "e": "Wie zufällig, lässt sich einstellen (Temperatur, siehe Modul 4).",
@@ -738,10 +752,10 @@
        "t": "mc",
        "q": "Was bedeutet eine hohe Wahrscheinlichkeit für eine Antwort eines Sprachmodells?",
        "o": [
-        "Sie passt gut zum Muster der Trainingsdaten, ist aber nicht sicher wahr",
+        "Sie passt gut zum Muster, ist aber nicht sicher wahr",
         "Sie ist garantiert richtig",
-        "Sie wurde von einem Menschen geprüft",
-        "Sie stammt aus einer Datenbank"
+        "Sie wurde vorher von einem Menschen geprüft und freigegeben",
+        "Sie stammt direkt aus einer geprüften Faktendatenbank"
        ],
        "a": 0,
        "e": "Deshalb können Modelle sehr überzeugt falsche Dinge sagen.",
@@ -751,10 +765,10 @@
        "t": "mc",
        "q": "Wann ist ein Modell gut kalibriert?",
        "o": [
-        "Wenn von Antworten mit 80 % Sicherheit etwa 80 % stimmen",
+        "Wenn 80-%-sichere Antworten zu etwa 80 % stimmen",
         "Wenn es immer 100 % sicher ist",
-        "Wenn es nie Fehler macht",
-        "Wenn es schnell antwortet"
+        "Wenn es überhaupt keine Fehler macht",
+        "Wenn es besonders schnell antwortet"
        ],
        "a": 0,
        "e": "Kalibrierung verbindet Selbsteinschätzung und Wirklichkeit.",
@@ -843,9 +857,9 @@
        "t": "mc",
        "q": "Was misst die Verlustfunktion?",
        "o": [
-        "Wie falsch die Vorhersagen des Modells sind",
+        "Wie falsch die Vorhersagen sind",
         "Wie viel Strom das Training kostet",
-        "Wie viele Daten es gibt",
+        "Wie viele Daten vorhanden sind",
         "Wie schnell das Modell antwortet"
        ],
        "a": 0,
@@ -856,10 +870,10 @@
        "t": "mc",
        "q": "In welche Richtung geht der Gradientenabstieg?",
        "o": [
-        "Entgegen dem Gradienten, also bergab im Verlust",
+        "Gegen den Gradienten, bergab",
         "In Richtung des Gradienten, bergauf",
-        "Zufällig",
-        "Immer nach links"
+        "Jeweils in eine zufällige Richtung",
+        "Immer entlang der ersten Achse"
        ],
        "a": 0,
        "e": "Der Gradient zeigt zum steilsten Anstieg; man geht in die Gegenrichtung.",
@@ -869,10 +883,10 @@
        "t": "mc",
        "q": "Was passiert, wenn die Lernrate viel zu groß ist?",
        "o": [
-        "Man springt über das Tal hinaus, der Verlust kann steigen",
+        "Schritte springen übers Tal, Verlust kann steigen",
         "Das Training wird perfekt",
-        "Das Modell wird kleiner",
-        "Nichts"
+        "Das Modell wird automatisch kleiner",
+        "Es passiert überhaupt nichts"
        ],
        "a": 0,
        "e": "Das nennt man Divergenz.",
@@ -882,10 +896,10 @@
        "t": "mc",
        "q": "Was ist eine Epoche?",
        "o": [
-        "Ein kompletter Durchlauf durch alle Trainingsdaten",
+        "Ein Durchlauf durch alle Trainingsdaten",
         "Ein Zeitalter der KI-Geschichte",
-        "Ein einzelner Parameter",
-        "Eine Grafikkarte"
+        "Ein einzelner Parameter des Netzes",
+        "Eine bestimmte Grafikkartengeneration"
        ],
        "a": 0,
        "e": "Ein Training umfasst oft mehrere Epochen, große Sprachmodelle teils nur etwa eine.",
@@ -912,6 +926,13 @@
        "a": 0,
        "e": "Die Schätzung des Gradienten ist verrauscht, aber gut genug und viel billiger.",
        "id": "ki.m2.l3.q6"
+      }
+     ],
+     "figs": [
+      {
+       "src": "img/kurs/ki-gradient.svg",
+       "cap": "Jeder Schritt geht bergab, bis das Tal erreicht ist.",
+       "after": 3
       }
      ]
     },
@@ -997,10 +1018,10 @@
        "t": "mc",
        "q": "Welche mathematische Regel steckt hinter der Backpropagation?",
        "o": [
-        "Die Kettenregel der Differentialrechnung",
+        "Die Kettenregel",
         "Der Satz des Pythagoras",
         "Die Dreisatzregel",
-        "Die Bayes-Formel allein"
+        "Die Bayes-Formel"
        ],
        "a": 0,
        "e": "Sie verbindet die Ableitungen der einzelnen Schichten.",
@@ -1010,10 +1031,10 @@
        "t": "mc",
        "q": "Was berechnet Backpropagation?",
        "o": [
-        "Für jeden Parameter, wie stark er zum Fehler beiträgt",
-        "Die beste Lernrate",
-        "Die Testgenauigkeit",
-        "Die Zahl der Schichten"
+        "Den Fehleranteil jedes Parameters",
+        "Die optimale Lernrate für das Training",
+        "Die Genauigkeit auf den Testdaten",
+        "Die ideale Zahl der Schichten"
        ],
        "a": 0,
        "e": "Das sind die Gradienten für den Gradientenabstieg.",
@@ -1023,10 +1044,10 @@
        "t": "mc",
        "q": "Was hilft gegen verschwindende Gradienten?",
        "o": [
-        "ReLU-Aktivierungen und Residual Connections",
-        "Weniger Daten",
-        "Eine größere Lernrate allein",
-        "Das Netz rückwärts zu lesen"
+        "ReLU und Residual Connections",
+        "Weniger Trainingsdaten verwenden",
+        "Nur eine größere Lernrate wählen",
+        "Das Netz rückwärts auslesen"
        ],
        "a": 0,
        "e": "ResNet (2015) zeigte, dass so sehr tiefe Netze trainierbar werden.",
@@ -1037,9 +1058,9 @@
        "q": "Wer hat die Backpropagation 1986 bekannt gemacht?",
        "o": [
         "Rumelhart, Hinton und Williams",
-        "McCarthy und Minsky",
-        "Turing und von Neumann",
-        "Vaswani u. a."
+        "McCarthy, Minsky und Shannon",
+        "Alan Turing und John von Neumann",
+        "Vaswani, Shazeer und Parmar"
        ],
        "a": 0,
        "e": "Vaswani u. a. stellten 2017 den Transformer vor.",
@@ -1130,10 +1151,10 @@
        "t": "mc",
        "q": "Warum braucht ein Netz Aktivierungsfunktionen?",
        "o": [
-        "Ohne sie wäre das ganze Netz nur eine lineare Rechnung",
-        "Damit es schneller lädt",
-        "Damit es weniger Speicher braucht",
-        "Damit es keine Gewichte braucht"
+        "Sonst wäre das ganze Netz nur linear",
+        "Damit das Netz schneller lädt",
+        "Damit es auf dem Gerät weniger Arbeitsspeicher braucht",
+        "Damit es ohne Gewichte auskommt"
        ],
        "a": 0,
        "e": "Erst die Nichtlinearität erlaubt komplexe Zusammenhänge.",
@@ -1156,14 +1177,21 @@
        "t": "mc",
        "q": "Wie verhält sich ein künstliches zu einem biologischen Neuron?",
        "o": [
-        "Es ist eine starke Vereinfachung",
-        "Es ist eine exakte Kopie",
-        "Es ist komplexer",
-        "Es gibt keinen Zusammenhang"
+        "Eine starke Vereinfachung",
+        "Eine exakte digitale Kopie davon",
+        "Deutlich komplexer",
+        "Ohne jeden Zusammenhang"
        ],
        "a": 0,
        "e": "Nur die Grundidee ist übernommen.",
        "id": "ki.m3.l1.q5"
+      }
+     ],
+     "figs": [
+      {
+       "src": "img/kurs/ki-neuron.svg",
+       "cap": "Eingaben werden gewichtet, summiert und durch die Aktivierung geschickt.",
+       "after": 0
       }
      ]
     },
@@ -1229,9 +1257,9 @@
        "q": "Was erkennen frühe Schichten eines Bildnetzes typischerweise?",
        "o": [
         "Einfache Merkmale wie Kanten",
-        "Ganze Objekte wie Autos",
-        "Die Bildunterschrift",
-        "Den Dateinamen"
+        "Ganze Objekte wie Autos oder Gesichter",
+        "Die passende Bildunterschrift",
+        "Den Dateinamen des Bildes"
        ],
        "a": 0,
        "e": "Späte Schichten kombinieren sie zu komplexen Konzepten.",
@@ -1241,10 +1269,10 @@
        "t": "mc",
        "q": "Was ist ein Hyperparameter?",
        "o": [
-        "Eine vorher festgelegte Einstellung wie die Lernrate",
-        "Ein besonders großes Gewicht",
-        "Ein Parameter mit Fehler",
-        "Die Ausgabe des Netzes"
+        "Vorab festgelegte Einstellung, z. B. Lernrate",
+        "Ein besonders großes Gewicht im Netz",
+        "Ein fehlerhafter Parameter",
+        "Die endgültige Ausgabe des Netzes"
        ],
        "a": 0,
        "e": "Hyperparameter werden nicht durch Gradientenabstieg gelernt.",
@@ -1255,7 +1283,7 @@
        "q": "Was bedeutet „tief“ in Deep Learning?",
        "o": [
         "Viele verborgene Schichten",
-        "Sehr große Bilder",
+        "Besonders große Eingabebilder",
         "Sehr langsames Training",
         "Sehr wenige Parameter"
        ],
@@ -1267,10 +1295,10 @@
        "t": "mc",
        "q": "Woran wählt man gute Hyperparameter aus?",
        "o": [
-        "An der Leistung auf den Validierungsdaten",
-        "An der Leistung auf den Testdaten",
-        "Zufällig, ohne Prüfung",
-        "An der Dateigröße"
+        "Leistung auf den Validierungsdaten",
+        "Leistung auf den bisher ungesehenen Testdaten",
+        "Zufällig, ganz ohne Prüfung",
+        "Größe der gespeicherten Datei"
        ],
        "a": 0,
        "e": "Testdaten bleiben für die Schlussbewertung unberührt.",
@@ -1351,10 +1379,10 @@
        "t": "mc",
        "q": "Was ist ein Nachteil von RNNs gegenüber Transformern?",
        "o": [
-        "Sie arbeiten nacheinander und sind schlecht parallelisierbar",
+        "Sequentiell, schlecht parallelisierbar",
         "Sie können keine Texte verarbeiten",
         "Sie haben keine Parameter",
-        "Sie brauchen keine Daten"
+        "Sie kommen ohne Trainingsdaten aus"
        ],
        "a": 0,
        "e": "Außerdem vergessen sie über lange Strecken leichter.",
@@ -1395,9 +1423,9 @@
        "t": "mc",
        "q": "Was kann ein LSTM besser als ein einfaches RNN?",
        "o": [
-        "Informationen über längere Strecken behalten",
-        "Bilder erzeugen",
-        "Ohne Daten lernen",
+        "Informationen länger behalten",
+        "Bilder in hoher Auflösung erzeugen",
+        "Ganz ohne Trainingsdaten lernen",
         "Parallel rechnen wie ein Transformer"
        ],
        "a": 0,
@@ -1460,10 +1488,10 @@
        "t": "mc",
        "q": "Was macht Dropout?",
        "o": [
-        "Es schaltet beim Training zufällig Neuronen ab",
-        "Es löscht falsche Daten",
-        "Es beendet das Training",
-        "Es verkleinert Bilder"
+        "Schaltet zufällig Neuronen ab",
+        "Löscht fehlerhafte Trainingsdaten",
+        "Beendet das Training vorzeitig",
+        "Verkleinert die Eingabebilder"
        ],
        "a": 0,
        "e": "So verlässt sich das Netz nicht auf einzelne Neuronen.",
@@ -1473,10 +1501,10 @@
        "t": "mc",
        "q": "Wann greift Early Stopping?",
        "o": [
-        "Sobald der Validierungsfehler wieder steigt",
-        "Nach genau einer Epoche",
-        "Wenn der Strom ausfällt",
-        "Wenn der Trainingsfehler steigt"
+        "Sobald der Validierungsfehler steigt",
+        "Nach genau einer vollständigen Epoche",
+        "Sobald der Strom im Rechenzentrum ausfällt",
+        "Sobald der Trainingsfehler leicht steigt"
        ],
        "a": 0,
        "e": "Ein steigender Validierungsfehler zeigt beginnendes Overfitting.",
@@ -1486,10 +1514,10 @@
        "t": "mc",
        "q": "Was ist Transfer Learning?",
        "o": [
-        "Ein vortrainiertes Modell mit wenigen eigenen Daten anpassen",
-        "Daten zwischen Rechnern kopieren",
+        "Vortrainiertes Modell mit eigenen Daten anpassen",
+        "Daten zwischen Rechnern übertragen",
         "Ein Modell in eine andere Sprache übersetzen",
-        "Ein Modell löschen"
+        "Ein nicht mehr benötigtes Modell löschen"
        ],
        "a": 0,
        "e": "Spart Daten und Rechenzeit; heute der Normalfall.",
@@ -1573,10 +1601,10 @@
        "t": "mc",
        "q": "Was ist ein Token?",
        "o": [
-        "Eine Texteinheit wie ein Wort, Wortteil oder Zeichen",
-        "Eine Kryptowährung",
-        "Ein Passwort",
-        "Eine Grafikkarte"
+        "Wort, Wortteil oder Zeichen",
+        "Eine digitale Kryptowährung",
+        "Ein Passwort für die Anmeldung",
+        "Ein Baustein der Grafikkarte"
        ],
        "a": 0,
        "e": "Sprachmodelle rechnen mit Tokens, nicht mit Buchstaben.",
@@ -1586,10 +1614,10 @@
        "t": "mc",
        "q": "Warum fällt es Sprachmodellen oft schwer, Buchstaben in einem Wort zu zählen?",
        "o": [
-        "Sie sehen Tokens statt einzelner Buchstaben",
-        "Sie können nicht rechnen",
-        "Sie haben keinen Speicher",
-        "Weil Buchstaben verboten sind"
+        "Sie sehen Tokens statt Buchstaben",
+        "Sie können grundsätzlich nicht zählen",
+        "Sie haben keinerlei Speicher",
+        "Buchstaben sind ihnen verboten"
        ],
        "a": 0,
        "e": "Ein Wort kann ein einziges Token sein.",
@@ -1612,10 +1640,10 @@
        "t": "mc",
        "q": "Was macht Byte-Pair Encoding?",
        "o": [
-        "Es fasst häufige Zeichenfolgen zu Tokens zusammen",
-        "Es verschlüsselt Texte",
-        "Es übersetzt in Binärcode für Drucker",
-        "Es löscht seltene Wörter"
+        "Fasst häufige Zeichenfolgen zu Tokens zusammen",
+        "Verschlüsselt Texte vor der Übertragung",
+        "Übersetzt Texte in Binärcode",
+        "Löscht seltene Wörter aus dem Text"
        ],
        "a": 0,
        "e": "Seltene Wörter werden in mehrere Teile zerlegt.",
@@ -1625,10 +1653,10 @@
        "t": "mc",
        "q": "Warum brauchen deutsche Texte oft mehr Tokens als englische gleichen Inhalts?",
        "o": [
-        "Tokenizer sind oft stark auf Englisch optimiert, lange Komposita werden zerlegt",
+        "Tokenizer sind oft auf Englisch optimiert",
         "Deutsch hat mehr Buchstaben im Alphabet",
         "Deutsche Texte sind immer länger",
-        "Englisch ist kostenlos"
+        "Englische Tokens sind kostenlos"
        ],
        "a": 0,
        "e": "Faustregel Englisch: 1 Token ≈ 3/4 Wort.",
@@ -1693,10 +1721,10 @@
        "t": "mc",
        "q": "Was bestimmt in der Attention, wie stark ein anderes Token einfließt?",
        "o": [
-        "Die Ähnlichkeit von Query und Key",
-        "Die Länge des Wortes",
-        "Die Schriftart",
-        "Der Zufall allein"
+        "Ähnlichkeit von Query und Key",
+        "Die Länge des jeweiligen Wortes in Buchstaben",
+        "Gewählte Schriftart im Text",
+        "Ausschließlich der Zufall"
        ],
        "a": 0,
        "e": "Die Gewichte werden dann auf die Values angewendet.",
@@ -1706,10 +1734,10 @@
        "t": "mc",
        "q": "Wozu dient Multi-Head Attention?",
        "o": [
-        "Mehrere Beziehungsmuster parallel zu erfassen",
-        "Mehrere Benutzer gleichzeitig zu bedienen",
-        "Bilder zu drucken",
-        "Den Speicher zu verkleinern"
+        "Mehrere Beziehungsmuster parallel erfassen",
+        "Mehrere Nutzer gleichzeitig bedienen",
+        "Bilder auf mehreren Druckern ausgeben",
+        "Den Speicherbedarf des Modells verkleinern"
        ],
        "a": 0,
        "e": "Ein Kopf kann etwa Grammatik, ein anderer Bezüge erfassen.",
@@ -1728,10 +1756,10 @@
        "t": "mc",
        "q": "Warum braucht ein Transformer eine Positionskodierung?",
        "o": [
-        "Sonst wüsste er nicht, in welcher Reihenfolge die Tokens stehen",
+        "Sonst kennt er die Reihenfolge der Tokens nicht",
         "Um GPS-Daten zu verarbeiten",
-        "Um schneller zu rechnen",
-        "Um Bilder zu drehen"
+        "Um die Rechengeschwindigkeit zu erhöhen",
+        "Um eingegebene Bilder zu drehen"
        ],
        "a": 0,
        "e": "Attention allein behandelt die Eingabe wie eine ungeordnete Menge.",
@@ -1753,6 +1781,13 @@
        ],
        "e": "Dazu kommen Normalisierung und Residual Connections.",
        "id": "ki.m4.l2.q5"
+      }
+     ],
+     "figs": [
+      {
+       "src": "img/kurs/ki-attention.svg",
+       "cap": "Schematisch: „sie“ achtet vor allem auf „Katze“.",
+       "after": 2
       }
      ]
     },
@@ -1843,10 +1878,10 @@
        "t": "mc",
        "q": "Was kann ein reines Basismodell nach dem Vortraining?",
        "o": [
-        "Texte fortsetzen, aber nicht zuverlässig Anweisungen befolgen",
-        "Perfekt Anweisungen befolgen",
-        "Nur rechnen",
-        "Gar nichts"
+        "Texte fortsetzen, Anweisungen aber unzuverlässig",
+        "Anweisungen perfekt befolgen",
+        "Ausschließlich Rechenaufgaben lösen",
+        "Gar nichts, es ist noch leer"
        ],
        "a": 0,
        "e": "Erst das Nachtraining macht es zum Assistenten.",
@@ -1856,9 +1891,9 @@
        "t": "mc",
        "q": "Was zeigte die InstructGPT-Studie (2022)?",
        "o": [
-        "Ein nachtrainiertes 1,3-Mrd.-Modell wurde dem 175-Mrd.-GPT-3 vorgezogen",
+        "Bewerter bevorzugten ein kleines, nachtrainiertes Modell",
         "Größere Modelle sind immer besser",
-        "RLHF macht Modelle schlechter",
+        "RLHF macht Modelle messbar schlechter",
         "Menschen können Antworten nicht vergleichen"
        ],
        "a": 0,
@@ -1869,10 +1904,10 @@
        "t": "mc",
        "q": "Wofür wird beim RLHF das Belohnungsmodell genutzt?",
        "o": [
-        "Es bewertet Antworten so, wie Menschen sie vermutlich bewerten würden",
-        "Es bezahlt die Bewerter",
-        "Es erzeugt die Trainingsdaten für das Vortraining",
-        "Es zählt Tokens"
+        "Bewertet Antworten wie Menschen es vermutlich täten",
+        "Es bezahlt die menschlichen Bewerter",
+        "Es erzeugt die Vortrainingsdaten",
+        "Es zählt die Tokens jeder Antwort"
        ],
        "a": 0,
        "e": "Das Sprachmodell wird dann darauf optimiert.",
@@ -1882,14 +1917,21 @@
        "t": "mc",
        "q": "Was ist das Besondere an Reasoning-Modellen?",
        "o": [
-        "Sie sind darauf trainiert, vor der Antwort Zwischenschritte zu erzeugen",
-        "Sie haben keine Parameter",
-        "Sie arbeiten ohne Tokens",
-        "Sie brauchen kein Vortraining"
+        "Trainiert, vorab Zwischenschritte zu erzeugen",
+        "Sie haben gar keine Parameter",
+        "Sie arbeiten ganz ohne Tokens direkt auf Buchstaben",
+        "Sie brauchen überhaupt kein Vortraining auf Textdaten"
        ],
        "a": 0,
        "e": "Das kostet mehr Rechenzeit pro Antwort, verbessert aber oft schwierige Aufgaben.",
        "id": "ki.m4.l3.q5"
+      }
+     ],
+     "figs": [
+      {
+       "src": "img/kurs/ki-training.svg",
+       "cap": "Die Trainingsphasen eines Chat-Assistenten.",
+       "after": 0
       }
      ]
     },
@@ -1950,10 +1992,10 @@
        "t": "mc",
        "q": "Was passiert bei sehr niedriger Temperatur?",
        "o": [
-        "Das Modell wählt fast immer das wahrscheinlichste Token, Antworten sind beständiger",
+        "Fast immer das wahrscheinlichste Token, beständiger",
         "Das Modell wird kreativer",
-        "Das Modell antwortet nicht",
-        "Das Modell rechnet langsamer"
+        "Das Modell antwortet gar nicht mehr",
+        "Das Modell rechnet viel langsamer"
        ],
        "a": 0,
        "e": "Hohe Temperatur bringt Vielfalt, aber auch mehr Fehler.",
@@ -1963,10 +2005,10 @@
        "t": "mc",
        "q": "Was ist eine Halluzination bei Sprachmodellen?",
        "o": [
-        "Eine überzeugende, aber falsche oder erfundene Aussage",
-        "Ein Absturz",
-        "Eine Bildstörung",
-        "Eine zu lange Antwort"
+        "Überzeugende, aber falsche Aussage",
+        "Ein Absturz des Programms",
+        "Eine Störung in der Bildausgabe des Bildschirms",
+        "Eine zu lang geratene Antwort"
        ],
        "a": 0,
        "e": "Typisch: erfundene Quellen, Zahlen oder Zitate.",
@@ -1976,9 +2018,9 @@
        "t": "mc",
        "q": "Was weiß ein Sprachmodell aus einem früheren, getrennten Gespräch?",
        "o": [
-        "Nichts, außer die Anwendung legt Informationen wieder in den Kontext",
-        "Alles",
-        "Nur die letzte Antwort",
+        "Nichts, außer es wird wieder in den Kontext gelegt",
+        "Alles aus früheren Gesprächen",
+        "Nur die allerletzte Antwort",
         "Nur den Namen des Nutzers"
        ],
        "a": 0,
@@ -2105,10 +2147,10 @@
        "t": "mc",
        "q": "Was ist Few-Shot-Prompting?",
        "o": [
-        "Einige Beispiele guter Ergebnisse in den Prompt geben",
-        "Den Prompt mehrfach abschicken",
-        "Sehr kurze Prompts schreiben",
-        "Das Modell neu trainieren"
+        "Einige Beispiele guter Ergebnisse mitgeben",
+        "Den gleichen Prompt mehrfach hintereinander abschicken",
+        "Möglichst kurze Prompts schreiben",
+        "Das Modell vorher neu trainieren"
        ],
        "a": 0,
        "e": "So zeigt man Format und Stil, statt sie nur zu beschreiben.",
@@ -2118,10 +2160,10 @@
        "t": "mc",
        "q": "Was bedeutet In-Context Learning?",
        "o": [
-        "Das Modell lernt aus Beispielen im Prompt, ohne neu trainiert zu werden",
-        "Das Modell wird während des Chats neu trainiert",
-        "Lernen in der Schule",
-        "Lernen nur aus Bildern"
+        "Lernen aus Beispielen im Prompt ohne Neutraining",
+        "Neutraining während des Chats",
+        "Lernen im Klassenzimmer einer Schule",
+        "Lernen ausschließlich aus Bildern"
        ],
        "a": 0,
        "e": "Bekannt geworden mit GPT-3 (2020).",
@@ -2144,10 +2186,10 @@
        "t": "mc",
        "q": "Welcher Test hilft, einen Prompt zu prüfen?",
        "o": [
-        "Würde ein kluger neuer Kollege mit genau diesem Text verstehen, was gewollt ist?",
+        "Würde ein kluger neuer Kollege es verstehen?",
         "Ist der Prompt möglichst kurz?",
-        "Enthält er viele Fachwörter?",
-        "Ist er in Großbuchstaben?"
+        "Enthält er möglichst viele Fachwörter und Abkürzungen?",
+        "Ist er in Großbuchstaben geschrieben?"
        ],
        "a": 0,
        "e": "Fehlender Kontext ist der häufigste Grund für schwache Antworten.",
@@ -2230,9 +2272,9 @@
        "t": "mc",
        "q": "Welches Problem löst RAG vor allem?",
        "o": [
-        "Das Modell kennt interne oder aktuelle Informationen nicht",
-        "Das Modell ist zu langsam",
-        "Das Modell braucht zu viel Strom",
+        "Modell kennt interne oder aktuelle Infos nicht",
+        "Das Modell antwortet zu langsam",
+        "Das Modell verbraucht im Rechenzentrum zu viel Strom",
         "Das Modell kann nicht rechnen"
        ],
        "a": 0,
@@ -2256,9 +2298,9 @@
        "t": "mc",
        "q": "Wofür eignet sich Fine-Tuning laut Faustregel eher als RAG?",
        "o": [
-        "Stil, Format oder ein bestimmtes Verhalten beibringen",
-        "Täglich wechselnde Preise",
-        "Belegbare Fakten mit Quelle",
+        "Stil, Format oder Verhalten beibringen",
+        "Täglich wechselnde Preise abbilden",
+        "Belegbare Fakten mit Quellenangabe",
         "Interne Dokumente mit Zugriffsrechten"
        ],
        "a": 0,
@@ -2277,6 +2319,13 @@
        "a": 0,
        "e": "Auch mit Quellen kann das Modell falsch zusammenfassen.",
        "id": "ki.m5.l2.q5"
+      }
+     ],
+     "figs": [
+      {
+       "src": "img/kurs/ki-rag.svg",
+       "cap": "Ablauf von Retrieval-Augmented Generation.",
+       "after": 2
       }
      ]
     },
@@ -2341,10 +2390,10 @@
        "t": "mc",
        "q": "Wer führt bei der Werkzeugnutzung den Werkzeugaufruf tatsächlich aus?",
        "o": [
-        "Die Anwendung, das Modell schlägt ihn nur vor",
-        "Das Modell selbst im Inneren",
-        "Der Nutzer immer von Hand",
-        "Niemand"
+        "Die Anwendung, das Modell schlägt nur vor",
+        "Das Modell selbst direkt in seinem neuronalen Netz",
+        "Der Nutzer jedes Mal von Hand",
+        "Niemand, der Aufruf passiert nicht"
        ],
        "a": 0,
        "e": "Das Ergebnis wird dem Modell zurückgegeben.",
@@ -2373,7 +2422,7 @@
        "q": "Was ist bei unumkehrbaren Aktionen eines Agenten gute Praxis?",
        "o": [
         "Ein Mensch bestätigt sie vorher",
-        "Möglichst schnell ausführen",
+        "Möglichst schnell und ohne Rückfrage ausführen",
         "Ohne Protokoll arbeiten",
         "Dem Agenten alle Rechte geben"
        ],
@@ -2385,10 +2434,10 @@
        "t": "mc",
        "q": "Was zeigte der ReAct-Ansatz (2022)?",
        "o": [
-        "Nachdenken und Handeln abwechselnd zu verzahnen",
-        "Dass Agenten keine Werkzeuge brauchen",
-        "Dass Bilder besser als Text sind",
-        "Dass Tokens überflüssig sind"
+        "Nachdenken und Handeln abwechselnd verzahnen",
+        "Agenten kommen grundsätzlich ohne Werkzeuge aus",
+        "Bilder sind besser als Text",
+        "Tokens sind überflüssig"
        ],
        "a": 0,
        "e": "Viele Agenten folgen heute diesem Muster.",
@@ -2398,9 +2447,9 @@
        "t": "mc",
        "q": "Was heißt „minimale Rechte“ bei Agenten?",
        "o": [
-        "Nur die Rechte, die für die Aufgabe nötig sind",
+        "Nur die für die Aufgabe nötigen Rechte",
         "Gar keine Rechte",
-        "Alle Rechte, aber nur nachts",
+        "Alle Rechte, aber nur außerhalb der Arbeitszeit",
         "Rechte nur für Administratoren"
        ],
        "a": 0,
@@ -2467,9 +2516,9 @@
        "q": "Was ist Kontamination bei Benchmarks?",
        "o": [
         "Testaufgaben waren in den Trainingsdaten",
-        "Ein Virus im Rechenzentrum",
+        "Ein Computervirus im Rechenzentrum des Anbieters",
         "Zu wenige Testaufgaben",
-        "Ein Fehler im Bildschirm"
+        "Ein Fehler am Bildschirm"
        ],
        "a": 0,
        "e": "Dann misst man Auswendiglernen.",
@@ -2488,8 +2537,8 @@
        "t": "mc",
        "q": "Was misst der Recall?",
        "o": [
-        "Wie viele der tatsächlich positiven Fälle gefunden wurden",
-        "Wie schnell das Modell ist",
+        "Anteil der gefundenen tatsächlich positiven Fälle",
+        "Wie schnell das Modell antwortet",
         "Wie viele Tokens verbraucht werden",
         "Wie oft das Modell abstürzt"
        ],
@@ -2501,10 +2550,10 @@
        "t": "mc",
        "q": "Was sollte man vor dem eigenen KI-Einsatz aufbauen?",
        "o": [
-        "Eine Sammlung realistischer Testfälle mit erwarteten Ergebnissen",
+        "Realistische Testfälle mit erwarteten Ergebnissen",
         "Nur einen Blick auf öffentliche Benchmarks",
-        "Gar nichts, Modelle sind getestet",
-        "Ein schöneres Logo"
+        "Nichts, Modelle sind schon getestet",
+        "Ein schöneres Logo für das Projekt"
        ],
        "a": 0,
        "e": "Jede Änderung wird dagegen geprüft.",
@@ -2514,9 +2563,9 @@
        "t": "mc",
        "q": "Was heißt es, wenn ein Benchmark „gesättigt“ ist?",
        "o": [
-        "Spitzenmodelle lösen ihn fast vollständig, er unterscheidet kaum noch",
-        "Er ist zu schwer",
-        "Er ist verboten",
+        "Spitzenmodelle lösen ihn fast vollständig",
+        "Er ist selbst für die besten Modelle noch viel zu schwer",
+        "Er ist gesetzlich verboten",
         "Er hat zu viele Teilnehmer"
        ],
        "a": 0,
@@ -2585,10 +2634,10 @@
        "t": "mc",
        "q": "Was zeigte die Studie „Gender Shades“ (2018)?",
        "o": [
-        "Kommerzielle Gesichtsanalyse irrte bei dunkelhäutigen Frauen viel häufiger als bei hellhäutigen Männern",
-        "Alle Systeme waren gleich gut",
-        "KI kann Geschlecht nicht erkennen",
-        "Nur Menschen haben Vorurteile"
+        "Fehler bei dunkelhäutigen Frauen viel häufiger",
+        "Alle untersuchten Systeme waren gleich gut",
+        "KI kann Geschlecht grundsätzlich nicht erkennen",
+        "Nur Menschen haben Vorurteile, Systeme nicht"
        ],
        "a": 0,
        "e": "Fehlerquoten unter 1 % gegenüber bis zu rund 35 %.",
@@ -2616,9 +2665,9 @@
        "t": "mc",
        "q": "Was ist ein Stellvertretermerkmal?",
        "o": [
-        "Ein scheinbar neutrales Merkmal, das auf ein geschütztes Merkmal schließen lässt",
-        "Ein Merkmal, das ein Mensch vertritt",
-        "Ein Ersatzteil der Hardware",
+        "Neutral wirkend, verrät aber ein geschütztes Merkmal",
+        "Ein Merkmal, das eine Person vertritt",
+        "Ein Ersatzteil in der Hardware",
         "Ein Passwort"
        ],
        "a": 0,
@@ -2629,10 +2678,10 @@
        "t": "mc",
        "q": "Welche Maßnahme hilft, Bias zu erkennen?",
        "o": [
-        "Die Leistung getrennt nach Gruppen messen",
+        "Leistung getrennt nach Gruppen messen",
         "Nur die Gesamtgenauigkeit ansehen",
-        "Weniger testen",
-        "Das Modell größer machen"
+        "Möglichst wenig testen",
+        "Das Modell größer machen und länger trainieren"
        ],
        "a": 0,
        "e": "Eine gute Gesamtquote kann große Unterschiede verdecken.",
@@ -2642,10 +2691,10 @@
        "t": "mc",
        "q": "Gibt es vollständig neutrale KI?",
        "o": [
-        "Nein, Fairness erfordert bewusste und dokumentierte Entscheidungen",
-        "Ja, jede KI ist neutral",
-        "Ja, wenn sie groß genug ist",
-        "Ja, wenn man sie nicht testet"
+        "Nein, Fairness braucht bewusste Entscheidungen",
+        "Ja, jede KI ist von Natur aus automatisch neutral",
+        "Ja, sobald sie groß genug ist",
+        "Ja, solange man sie nicht testet"
        ],
        "a": 0,
        "e": "Schon die Wahl der Daten und Ziele ist eine Entscheidung.",
@@ -2706,10 +2755,10 @@
        "t": "mc",
        "q": "Was ist eine indirekte Prompt Injection?",
        "o": [
-        "Versteckte Anweisungen in Inhalten wie Webseiten oder E-Mails, die das Modell liest",
-        "Ein Tippfehler im Prompt",
+        "Versteckte Anweisungen in gelesenen Inhalten",
+        "Ein Tippfehler im eigenen Prompt",
         "Eine Spritze für Rechenzentren",
-        "Ein zu langer Prompt"
+        "Ein besonders langer Prompt mit vielen Beispielen"
        ],
        "a": 0,
        "e": "Gezeigt u. a. von Greshake u. a. (2023).",
@@ -2719,8 +2768,8 @@
        "t": "mc",
        "q": "Warum ist Prompt Injection bei Agenten besonders gefährlich?",
        "o": [
-        "Sie können mit ihren Rechten echte Aktionen auslösen",
-        "Agenten können nicht lesen",
+        "Sie lösen mit ihren Rechten echte Aktionen aus",
+        "Agenten können grundsätzlich keine fremden Texte lesen",
         "Agenten sind immer offline",
         "Agenten haben keine Werkzeuge"
        ],
@@ -2732,10 +2781,10 @@
        "t": "mc",
        "q": "Was ist ein Jailbreak bei Sprachmodellen?",
        "o": [
-        "Ein Versuch, die Sicherheitsregeln des Modells zu umgehen",
+        "Versuch, Sicherheitsregeln zu umgehen",
         "Ein Gefängnisausbruch",
-        "Ein Update des Modells",
-        "Ein Hardwarefehler"
+        "Ein offizielles Update des Modells durch den Anbieter",
+        "Ein Hardwarefehler in der Grafikkarte"
        ],
        "a": 0,
        "e": "Ein vollständiger Schutz ist bisher nicht bekannt.",
@@ -2763,7 +2812,7 @@
        "t": "mc",
        "q": "Was ist das Grundproblem hinter Prompt Injection?",
        "o": [
-        "Modelle unterscheiden Anweisungen und Daten nicht zuverlässig",
+        "Anweisungen und Daten werden nicht sicher getrennt",
         "Modelle können keine Texte lesen",
         "Modelle sind zu langsam",
         "Modelle haben keine Parameter"
@@ -2838,10 +2887,10 @@
        "t": "mc",
        "q": "Was regelt Art. 22 DSGVO?",
        "o": [
-        "Das Recht, nicht ausschließlich automatisierten Entscheidungen mit erheblicher Wirkung unterworfen zu werden",
-        "Die Stromsteuer",
-        "Die Größe von Sprachmodellen",
-        "Den Export von Grafikkarten"
+        "Schutz vor rein automatisierten Entscheidungen",
+        "Die Höhe der Stromsteuer",
+        "Die zulässige Größe von Sprachmodellen",
+        "Den Export leistungsfähiger Grafikkarten in Drittstaaten"
        ],
        "a": 0,
        "e": "Es gibt Ausnahmen, etwa mit ausdrücklicher Einwilligung.",
@@ -2851,10 +2900,10 @@
        "t": "mc",
        "q": "Was erlaubt § 44b UrhG?",
        "o": [
-        "Text und Data Mining an rechtmäßig zugänglichen Werken, mit Widerspruchsmöglichkeit",
-        "Das Kopieren beliebiger Werke zum Verkauf",
-        "Nur wissenschaftliches Lesen",
-        "Gar nichts"
+        "Text und Data Mining mit Widerspruchsmöglichkeit",
+        "Das Kopieren beliebiger Werke",
+        "Nur das wissenschaftliche Lesen von Büchern",
+        "Gar nichts, es verbietet jede Nutzung"
        ],
        "a": 0,
        "e": "Wie weit das KI-Training abdeckt, wird weiter verhandelt.",
@@ -2864,10 +2913,10 @@
        "t": "mc",
        "q": "Sind rein maschinell erzeugte Bilder nach herrschender Meinung in Deutschland urheberrechtlich geschützt?",
        "o": [
-        "Nein, Schutz setzt eine menschliche Schöpfung voraus",
-        "Ja, immer",
-        "Ja, aber nur 1 Jahr",
-        "Nur wenn sie farbig sind"
+        "Nein, nur menschliches Schaffen ist geschützt",
+        "Ja, und zwar immer ohne jede Einschränkung",
+        "Ja, aber nur für ein Jahr ab Erzeugung",
+        "Nur wenn sie farbig sind und gedruckt werden"
        ],
        "a": 0,
        "e": "Bei erheblichem menschlichem Gestaltungsanteil kann das anders sein.",
@@ -2877,9 +2926,9 @@
        "t": "mc",
        "q": "Was ist bei sensiblen Daten in öffentlichen KI-Diensten zu beachten?",
        "o": [
-        "Vorher prüfen, was mit den Daten geschieht, und im Zweifel nicht eingeben",
-        "Nichts, KI-Dienste speichern nie etwas",
-        "Immer alle Daten eingeben, damit die Antwort besser wird",
+        "Vorher prüfen, was mit den Daten geschieht",
+        "Nichts, KI-Dienste speichern grundsätzlich niemals Eingaben",
+        "Alle Daten eingeben, damit es besser wird",
         "Nur Passwörter eingeben"
        ],
        "a": 0,
@@ -2890,10 +2939,10 @@
        "t": "mc",
        "q": "Was verlangt die EU-KI-Verordnung von Anbietern von Allzweck-KI-Modellen beim Urheberrecht?",
        "o": [
-        "Eine Strategie zur Einhaltung und eine Zusammenfassung der Trainingsinhalte",
-        "Nichts",
-        "Die Löschung aller Trainingsdaten",
-        "Eine Lizenz für jedes Wort"
+        "Urheberrechtsstrategie + Trainingsübersicht",
+        "Gar nichts",
+        "Löschung sämtlicher Trainingsdaten nach dem Training",
+        "Eine einzelne Lizenz für jedes verwendete Wort"
        ],
        "a": 0,
        "e": "Diese Pflichten gelten seit August 2025.",
@@ -2953,10 +3002,10 @@
        "t": "mc",
        "q": "Wofür ist KI nach Faustregel besonders gut geeignet?",
        "o": [
-        "Für Aufgaben, deren Ergebnis ein Mensch prüfen kann",
-        "Für Entscheidungen ohne jede Prüfung",
-        "Für ungeprüfte medizinische Diagnosen",
-        "Für Quellenangaben ohne Kontrolle"
+        "Aufgaben, deren Ergebnis ein Mensch prüfen kann",
+        "Wichtige Entscheidungen ganz ohne menschliche Prüfung",
+        "Ungeprüfte medizinische Diagnosen",
+        "Quellenangaben ohne Kontrolle"
        ],
        "a": 0,
        "e": "Prüfbarkeit ist der Schlüssel.",
@@ -2967,8 +3016,8 @@
        "q": "Bei wem liegt die Verantwortung für KI-gestützte Ergebnisse?",
        "o": [
         "Beim Menschen, der sie nutzt oder freigibt",
-        "Bei der KI",
-        "Bei niemandem",
+        "Beim Anbieter des KI-Modells, und zwar allein",
+        "Bei niemandem, KI-Ergebnisse sind haftungsfrei",
         "Beim Stromanbieter"
        ],
        "a": 0,
@@ -2979,10 +3028,10 @@
        "t": "mc",
        "q": "Seit wann verlangt die EU-KI-Verordnung KI-Kompetenz beim Personal von Unternehmen, die KI einsetzen?",
        "o": [
-        "Seit 2. Februar 2025",
-        "Seit 1990",
-        "Ab 2035",
-        "Gar nicht"
+        "Seit 2.2.2025",
+        "Seit 1.1.2020",
+        "Ab 2.8.2030",
+        "Ab 2.12.2027"
        ],
        "a": 0,
        "e": "Die nationale Durchsetzung soll laut Berichten ab August 2026 greifen.",
@@ -3103,10 +3152,10 @@
        "t": "mc",
        "q": "Welche Pflicht gilt für Chatbots als begrenztes Risiko?",
        "o": [
-        "Menschen müssen erkennen können, dass sie mit einer KI sprechen",
-        "Sie sind verboten",
-        "Sie brauchen eine Zulassung wie Medikamente",
-        "Keine"
+        "Erkennbar machen, dass man mit KI spricht",
+        "Chatbots sind grundsätzlich verboten",
+        "Zulassung wie bei Medikamenten nötig",
+        "Es gelten für Chatbots überhaupt keine Pflichten"
        ],
        "a": 0,
        "e": "Transparenzpflicht.",
@@ -3117,8 +3166,8 @@
        "q": "Welches Beispiel ist nach AI Act verboten?",
        "o": [
         "Social Scoring durch Behörden",
-        "Ein Spamfilter",
-        "Ein Übersetzungsprogramm",
+        "Ein Spamfilter für E-Mails",
+        "Ein Übersetzungsprogramm im Browser",
         "Eine Rechtschreibprüfung"
        ],
        "a": 0,
@@ -3129,10 +3178,10 @@
        "t": "mc",
        "q": "Wie hoch können Bußgelder bei verbotenen KI-Praktiken sein?",
        "o": [
-        "Bis 35 Mio. € oder 7 % des weltweiten Jahresumsatzes",
-        "Bis 500 €",
-        "Es gibt keine Bußgelder",
-        "Bis 1 % des Gewinns"
+        "35 Mio. € oder 7 % des Weltumsatzes",
+        "Bis 500 € pro Verstoß und Mitarbeiter",
+        "Es gibt im AI Act keinerlei Bußgelder",
+        "Bis 10.000 € oder 1 % des Jahresgewinns"
        ],
        "a": 0,
        "e": "Je nachdem, was höher ist.",
@@ -3252,7 +3301,7 @@
         "Ab 2. Dezember 2027",
         "Ab 2. Februar 2025",
         "Ab 1. August 2024",
-        "Nie"
+        "Erst ab 1. Januar 2030"
        ],
        "a": 0,
        "e": "Ursprünglich war der 2. August 2026 vorgesehen.",
@@ -3275,10 +3324,10 @@
        "t": "mc",
        "q": "Welche Teile der KI-Verordnung gelten bereits (Stand 11/2026)?",
        "o": [
-        "Verbote, KI-Kompetenz und Pflichten für Allzweck-KI-Modelle",
-        "Nur die Hochrisiko-Pflichten",
+        "Verbote, KI-Kompetenz und GPAI-Pflichten",
+        "Ausschließlich die Hochrisiko-Pflichten nach Anhang III",
         "Noch gar nichts",
-        "Nur die Bußgelder"
+        "Nur die Bußgeldvorschriften"
        ],
        "a": 0,
        "e": "Die Hochrisiko-Pflichten wurden verschoben.",
@@ -3344,10 +3393,10 @@
        "t": "mc",
        "q": "Wer ist nach AI Act „Betreiber“?",
        "o": [
-        "Wer ein KI-System in eigener Verantwortung einsetzt",
-        "Wer die Grafikkarten herstellt",
-        "Die EU-Kommission",
-        "Jeder Bürger"
+        "Wer KI in eigener Verantwortung einsetzt",
+        "Wer die Grafikkarten für das Training herstellt",
+        "Die EU-Kommission als oberste Aufsichtsbehörde",
+        "Jeder Bürger der EU"
        ],
        "a": 0,
        "e": "Anbieter ist, wer das System entwickelt und in Verkehr bringt.",
@@ -3375,8 +3424,8 @@
        "t": "mc",
        "q": "Was ist ein sinnvoller erster Schritt für Unternehmen?",
        "o": [
-        "Ein KI-Inventar mit Einordnung in Risikoklassen",
-        "Alle KI-Systeme sofort abschalten",
+        "KI-Inventar mit Einordnung in Risikoklassen",
+        "Alle KI-Systeme vorsorglich und sofort abschalten",
         "Abwarten bis 2030",
         "Nur neue Grafikkarten kaufen"
        ],
@@ -3389,9 +3438,9 @@
        "q": "Was müssen Betreiber von Hochrisiko-KI unter anderem sicherstellen?",
        "o": [
         "Menschliche Aufsicht durch kompetente Personen",
-        "Die Konformitätsbewertung des Herstellers",
-        "Die CE-Kennzeichnung selbst vergeben",
-        "Nichts"
+        "Die Konformitätsbewertung selbst machen",
+        "Selbst die CE-Kennzeichnung vergeben",
+        "Nichts, alle Pflichten liegen beim Anbieter"
        ],
        "a": 0,
        "e": "Die Konformitätsbewertung ist Sache des Anbieters.",
@@ -3403,7 +3452,7 @@
        "o": [
         "Eine CE-Kennzeichnung",
         "Einen Nobelpreis",
-        "Eine Steuerbefreiung",
+        "Eine Steuerbefreiung für 5 Jahre",
         "Nichts"
        ],
        "a": 0,
@@ -3465,10 +3514,10 @@
        "t": "mc",
        "q": "Was ist Schatten-KI?",
        "o": [
-        "Nutzung nicht freigegebener KI-Dienste, oft mit Firmendaten",
+        "Nicht freigegebene KI-Dienste mit Firmendaten",
         "KI, die im Dunkeln arbeitet",
-        "Eine verbotene KI-Klasse",
-        "KI für Schattenberechnung in Grafik"
+        "Eine nach AI Act verbotene Klasse von KI-Systemen",
+        "KI für Schatten in Grafiken"
        ],
        "a": 0,
        "e": "Entsteht oft durch Verbote ohne Alternative.",
@@ -3479,7 +3528,7 @@
        "q": "Was hilft gegen Schatten-KI am besten?",
        "o": [
         "Freigegebene Werkzeuge mit klaren Regeln",
-        "Totale Verbote ohne Alternative",
+        "Totale Verbote ohne erlaubte Alternative",
         "Keine Regeln",
         "Nur Strafen"
        ],
@@ -3492,7 +3541,7 @@
        "q": "Was beschreibt ISO/IEC 42001?",
        "o": [
         "Ein Managementsystem für KI",
-        "Ein Dateiformat",
+        "Ein Dateiformat für Modelle",
         "Eine Programmiersprache",
         "Einen Grafikchip"
        ],
@@ -3603,8 +3652,8 @@
        "t": "mc",
        "q": "Was zeigte die Chinchilla-Studie (2022)?",
        "o": [
-        "Viele große Modelle hatten zu wenig Trainingsdaten für ihre Größe",
-        "Größe ist das Einzige, was zählt",
+        "Viele große Modelle hatten zu wenig Daten",
+        "Nur die Modellgröße zählt, Daten sind nebensächlich",
         "Daten sind unwichtig",
         "Kleinere Modelle sind immer schlechter"
        ],
@@ -3616,7 +3665,7 @@
        "t": "mc",
        "q": "Was beschreiben Skalierungsgesetze nach Kaplan u. a. (2020)?",
        "o": [
-        "Wie der Verlust regelmäßig mit Größe, Daten und Rechenaufwand sinkt",
+        "Verlust sinkt regelmäßig mit mehr Größe und Daten",
         "Wie man Modelle verkleinert",
         "Wie viel Strom ein Laptop braucht",
         "Wie Tokens entstehen"
@@ -3640,7 +3689,7 @@
        "o": [
         "Ob sie teils durch die Messmethode entstehen",
         "Ob es Sprachmodelle gibt",
-        "Ob GPUs rechnen können",
+        "Ob Grafikkarten überhaupt Matrizen multiplizieren können",
         "Ob Tokens existieren"
        ],
        "a": 0,
@@ -3729,10 +3778,10 @@
        "t": "mc",
        "q": "Warum eignen sich GPUs so gut für neuronale Netze?",
        "o": [
-        "Sie rechnen sehr viele gleichartige Operationen parallel",
+        "Sie rechnen viele gleichartige Operationen parallel",
         "Sie haben die schönsten Farben",
         "Sie brauchen keinen Strom",
-        "Sie speichern Texte besonders gut"
+        "Sie speichern Texte gut"
        ],
        "a": 0,
        "e": "Neuronale Netze bestehen vor allem aus Matrixmultiplikationen.",
@@ -3742,9 +3791,9 @@
        "t": "mc",
        "q": "Was macht Mixture of Experts?",
        "o": [
-        "Pro Token wird nur ein Teil der Parameter aktiviert",
-        "Mehrere Menschen bewerten Antworten",
-        "Alle Modelle werden gemischt",
+        "Pro Token rechnet nur ein Teil der Parameter",
+        "Mehrere menschliche Experten bewerten jede Antwort",
+        "Alle Modelle werden zu einem gemischt",
         "Das Modell wird verschlüsselt"
        ],
        "a": 0,
@@ -3755,10 +3804,10 @@
        "t": "mc",
        "q": "Warum können Inferenzkosten die Trainingskosten übersteigen?",
        "o": [
-        "Weil sie bei jeder der oft Millionen Anfragen anfallen",
-        "Weil Inferenz immer langsamer ist als Training",
-        "Weil Training kostenlos ist",
-        "Weil Inferenz nur nachts läuft"
+        "Sie fallen bei jeder der vielen Anfragen an",
+        "Inferenz ist immer langsamer als Training",
+        "Training ist für die Anbieter grundsätzlich kostenlos",
+        "Inferenz läuft nur nachts"
        ],
        "a": 0,
        "e": "Reasoning-Modelle verstärken das.",
@@ -3820,10 +3869,10 @@
        "t": "mc",
        "q": "Was lernt ein Diffusionsmodell beim Training?",
        "o": [
-        "Rauschen schrittweise aus Bildern zu entfernen",
-        "Bilder zu komprimieren",
-        "Texte zu übersetzen",
-        "Farben zu zählen"
+        "Rauschen schrittweise aus Bildern entfernen",
+        "Bilder möglichst stark komprimieren",
+        "Texte zuverlässig in andere Sprachen übersetzen",
+        "Farben in Bildern zählen"
        ],
        "a": 0,
        "e": "Zum Erzeugen startet es bei reinem Rauschen.",
@@ -3844,10 +3893,10 @@
        "t": "mc",
        "q": "Was ist ein multimodales Modell?",
        "o": [
-        "Ein Modell, das mehrere Datenarten wie Text und Bild verarbeitet",
+        "Verarbeitet mehrere Datenarten wie Text und Bild",
         "Ein Modell mit mehreren Bildschirmen",
-        "Ein Modell für Mode",
-        "Ein Modell ohne Daten"
+        "Ein Modell für die Modebranche",
+        "Ein Modell ganz ohne Daten"
        ],
        "a": 0,
        "e": "Alles wird in Vektoren übersetzt.",
@@ -3857,9 +3906,9 @@
        "t": "mc",
        "q": "Sind Wasserzeichen in KI-Bildern fälschungssicher?",
        "o": [
-        "Nein, sie helfen, sind aber nicht fälschungssicher",
-        "Ja, immer",
-        "Ja, wenn sie sichtbar sind",
+        "Nein, hilfreich, aber nicht fälschungssicher",
+        "Ja, sofern sie für Menschen sichtbar im Bild sind",
+        "Ja, sie lassen sich grundsätzlich nie entfernen",
         "Es gibt keine Wasserzeichen"
        ],
        "a": 0,
@@ -3945,8 +3994,8 @@
        "t": "mc",
        "q": "Was ist Alignment?",
        "o": [
-        "Sicherstellen, dass ein Modell tut, was Menschen wirklich wollen",
-        "Das Ausrichten von Servern",
+        "Modell tut, was Menschen wirklich wollen",
+        "Das exakte Ausrichten von Servern im Rechenzentrum",
         "Die Formatierung von Text",
         "Das Sortieren von Daten"
        ],
@@ -3960,7 +4009,7 @@
        "o": [
         "Was im Inneren eines Modells vorgeht",
         "Wie man Modelle übersetzt",
-        "Wie man Modelle verkauft",
+        "Wie man Modelle gewinnbringend an Unternehmen verkauft",
         "Wie schnell Modelle laden"
        ],
        "a": 0,
@@ -3971,10 +4020,10 @@
        "t": "mc",
        "q": "Was ist Cherry Picking bei KI-Vorführungen?",
        "o": [
-        "Nur besonders gelungene Beispiele zu zeigen",
+        "Nur besonders gelungene Beispiele zeigen",
         "Kirschen mit KI sortieren",
-        "Zufällige Beispiele zu zeigen",
-        "Alle Fehler offenzulegen"
+        "Zufällig ausgewählte, repräsentative Beispiele zeigen",
+        "Alle Fehler offenlegen"
        ],
        "a": 0,
        "e": "Deshalb nach repräsentativen Tests fragen.",
@@ -3984,10 +4033,10 @@
        "t": "mc",
        "q": "Welche Beschreibung moderner KI ist am treffendsten?",
        "o": [
-        "Ein statistisch trainiertes System mit erstaunlich allgemeinen Fähigkeiten und klaren Schwächen",
+        "Statistisch trainiert, vielseitig, mit Schwächen",
         "Reine Magie",
-        "Eine einfache Autokorrektur",
-        "Ein denkendes Lebewesen"
+        "Eine einfache Autokorrektur, nur etwas größer",
+        "Ein denkendes Lebewesen mit eigenem Bewusstsein"
        ],
        "a": 0,
        "e": "Wer die Mechanik kennt, schätzt Fähigkeiten und Grenzen realistisch ein.",

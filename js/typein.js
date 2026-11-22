@@ -38,7 +38,7 @@
 
   function eligible(x, s) {
     var mode = S().settings.typein, m = s.m;
-    if (mode === "off" || m.timer || m.auto || m.daily || x.gen || x.forceMC) return false;
+    if (mode === "off" || m.timer || m.auto || m.daily || x.gen || x.forceMC || x.big || x.img) return false;
     var right = x.opts.filter(function (o) { return o.ok; })[0];
     if (!right || right.t.length > MAXLEN || NEEDS_CHOICE.test(x.q)) return false;
     if (mode === "always") return true;

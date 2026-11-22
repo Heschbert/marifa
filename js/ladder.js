@@ -32,10 +32,10 @@
     var x = L.qs[L.i];
     var h = '<div class="topbar"><button class="ghost" data-act="lquit">✕ Beenden</button><span class="chip">Stufe ' + (L.i + 1) + " / 15 · " + PTS[L.i] + " Punkte</span></div>";
     h += '<details class="card ladbox"><summary class="small"><b>Leiter</b> · gesichert: ' + (L.i > 0 ? PTS[L.i - 1] : 0) + " · Sicherheit: " + (safeBelow(L.i) >= 0 ? PTS[safeBelow(L.i)] : 0) + "</summary>" + ladderHtml() + "</details>";
-    h += '<div class="qmeta">' + esc(x.c) + " · " + "●".repeat(x.d) + "○".repeat(3 - x.d) + '</div><p class="q">' + esc(x.q) + "</p>";
+    h += '<div class="qmeta">' + esc(x.c) + " · " + "●".repeat(x.d) + "○".repeat(3 - x.d) + '</div><p class="q">' + WF.util.qh(x) + "</p>";
     if (L.joker) h += '<div class="helps"><button data-act="ljok">50:50-Joker (1)</button></div>';
     h += '<div id="opts" role="group" aria-label="Antworten">';
-    x.opts.forEach(function (o, k) { var g = L.hidden.indexOf(k) >= 0; h += '<button class="ans' + (g ? " gone" : "") + '" data-act="lpick" data-i="' + k + '"' + (g ? " disabled" : "") + ">" + esc(o.t) + "</button>"; });
+    x.opts.forEach(function (o, k) { var g = L.hidden.indexOf(k) >= 0; h += '<button class="ans' + (g ? " gone" : "") + '" data-act="lpick" data-i="' + k + '"' + (g ? " disabled" : "") + ">" + WF.util.ot(o.t) + "</button>"; });
     ui.show(h + '</div><div id="fb" aria-live="polite"></div>', null);
   }
   H.ljok = function () {
@@ -58,7 +58,7 @@
         '<div class="grid2">' + btn("lend", "Aufhören", { sub: PTS[L.i] + " Punkte sichern", data: { p: PTS[L.i] } }) + btn("lnext", "Weiter", { primary: true, sub: "um " + PTS[L.i + 1] + " Punkte" }) + "</div>";
     } else {
       var s = safeBelow(L.i), keep = s >= 0 ? PTS[s] : 0; L.keep = keep;
-      f = '<div class="fb bad"><b class="h">Leider falsch</b><p>Richtig: <b>' + esc(right.t) + "</b></p>" + (x.e ? '<p class="small">' + esc(x.e) + "</p>" : "") + "<p>Du fällst zurück auf " + keep + " Punkte.</p></div>" + btn("lend", "Ergebnis", { primary: true, data: { p: keep } });
+      f = '<div class="fb bad"><b class="h">Leider falsch</b><p>Richtig: <b>' + WF.util.ot(right.t) + "</b></p>" + (x.e ? '<p class="small">' + esc(x.e) + "</p>" : "") + "<p>Du fällst zurück auf " + keep + " Punkte.</p></div>" + btn("lend", "Ergebnis", { primary: true, data: { p: keep } });
     }
     document.getElementById("fb").innerHTML = f;
     document.getElementById("fb").scrollIntoView({ behavior: ui.reduced() ? "auto" : "smooth", block: "nearest" });

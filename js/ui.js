@@ -205,7 +205,7 @@
     if (!m.learn && !m.timer) prog += '<div class="qtime" id="qt" aria-hidden="true"><i></i></div>';
     var h = '<div class="topbar"><button class="ghost" data-act="quit">✕ Beenden</button>' + (m.learn ? '<span class="mode-tag">Lernen</span>' : "") + (s.streak > 1 ? '<span class="chip combo" id="combo">' + comboTxt(s.streak) + "</span>" : '<span class="chip combo" id="combo" hidden></span>') + info + "</div>" + prog;
     h += '<div class="qmeta">' + esc(x.c) + " · " + esc(x.s) + " · " + dots(x.d || 2) + (x.retry ? " · Wiederholung" : "") + "</div>";
-    h += '<p class="q">' + esc(x.q) + "</p>";
+    h += '<p class="q">' + U.qh(x) + "</p>";
     /* Ein Feature kann den Antwortbereich ersetzen (z. B. freie Eingabe, typein.js). */
     var custom = WF.answerArea ? WF.answerArea(x, s) : null;
     if (m.helps !== "none") {
@@ -215,10 +215,10 @@
     }
     if (custom) h += custom;
     else {
-      h += '<div id="opts" role="group" aria-label="Antworten">';
+      h += '<div id="opts" class="' + (x.big ? "bigopts" : "") + '" role="group" aria-label="Antworten">';
       x.opts.forEach(function (o, i) {
         var gone = x.hidden.indexOf(i) >= 0;
-        h += '<button class="ans' + (gone ? " gone" : "") + '" data-act="pick" data-i="' + i + '"' + (gone ? " disabled" : "") + ">" + esc(o.t) + "</button>";
+        h += '<button class="ans' + (gone ? " gone" : "") + '" data-act="pick" data-i="' + i + '"' + (gone ? " disabled" : "") + ">" + WF.util.ot(o.t) + "</button>";
       });
       h += "</div>";
     }
@@ -267,9 +267,9 @@
     if (r.slow) f += '<p class="small">Länger überlegt? Die Frage kommt bald wieder, bis sie sitzt.</p>';
     if (auto) f += '<button class="link small" data-act="fbmore">Erklärung ansehen</button><div class="fbmore" hidden>';
     if (!r.ok) {
-      f += "<p>Richtig: <b>" + esc(right.t) + "</b></p>";
+      f += "<p>Richtig: <b>" + WF.util.ot(right.t) + "</b></p>";
       if (r.typed) f += '<p class="small">Deine Eingabe: „' + esc(picked.t) + '“</p>';
-      if (picked.why) f += "<p><b>Warum nicht „" + esc(picked.t) + "“?</b> " + esc(picked.why) + "</p>";
+      if (picked.why) f += "<p><b>Warum nicht " + WF.util.oq(picked.t) + "?</b> " + esc(picked.why) + "</p>";
     }
     if (x.e) f += "<p>" + esc(x.e) + "</p>";
     if (x.src) f += '<p class="small mute">Quelle: ' + esc(x.src) + "</p>";
@@ -279,7 +279,7 @@
     var others = x.opts.filter(function (o, i) { return o.why && i !== r.picked && !o.ok; });
     if (others.length) {
       f += "<details><summary>Die anderen Antworten</summary><ul>";
-      others.forEach(function (o) { f += "<li><b>" + esc(o.t) + ":</b> " + esc(o.why) + "</li>"; });
+      others.forEach(function (o) { f += "<li><b>" + WF.util.ot(o.t) + ":</b> " + esc(o.why) + "</li>"; });
       f += "</ul></details>";
     }
     if (auto) f += "</div>";
@@ -324,7 +324,7 @@
     if (s.wrong.length) {
       h += "<h2>Das kannst du noch mitnehmen</h2>" + '<div class="card">';
       s.wrong.forEach(function (w) {
-        h += '<div class="wrong"><b>' + esc(w.q) + "</b><br>Richtig: " + esc(w.right) + '<br><span class="mute">Deine Antwort: ' + esc(w.given) + (w.why ? " – " + esc(w.why) : "") + "</span>" + (w.e ? "<br>" + esc(w.e) : "") + "</div>";
+        h += '<div class="wrong"><b>' + esc(w.q) + "</b><br>Richtig: " + WF.util.ot(w.right) + '<br><span class="mute">Deine Antwort: ' + WF.util.ot(w.given) + (w.why ? " – " + esc(w.why) : "") + "</span>" + (w.e ? "<br>" + esc(w.e) : "") + "</div>";
       });
       h += "</div>";
     }

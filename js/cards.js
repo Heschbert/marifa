@@ -15,8 +15,8 @@
   function card(open) {
     var x = C.list[C.i], right = x.opts.filter(function (o) { return o.ok; })[0];
     var h = '<div class="topbar"><button class="ghost" data-act="cquit">✕ Beenden</button><span class="chip">' + (C.i + 1) + " / " + C.list.length + "</span></div>" + ui.bar(C.i / C.list.length * 100);
-    h += '<div class="qmeta">' + esc(x.c) + " · " + esc(x.s) + '</div><div class="card"><p class="q">' + esc(x.q) + "</p>";
-    if (open) h += "<p><b>" + esc(right.t) + "</b></p>" + (x.e ? '<p class="mute">' + esc(x.e) + "</p>" : "");
+    h += '<div class="qmeta">' + esc(x.c) + " · " + esc(x.s) + '</div><div class="card"><p class="q">' + WF.util.qh(x) + "</p>";
+    if (open) h += "<p><b>" + WF.util.ot(right.t) + "</b></p>" + (x.e ? '<p class="mute">' + esc(x.e) + "</p>" : "");
     h += "</div>";
     h += open ? '<div class="grid2">' + btn("cno", "Nochmal") + btn("cyes", "Gewusst", { primary: true }) + "</div>" : btn("cshow", "Antwort zeigen", { primary: true });
     ui.show(h, null, true);

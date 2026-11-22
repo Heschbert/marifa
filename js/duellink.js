@@ -50,7 +50,7 @@
   function q() {
     var x = L.qs[L.i];
     var h = '<div class="topbar"><span class="chip">Duell per Link</span><span class="chip">' + (L.i + 1) + " / " + L.qs.length + "</span></div>" + ui.bar(L.i / L.qs.length * 100, "Fortschritt") +
-      '<div class="qmeta">' + esc(x.c) + " · " + esc(x.s) + '</div><p class="q">' + esc(x.q) + '</p><div id="opts" role="group" aria-label="Antworten">';
+      '<div class="qmeta">' + esc(x.c) + " · " + esc(x.s) + '</div><p class="q">' + WF.util.qh(x) + '</p><div id="opts" role="group" aria-label="Antworten">';
     x.opts.forEach(function (op, i) { h += '<button class="ans" data-act="dlpick" data-i="' + i + '">' + esc(op.t) + "</button>"; });
     ui.show(h + '</div><div id="fb" aria-live="polite"></div>', null);
   }
@@ -62,7 +62,7 @@
     WF.emit("answered", { ok: ok, gain: ok ? 5 : 0, x: { retry: false }, link: true });
     x.opts.forEach(function (op, k) { var b = btns[k]; b.disabled = true; b.classList.add(op.ok ? "ok" : k === i ? "bad" : "dim"); });
     var right = x.opts.filter(function (op) { return op.ok; })[0];
-    document.getElementById("fb").innerHTML = '<div class="fb ' + (ok ? "ok" : "bad") + '"><b class="h">' + (ok ? "Richtig" : "Richtig wäre: " + esc(right.t)) + "</b>" + (x.e ? "<p>" + esc(x.e) + "</p>" : "") + "</div>" +
+    document.getElementById("fb").innerHTML = '<div class="fb ' + (ok ? "ok" : "bad") + '"><b class="h">' + (ok ? "Richtig" : "Richtig wäre: " + WF.util.ot(right.t)) + "</b>" + (x.e ? "<p>" + esc(x.e) + "</p>" : "") + "</div>" +
       btn("dlnext", L.i + 1 >= L.qs.length ? "Ergebnis" : "Weiter", { primary: true });
     ui.say(ok ? "Richtig." : "Falsch. Richtig ist: " + right.t);
     var nb = document.querySelector('[data-act="dlnext"]'); if (nb) try { nb.focus({ preventScroll: true }); } catch (e) {}

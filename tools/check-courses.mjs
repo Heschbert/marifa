@@ -7,7 +7,7 @@ let err = 0, warn = 0;
 const bad = (m) => { console.log("FEHLER: " + m); err++; }, note = (m) => { console.log("Warnung: " + m); warn++; };
 for (const f of idx.courses) {
   const c = JSON.parse(readFileSync(new URL(f.file, dir)));
-  const ids = new Set(); let nq = 0, nk = 0;
+  const ids = new Set(); let nq = 0, nk = 0, nmc = 0, nlong = 0;
   for (const k of ["id", "title", "sub", "stand", "levels", "modules", "review"]) if (c[k] === undefined) bad(`${f.file}: Feld ${k} fehlt`);
   const uniq = (id, where) => { if (!id) bad(`${where}: id fehlt`); else if (ids.has(id)) bad(`${where}: id ${id} doppelt`); else ids.add(id); };
   for (const m of c.modules) {
@@ -23,6 +23,7 @@ for (const f of idx.courses) {
         uniq(q.id, "Frage"); nq++;
         if (!q.q) bad(`${q.id}: Fragetext fehlt`);
         if (!q.e) bad(`${q.id}: Erklärung fehlt`);
+        if (q.t === "mc" && Array.isArray(q.o)) { nmc++; const L = q.o.map((o) => o.length), r = L[q.a]; if (L.every((x, i) => i === q.a || x < r)) nlong++; }
         if (q.t === "mc") { if (!Array.isArray(q.o) || q.o.length < 3) bad(`${q.id}: zu wenige Optionen`); if (!(q.a >= 0 && q.a < q.o.length)) bad(`${q.id}: Antwortindex ungültig`); if (new Set(q.o).size !== q.o.length) bad(`${q.id}: doppelte Option`); }
         else if (q.t === "multi") { if (!Array.isArray(q.a) || q.a.length < 2 || q.a.some((a) => !(a >= 0 && a < q.o.length))) bad(`${q.id}: Antworten ungültig`); }
         else if (q.t === "order") { if (!Array.isArray(q.o) || q.o.length < 3) bad(`${q.id}: Reihenfolge braucht mindestens 3 Elemente`); }
@@ -31,6 +32,9 @@ for (const f of idx.courses) {
       }
     }
   }
+  const share = nmc ? Math.round(nlong / nmc * 100) : 0;
+  if (share > 40) note(`${c.title}: Bei ${share} % der Einfachauswahl-Fragen ist die richtige Antwort die längste (Zufall: ca. 25 %).`);
+  else console.log(`${c.title}: richtige Antwort ist bei ${share} % der Einfachauswahl-Fragen die längste (Zufall: ca. 25 %).`);
   console.log(`${c.title}: ${c.modules.length} Module (${c.modules.filter((m) => (m.lessons || []).length).length} mit Inhalt), ${nq} Fragen, ${nk} Karten`);
 }
 console.log(`\n${err} Fehler, ${warn} Warnungen.`);

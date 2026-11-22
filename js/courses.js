@@ -42,10 +42,11 @@
   function modPassed(m) { var r = P(m.course.id).mods[m.id]; return !!(r && r.pass); }
   function modOpen(m) {
     var c = m.course, prev = null;
+    if (P(c.id).open) return ready(m);
     for (var i = 0; i < c.modules.length && c.modules[i] !== m; i++) if (ready(c.modules[i])) prev = c.modules[i];
     return ready(m) && (!prev || modPassed(prev));
   }
-  function allPassed(c) { return c.modules.filter(ready).every(modPassed); }
+  function allPassed(c) { return !!P(c.id).open || c.modules.filter(ready).every(modPassed); }
   function progress(c) {
     var total = 1, done = 0;
     c.modules.filter(ready).forEach(function (m) { total += m.lessons.length + 1; done += lessonsDone(m) + (modPassed(m) ? 1 : 0); });
@@ -111,6 +112,8 @@
         h += '<button class="item cmodi' + (off ? " off" : "") + '" data-act="cmod" data-c="' + esc(cid) + '" data-m="' + esc(m.id) + '"' + (off ? " disabled" : "") + '><span class="ico" aria-hidden="true">' + ico + '</span><div class="grow"><div class="t">' + esc(m.title) + '</div><div class="small mute">' + esc(m.desc) + '</div><div class="small" style="margin-top:3px">' + esc(st) + '</div></div><span class="chev" aria-hidden="true">›</span></button>';
       });
     });
+    var op = P(cid).open;
+    h += '<div class="card unlock"><div class="grow"><b>' + (op ? "Alle Module freigeschaltet" : "Module der Reihe nach") + '</b><div class="small mute">' + (op ? "Jedes Modul und jeder Test ist sofort verfügbar." : "Ein Modul öffnet sich nach bestandenem Test des vorigen.") + "</div></div>" + '<button class="link" data-act="copen" data-c="' + esc(cid) + '">' + (op ? "Reihenfolge an" : "Alle freischalten") + "</button></div>";
     h += "<h2>Abschluss</h2>";
     var f = p.final;
     if (f && f.pass) h += '<div class="card cert"><b>🎓 Zertifikat: ' + esc(c.title) + '</b><p class="small mute">Abschlussprüfung bestanden am ' + esc(f.at.split("-").reverse().join(".")) + " mit " + f.best + " %. Gilt für den bisher verfügbaren Kursinhalt.</p></div>";
@@ -121,7 +124,7 @@
   function mod(cid, mid) {
     var c = C.byId[cid], m = c && c.mById[mid]; if (!m) return list();
     ui.setView(function () { withCourses(function () { mod(cid, mid); }); });
-    var p = P(cid), r = p.mods[mid], ld = lessonsDone(m), all = ld === m.lessons.length;
+    var p = P(cid), r = p.mods[mid], ld = lessonsDone(m), all = ld === m.lessons.length || !!p.open;
     var h = '<button class="ghost" data-act="crs1" data-c="' + esc(cid) + '">‹ ' + esc(c.title) + "</button><h1>" + esc(m.title) + '</h1><p class="mute">' + esc(m.desc) + "</p>";
     h += ui.bar(ld / m.lessons.length * 100, "Lektionen") + '<p class="small mute" style="margin-top:6px">' + ld + " von " + m.lessons.length + " Lektionen erledigt</p>";
     h += "<h2>Lektionen</h2>";
@@ -141,7 +144,10 @@
     var h = '<button class="ghost" data-act="cmod" data-c="' + esc(cid) + '" data-m="' + esc(l.mod.id) + '">‹ ' + esc(l.mod.title) + "</button><h1>" + esc(l.title) + '</h1><p class="small mute">' + l.min + " Minuten Lesezeit · Stand " + esc(c.stand) + "</p>";
     h += volNote(c, l);
     h += '<article class="lesson">';
-    l.body.forEach(function (t) { h += t.indexOf("## ") === 0 ? "<h3>" + esc(t.slice(3)) + "</h3>" : "<p>" + esc(t) + "</p>"; });
+    l.body.forEach(function (t, i) {
+      h += t.indexOf("## ") === 0 ? "<h3>" + esc(t.slice(3)) + "</h3>" : "<p>" + esc(t) + "</p>";
+      (l.figs || []).forEach(function (f) { if (f.after === i) h += '<figure class="fig"><img src="' + esc(f.src) + '" alt="' + esc(f.cap) + '" loading="lazy"><figcaption>' + esc(f.cap) + "</figcaption></figure>"; });
+    });
     h += "</article>";
     if (l.key && l.key.length) h += '<div class="card keybox"><b>Das Wichtigste</b><ul>' + l.key.map(function (k) { return "<li>" + esc(k) + "</li>"; }).join("") + "</ul></div>";
     h += '<details class="card"><summary><b>Quellen</b> <span class="small mute">(' + l.src.length + ")</span></summary>" + sources(l.src) + "</details>";
@@ -171,6 +177,7 @@
   H.cgq = function (inp) { var c = C.byId[inp.dataset.c]; if (c) document.getElementById("glist").innerHTML = glossList(c, inp.value); };
   ui.views = ui.views || {};
   ui.views.courses = function () { withCourses(list); };
+  H.copen = function (d) { var p = P(d.c); p.open = !p.open; WF.store.save(); course(d.c); };
   H.crs = function () { withCourses(list); };
   H.crs1 = function (d) { withCourses(function () { course(d.c); }); };
   H.cmod = function (d) { withCourses(function () { mod(d.c, d.m); }); };

@@ -7,6 +7,7 @@ import "./core.js";
 import "./store.js";
 import "./gen.js";
 import "./geo.js";
+import "./flags.js";
 import "./pairs.js";
 import "./data.js";
 import "./engine.js";

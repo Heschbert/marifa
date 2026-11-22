@@ -1,7 +1,7 @@
 # Kurs „Künstliche Intelligenz“. Erzeugt data/courses/ki.json. Aufruf: python3 tools/kurs-ki.py data/courses/ki.json
 # Stand 11/2026. Grundlagen stützen sich auf Original-Fachartikel (arXiv) und Standardlehrbücher;
 # Lektionen mit "vol" (Regulierung, aktueller Stand) müssen regelmäßig neu geprüft werden.
-import json, sys
+import json, sys, os
 
 SRC = {
  "dl": {"n": "Goodfellow, Bengio, Courville: Deep Learning (MIT Press, 2016), frei online", "u": "https://www.deeplearningbook.org/"},
@@ -735,6 +735,10 @@ course = {
   {"id": "ki.m8", "level": 3, "title": "Expertenwissen", "desc": "Skalierung, Hardware und Effizienz, multimodale KI, offene Fragen.", "lessons": M8}
  ]
 }
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import kurs_antworten
+print("Antworten angeglichen:", kurs_antworten.anwenden(course))
+print("Bilder:", kurs_antworten.bilder(course))
 json.dump(course, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
 al = [l for m in course["modules"] for l in m["lessons"]]
 print(len(al), "Lektionen", sum(len(l["qs"]) for l in al), "Fragen", sum(len(l["cards"]) for l in al), "Karten")
