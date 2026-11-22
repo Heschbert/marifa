@@ -11,7 +11,12 @@
   E.lvlStart = function (L) { return 50 * L * (L - 1); };
   E.levelOf = function (xp) { var L = 1; while (xp >= E.lvlStart(L + 1)) L++; return L; };
   E.titleOf = function (L) { return TITLES[Math.min(L - 1, TITLES.length - 1)]; };
-  E.curStreak = function () { var s = S().streak; return (s.last === U.today() || s.last === U.yesterday()) ? s.n : 0; };
+  function daysAgo(n) { var d = new Date(); d.setDate(d.getDate() - n); return U.dkey(d); }
+  /* Serienschutz: ein verpasster Tag wird überbrückt, wenn ein Schutz vorhanden ist (freeze). */
+  E.curStreak = function () { var s = S().streak; return (s.last === U.today() || s.last === U.yesterday() || (s.last === daysAgo(2) && (s.freeze || 0) > 0)) ? s.n : 0; };
+
+  /* Combo-Multiplikator nach Serie richtiger Antworten in der Runde */
+  E.mult = function (streak) { return streak >= 10 ? 4 : streak >= 6 ? 3 : streak >= 3 ? 2 : 1; };
 
   E.addXP = function (n) {
     var before = E.levelOf(S().xp);
@@ -23,7 +28,10 @@
   E.registerPlay = function () {
     var st = S(), t = U.today(), s = st.streak;
     if (s.last !== t) {
-      s.n = (s.last === U.yesterday()) ? s.n + 1 : 1;
+      if (s.last === U.yesterday()) s.n = s.n + 1;
+      else if (s.last === daysAgo(2) && (s.freeze || 0) > 0) { s.freeze--; s.n = s.n + 1; WF.emit("toast", { title: "Serienschutz eingesetzt", sub: "Deine Serie läuft weiter." }); }
+      else s.n = 1;
+      if (s.n > 0 && s.n % 7 === 0 && (s.freeze || 0) < 2) { s.freeze = (s.freeze || 0) + 1; WF.emit("toast", { title: s.n + " Tage geschafft", sub: "+1 Serienschutz" }); }
       s.last = t;
       if (s.n > s.best) s.best = s.n;
       if (s.n > 1) WF.emit("toast", { title: s.n + " Tage in Folge", sub: "Die Serie läuft." });
@@ -210,7 +218,13 @@
     if (x.hidden.indexOf(i) >= 0) return null;
     s.answered = true;
     var given = i >= 0 ? x.opts[i] : { t: typed ? typed.t : "", ok: !!(typed && typed.ok), why: "" };
-    var st = S(), ok = given.ok, ms = Date.now() - s.shownAt, retry = !!x.retry, gain = 0;
+    var st = S(), ok = given.ok, ms = Date.now() - s.shownAt, retry = !!x.retry, gain = 0, slow = false;
+    /* Sicherheit automatisch: Wer bei einer richtigen Antwort lange zögert, hat vermutlich eher geraten.
+       Die Frage steigt dann nicht auf und kommt früher wieder. Grenze wächst mit der Textlänge. */
+    if (!conf && m.learn && st.settings.conf !== "learn" && st.settings.conf !== "all" && i >= 0) {
+      var len = x.q.length + x.opts.reduce(function (a, o) { return a + o.t.length; }, 0);
+      if (ok && ms > 8000 + len * 60) { conf = "g"; slow = true; }
+    }
     E.registerPlay();
     var cs = st.cats[x.c] || (st.cats[x.c] = { r: 0, t: 0 });
     var sk = x.c + "|" + x.s, ss = st.sub[sk] || (st.sub[sk] = { r: 0, t: 0 });
@@ -225,7 +239,8 @@
         s.score++; s.streak++; cs.r++; ss.r++; st.tot.r++;
         if (s.streak > s.best) s.best = s.streak;
         if (s.streak > st.maxCombo) st.maxCombo = s.streak;
-        gain = 10 + Math.min(s.streak - 1, 9) * 2 + (ms < 5000 ? 5 : 0);
+        /* Punkte: 10 plus Zeitbonus (bis 10, in 15 s abnehmend), mal Combo-Multiplikator */
+        gain = (10 + Math.round(10 * Math.max(0, 1 - ms / 15000))) * E.mult(s.streak);
       } else gain = 5;
       if (x.helped) gain = Math.ceil(gain / 2);
       if (typed) gain += 5;
@@ -251,7 +266,7 @@
     var mastered = !!(rec && before < 3 && rec.b >= 3);
     if (mastered) s.mastNew++;
     var last = m.lives ? s.lives <= 0 : (!m.extend && s.idx === s.round.length - 1);
-    var res = { ok: ok, gain: gain, mastered: mastered, requeued: requeued, last: last, picked: i, given: given, typed: !!typed, x: x, conf: conf || null };
+    var res = { ok: ok, gain: gain, mastered: mastered, requeued: requeued, last: last, picked: i, given: given, typed: !!typed, x: x, conf: conf || null, slow: slow, mult: E.mult(s.streak), streak: s.streak };
     WF.emit("answered", res);
     WF.store.save();
     return res;

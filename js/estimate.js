@@ -90,6 +90,7 @@
     var st = S(), max = G.res.length * 3, rec = false;
     st.best.est = st.best.est || 0;
     if (G.res.length === N && G.pts > st.best.est) { st.best.est = G.pts; rec = true; }
+    WF.emit("estimateEnd", { pts: G.pts });
     WF.store.save();
     ui.show("<h1>Schätzen</h1>" + '<div class="score">' + G.pts + " von " + max + "</div>" +
       '<p class="mute">Punkte · +' + G.xp + " XP" + (rec ? " · neuer Rekord" : "") + "</p>" +

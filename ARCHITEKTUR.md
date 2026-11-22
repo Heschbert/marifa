@@ -10,7 +10,7 @@ Vor jedem Hochladen die Version erhöhen: `node tools/version.mjs` (zählt hoch,
 - `js/data.js` + `gen.js`, `geo.js`, `pairs.js` – Fragen laden bzw. erzeugen.
 - `js/engine.js` – Spiellogik ohne Oberfläche. `js/modes.js` – Spielmodi.
 - `js/ui.js` – Bildschirme Spielen, Lernen, Profil, Quiz, Ergebnis.
-- Features, je eine Datei: `duel`, `cards`, `browse` (Suche), `stats` (Verlauf), `reports` (gemeldete Fragen), `share` (Tagesrätsel teilen), `fx` (Vibration/Ton), `conf` (Wie sicher bist du?), `timeline` (Zeitstrahl), `estimate` (Schätzfragen + Modus Schätzen), `duellink` (Duell per Link), `typein` (freie Eingabe), `wall` (Mauer im Profil), `badges`, `entries` (Menüeinträge der eingebauten Modi).
+- Features, je eine Datei: `duel`, `cards`, `browse` (Suche), `stats` (Verlauf), `reports` (gemeldete Fragen), `share` (Tagesrätsel teilen), `fx` (Vibration/Ton), `game` (Sterne, Rekordmeldung), `quests` (Tagesaufgaben, Truhe), `ladder` (Wissensleiter), `conf` (Wie sicher bist du?), `timeline` (Zeitstrahl), `estimate` (Schätzfragen + Modus Schätzen), `duellink` (Duell per Link), `typein` (freie Eingabe), `wall` (Mauer im Profil), `badges`, `entries` (Menüeinträge der eingebauten Modi).
 - `icon.svg` – Vorlage des App-Symbols; die PNGs (180, 192, 512, maskable) sind daraus gerendert.
 - `fonts/` – Schrift Inter, lokal (keine Verbindung zu Google).
 

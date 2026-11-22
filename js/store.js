@@ -6,7 +6,7 @@
   function fresh() {
     return { qs: {}, cats: {}, sub: {}, xp: 0, days: {}, streak: { last: "", n: 0, best: 0 }, best: { blitz: 0, survive: 0, est: 0 },
              dailyDone: {}, badges: {}, saved: {}, reports: [], tot: { r: 0, t: 0 }, goalClaimed: {}, maxCombo: 0, hist: {}, idMig: 0, calib: {}, tl: { games: 0, perfect: 0 },
-             settings: { difficulty: "auto", last: null, theme: "auto", font: "m", fx: "off", conf: "learn", typein: "mastered" } };
+             settings: { difficulty: "auto", last: null, theme: "auto", font: "m", fx: "all", conf: "auto", typein: "mastered", autoNext: "auto" } };
   }
   function normalize(s) {
     var f = fresh();
@@ -16,7 +16,10 @@
     if (!s.settings.theme) s.settings.theme = "auto";
     if (!s.settings.font) s.settings.font = "m";
     if (!s.settings.fx) s.settings.fx = "off";
-    if (!s.settings.conf) s.settings.conf = "learn";
+    if (!s.settings.conf) s.settings.conf = "auto";
+    if (!s.settings.autoNext) s.settings.autoNext = "auto";
+    /* Version 1.15: Sicherheitsabfrage wird automatisch (keine Doppel-Antwort), Ton und Vibration an */
+    if (!s.settings.mig115) { s.settings.conf = "auto"; s.settings.fx = "all"; s.settings.mig115 = 1; }
     if (!s.settings.typein) s.settings.typein = "mastered";
     return s;
   }

@@ -45,14 +45,15 @@
   H.next = function () { picked = null; baseNext(); };
 
   WF.on("answered", function (r) {
-    if (!r.conf || r.x.retry) return;
+    if (!r.conf || r.x.retry || r.slow) return;
     var c = S().calib || (S().calib = {}), k = c[r.conf] || (c[r.conf] = { r: 0, t: 0 });
     k.t++; if (r.ok) k.r++;
   });
 
   WF.registerEntry({ where: "settings", order: 5, render: function () {
-    return ui.prefSeg("Sicherheit abfragen", "conf", [["off", "Aus"], ["learn", "Beim Lernen"], ["all", "Immer"]]) +
-      '<p class="small mute" style="margin:-6px 0 12px">Vor dem Auflösen: geraten, ziemlich sicher oder sicher? Nicht im Blitz und im Duell.</p>';
+    return ui.prefSeg("Sicherheit", "conf", [["auto", "Automatisch"], ["learn", "Beim Lernen fragen"], ["all", "Immer fragen"]]) +
+      '<p class="small mute" style="margin:-6px 0 12px">Automatisch: Wer bei einer richtigen Antwort lange zögert, bekommt die Frage früher wieder. Fragen heißt: vor dem Auflösen „geraten, ziemlich sicher, sicher?“.</p>' +
+      ui.prefSeg("Nach richtiger Antwort", "autoNext", [["auto", "Automatisch weiter"], ["stay", "Erklärung zeigen"]]);
   } });
 
   WF.registerEntry({ where: "profile", order: 20, render: function () {

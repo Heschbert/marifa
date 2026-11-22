@@ -177,7 +177,8 @@
     if (m.lives) { var hs = ""; for (var i = 0; i < m.lives; i++) hs += i < s.lives ? "♥" : "♡"; info = '<span class="chip lives" id="lv" role="img" aria-label="' + livesLabel(s) + '">' + hs + "</span>"; }
     else if (m.timer) { info = '<span class="chip" id="tm" role="timer" aria-live="off">' + Math.ceil(E.timeLeft()) + " s</span>"; prog = '<div class="bar" aria-hidden="true"><i id="tb" style="width:' + (E.timeLeft() / m.timer * 100) + '%"></i></div>'; }
     else { info = '<span class="chip">' + (s.idx + 1) + " / " + s.round.length + "</span>"; prog = bar(s.idx / s.round.length * 100, "Fortschritt der Runde"); }
-    var h = '<div class="topbar"><button class="ghost" data-act="quit">✕ Beenden</button>' + (m.learn ? '<span class="mode-tag">Lernen</span>' : "") + (s.streak > 1 ? '<span class="chip">Serie ' + s.streak + "</span>" : "") + info + "</div>" + prog;
+    if (!m.learn && !m.timer) prog += '<div class="qtime" id="qt" aria-hidden="true"><i></i></div>';
+    var h = '<div class="topbar"><button class="ghost" data-act="quit">✕ Beenden</button>' + (m.learn ? '<span class="mode-tag">Lernen</span>' : "") + (s.streak > 1 ? '<span class="chip combo" id="combo">' + comboTxt(s.streak) + "</span>" : '<span class="chip combo" id="combo" hidden></span>') + info + "</div>" + prog;
     h += '<div class="qmeta">' + esc(x.c) + " · " + esc(x.s) + " · " + dots(x.d || 2) + (x.retry ? " · Wiederholung" : "") + "</div>";
     h += '<p class="q">' + esc(x.q) + "</p>";
     /* Ein Feature kann den Antwortbereich ersetzen (z. B. freie Eingabe, typein.js). */
@@ -211,6 +212,8 @@
 
   ui.paint = function (r) { paint(r); };
   ui.refreshQuiz = function () { quiz(); };
+  function comboTxt(n) { var m = E.mult(n); return "🔥 " + n + (m > 1 ? " · ×" + m : ""); }
+  ui.comboTxt = comboTxt;
   function paint(r) {
     var s = E.s, x = r.x, btns = app.querySelectorAll(".ans");
     x.opts.forEach(function (o, i) {
@@ -226,9 +229,18 @@
     var hl = app.querySelector(".helps-label"); if (hl) hl.remove();
     var lv = document.getElementById("lv");
     if (lv) { var hs = ""; for (var i = 0; i < s.m.lives; i++) hs += i < s.lives ? "♥" : "♡"; lv.textContent = hs; lv.setAttribute("aria-label", livesLabel(s)); }
+    /* Spielgefühl: Animation, fliegende Punkte, Combo-Anzeige, Zeitbalken anhalten */
+    var qt = document.getElementById("qt"); if (qt) qt.classList.add("stop");
+    var cb = document.getElementById("combo");
+    if (cb) { if (r.ok && s.streak > 1) { cb.hidden = false; cb.textContent = comboTxt(s.streak); cb.classList.remove("bump"); void cb.offsetWidth; cb.classList.add("bump"); } else if (!r.ok) cb.hidden = true; }
+    var pb = r.picked >= 0 ? btns[r.picked] : null;
+    if (pb && !ui.reduced()) { pb.classList.add(r.ok ? "pop" : "shake"); if (r.ok && r.gain) { var fl = document.createElement("span"); fl.className = "floatxp"; fl.textContent = "+" + r.gain; pb.appendChild(fl); } }
     if (s.m.auto) { s.adv = setTimeout(next, r.ok ? 450 : 1300); return; }
+    var auto = r.ok && S().settings.autoNext !== "stay";
     var right = x.opts.filter(function (o) { return o.ok; })[0], picked = r.picked >= 0 ? x.opts[r.picked] : r.given;
-    var f = '<div class="fb ' + (r.ok ? "ok" : "bad") + '"><b class="h">' + (r.ok ? "Richtig" + (r.gain ? " · +" + r.gain + " XP" : "") : "Nicht ganz") + "</b>";
+    var f = '<div class="fb ' + (r.ok ? "ok" : "bad") + '"><b class="h">' + (r.ok ? "Richtig" + (r.gain ? " · +" + r.gain + " XP" : "") + (r.mult > 1 ? ' <span class="multi">×' + r.mult + "</span>" : "") : "Nicht ganz") + "</b>";
+    if (r.slow) f += '<p class="small">Länger überlegt? Die Frage kommt bald wieder, bis sie sitzt.</p>';
+    if (auto) f += '<button class="link small" data-act="fbmore">Erklärung ansehen</button><div class="fbmore" hidden>';
     if (!r.ok) {
       f += "<p>Richtig: <b>" + esc(right.t) + "</b></p>";
       if (r.typed) f += '<p class="small">Deine Eingabe: „' + esc(picked.t) + '“</p>';
@@ -245,12 +257,19 @@
       others.forEach(function (o) { f += "<li><b>" + esc(o.t) + ":</b> " + esc(o.why) + "</li>"; });
       f += "</ul></details>";
     }
+    if (auto) f += "</div>";
     f += "</div>" + btn("next", r.last ? "Ergebnis ansehen" : "Weiter", { primary: true });
     var box = document.getElementById("fb");
     box.innerHTML = f;
     box.scrollIntoView({ behavior: ui.reduced() ? "auto" : "smooth", block: "nearest" });
     var nb = box.querySelector('[data-act="next"]'); if (nb) try { nb.focus({ preventScroll: true }); } catch (e) {}
+    if (auto && nb) {
+      nb.classList.add("autobar"); nb.insertAdjacentHTML("beforeend", '<i aria-hidden="true"></i>');
+      s.adv = setTimeout(next, 1800);
+      box.addEventListener("click", function (ev) { if (!ev.target.closest('[data-act="next"]')) { E.clearAdv(); nb.classList.remove("autobar"); } });
+    }
   }
+  H.fbmore = function (d, t) { E.clearAdv(); var m = app.querySelector(".fbmore"); if (m) m.hidden = false; t.remove(); var nb = app.querySelector(".autobar"); if (nb) nb.classList.remove("autobar"); };
   H.save = function (d, t) {
     var x = E.cur(), sv = S().saved;
     if (sv[x.id]) { delete sv[x.id]; t.textContent = "☆ Merken"; } else { sv[x.id] = 1; t.textContent = "★ Gemerkt"; }

@@ -100,6 +100,7 @@
   function end() {
     var st = S(), tl = st.tl || (st.tl = { games: 0, perfect: 0 }), done = T.tasks.filter(function (t) { return t.done; }).length;
     tl.games++; tl.perfect = Math.max(tl.perfect, T.perfect);
+    WF.emit("timelineEnd", { perfect: T.perfect, done: done });
     WF.store.save();
     ui.show("<h1>Zeitstrahl</h1>" + '<div class="score">' + T.perfect + " von " + done + "</div>" +
       '<p class="mute">Reihen komplett richtig · ' + T.pos + " von " + done * N + " Positionen · +" + T.xp + " XP</p>" +
