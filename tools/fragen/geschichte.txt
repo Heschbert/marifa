@@ -1,0 +1,136 @@
+# Überarbeitung Geschichte: Detailwissen für Spezialisten raus, große Linien bleiben
+-18rmihb
+-1qi5suc
+-1teru6u
+-1ejn0so
+-3iskfs
+-1fhlr5b
+-95ypk8
+-1uthuza
+-1kq8ow1
+-3oidq4
+-1774y6h
+-15phdxd
+-hgrcv5
+-18qve55
+-1wi9vtz
+-1pvogwf
+-pgbc9q
+-1e30jfp
+-1pi2ag2
+-184vc4h
+-1tm4cf6
+-1imot21
+-ae063z
+-18j6mpm
+-o14g9s
+~1c1v3e4|Das Mongolische Reich|Das Römische Reich|Das Reich Alexanders des Großen|Das Perserreich
+~1etbl68|Cheops|Tutanchamun|Ramses II.|Echnaton
+~1scb2of|Julius Caesar|Augustus|Pompeius der Große|Hannibal
+~rr9n7c|Abstimmung über die Verbannung|Ein Gericht für Diebstahl und Raub|Eine Wahl der zehn Heerführer (Strategen)|Eine Prüfung neuer Beamter vor Amtsantritt
+~ctdt8o|Aristoteles|Platon|Sokrates|Epikur von Samos
+~18pwd9l|Verbreitung griechischer Kultur nach Alexander|Die Rückkehr zur Kunst der Perikleszeit|Die römische Eroberung Griechenlands|Das Bündnis der Poleis gegen Persien
+~1pnrdgd|Die lange Friedenszeit seit Augustus|Ein Friedensvertrag mit dem Perserreich|Die Religionsfreiheit im Reich|Das Waffenruhegebot der Legionen
+~xbrkz4|Zur Sicherung der Grenze|Als Fernstraße nach Rom|Als Wasserleitung für die Städte|Als äußere Stadtmauer Roms
+~1r4txi|Den Christen freie Religionsausübung|Das Christentum als Staatsreligion|Die Abschaffung der Sklaverei im Reich|Die Teilung des Reichs
+~1ohpou5|Das Vordringen der Hunnen|Der Ausbruch des Vesuvs bei Pompeji|Die Teilung des Römischen Reichs|Der Fall Konstantinopels
+~qwfvdn|Das Morgenländische Schisma|Das Abendländische Schisma|Die Reformation Martin Luthers|Der Arianische Streit
+~206kpg|Mohammeds Auswanderung nach Medina|Die Pilgerfahrt der Muslime nach Mekka|Das tägliche Pflichtgebet in Richtung Mekka|Die erste Offenbarung des Korans an Mohammed
+~y1l3md|Die Karolingische Minuskel|Die Fraktur|Die Unziale|Die deutsche Kurrentschrift
+~15i0rrn|Die Teilung des Frankenreichs|Die Kaiserkrönung Ottos I.|Das Ende des Investiturstreits|Den Frieden zwischen Franken und Sachsen
+~1r7yv6x|Wer Bischöfe einsetzen darf|Wer den deutschen Kaiser wählt|Wer Jerusalem besitzen soll|Wer Steuern von Klöstern erhält
+~1af67gd|Die Königswahl durch die Kurfürsten|Die Papstwahl durch die Kardinäle|Die Erbfolge im Haus Habsburg|Die Rechte der Hansestädte
+~tw5lg4|Wer Jahr und Tag dort lebte, wurde frei|Städter mussten keine Steuern zahlen|Jeder Städter durfte Waffen tragen|Bauern durften jederzeit wegziehen
+~w2t29w|Sie regelten Ausbildung und Qualität|Sie sammelten Steuern für den König|Sie bildeten die bewaffnete Stadtwache|Sie führten den Fernhandel
+~17vdy58|Wechsel von Winter-, Sommerfrucht und Brache|Der Anbau von drei Getreidesorten gleichzeitig|Der Besitz von genau drei Äckern je Bauer|Die Aufteilung in drei Dörfer
+~15ogyfq|Konstantinopel|Kairo|Damaskus|Alexandria
+~5mv67i|Die Rückeroberung Spaniens und Portugals|Die Rückeroberung des Heiligen Landes|Die Rückeroberung Südfrankreichs|Die Rückeroberung Konstantinopels 1261
+~lrzr96|Ein Gladiator, der Sklaven anführte|Ein Senator, der an Caesars Ermordung beteiligt war|Ein Feldherr, der Hannibal bei Zama besiegte|Ein Kaiser, der die Christen grausam verfolgen ließ
+~g2isio|Eine babylonische Gesetzessammlung|Ein ägyptisches Totenbuch|Ein sumerisches Heldenepos|Ein assyrischer Feldzugsbericht
+~17lh51s|Die Phönizier|Die Sumerer|Die Ägypter|Die Etrusker in Italien
+~1gbzvz|Qin Shihuangdi|Liu Bang|Konfuzius|Kublai Khan
+~jwufr3|China und das Mittelmeer|Rom und Britannien|Indien und Ostafrika|Persien und Spanien
+~1bs16om|Bonifatius|Kolumban|Gallus|Ansgar von Bremen
+~7ylwg9|Dschingis Khan|Kublai Khan|Timur Lenk|Attila
+~hc5qsd|Johannes Gutenberg|Albrecht Dürer|Martin Luther|Johannes Kepler
+~qeyxs7|Großbritannien|Deutschland|Vereinigte Staaten|Frankreich
+~18tujgn|Luthers Thesen gegen den Ablass|Der Augsburger Religionsfriede|Der Bauernkrieg in Süddeutschland|Der Reichstag zu Worms
+~2w62xe|Freiheit, Gleichheit, Brüderlichkeit|Einigkeit und Recht und Freiheit|Glaube, Liebe, Hoffnung|Gott, Kaiser, Vaterland
+~1p2vue3|Bürger, Bauern, Handwerker|Bischöfe und Äbte|Hofadel und Offiziere|Ausschließlich die Landbevölkerung
+~11vp4zs|Robespierre|Danton|Marat|Lafayette
+~ojojvp|Ein Handelsverbot gegen Großbritannien|Eine Zollunion der Rheinbundstaaten|Eine Grenzsperre gegen Russland|Eine Seeblockade Frankreichs durch England
+~11q55ye|Keine Zölle mehr zwischen den Mitgliedern|Die Einführung einer gemeinsamen Reichswährung|Die Gründung eines Nationalstaats|Die Abschaffung der Zünfte
+~135xbcy|Österreich|Bayern|Sachsen|Preußen
+~wxp7jc|Die katholische Kirche|Die Sozialdemokratie|Die Liberalen|Die Gewerkschaften
+~1bkmffs|Die Berliner Kongo-Konferenz|Der Wiener Kongress|Die Konferenz von Algeciras|Die Konferenz von Jalta auf der Krim
+~uznejs|Suche nach Rohstoffen und Märkten|Der Mangel an Arbeitskräften in Europa|Ein Überschuss an Ackerland|Der Rückgang der Industrieproduktion
+~q691p7|Um den Opiumhandel zu erzwingen|Um chinesische Seide zollfrei zu erhalten|Um Missionare in China zu schützen|Um Indien gegen Russland zu sichern
+~3mv11x|Keine europäische Einmischung in Amerika|Die Gründung der Vereinten Nationen|Freier Handel mit dem Kaiserreich China|Ein Verbot der Sklaverei
+~703wzn|Steuern ohne Vertretung im Parlament|Zölle auf Tee für die Bürger in Großbritannien|Die hohe Besteuerung des englischen Adels|Das fehlende Wahlrecht der Frauen in den Kolonien
+~36veof|„Proletarier aller Länder, vereinigt euch!“|„Ein Gespenst geht um in Europa“|„Religion ist das Opium des Volkes“|„Alle Macht den Arbeiter- und Soldatenräten!“
+~1ejvz50|Wiedergeburt|Aufklärung|Erneuerung|Wiederentdeckung
+~be3cka|Die Schlacht am Kahlenberg|Die Schlacht bei Lepanto|Die Schlacht bei Mohács|Die Schlacht bei Zenta
+~150ck3|Alleinherrschaft mit Reformen|Die Herrschaft eines gewählten Parlaments|Eine Wahlmonarchie, in der der Adel bestimmt|Der Verzicht des Staates auf Verwaltung
+~1wov61g|Frankreich, Russland, Großbritannien|Deutschland, Österreich-Ungarn, Italien|Großbritannien, USA, Japan|Russland, Serbien, Italien
+~1007j6e|Die Stimme zählte nach der Steuerleistung|Das Stimmgewicht richtete sich nach dem Alter|Nur Adlige durften überhaupt wählen|Das Stimmgewicht richtete sich nach der Bildung
+~1tnxy7q|Sankt Petersburg|Moskau|Kiew|Archangelsk
+~18c6k4n|Der Vertrag von Tordesillas|Der Vertrag von Saragossa|Der Westfälische Frieden|Der Frieden von Utrecht
+~dr0e5y|Er stärkte die Landesherren|Er schaffte die Reichsstände ab|Er führte eine Erbmonarchie ein|Er schuf einen deutschen Nationalstaat
+~1r07zkm|Der Landesherr bestimmt die Konfession|Jeder Einzelne wählt frei seinen Glauben|Der Kaiser bestimmt die Konfession aller|Der Papst bestimmt die Konfession
+~1nzvly6|Montesquieu|Rousseau|Voltaire|Thomas Hobbes
+~1bkafi1|Exporte fördern, Importe begrenzen|Freien Handel ganz ohne Zölle|Gemeineigentum an Produktionsmitteln|Selbstversorgung der Bauern
+~pklpjj|„Habe Mut, dich deines Verstandes zu bedienen“|„Ich denke, also bin ich“|„Der Mensch ist zur Freiheit verurteilt“|„Erkenne dich selbst“
+~vzb09g|Ferdinand Magellan|Vasco da Gama|Francis Drake|James Cook
+~1fh2rbn|US-Wiederaufbauhilfe für Westeuropa|Ein Militärbündnis gegen die Sowjetunion|Ein Währungsabkommen der Westmächte|Ein Friedensvertrag mit Deutschland
+~1b0y5zd|Hindenburg ernannte ihn zum Kanzler|Er gewann eine Reichstagswahl mit absoluter Mehrheit|Er putschte erfolgreich gegen die Regierung|Er wurde vom Reichstag zum Kanzler gewählt
+~qpchm1|Das Attentat auf Ernst vom Rath|Der Brand des Reichstags in Berlin|Der deutsche Überfall auf Polen|Der sogenannte Röhm-Putsch in der SA
+~op0xz7|Ruhrbesetzung und massenhafter Gelddruck|Der Börsencrash an der Wall Street|Die Einführung der D-Mark|Die Zahlungserleichterungen des Dawes-Plans
+~1hocq0b|Das Attentat von Sarajevo|Der deutsche Einmarsch in das neutrale Polen|Die Oktoberrevolution der Bolschewiki in Russland|Der Börsencrash an der Wall Street in New York
+~1u0nybw|Schneller Sieg über Frankreich via Belgien|Eine Landung der Armee in England|Einen Angriff auf Russland zuerst|Eine Seeblockade der Alliierten
+~105oen7|Der uneingeschränkte U-Boot-Krieg|Der Schlieffen-Plan|Die Besetzung Belgiens|Der Frieden von Brest-Litowsk
+~19aa3v4|Russlands Sonderfrieden mit den Mittelmächten|Das Ende des Ersten Weltkriegs|Die Gründung der Sowjetunion|Der Beginn der Pariser Friedenskonferenz
+~1f8k4c5|Das Heer sei unbesiegt und verraten worden|Die Republik sei von den Alliierten gegründet worden|Die Alliierten hätten den Waffenstillstand gebrochen|Das Kaiserreich sei von Frankreich angegriffen worden
+~vh16c1|Der Rat der Volksbeauftragten|Der Reichstag|Die Nationalversammlung|Der Alliierte Kontrollrat
+~5jgo1m|Verbrechen gegen Frieden und Menschlichkeit|Nur für Verbrechen gegen alliierte Besatzungstruppen|Nur für Wirtschaftsdelikte und Bereicherung im Amt|Nur für Hochverrat und Eidbruch gegenüber dem Reich
+~gnat9d|Winston Churchill|Harry Truman|Josef Stalin|Konrad Adenauer
+~1fc0dq7|Um die Flucht in den Westen zu stoppen|Um den Westen vor einem Angriff zu schützen|Um den Handel mit dem Westen zu sichern|Um eine Seuche einzudämmen
+~19jx6y4|Überwachung der Bevölkerung|Die Verwaltung der Wirtschaft|Der Schutz der Grenzen vor Soldaten|Die Organisation von Wahlen
+~1cv7bbm|RGW (Comecon)|EWG|EFTA|OPEC
+~7b5i4a|Schabowskis missverständliche Pressekonferenz|Ein Beschluss der Volkskammer zur Grenzöffnung|Ein direkter Befehl Gorbatschows an die DDR|Ein Volksentscheid über die Reisefreiheit
+~17wsx9n|Beitritt nach Artikel 23 GG|Neue Verfassung nach Artikel 146|Fusion durch einen Staatsvertrag|Volksentscheid
+~1brwlar|Die äußeren Fragen der Einheit|Den Austritt des vereinten Deutschlands aus der NATO|Die Reparationszahlungen an Polen und die Sowjetunion|Die Gründung der Europäischen Union mit gemeinsamer Währung
+~z2wakg|Der Vertrag von Maastricht|Der Vertrag von Rom|Der Vertrag von Lissabon|Das Schengener Abkommen
+~19ag3py|Weniger Kontrollen an Binnengrenzen|Die Einführung des Euro als gemeinsamer Währung|Die Aufnahme neuer Mitglieder in die EU|Die Gemeinsame Agrarpolitik der EU-Staaten
+~1xak3ow|Eleanor Roosevelt|Simone Veil|Hannah Arendt|Indira Gandhi
+~evrstu|IWF und Weltbank|UNO und NATO|WTO und OECD|EU und Europäische Zentralbank
+~dztjj3|Einen jüdischen und einen arabischen Staat|Einen gemeinsamen Staat|Ein dauerhaftes britisches Mandat|Zwei arabische Staaten
+~8rahsv|Ost-West-Vereinbarung zu Grenzen und Rechten|Ein Militärabkommen der NATO gegen den Warschauer Pakt|Ein Friedensvertrag der Siegermächte mit Deutschland|Ein Handelsabkommen der EWG mit dem Ostblock
+~7lnxtr|Claus Schenk Graf von Stauffenberg|Georg Elser|Sophie Scholl|Dietrich Bonhoeffer
+~1egp4mb|Staaten, die keinem Block angehören wollten|Ein Bündnis neutraler Staaten innerhalb der NATO|Ein Zusammenschluss der Staaten des Warschauer Pakts|Ein Handelsverbund europäischer Staaten in der EWG
+~u47jqf|Eine Massenhungersnot|Ein Wirtschaftsboom|Eine erfolgreiche Landreform|Ein Bürgerkrieg
+# Neu: große Linien
++{"s": "20. Jahrhundert & Gegenwart", "q": "Wann begann der Zweite Weltkrieg in Europa?", "a": ["1. September 1939", "1. August 1914", "30. Januar 1933", "22. Juni 1941"], "w": ["", "Das war der Beginn des Ersten Weltkriegs (deutsche Kriegserklärung an Russland).", "An diesem Tag wurde Hitler Reichskanzler.", "An diesem Tag begann der deutsche Angriff auf die Sowjetunion."], "e": "Mit dem deutschen Überfall auf Polen am 1. September 1939 begann der Zweite Weltkrieg in Europa.", "h": "Ein Angriff auf das östliche Nachbarland.", "d": 1}
++{"s": "20. Jahrhundert & Gegenwart", "q": "Wann endete der Zweite Weltkrieg in Europa?", "a": ["8. Mai 1945", "9. November 1918", "2. September 1945", "6. August 1945"], "w": ["", "Am 9. November 1918 dankte der Kaiser ab, das war das Ende des Kaiserreichs.", "Am 2. September 1945 kapitulierte Japan, das beendete den Krieg in Asien.", "An diesem Tag fiel die Atombombe auf Hiroshima."], "e": "Mit der bedingungslosen Kapitulation der Wehrmacht endete der Krieg in Europa am 8. Mai 1945.", "h": "Im Frühling.", "d": 1}
++{"s": "20. Jahrhundert & Gegenwart", "q": "Was war der Holocaust?", "a": ["Der Völkermord an sechs Millionen Juden", "Ein Bombenangriff auf deutsche Städte", "Die Vertreibung nach dem Krieg", "Ein Aufstand im Warschauer Ghetto"], "w": ["", "Bombenangriffe waren Kriegshandlungen, nicht der Holocaust.", "Vertreibungen fanden nach 1945 statt; der Holocaust war der systematische Völkermord.", "Der Aufstand war Widerstand gegen den Holocaust, nicht der Holocaust selbst."], "e": "Die Nationalsozialisten ermordeten systematisch rund sechs Millionen europäische Juden sowie viele weitere Verfolgte wie Sinti und Roma.", "h": "Auf Hebräisch heißt er Schoa.", "d": 1}
++{"s": "20. Jahrhundert & Gegenwart", "q": "Wann wurde Deutschland wiedervereinigt?", "a": ["3. Oktober 1990", "9. November 1989", "23. Mai 1949", "1. Januar 1991"], "w": ["", "Am 9. November 1989 fiel die Mauer; die Einheit folgte knapp ein Jahr später.", "An diesem Tag trat das Grundgesetz in Kraft.", "Die Einheit wurde schon 1990 vollzogen."], "e": "Am 3. Oktober 1990 trat die DDR der Bundesrepublik bei. Der Tag ist seitdem Nationalfeiertag.", "h": "Heute ein Feiertag im Herbst.", "d": 1}
++{"s": "Neuzeit (1450–1914)", "q": "Welche Erfindung veränderte die Verbreitung von Wissen in Europa ab etwa 1450 am stärksten?", "a": ["Der Buchdruck", "Die Dampfmaschine", "Das Fernrohr", "Die Uhr mit Pendel"], "w": ["", "Die Dampfmaschine kam erst im 18. Jahrhundert und veränderte vor allem die Industrie.", "Das Fernrohr veränderte die Astronomie, nicht die Wissensverbreitung allgemein.", "Pendeluhren verbesserten die Zeitmessung."], "e": "Der Buchdruck mit beweglichen Lettern machte Bücher billig und schnell herstellbar und beförderte Reformation und Wissenschaft.", "h": "Gutenberg.", "d": 1}
++{"s": "Antike & Mittelalter", "q": "Welche Staatsform wurde im antiken Athen erstmals erprobt?", "a": ["Die Demokratie", "Die Monarchie", "Die Diktatur", "Die Theokratie"], "w": ["", "Monarchien gab es schon lange vorher.", "Diktaturen sind keine athenische Erfindung.", "Eine Theokratie ist eine Herrschaft im Namen Gottes."], "e": "Im 5. Jahrhundert v. Chr. entschieden in Athen die männlichen Bürger direkt über Gesetze. Frauen, Sklaven und Fremde waren ausgeschlossen.", "h": "Griechisch: Herrschaft des Volkes.", "d": 1}
+# Feinausgleich (automatisch)
+~1c1v3e4|Das Mongolische Reich|Das Römische Reich|Das Reich Alexanders|Das Perserreich
+~1scb2of|Julius Caesar|Augustus|Pompeius|Hannibal
+~ctdt8o|Aristoteles|Platon|Sokrates|Epikur
+~1pnrdgd|Die lange Friedenszeit seit Augustus|Ein Friedensvertrag mit Persien|Die Religionsfreiheit im Reich|Das Waffenruhegebot der Legionen
+~1r4txi|Den Christen freie Religionsausübung|Das Christentum als Staatsreligion|Die Abschaffung der Sklaverei|Die Teilung des Reichs
+~qwfvdn|Das Morgenländische Schisma|Das Abendländische Schisma|Die Reformation|Der Arianische Streit
+~y1l3md|Die Karolingische Minuskel|Die Fraktur|Die Unziale|Die Kurrentschrift
+~w2t29w|Sie regelten Ausbildung und Qualität|Sie sammelten Steuern für den König|Sie bildeten die Stadtwache|Sie führten den Fernhandel
+~17lh51s|Die Phönizier|Die Sumerer|Die Ägypter|Die Etrusker
+~1bs16om|Bonifatius|Kolumban|Gallus|Ansgar
+~qeyxs7|Großbritannien|Deutschland|USA|Frankreich
+~18tujgn|Luthers Thesen gegen den Ablass|Der Augsburger Religionsfriede|Der Bauernkrieg|Der Reichstag zu Worms
+~1p2vue3|Bürger, Bauern, Handwerker|Bischöfe und Äbte|Hofadel und Offiziere|Nur die Landbevölkerung
+~ojojvp|Ein Handelsverbot gegen Großbritannien|Eine Zollunion der Rheinbundstaaten|Eine Grenzsperre gegen Russland|Eine Seeblockade Frankreichs
+~11q55ye|Keine Zölle mehr zwischen den Mitgliedern|Die Einführung einer Reichswährung|Die Gründung eines Nationalstaats|Die Abschaffung der Zünfte
+~1bkmffs|Die Berliner Kongo-Konferenz|Der Wiener Kongress|Die Konferenz von Algeciras|Die Konferenz von Jalta
+~36veof|„Proletarier aller Länder, vereinigt euch!“|„Ein Gespenst geht um in Europa“|„Religion ist das Opium des Volkes“|„Alle Macht den Räten!“
+~1ejvz50|Wiedergeburt|Aufklärung|Erneuerung|Entdeckung
