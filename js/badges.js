@@ -24,6 +24,9 @@
     { id: "math50",  n: "Rechenkünstler",    d: "50 Kopfrechenaufgaben richtig",  t: function () { var s = S().sub["Mathematik|Kopfrechnen"]; return !!s && s.r >= 50; } },
     { id: "spec",    n: "Spezialist",        d: "Einen Unterbereich komplett gemeistert", t: function () {
         return D.topics.some(function (t) { return t.subs.some(function (s) { var n = E.totalIn(t.c, s); return n > 0 && E.masteredIn(t.c, s) === n; }); }); } },
+    { id: "week1",   n: "Wochenthema",       d: "Eine Themenwoche schaffen",      t: function () { return (WF.weekCount ? WF.weekCount() : 0) >= 1; } },
+    { id: "week4",   n: "Monatsmarathon",    d: "Vier Themenwochen schaffen",     t: function () { return (WF.weekCount ? WF.weekCount() : 0) >= 4; } },
+    { id: "path1",   n: "Urkunde",           d: "Einen Lernpfad abschließen",     t: function () { var p = S().paths || {}; return Object.keys(p).some(function (k) { return p[k].done; }); } },
     { id: "help0",   n: "Ohne Hilfe",        d: "Test mit 8 von 10 ohne Hilfen", t: function (e) { var s = E.s; return e && s.m.id === "classic" && s.score >= 8 && !s.round.some(function (x) { return x.helped; }); } }
   ];
 

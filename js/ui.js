@@ -207,7 +207,9 @@
     view = areas;
     var st = S(), last = st.settings.last;
     var h = ui.sechead("learn", "Lernen", "Ohne Zeitdruck. Falsche Antworten kommen wieder, bis sie sitzen.");
-    h += '<div class="hero"><h3>' + (last ? esc(last.s || last.c) : "Alle Themen") + "</h3><p>" + (last ? "Dort machst du weiter." : "Du lernst, was noch nicht sitzt.") + "</p>" + btn("start", last ? "Weiterlernen" : "Loslegen", { data: { m: "learn", c: last ? last.c || "" : "", s: last ? last.s || "" : "" } }) + "</div>";
+    var fav = st.settings.fav || [], due = E.dueList({}).length;
+    if (!last && fav.length) h += '<div class="hero"><h3>Deine Themen</h3><p>' + esc(fav.slice(0, 3).join(", ") + (fav.length > 3 ? " und " + (fav.length - 3) + " weitere" : "")) + "</p>" + btn("favgo", "Loslegen") + "</div>";
+    else h += '<div class="hero"><h3>' + (last ? esc(last.s || last.c) : "Alle Themen") + "</h3><p>" + (last ? "Dort machst du weiter." : "Du lernst, was noch nicht sitzt.") + (due ? " " + due + (due === 1 ? " Frage ist" : " Fragen sind") + " heute zur Wiederholung fällig und kommen zuerst." : "") + "</p>" + btn("start", last ? "Weiterlernen" : "Loslegen", { data: { m: "learn", c: last ? last.c || "" : "", s: last ? last.s || "" : "" } }) + "</div>";
     h += WF.slot("areas", { st: st });
     h += '<div class="card cfg" style="margin:12px 0">' + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>";
     h += "<h2>Themen</h2>";

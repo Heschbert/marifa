@@ -4,7 +4,9 @@
   var WF = window.WF, U = WF.util, D = WF.data;
   function S() { return WF.store.data; }
   var E = WF.engine = { s: null };
-  var C = E.consts = { ROUND: 10, GOAL: 10, DAILY_N: 5, BLITZ_S: 60, LIVES: 3 };
+  var C = E.consts = { ROUND: 10, DAILY_N: 5, BLITZ_S: 60, LIVES: 3 };
+  /* Tagesziel ist einstellbar (Einstieg, Profil): 5, 10 oder 20 Antworten. */
+  Object.defineProperty(C, "GOAL", { enumerable: true, get: function () { var g = +((WF.store && WF.store.data && WF.store.data.settings.goal) || 10); return g > 0 ? g : 10; } });
 
   /* ---------- Level, XP, Serie ---------- */
   /* Level 1–30. XP für Level L: 50 × L × (L − 1). Level 30 ist das Höchstlevel. */
@@ -131,7 +133,10 @@
   }
   /* Wichtigkeit p: 1 = Kernwissen (kommt öfter), 2 = nützlich, 3 = Wissenswertes/Trivia (seltener) */
   function prio(x) { return x.p === 1 ? 1.6 : x.p === 3 ? 0.55 : 1; }
-  function weight(x) { return weight0(x) * prio(x); }
+  /* Fällige Wiederholungen (nach 1, 3, 7, 21, 60 Tagen) kommen im Lernen deutlich bevorzugt dran. */
+  function isDue(x) { if (x.gen) return false; var r = S().qs[x.id]; return !!(r && r.b >= 1 && r.due && r.due <= U.today()); }
+  E.isDue = isDue;
+  function weight(x) { return weight0(x) * prio(x) * (isDue(x) ? 3 : 1); }
   function weight0(x) {
     if (x.gen) return 2 * diffMult(x) * recency(x);
     var r = S().qs[x.id];
@@ -152,7 +157,7 @@
     if (!x.gen) { var r = S().qs[x.id]; wrong = r && r.b === 0; base = r ? (r.b === 0 ? (r.cw ? -1.5 : -1) : r.b) : 0; }
     var a = E.seenAge(x.id);
     base += wrong ? (a === 0 ? 1 : 0) : (a === 0 ? 4 : a === 1 ? 2 : 0);
-    return base + Math.abs((x.d || 2) - E.target(x.c, x.s)) * 0.4 + ((x.p || 2) - 2) * 0.6;
+    return base + Math.abs((x.d || 2) - E.target(x.c, x.s)) * 0.4 + ((x.p || 2) - 2) * 0.6 - (isDue(x) ? 2.5 : 0);
   }
   E.orderLearn = function (list) { return U.shuffle(list.slice()).sort(function (a, b) { return levelKey(a) - levelKey(b); }); };
 
@@ -216,6 +221,7 @@
     if (opts.timer) m.timer = opts.timer;
     if (opts.lives) m.lives = opts.lives;
     if (opts.helps) m.helps = opts.helps;
+    if (opts.title) m.title = opts.title;
     if (opts.endless !== undefined && m.learn) m.extend = !!opts.endless;
     scope = scope || { c: null, s: null };
     var s = E.s = { m: m, scope: scope, round: [], idx: 0, score: 0, wrong: [], streak: 0, best: 0, lives: m.lives || 0, endAt: 0, roundXP: 0,

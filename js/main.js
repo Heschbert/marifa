@@ -38,6 +38,12 @@ import "./courses.js";
 import "./setup.js";
 import "./kneipe.js";
 import "./levels.js";
+import "./pack.js";
+import "./fact.js";
+import "./calendar.js";
+import "./paths.js";
+import "./weeks.js";
+import "./onboard.js";
 
 /* Start: Daten laden, dann die Oberfläche öffnen. */
 const WF = window.WF;
