@@ -34,7 +34,7 @@
       if (s.last === U.yesterday()) s.n = s.n + 1;
       else if (s.last === daysAgo(2) && (s.freeze || 0) > 0) { s.freeze--; s.n = s.n + 1; WF.emit("toast", { title: "Serienschutz eingesetzt", sub: "Deine Serie läuft weiter." }); }
       else s.n = 1;
-      if (s.n > 0 && s.n % 7 === 0 && (s.freeze || 0) < 2) { s.freeze = (s.freeze || 0) + 1; WF.emit("toast", { title: s.n + " Tage geschafft", sub: "+1 Serienschutz" }); }
+      if (s.n > 0 && s.n % 7 === 0 && (s.freeze || 0) < 2) { s.freeze = (s.freeze || 0) + 1; WF.emit("toast", { title: s.n + " Tage in Folge", sub: "+1 Serienschutz: rettet automatisch einen verpassten Tag" }); }
       s.last = t;
       if (s.n > s.best) s.best = s.n;
       if (s.n > 1) WF.emit("toast", { title: s.n + " Tage in Folge", sub: "Die Serie läuft." });

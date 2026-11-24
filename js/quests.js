@@ -1,5 +1,5 @@
 /* Tagesaufgaben: jeden Tag drei kleine Aufgaben (für alle gleich ausgelost). Sind alle erledigt,
-   lässt sich eine Truhe mit zufälliger Belohnung öffnen: XP oder Serienschutz. */
+   gibt es sofort und ohne Zufall +100 XP (keine Truhe, nichts zum Einlösen). */
 (function () {
   "use strict";
   var WF = window.WF, E = WF.engine, D = WF.data, U = WF.util, esc = U.esc, ui = WF.ui, H = ui.H, btn = ui.btn;
@@ -43,7 +43,7 @@
       var n = absolute ? Math.max(q.p, val) : q.p + val;
       if (n !== q.p) { q.p = Math.min(q.t, n); changed = true; if (q.p >= q.t) WF.emit("toast", { title: "Aufgabe erledigt", sub: typeOf(q).txt(q) }); }
     });
-    if (changed) { WF.store.save(); if (Q.list.every(function (q) { return q.p >= q.t; }) && !Q.chest) WF.emit("toast", { title: "Alle Tagesaufgaben erledigt", sub: "Die Truhe wartet auf der Startseite." }); }
+    if (changed) { if (Q.list.every(function (q) { return q.p >= q.t; }) && !Q.chest) reward(Q); WF.store.save(); }
   }
   WF.on("answered", function (r) {
     if (r.estimate) return;
@@ -64,32 +64,27 @@
   WF.on("ladderEnd", function () { bump("ladder", 1); });
   WF.on("courseCard", function () { bump("course", 1); });
 
-  /* Truhe: zufällige Belohnung, gewichtet */
-  var REWARDS = [[40, "xp", 50], [25, "xp", 100], [15, "xp", 200], [20, "freeze", 1]];
-  H.chest = function () {
-    var Q = today(); if (Q.chest || !Q.list.every(function (q) { return q.p >= q.t; })) return;
-    var roll = Math.random() * 100, acc = 0, rw = REWARDS[0];
-    for (var i = 0; i < REWARDS.length; i++) { acc += REWARDS[i][0]; if (roll < acc) { rw = REWARDS[i]; break; } }
-    var st = S(), txt;
-    if (rw[1] === "freeze" && (st.streak.freeze || 0) < 2) { st.streak.freeze = (st.streak.freeze || 0) + 1; txt = "Serienschutz +1"; }
-    else { var xp = rw[1] === "xp" ? rw[2] : 100; E.addXP(xp); txt = "+" + xp + " XP"; }
-    Q.chest = txt; WF.store.save();
-    ui.go("home");
-    ui.toast({ title: "Truhe geöffnet", sub: txt });
-  };
+  /* Belohnung: alle drei Aufgaben erledigt = +100 XP, sofort gutgeschrieben. */
+  var BONUS = 100;
+  function reward(Q) {
+    E.addXP(BONUS); Q.chest = "+" + BONUS + " XP";
+    WF.emit("celebrate", { icon: "✓", kind: "quest", title: "Tagesaufgaben geschafft", sub: "+" + BONUS + " XP sind deinem Level gutgeschrieben. Morgen gibt es drei neue Aufgaben." });
+  }
+  /* Alte Spielstände mit ungeöffneter Truhe: Belohnung direkt gutschreiben */
+  H.chest = function () { var Q = today(); if (!Q.chest && Q.list.every(function (q) { return q.p >= q.t; })) { reward(Q); WF.store.save(); } ui.go("home"); };
 
   /* Startseite: kompakte Liste mit Fortschrittsringen. Sind alle erledigt und die Truhe offen, nur noch eine Zeile. */
   var ICO = { course: "🎓", ans: "?", right: "✓", combo: "🔥", combo8: "🔥", topic: "◆", daily: "☀", blitz: "60", learn: "📖", est: "≈", tl: "↹", ladder: "⇧" };
   WF.registerEntry({ where: "home", order: 2, render: function () {
-    var Q = today(), done = Q.list.filter(function (q) { return q.p >= q.t; }).length, fr = S().streak.freeze || 0;
-    if (done === 3 && Q.chest) return '<div class="card daydone"><span class="ico" aria-hidden="true">🎁</span><div class="grow"><b>Tagesaufgaben erledigt</b><div class="small mute">Gewonnen: ' + esc(Q.chest) + (fr ? " · Serienschutz " + fr : "") + " · morgen gibt es neue</div></div></div>";
-    var h = '<div class="card quests"><div class="qhead"><b>Tagesaufgaben</b><span class="small mute">' + done + " von 3" + (fr ? " · 🛡 " + fr : "") + "</span></div>";
+    var Q = today(), done = Q.list.filter(function (q) { return q.p >= q.t; }).length;
+    if (done === 3 && !Q.chest) { reward(Q); WF.store.save(); }
+    if (done === 3) return '<div class="card daydone"><span class="ico" aria-hidden="true">✓</span><div class="grow"><b>Tagesaufgaben erledigt</b><div class="small mute">+' + BONUS + " XP erhalten · morgen gibt es neue</div></div></div>";
+    var h = '<div class="card quests"><div class="qhead"><b>Tagesaufgaben</b><span class="small mute">' + done + " von 3</span></div>";
     Q.list.forEach(function (q) {
       var ok = q.p >= q.t, p = Math.round(q.p / q.t * 100);
       h += '<div class="qrow' + (ok ? " done" : "") + '">' + ui.ring(p, "var(--accent)", ok ? "✓" : ICO[q.id] || "•") + '<div class="grow"><div class="t">' + esc(typeOf(q).txt(q)) + "</div></div><span class=\"xp\">" + q.p + " / " + q.t + "</span></div>";
     });
-    if (done === 3) h += '<div class="chestline"><span aria-hidden="true">🎁</span><b>Truhe bereit</b>' + btn("chest", "Öffnen", { primary: true }) + "</div>";
-    else h += '<div class="chestline"><span aria-hidden="true">🎁</span><span class="mute">Alle 3 erledigen öffnet eine Truhe: XP oder Serienschutz.</span></div>';
+    h += '<div class="chestline"><span class="mute">Alle 3 erledigt: +' + BONUS + " XP für dein Level.</span></div>";
     return h + "</div>";
   } });
 })();

@@ -10,7 +10,7 @@
   var SOURCES = [
     ["Richtige Antwort", "10–20 XP, mal Combo bis ×4"],
     ["Tagesziel (10 Antworten)", "+50 XP"],
-    ["Truhe der Tagesaufgaben", "50–200 XP"],
+    ["Alle 3 Tagesaufgaben", "+100 XP"],
     ["Wissensleiter", "Punkte ÷ 10, bis 300 XP"],
     ["Zeitstrahl", "bis 20 XP pro Reihe"],
     ["Kurs: richtige Antwort", "10 XP"],
@@ -37,5 +37,21 @@
     ui.show(h, "home", false);
   }
   H.levels = function () { view(); };
+
+  /* Serie und Serienschutz erklärt. Erreichbar über das Serien-Abzeichen auf der Startseite. */
+  function streakView() {
+    ui.setView(streakView);
+    var st = S(), n = E.curStreak(), fr = st.streak.freeze || 0, next = 7 - (n % 7);
+    var h = '<button class="ghost" data-act="home">‹ Zurück</button><h1>Serie</h1>';
+    h += '<div class="card lvhead">' + ui.ring(Math.min(100, (n % 7) / 7 * 100), "var(--accent)", String(n)) + '<div class="grow"><b>' + n + (n === 1 ? " Tag" : " Tage") + ' in Folge</b><p class="small mute" style="margin:2px 0 0">Ein Tag zählt, sobald du mindestens eine Frage beantwortest.</p></div></div>';
+    h += '<h2>Serienschutz · ' + fr + " von 2</h2>";
+    h += '<div class="card"><div class="shields">' + [0, 1].map(function (i) { return '<span class="shield' + (i < fr ? " on" : "") + '" aria-hidden="true">🛡</span>'; }).join("") + "</div>" +
+      '<p style="margin:10px 0 0">Verpasst du einen Tag, wird <b>automatisch</b> ein Serienschutz verbraucht und deine Serie läuft weiter. Du musst nichts einlösen.</p>' +
+      '<p class="small mute" style="margin:8px 0 0">Du bekommst einen Serienschutz für je 7 Tage in Folge, höchstens 2 auf Vorrat.' + (fr < 2 ? " Der nächste kommt in " + next + (next === 1 ? " Tag." : " Tagen.") : " Dein Vorrat ist voll.") + "</p></div>";
+    h += '<h2>Abzeichen</h2><div class="card"><p style="margin:0">Abzeichen sind Erinnerungen an besondere Leistungen, zum Sammeln. Sie bringen keine Punkte und lassen sich nicht einlösen. Alle findest du im <button class="link" data-act="goprofile">Profil</button>.</p></div>';
+    ui.show(h, "home", false);
+  }
+  H.streakinfo = function () { streakView(); };
+  H.goprofile = function () { ui.go("profile"); };
   ui.views = ui.views || {}; ui.views.levels = view;
 })();

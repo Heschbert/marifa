@@ -21,7 +21,7 @@
     document.body.classList.toggle("hastabs", !!tab);
     [].forEach.call(tabs.children, function (b) { b.classList.toggle("on", b.dataset.t === tab); });
     [].forEach.call(tabs.children, function (b) { if (b.dataset.t === tab) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
-    window.scrollTo(0, 0);
+    var sc = document.getElementById("scroller"); if (sc) sc.scrollTop = 0; else window.scrollTo(0, 0);
     /* Bildschirmleser: Fokus auf die Überschrift bzw. Frage des neuen Bildschirms setzen. */
     var head = app.querySelector("h1, .q");
     if (head) { head.setAttribute("tabindex", "-1"); try { head.focus({ preventScroll: true }); } catch (e) {} }
@@ -167,7 +167,7 @@
   /* ---------- Spielen (Startseite, blau) ---------- */
   function pills() {
     var st = S(), L = E.levelOf(st.xp), strk = E.curStreak(), today = st.days[U.today()] || 0;
-    return '<div class="pills"><button class="pill lvl" data-act="levels" aria-label="Levelübersicht öffnen">Level ' + L + " · " + E.titleOf(L) + ' ›</button><span class="pill">Serie ' + strk + '</span><span class="pill">Heute ' + Math.min(today, E.consts.GOAL) + " / " + E.consts.GOAL + "</span></div>";
+    return '<div class="pills"><button class="pill lvl" data-act="levels" aria-label="Levelübersicht öffnen">Level ' + L + " · " + E.titleOf(L) + ' ›</button><button class="pill" data-act="streakinfo" aria-label="Serie und Serienschutz erklären">Serie ' + strk + ((st.streak.freeze || 0) ? " · 🛡 " + st.streak.freeze : "") + ' ›</button><span class="pill">Heute ' + Math.min(today, E.consts.GOAL) + " / " + E.consts.GOAL + "</span></div>";
   }
   function row(act, ico, title, sub, data, off) {
     var d = ""; for (var k in (data || {})) d += " data-" + k + '="' + esc(data[k]) + '"';
@@ -182,8 +182,10 @@
     if (!done) h += '<div class="hero"><h3>Tagesrätsel</h3><p>' + dtxt + "</p>" + btn("start", "Jetzt spielen", { data: { m: "daily" } }) + "</div>";
     else h += '<div class="card daydone"><span class="ico" aria-hidden="true">✓</span><div class="grow"><b>Tagesrätsel erledigt</b><div class="small mute">' + esc(dtxt) + "</div></div>" + (done.log ? '<button class="link" data-act="share">Teilen</button>' : "") + "</div>";
     var dl = { auto: "Auto", 1: "Leicht", 2: "Mittel", 3: "Schwer" }[st.settings.difficulty];
-    h += '<details class="card cfgbox" data-keep="homecfg"' + ui.keepOpen("homecfg") + '><summary><span class="mute small">Spielt mit</span><b>' + esc(st.settings.playC || "Alle Themen") + " · " + dl + "</b></summary>" +
-      '<div class="cfgin">' + ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div></details>";
+    h += '<details class="card cfgbox" data-keep="homecfg"' + ui.keepOpen("homecfg") + '><summary><span class="mute small">Deine Auswahl für die Spiele unten</span><b>' + esc(st.settings.playC || "Alle Themen") + " · " + dl + "</b></summary>" +
+      '<div class="cfgin"><p class="small mute" style="margin:0 0 10px">Diese Auswahl gilt für alle Spiele unten (Test, Blitz, Überleben, Wissensleiter …). Wähle hier, was du spielen willst, und starte direkt oder unten ein Spiel.</p>' +
+      ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') +
+      '<div style="margin-top:14px">' + btn("play", "Test mit dieser Auswahl starten", { primary: true, data: { m: "classic" } }) + "</div></div></details>";
     var ctx = { st: st };
     h += WF.slot("home", ctx, undefined, 10);
     h += '<h2>Allein spielen</h2><div class="tiles">' + WF.slot("home", ctx, 10, 40) + "</div>";

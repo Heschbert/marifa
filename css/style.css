@@ -606,3 +606,16 @@ body.pub { --bg: #0e2a1f; --card: #1d3a2c; --fg: #f3ead7; --mute: #c9bd9f; --lin
 .pubbtn { margin-top: 18px; }
 .lvseg button.hot.on { background: #c92a2a; border-color: #c92a2a; color: #fff; }
 .lvseg { margin-top: 0; }
+
+/* ---------- 3.0: feste App-Hülle. Nur der Inhalt scrollt, die Menüleiste ist kein fixiertes Element mehr.
+   Damit kann iOS (Home-Bildschirm-App) die Leiste nicht mehr nach oben verschieben. ---------- */
+html, body { height: 100%; overflow: hidden; }
+body { position: fixed; inset: 0; display: flex; flex-direction: column; }
+#scroller { flex: 1 1 auto; min-height: 0; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; overscroll-behavior-y: contain; }
+#app { min-height: 0; padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+body.hastabs #app { padding-bottom: 24px; }
+#tabs { position: relative; flex: 0 0 auto; transform: none; -webkit-transform: none; will-change: auto; }
+#tabs[hidden] { display: none; }
+body.hastabs .nextbar { bottom: 10px; }
+.shields { display: flex; gap: 10px; } .shield { font-size: 30px; opacity: .25; filter: grayscale(1); } .shield.on { opacity: 1; filter: none; }
+.k-quest .celeb-icon { background: linear-gradient(135deg, #2b8a3e, #12b886); }
