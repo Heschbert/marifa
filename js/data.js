@@ -18,7 +18,7 @@
     }).then(function (res) {
       var list = [];
       res[0].forEach(function (r) {
-        r.a.forEach(function (q) { list.push({ id: q.id || "", c: r.t.c, s: q.s, q: q.q, a: q.a, e: q.e, w: q.w || null, h: q.h || "", d: q.d || 2, p: q.p || 2, src: q.src || "" }); });
+        r.a.forEach(function (q) { list.push({ id: q.id || "", c: r.t.c, s: q.s, q: q.q, a: q.a, e: q.e, w: q.w || null, h: q.h || "", d: q.d || 2, p: q.p || 2, m: q.m || "", src: q.src || "" }); });
       });
       D.raw = {};
       res[1].forEach(function (r) { D.raw[r.x.builder] = r.j; list = list.concat(WF.builders[r.x.builder](r.j)); });

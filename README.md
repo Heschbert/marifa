@@ -6,8 +6,9 @@ Läuft im Browser und lässt sich als App auf den Home-Bildschirm legen (PWA, au
 **Live:** https://heschbert.github.io/marifa/
 
 ## Was drin ist
-- **Spielen:** Tagesrätsel, Test, Blitz, Überleben, Wissensleiter, Zeitstrahl, Schätzen, Duell per Link.
-- **Lernen:** Endlos-Lernmodus mit Wiederholung falscher Antworten; Kernwissen kommt häufiger dran.
+- **Spielen:** Tagesrätsel, Test, Blitz, Überleben, Wissensleiter, Zeitstrahl, Schätzen, Kartenquiz, Duell per Link, Themenwoche, Fakt des Tages.
+- **Lernen:** Endlos-Lernmodus mit Wiederholung nach Plan (1, 3, 7, 21, 60 Tage), Kernwissen zuerst, Eselsbrücken, Lernpfade mit Urkunde.
+- **Profil:** Level, Lernkalender, Wissensstand je Thema, einstellbares Tagesziel.
 - **Kurse:** Mehrteilige Kurse mit Lektionen, Übungen und Karteikarten (z. B. Batteriespeicher, KI).
 - **Kneipe:** Pub-Quiz und Partyspiele.
 - Rund 2.300 handgeschriebene Fragen in 14 Themen plus erzeugte Fragen (Hauptstädte, Flaggen, Schätzfragen).
@@ -30,11 +31,13 @@ Dann http://localhost:8000 öffnen.
 - Aufbau des Codes und neue Funktionen: [ARCHITEKTUR.md](ARCHITEKTUR.md)
 - Regeln für gute Fragen: [LEITFADEN-FRAGEN.md](LEITFADEN-FRAGEN.md)
 - Kurse schreiben: [LEITFADEN-KURSE.md](LEITFADEN-KURSE.md)
+- Fehler in Fragen melden: in der App „Frage melden“ oder direkt als [Issue](https://github.com/Heschbert/marifa/issues).
 - Vor dem Veröffentlichen prüfen: `node tools/check.mjs` (Fragen) und `node tools/check-courses.mjs` (Kurse), Version erhöhen mit `node tools/version.mjs`.
 
 ## Fremde Bestandteile
 - Schrift [Inter](https://rsms.me/inter/), SIL Open Font License 1.1 – `fonts/OFL-Inter.txt`
 - Flaggen von [flag-icons](https://github.com/lipis/flag-icons), MIT-Lizenz – `img/flags/LICENSE-flag-icons.txt`
+- Weltkarte aus [Natural Earth](https://www.naturalearthdata.com/) (gemeinfrei) über [world-atlas](https://github.com/topojson/world-atlas) (ISC) – erzeugt mit `tools/karte-bau.mjs`
 
 ## Lizenz
 MIT, siehe [LICENSE](LICENSE). Schrift und Flaggen stehen unter ihren eigenen Lizenzen (siehe oben).

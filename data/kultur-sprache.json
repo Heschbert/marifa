@@ -2592,7 +2592,8 @@
   "e": "„Das Buch, das ich lese“ lässt sich mit „welches“ ersetzen; „Ich hoffe, dass du kommst“ nicht.",
   "h": "Ersetze das Wort.",
   "d": 2,
-  "p": 1
+  "p": 1,
+  "m": "Kann man „dieses“, „jenes“ oder „welches“ einsetzen, schreibt man „das“, sonst „dass“."
  },
  {
   "id": "p92m0e",
@@ -2634,7 +2635,8 @@
   "e": "Das Wort kommt aus dem Griechischen (rhythmós); Merkhilfe: zwei „h“ und ein „y“.",
   "h": "Zwei „h“.",
   "d": 2,
-  "p": 1
+  "p": 1,
+  "m": "Rhythmus hat zwei h: eins nach dem R, eins nach dem t."
  },
  {
   "id": "bju2sx",
@@ -2655,7 +2657,8 @@
   "e": "„Seit gestern seid ihr hier.“ Merkregel: „seid“ gehört zu „ihr seid“ (wie „du bist“).",
   "h": "Ihr seid.",
   "d": 1,
-  "p": 1
+  "p": 1,
+  "m": "„seit“ mit t wie Zeit, „seid“ mit d wie „ihr seid da“."
  },
  {
   "id": "1c6n4o1",
@@ -2737,7 +2740,8 @@
   "e": "„Ich helfe meinem Freund.“ Wem helfe ich? Meinem Freund.",
   "h": "Dativ.",
   "d": 1,
-  "p": 1
+  "p": 1,
+  "m": "Dativ ist der Wem-Fall: „Ich gebe dem Hund (wem?) einen Knochen.“"
  },
  {
   "id": "1aychs0",
@@ -2758,7 +2762,8 @@
   "e": "„Das Auto meines Vaters.“ Wessen Auto? Meines Vaters.",
   "h": "Besitz.",
   "d": 1,
-  "p": 1
+  "p": 1,
+  "m": "Genitiv ist der Wessen-Fall: „Das Auto des Vaters (wessen?)“."
  },
  {
   "id": "wsk3qc",
@@ -3028,7 +3033,8 @@
   "e": "Die Schreibung folgt der Stammverwandtschaft mit „Stange“.",
   "h": "Stammverwandt mit Stange.",
   "d": 3,
-  "p": 1
+  "p": 1,
+  "m": "Stängel kommt von Stange, deshalb mit ä."
  },
  {
   "id": "1re2sd4",
@@ -3109,7 +3115,8 @@
   "e": "Im Deutschen steht beim Genitiv von Eigennamen kein Apostroph; nur bei Namen auf s, ß, x und z: „Hans’ Auto“.",
   "h": "Kein Apostroph.",
   "d": 2,
-  "p": 1
+  "p": 1,
+  "m": "Wie „Peters Auto“: Beim Genitiv von Namen kein Apostroph, also „Annas Buch“."
  },
  {
   "id": "luv2ld",

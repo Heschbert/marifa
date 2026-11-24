@@ -728,3 +728,18 @@ a { color: var(--accent); font-weight: 600; text-decoration: none; }
 .obgoal { text-align: left; border: 1.5px solid var(--line); background: var(--card); color: var(--fg); border-radius: 16px; padding: 14px 16px; display: flex; flex-direction: column; gap: 2px; }
 .obgoal span { color: var(--mute); font-size: 14px; }
 .obgoal.on { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+/* Kartenquiz */
+.kq { font-size: 20px; margin: 14px 0 10px; }
+.kwrap { background: color-mix(in srgb, #4dabf7 14%, var(--card)); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); touch-action: manipulation; }
+.kmap { display: block; width: 100%; height: auto; max-height: 62vh; }
+.kc { fill: color-mix(in srgb, var(--mute) 22%, var(--card)); stroke: var(--card); stroke-width: .35; vector-effect: non-scaling-stroke; }
+.kc.in { fill: color-mix(in srgb, var(--accent) 22%, var(--card)); stroke: var(--bg); stroke-width: 1; cursor: pointer; }
+.kc.in:hover { fill: color-mix(in srgb, var(--accent) 40%, var(--card)); }
+.kc.ok { fill: var(--ok); }
+.kc.bad { fill: var(--bad); }
+.kreg { margin-top: 8px; }
+.kdots { display: flex; flex-wrap: wrap; gap: 6px; }
+.kdots span { font-size: 13px; padding: 4px 10px; border-radius: 99px; font-weight: 600; }
+.kdots .ok { background: var(--ok-bg); color: var(--ok); }
+.kdots .bad { background: var(--bad-bg); color: var(--bad); }
+.esel { background: var(--accent-soft); border-radius: 12px; padding: 10px 12px; font-size: 15px; }

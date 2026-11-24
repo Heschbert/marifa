@@ -19,6 +19,7 @@
     ["Kolumbien", "Ecuador", "Venezuela"], ["Senegal", "Mali", "Guinea", "Kamerun"], ["Belgien", "Deutschland", "Rumänien"], ["Slowenien", "Slowakei", "Russland", "Serbien"], ["Monaco", "Indonesien", "Polen"],
     ["Jemen", "Ägypten", "Syrien", "Irak", "Sudan"], ["Honduras", "Nicaragua", "El Salvador", "Guatemala"], ["Kuba", "Puerto Rico", "Chile", "Texas"], ["Ghana", "Bolivien", "Litauen"]];
   var EASY = { "Deutschland": 1, "Frankreich": 1, "Italien": 1, "Spanien": 1, "Österreich": 1, "Schweiz": 1, "Vereinigtes Königreich": 1, "Niederlande": 1, "Belgien": 1, "Polen": 1, "Griechenland": 1, "Schweden": 1, "Norwegen": 1, "Dänemark": 1, "Portugal": 1, "Türkei": 1, "China": 1, "Japan": 1, "USA": 1, "Kanada": 1, "Brasilien": 1, "Mexiko": 1, "Indien": 1, "Russland": 1, "Australien": 1, "Südkorea": 1, "Irland": 1, "Finnland": 1, "Ukraine": 1, "Argentinien": 1 };
+  WF.countryISO = ISO;
   function flag(code) { return "flag:" + code.toLowerCase(); }
 
   WF.builders.flags = function (G) {

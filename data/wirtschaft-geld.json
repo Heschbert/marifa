@@ -1741,7 +1741,8 @@
   ],
   "e": "Die Aktivseite zeigt, wofür das Geld verwendet wurde, die Passivseite, woher es kommt.",
   "h": "Was man besitzt.",
-  "d": 2
+  "d": 2,
+  "m": "Aktiva: Wofür ist das Geld verwendet? Passiva: Woher kommt das Geld?"
  },
  {
   "id": "snvxy0",

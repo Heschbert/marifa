@@ -408,7 +408,8 @@
   "e": "Die Exekutive führt Gesetze aus; sie wird vom Parlament kontrolliert.",
   "h": "Ausführen.",
   "d": 1,
-  "p": 1
+  "p": 1,
+  "m": "Exekutive = ausführen (execute): Regierung und Verwaltung führen Gesetze aus."
  },
  {
   "id": "p7z89s",
@@ -429,7 +430,8 @@
   "e": "Art. 92 GG vertraut die rechtsprechende Gewalt den Richtern an; sie sind unabhängig.",
   "h": "Rechtsprechende Gewalt.",
   "d": 1,
-  "p": 1
+  "p": 1,
+  "m": "Judikative wie lateinisch „iudex“ = Richter: die Gerichte."
  },
  {
   "id": "1crinuu",

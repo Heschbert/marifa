@@ -139,7 +139,8 @@
   "e": "Spannung gleich Widerstand mal Stromstärke.",
   "h": "Drei Größen: Spannung, Widerstand, Stromstärke.",
   "d": 1,
-  "p": 1
+  "p": 1,
+  "m": "Merkwort „URI“ (wie der Schweizer Kanton): U = R · I."
  },
  {
   "id": "1nwmaxn",
@@ -610,7 +611,8 @@
   ],
   "e": "Sie ist nur möglich bei Neumond.",
   "h": "Neumond.",
-  "d": 1
+  "d": 1,
+  "m": "Bei der Sonnenfinsternis wird die Sonne verdeckt, also steht der Mond in der Mitte. Bei der Mondfinsternis steht die Erde in der Mitte."
  },
  {
   "id": "znoved",
@@ -630,7 +632,8 @@
   ],
   "e": "Die Internationale Astronomische Union definierte 2006 den Begriff neu.",
   "h": "Zwischen sieben und neun.",
-  "d": 1
+  "d": 1,
+  "m": "„Mein Vater erklärt mir jeden Sonntag unseren Nachthimmel“: Merkur, Venus, Erde, Mars, Jupiter, Saturn, Uranus, Neptun."
  },
  {
   "id": "nxx3sk",
@@ -1565,7 +1568,8 @@
   ],
   "e": "Daher der Name Kraftwerke der Zelle.",
   "h": "Man nennt sie die Kraftwerke der Zelle.",
-  "d": 1
+  "d": 1,
+  "m": "Mitochondrien sind die „Kraftwerke der Zelle“."
  },
  {
   "id": "1xo829f",
@@ -1889,7 +1893,8 @@
   ],
   "e": "Merke: Arterien führen vom Herzen weg, Venen zum Herzen hin.",
   "h": "A wie ab.",
-  "d": 2
+  "d": 2,
+  "m": "Arterie wie „ab“: Arterien führen das Blut vom Herzen weg, Venen zum Herzen hin."
  },
  {
   "id": "1il2xad",
@@ -2586,7 +2591,8 @@
   ],
   "e": "Er wurde 1884 international festgelegt.",
   "h": "London.",
-  "d": 1
+  "d": 1,
+  "m": "Greenwich = Null: Der Nullmeridian läuft durch die Sternwarte in Greenwich, London."
  },
  {
   "id": "1tl957c",

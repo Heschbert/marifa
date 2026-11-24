@@ -18,7 +18,8 @@
   "e": "Der Takt liegt bei 100–120 Kompressionen pro Minute, etwa im Rhythmus von „Stayin’ Alive“ (ERC/GRC 2025).",
   "h": "Etwa zwei Drücker pro Sekunde.",
   "d": 1,
-  "p": 1
+  "p": 1,
+  "m": "Im Takt von „Stayin’ Alive“ (Bee Gees) drücken, das passt mit etwa 100 Schlägen pro Minute."
  },
  {
   "id": "3e7oil",
@@ -39,7 +40,8 @@
   "e": "F = Face (hängender Mundwinkel), A = Arms (Armschwäche), S = Speech (Sprachstörung), T = Time: sofort 112 rufen.",
   "h": "Es geht um eine Körperregion, die man nach vorn hält.",
   "d": 1,
-  "p": 1
+  "p": 1,
+  "m": "FAST: Face (Gesicht), Arms (Arme), Speech (Sprache), Time (Zeit = sofort 112)."
  },
  {
   "id": "q4w3xm",
@@ -228,7 +230,8 @@
   "e": "Der Druckpunkt liegt in der Mitte der Brust, auf der unteren Hälfte des Brustbeins, mit gestreckten Armen.",
   "h": "Mitte der Brust, nicht links.",
   "d": 2,
-  "p": 1
+  "p": 1,
+  "m": "Hände in die Mitte der Brust, auf die untere Hälfte des Brustbeins."
  },
  {
   "id": "1fd0rna",
@@ -3681,7 +3684,8 @@
   "h": "Zuerst Hilfe holen, dann selbst handeln.",
   "d": 1,
   "id": "na425f3f",
-  "p": 1
+  "p": 1,
+  "m": "Prüfen – Rufen – Drücken."
  },
  {
   "s": "Körper & Medizin",

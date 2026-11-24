@@ -199,7 +199,7 @@
       opts = x.a.map(function (t, i) { return { t: t, ok: i === 0, why: (x.w && x.w[i]) || "" }; });
     }
     var h = (x.pool || x.mkd) && !x.fixedHint ? genHint(x, opts, rng) : (x.h || "");
-    return { id: x.id, src: x.src || "", c: x.c, s: x.s, q: x.q, img: x.img, imgAlt: x.imgAlt, big: x.big, e: x.e, h: h, d: x.d || 2, p: x.p || 2, opts: U.shuffle(opts, rng), helped: false, hidden: [], hintShown: false };
+    return { id: x.id, src: x.src || "", c: x.c, s: x.s, q: x.q, img: x.img, imgAlt: x.imgAlt, big: x.big, e: x.e, m: x.m || "", h: h, d: x.d || 2, p: x.p || 2, opts: U.shuffle(opts, rng), helped: false, hidden: [], hintShown: false };
   };
   E.dailyList = function () {
     var rng = U.mulberry(U.seedOf(U.today()));

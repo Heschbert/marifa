@@ -44,6 +44,7 @@ import "./calendar.js";
 import "./paths.js";
 import "./weeks.js";
 import "./onboard.js";
+import "./karte.js";
 
 /* Start: Daten laden, dann die Oberfläche öffnen. */
 const WF = window.WF;

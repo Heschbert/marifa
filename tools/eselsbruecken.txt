@@ -1,0 +1,22 @@
+# Eselsbrücken (Merkhilfen), die nach der Antwort angezeigt werden. Nur bekannte, sinnvolle Merkhilfen.
+# Format: datei|id|Text   Anwenden: python3 tools/eselsbruecken.py
+naturwissenschaft-technik|znoved|„Mein Vater erklärt mir jeden Sonntag unseren Nachthimmel“: Merkur, Venus, Erde, Mars, Jupiter, Saturn, Uranus, Neptun.
+naturwissenschaft-technik|24zqjt|Merkwort „URI“ (wie der Schweizer Kanton): U = R · I.
+naturwissenschaft-technik|10f9epk|Mitochondrien sind die „Kraftwerke der Zelle“.
+naturwissenschaft-technik|b7b4jg|Bei der Sonnenfinsternis wird die Sonne verdeckt, also steht der Mond in der Mitte. Bei der Mondfinsternis steht die Erde in der Mitte.
+naturwissenschaft-technik|1kpitii|Arterie wie „ab“: Arterien führen das Blut vom Herzen weg, Venen zum Herzen hin.
+naturwissenschaft-technik|1hm2594|Greenwich = Null: Der Nullmeridian läuft durch die Sternwarte in Greenwich, London.
+kultur-sprache|zdb2yz|Kann man „dieses“, „jenes“ oder „welches“ einsetzen, schreibt man „das“, sonst „dass“.
+kultur-sprache|bju2sx|„seit“ mit t wie Zeit, „seid“ mit d wie „ihr seid da“.
+kultur-sprache|hsfsqq|Dativ ist der Wem-Fall: „Ich gebe dem Hund (wem?) einen Knochen.“
+kultur-sprache|1aychs0|Genitiv ist der Wessen-Fall: „Das Auto des Vaters (wessen?)“.
+kultur-sprache|13zlxu5|Wie „Peters Auto“: Beim Genitiv von Namen kein Apostroph, also „Annas Buch“.
+kultur-sprache|1da6qmd|Rhythmus hat zwei h: eins nach dem R, eins nach dem t.
+kultur-sprache|r6z8te|Stängel kommt von Stange, deshalb mit ä.
+politik-recht|14dsjd1|Exekutive = ausführen (execute): Regierung und Verwaltung führen Gesetze aus.
+politik-recht|p7z89s|Judikative wie lateinisch „iudex“ = Richter: die Gerichte.
+wirtschaft-geld|1xjqsaq|Aktiva: Wofür ist das Geld verwendet? Passiva: Woher kommt das Geld?
+gesundheit|l4c92u|Im Takt von „Stayin’ Alive“ (Bee Gees) drücken, das passt mit etwa 100 Schlägen pro Minute.
+gesundheit|3e7oil|FAST: Face (Gesicht), Arms (Arme), Speech (Sprache), Time (Zeit = sofort 112).
+gesundheit|na425f3f|Prüfen – Rufen – Drücken.
+gesundheit|19h5dc9|Hände in die Mitte der Brust, auf die untere Hälfte des Brustbeins.
