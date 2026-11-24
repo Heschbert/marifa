@@ -405,7 +405,7 @@
     h += "<h2>Abzeichen · " + Object.keys(st.badges).length + " / " + WF.badges.length + "</h2>" + '<div class="badges">';
     WF.badges.forEach(function (b) { h += '<div class="badge' + (st.badges[b.id] ? "" : " off") + '"><b>' + esc(b.n) + "</b><span>" + esc(b.d) + "</span></div>"; });
     h += "</div><h2>Fortschritt sichern</h2>" + '<div class="card"><p class="small mute">Der Fortschritt liegt nur auf diesem Gerät. Mit dem Code ziehst du ihn auf ein anderes Gerät um.</p>';
-    h += '<div class="grid2">' + btn("exp", "Code erzeugen") + btn("copy", "Kopieren") + '</div><textarea id="code" placeholder="Hier erscheint dein Code oder füge einen Code ein" spellcheck="false" autocapitalize="off"></textarea>' + btn("imp", "Code laden") + "</div>";
+    h += '<div class="grid2">' + btn("exp", "Code erzeugen") + btn("copy", "Kopieren") + '</div><textarea id="code" placeholder="Hier erscheint dein Code oder füge einen Code ein" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off"></textarea>' + btn("imp", "Code laden") + "</div>";
     h += "<h2>Zurücksetzen</h2>" + '<div id="rs">' + btn("reset1", "Fortschritt löschen") + "</div>";
     h += '<h2>Datenschutz</h2><div class="card small"><p style="margin:0">Marifa hat keine Konten, keine Werbung und kein Tracking. Dein Fortschritt wird nur auf diesem Gerät gespeichert (im Browser-Speicher) und nirgendwohin gesendet. Beim Laden der App verarbeitet der Hoster technisch bedingt deine IP-Adresse, wie bei jeder Website.</p></div>';
     show(h, "profile");
@@ -419,7 +419,7 @@
   };
   H.imp = function () {
     if (WF.store.importCode(document.getElementById("code").value)) { toast({ title: "Fortschritt geladen" }); home(); }
-    else toast({ title: "Code ungültig", sub: "Er muss mit WF1: beginnen." });
+    else toast({ title: "Code ließ sich nicht laden", sub: "Bitte den ganzen Code kopieren, er beginnt mit WF1: und ist sehr lang." });
   };
   H.reset1 = function () { document.getElementById("rs").innerHTML = '<p class="small mute">Wirklich alles löschen? Das lässt sich nicht rückgängig machen.</p><div class="grid2">' + btn("reset2", "Ja, löschen") + btn("profile", "Abbrechen") + "</div>"; };
   H.reset2 = function () { WF.store.reset(); toast({ title: "Zurückgesetzt" }); home(); };

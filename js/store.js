@@ -52,9 +52,11 @@
   };
   store.importCode = function (text) {
     try {
-      var t = String(text || "").replace(/\s+/g, "");
-      if (t.indexOf(PREFIX) !== 0) return false;
-      var o = JSON.parse(decodeURIComponent(escape(atob(t.slice(PREFIX.length)))));
+      /* Tolerant einlesen: Groß-/Kleinschreibung des Präfixes egal (iOS und Notiz-Apps ändern sie gern),
+         Leerzeichen, Zeilenumbrüche und andere Zeichen außerhalb von Base64 werden entfernt. */
+      var t = String(text || "").trim().replace(/^[^A-Za-z0-9]*wf1\s*:/i, "").replace(/[^A-Za-z0-9+/=]/g, "");
+      if (!t) return false;
+      var o = JSON.parse(decodeURIComponent(escape(atob(t))));
       if (!o || typeof o !== "object" || !o.qs || !o.tot || !o.streak) return false;
       store.data = normalize(o);
       store.save();
