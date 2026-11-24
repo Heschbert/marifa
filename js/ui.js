@@ -130,7 +130,7 @@
     D.topics.forEach(function (t) {
       var n = E.totalIn(t.c), k = E.knownIn(t.c), p = E.levelPct(t.c), a = E.accIn(t.c);
       totN += n; totM += p * n; totS += k;
-      tiles += '<button class="kt" data-act="stat" data-c="' + esc(t.c) + '">' + ring(p, ui.topicColor(t.c), E.fmtPct(p) + "%") + '<span class="t">' + esc(t.c) + '</span><span class="small mute">' + k + " von " + n + " gewusst" + (a.t ? " · " + U.pct(a.r, a.t) + " % richtig" : "") + "</span></button>";
+      tiles += '<button class="kt" data-act="stat" data-c="' + esc(t.c) + '"><span class="ktdot" style="background:' + ui.topicColor(t.c) + '"></span><span class="t">' + esc(t.c) + '</span><span class="ktpct">' + E.fmtPct(p) + ' %</span><span class="ktbar"><i style="width:' + Math.max(1, Math.min(100, p)) + "%;background:" + ui.topicColor(t.c) + '"></i></span><span class="small mute">' + k + " von " + n + " gewusst" + (a.t ? " · " + U.pct(a.r, a.t) + " % richtig" : "") + "</span></button>";
       t.subs.forEach(function (sb) { var sa = E.accIn(t.c, sb); if (sa.t >= 5 && (!worst || U.pct(sa.r, sa.t) < worst.p)) worst = { c: t.c, n: sb, p: U.pct(sa.r, sa.t) }; });
     });
     var tp = totN ? totM / totN : 0;
@@ -165,6 +165,12 @@
     quiz();
   };
 
+  /* Kopfbereich der Rubriken: farbiges Band mit Symbol, damit man sofort sieht, wo man ist. */
+  var SECICO = {"play": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M8 5v14l11-7z\"/></svg>", "learn": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 5h6a3 3 0 013 3v12a2 2 0 00-2-2H4zM20 5h-6a3 3 0 00-3 3v12a2 2 0 012-2h7z\"/></svg>", "course": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5\"/><path d=\"M22 9v6\"/></svg>"};
+  ui.sechead = function (kind, title, sub, extra) {
+    return '<header class="sechead sh-' + kind + '"><div class="shrow"><span class="shic" aria-hidden="true">' + (SECICO[kind] || "") + '</span><div class="grow"><h1>' + esc(title) + "</h1>" + (sub ? "<p>" + esc(sub) + "</p>" : "") + "</div></div>" + (extra || "") + "</header>";
+  };
+
   /* ---------- Spielen (Startseite, blau) ---------- */
   function pills() {
     var st = S(), L = E.levelOf(st.xp), strk = E.curStreak(), today = st.days[U.today()] || 0;
@@ -177,7 +183,7 @@
   function home() {
     view = home;
     var st = S(), done = st.dailyDone[U.today()];
-    var h = "<h1>Spielen</h1>" + pills();
+    var h = ui.sechead("play", "Spielen", "Quiz, Duelle und das Tagesrätsel", pills());
     var dtxt = !done ? "5 Fragen aus 5 Themen, für alle gleich." : (done.n && done.n < E.consts.DAILY_N ? "Heute abgebrochen nach " + done.n + (done.n === 1 ? " Frage, " : " Fragen, ") + done.s + " richtig." : "Heute gelöst: " + done.s + " von " + E.consts.DAILY_N + ".") + " Morgen gibt es ein neues.";
     /* Offenes Tagesrätsel als großer Banner, erledigtes nur als schmale Zeile */
     if (!done) h += '<div class="hero"><h3>Tagesrätsel</h3><p>' + dtxt + "</p>" + btn("start", "Jetzt spielen", { data: { m: "daily" } }) + "</div>";
@@ -200,7 +206,7 @@
   function areas() {
     view = areas;
     var st = S(), last = st.settings.last;
-    var h = '<span class="mode-tag">Lernmodus</span><h1 style="margin-top:10px">Lernen</h1><p class="mute">Ohne Zeitdruck. Falsche Antworten kommen wieder, bis sie sitzen.</p>';
+    var h = ui.sechead("learn", "Lernen", "Ohne Zeitdruck. Falsche Antworten kommen wieder, bis sie sitzen.");
     h += '<div class="hero"><h3>' + (last ? esc(last.s || last.c) : "Alle Themen") + "</h3><p>" + (last ? "Dort machst du weiter." : "Du lernst, was noch nicht sitzt.") + "</p>" + btn("start", last ? "Weiterlernen" : "Loslegen", { data: { m: "learn", c: last ? last.c || "" : "", s: last ? last.s || "" : "" } }) + "</div>";
     h += WF.slot("areas", { st: st });
     h += '<div class="card cfg" style="margin:12px 0">' + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>";
@@ -383,8 +389,12 @@
   function profile() {
     view = profile;
     var st = S(), L = E.levelOf(st.xp), a = E.lvlStart(L), b = E.lvlStart(L + 1), t = st.tot, diff = st.settings.difficulty;
-    var h = "<h1>Profil</h1>" + '<button class="card lvcard" data-act="levels" style="display:block;width:100%;text-align:left;border:0"><div class="row sb"><div><b>Level ' + L + "</b> · " + E.titleOf(L) + '</div><div class="small mute">' + st.xp + " XP ›</div></div>" + '<div style="margin-top:10px">' + bar(L >= E.MAXLVL ? 100 : U.pct(st.xp - a, b - a)) + '</div><div class="small mute" style="margin-top:6px">' + (L >= E.MAXLVL ? "Höchstlevel erreicht" : "Noch " + (b - st.xp) + " XP bis Level " + (L + 1) + " · Alle Level ansehen") + "</div></button>";
-    h += '<div class="stats"><div class="stat"><b>' + t.r + "</b><span>richtig</span></div><div class=\"stat\"><b>" + U.pct(t.r, t.t) + " %</b><span>Trefferquote</span></div><div class=\"stat\"><b>" + st.streak.best + "</b><span>beste Serie (Tage)</span></div></div>";
+    /* Profil als „Ausweis“: bewusst anders als die Spiel-Rubriken (ruhig, mittig, gruppierte Listen). */
+    var lp = L >= E.MAXLVL ? 100 : U.pct(st.xp - a, b - a), nm = (st.settings.myName || "").trim();
+    var h = '<section class="idcard"><button class="idav" data-act="levels" aria-label="Levelübersicht öffnen">' + ring(lp, "var(--prof)", String(L)) + "</button>" +
+      '<div class="idname">' + esc(nm || "Dein Profil") + '</div><div class="idtitle">Level ' + L + " · " + esc(E.titleOf(L)) + "</div>" +
+      '<button class="link idxp" data-act="levels">' + (L >= E.MAXLVL ? "Höchstlevel erreicht" : st.xp + " XP · noch " + (b - st.xp) + " bis Level " + (L + 1)) + " ›</button>" +
+      '<div class="idstats"><div><b>' + t.r + "</b><span>richtig</span></div><div><b>" + U.pct(t.r, t.t) + " %</b><span>Trefferquote</span></div><div><b>" + st.streak.best + "</b><span>beste Serie</span></div></div></section>";
     h += WF.slot("profiletop", { st: st });
     h += "<h2>Was kann ich schon?</h2>" + knowledgeMap();
     h += WF.slot("profile", { st: st });

@@ -78,7 +78,7 @@
   /* ---------- Bildschirme ---------- */
   function list() {
     ui.setView(function () { withCourses(list); });
-    var h = '<span class="mode-tag course-tag">Kurse</span><h1 style="margin-top:10px">Kurse</h1><p class="mute">Fachwissen Schritt für Schritt: lesen, Karteikarten, üben, Test. Vom Einstieg bis zum Expertenwissen.</p>';
+    var h = ui.sechead("course", "Kurse", "Fachwissen Schritt für Schritt: lesen, Karteikarten, üben, Test.");
     C.list.forEach(function (c) {
       var p = progress(c), d = due(c), n = d.q.length + d.k.length;
       h += '<button class="item ccard" data-act="crs1" data-c="' + esc(c.id) + '">' + ui.ring(p, "var(--course)", Math.round(p) + "%") +
@@ -86,7 +86,7 @@
         '<div class="small" style="margin-top:4px">' + c.modules.filter(ready).length + " von " + c.modules.length + " Modulen verfügbar" + (n ? ' · <b class="due">' + n + " fällig</b>" : "") + "</div></div>" +
         '<span class="chev" aria-hidden="true">›</span></button>';
     });
-    h += '<p class="small mute" style="margin-top:16px">Weitere Kurse (z. B. KI, agile Softwareentwicklung, Vokabeln) folgen demselben Aufbau und lassen sich als Datei ergänzen.</p>';
+    h += '<p class="small mute" style="margin-top:16px">Weitere Kurse folgen demselben Aufbau und kommen nach und nach dazu.</p>';
     ui.show(h, "courses", "course");
   }
   function course(cid) {
