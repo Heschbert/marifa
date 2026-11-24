@@ -619,3 +619,11 @@ body.hastabs #app { padding-bottom: 24px; }
 body.hastabs .nextbar { bottom: 10px; }
 .shields { display: flex; gap: 10px; } .shield { font-size: 30px; opacity: .25; filter: grayscale(1); } .shield.on { opacity: 1; filter: none; }
 .k-quest .celeb-icon { background: linear-gradient(135deg, #2b8a3e, #12b886); }
+
+/* ---------- 3.2: Profil mit eigener Farbe (violett), Abstand unter den Kennzahlen ---------- */
+:root { --prof: #6741d9; --prof-fg: #ffffff; --prof-soft: #efeafe; }
+:root[data-theme="dark"] { --prof: #b197fc; --prof-fg: #150b33; --prof-soft: #241a42; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --prof: #b197fc; --prof-fg: #150b33; --prof-soft: #241a42; } }
+body.prof { --accent: var(--prof); --accent-fg: var(--prof-fg); --accent-soft: var(--prof-soft); background: color-mix(in srgb, var(--prof-soft) 45%, var(--bg)); }
+#tabs button[data-t=profile].on { color: var(--prof); }
+.stats + * { margin-top: 12px; }

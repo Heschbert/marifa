@@ -17,6 +17,7 @@
     document.body.classList.toggle("learn", learn === true);
     document.body.classList.toggle("course", learn === "course");
     document.body.classList.toggle("pub", learn === "pub");
+    document.body.classList.toggle("prof", tab === "profile" && !learn);
     tabs.hidden = !tab;
     document.body.classList.toggle("hastabs", !!tab);
     [].forEach.call(tabs.children, function (b) { b.classList.toggle("on", b.dataset.t === tab); });
