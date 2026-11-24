@@ -35,3 +35,6 @@ Dann http://localhost:8000 öffnen.
 ## Fremde Bestandteile
 - Schrift [Inter](https://rsms.me/inter/), SIL Open Font License 1.1 – `fonts/OFL-Inter.txt`
 - Flaggen von [flag-icons](https://github.com/lipis/flag-icons), MIT-Lizenz – `img/flags/LICENSE-flag-icons.txt`
+
+## Lizenz
+MIT, siehe [LICENSE](LICENSE). Schrift und Flaggen stehen unter ihren eigenen Lizenzen (siehe oben).
