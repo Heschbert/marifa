@@ -1,0 +1,865 @@
+{
+ "quiz": [
+  {
+   "t": "Irland & Pubs",
+   "qs": [
+    {
+     "q": "Wie heißt die Hauptstadt der Republik Irland?",
+     "o": [
+      "Dublin",
+      "Cork",
+      "Galway",
+      "Belfast"
+     ]
+    },
+    {
+     "q": "Welcher Heilige wird am 17. März gefeiert?",
+     "o": [
+      "St. Patrick",
+      "St. Andrew",
+      "St. George",
+      "St. David"
+     ]
+    },
+    {
+     "q": "Welches Instrument ist das Wappensymbol Irlands?",
+     "o": [
+      "Harfe",
+      "Dudelsack",
+      "Geige",
+      "Flöte"
+     ]
+    },
+    {
+     "q": "In welcher Stadt wird Guinness seit 1759 gebraut?",
+     "o": [
+      "Dublin",
+      "Belfast",
+      "Limerick",
+      "Cork"
+     ]
+    },
+    {
+     "q": "Wie heißt die irische Sprache auf Irisch?",
+     "o": [
+      "Gaeilge",
+      "Gàidhlig",
+      "Cymraeg",
+      "Brezhoneg"
+     ]
+    },
+    {
+     "q": "Welcher Fluss fließt durch Dublin?",
+     "o": [
+      "Liffey",
+      "Shannon",
+      "Boyne",
+      "Lee"
+     ]
+    },
+    {
+     "q": "Mit welcher Währung bezahlt man in der Republik Irland?",
+     "o": [
+      "Euro",
+      "Irisches Pfund",
+      "Britisches Pfund",
+      "Schilling"
+     ]
+    },
+    {
+     "q": "Wie viele Blätter hat das klassische irische Kleeblatt (Shamrock)?",
+     "o": [
+      "Drei",
+      "Vier",
+      "Fünf",
+      "Zwei"
+     ]
+    },
+    {
+     "q": "Wer schrieb den Roman „Ulysses“?",
+     "o": [
+      "James Joyce",
+      "Oscar Wilde",
+      "Samuel Beckett",
+      "W. B. Yeats"
+     ]
+    },
+    {
+     "q": "In wie viele Grafschaften ist die Insel Irland traditionell eingeteilt?",
+     "o": [
+      "32",
+      "26",
+      "30",
+      "36"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Bier & Getränke",
+   "qs": [
+    {
+     "q": "Welche vier Zutaten erlaubt das deutsche Reinheitsgebot heute für untergäriges Bier?",
+     "o": [
+      "Wasser, Malz, Hopfen, Hefe",
+      "Wasser, Weizen, Zucker, Hefe",
+      "Wasser, Malz, Zucker, Hopfen",
+      "Wasser, Gerste, Honig, Hefe"
+     ]
+    },
+    {
+     "q": "In welchem Jahr wurde das bayerische Reinheitsgebot erlassen?",
+     "o": [
+      "1516",
+      "1616",
+      "1416",
+      "1871"
+     ]
+    },
+    {
+     "q": "Was ist ein Stout?",
+     "o": [
+      "Dunkles Bier mit Röstmalz",
+      "Helles, trübes Weizenbier aus Bayern",
+      "Starker Apfelwein",
+      "Süßes Kräuterbier"
+     ]
+    },
+    {
+     "q": "Aus welchem Obst wird klassischer Cider gemacht?",
+     "o": [
+      "Äpfel",
+      "Birnen",
+      "Trauben",
+      "Kirschen"
+     ]
+    },
+    {
+     "q": "Welche Spirituose gehört in einen Irish Coffee?",
+     "o": [
+      "Irischer Whiskey",
+      "Brauner Rum",
+      "Weinbrand",
+      "Wodka"
+     ]
+    },
+    {
+     "q": "Wie viele Milliliter hat ein britisches Pint ungefähr?",
+     "o": [
+      "568",
+      "500",
+      "473",
+      "600"
+     ]
+    },
+    {
+     "q": "In welcher Stadt findet das Oktoberfest statt?",
+     "o": [
+      "München",
+      "Stuttgart",
+      "Nürnberg",
+      "Köln"
+     ]
+    },
+    {
+     "q": "Aus welchem Getreide wird schottischer Single Malt Whisky gebrannt?",
+     "o": [
+      "Gerste",
+      "Mais",
+      "Roggen",
+      "Weizen"
+     ]
+    },
+    {
+     "q": "Aus welchem Land stammt Tequila?",
+     "o": [
+      "Mexiko",
+      "Spanien",
+      "Kuba",
+      "Peru"
+     ]
+    },
+    {
+     "q": "Welches Bier trinkt man traditionell in Köln?",
+     "o": [
+      "Kölsch",
+      "Alt",
+      "Pils",
+      "Bock"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Musik",
+   "qs": [
+    {
+     "q": "Welche irische Band sang „With or Without You“?",
+     "o": [
+      "U2",
+      "The Cranberries",
+      "The Corrs",
+      "Thin Lizzy"
+     ]
+    },
+    {
+     "q": "Wer veröffentlichte 1994 den Song „Zombie“?",
+     "o": [
+      "The Cranberries",
+      "U2",
+      "Sinéad O'Connor",
+      "The Pogues"
+     ]
+    },
+    {
+     "q": "Aus welcher Stadt stammten die Beatles?",
+     "o": [
+      "Liverpool",
+      "London",
+      "Manchester",
+      "Birmingham"
+     ]
+    },
+    {
+     "q": "Wie hieß der Leadsänger von Queen?",
+     "o": [
+      "Freddie Mercury",
+      "Brian May",
+      "Roger Taylor",
+      "John Deacon"
+     ]
+    },
+    {
+     "q": "Welches Instrument spielte Jimi Hendrix vor allem?",
+     "o": [
+      "E-Gitarre",
+      "Schlagzeug",
+      "Bass",
+      "Klavier"
+     ]
+    },
+    {
+     "q": "Welcher Song von The Pogues ist ein Weihnachtsklassiker?",
+     "o": [
+      "Fairytale of New York",
+      "Dirty Old Town",
+      "Whiskey in the Jar",
+      "Sally MacLennane"
+     ]
+    },
+    {
+     "q": "Wie viele Saiten hat eine Standard-Gitarre?",
+     "o": [
+      "Sechs",
+      "Vier",
+      "Sieben",
+      "Zwölf"
+     ]
+    },
+    {
+     "q": "Wer veröffentlichte das Album „Thriller“?",
+     "o": [
+      "Michael Jackson",
+      "Prince",
+      "Madonna",
+      "Stevie Wonder"
+     ]
+    },
+    {
+     "q": "Welche Band sang „Bohemian Rhapsody“?",
+     "o": [
+      "Queen",
+      "Led Zeppelin",
+      "The Who",
+      "Pink Floyd"
+     ]
+    },
+    {
+     "q": "Aus welchem Land kommt ABBA?",
+     "o": [
+      "Schweden",
+      "Norwegen",
+      "Dänemark",
+      "Finnland"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Film & Fernsehen",
+   "qs": [
+    {
+     "q": "Wie heißt die Stammkneipe in „How I Met Your Mother“?",
+     "o": [
+      "MacLaren's",
+      "Moe's",
+      "Paddy's Pub",
+      "Central Perk"
+     ]
+    },
+    {
+     "q": "Wie heißt die Kneipe in „Die Simpsons“?",
+     "o": [
+      "Moe's Taverne",
+      "Joe's Bar",
+      "Duff Garden",
+      "Krusty's Inn"
+     ]
+    },
+    {
+     "q": "Wer spielte James Bond in „Casino Royale“ (2006)?",
+     "o": [
+      "Daniel Craig",
+      "Pierce Brosnan",
+      "Sean Connery",
+      "Roger Moore"
+     ]
+    },
+    {
+     "q": "Wie viele Filme umfasst die „Herr der Ringe“-Trilogie?",
+     "o": [
+      "Drei",
+      "Vier",
+      "Zwei",
+      "Sechs"
+     ]
+    },
+    {
+     "q": "Welchen Drink bestellt James Bond klassisch „geschüttelt, nicht gerührt“?",
+     "o": [
+      "Wodka-Martini",
+      "Gin Tonic",
+      "Whisky Sour",
+      "Mojito"
+     ]
+    },
+    {
+     "q": "In welcher Stadt spielt die Serie „Friends“?",
+     "o": [
+      "New York",
+      "Chicago",
+      "Boston",
+      "Los Angeles"
+     ]
+    },
+    {
+     "q": "Wer führte Regie bei „Titanic“ (1997)?",
+     "o": [
+      "James Cameron",
+      "Steven Spielberg",
+      "Ridley Scott",
+      "Peter Jackson"
+     ]
+    },
+    {
+     "q": "Wie heißt der Drache in „Der Hobbit“?",
+     "o": [
+      "Smaug",
+      "Drogon",
+      "Fuchur",
+      "Glaurung"
+     ]
+    },
+    {
+     "q": "In welcher Stadt spielt die Kneipen-Serie „Cheers“?",
+     "o": [
+      "Boston",
+      "New York",
+      "Chicago",
+      "Seattle"
+     ]
+    },
+    {
+     "q": "Welcher Film gewann 2020 als erster nicht englischsprachiger Film den Oscar als bester Film?",
+     "o": [
+      "Parasite",
+      "Roma",
+      "Amélie",
+      "Das Leben der Anderen"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Sport",
+   "qs": [
+    {
+     "q": "Welcher irische Mannschaftssport wird mit einem Schläger namens Hurley gespielt?",
+     "o": [
+      "Hurling",
+      "Cricket",
+      "Rugby League",
+      "Polo"
+     ]
+    },
+    {
+     "q": "Wie viele Punkte sind mit drei Darts maximal möglich?",
+     "o": [
+      "180",
+      "150",
+      "200",
+      "171"
+     ]
+    },
+    {
+     "q": "Wie viele Punkte zählt das innere Bull's Eye beim Darts?",
+     "o": [
+      "50",
+      "25",
+      "60",
+      "100"
+     ]
+    },
+    {
+     "q": "Wie viele Spieler hat ein Rugby-Union-Team auf dem Feld?",
+     "o": [
+      "15",
+      "11",
+      "13",
+      "7"
+     ]
+    },
+    {
+     "q": "Wie viele Kugeln liegen beim Snooker zu Beginn auf dem Tisch, die weiße mitgezählt?",
+     "o": [
+      "22",
+      "16",
+      "21",
+      "15"
+     ]
+    },
+    {
+     "q": "Welches Land wurde 2014 Fußball-Weltmeister?",
+     "o": [
+      "Deutschland",
+      "Argentinien",
+      "Spanien",
+      "Brasilien"
+     ]
+    },
+    {
+     "q": "Wie lang ist ein Marathon, gerundet?",
+     "o": [
+      "42,2 km",
+      "40,0 km",
+      "44,5 km",
+      "38,6 km"
+     ]
+    },
+    {
+     "q": "In welcher Sportart gibt es das „Six Nations“-Turnier?",
+     "o": [
+      "Rugby",
+      "Cricket",
+      "Hockey",
+      "Darts"
+     ]
+    },
+    {
+     "q": "Wie oft war Deutschland bis 2024 Gastgeber einer Fußball-EM der Männer?",
+     "o": [
+      "Zweimal",
+      "Einmal",
+      "Dreimal",
+      "Viermal"
+     ]
+    },
+    {
+     "q": "Welche Farbe hat beim Snooker die Kugel mit dem höchsten Wert?",
+     "o": [
+      "Schwarz",
+      "Pink",
+      "Blau",
+      "Grün"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Kneipenwissen",
+   "qs": [
+    {
+     "q": "Was bedeutet „Sláinte“ auf Irisch?",
+     "o": [
+      "Prost",
+      "Danke",
+      "Hallo",
+      "Tschüss"
+     ]
+    },
+    {
+     "q": "Wie viele Augen hat ein normaler Würfel insgesamt?",
+     "o": [
+      "21",
+      "18",
+      "24",
+      "20"
+     ]
+    },
+    {
+     "q": "Wie viele Karten hat ein Pokerblatt ohne Joker?",
+     "o": [
+      "52",
+      "32",
+      "54",
+      "48"
+     ]
+    },
+    {
+     "q": "Welches Symbol trägt das Guinness-Logo?",
+     "o": [
+      "Eine Harfe",
+      "Ein Kleeblatt",
+      "Eine Krone",
+      "Einen Hirsch"
+     ]
+    },
+    {
+     "q": "Wofür ist „Pub“ die Kurzform?",
+     "o": [
+      "Public House",
+      "Public Bar",
+      "Publican Hall",
+      "Pub Union"
+     ]
+    },
+    {
+     "q": "Was ruft der Wirt im britischen Pub kurz vor Schluss?",
+     "o": [
+      "Last Orders",
+      "Final Call",
+      "Closing Shot",
+      "End Round"
+     ]
+    },
+    {
+     "q": "Wie viele Felder hat ein Schachbrett?",
+     "o": [
+      "64",
+      "48",
+      "81",
+      "100"
+     ]
+    },
+    {
+     "q": "Was mischt man für einen „Black Velvet“?",
+     "o": [
+      "Stout und Sekt",
+      "Rum und Cola",
+      "Bier und Limonade",
+      "Gin und Tonic"
+     ]
+    },
+    {
+     "q": "Wie viele Stück sind ein „baker's dozen“?",
+     "o": [
+      "13",
+      "12",
+      "11",
+      "14"
+     ]
+    },
+    {
+     "q": "Wie heißt der irische Nationalfeiertag am 17. März?",
+     "o": [
+      "Patrick's Day",
+      "Bloomsday",
+      "Bastille Day",
+      "Burns Night"
+     ]
+    }
+   ]
+  }
+ ],
+ "nie": {
+  "mild": [
+   "Ich hab noch nie einen Flug verpasst.",
+   "Ich hab noch nie auf einer Hochzeit getanzt.",
+   "Ich hab noch nie in einem Zelt geschlafen.",
+   "Ich hab noch nie einen Strafzettel bekommen.",
+   "Ich hab noch nie im Kino geweint.",
+   "Ich hab noch nie einen Kaktus umgebracht.",
+   "Ich hab noch nie Karaoke gesungen.",
+   "Ich hab noch nie eine Nachricht an die falsche Person geschickt.",
+   "Ich hab noch nie den Geburtstag eines guten Freundes vergessen.",
+   "Ich hab noch nie ein Buch nicht zu Ende gelesen.",
+   "Ich hab noch nie bei einem Brettspiel geschummelt.",
+   "Ich hab noch nie einen ganzen Tag im Bett verbracht.",
+   "Ich hab noch nie ein Pub-Quiz gewonnen.",
+   "Ich hab noch nie Sushi gegessen.",
+   "Ich hab noch nie ein Instrument gelernt.",
+   "Ich hab noch nie eine Serie an einem Wochenende durchgeschaut.",
+   "Ich bin noch nie einen Marathon gelaufen.",
+   "Ich hab noch nie in einem anderen Land gearbeitet.",
+   "Ich hab noch nie einen Prominenten getroffen.",
+   "Ich hab noch nie beim Lachen Getränk durch die Nase bekommen.",
+   "Ich hab noch nie mein Handy in die Toilette fallen lassen.",
+   "Ich hab noch nie einen Liebesbrief geschrieben.",
+   "Ich hab noch nie im Meer nachts gebadet.",
+   "Ich hab noch nie eine Wette verloren und musste etwas Peinliches tun.",
+   "Ich hab noch nie eine ganze Pizza allein gegessen.",
+   "Ich hab noch nie ein Tattoo bereut.",
+   "Ich hab noch nie den Wecker überhört und war deshalb zu spät.",
+   "Ich hab noch nie in der Öffentlichkeit gesungen.",
+   "Ich hab noch nie einen Sonnenaufgang auf einem Berg gesehen.",
+   "Ich hab noch nie vergessen, wo ich geparkt habe.",
+   "Ich bin noch nie Fallschirm oder Bungee gesprungen.",
+   "Ich hab noch nie eine Pflanze gerettet, die alle aufgegeben hatten.",
+   "Ich hab noch nie in einem Escape Room festgesteckt.",
+   "Ich hab noch nie eine Sprache nur aus Filmen gelernt.",
+   "Ich hab noch nie meinen Namen falsch geschrieben bekommen und nichts gesagt.",
+   "Ich hab noch nie den Schlüssel von innen stecken lassen."
+  ],
+  "frech": [
+   "Ich hab noch nie einen Ex online gestalkt.",
+   "Ich hab noch nie betrunken eine Nachricht geschickt und sie am nächsten Tag bereut.",
+   "Ich hab noch nie jemanden geküsst, dessen Namen ich nicht kannte.",
+   "Ich hab noch nie ein Date nur wegen des Essens angenommen.",
+   "Ich hab noch nie auf einer Hochzeit rumgeknutscht.",
+   "Ich hab noch nie eine Urlaubsaffäre gehabt.",
+   "Ich hab noch nie jemanden über eine Dating-App getroffen.",
+   "Ich hab noch nie auf jemanden aus dieser Runde gestanden.",
+   "Ich hab noch nie nackt gebadet.",
+   "Ich hab noch nie einen kompletten Filmriss gehabt.",
+   "Ich hab noch nie eine Nummer unter falschem Namen gespeichert.",
+   "Ich hab noch nie heimlich im Handy meines Partners gelesen.",
+   "Ich hab noch nie ein Date sitzen lassen.",
+   "Ich bin noch nie in einem fremden Bett aufgewacht und nicht gewusst, wo ich bin.",
+   "Ich hab noch nie mit jemandem geflirtet, nur um ein Getränk ausgegeben zu bekommen.",
+   "Ich hab noch nie zwei Dates am selben Tag gehabt.",
+   "Ich hab noch nie den Namen meines Dates vergessen.",
+   "Ich hab noch nie mit dem Ex eines Freundes geflirtet."
+  ],
+  "hot": [
+   "Ich hab noch nie an einem öffentlichen Ort rumgemacht.",
+   "Ich hab noch nie einen One-Night-Stand gehabt.",
+   "Ich hab noch nie Sex im Auto gehabt.",
+   "Ich hab noch nie ein Nacktfoto verschickt.",
+   "Ich bin noch nie beim Sex erwischt worden.",
+   "Ich hab noch nie Handschellen oder eine Augenbinde benutzt.",
+   "Ich hab noch nie mit einem Ex geschlafen, nachdem Schluss war.",
+   "Ich hab noch nie einen Dreier gehabt.",
+   "Ich hab noch nie beim Sex den falschen Namen gesagt.",
+   "Ich hab noch nie Sex am Strand gehabt.",
+   "Ich hab noch nie im Zug oder Flugzeug rumgemacht.",
+   "Ich bin noch nie beim ersten Date im Bett gelandet.",
+   "Ich hab noch nie ein Sexspielzeug gekauft.",
+   "Ich hab noch nie mit jemandem gesextet, den ich nie getroffen habe.",
+   "Ich hab noch nie eine Fantasie ausgelebt, über die ich sonst nie rede.",
+   "Ich hab noch nie Strip-Poker gespielt.",
+   "Ich hab noch nie Sex an einem Ort gehabt, an dem man uns hätte sehen können.",
+   "Ich hab noch nie ein erotisches Rollenspiel gemacht."
+  ]
+ },
+ "eher": {
+  "mild": [
+   "Wer würde eher beim Pub-Quiz alles googeln?",
+   "Wer würde eher einen Flug verpassen?",
+   "Wer würde eher spontan nach Irland auswandern?",
+   "Wer würde eher als Erstes auf der Tanzfläche stehen?",
+   "Wer würde eher eine Zombie-Apokalypse überleben?",
+   "Wer würde eher eine Band gründen?",
+   "Wer würde eher im Lotto gewinnen und es allen verheimlichen?",
+   "Wer würde eher beim Karaoke das Mikro nicht mehr hergeben?",
+   "Wer würde eher eine Wette um Mitternacht annehmen?",
+   "Wer würde eher eine Katze statt eines Partners mit nach Hause bringen?",
+   "Wer würde eher einen eigenen Pub eröffnen?",
+   "Wer würde eher beim Film einschlafen?",
+   "Wer würde eher sein Handy im Taxi liegen lassen?",
+   "Wer würde eher eine Reality-Show gewinnen?",
+   "Wer würde eher mit Fremden Freundschaft schließen?",
+   "Wer würde eher einen Marathon ohne Training laufen?",
+   "Wer würde eher bei einem Kochwettbewerb die Küche anzünden?",
+   "Wer würde eher heimlich die letzte Pommes essen?",
+   "Wer würde eher in einem Escape Room als Letztes rauskommen?",
+   "Wer würde eher eine Rede halten, ohne gefragt zu werden?",
+   "Wer würde eher sich in der eigenen Stadt verlaufen?",
+   "Wer würde eher ein Instrument im Pub spontan mitspielen?",
+   "Wer würde eher als Erstes nach Hause gehen?",
+   "Wer würde eher den Taxifahrer zum Freund machen?"
+  ],
+  "frech": [
+   "Wer würde eher betrunken den Ex anrufen?",
+   "Wer würde eher mit dem Barkeeper flirten, um Freibier zu bekommen?",
+   "Wer würde eher ein Tinder-Date zum Familienessen mitbringen?",
+   "Wer würde eher als Erstes nackt in den Pool springen?",
+   "Wer würde eher im Club die Nummer vom Türsteher bekommen?",
+   "Wer würde eher eine heimliche Affäre geheim halten können?",
+   "Wer würde eher im Rausch ein Tattoo stechen lassen?",
+   "Wer würde eher nach der Party bei jemand Fremdem aufwachen?",
+   "Wer würde eher für Geld ein Wochenende nackt leben?",
+   "Wer würde eher auf einer Hochzeit mit der Bedienung verschwinden?",
+   "Wer würde eher eine Dating-App für die Mutter einrichten?",
+   "Wer würde eher beim ersten Date schon vom Heiraten reden?"
+  ],
+  "hot": [
+   "Wer würde eher Sex an einem öffentlichen Ort haben?",
+   "Wer würde eher ein privates Sexvideo drehen?",
+   "Wer würde eher einen Dreier vorschlagen?",
+   "Wer würde eher so laut sein, dass die Nachbarn klopfen?",
+   "Wer würde eher ein Nacktfoto an die falsche Person schicken?",
+   "Wer würde eher in einen Swingerclub gehen?",
+   "Wer würde eher heute Nacht einen One-Night-Stand haben?",
+   "Wer würde eher beim Strip-Poker als Letztes noch angezogen sein?",
+   "Wer würde eher ein Rollenspiel mit Kostüm vorschlagen?",
+   "Wer würde eher Sexspielzeug im Handgepäck vergessen?",
+   "Wer hat hier die wildeste Fantasie?",
+   "Wer würde eher beim Sex einschlafen?"
+  ]
+ },
+ "wahrheit": {
+  "mild": [
+   "Was war dein peinlichster Moment in einer Kneipe?",
+   "Welche Serie schaust du heimlich?",
+   "Was ist die verrückteste Ausrede, die du je benutzt hast?",
+   "Wen in dieser Runde kennst du am längsten?",
+   "Was ist dein unnötigstes Talent?",
+   "Welches Lied kannst du komplett auswendig, ohne es zuzugeben?",
+   "Was war der schlimmste Haarschnitt deines Lebens?",
+   "Welche Lüge hast du als Kind am längsten aufrechterhalten?",
+   "Was würdest du mit einer Million Euro als Erstes machen?",
+   "Was war dein bisher schlechtestes Date?",
+   "Welche App öffnest du am häufigsten?",
+   "Was ist das Seltsamste in deinem Kühlschrank gerade?",
+   "Wovor hast du heimlich Angst?",
+   "Wer in dieser Runde wäre der beste Präsident?",
+   "Was ist deine liebste Kindheitserinnerung?",
+   "Welche Frage beim Pub-Quiz würdest du sicher richtig haben?"
+  ],
+  "frech": [
+   "Wer hier ist am attraktivsten?",
+   "Was war dein peinlichster Flirtversuch?",
+   "Mit wem aus der Runde würdest du am ehesten auf ein Date gehen?",
+   "Was war deine schlimmste Ausrede, um ein Date abzusagen?",
+   "Wem hast du zuletzt eine anzügliche Nachricht geschickt?",
+   "Was ist dein größter Turn-off?",
+   "Wann hast du zuletzt jemanden geküsst, und wen?",
+   "Welche Lüge hast du einem Partner erzählt?",
+   "Was war der seltsamste Ort, an dem du geknutscht hast?",
+   "Welche Person aus deinem Handy würdest du nie anrufen, aber gern daten?"
+  ],
+  "hot": [
+   "Wo war der aufregendste Ort, an dem du Sex hattest?",
+   "Was ist deine geheime Fantasie?",
+   "Was war dein peinlichstes Erlebnis im Bett?",
+   "Mit wie vielen Menschen hattest du ungefähr schon Sex?",
+   "Was ist das Verrückteste, das du im Bett gemacht hast?",
+   "Welchen One-Night-Stand bereust du?",
+   "Wen hier würdest du für eine Nacht wählen?",
+   "Was ist dein größter Turn-on?",
+   "Welche Stellung magst du am liebsten?",
+   "Was wolltest du schon immer mal im Bett ausprobieren?"
+  ]
+ },
+ "pflicht": {
+  "mild": [
+   "Sing den Refrain deines Lieblingslieds.",
+   "Erzähl einen Witz. Wenn keiner lacht: einen Schluck.",
+   "Sprich die nächsten zwei Runden mit irischem Akzent.",
+   "Mach 10 Kniebeugen.",
+   "Imitier eine Person aus der Runde, die anderen raten.",
+   "Zeig das letzte Foto in deiner Galerie (oder trink zwei Schlucke).",
+   "Erfinde einen Trinkspruch und bring ihn aus.",
+   "Tausche für eine Runde den Platz mit der Person links.",
+   "Rede eine Minute über ein Thema, das die Runde bestimmt.",
+   "Bestell die nächste Runde Wasser für alle.",
+   "Mach eine Luftgitarren-Performance zu einem Lied der Runde.",
+   "Nenne in 10 Sekunden fünf irische Wörter oder Namen.",
+   "Sprich die nächste Runde nur in Reimen.",
+   "Lass die Runde deinen Status für eine Stunde schreiben (harmlos!).",
+   "Balanciere einen Bierdeckel auf dem Kopf, bis du wieder dran bist.",
+   "Erzähl die Geschichte, wie ihr euch kennengelernt habt, als Märchen."
+  ],
+  "frech": [
+   "Flirte 30 Sekunden mit der Person rechts von dir.",
+   "Gib jemandem deiner Wahl einen Kuss auf die Wange.",
+   "Zeig deinen besten Verführungsblick, bis jemand lacht.",
+   "Lies deine letzte Chat-Nachricht laut vor.",
+   "Tanze 20 Sekunden sexy auf dem Stuhl.",
+   "Mach jeder Person ein Kompliment über ihr Aussehen.",
+   "Flüstere jemandem etwas Anzügliches ins Ohr.",
+   "Zeig deinen letzten Flirt-Chat oder trink drei Schlucke.",
+   "Rufe deinen Schwarm an und sag Hallo (oder trink drei).",
+   "Lass die Runde deine nächste Dating-App-Bio schreiben."
+  ],
+  "hot": [
+   "Zieh ein Kleidungsstück aus.",
+   "Gib der Person links eine Nackenmassage.",
+   "Küsse jemanden aus der Runde, wenn beide wollen, sonst trink drei.",
+   "Stöhne theatralisch zehn Sekunden lang.",
+   "Beschreibe deinen letzten Sex in drei Wörtern.",
+   "Setz dich bis zu deiner nächsten Runde auf den Schoß einer Person deiner Wahl.",
+   "Mach einen 30-Sekunden-Lapdance für jemanden, der zustimmt.",
+   "Tausche ein Kleidungsstück mit jemandem.",
+   "Zeig, wie du jemanden verführen würdest, an der Person rechts (nur mit Einverständnis).",
+   "Lass dir von jemandem mit verbundenen Augen etwas ins Ohr flüstern und rate, wer es war."
+  ]
+ },
+ "koenig": [
+  [
+   "A",
+   "Wasserfall",
+   "Alle trinken gleichzeitig. Wer zieht, hört als Erster auf, dann die Person links usw."
+  ],
+  [
+   "2",
+   "Du",
+   "Bestimme jemanden, der zwei Schlucke trinkt."
+  ],
+  [
+   "3",
+   "Ich",
+   "Du trinkst drei Schlucke."
+  ],
+  [
+   "4",
+   "Boden",
+   "Alle berühren den Boden. Wer zuletzt dran ist, trinkt."
+  ],
+  [
+   "5",
+   "Daumen",
+   "Du bist Daumenmeister: Legst du den Daumen auf den Tisch, machen alle mit. Der Letzte trinkt."
+  ],
+  [
+   "6",
+   "Frage",
+   "Stell jemandem eine Frage. Wer antwortet statt mit einer Gegenfrage, trinkt."
+  ],
+  [
+   "7",
+   "Himmel",
+   "Alle zeigen nach oben. Wer zuletzt zeigt, trinkt."
+  ],
+  [
+   "8",
+   "Partner",
+   "Wähle einen Partner. Immer wenn du trinkst, trinkt er mit (bis zur nächsten 8)."
+  ],
+  [
+   "9",
+   "Reim",
+   "Sag ein Wort. Reihum wird gereimt, wer stockt, trinkt."
+  ],
+  [
+   "10",
+   "Kategorie",
+   "Nenne eine Kategorie (z. B. Biersorten). Reihum Begriffe nennen, wer stockt, trinkt."
+  ],
+  [
+   "B",
+   "Regel",
+   "Stell eine Regel auf, die bis zum Ende gilt. Wer sie bricht, trinkt."
+  ],
+  [
+   "D",
+   "Fragenmeisterin",
+   "Bis zur nächsten Dame: Wer auf deine Fragen antwortet, trinkt."
+  ],
+  [
+   "K",
+   "König",
+   "Gieß etwas in den Königsbecher in der Mitte. Wer den vierten König zieht, trinkt den Becher."
+  ]
+ ]
+}

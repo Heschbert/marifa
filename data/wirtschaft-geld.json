@@ -1,0 +1,3535 @@
+[
+ {
+  "id": "1m7uox7",
+  "s": "Sparen & Anlegen",
+  "q": "Dein Tagesgeld bringt 2 % Zinsen, die Inflation liegt bei 3 %. Was passiert mit deiner Kaufkraft?",
+  "a": [
+   "Sie sinkt um etwa 1 % pro Jahr",
+   "Sie steigt um etwa 2 % pro Jahr",
+   "Sie bleibt unverändert",
+   "Sie steigt um etwa 1 % pro Jahr"
+  ],
+  "w": [
+   "",
+   "Nominal wächst das Geld um 2 %, die Preise steigen aber schneller, daher wächst die Kaufkraft nicht.",
+   "Nur bei Zinsen in Höhe der Inflation bliebe die Kaufkraft gleich.",
+   "Der Realzins ist Zins minus Inflation, hier also minus 1 %, nicht plus 1 %."
+  ],
+  "e": "Der Realzins ist ungefähr Nominalzins minus Inflation, hier also etwa minus 1 %.",
+  "h": "Zinsen minus Inflation.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1ouq2f7",
+  "s": "Sparen & Anlegen",
+  "q": "Was gibt die Gesamtkostenquote (TER) eines Fonds an?",
+  "a": [
+   "Die laufenden Kosten pro Jahr",
+   "Die durchschnittliche Rendite des Fonds pro Jahr",
+   "Die einmalige Gebühr beim Kauf der Anteile",
+   "Das Ausfallrisiko der Fondsgesellschaft"
+  ],
+  "w": [
+   "",
+   "Die Rendite wird nicht von der TER angegeben, sondern ist von den Kosten unabhängig ausgewiesen.",
+   "Einmalige Kaufgebühren heißen Ausgabeaufschlag, nicht TER.",
+   "Das Ausfallrisiko ist bei Fonds durch das Sondervermögen begrenzt und steckt nicht in der TER."
+  ],
+  "e": "Über Jahrzehnte macht der Unterschied zwischen 0,2 % und 1,5 % TER einen großen Teil des Endvermögens aus.",
+  "h": "Die drei Buchstaben stehen für „Total Expense Ratio“.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "1180zot",
+  "s": "Sparen & Anlegen",
+  "q": "Was ist das Besondere an einem Indexfonds (ETF)?",
+  "a": [
+   "Er bildet einen Index passiv nach",
+   "Er wählt aktiv einzelne Aktien aus",
+   "Er garantiert das eingezahlte Kapital",
+   "Er zahlt über die Laufzeit feste Zinsen"
+  ],
+  "w": [
+   "",
+   "Aktive Auswahl ist das Merkmal aktiv gemanagter Fonds, nicht von ETFs.",
+   "ETFs schwanken mit dem Index, eine Kapitalgarantie gibt es nicht.",
+   "Feste Zinsen zahlen Anleihen oder Festgeld, ETFs bieten Kursschwankungen und ggf. Dividenden."
+  ],
+  "e": "Passives Nachbilden hält die Kosten niedrig, Kursverluste des Index trägt man dennoch mit.",
+  "h": "Ein Fondsmanager trifft keine eigenen Auswahlentscheidungen.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1bmgske",
+  "s": "Sparen & Anlegen",
+  "q": "Warum streut man sein Geld über viele Anlagen?",
+  "a": [
+   "Um das Risiko einzelner Pleiten zu senken",
+   "Um garantiert mehr Rendite zu erzielen",
+   "Um Steuern vollständig zu vermeiden",
+   "Um alle Kosten dauerhaft zu senken"
+  ],
+  "w": [
+   "",
+   "Streuung garantiert keine höhere Rendite, sie verringert nur das Einzelrisiko.",
+   "Steuern fallen unabhängig von der Streuung an.",
+   "Mehr Positionen verringern die Kosten nicht automatisch, oft ist es eher umgekehrt."
+  ],
+  "e": "Ein einzelnes Unternehmen kann auf null fallen, ein breiter Markt praktisch nicht.",
+  "h": "Nicht alle Eier in einen Korb.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "10t8gcx",
+  "s": "Sparen & Anlegen",
+  "q": "Was unterscheidet eine Aktie von einer Anleihe?",
+  "a": [
+   "Aktie: Firmenanteil, Anleihe: Kredit",
+   "Aktie: Kredit, Anleihe: Firmenanteil",
+   "Aktie: Staatspapier, Anleihe: privates Wertpapier",
+   "Beide verbriefen einen Anteil am Unternehmen"
+  ],
+  "w": [
+   "",
+   "Bei einer Aktie leiht man nicht Geld, sondern wird Miteigentümer.",
+   "Eine Anleihe ist gerade kein Anteil, sondern eine Forderung auf Zinsen und Rückzahlung.",
+   "Sowohl Staaten als auch Firmen geben Anleihen aus, Aktien nur Unternehmen."
+  ],
+  "e": "Aktionäre sind Miteigentümer, Anleihegläubiger bekommen Zinsen und die Rückzahlung, solange der Schuldner zahlen kann.",
+  "h": "Eigentum gegen Kredit.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "16zu1c5",
+  "s": "Sparen & Anlegen",
+  "q": "Was bedeutet Liquidität bei einer Geldanlage?",
+  "a": [
+   "Wie schnell sie sich zu Geld machen lässt",
+   "Wie hoch die erwartete Rendite ausfällt",
+   "Wie sicher das Geld vor Verlusten geschützt ist",
+   "Wie niedrig die laufenden Gebühren ausfallen"
+  ],
+  "w": [
+   "",
+   "Die Höhe der Rendite ist ein eigenes Kriterium und hat mit Liquidität nichts zu tun.",
+   "Sicherheit ist ein weiteres Ziel der Geldanlage, aber nicht Liquidität.",
+   "Kosten sind ein eigenes Kriterium, Liquidität meint Verfügbarkeit."
+  ],
+  "e": "Tagesgeld ist sehr liquide, eine Immobilie ist es kaum.",
+  "h": "Es geht um die Verfügbarkeit des Geldes.",
+  "d": 2
+ },
+ {
+  "id": "jn0r4p",
+  "s": "Sparen & Anlegen",
+  "q": "Welche Faustregel nennt man häufig für den Notgroschen?",
+  "a": [
+   "Drei bis sechs Monatsausgaben",
+   "Etwa eine Netto-Monatsmiete",
+   "Etwa ein volles Jahresgehalt",
+   "Etwa 1.000 Euro pauschal"
+  ],
+  "w": [
+   "",
+   "Eine einzelne Monatsmiete deckt Jobverlust oder Reparaturen meist nicht ab.",
+   "Ein ganzes Jahresgehalt als Reserve ist deutlich mehr als die übliche Empfehlung.",
+   "Ein fester Betrag ignoriert die individuellen Ausgaben, die Faustregel richtet sich nach ihnen."
+  ],
+  "e": "Er soll Jobverlust oder größere Reparaturen abfedern, ohne dass man Geldanlagen verkaufen muss.",
+  "h": "Ein Vierteljahr bis ein halbes Jahr.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "13qyful",
+  "s": "Sparen & Anlegen",
+  "q": "Was passiert bei steigenden Zinsen meist mit den Kursen bereits bestehender Anleihen?",
+  "a": [
+   "Sie sinken",
+   "Sie steigen",
+   "Sie bleiben gleich",
+   "Sie verfallen komplett"
+  ],
+  "w": [
+   "",
+   "Neue Anleihen werfen mehr ab, daher werden alte nicht teurer.",
+   "Der Kurs reagiert, weil Käufer neue höhere Zinsen vorziehen.",
+   "Der Kurs passt sich an den Marktzins an und bleibt nicht fix."
+  ],
+  "e": "Neue Anleihen werfen mehr ab, alte müssen im Preis nachgeben.",
+  "h": "Zinsen rauf, Kurse runter.",
+  "d": 2
+ },
+ {
+  "id": "12n66rj",
+  "s": "Sparen & Anlegen",
+  "q": "Was gibt das Kurs-Gewinn-Verhältnis (KGV) an?",
+  "a": [
+   "Aktienkurs geteilt durch Gewinn je Aktie",
+   "Gewinn geteilt durch Umsatz",
+   "Dividende geteilt durch Aktienkurs",
+   "Aktienkurs geteilt durch Buchwert je Aktie"
+  ],
+  "w": [
+   "",
+   "Gewinn durch Umsatz ist die Umsatzrendite.",
+   "Dividende durch Kurs ist die Dividendenrendite.",
+   "Kurs durch Buchwert ist das Kurs-Buchwert-Verhältnis (KBV)."
+  ],
+  "e": "Ein KGV von 20 heißt: Man zahlt das 20-Fache des Jahresgewinns je Aktie.",
+  "h": "Kurs durch Gewinn.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "9x3vgg",
+  "s": "Sparen & Anlegen",
+  "q": "Was passiert bei einem Aktiensplit?",
+  "a": [
+   "Mehr Aktien, niedrigerer Kurs, gleicher Gesamtwert",
+   "Der Gesamtwert des Unternehmens verdoppelt sich",
+   "Der Kurs bleibt gleich, die Zahl der Aktien steigt",
+   "Anleger verlieren die Hälfte ihrer Anteile"
+  ],
+  "w": [
+   "",
+   "Ein Split schafft keinen Mehrwert, die Marktkapitalisierung bleibt gleich.",
+   "Würde der Kurs gleich bleiben, würde sich der Gesamtwert vervielfachen, das passiert nicht.",
+   "Mit dem Kurs halbiert sich nur der Preis je Aktie, die Anteile werden verdoppelt."
+  ],
+  "e": "Beim Split 2:1 hältst du doppelt so viele Aktien zum halben Kurs.",
+  "h": "Eine Pizza in mehr Stücke schneiden ergibt nicht mehr Pizza.",
+  "d": 2,
+  "hintOk": true,
+  "p": 3
+ },
+ {
+  "id": "18d4qfv",
+  "s": "Sparen & Anlegen",
+  "q": "Was gilt grundsätzlich für Rendite und Risiko?",
+  "a": [
+   "Mehr erwartete Rendite heißt mehr Risiko",
+   "Hohe Renditen sind in der Regel risikolos",
+   "Risiko und Rendite hängen nicht zusammen",
+   "Niedriges Risiko bringt die höchste Rendite"
+  ],
+  "w": [
+   "",
+   "Risikolose hohe Renditen gibt es am Markt nicht.",
+   "Der Zusammenhang besteht, Anleger verlangen für Risiko eine Prämie.",
+   "Wer wenig Risiko eingeht, erhält meist auch geringere Erträge."
+  ],
+  "e": "Wer ein Angebot mit hoher Rendite und angeblich null Risiko sieht, sollte misstrauisch werden.",
+  "h": "Denk an Lotto und Sparbuch.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "8nyrws",
+  "s": "Sparen & Anlegen",
+  "q": "Wie sicher sind Bankguthaben in der EU laut Einlagensicherung?",
+  "a": [
+   "Bis 100.000 € pro Kunde und Bank",
+   "Unbegrenzt in jeder Höhe gesetzlich geschützt",
+   "Nur bis 10.000 € pro Kunde geschützt",
+   "Nur bis 1 Million € pro Kunde geschützt"
+  ],
+  "w": [
+   "",
+   "Eine unbegrenzte Garantie gibt es gesetzlich nicht.",
+   "Der gesetzliche Schutz liegt deutlich höher als 10.000 €.",
+   "Der gesetzliche Schutz liegt deutlich unter einer Million Euro."
+  ],
+  "e": "Die gesetzliche Einlagensicherung gilt je Kunde und Bank in der EU, einzelne Banken bieten freiwillig mehr.",
+  "h": "Sechsstellig, aber nicht unbegrenzt.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "1wxubu9",
+  "s": "Sparen & Anlegen",
+  "q": "Was bedeutet der Zinseszinseffekt?",
+  "a": [
+   "Erträge werden mitverzinst",
+   "Zinsen werden jedes Jahr um die Inflation gekürzt",
+   "Der Zinssatz verdoppelt sich in jedem Anlagejahr",
+   "Zinsen werden einmalig am Laufzeitende gezahlt"
+  ],
+  "w": [
+   "",
+   "Die Inflation hat mit dem Effekt nichts zu tun, er beschreibt Verzinsung auf Zinsen.",
+   "Der Zinssatz bleibt gleich, nur die Basis wächst.",
+   "Einmalige Zinszahlung ist keine Verzinsung der Zinsen, genau das macht den Effekt aus."
+  ],
+  "e": "Bei 5 % Zins werden aus 1.000 € nach 10 Jahren rund 1.629 € statt 1.500 € ohne Zinseszins.",
+  "h": "Zinsen auf Zinsen.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "rqmmk",
+  "s": "Sparen & Anlegen",
+  "q": "Wie lange dauert es nach der Faustregel 72 ungefähr, bis sich ein Betrag bei 6 % jährlicher Rendite verdoppelt?",
+  "a": [
+   "Etwa 12 Jahre",
+   "Etwa 6 Jahre",
+   "Etwa 18 Jahre",
+   "Etwa 24 Jahre"
+  ],
+  "w": [
+   "",
+   "Sechs Jahre wären es erst bei 12 % Rendite.",
+   "18 Jahre ergäben sich bei 4 % Rendite.",
+   "24 Jahre ergäben sich bei 3 % Rendite."
+  ],
+  "e": "72 geteilt durch den Zinssatz in Prozent ergibt die Verdopplungszeit in Jahren: 72 : 6 = 12.",
+  "h": "72 durch Zinssatz.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "zwdfdz",
+  "s": "Sparen & Anlegen",
+  "q": "Was beschreibt der Cost-Average-Effekt bei einem Sparplan?",
+  "a": [
+   "Bei tiefen Kursen kauft man mehr Anteile",
+   "Die Gebühren sinken mit jeder Einzahlung automatisch",
+   "Der Durchschnittskurs steigt mit der Laufzeit garantiert",
+   "Man kauft immer zum günstigsten Kurs des Monats"
+  ],
+  "w": [
+   "",
+   "Die Gebühren hängen vom Anbieter ab, nicht vom Cost-Average-Effekt.",
+   "Es gibt keine Garantie auf Kursanstiege.",
+   "Den günstigsten Kurs kann bei festem Termin niemand gezielt treffen."
+  ],
+  "e": "Wer jeden Monat denselben Betrag investiert, kauft bei fallenden Kursen mehr Anteile und glättet so den Einstandspreis.",
+  "h": "Fester Betrag, wechselnde Stückzahl.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "h61kjw",
+  "s": "Sparen & Anlegen",
+  "q": "Was ist eine Dividende?",
+  "a": [
+   "Gewinnausschüttung an die Aktionäre",
+   "Feste Zinszahlung auf eine Anleihe des Unternehmens",
+   "Preisnachlass beim Kauf einer Aktie am Markt",
+   "Jährliche Depotgebühr der Bank für Aktionäre"
+  ],
+  "w": [
+   "",
+   "Feste Zinszahlungen auf Anleihen heißen Kupon.",
+   "Ein Kaufrabatt ist keine Dividende, sie wird nach dem Kauf aus dem Gewinn gezahlt.",
+   "Gebühren zahlt der Anleger an die Bank, Dividenden bekommt er."
+  ],
+  "e": "Die Hauptversammlung beschließt die Dividende, sie ist nicht garantiert.",
+  "h": "Gewinnbeteiligung der Aktionäre.",
+  "d": 1
+ },
+ {
+  "id": "nh6yaw",
+  "s": "Sparen & Anlegen",
+  "q": "Wie nennt man den festen jährlichen Zinssatz einer Anleihe, bezogen auf den Nennwert?",
+  "a": [
+   "Kupon",
+   "Dividende",
+   "Aufschlag",
+   "Spread"
+  ],
+  "w": [
+   "",
+   "Dividende zahlen Aktiengesellschaften, nicht Anleihen.",
+   "Ein Aufschlag ist ein Preisaufschlag, nicht der Zinssatz.",
+   "Ein Spread ist eine Differenz zwischen zwei Sätzen oder Kursen."
+  ],
+  "e": "Der Kupon wird auf den Nennwert gerechnet, daher sind Kupon und aktuelle Rendite nur bei Kurs 100 % gleich.",
+  "h": "Kommt vom Zinsschein.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "fdvtxc",
+  "s": "Sparen & Anlegen",
+  "q": "Was erhält ein Anleger normalerweise am Ende der Laufzeit einer Anleihe, wenn der Schuldner zahlungsfähig ist?",
+  "a": [
+   "Den Nennwert zurück",
+   "Den damaligen Kaufkurs zurück",
+   "Den höchsten Kurs der Laufzeit",
+   "Anteile am Unternehmen"
+  ],
+  "w": [
+   "",
+   "Der Kaufkurs kann vom Nennwert abweichen, zurückgezahlt wird der Nennwert.",
+   "Der Höchstkurs spielt für die Rückzahlung keine Rolle.",
+   "Anteile gibt es bei Aktien, nicht bei normalen Anleihen."
+  ],
+  "e": "Zahlt der Schuldner nicht, droht ein Verlust bis zum Totalausfall.",
+  "h": "Der Betrag, auf den die Anleihe lautet.",
+  "d": 2
+ },
+ {
+  "id": "j7cqi3",
+  "s": "Sparen & Anlegen",
+  "q": "Was misst die Volatilität eines Wertpapiers?",
+  "a": [
+   "Die Stärke der Kursschwankungen",
+   "Die Höhe der Dividende",
+   "Die Schnelligkeit des Handels",
+   "Die Größe des Unternehmens"
+  ],
+  "w": [
+   "",
+   "Dividenden sind Ausschüttungen, keine Schwankungen.",
+   "Die Handelbarkeit beschreibt die Liquidität.",
+   "Die Größe beschreibt die Marktkapitalisierung."
+  ],
+  "e": "Hohe Volatilität bedeutet große Kursausschläge nach oben und unten, oft als Standardabweichung gemessen.",
+  "h": "Auf und ab.",
+  "d": 2
+ },
+ {
+  "id": "155amtt",
+  "s": "Sparen & Anlegen",
+  "q": "Was bedeutet Rebalancing bei einem Depot?",
+  "a": [
+   "Die Zielgewichtung wiederherstellen",
+   "Das gesamte Depot bei fallenden Kursen verkaufen",
+   "Alle Anlagen in die Gewinner-Aktie umschichten",
+   "Das Depot auf eine andere Bank übertragen"
+  ],
+  "w": [
+   "",
+   "Ein Komplettverkauf ist keine Anpassung der Gewichtung.",
+   "Gewinner stärker zu gewichten verschiebt das Risiko eher.",
+   "Ein Depotübertrag ändert die Gewichtung nicht."
+  ],
+  "e": "Nach Kursbewegungen weichen Anteile von der Zielaufteilung ab, Rebalancing stellt das gewünschte Risikoniveau wieder her.",
+  "h": "Zurück zur Zielaufteilung.",
+  "d": 3
+ },
+ {
+  "id": "yp4bd8",
+  "s": "Sparen & Anlegen",
+  "q": "Was bedeutet thesaurierend bei einem Fonds?",
+  "a": [
+   "Erträge werden wieder angelegt",
+   "Erträge werden monatlich ausgezahlt",
+   "Der Fonds investiert ausschließlich in Gold",
+   "Der Fonds hat überhaupt keine laufenden Kosten"
+  ],
+  "w": [
+   "",
+   "Ausgezahlt werden Erträge bei ausschüttenden Fonds.",
+   "Die Anlageklasse hat mit dem Wort nichts zu tun.",
+   "Kosten fallen bei jedem Fonds an."
+  ],
+  "e": "Der Zinseszinseffekt wirkt im Fonds, Steuern können über die Vorabpauschale trotzdem anfallen.",
+  "h": "Sammelt Erträge an.",
+  "d": 2
+ },
+ {
+  "id": "1mh4who",
+  "s": "Sparen & Anlegen",
+  "q": "Bis zu welchem Betrag bleiben Kapitalerträge für Alleinstehende pro Jahr durch den Sparer-Pauschbetrag steuerfrei?",
+  "a": [
+   "1.000 €",
+   "801 €",
+   "2.000 €",
+   "500 €"
+  ],
+  "w": [
+   "",
+   "801 € galten bis 2022, seit 2023 sind es 1.000 €.",
+   "2.000 € gelten nur für zusammen veranlagte Paare.",
+   "500 € wäre nur die Hälfte des gültigen Betrags."
+  ],
+  "e": "Verheiratete haben gemeinsam 2.000 €. Mit einem Freistellungsauftrag nutzt man ihn bei der Bank.",
+  "h": "Vierstellig, seit 2023.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "184djcq",
+  "s": "Sparen & Anlegen",
+  "q": "Wozu dient ein Freistellungsauftrag?",
+  "a": [
+   "Bis zum Pauschbetrag keine Steuer abführen",
+   "Dauerhafte Befreiung aller Zinsen von der Steuer",
+   "Erhöhung des persönlichen Sparer-Pauschbetrags",
+   "Verschiebung der Steuer auf das Folgejahr"
+  ],
+  "w": [
+   "",
+   "Er befreit nur bis zum Pauschbetrag, nicht dauerhaft in beliebiger Höhe.",
+   "Der Pauschbetrag selbst bleibt unverändert, der Auftrag teilt ihn nur auf.",
+   "Eine Verschiebung findet nicht statt, die Steuer wird gar nicht erst abgeführt."
+  ],
+  "e": "Mehrere Banken können den Betrag aufteilen, insgesamt darf er nicht überschritten werden.",
+  "h": "Er hat mit dem jährlichen Sparerfreibetrag zu tun.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "65oyuu",
+  "s": "Sparen & Anlegen",
+  "q": "Was bezeichnet der Spread an der Börse?",
+  "a": [
+   "Die Differenz zwischen Kauf- und Verkaufskurs",
+   "Die Differenz zwischen Dividende und Zins",
+   "Die Gebühr der Depotbank pro Jahr",
+   "Die Spanne zwischen Tageshoch und Vorjahrestief"
+  ],
+  "w": [
+   "",
+   "Dividende und Zins sind nicht gemeint.",
+   "Depotgebühren sind unabhängig vom Spread.",
+   "Tageshoch und Jahrestief beschreiben die Handelsspanne, nicht den Spread."
+  ],
+  "e": "Ein enger Spread zeigt meist hohe Liquidität, ein breiter versteckte Handelskosten.",
+  "h": "Geld- und Briefkurs.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "mii3fm",
+  "s": "Sparen & Anlegen",
+  "q": "Was legt man mit einem Limit bei einer Wertpapierorder fest?",
+  "a": [
+   "Höchst- bzw. Mindestpreis der Order",
+   "Die Zahl der Anteile, die am Tag gehandelt werden dürfen",
+   "Den Zeitpunkt der Kontoführungsgebühr",
+   "Die maximale Haltedauer der Aktie im Depot"
+  ],
+  "w": [
+   "",
+   "Die Stückzahl legt man separat fest, das Limit betrifft den Preis.",
+   "Gebühren werden vom Limit nicht gesteuert.",
+   "Eine Haltedauer begrenzt ein Limit nicht."
+  ],
+  "e": "Ohne Limit wird zum nächsten verfügbaren Kurs ausgeführt (Market-Order).",
+  "h": "Ohne diese Angabe wird zum nächsten verfügbaren Kurs gehandelt.",
+  "d": 2
+ },
+ {
+  "id": "1n54vmf",
+  "s": "Sparen & Anlegen",
+  "q": "Was unterscheidet Festgeld von Tagesgeld?",
+  "a": [
+   "Festgeld ist für eine feste Laufzeit gebunden",
+   "Festgeld ist jederzeit abziehbar, Tagesgeld nicht",
+   "Festgeld wird ausschließlich in bar geführt",
+   "Festgeld schwankt wie eine Aktie täglich im Wert"
+  ],
+  "w": [
+   "",
+   "Jederzeit verfügbar ist Tagesgeld, das Festgeld ist gebunden.",
+   "Festgeld ist ein Konto, bei dem es keine Bargeldführung gibt.",
+   "Festgeld verliert nicht täglich an Kurswert, es bleibt der eingezahlte Betrag."
+  ],
+  "e": "Wer vorzeitig an das Geld will, verliert oft Zinsen oder kommt gar nicht heran.",
+  "h": "Ein Konto ist jederzeit verfügbar, das andere nicht.",
+  "d": 1
+ },
+ {
+  "id": "1oq22r7",
+  "s": "Sparen & Anlegen",
+  "q": "Was ist das Prinzip eines Bausparvertrags?",
+  "a": [
+   "Nach dem Ansparen gibt es ein Darlehen zu festem Zins",
+   "Man erhält nach Vertragsabschluss sofort eine Immobilie",
+   "Der Staat übernimmt sämtliche monatlichen Raten",
+   "Das Guthaben ist wie bei Aktien an Börsenkurse gekoppelt"
+  ],
+  "w": [
+   "",
+   "Eine Immobilie bekommt man erst durch Kauf, der Vertrag liefert Finanzierungsbausteine.",
+   "Der Staat zahlt keine Raten, höchstens Zulagen unter bestimmten Bedingungen.",
+   "Es gibt keine Kopplung an Börsenkurse, die Zinsen sind vertraglich fixiert."
+  ],
+  "e": "Das Darlehen ist meist günstiger, aber das Guthaben ist anfangs meist niedrig verzinst.",
+  "h": "Erst sparen, dann leihen.",
+  "d": 2
+ },
+ {
+  "id": "bjdxow",
+  "s": "Sparen & Anlegen",
+  "q": "Was kennzeichnet die Riester-Rente?",
+  "a": [
+   "Staatliche Zulagen für private Vorsorge",
+   "Eine Zusatzrente ausschließlich für Beamte",
+   "Eine vom Arbeitgeber bezahlte Betriebsrente",
+   "Eine Pflichtrente für alle Selbstständigen"
+  ],
+  "w": [
+   "",
+   "Für Beamte gibt es die Pension, Riester ist freiwillig und für viele Gruppen offen.",
+   "Die Betriebsrente läuft über den Arbeitgeber, Riester ist ein separater Weg.",
+   "Selbstständige sind nicht per Riester pflichtversichert."
+  ],
+  "e": "Benannt nach dem früheren Arbeitsminister Walter Riester, eingeführt 2002.",
+  "h": "Zulage vom Staat.",
+  "d": 2
+ },
+ {
+  "id": "zefufg",
+  "s": "Sparen & Anlegen",
+  "q": "Was ist das Merkmal der Basisrente (Rürup-Rente)?",
+  "a": [
+   "Sie wird nur als lebenslange Rente ausgezahlt",
+   "Sie kann jederzeit als Einmalbetrag entnommen werden",
+   "Sie wird von der Rentenversicherung als Pflicht gezahlt",
+   "Sie ist an Börsenkurse gekoppelt und darf verfallen"
+  ],
+  "w": [
+   "",
+   "Eine Kapitalentnahme ist nicht erlaubt.",
+   "Die Teilnahme ist freiwillig, nicht verpflichtend.",
+   "Die Basisrente kennt keinen Verfall und keine Kopplung an Börsenkurse als Pflicht."
+  ],
+  "e": "Beiträge können steuerlich absetzbar sein, aber das Kapital ist weder beleihbar noch kapitalisierbar.",
+  "h": "Nur Rente, kein Kapital.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "223sq7",
+  "s": "Sparen & Anlegen",
+  "q": "Wie funktioniert die Entgeltumwandlung bei der betrieblichen Altersvorsorge?",
+  "a": [
+   "Ein Teil des Bruttogehalts fließt in die Vorsorge",
+   "Der Arbeitgeber zahlt den Betrag zusätzlich aus eigener Tasche",
+   "Der Staat überweist den Betrag direkt aufs Konto",
+   "Beiträge werden vom Nettogehalt nach Steuern gezahlt"
+  ],
+  "w": [
+   "",
+   "Zusätzlich zahlt der Arbeitgeber nicht bei der Entgeltumwandlung, hier verzichtet der Arbeitnehmer auf Lohn.",
+   "Der Staat zahlt nicht direkt, er gibt Steuer- und Abgabenvorteile.",
+   "Es wird vor Steuern und teils vor Sozialabgaben umgewandelt."
+  ],
+  "e": "Dadurch sinken Steuern und teils Sozialabgaben, später sind Auszahlungen aber voll steuerpflichtig.",
+  "h": "Aus dem Brutto.",
+  "d": 3
+ },
+ {
+  "id": "q9rdrx",
+  "s": "Sparen & Anlegen",
+  "q": "Wie finanziert sich die gesetzliche Rente in Deutschland im Kern?",
+  "a": [
+   "Die Beiträge der Beschäftigten zahlen die Renten",
+   "Jeder zahlt nur in einen eigenen Kapitalstock ein",
+   "Allein aus Erträgen von Staatsvermögen",
+   "Durch regelmäßige Zahlungen der Banken"
+  ],
+  "w": [
+   "",
+   "Einen eigenen Kapitalstock hat die gesetzliche Rente nicht.",
+   "Staatsvermögen ist keine Hauptquelle, ergänzend fließen Bundeszuschüsse.",
+   "Banken zahlen nicht ein."
+  ],
+  "e": "Dieses Umlageverfahren hängt stark vom Verhältnis zwischen Beitragszahlern und Rentnern ab.",
+  "h": "Umlage.",
+  "d": 2
+ },
+ {
+  "id": "dryus0",
+  "s": "Sparen & Anlegen",
+  "q": "Zu welcher Schicht des Drei-Schichten-Modells der Altersvorsorge zählt die gesetzliche Rente?",
+  "a": [
+   "Zur ersten Schicht (Basisversorgung)",
+   "Zur zweiten Schicht (Zusatzversorgung)",
+   "Zur dritten Schicht (private Anlagen)",
+   "Sie zählt zu keiner Schicht"
+  ],
+  "w": [
+   "",
+   "Zweite Schicht sind Riester und Betriebsrente.",
+   "Dritte Schicht sind sonstige private Vorsorgeprodukte.",
+   "Sie gehört klar zur ersten Schicht."
+  ],
+  "e": "Zur Basisversorgung zählen auch Beamtenversorgung und Basisrente.",
+  "h": "Fundament.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "r5kd61",
+  "s": "Sparen & Anlegen",
+  "q": "Was bildet der Aktienindex MSCI World ab?",
+  "a": [
+   "Aktien aus Industrieländern weltweit",
+   "Nur Aktien aus den USA",
+   "Aktien aus Schwellenländern weltweit",
+   "Nur Aktien aus Europa"
+  ],
+  "w": [
+   "",
+   "Der Index enthält zwar viele US-Firmen, aber auch Aktien aus anderen Industrieländern.",
+   "Schwellenländer bildet der MSCI Emerging Markets ab.",
+   "Europa deckt ein anderer Index wie MSCI Europe ab."
+  ],
+  "e": "Er enthält Aktien aus rund zwei Dutzend Industrieländern, die USA haben das größte Gewicht.",
+  "h": "Industrieländer, weltweit.",
+  "d": 2
+ },
+ {
+  "id": "1078vj1",
+  "s": "Sparen & Anlegen",
+  "q": "Was gilt für Gold als Geldanlage?",
+  "a": [
+   "Es wirft keine Zinsen oder Dividenden ab",
+   "Es zahlt jährlich feste Zinsen wie eine Anleihe",
+   "Es zahlt eine Dividende wie Aktien",
+   "Sein Wert ist durch den Staat garantiert"
+  ],
+  "w": [
+   "",
+   "Gold liefert keinen Zins.",
+   "Dividenden zahlen Unternehmen, nicht Rohstoffe.",
+   "Der Goldpreis schwankt am Markt, es gibt keine Garantie."
+  ],
+  "e": "Ein Ertrag entsteht nur durch Kursgewinne, Lagerung kann sogar Kosten verursachen.",
+  "h": "Nur Preisgewinn.",
+  "d": 2
+ },
+ {
+  "id": "1wnpouu",
+  "s": "Sparen & Anlegen",
+  "q": "Welche drei Ziele bilden das magische Dreieck der Geldanlage?",
+  "a": [
+   "Rendite, Sicherheit und Liquidität",
+   "Rendite, Steuern und Gebühren",
+   "Sicherheit, Inflation und Zins",
+   "Liquidität, Wachstum und Dividende"
+  ],
+  "w": [
+   "",
+   "Steuern und Gebühren gehören nicht zum klassischen Dreieck.",
+   "Inflation und Zins sind Rahmenbedingungen, keine Anlageziele.",
+   "Wachstum und Dividende sind keine Ecken des klassischen Modells."
+  ],
+  "e": "Alle drei Ziele lassen sich nicht gleichzeitig maximieren, es besteht ein Zielkonflikt.",
+  "h": "Verfügbarkeit gehört dazu.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "u9dob3",
+  "s": "Sparen & Anlegen",
+  "q": "Welches Ereignis löste 1929 die Weltwirtschaftskrise aus?",
+  "a": [
+   "Der Börsenkrach an der Wall Street",
+   "Die Einführung einer europäischen Gemeinschaftswährung",
+   "Der Zusammenbruch der Bank von England",
+   "Der Beginn des Zweiten Weltkriegs"
+  ],
+  "w": [
+   "",
+   "Der Euro kam erst 1999 und 2002.",
+   "Die Bank von England brach 1929 nicht zusammen.",
+   "Der Zweite Weltkrieg begann 1939, die Krise war schon Jahre zuvor."
+  ],
+  "e": "Der Kurssturz im Oktober 1929 (Schwarzer Donnerstag, 24. Oktober) war Auslöser, die Krise wirkte weltweit.",
+  "h": "Oktober 1929.",
+  "d": 2
+ },
+ {
+  "id": "1x1054l",
+  "s": "Sparen & Anlegen",
+  "q": "In welchem Land kam es 1637 zur berühmten Tulpenmanie?",
+  "a": [
+   "Niederlande",
+   "Frankreich",
+   "Spanien",
+   "England"
+  ],
+  "w": [
+   "",
+   "Die Südseeblase von 1720 war ein britisches Beispiel, nicht die Tulpenmanie.",
+   "Die Mississippi-Blase (1720) war ein französisches Beispiel.",
+   "In Spanien gab es keine vergleichbare Tulpenspekulation."
+  ],
+  "e": "Die Preise für Tulpenzwiebeln stiegen extrem und brachen 1637 ein, ein frühes Beispiel für eine Spekulationsblase.",
+  "h": "Holland.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1d1v5bw",
+  "s": "Sparen & Anlegen",
+  "q": "Wie funktioniert ein Schneeballsystem (Ponzi-Schema)?",
+  "a": [
+   "Alte Anleger werden mit Geld neuer bezahlt",
+   "Gewinne stammen aus erfolgreichen Anlagen",
+   "Der Staat garantiert allen Anlegern Zinsen",
+   "Anleger tauschen untereinander Wertpapiere"
+  ],
+  "w": [
+   "",
+   "Echte Anlageerfolge fehlen bei einem Schneeballsystem.",
+   "Staatliche Garantien gibt es dafür nicht.",
+   "Tauschen von Wertpapieren ist normal und kein Betrug."
+  ],
+  "e": "Es bricht zusammen, sobald nicht genug neue Anleger kommen, benannt nach Charles Ponzi.",
+  "h": "Das System braucht ständig Nachschub.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "1df7765",
+  "s": "Sparen & Anlegen",
+  "q": "Was bezeichnet man als Bullenmarkt?",
+  "a": [
+   "Eine längere Phase steigender Kurse",
+   "Eine längere Phase fallender Kurse",
+   "Einen Markt ohne Handelsvolumen",
+   "Einen Markt nur für Rohstoffe"
+  ],
+  "w": [
+   "",
+   "Fallende Kurse nennt man Bärenmarkt.",
+   "Ein Markt ohne Handel ist kein Bullenmarkt.",
+   "Die Bezeichnung betrifft die Kursrichtung, nicht das Produkt."
+  ],
+  "e": "Der Bulle stößt mit den Hörnern nach oben, der Bär schlägt mit den Tatzen nach unten.",
+  "h": "Bulle steigt.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "inucd1",
+  "s": "Sparen & Anlegen",
+  "q": "Wofür steht die ISIN eines Wertpapiers?",
+  "a": [
+   "Eine weltweit eindeutige Wertpapierkennung",
+   "Die Steuernummer des Herausgebers",
+   "Die Mindestanlagesumme des Papiers",
+   "Die jährliche Dividendenhöhe des Papiers"
+  ],
+  "w": [
+   "",
+   "Die Steuernummer heißt anders und gehört nicht zur ISIN.",
+   "Die Mindestanlage steht in den Fondsunterlagen.",
+   "Die Dividende steht nicht in der ISIN."
+  ],
+  "e": "Deutsche Wertpapiere beginnen mit DE und haben zwölf Stellen.",
+  "h": "International Securities Identification Number.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "1a4mvss",
+  "s": "Sparen & Anlegen",
+  "q": "Wie wirkt die Teilfreistellung bei Aktienfonds für Privatanleger?",
+  "a": [
+   "30 % der Erträge bleiben steuerfrei",
+   "70 % der Erträge bleiben steuerfrei",
+   "Die Erträge sind vollständig steuerfrei",
+   "Sie gilt nur für Anleihenfonds"
+  ],
+  "w": [
+   "",
+   "Nur 30 % und nicht 70 % der Erträge sind steuerfrei.",
+   "Vollständig steuerfrei sind Erträge nicht.",
+   "Anleihenfonds haben keine Teilfreistellung, sie gilt für Aktienfonds und teilweise Misch- und Immobilienfonds."
+  ],
+  "e": "Sie gleicht aus, dass der Fonds auf Unternehmensebene bereits Steuern zahlt.",
+  "h": "Dreißig Prozent.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "1t6ls08",
+  "s": "Sparen & Anlegen",
+  "q": "Was gilt für die Verrechnung von Verlusten aus Aktienverkäufen?",
+  "a": [
+   "Nur mit Gewinnen aus Aktienverkäufen",
+   "Mit allen Kapitalerträgen wie Zinsen und Dividenden",
+   "Sie sind steuerlich überhaupt nicht nutzbar",
+   "Sie werden vom Staat erstattet"
+  ],
+  "w": [
+   "",
+   "Eine Verrechnung mit anderen Kapitalerträgen ist hier eingeschränkt.",
+   "Sie sind nutzbar, aber nur im Aktienverlusttopf.",
+   "Eine Erstattung gibt es nicht, nur eine Verrechnung."
+  ],
+  "e": "Seit Einführung der Abgeltungsteuer 2009 führen Banken einen eigenen Verlusttopf für Aktien. Verluste aus Fonds und anderen Kapitalerträgen kommen in einen allgemeinen Topf.",
+  "h": "Eigener Verlusttopf.",
+  "d": 3
+ },
+ {
+  "id": "3lbez6",
+  "s": "Sparen & Anlegen",
+  "q": "Wofür steht die Vorabpauschale bei Fonds?",
+  "a": [
+   "Vorweggenommene Steuer auf Erträge von Fonds",
+   "Einmalige Gebühr beim Kauf von Fondsanteilen",
+   "Prämie für langjährige Fondsanleger",
+   "Auszahlung des Fonds am Jahresende"
+  ],
+  "w": [
+   "",
+   "Gebühren beim Kauf heißen Ausgabeaufschlag.",
+   "Eine Prämie vom Staat gibt es nicht.",
+   "Es ist keine Auszahlung, sondern eine Steuer auf einen fiktiven Ertrag."
+  ],
+  "e": "Sie wird auf einen Basisertrag gerechnet und im Folgejahr von der Bank abgeführt.",
+  "h": "Sie fällt auch bei thesaurierenden Fonds an, ohne Verkauf.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "y2i0ai",
+  "s": "Sparen & Anlegen",
+  "q": "Was gibt die Sparquote an?",
+  "a": [
+   "Den nicht ausgegebenen Teil des Einkommens",
+   "Den Zinssatz für Sparbücher",
+   "Den Anteil der Haushalte mit Sparbuch",
+   "Die Höhe der Einlagensicherung"
+  ],
+  "w": [
+   "",
+   "Der Zinssatz ist von der Sparquote unabhängig.",
+   "Sie misst keine Haushaltsanteile, sondern Einkommensanteile.",
+   "Die Einlagensicherung ist ein anderes Thema."
+  ],
+  "e": "Wer 2.000 € verdient und 200 € spart, hat eine Sparquote von 10 %.",
+  "h": "Gespart durch Einkommen.",
+  "d": 2
+ },
+ {
+  "id": "1brs5q",
+  "s": "Sparen & Anlegen",
+  "q": "Was bedeutet Hebel bei einem Finanzprodukt?",
+  "a": [
+   "Kleiner Einsatz bewegt eine größere Summe",
+   "Das Risiko wird dadurch halbiert",
+   "Der Einsatz ist dadurch garantiert",
+   "Die Gebühr sinkt mit jedem Handel"
+  ],
+  "w": [
+   "",
+   "Der Hebel verstärkt das Risiko, er senkt es nicht.",
+   "Garantiert wird der Einsatz nicht, er kann sogar komplett verloren gehen.",
+   "Gebühren hängen nicht vom Hebel ab."
+  ],
+  "e": "Bei einem Hebel von 10 führt eine Bewegung von 1 % des Basiswerts zu etwa 10 % Veränderung.",
+  "h": "Gewinne und Verluste vervielfachen sich.",
+  "d": 2
+ },
+ {
+  "id": "1f1jgvn",
+  "s": "Sparen & Anlegen",
+  "q": "Welches zusätzliche Risiko tragen Anleger bei einem Zertifikat?",
+  "a": [
+   "Das Ausfallrisiko des Herausgebers",
+   "Das Risiko einer Kürzung der Dividende",
+   "Das Risiko einer Steuererhöhung durch das Finanzamt",
+   "Das Risiko fehlender Einlagensicherung bei Wertpapieren"
+  ],
+  "w": [
+   "",
+   "Dividenden sind bei Zertifikaten nicht das zentrale Risiko, es geht um die Bonität des Emittenten.",
+   "Zinsen setzt das Finanzamt nicht fest, das Risiko liegt beim Herausgeber.",
+   "Fonds sind Sondervermögen, Zertifikate sind dagegen Schuldverschreibungen."
+  ],
+  "e": "Geht der Emittent pleite, kann das Zertifikat wertlos werden, auch wenn der Basiswert gut läuft.",
+  "h": "Emittentenrisiko.",
+  "d": 3
+ },
+ {
+  "id": "15jcudd",
+  "s": "Sparen & Anlegen",
+  "q": "Wie berechnet sich die Marktkapitalisierung einer Aktiengesellschaft?",
+  "a": [
+   "Aktienkurs mal Zahl der Aktien",
+   "Jahresumsatz mal aktueller Aktienkurs",
+   "Gewinn geteilt durch Anzahl der Aktien",
+   "Buchwert geteilt durch das Eigenkapital"
+  ],
+  "w": [
+   "",
+   "Der Umsatz fließt nicht ein.",
+   "Gewinn je Aktie ist eine eigene Kennzahl.",
+   "Der Buchwert ist keine Marktgröße."
+  ],
+  "e": "Sie zeigt, was der Markt das Unternehmen aktuell kostet, und ändert sich mit dem Kurs.",
+  "h": "Kurs mal Menge.",
+  "d": 2
+ },
+ {
+  "id": "cynsnw",
+  "s": "Sparen & Anlegen",
+  "q": "Was sind Blue Chips?",
+  "a": [
+   "Aktien großer, etablierter Firmen",
+   "Aktien kleiner Start-ups",
+   "Staatsanleihen mit Höchstbonität",
+   "Wertpapiere ohne Handel"
+  ],
+  "w": [
+   "",
+   "Start-up-Aktien sind eher risikoreicher.",
+   "Staatsanleihen sind keine Aktien.",
+   "Blue Chips werden regelmäßig gehandelt."
+  ],
+  "e": "Der Begriff stammt vom Pokern, wo blaue Chips den höchsten Wert hatten.",
+  "h": "Große Namen.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "wi0vyz",
+  "s": "Sparen & Anlegen",
+  "q": "Wofür steht ein Rating von AAA bei Ratingagenturen?",
+  "a": [
+   "Beste Bonität",
+   "Schlechteste Bonität",
+   "Zahlungsausfall eingetreten",
+   "Spekulative Anlage"
+  ],
+  "w": [
+   "",
+   "Die schlechteste Bonität wäre eine niedrige Note.",
+   "Ein Zahlungsausfall würde mit D bewertet.",
+   "Spekulative Anleihen liegen unterhalb der Investment-Grade-Grenze."
+  ],
+  "e": "AAA gilt als beste Note der Skala, etwa bei S&P.",
+  "h": "Dreimal A.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1wu0zeu",
+  "s": "Sparen & Anlegen",
+  "q": "Wer gibt Bundesanleihen aus?",
+  "a": [
+   "Die Bundesrepublik Deutschland",
+   "Die Europäische Zentralbank",
+   "Die Deutsche Bank AG",
+   "Die Bundesländer gemeinsam"
+  ],
+  "w": [
+   "",
+   "Die EZB gibt keine Anleihen für Anleger aus.",
+   "Die Deutsche Bank ist ein privates Institut.",
+   "Länder geben eigene Länderanleihen aus."
+  ],
+  "e": "Bundesanleihen gelten als sehr sicher, da der Bund als Schuldner gilt.",
+  "h": "Der Bund.",
+  "d": 1
+ },
+ {
+  "id": "1ai68u8",
+  "s": "Wirtschaft verstehen",
+  "q": "Was sind Opportunitätskosten?",
+  "a": [
+   "Der Wert der besten Alternative, auf die man verzichtet",
+   "Kosten, die bei jeder Entscheidung zusätzlich anfallen",
+   "Versteckte Gebühren in einem Vertrag",
+   "Kosten, die man später zurückerstattet bekommt"
+  ],
+  "w": [
+   "",
+   "Opportunitätskosten sind kein zusätzlicher Geldbetrag, sondern entgangener Nutzen.",
+   "Versteckte Gebühren sind echte Zahlungen, Opportunitätskosten dagegen entgangene Chancen.",
+   "Zurückerstattet wird nichts, der Verzicht ist endgültig."
+  ],
+  "e": "Wer einen Abend mit einer Serie verbringt, zahlt dafür mit dem, was er sonst hätte tun können.",
+  "h": "Der entgangene Nutzen.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "1tv3e10",
+  "s": "Wirtschaft verstehen",
+  "q": "Welches Ziel verfolgt die Europäische Zentralbank vorrangig?",
+  "a": [
+   "Preisstabilität (2 % Inflation)",
+   "Vollbeschäftigung im gesamten Euroraum",
+   "Begrenzung der Staatsverschuldung der Mitglieder",
+   "Stabile Aktien- und Immobilienkurse"
+  ],
+  "w": [
+   "",
+   "Die EZB stützt Beschäftigung nur, soweit die Preisstabilität nicht gefährdet ist.",
+   "Staatsschulden zu begrenzen ist Aufgabe der Regierungen, die EZB darf Staaten nicht direkt finanzieren.",
+   "Kursziele für Aktien oder Immobilien hat die EZB nicht."
+  ],
+  "e": "Preisstabilität ist im EU-Vertrag als vorrangiges Ziel festgelegt, der Zielwert liegt bei 2 %.",
+  "h": "Zwei Prozent.",
+  "d": 1
+ },
+ {
+  "id": "1qwi4b9",
+  "s": "Wirtschaft verstehen",
+  "q": "Was misst das Bruttoinlandsprodukt (BIP)?",
+  "a": [
+   "Wert aller Waren und Dienstleistungen eines Jahres",
+   "Gesamtvermögen aller Einwohner eines Landes",
+   "Gesamteinnahmen des Staates in einem Jahr",
+   "Durchschnittlicher Wohlstand je Einwohner"
+  ],
+  "w": [
+   "",
+   "Vermögen ist ein Bestand, das BIP ein Jahresstrom.",
+   "Staatseinnahmen sind nur ein kleiner Teil und nicht das BIP.",
+   "Pro-Kopf-Werte entstehen erst durch Teilen des BIP durch die Einwohnerzahl."
+  ],
+  "e": "Es sagt nichts über Verteilung, Umwelt oder unbezahlte Arbeit.",
+  "h": "Leistung innerhalb der Grenzen.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1bm5grx",
+  "s": "Wirtschaft verstehen",
+  "q": "Welche Faustregel nennt man technische Rezession?",
+  "a": [
+   "Zwei Quartale in Folge sinkendes BIP",
+   "Ein Quartal mit über 10 % Arbeitslosigkeit",
+   "Ein Jahr mit Inflation über 5 %",
+   "Ein Börsencrash von über 20 %"
+  ],
+  "w": [
+   "",
+   "Die Arbeitslosenquote ist keine Voraussetzung der Definition.",
+   "Inflation ist für die Definition unerheblich.",
+   "Ein Börsencrash kann Anzeichen sein, ist aber nicht die Definition."
+  ],
+  "e": "Wirtschaftsforscher betrachten zusätzlich Beschäftigung, Produktion und Einkommen.",
+  "h": "Gemessen wird die Wirtschaftsleistung über ein halbes Jahr.",
+  "d": 2
+ },
+ {
+  "id": "1ve694w",
+  "s": "Wirtschaft verstehen",
+  "q": "Was ist ein Oligopol?",
+  "a": [
+   "Ein Markt mit wenigen großen Anbietern",
+   "Ein Markt mit nur einem Anbieter",
+   "Ein Markt mit nur einem Käufer",
+   "Ein Markt ohne Preisbildung"
+  ],
+  "w": [
+   "",
+   "Ein einziger Anbieter wäre ein Monopol.",
+   "Ein einziger Käufer wäre ein Monopson.",
+   "Auch bei wenigen Anbietern bilden sich Preise."
+  ],
+  "e": "Typisch sind Mobilfunk oder Mineralölmarkt, wo Anbieter ihre Preise aufeinander abstimmen können.",
+  "h": "Wenige.",
+  "d": 2
+ },
+ {
+  "id": "v7ja6q",
+  "s": "Wirtschaft verstehen",
+  "q": "Was passiert mit den Preisen für Importe aus dem Dollarraum, wenn der Euro gegenüber dem Dollar stark an Wert gewinnt?",
+  "a": [
+   "Sie werden für Euro-Käufer günstiger",
+   "Sie werden für Euro-Käufer teurer",
+   "Sie bleiben unverändert",
+   "Sie steigen nur für Exporte"
+  ],
+  "w": [
+   "",
+   "Das Gegenteil trifft zu, mit starkem Euro bekommt man mehr Dollar.",
+   "Ein Wechselkurs wirkt auf die Preise in Euro.",
+   "Betroffen sind auch Importe, nicht nur Exporte."
+  ],
+  "e": "Exporte in den Dollarraum werden dagegen teurer.",
+  "h": "Starker Euro, billiger Import.",
+  "d": 2
+ },
+ {
+  "id": "1vtj1a2",
+  "s": "Wirtschaft verstehen",
+  "q": "Was passiert unter sonst gleichen Bedingungen mit dem Preis, wenn die Nachfrage bei gleichem Angebot steigt?",
+  "a": [
+   "Er steigt",
+   "Er sinkt",
+   "Er bleibt gleich",
+   "Das Angebot sinkt automatisch"
+  ],
+  "w": [
+   "",
+   "Fallende Preise gäbe es bei sinkender Nachfrage.",
+   "Gleicher Preis wäre nur bei unveränderter Nachfrage zu erwarten.",
+   "Das Angebot reagiert auf den Preis, nicht automatisch auf die Nachfrage."
+  ],
+  "e": "Bei Knappheit können Anbieter höhere Preise durchsetzen.",
+  "h": "Mehr Käufer, höherer Preis.",
+  "d": 1
+ },
+ {
+  "id": "1ygwxeq",
+  "s": "Wirtschaft verstehen",
+  "q": "Was passiert bei Inflation mit der Kaufkraft des Geldes?",
+  "a": [
+   "Sie sinkt",
+   "Sie steigt",
+   "Sie bleibt gleich",
+   "Sie hängt nur vom Einkommen ab"
+  ],
+  "w": [
+   "",
+   "Bei steigenden Preisen bekommt man weniger, nicht mehr.",
+   "Gleich bliebe sie nur ohne Preisänderungen.",
+   "Auch bei hohem Einkommen sinkt der Wert jedes Euros."
+  ],
+  "e": "Für denselben Betrag bekommt man weniger Waren und Dienstleistungen.",
+  "h": "Geld wird weniger wert.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "i17oss",
+  "s": "Wirtschaft verstehen",
+  "q": "Was ist der Leitzins?",
+  "a": [
+   "Zins für Banken bei der Zentralbank",
+   "Der Zins auf klassische Sparbücher",
+   "Der Zins auf zehnjährige Staatsanleihen",
+   "Der durchschnittliche Zins auf Baukredite"
+  ],
+  "w": [
+   "",
+   "Sparbuchzinsen setzen die Banken selbst.",
+   "Staatsanleihezinsen bilden sich am Markt.",
+   "Baukredite haben eigene Konditionen, sie hängen aber vom Leitzins mit ab."
+  ],
+  "e": "Er steuert indirekt Kredit- und Sparzinsen.",
+  "h": "Die EZB legt ihn fest.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "16fskrb",
+  "s": "Wirtschaft verstehen",
+  "q": "Was misst der DAX?",
+  "a": [
+   "Kurse von 40 großen deutschen Firmen",
+   "Kursentwicklung aller deutschen Aktien",
+   "Die Inflationsrate in Deutschland",
+   "Die Arbeitslosenquote in Deutschland"
+  ],
+  "w": [
+   "",
+   "Er umfasst nicht alle deutschen Aktien, sondern 40 ausgewählte.",
+   "Inflation misst der Verbraucherpreisindex.",
+   "Die Arbeitslosenquote erhebt die Bundesagentur für Arbeit."
+  ],
+  "e": "Seit September 2021 enthält der DAX 40 Unternehmen, vorher waren es 30.",
+  "h": "Vierzig Werte.",
+  "d": 1
+ },
+ {
+  "id": "cztjjp",
+  "s": "Wirtschaft verstehen",
+  "q": "Was ist Deflation?",
+  "a": [
+   "Ein anhaltend sinkendes Preisniveau",
+   "Ein starker Anstieg des allgemeinen Preisniveaus",
+   "Ein plötzlicher Absturz der Aktienkurse",
+   "Die Abwertung einer Währung gegenüber anderen"
+  ],
+  "w": [
+   "",
+   "Ein Preisanstieg ist Inflation.",
+   "Ein Kurssturz an der Börse ist ein Crash.",
+   "Abwertung einer Währung ist etwas anderes."
+  ],
+  "e": "Sie kann gefährlich sein, weil Käufe aufgeschoben werden und die Wirtschaft schrumpft.",
+  "h": "Sinkende Preise.",
+  "d": 1
+ },
+ {
+  "id": "amz04q",
+  "s": "Wirtschaft verstehen",
+  "q": "Was bedeutet ein Handelsbilanzüberschuss?",
+  "a": [
+   "Ein Land exportiert mehr, als es importiert",
+   "Ein Land importiert mehr, als es exportiert",
+   "Der Staat hat mehr Einnahmen als Ausgaben",
+   "Die Währung ist besonders stark"
+  ],
+  "w": [
+   "",
+   "Mehr Importe als Exporte ergäben ein Defizit.",
+   "Staatseinnahmen und Ausgaben betreffen den Haushalt.",
+   "Eine starke Währung ist keine Voraussetzung."
+  ],
+  "e": "Deutschland hatte über viele Jahre hohe Handelsbilanzüberschüsse.",
+  "h": "Mehr raus als rein.",
+  "d": 1
+ },
+ {
+  "id": "1s5ukwa",
+  "s": "Wirtschaft verstehen",
+  "q": "Was ist ein Kartell im wirtschaftlichen Sinn?",
+  "a": [
+   "Eine Preis- oder Mengenabsprache",
+   "Eine staatliche Preisregulierung für bestimmte Waren",
+   "Ein Zusammenschluss von Verbrauchern",
+   "Ein Unternehmen mit mehreren Standorten"
+  ],
+  "w": [
+   "",
+   "Staatliche Preisregulierung ist keine Absprache unter Firmen.",
+   "Verbraucherzusammenschlüsse sind kein Kartell.",
+   "Mehrere Standorte betreffen die Unternehmensgröße, nicht Absprachen."
+  ],
+  "e": "Kartelle sind in der EU grundsätzlich verboten, in Deutschland verfolgt sie das Bundeskartellamt.",
+  "h": "Absprachen.",
+  "d": 1
+ },
+ {
+  "id": "158wjbo",
+  "s": "Wirtschaft verstehen",
+  "q": "Wer prägte das Bild der „unsichtbaren Hand“ des Marktes?",
+  "a": [
+   "Adam Smith",
+   "John Maynard Keynes",
+   "Karl Marx",
+   "Milton Friedman"
+  ],
+  "w": [
+   "",
+   "Keynes setzte auf staatliche Steuerung der Nachfrage.",
+   "Marx kritisierte den Kapitalismus.",
+   "Friedman gilt als Vertreter des Monetarismus, nicht als Urheber des Bildes."
+  ],
+  "e": "Smith beschrieb es im „Wohlstand der Nationen“ von 1776.",
+  "h": "Schottischer Aufklärer.",
+  "d": 2
+ },
+ {
+  "id": "5894yw",
+  "s": "Wirtschaft verstehen",
+  "q": "Was empfahl John Maynard Keynes für Wirtschaftskrisen?",
+  "a": [
+   "Der Staat soll die Nachfrage durch Ausgaben stützen",
+   "Der Staat soll sich vollständig aus der Wirtschaft heraushalten",
+   "Die Zentralbank soll Zinsen dauerhaft verbieten",
+   "Der Staat soll alle Betriebe verstaatlichen"
+  ],
+  "w": [
+   "",
+   "Ein vollständiger Rückzug entspricht dem Marktliberalismus.",
+   "Zinsverbote waren nicht Teil seiner Lehre.",
+   "Verstaatlichung fordert der Sozialismus, nicht Keynes."
+  ],
+  "e": "Er begründete mit seinem Hauptwerk von 1936 die nachfrageorientierte Wirtschaftspolitik.",
+  "h": "Antizyklisch.",
+  "d": 3
+ },
+ {
+  "id": "1xk052k",
+  "s": "Wirtschaft verstehen",
+  "q": "Was bezeichnet Stagflation?",
+  "a": [
+   "Stagnierende Wirtschaft bei hoher Inflation",
+   "Wirtschaftswachstum bei sinkenden Preisen",
+   "Starkes Wachstum bei geringer Inflation",
+   "Hohe Arbeitslosigkeit bei fallenden Zinsen"
+  ],
+  "w": [
+   "",
+   "Sinkende Preise bei Wachstum wären ein anderes Phänomen.",
+   "Starkes Wachstum bei niedriger Inflation gilt als ideale Lage.",
+   "Das Wort enthält Inflation, nicht fallende Zinsen."
+  ],
+  "e": "Typisch waren die Ölkrisen der 1970er Jahre.",
+  "h": "Stillstand plus Teuerung.",
+  "d": 3
+ },
+ {
+  "id": "1hb0u19",
+  "s": "Wirtschaft verstehen",
+  "q": "Welche neue Währung wurde im November 1923 zur Beendigung der deutschen Hyperinflation eingeführt?",
+  "a": [
+   "Rentenmark",
+   "Reichsmark",
+   "D-Mark",
+   "Goldmark"
+  ],
+  "w": [
+   "",
+   "Die Reichsmark folgte erst 1924.",
+   "Die D-Mark kam 1948.",
+   "Eine Goldmark als Umlaufwährung gab es nicht."
+  ],
+  "e": "Die Rentenmark war durch Grundbesitz und Industrie gedeckt und stabilisierte das Geld.",
+  "h": "Eine Billion Mark.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "1vk1wni",
+  "s": "Wirtschaft verstehen",
+  "q": "Seit wann gibt es den Euro als Bargeld?",
+  "a": [
+   "1. Januar 2002",
+   "1. Januar 1999",
+   "1. Januar 1995",
+   "1. Januar 2004"
+  ],
+  "w": [
+   "",
+   "1999 wurde der Euro als Buchgeld eingeführt.",
+   "1995 war die Währung noch nicht eingeführt.",
+   "2004 kamen nur neue EU-Staaten hinzu."
+  ],
+  "e": "Zuerst gab es den Euro 1999 für Konten und Überweisungen, Münzen und Scheine folgten 2002.",
+  "h": "Zwei Tausend zwei.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1ai6xc7",
+  "s": "Wirtschaft verstehen",
+  "q": "Wie viele Länder gehören seit dem 1. Januar 2026 zum Euroraum?",
+  "a": [
+   "21",
+   "20",
+   "19",
+   "27"
+  ],
+  "w": [
+   "",
+   "Bis Ende 2025 waren es 20, dann trat Bulgarien bei.",
+   "19 waren es vor dem Beitritt Kroatiens 2023.",
+   "27 ist die Zahl der EU-Mitglieder, nicht des Euroraums."
+  ],
+  "e": "Bulgarien ist seit 2026 dabei, Kroatien war seit 2023 das vorherige Mitglied.",
+  "h": "Eins mehr als 2025.",
+  "d": 2,
+  "src": "EZB, 01.01.2026: ecb.europa.eu/press/pr/date/2026/html/ecb.pr260101~c830245e42.de.html"
+ },
+ {
+  "id": "nxds2q",
+  "s": "Wirtschaft verstehen",
+  "q": "Welche Obergrenze für das jährliche Haushaltsdefizit nennen die Maastricht-Kriterien?",
+  "a": [
+   "3 % des BIP",
+   "5 % des BIP",
+   "0,35 % des BIP",
+   "60 % des BIP"
+  ],
+  "w": [
+   "",
+   "Der Referenzwert liegt bei 3 %.",
+   "5 % liegen über dem Referenzwert.",
+   "0,35 % ist der Wert der deutschen Schuldenbremse für den Bund."
+  ],
+  "e": "60 % des BIP ist die Grenze für den Gesamtschuldenstand.",
+  "h": "Drei Prozent.",
+  "d": 3
+ },
+ {
+  "id": "19wd528",
+  "s": "Wirtschaft verstehen",
+  "q": "In welchem Gesetz ist die Schuldenbremse in Deutschland verankert?",
+  "a": [
+   "Grundgesetz",
+   "Bürgerliches Gesetzbuch",
+   "Stabilitätsgesetz",
+   "Haushaltsgrundsätzegesetz"
+  ],
+  "w": [
+   "",
+   "Das BGB regelt Privatrecht und nicht die Staatsverschuldung.",
+   "Das Stabilitätsgesetz von 1967 regelt Konjunkturpolitik.",
+   "Das Haushaltsgrundsätzegesetz regelt Haushaltsrecht, aber nicht die Schuldenbremse selbst."
+  ],
+  "e": "Sie steht seit 2009 in den Artikeln 109 und 115.",
+  "h": "Höchstes Gesetz.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "72qbz1",
+  "s": "Wirtschaft verstehen",
+  "q": "Welche Behörde berechnet in Deutschland den Verbraucherpreisindex?",
+  "a": [
+   "Statistisches Bundesamt",
+   "Bundesbank",
+   "Bundeskartellamt",
+   "Bundesagentur für Arbeit"
+  ],
+  "w": [
+   "",
+   "Die Bundesbank betreibt Geldpolitik und Bankenaufsicht.",
+   "Das Kartellamt überwacht den Wettbewerb.",
+   "Die Bundesagentur für Arbeit erhebt Arbeitsmarktdaten."
+  ],
+  "e": "Das Statistische Bundesamt (Destatis) in Wiesbaden erfasst die Preise für einen festgelegten Warenkorb.",
+  "h": "Wiesbaden.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1nr69zw",
+  "s": "Wirtschaft verstehen",
+  "q": "Wofür dient der Warenkorb bei der Inflationsmessung?",
+  "a": [
+   "Typische Ausgaben der Haushalte",
+   "Waren, die der Staat jährlich selbst einkauft",
+   "Ausschließlich Luxusgüter der Haushalte",
+   "Ausschließlich Lebensmittel der Haushalte"
+  ],
+  "w": [
+   "",
+   "Der Staat ist nicht der Maßstab.",
+   "Luxusgüter machen nur einen kleinen Teil aus.",
+   "Neben Lebensmitteln zählen auch Miete, Energie und Dienstleistungen."
+  ],
+  "e": "Die Gewichtung folgt den tatsächlichen Konsumausgaben der Haushalte.",
+  "h": "Destatis beobachtet damit Preise.",
+  "d": 1
+ },
+ {
+  "id": "73j0vl",
+  "s": "Wirtschaft verstehen",
+  "q": "Was folgt im klassischen Konjunkturzyklus auf die Hochkonjunktur?",
+  "a": [
+   "Der Abschwung",
+   "Der Aufschwung",
+   "Die Erholung",
+   "Die Währungsreform"
+  ],
+  "w": [
+   "",
+   "Der Aufschwung kommt vor der Hochkonjunktur.",
+   "Erholung folgt auf die Talsohle.",
+   "Eine Währungsreform gehört nicht zum Zyklus."
+  ],
+  "e": "Danach folgen Rezession bzw. Talsohle und dann wieder der Aufschwung.",
+  "h": "Nach oben kommt unten.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1cvhs7p",
+  "s": "Wirtschaft verstehen",
+  "q": "Was unterscheidet das reale vom nominalen BIP?",
+  "a": [
+   "Das reale BIP ist um Preisänderungen bereinigt",
+   "Das reale BIP enthält zusätzlich Schwarzarbeit",
+   "Das reale BIP gilt nur für den Export",
+   "Das reale BIP wird pro Kopf berechnet"
+  ],
+  "w": [
+   "",
+   "Schwarzarbeit wird nicht gesondert eingerechnet.",
+   "Es umfasst auch die Inlandsnachfrage.",
+   "Pro-Kopf-Rechnungen sind ein eigenes Maß."
+  ],
+  "e": "Nur das reale BIP zeigt, ob tatsächlich mehr produziert wurde und nicht bloß die Preise stiegen.",
+  "h": "Ohne Preiseffekt.",
+  "d": 2
+ },
+ {
+  "id": "1pgiwh5",
+  "s": "Wirtschaft verstehen",
+  "q": "Was beschreibt eine Lohn-Preis-Spirale?",
+  "a": [
+   "Löhne und Preise treiben sich gegenseitig hoch",
+   "Sinkende Löhne führen zu sinkenden Steuern",
+   "Steigende Preise senken immer die Löhne",
+   "Löhne und Preise sind voneinander unabhängig"
+  ],
+  "w": [
+   "",
+   "Sinkende Steuern gehören nicht zur Definition.",
+   "Bei der Spirale steigen auch die Löhne.",
+   "Die Abhängigkeit ist ja gerade ein Teil der Definition."
+  ],
+  "e": "Löhne erhöhen die Kosten der Firmen, diese erhöhen die Preise, worauf wieder höhere Löhne gefordert werden.",
+  "h": "Ein sich selbst verstärkender Kreislauf.",
+  "d": 3
+ },
+ {
+  "id": "16ys33x",
+  "s": "Wirtschaft verstehen",
+  "q": "Was bezeichnet Protektionismus in der Handelspolitik?",
+  "a": [
+   "Schutz der eigenen Wirtschaft, etwa durch Zölle",
+   "Völlig freien Handel ohne Abgaben",
+   "Die Gründung einer Währungsunion",
+   "Die Förderung des Welthandels durch Subventionen"
+  ],
+  "w": [
+   "",
+   "Freier Handel ist das Gegenteil des Protektionismus.",
+   "Eine Währungsunion ist etwas anderes.",
+   "Subventionen können Protektionismus sein, sie sind aber nicht der Kern des Begriffs."
+  ],
+  "e": "Typische Mittel sind Zölle, Importquoten und Subventionen.",
+  "h": "Das Gegenteil von Freihandel.",
+  "d": 2
+ },
+ {
+  "id": "zi83xk",
+  "s": "Wirtschaft verstehen",
+  "q": "Welche Idee verbindet man mit David Ricardo?",
+  "a": [
+   "Komparative Kostenvorteile",
+   "Staatliche Preisfestsetzung als Pflicht",
+   "Das Gesetz der abnehmenden Bevölkerung",
+   "Die Lehre von der unsichtbaren Hand"
+  ],
+  "w": [
+   "",
+   "Staatliche Preisfestsetzung gehört nicht zu seinen Theorien.",
+   "Der Bevölkerungsgedanke geht auf Malthus zurück.",
+   "Die unsichtbare Hand stammt von Adam Smith."
+  ],
+  "e": "Jedes Land profitiert, wenn es sich auf das spezialisiert, was es relativ am besten kann.",
+  "h": "Wein gegen Tuch.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "1ktawi3",
+  "s": "Wirtschaft verstehen",
+  "q": "Was ist die Aufgabe der Welthandelsorganisation (WTO)?",
+  "a": [
+   "Handelsregeln durchsetzen, Streit schlichten",
+   "Kredite an Entwicklungsländer vergeben",
+   "Währungskurse verbindlich festlegen",
+   "Weltweite Mindestlöhne bestimmen"
+  ],
+  "w": [
+   "",
+   "Kredite vergeben der IWF und die Weltbank.",
+   "Wechselkurse bilden sich am Markt.",
+   "Mindestlöhne legt jedes Land selbst fest."
+  ],
+  "e": "Sie hat ihren Sitz in Genf und entstand 1995 aus dem GATT.",
+  "h": "Die Organisation sitzt in Genf und entstand aus dem GATT.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "15jj7da",
+  "s": "Wirtschaft verstehen",
+  "q": "Wie viele Bitcoin können maximal geschaffen werden?",
+  "a": [
+   "21 Millionen",
+   "100 Millionen",
+   "1 Milliarde",
+   "Unbegrenzt viele"
+  ],
+  "w": [
+   "",
+   "Es gibt eine feste Obergrenze, die niedriger liegt.",
+   "Eine Milliarde wäre zehnmal so hoch wie die Obergrenze.",
+   "Die Menge ist gerade nicht unbegrenzt."
+  ],
+  "e": "Die Obergrenze ist im Protokoll festgelegt, die Währung wurde 2009 gestartet.",
+  "h": "Eine Zahl mit zwei Ziffern.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "19eljqe",
+  "s": "Wirtschaft verstehen",
+  "q": "Wie entsteht der größte Teil des Geldes im Wirtschaftskreislauf?",
+  "a": [
+   "Durch Kreditvergabe der Geschäftsbanken",
+   "Durch Druck von Banknoten im Staatshaushalt",
+   "Durch Goldförderung",
+   "Durch Zahlungen der Steuerzahler"
+  ],
+  "w": [
+   "",
+   "Banknoten machen nur einen kleinen Teil der Geldmenge aus.",
+   "Eine Golddeckung gibt es seit Jahrzehnten nicht mehr.",
+   "Steuern verschieben Geld, schaffen aber keines."
+  ],
+  "e": "Bei einer Kreditvergabe schreibt die Bank das Geld dem Konto gut, es entsteht als Buchgeld.",
+  "h": "Buchgeld.",
+  "d": 3
+ },
+ {
+  "id": "1x1ht0w",
+  "s": "Wirtschaft verstehen",
+  "q": "Was versteht man unter quantitativer Lockerung (Quantitative Easing)?",
+  "a": [
+   "Die Zentralbank kauft massenhaft Wertpapiere",
+   "Die Zentralbank erhöht die Leitzinsen stark",
+   "Der Staat senkt die Einkommensteuern",
+   "Banken müssen mehr Eigenkapital halten"
+  ],
+  "w": [
+   "",
+   "Höhere Leitzinsen wären eine Straffung.",
+   "Steuersenkungen betreffen die Fiskalpolitik.",
+   "Kapitalvorschriften zählen zur Bankenaufsicht."
+  ],
+  "e": "Dadurch sollen Zinsen sinken und mehr Geld in die Wirtschaft fließen.",
+  "h": "Anleihenkäufe.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "1ehjps1",
+  "s": "Wirtschaft verstehen",
+  "q": "Welche Bankenpleite im September 2008 verschärfte die globale Finanzkrise?",
+  "a": [
+   "Lehman Brothers",
+   "Goldman Sachs",
+   "Deutsche Bank",
+   "Morgan Stanley"
+  ],
+  "w": [
+   "",
+   "Goldman Sachs überstand die Krise.",
+   "Die Deutsche Bank überstand die Krise ohne Insolvenz.",
+   "Morgan Stanley blieb bestehen."
+  ],
+  "e": "Lehman meldete am 15. September 2008 Insolvenz an.",
+  "h": "Fünfzehnter September.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1904o47",
+  "s": "Wirtschaft verstehen",
+  "q": "Wofür haftet der Gesellschafter einer GmbH grundsätzlich?",
+  "a": [
+   "Nur mit seiner Einlage",
+   "Mit seinem gesamten Privatvermögen",
+   "Gar nicht, auch nicht mit der Einlage",
+   "Nur mit seinem laufenden Einkommen"
+  ],
+  "w": [
+   "",
+   "Die persönliche Haftung ist grundsätzlich ausgeschlossen.",
+   "Das Privatvermögen haftet bei einer OHG, nicht bei der GmbH.",
+   "Die Einlage ist das, was verloren gehen kann."
+  ],
+  "e": "Das ist die Haftungsbeschränkung, die in der Rechtsform steckt (Gesellschaft mit beschränkter Haftung).",
+  "h": "Beschränkt.",
+  "d": 2
+ },
+ {
+  "id": "1xjqsaq",
+  "s": "Wirtschaft verstehen",
+  "q": "Was steht auf der Aktivseite der Bilanz?",
+  "a": [
+   "Das Vermögen",
+   "Die Schulden",
+   "Das Eigenkapital",
+   "Die Steuern"
+  ],
+  "w": [
+   "",
+   "Schulden stehen auf der Passivseite.",
+   "Eigenkapital steht auf der Passivseite.",
+   "Steuern gehören zur Gewinn- und Verlustrechnung."
+  ],
+  "e": "Die Aktivseite zeigt, wofür das Geld verwendet wurde, die Passivseite, woher es kommt.",
+  "h": "Was man besitzt.",
+  "d": 2
+ },
+ {
+  "id": "snvxy0",
+  "s": "Wirtschaft verstehen",
+  "q": "Was sind Fixkosten?",
+  "a": [
+   "Kosten unabhängig von der Produktionsmenge",
+   "Kosten, die nur bei Produktion anfallen",
+   "Kosten, die gleichbleibend pro Stück sind",
+   "Kosten, die der Staat zahlt"
+  ],
+  "w": [
+   "",
+   "Mengenabhängige Kosten heißen variable Kosten.",
+   "Kosten pro Stück sind meist variable Kosten oder Stückkosten.",
+   "Wer sie zahlt, hängt nicht von der Fixkostendefinition ab."
+  ],
+  "e": "Beispiele sind Miete und Gehälter.",
+  "h": "Egal wie viel.",
+  "d": 2
+ },
+ {
+  "id": "1rzs2kx",
+  "s": "Wirtschaft verstehen",
+  "q": "Was bezeichnet die Gewinnschwelle (Break-even-Punkt)?",
+  "a": [
+   "Ab hier decken Erlöse die Gesamtkosten",
+   "Die Menge, bei der der Umsatz am höchsten ist",
+   "Die Menge, bei der die Fixkosten null sind",
+   "Der Preis, bei dem die Nachfrage ganz endet"
+  ],
+  "w": [
+   "",
+   "Der maximale Umsatz sagt nichts über die Kosten.",
+   "Fixkosten werden bei steigender Menge nicht null.",
+   "Bei dem Preis, bei dem die Nachfrage endet, wird nichts mehr verkauft."
+  ],
+  "e": "Darunter entsteht Verlust, darüber Gewinn.",
+  "h": "Null Gewinn, null Verlust.",
+  "d": 3
+ },
+ {
+  "id": "4xpcm9",
+  "s": "Wirtschaft verstehen",
+  "q": "Was beschreiben Skaleneffekte?",
+  "a": [
+   "Mit steigender Menge sinken die Kosten je Stück",
+   "Mit steigender Menge steigen die Kosten je Stück",
+   "Sinkende Preise bei sinkender Nachfrage",
+   "Ein höheres Gehalt bei höherer Verantwortung"
+  ],
+  "w": [
+   "",
+   "Das Gegenteil nennt man Diseconomies of Scale.",
+   "Das Gesetz von Angebot und Nachfrage ist hier nicht gemeint.",
+   "Löhne und Verantwortung sind kein Teil der Definition."
+  ],
+  "e": "Große Hersteller verteilen Fixkosten auf viele Einheiten, das schafft Wettbewerbsvorteile.",
+  "h": "Masse macht billiger.",
+  "d": 3
+ },
+ {
+  "id": "1qb659o",
+  "s": "Wirtschaft verstehen",
+  "q": "Was misst der Gini-Koeffizient?",
+  "a": [
+   "Die Ungleichheit von Einkommen oder Vermögen",
+   "Die Höhe der Inflation in einem Land",
+   "Die Geschwindigkeit des Wirtschaftswachstums",
+   "Die Arbeitslosigkeit"
+  ],
+  "w": [
+   "",
+   "Inflation misst der Preisindex.",
+   "Wachstum misst die Veränderung des BIP.",
+   "Die Arbeitslosenquote misst die Beschäftigung."
+  ],
+  "e": "Der Wert 0 bedeutet völlige Gleichverteilung, 1 maximale Ungleichheit.",
+  "h": "Zwischen null und eins.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "zje1o2",
+  "s": "Wirtschaft verstehen",
+  "q": "Was sind externe Effekte?",
+  "a": [
+   "Nicht eingepreiste Folgen für Dritte",
+   "Kosten, die nur im Ausland entstehen",
+   "Preise, die vom Ausland bestimmt werden",
+   "Steuern auf Exporte und Importe"
+  ],
+  "w": [
+   "",
+   "Auslandsbezug ist nicht nötig, es geht um Unbeteiligte.",
+   "Importpreise sind kein Merkmal.",
+   "Exportsteuern haben nichts damit zu tun."
+  ],
+  "e": "Beispiel: Fabrikabgase belasten Anwohner, ohne dass der Preis das abbildet.",
+  "h": "Nicht im Preis.",
+  "d": 3
+ },
+ {
+  "id": "eq04wy",
+  "s": "Wirtschaft verstehen",
+  "q": "Was kennzeichnet ein öffentliches Gut?",
+  "a": [
+   "Niemand kann von der Nutzung ausgeschlossen werden",
+   "Es wird immer vom Staat selbst hergestellt",
+   "Es gehört allen gleichermaßen im Besitz",
+   "Es ist ohne Kosten herzustellen"
+  ],
+  "w": [
+   "",
+   "Auch Private können es anbieten, die Herstellung ist nicht das Merkmal.",
+   "Eigentum ist nicht das Merkmal, sondern die Nutzung.",
+   "Die Herstellung kostet Geld, nur die Nutzung ist nicht ausschließbar."
+  ],
+  "e": "Typisch sind Landesverteidigung oder Straßenbeleuchtung, das erzeugt Trittbrettfahrer.",
+  "h": "Alle dürfen mit.",
+  "d": 3
+ },
+ {
+  "id": "1k9xp0m",
+  "s": "Wirtschaft verstehen",
+  "q": "Wie funktioniert der Emissionshandel nach dem Cap-and-Trade-Prinzip?",
+  "a": [
+   "Die Gesamtmenge an Emissionen wird begrenzt, Rechte sind handelbar",
+   "Jedes Unternehmen darf unbegrenzt ausstoßen",
+   "Der Staat verbietet jede Emission",
+   "Emissionsrechte werden verschenkt und dürfen nicht gehandelt werden"
+  ],
+  "w": [
+   "",
+   "Unbegrenzt gilt nur ohne Cap.",
+   "Ein völliges Verbot ist kein Handelssystem.",
+   "Die Handelbarkeit gehört zum Prinzip."
+  ],
+  "e": "Wer weniger ausstößt, kann Rechte verkaufen, so entsteht ein Preis für Emissionen.",
+  "h": "Deckel und Handel.",
+  "d": 3
+ },
+ {
+  "id": "qjrg1y",
+  "s": "Wirtschaft verstehen",
+  "q": "Wie hoch ist der gesetzliche Mindestlohn in Deutschland 2026 pro Stunde?",
+  "a": [
+   "13,90 €",
+   "12,82 €",
+   "13,50 €",
+   "14,60 €"
+  ],
+  "w": [
+   "",
+   "12,82 € galten im Jahr 2025.",
+   "13,50 € ist kein gesetzlicher Wert.",
+   "14,60 € ist erst für 2027 vorgesehen."
+  ],
+  "e": "Seit 2015 gibt es den gesetzlichen Mindestlohn, die Mindestlohnkommission empfiehlt die Anpassung.",
+  "h": "Stand 2026.",
+  "d": 2
+ },
+ {
+  "id": "5xgayh",
+  "s": "Wirtschaft verstehen",
+  "q": "Wer betreibt Fiskalpolitik?",
+  "a": [
+   "Die Regierung über Steuern und Ausgaben",
+   "Die Zentralbank über die Leitzinsen",
+   "Die Geschäftsbanken über ihre Kredite",
+   "Die Gewerkschaften über Tarifverträge"
+  ],
+  "w": [
+   "",
+   "Zinsen setzt die Zentralbank im Rahmen der Geldpolitik.",
+   "Kredite sind Geschäftsbankenhandeln.",
+   "Tarifverträge sind Arbeitsmarktpolitik."
+  ],
+  "e": "Fiskalpolitik steuert die Nachfrage, Geldpolitik die Geldmenge und Zinsen.",
+  "h": "Staatshaushalt.",
+  "d": 2
+ },
+ {
+  "id": "6rblpg",
+  "s": "Wirtschaft verstehen",
+  "q": "Wie heißt die Zentralbank der USA?",
+  "a": [
+   "Federal Reserve (Fed)",
+   "Bank of America",
+   "Wall Street Bank",
+   "National Treasury Bank"
+  ],
+  "w": [
+   "",
+   "Die Bank of America ist eine Geschäftsbank.",
+   "Wall Street Bank ist keine Zentralbank.",
+   "Das Treasury ist das Finanzministerium."
+  ],
+  "e": "Die Fed wurde 1913 gegründet und hat ein doppeltes Mandat aus stabilen Preisen und Beschäftigung.",
+  "h": "Kurz: die Fed.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "12ao0pu",
+  "s": "Wirtschaft verstehen",
+  "q": "Was ist ein Insolvenzgrund bei Unternehmen in Deutschland?",
+  "a": [
+   "Zahlungsunfähigkeit",
+   "Sinkender Aktienkurs",
+   "Ein Verlust im Vorjahr",
+   "Eine Gehaltserhöhung"
+  ],
+  "w": [
+   "",
+   "Ein sinkender Aktienkurs allein macht niemanden insolvent.",
+   "Verluste allein sind kein Insolvenzgrund.",
+   "Eine Gehaltserhöhung ist kein Insolvenzgrund."
+  ],
+  "e": "Weitere Gründe sind drohende Zahlungsunfähigkeit und bei Kapitalgesellschaften Überschuldung.",
+  "h": "Rechnungen nicht zahlen können.",
+  "d": 2
+ },
+ {
+  "id": "19lq3ri",
+  "s": "Wirtschaft verstehen",
+  "q": "Was versteht man unter Subventionen?",
+  "a": [
+   "Staatliche Finanzhilfen für Firmen",
+   "Zölle auf eingeführte Waren",
+   "Beiträge zur Sozialversicherung",
+   "Preise auf dem Schwarzmarkt"
+  ],
+  "w": [
+   "",
+   "Zölle sind Abgaben, keine Hilfen.",
+   "Sozialbeiträge zahlen Beschäftigte und Arbeitgeber.",
+   "Der Schwarzmarkt ist ein illegaler Handel."
+  ],
+  "e": "Sie können Wettbewerb verzerren, etwa bei Agrar- oder Energiesubventionen.",
+  "h": "Staat zahlt dazu.",
+  "d": 2
+ },
+ {
+  "id": "1t41vtk",
+  "s": "Wirtschaft verstehen",
+  "q": "Was misst die Arbeitsproduktivität?",
+  "a": [
+   "Wirtschaftsleistung je Arbeitsstunde",
+   "Die Zahl der Beschäftigten insgesamt",
+   "Die Höhe der gezahlten Löhne",
+   "Die Dauer der Arbeitszeit"
+  ],
+  "w": [
+   "",
+   "Die Beschäftigtenzahl ist keine Produktivität.",
+   "Löhne sind Einkommen, nicht Leistung.",
+   "Die Arbeitszeit ist nur ein Nenner der Rechnung."
+  ],
+  "e": "Steigende Produktivität ermöglicht auf Dauer höhere Löhne ohne höhere Preise.",
+  "h": "Leistung pro Stunde.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "19x9trk",
+  "s": "Wirtschaft verstehen",
+  "q": "Wo hat die Europäische Zentralbank ihren Sitz?",
+  "a": [
+   "Frankfurt am Main",
+   "Brüssel",
+   "Luxemburg",
+   "Paris"
+  ],
+  "w": [
+   "",
+   "Brüssel ist Sitz der EU-Kommission.",
+   "Luxemburg beherbergt den Europäischen Gerichtshof.",
+   "Paris ist nicht Sitz der EU-Institutionen für Geldpolitik."
+  ],
+  "e": "Die EZB wurde 1998 gegründet, die Bundesbank sitzt ebenfalls in Frankfurt.",
+  "h": "Auch die Bundesbank sitzt in dieser Stadt.",
+  "d": 1
+ },
+ {
+  "id": "11vhrjn",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie hoch ist die Abgeltungsteuer auf Kapitalerträge in Deutschland?",
+  "a": [
+   "25 % zuzüglich Solidaritätszuschlag",
+   "15 % zuzüglich Solidaritätszuschlag",
+   "19 % zuzüglich Solidaritätszuschlag",
+   "30 % zuzüglich Solidaritätszuschlag"
+  ],
+  "w": [
+   "",
+   "15 % ist ein zu niedriger Satz, der Satz liegt bei 25 %.",
+   "19 % ist der Regelsatz der Mehrwertsteuer, nicht der Abgeltungsteuer.",
+   "30 % wäre zu hoch, der Satz liegt einheitlich bei 25 %."
+  ],
+  "e": "Dazu kommt gegebenenfalls Kirchensteuer, die Bank führt die Steuer direkt ab.",
+  "h": "Ein Viertel.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "dn4wf5",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was enthält der effektive Jahreszins eines Kredits?",
+  "a": [
+   "Zins plus Nebenkosten als Jahreswert",
+   "Nur den reinen Sollzins pro Jahr",
+   "Nur die einmaligen Bearbeitungsgebühren",
+   "Den Zins abzüglich der erwarteten Inflation"
+  ],
+  "w": [
+   "",
+   "Der Sollzins ist nur ein Teil der Kosten.",
+   "Gebühren allein ergeben keinen Jahreszins.",
+   "Die Inflation wird nicht abgezogen."
+  ],
+  "e": "Er ist der Wert, mit dem man Kreditangebote vergleicht.",
+  "h": "Gesamtkosten.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "1a1z8h",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was bedeutet Grenzsteuersatz?",
+  "a": [
+   "Der Steuersatz auf den zuletzt verdienten Euro",
+   "Der durchschnittliche Steuersatz auf das gesamte Einkommen",
+   "Der höchste Steuersatz des Landes",
+   "Die Steuer auf Auslandseinkünfte"
+  ],
+  "w": [
+   "",
+   "Der Durchschnittssatz ist die Gesamtsteuer geteilt durch das Einkommen.",
+   "Der höchste Satz ist der Spitzensteuersatz, nicht jeder Grenzsteuersatz.",
+   "Auslandseinkünfte haben mit dem Begriff nichts zu tun."
+  ],
+  "e": "Ein höherer Grenzsteuersatz macht nicht das gesamte Einkommen teurer, nur den Teil darüber.",
+  "h": "Es geht um den Zuwachs, nicht den Durchschnitt.",
+  "d": 2
+ },
+ {
+  "id": "nm6vpi",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was ist eine Sondertilgung bei einem Darlehen?",
+  "a": [
+   "Eine zusätzliche Rückzahlung",
+   "Eine Strafgebühr bei verspäteter Zahlung",
+   "Eine Erhöhung des vereinbarten Zinssatzes",
+   "Ein Aufschub der Zahlung um einige Monate"
+  ],
+  "w": [
+   "",
+   "Eine Strafgebühr heißt Verzugszins oder Mahngebühr.",
+   "Der Zins bleibt unverändert, es geht um Rückzahlung.",
+   "Ein Aufschub wäre eine Tilgungsaussetzung."
+  ],
+  "e": "Sie senkt die Restschuld und spart Zinsen, wenn der Vertrag sie erlaubt.",
+  "h": "Extra Tilgung.",
+  "d": 2
+ },
+ {
+  "id": "p8o7an",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Welche Versicherung deckt Schäden ab, die man anderen versehentlich zufügt?",
+  "a": [
+   "Private Haftpflichtversicherung",
+   "Hausratversicherung",
+   "Rechtsschutzversicherung",
+   "Private Unfallversicherung"
+  ],
+  "w": [
+   "",
+   "Die Hausratversicherung zahlt für eigenen Hausrat.",
+   "Rechtsschutz trägt Anwalts- und Gerichtskosten.",
+   "Die Unfallversicherung zahlt bei eigenen Unfallfolgen."
+  ],
+  "e": "Sie schützt vor existenzbedrohenden Forderungen und kostet meist wenig.",
+  "h": "Schadenersatz.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "809sxr",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wovor schützt eine Berufsunfähigkeitsversicherung?",
+  "a": [
+   "Vor Einkommensausfall",
+   "Vor hohen Kosten für Zahnersatz",
+   "Vor Schäden durch Einbruch und Diebstahl",
+   "Vor den Kosten eines Rechtsstreits"
+  ],
+  "w": [
+   "",
+   "Zahnersatz deckt eine Zahnzusatzversicherung.",
+   "Einbruch deckt die Hausratversicherung.",
+   "Rechtsstreitigkeiten deckt der Rechtsschutz."
+  ],
+  "e": "Die gesetzliche Erwerbsminderungsrente reicht oft nicht, um den Lebensstandard zu halten.",
+  "h": "Einkommen sichern.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "qora7s",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie lange müssen Privatleute Rechnungen für Handwerkerleistungen am Grundstück aufbewahren?",
+  "a": [
+   "2 Jahre",
+   "1 Jahr",
+   "6 Jahre",
+   "10 Jahre"
+  ],
+  "w": [
+   "",
+   "Ein Jahr ist zu kurz.",
+   "Sechs Jahre gelten für Geschäftsbriefe bei Unternehmen.",
+   "Zehn Jahre gelten für Buchungsbelege bei Unternehmen, nicht für Privatleute."
+  ],
+  "e": "Die Frist beginnt mit dem Ende des Jahres der Rechnungsstellung.",
+  "h": "Zwei Kalenderjahre.",
+  "d": 3
+ },
+ {
+  "id": "1vlnq4g",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie viele Jahre rückwirkend kann man in Deutschland eine freiwillige Steuererklärung abgeben?",
+  "a": [
+   "4 Jahre",
+   "3 Jahre",
+   "5 Jahre",
+   "2 Jahre"
+  ],
+  "w": [
+   "",
+   "Drei Jahre sind zu kurz, die Frist ist länger.",
+   "Fünf Jahre wären zu lang.",
+   "Zwei Jahre gelten nicht."
+  ],
+  "e": "Die Frist endet vier Jahre nach Ablauf des Steuerjahres, 2022 also am 31. Dezember 2026.",
+  "h": "Vier Jahre.",
+  "d": 2
+ },
+ {
+  "id": "1htso24",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie bekommst du bei der Schufa kostenlos Auskunft über deine gespeicherten Daten?",
+  "a": [
+   "Mit der Datenkopie nach Art. 15 DSGVO",
+   "Mit dem kostenpflichtigen BonitätsCheck",
+   "Nur über einen Antrag bei deiner Bank",
+   "Nur mit Hilfe eines Rechtsanwalts"
+  ],
+  "w": [
+   "",
+   "Der BonitätsCheck ist ein kostenpflichtiges Zusatzangebot, die Datenkopie ist gratis.",
+   "Die Auskunft beantragt man selbst direkt bei der Schufa, etwa über meineschufa.de.",
+   "Ein Anwalt ist nicht nötig, der Antrag geht formlos."
+  ],
+  "e": "Die Datenkopie ist gesetzlich kostenlos. Wie oft man sie gratis anfordern kann, legt das Gesetz nicht fest; die Verbraucherzentrale rät, mindestens einmal im Jahr nachzusehen.",
+  "h": "Das Recht stammt aus der Datenschutz-Grundverordnung.",
+  "d": 1,
+  "src": "Verbraucherzentrale, Scoring und Auskunfteien: verbraucherzentrale.de/scoring",
+  "p": 1
+ },
+ {
+  "id": "1m6x0ex",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie sind stillschweigend verlängerte Verbraucherverträge seit dem 1. März 2022 kündbar?",
+  "a": [
+   "Jederzeit mit einem Monat Frist",
+   "Nur zum Ende des jeweiligen Kalenderjahres",
+   "Nur mit einer Frist von drei Monaten",
+   "Gar nicht mehr"
+  ],
+  "w": [
+   "",
+   "Vor 2022 konnten Verträge länger binden.",
+   "Eine feste Kündigung zum Jahresende ist nicht gesetzlich vorgeschrieben.",
+   "Drei Monate sind nach dem Gesetz zu lang."
+  ],
+  "e": "Die Erstlaufzeit darf weiterhin bis zu zwei Jahre betragen, danach gilt die Monatsfrist.",
+  "h": "Gesetz für faire Verbraucherverträge.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "rpggyu",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was ist ein Dispositionskredit?",
+  "a": [
+   "Kontoüberziehung, meist teuer",
+   "Ein langfristiger Kredit für den Hausbau",
+   "Ein zinsloser Kredit für Berufseinsteiger",
+   "Ein Kredit, den der Arbeitgeber gewährt"
+  ],
+  "w": [
+   "",
+   "Ein Baukredit ist ein Immobiliendarlehen.",
+   "Zinslos ist er nicht, die Zinsen sind meist hoch.",
+   "Ein Arbeitgeberdarlehen ist etwas anderes."
+  ],
+  "e": "Als Dauerlösung ist er meist sehr teuer.",
+  "h": "Dispo.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "14mzb6m",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie hoch ist der reguläre Mehrwertsteuersatz in Deutschland?",
+  "a": [
+   "19 %",
+   "7 %",
+   "16 %",
+   "21 %"
+  ],
+  "w": [
+   "",
+   "7 % ist der ermäßigte Satz.",
+   "16 % galt vorübergehend 2020 in der Corona-Zeit.",
+   "21 % ist der Satz in einem anderen Land."
+  ],
+  "e": "7 % gilt für viele Lebensmittel, seit dem 1. Januar 2026 auch für Speisen in Restaurants.",
+  "h": "Neunzehn.",
+  "d": 1,
+  "src": "IHK Dresden, Jan. 2026: ihk.de/dresden/servicenavigation/presse-publikationen/meldungen/dauerhafte-steuersenkung-auf-speisen-seit-1-januar-in-kraft-6929266",
+  "p": 1
+ },
+ {
+  "id": "uxry1z",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie verläuft der Einkommensteuertarif in Deutschland?",
+  "a": [
+   "Progressiv: Der Satz steigt mit dem Einkommen",
+   "Proportional: Alle zahlen denselben Satz",
+   "Regressiv: Wer mehr verdient, zahlt weniger Prozent",
+   "Pauschal: Jeder zahlt denselben Betrag"
+  ],
+  "w": [
+   "",
+   "Alle zahlen nicht denselben Satz.",
+   "Wer mehr verdient, zahlt in der Regel mehr Prozent.",
+   "Ein fester Betrag wäre eine Kopfsteuer."
+  ],
+  "e": "Auf einen steuerfreien Grundfreibetrag folgen steigende Sätze bis zum Spitzensteuersatz von 42 %, darüber 45 %.",
+  "h": "Mehr verdienen, höherer Satz.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1r43rw",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie hoch ist der Grundfreibetrag in Deutschland im Jahr 2026?",
+  "a": [
+   "12.348 €",
+   "12.096 €",
+   "11.784 €",
+   "13.200 €"
+  ],
+  "w": [
+   "",
+   "12.096 € galten im Jahr 2025.",
+   "11.784 € galten im Jahr 2024.",
+   "13.200 € ist kein gültiger Betrag für 2026."
+  ],
+  "e": "Einkommen bis zu diesem Betrag bleibt einkommensteuerfrei.",
+  "h": "Stand 2026.",
+  "d": 2
+ },
+ {
+  "id": "o8t5n1",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Welche Lohnsteuerklasse gilt für Arbeitnehmer mit einem zweiten Arbeitsverhältnis?",
+  "a": [
+   "Steuerklasse VI",
+   "Steuerklasse I",
+   "Steuerklasse III",
+   "Steuerklasse IV"
+  ],
+  "w": [
+   "",
+   "Klasse I gilt für das erste Arbeitsverhältnis Alleinstehender.",
+   "Klasse III ist die Klasse für Verheiratete mit hohem Einkommensanteil.",
+   "Klasse IV gilt für Verheiratete mit ähnlichem Einkommen."
+  ],
+  "e": "Bei der Klasse VI gibt es keinen Grundfreibetrag, daher fällt mehr Lohnsteuer an.",
+  "h": "Letzte Klasse.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "1k0xu1k",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie hoch ist die Entfernungspauschale (Pendlerpauschale) seit 2026 ab dem ersten Kilometer?",
+  "a": [
+   "38 Cent je Kilometer",
+   "30 Cent je Kilometer",
+   "35 Cent je Kilometer",
+   "42 Cent je Kilometer"
+  ],
+  "w": [
+   "",
+   "30 Cent galt bisher für die ersten 20 Kilometer.",
+   "35 Cent ist kein gesetzlicher Satz.",
+   "42 Cent ist kein gesetzlicher Satz."
+  ],
+  "e": "Der Satz von 38 Cent gilt seit 2026 einheitlich vom ersten Kilometer an.",
+  "h": "Stand 2026.",
+  "d": 3,
+  "src": "Bundesregierung, Steueränderungsgesetz 2025: bundesregierung.de/breg-de/aktuelles/steueraenderungsgesetz-kabinett-2383684"
+ },
+ {
+  "id": "xk6bni",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was sind Werbungskosten?",
+  "a": [
+   "Ausgaben, um Berufseinkommen zu erzielen",
+   "Ausgaben für private Anschaffungen",
+   "Kosten für Werbung eines Unternehmens",
+   "Gebühren für das Finanzamt"
+  ],
+  "w": [
+   "",
+   "Private Anschaffungen sind nicht absetzbar.",
+   "Werbung eines Unternehmens ist Betriebsausgabe, kein Begriff für Arbeitnehmer.",
+   "Gebühren des Finanzamts gehören nicht dazu."
+  ],
+  "e": "Beispiele sind Fahrtkosten zur Arbeit oder Arbeitsmittel, sie mindern das zu versteuernde Einkommen.",
+  "h": "Berufsausgaben.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1qf6bu9",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Welche Ausgabe zählt zu den Sonderausgaben?",
+  "a": [
+   "Spenden an gemeinnützige Vereine",
+   "Fahrtkosten zur Arbeit",
+   "Kosten für Arbeitsmittel",
+   "Verluste aus Aktienverkäufen"
+  ],
+  "w": [
+   "",
+   "Fahrtkosten sind Werbungskosten.",
+   "Arbeitsmittel sind Werbungskosten.",
+   "Verluste werden bei den Kapitalerträgen verrechnet."
+  ],
+  "e": "Sonderausgaben sind unter anderem Spenden, Kirchensteuer und bestimmte Versicherungsbeiträge.",
+  "h": "Ohne Bezug zum Beruf.",
+  "d": 2
+ },
+ {
+  "id": "vzccrq",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie hoch ist der Solidaritätszuschlag, bezogen auf die festgesetzte Steuer?",
+  "a": [
+   "5,5 %",
+   "7,5 %",
+   "3 %",
+   "9 %"
+  ],
+  "w": [
+   "",
+   "7,5 % war früher der Satz in den 1990ern.",
+   "3 % ist kein gesetzlicher Satz.",
+   "9 % ist die Kirchensteuer in den meisten Bundesländern."
+  ],
+  "e": "Wegen hoher Freigrenzen zahlen ihn die meisten Steuerzahler seit 2021 nicht mehr.",
+  "h": "Fünf Komma fünf.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1wrb95b",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wer führt die Lohnsteuer an das Finanzamt ab?",
+  "a": [
+   "Der Arbeitgeber",
+   "Der Arbeitnehmer selbst",
+   "Die Krankenkasse",
+   "Die Rentenversicherung"
+  ],
+  "w": [
+   "",
+   "Der Arbeitnehmer erhält den Nettolohn, die Steuer wird bereits abgeführt.",
+   "Die Krankenkasse erhält Beiträge, nicht die Lohnsteuer.",
+   "Die Rentenversicherung erhält Rentenbeiträge."
+  ],
+  "e": "Die Lohnsteuer ist eine Quellensteuer und wird direkt vom Bruttolohn einbehalten.",
+  "h": "An der Quelle.",
+  "d": 1
+ },
+ {
+  "id": "9s41aj",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie lange gilt die steuerliche Identifikationsnummer (Steuer-ID)?",
+  "a": [
+   "Lebenslang",
+   "Bis zum Renteneintritt",
+   "Zehn Jahre",
+   "Bis zum nächsten Umzug"
+  ],
+  "w": [
+   "",
+   "Sie endet nicht mit dem Rentenalter.",
+   "Sie wird nicht regelmäßig erneuert.",
+   "Ein Umzug ändert die Nummer nicht."
+  ],
+  "e": "Die elfstellige Nummer erhält man bei der Geburt, sie bleibt ein Leben lang gleich.",
+  "h": "Man bekommt sie einmal und behält sie.",
+  "d": 2
+ },
+ {
+  "id": "1bk7odl",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Innerhalb welcher Frist kann man gegen einen Steuerbescheid Einspruch einlegen?",
+  "a": [
+   "Einen Monat nach Bekanntgabe",
+   "Eine Woche nach Bekanntgabe",
+   "Drei Monate nach Bekanntgabe",
+   "Ein Jahr nach Bekanntgabe"
+  ],
+  "w": [
+   "",
+   "Eine Woche wäre zu kurz.",
+   "Drei Monate wären zu lang.",
+   "Ein Jahr wäre zu lang."
+  ],
+  "e": "Die Frist beginnt mit Bekanntgabe des Bescheids, der Einspruch ist kostenlos.",
+  "h": "Vier Wochen.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "blete6",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Bis wann muss die Steuererklärung ohne Steuerberater grundsätzlich für das Vorjahr abgegeben werden, wenn Abgabepflicht besteht?",
+  "a": [
+   "31. Juli",
+   "31. Mai",
+   "30. September",
+   "31. Dezember"
+  ],
+  "w": [
+   "",
+   "Der 31. Mai war die Frist in früheren Jahren.",
+   "Der 30. September ist keine reguläre Frist.",
+   "Der 31. Dezember wäre zu spät."
+  ],
+  "e": "Mit Steuerberater gilt eine längere Frist, eine Fristverlängerung gibt es nur in Ausnahmefällen.",
+  "h": "Hochsommer.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1bljfb4",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was kennzeichnet die Kleinunternehmerregelung?",
+  "a": [
+   "Keine Umsatzsteuer, kein Vorsteuerabzug",
+   "Keine Einkommensteuer auf alle Gewinne",
+   "Alle Umsätze sind grundsätzlich steuerfrei",
+   "Gilt nur für Unternehmen im Ausland"
+  ],
+  "w": [
+   "",
+   "Einkommensteuer fällt trotzdem an.",
+   "Umsatzsteuer entfällt nur im Rahmen der Regelung.",
+   "Die Regelung gilt für Unternehmer im Inland unterhalb einer Umsatzgrenze."
+  ],
+  "e": "Der Vorteil sind weniger Verwaltungsaufwand, der Nachteil, dass bezahlte Vorsteuer nicht erstattet wird.",
+  "h": "Kleine Umsätze.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "lh5wts",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was bedeutet Vorsteuerabzug bei der Umsatzsteuer?",
+  "a": [
+   "Firmen ziehen gezahlte Umsatzsteuer ab",
+   "Verbraucher fordern die Mehrwertsteuer zurück",
+   "Die Steuer wird vor dem Kauf bezahlt",
+   "Der Staat zahlt Vorsteuer an die Käufer"
+  ],
+  "w": [
+   "",
+   "Verbraucher tragen die Mehrwertsteuer endgültig.",
+   "Es geht nicht um Zeitpunkte der Zahlung.",
+   "Die Zahlung geht zwischen Unternehmen und Finanzamt, nicht an Käufer."
+  ],
+  "e": "So wird nur der Mehrwert besteuert, deshalb heißt sie Mehrwertsteuer.",
+  "h": "So wird nur der Mehrwert besteuert.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "wiw8ay",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie hoch ist der Erbschaftsteuer-Freibetrag für Ehepartner?",
+  "a": [
+   "500.000 €",
+   "400.000 €",
+   "200.000 €",
+   "100.000 €"
+  ],
+  "w": [
+   "",
+   "400.000 € gelten für Kinder.",
+   "200.000 € gelten für Enkel.",
+   "100.000 € gelten für Eltern und Großeltern beim Erben."
+  ],
+  "e": "Der Freibetrag gilt zusätzlich zum Versorgungsfreibetrag.",
+  "h": "Eine halbe Million.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "137vrba",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "In welchem Zeitraum können Schenkungsfreibeträge erneut genutzt werden?",
+  "a": [
+   "Alle zehn Jahre",
+   "Jedes Jahr",
+   "Alle fünf Jahre",
+   "Nur einmal im Leben"
+  ],
+  "w": [
+   "",
+   "Jedes Jahr wäre zu häufig.",
+   "Fünf Jahre sind zu kurz.",
+   "Einmal im Leben wäre zu streng."
+  ],
+  "e": "Schenkungen innerhalb von zehn Jahren werden zusammengerechnet.",
+  "h": "Ein runder Zeitraum.",
+  "d": 3
+ },
+ {
+  "id": "1gatjpj",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wer legt die Höhe der Grunderwerbsteuer fest?",
+  "a": [
+   "Die Bundesländer",
+   "Der Bund",
+   "Die Gemeinden",
+   "Die EU"
+  ],
+  "w": [
+   "",
+   "Der Bund bestimmt nur den Rahmen.",
+   "Gemeinden bestimmen die Hebesätze der Grundsteuer.",
+   "Die EU legt keine Grunderwerbsteuer fest."
+  ],
+  "e": "Die Sätze unterscheiden sich je nach Bundesland, die Einnahmen stehen den Ländern zu.",
+  "h": "Länder.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "c3r0vn",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wer legt die Hebesätze der Grundsteuer fest?",
+  "a": [
+   "Die Gemeinden",
+   "Die Bundesländer",
+   "Der Bund",
+   "Die Finanzämter"
+  ],
+  "w": [
+   "",
+   "Die Länder legen die Grunderwerbsteuer fest.",
+   "Der Bund regelt nur den Rahmen.",
+   "Die Finanzämter wenden die Sätze nur an."
+  ],
+  "e": "Die Gemeinden erhalten die Einnahmen und bestimmen so die Höhe der Steuer.",
+  "h": "Vor Ort.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "8oia9f",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Welche Versicherung gehört nicht zu den fünf Zweigen der gesetzlichen Sozialversicherung?",
+  "a": [
+   "Haftpflichtversicherung",
+   "Pflegeversicherung",
+   "Unfallversicherung",
+   "Arbeitslosenversicherung"
+  ],
+  "w": [
+   "",
+   "Die Pflegeversicherung gehört dazu.",
+   "Die Unfallversicherung gehört dazu.",
+   "Die Arbeitslosenversicherung gehört dazu."
+  ],
+  "e": "Die fünf Zweige sind Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung.",
+  "h": "Privat statt gesetzlich.",
+  "d": 2
+ },
+ {
+  "id": "1ghlvxm",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wer zahlt die Beiträge zur gesetzlichen Unfallversicherung?",
+  "a": [
+   "Der Arbeitgeber allein",
+   "Arbeitgeber und Arbeitnehmer je zur Hälfte",
+   "Der Arbeitnehmer allein",
+   "Der Staat allein"
+  ],
+  "w": [
+   "",
+   "Hälftig teilen sich andere Zweige wie Rentenversicherung.",
+   "Der Arbeitnehmer zahlt nichts.",
+   "Der Staat zahlt keine Beiträge."
+  ],
+  "e": "Die Berufsgenossenschaften finanzieren sich über Beiträge der Arbeitgeber.",
+  "h": "Nur eine Seite.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1tej3u3",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was bedeutet die Beitragsbemessungsgrenze?",
+  "a": [
+   "Nur bis zu diesem Einkommen werden Beiträge berechnet",
+   "Ab diesem Einkommen entfällt die Versicherungspflicht",
+   "Das ist der Mindestbeitrag",
+   "Das ist die höchste ausgezahlte Rente"
+  ],
+  "w": [
+   "",
+   "Die Versicherungspflichtgrenze ist ein eigener Wert, sie gilt für die Krankenversicherung.",
+   "Es geht um den Höchstbetrag der Beiträge, nicht um den Mindestbeitrag.",
+   "Die Rente wird nicht durch diese Grenze gedeckelt."
+  ],
+  "e": "Verdienst darüber ist beitragsfrei, die Grenze wird jährlich angepasst.",
+  "h": "Wer sehr gut verdient, zahlt ab einem Punkt nicht mehr Beitrag.",
+  "d": 2
+ },
+ {
+  "id": "149o1g1",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was bedeutet Familienversicherung in der gesetzlichen Krankenversicherung?",
+  "a": [
+   "Ehepartner und Kinder sind beitragsfrei mitversichert",
+   "Alle Verwandten sind kostenlos mitversichert",
+   "Familien zahlen nur den halben Beitrag",
+   "Nur leibliche Kinder sind mitversichert"
+  ],
+  "w": [
+   "",
+   "Nicht alle Verwandten sind erfasst.",
+   "Es entfällt der Beitrag, er wird nicht halbiert.",
+   "Auch Ehepartner können mitversichert sein, bei geringem Einkommen."
+  ],
+  "e": "Voraussetzung sind unter anderem Einkommensgrenzen.",
+  "h": "Mitversichert.",
+  "d": 2
+ },
+ {
+  "id": "1krpyhz",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Welche Kfz-Versicherung ist in Deutschland gesetzlich vorgeschrieben?",
+  "a": [
+   "Haftpflichtversicherung",
+   "Vollkaskoversicherung",
+   "Teilkaskoversicherung",
+   "Insassenunfallversicherung"
+  ],
+  "w": [
+   "",
+   "Die Vollkasko ist freiwillig.",
+   "Die Teilkasko ist freiwillig.",
+   "Die Insassenunfallversicherung ist freiwillig."
+  ],
+  "e": "Sie reguliert Schäden, die man mit dem Auto anderen zufügt.",
+  "h": "Pflicht.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "14m3sue",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Welche Schäden deckt die Teilkaskoversicherung typischerweise?",
+  "a": [
+   "Diebstahl, Glasbruch und Wildschäden",
+   "Selbstverschuldete Unfallschäden am eigenen Auto",
+   "Schäden am Auto des Unfallgegners",
+   "Verschleiß und Wartung"
+  ],
+  "w": [
+   "",
+   "Selbstverschuldete Unfallschäden deckt erst die Vollkasko.",
+   "Fremdschäden deckt die Haftpflicht.",
+   "Verschleiß und Wartung sind nicht versichert."
+  ],
+  "e": "Sie zahlt unter anderem bei Sturm, Hagel und Brand.",
+  "h": "Teilweise.",
+  "d": 2
+ },
+ {
+  "id": "1mk3ll8",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wofür steht die Schadenfreiheitsklasse bei der Kfz-Versicherung?",
+  "a": [
+   "Beitragshöhe nach unfallfreien Jahren",
+   "Sie legt die Fahrzeugklasse fest",
+   "Sie ist die Höhe der Selbstbeteiligung",
+   "Sie bestimmt die Länge der Vertragslaufzeit"
+  ],
+  "w": [
+   "",
+   "Die Fahrzeugklasse hat einen eigenen Faktor.",
+   "Die Selbstbeteiligung ist separat vereinbart.",
+   "Die Laufzeit steht im Vertrag."
+  ],
+  "e": "Wer unfallfrei fährt, rutscht in eine höhere Klasse und zahlt weniger Beitrag.",
+  "h": "Unfallfrei belohnt.",
+  "d": 3
+ },
+ {
+  "id": "1i5m049",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was deckt die Hausratversicherung?",
+  "a": [
+   "Einrichtung bei Einbruch oder Feuer",
+   "Das Gebäude, in dem man wohnt",
+   "Schäden, die man anderen zufügt",
+   "Schäden am eigenen Auto"
+  ],
+  "w": [
+   "",
+   "Das Gebäude deckt die Wohngebäudeversicherung.",
+   "Schäden bei anderen deckt die Haftpflicht.",
+   "Das Auto deckt die Kfz-Versicherung."
+  ],
+  "e": "Sie ersetzt den Neuwert der versicherten Gegenstände bis zur Versicherungssumme.",
+  "h": "Alles, was beim Umzug mitkommt.",
+  "d": 1
+ },
+ {
+  "id": "x2lcqs",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wann zahlt eine Risikolebensversicherung aus?",
+  "a": [
+   "Beim Tod der versicherten Person",
+   "Am Ende der Laufzeit immer",
+   "Beim Eintritt der Rente",
+   "Bei jedem Arztbesuch"
+  ],
+  "w": [
+   "",
+   "Eine Auszahlung zum Laufzeitende gibt es nur bei Kapitallebensversicherungen.",
+   "Der Renteneintritt ist kein Versicherungsfall.",
+   "Arztbesuche sind nicht gedeckt."
+  ],
+  "e": "Sie sichert Hinterbliebene ab und ist günstig, weil nur der Todesfall abgedeckt ist.",
+  "h": "Nur im Todesfall.",
+  "d": 1
+ },
+ {
+  "id": "1wxnwjo",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was bedeutet Unterversicherung?",
+  "a": [
+   "Die Versicherungssumme ist zu niedrig",
+   "Es besteht bei keinem Anbieter Schutz",
+   "Die Versicherung zahlt immer die volle Summe",
+   "Der Beitrag ist besonders niedrig gewählt"
+  ],
+  "w": [
+   "",
+   "Ein nicht versicherter Zustand heißt Nichtversicherung.",
+   "Bei Unterversicherung kann die Zahlung gekürzt werden.",
+   "Der Beitrag ist nicht das Kriterium."
+  ],
+  "e": "Beispiel: Ein Hausrat im Wert von 60.000 €, versichert mit 30.000 €, wird nur anteilig ersetzt.",
+  "h": "Zu niedrig versichert.",
+  "d": 2
+ },
+ {
+  "id": "50d7qt",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was bedeutet Selbstbeteiligung bei einer Versicherung?",
+  "a": [
+   "Einen Teil des Schadens zahlt man selbst",
+   "Die Versicherung zahlt immer doppelt",
+   "Der Versicherte zahlt keinen Beitrag",
+   "Die Versicherung gilt nur für Selbstständige"
+  ],
+  "w": [
+   "",
+   "Eine doppelte Zahlung gibt es nicht.",
+   "Der Beitrag fällt trotzdem an.",
+   "Die Selbstbeteiligung betrifft nicht nur Selbstständige."
+  ],
+  "e": "Dafür sinkt meist der Beitrag.",
+  "h": "Eigener Anteil.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "72ldw2",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Seit wann müssen Anbieter von Online-Verträgen einen Kündigungsbutton bereitstellen?",
+  "a": [
+   "Seit dem 1. Juli 2022",
+   "Seit dem 1. Januar 2020",
+   "Seit dem 1. Januar 2025",
+   "Seit dem 1. Juli 2018"
+  ],
+  "w": [
+   "",
+   "Im Jahr 2020 gab es noch keinen Kündigungsbutton.",
+   "2025 war er längst verfügbar.",
+   "Im Jahr 2018 gab es ihn noch nicht."
+  ],
+  "e": "Verträge, die online abgeschlossen werden können, müssen auch online per Button kündbar sein.",
+  "h": "Die Pflicht kam mit dem Gesetz für faire Verbraucherverträge.",
+  "d": 2
+ },
+ {
+  "id": "5kwtxq",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie lange hast du bei Online-Käufen grundsätzlich Widerrufsrecht?",
+  "a": [
+   "14 Tage",
+   "7 Tage",
+   "30 Tage",
+   "Gar nicht"
+  ],
+  "w": [
+   "",
+   "Sieben Tage sind zu kurz.",
+   "30 Tage sind keine gesetzliche Frist.",
+   "Das Widerrufsrecht besteht bei Fernabsatzverträgen."
+  ],
+  "e": "Das gilt nicht für alle Waren, z. B. nicht für individuell angefertigte oder schnell verderbliche.",
+  "h": "Zwei Wochen.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1426u3a",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie lange gilt gesetzlich die Gewährleistung bei neuen Waren im Normalfall?",
+  "a": [
+   "Zwei Jahre",
+   "Ein Jahr",
+   "Fünf Jahre",
+   "Sechs Monate"
+  ],
+  "w": [
+   "",
+   "Ein Jahr gilt bei gebrauchten Waren nur im Rahmen von Vereinbarungen.",
+   "Fünf Jahre gelten bei Bauwerken.",
+   "Sechs Monate war die frühere Beweislastumkehr."
+  ],
+  "e": "Seit 2022 gilt die Beweislastumkehr zugunsten des Käufers im ersten Jahr.",
+  "h": "Ab Übergabe.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1a7utyo",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie lange dauert die regelmäßige Verjährungsfrist nach dem BGB?",
+  "a": [
+   "Drei Jahre",
+   "Ein Jahr",
+   "Zehn Jahre",
+   "Dreißig Jahre"
+  ],
+  "w": [
+   "",
+   "Ein Jahr ist zu kurz.",
+   "Zehn Jahre gelten für bestimmte Fälle, nicht allgemein.",
+   "Dreißig Jahre gelten für rechtskräftige Titel."
+  ],
+  "e": "Die Frist beginnt mit dem Ende des Jahres, in dem der Anspruch entstand und der Gläubiger davon wusste.",
+  "h": "Die Frist beginnt am Jahresende.",
+  "d": 2
+ },
+ {
+  "id": "1dgowux",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie hoch darf eine Mietkaution bei Wohnraum höchstens sein?",
+  "a": [
+   "Drei Monatskaltmieten",
+   "Eine Monatskaltmiete",
+   "Sechs Monatskaltmieten",
+   "Drei Monatswarmmieten"
+  ],
+  "w": [
+   "",
+   "Eine Kaltmiete wäre weniger als das Maximum.",
+   "Sechs Monate sind nicht erlaubt.",
+   "Bemessen wird nach Kaltmiete, ohne Betriebskosten."
+  ],
+  "e": "Der Mieter darf die Kaution in drei Raten zahlen.",
+  "h": "Drei Kaltmieten.",
+  "d": 2
+ },
+ {
+  "id": "1ybtyh",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Mit welcher Frist kann ein Mieter ein unbefristetes Wohnraummietverhältnis in der Regel kündigen?",
+  "a": [
+   "Drei Monate",
+   "Ein Monat",
+   "Sechs Monate",
+   "Zwölf Monate"
+  ],
+  "w": [
+   "",
+   "Ein Monat ist zu kurz.",
+   "Sechs Monate sind für Mieter nicht vorgeschrieben.",
+   "Zwölf Monate gelten nicht."
+  ],
+  "e": "Für Vermieter verlängert sich die Frist mit der Wohndauer.",
+  "h": "Für Vermieter ist die Frist oft länger, für Mieter nicht.",
+  "d": 2
+ },
+ {
+  "id": "m2w2zs",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wer muss einen Grundstückskaufvertrag in Deutschland beurkunden?",
+  "a": [
+   "Ein Notar",
+   "Das Finanzamt",
+   "Die Bank",
+   "Das Grundbuchamt"
+  ],
+  "w": [
+   "",
+   "Das Finanzamt beurkundet nicht.",
+   "Die Bank finanziert, beurkundet aber nicht.",
+   "Das Grundbuchamt trägt später ein, was beurkundet wurde."
+  ],
+  "e": "Ohne notarielle Beurkundung ist der Vertrag unwirksam.",
+  "h": "Amtsperson.",
+  "d": 2
+ },
+ {
+  "id": "xwj7f6",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was bedeutet eine Bürgschaft?",
+  "a": [
+   "Man haftet für fremde Schulden",
+   "Man erhält Zinsen auf ein Sparguthaben",
+   "Man bekommt Steuern vom Finanzamt erstattet",
+   "Man übernimmt die Kosten für eine Versicherung"
+  ],
+  "w": [
+   "",
+   "Zinsen auf Sparguthaben sind kein Merkmal.",
+   "Steuererstattungen sind nicht gemeint.",
+   "Versicherungsbeiträge sind nicht gemeint."
+  ],
+  "e": "Der Bürge haftet mit seinem gesamten Vermögen, daher ist das Risiko hoch.",
+  "h": "Für andere einstehen.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "7h2hjp",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was schützt ein Pfändungsschutzkonto (P-Konto)?",
+  "a": [
+   "Einen Grundbetrag vor Pfändung",
+   "Das komplette Guthaben vor jeder Pfändung",
+   "Nur Guthaben aus gesetzlichen Rentenzahlungen",
+   "Nur Guthaben bei Online-Banken"
+  ],
+  "w": [
+   "",
+   "Ein Teil des Guthabens bleibt geschützt, nicht alles.",
+   "Nicht nur Rente ist geschützt.",
+   "Das Konto gibt es auch bei klassischen Banken."
+  ],
+  "e": "Das Girokonto lässt sich bei der Bank in ein P-Konto umwandeln.",
+  "h": "Pfändungsfrei.",
+  "d": 3
+ },
+ {
+  "id": "1srh966",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Nach wie vielen Jahren ist bei einer Privatinsolvenz in Deutschland grundsätzlich die Restschuldbefreiung möglich?",
+  "a": [
+   "Drei Jahre",
+   "Sechs Jahre",
+   "Zehn Jahre",
+   "Ein Jahr"
+  ],
+  "w": [
+   "",
+   "Sechs Jahre waren die frühere Dauer.",
+   "Zehn Jahre waren früher die Regel.",
+   "Ein Jahr ist zu kurz."
+  ],
+  "e": "Seit der Reform 2020 beträgt das Verfahren grundsätzlich drei Jahre.",
+  "h": "Früher dauerte es doppelt so lange.",
+  "d": 3
+ },
+ {
+  "id": "19ptfu6",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was kennzeichnet ein Annuitätendarlehen?",
+  "a": [
+   "Gleiche Rate, der Zinsanteil sinkt",
+   "Die Tilgung bleibt jedes Jahr gleich, die Rate sinkt",
+   "Es wird erst am Ende alles auf einmal zurückgezahlt",
+   "Der Zins steigt mit der Laufzeit"
+  ],
+  "w": [
+   "",
+   "Gleichbleibende Tilgung beschreibt das Ratendarlehen.",
+   "Eine Rückzahlung am Ende beschreibt das endfällige Darlehen.",
+   "Der Zins ist für die Zinsbindung fest."
+  ],
+  "e": "Der Tilgungsanteil steigt dafür.",
+  "h": "Lateinisch annus: das Jahr.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "13johqd",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was bedeutet Zinsbindung bei einem Baukredit?",
+  "a": [
+   "Der Zins ist für eine Zeit garantiert",
+   "Die Bank bindet den Kredit an eine Immobilie",
+   "Der Kreditnehmer ist dauerhaft an die Bank gebunden",
+   "Der Kredit wird automatisch verlängert"
+  ],
+  "w": [
+   "",
+   "Die Immobilie ist die Sicherheit, nicht die Zinsbindung.",
+   "Der Kunde bleibt nicht zwingend an die Bank gebunden.",
+   "Eine automatische Verlängerung gibt es nicht."
+  ],
+  "e": "Danach folgt eine Anschlussfinanzierung zu den dann geltenden Zinsen.",
+  "h": "Zinsen fix.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "5bwfqg",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was sichert die Bank bei einem Immobiliendarlehen typischerweise im Grundbuch ab?",
+  "a": [
+   "Eine Grundschuld",
+   "Eine Vorsteuer",
+   "Eine Bürgschaft",
+   "Eine Dienstbarkeit des Käufers"
+  ],
+  "w": [
+   "",
+   "Die Vorsteuer ist ein Umsatzsteuerbegriff.",
+   "Die Bürgschaft sichert nicht im Grundbuch.",
+   "Eine Dienstbarkeit gibt Nutzungsrechte."
+  ],
+  "e": "Bei Zahlungsausfall kann die Bank die Immobilie verwerten.",
+  "h": "Eintragung im Grundbuch.",
+  "d": 3
+ },
+ {
+  "id": "onx1j3",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie lange kann man eine autorisierte SEPA-Lastschrift bei der Bank zurückbuchen lassen?",
+  "a": [
+   "Acht Wochen",
+   "Zwei Wochen",
+   "Sechs Monate",
+   "Zwei Jahre"
+  ],
+  "w": [
+   "",
+   "Zwei Wochen sind zu kurz.",
+   "Sechs Monate sind zu lang.",
+   "Zwei Jahre sind zu lang."
+  ],
+  "e": "Bei nicht autorisierten Lastschriften gilt eine deutlich längere Frist von 13 Monaten.",
+  "h": "Zwei Monate.",
+  "d": 3,
+  "p": 1
+ },
+ {
+  "id": "11uwfcy",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie viele Stellen hat eine deutsche IBAN?",
+  "a": [
+   "22",
+   "20",
+   "18",
+   "24"
+  ],
+  "w": [
+   "",
+   "20 Stellen hat nicht die deutsche IBAN.",
+   "18 Stellen sind zu kurz.",
+   "24 Stellen wären zu lang."
+  ],
+  "e": "Sie beginnt mit DE, danach folgen zwei Prüfziffern, Bankleitzahl und Kontonummer.",
+  "h": "Zwei mehr als zwanzig.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "59ghdx",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was ist das Prinzip des Ehegattensplittings?",
+  "a": [
+   "Steuer auf das halbe Einkommen, dann verdoppelt",
+   "Jeder Partner zahlt nur die halbe Steuer",
+   "Der Staat zahlt die Steuer für Ehepaare",
+   "Ehepaare sind von der Steuer befreit"
+  ],
+  "w": [
+   "",
+   "Die Steuer wird nicht halbiert, sondern auf Basis des halben Einkommens berechnet.",
+   "Der Staat zahlt nicht.",
+   "Befreit sind Ehepaare nicht."
+  ],
+  "e": "Der Vorteil ist am größten bei ungleichen Einkommen.",
+  "h": "Teilen und verdoppeln.",
+  "d": 2
+ },
+ {
+  "id": "h3bx1v",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie hoch ist der Pflichtteil im Erbrecht?",
+  "a": [
+   "Die Hälfte des gesetzlichen Erbteils",
+   "Ein Drittel des gesamten Nachlasses",
+   "Das gesamte Erbe ohne Abzüge",
+   "Ein Viertel des Nachlasses"
+  ],
+  "w": [
+   "",
+   "Ein Drittel wäre kein gesetzlicher Satz.",
+   "Das gesamte Erbe ist kein Pflichtteil.",
+   "Ein Viertel wäre ebenfalls kein gesetzlicher Satz."
+  ],
+  "e": "Er ist ein Geldanspruch naher Angehöriger, die enterbt wurden.",
+  "h": "Halber Erbteil.",
+  "d": 2
+ },
+ {
+  "id": "e3ytqk",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was sind Allgemeine Geschäftsbedingungen (AGB)?",
+  "a": [
+   "Vorformulierte Vertragsbedingungen",
+   "Gesetzliche Regeln für Vertragsstrafen",
+   "Ein Vertrag zwischen Staat und Bürger",
+   "Vorschriften für die Steuererklärung"
+  ],
+  "w": [
+   "",
+   "AGB sind keine Gesetze.",
+   "Zwischen Staat und Bürger gilt öffentliches Recht.",
+   "Steuererklärungen sind kein Teil der AGB."
+  ],
+  "e": "Unangemessene Klauseln sind nach den §§ 305 ff. BGB unwirksam.",
+  "h": "Kleingedrucktes.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "1ydc4fz",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was unterscheidet Steuerhinterziehung von legaler Steuervermeidung?",
+  "a": [
+   "Hinterziehung verschweigt Angaben",
+   "Hinterziehung ist erlaubt, Vermeidung nicht",
+   "Beides ist grundsätzlich legal",
+   "Beides ist nur Unternehmen verboten"
+  ],
+  "w": [
+   "",
+   "Hinterziehung ist strafbar, nicht erlaubt.",
+   "Hinterziehung ist keine legale Gestaltung.",
+   "Beides gilt auch für Privatpersonen."
+  ],
+  "e": "Legal ist die Nutzung gesetzlicher Möglichkeiten, etwa Freibeträge.",
+  "h": "Tricksen verboten.",
+  "d": 2
+ },
+ {
+  "id": "tozvps",
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Wie hoch ist die Verdienstgrenze für Minijobs im Jahr 2026 pro Monat?",
+  "a": [
+   "603 €",
+   "556 €",
+   "538 €",
+   "700 €"
+  ],
+  "w": [
+   "",
+   "556 € galten im Jahr 2025.",
+   "538 € galten im Jahr 2024.",
+   "700 € ist keine gültige Grenze."
+  ],
+  "e": "Die Grenze ist an den Mindestlohn gekoppelt und steigt mit ihm.",
+  "h": "Stand 2026.",
+  "d": 3
+ },
+ {
+  "s": "Sparen & Anlegen",
+  "q": "Was ist meist die teuerste Art, kurzfristig Schulden zu machen?",
+  "a": [
+   "Den Dispo überziehen",
+   "Einen Ratenkredit aufnehmen",
+   "Ein Baudarlehen nutzen",
+   "Bei Freunden zinslos leihen"
+  ],
+  "w": [
+   "",
+   "Ratenkredite sind meist deutlich günstiger als der Dispo.",
+   "Baudarlehen sind durch die Immobilie besichert und daher vergleichsweise günstig.",
+   "Ein zinsloses Darlehen kostet keine Zinsen."
+  ],
+  "e": "Dispozinsen liegen oft über 10 % im Jahr. Wer länger im Minus ist, wechselt besser in einen günstigeren Ratenkredit.",
+  "h": "Es geht um das Konto im Minus.",
+  "d": 1,
+  "id": "nac97697",
+  "p": 1
+ },
+ {
+  "s": "Sparen & Anlegen",
+  "q": "Was ist eine gute Faustregel, bevor man in Aktien investiert?",
+  "a": [
+   "Erst Notgroschen, dann anlegen",
+   "Erst alles in eine Aktie stecken",
+   "Dispo nutzen, um mehr zu kaufen",
+   "Nur Geld anlegen, das man morgen braucht"
+  ],
+  "w": [
+   "",
+   "Alles auf eine Aktie zu setzen ist sehr riskant; Streuung senkt das Risiko.",
+   "Auf Kredit zu investieren erhöht das Risiko stark und kostet hohe Zinsen.",
+   "Geld, das man bald braucht, gehört nicht in schwankende Anlagen."
+  ],
+  "e": "Ein Notgroschen von etwa drei bis sechs Monatsausgaben schützt davor, Aktien in einem Kurstief verkaufen zu müssen.",
+  "h": "Denk an Unvorhergesehenes.",
+  "d": 1,
+  "id": "n27166c6",
+  "p": 1
+ },
+ {
+  "s": "Sparen & Anlegen",
+  "q": "Was beschreibt ein Sparplan auf einen ETF?",
+  "a": [
+   "Regelmäßig einen festen Betrag anlegen",
+   "Einmalig eine große Summe investieren",
+   "Jeden Monat Aktien auf Kredit kaufen",
+   "Nur bei steigenden Kursen nachkaufen"
+  ],
+  "w": [
+   "",
+   "Das wäre eine Einmalanlage.",
+   "Ein Sparplan nutzt eigenes Geld, keinen Kredit.",
+   "Ein Sparplan kauft gerade unabhängig vom Kursverlauf."
+  ],
+  "e": "Ein ETF-Sparplan investiert zum Beispiel monatlich 50 €. Das ist bequem, günstig und streut das Einstiegsrisiko über die Zeit.",
+  "h": "Denk an einen Dauerauftrag.",
+  "d": 1,
+  "id": "n4dae8fc",
+  "p": 1
+ },
+ {
+  "s": "Wirtschaft verstehen",
+  "q": "Was passiert in der Regel, wenn die Zentralbank die Leitzinsen erhöht?",
+  "a": [
+   "Kredite werden teurer",
+   "Sparzinsen sinken sofort",
+   "Die Inflation steigt deutlich",
+   "Bargeld wird abgeschafft"
+  ],
+  "w": [
+   "",
+   "Meist steigen auch die Sparzinsen, wenn auch verzögert.",
+   "Höhere Zinsen sollen die Inflation gerade bremsen.",
+   "Mit Bargeld hat der Leitzins nichts zu tun."
+  ],
+  "e": "Höhere Leitzinsen verteuern Kredite, bremsen Nachfrage und Investitionen und sollen so die Inflation senken.",
+  "h": "Geld leihen wird …",
+  "d": 1,
+  "id": "n3068023",
+  "p": 1
+ },
+ {
+  "s": "Wirtschaft verstehen",
+  "q": "Was bedeutet „Inflation von 5 %“?",
+  "a": [
+   "Preise steigen im Schnitt um 5 % pro Jahr",
+   "Löhne steigen jedes Jahr automatisch um 5 %",
+   "Die Wirtschaft wächst um 5 % pro Jahr",
+   "Die Zentralbank verlangt 5 % Zinsen"
+  ],
+  "w": [
+   "",
+   "Löhne steigen nicht automatisch mit; das hängt von Verhandlungen ab.",
+   "Das wäre Wirtschaftswachstum, nicht Inflation.",
+   "Das wäre der Leitzins."
+  ],
+  "e": "Inflation misst den Anstieg des allgemeinen Preisniveaus. Bei 5 % kostet ein Warenkorb nach einem Jahr etwa 5 % mehr.",
+  "h": "Denk an den Einkauf im Supermarkt.",
+  "d": 1,
+  "id": "n68a24a1",
+  "p": 1
+ },
+ {
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Welche zwei Versicherungen gelten für fast alle Erwachsenen als besonders wichtig?",
+  "a": [
+   "Haftpflicht und Berufsunfähigkeit",
+   "Handy- und Brillenversicherung",
+   "Reisegepäck- und Glasversicherung",
+   "Sterbegeld- und Fahrradversicherung"
+  ],
+  "w": [
+   "",
+   "Solche Kleinversicherungen decken meist nur überschaubare Schäden.",
+   "Diese Schäden kann man meist selbst tragen.",
+   "Diese gelten als verzichtbar oder nur in besonderen Fällen sinnvoll."
+  ],
+  "e": "Verbraucherschützer empfehlen, zuerst existenzbedrohende Risiken abzusichern: Schäden an anderen (Haftpflicht) und den Verlust der Arbeitskraft.",
+  "h": "Absichern, was existenzbedrohend wäre.",
+  "d": 1,
+  "id": "n3462344",
+  "p": 1
+ },
+ {
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Was solltest du tun, bevor du einen Vertrag an der Haustür unterschreibst?",
+  "a": [
+   "In Ruhe Angebote vergleichen",
+   "Sofort unterschreiben, sonst ist es weg",
+   "Nur auf das Lächeln des Verkäufers achten",
+   "Die Ausweisnummer mitgeben"
+  ],
+  "w": [
+   "",
+   "Zeitdruck ist ein typischer Verkaufstrick.",
+   "Sympathie ersetzt keinen Preisvergleich.",
+   "Persönliche Daten sollte man nicht vorschnell herausgeben."
+  ],
+  "e": "Haustürgeschäfte kann man zwar 14 Tage widerrufen, doch besser ist es, gar nicht unter Druck zu unterschreiben und Angebote zu vergleichen.",
+  "h": "Zeit lassen ist kein Fehler.",
+  "d": 1,
+  "id": "n9b3ba44",
+  "p": 1
+ },
+ {
+  "s": "Sparen & Anlegen",
+  "q": "Was ist ein Haushaltsbuch?",
+  "a": [
+   "Übersicht über Einnahmen und Ausgaben",
+   "Ein Kochbuch für Familien",
+   "Ein Vertrag mit dem Vermieter",
+   "Ein Konto bei der Bank"
+  ],
+  "w": [
+   "",
+   "Mit Kochen hat es nichts zu tun.",
+   "Ein Mietvertrag ist etwas anderes.",
+   "Ein Konto ist kein Haushaltsbuch."
+  ],
+  "e": "Wer Einnahmen und Ausgaben einige Monate notiert, sieht, wohin das Geld fließt – die Grundlage für jeden Sparplan.",
+  "h": "Wohin geht das Geld?",
+  "d": 1,
+  "p": 1,
+  "id": "n81f20b8"
+ },
+ {
+  "s": "Sparen & Anlegen",
+  "q": "Ein Angebot verspricht 20 % Rendite pro Jahr „ohne Risiko“. Was ist davon zu halten?",
+  "a": [
+   "Sehr wahrscheinlich unseriös",
+   "Ein gutes, sicheres Angebot",
+   "Normal für Sparbücher",
+   "Vom Staat garantiert"
+  ],
+  "w": [
+   "",
+   "Hohe Rendite ohne Risiko gibt es nicht.",
+   "Sparbücher bringen weit weniger.",
+   "Der Staat garantiert solche Renditen nicht."
+  ],
+  "e": "Rendite und Risiko gehören zusammen. Versprechen hoher, sicherer Gewinne sind ein typisches Zeichen für Betrug, etwa Schneeballsysteme.",
+  "h": "Zu schön, um wahr zu sein.",
+  "d": 1,
+  "p": 1,
+  "id": "n17c801c"
+ },
+ {
+  "s": "Sparen & Anlegen",
+  "q": "Warum sollte man Kredite für Konsum wie Urlaub möglichst vermeiden?",
+  "a": [
+   "Zinsen verteuern den Urlaub",
+   "Banken dürfen dafür keine Kredite vergeben",
+   "Urlaub ist steuerlich verboten",
+   "Kredite gibt es nur für Häuser"
+  ],
+  "w": [
+   "",
+   "Banken dürfen Konsumkredite vergeben.",
+   "Urlaub ist nicht verboten.",
+   "Es gibt viele Kreditarten."
+  ],
+  "e": "Bei Konsumkrediten zahlt man oft viel Zinsen für etwas, das keinen Wert behält. Besser vorher ansparen.",
+  "h": "Der Preis steigt.",
+  "d": 1,
+  "p": 1,
+  "id": "n5b4af39"
+ },
+ {
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Welche Versicherung ist für die meisten eher verzichtbar?",
+  "a": [
+   "Handyversicherung",
+   "Private Haftpflicht",
+   "Krankenversicherung",
+   "Kfz-Haftpflicht fürs eigene Auto"
+  ],
+  "w": [
+   "",
+   "Die Haftpflicht schützt vor existenzbedrohenden Schäden.",
+   "Die Krankenversicherung ist Pflicht.",
+   "Die Kfz-Haftpflicht ist für Autos Pflicht."
+  ],
+  "e": "Verbraucherzentralen raten, nur existenzbedrohende Risiken zu versichern. Kleine Schäden wie ein kaputtes Handy kann man meist selbst tragen.",
+  "h": "Kleine Schäden selbst tragen.",
+  "d": 2,
+  "p": 1,
+  "id": "n8862ca3"
+ },
+ {
+  "s": "Wirtschaft verstehen",
+  "q": "Was bedeutet Angebot und Nachfrage für den Preis?",
+  "a": [
+   "Knappe, begehrte Güter werden teurer",
+   "Preise legt immer der Staat fest",
+   "Preise sinken, wenn alle kaufen wollen",
+   "Preise hängen nur vom Gewicht ab"
+  ],
+  "w": [
+   "",
+   "In Marktwirtschaften entstehen die meisten Preise am Markt.",
+   "Steigende Nachfrage treibt Preise eher hoch.",
+   "Das Gewicht bestimmt den Preis nicht."
+  ],
+  "e": "Steigt die Nachfrage bei gleichem Angebot, steigt der Preis; steigt das Angebot bei gleicher Nachfrage, sinkt er.",
+  "h": "Knappheit.",
+  "d": 1,
+  "p": 1,
+  "id": "n204c658"
+ },
+ {
+  "s": "Steuern, Verträge & Versicherungen",
+  "q": "Lohnt sich eine Steuererklärung für Arbeitnehmer oft, auch wenn sie freiwillig ist?",
+  "a": [
+   "Ja, meist gibt es Geld zurück",
+   "Nein, man muss in der Regel immer nachzahlen",
+   "Nein, sie ist verboten",
+   "Nur für Rentner"
+  ],
+  "w": [
+   "",
+   "Bei freiwilliger Abgabe kommt meist eine Erstattung.",
+   "Freiwillige Erklärungen sind erlaubt.",
+   "Auch Arbeitnehmer profitieren oft."
+  ],
+  "e": "Laut Statistischem Bundesamt erhielten Arbeitnehmer mit Erstattung zuletzt im Schnitt rund 1.000 € zurück. Freiwillige Erklärungen kann man vier Jahre rückwirkend abgeben.",
+  "h": "Häufig eine Erstattung.",
+  "d": 1,
+  "p": 1,
+  "id": "n01761b6"
+ }
+]

@@ -1,0 +1,5148 @@
+[
+ {
+  "id": "1f3lo1i",
+  "s": "Kopfrechnen",
+  "q": "Wie multipliziert man im Kopf besonders schnell mit 5?",
+  "a": [
+   "Mit 10 multiplizieren und halbieren",
+   "Mit 10 multiplizieren und verdoppeln",
+   "Mit 2 multiplizieren und halbieren",
+   "Durch 10 teilen und verdoppeln"
+  ],
+  "w": [
+   "",
+   "Das ergäbe das Zwanzigfache; 5 ist die Hälfte von 10, also wird halbiert.",
+   "Das ergäbe nur das Einfache der Zahl, nicht das Fünffache.",
+   "Das ergäbe das 0,2-Fache, also ein Fünftel statt das Fünffache."
+  ],
+  "e": "Weil 5 = 10 : 2 ist, gilt zum Beispiel 46 · 5 = 460 : 2 = 230.",
+  "h": "Fünf ist die Hälfte von zehn.",
+  "d": 1
+ },
+ {
+  "id": "78cfuc",
+  "s": "Kopfrechnen",
+  "q": "Bei 45 · 11 schreibt man 4, dann 4 + 5, dann 5. Welches Ergebnis entsteht?",
+  "a": [
+   "495",
+   "455",
+   "540",
+   "585"
+  ],
+  "w": [
+   "",
+   "Das lässt die Mittelziffer 4 + 5 = 9 weg; so entstünde 4-5-5 statt 4-9-5.",
+   "Das wäre 45 · 12, nicht 45 · 11.",
+   "Das wäre 45 · 13, nicht 45 · 11."
+  ],
+  "e": "Mal 11 heißt mal 10 plus mal 1: 450 + 45 = 495. Die Mittelziffer ist die Quersumme der beiden Ziffern.",
+  "h": "Die Mitte ist die Summe der beiden Ziffern.",
+  "d": 2
+ },
+ {
+  "id": "cn9h23",
+  "s": "Kopfrechnen",
+  "q": "Welche Regel gilt für das Quadrat einer Zahl, die auf 5 endet, z. B. 65²?",
+  "a": [
+   "Zehnerziffer mal ihren Nachfolger, dann 25 anhängen",
+   "Zehnerziffer verdoppeln, dann 25 anhängen",
+   "Zehnerziffer quadrieren, dann 25 anhängen",
+   "Zehnerziffer mal 5, dann 25 anhängen"
+  ],
+  "w": [
+   "",
+   "Das gäbe 12|25 für 65², richtig sind aber 4.225.",
+   "Das gäbe 36|25 für 65², richtig sind aber 4.225.",
+   "Das gäbe 30|25 für 65², richtig sind aber 4.225."
+  ],
+  "e": "Bei 65² rechnet man 6 · 7 = 42 und hängt 25 an: 4.225. Das folgt aus (10n + 5)² = 100n(n + 1) + 25.",
+  "h": "Zehnerziffer mal ihre nächste Zahl.",
+  "d": 2
+ },
+ {
+  "id": "djhdnw",
+  "s": "Kopfrechnen",
+  "q": "Wie ermittelt man 15 % eines Betrags im Kopf elegant?",
+  "a": [
+   "Ein Zehntel plus die Hälfte davon",
+   "Ein Zehntel plus ein weiteres Zehntel davon",
+   "Ein Siebtel des Betrags",
+   "Ein Fünftel minus ein Zehntel"
+  ],
+  "w": [
+   "",
+   "Das ergäbe nur 11 % des Betrags.",
+   "Ein Siebtel sind etwa 14,3 %, nicht genau 15 %.",
+   "Das ergäbe 10 %, nicht 15 %."
+  ],
+  "e": "15 % = 10 % + 5 %, und 5 % ist die Hälfte von 10 %. Bei 80 € sind das 8 € + 4 € = 12 €.",
+  "h": "Zerlege 15 in 10 und 5.",
+  "d": 1
+ },
+ {
+  "id": "1coyany",
+  "s": "Kopfrechnen",
+  "q": "Wie groß ist die Summe aller Zahlen von 1 bis 100?",
+  "a": [
+   "5.050",
+   "5.000",
+   "5.100",
+   "10.100"
+  ],
+  "w": [
+   "",
+   "Das wären nur 50 Paare mit Summe 100; die Paare 1 + 100 usw. ergeben aber je 101.",
+   "Das wären 51 Paare zu je 100; es gibt aber 50 Paare zu je 101.",
+   "Das ist das Doppelte: 100 Zahlen mal 101, aber durch 2 zu teilen."
+  ],
+  "e": "Nach Gauß bildet man 50 Paare (1 + 100, 2 + 99, …) mit je 101: 50 · 101 = 5.050.",
+  "h": "Paare aus kleinster und größter Zahl.",
+  "d": 2
+ },
+ {
+  "id": "ag8cpg",
+  "s": "Kopfrechnen",
+  "q": "Wie lautet die Formel für die Summe 1 + 2 + … + n?",
+  "a": [
+   "n · (n + 1) / 2",
+   "n · (n − 1) / 2",
+   "n² / 2",
+   "n · (n + 1)"
+  ],
+  "w": [
+   "",
+   "Das summiert nur 1 bis n − 1.",
+   "Das ist zu klein; es fehlt der Summand n/2.",
+   "Das ist das Doppelte der Summe, also nicht durch 2 geteilt."
+  ],
+  "e": "Die Gaußsche Summenformel: für n = 10 gilt 10 · 11 / 2 = 55.",
+  "h": "Gauß als Schüler.",
+  "d": 2
+ },
+ {
+  "id": "6m6f7n",
+  "s": "Kopfrechnen",
+  "q": "Wie multipliziert man im Kopf schnell mit 25?",
+  "a": [
+   "Mit 100 multiplizieren und durch 4 teilen",
+   "Mit 10 multiplizieren und durch 4 teilen",
+   "Mit 100 multiplizieren und durch 2 teilen",
+   "Mit 4 multiplizieren und durch 100 teilen"
+  ],
+  "w": [
+   "",
+   "Das ergäbe das 2,5-Fache.",
+   "Das ergäbe das 50-Fache.",
+   "Das ergäbe das 0,04-Fache."
+  ],
+  "e": "25 = 100 : 4, also 36 · 25 = 3.600 : 4 = 900.",
+  "h": "25 Cent sind ein Viertel Euro.",
+  "d": 1
+ },
+ {
+  "id": "1ogw051",
+  "s": "Kopfrechnen",
+  "q": "Wie multipliziert man im Kopf schnell mit 9?",
+  "a": [
+   "Mit 10 multiplizieren und die Zahl abziehen",
+   "Mit 10 multiplizieren und die Zahl addieren",
+   "Mit 8 multiplizieren und 1 abziehen",
+   "Mit 10 multiplizieren und 9 abziehen"
+  ],
+  "w": [
+   "",
+   "Das ergäbe das 11-Fache.",
+   "Das ergäbe das 8-Fache minus 1, nicht das 9-Fache.",
+   "Es wird die Zahl selbst abgezogen, nicht die Zahl 9."
+  ],
+  "e": "9 = 10 − 1, daher 9 · 14 = 140 − 14 = 126.",
+  "h": "Neun ist eins weniger als zehn.",
+  "d": 1
+ },
+ {
+  "id": "6rvyl0",
+  "s": "Kopfrechnen",
+  "q": "Wie rechnet man 99 · 7 im Kopf elegant?",
+  "a": [
+   "700 − 7",
+   "700 − 70",
+   "700 + 7",
+   "630 + 9"
+  ],
+  "w": [
+   "",
+   "Das wäre 630, also 90 · 7.",
+   "Das wäre 707, also 101 · 7.",
+   "Das wäre 639; richtig ist 630 + 63 = 693."
+  ],
+  "e": "99 = 100 − 1, also 99 · 7 = 700 − 7 = 693.",
+  "h": "Hundert minus eins.",
+  "d": 1
+ },
+ {
+  "id": "qafraa",
+  "s": "Kopfrechnen",
+  "q": "Woran erkennt man, dass eine Zahl durch 4 teilbar ist?",
+  "a": [
+   "Ihre letzten beiden Ziffern bilden eine durch 4 teilbare Zahl",
+   "Ihre letzte Ziffer allein ist durch 4 teilbar",
+   "Die Summe all ihrer Ziffern ist durch 4 teilbar",
+   "Sie ist gerade, also durch 2 teilbar"
+  ],
+  "w": [
+   "",
+   "12 ist durch 4 teilbar, endet aber auf 2.",
+   "28 ist durch 4 teilbar, hat aber die Quersumme 10.",
+   "6 ist gerade, aber nicht durch 4 teilbar."
+  ],
+  "e": "100 ist durch 4 teilbar, daher entscheiden nur die letzten zwei Stellen: 316 ist teilbar, da 16 : 4 = 4.",
+  "h": "Hunderter fallen heraus.",
+  "d": 2
+ },
+ {
+  "id": "1ydy4pr",
+  "s": "Kopfrechnen",
+  "q": "Eine Zahl ist durch 6 teilbar, wenn sie …",
+  "a": [
+   "gerade ist und eine durch 3 teilbare Quersumme hat",
+   "auf 6 endet",
+   "eine durch 6 teilbare Quersumme hat",
+   "durch 2 oder durch 3 teilbar ist"
+  ],
+  "w": [
+   "",
+   "16 endet auf 6, ist aber nicht durch 6 teilbar.",
+   "15 hat die Quersumme 6, ist aber ungerade.",
+   "9 ist durch 3 teilbar, aber nicht durch 6."
+  ],
+  "e": "6 = 2 · 3, daher müssen beide Teilbarkeiten erfüllt sein: 84 ist gerade, Quersumme 12, also durch 6 teilbar.",
+  "h": "6 = 2 · 3.",
+  "d": 2
+ },
+ {
+  "id": "1fw38zu",
+  "s": "Kopfrechnen",
+  "q": "Welche Regel zeigt die Teilbarkeit einer Zahl durch 11?",
+  "a": [
+   "Die alternierende Quersumme ist durch 11 teilbar",
+   "Die Quersumme ist durch 11 teilbar",
+   "Die letzten beiden Ziffern sind durch 11 teilbar",
+   "Die Zahl endet auf 1"
+  ],
+  "w": [
+   "",
+   "29 hat die Quersumme 11, ist aber eine Primzahl.",
+   "111 endet auf 11, ist aber 3 · 37.",
+   "21 endet auf 1, ist aber nicht durch 11 teilbar."
+  ],
+  "e": "Man bildet abwechselnd Plus und Minus der Ziffern: 918 273 → 9 − 1 + 8 − 2 + 7 − 3 = 18, nicht teilbar; 121 → 1 − 2 + 1 = 0, teilbar.",
+  "h": "Wechselnde Vorzeichen.",
+  "d": 3
+ },
+ {
+  "id": "d8e72x",
+  "s": "Kopfrechnen",
+  "q": "Warum ist 17 · 6 = 10 · 6 + 7 · 6 richtig?",
+  "a": [
+   "Distributivgesetz",
+   "Kommutativgesetz",
+   "Assoziativgesetz",
+   "Potenzgesetz"
+  ],
+  "w": [
+   "",
+   "Dieses erlaubt nur das Vertauschen der Faktoren.",
+   "Dieses betrifft nur das Verschieben von Klammern.",
+   "Dieses betrifft Potenzen, nicht das Auseinanderziehen einer Summe."
+  ],
+  "e": "Nach a · (b + c) = a · b + a · c kann man schwierige Faktoren aufspalten: 17 · 6 = 60 + 42 = 102.",
+  "h": "Verteilen.",
+  "d": 2
+ },
+ {
+  "id": "1d45pqm",
+  "s": "Kopfrechnen",
+  "q": "Was ist die beste Überschlagsrechnung für 398 · 52?",
+  "a": [
+   "400 · 50",
+   "400 · 5",
+   "300 · 50",
+   "400 · 500"
+  ],
+  "w": [
+   "",
+   "Das ist um den Faktor 10 zu klein.",
+   "Das rundet 398 viel zu stark ab.",
+   "Das ist um den Faktor 10 zu groß."
+  ],
+  "e": "Man rundet beide Faktoren sinnvoll: 400 · 50 = 20.000; exakt sind es 20.696.",
+  "h": "Auf glatte Zahlen runden.",
+  "d": 1
+ },
+ {
+  "id": "1620fwm",
+  "s": "Kopfrechnen",
+  "q": "Welchen Rest lässt eine Zahl bei Division durch 9?",
+  "a": [
+   "Denselben wie ihre Quersumme",
+   "Denselben wie ihre letzte Ziffer",
+   "Denselben wie ihre Ziffernzahl",
+   "Denselben wie ihre Zehnerziffer"
+  ],
+  "w": [
+   "",
+   "23 lässt Rest 5, die letzte Ziffer ist 3.",
+   "23 hat zwei Ziffern, lässt aber Rest 5.",
+   "23 lässt Rest 5, die Zehnerziffer ist 2."
+  ],
+  "e": "Da 10 ≡ 1 mod 9, gilt: 23 hat Quersumme 5 und lässt Rest 5. Darauf beruht die Neunerprobe.",
+  "h": "Neunerprobe.",
+  "d": 3
+ },
+ {
+  "id": "wy2sqs",
+  "s": "Kopfrechnen",
+  "q": "Welchen Wert hat 2¹⁰?",
+  "a": [
+   "1.024",
+   "1.000",
+   "512",
+   "2.048"
+  ],
+  "w": [
+   "",
+   "Das ist 10³; 2¹⁰ ist etwas größer.",
+   "Das ist 2⁹.",
+   "Das ist 2¹¹."
+  ],
+  "e": "2¹⁰ = 1.024 ist die Grundlage von „Kilo“ in der Informatik (1 KiB = 1.024 Byte).",
+  "h": "Kibibyte.",
+  "d": 1
+ },
+ {
+  "id": "1k6eoi8",
+  "s": "Kopfrechnen",
+  "q": "Wie viele Sekunden hat ein Tag?",
+  "a": [
+   "86.400",
+   "3.600",
+   "14.400",
+   "604.800"
+  ],
+  "w": [
+   "",
+   "Das ist nur eine Stunde.",
+   "Das sind 4 Stunden.",
+   "Das ist eine ganze Woche."
+  ],
+  "e": "24 · 60 · 60 = 86.400.",
+  "h": "Stunden · Minuten · Sekunden.",
+  "d": 1
+ },
+ {
+  "id": "1yghuky",
+  "s": "Kopfrechnen",
+  "q": "Wie viele Minuten hat eine Woche?",
+  "a": [
+   "10.080",
+   "1.440",
+   "7.200",
+   "8.640"
+  ],
+  "w": [
+   "",
+   "Das ist ein einzelner Tag.",
+   "Das wären nur 5 Tage.",
+   "Das wären nur 6 Tage."
+  ],
+  "e": "7 · 24 · 60 = 10.080.",
+  "h": "Ein Tag hat 1.440 Minuten.",
+  "d": 2
+ },
+ {
+  "id": "csl2j8",
+  "s": "Kopfrechnen",
+  "q": "Wie rechnet man Kilometer pro Stunde in Meter pro Sekunde um?",
+  "a": [
+   "Durch 3,6 teilen",
+   "Mit 3,6 multiplizieren",
+   "Durch 6 teilen",
+   "Mit 0,6 multiplizieren"
+  ],
+  "w": [
+   "",
+   "Das wäre die Umkehrung (m/s in km/h).",
+   "Der Faktor ist 3,6, nicht 6.",
+   "Der Faktor müsste 1/3,6 ≈ 0,28 sein, nicht 0,6."
+  ],
+  "e": "1 km/h = 1.000 m : 3.600 s = 1/3,6 m/s; 36 km/h entsprechen 10 m/s.",
+  "h": "1.000 m in 3.600 s.",
+  "d": 2
+ },
+ {
+  "id": "1snogbo",
+  "s": "Kopfrechnen",
+  "q": "Wie lautet 1/7 als Dezimalzahl?",
+  "a": [
+   "0,142857… (periodisch)",
+   "0,175 (abbrechend)",
+   "0,166… (periodisch)",
+   "0,125 (abbrechend)"
+  ],
+  "w": [
+   "",
+   "Das wäre 7/40.",
+   "Das wäre 1/6.",
+   "Das wäre 1/8."
+  ],
+  "e": "1/7 = 0,142857142857…; die Periode hat sechs Stellen. 2/7, 3/7 usw. nutzen dieselben Ziffern.",
+  "h": "Sechs Stellen wiederholen sich.",
+  "d": 2
+ },
+ {
+  "id": "1huxt2k",
+  "s": "Kopfrechnen",
+  "q": "Wie rechnet man im Kopf 4 % von 75?",
+  "a": [
+   "Man rechnet stattdessen 75 % von 4",
+   "Man rechnet 4 % von 57",
+   "Man rechnet 75 % von 400",
+   "Man rechnet 4 % von 7,5"
+  ],
+  "w": [
+   "",
+   "Die Ziffern zu vertauschen ist kein Rechentrick.",
+   "Das wäre das 100-Fache.",
+   "Das wäre nur ein Zehntel des Ergebnisses."
+  ],
+  "e": "p % von g = g · p / 100 ist symmetrisch: 4 % von 75 = 75 % von 4 = 3.",
+  "h": "Faktoren sind vertauschbar.",
+  "d": 2
+ },
+ {
+  "id": "a6uht6",
+  "s": "Kopfrechnen",
+  "q": "Wie groß ist die Summe der ersten zehn ungeraden Zahlen 1 + 3 + … + 19?",
+  "a": [
+   "100",
+   "55",
+   "110",
+   "90"
+  ],
+  "w": [
+   "",
+   "Das ist die Summe der Zahlen 1 bis 10.",
+   "Das wäre 10 · 11, die Summe der ersten zehn geraden Zahlen.",
+   "Das wäre 9 · 10, also eine Zahl zu wenig."
+  ],
+  "e": "Die Summe der ersten n ungeraden Zahlen ist n²: hier 10² = 100.",
+  "h": "Quadratzahl.",
+  "d": 2
+ },
+ {
+  "id": "xktpm5",
+  "s": "Kopfrechnen",
+  "q": "Was geschieht mit einer Zahl, wenn man sie mit einer Zahl zwischen 0 und 1 multipliziert?",
+  "a": [
+   "Sie wird kleiner",
+   "Sie wird größer",
+   "Sie bleibt gleich",
+   "Sie wird negativ"
+  ],
+  "w": [
+   "",
+   "Das gilt nur bei Faktoren über 1.",
+   "Das gilt nur bei Faktor 1.",
+   "Das Vorzeichen ändert sich nur bei negativen Faktoren."
+  ],
+  "e": "Mal 0,5 heißt halbieren: 80 · 0,5 = 40.",
+  "h": "Teil von etwas.",
+  "d": 1
+ },
+ {
+  "id": "1i8n3po",
+  "s": "Kopfrechnen",
+  "q": "Was geschieht mit einer positiven Zahl, wenn man sie durch eine Zahl zwischen 0 und 1 teilt?",
+  "a": [
+   "Sie wird größer",
+   "Sie wird kleiner",
+   "Sie bleibt gleich",
+   "Sie wird null"
+  ],
+  "w": [
+   "",
+   "Das gilt nur beim Teilen durch Zahlen über 1.",
+   "Das gilt nur beim Teilen durch 1.",
+   "Null entsteht nur, wenn der Dividend 0 ist."
+  ],
+  "e": "Teilen durch 0,5 heißt verdoppeln: 5 : 0,5 = 10.",
+  "h": "Wie viele halbe passen hinein?",
+  "d": 2
+ },
+ {
+  "id": "lrfnxd",
+  "s": "Kopfrechnen",
+  "q": "Wie teilt man im Kopf schnell durch 5?",
+  "a": [
+   "Verdoppeln und durch 10 teilen",
+   "Halbieren und durch 10 teilen",
+   "Verdoppeln und mit 10 multiplizieren",
+   "Halbieren und mit 10 multiplizieren"
+  ],
+  "w": [
+   "",
+   "Das ergäbe ein Zwanzigstel.",
+   "Das ergäbe das 20-Fache.",
+   "Das ergäbe das Fünffache."
+  ],
+  "e": "x : 5 = 2x : 10, also 340 : 5 = 680 : 10 = 68.",
+  "h": "Ein Fünftel = zwei Zehntel.",
+  "d": 2
+ },
+ {
+  "id": "1vwvo2c",
+  "s": "Kopfrechnen",
+  "q": "Wie viele Stück sind ein Gros?",
+  "a": [
+   "144",
+   "100",
+   "132",
+   "160"
+  ],
+  "w": [
+   "",
+   "Das wäre ein Hundert.",
+   "Das wären nur 11 Dutzend.",
+   "Das passt zu keiner gebräuchlichen Mengeneinheit."
+  ],
+  "e": "Ein Gros sind 12 Dutzend: 12 · 12 = 144.",
+  "h": "Dutzend mal Dutzend.",
+  "d": 1
+ },
+ {
+  "id": "2wdef0",
+  "s": "Kopfrechnen",
+  "q": "Wie viel ist ein Viertel von einem Viertel?",
+  "a": [
+   "1/16",
+   "1/8",
+   "1/2",
+   "1/4"
+  ],
+  "w": [
+   "",
+   "Das wäre die Hälfte von einem Viertel.",
+   "Das wäre die Summe zweier Viertel.",
+   "Das wäre nur ein Viertel von 1."
+  ],
+  "e": "Brüche werden multipliziert: 1/4 · 1/4 = 1/16.",
+  "h": "Zähler mal Zähler, Nenner mal Nenner.",
+  "d": 1
+ },
+ {
+  "id": "19r3rbb",
+  "s": "Kopfrechnen",
+  "q": "Auf welche Ziffer endet 7²⁰?",
+  "a": [
+   "1",
+   "7",
+   "9",
+   "3"
+  ],
+  "w": [
+   "",
+   "Das gälte nur für 7¹, 7⁵ usw.",
+   "Das gälte nur für 7², 7⁶ usw.",
+   "Das gälte nur für 7³, 7⁷ usw."
+  ],
+  "e": "Die Endziffern von 7ⁿ wiederholen sich im Takt 7, 9, 3, 1. Da 20 durch 4 teilbar ist, ist es die 1.",
+  "h": "Vierer-Rhythmus.",
+  "d": 3
+ },
+ {
+  "id": "2oziwy",
+  "s": "Kopfrechnen",
+  "q": "Wie viel Prozent entsprechen 1/8?",
+  "a": [
+   "12,5 %",
+   "8 %",
+   "18 %",
+   "1,25 %"
+  ],
+  "w": [
+   "",
+   "1/8 ist nicht 8 Prozent; 8 % wären 2/25.",
+   "Das wäre etwa 9/50.",
+   "Das wäre ein Zehntel des richtigen Werts."
+  ],
+  "e": "1/8 = 0,125 = 12,5 %. Viele Merkwerte folgen daraus: 3/8 = 37,5 %.",
+  "h": "Halbe von 25 %.",
+  "d": 2
+ },
+ {
+  "id": "1tsdi1i",
+  "s": "Kopfrechnen",
+  "q": "Welcher Bruch entspricht 37,5 %?",
+  "a": [
+   "3/8",
+   "3/7",
+   "5/8",
+   "3/5"
+  ],
+  "w": [
+   "",
+   "3/7 sind etwa 42,9 %.",
+   "5/8 sind 62,5 %.",
+   "3/5 sind 60 %."
+  ],
+  "e": "37,5 % = 3 · 12,5 % = 3 · 1/8 = 3/8.",
+  "h": "Dreimal ein Achtel.",
+  "d": 2
+ },
+ {
+  "id": "1brin",
+  "s": "Kopfrechnen",
+  "q": "Wie lautet 19 · 21 mit der dritten binomischen Formel?",
+  "a": [
+   "399",
+   "401",
+   "400",
+   "379"
+  ],
+  "w": [
+   "",
+   "Das wäre 20² + 1; das Vorzeichen ist aber Minus.",
+   "Man muss noch 1² abziehen.",
+   "Das wäre 400 − 21."
+  ],
+  "e": "(20 − 1)(20 + 1) = 20² − 1² = 399.",
+  "h": "Zahlen um 20 herum.",
+  "d": 2
+ },
+ {
+  "id": "knmq9a",
+  "s": "Kopfrechnen",
+  "q": "Wie groß ist 101² mit der ersten binomischen Formel?",
+  "a": [
+   "10.201",
+   "10.101",
+   "10.200",
+   "10.021"
+  ],
+  "w": [
+   "",
+   "Der mittlere Term 2 · 100 · 1 = 200 fehlt.",
+   "Der letzte Term 1² = 1 fehlt.",
+   "Die Summanden stehen in falscher Reihenfolge."
+  ],
+  "e": "(100 + 1)² = 10.000 + 200 + 1 = 10.201.",
+  "h": "Hundert plus eins.",
+  "d": 2
+ },
+ {
+  "id": "1gf2uxk",
+  "s": "Kopfrechnen",
+  "q": "Mit welcher Zahl multipliziert man 125, um 1.000 zu erhalten?",
+  "a": [
+   "8",
+   "4",
+   "5",
+   "10"
+  ],
+  "w": [
+   "",
+   "125 · 4 = 500.",
+   "125 · 5 = 625.",
+   "125 · 10 = 1.250."
+  ],
+  "e": "125 = 1.000 : 8, deshalb gilt 125 · 8 = 1.000. Nützlich: 48 · 125 = 6.000.",
+  "h": "Ein Achtel von tausend.",
+  "d": 1
+ },
+ {
+  "id": "1g3oaaf",
+  "s": "Kopfrechnen",
+  "q": "Wie ändert sich ein Produkt, wenn man einen Faktor verdoppelt und den anderen halbiert?",
+  "a": [
+   "Es bleibt gleich",
+   "Es verdoppelt sich",
+   "Es halbiert sich",
+   "Es vervierfacht sich"
+  ],
+  "w": [
+   "",
+   "Die Verdopplung wird durch das Halbieren ausgeglichen.",
+   "Die Halbierung wird durch das Verdoppeln ausgeglichen.",
+   "Faktoren 2 und 1/2 ergeben zusammen 1, nicht 4."
+  ],
+  "e": "Daraus entsteht ein Trick: 16 · 25 = 8 · 50 = 4 · 100 = 400.",
+  "h": "2 · ½ = 1.",
+  "d": 1
+ },
+ {
+  "id": "1o6f03c",
+  "s": "Kopfrechnen",
+  "q": "Welches Produkt lässt sich mit der Folge „5-6-7-8“ merken?",
+  "a": [
+   "7 · 8 = 56",
+   "6 · 9 = 54",
+   "7 · 9 = 63",
+   "8 · 8 = 64"
+  ],
+  "w": [
+   "",
+   "Das ist ein anderes Produkt; die Folge 5-6-7-8 gehört zu 56 = 7 · 8.",
+   "Das ist ein anderes Produkt; hier fehlt die Ziffernfolge.",
+   "Das ist ein anderes Produkt; hier gibt es keine Ziffernfolge."
+  ],
+  "e": "Die Ziffern 5, 6 und 7, 8 stehen aufsteigend in 56 = 7 · 8.",
+  "h": "Vier aufeinanderfolgende Ziffern.",
+  "d": 1
+ },
+ {
+  "id": "nbqpjm",
+  "s": "Kopfrechnen",
+  "q": "Welche Besonderheit haben die Ergebnisse von 9 · 1 bis 9 · 10?",
+  "a": [
+   "Ihre Quersumme ist stets 9",
+   "Sie sind alle durch 6 teilbar",
+   "Sie sind alle ungerade",
+   "Sie sind alle Primzahlen"
+  ],
+  "w": [
+   "",
+   "9 ist nicht durch 6 teilbar.",
+   "18 ist gerade.",
+   "18 ist keine Primzahl."
+  ],
+  "e": "9 · 7 = 63 → 6 + 3 = 9. Die Quersumme eines Vielfachen von 9 ist durch 9 teilbar.",
+  "h": "Neunerprobe.",
+  "d": 1
+ },
+ {
+  "id": "14ec199",
+  "s": "Kopfrechnen",
+  "q": "Wie viele Nullen hat eine Milliarde?",
+  "a": [
+   "9",
+   "6",
+   "12",
+   "10"
+  ],
+  "w": [
+   "",
+   "Das ist eine Million.",
+   "Das ist eine Billion.",
+   "Das wäre das Zehnfache einer Milliarde."
+  ],
+  "e": "Eine Milliarde ist 10⁹ = 1.000.000.000.",
+  "h": "Million hat 6.",
+  "d": 1
+ },
+ {
+  "id": "1hy6fky",
+  "s": "Kopfrechnen",
+  "q": "Wie bestimmt man den Mittelwert von 18, 19, 20, 21, 22 am schnellsten?",
+  "a": [
+   "Der mittlere Wert 20 ist der Mittelwert",
+   "Summe durch 4 teilen",
+   "Summe durch 10 teilen",
+   "Größten minus kleinsten Wert nehmen"
+  ],
+  "w": [
+   "",
+   "Es sind fünf Werte, nicht vier.",
+   "Das ergäbe das Doppelte des Mittelwerts.",
+   "Das ist die Spannweite (4), nicht der Mittelwert."
+  ],
+  "e": "Bei gleichmäßig verteilten Werten liegt der Mittelwert in der Mitte: (18 + … + 22) / 5 = 20.",
+  "h": "Symmetrie um die Mitte.",
+  "d": 2
+ },
+ {
+  "id": "1t8bay3",
+  "s": "Kopfrechnen",
+  "q": "Wie viel ist die Hälfte von einem Drittel?",
+  "a": [
+   "1/6",
+   "1/5",
+   "2/3",
+   "1/2"
+  ],
+  "w": [
+   "",
+   "Das wäre größer als 1/6.",
+   "Das wäre das Doppelte des Drittels.",
+   "Das wäre die Hälfte von 1."
+  ],
+  "e": "Die Hälfte nehmen heißt mal 1/2: 1/3 · 1/2 = 1/6.",
+  "h": "Zähler mal Zähler, Nenner mal Nenner.",
+  "d": 1
+ },
+ {
+  "id": "1fbq8ft",
+  "s": "Kopfrechnen",
+  "q": "Die Differenz einer zweistelligen Zahl und der Zahl mit vertauschten Ziffern (z. B. 52 − 25) ist immer teilbar durch …",
+  "a": [
+   "9",
+   "11",
+   "10",
+   "7"
+  ],
+  "w": [
+   "",
+   "27 (aus 52 − 25) ist nicht durch 11 teilbar.",
+   "27 endet nicht auf 0.",
+   "27 ist nicht durch 7 teilbar."
+  ],
+  "e": "(10a + b) − (10b + a) = 9 · (a − b). Deshalb ist das Ergebnis stets ein Vielfaches von 9.",
+  "h": "Rechne (10a + b) − (10b + a) aus.",
+  "d": 3
+ },
+ {
+  "id": "9ybyrj",
+  "s": "Prozent & Zinsen",
+  "q": "Du legst Geld mit 7 % Rendite pro Jahr an. Nach welcher Zeit hat es sich nach der 72er-Regel etwa verdoppelt?",
+  "a": [
+   "Etwa 10 Jahre",
+   "Etwa 5 Jahre",
+   "Etwa 14 Jahre",
+   "Etwa 20 Jahre"
+  ],
+  "w": [
+   "",
+   "Das entspräche etwa 14 % Rendite.",
+   "Das entspräche etwa 5 % Rendite.",
+   "Das entspräche etwa 3,6 % Rendite."
+  ],
+  "e": "Verdopplungszeit ≈ 72 : Zinssatz = 72 : 7 ≈ 10,3 Jahre (exakt 10,24).",
+  "h": "72 durch Zinssatz.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "smyahk",
+  "s": "Prozent & Zinsen",
+  "q": "Bei 3 % Inflation pro Jahr: Wie viel Kaufkraft haben 100 € von heute nach 10 Jahren noch?",
+  "a": [
+   "Rund 74 €",
+   "Rund 70 €",
+   "Rund 85 €",
+   "Rund 90 €"
+  ],
+  "w": [
+   "",
+   "Das wäre 100 − 10 · 3; die Preise steigen aber mit Zinseszins.",
+   "Das entspräche nur etwa 1,6 % Inflation pro Jahr.",
+   "Das entspräche nur etwa 1 % Inflation pro Jahr."
+  ],
+  "e": "100 € : 1,03¹⁰ ≈ 74,4 €. Inflation wirkt wie ein umgekehrter Zinseszins.",
+  "h": "Zinseszins rückwärts.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "1lq5m2a",
+  "s": "Prozent & Zinsen",
+  "q": "Du legst 10.000 € zu 5 % pro Jahr an und lässt die Zinsen im Depot. Wie viel hast du nach 20 Jahren etwa?",
+  "a": [
+   "Etwa 26.500 €",
+   "Etwa 20.000 €",
+   "Etwa 22.000 €",
+   "Etwa 30.000 €"
+  ],
+  "w": [
+   "",
+   "Das wäre einfache Verzinsung: 10.000 + 20 · 500.",
+   "Das ergäbe sich bei nur etwa 4 % Zinseszins.",
+   "Das wäre 10.000 · 1,06²⁰ oder mehr, also ein höherer Zins."
+  ],
+  "e": "10.000 · 1,05²⁰ ≈ 26.533 €. Der Zinseszins bringt über 6.500 € mehr als einfache Zinsen.",
+  "h": "Zinsen auf Zinsen.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "3zng2r",
+  "s": "Prozent & Zinsen",
+  "q": "Was sind 15 % von 80?",
+  "a": [
+   "12",
+   "8",
+   "15",
+   "10"
+  ],
+  "w": [
+   "",
+   "Das wären 10 % von 80.",
+   "Das ist der Prozentsatz, nicht der Prozentwert.",
+   "Das wären 12,5 % von 80."
+  ],
+  "e": "10 % = 8, 5 % = 4, zusammen 12.",
+  "h": "10 % plus 5 %.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "l0sofz",
+  "s": "Prozent & Zinsen",
+  "q": "Ein Mantel kostet 120 €. Du bekommst 25 % Rabatt. Wie viel zahlst du?",
+  "a": [
+   "90 €",
+   "95 €",
+   "100 €",
+   "80 €"
+  ],
+  "w": [
+   "",
+   "Das wären 25 € Rabatt statt 25 %.",
+   "Das wäre nur ein Rabatt von etwa 16,7 %.",
+   "Das wäre ein Rabatt von etwa 33,3 %."
+  ],
+  "e": "25 % = ein Viertel: 120 € − 30 € = 90 €.",
+  "h": "Ein Viertel abziehen.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1re2qkf",
+  "s": "Prozent & Zinsen",
+  "q": "Ein Preis steigt um 20 % und sinkt danach um 20 %. Wie steht er im Vergleich zum Start?",
+  "a": [
+   "4 % niedriger",
+   "Gleich",
+   "4 % höher",
+   "20 % niedriger"
+  ],
+  "w": [
+   "",
+   "Die Prozente beziehen sich auf unterschiedliche Grundwerte.",
+   "Der Endwert 0,96 liegt unter 1, also darunter.",
+   "Die Steigerung wird nur teilweise aufgehoben, aber nicht ignoriert."
+  ],
+  "e": "1,2 · 0,8 = 0,96: 100 € → 120 € → 96 €.",
+  "h": "Grundwert ändert sich.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "1tyebz7",
+  "s": "Prozent & Zinsen",
+  "q": "Ein Wert steigt von 50 auf 60. Um wie viel Prozent?",
+  "a": [
+   "20 %",
+   "10 %",
+   "16,7 %",
+   "12 %"
+  ],
+  "w": [
+   "",
+   "Das wäre die absolute Änderung 10, nicht der Prozentsatz.",
+   "Das wäre bezogen auf den Endwert 60 statt 50.",
+   "Das passt zu keinem sinnvollen Bezugswert."
+  ],
+  "e": "Änderung : Ausgangswert = 10 : 50 = 20 %.",
+  "h": "Bezug ist der Anfangswert.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1qbubni",
+  "s": "Prozent & Zinsen",
+  "q": "Ein Nettopreis beträgt 100 €. Wie hoch ist der Bruttopreis bei 19 % Mehrwertsteuer?",
+  "a": [
+   "119 €",
+   "109 €",
+   "190 €",
+   "81 €"
+  ],
+  "w": [
+   "",
+   "Das wären nur 9 % Mehrwertsteuer.",
+   "Das wäre ein Aufschlag von 90 %.",
+   "Das wäre ein Abzug statt eines Aufschlags."
+  ],
+  "e": "Brutto = Netto · 1,19 = 119 €.",
+  "h": "Mal 1,19.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1iz1stk",
+  "s": "Prozent & Zinsen",
+  "q": "Ein Bruttopreis beträgt 119 €. Wie hoch ist der Nettopreis bei 19 % Mehrwertsteuer?",
+  "a": [
+   "100 €",
+   "96,39 €",
+   "98 €",
+   "90,50 €"
+  ],
+  "w": [
+   "",
+   "Das zieht 19 % vom Bruttopreis ab, statt durch 1,19 zu teilen.",
+   "Das passt zu keiner Rechnung mit 19 %.",
+   "Das passt zu keiner Rechnung mit 19 %."
+  ],
+  "e": "Netto = Brutto : 1,19 = 100 €. Die 19 % beziehen sich auf den Nettopreis.",
+  "h": "Teilen, nicht abziehen.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "1wi7nxe",
+  "s": "Prozent & Zinsen",
+  "q": "Wie viel Prozent sind 30 von 120?",
+  "a": [
+   "25 %",
+   "30 %",
+   "40 %",
+   "20 %"
+  ],
+  "w": [
+   "",
+   "Das ist nur die Zahl 30, nicht der Anteil.",
+   "Das wären 48 von 120.",
+   "Das wären 24 von 120."
+  ],
+  "e": "30 : 120 = 0,25 = 25 %.",
+  "h": "Ein Viertel.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1pznv7y",
+  "s": "Prozent & Zinsen",
+  "q": "Der Zinssatz steigt von 4 % auf 5 %. Was stimmt?",
+  "a": [
+   "Ein Prozentpunkt, relativ 25 % mehr",
+   "Ein Prozent mehr, relativ 5 % mehr",
+   "Fünf Prozentpunkte, relativ 20 % mehr",
+   "Ein Prozentpunkt, relativ 20 % mehr"
+  ],
+  "w": [
+   "",
+   "Die Differenz in Prozent heißt Prozentpunkte; relativ sind es 1 : 4 = 25 %.",
+   "Der Unterschied ist nur 1 Prozentpunkt.",
+   "Relativ bezieht man auf 4 %, nicht auf 5 %."
+  ],
+  "e": "Absolute Änderung: 1 Prozentpunkt; relative Änderung: 1/4 = 25 %.",
+  "h": "Prozentpunkte versus Prozent.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "6qcl11",
+  "s": "Prozent & Zinsen",
+  "q": "Du bekommst 10 % Rabatt und darauf nochmals 10 % Rabatt. Wie hoch ist der Gesamtrabatt?",
+  "a": [
+   "19 %",
+   "20 %",
+   "10 %",
+   "21 %"
+  ],
+  "w": [
+   "",
+   "Der zweite Rabatt bezieht sich auf den schon reduzierten Preis.",
+   "Beide Rabatte wirken, nicht nur einer.",
+   "Das wäre 1,1² − 1; es handelt sich aber um einen Nachlass."
+  ],
+  "e": "0,9 · 0,9 = 0,81, also 19 % Nachlass.",
+  "h": "Faktoren multiplizieren.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "ueuja9",
+  "s": "Prozent & Zinsen",
+  "q": "1.000 € werden zwei Jahre mit 5 % pro Jahr verzinst, die Zinsen bleiben angelegt. Wie viel sind es danach?",
+  "a": [
+   "1.102,50 €",
+   "1.100 €",
+   "1.105 €",
+   "1.050 €"
+  ],
+  "w": [
+   "",
+   "Das wäre einfache Verzinsung ohne Zinseszins.",
+   "Das passt zu keiner Verzinsung mit 5 %.",
+   "Das wäre nur nach einem Jahr."
+  ],
+  "e": "1.000 · 1,05² = 1.102,50 €.",
+  "h": "Zweimal mal 1,05.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1mfo8ky",
+  "s": "Prozent & Zinsen",
+  "q": "Wie hoch sind die Zinsen auf 2.500 € bei 4 % in einem Jahr?",
+  "a": [
+   "100 €",
+   "25 €",
+   "400 €",
+   "1.000 €"
+  ],
+  "w": [
+   "",
+   "Das wären 1 % von 2.500 €.",
+   "Das wäre 16 %.",
+   "Das wären 40 %."
+  ],
+  "e": "4 % von 2.500 € = 25 € · 4 = 100 €.",
+  "h": "1 % mal 4.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1qqireu",
+  "s": "Prozent & Zinsen",
+  "q": "Wie berechnet man den Prozentwert aus Grundwert und Prozentsatz?",
+  "a": [
+   "Grundwert · Prozentsatz / 100",
+   "Grundwert · 100 / Prozentsatz",
+   "Grundwert / (Prozentsatz · 100)",
+   "Prozentsatz / (Grundwert · 100)"
+  ],
+  "w": [
+   "",
+   "Das wäre die Umkehrung und ergäbe zu große Werte.",
+   "Das wäre viel zu klein.",
+   "Das ist keine Prozentformel."
+  ],
+  "e": "W = G · p / 100: 8 % von 250 = 250 · 8 / 100 = 20.",
+  "h": "Prozent heißt „pro hundert“.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "17j8sas",
+  "s": "Prozent & Zinsen",
+  "q": "Was bedeutet das Wort „Prozent“ wörtlich?",
+  "a": [
+   "Von Hundert",
+   "Von Tausend",
+   "Von Zehn",
+   "Pro Jahr"
+  ],
+  "w": [
+   "",
+   "Das wäre Promille.",
+   "Das wäre ein Zehntel.",
+   "Das ist die Zeitangabe „p. a.“."
+  ],
+  "e": "Lateinisch „pro centum“, also „pro hundert“. 1 % = 1/100.",
+  "h": "Latein: centum.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1szm2aa",
+  "s": "Prozent & Zinsen",
+  "q": "Wie viel Prozent sind 5 Promille?",
+  "a": [
+   "0,5 %",
+   "5 %",
+   "0,05 %",
+   "50 %"
+  ],
+  "w": [
+   "",
+   "Das wären 50 Promille.",
+   "Das wäre 0,5 Promille.",
+   "Das wären 500 Promille."
+  ],
+  "e": "1 ‰ = 1/1.000 = 0,1 %, also 5 ‰ = 0,5 %.",
+  "h": "Promille = pro Tausend.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "vqedpi",
+  "s": "Prozent & Zinsen",
+  "q": "Mit welchem Faktor multipliziert man einen Preis nach 30 % Rabatt?",
+  "a": [
+   "0,7",
+   "0,3",
+   "1,3",
+   "0,03"
+  ],
+  "w": [
+   "",
+   "Das wäre der Rabatt selbst, nicht der Rest.",
+   "Das wäre ein Aufschlag von 30 %.",
+   "Das wären 3 % des Preises."
+  ],
+  "e": "Preis nach Rabatt = Preis · (1 − 0,30) = Preis · 0,7.",
+  "h": "100 % − 30 %.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "c333g7",
+  "s": "Prozent & Zinsen",
+  "q": "Mit welchem Faktor wächst ein Wert bei 8 % Zuwachs?",
+  "a": [
+   "1,08",
+   "0,08",
+   "1,8",
+   "8,0"
+  ],
+  "w": [
+   "",
+   "Das wäre nur der Zuwachs, ohne den Ausgangswert.",
+   "Das wäre ein Zuwachs von 80 %.",
+   "Das wäre ein Zuwachs von 700 %."
+  ],
+  "e": "Wachstumsfaktor = 1 + p/100 = 1,08.",
+  "h": "100 % + 8 %.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1bs4qen",
+  "s": "Prozent & Zinsen",
+  "q": "Ein Preis fällt um 50 %. Um wie viel Prozent muss er steigen, um wieder den Ausgangspreis zu erreichen?",
+  "a": [
+   "Um 100 %",
+   "Um 50 %",
+   "Um 25 %",
+   "Um 150 %"
+  ],
+  "w": [
+   "",
+   "Das ergäbe nur 75 % des Ausgangspreises.",
+   "Das ergäbe nur 62,5 % des Ausgangspreises.",
+   "Das ergäbe das 1,25-Fache des Ausgangspreises."
+  ],
+  "e": "Aus 100 € werden 50 €; um auf 100 € zu kommen, muss man verdoppeln, also +100 %.",
+  "h": "Anderer Grundwert.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "17d0j26",
+  "s": "Prozent & Zinsen",
+  "q": "Ein Preis stieg um 25 %. Um wie viel Prozent muss er sinken, um wieder auf den Ausgangspreis zu kommen?",
+  "a": [
+   "Um 20 %",
+   "Um 25 %",
+   "Um 30 %",
+   "Um 15 %"
+  ],
+  "w": [
+   "",
+   "Das ergäbe nur 93,75 % des Ausgangspreises.",
+   "Das ergäbe nur 87,5 % des Ausgangspreises.",
+   "Das ergäbe nur 106,25 % des Ausgangspreises."
+  ],
+  "e": "100 € → 125 €; 25 € von 125 € sind 20 %.",
+  "h": "Neuer Grundwert ist 125.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "zxuqkr",
+  "s": "Prozent & Zinsen",
+  "q": "Wie viel Prozent des Bruttopreises sind in Deutschland 19 % Mehrwertsteuer auf den Nettopreis?",
+  "a": [
+   "Etwa 16 %",
+   "19 %",
+   "21 %",
+   "11 %"
+  ],
+  "w": [
+   "",
+   "Die 19 % beziehen sich auf den Nettopreis, nicht auf den Bruttopreis.",
+   "Das passt zu keiner Rechnung mit 19 %.",
+   "Das wäre zu niedrig; 19 : 119 ≈ 16 %."
+  ],
+  "e": "19 : 119 ≈ 0,16. In einem Bruttopreis von 119 € stecken 19 € Steuer.",
+  "h": "Auf den Bruttopreis bezogen.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "pq4urd",
+  "s": "Prozent & Zinsen",
+  "q": "Was bedeutet „2 % Skonto“ auf einer Rechnung?",
+  "a": [
+   "2 % Preisnachlass bei schneller Zahlung",
+   "2 % Zinsen bei verspäteter Zahlung",
+   "2 % Aufschlag bei Ratenzahlung",
+   "2 % Steuer auf den Rechnungsbetrag"
+  ],
+  "w": [
+   "",
+   "Das wären Verzugszinsen, nicht Skonto.",
+   "Das wäre ein Ratenzahlungsaufschlag.",
+   "Steuern heißen hier Umsatzsteuer."
+  ],
+  "e": "Skonto ist ein Abzug, wenn man innerhalb einer Frist zahlt: 1.000 € abzüglich 2 % = 980 €.",
+  "h": "Belohnung für schnelles Zahlen.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "p7c7tr",
+  "s": "Prozent & Zinsen",
+  "q": "Wie lautet die Formel für das Endkapital bei Zinseszins nach n Jahren (Startkapital K, Zinssatz p %)?",
+  "a": [
+   "K · (1 + p/100)ⁿ",
+   "K · (1 + n · p/100)",
+   "K · (1 + p/100) · n",
+   "K · n · p/100"
+  ],
+  "w": [
+   "",
+   "Das wäre einfache Verzinsung ohne Zinseszins.",
+   "Das wäre Startkapital mal n; die Zinsen wirken so nicht.",
+   "Das wären nur die Zinsen bei einfacher Verzinsung."
+  ],
+  "e": "Jedes Jahr wird mit dem Faktor 1 + p/100 multipliziert, daher der Exponent n.",
+  "h": "Potenz statt Produkt.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "1safypd",
+  "s": "Prozent & Zinsen",
+  "q": "Was unterscheidet Zinseszins von einfachen Zinsen?",
+  "a": [
+   "Auch früher gezahlte Zinsen werden mitverzinst",
+   "Er wird nur auf das Startkapital berechnet",
+   "Er fällt nur bei negativen Zinsen an",
+   "Er ist jedes Jahr ein fester Betrag"
+  ],
+  "w": [
+   "",
+   "Das wäre die einfache Verzinsung.",
+   "Zinseszins hat nichts mit dem Vorzeichen zu tun.",
+   "Das wäre bei einfacher Verzinsung der Fall."
+  ],
+  "e": "Beim Zinseszins wächst der Zinsbetrag jedes Jahr, weil die bisherigen Zinsen mitverzinst werden.",
+  "h": "Zinsen auf Zinsen.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1vfok77",
+  "s": "Prozent & Zinsen",
+  "q": "Was gibt der effektive Jahreszins eines Kredits an?",
+  "a": [
+   "Die jährlichen Gesamtkosten in Prozent",
+   "Den reinen Sollzins ohne Gebühren",
+   "Den Zinssatz nur im ersten Jahr",
+   "Die Inflationsrate während der Laufzeit"
+  ],
+  "w": [
+   "",
+   "Das ist der Nominalzins; er lässt Gebühren weg.",
+   "Er gilt für die gesamte Laufzeit.",
+   "Die Inflation spielt dafür keine Rolle."
+  ],
+  "e": "Der effektive Jahreszins enthält auch Gebühren und Nebenkosten und macht Kredite vergleichbar.",
+  "h": "Alle Kosten zusammen.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "sictoz",
+  "s": "Prozent & Zinsen",
+  "q": "Was besagt die 72er-Regel?",
+  "a": [
+   "Verdopplungszeit ≈ 72 : Zinssatz in Prozent",
+   "Verdopplungszeit ≈ 72 · Zinssatz",
+   "Verdopplungszeit ≈ Zinssatz : 72",
+   "Verdopplungszeit ≈ 72 − Zinssatz"
+  ],
+  "w": [
+   "",
+   "Das ergäbe bei höherem Zins längere Zeiten, was unsinnig ist.",
+   "Das ergäbe bei 8 % nur etwa 0,1 Jahre.",
+   "Das ergäbe bei 72 % Zins null Jahre und wäre falsch."
+  ],
+  "e": "Bei 6 % verdoppelt sich ein Betrag in etwa 72 : 6 = 12 Jahren.",
+  "h": "Geteilt, nicht mal.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "eid9wj",
+  "s": "Prozent & Zinsen",
+  "q": "Ein Fonds verliert 50 %, dann gewinnt er 50 %. Was ergibt sich insgesamt?",
+  "a": [
+   "25 % Verlust",
+   "Gleicher Wert (0 %)",
+   "25 % Gewinn",
+   "50 % Verlust"
+  ],
+  "w": [
+   "",
+   "Der Gewinn bezieht sich auf den kleineren Wert.",
+   "0,5 · 1,5 = 0,75, also unter 1.",
+   "Der Gewinn von 50 % gleicht einen Teil wieder aus."
+  ],
+  "e": "100 → 50 → 75: ein Verlust von 25 %.",
+  "h": "Faktoren 0,5 und 1,5.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "megwm3",
+  "s": "Prozent & Zinsen",
+  "q": "Die Arbeitslosenquote sinkt von 6 % auf 5 %. Um wie viel Prozent ist sie relativ gesunken?",
+  "a": [
+   "Etwa 16,7 %",
+   "1 %",
+   "20 %",
+   "5 %"
+  ],
+  "w": [
+   "",
+   "Das ist die Änderung in Prozentpunkten.",
+   "Das wäre bezogen auf den neuen Wert 5 % statt 6 %.",
+   "Das ist der neue Wert, nicht die Änderung."
+  ],
+  "e": "1 Prozentpunkt von 6 % entspricht 1/6 ≈ 16,7 % relativer Änderung.",
+  "h": "Bezug: alter Wert.",
+  "d": 3,
+  "p": 1
+ },
+ {
+  "id": "px0dq5",
+  "s": "Prozent & Zinsen",
+  "q": "Ein Hersteller wirbt: „50 % mehr Inhalt“ zum gleichen Preis. Um wie viel Prozent sinkt der Preis je Einheit?",
+  "a": [
+   "Um etwa 33 %",
+   "Um 50 %",
+   "Um 25 %",
+   "Um 66 %"
+  ],
+  "w": [
+   "",
+   "Das gälte erst bei doppeltem Inhalt.",
+   "Das gälte bei 33 % mehr Inhalt.",
+   "Das gälte bei dreifachem Inhalt."
+  ],
+  "e": "Preis je Einheit = 1 : 1,5 ≈ 0,667, also etwa 33 % weniger.",
+  "h": "Kehrwert von 1,5.",
+  "d": 3,
+  "p": 1
+ },
+ {
+  "id": "3rb6fh",
+  "s": "Prozent & Zinsen",
+  "q": "Wie viel Rabatt entspricht der Aktion „3 zum Preis von 2“?",
+  "a": [
+   "Etwa 33 %",
+   "Etwa 66 %",
+   "50 %",
+   "25 %"
+  ],
+  "w": [
+   "",
+   "Man zahlt zwei Drittel, spart also nur ein Drittel.",
+   "Das wäre „2 zum Preis von 1“.",
+   "Das wäre „4 zum Preis von 3“."
+  ],
+  "e": "Man spart 1 von 3 Artikeln = 1/3 ≈ 33,3 %.",
+  "h": "Ein Artikel gratis.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "bv52p2",
+  "s": "Prozent & Zinsen",
+  "q": "Wert A beträgt 100, Wert B beträgt 200. Um wie viel Prozent ist A kleiner als B?",
+  "a": [
+   "50 %",
+   "100 %",
+   "200 %",
+   "25 %"
+  ],
+  "w": [
+   "",
+   "B ist 100 % größer als A, A ist aber nur 50 % kleiner als B.",
+   "Das wäre mehr als der gesamte Wert.",
+   "Das wäre nur 50 von 200."
+  ],
+  "e": "Der Bezugswert ist der Vergleichswert B: 100 von 200 = 50 %.",
+  "h": "Bezugswert beachten.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "uzx6vp",
+  "s": "Prozent & Zinsen",
+  "q": "Was ist der Unterschied zwischen Brutto und Netto bei einem Preis?",
+  "a": [
+   "Brutto enthält die Mehrwertsteuer, Netto nicht",
+   "Netto enthält die Mehrwertsteuer, Brutto nicht",
+   "Brutto ist der Preis nach Rabatt",
+   "Netto ist der Einkaufspreis des Händlers"
+  ],
+  "w": [
+   "",
+   "Die Begriffe sind vertauscht.",
+   "Rabatt hat damit nichts zu tun.",
+   "Der Einkaufspreis ist eine eigene Größe."
+  ],
+  "e": "Brutto = Netto + Mehrwertsteuer; bei 19 % gilt Brutto = Netto · 1,19.",
+  "h": "Brutto = mit Steuer.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1iexzse",
+  "s": "Prozent & Zinsen",
+  "q": "Ein Kredit hat 1 % Zinsen pro Monat und wird monatlich verzinst. Welcher Jahreszins ergibt sich ungefähr?",
+  "a": [
+   "Etwa 12,7 %",
+   "Genau 12 %",
+   "Etwa 13,5 %",
+   "Etwa 11,5 %"
+  ],
+  "w": [
+   "",
+   "Der Zinseszins erhöht den Jahreszins über 12 %.",
+   "Das wäre zu hoch.",
+   "Das wäre zu niedrig."
+  ],
+  "e": "1,01¹² ≈ 1,1268, also etwa 12,68 % effektiv.",
+  "h": "Zwölfmal mal 1,01.",
+  "d": 3,
+  "p": 1
+ },
+ {
+  "id": "7hxm5x",
+  "s": "Prozent & Zinsen",
+  "q": "Was bedeutet „Abzinsen“?",
+  "a": [
+   "Einen künftigen Betrag auf seinen heutigen Wert umrechnen",
+   "Die Zinsen vom angelegten Kapital abziehen",
+   "Einen laufenden Kredit vorzeitig zurückzahlen",
+   "Den Zinssatz eines Vertrags nachträglich senken"
+  ],
+  "w": [
+   "",
+   "Das ist ein Zinsabzug, nicht die Abzinsung.",
+   "Das ist eine Sondertilgung.",
+   "Das ist keine Abzinsung."
+  ],
+  "e": "Der Barwert von 110 € in einem Jahr bei 10 % Zins ist 100 €.",
+  "h": "Geld heute ist mehr wert als Geld später.",
+  "d": 2,
+  "hintOk": true,
+  "p": 1
+ },
+ {
+  "id": "1y2d49p",
+  "s": "Prozent & Zinsen",
+  "q": "100 € wachsen in 2 Jahren auf 110 €. Welcher Jahreszins (Zinseszins) steckt etwa dahinter?",
+  "a": [
+   "Etwa 4,9 %",
+   "10 %",
+   "5,5 %",
+   "4,0 %"
+  ],
+  "w": [
+   "",
+   "Das wäre der Gesamtzuwachs nach 2 Jahren.",
+   "Das wäre zu hoch; 1,055² ≈ 1,113.",
+   "Das wäre zu niedrig; 1,04² ≈ 1,082."
+  ],
+  "e": "√1,10 ≈ 1,0488, also etwa 4,9 % pro Jahr.",
+  "h": "Quadratwurzel.",
+  "d": 3,
+  "p": 1
+ },
+ {
+  "id": "hwovhs",
+  "s": "Prozent & Zinsen",
+  "q": "Wie schreibt man 0,07 als Prozentsatz?",
+  "a": [
+   "7 %",
+   "70 %",
+   "0,7 %",
+   "0,07 %"
+  ],
+  "w": [
+   "",
+   "Das wäre 0,70.",
+   "Das wäre 0,007.",
+   "Das wäre 0,0007."
+  ],
+  "e": "Prozent = Dezimalzahl · 100: 0,07 = 7 %.",
+  "h": "Komma zwei Stellen nach rechts.",
+  "d": 1,
+  "p": 1
+ },
+ {
+  "id": "1rtandf",
+  "s": "Prozent & Zinsen",
+  "q": "Wie hoch sind die einfachen Zinsen für 3 Monate auf 1.000 € bei 12 % pro Jahr?",
+  "a": [
+   "30 €",
+   "120 €",
+   "10 €",
+   "360 €"
+  ],
+  "w": [
+   "",
+   "Das sind die Zinsen für ein ganzes Jahr.",
+   "Das sind die Zinsen für nur einen Monat.",
+   "Das passt zu keiner Zeitspanne."
+  ],
+  "e": "Jahreszinsen 120 €; drei Monate sind ein Viertel davon: 30 €.",
+  "h": "Ein Quartal.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "hwuyz2",
+  "s": "Prozent & Zinsen",
+  "q": "Wie viel Prozent entsprechen 3/20?",
+  "a": [
+   "15 %",
+   "3 %",
+   "20 %",
+   "6,7 %"
+  ],
+  "w": [
+   "",
+   "Das wären 3/100.",
+   "Das wäre 1/5 oder 4/20.",
+   "Das wäre 1/15."
+  ],
+  "e": "Man erweitert auf Hundertstel: 3/20 = 15/100 = 15 %.",
+  "h": "Erweitern auf 100.",
+  "d": 2,
+  "p": 1
+ },
+ {
+  "id": "1n0pwbc",
+  "s": "Algebra & Brüche",
+  "q": "Was ist 3/4 + 1/8?",
+  "a": [
+   "7/8",
+   "4/12",
+   "4/8",
+   "1"
+  ],
+  "w": [
+   "",
+   "Zähler und Nenner dürfen nicht einfach addiert werden.",
+   "Dabei wurden nur die Zähler addiert, ohne gleichnamig zu machen.",
+   "Dafür fehlte noch 1/8; 3/4 + 1/4 wäre 1."
+  ],
+  "e": "Hauptnenner 8: 6/8 + 1/8 = 7/8.",
+  "h": "Auf Achtel erweitern.",
+  "d": 1
+ },
+ {
+  "id": "dz6113",
+  "s": "Algebra & Brüche",
+  "q": "Wie viel sind 2/3 von 90?",
+  "a": [
+   "60",
+   "45",
+   "30",
+   "75"
+  ],
+  "w": [
+   "",
+   "Das wäre die Hälfte von 90.",
+   "Das wäre ein Drittel von 90.",
+   "Das wären 5/6 von 90."
+  ],
+  "e": "Ein Drittel von 90 ist 30, zwei Drittel sind 60.",
+  "h": "Erst durch 3.",
+  "d": 1
+ },
+ {
+  "id": "v9sj2b",
+  "s": "Algebra & Brüche",
+  "q": "Löse: 3x + 5 = 20",
+  "a": [
+   "x = 5",
+   "x = 8",
+   "x = 25/3",
+   "x = 15"
+  ],
+  "w": [
+   "",
+   "Das ergäbe 3 · 8 + 5 = 29.",
+   "Dabei wurde 5 addiert statt subtrahiert.",
+   "Das ergäbe 3 · 15 + 5 = 50."
+  ],
+  "e": "Erst 5 abziehen: 3x = 15, dann durch 3: x = 5.",
+  "h": "Äquivalenzumformung.",
+  "d": 1
+ },
+ {
+  "id": "b1sevv",
+  "s": "Algebra & Brüche",
+  "q": "Welche Werte erfüllen x² = 49?",
+  "a": [
+   "7 und −7",
+   "Nur 7",
+   "Nur −7",
+   "49"
+  ],
+  "w": [
+   "",
+   "Auch (−7)² = 49.",
+   "Auch 7² = 49.",
+   "Das ist x², nicht x."
+  ],
+  "e": "Eine Quadratgleichung hat hier zwei Lösungen ±√49 = ±7.",
+  "h": "Plus und Minus.",
+  "d": 1
+ },
+ {
+  "id": "idd23",
+  "s": "Algebra & Brüche",
+  "q": "Was ist größer: 5/8 oder 3/5?",
+  "a": [
+   "5/8",
+   "3/5",
+   "Beide sind gleich",
+   "Nicht vergleichbar"
+  ],
+  "w": [
+   "",
+   "3/5 = 24/40 ist kleiner als 5/8 = 25/40.",
+   "Auf gleichen Nenner gebracht sind 25/40 und 24/40 verschieden.",
+   "Brüche sind immer vergleichbar, etwa über den Hauptnenner."
+  ],
+  "e": "Dezimal: 5/8 = 0,625 und 3/5 = 0,6.",
+  "h": "Auf Dezimalzahlen umstellen.",
+  "d": 2
+ },
+ {
+  "id": "1cns3ok",
+  "s": "Algebra & Brüche",
+  "q": "Wie lautet die erste binomische Formel (a + b)²?",
+  "a": [
+   "a² + 2ab + b²",
+   "a² + b²",
+   "a² + ab + b²",
+   "2a + 2b"
+  ],
+  "w": [
+   "",
+   "Der Mischterm 2ab fehlt.",
+   "Der Mischterm ist 2ab, nicht ab.",
+   "Das wäre 2 · (a + b), also keine Quadrierung."
+  ],
+  "e": "Beispiel: (3 + 4)² = 49 = 9 + 24 + 16.",
+  "h": "Mischterm mit Faktor 2.",
+  "d": 1
+ },
+ {
+  "id": "1vrd5e0",
+  "s": "Algebra & Brüche",
+  "q": "Wie lautet der Kehrwert von 2/5?",
+  "a": [
+   "5/2",
+   "−2/5",
+   "2/5",
+   "1/2"
+  ],
+  "w": [
+   "",
+   "Das wäre das Negative (Gegenzahl), nicht der Kehrwert.",
+   "Das ist der Bruch selbst.",
+   "Das ist nur der Kehrwert des Zählers."
+  ],
+  "e": "Man vertauscht Zähler und Nenner; Bruch mal Kehrwert ist 1.",
+  "h": "Zähler und Nenner tauschen.",
+  "d": 1
+ },
+ {
+  "id": "16f0iqo",
+  "s": "Algebra & Brüche",
+  "q": "Wie lautet 0,125 als Bruch?",
+  "a": [
+   "1/8",
+   "1/4",
+   "1/12",
+   "1/5"
+  ],
+  "w": [
+   "",
+   "1/4 wäre 0,25.",
+   "1/12 wäre 0,0833….",
+   "1/5 wäre 0,2."
+  ],
+  "e": "0,125 = 125/1000 = 1/8.",
+  "h": "Ein Achtel.",
+  "d": 1
+ },
+ {
+  "id": "1xwq0yp",
+  "s": "Algebra & Brüche",
+  "q": "Was ist 2³ · 2⁴?",
+  "a": [
+   "2⁷ = 128",
+   "2¹² = 4.096",
+   "4⁷",
+   "2⁶ = 64"
+  ],
+  "w": [
+   "",
+   "Exponenten werden beim Multiplizieren addiert, nicht multipliziert.",
+   "Die Basis bleibt beim Multiplizieren gleichbasiger Potenzen gleich.",
+   "3 + 4 ergibt 7, nicht 6."
+  ],
+  "e": "aⁿ · aᵐ = aⁿ⁺ᵐ, also 2³ · 2⁴ = 8 · 16 = 128.",
+  "h": "Exponenten addieren.",
+  "d": 2
+ },
+ {
+  "id": "1lpcz07",
+  "s": "Algebra & Brüche",
+  "q": "Löse: 2(x − 3) = 10",
+  "a": [
+   "x = 8",
+   "x = 5",
+   "x = 2",
+   "x = 13"
+  ],
+  "w": [
+   "",
+   "Hier wurde nach dem Teilen durch 2 die 3 vergessen.",
+   "Hier wurde 3 subtrahiert statt addiert.",
+   "Hier wurde 3 addiert, ohne vorher durch 2 zu teilen."
+  ],
+  "e": "Durch 2 teilen: x − 3 = 5, also x = 8.",
+  "h": "Zuerst durch 2 teilen.",
+  "d": 1
+ },
+ {
+  "id": "enruyr",
+  "s": "Algebra & Brüche",
+  "q": "Was ist (−3) · (−4)?",
+  "a": [
+   "12",
+   "−12",
+   "−7",
+   "7"
+  ],
+  "w": [
+   "",
+   "Minus mal Minus ergibt Plus.",
+   "Das wäre die Summe (−3) + (−4).",
+   "Das wäre (−3) − (−4) bzw. eine Summe, kein Produkt."
+  ],
+  "e": "Zwei negative Faktoren ergeben ein positives Produkt.",
+  "h": "Minus mal Minus.",
+  "d": 1
+ },
+ {
+  "id": "wisuwd",
+  "s": "Algebra & Brüche",
+  "q": "Was ist 10⁻²?",
+  "a": [
+   "0,01",
+   "−100",
+   "0,001",
+   "−20"
+  ],
+  "w": [
+   "",
+   "Ein negativer Exponent macht die Zahl nicht negativ.",
+   "Das wäre 10⁻³.",
+   "Das wäre −2 · 10."
+  ],
+  "e": "a⁻ⁿ = 1/aⁿ, also 10⁻² = 1/100 = 0,01.",
+  "h": "Kehrwert.",
+  "d": 2
+ },
+ {
+  "id": "1oklpte",
+  "s": "Algebra & Brüche",
+  "q": "Was ist √144?",
+  "a": [
+   "12",
+   "14",
+   "72",
+   "11"
+  ],
+  "w": [
+   "",
+   "14² = 196.",
+   "Das ist 144 : 2.",
+   "11² = 121."
+  ],
+  "e": "12 · 12 = 144.",
+  "h": "Quadratzahl.",
+  "d": 1
+ },
+ {
+  "id": "fawauf",
+  "s": "Algebra & Brüche",
+  "q": "Was ergibt 2 + 3 · 4?",
+  "a": [
+   "14",
+   "20",
+   "24",
+   "9"
+  ],
+  "w": [
+   "",
+   "Es wurde von links nach rechts gerechnet; Punkt geht vor Strich.",
+   "Das wäre 2 · 3 · 4.",
+   "Das wäre 2 + 3 + 4, also ohne Multiplikation."
+  ],
+  "e": "Punkt vor Strich: 3 · 4 = 12, dann 2 + 12 = 14.",
+  "h": "Punkt vor Strich.",
+  "d": 1
+ },
+ {
+  "id": "xo9urf",
+  "s": "Algebra & Brüche",
+  "q": "Drei Arbeiter brauchen für eine Aufgabe 12 Tage. Wie lange brauchen sechs Arbeiter bei gleichem Tempo?",
+  "a": [
+   "6 Tage",
+   "24 Tage",
+   "12 Tage",
+   "4 Tage"
+  ],
+  "w": [
+   "",
+   "Mehr Arbeiter brauchen weniger, nicht mehr Zeit.",
+   "Die Zeit ändert sich mit der Anzahl der Arbeiter.",
+   "Das wäre bei neun Arbeitern."
+  ],
+  "e": "Antiproportional: 3 · 12 = 36 Arbeitertage, 36 : 6 = 6.",
+  "h": "Mehr Leute, weniger Zeit.",
+  "d": 2
+ },
+ {
+  "id": "pdrgyp",
+  "s": "Algebra & Brüche",
+  "q": "Wie lautet die dritte binomische Formel (a + b)(a − b)?",
+  "a": [
+   "a² − b²",
+   "a² + b²",
+   "a² − 2ab + b²",
+   "a² − ab − b²"
+  ],
+  "w": [
+   "",
+   "Die Mischterme +ab und −ab heben sich auf, es bleibt a² − b².",
+   "Das ist (a − b)².",
+   "Der Term −ab tritt nicht auf; er hebt sich weg."
+  ],
+  "e": "(a + b)(a − b) = a² − ab + ab − b² = a² − b²; z. B. 7 · 5 = 6² − 1² = 35.",
+  "h": "Mischterme verschwinden.",
+  "d": 2
+ },
+ {
+  "id": "1ikfi78",
+  "s": "Algebra & Brüche",
+  "q": "Was ergibt (a − b)²?",
+  "a": [
+   "a² − 2ab + b²",
+   "a² − b²",
+   "a² − 2ab − b²",
+   "a² + b²"
+  ],
+  "w": [
+   "",
+   "Das ist (a + b)(a − b).",
+   "Das Quadrat b² ist stets positiv.",
+   "Der Mischterm −2ab fehlt."
+  ],
+  "e": "Die zweite binomische Formel: (5 − 2)² = 9 = 25 − 20 + 4.",
+  "h": "Minus im Mischterm.",
+  "d": 2
+ },
+ {
+  "id": "124ftog",
+  "s": "Algebra & Brüche",
+  "q": "Wie lautet die Lösungsformel für ax² + bx + c = 0?",
+  "a": [
+   "x = (−b ± √(b² − 4ac)) / (2a)",
+   "x = (b ± √(b² − 4ac)) / (2a)",
+   "x = (−b ± √(b² + 4ac)) / (2a)",
+   "x = (−b ± √(b² − 4ac)) / a"
+  ],
+  "w": [
+   "",
+   "Vor b muss ein Minus stehen.",
+   "Unter der Wurzel steht b² − 4ac.",
+   "Der Nenner ist 2a."
+  ],
+  "e": "Für x² − 5x + 6 = 0 ergibt sich x = (5 ± 1) / 2, also 3 und 2.",
+  "h": "Minus b plus-minus Wurzel.",
+  "d": 2
+ },
+ {
+  "id": "l3zlqw",
+  "s": "Algebra & Brüche",
+  "q": "Was sagt eine negative Diskriminante D = b² − 4ac < 0 aus?",
+  "a": [
+   "Es gibt keine reelle Lösung",
+   "Es gibt zwei reelle Lösungen",
+   "Es gibt genau eine reelle Lösung",
+   "Es gibt unendlich viele Lösungen"
+  ],
+  "w": [
+   "",
+   "Das gilt für D > 0.",
+   "Das gilt für D = 0.",
+   "Quadratische Gleichungen haben höchstens zwei Lösungen."
+  ],
+  "e": "x² + 1 = 0 hat D = −4 und keine reelle Lösung.",
+  "h": "Wurzel aus Negativem.",
+  "d": 2
+ },
+ {
+  "id": "18b7ync",
+  "s": "Algebra & Brüche",
+  "q": "Was besagt der Satz von Vieta für x² + px + q = 0?",
+  "a": [
+   "x₁ + x₂ = −p und x₁ · x₂ = q",
+   "x₁ + x₂ = p und x₁ · x₂ = q",
+   "x₁ + x₂ = q und x₁ · x₂ = −p",
+   "x₁ + x₂ = −q und x₁ · x₂ = p"
+  ],
+  "w": [
+   "",
+   "Die Summe ist −p, nicht p.",
+   "Die Rollen von p und q sind vertauscht.",
+   "Die Rollen von p und q sind vertauscht."
+  ],
+  "e": "x² − 5x + 6 = 0 hat die Lösungen 2 und 3: Summe 5 = −p, Produkt 6 = q.",
+  "h": "Summe: Vorzeichen drehen.",
+  "d": 3
+ },
+ {
+  "id": "4n98a7",
+  "s": "Algebra & Brüche",
+  "q": "Wozu braucht man beim Addieren von Brüchen einen Hauptnenner?",
+  "a": [
+   "Um die Brüche gleichnamig zu machen",
+   "Um die Brüche zu multiplizieren",
+   "Um die Brüche zu kürzen",
+   "Um die Brüche in Dezimalzahlen umzuwandeln"
+  ],
+  "w": [
+   "",
+   "Beim Multiplizieren braucht man keinen gemeinsamen Nenner.",
+   "Kürzen geschieht je Bruch mit gemeinsamen Teilern.",
+   "Dafür teilt man Zähler durch Nenner."
+  ],
+  "e": "Nur gleiche Bruchteile kann man addieren: 1/4 + 1/6 = 3/12 + 2/12 = 5/12.",
+  "h": "Gleiche Bruchteile.",
+  "d": 1
+ },
+ {
+  "id": "lvitpe",
+  "s": "Algebra & Brüche",
+  "q": "Wie dividiert man durch einen Bruch?",
+  "a": [
+   "Man multipliziert mit dem Kehrwert",
+   "Man multipliziert mit dem Bruch selbst",
+   "Man addiert die Nenner",
+   "Man kürzt beide Brüche und subtrahiert"
+  ],
+  "w": [
+   "",
+   "Das ergäbe das Produkt, nicht den Quotienten.",
+   "Das ist keine Rechenregel für Brüche.",
+   "Das ist keine Rechenregel für Brüche."
+  ],
+  "e": "a/b : c/d = a/b · d/c, z. B. 1/2 : 1/4 = 1/2 · 4 = 2.",
+  "h": "Teilen durch ein Halb ergibt das Doppelte.",
+  "d": 1
+ },
+ {
+  "id": "146xamx",
+  "s": "Algebra & Brüche",
+  "q": "Wie viel ist 1/2 + 1/3?",
+  "a": [
+   "5/6",
+   "2/5",
+   "1/6",
+   "3/5"
+  ],
+  "w": [
+   "",
+   "Zähler und Nenner dürfen nicht einzeln addiert werden.",
+   "Das ist das Produkt 1/2 · 1/3.",
+   "Das ergibt sich aus keinem korrekten Rechenweg; 3/5 = 0,6."
+  ],
+  "e": "Hauptnenner 6: 3/6 + 2/6 = 5/6.",
+  "h": "Sechstel.",
+  "d": 1
+ },
+ {
+  "id": "lfunir",
+  "s": "Algebra & Brüche",
+  "q": "Wie lautet 18/24 vollständig gekürzt?",
+  "a": [
+   "3/4",
+   "9/12",
+   "6/8",
+   "2/3"
+  ],
+  "w": [
+   "",
+   "Das ist nur durch 2 gekürzt; es geht weiter.",
+   "Das ist nur durch 3 gekürzt; es geht weiter.",
+   "Das wäre 18/27."
+  ],
+  "e": "Der ggT von 18 und 24 ist 6: 18/24 = 3/4.",
+  "h": "ggT bestimmen.",
+  "d": 1
+ },
+ {
+  "id": "mumike",
+  "s": "Algebra & Brüche",
+  "q": "Wie lautet das Potenzgesetz für aⁿ · aᵐ?",
+  "a": [
+   "a^(n+m)",
+   "a^(n·m)",
+   "a^(n−m)",
+   "(2a)^(n+m)"
+  ],
+  "w": [
+   "",
+   "Das gilt für (aⁿ)ᵐ.",
+   "Das gilt für aⁿ : aᵐ.",
+   "Es entsteht keine Basis 2a."
+  ],
+  "e": "a³ · a⁴ = a·a·a·a·a·a·a = a⁷.",
+  "h": "Exponenten addieren.",
+  "d": 2
+ },
+ {
+  "id": "1x3rmvs",
+  "s": "Algebra & Brüche",
+  "q": "Was ist (a³)⁴?",
+  "a": [
+   "a¹²",
+   "a⁷",
+   "a⁸¹",
+   "a^(3/4)"
+  ],
+  "w": [
+   "",
+   "Das wäre a³ · a⁴.",
+   "Das wäre a^(3⁴).",
+   "Das wäre eine Wurzel, keine Potenz einer Potenz."
+  ],
+  "e": "(aⁿ)ᵐ = a^(n·m): 3 · 4 = 12.",
+  "h": "Exponenten multiplizieren.",
+  "d": 2
+ },
+ {
+  "id": "fuhmea",
+  "s": "Algebra & Brüche",
+  "q": "Was ergibt a⁰ für a ≠ 0?",
+  "a": [
+   "1",
+   "0",
+   "a",
+   "Nicht definiert"
+  ],
+  "w": [
+   "",
+   "Das gilt für 0ⁿ mit n > 0, aber nicht für a⁰.",
+   "Das wäre a¹.",
+   "Für a ≠ 0 ist a⁰ sinnvoll als 1 definiert."
+  ],
+  "e": "Aus aⁿ : aⁿ = 1 und aⁿ⁻ⁿ = a⁰ folgt a⁰ = 1.",
+  "h": "Aus Quotientenregel.",
+  "d": 2
+ },
+ {
+  "id": "zyxbxr",
+  "s": "Algebra & Brüche",
+  "q": "Wie lässt sich a^(1/2) schreiben?",
+  "a": [
+   "Als Quadratwurzel √a",
+   "Als Quotient a : 2",
+   "Als Quadrat a²",
+   "Als Bruch 1/(2a)"
+  ],
+  "w": [
+   "",
+   "Der Exponent 1/2 bedeutet keine Division.",
+   "Das wäre der Exponent 2.",
+   "Das ist ein anderer Term."
+  ],
+  "e": "a^(1/n) = ⁿ√a; z. B. 9^(1/2) = 3.",
+  "h": "Exponent als Bruch.",
+  "d": 2
+ },
+ {
+  "id": "8qe0n3",
+  "s": "Algebra & Brüche",
+  "q": "Was ergibt √(a²) für jede reelle Zahl a?",
+  "a": [
+   "|a|",
+   "a",
+   "−a",
+   "a²"
+  ],
+  "w": [
+   "",
+   "Für a = −3 ergibt die Wurzel 3, nicht −3.",
+   "Für a = 3 ergibt die Wurzel 3, nicht −3.",
+   "Das wäre das Quadrat, nicht die Wurzel."
+  ],
+  "e": "√((−3)²) = √9 = 3 = |−3|. Die Wurzel ist nie negativ.",
+  "h": "Betrag.",
+  "d": 3
+ },
+ {
+  "id": "166e4le",
+  "s": "Algebra & Brüche",
+  "q": "Gilt √(a + b) = √a + √b für alle a, b ≥ 0?",
+  "a": [
+   "Nein, z. B. a = 9, b = 16",
+   "Ja, für alle a, b ≥ 0",
+   "Ja, aber nur für a = b",
+   "Ja, aber nur für Quadratzahlen"
+  ],
+  "w": [
+   "",
+   "√25 = 5, aber √9 + √16 = 7.",
+   "Für a = b = 1 gilt √2 ≠ 2.",
+   "Gerade 9 und 16 sind Quadratzahlen und widerlegen die Aussage."
+  ],
+  "e": "√(9 + 16) = 5, aber √9 + √16 = 3 + 4 = 7. Wurzeln sind nicht additiv.",
+  "h": "Gegenbeispiel mit 9 und 16.",
+  "d": 3
+ },
+ {
+  "id": "rdyn4b",
+  "s": "Algebra & Brüche",
+  "q": "Was geben m und b in y = m·x + b an?",
+  "a": [
+   "m ist die Steigung, b der y-Achsenabschnitt",
+   "m ist der y-Achsenabschnitt, b die Steigung",
+   "m ist die Nullstelle, b die Steigung",
+   "m ist die Steigung, b die Nullstelle"
+  ],
+  "w": [
+   "",
+   "Die Rollen sind vertauscht.",
+   "Die Nullstelle ist −b/m.",
+   "b ist der Schnittpunkt mit der y-Achse, nicht mit der x-Achse."
+  ],
+  "e": "Bei y = 3x − 2 steigt die Gerade um 3 je Schritt und schneidet die y-Achse bei −2.",
+  "h": "m wie Meter Höhenunterschied.",
+  "d": 1
+ },
+ {
+  "id": "jw2y4r",
+  "s": "Algebra & Brüche",
+  "q": "Welche Beziehung gilt für die Steigungen zweier zueinander senkrechter Geraden?",
+  "a": [
+   "m₁ · m₂ = −1",
+   "m₁ = m₂",
+   "m₁ + m₂ = 0",
+   "m₁ · m₂ = 1"
+  ],
+  "w": [
+   "",
+   "Das gilt für parallele Geraden.",
+   "Das gilt für Spiegelung an der x-Achse, nicht für senkrecht.",
+   "Das Produkt ist −1, nicht 1."
+  ],
+  "e": "y = 2x ist senkrecht zu y = −x/2, denn 2 · (−1/2) = −1.",
+  "h": "Negativer Kehrwert.",
+  "d": 2
+ },
+ {
+  "id": "wyboio",
+  "s": "Algebra & Brüche",
+  "q": "Welches Verfahren löst ein Gleichungssystem durch Addieren der beiden Gleichungen?",
+  "a": [
+   "Additionsverfahren",
+   "Einsetzungsverfahren",
+   "Gleichsetzungsverfahren",
+   "Newton-Verfahren"
+  ],
+  "w": [
+   "",
+   "Dabei setzt man eine aufgelöste Gleichung in die andere ein.",
+   "Dabei setzt man zwei nach derselben Variablen aufgelöste Terme gleich.",
+   "Das ist ein Näherungsverfahren für Nullstellen."
+  ],
+  "e": "x + y = 10 und x − y = 2 addiert ergibt 2x = 12, also x = 6, y = 4.",
+  "h": "Variablen wegfallen lassen.",
+  "d": 2
+ },
+ {
+  "id": "kbojft",
+  "s": "Algebra & Brüche",
+  "q": "Löse: −2x < 6. Welche Lösung stimmt?",
+  "a": [
+   "x > −3",
+   "x < −3",
+   "x < 3",
+   "x > 3"
+  ],
+  "w": [
+   "",
+   "Das Relationszeichen muss beim Teilen durch −2 umgedreht werden.",
+   "Das Vorzeichen und das Relationszeichen wurden falsch behandelt.",
+   "Das Vorzeichen wurde falsch behandelt: 6 : (−2) = −3."
+  ],
+  "e": "Beim Multiplizieren oder Teilen mit einer negativen Zahl dreht sich das Zeichen: x > −3.",
+  "h": "Zeichen dreht sich.",
+  "d": 2
+ },
+ {
+  "id": "xi91bk",
+  "s": "Algebra & Brüche",
+  "q": "In 12 : 4 = 3 heißt die Zahl 12 …",
+  "a": [
+   "Dividend",
+   "Divisor",
+   "Quotient",
+   "Faktor"
+  ],
+  "w": [
+   "",
+   "Der Divisor ist 4.",
+   "Der Quotient ist 3.",
+   "Faktoren gehören zur Multiplikation."
+  ],
+  "e": "Dividend : Divisor = Quotient.",
+  "h": "Wird geteilt.",
+  "d": 2
+ },
+ {
+  "id": "1vpuwbf",
+  "s": "Algebra & Brüche",
+  "q": "Wie lautet x² − 9 in Faktoren zerlegt?",
+  "a": [
+   "(x + 3)(x − 3)",
+   "(x − 3)²",
+   "(x + 3)²",
+   "(x − 9)(x + 1)"
+  ],
+  "w": [
+   "",
+   "Das ergäbe x² − 6x + 9.",
+   "Das ergäbe x² + 6x + 9.",
+   "Das ergäbe x² − 8x − 9."
+  ],
+  "e": "Dritte binomische Formel rückwärts: x² − 3² = (x + 3)(x − 3).",
+  "h": "Quadrat minus Quadrat.",
+  "d": 2
+ },
+ {
+  "id": "15jspfd",
+  "s": "Algebra & Brüche",
+  "q": "Was ergibt (x + 2)(x + 3)?",
+  "a": [
+   "x² + 5x + 6",
+   "x² + 6",
+   "x² + 6x + 5",
+   "x² + 5x"
+  ],
+  "w": [
+   "",
+   "Die Mischterme 3x und 2x fehlen.",
+   "Das wäre (x + 1)(x + 5).",
+   "Das konstante Glied 6 fehlt."
+  ],
+  "e": "Ausmultiplizieren: x² + 3x + 2x + 6.",
+  "h": "Jeder mit jedem.",
+  "d": 2
+ },
+ {
+  "id": "vivac4",
+  "s": "Algebra & Brüche",
+  "q": "Wann ist ein Produkt gleich null?",
+  "a": [
+   "Wenn mindestens ein Faktor null ist",
+   "Wenn beide Faktoren null sind",
+   "Wenn die Summe der Faktoren null ist",
+   "Wenn die Faktoren gleich sind"
+  ],
+  "w": [
+   "",
+   "Schon ein Faktor 0 genügt.",
+   "3 · (−3) = −9, nicht 0.",
+   "3 · 3 = 9, nicht 0."
+  ],
+  "e": "Satz vom Nullprodukt: a · b = 0 genau dann, wenn a = 0 oder b = 0. Daher (x − 2)(x + 5) = 0 gibt x = 2 oder x = −5.",
+  "h": "Was ergibt 0 mal 5?",
+  "d": 2
+ },
+ {
+  "id": "136eh4j",
+  "s": "Algebra & Brüche",
+  "q": "Wie viele reelle Lösungen hat x² = −4?",
+  "a": [
+   "Keine",
+   "Eine",
+   "Zwei",
+   "Unendlich viele"
+  ],
+  "w": [
+   "",
+   "Es gibt keine reelle Zahl, deren Quadrat negativ ist.",
+   "±2 würden beide 4 ergeben, nicht −4.",
+   "Das wäre keine Quadratgleichung."
+  ],
+  "e": "Quadrate reeller Zahlen sind nie negativ; erst in den komplexen Zahlen gibt es ±2i.",
+  "h": "Quadrate sind nicht negativ.",
+  "d": 1
+ },
+ {
+  "id": "30782g",
+  "s": "Algebra & Brüche",
+  "q": "Je mehr Arbeiter, desto kürzer die Arbeitszeit. Welche Zuordnung liegt vor?",
+  "a": [
+   "Antiproportional: Das Produkt bleibt gleich",
+   "Proportional: Der Quotient bleibt gleich",
+   "Linear mit festem Aufschlag",
+   "Quadratisch: x² bestimmt y"
+  ],
+  "w": [
+   "",
+   "Bei Proportionalität würde die Zeit mit den Arbeitern wachsen.",
+   "Das wäre y = mx + b, kein Kehrwert.",
+   "Die Zeit hängt nicht vom Quadrat der Anzahl ab."
+  ],
+  "e": "Doppelt so viele Arbeiter brauchen halb so lange: Arbeiter · Zeit = konstant.",
+  "h": "Rechne Arbeiter mal Tage.",
+  "d": 2
+ },
+ {
+  "id": "iw1d4g",
+  "s": "Geometrie",
+  "q": "Wie groß ist die Winkelsumme im Dreieck?",
+  "a": [
+   "180°",
+   "90°",
+   "270°",
+   "360°"
+  ],
+  "w": [
+   "",
+   "Das ist nur ein rechter Winkel.",
+   "Das wäre die Summe dreier rechter Winkel.",
+   "Das ist die Winkelsumme im Viereck."
+  ],
+  "e": "In jedem ebenen Dreieck gilt α + β + γ = 180°.",
+  "h": "Gestreckter Winkel.",
+  "d": 1
+ },
+ {
+  "id": "1e4ba1d",
+  "s": "Geometrie",
+  "q": "Wie groß ist die Winkelsumme in einem Viereck?",
+  "a": [
+   "360°",
+   "180°",
+   "270°",
+   "720°"
+  ],
+  "w": [
+   "",
+   "Das ist die Summe im Dreieck.",
+   "Das passt zu keinem Vieleck.",
+   "Das ist die Winkelsumme im Sechseck."
+  ],
+  "e": "Ein Viereck besteht aus zwei Dreiecken: 2 · 180° = 360°.",
+  "h": "Zwei Dreiecke.",
+  "d": 1
+ },
+ {
+  "id": "78rc4p",
+  "s": "Geometrie",
+  "q": "Ein Kreis hat den Radius 5 cm. Wie groß ist sein Umfang ungefähr?",
+  "a": [
+   "31,4 cm",
+   "15,7 cm",
+   "78,5 cm",
+   "25 cm"
+  ],
+  "w": [
+   "",
+   "Das wäre der halbe Umfang, also π · r.",
+   "Das ist die Fläche in cm².",
+   "Das ist r²."
+  ],
+  "e": "U = 2 · π · r = 2 · 3,14 · 5 ≈ 31,4 cm.",
+  "h": "Zwei π r.",
+  "d": 1
+ },
+ {
+  "id": "n1l1y",
+  "s": "Geometrie",
+  "q": "Ein Kreis hat den Radius 5 cm. Wie groß ist seine Fläche ungefähr?",
+  "a": [
+   "78,5 cm²",
+   "31,4 cm²",
+   "25 cm²",
+   "157 cm²"
+  ],
+  "w": [
+   "",
+   "Das ist der Umfang, nicht die Fläche.",
+   "Es fehlt der Faktor π.",
+   "Das wäre π · d² / 2 bzw. das Doppelte der Fläche."
+  ],
+  "e": "A = π · r² = 3,14 · 25 ≈ 78,5 cm².",
+  "h": "π mal Radius zum Quadrat.",
+  "d": 1
+ },
+ {
+  "id": "1gpdj9y",
+  "s": "Geometrie",
+  "q": "Ein rechtwinkliges Dreieck hat die Katheten 3 cm und 4 cm. Wie lang ist die Hypotenuse?",
+  "a": [
+   "5 cm",
+   "7 cm",
+   "6 cm",
+   "√7 cm"
+  ],
+  "w": [
+   "",
+   "Das ist die Summe der Katheten.",
+   "Das passt nicht zu a² + b² = c².",
+   "Das wäre √(4² − 3²); die Hypotenuse folgt aus der Summe der Quadrate."
+  ],
+  "e": "3² + 4² = 25, √25 = 5. Das ist das kleinste pythagoreische Tripel.",
+  "h": "Quadrate addieren.",
+  "d": 1
+ },
+ {
+  "id": "shsfrb",
+  "s": "Geometrie",
+  "q": "Ein rechtwinkliges Dreieck hat die Katheten 5 cm und 12 cm. Wie lang ist die Hypotenuse?",
+  "a": [
+   "13 cm",
+   "17 cm",
+   "15 cm",
+   "11 cm"
+  ],
+  "w": [
+   "",
+   "Das ist die Summe der Katheten.",
+   "Das passt nicht zu a² + b² = c².",
+   "Das ist kürzer als die längere Kathete, was bei einer Hypotenuse unmöglich ist."
+  ],
+  "e": "5² + 12² = 169 = 13².",
+  "h": "Quadratsumme 169.",
+  "d": 2
+ },
+ {
+  "id": "1ckylh5",
+  "s": "Geometrie",
+  "q": "Wie groß ist das Volumen eines Würfels mit 3 cm Kantenlänge?",
+  "a": [
+   "27 cm³",
+   "9 cm³",
+   "18 cm³",
+   "81 cm³"
+  ],
+  "w": [
+   "",
+   "Das ist 3², eine Fläche.",
+   "Das wäre 3 · 6.",
+   "Das wäre 3⁴."
+  ],
+  "e": "V = a³ = 3 · 3 · 3 = 27 cm³.",
+  "h": "Kante hoch drei.",
+  "d": 1
+ },
+ {
+  "id": "py4bvh",
+  "s": "Geometrie",
+  "q": "Ein Dreieck hat die Grundseite 10 cm und die Höhe 6 cm. Wie groß ist die Fläche?",
+  "a": [
+   "30 cm²",
+   "60 cm²",
+   "16 cm²",
+   "36 cm²"
+  ],
+  "w": [
+   "",
+   "Das wäre die Fläche des Rechtecks mit gleicher Grundseite und Höhe.",
+   "Das ist die Summe 10 + 6.",
+   "Das ist 6²; es fehlt Grundseite mal Höhe durch 2."
+  ],
+  "e": "A = ½ · g · h = ½ · 10 · 6 = 30 cm².",
+  "h": "Halbes Rechteck.",
+  "d": 1
+ },
+ {
+  "id": "2zbdhn",
+  "s": "Geometrie",
+  "q": "Wie berechnet man das Volumen eines Zylinders?",
+  "a": [
+   "π · r² · h",
+   "2 · π · r · h",
+   "π · r · h",
+   "⅓ · π · r² · h"
+  ],
+  "w": [
+   "",
+   "Das ist die Mantelfläche.",
+   "Das passt zu keiner Standardformel; es fehlt ein r.",
+   "Das ist das Volumen eines Kegels."
+  ],
+  "e": "Grundfläche (π r²) mal Höhe.",
+  "h": "Kreisfläche mal Höhe.",
+  "d": 1
+ },
+ {
+  "id": "dpfhum",
+  "s": "Geometrie",
+  "q": "Wie berechnet man das Volumen einer Kugel?",
+  "a": [
+   "4/3 · π · r³",
+   "4 · π · r²",
+   "π · r³",
+   "2/3 · π · r²"
+  ],
+  "w": [
+   "",
+   "Das ist die Oberfläche der Kugel.",
+   "Der Faktor 4/3 fehlt.",
+   "Das ist keine Kugelformel (Dimension stimmt nicht)."
+  ],
+  "e": "V = 4/3 · π · r³; für r = 3 ergibt sich 36π ≈ 113 cm³.",
+  "h": "Vier Drittel.",
+  "d": 2
+ },
+ {
+  "id": "19pza8d",
+  "s": "Geometrie",
+  "q": "Wie viele cm² hat 1 m²?",
+  "a": [
+   "10.000",
+   "100",
+   "1.000",
+   "1.000.000"
+  ],
+  "w": [
+   "",
+   "So viele cm hat 1 m, aber 1 m² ist eine Fläche.",
+   "Das wäre ein Zehntel der richtigen Zahl.",
+   "Das ist die Zahl der cm³ in 1 m³."
+  ],
+  "e": "1 m = 100 cm, also 1 m² = 100 · 100 cm² = 10.000 cm².",
+  "h": "Quadriert umrechnen.",
+  "d": 2
+ },
+ {
+  "id": "i5mfkx",
+  "s": "Geometrie",
+  "q": "Wie viele Liter passen in einen Würfel mit 1 dm Kantenlänge?",
+  "a": [
+   "1 Liter",
+   "10 Liter",
+   "100 Liter",
+   "0,1 Liter"
+  ],
+  "w": [
+   "",
+   "Das wäre ein Würfel mit etwa 2,15 dm Kante.",
+   "Das wäre ein Würfel mit etwa 4,6 dm Kante.",
+   "Das wäre ein Würfel mit etwa 4,6 cm Kante."
+  ],
+  "e": "1 dm³ = 1 Liter. Daher gilt auch 1 m³ = 1.000 Liter.",
+  "h": "Kubikdezimeter.",
+  "d": 1
+ },
+ {
+  "id": "1hthb4v",
+  "s": "Geometrie",
+  "q": "Was besagt der Satz des Thales?",
+  "a": [
+   "Der Winkel im Halbkreis ist ein rechter Winkel",
+   "Die Winkelsumme im Dreieck ist 180°",
+   "a² + b² = c²",
+   "Parallele Geraden schneiden sich nie"
+  ],
+  "w": [
+   "",
+   "Das ist der Winkelsummensatz.",
+   "Das ist der Satz des Pythagoras.",
+   "Das ist das Parallelenaxiom in Kurzform."
+  ],
+  "e": "Liegt C auf dem Halbkreis über AB, so ist der Winkel bei C stets 90°.",
+  "h": "Ein Dreieck, dessen eine Seite der Durchmesser eines Kreises ist.",
+  "d": 2
+ },
+ {
+  "id": "17cpj82",
+  "s": "Geometrie",
+  "q": "Wie groß ist die Kreiszahl π ungefähr?",
+  "a": [
+   "3,14159",
+   "3,41592",
+   "2,71828",
+   "1,61803"
+  ],
+  "w": [
+   "",
+   "Die Ziffern sind vertauscht.",
+   "Das ist die Eulersche Zahl e.",
+   "Das ist der Goldene Schnitt."
+  ],
+  "e": "π = Umfang : Durchmesser ≈ 3,14159. π ist irrational.",
+  "h": "Umfang durch Durchmesser.",
+  "d": 1
+ },
+ {
+  "id": "15w8914",
+  "s": "Geometrie",
+  "q": "Ein Rechteck ist 8 cm lang und 5 cm breit. Wie groß sind Umfang und Fläche?",
+  "a": [
+   "26 cm und 40 cm²",
+   "13 cm und 40 cm²",
+   "26 cm und 80 cm²",
+   "40 cm und 26 cm²"
+  ],
+  "w": [
+   "",
+   "Der Umfang ist 2 · (8 + 5), nicht 8 + 5.",
+   "Die Fläche ist 8 · 5 = 40.",
+   "Umfang und Fläche sind vertauscht."
+  ],
+  "e": "U = 2 · (a + b) = 26 cm; A = a · b = 40 cm².",
+  "h": "Länge zählt zweimal.",
+  "d": 1
+ },
+ {
+  "id": "10pwun5",
+  "s": "Geometrie",
+  "q": "Wie groß ist die Summe zweier Nebenwinkel?",
+  "a": [
+   "180°",
+   "90°",
+   "360°",
+   "270°"
+  ],
+  "w": [
+   "",
+   "Das wären Komplementwinkel.",
+   "Das ist ein Vollwinkel.",
+   "Das passt zu keiner Winkelbeziehung."
+  ],
+  "e": "Nebenwinkel liegen an einer Geraden und ergänzen sich zu 180°.",
+  "h": "Gerade Linie.",
+  "d": 1
+ },
+ {
+  "id": "sh0qvq",
+  "s": "Geometrie",
+  "q": "Welche Eigenschaft haben Scheitelwinkel?",
+  "a": [
+   "Sie sind gleich groß",
+   "Sie ergänzen sich zu 180°",
+   "Sie ergänzen sich zu 90°",
+   "Sie sind immer rechte Winkel"
+  ],
+  "w": [
+   "",
+   "Das gilt für Nebenwinkel.",
+   "Das gilt für Komplementwinkel.",
+   "Das gilt nur, wenn sich die Geraden senkrecht schneiden."
+  ],
+  "e": "Schneiden sich zwei Geraden, sind gegenüberliegende Winkel gleich.",
+  "h": "Gegenüber.",
+  "d": 1
+ },
+ {
+  "id": "fmxp81",
+  "s": "Geometrie",
+  "q": "Wie groß ist die Winkelsumme in einem Fünfeck?",
+  "a": [
+   "540°",
+   "360°",
+   "720°",
+   "900°"
+  ],
+  "w": [
+   "",
+   "Das ist die Summe im Viereck.",
+   "Das ist die Summe im Sechseck.",
+   "Das ist die Summe im Siebeneck."
+  ],
+  "e": "Allgemein (n − 2) · 180°: Für n = 5 ergibt sich 3 · 180° = 540°.",
+  "h": "Drei Dreiecke.",
+  "d": 2
+ },
+ {
+  "id": "1k807w1",
+  "s": "Geometrie",
+  "q": "Welche drei Seitenlängen können ein Dreieck bilden?",
+  "a": [
+   "3 cm, 4 cm, 6 cm",
+   "2 cm, 3 cm, 6 cm",
+   "1 cm, 2 cm, 4 cm",
+   "3 cm, 3 cm, 7 cm"
+  ],
+  "w": [
+   "",
+   "2 + 3 ist nicht größer als 6.",
+   "1 + 2 ist nicht größer als 4.",
+   "3 + 3 ist nicht größer als 7."
+  ],
+  "e": "Dreiecksungleichung: Die Summe zweier Seiten muss stets größer als die dritte sein.",
+  "h": "Zwei kurze müssen die lange übertreffen.",
+  "d": 2
+ },
+ {
+  "id": "9cbiqn",
+  "s": "Geometrie",
+  "q": "Wo schneiden sich die drei Seitenhalbierenden eines Dreiecks?",
+  "a": [
+   "Im Schwerpunkt",
+   "Im Umkreismittelpunkt",
+   "Im Inkreismittelpunkt",
+   "Im Höhenschnittpunkt"
+  ],
+  "w": [
+   "",
+   "Dort schneiden sich die Mittelsenkrechten.",
+   "Dort schneiden sich die Winkelhalbierenden.",
+   "Dort schneiden sich die Höhen."
+  ],
+  "e": "Der Schwerpunkt teilt jede Seitenhalbierende im Verhältnis 2 : 1.",
+  "h": "Balancepunkt.",
+  "d": 2
+ },
+ {
+  "id": "pvo2rj",
+  "s": "Geometrie",
+  "q": "Wo schneiden sich die drei Mittelsenkrechten eines Dreiecks?",
+  "a": [
+   "Im Umkreismittelpunkt",
+   "Im Schwerpunkt",
+   "Im Inkreismittelpunkt",
+   "Im Höhenschnittpunkt"
+  ],
+  "w": [
+   "",
+   "Dort schneiden sich die Seitenhalbierenden.",
+   "Dort schneiden sich die Winkelhalbierenden.",
+   "Dort schneiden sich die Höhen."
+  ],
+  "e": "Der Punkt ist von allen drei Ecken gleich weit entfernt und Mittelpunkt des Umkreises.",
+  "h": "Gleich weit von den Ecken.",
+  "d": 3
+ },
+ {
+  "id": "5xo4qg",
+  "s": "Geometrie",
+  "q": "Wie berechnet man die Fläche eines Trapezes mit den parallelen Seiten a und c und der Höhe h?",
+  "a": [
+   "(a + c) / 2 · h",
+   "a · h",
+   "(a + c) · h",
+   "½ · a · h"
+  ],
+  "w": [
+   "",
+   "Das wäre die Fläche eines Parallelogramms mit der Seite a.",
+   "Es fehlt die Division durch 2.",
+   "Das wäre die Dreiecksfläche."
+  ],
+  "e": "Das Mittel der parallelen Seiten mal die Höhe, z. B. (6 + 4) / 2 · 3 = 15.",
+  "h": "Mittellinie mal Höhe.",
+  "d": 2
+ },
+ {
+  "id": "h3yaas",
+  "s": "Geometrie",
+  "q": "Wie berechnet man die Fläche eines Parallelogramms?",
+  "a": [
+   "Grundseite · Höhe",
+   "Grundseite · Nachbarseite",
+   "½ · Grundseite · Höhe",
+   "½ · e · f"
+  ],
+  "w": [
+   "",
+   "Die Nachbarseite ist schräg; es zählt die Höhe.",
+   "Das wäre ein Dreieck.",
+   "Das ist die Fläche einer Raute aus den Diagonalen."
+  ],
+  "e": "A = g · h; ein Parallelogramm hat dieselbe Fläche wie das Rechteck mit g und h.",
+  "h": "Senkrechte Höhe.",
+  "d": 2
+ },
+ {
+  "id": "13loen9",
+  "s": "Geometrie",
+  "q": "Wie berechnet man die Fläche einer Raute aus den Diagonalen e und f?",
+  "a": [
+   "½ · e · f",
+   "e · f",
+   "e + f",
+   "½ · (e + f)"
+  ],
+  "w": [
+   "",
+   "Das ist doppelt so groß wie die Raute.",
+   "Das ist eine Länge, keine Fläche.",
+   "Das ist eine Länge, keine Fläche."
+  ],
+  "e": "Die Diagonalen teilen die Raute in vier rechtwinklige Dreiecke: A = e · f / 2.",
+  "h": "Halbes Diagonalenrechteck.",
+  "d": 2
+ },
+ {
+  "id": "1k53n9",
+  "s": "Geometrie",
+  "q": "Wie lang ist ein Kreisbogen zum Mittelpunktswinkel α bei Radius r?",
+  "a": [
+   "α / 360° · 2πr",
+   "α / 360° · πr²",
+   "α / 360° · πr",
+   "α / 180° · πr²"
+  ],
+  "w": [
+   "",
+   "Das ist die Fläche des Kreissektors.",
+   "Das wäre der Bogen eines Halbkreises, aber nur bei α = 360°.",
+   "Das ist die Fläche eines Sektors."
+  ],
+  "e": "Der Bogen ist der Anteil α/360° des Umfangs 2πr: 90° bei r = 4 ergibt 2π ≈ 6,28.",
+  "h": "Anteil des Umfangs.",
+  "d": 3
+ },
+ {
+  "id": "1jki6kh",
+  "s": "Geometrie",
+  "q": "Wie berechnet man das Volumen einer Pyramide?",
+  "a": [
+   "⅓ · Grundfläche · Höhe",
+   "½ · Grundfläche · Höhe",
+   "Grundfläche · Höhe",
+   "⅓ · Mantelfläche · Höhe"
+  ],
+  "w": [
+   "",
+   "Das wäre die Hälfte des Prismas; die Pyramide fasst aber nur ein Drittel.",
+   "Das ist das Volumen eines Prismas.",
+   "Die Grundfläche zählt, nicht die Mantelfläche."
+  ],
+  "e": "Eine Pyramide fasst ein Drittel des Prismas mit gleicher Grundfläche und Höhe.",
+  "h": "Ein Drittel.",
+  "d": 2
+ },
+ {
+  "id": "1c39upu",
+  "s": "Geometrie",
+  "q": "Wie berechnet man das Volumen eines Kegels?",
+  "a": [
+   "⅓ · π · r² · h",
+   "π · r² · h",
+   "½ · π · r² · h",
+   "⅓ · π · r · h"
+  ],
+  "w": [
+   "",
+   "Das ist das Volumen eines Zylinders.",
+   "Das wäre das Volumen eines halben Zylinders.",
+   "Es fehlt ein Faktor r."
+  ],
+  "e": "Ein Kegel fasst ein Drittel des Zylinders mit gleichem r und h.",
+  "h": "Ein Drittel Zylinder.",
+  "d": 2
+ },
+ {
+  "id": "1lz41la",
+  "s": "Geometrie",
+  "q": "Wie berechnet man die Oberfläche eines Würfels mit Kantenlänge a?",
+  "a": [
+   "6 · a²",
+   "4 · a²",
+   "a³",
+   "12 · a"
+  ],
+  "w": [
+   "",
+   "Das wären nur vier Seitenflächen.",
+   "Das ist das Volumen.",
+   "Das ist die Summe aller Kantenlängen."
+  ],
+  "e": "Sechs Quadrate mit je a²: Bei a = 2 cm sind es 24 cm².",
+  "h": "Sechs Seiten.",
+  "d": 1
+ },
+ {
+  "id": "1gy10vy",
+  "s": "Geometrie",
+  "q": "Wie lautet die Eulersche Polyederformel für Ecken (E), Kanten (K) und Flächen (F)?",
+  "a": [
+   "E − K + F = 2",
+   "E + K − F = 2",
+   "E − K − F = 2",
+   "E + K + F = 2"
+  ],
+  "w": [
+   "",
+   "Die Kanten werden abgezogen, nicht addiert.",
+   "Die Flächen werden addiert, nicht abgezogen.",
+   "Das gilt für keinen Körper."
+  ],
+  "e": "Würfel: 8 − 12 + 6 = 2. Das gilt für alle konvexen Polyeder.",
+  "h": "Kanten mit Minus.",
+  "d": 3
+ },
+ {
+  "id": "83efg0",
+  "s": "Geometrie",
+  "q": "Wie viele platonische Körper gibt es?",
+  "a": [
+   "5",
+   "4",
+   "6",
+   "7"
+  ],
+  "w": [
+   "",
+   "Es sind fünf, nicht nur Tetraeder, Würfel, Oktaeder und Dodekaeder.",
+   "Der Ikosaeder ist der fünfte; einen sechsten gibt es nicht.",
+   "Mehr als fünf regelmäßige konvexe Körper existieren nicht."
+  ],
+  "e": "Tetraeder, Würfel, Oktaeder, Dodekaeder und Ikosaeder.",
+  "h": "Weniger als sechs.",
+  "d": 2
+ },
+ {
+  "id": "1dnoq8y",
+  "s": "Geometrie",
+  "q": "Wie lang ist die Diagonale eines Quadrats mit der Seitenlänge a?",
+  "a": [
+   "a · √2",
+   "2a",
+   "a²",
+   "a · √3"
+  ],
+  "w": [
+   "",
+   "Das wäre die Summe zweier Seiten.",
+   "Das ist die Fläche.",
+   "Das ist die Raumdiagonale eines Würfels."
+  ],
+  "e": "Nach Pythagoras: d = √(a² + a²) = a · √2 ≈ 1,414 · a.",
+  "h": "Pythagoras.",
+  "d": 2
+ },
+ {
+  "id": "1av8wsa",
+  "s": "Geometrie",
+  "q": "Wie lang ist die Raumdiagonale eines Würfels mit der Kantenlänge a?",
+  "a": [
+   "a · √3",
+   "a · √2",
+   "3a",
+   "a² · √3"
+  ],
+  "w": [
+   "",
+   "Das ist die Flächendiagonale.",
+   "Das wäre die Summe dreier Kanten.",
+   "Das hat die falsche Einheit (Fläche statt Länge)."
+  ],
+  "e": "Zweimal Pythagoras: d = √(a² + a² + a²) = a · √3.",
+  "h": "Dreimal a².",
+  "d": 3
+ },
+ {
+  "id": "19uq87j",
+  "s": "Geometrie",
+  "q": "Wie hoch ist ein gleichseitiges Dreieck mit der Seitenlänge a?",
+  "a": [
+   "a/2 · √3",
+   "a/2",
+   "a · √3",
+   "a/2 · √2"
+  ],
+  "w": [
+   "",
+   "Das wäre nur die halbe Seite.",
+   "Das ist zu groß; die Höhe ist kürzer als die Seite.",
+   "Das wäre die Höhe eines rechtwinkligen Dreiecks mit anderen Maßen."
+  ],
+  "e": "Die Höhe halbiert die Grundseite: h = √(a² − (a/2)²) = a/2 · √3 ≈ 0,866 · a.",
+  "h": "Pythagoras mit halber Seite.",
+  "d": 3
+ },
+ {
+  "id": "vmptwj",
+  "s": "Geometrie",
+  "q": "Die Seitenlängen eines Rechtecks werden verdoppelt. Wie ändert sich die Fläche?",
+  "a": [
+   "Sie vervierfacht sich",
+   "Sie verdoppelt sich",
+   "Sie versechsfacht sich",
+   "Sie verachtfacht sich"
+  ],
+  "w": [
+   "",
+   "Länge und Breite verdoppeln sich, also 2 · 2.",
+   "Das gälte bei anderen Faktoren.",
+   "Das gälte für das Volumen eines Würfels."
+  ],
+  "e": "Beim Skalieren um k wächst die Fläche um k²: 2² = 4.",
+  "h": "Faktor zum Quadrat.",
+  "d": 1
+ },
+ {
+  "id": "tu4raw",
+  "s": "Geometrie",
+  "q": "Die Kantenlänge eines Würfels wird verdoppelt. Wie ändert sich das Volumen?",
+  "a": [
+   "Es verachtfacht sich",
+   "Es verdoppelt sich",
+   "Es vervierfacht sich",
+   "Es versechzehnfacht sich"
+  ],
+  "w": [
+   "",
+   "Das Volumen wächst mit der dritten Potenz.",
+   "Das gälte für die Oberfläche.",
+   "Das wäre 2⁴."
+  ],
+  "e": "Beim Skalieren um k wächst das Volumen um k³: 2³ = 8.",
+  "h": "Faktor hoch drei.",
+  "d": 2
+ },
+ {
+  "id": "142apku",
+  "s": "Geometrie",
+  "q": "Wie lautet die Formel für den Kreisumfang aus dem Durchmesser d?",
+  "a": [
+   "U = π · d",
+   "U = π · d²",
+   "U = ½ · π · d",
+   "U = π² · d"
+  ],
+  "w": [
+   "",
+   "Das hat die falsche Einheit (Fläche statt Länge).",
+   "Das ist der halbe Umfang.",
+   "Das ist keine Kreisformel."
+  ],
+  "e": "π ist per Definition Umfang : Durchmesser, daher U = π · d.",
+  "h": "Definition von π.",
+  "d": 1
+ },
+ {
+  "id": "1u9iuzr",
+  "s": "Geometrie",
+  "q": "Wie nennt man die Verbindungsstrecke zweier Punkte auf einem Kreis?",
+  "a": [
+   "Sehne",
+   "Tangente",
+   "Sekante",
+   "Radius"
+  ],
+  "w": [
+   "",
+   "Eine Tangente berührt den Kreis nur in einem Punkt.",
+   "Eine Sekante ist eine ganze Gerade, nicht nur eine Strecke.",
+   "Der Radius verbindet den Mittelpunkt mit dem Kreis."
+  ],
+  "e": "Die längste Sehne ist der Durchmesser.",
+  "h": "Wie bei Bogen und Pfeil.",
+  "d": 2
+ },
+ {
+  "id": "1a7irpe",
+  "s": "Geometrie",
+  "q": "Welchen Winkel bildet eine Kreistangente mit dem Radius zum Berührpunkt?",
+  "a": [
+   "90°",
+   "45°",
+   "60°",
+   "180°"
+  ],
+  "w": [
+   "",
+   "Ein solcher Winkel träte nur bei einer Sekante auf.",
+   "Ein solcher Winkel träte nur bei einer Sekante auf.",
+   "Das wäre eine Gerade, also Parallelität."
+  ],
+  "e": "Tangente und Berührradius stehen senkrecht aufeinander.",
+  "h": "Senkrecht.",
+  "d": 2
+ },
+ {
+  "id": "o9j354",
+  "s": "Geometrie",
+  "q": "Wie verhält sich der Mittelpunktswinkel zum Umfangswinkel über demselben Bogen?",
+  "a": [
+   "Er ist doppelt so groß",
+   "Er ist gleich groß",
+   "Er ist halb so groß",
+   "Er ist dreimal so groß"
+  ],
+  "w": [
+   "",
+   "Der Umfangswinkel ist nur halb so groß.",
+   "Das wäre die Umkehrung.",
+   "Der Faktor ist 2, nicht 3."
+  ],
+  "e": "Umfangswinkelsatz: Der Thaleskreis ist der Spezialfall 180° → 90°.",
+  "h": "Verdoppeln.",
+  "d": 3
+ },
+ {
+  "id": "kr2ogy",
+  "s": "Geometrie",
+  "q": "Welche Angabe reicht NICHT aus, um ein Dreieck bis auf Kongruenz festzulegen?",
+  "a": [
+   "Drei Winkel",
+   "Drei Seiten",
+   "Zwei Seiten und der eingeschlossene Winkel",
+   "Eine Seite und zwei anliegende Winkel"
+  ],
+  "w": [
+   "",
+   "Dafür gibt es den Kongruenzsatz SSS.",
+   "Dafür gibt es den Kongruenzsatz SWS.",
+   "Dafür gibt es den Kongruenzsatz WSW."
+  ],
+  "e": "Drei Winkel legen nur die Form fest (Ähnlichkeit), nicht die Größe.",
+  "h": "Größe fehlt.",
+  "d": 2
+ },
+ {
+  "id": "gdkg21",
+  "s": "Geometrie",
+  "q": "Was gilt für die Winkelsumme eines Dreiecks auf einer Kugeloberfläche?",
+  "a": [
+   "Sie ist größer als 180°",
+   "Sie ist kleiner als 180°",
+   "Sie beträgt genau 180°",
+   "Sie beträgt genau 360°"
+  ],
+  "w": [
+   "",
+   "Das gilt für hyperbolische Flächen.",
+   "Das gilt nur in der Ebene.",
+   "Das ist die Summe im ebenen Viereck."
+  ],
+  "e": "Ein Dreieck vom Nordpol zu zwei Punkten auf dem Äquator hat zwei rechte Winkel am Äquator und damit mehr als 180°.",
+  "h": "Gekrümmte Fläche.",
+  "d": 3
+ },
+ {
+  "id": "ppdyvk",
+  "s": "Geometrie",
+  "q": "Ein Winkel von 120° heißt …",
+  "a": [
+   "stumpf",
+   "spitz",
+   "gestreckt",
+   "überstumpf"
+  ],
+  "w": [
+   "",
+   "Spitz sind Winkel kleiner als 90°.",
+   "Gestreckt ist ein Winkel von 180°.",
+   "Überstumpf sind Winkel über 180°."
+  ],
+  "e": "Spitz < 90° < stumpf < 180° < überstumpf < 360°.",
+  "h": "Größer als ein rechter.",
+  "d": 1
+ },
+ {
+  "id": "1nd0iyt",
+  "s": "Geometrie",
+  "q": "Wie viele Quadratmeter hat ein Hektar?",
+  "a": [
+   "10.000",
+   "100",
+   "1.000",
+   "100.000"
+  ],
+  "w": [
+   "",
+   "Das ist ein Ar.",
+   "Das wäre ein Zehntel Hektar.",
+   "Das wäre das Zehnfache eines Hektars."
+  ],
+  "e": "1 ha = 100 m · 100 m = 10.000 m².",
+  "h": "Quadrat von hundert Metern.",
+  "d": 1
+ },
+ {
+  "id": "wm7fyw",
+  "s": "Geometrie",
+  "q": "Welchen Winkel bilden der Stunden- und der Minutenzeiger um 4 Uhr?",
+  "a": [
+   "120°",
+   "90°",
+   "100°",
+   "150°"
+  ],
+  "w": [
+   "",
+   "Das gälte um 3 Uhr.",
+   "Das passt zu keiner vollen Stunde.",
+   "Das gälte um 5 Uhr."
+  ],
+  "e": "Eine Stunde entspricht 30°, vier Stunden also 120°.",
+  "h": "360° geteilt durch 12.",
+  "d": 2
+ },
+ {
+  "id": "y9pptm",
+  "s": "Geometrie",
+  "q": "Wie viele Symmetrieachsen hat ein Quadrat?",
+  "a": [
+   "4",
+   "2",
+   "6",
+   "8"
+  ],
+  "w": [
+   "",
+   "Es gibt zwei Mittellinien und zusätzlich die zwei Diagonalen.",
+   "Das hätte ein regelmäßiges Sechseck.",
+   "Das hätte ein regelmäßiges Achteck."
+  ],
+  "e": "Zwei Mittellinien und zwei Diagonalen.",
+  "h": "Mittellinien und Diagonalen.",
+  "d": 1
+ },
+ {
+  "id": "15fzaqm",
+  "s": "Geometrie",
+  "q": "Wie groß ist jeder Innenwinkel eines regelmäßigen Sechsecks?",
+  "a": [
+   "120°",
+   "108°",
+   "135°",
+   "144°"
+  ],
+  "w": [
+   "",
+   "Das ist der Innenwinkel des regelmäßigen Fünfecks.",
+   "Das ist der Innenwinkel des regelmäßigen Achtecks.",
+   "Das ist der Innenwinkel des regelmäßigen Zehnecks."
+  ],
+  "e": "Winkelsumme (6 − 2) · 180° = 720°; geteilt durch 6 ergibt 120°.",
+  "h": "Summe durch Anzahl.",
+  "d": 2
+ },
+ {
+  "id": "10ptq93",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Eine Krankheit trifft 1 von 1.000 Menschen. Der Test erkennt Kranke zu 99 % und meldet bei 1 % der Gesunden fälschlich „positiv“. Wie wahrscheinlich ist es, krank zu sein, wenn der Test positiv ausfällt?",
+  "a": [
+   "Etwa 9 %",
+   "Etwa 99 %",
+   "Etwa 50 %",
+   "Etwa 1 %"
+  ],
+  "w": [
+   "",
+   "Das ist nur die Trefferquote bei Kranken, nicht die Wahrscheinlichkeit nach positivem Test.",
+   "Dafür müssten Kranke und Falsch-Positive gleich häufig sein, hier überwiegen Falsch-Positive.",
+   "Das wäre die Falsch-Positiv-Rate, nicht die Krankheitswahrscheinlichkeit."
+  ],
+  "e": "Von 1.000 Menschen ist 1 krank, dazu kommen etwa 10 gesunde Falsch-Positive. Also ist nur etwa jeder Elfte mit positivem Test wirklich krank (9 %). Der Fehler heißt Basisratenvernachlässigung.",
+  "h": "Wie viele Gesunde gibt es im Vergleich?",
+  "d": 3
+ },
+ {
+  "id": "a41yzi",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Eisverkauf und Badeunfälle steigen im Sommer gleichzeitig. Was erklärt das am besten?",
+  "a": [
+   "Eine gemeinsame Ursache: das warme Wetter",
+   "Eis verursacht Unfälle",
+   "Unfälle steigern den Eisverkauf",
+   "Es lässt sich grundsätzlich nicht erklären"
+  ],
+  "w": [
+   "",
+   "Das wäre ein Fehlschluss; es gibt keinen belegten Wirkungszusammenhang.",
+   "Das wäre ein Fehlschluss; die Richtung ist unplausibel.",
+   "Ein dritter Faktor erklärt die Gleichzeitigkeit gut."
+  ],
+  "e": "Korrelation ist keine Kausalität. Ein dritter Faktor (Confounder) treibt beide Größen.",
+  "h": "Ein dritter Faktor.",
+  "d": 1
+ },
+ {
+  "id": "1uqgmtn",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Eine faire Münze fiel fünfmal hintereinander auf Kopf. Wie wahrscheinlich ist Kopf beim sechsten Wurf?",
+  "a": [
+   "50 %",
+   "Unter 50 %",
+   "Über 50 %",
+   "Etwa 3 %"
+  ],
+  "w": [
+   "",
+   "Würfe sind unabhängig; die Münze hat kein Gedächtnis.",
+   "Würfe sind unabhängig; die Münze hat kein Gedächtnis.",
+   "Das ist die Chance auf fünfmal Kopf in Folge (1/32), nicht für den sechsten Wurf."
+  ],
+  "e": "Würfe sind unabhängig. Der Glaube, nun sei „Zahl fällig“, ist der Spielerfehlschluss.",
+  "h": "Die Münze hat kein Gedächtnis.",
+  "d": 1
+ },
+ {
+  "id": "1oxfx06",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Welches Phänomen beschreibt, dass extreme Messwerte bei Wiederholung näher am Durchschnitt liegen?",
+  "a": [
+   "Regression zur Mitte",
+   "Gesetz der großen Zahlen",
+   "Simpson-Paradoxon",
+   "Stichprobenfehler"
+  ],
+  "w": [
+   "",
+   "Das beschreibt die Annäherung von Mittelwerten an den Erwartungswert bei vielen Versuchen.",
+   "Das beschreibt die Umkehr eines Trends beim Zusammenfassen von Gruppen.",
+   "Das beschreibt die Abweichung einer Stichprobe von der Grundgesamtheit."
+  ],
+  "e": "Extremleistungen enthalten oft viel Glück: Nach einer Rekordsaison folgt im Schnitt eine schwächere, ohne dass sich das Können geändert hat.",
+  "h": "Glück wiederholt sich nicht.",
+  "d": 2
+ },
+ {
+  "id": "bxbs81",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie aktualisiert man nach Bayes seine Einschätzung, wenn neue Daten hinzukommen?",
+  "a": [
+   "Man gewichtet die alte Einschätzung mit der Aussagekraft der Daten",
+   "Man verwirft die alte Annahme und startet mit den neuen Daten",
+   "Man bildet den Mittelwert aus alter und neuer Einschätzung",
+   "Man verlässt sich nur auf die neuesten Daten"
+  ],
+  "w": [
+   "",
+   "Dabei ginge das Vorwissen (a priori) verloren.",
+   "Der Mittelwert berücksichtigt die Stärke der Evidenz nicht.",
+   "Das ignoriert das Vorwissen und die Basisrate."
+  ],
+  "e": "Posterior ∝ Prior · Likelihood: Die Ausgangswahrscheinlichkeit wird mit der Aussagekraft der neuen Daten verrechnet.",
+  "h": "Vorwissen mal Evidenz.",
+  "d": 3
+ },
+ {
+  "id": "70kw7n",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Eine Umfrage per Link in einem Fan-Forum ergibt 90 % Zustimmung. Was ist das Hauptproblem?",
+  "a": [
+   "Selbstselektion der Teilnehmenden",
+   "Die Prozentzahl ist für eine Umfrage zu hoch",
+   "Online-Umfragen sind wissenschaftlich nicht zulässig",
+   "Es wurden zu wenige Fragen gestellt"
+  ],
+  "w": [
+   "",
+   "Hohe Werte allein machen eine Umfrage nicht falsch.",
+   "Online-Umfragen sind zulässig, wenn die Stichprobe repräsentativ ist.",
+   "Die Zahl der Fragen sagt nichts über die Repräsentativität aus."
+  ],
+  "e": "Wer im Fan-Forum antwortet, ist schon Fan; die Stichprobe spiegelt nicht die Bevölkerung wider.",
+  "h": "Wer antwortet überhaupt?",
+  "d": 2
+ },
+ {
+  "id": "m7zp7m",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Ein Trend, der in mehreren Untergruppen gilt, kehrt sich im Gesamtbild um. Wie heißt das Phänomen?",
+  "a": [
+   "Simpson-Paradoxon",
+   "Gesetz der großen Zahlen",
+   "Regression zur Mitte",
+   "Zirkelschluss"
+  ],
+  "w": [
+   "",
+   "Es beschreibt die Annäherung des Mittelwerts an den Erwartungswert.",
+   "Sie beschreibt die Rückkehr extremer Werte zum Durchschnitt.",
+   "Das ist ein logischer Fehler, bei dem die Behauptung vorausgesetzt wird."
+  ],
+  "e": "Bekannt ist der Fall der Uni Berkeley 1973: Insgesamt wurden Frauen seltener zugelassen, in den meisten Fächern jedoch nicht.",
+  "h": "Gruppen zusammenwerfen.",
+  "d": 3
+ },
+ {
+  "id": "6i4clw",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Was sagt ein p-Wert von 0,03 aus?",
+  "a": [
+   "Unter der Nullhypothese wären solche Daten selten (≈ 3 %)",
+   "Mit 97 % Wahrscheinlichkeit stimmt die untersuchte Hypothese",
+   "Der gefundene Effekt ist groß und praktisch bedeutsam",
+   "Mit 3 % Wahrscheinlichkeit ist das Ergebnis reiner Zufall"
+  ],
+  "w": [
+   "",
+   "Der p-Wert ist keine Wahrscheinlichkeit für die Hypothese selbst.",
+   "Der p-Wert sagt nichts über die Effektstärke.",
+   "Der p-Wert setzt die Nullhypothese voraus und ist keine Wahrscheinlichkeit für „reinen Zufall“."
+  ],
+  "e": "Der p-Wert misst die Unverträglichkeit der Daten mit der Nullhypothese, nicht deren Wahrscheinlichkeit.",
+  "h": "Der Wert setzt voraus, dass es keinen Effekt gibt.",
+  "d": 3
+ },
+ {
+  "id": "24dnnq",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Was besagt das Gesetz der großen Zahlen?",
+  "a": [
+   "Der Durchschnitt nähert sich dem Erwartungswert",
+   "Nach einer Pechsträhne gleicht sich das Glück aus",
+   "Große Stichproben sind immer fehlerfrei",
+   "Je größer die Zahl, desto wahrscheinlicher das Ereignis"
+  ],
+  "w": [
+   "",
+   "Das wäre der Spielerfehlschluss.",
+   "Auch große Stichproben können systematisch verzerrt sein.",
+   "Die Größe einer Zahl bestimmt nicht die Eintrittswahrscheinlichkeit."
+  ],
+  "e": "Der Anteil der Köpfe bei 10.000 Münzwürfen liegt sehr nahe bei 50 %, die absolute Differenz kann aber wachsen.",
+  "h": "Es geht darum, was bei sehr häufigem Würfeln passiert.",
+  "d": 2
+ },
+ {
+  "id": "1a0hff7",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie wahrscheinlich ist bei zwei fairen Würfeln die Augensumme 7?",
+  "a": [
+   "1/6",
+   "1/12",
+   "1/36",
+   "1/7"
+  ],
+  "w": [
+   "",
+   "Es gibt 6 günstige Fälle bei 36, nicht 3.",
+   "Das wäre die Chance für eine bestimmte Kombination wie 2 und 5 in dieser Reihenfolge.",
+   "Die Summen sind nicht gleich wahrscheinlich."
+  ],
+  "e": "6 von 36 Kombinationen (1+6, 2+5, 3+4 und umgekehrt): die häufigste Summe.",
+  "h": "Sechs von 36.",
+  "d": 2
+ },
+ {
+  "id": "1yblh46",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie wahrscheinlich ist bei zwei Würfen eines Würfels mindestens eine Sechs?",
+  "a": [
+   "11/36 (≈ 31 %)",
+   "1/3 (≈ 33 %)",
+   "1/6 (≈ 17 %)",
+   "1/36 (≈ 3 %)"
+  ],
+  "w": [
+   "",
+   "Das addiert 1/6 + 1/6 und zählt die Doppelsechs doppelt.",
+   "Das wäre nur für einen Wurf.",
+   "Das wäre die Chance auf zwei Sechsen."
+  ],
+  "e": "Gegenereignis: 25/36 keine Sechs, also 1 − 25/36 = 11/36.",
+  "h": "Gegenereignis berechnen.",
+  "d": 2
+ },
+ {
+  "id": "18uc16a",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie groß ist der Mittelwert von 2, 4, 6 und 8?",
+  "a": [
+   "5",
+   "4",
+   "6",
+   "20"
+  ],
+  "w": [
+   "",
+   "Das ist nur der kleinere mittlere Wert.",
+   "Das ist nur der größere mittlere Wert.",
+   "Das ist die Summe, nicht der Mittelwert."
+  ],
+  "e": "(2 + 4 + 6 + 8) : 4 = 5. Bei gleichen Abständen liegt der Mittelwert mittig.",
+  "h": "Summe durch Anzahl.",
+  "d": 1
+ },
+ {
+  "id": "180xh13",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Der Median der Werte 2, 3, 3, 8, 100 ist …",
+  "a": [
+   "3",
+   "23,2",
+   "8",
+   "100"
+  ],
+  "w": [
+   "",
+   "Das ist der Mittelwert.",
+   "Das ist das vierte, nicht das mittlere von fünf Werten.",
+   "Das ist der größte Wert."
+  ],
+  "e": "Der Median ist der mittlere Wert der sortierten Reihe und unempfindlich gegen Ausreißer.",
+  "h": "Wert in der Mitte.",
+  "d": 1
+ },
+ {
+  "id": "1pwivzk",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie viele mögliche Tipps gibt es beim Lotto „6 aus 49“?",
+  "a": [
+   "Rund 14 Millionen",
+   "Rund 1,4 Millionen",
+   "Rund 140 Millionen",
+   "Rund 49 Millionen"
+  ],
+  "w": [
+   "",
+   "Das wäre ein Zehntel der richtigen Zahl.",
+   "Das wäre das Zehnfache der richtigen Zahl.",
+   "Das ist keine Kombinationszahl."
+  ],
+  "e": "C(49, 6) = 13.983.816, daher die Chance von etwa 1 : 14 Millionen auf sechs Richtige.",
+  "h": "Binomialkoeffizient.",
+  "d": 2
+ },
+ {
+  "id": "gmiddp",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Ab wie vielen Personen ist es wahrscheinlicher als 50 %, dass zwei am selben Tag Geburtstag haben?",
+  "a": [
+   "23",
+   "183",
+   "50",
+   "100"
+  ],
+  "w": [
+   "",
+   "Das wäre die Hälfte von 365 und würde für ein bestimmtes Datum gelten.",
+   "Bei 50 Personen liegt die Chance schon bei etwa 97 %.",
+   "Bei 100 Personen liegt die Chance über 99,999 %."
+  ],
+  "e": "Es zählen alle Paare: Bei 23 Personen gibt es 253 Paare; die Chance beträgt etwa 50,7 %.",
+  "h": "Paare zählen.",
+  "d": 2
+ },
+ {
+  "id": "p86v5o",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Beim Ziegenproblem hast du eine Tür gewählt, der Moderator öffnet eine Tür mit einer Ziege. Was ist klug?",
+  "a": [
+   "Wechseln: Gewinnchance 2/3",
+   "Bleiben: Gewinnchance 2/3",
+   "Egal, beide Türen 1/2",
+   "Wechseln: Gewinnchance 1/3"
+  ],
+  "w": [
+   "",
+   "Bleiben behält die ursprüngliche Chance von 1/3.",
+   "Die Information des Moderators verteilt die Chancen ungleich.",
+   "Wechseln hat die Chance 2/3, nicht 1/3."
+  ],
+  "e": "Die erste Wahl hat 1/3; mit 2/3 liegt das Auto hinter einer der anderen Türen, und der Moderator zeigt dir die falsche.",
+  "h": "Die erste Wahl bleibt bei 1/3.",
+  "d": 3
+ },
+ {
+  "id": "110j9i4",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie wahrscheinlich sind zwei Köpfe bei zwei Münzwürfen?",
+  "a": [
+   "1/4",
+   "1/2",
+   "1/3",
+   "3/4"
+  ],
+  "w": [
+   "",
+   "Das wäre die Chance auf Kopf bei einem Wurf.",
+   "Die drei Ergebnisse KK, KZ/ZK, ZZ sind nicht gleich wahrscheinlich.",
+   "Das wäre die Chance auf mindestens einen Kopf."
+  ],
+  "e": "1/2 · 1/2 = 1/4; es gibt die vier gleich wahrscheinlichen Ausgänge KK, KZ, ZK, ZZ.",
+  "h": "Zwei unabhängige Würfe.",
+  "d": 1
+ },
+ {
+  "id": "1k8fs83",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie hoch ist der Erwartungswert beim Wurf eines fairen Würfels?",
+  "a": [
+   "3,5",
+   "3",
+   "4",
+   "6"
+  ],
+  "w": [
+   "",
+   "Das ist ein möglicher Wert, aber nicht der Mittelwert aller Augenzahlen.",
+   "Das ist ein möglicher Wert, aber nicht der Mittelwert aller Augenzahlen.",
+   "Das ist der höchste Wert, nicht der Erwartungswert."
+  ],
+  "e": "(1 + 2 + 3 + 4 + 5 + 6) : 6 = 3,5; der Wert kann nie gewürfelt werden.",
+  "h": "Mitte von 1 und 6.",
+  "d": 2
+ },
+ {
+  "id": "yvi2f3",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Was misst die Standardabweichung?",
+  "a": [
+   "Wie stark die Werte um den Mittelwert streuen",
+   "Den häufigsten Wert",
+   "Den mittleren Wert",
+   "Den Abstand von kleinstem zu größtem Wert"
+  ],
+  "w": [
+   "",
+   "Das ist der Modus.",
+   "Das ist der Median.",
+   "Das ist die Spannweite."
+  ],
+  "e": "Eine kleine Standardabweichung bedeutet, dass die Werte nah beieinander liegen.",
+  "h": "Kleiner Wert: alle liegen dicht beieinander.",
+  "d": 1
+ },
+ {
+  "id": "1ko4ymz",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Was ist der Modus der Werte 2, 3, 3, 5, 7, 3, 8?",
+  "a": [
+   "3",
+   "5",
+   "4,43",
+   "7"
+  ],
+  "w": [
+   "",
+   "Das ist der Median, nicht der Modus.",
+   "Das ist der Mittelwert.",
+   "Das ist nur ein einzelner, seltener Wert."
+  ],
+  "e": "Der Modus ist der häufigste Wert; die 3 kommt dreimal vor.",
+  "h": "Häufigkeit zählen.",
+  "d": 1
+ },
+ {
+  "id": "1rbbq0j",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Du ziehst eine Karte aus einem Skatblatt mit 32 Karten. Wie wahrscheinlich ist ein Ass?",
+  "a": [
+   "1/8",
+   "1/4",
+   "1/32",
+   "1/13"
+  ],
+  "w": [
+   "",
+   "Das wäre die Chance auf eine bestimmte Farbe.",
+   "Das wäre die Chance auf genau eine bestimmte Karte.",
+   "Das wäre die Chance bei einem 52er-Blatt."
+  ],
+  "e": "4 Asse unter 32 Karten: 4/32 = 1/8.",
+  "h": "Vier von 32.",
+  "d": 1
+ },
+ {
+  "id": "n0wib2",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "In einer Urne liegen 3 rote und 2 blaue Kugeln. Du ziehst zweimal ohne Zurücklegen. Wie wahrscheinlich sind zwei rote?",
+  "a": [
+   "3/10",
+   "9/25",
+   "3/5",
+   "1/2"
+  ],
+  "w": [
+   "",
+   "Das gälte beim Ziehen mit Zurücklegen.",
+   "Das ist die Chance nur beim ersten Zug.",
+   "Das gilt für keinen der beiden Züge."
+  ],
+  "e": "3/5 · 2/4 = 6/20 = 3/10.",
+  "h": "Beim zweiten Zug eine rote weniger.",
+  "d": 2
+ },
+ {
+  "id": "1fzobol",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Der Mittelwert liegt deutlich über dem Median. Was folgt daraus?",
+  "a": [
+   "Rechtsschief: hohe Ausreißer ziehen ihn hoch",
+   "Die Verteilung ist symmetrisch",
+   "Die Verteilung ist linksschief, niedrige Ausreißer ziehen den Mittelwert hoch",
+   "Der Median wurde falsch berechnet"
+  ],
+  "w": [
+   "",
+   "Bei Symmetrie fallen Mittelwert und Median zusammen.",
+   "Niedrige Ausreißer ziehen den Mittelwert nach unten.",
+   "Mittelwert und Median müssen nicht übereinstimmen."
+  ],
+  "e": "Einkommen sind typisch rechtsschief: Wenige sehr hohe Einkommen heben den Mittelwert über den Median.",
+  "h": "Ausreißer ziehen am Mittelwert.",
+  "d": 2
+ },
+ {
+  "id": "ckt8ut",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie viele mögliche Ergebnisse haben zwei unterscheidbare Würfel zusammen?",
+  "a": [
+   "36",
+   "12",
+   "21",
+   "18"
+  ],
+  "w": [
+   "",
+   "Das ist die Summe 6 + 6.",
+   "Das wäre die Zahl der Kombinationen ohne Beachtung der Reihenfolge.",
+   "Das ist 6 · 3."
+  ],
+  "e": "6 · 6 = 36 gleich wahrscheinliche Paare.",
+  "h": "Mal, nicht plus.",
+  "d": 1
+ },
+ {
+  "id": "chp3gc",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Was versteht man unter einem Laplace-Experiment?",
+  "a": [
+   "Alle Ergebnisse sind gleich wahrscheinlich",
+   "Es gibt nur zwei mögliche Ergebnisse",
+   "Das Experiment wird beliebig oft wiederholt",
+   "Die Ergebnisse hängen voneinander ab"
+  ],
+  "w": [
+   "",
+   "Das wäre ein Bernoulli-Experiment.",
+   "Das ist eine Versuchsreihe, kein Merkmal des Laplace-Experiments.",
+   "Abhängigkeit hat damit nichts zu tun."
+  ],
+  "e": "P(A) = günstige Ergebnisse : mögliche Ergebnisse, z. B. beim fairen Würfel 1/6 je Seite.",
+  "h": "Denk an einen fairen Würfel.",
+  "d": 2
+ },
+ {
+  "id": "148q5qv",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie berechnet man die Wahrscheinlichkeit des Gegenereignisses von A?",
+  "a": [
+   "1 − P(A)",
+   "P(A) − 1",
+   "1 / P(A)",
+   "−P(A)"
+  ],
+  "w": [
+   "",
+   "Das wäre negativ.",
+   "Das wäre größer als 1.",
+   "Wahrscheinlichkeiten sind nie negativ."
+  ],
+  "e": "P(Ā) = 1 − P(A); Beispiel: keine Sechs = 1 − 1/6 = 5/6.",
+  "h": "Alles zusammen ist 1.",
+  "d": 1
+ },
+ {
+  "id": "indxna",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie berechnet man P(A und B) bei unabhängigen Ereignissen?",
+  "a": [
+   "P(A) · P(B)",
+   "P(A) + P(B)",
+   "P(A) / P(B)",
+   "P(A) + P(B) − P(A) · P(B)"
+  ],
+  "w": [
+   "",
+   "Die Summe gilt für sich ausschließende Ereignisse bei „oder“.",
+   "Das ist keine Regel für „und“.",
+   "Das ist die Formel für „A oder B“."
+  ],
+  "e": "Zweimal Sechs: 1/6 · 1/6 = 1/36.",
+  "h": "Mal bei „und“.",
+  "d": 2
+ },
+ {
+  "id": "19xlo0j",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie berechnet man P(A oder B) für sich gegenseitig ausschließende Ereignisse?",
+  "a": [
+   "P(A) + P(B)",
+   "P(A) · P(B)",
+   "P(A) − P(B)",
+   "1 − P(A) · P(B)"
+  ],
+  "w": [
+   "",
+   "Das ist die Formel für „A und B“ bei Unabhängigkeit.",
+   "Das wäre keine „oder“-Verknüpfung.",
+   "Das ist die Gegenwahrscheinlichkeit von „A und B“."
+  ],
+  "e": "Würfel: 2 oder 5 = 1/6 + 1/6 = 1/3.",
+  "h": "Plus bei „oder“.",
+  "d": 2
+ },
+ {
+  "id": "1koedcd",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Auf wie viele Arten kann man 3 Personen aus 5 auswählen (ohne Beachtung der Reihenfolge)?",
+  "a": [
+   "10",
+   "6",
+   "15",
+   "60"
+  ],
+  "w": [
+   "",
+   "Das wäre 3!, die Anordnungen von 3 Personen.",
+   "Das wäre die Zahl bei anderer Auswahl (6 über 2).",
+   "Das wäre die Zahl mit Beachtung der Reihenfolge."
+  ],
+  "e": "C(5, 3) = 5! : (3! · 2!) = 10.",
+  "h": "Binomialkoeffizient.",
+  "d": 2
+ },
+ {
+  "id": "1iqh7f",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Auf wie viele Arten kann man 4 verschiedene Bücher nebeneinander ins Regal stellen?",
+  "a": [
+   "24",
+   "16",
+   "12",
+   "8"
+  ],
+  "w": [
+   "",
+   "Das wäre 4².",
+   "Das wäre 4 · 3.",
+   "Das wäre 4 · 2."
+  ],
+  "e": "4! = 4 · 3 · 2 · 1 = 24.",
+  "h": "Fakultät.",
+  "d": 1
+ },
+ {
+  "id": "cufbrd",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Auf wie viele Arten können 5 Personen an einem runden Tisch sitzen, wenn nur die Reihenfolge relativ zueinander zählt?",
+  "a": [
+   "24",
+   "120",
+   "60",
+   "25"
+  ],
+  "w": [
+   "",
+   "Das wären die Anordnungen auf einer Reihe, 5!.",
+   "Das wäre 5!/2.",
+   "Das wäre 5²."
+  ],
+  "e": "Man fixiert eine Person und ordnet die übrigen: (5 − 1)! = 24.",
+  "h": "Eine Person festhalten.",
+  "d": 3
+ },
+ {
+  "id": "1q6mpgp",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Was ist die Spannweite eines Datensatzes?",
+  "a": [
+   "Größter Wert minus kleinster Wert",
+   "Mittelwert minus Median",
+   "Mittel aus größtem und kleinstem Wert",
+   "Zahl der verschiedenen Werte"
+  ],
+  "w": [
+   "",
+   "Das ist ein Schiefemaß, nicht die Spannweite.",
+   "Das ist die Mitte des Wertebereichs.",
+   "Das ist eine Anzahl, keine Spannweite."
+  ],
+  "e": "Für 3, 5, 9, 14 beträgt die Spannweite 14 − 3 = 11.",
+  "h": "Von klein bis groß.",
+  "d": 1
+ },
+ {
+  "id": "imn5s9",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Welchen Anteil der Daten umfasst der Bereich zwischen dem ersten und dem dritten Quartil?",
+  "a": [
+   "50 %",
+   "25 %",
+   "75 %",
+   "100 %"
+  ],
+  "w": [
+   "",
+   "Das ist der Anteil zwischen zwei benachbarten Quartilen.",
+   "Das ist der Anteil unterhalb des dritten Quartils.",
+   "Das wäre die Spannweite."
+  ],
+  "e": "Der Interquartilsabstand enthält die mittleren 50 % der Daten und ist robust gegen Ausreißer.",
+  "h": "Mittlere Hälfte.",
+  "d": 2
+ },
+ {
+  "id": "1t05a5d",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie viel Prozent der Werte liegen bei einer Normalverteilung etwa innerhalb einer Standardabweichung um den Mittelwert?",
+  "a": [
+   "Etwa 68 %",
+   "Etwa 50 %",
+   "Etwa 95 %",
+   "Etwa 99,7 %"
+  ],
+  "w": [
+   "",
+   "Das ist der Anteil innerhalb von etwa 0,67 Standardabweichungen.",
+   "Das ist der Anteil innerhalb von etwa 2 Standardabweichungen.",
+   "Das ist der Anteil innerhalb von 3 Standardabweichungen."
+  ],
+  "e": "Die 68-95-99,7-Regel: 1σ, 2σ und 3σ umfassen etwa 68 %, 95 % und 99,7 %.",
+  "h": "68-95-99,7.",
+  "d": 2
+ },
+ {
+  "id": "1i4bj9o",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie wirkt sich eine größere Stichprobe auf den Zufallsfehler einer Umfrage aus?",
+  "a": [
+   "Er sinkt",
+   "Er steigt",
+   "Er bleibt gleich",
+   "Er wird zum Stichprobenfehler"
+  ],
+  "w": [
+   "",
+   "Mehr Daten mitteln Zufall besser aus.",
+   "Der Zufallsfehler hängt von der Stichprobengröße ab.",
+   "Der Zufallsfehler ist selbst der Stichprobenfehler."
+  ],
+  "e": "Der Zufallsfehler sinkt mit 1/√n; systematische Verzerrungen bleiben aber bestehen.",
+  "h": "Mehr Daten.",
+  "d": 1
+ },
+ {
+  "id": "yca93o",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Um den Zufallsfehler einer Umfrage zu halbieren, muss man die Stichprobe etwa …",
+  "a": [
+   "vervierfachen",
+   "verdoppeln",
+   "verachtfachen",
+   "verzehnfachen"
+  ],
+  "w": [
+   "",
+   "Der Fehler sinkt dann nur um den Faktor √2, also auf etwa 71 %.",
+   "Das würde den Fehler auf etwa 35 % senken.",
+   "Das würde den Fehler auf etwa 32 % senken."
+  ],
+  "e": "Der Fehler sinkt mit 1/√n: Vierfache Stichprobe = halber Fehler.",
+  "h": "Wurzelgesetz.",
+  "d": 3
+ },
+ {
+  "id": "1t6k312",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie heißt der Fehler, bei dem man nur die Fälle betrachtet, die „überlebt“ haben (Abraham Wald und die Bomber im Zweiten Weltkrieg)?",
+  "a": [
+   "Survivorship Bias",
+   "Spielerfehlschluss",
+   "Bestätigungsfehler",
+   "Ankereffekt"
+  ],
+  "w": [
+   "",
+   "Das ist die Annahme, vergangene Zufallsergebnisse änderten die Chancen.",
+   "Das ist die Suche nach Bestätigung der eigenen Meinung.",
+   "Das ist die Beeinflussung durch einen ersten Zahlenwert."
+  ],
+  "e": "Der Überlieferung nach schlug Wald vor, Panzerung dort anzubringen, wo zurückgekehrte Flugzeuge keine Treffer hatten, weil abgeschossene dort getroffen wurden.",
+  "h": "Die Gefallenen fehlen.",
+  "d": 3
+ },
+ {
+  "id": "1n317q1",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Ein Spiel zahlt mit Wahrscheinlichkeit 1/4 einen Gewinn von 8 €, sonst nichts. Welcher Einsatz ist fair?",
+  "a": [
+   "2 €",
+   "4 €",
+   "1 €",
+   "8 €"
+  ],
+  "w": [
+   "",
+   "Das wäre der Erwartungswert bei Wahrscheinlichkeit 1/2.",
+   "Das wäre der Erwartungswert bei Wahrscheinlichkeit 1/8.",
+   "Das ist nur der maximale Gewinn."
+  ],
+  "e": "Erwartungswert = 1/4 · 8 € = 2 €; ein fairer Einsatz entspricht dem Erwartungswert.",
+  "h": "Gewinn mal Wahrscheinlichkeit.",
+  "d": 2
+ },
+ {
+  "id": "r1600t",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Was bedeutet ein Korrelationskoeffizient von r = −1?",
+  "a": [
+   "Perfekter gegenläufiger linearer Zusammenhang",
+   "Kein Zusammenhang",
+   "Perfekter gleichläufiger linearer Zusammenhang",
+   "Ein Messfehler"
+  ],
+  "w": [
+   "",
+   "Kein Zusammenhang entspricht r ≈ 0.",
+   "Das entspricht r = +1.",
+   "r = −1 ist ein gültiger Wert und kein Fehler."
+  ],
+  "e": "Steigt X, sinkt Y exakt linear; r liegt immer zwischen −1 und +1.",
+  "h": "Vorzeichen zeigt die Richtung.",
+  "d": 2
+ },
+ {
+  "id": "1dku317",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie nennt man in der Teststatistik die irrtümliche Ablehnung einer wahren Nullhypothese?",
+  "a": [
+   "Fehler 1. Art (α-Fehler)",
+   "Fehler 2. Art (β-Fehler)",
+   "Systematischer Fehler",
+   "Rundungsfehler"
+  ],
+  "w": [
+   "",
+   "Das wäre die irrtümliche Beibehaltung einer falschen Nullhypothese.",
+   "Das ist eine Verzerrung der Messung.",
+   "Das ist eine Ungenauigkeit durch Runden."
+  ],
+  "e": "Ein falsch-positives Ergebnis: Man sieht einen Effekt, den es nicht gibt.",
+  "h": "Falscher Alarm.",
+  "d": 3
+ },
+ {
+  "id": "qi005n",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie wahrscheinlich ist bei drei Würfen eines Würfels mindestens eine Sechs?",
+  "a": [
+   "Etwa 42 %",
+   "50 %",
+   "33 %",
+   "17 %"
+  ],
+  "w": [
+   "",
+   "Das ergibt sich aus 3 · 1/6 und zählt Überschneidungen doppelt.",
+   "Das wäre 2/6.",
+   "Das wäre die Chance für nur einen Wurf."
+  ],
+  "e": "1 − (5/6)³ = 91/216 ≈ 0,42.",
+  "h": "Gegenereignis hoch drei.",
+  "d": 2
+ },
+ {
+  "id": "qkyqr7",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Warum erhöht ein „besonderes“ Zahlenmuster auf dem Lottoschein nicht die Gewinnchance?",
+  "a": [
+   "Jede Kombination ist gleich wahrscheinlich",
+   "Muster werden seltener gezogen",
+   "Gezogene Zahlen werden nie wiederholt",
+   "Kleine Zahlen werden häufiger gezogen"
+  ],
+  "w": [
+   "",
+   "Die Ziehung kennt keine Muster.",
+   "Zahlen können in aufeinanderfolgenden Ziehungen wieder auftreten.",
+   "Alle Kugeln haben gleiche Chance."
+  ],
+  "e": "1-2-3-4-5-6 ist so wahrscheinlich wie jede andere Kombination; nur die Gewinnsumme wäre geteilt, wenn viele so tippen.",
+  "h": "Die Kugeln haben kein Gedächtnis.",
+  "d": 2
+ },
+ {
+  "id": "4t7rob",
+  "s": "Wahrscheinlichkeit & Statistik",
+  "q": "Wie viele Ergebnisfolgen gibt es bei vier Münzwürfen?",
+  "a": [
+   "16",
+   "8",
+   "4",
+   "32"
+  ],
+  "w": [
+   "",
+   "Das sind die Folgen bei drei Würfen.",
+   "Das sind die Folgen bei zwei Würfen.",
+   "Das sind die Folgen bei fünf Würfen."
+  ],
+  "e": "2⁴ = 16 verschiedene Folgen aus Kopf und Zahl.",
+  "h": "Zwei hoch vier.",
+  "d": 1
+ },
+ {
+  "id": "exgo4g",
+  "s": "Logik & Zahlen",
+  "q": "Wie lautet der Wert des Goldenen Schnitts ungefähr?",
+  "a": [
+   "Etwa 1,618",
+   "Etwa 1,414",
+   "Etwa 3,14",
+   "Etwa 2,718"
+  ],
+  "w": [
+   "",
+   "Das ist √2.",
+   "Das ist π.",
+   "Das ist die Eulersche Zahl e."
+  ],
+  "e": "Φ = (1 + √5) / 2 ≈ 1,618; der Quotient aufeinanderfolgender Fibonacci-Zahlen nähert sich ihm.",
+  "h": "(1 + √5) / 2.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1qjvm59",
+  "s": "Logik & Zahlen",
+  "q": "Welche dieser Zahlen ist KEINE Primzahl?",
+  "a": [
+   "51",
+   "47",
+   "53",
+   "59"
+  ],
+  "w": [
+   "",
+   "47 ist nur durch 1 und 47 teilbar.",
+   "53 ist nur durch 1 und 53 teilbar.",
+   "59 ist nur durch 1 und 59 teilbar."
+  ],
+  "e": "51 = 3 · 17 (Quersumme 6 ist durch 3 teilbar).",
+  "h": "Quersumme prüfen.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1msuwd1",
+  "s": "Logik & Zahlen",
+  "q": "Wie lautet das kleinste gemeinsame Vielfache von 4 und 6?",
+  "a": [
+   "12",
+   "24",
+   "2",
+   "10"
+  ],
+  "w": [
+   "",
+   "Das ist ein gemeinsames Vielfaches, aber nicht das kleinste.",
+   "Das ist der ggT, nicht das kgV.",
+   "10 ist weder durch 4 noch durch 6 teilbar."
+  ],
+  "e": "Vielfache von 4: 4, 8, 12; von 6: 6, 12. Das erste gemeinsame ist 12.",
+  "h": "Das erste, das in beiden Reihen vorkommt.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1jb8g1s",
+  "s": "Logik & Zahlen",
+  "q": "Wie lautet der größte gemeinsame Teiler von 12 und 18?",
+  "a": [
+   "6",
+   "3",
+   "36",
+   "2"
+  ],
+  "w": [
+   "",
+   "3 ist ein gemeinsamer Teiler, aber nicht der größte.",
+   "Das ist das kgV.",
+   "2 ist ein gemeinsamer Teiler, aber nicht der größte."
+  ],
+  "e": "Teiler von 12: 1, 2, 3, 4, 6, 12; von 18: 1, 2, 3, 6, 9, 18. Größter gemeinsamer: 6.",
+  "h": "Größter gemeinsamer Teiler.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "io8r6j",
+  "s": "Logik & Zahlen",
+  "q": "Wie geht die Folge weiter? 2, 4, 8, 16, …",
+  "a": [
+   "32",
+   "24",
+   "30",
+   "20"
+  ],
+  "w": [
+   "",
+   "Das wäre die Summe +8 statt Verdopplung.",
+   "Das passt zu keiner einfachen Regel.",
+   "Das wäre +4 statt Verdopplung."
+  ],
+  "e": "Jedes Glied ist das Doppelte des vorigen: 16 · 2 = 32.",
+  "h": "Verdoppeln.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "1sh5ajm",
+  "s": "Logik & Zahlen",
+  "q": "Wie geht die Folge weiter? 1, 1, 2, 3, 5, 8, …",
+  "a": [
+   "13",
+   "11",
+   "12",
+   "10"
+  ],
+  "w": [
+   "",
+   "Das passt nicht zur Regel, die beiden vorherigen Zahlen zu addieren.",
+   "Das passt nicht zur Regel, die beiden vorherigen Zahlen zu addieren.",
+   "Das passt nicht zur Regel, die beiden vorherigen Zahlen zu addieren."
+  ],
+  "e": "Fibonacci-Folge: 5 + 8 = 13.",
+  "h": "Summe der letzten zwei.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "13y71m6",
+  "s": "Logik & Zahlen",
+  "q": "Wie geht die Folge weiter? 1, 4, 9, 16, 25, …",
+  "a": [
+   "36",
+   "30",
+   "35",
+   "49"
+  ],
+  "w": [
+   "",
+   "Das wäre +5 wie zuvor, die Abstände steigen aber um 2.",
+   "Das passt zu keiner einfachen Regel.",
+   "Das wäre 7², aber 6² fehlt."
+  ],
+  "e": "Quadratzahlen: 6² = 36; die Differenzen sind 3, 5, 7, 9, 11.",
+  "h": "Quadratzahlen.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "1quq0gi",
+  "s": "Logik & Zahlen",
+  "q": "Welche Zahl stellt die römische Zahl XLII dar?",
+  "a": [
+   "42",
+   "62",
+   "32",
+   "38"
+  ],
+  "w": [
+   "",
+   "Das wäre LXII.",
+   "Das wäre XXXII.",
+   "Das wäre XXXVIII."
+  ],
+  "e": "XL = 40 (50 − 10), II = 2.",
+  "h": "Kleiner Wert vor größerem wird abgezogen.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "8ci91s",
+  "s": "Logik & Zahlen",
+  "q": "Welche Dezimalzahl entspricht der Binärzahl 1010?",
+  "a": [
+   "10",
+   "12",
+   "5",
+   "20"
+  ],
+  "w": [
+   "",
+   "Das wäre 1100.",
+   "Das wäre 101.",
+   "Das wäre 10100."
+  ],
+  "e": "1·8 + 0·4 + 1·2 + 0·1 = 10.",
+  "h": "Achter, Vierer, Zweier, Einer.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "evfh4i",
+  "s": "Logik & Zahlen",
+  "q": "Welche Binärzahl entspricht der Dezimalzahl 13?",
+  "a": [
+   "1101",
+   "1011",
+   "1110",
+   "1001"
+  ],
+  "w": [
+   "",
+   "Das wäre 11.",
+   "Das wäre 14.",
+   "Das wäre 9."
+  ],
+  "e": "13 = 8 + 4 + 1, also 1101.",
+  "h": "8 + 4 + 1.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "11gizuv",
+  "s": "Logik & Zahlen",
+  "q": "Woran erkennt man, dass eine Zahl durch 9 teilbar ist?",
+  "a": [
+   "Ihre Quersumme ist durch 9 teilbar",
+   "Sie endet auf 9",
+   "Sie ist ungerade",
+   "Ihre letzte Ziffer ist durch 3 teilbar"
+  ],
+  "w": [
+   "",
+   "19 endet auf 9, ist aber nicht durch 9 teilbar.",
+   "3 ist ungerade, aber nicht durch 9 teilbar.",
+   "33 endet auf 3, ist aber nicht durch 9 teilbar."
+  ],
+  "e": "729 hat die Quersumme 18, ist also durch 9 teilbar (729 = 9 · 81).",
+  "h": "Addiere die Ziffern.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "7vsyj2",
+  "s": "Logik & Zahlen",
+  "q": "Wie viele Nullen hat eine Billion im deutschen Sprachgebrauch?",
+  "a": [
+   "12",
+   "9",
+   "15",
+   "18"
+  ],
+  "w": [
+   "",
+   "Das ist eine Milliarde.",
+   "Das ist eine Billiarde.",
+   "Das ist eine Trillion."
+  ],
+  "e": "Im Deutschen 10¹²; im Englischen heißt 10¹² „trillion“, ein „billion“ ist dort 10⁹.",
+  "h": "Million, Milliarde, Billion.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "1axzuqu",
+  "s": "Logik & Zahlen",
+  "q": "Eine Seerose verdoppelt täglich ihre Fläche. Nach 48 Tagen bedeckt sie den ganzen See. Wann war er halb bedeckt?",
+  "a": [
+   "Nach 47 Tagen",
+   "Nach 24 Tagen",
+   "Nach 46 Tagen",
+   "Nach 40 Tagen"
+  ],
+  "w": [
+   "",
+   "Das wäre bei linearem statt exponentiellem Wachstum.",
+   "Dann wäre er schon nach 47 Tagen ganz bedeckt, nicht erst nach 48.",
+   "Dann wäre er zu 1/256 bedeckt, nicht zur Hälfte."
+  ],
+  "e": "Ein Tag vor dem Ende ist die Hälfte erreicht, da sich die Fläche verdoppelt.",
+  "h": "Rückwärts denken.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "5kfyca",
+  "s": "Logik & Zahlen",
+  "q": "5 Maschinen stellen in 5 Minuten 5 Teile her. Wie lange brauchen 100 Maschinen für 100 Teile?",
+  "a": [
+   "5 Minuten",
+   "100 Minuten",
+   "20 Minuten",
+   "1 Minute"
+  ],
+  "w": [
+   "",
+   "Jede Maschine macht ein Teil in 5 Minuten, unabhängig von der Anzahl.",
+   "Jede Maschine braucht für ein Teil nur 5 Minuten, nicht 20.",
+   "Jede Maschine braucht für ein Teil 5 Minuten."
+  ],
+  "e": "Eine Maschine braucht 5 Minuten für ein Teil; 100 Maschinen schaffen 100 Teile parallel in 5 Minuten.",
+  "h": "Pro Maschine rechnen.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "13pikf8",
+  "s": "Logik & Zahlen",
+  "q": "Alle Katzen sind Tiere. Alle Tiere sind sterblich. Was folgt zwingend?",
+  "a": [
+   "Alle Katzen sind sterblich",
+   "Alle Tiere sind Katzen",
+   "Alle Sterblichen sind Tiere",
+   "Nichts"
+  ],
+  "w": [
+   "",
+   "Die Aussage lässt sich umkehren, folgt aber nicht daraus.",
+   "Die Aussage lässt sich umkehren, folgt aber nicht daraus.",
+   "Der klassische Syllogismus erlaubt diesen Schluss."
+  ],
+  "e": "Syllogismus: Aus „alle A sind B“ und „alle B sind C“ folgt „alle A sind C“.",
+  "h": "Kette von Aussagen.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "ab0vg5",
+  "s": "Logik & Zahlen",
+  "q": "Was ergibt 5 geteilt durch 0?",
+  "a": [
+   "Nicht definiert",
+   "0",
+   "Unendlich",
+   "5"
+  ],
+  "w": [
+   "",
+   "Dann wäre 0 · 0 = 5, was nicht stimmt.",
+   "Unendlich ist keine Zahl, die man als Ergebnis zuordnen kann.",
+   "Dann wäre 5 · 0 = 5, was nicht stimmt."
+  ],
+  "e": "Es gibt keine Zahl x mit 0 · x = 5, daher ist die Division nicht erklärt.",
+  "h": "Probe durch Multiplikation.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "5z6lkx",
+  "s": "Logik & Zahlen",
+  "q": "Ist 0 gerade oder ungerade?",
+  "a": [
+   "Gerade",
+   "Ungerade",
+   "Weder noch",
+   "Positiv"
+  ],
+  "w": [
+   "",
+   "0 lässt sich ohne Rest durch 2 teilen.",
+   "Die Definition (durch 2 teilbar) trifft zu.",
+   "Das ist eine Vorzeichenfrage, null ist weder positiv noch negativ."
+  ],
+  "e": "0 = 2 · 0, daher ist 0 gerade.",
+  "h": "Durch 2 teilbar.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "10k7wbc",
+  "s": "Logik & Zahlen",
+  "q": "Welche ist die einzige gerade Primzahl?",
+  "a": [
+   "2",
+   "0",
+   "4",
+   "1"
+  ],
+  "w": [
+   "",
+   "0 hat unendlich viele Teiler und ist keine Primzahl.",
+   "4 = 2 · 2.",
+   "1 hat nur einen Teiler und gilt nicht als Primzahl."
+  ],
+  "e": "Jede andere gerade Zahl ist durch 2 teilbar und hat damit mindestens drei Teiler.",
+  "h": "Die kleinste Primzahl.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "18vxa10",
+  "s": "Logik & Zahlen",
+  "q": "Warum ist 1 keine Primzahl?",
+  "a": [
+   "Sie hat nur einen positiven Teiler",
+   "Sie ist ungerade",
+   "Sie ist zu klein",
+   "Sie ist keine natürliche Zahl"
+  ],
+  "w": [
+   "",
+   "3 ist ungerade und prim.",
+   "Es gibt keine Mindestgröße für Primzahlen.",
+   "1 ist eine natürliche Zahl."
+  ],
+  "e": "Primzahlen haben genau zwei Teiler; sonst wäre die Primfaktorzerlegung nicht eindeutig.",
+  "h": "Wie viele Teiler hat eine Primzahl?",
+  "d": 2,
+  "hintOk": true,
+  "p": 3
+ },
+ {
+  "id": "1rnmd2t",
+  "s": "Logik & Zahlen",
+  "q": "Wie viele Primzahlen gibt es unter 100?",
+  "a": [
+   "25",
+   "20",
+   "24",
+   "30"
+  ],
+  "w": [
+   "",
+   "Es sind fünf mehr.",
+   "Es ist eine mehr.",
+   "Es sind fünf weniger."
+  ],
+  "e": "2, 3, 5, 7, 11, …, 97: insgesamt 25.",
+  "h": "Ein Viertel.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "woh84i",
+  "s": "Logik & Zahlen",
+  "q": "Was besagt der Satz von Euklid über Primzahlen?",
+  "a": [
+   "Es gibt unendlich viele Primzahlen",
+   "Es gibt genau 1.000 Primzahlen",
+   "Jede gerade Zahl über 2 ist Summe zweier Primzahlen",
+   "Primzahlen haben stets den Abstand 2"
+  ],
+  "w": [
+   "",
+   "Das widerspricht Euklids Beweis.",
+   "Das ist die Goldbachsche Vermutung, nicht der Satz von Euklid.",
+   "Der Abstand 2 betrifft nur Primzahlzwillinge."
+  ],
+  "e": "Euklid bewies um 300 v. Chr.: Zu jeder endlichen Menge von Primzahlen gibt es eine weitere.",
+  "h": "Kein Ende.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1pyd4yn",
+  "s": "Logik & Zahlen",
+  "q": "Wie heißt die berühmte, bis heute unbewiesene Vermutung, jede gerade Zahl über 2 sei die Summe zweier Primzahlen?",
+  "a": [
+   "Goldbachsche Vermutung",
+   "Riemannsche Vermutung",
+   "Collatz-Vermutung",
+   "Fermats letzter Satz"
+  ],
+  "w": [
+   "",
+   "Sie betrifft die Nullstellen der Zetafunktion.",
+   "Sie betrifft die 3n+1-Folge.",
+   "Er wurde 1994/95 bewiesen und betrifft aⁿ + bⁿ = cⁿ."
+  ],
+  "e": "Christian Goldbach formulierte sie 1742 in einem Brief an Euler; für große Zahlen ist sie per Computer getestet, aber unbewiesen.",
+  "h": "Brief an Euler.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "yjqqoy",
+  "s": "Logik & Zahlen",
+  "q": "Welche Regel liegt der Collatz-Folge zugrunde?",
+  "a": [
+   "Gerade halbieren, ungerade: mal 3 plus 1",
+   "Gerade: mal 3 plus 1; ungerade halbieren",
+   "Gerade halbieren, ungerade: mal 2 plus 1",
+   "Gerade: minus 1, ungerade: mal 3"
+  ],
+  "w": [
+   "",
+   "Die Fälle sind vertauscht.",
+   "Der Faktor ist 3, nicht 2.",
+   "Das ist nicht die Collatz-Regel."
+  ],
+  "e": "Start 6: 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1. Ob jede Startzahl bei 1 landet, ist offen.",
+  "h": "3n + 1.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "1dhg8yz",
+  "s": "Logik & Zahlen",
+  "q": "Wer bewies Fermats letzten Satz?",
+  "a": [
+   "Andrew Wiles",
+   "Grigori Perelman",
+   "Terence Tao",
+   "Carl Friedrich Gauß"
+  ],
+  "w": [
+   "",
+   "Er bewies die Poincaré-Vermutung.",
+   "Er arbeitete u. a. an Primzahlen in arithmetischen Folgen.",
+   "Er lebte 1777–1855, lange vor dem Beweis."
+  ],
+  "e": "Wiles präsentierte den Beweis 1993, die vollständige Fassung erschien 1995.",
+  "h": "Britischer Mathematiker in Princeton.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1pkbr81",
+  "s": "Logik & Zahlen",
+  "q": "Wie lautet die Eulersche Zahl e ungefähr?",
+  "a": [
+   "2,718",
+   "3,141",
+   "1,618",
+   "1,414"
+  ],
+  "w": [
+   "",
+   "Das ist π.",
+   "Das ist der Goldene Schnitt.",
+   "Das ist √2."
+  ],
+  "e": "e ≈ 2,71828 ist die Basis des natürlichen Logarithmus.",
+  "h": "Zwischen 2 und 3.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "xz8127",
+  "s": "Logik & Zahlen",
+  "q": "Welche dieser Zahlen ist irrational?",
+  "a": [
+   "√2",
+   "0,333…",
+   "22/7",
+   "1,25"
+  ],
+  "w": [
+   "",
+   "0,333… = 1/3.",
+   "Das ist ein Bruch aus ganzen Zahlen.",
+   "1,25 = 5/4."
+  ],
+  "e": "√2 lässt sich nicht als Bruch zweier ganzer Zahlen schreiben.",
+  "h": "Kein Bruch.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1rnezz8",
+  "s": "Logik & Zahlen",
+  "q": "Aus welchem Land stammt unser Zahlensystem mit den Ziffern 0 bis 9 ursprünglich?",
+  "a": [
+   "Indien",
+   "Arabien",
+   "Griechenland",
+   "China"
+  ],
+  "w": [
+   "",
+   "Araber vermittelten das System nach Europa, entwickelt wurde es in Indien.",
+   "Die Griechen verwendeten Buchstaben als Zahlzeichen.",
+   "China nutzte Zählstäbe und eigene Zeichen."
+  ],
+  "e": "Das Stellenwertsystem mit Null entstand in Indien; Brahmagupta beschrieb 628 Rechenregeln für die Null.",
+  "h": "Indisch-arabische Ziffern.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "i1ydhe",
+  "s": "Logik & Zahlen",
+  "q": "Welchen Wert hat die Hexadezimalzahl FF?",
+  "a": [
+   "255",
+   "256",
+   "15",
+   "16"
+  ],
+  "w": [
+   "",
+   "Das wäre 100 (hexadezimal).",
+   "Das ist F allein.",
+   "Das ist 10 (hexadezimal)."
+  ],
+  "e": "F = 15: 15 · 16 + 15 = 255, der größte Wert eines Bytes.",
+  "h": "15 · 16 + 15.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1qrbo6t",
+  "s": "Logik & Zahlen",
+  "q": "Welche römische Zahl steht für 49?",
+  "a": [
+   "XLIX",
+   "IL",
+   "XXXXIX",
+   "VL"
+  ],
+  "w": [
+   "",
+   "Es darf nur I vor V oder X stehen; 49 schreibt man XL + IX.",
+   "Es werden nicht mehr als drei gleiche Zeichen hintereinander geschrieben.",
+   "V darf nicht vor L stehen."
+  ],
+  "e": "49 = 40 + 9 = XL + IX = XLIX.",
+  "h": "XL + IX.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "135hvbw",
+  "s": "Logik & Zahlen",
+  "q": "Was folgt aus „Wenn A, dann B“ zwingend?",
+  "a": [
+   "Wenn nicht B, dann nicht A",
+   "Wenn B, dann A",
+   "Wenn nicht A, dann nicht B",
+   "Wenn nicht A, dann B"
+  ],
+  "w": [
+   "",
+   "Das ist die Umkehrung, die nicht folgt.",
+   "Das ist die Inverse, die nicht folgt.",
+   "Das folgt nicht aus „Wenn A, dann B“."
+  ],
+  "e": "Kontraposition: „Wenn es regnet, ist die Straße nass“ ⇒ „Ist die Straße trocken, regnet es nicht“.",
+  "h": "Beides verneinen und tauschen.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "5f7u1e",
+  "s": "Logik & Zahlen",
+  "q": "Wie nennt man den Fehlschluss von „Wenn A, dann B“ und „B“ auf „A“?",
+  "a": [
+   "Bejahung des Konsequens",
+   "Modus ponens",
+   "Modus tollens",
+   "Verneinung des Antezedens"
+  ],
+  "w": [
+   "",
+   "Das ist ein gültiger Schluss.",
+   "Das ist ein gültiger Schluss.",
+   "Das ist ein anderer Fehlschluss: aus „nicht A“ folgt „nicht B“."
+  ],
+  "e": "Wenn es regnet, ist die Straße nass; die Straße ist nass, also hat es geregnet – falsch, sie kann auch gereinigt worden sein.",
+  "h": "Der zweite Teil eines Wenn-dann-Satzes wird als wahr angenommen.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "1jjl656",
+  "s": "Logik & Zahlen",
+  "q": "Ein Mann zeigt auf ein Foto: „Ich habe keine Geschwister, aber der Vater dieses Mannes ist der Sohn meines Vaters.“ Wer ist auf dem Foto?",
+  "a": [
+   "Sein eigener Sohn",
+   "Er selbst",
+   "Sein Vater",
+   "Sein Neffe"
+  ],
+  "w": [
+   "",
+   "Dann wäre der Vater des Mannes er selbst.",
+   "Dann wäre der Vater des Mannes sein Großvater.",
+   "Er hat keine Geschwister, also keinen Neffen."
+  ],
+  "e": "Der Sohn meines Vaters ohne Geschwister bin ich; ich bin der Vater des Mannes auf dem Foto.",
+  "h": "Sohn meines Vaters ist …",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "fb5zpl",
+  "s": "Logik & Zahlen",
+  "q": "Ein Bauer hat 17 Schafe. Alle bis auf 9 sterben. Wie viele bleiben?",
+  "a": [
+   "9",
+   "8",
+   "17",
+   "0"
+  ],
+  "w": [
+   "",
+   "Das wäre 17 − 9.",
+   "Das wäre die ursprüngliche Zahl.",
+   "Es bleiben genau die 9 übrig."
+  ],
+  "e": "„Alle bis auf 9“ bedeutet: 9 leben.",
+  "h": "Wortlaut genau lesen.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "z76zfp",
+  "s": "Logik & Zahlen",
+  "q": "Wie viele Monate haben mindestens 28 Tage?",
+  "a": [
+   "12",
+   "1",
+   "2",
+   "6"
+  ],
+  "w": [
+   "",
+   "Nur der Februar hat genau 28 Tage, alle anderen mehr.",
+   "Alle zwölf Monate erreichen mindestens 28 Tage.",
+   "Das wären nur Monate mit 30 Tagen."
+  ],
+  "e": "Jeder Monat hat mindestens 28 Tage.",
+  "h": "Mindestens, nicht genau.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "z6sstf",
+  "s": "Logik & Zahlen",
+  "q": "Sechs Personen geben sich zur Begrüßung jeweils einmal die Hand. Wie viele Handschläge gibt es?",
+  "a": [
+   "15",
+   "30",
+   "36",
+   "12"
+  ],
+  "w": [
+   "",
+   "Das zählt jeden Handschlag doppelt.",
+   "Das wäre 6 · 6.",
+   "Das wäre 6 · 2."
+  ],
+  "e": "6 · 5 / 2 = 15; allgemein n(n − 1)/2.",
+  "h": "Jeder mit jedem.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1bdeh2g",
+  "s": "Logik & Zahlen",
+  "q": "Kann man ein Schachbrett ohne zwei gegenüberliegende Eckfelder mit 31 Dominosteinen lückenlos belegen?",
+  "a": [
+   "Nein, die Ecken haben dieselbe Farbe",
+   "Ja, bei geschickter Anordnung",
+   "Ja, aber nur diagonal gelegt",
+   "Nein, es fehlt ein Dominostein"
+  ],
+  "w": [
+   "",
+   "Jeder Stein deckt ein weißes und ein schwarzes Feld ab; es blieben aber ungleiche Zahlen.",
+   "Auch dann deckt jeder Stein ein weißes und ein schwarzes Feld.",
+   "31 Steine decken genau die 62 verbleibenden Felder."
+  ],
+  "e": "Die entfernten Felder sind beide z. B. weiß; übrig sind 30 weiße und 32 schwarze, jeder Stein braucht eins von jeder Farbe.",
+  "h": "Färbung.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "c12qsy",
+  "s": "Logik & Zahlen",
+  "q": "Wie viele Socken muss man blind mindestens ziehen, um sicher ein Paar zu haben, wenn es nur schwarze und weiße gibt?",
+  "a": [
+   "3",
+   "2",
+   "4",
+   "5"
+  ],
+  "w": [
+   "",
+   "Zwei Socken können verschiedenfarbig sein.",
+   "Drei genügen schon.",
+   "Drei genügen schon."
+  ],
+  "e": "Schubfachprinzip: Bei 3 Socken und 2 Farben haben mindestens zwei dieselbe Farbe.",
+  "h": "Zwei Farben, also …",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1wwjuop",
+  "s": "Logik & Zahlen",
+  "q": "Das Hotel von Hilbert hat unendlich viele Zimmer, alle sind belegt. Ein neuer Gast kommt. Wie schafft man Platz?",
+  "a": [
+   "Jeder zieht ein Zimmer weiter",
+   "Es ist unmöglich, da alle Zimmer belegt sind",
+   "Er teilt sich ein Zimmer mit dem letzten Gast",
+   "Man baut am Ende ein Zimmer an"
+  ],
+  "w": [
+   "",
+   "Mit unendlich vielen Zimmern geht es durch Verschieben.",
+   "Es gibt keinen letzten Gast.",
+   "Es gibt kein Ende."
+  ],
+  "e": "Gast n zieht in Zimmer n + 1; Zimmer 1 wird frei. Das Beispiel zeigt Eigenschaften unendlicher Mengen.",
+  "h": "Unendlich plus eins ist immer noch unendlich.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "h645ci",
+  "s": "Logik & Zahlen",
+  "q": "Wer zeigte, dass es verschiedene Größen von Unendlich gibt?",
+  "a": [
+   "Georg Cantor",
+   "David Hilbert",
+   "Kurt Gödel",
+   "Leonhard Euler"
+  ],
+  "w": [
+   "",
+   "Er verteidigte Cantors Mengenlehre, entwickelte sie aber nicht.",
+   "Er bewies die Unvollständigkeitssätze.",
+   "Er lebte im 18. Jahrhundert, vor der Mengenlehre."
+  ],
+  "e": "Cantor bewies 1891 mit dem Diagonalargument, dass die reellen Zahlen nicht abzählbar sind.",
+  "h": "Mengenlehre.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "v6sng2",
+  "s": "Logik & Zahlen",
+  "q": "Wie nennt man eine Zahl, die gleich der Summe ihrer echten Teiler ist (z. B. 6 = 1 + 2 + 3)?",
+  "a": [
+   "Vollkommene Zahl",
+   "Primzahl",
+   "Quadratzahl",
+   "Fibonacci-Zahl"
+  ],
+  "w": [
+   "",
+   "Primzahlen haben nur den echten Teiler 1.",
+   "Das ist eine Zahl der Form n².",
+   "Das ist ein Glied der Folge 1, 1, 2, 3, 5, …"
+  ],
+  "e": "Die nächste vollkommene Zahl nach 6 ist 28 = 1 + 2 + 4 + 7 + 14.",
+  "h": "6 und 28.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1045fx8",
+  "s": "Logik & Zahlen",
+  "q": "Wie viele positive Teiler hat 36?",
+  "a": [
+   "9",
+   "8",
+   "10",
+   "6"
+  ],
+  "w": [
+   "",
+   "Es fehlt ein Teiler, z. B. die 6.",
+   "Es sind weniger.",
+   "Es sind mehr."
+  ],
+  "e": "1, 2, 3, 4, 6, 9, 12, 18, 36. Bei Quadratzahlen ist die Teileranzahl ungerade.",
+  "h": "Teilerpaare plus Mitte.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "v2wdqh",
+  "s": "Logik & Zahlen",
+  "q": "Welche ist die kleinste positive Zahl, die durch alle Zahlen von 1 bis 10 teilbar ist?",
+  "a": [
+   "2.520",
+   "1.260",
+   "5.040",
+   "3.600"
+  ],
+  "w": [
+   "",
+   "1.260 ist nicht durch 8 teilbar.",
+   "Das ist teilbar, aber nicht die kleinste.",
+   "3.600 ist nicht durch 7 teilbar."
+  ],
+  "e": "kgV(1…10) = 2³ · 3² · 5 · 7 = 2.520.",
+  "h": "Höchste Primpotenzen.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "q8qo5d",
+  "s": "Logik & Zahlen",
+  "q": "Wie groß ist die Zeilensumme eines magischen Quadrats mit den Zahlen 1 bis 9 (3 × 3)?",
+  "a": [
+   "15",
+   "12",
+   "18",
+   "45"
+  ],
+  "w": [
+   "",
+   "Dann wäre die Gesamtsumme 36, nicht 45.",
+   "Dann wäre die Gesamtsumme 54, nicht 45.",
+   "Das ist die Summe aller neun Zahlen."
+  ],
+  "e": "Die Summe 1 + … + 9 = 45 verteilt sich auf drei Zeilen: 45 : 3 = 15.",
+  "h": "Gesamtsumme durch drei.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "lwecsc",
+  "s": "Logik & Zahlen",
+  "q": "Wie nennt man Zahlen der Form 1, 3, 6, 10, 15, …?",
+  "a": [
+   "Dreieckszahlen",
+   "Quadratzahlen",
+   "Primzahlen",
+   "Fibonacci-Zahlen"
+  ],
+  "w": [
+   "",
+   "Quadratzahlen sind 1, 4, 9, 16, …",
+   "6, 10 und 15 sind keine Primzahlen.",
+   "Fibonacci-Zahlen sind 1, 1, 2, 3, 5, 8, …"
+  ],
+  "e": "Dreieckszahl Tₙ = n(n + 1)/2; 10 Kegel lassen sich als Dreieck mit vier Reihen aufstellen.",
+  "h": "Bowling-Pins.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "1akclyp",
+  "s": "Logik & Zahlen",
+  "q": "Wogegen strebt der Quotient aufeinanderfolgender Fibonacci-Zahlen (z. B. 55 : 34)?",
+  "a": [
+   "Gegen den Goldenen Schnitt ≈ 1,618",
+   "Gegen die Zahl 2 (Verdopplung)",
+   "Gegen die Kreiszahl π ≈ 3,14",
+   "Gegen die Eulersche Zahl e ≈ 2,718"
+  ],
+  "w": [
+   "",
+   "55 : 34 ≈ 1,618, nicht 2.",
+   "Der Quotient ist deutlich kleiner als 2.",
+   "Der Quotient liegt unter 2."
+  ],
+  "e": "55 : 34 ≈ 1,6176; mit steigenden Gliedern nähert sich der Quotient immer mehr 1,618.",
+  "h": "Verhältnis nebeneinanderliegender Zahlen.",
+  "d": 2,
+  "p": 3
+ }
+]

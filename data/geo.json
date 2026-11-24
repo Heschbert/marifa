@@ -1,0 +1,75 @@
+{
+ "Europa": {
+  "caps": "Albanien|Tirana;Andorra|Andorra la Vella;Belarus|Minsk;Belgien|Brüssel;Bosnien und Herzegowina|Sarajevo;Bulgarien|Sofia;Dänemark|Kopenhagen;Deutschland|Berlin;Estland|Tallinn;Finnland|Helsinki;Frankreich|Paris;Griechenland|Athen;Irland|Dublin;Island|Reykjavik;Italien|Rom;Kroatien|Zagreb;Lettland|Riga;Liechtenstein|Vaduz;Litauen|Vilnius;Malta|Valletta;Moldau|Chișinău;Montenegro|Podgorica;Niederlande|Amsterdam|Regierung und Parlament sitzen aber in Den Haag.;Nordmazedonien|Skopje;Norwegen|Oslo;Österreich|Wien;Polen|Warschau;Portugal|Lissabon;Rumänien|Bukarest;Russland|Moskau;Schweden|Stockholm;Schweiz|Bern|Die größte Stadt ist Zürich.;Serbien|Belgrad;Slowakei|Bratislava;Slowenien|Ljubljana;Spanien|Madrid;Tschechien|Prag;Ukraine|Kiew;Ungarn|Budapest;Vereinigtes Königreich|London;Zypern|Nikosia",
+  "extra": [
+   "Luxemburg",
+   "Monaco",
+   "San Marino",
+   "Vatikanstadt"
+  ],
+  "cities": "Mailand|Italien;Neapel|Italien;Venedig|Italien;Florenz|Italien;Turin|Italien;Barcelona|Spanien;Sevilla|Spanien;Valencia|Spanien;Porto|Portugal;Lyon|Frankreich;Marseille|Frankreich;Zürich|Schweiz;Genf|Schweiz;Salzburg|Österreich;Innsbruck|Österreich;Krakau|Polen;Danzig|Polen;St. Petersburg|Russland;Edinburgh|Vereinigtes Königreich;Manchester|Vereinigtes Königreich;Liverpool|Vereinigtes Königreich;Glasgow|Vereinigtes Königreich;Rotterdam|Niederlande;Antwerpen|Belgien;Brügge|Belgien;Göteborg|Schweden;Malmö|Schweden;Bergen|Norwegen;Aarhus|Dänemark;Thessaloniki|Griechenland;Split|Kroatien;Dubrovnik|Kroatien;Brünn|Tschechien;Odessa|Ukraine;Lemberg|Ukraine;Cork|Irland;Bologna|Italien;Genua|Italien;Palermo|Italien;Verona|Italien;Málaga|Spanien;Bilbao|Spanien;Granada|Spanien;Nizza|Frankreich;Bordeaux|Frankreich;Straßburg|Frankreich;Toulouse|Frankreich;Birmingham|Vereinigtes Königreich;Leeds|Vereinigtes Königreich;Bristol|Vereinigtes Königreich;Belfast|Vereinigtes Königreich;Cardiff|Vereinigtes Königreich;Oxford|Vereinigtes Königreich;Graz|Österreich;Linz|Österreich;Basel|Schweiz;Lausanne|Schweiz;Breslau|Polen;Posen|Polen;Kasan|Russland;Nischni Nowgorod|Russland;Sotschi|Russland;Charkiw|Ukraine;Utrecht|Niederlande;Gent|Belgien;Plovdiv|Bulgarien;Temeswar|Rumänien;Debrecen|Ungarn;Pilsen|Tschechien;Košice|Slowakei;Novi Sad|Serbien;Tartu|Estland;Kaunas|Litauen;Turku|Finnland;Uppsala|Schweden;Odense|Dänemark;Trondheim|Norwegen;Limassol|Zypern;Mostar|Bosnien und Herzegowina;Coimbra|Portugal;Patras|Griechenland"
+ },
+ "Asien": {
+  "caps": "Afghanistan|Kabul;Armenien|Eriwan;Aserbaidschan|Baku;Bahrain|Manama;Bangladesch|Dhaka;Bhutan|Thimphu;Brunei|Bandar Seri Begawan;China|Peking|Die größte Stadt ist Schanghai.;Georgien|Tiflis;Indien|Neu-Delhi;Indonesien|Jakarta|Der Umzug nach Nusantara ist noch nicht vollzogen.;Irak|Bagdad;Iran|Teheran;Japan|Tokio;Jemen|Sanaa|Aden ist Sitz der anerkannten Regierung.;Jordanien|Amman;Kambodscha|Phnom Penh;Kasachstan|Astana|Die größte Stadt ist Almaty.;Katar|Doha;Kirgisistan|Bischkek;Kuwait|Kuwait-Stadt;Laos|Vientiane;Libanon|Beirut;Malaysia|Kuala Lumpur|Regierungssitz ist Putrajaya.;Malediven|Malé;Mongolei|Ulaanbaatar;Myanmar|Naypyidaw|Bis 2006 war Rangun die Hauptstadt.;Nepal|Kathmandu;Nordkorea|Pjöngjang;Oman|Maskat;Osttimor|Dili;Pakistan|Islamabad|Die größte Stadt ist Karatschi.;Philippinen|Manila;Saudi-Arabien|Riad;Südkorea|Seoul;Syrien|Damaskus;Tadschikistan|Duschanbe;Thailand|Bangkok;Turkmenistan|Aschgabat;Türkei|Ankara|Die größte Stadt ist Istanbul.;Usbekistan|Taschkent;Vereinigte Arabische Emirate|Abu Dhabi;Vietnam|Hanoi|Die größte Stadt ist Ho-Chi-Minh-Stadt.",
+  "extra": [
+   "Israel",
+   "Sri Lanka",
+   "Singapur"
+  ],
+  "cities": "Istanbul|Türkei;Izmir|Türkei;Dubai|Vereinigte Arabische Emirate;Schanghai|China;Guangzhou|China;Shenzhen|China;Mumbai|Indien;Kalkutta|Indien;Bengaluru|Indien;Karatschi|Pakistan;Lahore|Pakistan;Osaka|Japan;Kyoto|Japan;Yokohama|Japan;Busan|Südkorea;Samarkand|Usbekistan;Almaty|Kasachstan;Mekka|Saudi-Arabien;Dschidda|Saudi-Arabien;Rangun|Myanmar;Ho-Chi-Minh-Stadt|Vietnam;Chiang Mai|Thailand;Basra|Irak;Isfahan|Iran;Kandahar|Afghanistan;Cebu|Philippinen;Surabaya|Indonesien;Chennai|Indien;Hyderabad|Indien;Jaipur|Indien;Agra|Indien;Varanasi|Indien;Chittagong|Bangladesch;Chengdu|China;Wuhan|China;Xi'an|China;Chongqing|China;Nagoya|Japan;Sapporo|Japan;Hiroshima|Japan;Incheon|Südkorea;Mandalay|Myanmar;Phuket|Thailand;Da Nang|Vietnam;Siem Reap|Kambodscha;George Town|Malaysia;Medan|Indonesien;Bandung|Indonesien;Yogyakarta|Indonesien;Davao|Philippinen;Mossul|Irak;Erbil|Irak;Aleppo|Syrien;Aden|Jemen;Täbris|Iran;Schiras|Iran;Buchara|Usbekistan;Batumi|Georgien;Gjumri|Armenien;Ganja|Aserbaidschan;Antalya|Türkei;Medina|Saudi-Arabien;Schardscha|Vereinigte Arabische Emirate;Herat|Afghanistan"
+ },
+ "Afrika": {
+  "caps": "Ägypten|Kairo;Äthiopien|Addis Abeba;Algerien|Algier;Angola|Luanda;Botsuana|Gaborone;Burkina Faso|Ouagadougou;Demokratische Republik Kongo|Kinshasa;Eritrea|Asmara;Gabun|Libreville;Gambia|Banjul;Ghana|Accra;Guinea|Conakry;Guinea-Bissau|Bissau;Kamerun|Jaunde|Die größte Stadt ist Douala.;Kap Verde|Praia;Kenia|Nairobi;Komoren|Moroni;Lesotho|Maseru;Liberia|Monrovia;Libyen|Tripolis;Madagaskar|Antananarivo;Malawi|Lilongwe;Mali|Bamako;Marokko|Rabat|Die größte Stadt ist Casablanca.;Mauretanien|Nouakchott;Mauritius|Port Louis;Mosambik|Maputo;Namibia|Windhuk;Niger|Niamey;Nigeria|Abuja|Die größte Stadt ist Lagos, die bis 1991 Hauptstadt war.;Republik Kongo|Brazzaville;Ruanda|Kigali;Sambia|Lusaka;São Tomé und Príncipe|São Tomé;Senegal|Dakar;Seychellen|Victoria;Sierra Leone|Freetown;Simbabwe|Harare;Somalia|Mogadischu;Sudan|Khartum;Südsudan|Juba;Tansania|Dodoma|Die größte Stadt ist Daressalam.;Togo|Lomé;Tschad|N'Djamena;Tunesien|Tunis;Uganda|Kampala;Zentralafrikanische Republik|Bangui",
+  "extra": [
+   "Südafrika",
+   "Elfenbeinküste",
+   "Benin",
+   "Burundi",
+   "Dschibuti",
+   "Eswatini",
+   "Äquatorialguinea"
+  ],
+  "cities": "Kapstadt|Südafrika;Johannesburg|Südafrika;Durban|Südafrika;Lagos|Nigeria;Kano|Nigeria;Alexandria|Ägypten;Luxor|Ägypten;Casablanca|Marokko;Marrakesch|Marokko;Fès|Marokko;Daressalam|Tansania;Mombasa|Kenia;Timbuktu|Mali;Kumasi|Ghana;Douala|Kamerun;Oran|Algerien;Bulawayo|Simbabwe;Lubumbashi|Demokratische Republik Kongo;Abidjan|Elfenbeinküste;Port Harcourt|Nigeria;Ibadan|Nigeria;Gizeh|Ägypten;Assuan|Ägypten;Hurghada|Ägypten;Tanger|Marokko;Agadir|Marokko;Constantine|Algerien;Sfax|Tunesien;Sousse|Tunesien;Bengasi|Libyen;Arusha|Tansania;Kisumu|Kenia;Entebbe|Uganda;Dire Dawa|Äthiopien;Bobo-Dioulasso|Burkina Faso;Saint-Louis|Senegal;Goma|Demokratische Republik Kongo;Pointe-Noire|Republik Kongo;Huambo|Angola;Beira|Mosambik;Swakopmund|Namibia;Livingstone|Sambia;Blantyre|Malawi;Toamasina|Madagaskar;Bouaké|Elfenbeinküste;Gqeberha|Südafrika;Pietermaritzburg|Südafrika"
+ },
+ "Nord- & Mittelamerika": {
+  "caps": "Antigua und Barbuda|Saint John's;Bahamas|Nassau;Barbados|Bridgetown;Belize|Belmopan;Costa Rica|San José;Dominica|Roseau;Dominikanische Republik|Santo Domingo;El Salvador|San Salvador;Grenada|St. George's;Guatemala|Guatemala-Stadt;Haiti|Port-au-Prince;Honduras|Tegucigalpa;Jamaika|Kingston;Kanada|Ottawa|Die größte Stadt ist Toronto.;Kuba|Havanna;Mexiko|Mexiko-Stadt;Nicaragua|Managua;Panama|Panama-Stadt;St. Kitts und Nevis|Basseterre;St. Lucia|Castries;St. Vincent und die Grenadinen|Kingstown;Trinidad und Tobago|Port of Spain;USA|Washington, D.C.|Die größte Stadt ist New York.",
+  "extra": [],
+  "cities": "New York|USA;Los Angeles|USA;Chicago|USA;San Francisco|USA;Miami|USA;Houston|USA;Seattle|USA;Boston|USA;Las Vegas|USA;New Orleans|USA;Toronto|Kanada;Vancouver|Kanada;Montreal|Kanada;Calgary|Kanada;Guadalajara|Mexiko;Cancún|Mexiko;Monterrey|Mexiko;Tijuana|Mexiko;Varadero|Kuba;Montego Bay|Jamaika;Philadelphia|USA;Phoenix|USA;Dallas|USA;Atlanta|USA;Denver|USA;Detroit|USA;San Diego|USA;Honolulu|USA;Anchorage|USA;Austin|USA;Nashville|USA;Orlando|USA;Pittsburgh|USA;Winnipeg|Kanada;Edmonton|Kanada;Halifax|Kanada;Québec|Kanada;Puebla|Mexiko;Acapulco|Mexiko;Mérida|Mexiko;Oaxaca|Mexiko;Santiago de Cuba|Kuba;Santiago de los Caballeros|Dominikanische Republik;San Pedro Sula|Honduras;Quetzaltenango|Guatemala;Freeport|Bahamas;Cartago|Costa Rica;Colón|Panama"
+ },
+ "Südamerika": {
+  "caps": "Argentinien|Buenos Aires;Brasilien|Brasília|Die größte Stadt ist São Paulo. Bis 1960 war Rio de Janeiro die Hauptstadt.;Chile|Santiago de Chile;Ecuador|Quito;Guyana|Georgetown;Kolumbien|Bogotá;Paraguay|Asunción;Peru|Lima;Suriname|Paramaribo;Uruguay|Montevideo;Venezuela|Caracas",
+  "extra": [
+   "Bolivien"
+  ],
+  "cities": "Rio de Janeiro|Brasilien;São Paulo|Brasilien;Salvador|Brasilien;Manaus|Brasilien;Medellín|Kolumbien;Cartagena|Kolumbien;Cusco|Peru;Arequipa|Peru;Guayaquil|Ecuador;Valparaíso|Chile;Mendoza|Argentinien;Rosario|Argentinien;Santa Cruz de la Sierra|Bolivien;Maracaibo|Venezuela;Recife|Brasilien;Fortaleza|Brasilien;Belo Horizonte|Brasilien;Curitiba|Brasilien;Porto Alegre|Brasilien;Belém|Brasilien;Córdoba|Argentinien;La Plata|Argentinien;Ushuaia|Argentinien;Antofagasta|Chile;Punta Arenas|Chile;Concepción|Chile;Trujillo|Peru;Iquitos|Peru;Cuenca|Ecuador;Cali|Kolumbien;Barranquilla|Kolumbien;Barquisimeto|Venezuela;Cochabamba|Bolivien;Ciudad del Este|Paraguay;Punta del Este|Uruguay;Salto|Uruguay;Foz do Iguaçu|Brasilien;San Carlos de Bariloche|Argentinien;Puerto Ordaz|Venezuela"
+ },
+ "Ozeanien": {
+  "caps": "Australien|Canberra|Die größte Stadt ist Sydney.;Fidschi|Suva;Kiribati|Tarawa;Marshallinseln|Majuro;Mikronesien|Palikir;Neuseeland|Wellington|Die größte Stadt ist Auckland.;Palau|Ngerulmud;Papua-Neuguinea|Port Moresby;Salomonen|Honiara;Samoa|Apia;Tonga|Nukuʻalofa;Tuvalu|Funafuti;Vanuatu|Port Vila",
+  "extra": [
+   "Nauru"
+  ],
+  "cities": "Sydney|Australien;Melbourne|Australien;Perth|Australien;Brisbane|Australien;Adelaide|Australien;Auckland|Neuseeland;Christchurch|Neuseeland;Nadi|Fidschi;Gold Coast|Australien;Newcastle|Australien;Cairns|Australien;Darwin|Australien;Hobart|Australien;Alice Springs|Australien;Geelong|Australien;Townsville|Australien;Launceston|Australien;Dunedin|Neuseeland;Hamilton|Neuseeland;Tauranga|Neuseeland;Queenstown|Neuseeland;Rotorua|Neuseeland;Napier|Neuseeland;Lautoka|Fidschi;Labasa|Fidschi;Lae|Papua-Neuguinea;Mount Hagen|Papua-Neuguinea;Luganville|Vanuatu;Koror|Palau;Kolonia|Mikronesien;Ebeye|Marshallinseln;Betio|Kiribati;Neiafu|Tonga;Gizo|Salomonen"
+ },
+ "Deutschland": {
+  "caps": "Baden-Württemberg|Stuttgart;Bayern|München;Brandenburg|Potsdam;Hessen|Wiesbaden;Mecklenburg-Vorpommern|Schwerin;Niedersachsen|Hannover;Nordrhein-Westfalen|Düsseldorf;Rheinland-Pfalz|Mainz;Saarland|Saarbrücken;Sachsen|Dresden;Sachsen-Anhalt|Magdeburg;Schleswig-Holstein|Kiel;Thüringen|Erfurt",
+  "extra": [
+   "Berlin",
+   "Bremen",
+   "Hamburg"
+  ],
+  "extraCaps": [
+   "Berlin",
+   "Bremen",
+   "Hamburg"
+  ],
+  "cities": "Karlsruhe|Baden-Württemberg;Heidelberg|Baden-Württemberg;Freiburg im Breisgau|Baden-Württemberg;Ulm|Baden-Württemberg;Heilbronn|Baden-Württemberg;Konstanz|Baden-Württemberg;Nürnberg|Bayern;Augsburg|Bayern;Würzburg|Bayern;Regensburg|Bayern;Passau|Bayern;Köln|Nordrhein-Westfalen;Dortmund|Nordrhein-Westfalen;Essen|Nordrhein-Westfalen;Bonn|Nordrhein-Westfalen;Münster|Nordrhein-Westfalen;Frankfurt am Main|Hessen;Kassel|Hessen;Darmstadt|Hessen;Leipzig|Sachsen;Chemnitz|Sachsen;Rostock|Mecklenburg-Vorpommern;Lübeck|Schleswig-Holstein;Flensburg|Schleswig-Holstein;Trier|Rheinland-Pfalz;Koblenz|Rheinland-Pfalz;Kaiserslautern|Rheinland-Pfalz;Halle (Saale)|Sachsen-Anhalt;Jena|Thüringen;Weimar|Thüringen;Osnabrück|Niedersachsen;Braunschweig|Niedersachsen;Göttingen|Niedersachsen;Wolfsburg|Niedersachsen;Oldenburg|Niedersachsen;Cottbus|Brandenburg;Bremerhaven|Bremen;Mannheim|Baden-Württemberg;Pforzheim|Baden-Württemberg;Tübingen|Baden-Württemberg;Baden-Baden|Baden-Württemberg;Friedrichshafen|Baden-Württemberg;Ingolstadt|Bayern;Bamberg|Bayern;Bayreuth|Bayern;Fürth|Bayern;Erlangen|Bayern;Aachen|Nordrhein-Westfalen;Bielefeld|Nordrhein-Westfalen;Bochum|Nordrhein-Westfalen;Duisburg|Nordrhein-Westfalen;Wuppertal|Nordrhein-Westfalen;Gelsenkirchen|Nordrhein-Westfalen;Mönchengladbach|Nordrhein-Westfalen;Leverkusen|Nordrhein-Westfalen;Paderborn|Nordrhein-Westfalen;Marburg|Hessen;Gießen|Hessen;Fulda|Hessen;Offenbach am Main|Hessen;Zwickau|Sachsen;Görlitz|Sachsen;Celle|Niedersachsen;Hildesheim|Niedersachsen;Lüneburg|Niedersachsen;Neumünster|Schleswig-Holstein;Husum|Schleswig-Holstein;Ludwigshafen am Rhein|Rheinland-Pfalz;Speyer|Rheinland-Pfalz;Worms|Rheinland-Pfalz;Saarlouis|Saarland;Gotha|Thüringen;Eisenach|Thüringen;Dessau-Roßlau|Sachsen-Anhalt;Lutherstadt Wittenberg|Sachsen-Anhalt;Frankfurt (Oder)|Brandenburg;Brandenburg an der Havel|Brandenburg;Greifswald|Mecklenburg-Vorpommern;Stralsund|Mecklenburg-Vorpommern;Wismar|Mecklenburg-Vorpommern;Neubrandenburg|Mecklenburg-Vorpommern",
+  "w": {
+   "cap": "%a: Wie heißt die Landeshauptstadt?",
+   "rev": "Von welchem Bundesland ist %b die Landeshauptstadt?",
+   "city": "In welchem Bundesland liegt %a?",
+   "ecap": "%b ist die Landeshauptstadt von %a.",
+   "wcap": "%b ist die Landeshauptstadt von %a.",
+   "wrev": "Die Landeshauptstadt von %a ist %b."
+  }
+ }
+}
