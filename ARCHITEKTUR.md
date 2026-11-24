@@ -1,6 +1,6 @@
-# Wissensfundament – Aufbau und Erweiterung
+# Marifa – Aufbau und Erweiterung
 
-Kein Build-Schritt: Der Browser lädt die Dateien direkt. Geänderte Dateien werden einfach neu hochgeladen.
+Kein Build-Schritt: Der Browser lädt die Dateien direkt. Veröffentlicht wird über GitHub Pages: Was auf `main` liegt, ist nach ein bis zwei Minuten online.
 Vor jedem Hochladen die Version erhöhen: `node tools/version.mjs` (zählt hoch, z. B. 1.14 → 1.15) oder `node tools/version.mjs 2.0`. Das setzt `WF.VERSION` in `js/core.js` und den Cache-Namen in `sw.js`. Die Version steht unten im Profil; nach einem Update meldet die App „Neue Version … geladen“.
 
 ## Wo was steht
@@ -10,7 +10,7 @@ Vor jedem Hochladen die Version erhöhen: `node tools/version.mjs` (zählt hoch,
 - `js/data.js` + `gen.js`, `geo.js`, `pairs.js` – Fragen laden bzw. erzeugen.
 - `js/engine.js` – Spiellogik ohne Oberfläche. `js/modes.js` – Spielmodi.
 - `js/ui.js` – Bildschirme Spielen, Lernen, Profil, Quiz, Ergebnis.
-- Features, je eine Datei: `duel`, `cards`, `browse` (Suche), `stats` (Verlauf), `reports` (gemeldete Fragen), `share` (Tagesrätsel teilen), `fx` (Vibration/Ton), `game` (Sterne, Rekordmeldung), `quests` (Tagesaufgaben, Truhe), `ladder` (Wissensleiter), `conf` (Wie sicher bist du?), `timeline` (Zeitstrahl), `estimate` (Schätzfragen + Modus Schätzen), `duellink` (Duell per Link), `typein` (freie Eingabe), `badges`, `entries` (Menüeinträge der eingebauten Modi).
+- Features, je eine Datei: `duel`, `cards`, `browse` (Suche), `stats` (Verlauf), `reports` (gemeldete Fragen), `share` (Tagesrätsel teilen), `fx` (Vibration/Ton), `game` (Sterne, Rekordmeldung), `quests` (Tagesaufgaben, +100 XP), `ladder` (Wissensleiter), `conf` (Wie sicher bist du?), `timeline` (Zeitstrahl), `estimate` (Schätzfragen + Modus Schätzen), `duellink` (Duell per Link), `typein` (freie Eingabe), `badges`, `entries` (Menüeinträge der eingebauten Modi).
 - `icon.svg` – Vorlage des App-Symbols; die PNGs (180, 192, 512, maskable) sind daraus gerendert.
 - `fonts/` – Schrift Inter, lokal (keine Verbindung zu Google).
 

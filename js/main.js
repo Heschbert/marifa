@@ -47,3 +47,6 @@ function boot() {
 }
 WF.boot = boot;
 boot();
+
+/* Offline-Cache (Service Worker) nur über HTTPS registrieren. Steht hier statt inline im HTML wegen der Content-Security-Policy. */
+try { if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(function () {}); } catch (e) {}

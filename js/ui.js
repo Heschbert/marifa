@@ -393,6 +393,7 @@
     h += "</div><h2>Fortschritt sichern</h2>" + '<div class="card"><p class="small mute">Der Fortschritt liegt nur auf diesem Gerät. Mit dem Code ziehst du ihn auf ein anderes Gerät um.</p>';
     h += '<div class="grid2">' + btn("exp", "Code erzeugen") + btn("copy", "Kopieren") + '</div><textarea id="code" placeholder="Hier erscheint dein Code oder füge einen Code ein" spellcheck="false" autocapitalize="off"></textarea>' + btn("imp", "Code laden") + "</div>";
     h += "<h2>Zurücksetzen</h2>" + '<div id="rs">' + btn("reset1", "Fortschritt löschen") + "</div>";
+    h += '<h2>Datenschutz</h2><div class="card small"><p style="margin:0">Marifa hat keine Konten, keine Werbung und kein Tracking. Dein Fortschritt wird nur auf diesem Gerät gespeichert (im Browser-Speicher) und nirgendwohin gesendet. Beim Laden der App verarbeitet der Hoster technisch bedingt deine IP-Adresse, wie bei jeder Website.</p></div>';
     show(h, "profile");
   }
   H.exp = function () { document.getElementById("code").value = WF.store.exportCode(); };
