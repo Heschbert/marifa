@@ -135,7 +135,7 @@
     });
     var tp = totN ? totM / totN : 0;
     var h = '<div class="card ksum">' + ring(tp, "var(--play)", E.fmtPct(tp) + "%") + '<div class="grow"><b>Wissensstand ' + E.fmtPct(tp) + ' %</b><p class="small mute" style="margin:2px 0 0">' + totS + " von " + totN + " Fragen gewusst. Jede richtige Antwort füllt den Ring, Wiederholen nach Tagen füllt ihn ganz.</p></div></div>";
-    h += '<div class="ktiles">' + tiles + "</div>";
+    h += '<details class="card more kmore" data-keep="kmap"' + ui.keepOpen("kmap") + '><summary><b>Wissen je Thema</b><span class="small mute">14 Themen mit Fortschritt</span></summary><div class="morein"><div class="ktiles">' + tiles + "</div></div></details>";
     h += '<div style="margin-top:10px">' + btn("stat", "Alle Statistiken ansehen", { data: { c: "" } }) + "</div>";
     if (worst) h += '<div class="card note" style="margin-top:12px"><b>Schwächster Bereich: ' + esc(worst.n) + '</b><p class="small mute">' + worst.p + " % richtig</p>" + btn("start", "Gezielt üben", { primary: true, data: { m: "learn", c: worst.c, s: worst.n } }) + "</div>";
     return h;
@@ -174,46 +174,62 @@
   /* ---------- Spielen (Startseite, blau) ---------- */
   function pills() {
     var st = S(), L = E.levelOf(st.xp), strk = E.curStreak(), today = st.days[U.today()] || 0;
-    return '<div class="pills"><button class="pill lvl" data-act="levels" aria-label="Levelübersicht öffnen">Level ' + L + " · " + E.titleOf(L) + ' ›</button><button class="pill" data-act="streakinfo" aria-label="Serie und Serienschutz erklären">Serie ' + strk + ((st.streak.freeze || 0) ? " · 🛡 " + st.streak.freeze : "") + ' ›</button><span class="pill">Heute ' + Math.min(today, E.consts.GOAL) + " / " + E.consts.GOAL + "</span></div>";
+    return '<div class="pills"><button class="pill lvl" data-act="levels" aria-label="Levelübersicht öffnen">Level ' + L + " · " + E.titleOf(L) + ' ›</button><button class="pill" data-act="streakinfo" aria-label="Serie und Serienschutz erklären">Serie ' + strk + ((st.streak.freeze || 0) ? " · 🛡 " + st.streak.freeze : "") + ' ›</button></div>';
   }
   function row(act, ico, title, sub, data, off) {
     var d = ""; for (var k in (data || {})) d += " data-" + k + '="' + esc(data[k]) + '"';
     return '<button class="item' + (off ? " off" : "") + '" data-act="' + act + '"' + d + (off ? " disabled" : "") + '><span class="ico" aria-hidden="true">' + ico + '</span><div class="grow"><div class="t">' + esc(title) + '</div><div class="small mute">' + esc(sub) + '</div></div><span class="chev" aria-hidden="true">›</span></button>';
   }
+  /* Spielen: oben EIN großer Knopf für eine schnelle Runde, darunter kompakt „Heute“ (Tagesrätsel, Aufgaben, Themenwoche …),
+     dann die weiteren Spielarten als schmale Kacheln. Weniger auf einmal, klarer Fokus. */
   function home() {
     view = home;
-    var st = S(), done = st.dailyDone[U.today()];
-    var h = ui.sechead("play", "Spielen", "Quiz, Duelle und das Tagesrätsel", pills());
-    var dtxt = !done ? "5 Fragen aus 5 Themen, für alle gleich." : (done.n && done.n < E.consts.DAILY_N ? "Heute abgebrochen nach " + done.n + (done.n === 1 ? " Frage, " : " Fragen, ") + done.s + " richtig." : "Heute gelöst: " + done.s + " von " + E.consts.DAILY_N + ".") + " Morgen gibt es ein neues.";
-    /* Offenes Tagesrätsel als großer Banner, erledigtes nur als schmale Zeile */
-    if (!done) h += '<div class="hero"><h3>Tagesrätsel</h3><p>' + dtxt + "</p>" + btn("start", "Jetzt spielen", { data: { m: "daily" } }) + "</div>";
-    else h += '<div class="card daydone"><span class="ico" aria-hidden="true">✓</span><div class="grow"><b>Tagesrätsel erledigt</b><div class="small mute">' + esc(dtxt) + "</div></div>" + (done.log ? '<button class="link" data-act="share">Teilen</button>' : "") + "</div>";
-    var dl = { auto: "Auto", 1: "Leicht", 2: "Mittel", 3: "Schwer" }[st.settings.difficulty];
-    h += '<details class="card cfgbox" data-keep="homecfg"' + ui.keepOpen("homecfg") + '><summary><span class="mute small">Deine Auswahl für die Spiele unten</span><b>' + esc(st.settings.playC || "Alle Themen") + " · " + dl + "</b></summary>" +
-      '<div class="cfgin"><p class="small mute" style="margin:0 0 10px">Diese Auswahl gilt für alle Spiele unten (Test, Blitz, Überleben, Wissensleiter …). Wähle hier, was du spielen willst, und starte direkt oder unten ein Spiel.</p>' +
-      ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') +
-      '<div style="margin-top:14px">' + btn("play", "Test mit dieser Auswahl starten", { primary: true, data: { m: "classic" } }) + "</div></div></details>";
+    var st = S(), goal = E.consts.GOAL, today = Math.min(st.days[U.today()] || 0, goal), topic = st.settings.playC || "Alle Themen";
+    var h = ui.sechead("play", "Spielen", "Teste dein Wissen in kurzen Runden. Jeden Tag ein bisschen klüger.", pills());
+    h += '<div class="mainplay"><div class="row sb small"><b>Heute ' + today + " von " + goal + " Fragen</b>" + (today >= goal ? '<span class="okc">Tagesziel geschafft ✓</span>' : '<span class="mute">Tagesziel</span>') + "</div>" + bar(today / goal * 100, "Tagesziel") +
+      '<button class="btn primary big" data-act="quick"><span aria-hidden="true">▶</span> Jetzt spielen</button>' +
+      '<p class="small mute mp-sub">10 Fragen · ' + esc(topic) + ' · <button class="link small" data-act="topicpick">Thema ändern</button></p>' +
+      (openState.topicpick ? '<div class="cfgin">' + ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>" : "") + "</div>";
     var ctx = { st: st };
-    h += WF.slot("home", ctx, undefined, 10);
-    h += '<h2>Allein spielen</h2><div class="tiles">' + WF.slot("home", ctx, 10, 40) + "</div>";
+    var today2 = WF.slot("today", ctx);
+    if (today2) h += '<h2>Heute</h2><div class="card tlist">' + today2 + "</div>";
+    h += '<h2>Weitere Spiele</h2><div class="tiles mini">' + WF.slot("home", ctx, 11, 40) + "</div>";
     var fr = WF.slot("home", ctx, 40);
-    if (fr) h += '<h2>Mit Freunden</h2><div class="tiles">' + fr + "</div>";
+    if (fr) h += '<h2>Mit Freunden</h2><div class="tiles mini">' + fr + "</div>";
     show(h, "home", false);
   }
+  H.quick = function () { ui.startWith("classic", { c: ui.playC(), s: null }); };
+  H.topicpick = function () { openState.topicpick = !openState.topicpick; home(); };
+  /* Tagesrätsel als erste Zeile in „Heute“ */
+  WF.registerEntry({ where: "today", order: 0, render: function () {
+    var st = S(), done = st.dailyDone[U.today()];
+    if (!done) return '<button class="trow hot" data-act="start" data-m="daily"><span class="tic">☀</span><span class="grow"><b>Tagesrätsel</b><span class="small mute">5 Fragen, für alle gleich</span></span><span class="tgo">Spielen</span></button>';
+    var txt = done.n && done.n < E.consts.DAILY_N ? "abgebrochen" : done.s + " von " + E.consts.DAILY_N;
+    return '<div class="trow"><span class="tic ok">✓</span><span class="grow"><b>Tagesrätsel</b><span class="small mute">' + txt + " · morgen gibt es ein neues</span></span>" + (done.log ? '<button class="link small" data-act="share">Teilen</button>' : "") + "</div>";
+  } });
   H.play = function (d) { start(d.m, ui.playC(), null); };
 
   /* ---------- Lernen (orange) ---------- */
+  /* Lernen: EIN großer Knopf zum Weiterlernen, darunter Themen als Kacheln, die direkt starten.
+     Lernpfade kompakt, alles Weitere (Suche, Merkliste, Schwierigkeit …) unter „Mehr“. */
   function areas() {
     view = areas;
-    var st = S(), last = st.settings.last;
-    var h = ui.sechead("learn", "Lernen", "Ohne Zeitdruck. Falsche Antworten kommen wieder, bis sie sitzen.");
-    var fav = st.settings.fav || [], due = E.dueList({}).length;
-    if (!last && fav.length) h += '<div class="hero"><h3>Deine Themen</h3><p>' + esc(fav.slice(0, 3).join(", ") + (fav.length > 3 ? " und " + (fav.length - 3) + " weitere" : "")) + "</p>" + btn("favgo", "Loslegen") + "</div>";
-    else h += '<div class="hero"><h3>' + (last ? esc(last.s || last.c) : "Alle Themen") + "</h3><p>" + (last ? "Dort machst du weiter." : "Du lernst, was noch nicht sitzt.") + (due ? " " + due + (due === 1 ? " Frage ist" : " Fragen sind") + " heute zur Wiederholung fällig und kommen zuerst." : "") + "</p>" + btn("start", last ? "Weiterlernen" : "Loslegen", { data: { m: "learn", c: last ? last.c || "" : "", s: last ? last.s || "" : "" } }) + "</div>";
-    h += WF.slot("areas", { st: st });
-    h += '<div class="card cfg" style="margin:12px 0">' + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>";
-    h += "<h2>Themen</h2>";
-    D.topics.forEach(function (t) { h += progressItem(t.c, null, t.c, t.subs.length + " Bereiche"); });
+    var st = S(), last = st.settings.last, fav = st.settings.fav || [], due = E.dueList({}).length;
+    var h = ui.sechead("learn", "Lernen", "Ohne Zeitdruck. Was du nicht weißt, kommt wieder, bis es sitzt.");
+    var title = last ? (last.s || last.c) : fav.length ? "Deine Themen" : "Alle Themen";
+    var sub = due ? due + (due === 1 ? " Wiederholung ist" : " Wiederholungen sind") + " heute fällig und kommen zuerst." : last ? "Dort machst du weiter." : "Du lernst, was noch nicht sitzt.";
+    h += '<div class="mainplay"><div class="small mute">' + (last ? "Weiter mit" : "Start") + '</div><div class="mp-t">' + esc(title) + '</div><p class="small mute" style="margin:2px 0 12px">' + esc(sub) + "</p>" +
+      (last || !fav.length ? btn("start", last ? "Weiterlernen" : "Lernen starten", { primary: true, data: { m: "learn", c: last ? last.c || "" : "", s: last ? last.s || "" : "" } }) : btn("favgo", "Lernen starten", { primary: true })).replace('class="btn primary"', 'class="btn primary big"') + "</div>";
+    h += '<h2>Thema wählen und loslegen</h2><div class="ttiles">';
+    D.topics.forEach(function (t) {
+      var p = E.levelPct(t.c);
+      h += '<button class="ttile" data-act="start" data-m="learn" data-c="' + esc(t.c) + '" data-s="">' + ring(p, ui.topicColor(t.c), E.fmtPct(p) + "%") + '<span class="t">' + esc(t.c) + "</span></button>";
+    });
+    h += '</div><button class="link small" style="margin-top:10px" data-act="setup" data-m="learn">Bereiche einzeln auswählen ›</button>';
+    h += WF.slot("paths", { st: st });
+    var more = WF.slot("areas", { st: st });
+    h += '<details class="card more" data-keep="learnmore"' + ui.keepOpen("learnmore") + '><summary><b>Mehr</b><span class="small mute">Wiederholen, Merkliste, Suche, Schwierigkeit</span></summary><div class="morein">' + more +
+      '<div style="margin-top:10px">' + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div></div></details>";
     show(h, "areas", true);
   }
   function progressItem(c, s, title, sub) {
@@ -401,13 +417,15 @@
     h += WF.slot("profiletop", { st: st });
     h += "<h2>Was kann ich schon?</h2>" + knowledgeMap();
     h += WF.slot("profile", { st: st });
-    h += "<h2>Einstellungen</h2>" + '<div class="card">' + ui.diffSeg() + prefSeg("Schrift", "font", [["s", "Klein"], ["m", "Normal"], ["l", "Groß"]]) + prefSeg("Darstellung", "theme", [["auto", "Auto"], ["light", "Hell"], ["dark", "Dunkel"]]) + WF.slot("settings") + "</div>";
-    h += "<h2>Abzeichen · " + Object.keys(st.badges).length + " / " + WF.badges.length + "</h2>" + '<div class="badges">';
+    h += '<details class="card more" data-keep="settings"' + ui.keepOpen("settings") + '><summary><b>Einstellungen</b><span class="small mute">Tagesziel, Schwierigkeit, Schrift, Darstellung …</span></summary><div class="morein">' + ui.diffSeg() + prefSeg("Schrift", "font", [["s", "Klein"], ["m", "Normal"], ["l", "Groß"]]) + prefSeg("Darstellung", "theme", [["auto", "Auto"], ["light", "Hell"], ["dark", "Dunkel"]]) + WF.slot("settings") + "</div></details>";
+    var nb = Object.keys(st.badges).length;
+    h += '<details class="card more" data-keep="badges"' + ui.keepOpen("badges") + '><summary><b>Abzeichen · ' + nb + " von " + WF.badges.length + '</b><span class="small mute">Sammeln für besondere Leistungen</span></summary><div class="morein"><div class="badges">';
     WF.badges.forEach(function (b) { h += '<div class="badge' + (st.badges[b.id] ? "" : " off") + '"><b>' + esc(b.n) + "</b><span>" + esc(b.d) + "</span></div>"; });
-    h += "</div><h2>Fortschritt sichern</h2>" + '<div class="card"><p class="small mute">Der Fortschritt liegt nur auf diesem Gerät. Mit dem Code ziehst du ihn auf ein anderes Gerät um.</p>';
+    h += '</div></div></details><details class="card more" data-keep="data"' + ui.keepOpen("data") + '><summary><b>Fortschritt sichern, Datenschutz</b><span class="small mute">Code für ein anderes Gerät, Zurücksetzen</span></summary><div class="morein">' + '<div><p class="small mute">Der Fortschritt liegt nur auf diesem Gerät. Mit dem Code ziehst du ihn auf ein anderes Gerät um.</p>';
     h += '<div class="grid2">' + btn("exp", "Code erzeugen") + btn("copy", "Kopieren") + '</div><textarea id="code" placeholder="Hier erscheint dein Code oder füge einen Code ein" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off"></textarea>' + btn("imp", "Code laden") + "</div>";
-    h += "<h2>Zurücksetzen</h2>" + '<div id="rs">' + btn("reset1", "Fortschritt löschen") + "</div>";
-    h += '<h2>Datenschutz</h2><div class="card small"><p style="margin:0">Marifa hat keine Konten, keine Werbung und kein Tracking. Dein Fortschritt wird nur auf diesem Gerät gespeichert (im Browser-Speicher) und nirgendwohin gesendet. Beim Laden der App verarbeitet der Hoster technisch bedingt deine IP-Adresse, wie bei jeder Website.</p></div>';
+    h += '<h3 class="subh">Zurücksetzen</h3><div id="rs">' + btn("reset1", "Fortschritt löschen") + "</div>";
+    h += '<h3 class="subh">Datenschutz</h3><div class="small"><p style="margin:0">Marifa hat keine Konten, keine Werbung und kein Tracking. Dein Fortschritt wird nur auf diesem Gerät gespeichert (im Browser-Speicher) und nirgendwohin gesendet. Beim Laden der App verarbeitet der Hoster technisch bedingt deine IP-Adresse, wie bei jeder Website.</p></div></div></details>';
+    h += WF.slot("profileend", { st: st });
     show(h, "profile");
   }
   H.exp = function () { document.getElementById("code").value = WF.store.exportCode(); };

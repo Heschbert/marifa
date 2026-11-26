@@ -38,8 +38,8 @@
 
   /* Spielmodi sind eigenständige Bausteine. Neue Modi werden hier registriert. */
   /* App-Version: nur mit „node tools/version.mjs <neu>“ ändern, das setzt auch sw.js. */
-  WF.VERSION = "3.7";
-  WF.BUILD = "2026-11-24";
+  WF.VERSION = "3.8";
+  WF.BUILD = "2026-11-26";
 
   WF.registerMode = function (m) { WF.modes[m.id] = m; WF.modeOrder.push(m.id); };
 
@@ -51,6 +51,8 @@
   WF.entries = {};
   WF.registerEntry = function (e) { (WF.entries[e.where] = WF.entries[e.where] || []).push(e); WF.entries[e.where].sort(function (a, b) { return (a.order || 50) - (b.order || 50); }); };
   WF.slot = function (where, ctx, from, to) {
-    return (WF.entries[where] || []).filter(function (e) { var o = e.order || 50; return (from === undefined || o >= from) && (to === undefined || o < to); }).map(function (e) { try { return e.render(ctx || {}) || ""; } catch (err) { console.error(where, err); return ""; } }).join("");
+    function ord(e) { return e.order != null ? e.order : 50; }
+    return (WF.entries[where] || []).filter(function (e) { var o = ord(e); return (from === undefined || o >= from) && (to === undefined || o < to); })
+      .map(function (e, i) { return { e: e, i: i }; }).sort(function (a, b) { return ord(a.e) - ord(b.e) || a.i - b.i; }).map(function (x) { return x.e; }).map(function (e) { try { return e.render(ctx || {}) || ""; } catch (err) { console.error(where, err); return ""; } }).join("");
   };
 })();

@@ -27,11 +27,9 @@
   });
   H.weekgo = function (d) { ui.startWith("classic", { c: d.c, s: null }); };
   WF.weekCount = function () { var all = S().weeks || {}; return Object.keys(all).filter(function (k) { return all[k].done; }).length; };
-  WF.registerEntry({ where: "home", order: 3, render: function () {
-    var w = current(), s = rec(w), pct = Math.min(100, s.r / GOAL * 100);
-    return '<div class="card week"><div class="row sb"><div><span class="small mute">Themenwoche · noch ' + w.left + (w.left === 1 ? " Tag" : " Tage") + "</span><div class=\"wk-t\">" + esc(w.c) + "</div></div>" +
-      '<span class="wk-n">' + (s.done ? "✓" : Math.min(s.r, GOAL) + " / " + GOAL) + "</span></div>" + ui.bar(pct, "Fortschritt der Themenwoche") +
-      '<p class="small mute" style="margin:8px 0 10px">' + (s.done ? "Geschafft! Nächste Woche kommt ein neues Thema." : GOAL + " richtige Antworten in diesem Thema bis Sonntag: +" + BONUS + " XP.") + "</p>" +
-      (s.done ? "" : btn("weekgo", "Wochenrunde spielen", { data: { c: w.c } })) + "</div>";
+  WF.registerEntry({ where: "today", order: 3, render: function () {
+    var w = current(), s = rec(w);
+    if (s.done) return '<div class="trow"><span class="tic ok">★</span><span class="grow"><b>Themenwoche: ' + esc(w.c) + '</b><span class="small mute">geschafft · nächste Woche neues Thema</span></span></div>';
+    return '<button class="trow" data-act="weekgo" data-c="' + esc(w.c) + '"><span class="tic">★</span><span class="grow"><b>Woche: ' + esc(w.c) + '</b><span class="small mute">' + Math.min(s.r, GOAL) + " / " + GOAL + " richtig · noch " + w.left + (w.left === 1 ? " Tag" : " Tage") + '</span></span><span class="tgo">Spielen</span></button>';
   } });
 })();

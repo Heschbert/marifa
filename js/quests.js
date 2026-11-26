@@ -75,16 +75,15 @@
 
   /* Startseite: kompakte Liste mit Fortschrittsringen. Sind alle erledigt und die Truhe offen, nur noch eine Zeile. */
   var ICO = { course: "🎓", ans: "?", right: "✓", combo: "🔥", combo8: "🔥", topic: "◆", daily: "☀", blitz: "60", learn: "📖", est: "≈", tl: "↹", ladder: "⇧" };
-  WF.registerEntry({ where: "home", order: 2, render: function () {
+  WF.registerEntry({ where: "today", order: 2, render: function () {
     var Q = today(), done = Q.list.filter(function (q) { return q.p >= q.t; }).length;
     if (done === 3 && !Q.chest) { reward(Q); WF.store.save(); }
-    if (done === 3) return '<div class="card daydone"><span class="ico" aria-hidden="true">✓</span><div class="grow"><b>Tagesaufgaben erledigt</b><div class="small mute">+' + BONUS + " XP erhalten · morgen gibt es neue</div></div></div>";
-    var h = '<div class="card quests"><div class="qhead"><b>Tagesaufgaben</b><span class="small mute">' + done + " von 3</span></div>";
+    if (done === 3) return '<div class="trow"><span class="tic ok">✓</span><span class="grow"><b>Tagesaufgaben</b><span class="small mute">alle erledigt · +' + BONUS + " XP</span></span></div>";
+    var h = '<details class="trow" data-keep="quests"' + ui.keepOpen("quests") + '><summary><span class="tic">◎</span><span class="grow"><b>Tagesaufgaben</b><span class="small mute">' + done + " von 3 · alle erledigt = +" + BONUS + ' XP</span></span><span class="tchev" aria-hidden="true">›</span></summary><div class="tin">';
     Q.list.forEach(function (q) {
       var ok = q.p >= q.t, p = Math.round(q.p / q.t * 100);
       h += '<div class="qrow' + (ok ? " done" : "") + '">' + ui.ring(p, "var(--accent)", ok ? "✓" : ICO[q.id] || "•") + '<div class="grow"><div class="t">' + esc(typeOf(q).txt(q)) + "</div></div><span class=\"xp\">" + q.p + " / " + q.t + "</span></div>";
     });
-    h += '<div class="chestline"><span class="mute">Alle 3 erledigt: +' + BONUS + " XP für dein Level.</span></div>";
-    return h + "</div>";
+    return h + "</div></details>";
   } });
 })();

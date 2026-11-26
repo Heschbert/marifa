@@ -368,16 +368,12 @@
   }
 
   /* ---------- Einträge in anderen Bereichen ---------- */
-  WF.registerEntry({ where: "home", order: 6, render: function () {
+  WF.registerEntry({ where: "today", order: 5, render: function () {
     if (!C.loaded) return "";
-    var best = null, dueC = null, dueN = 0;
-    C.list.forEach(function (c) {
-      var p = P(c.id), l = p.last && c.lById[p.last]; if (l && !best) best = { c: c, l: l };
-      var d = due(c), n = d.q.length + d.k.length; if (n > dueN) { dueN = n; dueC = c; }
-    });
+    var best = null, dueN = 0;
+    C.list.forEach(function (c) { var p = P(c.id), l = p.last && c.lById[p.last]; if (l && !best) best = { c: c, l: l }; var d = due(c); dueN += d.q.length + d.k.length; });
     if (!best) return "";
-    return '<div class="card cnext"><span class="small mute">Kurs · ' + esc(best.c.title) + "</span><b>" + esc(best.l.title) + "</b>" +
-      '<div class="grid2">' + btn("cles", "Weiterlernen", { data: { c: best.c.id, l: best.l.id } }) + (dueN ? btn("crev", "Wiederholen", { sub: dueN + " fällig", data: { c: dueC.id } }) : btn("crs1", "Zum Kurs", { data: { c: best.c.id } })) + "</div></div>";
+    return '<button class="trow" data-act="cles" data-c="' + best.c.id + '" data-l="' + best.l.id + '"><span class="tic">🎓</span><span class="grow"><b>Kurs: ' + esc(best.l.title) + '</b><span class="small mute">' + esc(best.c.title) + (dueN ? " · " + dueN + " zum Wiederholen" : "") + '</span></span><span class="tgo">Weiter</span></button>';
   } });
   WF.registerEntry({ where: "profiletop", order: 5, render: function () {
     if (!C.loaded) return "";

@@ -12,9 +12,8 @@
     return pool[Math.floor(rng() * pool.length)];
   }
   H.factmore = function (d) { ui.startWith("learn", { c: d.c, s: d.s }); };
-  WF.registerEntry({ where: "home", order: 1, render: function () {
+  WF.registerEntry({ where: "today", order: 4, render: function () {
     var x = today(); if (!x) return "";
-    return '<div class="card fact"><div class="facthead"><span class="factic" aria-hidden="true">💡</span><b>Wusstest du?</b><span class="small mute">' + esc(x.c) + "</span></div>" +
-      "<p>" + esc(x.e) + "</p>" + btn("factmore", "Mehr zu " + x.s + " lernen", { data: { c: x.c, s: x.s } }) + "</div>";
+    return '<details class="trow" data-keep="fact"' + ui.keepOpen("fact") + '><summary><span class="tic">💡</span><span class="grow"><b>Wusstest du?</b><span class="small mute">Fakt des Tages · ' + esc(x.c) + '</span></span><span class="tchev" aria-hidden="true">›</span></summary><div class="tin"><p style="margin:0 0 10px;line-height:1.5">' + esc(x.e) + "</p>" + btn("factmore", "Mehr zu " + x.s + " lernen", { data: { c: x.c, s: x.s } }) + "</div></details>";
   } });
 })();

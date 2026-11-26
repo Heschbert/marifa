@@ -44,14 +44,19 @@
     } else WF.emit("toast", { title: p.t + ": Tag " + st.d + " von " + p.days, sub: "Morgen geht es weiter." });
     WF.store.save();
   });
-  WF.registerEntry({ where: "areas", order: 50, render: function () {
-    var h = '<h2>Lernpfade</h2><p class="small mute" style="margin:-4px 0 10px">Jeden Tag ein kleines Paket, Kernwissen zuerst. Am Ende gibt es eine Urkunde.</p>';
-    PATHS.forEach(function (p) {
-      var s = state(p), today = s.last === U.today(), pct = s.d / p.days * 100;
-      var sub = s.done ? "Abgeschlossen am " + s.done.split("-").reverse().join(".") : s.d === 0 ? p.days + " Tage · " + p.sub : "Tag " + s.d + " von " + p.days + (today ? " · nächster Teil morgen" : " · weiter mit Tag " + (s.d + 1));
-      h += '<button class="item path' + (s.done || today ? " off" : "") + '" data-act="pathgo" data-p="' + p.id + '"' + (s.done || today ? " disabled" : "") + '>' +
-        ui.ring(pct, "var(--accent)", s.done ? "✓" : p.ico) + '<div class="grow"><div class="t">' + esc(p.t) + '</div><div class="small mute">' + esc(sub) + '</div></div><span class="chev" aria-hidden="true">›</span></button>';
-    });
+  function pathRow(p) {
+    var s = state(p), today = s.last === U.today(), pct = s.d / p.days * 100;
+    var sub = s.done ? "Abgeschlossen am " + s.done.split("-").reverse().join(".") : s.d === 0 ? p.days + " Tage · " + p.sub : "Tag " + s.d + " von " + p.days + (today ? " · nächster Teil morgen" : " · weiter mit Tag " + (s.d + 1));
+    return '<button class="item path' + (s.done || today ? " off" : "") + '" data-act="pathgo" data-p="' + p.id + '"' + (s.done || today ? " disabled" : "") + '>' +
+      ui.ring(pct, "var(--accent)", s.done ? "✓" : p.ico) + '<div class="grow"><div class="t">' + esc(p.t) + '</div><div class="small mute">' + esc(sub) + '</div></div><span class="chev" aria-hidden="true">›</span></button>';
+  }
+  WF.registerEntry({ where: "paths", order: 1, render: function () {
+    var active = PATHS.filter(function (p) { var s = state(p); return s.d > 0 && !s.done; });
+    var h = '<h2>Lernpfade</h2>';
+    if (active.length) h += active.map(pathRow).join("");
+    else h += '<p class="small mute" style="margin:-4px 0 8px">Kurzprogramme über einige Tage, jeden Tag ein kleines Paket. Am Ende gibt es eine Urkunde.</p>';
+    var rest = PATHS.filter(function (p) { return active.indexOf(p) < 0; });
+    h += '<details class="card more" data-keep="paths"' + ui.keepOpen("paths") + '><summary><b>' + (active.length ? "Weitere Lernpfade" : "Lernpfad auswählen") + '</b><span class="small mute">' + rest.length + " zur Auswahl</span></summary><div class=\"morein\">" + rest.map(pathRow).join("") + "</div></details>";
     return h;
   } });
   WF.registerEntry({ where: "profile", order: 12, render: function () {

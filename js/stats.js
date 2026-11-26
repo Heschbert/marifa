@@ -50,7 +50,7 @@
   }
   ui.H.stat = function (d) { statView(d.c || null); };
 
-  WF.registerEntry({ where: "profile", order: 10, render: function () {
+  WF.registerEntry({ where: "statsextra", order: 10, render: function () { /* 3.8: im Profil ersetzt durch den Lernkalender */
     var st = S(), days = lastDays(14), max = 1, sumT = 0, sumR = 0, sumN = 0;
     days.forEach(function (d) { var k = U.dkey(d); max = Math.max(max, st.days[k] || 0); });
     days.slice(-7).forEach(function (d) { var k = U.dkey(d), hd = (st.hist || {})[k]; sumN += st.days[k] || 0; if (hd) { sumT += hd.t; sumR += hd.r; } });
