@@ -50,6 +50,11 @@ for (const f of fc.features) {
   out.c[a2] = { d, b: path.bounds(f).flat().map(r1) }; featByA2[a2] = f;
 }
 
+/* Nachbarländer (gemeinsame Grenze) für Tipps */
+const geoms = world.objects.countries.geometries, nb = topo.neighbors(geoms);
+geoms.forEach((g, i) => { const a2 = iso.numericToAlpha2(g.id); if (!a2 || !out.c[a2]) return;
+  out.c[a2].nb = nb[i].map(j => iso.numericToAlpha2(geoms[j].id)).filter(x => x && out.c[x]); });
+
 /* Kontinente der App (data/geo.json) und ISO-Codes (js/flags.js) */
 const geo = JSON.parse(readFileSync(base + "data/geo.json", "utf8"));
 const ISO = Object.fromEntries([...readFileSync(base + "js/flags.js", "utf8").split("var LOOKALIKE")[0].matchAll(/"([^"]+)": "([A-Z]{2})"/g)].map(m => [m[1], m[2]]));
@@ -65,6 +70,11 @@ function regionsAt(points) {
 }
 /* Russland zählt in geo.json zu Europa; Flüsse und Gebirge östlich von 60° Länge gehören aber zu Asien */
 function fixRegions(r, geom) { const c = d3.geoCentroid({ type: "Feature", geometry: geom }); return r.map(x => x === "Europa" && c[0] > 60 ? "Asien" : x).filter((x, i, a) => a.indexOf(x) === i); }
+function countriesAt(points) {
+  const s = new Set();
+  for (const p of points) for (const [a2, f] of Object.entries(featByA2)) if (d3.geoContains(f, p)) { s.add(a2); break; }
+  return [...s];
+}
 function samplePoints(geom, n) {
   const all = (geom.type === "LineString" ? [geom.coordinates] : geom.type === "MultiLineString" ? geom.coordinates
     : geom.type === "Polygon" ? geom.coordinates : geom.coordinates.flat()).flat();
@@ -112,7 +122,7 @@ for (const f of ne("ne_50m_rivers_lake_centerlines").features) {
 for (const [n, geoms] of Object.entries(rv)) {
   const g = { type: "MultiLineString", coordinates: geoms.flatMap(x => x.type === "LineString" ? [x.coordinates] : x.coordinates) };
   const p = pathOf(g, 0.6, false);
-  out.rv.push({ n, d: p.d, b: p.b, r: fixRegions(regionsAt(samplePoints(g, 30)), g) });
+  out.rv.push({ n, d: p.d, b: p.b, r: fixRegions(regionsAt(samplePoints(g, 30)), g), l: countriesAt(samplePoints(g, 60)) });
 }
 
 /* Gebirge: Natural-Earth-NAME → deutscher Name */
@@ -137,7 +147,7 @@ for (const f of ne("ne_10m_geography_regions_polys").features) {
 for (const [n, geoms] of Object.entries(mt)) {
   const g = { type: "MultiPolygon", coordinates: geoms.flatMap(x => x.type === "Polygon" ? [x.coordinates] : x.coordinates) };
   const p = pathOf(g, 0.8, true);
-  out.mt.push({ n, d: p.d, b: p.b, r: fixRegions(regionsAt(samplePoints(g, 30)), g) });
+  out.mt.push({ n, d: p.d, b: p.b, r: fixRegions(regionsAt(samplePoints(g, 30)), g), l: countriesAt(samplePoints(g, 60)) });
 }
 
 writeFileSync(base + "data/karte.json", JSON.stringify(out));
