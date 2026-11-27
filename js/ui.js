@@ -186,8 +186,12 @@
   function home() {
     view = home;
     var st = S(), goal = E.consts.GOAL, today = Math.min(st.days[U.today()] || 0, goal), topic = st.settings.playC || "Alle Themen";
-    var h = ui.sechead("play", "Spielen", "Teste dein Wissen in kurzen Runden. Jeden Tag ein bisschen klüger.", pills());
-    h += '<div class="mainplay"><div class="row sb small"><b>Heute ' + today + " von " + goal + " Fragen</b>" + (today >= goal ? '<span class="okc">Tagesziel geschafft ✓</span>' : '<span class="mute">Tagesziel</span>') + "</div>" + bar(today / goal * 100, "Tagesziel") +
+    /* Kopfband wie bei den anderen Rubriken (ohne Zusatzzeile). Level und Serie stehen oben in der Hauptkarte. */
+    var L = E.levelOf(st.xp), strk = E.curStreak(), fr = st.streak.freeze || 0;
+    var h = ui.sechead("play", "Spielen", "Teste dein Wissen in kurzen Runden. Jeden Tag ein bisschen klüger.");
+    h += '<div class="mainplay"><div class="mpstat"><button class="mpchip" data-act="levels"><span class="mpk">Level ' + L + '</span><b>' + esc(E.titleOf(L)) + ' ›</b></button>' +
+      '<button class="mpchip" data-act="streakinfo"><span class="mpk">Serie</span><b>🔥 ' + strk + (strk === 1 ? " Tag" : " Tage") + (fr ? " · 🛡 " + fr : "") + " ›</b></button></div>" +
+      '<div class="row sb small" style="margin-top:14px"><b>Heute ' + today + " von " + goal + " Fragen</b>" + (today >= goal ? '<span class="okc">Tagesziel geschafft ✓</span>' : '<span class="mute">Tagesziel</span>') + "</div>" + bar(today / goal * 100, "Tagesziel") +
       '<button class="btn primary big" data-act="quick"><span aria-hidden="true">▶</span> Jetzt spielen</button>' +
       '<p class="small mute mp-sub">10 Fragen · ' + esc(topic) + ' · <button class="link small" data-act="topicpick">' + (openState.topicpick ? "Zuklappen ⌃" : "Thema ändern") + "</button></p>" +
       (openState.topicpick ? '<div class="cfgin">' + ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + '<div style="margin-top:12px">' + btn("topicpick", "Fertig") + "</div></div>" : "") + "</div>";
