@@ -839,3 +839,16 @@ body.play .nextbar { background: linear-gradient(to bottom, transparent, color-m
 .mpchip { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; background: var(--soft); border: 0; border-radius: 14px; padding: 10px 12px; color: var(--fg); font: inherit; text-align: left; min-width: 0; }
 .mpchip b { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
 .mpk { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--mute); }
+/* 3.11: Kartenquiz mit Hauptstädten, Flüssen, Gebirgen */
+.kpick { display: flex; flex-wrap: wrap; gap: 8px; }
+.kmt { fill: rgba(141, 98, 52, .38); stroke: rgba(110, 70, 30, .8); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer; }
+.kmt.ok { fill: rgba(47, 158, 68, .75); stroke: #1b5e20; }
+.kmt.bad { fill: rgba(224, 49, 49, .7); stroke: #a61e1e; }
+.krv { fill: none; stroke: #1c7ed6; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.krv.ok { stroke: #2f9e44; stroke-width: 4.5; }
+.krv.bad { stroke: #e03131; stroke-width: 4.5; }
+.krvhit { fill: none; stroke: transparent; stroke-width: 18; vector-effect: non-scaling-stroke; cursor: pointer; pointer-events: stroke; }
+.kc { pointer-events: auto; }
+.kdot.ok { fill: #2f9e44; stroke: #fff; stroke-width: 2; vector-effect: non-scaling-stroke; }
+.kdot.bad { fill: #e03131; stroke: #fff; stroke-width: 2; vector-effect: non-scaling-stroke; }
+.kline { stroke: #495057; stroke-width: 1.5; stroke-dasharray: 4 3; vector-effect: non-scaling-stroke; }

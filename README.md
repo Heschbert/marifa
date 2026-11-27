@@ -6,7 +6,7 @@ Läuft im Browser und lässt sich als App auf den Home-Bildschirm legen (PWA, au
 **Live:** https://heschbert.github.io/marifa/
 
 ## Was drin ist
-- **Spielen:** Tagesrätsel, Test, Blitz, Überleben, Wissensleiter, Zeitstrahl, Schätzen, Kartenquiz, Duell per Link, Themenwoche, Fakt des Tages.
+- **Spielen:** Tagesrätsel, Test, Blitz, Überleben, Wissensleiter, Zeitstrahl, Schätzen, Kartenquiz (Länder, Hauptstädte, Flüsse, Gebirge, je Kontinent), Duell per Link, Themenwoche, Fakt des Tages.
 - **Lernen:** Endlos-Lernmodus mit Wiederholung nach Plan (1, 3, 7, 21, 60 Tage), Kernwissen zuerst, Eselsbrücken, Lernpfade mit Urkunde.
 - **Profil:** Level, Lernkalender, Wissensstand je Thema, einstellbares Tagesziel.
 - **Kurse:** Mehrteilige Kurse mit Lektionen, Übungen und Karteikarten (z. B. Batteriespeicher, KI).
