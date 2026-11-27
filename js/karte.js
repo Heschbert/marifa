@@ -52,6 +52,17 @@
       if (mark && mark[c]) cls += " " + mark[c];
       h += '<path class="' + cls + '" d="' + MAP.c[c].d + '"' + (!mark ? ' data-act="ktap" data-c="' + c + '"' : "") + "/>";
     });
+    /* Nach der Antwort: Namen der markierten Länder auf die Karte schreiben */
+    if (mark) {
+      var fs = vb[2] / 22, nameOf = {};
+      Object.keys(WF.countryISO).forEach(function (n) { nameOf[WF.countryISO[n]] = n; });
+      Object.keys(mark).forEach(function (c) {
+        var b = MAP.c[c].b, x = (b[0] + b[2]) / 2, y = (b[1] + b[3]) / 2;
+        if (b[2] - b[0] > MAP.w / 2) return; /* Länder über die Datumsgrenze (z. B. Fidschi): kein Etikett, Lage wäre falsch */
+        x = Math.max(vb[0] + fs * 3, Math.min(vb[0] + vb[2] - fs * 3, x)); y = Math.max(vb[1] + fs, Math.min(vb[1] + vb[3] - fs * 0.5, y));
+        h += '<text class="klabel ' + mark[c] + '" x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" font-size="' + fs.toFixed(1) + '" text-anchor="middle" dominant-baseline="middle">' + esc(nameOf[c] || "") + "</text>";
+      });
+    }
     return h + "</svg>";
   }
   function head() {

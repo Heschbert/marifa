@@ -814,3 +814,23 @@ details.more[open] > summary b::after { content: " ⌄"; }
 .tiles.mini { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .tiles.mini .item { min-width: 0; }
 .subh { font-size: 15px; font-weight: 800; margin: 18px 0 8px; }
+
+/* ---------- 3.9 ---------- */
+/* Spielen und Quiz: leicht blau getönter Hintergrund (wie Lernen orange), wirkt weniger dunkel */
+body.play { background: color-mix(in srgb, var(--play-soft) 55%, var(--bg)); }
+body.play .nextbar { background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--play-soft) 55%, var(--bg)) 40%); }
+/* Antworten im Quiz klarer abgesetzt */
+#opts .ans { border: 1.5px solid var(--line); }
+/* Tagesaufgaben als Startknöpfe */
+.qrow.qgo { width: 100%; background: none; border: 0; color: var(--fg); font: inherit; text-align: left; display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.qrow.qgo .grow .t { font-weight: 600; }
+.tin .qrow + .qrow { border-top: 1px solid var(--line); }
+/* Kartenquiz: helle Landkarte wie im Atlas, auch im Dunkelmodus. Wasser blau, Land beige, Grenzen weiß. */
+.kwrap { background: #b9dcf2; border: 1px solid var(--line); }
+.kc, .kc.in { fill: #f3ecdc; stroke: #ffffff; stroke-width: 1.2; vector-effect: non-scaling-stroke; cursor: pointer; }
+@media (hover: hover) { .kc.in:hover { fill: #e8dcbf; } }
+.kc.ok { fill: #2f9e44 !important; }
+.kc.bad { fill: #e03131 !important; }
+.klabel { font-family: Inter, system-ui, sans-serif; font-weight: 800; paint-order: stroke; stroke: #ffffff; stroke-width: 3px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.klabel.ok { fill: #1b5e20; }
+.klabel.bad { fill: #a61e1e; }

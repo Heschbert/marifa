@@ -18,6 +18,7 @@
     document.body.classList.toggle("course", learn === "course");
     document.body.classList.toggle("pub", learn === "pub");
     document.body.classList.toggle("prof", tab === "profile" && !learn);
+    document.body.classList.toggle("play", !learn && tab !== "profile" && tab !== "courses");
     tabs.hidden = !tab;
     document.body.classList.toggle("hastabs", !!tab);
     [].forEach.call(tabs.children, function (b) { b.classList.toggle("on", b.dataset.t === tab); });
@@ -188,8 +189,8 @@
     var h = ui.sechead("play", "Spielen", "Teste dein Wissen in kurzen Runden. Jeden Tag ein bisschen klüger.", pills());
     h += '<div class="mainplay"><div class="row sb small"><b>Heute ' + today + " von " + goal + " Fragen</b>" + (today >= goal ? '<span class="okc">Tagesziel geschafft ✓</span>' : '<span class="mute">Tagesziel</span>') + "</div>" + bar(today / goal * 100, "Tagesziel") +
       '<button class="btn primary big" data-act="quick"><span aria-hidden="true">▶</span> Jetzt spielen</button>' +
-      '<p class="small mute mp-sub">10 Fragen · ' + esc(topic) + ' · <button class="link small" data-act="topicpick">Thema ändern</button></p>' +
-      (openState.topicpick ? '<div class="cfgin">' + ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + "</div>" : "") + "</div>";
+      '<p class="small mute mp-sub">10 Fragen · ' + esc(topic) + ' · <button class="link small" data-act="topicpick">' + (openState.topicpick ? "Zuklappen ⌃" : "Thema ändern") + "</button></p>" +
+      (openState.topicpick ? '<div class="cfgin">' + ui.rubrikSel() + ui.diffSeg().replace('class="cfg"', 'class="cfg" style="margin:0"') + '<div style="margin-top:12px">' + btn("topicpick", "Fertig") + "</div></div>" : "") + "</div>";
     var ctx = { st: st };
     var today2 = WF.slot("today", ctx);
     if (today2) h += '<h2>Heute</h2><div class="card tlist">' + today2 + "</div>";

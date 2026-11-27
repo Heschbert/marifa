@@ -75,6 +75,21 @@
 
   /* Startseite: kompakte Liste mit Fortschrittsringen. Sind alle erledigt und die Truhe offen, nur noch eine Zeile. */
   var ICO = { course: "🎓", ans: "?", right: "✓", combo: "🔥", combo8: "🔥", topic: "◆", daily: "☀", blitz: "60", learn: "📖", est: "≈", tl: "↹", ladder: "⇧" };
+  /* Aufgabe antippen = passendes Spiel starten */
+  H.questgo = function (d) {
+    var c = ui.playC();
+    switch (d.q) {
+      case "daily": return H.start({ m: "daily" });
+      case "blitz": return ui.startWith("blitz", { c: c, s: null });
+      case "learn": return ui.startWith("learn", { c: null, s: null });
+      case "topic": return ui.startWith("classic", { c: d.c, s: null });
+      case "est": return H.est ? H.est({}) : null;
+      case "tl": return H.tl ? H.tl({ c: "", s: "" }) : null;
+      case "ladder": return H.ladder ? H.ladder({}) : null;
+      case "course": return ui.go("courses");
+      default: return ui.startWith("classic", { c: c, s: null });
+    }
+  };
   WF.registerEntry({ where: "today", order: 2, render: function () {
     var Q = today(), done = Q.list.filter(function (q) { return q.p >= q.t; }).length;
     if (done === 3 && !Q.chest) { reward(Q); WF.store.save(); }
@@ -82,7 +97,10 @@
     var h = '<details class="trow" data-keep="quests"' + ui.keepOpen("quests") + '><summary><span class="tic">◎</span><span class="grow"><b>Tagesaufgaben</b><span class="small mute">' + done + " von 3 · alle erledigt = +" + BONUS + ' XP</span></span><span class="tchev" aria-hidden="true">›</span></summary><div class="tin">';
     Q.list.forEach(function (q) {
       var ok = q.p >= q.t, p = Math.round(q.p / q.t * 100);
-      h += '<div class="qrow' + (ok ? " done" : "") + '">' + ui.ring(p, "var(--accent)", ok ? "✓" : ICO[q.id] || "•") + '<div class="grow"><div class="t">' + esc(typeOf(q).txt(q)) + "</div></div><span class=\"xp\">" + q.p + " / " + q.t + "</span></div>";
+      /* Offene Aufgaben sind Knöpfe, die direkt das passende Spiel starten */
+      h += (ok ? '<div class="qrow done">' : '<button class="qrow qgo" data-act="questgo" data-q="' + q.id + '"' + (q.c ? ' data-c="' + esc(q.c) + '"' : "") + ">") +
+        ui.ring(p, "var(--accent)", ok ? "✓" : ICO[q.id] || "•") + '<div class="grow"><div class="t">' + esc(typeOf(q).txt(q)) + '</div><div class="small mute">' + q.p + " / " + q.t + "</div></div>" +
+        (ok ? '<span class="okc">✓</span></div>' : '<span class="tgo">Los</span></button>');
     });
     return h + "</div></details>";
   } });
