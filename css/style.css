@@ -991,3 +991,72 @@ button.shic svg { margin-left: 2px; }
 .cplan { display: block; margin: 0 0 4px 4px; }
 .cplan summary { cursor: pointer; padding: 2px 0; }
 .cplan > div { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+
+/* Lernpfad 2.0 (3.17): Kurs-Kopf, farbige Einheiten, geschwungene Linie, Sterne, Truhe */
+.chero { position: relative; overflow: hidden; margin: 6px 0 14px; padding: 18px 16px 16px; border-radius: 24px; color: #fff;
+  background: radial-gradient(120% 90% at 100% 0%, rgba(255,255,255,.22), transparent 55%), linear-gradient(135deg, #1f8a4c, #13795b 55%, #0c5f6e); box-shadow: 0 6px 0 rgba(0,0,0,.18); }
+.chero::after { content: ""; position: absolute; right: -40px; bottom: -60px; width: 180px; height: 180px; border-radius: 50%; background: rgba(255,255,255,.08); }
+.chtop { display: flex; gap: 12px; align-items: flex-start; position: relative; z-index: 1; }
+.chic { width: 48px; height: 48px; flex: none; border-radius: 16px; display: grid; place-items: center; font-size: 24px; font-weight: 800; background: rgba(255,255,255,.2); }
+.chero h1 { font-size: 22px; line-height: 1.2; margin: 0 0 4px; color: #fff; }
+.chero p { margin: 0; font-size: 13px; opacity: .9; }
+.chero .ring { --c: #fff !important; width: 54px; height: 54px; background-color: rgba(255,255,255,.25); }
+.chero .ring::before { background: #13795b; inset: 6px; }
+.chero .ring b { color: #fff; }
+.chstats { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 14px 0 12px; }
+.chstats span { display: flex; flex-direction: column; align-items: center; padding: 8px 4px; border-radius: 14px; background: rgba(0,0,0,.16); font-size: 11px; opacity: .95; }
+.chstats b { font-size: 18px; }
+.chgo { position: relative; z-index: 1; width: 100%; padding: 13px 14px; border: 0; border-radius: 16px; background: #fff; color: #0c5f4a; font: inherit; font-weight: 800; font-size: 15px; text-align: left; box-shadow: 0 4px 0 rgba(0,0,0,.2); cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chgo:active { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.2); }
+.chaud { position: relative; z-index: 1; margin: 10px 0 0 !important; font-size: 11px !important; opacity: .75 !important; }
+
+.cpath { display: block; margin: 10px 0 8px; }
+.plevel { display: flex; align-items: center; gap: 10px; margin: 22px 0 10px; color: var(--mute); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.plevel::before, .plevel::after { content: ""; flex: 1; height: 2px; border-radius: 2px; background: var(--line); }
+.punit { --u: #58a700; margin-bottom: 8px; }
+.punit .pmod { position: relative; width: 100%; display: flex; flex-direction: column; gap: 3px; text-align: left; padding: 14px 54px 14px 16px; margin: 6px 0 4px; border: 0; border-radius: 18px; font: inherit; cursor: pointer;
+  background: var(--u); color: #fff; box-shadow: 0 5px 0 color-mix(in srgb, var(--u) 62%, #000); }
+.punit .pmod:active { transform: translateY(3px); box-shadow: 0 2px 0 color-mix(in srgb, var(--u) 62%, #000); }
+.pmk { font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; opacity: .85; }
+.punit .pmod b { font-size: 18px; line-height: 1.2; }
+.pmbar { display: block; height: 8px; border-radius: 8px; background: rgba(0,0,0,.2); margin: 6px 0 2px; overflow: hidden; }
+.pmbar i { display: block; height: 100%; border-radius: 8px; background: #fff; transition: width .4s; }
+.punit .pmst { font-size: 12px; font-weight: 700; opacity: .92; margin: 0; }
+.pmbook { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 12px; display: grid; place-items: center; background: rgba(255,255,255,.2); font-size: 18px; }
+.punit.off .pmod { background: var(--soft); color: var(--mute); box-shadow: 0 5px 0 var(--line); }
+.punit.off .pmbar i { background: var(--mute); }
+
+.ptrack { position: relative; margin: 8px 0 6px; }
+.pline { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.pline path { fill: none; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.pline .pl0 { stroke: var(--line); stroke-width: 10; stroke-dasharray: 2 16; }
+.pline .pl1 { stroke: var(--u); stroke-width: 10; opacity: .55; }
+.pstop { position: absolute; width: 68px; display: flex; flex-direction: column; align-items: center; }
+.punit .pnode { position: relative; z-index: 1; width: 68px; height: 62px; border-radius: 50%; border: 0; display: grid; place-items: center; font: inherit; font-size: 24px; font-weight: 800; cursor: pointer; transition: transform .1s; }
+.punit .pnode:active { transform: translateY(4px); }
+.punit .pnode.done { background: var(--u); color: #fff; box-shadow: 0 6px 0 color-mix(in srgb, var(--u) 60%, #000); }
+.punit .pnode.cur { background: var(--u); color: #fff; box-shadow: 0 6px 0 color-mix(in srgb, var(--u) 60%, #000), 0 0 0 7px color-mix(in srgb, var(--u) 28%, transparent); animation: ppulse 1.6s ease-in-out infinite; }
+.punit .pnode.open { background: var(--card); color: var(--u); border: 3px solid var(--u); box-shadow: 0 6px 0 color-mix(in srgb, var(--u) 45%, var(--line)); }
+.punit .pnode.lock { background: var(--soft); color: var(--mute); box-shadow: 0 6px 0 var(--line); font-size: 19px; }
+.punit .pnode.test { border-radius: 22px; font-size: 28px; }
+.punit .pnode.test.done { background: #f5b100; box-shadow: 0 6px 0 #b77f00; }
+.punit .pnode.test.cur, .punit .pnode.test.open { background: color-mix(in srgb, #f5b100 22%, var(--card)); border: 3px solid #f5b100; color: inherit; }
+.pbub { position: absolute; top: -32px; z-index: 2; padding: 5px 10px; border-radius: 10px; background: var(--card); color: var(--u); border: 2px solid var(--line); font-size: 12px; font-weight: 900; letter-spacing: .05em; animation: pbob 1.4s ease-in-out infinite; white-space: nowrap; }
+.pbub::after { content: ""; position: absolute; left: 50%; bottom: -7px; width: 10px; height: 10px; margin-left: -6px; background: var(--card); border-right: 2px solid var(--line); border-bottom: 2px solid var(--line); transform: rotate(45deg); }
+.pstars { position: relative; z-index: 1; margin-top: 4px; font-size: 13px; letter-spacing: 1px; color: #f5b100; line-height: 1; }
+.pstars i { font-style: normal; color: var(--line); }
+.pstop .plabel { position: absolute; top: 14px; width: 124px; font-size: 12px; line-height: 1.25; color: var(--fg); }
+.pstop.r .plabel { left: 80px; text-align: left; }
+.pstop.l .plabel { right: 80px; text-align: right; }
+.pdeco { position: absolute; top: 40%; font-size: 34px; opacity: .55; pointer-events: none; animation: pbob 3s ease-in-out infinite; }
+.pdeco.l { left: 0; } .pdeco.r { right: 0; }
+.pfinal { display: flex; flex-direction: column; align-items: center; gap: 4px; margin: 18px 0 10px; padding: 18px 12px 16px; border-radius: 22px; border: 2px dashed var(--line); text-align: center; }
+.pfinal .pnode.big { width: 92px; height: 86px; border-radius: 28px; border: 0; font-size: 44px; cursor: pointer; background: var(--soft); box-shadow: 0 6px 0 var(--line); margin-bottom: 6px; }
+.pfinal.open { border-color: #f5b100; }
+.pfinal.open .pnode.big { background: color-mix(in srgb, #f5b100 25%, var(--card)); box-shadow: 0 6px 0 #b77f00; animation: ppulse 1.8s ease-in-out infinite; }
+.pfinal.done { border-style: solid; border-color: #f5b100; background: color-mix(in srgb, #f5b100 10%, transparent); }
+.pfinal.done .pnode.big { background: #f5b100; box-shadow: 0 6px 0 #b77f00; }
+@keyframes pbob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@media (prefers-reduced-motion: reduce) { .pbub, .pdeco, .pfinal.open .pnode.big { animation: none; } }
+.punit .pnode.cur { animation-name: upulse; }
+@keyframes upulse { 50% { box-shadow: 0 6px 0 color-mix(in srgb, var(--u) 60%, #000), 0 0 0 13px color-mix(in srgb, var(--u) 10%, transparent); } }

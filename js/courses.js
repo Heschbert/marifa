@@ -106,43 +106,61 @@
     var c = C.byId[cid]; if (!c) return list();
     ui.setView(function () { withCourses(function () { course(cid); }); });
     var p = P(cid), pr = progress(c), d = due(c), n = d.q.length + d.k.length, last = p.last && c.lById[p.last];
-    var h = '<button class="ghost" data-act="crs">‹ Kurse</button><h1>' + esc(c.title) + '</h1><p class="mute">' + esc(c.sub) + "</p>";
-    h += '<div class="card ksum">' + ui.ring(pr, "var(--course)", Math.round(pr) + "%") + '<div class="grow"><b>Kursfortschritt ' + Math.round(pr) + ' %</b><p class="small mute" style="margin:2px 0 0">Zielgruppe: ' + esc(c.audience) + " · Stand " + esc(c.stand) + "</p></div></div>";
-    if (last) h += '<div class="hero"><h3>Weiter mit</h3><p>' + esc(last.title) + "</p>" + btn("cles", "Lektion öffnen", { data: { c: cid, l: last.id } }) + "</div>";
+    var fac = (C.idx.faculties || []).filter(function (f) { return f.id === c.fac; })[0] || { ico: "🎓" };
+    var nL = 0, nD = 0, stars = 0, tests = 0, nM = 0;
+    c.modules.filter(ready).forEach(function (m) { nM++; if (modPassed(m)) tests++; m.lessons.forEach(function (l) { nL++; var v = p.lessons[l.id]; if (v !== undefined) { nD++; stars += v >= 100 ? 3 : v >= 70 ? 2 : 1; } }); });
+    var h = '<button class="ghost" data-act="crs">‹ Kurse</button>';
+    h += '<header class="chero"><div class="chtop"><span class="chic" aria-hidden="true">' + esc(fac.ico) + '</span><div class="grow"><h1>' + esc(c.title) + '</h1><p>' + esc(c.sub) + "</p></div>" + ui.ring(pr, "#fff", Math.round(pr) + "%") + "</div>" +
+      '<div class="chstats"><span><b>' + nD + "/" + nL + "</b>Lektionen</span><span><b>" + stars + "★</b>von " + nL * 3 + "</span><span><b>" + tests + "/" + nM + "</b>Tests</span></div>" +
+      (last ? '<button class="chgo" data-act="cles" data-c="' + esc(cid) + '" data-l="' + esc(last.id) + '"><span aria-hidden="true">▶</span> Weiter: ' + esc(last.title) + "</button>" : '<button class="chgo" data-act="cles" data-c="' + esc(cid) + '" data-l="' + esc(c.modules[0].lessons[0].id) + '"><span aria-hidden="true">▶</span> Los geht’s mit Lektion 1</button>') +
+      '<p class="chaud">Für: ' + esc(c.audience) + " · Stand " + esc(c.stand) + "</p></header>";
     if (n) h += ui.row("crev", "↻", "Wiederholen", n + " fällig (" + d.q.length + " Fragen, " + d.k.length + " Karten)", { c: cid });
     h += ui.row("cgloss", "A–Z", "Glossar", c.cards.length + " Begriffe zum Nachschlagen", { c: cid });
     var vols = 0; c.modules.forEach(function (m) { m.lessons.forEach(function (l) { if (l.vol) vols++; }); });
     if (vols && ageMonths(c) >= 6) h += '<div class="card volold"><b>⚠ Teile des Kurses sind älter als 6 Monate</b><p class="small mute" style="margin:2px 0 0">' + vols + " Lektionen mit Regeln oder Marktdaten haben den Stand " + esc(c.stand) + ". Bitte vor Entscheidungen prüfen.</p></div>";
-    /* Lernpfad wie in einer Sprach-App: Lektionen als Stationen, die sich nacheinander freischalten; am Ende jedes Moduls der Test */
+    /* Lernpfad wie in einer Sprach-App: jedes Modul eine farbige Einheit, Lektionen als Stationen auf einer geschwungenen Linie,
+       Sterne je nach Übungsergebnis, am Ende jedes Moduls die Schatztruhe (Modultest), ganz am Ende die Abschlussprüfung. */
+    var k = 0, curSet = false, UC = ["#58a700", "#1899d6", "#a35ee8", "#e07c00", "#e5484d", "#0f9d8a", "#c98a00", "#d6409f"], DECO = ["🌱", "🚀", "🧩", "🔭", "⚙️", "🌊", "🏔️", "✨"];
     h += '<div class="cpath">';
-    var k = 0, curSet = false;
     c.levels.forEach(function (lv) {
       var mods = c.modules.filter(function (m) { return m.level === lv.id; }); if (!mods.length) return;
-      h += '<div class="plevel">Stufe ' + lv.id + " · " + esc(lv.title) + "</div>";
+      h += '<div class="plevel"><span>Stufe ' + lv.id + " · " + esc(lv.title) + "</span></div>";
       mods.forEach(function (m) {
-        var open = modOpen(m), passed = modPassed(m);
-        h += '<button class="pmod' + (open ? "" : " off") + '" data-act="cmod" data-c="' + esc(cid) + '" data-m="' + esc(m.id) + '"><b>' + esc(m.title) + '</b><span class="small">' + esc(m.desc) + "</span>" +
-          '<span class="pmst">' + (!ready(m) ? "In Vorbereitung" : passed ? "Bestanden · " + p.mods[m.id].best + " %" : !open ? "🔒 Erst das vorige Modul bestehen" : lessonsDone(m) + " von " + m.lessons.length + " Lektionen") + "</span></button>";
-        (m.lessons || []).forEach(function (l, i) {
+        var mi = c.modules.indexOf(m), col = UC[mi % UC.length], open = modOpen(m), passed = modPassed(m), ld = lessonsDone(m), nl = m.lessons.length;
+        h += '<section class="punit' + (open ? "" : " off") + '" style="--u:' + col + '">';
+        h += '<button class="pmod" data-act="cmod" data-c="' + esc(cid) + '" data-m="' + esc(m.id) + '"><span class="pmk">Modul ' + (mi + 1) + (passed ? " · ✓ bestanden" : "") + '</span><b>' + esc(m.title) + '</b>' +
+          '<span class="pmbar"><i style="width:' + Math.round((ld + (passed ? 1 : 0)) / (nl + 1) * 100) + '%"></i></span><span class="pmst">' + (!open ? "🔒 Erst das vorige Modul bestehen" : ld + " von " + nl + " Lektionen" + (passed ? " · Test " + p.mods[m.id].best + " %" : "")) + '</span><span class="pmbook" aria-hidden="true">📖</span></button>';
+        var stops = [];
+        m.lessons.forEach(function (l, i) {
           var done = lessonDone(c, l), avail = open && (i === 0 || lessonDone(c, m.lessons[i - 1]) || !!p.open), isCur = !done && avail && !curSet;
           if (isCur) curSet = true;
-          var cls = done ? "done" : isCur ? "cur" : avail ? "open" : "lock";
-          h += '<div class="pnode-wrap pos' + (k++ % 4) + '"><button class="pnode ' + cls + '" data-act="' + (avail || done ? "cles" : "clock") + '" data-c="' + esc(cid) + '" data-l="' + esc(l.id) + '" aria-label="' + esc(l.title) + '">' +
-            (done ? "✓" : avail ? String(i + 1) : "🔒") + "</button>" + '<span class="plabel">' + (isCur ? "<b>Start</b> · " : "") + esc(l.title) + "</span></div>";
+          var sc = p.lessons[l.id], st = done ? (sc >= 100 ? 3 : sc >= 70 ? 2 : 1) : 0;
+          stops.push({ cls: done ? "done" : isCur ? "cur" : avail ? "open" : "lock", act: avail || done ? "cles" : "clock", d: 'data-l="' + esc(l.id) + '"', ico: done ? (st === 3 ? "👑" : "★") : avail ? String(i + 1) : "🔒", t: l.title, cur: isCur, st: st });
         });
-        if (ready(m)) {
-          var all = lessonsDone(m) === m.lessons.length || !!p.open;
-          h += '<div class="pnode-wrap pos' + (k++ % 4) + '"><button class="pnode test ' + (passed ? "done" : all ? "open" : "lock") + '" data-act="' + (all ? "ctest" : "clock") + '" data-c="' + esc(cid) + '" data-m="' + esc(m.id) + '" aria-label="Modultest">🏆</button><span class="plabel">Modultest' + (passed ? " · bestanden" : "") + "</span></div>";
-        }
+        var all = ld === nl || !!p.open, tcur = !passed && all && open && !curSet; if (tcur) curSet = true;
+        stops.push({ cls: "test " + (passed ? "done" : tcur ? "cur" : all && open ? "open" : "lock"), act: all && open ? "ctest" : "clock", d: 'data-m="' + esc(m.id) + '"', ico: passed ? "🏆" : "🎁", t: "Modultest", cur: tcur, st: 0 });
+        /* Geschwungene Linie: x-Versatz als Sinus, die Einheit wechselt die Richtung */
+        var STEP = 96, H0 = 48, xs = stops.map(function (_, i) { return Math.round(Math.sin((i + (mi % 2 ? 2 : 0)) * 1.05) * 30); }), hh = stops.length * STEP;
+        var dPath = "", dDone = "";
+        xs.forEach(function (x, i) { var X = 50 + x, Y = H0 + i * STEP; if (!i) { dPath = "M" + X + " " + Y; } else { var pX = 50 + xs[i - 1], pY = H0 + (i - 1) * STEP; dPath += " C" + pX + " " + (pY + STEP / 2) + " " + X + " " + (Y - STEP / 2) + " " + X + " " + Y; } if (/done|cur/.test(stops[i].cls)) dDone = dPath; });
+        h += '<div class="ptrack" style="height:' + hh + 'px"><svg class="pline" viewBox="0 0 100 ' + hh + '" preserveAspectRatio="none" aria-hidden="true"><path d="' + dPath + '" class="pl0"/>' + (dDone ? '<path d="' + dDone + '" class="pl1"/>' : "") + "</svg>";
+        stops.forEach(function (s, i) {
+          var x = xs[i], side = x > 4 ? "l" : "r";
+          h += '<div class="pstop ' + side + '" style="top:' + (H0 + i * STEP - 34) + 'px;left:calc(' + (50 + x) + '% - 34px)">' + (s.cur ? '<span class="pbub">START</span>' : "") +
+            '<button class="pnode ' + s.cls + '" data-act="' + s.act + '" data-c="' + esc(cid) + '" ' + s.d + ' aria-label="' + esc(s.t) + '">' + s.ico + "</button>" +
+            (s.st ? '<span class="pstars" aria-label="' + s.st + ' von 3 Sternen">' + "★★★".slice(0, s.st) + '<i>' + "★★★".slice(s.st) + "</i></span>" : "") +
+            '<span class="plabel">' + esc(s.t) + "</span></div>";
+        });
+        h += '<span class="pdeco ' + (mi % 2 ? "l" : "r") + '" aria-hidden="true">' + DECO[mi % DECO.length] + "</span></div></section>";
       });
     });
+    var fin = p.final, allP = allPassed(c);
+    h += '<div class="pfinal' + (fin && fin.pass ? " done" : allP ? " open" : "") + '"><button class="pnode big" data-act="' + (allP ? "cfinal" : "clock") + '" data-c="' + esc(cid) + '" aria-label="Abschlussprüfung">🎓</button><b>Abschlussprüfung</b><span class="small mute">' + (fin && fin.pass ? "Bestanden mit " + fin.best + " %" : allP ? FINAL_N + " Fragen · ab " + PASS + " % bestanden" : "Am Ende des Pfads") + "</span></div>";
     h += "</div>";
     var op = P(cid).open;
     h += '<div class="card unlock"><div class="grow"><b>' + (op ? "Alle Module freigeschaltet" : "Module der Reihe nach") + '</b><div class="small mute">' + (op ? "Jedes Modul und jeder Test ist sofort verfügbar." : "Ein Modul öffnet sich nach bestandenem Test des vorigen.") + "</div></div>" + '<button class="link" data-act="copen" data-c="' + esc(cid) + '">' + (op ? "Reihenfolge an" : "Alle freischalten") + "</button></div>";
-    h += "<h2>Abschluss</h2>";
     var f = p.final;
     if (f && f.pass) h += '<div class="card cert"><b>🎓 Zertifikat: ' + esc(c.title) + '</b><p class="small mute">Abschlussprüfung bestanden am ' + esc(f.at.split("-").reverse().join(".")) + " mit " + f.best + " %. Gilt für den bisher verfügbaren Kursinhalt.</p></div>";
-    h += btn("cfinal", "Abschlussprüfung", { sub: allPassed(c) ? FINAL_N + " Fragen aus allen Modulen · ab " + PASS + " % bestanden" : "Erst alle verfügbaren Module bestehen", off: !allPassed(c), data: { c: cid } });
     h += '<div class="card" style="margin-top:16px"><b>Qualität</b><p class="small mute" style="margin:4px 0 0">' + esc(c.review) + " Jede Lektion nennt ihre Quellen und ihren Stand. Fehler kannst du bei jeder Frage melden.</p></div>";
     ui.show(h, "courses", "course");
   }
