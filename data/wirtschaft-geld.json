@@ -1886,26 +1886,6 @@
   "d": 3
  },
  {
-  "id": "qjrg1y",
-  "s": "Wirtschaft verstehen",
-  "q": "Wie hoch ist der gesetzliche Mindestlohn in Deutschland 2026 pro Stunde?",
-  "a": [
-   "13,90 €",
-   "12,82 €",
-   "13,50 €",
-   "14,60 €"
-  ],
-  "w": [
-   "",
-   "12,82 € galten im Jahr 2025.",
-   "13,50 € ist kein gesetzlicher Wert.",
-   "14,60 € ist erst für 2027 vorgesehen."
-  ],
-  "e": "Seit 2015 gibt es den gesetzlichen Mindestlohn, die Mindestlohnkommission empfiehlt die Anpassung.",
-  "h": "Stand 2026.",
-  "d": 2
- },
- {
   "id": "5xgayh",
   "s": "Wirtschaft verstehen",
   "q": "Wer betreibt Fiskalpolitik?",
@@ -2299,26 +2279,6 @@
   "p": 1
  },
  {
-  "id": "1r43rw",
-  "s": "Steuern, Verträge & Versicherungen",
-  "q": "Wie hoch ist der Grundfreibetrag in Deutschland im Jahr 2026?",
-  "a": [
-   "12.348 €",
-   "12.096 €",
-   "11.784 €",
-   "13.200 €"
-  ],
-  "w": [
-   "",
-   "12.096 € galten im Jahr 2025.",
-   "11.784 € galten im Jahr 2024.",
-   "13.200 € ist kein gültiger Betrag für 2026."
-  ],
-  "e": "Einkommen bis zu diesem Betrag bleibt einkommensteuerfrei.",
-  "h": "Stand 2026.",
-  "d": 2
- },
- {
   "id": "o8t5n1",
   "s": "Steuern, Verträge & Versicherungen",
   "q": "Welche Lohnsteuerklasse gilt für Arbeitnehmer mit einem zweiten Arbeitsverhältnis?",
@@ -2338,27 +2298,6 @@
   "h": "Letzte Klasse.",
   "d": 3,
   "p": 3
- },
- {
-  "id": "1k0xu1k",
-  "s": "Steuern, Verträge & Versicherungen",
-  "q": "Wie hoch ist die Entfernungspauschale (Pendlerpauschale) seit 2026 ab dem ersten Kilometer?",
-  "a": [
-   "38 Cent je Kilometer",
-   "30 Cent je Kilometer",
-   "35 Cent je Kilometer",
-   "42 Cent je Kilometer"
-  ],
-  "w": [
-   "",
-   "30 Cent galt bisher für die ersten 20 Kilometer.",
-   "35 Cent ist kein gesetzlicher Satz.",
-   "42 Cent ist kein gesetzlicher Satz."
-  ],
-  "e": "Der Satz von 38 Cent gilt seit 2026 einheitlich vom ersten Kilometer an.",
-  "h": "Stand 2026.",
-  "d": 3,
-  "src": "Bundesregierung, Steueränderungsgesetz 2025: bundesregierung.de/breg-de/aktuelles/steueraenderungsgesetz-kabinett-2383684"
  },
  {
   "id": "xk6bni",
@@ -3239,26 +3178,6 @@
   "e": "Legal ist die Nutzung gesetzlicher Möglichkeiten, etwa Freibeträge.",
   "h": "Tricksen verboten.",
   "d": 2
- },
- {
-  "id": "tozvps",
-  "s": "Steuern, Verträge & Versicherungen",
-  "q": "Wie hoch ist die Verdienstgrenze für Minijobs im Jahr 2026 pro Monat?",
-  "a": [
-   "603 €",
-   "556 €",
-   "538 €",
-   "700 €"
-  ],
-  "w": [
-   "",
-   "556 € galten im Jahr 2025.",
-   "538 € galten im Jahr 2024.",
-   "700 € ist keine gültige Grenze."
-  ],
-  "e": "Die Grenze ist an den Mindestlohn gekoppelt und steigt mit ihm.",
-  "h": "Stand 2026.",
-  "d": 3
  },
  {
   "s": "Sparen & Anlegen",

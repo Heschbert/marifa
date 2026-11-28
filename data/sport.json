@@ -22,7 +22,7 @@
  {
   "id": "1u2ucfm",
   "s": "Fußball",
-  "q": "Wie oft wurde Brasilien Fußball-Weltmeister (Stand Juli 2026)?",
+  "q": "Wie oft wurde Brasilien bis einschließlich 2022 Fußball-Weltmeister?",
   "a": [
    "Fünfmal",
    "Viermal",
@@ -35,7 +35,7 @@
    "Sechs Titel hat bisher kein Land gewonnen.",
    "Drei Titel hatte Brasilien nach 1970; später kamen zwei weitere."
   ],
-  "e": "Brasilien gewann 1958, 1962, 1970, 1994 und 2002 und ist damit Rekordweltmeister. Auch die WM 2026 gewann ein anderes Land.",
+  "e": "Brasilien gewann 1958, 1962, 1970, 1994 und 2002 und ist damit Rekordweltmeister.",
   "h": "Die Titel liegen zwischen 1958 und 2002.",
   "d": 2,
   "src": "FIFA, Juli 2026: inside.fifa.com/news/spain-crowned-world-cup-2026-champions-new-york-new-jersey"
@@ -82,27 +82,6 @@
   "p": 1
  },
  {
-  "id": "qkstt8",
-  "s": "Fußball",
-  "q": "Wer hält Stand 20. Juli 2026 den Rekord für die meisten Tore bei Fußball-Weltmeisterschaften?",
-  "a": [
-   "Kylian Mbappé",
-   "Lionel Messi",
-   "Miroslav Klose",
-   "Just Fontaine"
-  ],
-  "w": [
-   "",
-   "Messi lag nach der WM 2026 mit 21 Toren knapp dahinter.",
-   "Klose hielt den Rekord mit 16 Toren bis 2026.",
-   "Fontaine schoss 1958 allein 13 Tore, mehr als jeder andere bei einer WM."
-  ],
-  "e": "Mbappé überholte Klose und Messi und steht nach der WM 2026 bei 22 WM-Toren. Klose hielt den Rekord (16) von 2014 bis 2026.",
-  "h": "Ein französischer Stürmer.",
-  "d": 3,
-  "src": "Real Madrid, 18.07.2026: realmadrid.com/en-US/news/football/first-team/latest-news/mbappe-maximo-goleador-de-la-historia-de-los-mundiales-18-07-2026"
- },
- {
   "id": "i6cdtf",
   "s": "Fußball",
   "q": "Welches Land war Gastgeber der Fußball-WM 2022?",
@@ -125,7 +104,7 @@
  {
   "id": "163g322",
   "s": "Fußball",
-  "q": "Welcher Verein ist deutscher Rekordmeister (Stand Mai 2026)?",
+  "q": "Welcher Verein ist deutscher Fußball-Rekordmeister?",
   "a": [
    "FC Bayern München",
    "Borussia Dortmund",
@@ -138,7 +117,7 @@
    "Der HSV wurde sechsmal Meister.",
    "Nürnberg hat neun Titel, zuletzt 1968."
   ],
-  "e": "Bayern feierte im April 2026 die 35. Deutsche Meisterschaft, inklusive der Titel vor der Bundesliga.",
+  "e": "Der FC Bayern München hat mit großem Abstand die meisten deutschen Meistertitel, inzwischen über 30.",
   "h": "Der Verein spielt in der Allianz Arena.",
   "d": 1,
   "src": "FC Bayern, April 2026: fcbayern.com/de/news/2026/04/die-zahlen-zur-35-deutschen-meisterschaft"
@@ -247,7 +226,7 @@
  {
   "id": "2tozlz",
   "s": "Fußball",
-  "q": "Wie oft wurde Deutschland Fußball-Weltmeister der Männer (Stand Juli 2026)?",
+  "q": "Wie oft wurde Deutschland bis einschließlich 2022 Fußball-Weltmeister der Männer?",
   "a": [
    "Viermal",
    "Dreimal",
@@ -263,27 +242,6 @@
   "e": "Deutschland siegte 1954, 1974, 1990 und 2014. Gleich viele Titel hat Italien.",
   "h": "Zwischen 1954 und 2014.",
   "d": 1
- },
- {
-  "id": "yv6qqk",
-  "s": "Fußball",
-  "q": "Welches Land gewann die Fußball-WM 2026 durch ein 1:0 im Finale gegen Argentinien?",
-  "a": [
-   "Spanien",
-   "Frankreich",
-   "England",
-   "Brasilien"
-  ],
-  "w": [
-   "",
-   "Frankreich spielte 2026 im Spiel um Platz 3.",
-   "England spielte 2026 ebenfalls im Spiel um Platz 3.",
-   "Brasilien blieb ohne Finalteilnahme."
-  ],
-  "e": "Spanien gewann das Finale im Juli 2026 in East Rutherford bei New York. Es war nach 2010 der zweite Titel. Das Tor fiel in der Verlängerung.",
-  "h": "Iberische Halbinsel.",
-  "d": 1,
-  "src": "FIFA, Juli 2026: inside.fifa.com/news/spain-crowned-world-cup-2026-champions-new-york-new-jersey"
  },
  {
   "id": "facovn",
@@ -308,7 +266,7 @@
  {
   "id": "c1nf83",
   "s": "Fußball",
-  "q": "Welcher Verein hat Stand 2026 die meisten Titel im Europapokal der Landesmeister und in der Champions League?",
+  "q": "Welcher Verein hat die meisten Titel im Europapokal der Landesmeister und in der Champions League?",
   "a": [
    "Real Madrid",
    "AC Mailand",
@@ -321,7 +279,7 @@
    "Liverpool hat sechs Titel.",
    "Bayern hat sechs Titel."
   ],
-  "e": "Real Madrid gewann 15 Titel, darunter die ersten fünf von 1956 bis 1960.",
+  "e": "Real Madrid gewann bis 2024 bereits 15 Titel, darunter die ersten fünf von 1956 bis 1960.",
   "h": "Die Königlichen.",
   "d": 2,
   "src": "UEFA, 30.05.2026 (PSG gewann 2026): uefa.com/uefachampionsleague/news/02a5-20c02e59f219-15e92acdc717-1000/"

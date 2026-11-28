@@ -1,0 +1,1115 @@
+[
+ {
+  "id": "awca4124",
+  "s": "Natur & Körper",
+  "q": "Welche Farbe hat das Blut von Oktopussen?",
+  "a": [
+   "Blau",
+   "Grün",
+   "Farblos",
+   "Gelb"
+  ],
+  "w": [
+   "",
+   "Grünes Blut haben einige Echsen auf Neuguinea, nicht Oktopusse.",
+   "Farblos ist das Blut mancher Eisfische, die kein Hämoglobin haben.",
+   "Gelbes Blut haben manche Seescheiden."
+  ],
+  "e": "Statt eisenhaltigem Hämoglobin nutzen Oktopusse kupferhaltiges Hämocyanin. Mit Sauerstoff beladen färbt es das Blut blau.",
+  "h": "Das Metall im Blutfarbstoff ist Kupfer, nicht Eisen.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awb4956f",
+  "s": "Natur & Körper",
+  "q": "Welche Form hat der Kot von Wombats?",
+  "a": [
+   "Würfelförmig",
+   "Kugelrund",
+   "Spiralförmig",
+   "Flach wie Taler"
+  ],
+  "w": [
+   "",
+   "Kugelrunden Kot haben etwa Kaninchen und Rehe.",
+   "Spiralen findet man eher bei manchen Würmern.",
+   "Flache Fladen kennt man von Kühen."
+  ],
+  "e": "Wombats setzen würfelförmige Köttel ab, geformt durch unterschiedlich elastische Darmabschnitte. Sie markieren damit ihr Revier, und Würfel rollen nicht weg.",
+  "h": "Würfel rollen nicht weg.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw6fd2aa",
+  "s": "Natur & Körper",
+  "q": "Welche Tiere haben Fingerabdrücke, die menschlichen zum Verwechseln ähnlich sind?",
+  "a": [
+   "Koalas",
+   "Pandas",
+   "Waschbären",
+   "Faultiere"
+  ],
+  "w": [
+   "",
+   "Pandas haben einen Pseudo-Daumen, aber keine menschenähnlichen Abdrücke.",
+   "Waschbären haben geschickte Pfoten ohne solche Leisten.",
+   "Faultiere haben lange Krallen, keine Fingerleisten."
+  ],
+  "e": "Koalas haben Hautleisten an den Fingern, die selbst unter dem Mikroskop menschlichen Fingerabdrücken ähneln. Das entstand unabhängig, wohl zum Greifen von Eukalyptuszweigen.",
+  "h": "Ein Beuteltier aus Australien.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awa85e9c",
+  "s": "Natur & Körper",
+  "q": "Welche Tiere überlebten 2007 ungeschützt das Vakuum und die Strahlung im Weltall?",
+  "a": [
+   "Bärtierchen",
+   "Kakerlaken",
+   "Ameisen",
+   "Regenwürmer"
+  ],
+  "w": [
+   "",
+   "Kakerlaken sind zäh, wurden aber nicht ungeschützt ins All gebracht.",
+   "Ameisen flogen zwar ins All, aber geschützt in Behältern.",
+   "Regenwürmer würden im Vakuum sofort austrocknen."
+  ],
+  "e": "Bei der Mission FOTON-M3 überlebten ausgetrocknete Bärtierchen zehn Tage im offenen Weltraum; einige pflanzten sich danach fort.",
+  "h": "Winzige, achtbeinige Tierchen aus Moospolstern.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awbd9d60",
+  "s": "Natur & Körper",
+  "q": "Warum sind Flamingos rosa?",
+  "a": [
+   "Wegen Farbstoffen in ihrer Nahrung",
+   "Wegen ihrer Durchblutung",
+   "Weil sie im Salzwasser stehen",
+   "Weil ihre Federn das Licht brechen"
+  ],
+  "w": [
+   "",
+   "Die Durchblutung färbt die Federn nicht.",
+   "Salzwasser allein färbt keine Federn.",
+   "Eine Strukturfarbe ist das nicht, es sind echte Pigmente."
+  ],
+  "e": "Carotinoide aus Algen und Kleinkrebsen färben die Federn. Ohne diese Nahrung verblassen Flamingos, deshalb bekommen sie im Zoo Zusatzfutter.",
+  "h": "Du bist, was du isst.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "aw27ca5a",
+  "s": "Natur & Körper",
+  "q": "Welches menschliche Organ kann sich nach einer Teilentfernung weitgehend nachbilden?",
+  "a": [
+   "Die Leber",
+   "Die Niere",
+   "Das Herz",
+   "Die Lunge"
+  ],
+  "w": [
+   "",
+   "Eine entfernte Niere wächst nicht nach; die andere übernimmt die Arbeit.",
+   "Herzmuskelgewebe bildet sich kaum neu, es vernarbt.",
+   "Die Lunge kann verlorenes Gewebe kaum ersetzen."
+  ],
+  "e": "Die Leber kann ihr Volumen nach Teilentfernung in Wochen bis Monaten weitgehend wiederherstellen. Deshalb sind Lebendspenden eines Leberteils möglich.",
+  "h": "Schon die griechische Prometheus-Sage spielt darauf an.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "aw4074a5",
+  "s": "Natur & Körper",
+  "q": "Wie oft schlägt das Herz eines Erwachsenen ungefähr an einem Tag?",
+  "a": [
+   "Rund 100.000-mal",
+   "Rund 10.000-mal",
+   "Rund 1 Million Mal",
+   "Rund 1.000-mal"
+  ],
+  "w": [
+   "",
+   "10.000 Schläge wären nur knapp sieben pro Minute.",
+   "Eine Million wären fast 700 pro Minute.",
+   "1.000 Schläge wären weniger als einer pro Minute."
+  ],
+  "e": "Bei etwa 70 Schlägen pro Minute sind es rund 100.000 am Tag und etwa 2,5 bis 3 Milliarden in einem Leben.",
+  "h": "70 mal 60 mal 24.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "awfca478",
+  "s": "Natur & Körper",
+  "q": "Wie viele Augen hat eine Honigbiene?",
+  "a": [
+   "Fünf",
+   "Zwei",
+   "Acht",
+   "Vier"
+  ],
+  "w": [
+   "",
+   "Zwei sind nur die großen Facettenaugen.",
+   "Acht Augen haben viele Spinnen.",
+   "Vier Augen hat zum Beispiel der Vierauge-Fisch, aber keine Biene."
+  ],
+  "e": "Neben zwei großen Facettenaugen sitzen auf dem Scheitel drei kleine Punktaugen (Ocellen), die vor allem Helligkeit wahrnehmen.",
+  "h": "Zwei große plus drei kleine.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awc39104",
+  "s": "Natur & Körper",
+  "q": "Was kann die „unsterbliche Qualle“ Turritopsis dohrnii?",
+  "a": [
+   "Sich in ein Jugendstadium zurückverwandeln",
+   "Ohne Wasser jahrelang überleben",
+   "Sich in zwei Quallen teilen",
+   "Ihre Nesseln als Pflanzen tarnen"
+  ],
+  "w": [
+   "",
+   "Ohne Wasser vertrocknet jede Qualle schnell.",
+   "Teilung ist nicht ihr Trick.",
+   "Tarnung als Pflanze gehört nicht zu ihren Fähigkeiten."
+  ],
+  "e": "Bei Stress oder Verletzung kann sie sich in einen Polypen zurückverwandeln und den Lebenszyklus neu beginnen. Fressfeinde und Krankheiten töten sie trotzdem.",
+  "h": "Benjamin Button lässt grüßen.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awb5f317",
+  "s": "Natur & Körper",
+  "q": "Wie weit können Eulen ihren Kopf drehen?",
+  "a": [
+   "Etwa 270 Grad",
+   "Genau 360 Grad",
+   "Etwa 90 Grad",
+   "Etwa 180 Grad"
+  ],
+  "w": [
+   "",
+   "Eine volle Umdrehung schafft auch die Eule nicht.",
+   "90 Grad schafft fast jeder Mensch.",
+   "180 Grad wäre zu wenig."
+  ],
+  "e": "Eulen haben 14 Halswirbel (Menschen 7) und besondere Blutgefäße, die das Abklemmen beim Drehen verhindern. Ihre Augen sind starr, deshalb dreht sich der Kopf.",
+  "h": "Mehr als eine halbe, weniger als eine ganze Drehung.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw33a3ec",
+  "s": "Natur & Körper",
+  "q": "Welche Pflanze gehört zu den am schnellsten wachsenden der Erde?",
+  "a": [
+   "Bambus",
+   "Sonnenblume",
+   "Efeu",
+   "Kaktus"
+  ],
+  "w": [
+   "",
+   "Sonnenblumen wachsen schnell, aber nicht annähernd so schnell.",
+   "Efeu klettert eher gemächlich.",
+   "Kakteen wachsen meist sehr langsam."
+  ],
+  "e": "Manche Bambusarten wachsen unter guten Bedingungen bis zu etwa einem Meter am Tag. Bambus ist botanisch ein Gras.",
+  "h": "Botanisch ein Gras, beliebt bei Pandas.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "awb7391b",
+  "s": "Natur & Körper",
+  "q": "Wie heißt die Angst vor langen Wörtern?",
+  "a": [
+   "Hippopotomonstrosesquippedaliophobie",
+   "Paraskavedekatriaphobie",
+   "Arachibutyrophobie",
+   "Klaustrophobie"
+  ],
+  "w": [
+   "",
+   "Paraskavedekatriaphobie ist die Angst vor Freitag, dem 13.",
+   "Arachibutyrophobie ist die scherzhafte Angst, dass Erdnussbutter am Gaumen klebt.",
+   "Klaustrophobie ist die Angst vor engen Räumen."
+  ],
+  "e": "Der Name ist bewusst ironisch gewählt, ein Scherzwort, kein medizinischer Fachbegriff.",
+  "h": "Ausgerechnet ein sehr langes Wort.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "aw7f4265",
+  "s": "Natur & Körper",
+  "q": "Was ist eine Banane botanisch?",
+  "a": [
+   "Eine Beere",
+   "Eine Nuss",
+   "Eine Steinfrucht",
+   "Ein Spross"
+  ],
+  "w": [
+   "",
+   "Nüsse haben eine harte, holzige Schale.",
+   "Steinfrüchte wie Kirschen haben einen harten Kern.",
+   "Der Spross ist der Stängel, nicht die Frucht."
+  ],
+  "e": "Botanisch ist die Banane eine Beere, ebenso Tomate und Gurke. Erdbeere und Himbeere sind dagegen keine echten Beeren.",
+  "h": "Die Tomate gehört in dieselbe Gruppe.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awd5307e",
+  "s": "Natur & Körper",
+  "q": "Was ist die Erdnuss botanisch?",
+  "a": [
+   "Eine Hülsenfrucht",
+   "Eine echte Nuss",
+   "Eine Wurzelknolle",
+   "Ein Samen eines Baums"
+  ],
+  "w": [
+   "",
+   "Echte Nüsse sind etwa Haselnüsse.",
+   "Knollen sind Speicherorgane wie die Kartoffel.",
+   "Die Erdnuss wächst an einer krautigen Pflanze, nicht am Baum."
+  ],
+  "e": "Die Erdnuss ist mit Erbsen und Bohnen verwandt. Ihre Früchte reifen unter der Erde, daher der Name.",
+  "h": "Verwandt mit Erbse und Bohne.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awc6ea3d",
+  "s": "Natur & Körper",
+  "q": "Welche Säugetiere können als ausgewachsene Tiere nicht springen?",
+  "a": [
+   "Elefanten",
+   "Giraffen",
+   "Nashörner",
+   "Flusspferde"
+  ],
+  "w": [
+   "",
+   "Giraffen können galoppieren und kurz alle Beine vom Boden lösen.",
+   "Nashörner galoppieren und heben dabei alle Füße kurz ab.",
+   "Flusspferde können beim schnellen Lauf kurz abheben."
+  ],
+  "e": "Ausgewachsene Elefanten haben stets mindestens einen Fuß am Boden, auch im schnellen Gang. Für einen Sprung sind sie zu schwer gebaut.",
+  "h": "Das schwerste Landtier.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw4b625a",
+  "s": "Geschichte & Menschen",
+  "q": "Wem lebte Kleopatra zeitlich näher: dem Bau der Cheops-Pyramide oder der Mondlandung?",
+  "a": [
+   "Der Mondlandung",
+   "Dem Pyramidenbau",
+   "Beiden etwa gleich nah",
+   "Keinem von beiden"
+  ],
+  "w": [
+   "",
+   "Die Cheops-Pyramide war zu Kleopatras Zeit schon rund 2.500 Jahre alt.",
+   "Die Abstände unterscheiden sich um rund 500 Jahre.",
+   "Eine der beiden Antworten trifft zu."
+  ],
+  "e": "Kleopatra starb 30 v. Chr. Die Cheops-Pyramide entstand um 2560 v. Chr., die Mondlandung war 1969. Abstand rund 2.500 gegen rund 2.000 Jahre.",
+  "h": "Rechne die Jahre einfach nach.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awcbab0a",
+  "s": "Geschichte & Menschen",
+  "q": "Was ist älter: die Universität Oxford oder das Aztekenreich mit Tenochtitlan?",
+  "a": [
+   "Die Universität Oxford",
+   "Das Aztekenreich",
+   "Beide entstanden im selben Jahr",
+   "Keines, beide um 1500"
+  ],
+  "w": [
+   "",
+   "Tenochtitlan wurde erst um 1325 gegründet.",
+   "Die Gründungen liegen über 200 Jahre auseinander.",
+   "Beide sind deutlich älter als 1500."
+  ],
+  "e": "In Oxford wurde schon ab etwa 1096 gelehrt. Tenochtitlan, die Hauptstadt der Azteken, entstand um 1325.",
+  "h": "Lehre in Oxford gab es schon im 11. Jahrhundert.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw4bfca3",
+  "s": "Geschichte & Menschen",
+  "q": "Wie lange dauerte der kürzeste Krieg der Geschichte zwischen Großbritannien und Sansibar 1896?",
+  "a": [
+   "Unter einer Stunde",
+   "Drei Tage",
+   "Eine Woche",
+   "Einen Monat"
+  ],
+  "w": [
+   "",
+   "Drei Tage wären für diesen Krieg viel zu lang.",
+   "Nach einer Woche war längst alles vorbei.",
+   "Ein Monat ist weit entfernt von der Wirklichkeit."
+  ],
+  "e": "Nach britischem Beschuss kapitulierte Sansibar am 27. August 1896 nach etwa 38 bis 45 Minuten.",
+  "h": "Kürzer als ein Fußballspiel.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "aw70b66c",
+  "s": "Geschichte & Menschen",
+  "q": "Wie groß war Napoleon Bonaparte wirklich?",
+  "a": [
+   "Etwa 1,69 m, Durchschnitt",
+   "Etwa 1,50 m, sehr klein",
+   "Etwa 1,90 m, sehr groß",
+   "Etwa 1,40 m, winzig"
+  ],
+  "w": [
+   "",
+   "1,50 m beruht auf einem Umrechnungsfehler alter französischer Zoll.",
+   "So groß war er nicht.",
+   "Das ist eine Übertreibung der Karikaturisten."
+  ],
+  "e": "Die Angabe „5 Fuß 2“ bezog sich auf französische Zoll, die länger waren als englische. Seine Größe lag im damaligen Durchschnitt. Britische Karikaturen prägten das Bild vom kleinen Napoleon.",
+  "h": "Die Maßeinheit war das Problem.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awf191fe",
+  "s": "Geschichte & Menschen",
+  "q": "Trugen Wikinger Helme mit Hörnern?",
+  "a": [
+   "Nein, das ist eine Erfindung",
+   "Ja, im Kampf",
+   "Ja, aber nur Anführer",
+   "Ja, nur bei Festen"
+  ],
+  "w": [
+   "",
+   "Gefundene Kampfhelme der Wikingerzeit haben keine Hörner.",
+   "Auch für Anführer gibt es keine Belege.",
+   "Festhelme mit Hörnern sind aus der Wikingerzeit nicht belegt."
+  ],
+  "e": "Das Bild entstand im 19. Jahrhundert, unter anderem durch Kostüme für Wagners „Ring des Nibelungen“ 1876. Hörner wären im Kampf eher hinderlich gewesen.",
+  "h": "Eine Opernbühne war beteiligt.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "aw4d311e",
+  "s": "Geschichte & Menschen",
+  "q": "Welches Amt wurde Albert Einstein 1952 angeboten?",
+  "a": [
+   "Präsident Israels",
+   "Präsident der USA",
+   "Bürgermeister von Ulm",
+   "Rektor in Oxford"
+  ],
+  "w": [
+   "",
+   "Für das US-Präsidentenamt hätte er als Eingebürgerter nicht kandidieren dürfen.",
+   "Ulm war seine Geburtsstadt, ein solches Angebot gab es nicht.",
+   "Ein Rektorat in Oxford wurde ihm nicht angeboten."
+  ],
+  "e": "Nach dem Tod von Chaim Weizmann bot Israel ihm das weitgehend repräsentative Amt an. Einstein lehnte ab, er fühle sich dafür ungeeignet.",
+  "h": "Ein junger Staat im Nahen Osten.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awbe491f",
+  "s": "Geschichte & Menschen",
+  "q": "Was gab es früher: das Faxgerät oder das Telefon?",
+  "a": [
+   "Das Faxgerät",
+   "Das Telefon",
+   "Beide im selben Jahr",
+   "Den Fernschreiber vor beiden"
+  ],
+  "w": [
+   "",
+   "Bells Telefonpatent stammt erst von 1876.",
+   "Zwischen beiden liegen über 30 Jahre.",
+   "Der Fernschreiber kam erst im 20. Jahrhundert breit auf."
+  ],
+  "e": "Alexander Bain patentierte 1843 ein Verfahren zur elektrischen Bildübertragung. Das Telefon folgte 1876.",
+  "h": "Schon in den 1840ern wurden Bilder elektrisch übertragen.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw236fbe",
+  "s": "Geschichte & Menschen",
+  "q": "Lebten noch Mammuts, als in Ägypten die Pyramiden gebaut wurden?",
+  "a": [
+   "Ja, auf der Wrangelinsel",
+   "Nein, sie starben 50.000 Jahre früher",
+   "Nein, es gab nie Mammuts",
+   "Ja, in den Alpen"
+  ],
+  "w": [
+   "",
+   "Die meisten Mammuts verschwanden zwar früher, aber nicht alle.",
+   "Mammuts sind gut durch Funde belegt.",
+   "In den Alpen gab es zu der Zeit keine Mammuts mehr."
+  ],
+  "e": "Auf der Wrangelinsel im Nordpolarmeer überlebte eine kleine Population bis vor rund 4.000 Jahren, also bis in die Zeit der ägyptischen Pyramiden.",
+  "h": "Eine abgelegene Insel im Nordpolarmeer.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "aw83cfe1",
+  "s": "Geschichte & Menschen",
+  "q": "Wofür gab es von 1912 bis 1948 olympische Medaillen?",
+  "a": [
+   "Für Kunstwerke",
+   "Für Schach",
+   "Für Tauziehen allein",
+   "Für Seilspringen"
+  ],
+  "w": [
+   "",
+   "Schach war nie Teil der Olympischen Spiele.",
+   "Tauziehen war zwar olympisch, aber nur bis 1920 und nicht allein.",
+   "Seilspringen war nie olympisch."
+  ],
+  "e": "Es gab Wettbewerbe in Architektur, Literatur, Musik, Malerei und Bildhauerei, jeweils mit Sportbezug.",
+  "h": "Pierre de Coubertin wollte Körper und Geist ehren.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awd315f3",
+  "s": "Geschichte & Menschen",
+  "q": "Wann wurde in Frankreich zuletzt die Guillotine bei einer Hinrichtung eingesetzt?",
+  "a": [
+   "1977",
+   "1793",
+   "1871",
+   "1945"
+  ],
+  "w": [
+   "",
+   "1793 war die Zeit der Revolution, nicht das Ende.",
+   "Auch nach 1871 wurde sie noch genutzt.",
+   "Auch nach dem Krieg gab es noch Hinrichtungen damit."
+  ],
+  "e": "Die letzte Hinrichtung fand 1977 in Marseille statt, im selben Jahr kam „Star Wars“ ins Kino. 1981 schaffte Frankreich die Todesstrafe ab.",
+  "h": "Im Jahr des ersten „Star Wars“-Films.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "aw52be39",
+  "s": "Geschichte & Menschen",
+  "q": "Welches berühmte Bauwerk konstruierte Gustave Eiffel außer seinem Turm mit?",
+  "a": [
+   "Gerüst der Freiheitsstatue",
+   "Die Tower Bridge in London",
+   "Den Kölner Dom",
+   "Die Golden Gate Bridge"
+  ],
+  "w": [
+   "",
+   "Die Tower Bridge planten andere Ingenieure.",
+   "Der Kölner Dom ist ein gotisches Bauwerk aus Stein.",
+   "Die Golden Gate Bridge entstand erst in den 1930ern."
+  ],
+  "e": "Eiffels Büro entwarf das tragende Eisengerüst, an dem die Kupferhaut der Freiheitsstatue (1886) hängt.",
+  "h": "Ein Geschenk Frankreichs an die USA.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw9c3b4d",
+  "s": "Geschichte & Menschen",
+  "q": "Was war beim Bau des Eiffelturms für seine Zukunft geplant?",
+  "a": [
+   "Abriss nach 20 Jahren",
+   "Umbau zur Kirche",
+   "Verkauf an die USA",
+   "Nutzung als Gefängnis"
+  ],
+  "w": [
+   "",
+   "Eine Kirche war nie geplant.",
+   "Ein Verkauf war nicht vorgesehen.",
+   "Als Gefängnis war er nie gedacht."
+  ],
+  "e": "Die Genehmigung galt ursprünglich nur für 20 Jahre. Der Turm blieb vor allem, weil er sich als Antenne für Funk und Telegrafie bewährte.",
+  "h": "Die Technik rettete ihn.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awf45c4b",
+  "s": "Geschichte & Menschen",
+  "q": "Wie lange dauerte die Belichtung der ältesten erhaltenen Fotografie um 1826/27?",
+  "a": [
+   "Viele Stunden bis Tage",
+   "Eine Sekunde",
+   "Eine Minute",
+   "Eine Zehntelsekunde"
+  ],
+  "w": [
+   "",
+   "Eine Sekunde wurde erst viel später möglich.",
+   "Auch eine Minute hätte damals nicht gereicht.",
+   "So kurz belichtet man erst mit modernen Kameras."
+  ],
+  "e": "Joseph Nicéphore Niépce belichtete den Blick aus seinem Fenster vermutlich viele Stunden, manche Schätzungen nennen Tage. Deshalb scheint die Sonne auf beide Hausseiten.",
+  "h": "Die Sonne wanderte währenddessen über den Himmel.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "awa2b85d",
+  "s": "Sprache & Alltag",
+  "q": "Woher hat die Funktechnik Bluetooth ihren Namen?",
+  "a": [
+   "Von einem Wikingerkönig",
+   "Von einer blauen Zahnpasta",
+   "Von einem Mobilfunkpionier",
+   "Vom Logo eines Kopfhörers"
+  ],
+  "w": [
+   "",
+   "Eine Zahnpasta war nicht das Vorbild.",
+   "Kein Ingenieur stand Pate.",
+   "Das Logo kam nach dem Namen."
+  ],
+  "e": "Der dänische König Harald Blauzahn einte im 10. Jahrhundert Dänemark und Norwegen. Bluetooth sollte Geräte vereinen. Das Logo kombiniert seine Initialen in Runen.",
+  "h": "Ein dänischer König.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "aw6b0b7c",
+  "s": "Sprache & Alltag",
+  "q": "Wofür steht der Notruf SOS im Morsecode?",
+  "a": [
+   "Für nichts, es ist leicht zu morsen",
+   "„Save Our Souls“: Rettet unsere Seelen",
+   "„Save Our Ship“: Rettet unser Schiff",
+   "„Send Our Saviour“: Schickt Retter"
+  ],
+  "w": [
+   "",
+   "„Save Our Souls“ wurde erst nachträglich hineingedeutet.",
+   "Auch „Save Our Ship“ ist eine spätere Deutung.",
+   "Diese Langform ist erfunden."
+  ],
+  "e": "SOS wurde gewählt, weil drei kurze, drei lange, drei kurze Signale unverwechselbar und leicht zu senden sind. Die bekannten Langformen sind nachträgliche Erklärungen.",
+  "h": "Es geht um den Klang, nicht um Wörter.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw10287b",
+  "s": "Sprache & Alltag",
+  "q": "Woher kommt das Wort „kaputt“?",
+  "a": [
+   "Aus einem französischen Kartenspiel",
+   "Aus dem Lateinischen für Kopf",
+   "Aus dem Bergbau",
+   "Aus der Seefahrt"
+  ],
+  "w": [
+   "",
+   "„Caput“ heißt Kopf, ist aber nicht die Herkunft.",
+   "Mit dem Bergbau hat das Wort nichts zu tun.",
+   "Die Seefahrt ist nicht die Quelle."
+  ],
+  "e": "Im Kartenspiel Piquet hieß „être capot“: keinen Stich gemacht haben, also verloren. Daraus wurde im Deutschen „kaputt“.",
+  "h": "Es ging ums Verlieren beim Spiel.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "awba21c4",
+  "s": "Sprache & Alltag",
+  "q": "Wie heißt der Punkt auf dem kleinen i?",
+  "a": [
+   "Tittel",
+   "Diakritikum",
+   "Apostroph",
+   "Zirkumflex"
+  ],
+  "w": [
+   "",
+   "Diakritikum ist der Oberbegriff für Zusatzzeichen wie Akzente.",
+   "Ein Apostroph ist ein Auslassungszeichen.",
+   "Der Zirkumflex ist das Dach wie in „ê“."
+  ],
+  "e": "Der Punkt auf i und j heißt Tittel (englisch „tittle“). Daher auch „bis aufs i-Tüpfelchen“.",
+  "h": "Klingt ein wenig albern.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw2cb9a9",
+  "s": "Sprache & Alltag",
+  "q": "Warum heißt der Montag Montag?",
+  "a": [
+   "Er ist der Tag des Mondes",
+   "Er ist der Tag der Arbeit",
+   "Er ist der Tag des Markts",
+   "Er ist der Tag der Monate"
+  ],
+  "w": [
+   "",
+   "Ein „Tag der Arbeit“ steckt nicht im Namen.",
+   "Der Markt hat mit dem Namen nichts zu tun.",
+   "Der Name kommt nicht von den Monaten."
+  ],
+  "e": "Montag kommt von „Mond-Tag“, nach dem lateinischen „dies Lunae“. Im Französischen heißt er „lundi“.",
+  "h": "Sonntag ist der Tag der Sonne.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "aw6006f5",
+  "s": "Sprache & Alltag",
+  "q": "Wie heißt die Angst vor der Zahl 13?",
+  "a": [
+   "Triskaidekaphobie",
+   "Akrophobie",
+   "Nyktophobie",
+   "Xenophobie"
+  ],
+  "w": [
+   "",
+   "Akrophobie ist Höhenangst.",
+   "Nyktophobie ist die Angst vor Dunkelheit.",
+   "Xenophobie ist Fremdenfeindlichkeit."
+  ],
+  "e": "Das Wort kommt vom Griechischen für dreizehn. Manche Hotels lassen deshalb das 13. Stockwerk oder Zimmer 13 aus.",
+  "h": "Steckt das griechische Wort für dreizehn drin.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw2bf721",
+  "s": "Sprache & Alltag",
+  "q": "Was ist ein Kofferwort wie „Brunch“?",
+  "a": [
+   "Eine Verschmelzung zweier Wörter",
+   "Ein Wort aus dem Reisebereich",
+   "Eine Abkürzung aus Anfangsbuchstaben",
+   "Ein Fremdwort aus dem Französischen"
+  ],
+  "w": [
+   "",
+   "Mit Reisen hat der Begriff nichts zu tun.",
+   "Abkürzungen aus Anfangsbuchstaben heißen Akronyme.",
+   "Ein Fremdwort ist es nur zufällig."
+  ],
+  "e": "„Brunch“ verbindet Breakfast und Lunch, „Denglisch“ Deutsch und Englisch. Wie in einem Koffer werden zwei Wörter zusammengepackt.",
+  "h": "Breakfast plus Lunch.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "aw6d0121",
+  "s": "Sprache & Alltag",
+  "q": "Was bezeichnet in der Typografie ein „Zwiebelfisch“?",
+  "a": [
+   "Ein Buchstabe aus der falschen Schrift",
+   "Ein Fleck auf dem Papier",
+   "Eine zu lange Zeile",
+   "Ein Tippfehler in Überschriften"
+  ],
+  "w": [
+   "",
+   "Ein Fleck ist kein typografischer Fachbegriff.",
+   "Zu lange Zeilen heißen anders.",
+   "Gemeint ist nicht jeder Tippfehler."
+  ],
+  "e": "Ein Zwiebelfisch ist ein einzelner Buchstabe in falscher Schriftart oder -größe. Bekannt ist der Begriff auch durch Bastian Sicks Sprachkolumne.",
+  "h": "Mit Zwiebeln und Fischen hat es nichts zu tun.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "aw1aa7b0",
+  "s": "Sprache & Alltag",
+  "q": "Was ist ein Schibboleth?",
+  "a": [
+   "Ein Erkennungswort",
+   "Ein jüdischer Feiertag",
+   "Ein Gebetsschal",
+   "Ein Musikinstrument"
+  ],
+  "w": [
+   "",
+   "Ein Feiertag ist damit nicht gemeint.",
+   "Der Gebetsschal heißt Tallit.",
+   "Das Widderhorn-Instrument heißt Schofar."
+  ],
+  "e": "Im Buch der Richter erkannten die Gileaditer ihre Feinde daran, dass sie „Schibbolet“ nicht richtig aussprechen konnten. Heute: ein Merkmal, das Zugehörigkeit verrät.",
+  "h": "Aus dem Buch der Richter.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "awc1785d",
+  "s": "Sprache & Alltag",
+  "q": "Wie heißt das Phänomen, wenn einem ein Wort „auf der Zunge liegt“?",
+  "a": [
+   "Zungenspitzenphänomen",
+   "Déjà-vu",
+   "Aphasie",
+   "Prosopagnosie"
+  ],
+  "w": [
+   "",
+   "Ein Déjà-vu ist das Gefühl, etwas schon erlebt zu haben.",
+   "Aphasie ist eine Sprachstörung nach Hirnschädigung.",
+   "Prosopagnosie ist Gesichtsblindheit."
+  ],
+  "e": "Man kennt oft den Anfangsbuchstaben oder die Silbenzahl, aber nicht das ganze Wort. Es kommt bei allen Menschen vor, mit dem Alter etwas häufiger.",
+  "h": "Fast wörtlich übersetzt aus dem Englischen.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw5e3896",
+  "s": "Sprache & Alltag",
+  "q": "Was ist an der Bezeichnung „Wi-Fi“ besonders?",
+  "a": [
+   "Sie ist ein Kunstname ohne Bedeutung",
+   "Sie steht für Wireless Fidelity",
+   "Sie ist ein Firmenname",
+   "Sie ist ein Ortsname"
+  ],
+  "w": [
+   "",
+   "„Wireless Fidelity“ wurde erst nachträglich als Erklärung erfunden.",
+   "Es ist der Markenname eines Verbands, nicht einer Firma.",
+   "Ein Ort steckt nicht dahinter."
+  ],
+  "e": "Eine Markenagentur erfand „Wi-Fi“ als eingängigen Namen, angelehnt an „Hi-Fi“. Die Langform „Wireless Fidelity“ kam erst später auf.",
+  "h": "Klingt bewusst wie Hi-Fi.",
+  "d": 3,
+  "p": 3
+ },
+ {
+  "id": "aw6e59c8",
+  "s": "Wissenschaft & Weltall",
+  "q": "Was dauert auf der Venus länger: ein Tag oder ein Jahr?",
+  "a": [
+   "Der Tag",
+   "Das Jahr",
+   "Beide gleich lang",
+   "Die Venus dreht sich gar nicht"
+  ],
+  "w": [
+   "",
+   "Ein Venusjahr dauert nur rund 225 Erdtage.",
+   "Die Werte unterscheiden sich deutlich.",
+   "Die Venus dreht sich, nur sehr langsam und rückwärts."
+  ],
+  "e": "Eine Drehung um sich selbst dauert rund 243 Erdtage, ein Umlauf um die Sonne nur rund 225. Außerdem dreht sie sich entgegengesetzt zu den meisten Planeten.",
+  "h": "Sie dreht sich extrem langsam.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw4da2e2",
+  "s": "Wissenschaft & Weltall",
+  "q": "Wie schwer ist eine durchschnittliche Haufenwolke (Cumulus) ungefähr?",
+  "a": [
+   "Mehrere hundert Tonnen",
+   "Wenige Kilogramm",
+   "Etwa eine Tonne",
+   "So viel wie ein Fahrrad"
+  ],
+  "w": [
+   "",
+   "Allein das Wasser darin wiegt viel mehr.",
+   "Eine Tonne ist deutlich zu wenig.",
+   "Das unterschätzt die Wassermenge gewaltig."
+  ],
+  "e": "Eine mittelgroße Haufenwolke enthält geschätzt rund 500 Tonnen Wassertröpfchen. Sie schwebt, weil die winzigen Tropfen von Aufwinden getragen werden und sehr langsam fallen.",
+  "h": "Denk an das Wasser in einem großen Volumen.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awc6d2b4",
+  "s": "Wissenschaft & Weltall",
+  "q": "Wie lange bleiben die Fußabdrücke der Apollo-Astronauten auf dem Mond wohl erhalten?",
+  "a": [
+   "Millionen Jahre",
+   "Wenige Jahre",
+   "Etwa 100 Jahre",
+   "Sie sind schon verweht"
+  ],
+  "w": [
+   "",
+   "Ohne Wind und Regen verschwinden sie nicht so schnell.",
+   "Auch nach 100 Jahren werden sie noch da sein.",
+   "Auf dem Mond gibt es keinen Wind, der sie verwehen könnte."
+  ],
+  "e": "Ohne Atmosphäre gibt es keinen Wind und kein Wetter. Nur winzige Meteoriteneinschläge verändern die Oberfläche, sehr langsam über Millionen Jahre.",
+  "h": "Auf dem Mond fehlt das Wetter.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "aw8faaa7",
+  "s": "Wissenschaft & Weltall",
+  "q": "Was passiert mit Wasser am sogenannten Tripelpunkt?",
+  "a": [
+   "Es ist fest, flüssig und gasförmig",
+   "Es wird plötzlich elektrisch leitend",
+   "Es verdampft explosionsartig",
+   "Es erreicht seine größte Dichte"
+  ],
+  "w": [
+   "",
+   "Die Leitfähigkeit hängt von gelösten Salzen ab, nicht davon.",
+   "Explosive Verdampfung ist etwas anderes.",
+   "Die größte Dichte hat Wasser bei etwa 4 °C."
+  ],
+  "e": "Bei etwa 0,01 °C und 611 Pascal stehen Eis, Wasser und Dampf im Gleichgewicht. Bei so niedrigem Druck kann Wasser gleichzeitig kochen und gefrieren.",
+  "h": "Drei Aggregatzustände auf einmal.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw635c6d",
+  "s": "Wissenschaft & Weltall",
+  "q": "Warum sind alte Kirchenfenster unten oft dicker als oben?",
+  "a": [
+   "Wegen der damaligen Herstellung",
+   "Weil Glas langsam nach unten fließt",
+   "Weil Regen das Glas oben abträgt",
+   "Weil Blei das Glas zieht"
+  ],
+  "w": [
+   "",
+   "Glas fließt bei Raumtemperatur selbst in Jahrtausenden nicht messbar.",
+   "Regen trägt kein Glas ab.",
+   "Die Bleifassung zieht das Glas nicht nach unten."
+  ],
+  "e": "Mundgeblasene Scheiben waren ungleichmäßig dick. Glaser setzten die dickere Seite meist unten ein. Dass Glas fließt, ist ein Mythos.",
+  "h": "Ein verbreiteter Mythos steckt in den Antworten.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw13c111",
+  "s": "Wissenschaft & Weltall",
+  "q": "Warum verdirbt reiner Honig praktisch nicht?",
+  "a": [
+   "Zu trocken und sauer für Keime",
+   "Weil Bienen ihn einfrieren",
+   "Weil er Alkohol enthält",
+   "Weil er radioaktiv ist"
+  ],
+  "w": [
+   "",
+   "Bienen frieren Honig nicht ein.",
+   "Honig enthält praktisch keinen Alkohol, solange er nicht gärt.",
+   "Honig ist nicht radioaktiv."
+  ],
+  "e": "Der geringe Wassergehalt entzieht Mikroben Wasser, dazu kommen Säure und Stoffe wie Wasserstoffperoxid. In ägyptischen Gräbern fand man jahrtausendealten, noch essbaren Honig.",
+  "h": "Mikroben verdursten darin.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awcbd14c",
+  "s": "Wissenschaft & Weltall",
+  "q": "Warum sind Bananen ganz leicht radioaktiv?",
+  "a": [
+   "Wegen ihres Kaliums",
+   "Wegen Pflanzenschutzmitteln",
+   "Wegen der Kühlung im Schiff",
+   "Wegen des Reifegases"
+  ],
+  "w": [
+   "",
+   "Pflanzenschutzmittel machen nicht radioaktiv.",
+   "Kühlung hat damit nichts zu tun.",
+   "Das Reifegas Ethylen ist nicht radioaktiv."
+  ],
+  "e": "Ein winziger Teil des natürlichen Kaliums ist das radioaktive Isotop Kalium-40. Die Dosis ist völlig harmlos; unser Körper enthält selbst Kalium-40.",
+  "h": "Ein Mineralstoff ist schuld.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awe22da4",
+  "s": "Wissenschaft & Weltall",
+  "q": "Wie viel der Masse unseres Sonnensystems steckt in der Sonne?",
+  "a": [
+   "Rund 99,8 %",
+   "Rund 50 %",
+   "Rund 75 %",
+   "Rund 90 %"
+  ],
+  "w": [
+   "",
+   "Die Planeten zusammen sind viel leichter.",
+   "Selbst Jupiter ist im Vergleich winzig.",
+   "90 % unterschätzt die Sonne deutlich."
+  ],
+  "e": "Die Sonne enthält rund 99,86 % der Masse. Fast der gesamte Rest entfällt auf Jupiter und Saturn.",
+  "h": "Fast alles.",
+  "d": 1,
+  "p": 3
+ },
+ {
+  "id": "aw19b5ba",
+  "s": "Wissenschaft & Weltall",
+  "q": "Wie viele Sonnenaufgänge erleben Astronauten auf der ISS etwa an einem Tag?",
+  "a": [
+   "Rund 16",
+   "Einen",
+   "Rund 4",
+   "Rund 100"
+  ],
+  "w": [
+   "",
+   "Die ISS umkreist die Erde viel schneller als einmal am Tag.",
+   "Vier wären zu wenig.",
+   "100 wären viel zu viel."
+  ],
+  "e": "Die ISS umrundet die Erde in etwa 90 Minuten, also rund 16-mal am Tag, jedes Mal mit Sonnenauf- und -untergang.",
+  "h": "Eine Erdumrundung dauert rund anderthalb Stunden.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw827be2",
+  "s": "Wissenschaft & Weltall",
+  "q": "Welcher Planet hätte eine geringere Dichte als Wasser?",
+  "a": [
+   "Saturn",
+   "Jupiter",
+   "Mars",
+   "Neptun"
+  ],
+  "w": [
+   "",
+   "Jupiter ist dichter als Wasser.",
+   "Mars ist ein Gesteinsplanet und deutlich dichter.",
+   "Neptun ist dichter als Wasser."
+  ],
+  "e": "Saturns mittlere Dichte liegt bei etwa 0,69 g/cm³. Er würde, bildlich gesprochen, in einer riesigen Badewanne schwimmen.",
+  "h": "Der Ringplanet.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw150d38",
+  "s": "Wissenschaft & Weltall",
+  "q": "Wie verändert sich der Eiffelturm im Sommer?",
+  "a": [
+   "Er wird bis zu etwa 15 cm höher",
+   "Er wird schmaler",
+   "Er neigt sich nach Norden",
+   "Gar nicht"
+  ],
+  "w": [
+   "",
+   "Die Breite ändert sich kaum sichtbar.",
+   "Eine Neigung gibt es kaum, er biegt sich höchstens leicht von der Sonne weg.",
+   "Stahl dehnt sich bei Wärme aus."
+  ],
+  "e": "Stahl dehnt sich bei Wärme aus. An heißen Tagen wächst der Turm um bis zu etwa 15 cm.",
+  "h": "Wärme dehnt Metall aus.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw16e985",
+  "s": "Wissenschaft & Weltall",
+  "q": "Wie heiß kann ein Blitzkanal kurzzeitig werden?",
+  "a": [
+   "Rund 30.000 °C",
+   "Rund 300 °C",
+   "Rund 3.000 °C",
+   "Rund 3 Millionen °C"
+  ],
+  "w": [
+   "",
+   "300 °C wären kälter als ein Backofen auf Höchststufe.",
+   "3.000 °C sind zu wenig.",
+   "Das wäre heißer als die Sonnenkorona."
+  ],
+  "e": "Ein Blitzkanal erreicht kurzzeitig rund 30.000 °C, etwa fünfmal so heiß wie die Sonnenoberfläche. Die schlagartige Ausdehnung der Luft erzeugt den Donner.",
+  "h": "Fünfmal so heiß wie die Sonnenoberfläche.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "awc97ed7",
+  "s": "Wissenschaft & Weltall",
+  "q": "Wie lange braucht Licht vom Mond zur Erde?",
+  "a": [
+   "Etwa 1,3 Sekunden",
+   "Etwa 8 Minuten",
+   "Etwa 1 Stunde",
+   "Etwa 0,01 Sekunden"
+  ],
+  "w": [
+   "",
+   "8 Minuten braucht das Licht von der Sonne.",
+   "Eine Stunde braucht Licht etwa bis zum Jupiter.",
+   "In 0,01 s kommt Licht nur rund 3.000 km weit."
+  ],
+  "e": "Der Mond ist im Mittel rund 384.000 km entfernt; Licht legt rund 300.000 km pro Sekunde zurück.",
+  "h": "384.000 durch 300.000.",
+  "d": 2,
+  "p": 3
+ },
+ {
+  "id": "aw93e4c5",
+  "s": "Wissenschaft & Weltall",
+  "q": "Wie viele Erden würden ungefähr in die Sonne passen?",
+  "a": [
+   "Rund 1,3 Millionen",
+   "Rund 1.000",
+   "Rund 100",
+   "Rund 1 Milliarde"
+  ],
+  "w": [
+   "",
+   "1.000 Erden wären viel zu wenig.",
+   "100 Erden unterschätzen die Sonne gewaltig.",
+   "Eine Milliarde ist zu viel."
+  ],
+  "e": "Der Sonnendurchmesser ist etwa 109-mal so groß wie der der Erde. Das Volumen wächst mit der dritten Potenz: 109³ ≈ 1,3 Millionen.",
+  "h": "109 hoch drei.",
+  "d": 2,
+  "p": 3
+ }
+]

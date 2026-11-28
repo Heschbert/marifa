@@ -1107,3 +1107,16 @@ button.shic svg { margin-left: 2px; }
 .kwps.ok { border-color: var(--ok); background: var(--ok-bg); } .kwps.bad { border-color: var(--bad); background: var(--bad-bg); }
 .kwpa { color: var(--mute); font-weight: 800; }
 .kwsae:has(> :nth-child(5):last-child) { grid-template-columns: repeat(5, 1fr); }
+.cexp { margin-top: 8px; font-size: 14px; }
+.cexp summary { cursor: pointer; font-weight: 700; color: var(--accent); }
+.cexp p { margin: 6px 0 0; padding: 8px 10px; border-left: 3px solid var(--accent); background: var(--soft); border-radius: 0 10px 10px 0; }
+.nextrev { margin-top: 6px !important; }
+/* Kurz-Check in Lektionen (3.21) */
+.kcheck { margin: 18px 0; padding: 14px; border-radius: 16px; background: var(--course-soft, var(--soft)); border: 1.5px solid color-mix(in srgb, var(--course) 45%, transparent); }
+.kchd { font-size: 12px; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; color: var(--course); margin-bottom: 4px; }
+.kcq { font-weight: 700; margin: 0 0 10px; }
+.kcopts { display: grid; gap: 6px; }
+.kco { text-align: left; font: inherit; font-size: 14.5px; padding: 10px 12px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--card); color: var(--fg); cursor: pointer; }
+.kco.ok { border-color: var(--ok); background: var(--ok-bg); } .kco.bad { border-color: var(--bad); background: var(--bad-bg); } .kco.dim { opacity: .5; }
+.kcfb { font-size: 14px; margin-top: 8px; }
+.kcheck.done.ok { border-color: var(--ok); } .kcheck.done.bad { border-color: var(--bad); }

@@ -180,6 +180,20 @@
     if (r) h += '<p class="small mute" style="margin-top:8px">Bestes Testergebnis: ' + r.best + " %" + (r.pass ? " · bestanden" : "") + "</p>";
     ui.show(h, "courses", "course");
   }
+  /* ---------- Kurz-Check in der Lektion ---------- */
+  function inlineCheck(cid, q) {
+    var o = U.shuffle(q.o.map(function (_, i) { return i; }));
+    return '<div class="kcheck" id="kc-' + esc(q.id) + '"><div class="kchd"><span aria-hidden="true">⚡</span> Kurz-Check</div><p class="kcq">' + esc(q.q) + '</p><div class="kcopts">' +
+      o.map(function (k) { return '<button class="kco" data-act="cinl" data-c="' + esc(cid) + '" data-q="' + esc(q.id) + '" data-k="' + k + '">' + esc(q.o[k]) + "</button>"; }).join("") + '</div><div class="kcfb" aria-live="polite"></div></div>';
+  }
+  H.cinl = function (d) {
+    var c = C.byId[d.c], q = c && c.qs.filter(function (x) { return x.id === d.q; })[0], box = document.getElementById("kc-" + d.q); if (!q || !box || box.classList.contains("done")) return;
+    var ok = +d.k === q.a; box.classList.add("done", ok ? "ok" : "bad");
+    [].forEach.call(box.querySelectorAll(".kco"), function (b) { b.disabled = true; var k = +b.dataset.k; if (k === q.a) b.classList.add("ok"); else if (k === +d.k) b.classList.add("bad"); else b.classList.add("dim"); });
+    if (ok) E.addXP(2);
+    box.querySelector(".kcfb").innerHTML = "<b>" + (ok ? "✓ Genau" + " · +2 XP" : "✗ Nicht ganz · richtig: " + esc(q.o[q.a])) + "</b>" + (q.e ? "<br>" + esc(q.e) : "");
+    WF.store.save();
+  };
   function lesson(cid, lid) {
     var c = C.byId[cid], l = c && c.lById[lid]; if (!l) return list();
     ui.setView(function () { withCourses(function () { lesson(cid, lid); }); });
@@ -187,10 +201,14 @@
     var h = '<button class="ghost" data-act="cmod" data-c="' + esc(cid) + '" data-m="' + esc(l.mod.id) + '">‹ ' + esc(l.mod.title) + "</button><h1>" + esc(l.title) + '</h1><p class="small mute">' + l.min + " Minuten Lesezeit · Stand " + esc(c.stand) + "</p>";
     h += volNote(c, l);
     h += '<article class="lesson">';
+    /* Kurz-Checks: zwischen den Abschnitten je eine kleine Frage aus der Lektion, direkt im Text beantwortbar */
+    var checks = l.qs.filter(function (q) { return q.t === "mc"; }).slice(0, 3), ci = 0, heads = 0;
     l.body.forEach(function (t, i) {
+      if (t.indexOf("## ") === 0 && heads++ > 0 && ci < checks.length) h += inlineCheck(cid, checks[ci++]);
       h += t.indexOf("## ") === 0 ? "<h3>" + esc(t.slice(3)) + "</h3>" : "<p>" + esc(t) + "</p>";
       (l.figs || []).forEach(function (f) { if (f.after === i) h += f.w && WF.kw ? WF.kw.html(f) : '<figure class="fig"><img src="' + esc(f.src) + '" alt="' + esc(f.cap) + '" loading="lazy"><figcaption>' + esc(f.cap) + "</figcaption></figure>"; });
     });
+    if (ci < checks.length && heads > 0) h += inlineCheck(cid, checks[ci++]);
     h += "</article>";
     if (l.key && l.key.length) h += '<div class="card keybox"><b>Das Wichtigste</b><ul>' + l.key.map(function (k) { return "<li>" + esc(k) + "</li>"; }).join("") + "</ul></div>";
     h += '<details class="card"><summary><b>Quellen</b> <span class="small mute">(' + l.src.length + ")</span></summary>" + sources(l.src) + "</details>";
@@ -343,6 +361,33 @@
     if (q.t === "order") return q.o.join(" → ");
     return String(q.a).replace(".", ",") + " " + (q.unit || "");
   }
+  /* ---------- Mehr Erklärung bei falschen Antworten ----------
+     1. Was wurde gewählt?  2. Passt die gewählte Antwort zu einem Glossarbegriff, wird dieser erklärt (Unterschied klar machen).
+     3. Der Absatz der Lektion, der am besten zur Frage passt, zum direkten Nachlesen. */
+  function givenText(q, given) {
+    if (q.t === "mc" && given.length) return '<p class="small">Deine Antwort: „' + esc(q.o[given[0]]) + "“</p>";
+    if (q.t === "num" && given.length) return '<p class="small">Deine Eingabe: ' + esc(String(given[0]).replace(".", ",")) + " " + esc(q.unit || "") + "</p>";
+    return "";
+  }
+  function words(t) { return (String(t).toLowerCase().match(/[a-zäöüß0-9]{4,}/g) || []); }
+  function explainMore(c, q, given) {
+    var h = "", seen = {};
+    if ((q.t === "mc" || q.t === "multi") && given.length) {
+      given.filter(function (k) { return q.t === "mc" || q.a.indexOf(k) < 0; }).forEach(function (k) {
+        var opt = String(q.o[k] || "").toLowerCase(); if (!opt) return;
+        var cd = c.cards.filter(function (x) { var f = x.f.split(" (")[0].toLowerCase(); return f.length >= 3 && (opt.indexOf(f) >= 0 || f.indexOf(opt) >= 0); })[0];
+        if (cd && !seen[cd.f]) { seen[cd.f] = 1; h += '<p class="small"><b>Zur Unterscheidung · ' + esc(cd.f) + ":</b> " + esc(cd.b) + "</p>"; }
+      });
+    }
+    var l = q.lesson, qw = words(q.q + " " + rightText(q) + " " + (q.e || "")), best = null, bs = 0;
+    l.body.forEach(function (t) {
+      if (t.indexOf("## ") === 0) return;
+      var tw = words(t), sc = 0; qw.forEach(function (w) { if (tw.indexOf(w) >= 0) sc++; });
+      if (sc > bs) { bs = sc; best = t; }
+    });
+    if (best && bs >= 2) h += '<details class="cexp"><summary>Aus der Lektion nachlesen</summary><p>' + esc(best) + "</p></details>";
+    return h;
+  }
   function finish(ok, given) {
     var q = cur(), c = Q.cfg.c, p = P(c.id), firstTry = !Q.first[q.id];
     Q.done = true;
@@ -368,7 +413,7 @@
     WF.store.save();
     WF.emit("answered", { ok: ok, gain: gain, x: { retry: !firstTry, c: c.title, id: q.id }, course: true });
     var f = '<div class="fb ' + (ok ? "ok" : "bad") + '"><b class="h">' + (ok ? "Richtig" : "Nicht ganz") + (gain ? " · +" + gain + " XP" : "") + "</b>" +
-      (ok ? "" : "<p>Richtig: <b>" + esc(rightText(q)) + "</b></p>") + (q.e ? '<p class="small">' + esc(q.e) + "</p>" : "") +
+      (ok ? "" : "<p>Richtig: <b>" + esc(rightText(q)) + "</b></p>" + givenText(q, given)) + (q.e ? "<p>" + esc(q.e) + "</p>" : "") + (ok ? "" : explainMore(c, q, given)) +
       '<p class="small mute" style="margin:6px 0 0">Aus: ' + esc(q.lesson.title) + ' · <button class="link" data-act="creport">Fehler melden</button></p></div>';
     f += btn("cnext", Q.i + 1 >= Q.list.length ? "Ergebnis" : "Weiter", { primary: true });
     document.getElementById("fb").innerHTML = f;

@@ -359,6 +359,11 @@
     if (x.src) f += '<p class="small mute">Quelle: ' + esc(x.src) + "</p>";
     f += '<p class="small" style="margin-top:8px;display:flex;gap:16px"><button class="link" data-act="save">' + (S().saved[x.id] ? "★ Gemerkt" : "☆ Merken") + '</button><button class="link" data-act="report">Frage melden</button></p>';
     if (r.mastered) f += '<p class="small"><b>Gemeistert.</b> Das sitzt jetzt.</p>';
+    var rq = !x.gen && S().qs[x.id];
+    if (rq && rq.due && !r.requeued) {
+      var dd = Math.round((new Date(rq.due + "T12:00:00") - new Date(WF.util.today() + "T12:00:00")) / 864e5);
+      f += '<p class="small mute nextrev">' + (dd <= 0 ? "🔁 Kommt heute noch einmal dran." : "🔁 Nächste Wiederholung in " + (dd === 1 ? "1 Tag" : dd + " Tagen") + (rq.hard ? " · Problemfrage: oft verwechselt" : "") + ".") + "</p>";
+    }
     if (r.requeued) f += '<p class="small">Die Frage kommt gleich noch einmal.</p>';
     var others = x.opts.filter(function (o, i) { return o.why && i !== r.picked && !o.ok; });
     if (others.length) {

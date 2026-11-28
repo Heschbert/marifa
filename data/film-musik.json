@@ -323,29 +323,6 @@
   "d": 3
  },
  {
-  "id": "ajyvcc",
-  "s": "Film",
-  "q": "Welcher Film gewann 2026 den Oscar als bester Film (98. Verleihung, 15. März 2026)?",
-  "a": [
-   "One Battle After Another",
-   "Sinners",
-   "Hamnet",
-   "Frankenstein"
-  ],
-  "w": [
-   "",
-   "„Sinners“ gewann unter anderem den Hauptdarsteller-Oscar für Michael B. Jordan.",
-   "„Hamnet“ gewann den Hauptdarstellerinnen-Oscar für Jessie Buckley.",
-   "„Frankenstein“ von Guillermo del Toro gewann nicht den Hauptpreis."
-  ],
-  "e": "Paul Thomas Anderson gewann zudem den Regie-Oscar.",
-  "h": "Regie: Paul Thomas Anderson.",
-  "d": 2,
-  "lenOk": true,
-  "src": "ABC/AP, 16.03.2026: abc7.com/post/oscars-2026-battle-another-wins-best-picture-98th-academy-awards/18719481/",
-  "p": 3
- },
- {
   "id": "aq1kul",
   "s": "Film",
   "q": "Welche Schauspielerin gewann viermal den Oscar als beste Hauptdarstellerin (Stand 2026)?",

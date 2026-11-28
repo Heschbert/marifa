@@ -47,12 +47,45 @@
     }
   };
 
-  /* ---------- Wiederholungsplan (Spaced Repetition) ---------- */
-  var INTERVALS = [1, 3, 7, 21, 60];
+  /* ---------- Wiederholungsplan: adaptiv statt festem Schema ----------
+     Angelehnt an Gedächtnismodelle wie FSRS, stark vereinfacht. Je Frage werden gespeichert:
+       s  = Stabilität in Tagen (nach s Tagen erinnert man sich noch mit ca. 90 % Wahrscheinlichkeit),
+       df = Schwierigkeit 1 (leicht) … 10 (schwer), last = Tag der letzten Antwort, n/l = Anzahl Antworten/Fehler.
+     Nächste Wiederholung: wenn die Erinnerungswahrscheinlichkeit auf etwa 90 % fällt, also nach rund s Tagen.
+     Gute Antworten wachsen umso stärker, je leichter die Frage ist und je länger sie schon zurücklag;
+     falsche Antworten setzen die Stabilität stark zurück und machen die Frage schwerer.
+     b (Stufe 0–4) bleibt für Anzeige und Auswahl erhalten und wird aus s abgeleitet. */
+  var S0 = [0.4, 1, 3, 7, 21];
   function inDays(n) { var d = new Date(); d.setDate(d.getDate() + n); return U.dkey(d); }
-  E.schedule = function (rec, ok) {
-    if (ok) { rec.b = Math.min(rec.b + 1, 4); rec.due = inDays(INTERVALS[rec.b - 1]); }
-    else { rec.b = 0; rec.due = U.today(); }
+  function daysSince(k) { if (!k) return 0; var a = new Date(k + "T12:00:00"), b = new Date(U.today() + "T12:00:00"); return Math.max(0, Math.round((b - a) / 864e5)); }
+  function levelOf(s) { return s >= 21 ? 4 : s >= 7 ? 3 : s >= 2.5 ? 2 : s >= 0.9 ? 1 : 0; }
+  E.recall = function (rec) { if (!rec || !rec.s) return 0; return Math.pow(0.9, daysSince(rec.last) / rec.s); };
+  /* info: { ms: Antwortzeit, conf: "s" sicher / "g" geraten, help: Joker/Tipp genutzt } */
+  E.schedule = function (rec, ok, info) {
+    info = info || {};
+    if (rec.s === undefined) { rec.s = rec.b ? S0[Math.min(rec.b, 4)] : 0; rec.df = rec.df || 5; }
+    var first = !rec.n, R = rec.s ? E.recall(rec) : 0, df = rec.df || 5;
+    var slow = info.ms && info.ms > 20000, fast = info.ms && info.ms < 6000, unsure = info.conf === "g" || info.help;
+    rec.n = (rec.n || 0) + 1;
+    if (ok) {
+      var g = unsure ? 0.45 : slow ? 0.75 : fast && info.conf === "s" ? 1.3 : 1;  /* wie sicher war die Antwort? */
+      if (first || !rec.s) rec.s = unsure ? 0.6 : fast ? 3 : 1.5;
+      else {
+        var growth = 1 + g * 2.4 * ((11 - df) / 10) * Math.pow(rec.s, -0.12) * (Math.exp((1 - R) * 2.2) - 0.55);
+        rec.s = Math.min(365, rec.s * Math.max(1.15, growth));
+      }
+      rec.df = Math.max(1, Math.min(10, df + (unsure ? 0.3 : slow ? 0.15 : fast ? -0.5 : -0.25)));
+    } else {
+      rec.l = (rec.l || 0) + 1;
+      rec.s = Math.max(0.2, (rec.s || 0.4) * 0.25);
+      rec.df = Math.min(10, df + 1.2);
+    }
+    rec.last = U.today();
+    /* Leichte Streuung, damit nicht alles am selben Tag fällig wird; falsch: heute noch einmal */
+    var iv = ok ? Math.max(1, Math.round(rec.s * (0.95 + Math.random() * 0.1))) : 0;
+    rec.due = ok ? inDays(iv) : U.today();
+    rec.b = ok ? Math.max(1, levelOf(rec.s)) : 0;
+    rec.hard = (rec.l || 0) >= 3 && rec.df >= 7;   /* „Problemfrage“: oft falsch, verdient mehr Aufmerksamkeit */
   };
   E.dueList = function (scope) {
     var qs = S().qs, t = U.today();
@@ -95,7 +128,8 @@
   };
   E.missedList = function (scope) {
     var qs = S().qs;
-    return D.realList(scope.c, scope.s).filter(function (x) { var r = qs[x.id]; return r && r.b === 0; });
+    return D.realList(scope.c, scope.s).filter(function (x) { var r = qs[x.id]; return r && (r.b === 0 || r.hard); })
+      .sort(function (a, b) { return (qs[b.id].l || 0) - (qs[a.id].l || 0); });   /* oft falsch beantwortete zuerst */
   };
 
   /* ---------- Schwierigkeit ---------- */
@@ -304,11 +338,11 @@
       if (x.helped) gain = Math.ceil(gain / 2);
       if (typed) gain += 5;
       if (conf === "g") gain = Math.ceil(gain / 2);
-      if (rec && !x.helped && conf !== "g") E.schedule(rec, true);
+      if (rec) E.schedule(rec, true, { ms: ms, conf: conf, help: x.helped });
       E.addXP(gain);
     } else {
       s.streak = 0;
-      if (rec) E.schedule(rec, false);
+      if (rec) E.schedule(rec, false, { ms: ms, conf: conf });
       if (rec && conf === "s") rec.cw = (rec.cw || 0) + 1;
       if (m.lives) s.lives--;
       if (!retry) s.log.push(0);

@@ -143,6 +143,17 @@
     "Tiere",
     "Pflanzen & Ökologie"
    ]
+  },
+  {
+   "c": "Angeberwissen",
+   "slug": "angeberwissen",
+   "file": "angeberwissen.json",
+   "subs": [
+    "Natur & Körper",
+    "Geschichte & Menschen",
+    "Sprache & Alltag",
+    "Wissenschaft & Weltall"
+   ]
   }
  ],
  "extras": [
