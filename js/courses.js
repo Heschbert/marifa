@@ -180,6 +180,60 @@
     if (r) h += '<p class="small mute" style="margin-top:8px">Bestes Testergebnis: ' + r.best + " %" + (r.pass ? " · bestanden" : "") + "</p>";
     ui.show(h, "courses", "course");
   }
+  /* ---------- Lektion in Schritten ---------- */
+  H.lnext = function (d, t) {
+    var box = d.q && document.getElementById("kc-" + d.q);
+    if (box && !box.classList.contains("done")) { box.classList.add("nudge"); setTimeout(function () { box.classList.remove("nudge"); }, 600); return ui.toast({ title: "Erst den Kurz-Check beantworten" }); }
+    var art = t.closest("article"), k = +d.k + 1, sec = art.querySelector('.lstep[data-k="' + k + '"]'); if (!sec) return;
+    t.parentNode.remove(); sec.classList.add("shown");
+    [].forEach.call(document.querySelectorAll("#lsteps i"), function (x, i) { x.classList.toggle("on", i <= k); });
+    var p = P(art.dataset.c); (p.step || (p.step = {}))[art.dataset.l] = k; WF.store.save();
+    if (!art.querySelector('.lstep:not(.shown)')) document.getElementById("lend").classList.add("shown");
+    sec.scrollIntoView({ behavior: ui.reduced() ? "auto" : "smooth", block: "start" });
+  };
+  H.lall = function () { var st = S().settings; st.lessonAll = !st.lessonAll; WF.store.save(); ui.refresh(); };
+  /* Kurz-Check passend zum gerade gelesenen Abschnitt: die Frage mit der größten Wortüberschneidung, höchstens drei je Lektion */
+  function pickCheck(idx, body, pool) {
+    if (pool.used === undefined) pool.used = 0;
+    if (pool.used >= 3) return null;
+    var txt = idx.map(function (i) { return body[i]; }).join(" "), tw = words(txt), best = null, bs = 0;
+    if (txt.length < 160) return null;
+    pool.forEach(function (q) {
+      if (q._chk) return;
+      var qw = words(q.q + " " + q.o[q.a] + " " + (q.e || "")), sc = 0;
+      qw.forEach(function (w) { if (tw.indexOf(w) >= 0) sc++; });
+      if (sc > bs) { bs = sc; best = q; }
+    });
+    if (!best || bs < 3) return null;
+    best._chk = 1; pool.used++; return best;
+  }
+  /* ---------- Antippbare Fachbegriffe ---------- */
+  function glossTerms(c, l) {
+    var out = [];
+    l.cards.forEach(function (cd) {
+      var f = cd.f.split(" (")[0].split(" / ")[0].trim();
+      if (f.length >= 3 && !/^[0-9x ]+$/i.test(f)) out.push({ t: f, id: cd.id });
+    });
+    return out.sort(function (a, b) { return b.t.length - a.t.length; });
+  }
+  function markTerms(html, terms, used, cid) {
+    terms.forEach(function (x) {
+      if (used[x.id]) return;
+      var e = esc(x.t).replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), re = new RegExp("(^|[^\\wäöüÄÖÜß>-])(" + e + ")(?=[^\\wäöüÄÖÜß]|$)", "i"), m = re.exec(html);
+      if (!m || html.slice(0, m.index + 1).lastIndexOf("<") > html.slice(0, m.index + 1).lastIndexOf(">")) return;
+      used[x.id] = 1;
+      html = html.slice(0, m.index) + m[1] + '<button class="gl" data-act="cgl" data-c="' + esc(cid) + '" data-k="' + esc(x.id) + '">' + m[2] + "</button>" + html.slice(m.index + m[0].length);
+    });
+    return html;
+  }
+  H.cgl = function (d, t) {
+    var c = C.byId[d.c], cd = c && c.cards.filter(function (x) { return x.id === d.k; })[0], par = t.closest("p"); if (!cd || !par) return;
+    var nx = par.nextElementSibling;
+    if (nx && nx.classList.contains("gldef") && nx.dataset.k === d.k) { nx.remove(); t.classList.remove("on"); return; }
+    if (nx && nx.classList.contains("gldef")) nx.remove();
+    [].forEach.call(par.querySelectorAll(".gl.on"), function (x) { x.classList.remove("on"); }); t.classList.add("on");
+    par.insertAdjacentHTML("afterend", '<div class="gldef" data-k="' + esc(d.k) + '"><b>' + esc(cd.f) + "</b> " + esc(cd.b) + "</div>");
+  };
   /* ---------- Kurz-Check in der Lektion ---------- */
   function inlineCheck(cid, q) {
     var o = U.shuffle(q.o.map(function (_, i) { return i; }));
@@ -200,19 +254,33 @@
     P(cid).last = lid; P(cid).at = Date.now(); WF.store.save();
     var h = '<button class="ghost" data-act="cmod" data-c="' + esc(cid) + '" data-m="' + esc(l.mod.id) + '">‹ ' + esc(l.mod.title) + "</button><h1>" + esc(l.title) + '</h1><p class="small mute">' + l.min + " Minuten Lesezeit · Stand " + esc(c.stand) + "</p>";
     h += volNote(c, l);
-    h += '<article class="lesson">';
-    /* Kurz-Checks: zwischen den Abschnitten je eine kleine Frage aus der Lektion, direkt im Text beantwortbar */
-    var checks = l.qs.filter(function (q) { return q.t === "mc"; }).slice(0, 3), ci = 0, heads = 0;
-    l.body.forEach(function (t, i) {
-      if (t.indexOf("## ") === 0 && heads++ > 0 && ci < checks.length) h += inlineCheck(cid, checks[ci++]);
-      h += t.indexOf("## ") === 0 ? "<h3>" + esc(t.slice(3)) + "</h3>" : "<p>" + esc(t) + "</p>";
-      (l.figs || []).forEach(function (f) { if (f.after === i) h += f.w && WF.kw ? WF.kw.html(f) : '<figure class="fig"><img src="' + esc(f.src) + '" alt="' + esc(f.cap) + '" loading="lazy"><figcaption>' + esc(f.cap) + "</figcaption></figure>"; });
+    /* Lektion in Schritten: Einleitung und jeder „##“-Abschnitt sind ein Schritt. Nach einem Schritt folgt oft ein Kurz-Check,
+       der vor „Weiter“ beantwortet wird. Fachbegriffe aus den Karteikarten sind antippbar. „Alles zeigen“ schaltet die Schritte ab. */
+    var steps = [[]], fi = {};
+    l.body.forEach(function (t, i) { if (t.indexOf("## ") === 0 && steps[steps.length - 1].length) steps.push([]); steps[steps.length - 1].push(i); });
+    (l.figs || []).forEach(function (f) { (fi[f.after] = fi[f.after] || []).push(f); });
+    var checks = l.qs.filter(function (q) { q._chk = 0; return q.t === "mc"; }), terms = glossTerms(c, l), used = {};
+    var all = S().settings.lessonAll || steps.length < 2, ls = P(cid).step || {}, at = all ? steps.length - 1 : Math.min(ls[lid] || 0, steps.length - 1);
+    if (!all) h += '<div class="lsteps" id="lsteps" aria-hidden="true">' + steps.map(function (_, k) { return '<i class="' + (k <= at ? "on" : "") + '"></i>'; }).join("") + "</div>";
+    h += '<article class="lesson' + (all ? "" : " stepped") + '" data-c="' + esc(cid) + '" data-l="' + esc(lid) + '">';
+    steps.forEach(function (idx, k) {
+      h += '<section class="lstep' + (k <= at ? " shown" : "") + '" data-k="' + k + '">';
+      idx.forEach(function (i) {
+        var t = l.body[i];
+        h += t.indexOf("## ") === 0 ? "<h3>" + esc(t.slice(3)) + "</h3>" : "<p>" + markTerms(esc(t), terms, used, cid) + "</p>";
+        (fi[i] || []).forEach(function (f) { h += f.w && WF.kw ? WF.kw.html(f) : '<figure class="fig"><img src="' + esc(f.src) + '" alt="' + esc(f.cap) + '" loading="lazy"><figcaption>' + esc(f.cap) + "</figcaption></figure>"; });
+      });
+      var q = k < steps.length - 1 ? pickCheck(idx, l.body, checks) : null;
+      if (q) h += inlineCheck(cid, q);
+      if (!all && k < steps.length - 1) h += '<div class="lnext"><button class="btn primary" data-act="lnext" data-k="' + k + '"' + (q ? ' data-q="' + esc(q.id) + '"' : "") + ">Weiter ›</button></div>";
+      h += "</section>";
     });
-    if (ci < checks.length && heads > 0) h += inlineCheck(cid, checks[ci++]);
     h += "</article>";
+    h += '<div class="lend' + (at >= steps.length - 1 ? " shown" : "") + '" id="lend">';
     if (l.key && l.key.length) h += '<div class="card keybox"><b>Das Wichtigste</b><ul>' + l.key.map(function (k) { return "<li>" + esc(k) + "</li>"; }).join("") + "</ul></div>";
     h += '<details class="card"><summary><b>Quellen</b> <span class="small mute">(' + l.src.length + ")</span></summary>" + sources(l.src) + "</details>";
-    h += '<div class="grid2" style="margin-top:12px">' + btn("ccards", "Karteikarten", { sub: l.cards.length + " Karten", data: { c: cid, l: lid } }) + btn("cprac", "Übung starten", { primary: true, sub: l.qs.length + " Fragen", data: { c: cid, l: lid } }) + "</div>";
+    h += '<div class="grid2" style="margin-top:12px">' + btn("ccards", "Karteikarten", { sub: l.cards.length + " Karten", data: { c: cid, l: lid } }) + btn("cprac", "Übung starten", { primary: true, sub: l.qs.length + " Fragen", data: { c: cid, l: lid } }) + "</div></div>";
+    if (steps.length > 1) h += '<p class="small mute" style="text-align:center;margin-top:14px"><button class="link small" data-act="lall">' + (all ? "Lektion in Schritten lesen" : "Alles auf einmal zeigen") + "</button></p>";
     ui.show(h, "courses", "course");
     if (WF.kw) WF.kw.mount();
   }
