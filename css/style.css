@@ -1087,3 +1087,9 @@ button.shic svg { margin-left: 2px; }
 .kwtab .sys { color: var(--accent); } .kwtab .hum { color: #e07c00; }
 .kwdtc { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .kwdc { min-width: 0; overflow-wrap: anywhere; hyphens: auto; }
+.kpart.done .ring { --c: var(--accent); }
+.kpart.next { border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 35%, transparent); }
+.kbadge { display: inline-block; vertical-align: 1px; margin-left: 4px; padding: 1px 7px; border-radius: 999px; font-size: 11px; font-weight: 800; background: var(--accent); color: var(--accent-fg); }
+.kbadge.gold { background: #f5b100; color: #3a2a00; }
+.kbadge.soft { background: var(--soft); color: var(--mute); }
+.kbadge.next { background: transparent; color: var(--accent); border: 1px solid var(--accent); }

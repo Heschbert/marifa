@@ -64,6 +64,16 @@
   function key(it) { return it.k + "|" + it.id; }
   function level(it) { return prog()[key(it)] || 0; }
   function sure(it) { return level(it) >= 2; }
+  function learned(it) { return level(it) >= 1; }
+  /* Ein Teil gilt als geschafft, wenn jeder Ort einmal beim ersten Versuch richtig war; „sicher“ erst nach zweimal */
+  function packDone(p) { return p.every(learned); }
+  /* Nächster offener Teil nach „from“ (vorwärts, dann von vorn); sind alle geschafft, der nächste noch nicht sichere */
+  function nextPack(P, from) {
+    var n = P.length, i, j;
+    for (i = 1; i <= n; i++) { j = (from + i + n) % n; if (from < 0) j = i - 1; if (!packDone(P[j])) return j; }
+    for (i = 1; i <= n; i++) { j = (from + i + n) % n; if (from < 0) j = i - 1; if (j !== from && !P[j].every(sure)) return j; }
+    return -1;
+  }
 
   /* ---------- Ausschnitt ---------- */
   function ratio() { var w = Math.min(560, window.innerWidth) - 32, h = Math.min(window.innerHeight * 0.5, w * 1.15); return Math.max(0.7, Math.min(1.6, w / h)); }
@@ -157,15 +167,16 @@
     h += '<div class="kpick">' + regs.map(function (r) { return '<button class="chipsel sm' + (c.r === r ? " on" : "") + '" data-act="kset" data-f="r" data-v="' + esc(r) + '">' + esc(r) + "</button>"; }).join("") + "</div>";
     if (c.mode === "quiz") h += '<div style="margin-top:16px">' + btn("kquiz", "Quiz starten", { primary: true }) + "</div>";
     else {
-      var P = packs(c.k, c.r), all = [].concat.apply([], P), ok = all.filter(sure).length, next = -1;
-      P.forEach(function (p, i) { if (next < 0 && !p.every(sure)) next = i; });
-      h += '<div class="card kprog">' + ui.ring(all.length ? ok / all.length * 100 : 0, "var(--accent)", ok + "") + '<div class="grow"><b>' + esc(kindName(c.k)) + " · " + esc(c.r) + '</b><div class="small mute">' + ok + " von " + all.length + " sicher · " + P.length + " Teile</div></div></div>";
-      if (next >= 0) h += btn("kexp", "Weiter mit Teil " + (next + 1), { primary: true, data: { p: next } });
+      var P = packs(c.k, c.r), all = [].concat.apply([], P), ok = all.filter(sure).length, lr = all.filter(learned).length, pd = P.filter(packDone).length, next = nextPack(P, -1);
+      h += '<div class="card kprog">' + ui.ring(all.length ? lr / all.length * 100 : 0, "var(--accent)", pd + "/" + P.length) + '<div class="grow"><b>' + esc(kindName(c.k)) + " · " + esc(c.r) + '</b><div class="small mute">' + pd + " von " + P.length + " Teilen geschafft · " + lr + " von " + all.length + " gelernt · " + ok + " sicher</div></div></div>";
+      if (next >= 0) h += btn("kexp", (packDone(P[next]) ? "Festigen: Teil " : "Weiter mit Teil ") + (next + 1), { primary: true, data: { p: next } });
+      else if (all.length) h += '<p class="small mute">Alles sicher. Stark! Teste dich im Quiz.</p>';
       h += '<div class="kparts">';
       P.forEach(function (p, i) {
-        var s = p.filter(sure).length, names = p.map(function (x) { return x.k === "land" ? x.n : x.k === "cap" ? x.n : x.n; });
-        h += '<button class="item" data-act="kexp" data-p="' + i + '">' + ui.ring(s / p.length * 100, "var(--accent)", s === p.length ? "✓" : String(i + 1)) +
-          '<div class="grow"><div class="t">Teil ' + (i + 1) + '</div><div class="small mute">' + esc(names.slice(0, 4).join(", ") + (names.length > 4 ? " …" : "")) + '</div></div><span class="chev">›</span></button>';
+        var s = p.filter(sure).length, l = p.filter(learned).length, done = l === p.length, all2 = s === p.length, names = p.map(function (x) { return x.n; });
+        h += '<button class="item kpart' + (all2 ? " sure" : done ? " done" : "") + (i === next ? " next" : "") + '" data-act="kexp" data-p="' + i + '">' + ui.ring(l / p.length * 100, all2 ? "#f5b100" : "var(--accent)", all2 ? "★" : done ? "✓" : String(i + 1)) +
+          '<div class="grow"><div class="t">Teil ' + (i + 1) + (all2 ? ' <span class="kbadge gold">sicher</span>' : done ? ' <span class="kbadge">geschafft</span>' : l ? ' <span class="kbadge soft">' + l + "/" + p.length + "</span>" : "") + (i === next ? ' <span class="kbadge next">als Nächstes</span>' : "") +
+          '</div><div class="small mute">' + esc(names.slice(0, 4).join(", ") + (names.length > 4 ? " …" : "")) + '</div></div><span class="chev">›</span></button>';
       });
       h += "</div>";
     }
@@ -276,13 +287,12 @@
         btn("kquiz", "Nochmal", { primary: true }) + '<div style="height:8px"></div>' + btn("kstart", "Zur Auswahl"), null);
       return;
     }
-    var P = packs(c.k, c.r), p = P[G.pack], s = p.filter(sure).length, nextI = -1;
-    P.forEach(function (pp, i) { if (nextI < 0 && i !== G.pack && !pp.every(sure)) nextI = i; });
+    var P = packs(c.k, c.r), p = P[G.pack], s = p.filter(sure).length, nextI = nextPack(P, G.pack);
     if (s === p.length) WF.emit("celebrate", { icon: "🗺", kind: "course", title: "Teil " + (G.pack + 1) + " sitzt", sub: kindName(G.k) + " · " + c.r });
     ui.show("<h1>Teil " + (G.pack + 1) + ' geschafft</h1><p class="mute">' + G.score + " von " + G.total + " beim ersten Versuch · +" + G.xp + " XP</p>" +
       '<div class="card"><p style="margin:0">' + s + " von " + p.length + " Orten sind jetzt sicher" + (s < p.length ? ". Wer zweimal beim ersten Versuch richtig liegt, gilt als sicher: am besten morgen noch einmal üben." : ".") + "</p></div>" +
-      (s < p.length ? btn("kprac", "Gleich nochmal üben", { primary: true, data: { p: G.pack } }) + '<div style="height:8px"></div>' : "") +
-      (nextI >= 0 ? btn("kexp", "Weiter mit Teil " + (nextI + 1), { primary: s === p.length, data: { p: nextI } }) + '<div style="height:8px"></div>' : "") + btn("kstart", "Zur Übersicht"), null);
+      (s < p.length ? btn("kprac", "Gleich nochmal üben", { primary: !packDone(p), data: { p: G.pack } }) + '<div style="height:8px"></div>' : "") +
+      (nextI >= 0 ? btn("kexp", (packDone(P[nextI]) ? "Festigen: Teil " : "Weiter mit Teil ") + (nextI + 1), { primary: packDone(p), data: { p: nextI } }) + '<div style="height:8px"></div>' : "") + btn("kstart", "Zur Übersicht"), null);
   }
   H.kquit = function () { setup(); };
   WF.registerEntry({ where: "home", order: 37, render: function () { return ui.row("kstart", "🗺", "Karte", "Länder, Hauptstädte, Flüsse und Gebirge lernen", {}); } });
