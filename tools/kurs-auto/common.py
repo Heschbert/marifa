@@ -44,3 +44,10 @@ def L(lid, title, mins, body, key, src, cards, qs, figs=None, vol=False):
     if vol: l["vol"] = True
     return l
 def M(mid, level, title, desc, lessons): return {"id": mid, "level": level, "title": title, "desc": desc, "lessons": lessons}
+S_INF = S("Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)", "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/")
+S_ST = S("STMicroelectronics: Automotive-Mikrocontroller SPC5 und Stellar (Produktseiten)", "https://www.st.com/en/automotive-microcontrollers.html")
+S_NXP = S("NXP: S32-Plattform für Automotive (Produktseiten)", "https://www.nxp.com/products/processors-and-microcontrollers/s32-automotive-platform:S32")
+S_REN = S("Renesas: RH850-Automotive-Mikrocontroller (Produktseiten)", "https://www.renesas.com/en/products/microcontrollers-microprocessors/rh850-automotive-mcus")
+S_AEC = S("Automotive Electronics Council: AEC-Q100 (Qualifikation integrierter Schaltungen)", "http://www.aecouncil.com/AECDocuments.html")
+S_BOSCHLS = S("Bosch: Lambdasonden LSF und LSU (öffentliche Produktinformationen)")
+S_DIESEL = S("Konrad Reif (Hrsg.): Dieselmotor-Management und Abgastechnik, Bosch Fachinformation Automobil (Springer Vieweg)")

@@ -1,0 +1,2087 @@
+{
+ "id": "mcu",
+ "title": "Mikrocontroller im Fahrzeug",
+ "sub": "Aufbau, Automotive-Anforderungen, Infineon, ST, NXP, Renesas, was Nanometer bedeuten, Speicher, Peripherie und Software",
+ "audience": "Alle in der Steuergeräte-Entwicklung, die die Hardware unter ihrer Software verstehen wollen",
+ "stand": "11/2026",
+ "version": 1,
+ "review": "Allgemeines, öffentlich dokumentiertes Wissen (Quellen je Lektion); keine hersteller- oder projektspezifischen Details. Noch nicht durch eine Fachperson geprüft. Vorschriften ändern sich: Für verbindliche Arbeit immer den aktuellen Rechtstext prüfen.",
+ "levels": [
+  {
+   "id": 1,
+   "title": "Grundlagen"
+  },
+  {
+   "id": 2,
+   "title": "Fortgeschritten"
+  },
+  {
+   "id": 3,
+   "title": "Experte"
+  }
+ ],
+ "modules": [
+  {
+   "id": "mcu.m1",
+   "level": 1,
+   "title": "Was ein Mikrocontroller ist",
+   "desc": "Aufbau, Unterschied zu Prozessor und SoC, Takt und Kerne.",
+   "lessons": [
+    {
+     "id": "mcu.m1.l1",
+     "title": "Ein Computer auf einem Chip",
+     "min": 5,
+     "body": [
+      "Ein Mikrocontroller (MCU) vereint Prozessorkern, Programmspeicher, Arbeitsspeicher und Peripherie auf einem einzigen Chip. Er braucht kaum externe Bauteile und steuert direkt Sensoren und Aktoren.",
+      "## Die Bausteine",
+      "CPU-Kerne führen das Programm aus. Flash speichert Programm und Daten dauerhaft, RAM hält Variablen. Peripherie verbindet mit der Außenwelt: Analog-Digital-Wandler, Timer, Kommunikationsschnittstellen (CAN, LIN, Ethernet, SPI) und digitale Ein- und Ausgänge.",
+      "## Mikrocontroller, Mikroprozessor, SoC",
+      "Ein Mikroprozessor (MPU) hat schnelle Kerne, aber meist externen Speicher und läuft oft mit einem großen Betriebssystem wie Linux. Ein System-on-Chip (SoC) kombiniert viele Prozessoren, Grafik- und KI-Beschleuniger, etwa für Infotainment oder automatisiertes Fahren. Mikrocontroller sind dagegen auf Echtzeit, Zuverlässigkeit und direkte Ansteuerung optimiert."
+     ],
+     "key": [
+      "MCU = Kerne + Flash + RAM + Peripherie auf einem Chip.",
+      "MPU: externer Speicher, großes Betriebssystem; SoC: viele Recheneinheiten und Beschleuniger.",
+      "MCU: Echtzeit, Zuverlässigkeit, direkte Ansteuerung."
+     ],
+     "src": [
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      },
+      {
+       "n": "STMicroelectronics: Automotive-Mikrocontroller SPC5 und Stellar (Produktseiten)",
+       "u": "https://www.st.com/en/automotive-microcontrollers.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Mikrocontroller (MCU)",
+       "b": "Chip mit Prozessorkern, Speicher und Peripherie für Steuerungsaufgaben.",
+       "id": "mcu.m1.l1.k1"
+      },
+      {
+       "f": "SoC",
+       "b": "System-on-Chip: viele Prozessoren und Beschleuniger auf einem Chip, z. B. für Infotainment oder ADAS.",
+       "id": "mcu.m1.l1.k2"
+      },
+      {
+       "f": "Peripherie",
+       "b": "Funktionsblöcke wie ADC, Timer, CAN oder SPI, die den Chip mit der Außenwelt verbinden.",
+       "id": "mcu.m1.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was hat ein Mikrocontroller im Gegensatz zu einem typischen Mikroprozessor?",
+       "o": [
+        "Speicher on-chip",
+        "Keine CPU",
+        "Nur Grafikeinheiten",
+        "Immer Linux als Betriebssystem"
+       ],
+       "a": 0,
+       "e": "MPUs nutzen meist externen Speicher.",
+       "id": "mcu.m1.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür wird ein großer SoC im Fahrzeug typischerweise genutzt?",
+       "o": [
+        "Infotainment, ADAS",
+        "Fensterhebermotor",
+        "Einfacher Temperatursensor",
+        "Scheibenwischerrelais"
+       ],
+       "a": 0,
+       "e": "Dort braucht man viel Rechenleistung.",
+       "id": "mcu.m1.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was speichert der Flash?",
+       "o": [
+        "Programm und Daten dauerhaft",
+        "Nur Variablen während der Laufzeit",
+        "Den Takt",
+        "Analoge Spannungen"
+       ],
+       "a": 0,
+       "e": "Er behält seinen Inhalt ohne Strom.",
+       "id": "mcu.m1.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Worauf sind Mikrocontroller optimiert?",
+       "o": [
+        "Echtzeit und Zuverlässigkeit",
+        "Videospiele",
+        "Möglichst viel Arbeitsspeicher",
+        "Internetbrowsen"
+       ],
+       "a": 0,
+       "e": "Sie steuern direkt und vorhersagbar.",
+       "id": "mcu.m1.l1.q4"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Blöcke zählen zur Peripherie?",
+       "o": [
+        "Analog-Digital-Wandler",
+        "CAN-Controller",
+        "Timer",
+        "Rechenkern"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Der Kern ist die CPU, keine Peripherie.",
+       "id": "mcu.m1.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "mcu.m1.l2",
+     "title": "Kerne, Takt und Rechenleistung",
+     "min": 6,
+     "body": [
+      "Wie schnell ein Mikrocontroller arbeitet, hängt von mehreren Größen ab.",
+      "## Takt",
+      "Der Takt gibt an, wie viele Arbeitsschritte pro Sekunde möglich sind. Automotive-Mikrocontroller laufen typischerweise mit 100 MHz bis einige hundert MHz. Mehr Takt bedeutet mehr Leistung, aber auch mehr Stromverbrauch und Wärme.",
+      "## Mehrere Kerne",
+      "Viele moderne Controller haben mehrere Kerne. Sie teilen sich Aufgaben: etwa schnelle winkelsynchrone Motorfunktionen auf einem Kern, Kommunikation auf einem anderen. Dafür muss die Software sauber aufgeteilt und synchronisiert werden.",
+      "## Architektur zählt",
+      "Gleiche Taktzahl heißt nicht gleiche Leistung. Befehlssatz, Pipeline, Caches, Gleitkommaeinheit und Speicheranbindung bestimmen, wie viel ein Kern pro Takt schafft. Verbreitete Kernarchitekturen im Auto sind TriCore (Infineon), Arm Cortex-M und Cortex-R, Power Architecture (NXP, ST) und RH850 (Renesas)."
+     ],
+     "key": [
+      "Takt: typisch 100 MHz bis einige hundert MHz.",
+      "Mehrkern: Aufgaben verteilen, sauber synchronisieren.",
+      "Architektur bestimmt Leistung pro Takt: TriCore, Arm, Power, RH850."
+     ],
+     "src": [
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      },
+      {
+       "n": "STMicroelectronics: Automotive-Mikrocontroller SPC5 und Stellar (Produktseiten)",
+       "u": "https://www.st.com/en/automotive-microcontrollers.html"
+      },
+      {
+       "n": "Renesas: RH850-Automotive-Mikrocontroller (Produktseiten)",
+       "u": "https://www.renesas.com/en/products/microcontrollers-microprocessors/rh850-automotive-mcus"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Taktfrequenz",
+       "b": "Anzahl der Arbeitstakte pro Sekunde, z. B. 300 MHz.",
+       "id": "mcu.m1.l2.k1"
+      },
+      {
+       "f": "TriCore",
+       "b": "Kernarchitektur von Infineon, Basis der AURIX-Familie.",
+       "id": "mcu.m1.l2.k2"
+      },
+      {
+       "f": "Arm Cortex-R",
+       "b": "Arm-Kernfamilie für Echtzeit- und Sicherheitsanwendungen.",
+       "id": "mcu.m1.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Kernarchitektur nutzt Infineon AURIX?",
+       "o": [
+        "TriCore",
+        "Cortex-A",
+        "x86",
+        "RISC-V ausschließlich"
+       ],
+       "a": 0,
+       "e": "TriCore ist Infineons eigene Architektur.",
+       "id": "mcu.m1.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet mehr Takt neben mehr Leistung auch?",
+       "o": [
+        "Mehr Wärme",
+        "Weniger Speicher",
+        "Weniger Pins",
+        "Kein CAN mehr"
+       ],
+       "a": 0,
+       "e": "Deshalb wird der Takt nicht beliebig erhöht.",
+       "id": "mcu.m1.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist gleiche Taktzahl nicht gleiche Leistung?",
+       "o": [
+        "Architektur bestimmt Arbeit pro Takt",
+        "Weil Takte unterschiedlich lang sind",
+        "Weil Flash den Takt halbiert",
+        "Weil CAN den Takt vorgibt"
+       ],
+       "a": 0,
+       "e": "Pipeline, Caches und Befehlssatz zählen.",
+       "id": "mcu.m1.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist eine Herausforderung bei Mehrkern-Controllern?",
+       "o": [
+        "Synchronisieren",
+        "Kerne schmelzen",
+        "Nur ein Kern darf rechnen",
+        "Der Takt verdoppelt sich"
+       ],
+       "a": 0,
+       "e": "Gemeinsame Daten brauchen Schutz.",
+       "id": "mcu.m1.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Bereich ist typisch für Automotive-MCU-Takte?",
+       "o": [
+        "100 MHz bis einige hundert MHz",
+        "1 bis 10 kHz",
+        "5 bis 10 GHz",
+        "Genau 1 MHz"
+       ],
+       "a": 0,
+       "e": "PC-Prozessoren laufen mit mehreren GHz.",
+       "id": "mcu.m1.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "mcu.m1.l3",
+     "title": "Vom Reset bis zur Anwendung",
+     "min": 5,
+     "body": [
+      "Was passiert, wenn ein Mikrocontroller Strom bekommt?",
+      "## Hochlauf",
+      "Nach dem Reset startet die Firmware an einer festen Adresse. Erst laufen Selbsttests und Grundeinstellungen: Takterzeugung (PLL), Speicherinitialisierung, Prüfung der Sicherheitsmechanismen. Oft prüft ein Sicherheitsmodul die Software (Secure Boot).",
+      "## Bootloader und Anwendung",
+      "Ein Bootloader entscheidet, ob die Anwendung startet oder neue Software geladen wird. Danach initialisiert die Anwendung Treiber und Betriebssystem und startet die Tasks.",
+      "## Zeitkritisch",
+      "In Fahrzeugen muss der Start schnell gehen: Manche Funktionen sollen wenige hundert Millisekunden nach dem Wecken bereit sein, etwa für Kommunikation auf dem Bus."
+     ],
+     "key": [
+      "Reset → Firmware-Start → Selbsttests, PLL, Speicher.",
+      "Secure Boot und Bootloader vor der Anwendung.",
+      "Startzeit ist im Fahrzeug kritisch."
+     ],
+     "src": [
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "PLL",
+       "b": "Phase-Locked Loop: erzeugt aus einem Quarztakt den hohen Systemtakt.",
+       "id": "mcu.m1.l3.k1"
+      },
+      {
+       "f": "Reset",
+       "b": "Zustand, in dem der Controller neu startet.",
+       "id": "mcu.m1.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Ordne den Hochlauf.",
+       "o": [
+        "Reset",
+        "Takt und Speicher initialisieren",
+        "Software prüfen (Secure Boot)",
+        "Bootloader entscheidet",
+        "Anwendung startet"
+       ],
+       "e": "Erst Grundlagen, dann Prüfung, dann Anwendung.",
+       "id": "mcu.m1.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was erzeugt die PLL?",
+       "o": [
+        "Den hohen Systemtakt",
+        "Die Versorgungsspannung",
+        "Die CAN-Botschaften",
+        "Den Flash-Inhalt"
+       ],
+       "a": 0,
+       "e": "Aus einem Quarz wird ein schneller Takt.",
+       "id": "mcu.m1.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist die Startzeit im Fahrzeug wichtig?",
+       "o": [
+        "Schnell bereit sein",
+        "Weil der Fahrer sonst aussteigt",
+        "Wegen der Abgasnorm",
+        "Weil Strom teuer ist"
+       ],
+       "a": 0,
+       "e": "Etwa Busteilnahme kurz nach dem Wecken.",
+       "id": "mcu.m1.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was entscheidet der Bootloader?",
+       "o": [
+        "Start oder Laden",
+        "Welche Musik läuft",
+        "Wie schnell das Auto fährt",
+        "Welche Sprache angezeigt wird"
+       ],
+       "a": 0,
+       "e": "Er ist die Brücke zum Flashen.",
+       "id": "mcu.m1.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wo startet die Firmware nach dem Reset?",
+       "o": [
+        "An einer festen Adresse",
+        "Zufällig im RAM",
+        "Im Bus",
+        "Im Sensor"
+       ],
+       "a": 0,
+       "e": "Die Startadresse ist vom Chip vorgegeben.",
+       "id": "mcu.m1.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mcu.m2",
+   "level": 1,
+   "title": "Was Automotive anders macht",
+   "desc": "Temperatur, Qualifikation, Sicherheit, Lebensdauer und Verfügbarkeit.",
+   "lessons": [
+    {
+     "id": "mcu.m2.l1",
+     "title": "Hitze, Kälte, Erschütterung",
+     "min": 6,
+     "body": [
+      "Ein Chip im Motorraum erlebt Bedingungen, die ein Smartphone nie sieht.",
+      "## Temperaturbereiche",
+      "Die Qualifikationsnorm AEC-Q100 kennt Temperaturklassen: Grade 0 von −40 bis +150 °C, Grade 1 von −40 bis +125 °C, Grade 2 bis +105 °C, Grade 3 bis +85 °C. Motornahe Steuergeräte brauchen oft Grade 1 oder 0.",
+      "## Weitere Belastungen",
+      "Vibration, Temperaturwechsel, Feuchtigkeit, elektromagnetische Störungen und Spannungsspitzen im Bordnetz. Gehäuse, Lötstellen und Chip müssen das über viele Jahre aushalten.",
+      "## Qualifikation",
+      "AEC-Q100 beschreibt Belastungstests für integrierte Schaltungen: etwa Hochtemperatur-Lebensdauertests, Temperaturwechsel und Feuchte. Erst nach bestandener Qualifikation gilt ein Chip als automotive-tauglich. Ziel sind Fehlerraten im Bereich weniger Teile pro Million (ppm) oder besser."
+     ],
+     "key": [
+      "AEC-Q100 Grade 0: −40…150 °C, Grade 1: −40…125 °C.",
+      "Belastungen: Vibration, Temperaturwechsel, Feuchte, EMV, Spannungsspitzen.",
+      "Qualifikation durch Belastungstests; Ziel: sehr niedrige ppm-Fehlerraten."
+     ],
+     "src": [
+      {
+       "n": "Automotive Electronics Council: AEC-Q100 (Qualifikation integrierter Schaltungen)",
+       "u": "http://www.aecouncil.com/AECDocuments.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "AEC-Q100",
+       "b": "Qualifikationsnorm des Automotive Electronics Council für integrierte Schaltungen.",
+       "id": "mcu.m2.l1.k1"
+      },
+      {
+       "f": "Grade 1",
+       "b": "AEC-Q100-Temperaturklasse −40 bis +125 °C.",
+       "id": "mcu.m2.l1.k2"
+      },
+      {
+       "f": "ppm",
+       "b": "Parts per Million: Fehler pro Million Bauteile.",
+       "id": "mcu.m2.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welchen Bereich hat AEC-Q100 Grade 0?",
+       "o": [
+        "−40 bis +150 °C",
+        "0 bis +70 °C",
+        "−40 bis +85 °C",
+        "−20 bis +60 °C"
+       ],
+       "a": 0,
+       "e": "Grade 1 reicht bis +125 °C.",
+       "id": "mcu.m2.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt AEC-Q100?",
+       "o": [
+        "Chip-Tests",
+        "Abgasgrenzwerte",
+        "Diagnosedienste",
+        "Busprotokolle"
+       ],
+       "a": 0,
+       "e": "Qualifikation integrierter Schaltungen.",
+       "id": "mcu.m2.l1.q2"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Belastungen muss ein Automotive-Chip aushalten?",
+       "o": [
+        "Vibration",
+        "Temperaturwechsel",
+        "Spannungsspitzen",
+        "Ständiges Untertauchen im Meer"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Dauerhaft unter Wasser ist kein typisches Szenario.",
+       "id": "mcu.m2.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Fehlerrate wird angestrebt?",
+       "o": [
+        "Wenige ppm oder besser",
+        "Etwa 10 Prozent",
+        "Jedes zweite Teil",
+        "Egal, Hauptsache billig"
+       ],
+       "a": 0,
+       "e": "Bei Millionen Fahrzeugen zählt jedes Teil.",
+       "id": "mcu.m2.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Klasse brauchen motornahe Steuergeräte oft?",
+       "o": [
+        "Grade 1 oder 0",
+        "Grade 3",
+        "Consumer-Grade",
+        "Keine Klasse"
+       ],
+       "a": 0,
+       "e": "Dort wird es sehr heiß.",
+       "id": "mcu.m2.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "mcu.m2.l2",
+     "title": "Funktionale Sicherheit im Chip",
+     "min": 7,
+     "body": [
+      "Steuern Mikrocontroller Bremse, Lenkung oder Antrieb, müssen sie Fehler in sich selbst erkennen. Viele Automotive-Controller werden für ISO 26262 bis ASIL D entwickelt.",
+      "## Lockstep",
+      "Zwei Kerne rechnen dasselbe, eine Vergleichslogik prüft jeden Takt. Weichen sie ab, wird ein Fehler gemeldet. So fallen zufällige Hardwarefehler auf, etwa durch Strahlung oder Alterung.",
+      "## ECC und Speicherschutz",
+      "Fehlerkorrigierende Codes (ECC) erkennen und korrigieren Bitfehler in Flash und RAM. Eine Memory Protection Unit (MPU) verhindert, dass Software unterschiedlicher Sicherheitsstufen sich gegenseitig stört.",
+      "## Überwachung",
+      "Spannungs- und Taktüberwachung, Watchdogs, Selbsttests beim Start und im Betrieb (etwa eingebaute Logiktests) und eine zentrale Fehlersammelstelle, die bei Bedarf einen sicheren Zustand auslöst. Der Hersteller liefert ein Safety Manual, das beschreibt, wie man die Mechanismen richtig nutzt."
+     ],
+     "key": [
+      "Viele Controller für ISO 26262 bis ASIL D.",
+      "Lockstep, ECC, Speicherschutz (MPU).",
+      "Spannungs-/Taktüberwachung, Watchdog, Selbsttests, Safety Manual."
+     ],
+     "src": [
+      {
+       "n": "ISO 26262: Funktionale Sicherheit von Straßenfahrzeugen",
+       "u": "https://www.iso.org/standard/68383.html"
+      },
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "ECC",
+       "b": "Error Correcting Code: erkennt und korrigiert Bitfehler im Speicher.",
+       "id": "mcu.m2.l2.k1"
+      },
+      {
+       "f": "MPU (Memory Protection Unit)",
+       "b": "Speicherschutz, der Zugriffe von Softwareteilen begrenzt.",
+       "id": "mcu.m2.l2.k2"
+      },
+      {
+       "f": "Safety Manual",
+       "b": "Herstellerdokument, wie Sicherheitsmechanismen eines Chips zu nutzen sind.",
+       "id": "mcu.m2.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was erkennt ein Lockstep-Kern?",
+       "o": [
+        "Abweichungen",
+        "Falsche Busbotschaften",
+        "Leere Batterien",
+        "Falsche Lackfarbe"
+       ],
+       "a": 0,
+       "e": "Zufällige Hardwarefehler fallen so auf.",
+       "id": "mcu.m2.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was macht ECC?",
+       "o": [
+        "Bitfehler korrigieren",
+        "Daten verschlüsseln",
+        "Den Takt erhöhen",
+        "Strom sparen"
+       ],
+       "a": 0,
+       "e": "Error Correcting Code.",
+       "id": "mcu.m2.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient eine Memory Protection Unit?",
+       "o": [
+        "Software abschotten",
+        "Speicher vergrößern",
+        "Flash schneller machen",
+        "Programme komprimieren"
+       ],
+       "a": 0,
+       "e": "Rückwirkungsfreiheit zwischen ASIL-Stufen.",
+       "id": "mcu.m2.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt das Safety Manual?",
+       "o": [
+        "Nutzung der Mechanismen",
+        "Wie man den Chip lötet",
+        "Wie man Autos verkauft",
+        "Wie man Abgas misst"
+       ],
+       "a": 0,
+       "e": "Ohne richtige Nutzung kein Sicherheitsnachweis.",
+       "id": "mcu.m2.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Bis zu welcher Stufe werden viele Automotive-MCUs entwickelt?",
+       "o": [
+        "ASIL D",
+        "ASIL A",
+        "QM",
+        "SIL 4 ausschließlich"
+       ],
+       "a": 0,
+       "e": "Die höchste Stufe der ISO 26262.",
+       "id": "mcu.m2.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "mcu.m2.l3",
+     "title": "Langlebig und lange lieferbar",
+     "min": 6,
+     "body": [
+      "Ein Fahrzeug wird viele Jahre entwickelt, produziert und dann über ein Jahrzehnt gefahren. Ersatzteile müssen lange verfügbar sein.",
+      "## Lebensdauer",
+      "Steuergeräte sind oft für 15 Jahre und mehr ausgelegt, mit vielen tausend Betriebsstunden und Ruhezeiten. Flash muss Daten über diese Zeit halten (Data Retention) und viele Schreibzyklen für Lernwerte verkraften.",
+      "## Verfügbarkeit",
+      "Automotive-Chiphersteller sichern oft eine Lieferbarkeit über 10 bis 15 Jahre zu. Deshalb werden nicht immer die neuesten Fertigungstechnologien genutzt, sondern bewährte, die lange betrieben werden.",
+      "## Die Chipkrise",
+      "2020 bis 2022 fehlten weltweit Halbleiter. Autohersteller mussten Produktion stoppen, teils wegen einfacher Chips für wenige Euro. Seitdem planen Hersteller langfristiger, bauen Lagerbestände auf und arbeiten enger mit Chipherstellern zusammen."
+     ],
+     "key": [
+      "Auslegung oft 15+ Jahre; Flash: Datenhaltung und Schreibzyklen.",
+      "Lieferbarkeit 10–15 Jahre; bewährte Technologien.",
+      "Chipkrise 2020–2022 führte zu langfristiger Planung."
+     ],
+     "src": [
+      {
+       "n": "Automotive Electronics Council: AEC-Q100 (Qualifikation integrierter Schaltungen)",
+       "u": "http://www.aecouncil.com/AECDocuments.html"
+      },
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Data Retention",
+       "b": "Fähigkeit eines Speichers, Daten ohne Strom über Jahre zu halten.",
+       "id": "mcu.m2.l3.k1"
+      },
+      {
+       "f": "Langzeitverfügbarkeit",
+       "b": "Zusage, ein Bauteil viele Jahre liefern zu können.",
+       "id": "mcu.m2.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Warum nutzen Automotive-Chips nicht immer die neueste Fertigung?",
+       "o": [
+        "Lange lieferbar",
+        "Neue Technik ist verboten",
+        "Autos brauchen keine Rechenleistung",
+        "Neue Chips passen nicht ins Auto"
+       ],
+       "a": 0,
+       "e": "Lange Lieferbarkeit und erprobte Qualität.",
+       "id": "mcu.m2.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet Data Retention?",
+       "o": [
+        "Daten lange halten",
+        "Daten schnell löschen",
+        "Daten verschlüsseln",
+        "Daten versenden"
+       ],
+       "a": 0,
+       "e": "Wichtig für Flash über die Fahrzeuglebensdauer.",
+       "id": "mcu.m2.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeigte die Chipkrise?",
+       "o": [
+        "Billige Chips stoppen Bänder",
+        "Chips sind unwichtig",
+        "Autos brauchen keine Chips",
+        "Chips sind unbegrenzt verfügbar"
+       ],
+       "a": 0,
+       "e": "Ein fehlendes Teil stoppt das ganze Fahrzeug.",
+       "id": "mcu.m2.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wie lange sichern Hersteller oft Lieferbarkeit zu?",
+       "o": [
+        "10 bis 15 Jahre",
+        "6 Monate",
+        "1 Jahr",
+        "100 Jahre"
+       ],
+       "a": 0,
+       "e": "Passend zur Fahrzeuglebensdauer.",
+       "id": "mcu.m2.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was muss Flash für Lernwerte zusätzlich können?",
+       "o": [
+        "Viele Schreibzyklen",
+        "Schnell vergessen",
+        "Nur einmal beschreibbar sein",
+        "Ohne Strom löschen"
+       ],
+       "a": 0,
+       "e": "Lernwerte werden regelmäßig aktualisiert.",
+       "id": "mcu.m2.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mcu.m3",
+   "level": 2,
+   "title": "Infineon, ST, NXP, Renesas",
+   "desc": "Die wichtigsten Familien für Steuergeräte und ihre Eigenschaften.",
+   "lessons": [
+    {
+     "id": "mcu.m3.l1",
+     "title": "Infineon AURIX und TRAVEO",
+     "min": 7,
+     "body": [
+      "Infineon gehört zu den größten Anbietern von Automotive-Mikrocontrollern. Die AURIX-Familie ist in Motor-, Getriebe-, Fahrwerks- und Sicherheitssteuergeräten weit verbreitet.",
+      "## AURIX-Generationen",
+      "TC2xx (erste Generation, 65 nm) mit bis zu drei TriCore-Kernen. TC3xx (zweite Generation, 40 nm) mit bis zu sechs Kernen und bis 300 MHz. TC4x (dritte Generation, 28 nm) mit schnelleren Kernen, einer Parallelverarbeitungseinheit (PPU) für Signalverarbeitung und KI-Aufgaben sowie Unterstützung für CAN XL und schnelles Ethernet.",
+      "## Typische Merkmale",
+      "Lockstep-Kerne für ASIL D, das Generic Timer Module (GTM) für winkelbasierte Motorfunktionen, Hardware-Sicherheitsmodul (HSM), viele CAN-FD-Kanäle, FlexRay, Ethernet und schnelle ADCs.",
+      "## TRAVEO",
+      "Mit der Übernahme von Cypress kam die TRAVEO-Familie auf Arm-Cortex-Basis hinzu, eingesetzt etwa in Karosserie, Kombiinstrument und Gateways.",
+      "## Hinweis",
+      "Produktdaten ändern sich mit jeder Generation. Für konkrete Projekte immer das aktuelle Datenblatt prüfen."
+     ],
+     "key": [
+      "AURIX TC2xx 65 nm, TC3xx 40 nm, TC4x 28 nm.",
+      "Merkmale: TriCore-Lockstep, GTM, HSM, viele Busse.",
+      "TRAVEO (Arm) aus der Cypress-Übernahme."
+     ],
+     "src": [
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "AURIX TC3xx",
+       "b": "Zweite AURIX-Generation (40 nm), bis zu sechs TriCore-Kerne.",
+       "id": "mcu.m3.l1.k1"
+      },
+      {
+       "f": "AURIX TC4x",
+       "b": "Dritte AURIX-Generation (28 nm) mit PPU und CAN XL.",
+       "id": "mcu.m3.l1.k2"
+      },
+      {
+       "f": "PPU",
+       "b": "Parallel Processing Unit: Vektorrechenwerk im AURIX TC4x für Signalverarbeitung und KI.",
+       "id": "mcu.m3.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "In welcher Strukturgröße wird AURIX TC3xx gefertigt?",
+       "o": [
+        "40 nm",
+        "65 nm",
+        "28 nm",
+        "5 nm"
+       ],
+       "a": 0,
+       "e": "TC2xx 65 nm, TC4x 28 nm.",
+       "id": "mcu.m3.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bringt der TC4x Neues mit?",
+       "o": [
+        "Eine PPU",
+        "Keine Sicherheitsmechanismen",
+        "Nur einen Kern",
+        "Analoge Rechenwerke"
+       ],
+       "a": 0,
+       "e": "Für Signalverarbeitung und KI-Aufgaben.",
+       "id": "mcu.m3.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür ist das GTM im AURIX wichtig?",
+       "o": [
+        "Motorwinkel",
+        "Displaysteuerung",
+        "Bluetooth",
+        "Musikwiedergabe"
+       ],
+       "a": 0,
+       "e": "Etwa Einspritz- und Zündpulse.",
+       "id": "mcu.m3.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Woher stammt die TRAVEO-Familie?",
+       "o": [
+        "Aus der Cypress-Übernahme",
+        "Von ST",
+        "Von Renesas",
+        "Von NXP"
+       ],
+       "a": 0,
+       "e": "Infineon übernahm Cypress 2020.",
+       "id": "mcu.m3.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viele TriCore-Kerne hat ein großer TC3xx höchstens?",
+       "o": [
+        "Sechs",
+        "Einen",
+        "Zwölf",
+        "Hundert"
+       ],
+       "a": 0,
+       "e": "Bis zu sechs Kerne bei bis zu 300 MHz.",
+       "id": "mcu.m3.l1.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "mcu.m3.l2",
+     "title": "ST, NXP und Renesas",
+     "min": 7,
+     "body": [
+      "Neben Infineon prägen drei weitere Anbieter den Markt.",
+      "## STMicroelectronics",
+      "ST hat mit SPC5 eine lange Linie auf Power-Architecture-Basis (teils gemeinsam mit NXP entwickelt), etwa für Motor- und Getriebesteuerung. Die neuere Stellar-Familie nutzt Arm-Cortex-R52-Kerne und wird zum Teil in 28 nm FD-SOI mit eingebettetem Phasenwechselspeicher (PCM) gefertigt, gedacht für zonale und domänenübergreifende Steuergeräte.",
+      "## NXP",
+      "NXP bietet Power-Architecture-Controller (MPC57xx) und die S32-Plattform: S32K für allgemeine Aufgaben (Cortex-M), S32E/S32Z für Echtzeit-Domänen (Cortex-R52), S32G als Netzwerkprozessor für Gateways und weitere Varianten.",
+      "## Renesas",
+      "Renesas ist mit der RH850-Familie stark, besonders bei japanischen Herstellern und in Fahrwerk und Antrieb. Varianten wie RH850/U2A in 28 nm bieten mehrere Kerne und Virtualisierung. Für Rechenaufgaben gibt es die R-Car-SoCs.",
+      "## Gemeinsamkeiten",
+      "Alle bieten Lockstep, ECC, Hardware-Sicherheitsmodule, AUTOSAR-Treiber und Werkzeugketten. Die Wahl hängt oft von Peripherie, Erfahrung, Lieferkette und Preis ab, nicht nur von der Rechenleistung."
+     ],
+     "key": [
+      "ST: SPC5 (Power Architecture), Stellar (Cortex-R52, teils 28 nm FD-SOI mit PCM).",
+      "NXP: MPC57xx, S32K/E/Z/G.",
+      "Renesas: RH850 (z. B. U2A in 28 nm), R-Car."
+     ],
+     "src": [
+      {
+       "n": "STMicroelectronics: Automotive-Mikrocontroller SPC5 und Stellar (Produktseiten)",
+       "u": "https://www.st.com/en/automotive-microcontrollers.html"
+      },
+      {
+       "n": "NXP: S32-Plattform für Automotive (Produktseiten)",
+       "u": "https://www.nxp.com/products/processors-and-microcontrollers/s32-automotive-platform:S32"
+      },
+      {
+       "n": "Renesas: RH850-Automotive-Mikrocontroller (Produktseiten)",
+       "u": "https://www.renesas.com/en/products/microcontrollers-microprocessors/rh850-automotive-mcus"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Stellar",
+       "b": "ST-Mikrocontrollerfamilie mit Arm-Cortex-R52-Kernen, teils mit eingebettetem PCM.",
+       "id": "mcu.m3.l2.k1"
+      },
+      {
+       "f": "S32G",
+       "b": "NXP-Netzwerkprozessor für Fahrzeug-Gateways.",
+       "id": "mcu.m3.l2.k2"
+      },
+      {
+       "f": "RH850",
+       "b": "Renesas-Mikrocontrollerfamilie für Automotive-Anwendungen.",
+       "id": "mcu.m3.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Kerne nutzt die ST-Stellar-Familie?",
+       "o": [
+        "Arm Cortex-R52",
+        "TriCore",
+        "x86",
+        "RH850"
+       ],
+       "a": 0,
+       "e": "Für Echtzeit und funktionale Sicherheit.",
+       "id": "mcu.m3.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche NXP-Familie ist für Gateways gedacht?",
+       "o": [
+        "S32G",
+        "S32K",
+        "MPC5554",
+        "LPC800"
+       ],
+       "a": 0,
+       "e": "Netzwerkprozessor mit vielen Schnittstellen.",
+       "id": "mcu.m3.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Familie gehört zu Renesas?",
+       "o": [
+        "RH850",
+        "AURIX",
+        "SPC5",
+        "S32K"
+       ],
+       "a": 0,
+       "e": "Dazu die R-Car-SoCs.",
+       "id": "mcu.m3.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welchen Speicher nutzt ST in Teilen der Stellar-Familie?",
+       "o": [
+        "Phasenwechselspeicher (PCM)",
+        "Magnetband",
+        "Lochkarten",
+        "Nur ROM"
+       ],
+       "a": 0,
+       "e": "Eingebettet in 28 nm FD-SOI.",
+       "id": "mcu.m3.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wovon hängt die Wahl des Controllers oft ab?",
+       "o": [
+        "Vieles, nicht nur Takt",
+        "Nur vom Logo",
+        "Nur von der Farbe",
+        "Nur vom Takt"
+       ],
+       "a": 0,
+       "e": "Rechenleistung ist nur ein Kriterium.",
+       "id": "mcu.m3.l2.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "mcu.m3.l3",
+     "title": "Den richtigen Controller wählen",
+     "min": 6,
+     "body": [
+      "Für ein neues Steuergerät wählt das Team einen Controller anhand vieler Kriterien.",
+      "## Funktion",
+      "Wie viel Rechenleistung, wie viele Kerne, wie viel Flash und RAM? Welche Peripherie wird gebraucht, etwa winkelbasierte Timer für Motoren, viele ADC-Kanäle, CAN FD, Ethernet, SENT oder PSI5 für Sensoren?",
+      "## Sicherheit",
+      "Welcher ASIL wird gefordert? Welche Security-Funktionen (HSM, Secure Boot, Schlüsselspeicher) braucht man für R155?",
+      "## Projekt und Wirtschaft",
+      "Preis pro Stück bei Millionenstückzahlen, Lieferbarkeit über die Laufzeit, Erfahrung im Team, vorhandene Software, Werkzeugkette, Unterstützung durch den Hersteller und Pin-Kompatibilität für spätere Varianten.",
+      "## Reserven",
+      "Software wächst während der Entwicklung. Viele Teams planen deshalb Reserven bei Laufzeit und Speicher ein, etwa 20 bis 30 Prozent."
+     ],
+     "key": [
+      "Kriterien: Rechenleistung, Speicher, Peripherie.",
+      "Sicherheit (ASIL) und Security (HSM).",
+      "Preis, Lieferbarkeit, Werkzeuge, Erfahrung; Reserven einplanen."
+     ],
+     "src": [
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      },
+      {
+       "n": "NXP: S32-Plattform für Automotive (Produktseiten)",
+       "u": "https://www.nxp.com/products/processors-and-microcontrollers/s32-automotive-platform:S32"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SENT",
+       "b": "Single Edge Nibble Transmission: digitale Sensorschnittstelle (SAE J2716).",
+       "id": "mcu.m3.l3.k1"
+      },
+      {
+       "f": "PSI5",
+       "b": "Peripheral Sensor Interface 5: Zweidraht-Sensorschnittstelle, z. B. für Airbag-Sensoren.",
+       "id": "mcu.m3.l3.k2"
+      },
+      {
+       "f": "Pin-Kompatibilität",
+       "b": "Gleiche Gehäuse und Pinbelegung über mehrere Controller-Varianten.",
+       "id": "mcu.m3.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "multi",
+       "q": "Welche Kriterien zählen bei der Controllerwahl?",
+       "o": [
+        "Peripherie",
+        "Lieferbarkeit",
+        "ASIL-Eignung",
+        "Lieblingsfarbe des Teams"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Farbe zählt nicht.",
+       "id": "mcu.m3.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum plant man Reserven bei Speicher und Laufzeit?",
+       "o": [
+        "Software wächst",
+        "Damit der Chip schwerer wird",
+        "Weil Flash schrumpft",
+        "Wegen der Abgasnorm"
+       ],
+       "a": 0,
+       "e": "Typisch 20 bis 30 Prozent.",
+       "id": "mcu.m3.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür ist SENT gedacht?",
+       "o": [
+        "Digitale Sensorsignale",
+        "Videoübertragung",
+        "Software-Updates",
+        "Diagnose über Ethernet"
+       ],
+       "a": 0,
+       "e": "SAE J2716.",
+       "id": "mcu.m3.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was bringt Pin-Kompatibilität?",
+       "o": [
+        "Leichter Wechsel",
+        "Mehr Rechenleistung",
+        "Bessere Abgaswerte",
+        "Kürzere Kabel"
+       ],
+       "a": 0,
+       "e": "Die Leiterplatte kann bleiben.",
+       "id": "mcu.m3.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist der Stückpreis so wichtig?",
+       "o": [
+        "Millionenstückzahlen",
+        "Weil Chips teurer als Autos sind",
+        "Weil Kunden den Chip sehen",
+        "Weil er die Leistung bestimmt"
+       ],
+       "a": 0,
+       "e": "Cent-Beträge summieren sich.",
+       "id": "mcu.m3.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mcu.m4",
+   "level": 2,
+   "title": "Was die Nanometer bedeuten",
+   "desc": "Strukturgrößen, Vor- und Nachteile kleiner Knoten und warum Autos oft ältere nutzen.",
+   "lessons": [
+    {
+     "id": "mcu.m4.l1",
+     "title": "Der Fertigungsknoten",
+     "min": 6,
+     "body": [
+      "Angaben wie 40 nm oder 28 nm bezeichnen den Fertigungsknoten (Technologieknoten) eines Chips. Früher entsprach die Zahl ungefähr der Länge des Transistor-Gates. Heute ist sie eher ein Name für eine Technologiegeneration; ein 5-nm-Prozess hat keine Strukturen, die genau 5 nm messen.",
+      "## Was kleiner bringt",
+      "Kleinere Transistoren passen dichter auf den Chip. Bei gleicher Fläche gibt es mehr Logik, oder dieselbe Logik braucht weniger Fläche. Sie schalten schneller und brauchen pro Schaltvorgang weniger Energie. Das ermöglicht mehr Kerne, größere Speicher und höhere Takte.",
+      "## Moores Gesetz",
+      "Gordon Moore beobachtete 1965, dass sich die Zahl der Transistoren pro Chip regelmäßig verdoppelt (später meist mit etwa zwei Jahren angegeben). Dieser Trend trug Jahrzehnte, wird aber immer teurer und langsamer."
+     ],
+     "key": [
+      "Nanometer-Angabe = Technologiegeneration, nicht mehr exakte Strukturgröße.",
+      "Kleiner: dichter, schneller, weniger Energie pro Schaltvorgang.",
+      "Moores Gesetz: Verdopplung der Transistorzahl, zunehmend teurer."
+     ],
+     "src": [
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      },
+      {
+       "n": "STMicroelectronics: Automotive-Mikrocontroller SPC5 und Stellar (Produktseiten)",
+       "u": "https://www.st.com/en/automotive-microcontrollers.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Fertigungsknoten",
+       "b": "Technologiegeneration der Chipfertigung, z. B. 40 nm oder 28 nm.",
+       "id": "mcu.m4.l1.k1"
+      },
+      {
+       "f": "Moores Gesetz",
+       "b": "Beobachtung, dass sich die Transistorzahl pro Chip regelmäßig verdoppelt.",
+       "id": "mcu.m4.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was bezeichnet die Nanometer-Angabe heute vor allem?",
+       "o": [
+        "Eine Generation",
+        "Die exakte Gate-Länge",
+        "Die Chipgröße",
+        "Die Taktfrequenz"
+       ],
+       "a": 0,
+       "e": "Der Name hat sich von der Messgröße gelöst.",
+       "id": "mcu.m4.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bringt ein kleinerer Knoten?",
+       "o": [
+        "Mehr Transistoren auf gleicher Fläche",
+        "Weniger Rechenleistung",
+        "Höheren Stromverbrauch pro Schaltvorgang",
+        "Größere Chips"
+       ],
+       "a": 0,
+       "e": "Dichte, Geschwindigkeit, Effizienz.",
+       "id": "mcu.m4.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt Moores Gesetz?",
+       "o": [
+        "Verdopplung der Transistorzahl",
+        "Halbierung der Chippreise jedes Jahr",
+        "Verdopplung des Takts jede Woche",
+        "Abgasgrenzwerte"
+       ],
+       "a": 0,
+       "e": "Eine Beobachtung von 1965.",
+       "id": "mcu.m4.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Hat ein 5-nm-Chip Strukturen von genau 5 nm?",
+       "o": [
+        "Nein",
+        "Ja, immer",
+        "Nur die Pins",
+        "Nur das Gehäuse"
+       ],
+       "a": 0,
+       "e": "Die Zahl ist heute eher Marketing.",
+       "id": "mcu.m4.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum verlangsamt sich Moores Gesetz?",
+       "o": [
+        "Teurer, schwieriger",
+        "Weil es verboten wurde",
+        "Weil Silizium knapp ist",
+        "Weil niemand mehr Chips braucht"
+       ],
+       "a": 0,
+       "e": "Physik und Kosten setzen Grenzen.",
+       "id": "mcu.m4.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "mcu.m4.l2",
+     "title": "Warum Autos ältere Knoten nutzen",
+     "min": 7,
+     "body": [
+      "Smartphone-Chips werden in 3 bis 5 nm gefertigt, viele Automotive-Mikrocontroller dagegen in 40, 65 oder 90 nm, neuere in 28 nm. Das hat gute Gründe.",
+      "## Eingebetteter Flash",
+      "Mikrocontroller brauchen Flash direkt auf dem Chip. Klassischer eingebetteter Flash lässt sich unter etwa 28 nm kaum noch wirtschaftlich herstellen. Deshalb setzen neue Generationen auf andere nichtflüchtige Speicher: Phasenwechselspeicher (PCM), magnetischen Speicher (MRAM) oder resistiven Speicher (RRAM).",
+      "## Robustheit und Spannung",
+      "Ältere Knoten vertragen höhere Spannungen und Temperaturen besser, haben weniger Leckströme bei Hitze und sind über lange Zeit erprobt. Für Grade-0- oder Grade-1-Anwendungen ist das ein Vorteil.",
+      "## Kosten und Lieferbarkeit",
+      "Masken und Entwicklung für kleine Knoten kosten sehr viel. Für einen Controller mit moderatem Rechenbedarf lohnt sich das oft nicht. Ältere Fabriken laufen lange und sichern Lieferbarkeit.",
+      "## Wo kleine Knoten im Auto doch stecken",
+      "Große SoCs für Infotainment, Zentralrechner und automatisiertes Fahren werden in modernen Knoten (etwa 7 nm und kleiner) gefertigt, weil sie enorme Rechenleistung brauchen."
+     ],
+     "key": [
+      "Viele Automotive-MCUs: 90/65/40 nm, neuere 28 nm; Smartphones 3–5 nm.",
+      "Eingebetteter Flash endet etwa bei 28 nm → PCM, MRAM, RRAM.",
+      "Ältere Knoten: robust, günstig, lange lieferbar; SoCs für ADAS in modernen Knoten."
+     ],
+     "src": [
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      },
+      {
+       "n": "STMicroelectronics: Automotive-Mikrocontroller SPC5 und Stellar (Produktseiten)",
+       "u": "https://www.st.com/en/automotive-microcontrollers.html"
+      },
+      {
+       "n": "NXP: S32-Plattform für Automotive (Produktseiten)",
+       "u": "https://www.nxp.com/products/processors-and-microcontrollers/s32-automotive-platform:S32"
+      }
+     ],
+     "cards": [
+      {
+       "f": "eFlash",
+       "b": "Eingebetteter Flash-Speicher auf dem Mikrocontroller-Chip.",
+       "id": "mcu.m4.l2.k1"
+      },
+      {
+       "f": "PCM",
+       "b": "Phase-Change Memory: nichtflüchtiger Speicher auf Basis eines Materials, das zwischen amorph und kristallin wechselt.",
+       "id": "mcu.m4.l2.k2"
+      },
+      {
+       "f": "MRAM",
+       "b": "Magnetoresistiver Speicher: speichert über magnetische Ausrichtung.",
+       "id": "mcu.m4.l2.k3"
+      },
+      {
+       "f": "RRAM",
+       "b": "Resistiver Speicher: speichert über veränderbaren Widerstand.",
+       "id": "mcu.m4.l2.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Warum wechseln neue MCU-Generationen zu PCM, MRAM oder RRAM?",
+       "o": [
+        "eFlash endet bei 28 nm",
+        "Flash ist verboten",
+        "Weil RAM zu langsam ist",
+        "Weil Kunden es wünschen"
+       ],
+       "a": 0,
+       "e": "Neue nichtflüchtige Speicher passen zu kleineren Knoten.",
+       "id": "mcu.m4.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Vorteil älterer Knoten im Auto?",
+       "o": [
+        "Robust",
+        "Höchste Rechenleistung",
+        "Geringste Fläche",
+        "Neueste Technik"
+       ],
+       "a": 0,
+       "e": "Weniger Leckströme, lange erprobt.",
+       "id": "mcu.m4.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wo werden sehr moderne Knoten im Auto genutzt?",
+       "o": [
+        "In großen SoCs",
+        "In Fensterhebern",
+        "In Glühlampen",
+        "In Sicherungen"
+       ],
+       "a": 0,
+       "e": "Dort zählt Rechenleistung.",
+       "id": "mcu.m4.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "In welchem Knoten werden viele neue Automotive-MCUs gefertigt?",
+       "o": [
+        "28 nm",
+        "3 nm",
+        "180 nm",
+        "1 µm"
+       ],
+       "a": 0,
+       "e": "Etwa AURIX TC4x, Stellar, RH850/U2A.",
+       "id": "mcu.m4.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Kostenfaktor kleiner Knoten?",
+       "o": [
+        "Teure Masken",
+        "Billigere Fabriken",
+        "Weniger Ingenieure",
+        "Kein Testaufwand"
+       ],
+       "a": 0,
+       "e": "Lohnt sich nur bei großem Rechenbedarf.",
+       "id": "mcu.m4.l2.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "mcu.m4.l3",
+     "title": "Transistoren: planar, FD-SOI, FinFET",
+     "min": 6,
+     "body": [
+      "Mit kleiner werdenden Strukturen musste sich auch die Bauform der Transistoren ändern.",
+      "## Planar",
+      "Klassische Transistoren liegen flach im Silizium. Unterhalb von etwa 28 nm wird es schwer, den Kanal zuverlässig abzuschalten; Leckströme steigen.",
+      "## FD-SOI",
+      "Fully Depleted Silicon on Insulator: Der Transistor sitzt auf einer dünnen Siliziumschicht über einer isolierenden Oxidschicht. Das senkt Leckströme und erlaubt, Eigenschaften über die Rückseite zu verstellen (Body Biasing). ST nutzt FD-SOI unter anderem für Teile der Stellar-Familie.",
+      "## FinFET",
+      "Der Kanal ragt als dünne Finne aus dem Silizium, das Gate umschließt ihn von drei Seiten. Das ermöglicht Knoten von 16 nm abwärts. Die neueste Generation nutzt Gate-All-Around-Transistoren, bei denen das Gate den Kanal vollständig umschließt.",
+      "## Für die Praxis",
+      "Für Software-Entwicklerinnen und -Entwickler bleibt das meist unsichtbar. Es erklärt aber, warum neue Controller sparsamer, schneller oder mit neuen Speichertechnologien kommen."
+     ],
+     "key": [
+      "Planar bis etwa 28 nm; darunter steigen Leckströme.",
+      "FD-SOI: isolierende Schicht, wenig Leckstrom, Body Biasing.",
+      "FinFET ab 16 nm; danach Gate-All-Around."
+     ],
+     "src": [
+      {
+       "n": "STMicroelectronics: Automotive-Mikrocontroller SPC5 und Stellar (Produktseiten)",
+       "u": "https://www.st.com/en/automotive-microcontrollers.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "FD-SOI",
+       "b": "Fully Depleted Silicon on Insulator: Transistoren auf dünnem Silizium über einer Isolierschicht.",
+       "id": "mcu.m4.l3.k1"
+      },
+      {
+       "f": "FinFET",
+       "b": "Transistor mit finnenförmigem Kanal, vom Gate dreiseitig umschlossen.",
+       "id": "mcu.m4.l3.k2"
+      },
+      {
+       "f": "Gate-All-Around",
+       "b": "Transistor, bei dem das Gate den Kanal vollständig umschließt.",
+       "id": "mcu.m4.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist das Besondere an FD-SOI?",
+       "o": [
+        "Eine Isolierschicht",
+        "Der Kanal ist eine Finne",
+        "Es gibt kein Gate",
+        "Es ist ein Speicher"
+       ],
+       "a": 0,
+       "e": "Senkt Leckströme.",
+       "id": "mcu.m4.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was umschließt das Gate bei FinFETs?",
+       "o": [
+        "Dreiseitig den Kanal",
+        "Den ganzen Chip",
+        "Nur die Pins",
+        "Den Flash"
+       ],
+       "a": 0,
+       "e": "Bessere Kontrolle über den Kanal.",
+       "id": "mcu.m4.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist das Problem planarer Transistoren unter etwa 28 nm?",
+       "o": [
+        "Steigende Leckströme",
+        "Zu wenig Fläche",
+        "Zu niedrige Spannung",
+        "Zu viel Kupfer"
+       ],
+       "a": 0,
+       "e": "Der Kanal lässt sich schlecht abschalten.",
+       "id": "mcu.m4.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was erlaubt Body Biasing?",
+       "o": [
+        "Nachjustieren",
+        "Den Chip verbiegen",
+        "Mehr Pins",
+        "Längere Kabel"
+       ],
+       "a": 0,
+       "e": "Über die Rückseite der Isolierschicht.",
+       "id": "mcu.m4.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Bauform folgt auf FinFET?",
+       "o": [
+        "Gate-All-Around",
+        "Planar",
+        "Röhren",
+        "Relais"
+       ],
+       "a": 0,
+       "e": "Das Gate umschließt den Kanal vollständig.",
+       "id": "mcu.m4.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mcu.m5",
+   "level": 3,
+   "title": "Speicher und Peripherie im Detail",
+   "desc": "Flash und Wartezyklen, Datenflash, Timer, ADC und Schnittstellen.",
+   "lessons": [
+    {
+     "id": "mcu.m5.l1",
+     "title": "Programmflash, Datenflash, RAM",
+     "min": 6,
+     "body": [
+      "Speicher ist im Mikrocontroller in mehrere Bereiche geteilt.",
+      "## Programmflash",
+      "Enthält Code und Kalibrierdaten, meist mehrere Megabyte. Flash ist langsamer als der Kern; bei hohem Takt braucht ein Zugriff mehrere Wartezyklen. Caches und Prefetch-Puffer überbrücken das.",
+      "## Datenflash",
+      "Ein separater Bereich für häufig geänderte Daten wie Lernwerte und Fehlerspeicher. Er verkraftet mehr Schreibzyklen. Software emuliert darauf oft ein EEPROM.",
+      "## RAM",
+      "Schneller Arbeitsspeicher, oft verteilt: lokale Speicher nahe jedem Kern (schnell) und gemeinsamer Speicher (für Datenaustausch). Wo Variablen liegen, beeinflusst die Laufzeit stark.",
+      "## Zwei Bänke",
+      "Manche Controller haben zwei Flash-Bänke: Eine läuft, die andere wird im Hintergrund beschrieben. Das ermöglicht Updates ohne lange Ausfallzeit (A/B-Swap)."
+     ],
+     "key": [
+      "Programmflash: Code und Kalibrierdaten; Wartezyklen, Caches.",
+      "Datenflash: Lernwerte, Fehlerspeicher, EEPROM-Emulation.",
+      "RAM lokal und gemeinsam; zwei Flash-Bänke für Updates."
+     ],
+     "src": [
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Wartezyklus (Wait State)",
+       "b": "Zusätzlicher Takt, den ein langsamer Speicherzugriff braucht.",
+       "id": "mcu.m5.l1.k1"
+      },
+      {
+       "f": "EEPROM-Emulation",
+       "b": "Software, die auf Datenflash ein byteweise beschreibbares EEPROM nachbildet.",
+       "id": "mcu.m5.l1.k2"
+      },
+      {
+       "f": "Lokaler RAM",
+       "b": "Schneller Speicher direkt an einem Kern.",
+       "id": "mcu.m5.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was überbrückt die Langsamkeit des Flash?",
+       "o": [
+        "Caches und Prefetch",
+        "Mehr Pins",
+        "Ein größeres Gehäuse",
+        "Ein langsamerer Takt der Busse"
+       ],
+       "a": 0,
+       "e": "So muss der Kern seltener warten.",
+       "id": "mcu.m5.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wo liegen Lernwerte typischerweise?",
+       "o": [
+        "Im Datenflash",
+        "Im Programmflash neben dem Code",
+        "Nur im RAM",
+        "Im ADC"
+       ],
+       "a": 0,
+       "e": "Der Datenflash verträgt mehr Schreibzyklen.",
+       "id": "mcu.m5.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist lokaler RAM wichtig für die Laufzeit?",
+       "o": [
+        "Am schnellsten",
+        "Er ist größer",
+        "Er ist nichtflüchtig",
+        "Er ist verschlüsselt"
+       ],
+       "a": 0,
+       "e": "Gemeinsamer Speicher ist langsamer erreichbar.",
+       "id": "mcu.m5.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dienen zwei Flash-Bänke?",
+       "o": [
+        "Update im Hintergrund",
+        "Doppelte Rechenleistung",
+        "Zwei Betriebssysteme gleichzeitig",
+        "Mehr CAN-Kanäle"
+       ],
+       "a": 0,
+       "e": "A/B-Swap.",
+       "id": "mcu.m5.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Wartezyklus?",
+       "o": [
+        "Extra-Takt beim Lesen",
+        "Eine Pause im Fahrzeug",
+        "Ein Fehlercode",
+        "Ein Bootloader-Schritt"
+       ],
+       "a": 0,
+       "e": "Typisch bei Flash und hohem Takt.",
+       "id": "mcu.m5.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "mcu.m5.l2",
+     "title": "Timer und ADC",
+     "min": 6,
+     "body": [
+      "Für Motor- und Antriebssteuerungen sind Timer und Analog-Digital-Wandler die wichtigste Peripherie.",
+      "## Timer",
+      "Timer messen Zeiten zwischen Flanken (etwa Zahnzeiten des Kurbelwellensignals) und erzeugen Pulse (etwa PWM oder Einspritzimpulse). Komplexe Timer-Module wie das GTM in AURIX arbeiten weitgehend selbstständig und entlasten die Kerne.",
+      "## ADC",
+      "Analog-Digital-Wandler wandeln Spannungen in Zahlen, typischerweise mit 12 Bit Auflösung (4.096 Stufen). Wichtig sind Wandlungszeit, Genauigkeit und die Möglichkeit, Messungen zeitgenau oder winkelsynchron auszulösen, etwa genau beim Zahn X der Kurbelwelle.",
+      "## Spezielle Wandler",
+      "Delta-Sigma-Wandler erreichen hohe Auflösung, etwa für Stromsensoren in E-Motoren oder Klopfsignale. Viele Controller bieten außerdem Vergleicher (Komparatoren) für schnelle Schutzabschaltungen."
+     ],
+     "key": [
+      "Timer messen Flanken und erzeugen Pulse; GTM arbeitet selbstständig.",
+      "ADC typisch 12 Bit; Auslösen zeit- oder winkelsynchron.",
+      "Delta-Sigma für hohe Auflösung; Komparatoren für Schutz."
+     ],
+     "src": [
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      },
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "12-Bit-ADC",
+       "b": "Analog-Digital-Wandler mit 4.096 Stufen.",
+       "id": "mcu.m5.l2.k1"
+      },
+      {
+       "f": "Delta-Sigma-Wandler",
+       "b": "Wandler mit Überabtastung für hohe Auflösung.",
+       "id": "mcu.m5.l2.k2"
+      },
+      {
+       "f": "PWM",
+       "b": "Pulsweitenmodulation: Leistung über das Verhältnis von Ein- zu Gesamtzeit.",
+       "id": "mcu.m5.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie viele Stufen hat ein 12-Bit-ADC?",
+       "a": 4096,
+       "unit": "",
+       "tol": 0,
+       "e": "2 hoch 12 = 4.096.",
+       "id": "mcu.m5.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "Ein 12-Bit-ADC mit 5 V Referenz: Wie viele Millivolt entspricht eine Stufe ungefähr?",
+       "a": 1.22,
+       "unit": "mV",
+       "tol": 0.02,
+       "e": "5.000 mV ÷ 4.096 ≈ 1,22 mV.",
+       "id": "mcu.m5.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was entlastet ein Timer-Modul wie das GTM?",
+       "o": [
+        "Die Rechenkerne",
+        "Den Kraftstofftank",
+        "Die Batterie",
+        "Den CAN-Bus"
+       ],
+       "a": 0,
+       "e": "Es arbeitet weitgehend selbstständig.",
+       "id": "mcu.m5.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum löst man ADC-Messungen winkelsynchron aus?",
+       "o": [
+        "Passend zum Winkel",
+        "Um Strom zu sparen",
+        "Weil der ADC sonst kaputt geht",
+        "Für die Diagnose über OBD"
+       ],
+       "a": 0,
+       "e": "Etwa Saugrohrdruck zum richtigen Zeitpunkt.",
+       "id": "mcu.m5.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür eignen sich Delta-Sigma-Wandler besonders?",
+       "o": [
+        "Hohe Auflösung",
+        "Sehr schnelle Schalter",
+        "Busübertragung",
+        "Software-Updates"
+       ],
+       "a": 0,
+       "e": "Etwa in E-Motor-Umrichtern.",
+       "id": "mcu.m5.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "mcu.m5.l3",
+     "title": "Kommunikationsschnittstellen",
+     "min": 5,
+     "body": [
+      "Ein Automotive-Controller spricht viele Sprachen.",
+      "## Fahrzeugbusse",
+      "Mehrere CAN-FD-Kanäle, LIN, bei vielen FlexRay, zunehmend Ethernet (100 Mbit/s bis 1 Gbit/s, teils mit Switch auf dem Chip) und bei neuesten Generationen CAN XL.",
+      "## Lokale Schnittstellen",
+      "SPI verbindet den Controller mit Bausteinen auf derselben Platine: Treiber-ICs für Endstufen, Überwachungsbausteine, Speicher. SENT und PSI5 bringen digitale Sensorsignale. I²C findet man seltener.",
+      "## Debug",
+      "Über Debug- und Trace-Schnittstellen beobachten Entwickler den Controller in Echtzeit, setzen Haltepunkte und zeichnen den Programmablauf auf. In Serie sind diese Zugänge gesperrt oder per Authentisierung geschützt."
+     ],
+     "key": [
+      "Fahrzeugbusse: CAN FD, LIN, FlexRay, Ethernet, CAN XL.",
+      "Lokal: SPI für ICs, SENT/PSI5 für Sensoren.",
+      "Debug/Trace in Serie gesperrt oder geschützt."
+     ],
+     "src": [
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      },
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SPI",
+       "b": "Serial Peripheral Interface: schnelle serielle Verbindung zu Bausteinen auf der Platine.",
+       "id": "mcu.m5.l3.k1"
+      },
+      {
+       "f": "Trace",
+       "b": "Aufzeichnung des Programmablaufs in Echtzeit für Analyse und Optimierung.",
+       "id": "mcu.m5.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Womit spricht der Controller mit Endstufen-ICs auf der Platine?",
+       "o": [
+        "SPI",
+        "FlexRay",
+        "Ethernet",
+        "LIN"
+       ],
+       "a": 0,
+       "e": "SPI ist die typische lokale Verbindung.",
+       "id": "mcu.m5.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was erlaubt Trace?",
+       "o": [
+        "Ablauf aufzeichnen",
+        "Software flashen ohne Tester",
+        "Fahrzeug orten",
+        "Abgas messen"
+       ],
+       "a": 0,
+       "e": "Wichtig für Laufzeitanalysen.",
+       "id": "mcu.m5.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum sperrt man Debug-Zugänge in Serie?",
+       "o": [
+        "Gegen Auslesen",
+        "Damit der Chip kühler bleibt",
+        "Wegen der Abgasnorm",
+        "Damit CAN schneller ist"
+       ],
+       "a": 0,
+       "e": "Debug ist ein mächtiger Angriffspunkt.",
+       "id": "mcu.m5.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was kommt bei den neuesten Controllern als Bus hinzu?",
+       "o": [
+        "CAN XL",
+        "Parallelport",
+        "Diskette",
+        "Serielle Maus"
+       ],
+       "a": 0,
+       "e": "Etwa beim AURIX TC4x.",
+       "id": "mcu.m5.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür nutzt man PSI5?",
+       "o": [
+        "Digitale Sensorsignale",
+        "Videos",
+        "Software-Updates",
+        "Klimasteuerung per Funk"
+       ],
+       "a": 0,
+       "e": "Etwa für Airbag-Sensoren.",
+       "id": "mcu.m5.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mcu.m6",
+   "level": 3,
+   "title": "Software auf dem Controller",
+   "desc": "Treiber, Mehrkern-Software, Laufzeit und Werkzeuge.",
+   "lessons": [
+    {
+     "id": "mcu.m6.l1",
+     "title": "MCAL und Startcode",
+     "min": 5,
+     "body": [
+      "Zwischen Hardware und Anwendung liegt eine dünne, aber wichtige Schicht.",
+      "## MCAL",
+      "Der Microcontroller Abstraction Layer in AUTOSAR enthält Treiber für ADC, Timer, CAN, SPI, Flash und mehr. Chiphersteller liefern meist eigene MCAL-Pakete, die zum jeweiligen Controller passen.",
+      "## Konfiguration",
+      "Die MCAL wird über Werkzeuge konfiguriert: Takte, Pinbelegung, Kanäle, Interrupts. Daraus entsteht Code. Fehler hier wirken sich auf alles darüber aus.",
+      "## Startcode",
+      "Ein kleiner Teil vor dem Betriebssystem stellt Stack, Speicher und Takt ein und ruft dann die Initialisierung auf. Er ist oft in Assembler oder sehr nah an der Hardware geschrieben."
+     ],
+     "key": [
+      "MCAL: Hardwaretreiber in AUTOSAR, meist vom Chiphersteller.",
+      "Konfiguration über Werkzeuge erzeugt Code.",
+      "Startcode stellt Stack, Speicher und Takt ein."
+     ],
+     "src": [
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "MCAL",
+       "b": "Microcontroller Abstraction Layer: unterste AUTOSAR-Schicht mit Hardwaretreibern.",
+       "id": "mcu.m6.l1.k1"
+      },
+      {
+       "f": "Startcode",
+       "b": "Code, der vor dem Betriebssystem Stack, Speicher und Takt vorbereitet.",
+       "id": "mcu.m6.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wer liefert meist die MCAL?",
+       "o": [
+        "Der Chiphersteller",
+        "Der Fahrer",
+        "Die Werkstatt",
+        "Die Versicherung"
+       ],
+       "a": 0,
+       "e": "Passend zum Controller.",
+       "id": "mcu.m6.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie wird die MCAL eingestellt?",
+       "o": [
+        "Über Konfigurationswerkzeuge",
+        "Per Hand am Lötkolben",
+        "Über das Radio",
+        "Gar nicht"
+       ],
+       "a": 0,
+       "e": "Daraus entsteht Code.",
+       "id": "mcu.m6.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was macht der Startcode?",
+       "o": [
+        "Grundeinstellung",
+        "Fehler löschen",
+        "Musik abspielen",
+        "CAN-Botschaften verschlüsseln"
+       ],
+       "a": 0,
+       "e": "Vor dem Betriebssystem.",
+       "id": "mcu.m6.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Treiber gehören zur MCAL?",
+       "o": [
+        "ADC, Timer, CAN, SPI",
+        "Navigation, Radio",
+        "Sitzheizung, Spiegel",
+        "Abgasgrenzwerte"
+       ],
+       "a": 0,
+       "e": "Hardwarenahe Treiber.",
+       "id": "mcu.m6.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum sind Konfigurationsfehler in der MCAL kritisch?",
+       "o": [
+        "Alles baut darauf",
+        "Weil sie gelb leuchten",
+        "Weil sie Benzin kosten",
+        "Weil sie unsichtbar sind"
+       ],
+       "a": 0,
+       "e": "Ein falscher Takt betrifft das ganze System.",
+       "id": "mcu.m6.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "mcu.m6.l2",
+     "title": "Mehrkern-Software und Laufzeit",
+     "min": 7,
+     "body": [
+      "Mehrere Kerne bringen Leistung, aber auch neue Fehlerquellen.",
+      "## Aufteilung",
+      "Tasks werden Kernen fest zugeordnet. Gute Aufteilungen halten zusammengehörige Daten auf einem Kern und minimieren Austausch. Sicherheitsrelevante Software läuft oft auf einem Lockstep-Kern.",
+      "## Gemeinsame Daten",
+      "Greifen zwei Kerne gleichzeitig auf dieselben Daten zu, drohen inkonsistente Werte. Lösungen sind Spinlocks, Nachrichtenpuffer oder doppelte Puffer, bei denen immer ein vollständiger Datensatz gelesen wird.",
+      "## Laufzeit messen",
+      "Jede Task muss in ihrem Zeitraster fertig werden, auch im schlimmsten Fall. Man misst Laufzeiten mit Trace, schätzt die Worst-Case Execution Time (WCET) und prüft die Auslastung jedes Kerns. Bei hohen Motordrehzahlen kann die winkelsynchrone Last schnell steigen.",
+      "## Typische Probleme",
+      "Zugriffskonflikte auf Speicher, Cache-Effekte, unerwartete Interrupt-Last und Prioritätsinversion. Viele Fehler zeigen sich nur sporadisch."
+     ],
+     "key": [
+      "Tasks fest Kernen zuordnen; Austausch minimieren.",
+      "Gemeinsame Daten schützen: Spinlocks, Puffer.",
+      "Laufzeit messen, WCET schätzen, Auslastung prüfen."
+     ],
+     "src": [
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      },
+      {
+       "n": "Infineon: AURIX-Mikrocontroller (Produktseiten und Datenblätter)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "WCET",
+       "b": "Worst-Case Execution Time: längste mögliche Laufzeit eines Programmteils.",
+       "id": "mcu.m6.l2.k1"
+      },
+      {
+       "f": "Spinlock",
+       "b": "Sperre, bei der ein Kern wartet, bis ein anderer den Zugriff freigibt.",
+       "id": "mcu.m6.l2.k2"
+      },
+      {
+       "f": "Prioritätsinversion",
+       "b": "Hoch priorisierte Task wartet auf eine niedrig priorisierte, die eine Ressource hält.",
+       "id": "mcu.m6.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist die WCET?",
+       "o": [
+        "Längste mögliche Laufzeit",
+        "Durchschnittliche Laufzeit",
+        "Kürzeste Laufzeit",
+        "Startzeit des Controllers"
+       ],
+       "a": 0,
+       "e": "Muss ins Zeitraster passen.",
+       "id": "mcu.m6.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient ein Spinlock?",
+       "o": [
+        "Zugriff sperren",
+        "Kerne beschleunigen",
+        "Flash löschen",
+        "Busse wecken"
+       ],
+       "a": 0,
+       "e": "Ein Kern wartet auf die Freigabe.",
+       "id": "mcu.m6.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist Prioritätsinversion?",
+       "o": [
+        "Wichtig wartet auf unwichtig",
+        "Tasks laufen rückwärts",
+        "Kerne tauschen Plätze",
+        "Der Takt halbiert sich"
+       ],
+       "a": 0,
+       "e": "Klassisches Echtzeitproblem.",
+       "id": "mcu.m6.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum hält man zusammengehörige Daten auf einem Kern?",
+       "o": [
+        "Weniger teurer Austausch",
+        "Weil andere Kerne nicht lesen können",
+        "Für die Optik",
+        "Wegen der Abgasnorm"
+       ],
+       "a": 0,
+       "e": "Kernübergreifende Zugriffe kosten Zeit.",
+       "id": "mcu.m6.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wann steigt die winkelsynchrone Last besonders?",
+       "o": [
+        "Bei hohen Drehzahlen",
+        "Im Stand",
+        "Bei Kälte",
+        "Beim Tanken"
+       ],
+       "a": 0,
+       "e": "Mehr Segmente pro Sekunde.",
+       "id": "mcu.m6.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "mcu.m6.l3",
+     "title": "Werkzeuge der Entwicklung",
+     "min": 5,
+     "body": [
+      "Hinter jedem Steuergerät steht eine Werkzeugkette.",
+      "## Compiler",
+      "Für sicherheitsrelevante Software werden qualifizierte Compiler genutzt, die nach Normen wie ISO 26262 bewertet sind. Bekannte Anbieter liefern Compiler für TriCore, Arm, Power und RH850.",
+      "## Debugger und Trace",
+      "Hardware-Debugger verbinden sich über die Debug-Schnittstelle, erlauben Haltepunkte, Speicherzugriff und Trace. Für Messen und Kalibrieren im laufenden Betrieb nutzt man XCP.",
+      "## Statische Analyse",
+      "Werkzeuge prüfen Code auf Regeln wie MISRA C, finden potenzielle Laufzeitfehler und berechnen Speicher- und Stackbedarf.",
+      "## Simulation",
+      "Virtuelle Steuergeräte simulieren Controller und Peripherie am PC. So lässt sich Software testen, bevor Hardware verfügbar ist."
+     ],
+     "key": [
+      "Qualifizierte Compiler für Sicherheitssoftware.",
+      "Debugger, Trace und XCP.",
+      "Statische Analyse (z. B. MISRA C) und virtuelle Steuergeräte."
+     ],
+     "src": [
+      {
+       "n": "ISO 26262: Funktionale Sicherheit von Straßenfahrzeugen",
+       "u": "https://www.iso.org/standard/68383.html"
+      },
+      {
+       "n": "ASAM: Standards für Diagnose (ODX, OTX, SOVD) und Messen/Kalibrieren",
+       "u": "https://www.asam.net/standards/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "MISRA C",
+       "b": "Regelwerk für sicheren C-Code im Automotive-Umfeld.",
+       "id": "mcu.m6.l3.k1"
+      },
+      {
+       "f": "Virtuelles Steuergerät",
+       "b": "Simulation von Controller und Peripherie am PC zum frühen Testen.",
+       "id": "mcu.m6.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was prüft MISRA C?",
+       "o": [
+        "Regeln für sicheren C-Code",
+        "Abgaswerte",
+        "Busbitraten",
+        "Reifenprofile"
+       ],
+       "a": 0,
+       "e": "Ein verbreitetes Regelwerk.",
+       "id": "mcu.m6.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was erlaubt ein virtuelles Steuergerät?",
+       "o": [
+        "Test ohne Hardware",
+        "Fahren ohne Motor",
+        "Tanken ohne Kraftstoff",
+        "Flashen ohne Software"
+       ],
+       "a": 0,
+       "e": "Früh in der Entwicklung.",
+       "id": "mcu.m6.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum braucht man qualifizierte Compiler?",
+       "o": [
+        "Für Sicherheit",
+        "Weil sie schneller tippen",
+        "Für bessere Grafik",
+        "Für Musik"
+       ],
+       "a": 0,
+       "e": "Fehler im Compiler wären fatal.",
+       "id": "mcu.m6.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Womit misst und kalibriert man im laufenden Betrieb?",
+       "o": [
+        "XCP",
+        "MISRA",
+        "SPI",
+        "ODX"
+       ],
+       "a": 0,
+       "e": "Mess- und Kalibrierprotokoll.",
+       "id": "mcu.m6.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was berechnen Analysewerkzeuge zusätzlich?",
+       "o": [
+        "Speicher- und Stackbedarf",
+        "Den Kaufpreis",
+        "Die Lackdicke",
+        "Den Kraftstoffverbrauch"
+       ],
+       "a": 0,
+       "e": "Wichtig für Reserven.",
+       "id": "mcu.m6.l3.q5"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

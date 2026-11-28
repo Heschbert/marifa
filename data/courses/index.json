@@ -70,6 +70,16 @@
    "id": "ad",
    "file": "ad.json",
    "fac": "auto"
+  },
+  {
+   "id": "mcu",
+   "file": "mcu.json",
+   "fac": "auto"
+  },
+  {
+   "id": "abgas",
+   "file": "abgas.json",
+   "fac": "auto"
   }
  ],
  "planned": []

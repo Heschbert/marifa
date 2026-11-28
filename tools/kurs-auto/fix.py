@@ -89,3 +89,30 @@ add("ad", {
 for k in ["sec.m1.l1.q1", "sec.m1.l3.q5", "sec.m2.l2.q3", "sec.m3.l2.q2", "sec.m4.l2.q5", "sec.m5.l2.q4", "sec.m6.l2.q2", "sec.m6.l3.q2", "sec.m6.l3.q4", "sec.m5.l1.q5",
           "ad.m3.l2.q3", "ad.m4.l1.q4", "ad.m5.l2.q1", "ad.m5.l2.q4", "ad.m6.l1.q4", "ad.m4.l3.q4", "ad.m3.l3.q4", "ad.m2.l3.q1", "ad.m6.l2.q2", "ad.m1.l2.q2", "diag.m8.l1.q4", "diag.m2.l1.q4"]:
     A.pop(k, None)
+add("mcu", {
+ "m1.l1.q1": "Speicher on-chip", "m1.l1.q2": "Infotainment, ADAS", "m1.l2.q2": "Mehr Wärme", "m1.l2.q4": "Synchronisieren",
+ "m1.l3.q3": "Schnell bereit sein", "m1.l3.q4": "Start oder Laden", "m2.l1.q2": "Chip-Tests", "m2.l2.q1": "Abweichungen",
+ "m2.l2.q2": "Bitfehler korrigieren", "m2.l2.q3": "Software abschotten", "m2.l2.q4": "Nutzung der Mechanismen", "m2.l3.q1": "Lange lieferbar",
+ "m2.l3.q2": "Daten lange halten", "m2.l3.q3": "Billige Chips stoppen Bänder", "m3.l1.q2": "Eine PPU", "m3.l1.q3": "Motorwinkel",
+ "m3.l2.q5": "Vieles, nicht nur Takt", "m3.l3.q2": "Software wächst", "m3.l3.q4": "Leichter Wechsel", "m4.l1.q1": "Eine Generation",
+ "m4.l1.q4": "Nein", "m4.l1.q5": "Teurer, schwieriger", "m4.l2.q1": "eFlash endet bei 28 nm", "m4.l2.q2": "Robust", "m4.l2.q3": "In großen SoCs",
+ "m4.l2.q5": "Teure Masken", "m4.l3.q1": "Eine Isolierschicht", "m4.l3.q2": "Dreiseitig den Kanal", "m4.l3.q4": "Nachjustieren",
+ "m5.l1.q3": "Am schnellsten", "m5.l1.q5": "Extra-Takt beim Lesen", "m5.l2.q4": "Passend zum Winkel", "m5.l2.q5": "Hohe Auflösung",
+ "m5.l3.q2": "Ablauf aufzeichnen", "m5.l3.q3": "Gegen Auslesen", "m6.l1.q3": "Grundeinstellung", "m6.l1.q5": "Alles baut darauf",
+ "m6.l2.q2": "Zugriff sperren", "m6.l2.q3": "Wichtig wartet auf unwichtig", "m6.l3.q2": "Test ohne Hardware", "m6.l3.q3": "Für Sicherheit",
+})
+add("abgas", {
+ "m1.l1.q1": "Bei Hitze", "m1.l1.q4": "Kalte Wände", "m1.l2.q1": "Er läuft bei λ ≈ 1", "m1.l2.q4": "Luftüberschuss",
+ "m1.l3.q1": "Kat noch kalt", "m1.l3.q5": "RDE misst ihn mit", "m2.l1.q2": "Mager", "m2.l1.q5": "Mehr Leistung",
+ "m2.l2.q2": "CO/HC bleiben", "m2.l2.q3": "Schwankungen puffern", "m2.l2.q4": "Speicher nutzen", "m2.l3.q3": "Korrektur zu groß",
+ "m2.l3.q4": "Sonden-Alterung ausgleichen", "m3.l1.q4": "Wie mager es ist", "m3.l2.q3": "Keramik muss warm sein", "m3.l3.q1": "Kat glättet",
+ "m3.l3.q3": "Träge Flanken", "m3.l3.q5": "Falschluft", "m4.l1.q4": "Diffusionsbarriere", "m4.l2.q1": "Über Ri", "m4.l2.q2": "Signal hängt davon ab",
+ "m4.l2.q3": "Stetiges Signal", "m4.l2.q4": "Toleranzen ausgleichen", "m4.l3.q4": "Auf ZrO2", "m4.l3.q5": "Robust und günstig",
+ "m5.l1.q1": "Bank mit Zyl. 1, nach Kat", "m5.l1.q5": "Je Bank ein Strang", "m5.l2.q1": "Kaum Speicher", "m5.l2.q2": "Speicherbaren Sauerstoff",
+ "m5.l2.q4": "Mit Grenzkatalysatoren", "m5.l2.q5": "Braucht warme, stabile Fahrt", "m5.l3.q2": "Reaktionszeit", "m5.l3.q3": "Mehr Kaltstart-Abgas",
+ "m5.l3.q4": "Einseitig langsam", "m6.l1.q2": "Kraftstoff brennt im Kat", "m6.l2.q1": "Sprühbild trifft Wände", "m6.l2.q2": "Meist passiv",
+ "m6.l2.q3": "Druckabfall", "m6.l2.q5": "Durch poröse Wände", "m6.l3.q1": "Nachverbrennen, heizen", "m6.l3.q3": "Mehr Kraftstoff im Gemisch",
+ "m6.l3.q4": "Kleines Tankleck", "m7.l1.q4": "Keine Regeneration", "m7.l3.q1": "Kühlere Flamme", "m7.l3.q2": "Mehr Ruß", "m7.l3.q4": "DPF mit SCR",
+ "m8.l1.q1": "Filter fehlt", "m8.l1.q2": "Volumenstrom", "m8.l1.q3": "Partikel leiten", "m8.l2.q2": "NOx vorher/nachher", "m8.l2.q4": "Warnen, drosseln",
+ "m8.l3.q2": "Gute Sensorik", "m8.l3.q5": "In Rechtsakten",
+})

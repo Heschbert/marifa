@@ -1,6 +1,6 @@
 /* Interaktive Elemente für Kurslektionen (Animationen und Simulationen).
    In einer Lektion: "figs": [{ "after": <Absatz>, "w": "<name>", "cap": "<Bildunterschrift>" }].
-   Vorhanden: coin, birthday, tree2, dice, bayes, monty, galton, normal, pi, ecublock, ecustate, crank, dtc, uds, iumpr, sae.
+   Vorhanden: coin, birthday, tree2, dice, bayes, monty, galton, normal, pi, ecublock, ecustate, crank, dtc, uds, iumpr, sae, lambda.
    Alles läuft lokal im Browser, ohne externe Bibliotheken. Bedienung über data-act / data-input (CSP-tauglich). */
 (function () {
   "use strict";
@@ -458,5 +458,30 @@
     el(d.id + "-t").innerHTML = '<div class="kwbig">Stufe ' + i + '<span class="small mute"> · ' + esc(s[0]) + "</span></div>" +
       '<div class="kwtab"><div>Lenken und Bremsen</div>' + who(s[1]) + "<div>Umgebung überwachen</div>" + who(s[2]) + "<div>Rückfallebene</div>" + who(s[3]) + "<div>Einsatzbereich</div><span>" + esc(s[4]) + "</span><div>Beispiel</div><span>" + esc(s[5]) + "</span></div>" +
       '<div class="kwinfo small">' + (i < 3 ? "Der Mensch fährt und muss ständig aufmerksam sein. Das ist Assistenz, keine Automatisierung." : i === 3 ? "Im Einsatzbereich darf sich der Mensch abwenden, muss aber nach Aufforderung rechtzeitig übernehmen." : "Kein Mensch muss eingreifen; das System erreicht bei Problemen selbst einen sicheren Zustand.") + "</div>";
+  };
+  /* ---------- Lambda: Sprungsonde, Breitbandsonde und Kat-Fenster (schematisch) ---------- */
+  function jumpV(l) { return 0.45 - 0.4 * Math.tanh((l - 1) * 60); }
+  function pumpRel(l) { return (l - 1) / l; }
+  function convOx(l) { return 0.3 + 0.68 / (1 + Math.exp(-(l - 0.988) * 400)); }
+  function convNox(l) { return 0.05 + 0.93 / (1 + Math.exp((l - 1.008) * 400)); }
+  W.lambda = function (id) {
+    el(id).innerHTML = range(id, "kwlam", 0.8, 1.2, 0.005, 1, "λ =") + '<svg class="kwsvg" id="' + id + '-g" viewBox="0 0 300 200"></svg>' +
+      '<div class="kwlamv" id="' + id + '-v"></div><p class="small mute" style="margin:6px 0 0">Schematische Kurven zum Verständnis, keine Messdaten eines bestimmten Sensors.</p>';
+    H.kwlam(el(id).querySelector("input"));
+  };
+  H.kwlam = function (inp) {
+    var id = inp.dataset.id, l = +inp.value, X = function (v) { return 20 + (v - 0.8) / 0.4 * 270; };
+    el(id + "-kwlamv").textContent = fmt(l, 3) + (l < 0.995 ? " (fett)" : l > 1.005 ? " (mager)" : " (stöchiometrisch)");
+    function curve(f, y0, h) { var p = []; for (var v = 0.8; v <= 1.2001; v += 0.004) p.push(X(v).toFixed(1) + "," + (y0 - f(v) * h).toFixed(1)); return p.join(" "); }
+    var g = '<rect x="' + X(0.993) + '" y="6" width="' + (X(1.007) - X(0.993)) + '" height="186" class="kwwin"/>' +
+      '<text x="22" y="16" class="kwn">Sprungsonde (V)</text><polyline class="kwline" points="' + curve(function (v) { return jumpV(v) / 0.9; }, 70, 55) + '"/>' +
+      '<text x="22" y="86" class="kwn">Breitband: Pumpstrom</text><line x1="20" x2="290" y1="118" y2="118" class="kwref"/><polyline class="kwline b2" points="' + curve(function (v) { return pumpRel(v) / 0.25; }, 118, 22) + '"/>' +
+      '<text x="22" y="150" class="kwn">Kat-Umsatz</text><polyline class="kwline c1" points="' + curve(convOx, 192, 34) + '"/><polyline class="kwline c2" points="' + curve(convNox, 192, 34) + '"/>' +
+      '<line x1="' + X(l) + '" x2="' + X(l) + '" y1="4" y2="196" class="kwcur"/>' +
+      '<text x="20" y="200" class="kwt">0,8</text><text x="' + X(1) + '" y="200" class="kwt" text-anchor="middle">1,0</text><text x="290" y="200" class="kwt" text-anchor="end">1,2</text>';
+    el(id + "-g").innerHTML = g;
+    var ip = pumpRel(l);
+    el(id + "-v").innerHTML = '<span><b>' + fmt(jumpV(l), 2) + " V</b>Sprungsonde</span><span><b>" + (Math.abs(ip) < 0.004 ? "≈ 0" : ip > 0 ? "+ positiv" : "− negativ") + "</b>Pumpstrom</span>" +
+      '<span class="c1"><b>' + Math.round(convOx(l) * 100) + " %</b>CO/HC</span><span class=\"c2\"><b>" + Math.round(convNox(l) * 100) + " %</b>NOx</span>";
   };
 })();
