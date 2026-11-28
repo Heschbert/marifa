@@ -1,6 +1,6 @@
 /* Interaktive Elemente für Kurslektionen (Animationen und Simulationen).
    In einer Lektion: "figs": [{ "after": <Absatz>, "w": "<name>", "cap": "<Bildunterschrift>" }].
-   Vorhanden: coin, birthday, tree2, dice, bayes, monty, galton, normal, pi.
+   Vorhanden: coin, birthday, tree2, dice, bayes, monty, galton, normal, pi, ecublock, ecustate, crank.
    Alles läuft lokal im Browser, ohne externe Bibliotheken. Bedienung über data-act / data-input (CSP-tauglich). */
 (function () {
   "use strict";
@@ -214,4 +214,139 @@
     el(id + "-p").innerHTML = "π ≈ " + fmt(4 * s.k / s.n, 4) + '<span class="small mute"> aus ' + fmt(s.n) + " Punkten (wahr: 3,1416)</span>";
   }
   H.kwpi = function (d) { dots(d.id, 100); }; H.kwpi1k = function (d) { dots(d.id, 1000); }; H.kwpir = function (d) { resetPi(d.id); };
+  /* ---------- Motorsteuergerät: Blockschaltbild zum Antippen ---------- */
+  var BLK = {
+    sens: ["Sensoren", "Kurbel- und Nockenwelle, Luftmasse oder Saugrohrdruck, Lambdasonden, Temperaturen, Klopfsensoren und das Fahrpedal mit zwei unabhängigen Kanälen."],
+    inp: ["Eingangsschaltung", "Schutzbeschaltung, Filter und Spannungsteiler; die 5-V-Sensorversorgung. Spezielle Auswertebausteine gibt es z. B. für Klopf- oder Lambdasignale."],
+    core: ["Rechenkerne", "Mehrere Kerne teilen sich zeitgesteuerte, winkelsynchrone und Kommunikations-Aufgaben. Lockstep-Kerne rechnen sicherheitsrelevante Teile doppelt."],
+    mem: ["Flash und RAM", "Flash: Programm und Kalibrierdaten, ohne Strom erhalten. RAM: schnelle Variablen. Lernwerte und Fehlerspeicher liegen nichtflüchtig, oft als emuliertes EEPROM."],
+    adc: ["ADC", "Analog-Digital-Wandler machen aus Sensorspannungen Zahlen für die Software."],
+    gtm: ["Timer (z. B. GTM)", "Misst die Zahnflanken des Kurbelwellensignals, rechnet die Winkeluhr und erzeugt die Pulse für Einspritzung und Zündung."],
+    hsm: ["Sicherheitsmodul (HSM)", "Verwaltet kryptografische Schlüssel: Secure Boot, geschütztes Flashen, abgesicherte Botschaften."],
+    out: ["Endstufen", "Low-Side- und High-Side-Schalter, H-Brücken und spezielle Treiber für Injektoren und Zündung. Sie messen Strom und Spannung zur Diagnose."],
+    act: ["Aktoren", "Einspritzventile, Zündspulen, Drosselklappe, Nockenwellenversteller, Pumpen, Ventile, Lüfter und Relais."],
+    pwr: ["Spannungsversorgung", "KL30 Dauerplus, KL31 Masse, KL15 Zündung. Regler erzeugen 5 V, 3,3 V und Kernspannung; für Direkteinspritzung oft eine Hochspannung. Muss Spannungseinbrüche beim Start überstehen."],
+    wd: ["Überwachung", "Ein separater Baustein prüft den Controller (Watchdog, Frage-Antwort im E-Gas-Konzept Ebene 3) und kann die Endstufen unabhängig abschalten."],
+    can: ["CAN FD und Sub-CAN", "Hauptkommunikation mit anderen Steuergeräten; dazu oft ein eigener, abgetrennter Bus (Sub-CAN) zu direkten Partnern. Aufbau herstellerspezifisch."],
+    fr: ["FlexRay", "Deterministischer Bus mit festem Zeitraster, bis 10 Mbit/s; in neueren Architekturen oft durch CAN FD und Ethernet ersetzt."],
+    lin: ["LIN", "Einfacher Master-Slave-Bus für intelligente Sensoren und Aktoren, z. B. Generator- oder Batteriesensor."],
+    eth: ["Ethernet", "Automotive Ethernet (100BASE-T1 und schneller) für hohe Datenraten, Diagnose und Flashen über DoIP."]
+  };
+  W.ecublock = function (id) {
+    function bx(k, x, y, w, h, t, sub) {
+      return '<g class="kwblk" data-act="kwblk" data-id="' + id + '" data-k="' + k + '" role="button" tabindex="0" aria-label="' + esc(BLK[k][0]) + '"><rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="7"/><text x="' + (x + w / 2) + '" y="' + (y + h / 2 + (sub ? -2 : 4)) + '" text-anchor="middle" class="kwn">' + t + "</text>" +
+        (sub ? '<text x="' + (x + w / 2) + '" y="' + (y + h / 2 + 10) + '" text-anchor="middle" class="kwt">' + sub + "</text>" : "") + "</g>";
+    }
+    function ar(x1, y1, x2, y2) { return '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '" class="kwbr"/><path d="M' + x2 + " " + y2 + " l-6 -4 v8 z" + '" class="kwah" transform="rotate(' + (Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI) + " " + x2 + " " + y2 + ')"/>'; }
+    var h = '<svg class="kwsvg" viewBox="0 0 320 290">' +
+      bx("pwr", 6, 4, 150, 36, "Versorgung", "KL30 · KL31 · KL15") + bx("wd", 164, 4, 150, 36, "Überwachung", "Watchdog") +
+      '<rect x="112" y="52" width="96" height="164" rx="10" class="kwmcu"/><text x="160" y="66" text-anchor="middle" class="kwt">Mikrocontroller</text>' +
+      bx("core", 118, 72, 84, 26, "Kerne") + bx("mem", 118, 102, 84, 26, "Flash · RAM") + bx("adc", 118, 132, 40, 26, "ADC") + bx("gtm", 162, 132, 40, 26, "GTM") + bx("hsm", 118, 162, 84, 26, "HSM") +
+      bx("sens", 6, 72, 46, 116, "Sen-", "soren") + bx("inp", 60, 72, 44, 116, "Ein-", "gänge") + bx("out", 216, 72, 44, 116, "End-", "stufen") + bx("act", 268, 72, 46, 116, "Akto-", "ren") +
+      ar(52, 130, 59, 130) + ar(104, 145, 117, 145) + ar(203, 130, 215, 130) + ar(260, 130, 267, 130) + ar(160, 40, 160, 51) + ar(239, 40, 239, 71) +
+      '<line x1="160" y1="216" x2="160" y2="232" class="kwbr"/><line x1="40" y1="232" x2="280" y2="232" class="kwbr"/>' +
+      [40, 120, 200, 280].map(function (x) { return '<line x1="' + x + '" y1="232" x2="' + x + '" y2="244" class="kwbr"/>'; }).join("") +
+      bx("can", 6, 244, 70, 40, "CAN FD", "Sub-CAN") + bx("fr", 86, 244, 70, 40, "FlexRay") + bx("lin", 166, 244, 68, 40, "LIN") + bx("eth", 244, 244, 70, 40, "Ethernet") +
+      "</svg>";
+    el(id).innerHTML = '<div class="kwstat small mute">Tippe auf einen Baustein.</div>' + h + '<div class="kwinfo" id="' + id + '-i" aria-live="polite"><b>Signalfluss</b><br>Sensoren → Eingänge → Mikrocontroller → Endstufen → Aktoren. Darunter die Busse zu anderen Steuergeräten.</div>';
+  };
+  H.kwblk = function (d) {
+    var r = el(d.id); if (!r) return;
+    [].forEach.call(r.querySelectorAll(".kwblk"), function (g) { g.classList.toggle("on", g.dataset.k === d.k); });
+    var b = BLK[d.k]; el(d.id + "-i").innerHTML = "<b>" + esc(b[0]) + "</b><br>" + esc(b[1]);
+  };
+
+  /* ---------- Motorsteuergerät: Zustandssimulator ---------- */
+  var SN = { off: "Stromlos", sleep: "Schlaf", init: "Initialisierung", run: "Betrieb", limp: "Notlauf", post: "Nachlauf", prog: "Programmieren" };
+  var SI = { off: "Kein Dauerplus (KL30): Das Steuergerät ist stromlos. RAM-Inhalte sind weg, nichtflüchtig gespeicherte Daten bleiben.", sleep: "Nur KL30 liegt an. Minimaler Ruhestrom; ein Weckgrund (KL15, Busbotschaft, Diagnose) startet das Gerät.",
+    init: "Startup: Speicher prüfen, Lernwerte laden, Treiber und Kommunikation starten, Überwachungen testen.", run: "Alle Funktionen laufen. Solange KL15 an ist oder der Bus das Gerät braucht, bleibt es wach.",
+    limp: "Ein schwerer Fehler: Ersatzwerte und Leistungsbegrenzung. Der Notlauf bleibt bis zum nächsten Fahrzyklus, auch wenn der Fehler verschwindet.", post: "Zündung aus: Lernwerte und Fehlerspeicher werden gesichert, Lüfter und Pumpen laufen nach. Dann schläft das Gerät ein.",
+    prog: "Programmiersitzung: Der Bootloader übernimmt, Anwendung angehalten. Nach dem Ende folgt ein Reset (UDS 0x11) und eine neue Initialisierung." };
+  var SIG = [["kl30", "KL30 Batterie"], ["kl15", "KL15 Zündung"], ["bus", "Buswecken"], ["prog", "Programmieren"], ["fault", "Schwerer Fehler"]];
+  W.ecustate = function (id) {
+    ST[id] = { s: "sleep", t: 0, kl30: true, kl15: false, bus: false, prog: false, fault: false, log: [] };
+    el(id).innerHTML = '<div class="kwst" id="' + id + '-s"></div><div class="kwbig" id="' + id + '-n"></div><div class="kwinfo" id="' + id + '-i" aria-live="polite"></div>' +
+      '<div class="kwtog" id="' + id + '-b"></div><div class="small mute" id="' + id + '-l"></div>';
+    drawState(id);
+    ST[id].iv = setInterval(function () { if (!el(id)) { clearInterval(ST[id].iv); return; } tickState(id); }, 300);
+  };
+  function go(id, s, why) { var S = ST[id]; if (S.s === s) return; S.s = s; S.t = { init: 6, post: 14 }[s] || 0; if (why) { S.log.unshift(why); S.log = S.log.slice(0, 3); } drawState(id); }
+  function tickState(id) {
+    var S = ST[id], wake = S.kl15 || S.bus || S.prog;
+    if (!S.kl30) return go(id, "off", "KL30 getrennt → stromlos");
+    switch (S.s) {
+      case "off": return go(id, "sleep", "KL30 da → Schlaf");
+      case "sleep": if (wake) go(id, "init", (S.kl15 ? "KL15" : S.bus ? "Busbotschaft" : "Diagnose") + " weckt → Initialisierung"); return;
+      case "init": if (--S.t > 0) return drawState(id); return S.prog ? go(id, "prog", "Init fertig, Programmieranforderung → Bootloader") : S.fault ? go(id, "limp", "Init fertig, Fehler erkannt → Notlauf") : go(id, "run", "Init fertig → Betrieb");
+      case "run": if (S.prog) return go(id, "prog", "Diagnose 0x10 02 → Programmiersitzung"); if (S.fault) return go(id, "limp", "Fehler bestätigt → Notlauf"); if (!S.kl15 && !S.bus) go(id, "post", "Kein Weckgrund mehr → Nachlauf"); return;
+      case "limp": if (S.prog) return go(id, "prog", "Diagnose 0x10 02 → Programmiersitzung"); if (!S.kl15 && !S.bus) go(id, "post", "Kein Weckgrund mehr → Nachlauf"); return;
+      case "prog": if (!S.prog) go(id, "init", "Programmieren beendet → Reset (0x11) → Initialisierung"); return;
+      case "post": if (S.kl15 || S.prog) return go(id, "init", "Wieder geweckt im Nachlauf → neu starten");
+        if (S.bus) return go(id, "run", "Bus braucht das Gerät → Betrieb");
+        if (--S.t > 0) return drawState(id); S.fault = false; return go(id, "sleep", "Daten gesichert → Schlaf");
+    }
+  }
+  function drawState(id) {
+    var S = ST[id]; if (!el(id + "-s")) return;
+    el(id + "-s").innerHTML = ["off", "sleep", "init", "run", "limp", "post", "prog"].map(function (k) { return '<span class="' + (S.s === k ? "on" : "") + '">' + SN[k] + "</span>"; }).join("");
+    el(id + "-n").innerHTML = SN[S.s] + (S.s === "init" || S.s === "post" ? '<span class="small mute"> ' + "●".repeat(Math.max(0, S.t)) + "</span>" : "");
+    el(id + "-i").textContent = SI[S.s];
+    el(id + "-b").innerHTML = SIG.map(function (g) { return '<button class="btn kwb' + (S[g[0]] ? " primary" : "") + '" aria-pressed="' + !!S[g[0]] + '" data-act="kwsig" data-id="' + id + '" data-k="' + g[0] + '">' + (S[g[0]] ? "● " : "○ ") + g[1] + "</button>"; }).join("");
+    el(id + "-l").innerHTML = S.log.length ? "Zuletzt: " + S.log.map(esc).join(" · ") : "Schalte Signale und beobachte den Zustand.";
+  }
+  H.kwsig = function (d) { var S = ST[d.id]; if (!S) return; S[d.k] = !S[d.k]; drawState(d.id); tickState(d.id); };
+
+  /* ---------- Geberrad 60-2 mit Sensorsignal und Synchronisation ---------- */
+  W.crank = function (id) {
+    ST[id] = { a: 0, run: true, rpm: 1000, tr: [], sync: false, cnt: 0, last: null, norm: 6, prev: 0, glitch: false, msg: "Suche Lücke …", rev: 0, ok: 0 };
+    el(id).innerHTML = '<canvas class="kwcan" id="' + id + '-c" width="600" height="470"></canvas><div class="kwstat" id="' + id + '-s"></div>' +
+      range(id, "kwrpm", 200, 6000, 100, 1000, "Drehzahl (1/min):") +
+      '<div class="kwrow">' + b("kwcrun", "Pause", id) + b("kwcglitch", "Störimpuls", id) + b("kwcnew", "Neu starten", id, true) + "</div>";
+    H.kwrpm(el(id).querySelector("input"));
+    var last = 0;
+    (function step(ts) {
+      var S = ST[id], c = el(id + "-c"); if (!S || !c) return;
+      var dt = last ? Math.min(0.05, (ts - last) / 1000) : 0; last = ts;
+      if (S.run) { S.acc = (S.acc || 0) + S.rpm * 0.05 * dt; while (S.acc >= 0.5) { sample(id, 0.5); S.acc -= 0.5; } }
+      drawCrank(id); requestAnimationFrame(step);
+    })(0);
+  };
+  function present(rel) { var k = Math.floor(rel / 6); return k < 58 && rel - k * 6 < 3; }
+  function sample(id, d) {
+    var S = ST[id], before = present(S.a % 360); S.a += d;
+    var now = present(S.a % 360), edge = !before && now;
+    if (S.glitch) { S.glitch = false; edge = true; S.tr.push(2); } else S.tr.push(now ? 1 : 0);
+    if (S.tr.length > 360) S.tr.shift();
+    if (!edge) return;
+    var delta = S.last === null ? 0 : S.a - S.last; S.last = S.a;
+    if (!delta) return;
+    if (delta > 2 * S.norm) {
+      if (!S.sync) { S.sync = true; S.msg = "Lücke erkannt → synchron"; S.ok++; }
+      else if (S.cnt !== 57) { S.sync = false; S.msg = "Zahnzahl passt nicht (" + (S.cnt + 1) + " statt 58) → Synchronisation verloren, Einspritzung und Zündung kurz aus"; }
+      else { S.msg = "Synchron ✓"; S.rev++; }
+      S.cnt = 0;
+    } else { if (delta > S.norm * 0.6) S.norm = delta; S.cnt++; }
+  }
+  function drawCrank(id) {
+    var S = ST[id], c = el(id + "-c"), g = c.getContext("2d"), acc = col("--accent", "#2b8a3e"), mute = col("--mute", "#888"), fg = col("--fg", "#222"), bad = col("--bad", "#c62828");
+    g.clearRect(0, 0, 600, 470);
+    var cx = 300, cy = 175, R = 140;
+    g.save(); g.translate(cx, cy); g.rotate(-S.a * Math.PI / 180);
+    g.fillStyle = mute; g.beginPath(); g.arc(0, 0, R - 14, 0, 2 * Math.PI); g.fill();
+    for (var k = 0; k < 58; k++) { var a0 = (k * 6 - 90) * Math.PI / 180, a1 = (k * 6 + 3 - 90) * Math.PI / 180; g.beginPath(); g.arc(0, 0, R, a0, a1); g.arc(0, 0, R - 15, a1, a0, true); g.closePath(); g.fillStyle = k === 0 ? acc : fg; g.fill(); }
+    g.fillStyle = col("--card", "#fff"); g.beginPath(); g.arc(0, 0, 28, 0, 2 * Math.PI); g.fill();
+    g.restore();
+    g.fillStyle = bad; g.fillRect(cx - 9, cy - R - 34, 18, 26); g.font = "15px system-ui, sans-serif"; g.textAlign = "left"; g.fillStyle = fg; g.fillText("Sensor", cx + 16, cy - R - 16);
+    g.fillStyle = mute; g.fillText("Lücke: 2 Zähne fehlen · farbig: erster Zahn nach der Lücke", 12, 340);
+    var y0 = 440, hgt = 60; g.strokeStyle = mute; g.lineWidth = 1; g.beginPath(); g.moveTo(0, y0); g.lineTo(600, y0); g.stroke();
+    g.strokeStyle = acc; g.lineWidth = 2.5; g.beginPath();
+    S.tr.forEach(function (v, i) { var x = 600 - (S.tr.length - i) * (600 / 360), y = v === 2 ? y0 - hgt - 10 : y0 - v * hgt * 0.8; if (i) g.lineTo(x, y); else g.moveTo(x, y); });
+    g.stroke(); g.fillStyle = mute; g.fillText("Sensorsignal über Kurbelwinkel (letzte 180°)", 12, 466);
+    var tz = 1000 / S.rpm;
+    el(id + "-s").innerHTML = "Zahnzeit <b>" + fmt(tz, 3) + " ms</b> · Lücke ≈ <b>" + fmt(3 * tz, 3) + " ms</b><br>" + (S.sync ? '<span style="color:var(--ok)">' + esc(S.msg) + "</span> · Zahn <b>" + (S.cnt + 1) + "</b> · Kurbelwinkel ab Lücke <b>" + (S.cnt * 6) + "°</b>" : '<span style="color:var(--bad)">' + esc(S.msg) + "</span>");
+  }
+  H.kwrpm = function (inp) { var S = ST[inp.dataset.id]; S.rpm = +inp.value; el(inp.dataset.id + "-kwrpmv").textContent = fmt(S.rpm) + " (Animation verlangsamt)"; };
+  H.kwcrun = function (d, t) { var S = ST[d.id]; S.run = !S.run; t.textContent = S.run ? "Pause" : "Weiter"; };
+  H.kwcglitch = function (d) { ST[d.id].glitch = true; };
+  H.kwcnew = function (d) { var S = ST[d.id]; S.sync = false; S.cnt = 0; S.last = null; S.msg = "Neu gestartet: Position unbekannt, suche Lücke …"; S.a += Math.random() * 360; S.tr = []; };
 })();

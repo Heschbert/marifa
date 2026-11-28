@@ -59,5 +59,5 @@ Vokabeln: Lektion = Wortfeld, `body` kurz (Grammatik-Hinweis), `cards` = Wort �
 `qs` = Übersetzung wählen (`mc`) oder Satzglieder ordnen (`order`). Alles andere bleibt gleich.
 
 Die Quelldateien des Batteriespeicher-Kurses liegen als Python-Skripte in `tools/kurs-bess-quelle.py` (Modul 1) und `tools/kurs-bess-m2-8.py`
-(erzeugt `bess.json`). Der Kurs Wahrscheinlichkeit & Statistik entsteht aus `tools/kurs-wkeit/` (`python3 tools/kurs-wkeit/main.py`).
+(erzeugt `bess.json`). Der Kurs Wahrscheinlichkeit & Statistik entsteht aus `tools/kurs-wkeit/` (`python3 tools/kurs-wkeit/main.py`), der Kurs Motorsteuergerät verstehen aus `tools/kurs-ecu/` (`python3 tools/kurs-ecu/main.py`).
 Neue Kurse können direkt als JSON geschrieben werden.

@@ -949,3 +949,16 @@ button.shic svg { margin-left: 2px; }
 .kwdoor.pick { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 .kwdoor.open { background: var(--card); }
 .kwbig .small { display: block; font-size: 14px; font-weight: 500; }
+
+/* Kurs Motorsteuergerät: Blockschaltbild, Zustände */
+.kwblk { cursor: pointer; }
+.kwblk rect { fill: var(--soft); stroke: var(--line); stroke-width: 1.2; transition: fill .15s; }
+.kwblk:hover rect, .kwblk.on rect { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; }
+.kwmcu { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 5 3; }
+.kwah { fill: var(--mute); }
+.kwinfo { background: var(--soft); border-radius: 12px; padding: 10px 12px; font-size: 14px; line-height: 1.45; min-height: 3.2em; }
+.kwst { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
+.kwst span { font-size: 12px; padding: 4px 9px; border-radius: 999px; background: var(--soft); color: var(--mute); border: 1px solid var(--line); }
+.kwst span.on { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); font-weight: 700; }
+.kwtog { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 10px 0 6px; }
+.kwtog .kwb { font-size: 13px; }

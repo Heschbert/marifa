@@ -40,6 +40,11 @@
    "id": "ki",
    "file": "ki.json",
    "fac": "info"
+  },
+  {
+   "id": "ecu",
+   "file": "ecu.json",
+   "fac": "auto"
   }
  ],
  "planned": [

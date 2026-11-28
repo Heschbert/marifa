@@ -38,7 +38,7 @@
 
   /* Spielmodi sind eigenständige Bausteine. Neue Modi werden hier registriert. */
   /* App-Version: nur mit „node tools/version.mjs <neu>“ ändern, das setzt auch sw.js. */
-  WF.VERSION = "3.14";
+  WF.VERSION = "3.15";
   WF.BUILD = "2026-11-28";
 
   WF.registerMode = function (m) { WF.modes[m.id] = m; WF.modeOrder.push(m.id); };

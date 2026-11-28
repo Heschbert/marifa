@@ -1,0 +1,2923 @@
+{
+ "id": "ecu",
+ "title": "Motorsteuergerät verstehen",
+ "sub": "Hardware, Betriebszustände, Kurbelwellenposition (EPM), Bussysteme, Software, Sicherheit und Diagnose einer Motor-ECU",
+ "audience": "Entwicklerinnen und Entwickler im Steuergeräte-Umfeld und alle, die wissen wollen, wie eine Motor-ECU funktioniert",
+ "stand": "11/2026",
+ "version": 1,
+ "review": "Allgemeines, öffentlich dokumentiertes Wissen (Quellen je Lektion); keine hersteller- oder projektspezifischen Details. Noch nicht durch eine Fachperson geprüft.",
+ "levels": [
+  {
+   "id": 1,
+   "title": "Grundlagen"
+  },
+  {
+   "id": 2,
+   "title": "Fortgeschritten"
+  },
+  {
+   "id": 3,
+   "title": "Experte"
+  }
+ ],
+ "modules": [
+  {
+   "id": "ecu.m1",
+   "level": 1,
+   "title": "Das Steuergerät im Überblick",
+   "desc": "Aufgaben, Aufbau und Herzstück eines Motorsteuergeräts.",
+   "lessons": [
+    {
+     "id": "ecu.m1.l1",
+     "title": "Was ein Motorsteuergerät tut",
+     "min": 5,
+     "body": [
+      "Das Motorsteuergerät (englisch ECU, Engine Control Unit) ist der Rechner, der den Verbrennungsmotor führt. Es liest Sensoren, berechnet in Millisekunden, wie viel Kraftstoff, Luft und Zündenergie der Motor gerade braucht, und steuert die Aktoren an.",
+      "## Der Regelkreis",
+      "Eingänge sind zum Beispiel Drehzahl und Kurbelwinkel, Luftmasse oder Saugrohrdruck, Fahrpedalstellung, Lambda-Werte und Temperaturen. Ausgänge sind Einspritzventile, Zündung, Drosselklappe, Nockenwellenversteller, Pumpen und Ventile. Dazwischen laufen hunderte Funktionen, viele davon im Takt der Kurbelwelle.",
+      "## Mehr als nur Motor",
+      "Moderne Steuergeräte überwachen sich selbst (Diagnose und OBD), tauschen über Busse Daten mit anderen Steuergeräten aus, schützen sich gegen Manipulation und erfüllen Abgas- sowie Sicherheitsvorschriften. Ein großer Teil der Software dient nicht dem Fahren, sondern dem Überwachen.",
+      "Probiere unten das Blockschaltbild aus: Tippe auf die Bausteine."
+     ],
+     "key": [
+      "ECU: liest Sensoren, berechnet, steuert Aktoren.",
+      "Viele Funktionen laufen synchron zur Kurbelwelle.",
+      "Ein großer Teil der Software ist Überwachung und Diagnose."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      },
+      {
+       "n": "Bosch: Kraftfahrtechnisches Taschenbuch (Springer Vieweg, Nachschlagewerk)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "ECU (Engine Control Unit)",
+       "b": "Motorsteuergerät: Rechner, der Einspritzung, Zündung, Luftführung und weitere Motorfunktionen steuert.",
+       "id": "ecu.m1.l1.k1"
+      },
+      {
+       "f": "Aktor",
+       "b": "Stellglied, das ein elektrisches Signal in eine Wirkung umsetzt, z. B. Einspritzventil oder Drosselklappe.",
+       "id": "ecu.m1.l1.k2"
+      },
+      {
+       "f": "Sensor",
+       "b": "Messfühler, der eine physikalische Größe in ein elektrisches Signal umwandelt.",
+       "id": "ecu.m1.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "multi",
+       "q": "Welche sind typische Eingänge eines Motorsteuergeräts?",
+       "o": [
+        "Kurbelwellendrehzahl",
+        "Fahrpedalstellung",
+        "Ansteuerung der Einspritzventile",
+        "Zündspulenansteuerung"
+       ],
+       "a": [
+        0,
+        1
+       ],
+       "e": "Einspritzventile und Zündung sind Ausgänge (Aktoren).",
+       "id": "ecu.m1.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Aktor?",
+       "o": [
+        "Ein Stellglied, das etwas bewegt oder schaltet",
+        "Ein Messfühler, der Temperaturen in Spannung umwandelt",
+        "Ein Speicherbereich für Fehlercodes und Umgebungsdaten",
+        "Eine Datenleitung zwischen zwei Steuergeräten"
+       ],
+       "a": 0,
+       "e": "Aktoren setzen Befehle des Steuergeräts in Wirkung um.",
+       "id": "ecu.m1.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist so viel Software im Steuergerät für Überwachung zuständig?",
+       "o": [
+        "Abgas- und Sicherheitsvorschriften verlangen es",
+        "Weil der Motor sonst gar nicht anspringen würde",
+        "Weil ungenutzte Rechenzeit den Controller schädigt",
+        "Weil Sensoren nur mit Überwachung Werte liefern"
+       ],
+       "a": 0,
+       "e": "OBD- und Sicherheitsanforderungen verlangen umfangreiche Selbstüberwachung.",
+       "id": "ecu.m1.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Wert wird typischerweise im Kurbelwellentakt berechnet?",
+       "o": [
+        "Der Zündzeitpunkt jedes Zylinders",
+        "Uhrzeit im Kombiinstrument",
+        "Außentemperaturanzeige",
+        "Radio-Lautstärke"
+       ],
+       "a": 0,
+       "e": "Zündung und Einspritzung müssen winkelgenau zum Motor erfolgen.",
+       "id": "ecu.m1.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet ECU im Motorumfeld?",
+       "o": [
+        "Engine Control Unit",
+        "Electronic Car Utility",
+        "Emission Check Unit",
+        "Energy Conversion Unit"
+       ],
+       "a": 0,
+       "e": "Engine Control Unit, deutsch Motorsteuergerät.",
+       "id": "ecu.m1.l1.q5"
+      }
+     ],
+     "figs": [
+      {
+       "after": 5,
+       "w": "ecublock",
+       "cap": "Blockschaltbild eines Motorsteuergeräts: Tippe auf einen Baustein."
+      }
+     ]
+    },
+    {
+     "id": "ecu.m1.l2",
+     "title": "Der Mikrocontroller",
+     "min": 6,
+     "body": [
+      "Herz des Steuergeräts ist ein Mikrocontroller, ein Chip mit Prozessorkernen, Speicher und Peripherie. In Motorsteuergeräten sind Mehrkern-Controller verbreitet, zum Beispiel aus der AURIX-Familie von Infineon.",
+      "## Kerne und Lockstep",
+      "Mehrere Kerne teilen sich die Arbeit, etwa schnelle winkelsynchrone Aufgaben, langsamere Zeitraster und Kommunikation. Für sicherheitsrelevante Software gibt es Lockstep-Kerne: Ein zweiter Kern rechnet dasselbe mit, und Abweichungen lösen eine Fehlerreaktion aus.",
+      "## Speicher",
+      "Der Programmcode und die Kalibrierdaten liegen im Flash-Speicher und bleiben ohne Strom erhalten. Variablen liegen im schnellen RAM. Lernwerte und Fehlerspeicher werden in nichtflüchtigen Bereichen gespeichert, oft als emuliertes EEPROM im Flash.",
+      "## Peripherie",
+      "Analog-Digital-Wandler (ADC) lesen Sensorspannungen, Timer-Module messen Zeiten und erzeugen Ansteuerpulse, Kommunikationsmodule sprechen CAN, FlexRay, LIN oder Ethernet. In AURIX-Controllern übernimmt das Generic Timer Module (GTM) unter anderem winkelbasierte Aufgaben. Ein Sicherheitsmodul (HSM) verwaltet Schlüssel für Secure Boot und verschlüsselte Kommunikation."
+     ],
+     "key": [
+      "Mehrkern-Mikrocontroller mit Flash, RAM und Peripherie.",
+      "Lockstep-Kerne prüfen sicherheitsrelevante Berechnungen.",
+      "ADC, Timer, Busmodule und Sicherheitsmodul sind Teil des Chips."
+     ],
+     "src": [
+      {
+       "n": "Infineon: AURIX 32-bit TriCore Mikrocontroller (Produktübersicht und Dokumentation)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      },
+      {
+       "n": "Bosch Generic Timer Module (GTM): öffentliche Produktbeschreibung; in AURIX-Controllern u. a. für winkelbasierte Motorfunktionen eingesetzt"
+      },
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Mikrocontroller",
+       "b": "Chip mit Prozessorkern(en), Speicher und Peripherie auf einem Bauteil.",
+       "id": "ecu.m1.l2.k1"
+      },
+      {
+       "f": "Lockstep",
+       "b": "Zwei Kerne rechnen parallel dasselbe; Abweichungen werden als Fehler erkannt.",
+       "id": "ecu.m1.l2.k2"
+      },
+      {
+       "f": "Flash-Speicher",
+       "b": "Nichtflüchtiger Speicher für Programmcode und Kalibrierdaten.",
+       "id": "ecu.m1.l2.k3"
+      },
+      {
+       "f": "HSM (Hardware Security Module)",
+       "b": "Geschützter Bereich im Controller für kryptografische Schlüssel und Funktionen, z. B. Secure Boot.",
+       "id": "ecu.m1.l2.k4"
+      },
+      {
+       "f": "GTM (Generic Timer Module)",
+       "b": "Timer-Baustein von Bosch, u. a. in AURIX-Controllern; erzeugt und misst zeit- und winkelbasierte Signale.",
+       "id": "ecu.m1.l2.k5"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wozu dienen Lockstep-Kerne?",
+       "o": [
+        "Rechenfehler durch Vergleich erkennen",
+        "Die doppelte Rechenleistung für Motorfunktionen",
+        "Strom sparen, indem ein Kern im Schlaf bleibt",
+        "Botschaften schneller auf CAN und FlexRay senden"
+       ],
+       "a": 0,
+       "e": "Beide Kerne berechnen dasselbe; Abweichungen deuten auf einen Hardwarefehler.",
+       "id": "ecu.m1.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wo liegen Kalibrierdaten (Kennfelder, Kennlinien) typischerweise?",
+       "o": [
+        "Im nichtflüchtigen Flash-Speicher",
+        "Im RAM des Controllers",
+        "Im Analog-Digital-Wandler",
+        "In den Registern des Lockstep-Kerns"
+       ],
+       "a": 0,
+       "e": "Sie müssen ohne Strom erhalten bleiben.",
+       "id": "ecu.m1.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was macht ein Analog-Digital-Wandler?",
+       "o": [
+        "Wandelt Sensorspannungen in Zahlen um",
+        "Schaltet Einspritzventile über Endstufen",
+        "Speichert Fehlercodes dauerhaft ab",
+        "Verschlüsselt ausgehende Busnachrichten"
+       ],
+       "a": 0,
+       "e": "Der ADC macht analoge Spannungen für die Software lesbar.",
+       "id": "ecu.m1.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Aufgabe hat ein HSM?",
+       "o": [
+        "Kryptografische Schlüssel sicher verwalten",
+        "Die Zündspulen rechtzeitig laden",
+        "Die Motordrehzahl aus Zahnzeiten messen",
+        "Lambdawerte filtern und plausibilisieren"
+       ],
+       "a": 0,
+       "e": "Das Hardware Security Module schützt Schlüssel und kryptografische Funktionen.",
+       "id": "ecu.m1.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wo liegen Variablen, die sich ständig ändern?",
+       "o": [
+        "Im RAM",
+        "Im Flash-Speicher des Programms",
+        "Im emulierten EEPROM",
+        "Im Bootloader-Bereich"
+       ],
+       "a": 0,
+       "e": "RAM ist schnell, aber flüchtig.",
+       "id": "ecu.m1.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m1.l3",
+     "title": "Spannungsversorgung und Klemmen",
+     "min": 6,
+     "body": [
+      "Im Fahrzeug haben Stromanschlüsse feste Klemmennamen (nach DIN 72552). Klemme 30 ist Dauerplus von der Batterie, Klemme 31 ist Masse, Klemme 15 ist Plus bei eingeschalteter Zündung, Klemme 50 die Ansteuerung des Starters.",
+      "## Was das Steuergerät daraus macht",
+      "Spannungsregler erzeugen aus den 12 Volt des Bordnetzes stabile Spannungen für den Controller (zum Beispiel 5 V, 3,3 V und Kernspannungen) und eine Sensorversorgung. Für Direkteinspritzventile wird oft zusätzlich eine deutlich höhere Spannung erzeugt, weil sie sehr schnell öffnen müssen.",
+      "## Belastungen",
+      "Das Bordnetz ist rau: Beim Kaltstart kann die Spannung stark einbrechen, beim Abwerfen einer Last entstehen Spannungsspitzen. Das Steuergerät muss das überstehen, ohne Daten zu verlieren oder falsch zu schalten.",
+      "## Überwachung",
+      "Ein Watchdog prüft, ob die Software regelmäßig „lebt“. Bleibt das Signal aus, setzt er den Controller zurück oder schaltet in einen sicheren Zustand. In Motorsteuergeräten übernimmt oft ein eigener Überwachungsbaustein diese Rolle."
+     ],
+     "key": [
+      "KL30 Dauerplus, KL31 Masse, KL15 Zündung, KL50 Starter.",
+      "Regler erzeugen stabile Spannungen, teils auch Hochspannung für Injektoren.",
+      "Watchdog: Software muss sich regelmäßig melden."
+     ],
+     "src": [
+      {
+       "n": "Bosch: Kraftfahrtechnisches Taschenbuch (Springer Vieweg, Nachschlagewerk)"
+      },
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Klemme 30",
+       "b": "Dauerplus direkt von der Batterie.",
+       "id": "ecu.m1.l3.k1"
+      },
+      {
+       "f": "Klemme 15",
+       "b": "Plus bei eingeschalteter Zündung.",
+       "id": "ecu.m1.l3.k2"
+      },
+      {
+       "f": "Klemme 31",
+       "b": "Masse (Minus).",
+       "id": "ecu.m1.l3.k3"
+      },
+      {
+       "f": "Klemme 50",
+       "b": "Ansteuerung des Starters.",
+       "id": "ecu.m1.l3.k4"
+      },
+      {
+       "f": "Watchdog",
+       "b": "Überwachung, die einen Reset oder sicheren Zustand auslöst, wenn die Software sich nicht rechtzeitig meldet.",
+       "id": "ecu.m1.l3.k5"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Klemme liefert Dauerplus von der Batterie?",
+       "o": [
+        "Klemme 30",
+        "Klemme 15",
+        "Klemme 31",
+        "Klemme 50"
+       ],
+       "a": 0,
+       "e": "KL30 ist immer an, auch bei ausgeschalteter Zündung.",
+       "id": "ecu.m1.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was signalisiert Klemme 15 dem Steuergerät?",
+       "o": [
+        "Zündung ist eingeschaltet",
+        "Der Starter dreht",
+        "Die Batterie ist leer",
+        "Das Fahrzeug ist verriegelt"
+       ],
+       "a": 0,
+       "e": "KL15 ist Plus bei eingeschalteter Zündung.",
+       "id": "ecu.m1.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum brauchen Direkteinspritzventile oft eine höhere Spannung?",
+       "o": [
+        "Sie müssen sehr schnell öffnen",
+        "Weil sie sonst rosten",
+        "Weil die Batterie zu schwach ist",
+        "Für die Diagnose"
+       ],
+       "a": 0,
+       "e": "Eine kurze Hochspannungsphase beschleunigt das Öffnen.",
+       "id": "ecu.m1.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was tut ein Watchdog, wenn die Software nicht mehr reagiert?",
+       "o": [
+        "Reset oder sicherer Zustand",
+        "Er speichert die Uhrzeit",
+        "Er erhöht die Drehzahl",
+        "Nichts, er protokolliert nur"
+       ],
+       "a": 0,
+       "e": "Er verhindert, dass eine hängende Software weiter falsch steuert.",
+       "id": "ecu.m1.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was liefert Klemme 50?",
+       "o": [
+        "Das Signal zum Ansteuern des Starters",
+        "Dauerplus von der Batterie",
+        "Masse zum Motorblock",
+        "Plus bei eingeschalteter Zündung"
+       ],
+       "a": 0,
+       "e": "KL50 steuert den Starter an.",
+       "id": "ecu.m1.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ecu.m2",
+   "level": 1,
+   "title": "Eingänge und Ausgänge",
+   "desc": "Wie Sensorsignale ins Steuergerät kommen und wie Endstufen Aktoren schalten.",
+   "lessons": [
+    {
+     "id": "ecu.m2.l1",
+     "title": "Sensorsignale einlesen",
+     "min": 6,
+     "body": [
+      "Sensoren liefern verschiedene Signalarten. Analoge Sensoren geben eine Spannung aus, zum Beispiel Temperatursensoren (oft als temperaturabhängiger Widerstand mit Spannungsteiler) oder Drucksensoren mit 0,5 bis 4,5 Volt. Digitale Sensoren schalten nur an und aus. Frequenz- oder pulsbasierte Sensoren kodieren den Wert in Zeiten, etwa Drehzahlsensoren.",
+      "## Vom Pin zur Zahl",
+      "Ein analoges Signal läuft über einen Eingangsfilter gegen Störungen und den Analog-Digital-Wandler. Die Software rechnet den Rohwert über eine Kennlinie in eine physikalische Größe um und filtert ihn weiter. Zeitbasierte Signale misst ein Timer-Modul mit hoher Auflösung.",
+      "## Plausibilisieren",
+      "Jeder Wert wird geprüft: Liegt die Spannung im gültigen Bereich? Ändert sich der Wert unrealistisch schnell? Passt er zu anderen Sensoren? Ein Drucksensor, der genau 0 V liefert, hat vermutlich einen Kurzschluss nach Masse, nicht null Druck. Deshalb nutzt man oft einen Messbereich, der die Ränder freilässt.",
+      "## Sensorversorgung",
+      "Viele Sensoren werden vom Steuergerät mit 5 V versorgt. Diese Versorgung wird überwacht, denn fällt sie aus, sind alle daran hängenden Werte falsch."
+     ],
+     "key": [
+      "Signalarten: analog, digital, zeit- oder frequenzbasiert.",
+      "Pin → Filter → ADC → Kennlinie → physikalischer Wert.",
+      "Jeder Wert wird auf Bereich, Änderung und Plausibilität geprüft."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      },
+      {
+       "n": "Bosch: Kraftfahrtechnisches Taschenbuch (Springer Vieweg, Nachschlagewerk)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Kennlinie",
+       "b": "Zuordnung von Rohwert (z. B. Spannung) zu physikalischer Größe (z. B. Druck).",
+       "id": "ecu.m2.l1.k1"
+      },
+      {
+       "f": "Signal-Range-Check",
+       "b": "Prüfung, ob ein Sensorsignal im gültigen Spannungsbereich liegt; Werte außerhalb deuten auf Kurzschluss oder Unterbrechung.",
+       "id": "ecu.m2.l1.k2"
+      },
+      {
+       "f": "Plausibilisierung",
+       "b": "Vergleich eines Messwerts mit anderen Größen oder Modellen, um Fehler zu erkennen.",
+       "id": "ecu.m2.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Ein Drucksensor mit Messbereich 0,5 bis 4,5 V liefert 0,05 V. Was ist am wahrscheinlichsten?",
+       "o": [
+        "Kurzschluss nach Masse",
+        "Ein extrem hoher Druck",
+        "Ein normaler Leerlaufwert",
+        "Ein Softwareupdate läuft"
+       ],
+       "a": 0,
+       "e": "Werte außerhalb des Messbereichs deuten auf einen elektrischen Fehler.",
+       "id": "ecu.m2.l1.q1"
+      },
+      {
+       "t": "order",
+       "q": "Bringe den Weg eines analogen Sensorsignals in die richtige Reihenfolge.",
+       "o": [
+        "Sensor erzeugt Spannung",
+        "Eingangsfilter",
+        "Analog-Digital-Wandler",
+        "Kennlinie in der Software",
+        "Plausibilisierung und Weiterverarbeitung"
+       ],
+       "e": "So wird aus einer Spannung ein geprüfter physikalischer Wert.",
+       "id": "ecu.m2.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum lässt man bei Sensoren die Ränder des Spannungsbereichs (z. B. unter 0,5 V) frei?",
+       "o": [
+        "Damit Kurzschlüsse und Unterbrechungen erkennbar sind",
+        "Um Strom in der Sensorversorgung zu sparen",
+        "Weil der ADC unter 0,5 V nicht messen kann",
+        "Damit der Sensor bei Hitze kühler bleibt"
+       ],
+       "a": 0,
+       "e": "So unterscheidet man echte Messwerte von Leitungsfehlern.",
+       "id": "ecu.m2.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wie misst das Steuergerät ein drehzahlabhängiges Pulssignal?",
+       "o": [
+        "Per Timer über Zeitabstände",
+        "Mit dem Watchdog-Baustein des Steuergeräts",
+        "Über den Analog-Digital-Wandler als Spannung",
+        "Gar nicht direkt, nur als Botschaft über CAN"
+       ],
+       "a": 0,
+       "e": "Timer-Module messen die Zeit zwischen Flanken sehr genau.",
+       "id": "ecu.m2.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Spannung liefert die Sensorversorgung vieler Sensoren typischerweise?",
+       "o": [
+        "Meist stabilisierte 5 V",
+        "12 V direkt aus dem Bordnetz",
+        "48 V aus dem Mildhybrid-Netz",
+        "230 V über einen Wandler"
+       ],
+       "a": 0,
+       "e": "5 V ist der übliche Wert für Sensorversorgungen.",
+       "id": "ecu.m2.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m2.l2",
+     "title": "Endstufen: Aktoren schalten",
+     "min": 7,
+     "body": [
+      "Die Ausgänge des Mikrocontrollers liefern nur winzige Ströme. Endstufen (Treiber) verstärken sie, um Ventile, Motoren und Relais zu schalten.",
+      "## Low-Side und High-Side",
+      "Ein Low-Side-Schalter verbindet den Verbraucher mit Masse, das Plus kommt dauerhaft von der Versorgung. Ein High-Side-Schalter schaltet das Plus. Low-Side ist einfacher und günstig; High-Side schützt besser, wenn eine Leitung gegen Masse scheuert, weil der Verbraucher dann nicht ungewollt anläuft.",
+      "## H-Brücke",
+      "Elektromotoren, die in beide Richtungen drehen müssen, etwa die elektrische Drosselklappe, werden über eine H-Brücke aus vier Schaltern angesteuert. Je nachdem, welches Paar schließt, fließt der Strom in die eine oder andere Richtung.",
+      "## PWM",
+      "Viele Aktoren werden mit Pulsweitenmodulation angesteuert: Der Schalter wird schnell ein- und ausgeschaltet; das Verhältnis von Ein- zu Gesamtzeit (Tastverhältnis) bestimmt die mittlere Leistung.",
+      "## Spezielle Stufen",
+      "Einspritzventile brauchen präzise Strom-Profile (kurzer Anzugsstrom, dann Haltestrom), Zündungen genaue Lade- und Zündzeitpunkte. Dafür gibt es spezialisierte Treiberbausteine, die mit dem Controller zusammenarbeiten."
+     ],
+     "key": [
+      "Endstufen verstärken die Signale des Controllers.",
+      "Low-Side schaltet Masse, High-Side schaltet Plus.",
+      "H-Brücke für Motoren in zwei Richtungen; PWM für stufenlose Leistung."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      },
+      {
+       "n": "Bosch: Kraftfahrtechnisches Taschenbuch (Springer Vieweg, Nachschlagewerk)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Low-Side-Schalter",
+       "b": "Endstufe, die den Verbraucher zur Masse schaltet.",
+       "id": "ecu.m2.l2.k1"
+      },
+      {
+       "f": "High-Side-Schalter",
+       "b": "Endstufe, die das Plus zum Verbraucher schaltet.",
+       "id": "ecu.m2.l2.k2"
+      },
+      {
+       "f": "H-Brücke",
+       "b": "Vier Schalter, mit denen ein Motor in beide Richtungen angesteuert werden kann.",
+       "id": "ecu.m2.l2.k3"
+      },
+      {
+       "f": "PWM (Pulsweitenmodulation)",
+       "b": "Schnelles Ein- und Ausschalten; das Tastverhältnis bestimmt die mittlere Leistung.",
+       "id": "ecu.m2.l2.k4"
+      },
+      {
+       "f": "Anzugs- und Haltestrom",
+       "b": "Erst hoher Strom zum schnellen Öffnen eines Ventils, dann niedriger Strom zum Halten.",
+       "id": "ecu.m2.l2.k5"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Schaltung braucht eine elektrische Drosselklappe, die in beide Richtungen stellen muss?",
+       "o": [
+        "H-Brücke",
+        "Einzelner Low-Side-Schalter",
+        "Spannungsteiler",
+        "ADC"
+       ],
+       "a": 0,
+       "e": "Nur eine H-Brücke kann die Stromrichtung umkehren.",
+       "id": "ecu.m2.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "Eine PWM hat 2 ms Einschaltzeit bei 10 ms Periode. Wie groß ist das Tastverhältnis in Prozent?",
+       "a": 20,
+       "unit": "%",
+       "tol": 0.1,
+       "e": "2 ÷ 10 = 0,2.",
+       "id": "ecu.m2.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was schaltet ein Low-Side-Schalter?",
+       "o": [
+        "Die Verbindung zur Masse",
+        "Das Plus von der Batterie",
+        "Die Busleitung",
+        "Den Watchdog"
+       ],
+       "a": 0,
+       "e": "Der Verbraucher hängt dauerhaft an Plus, die Endstufe schaltet nach Masse.",
+       "id": "ecu.m2.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum bekommen Einspritzventile erst einen hohen, dann einen niedrigen Strom?",
+       "o": [
+        "Erst schnell öffnen, dann mit wenig Strom halten",
+        "Um nebenbei die Batterie nachzuladen",
+        "Damit das Ventil beim Schließen leiser ist",
+        "Weil der Kraftstoff im Winter kälter ist"
+       ],
+       "a": 0,
+       "e": "Anzugsstrom öffnet schnell, Haltestrom vermeidet Überhitzung.",
+       "id": "ecu.m2.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was schaltet ein High-Side-Schalter?",
+       "o": [
+        "Das Plus",
+        "Die Masse zum Motorblock",
+        "Die CAN-High-Leitung",
+        "Die Sensorversorgung des ADC"
+       ],
+       "a": 0,
+       "e": "High-Side schaltet die Versorgung zum Verbraucher.",
+       "id": "ecu.m2.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m2.l3",
+     "title": "Endstufen-Diagnose",
+     "min": 5,
+     "body": [
+      "Das Steuergerät überwacht seine Ausgänge ständig. Typische Fehlerbilder sind Kurzschluss nach Masse, Kurzschluss nach Plus, Unterbrechung (Leitung oder Verbraucher offen) und Überlast oder Übertemperatur.",
+      "## Wie Fehler erkannt werden",
+      "Moderne Treiber messen Strom und Spannung an ihrem Ausgang. Ist der Schalter aus und die Spannung trotzdem niedrig, hängt die Leitung vermutlich an Masse. Ist er an und fließt kein Strom, ist der Kreis wohl offen. Bei zu hohem Strom schalten Treiber sich selbst ab, um nicht zu verbrennen.",
+      "## Was danach passiert",
+      "Der Fehler wird entprellt (er muss eine Zeit lang bestehen), dann im Fehlerspeicher eingetragen. Je nach Bauteil reagiert die Software mit einer Ersatzfunktion oder einem Notlauf, und bei abgasrelevanten Fehlern meldet sie ihn für die OBD."
+     ],
+     "key": [
+      "Fehlerbilder: Kurzschluss nach Masse oder Plus, Unterbrechung, Überlast.",
+      "Treiber messen Strom und Spannung zur Erkennung.",
+      "Entprellen → Fehlerspeicher → Ersatzreaktion."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Unterbrechung (Open Load)",
+       "b": "Leitung oder Verbraucher ist offen; trotz eingeschalteter Endstufe fließt kein Strom.",
+       "id": "ecu.m2.l3.k1"
+      },
+      {
+       "f": "Entprellung",
+       "b": "Ein Fehler muss eine definierte Zeit oder Anzahl bestehen, bevor er als bestätigt gilt.",
+       "id": "ecu.m2.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Die Endstufe ist eingeschaltet, aber es fließt kein Strom. Welcher Fehler liegt nahe?",
+       "o": [
+        "Unterbrechung",
+        "Kurzschluss nach Plus",
+        "Übertemperatur",
+        "Busfehler"
+       ],
+       "a": 0,
+       "e": "Ohne geschlossenen Kreis kann kein Strom fließen.",
+       "id": "ecu.m2.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum wird ein Fehler entprellt?",
+       "o": [
+        "Damit kurze Störungen nicht als Defekt zählen",
+        "Damit der Fehler schneller gemeldet wird",
+        "Um Energie in der Endstufe zu sparen",
+        "Weil der Fehlerspeicher sonst überläuft"
+       ],
+       "a": 0,
+       "e": "Kurze Spitzen sollen keinen Fehlereintrag auslösen.",
+       "id": "ecu.m2.l3.q2"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Fehler kann eine Endstufen-Diagnose typischerweise unterscheiden?",
+       "o": [
+        "Kurzschluss nach Masse",
+        "Unterbrechung",
+        "Falsche Softwareversion",
+        "Kurzschluss nach Plus"
+       ],
+       "a": [
+        0,
+        1,
+        3
+       ],
+       "e": "Die Softwareversion hat mit der Endstufe nichts zu tun.",
+       "id": "ecu.m2.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was tut ein Treiber bei starkem Überstrom?",
+       "o": [
+        "Er schaltet sich selbst ab",
+        "Er erhöht die Spannung",
+        "Er löscht den Fehlerspeicher",
+        "Er startet das Fahrzeug neu"
+       ],
+       "a": 0,
+       "e": "Selbstschutz verhindert die Zerstörung des Treibers.",
+       "id": "ecu.m2.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Die Endstufe ist aus, die Ausgangsspannung trotzdem nahe 0 V. Was liegt nahe?",
+       "o": [
+        "Kurzschluss nach Masse",
+        "Unterbrechung des Verbrauchers",
+        "Übertemperatur des Treibers",
+        "Eine falsche Kalibrierung"
+       ],
+       "a": 0,
+       "e": "Bei Low-Side-Stufe läge im Aus-Zustand sonst Plus über den Verbraucher an.",
+       "id": "ecu.m2.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ecu.m3",
+   "level": 2,
+   "title": "Betriebszustände",
+   "desc": "Vom Wecken über Initialisierung und Betrieb bis Nachlauf, Schlaf, Notlauf und Programmiermodus.",
+   "lessons": [
+    {
+     "id": "ecu.m3.l1",
+     "title": "Der Lebenszyklus: Wecken bis Schlafen",
+     "min": 7,
+     "body": [
+      "Ein Steuergerät ist nicht einfach an oder aus. Es durchläuft Zustände, die sauber gesteuert werden müssen, damit nichts verloren geht und die Batterie nicht leer wird.",
+      "## Wecken",
+      "Aus dem Schlaf (nur Klemme 30, minimale Stromaufnahme) wird das Steuergerät geweckt: durch Klemme 15, durch eine Busnachricht (Buswecken, z. B. beim Öffnen des Fahrzeugs) oder durch einen lokalen Weckeingang.",
+      "## Initialisierung (Startup)",
+      "Der Controller startet, prüft seinen Speicher, lädt Konfigurationen und Lernwerte, initialisiert Treiber und Kommunikation und testet Überwachungsfunktionen. Erst danach geht es in den Betrieb.",
+      "## Betrieb (Run)",
+      "Alle Funktionen laufen: Motorsteuerung, Diagnose, Kommunikation. Solange es Gründe zum Wachbleiben gibt (Zündung an, Busaktivität, laufende Funktionen), bleibt das Steuergerät hier.",
+      "## Nachlauf (Post-Run)",
+      "Nach dem Ausschalten der Zündung läuft das Steuergerät noch eine Weile weiter. Es speichert Lernwerte und Fehlerspeicher, lässt bei Bedarf Lüfter oder Pumpen nachlaufen und führt Diagnosen durch, die nur bei stehendem Motor möglich sind.",
+      "## Herunterfahren und Schlaf",
+      "Wenn niemand mehr das Steuergerät braucht, fährt es geordnet herunter und geht in den Schlaf. In AUTOSAR koordiniert das der ECU State Manager zusammen mit dem BSW Mode Manager; die genauen Zustandsnamen hängen von der Variante und dem Hersteller ab.",
+      "Probiere den Zustandssimulator unten aus."
+     ],
+     "key": [
+      "Schlaf → Wecken → Initialisierung → Betrieb → Nachlauf → Herunterfahren → Schlaf.",
+      "Wecken über KL15, Bus oder lokalen Eingang.",
+      "Im Nachlauf werden Lernwerte gespeichert und Nachlauffunktionen ausgeführt."
+     ],
+     "src": [
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (u. a. ECU State Manager, BSW Mode Manager, Network Management)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      },
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Nachlauf (Post-Run)",
+       "b": "Phase nach Zündung aus: Daten speichern, Lüfter/Pumpen nachlaufen lassen, Diagnosen ausführen.",
+       "id": "ecu.m3.l1.k1"
+      },
+      {
+       "f": "Buswecken",
+       "b": "Wecken eines Steuergeräts über eine Nachricht auf dem Bus.",
+       "id": "ecu.m3.l1.k2"
+      },
+      {
+       "f": "ECU State Manager (EcuM)",
+       "b": "AUTOSAR-Modul, das Start, Betrieb, Herunterfahren und Schlaf des Steuergeräts steuert.",
+       "id": "ecu.m3.l1.k3"
+      },
+      {
+       "f": "Ruhestrom",
+       "b": "Sehr geringer Stromverbrauch im Schlaf, damit die Batterie nicht entladen wird.",
+       "id": "ecu.m3.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Ordne die Zustände eines typischen Fahrzyklus.",
+       "o": [
+        "Schlaf",
+        "Initialisierung",
+        "Betrieb",
+        "Nachlauf",
+        "Schlaf"
+       ],
+       "e": "Nach dem Nachlauf schläft das Steuergerät wieder ein.",
+       "id": "ecu.m3.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum gibt es einen Nachlauf nach dem Ausschalten der Zündung?",
+       "o": [
+        "Um Lernwerte und Fehler zu speichern",
+        "Damit der Motor weiterläuft",
+        "Um das Radio zu betreiben",
+        "Weil das Steuergerät langsam reagiert"
+       ],
+       "a": 0,
+       "e": "Daten müssen sicher im nichtflüchtigen Speicher landen; manche Diagnosen laufen nur bei stehendem Motor.",
+       "id": "ecu.m3.l1.q2"
+      },
+      {
+       "t": "multi",
+       "q": "Wodurch kann ein Steuergerät geweckt werden?",
+       "o": [
+        "Klemme 15 ein",
+        "Busnachricht",
+        "Lokaler Weckeingang",
+        "Klemme 31 aus"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Klemme 31 ist Masse und kein Wecksignal.",
+       "id": "ecu.m3.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert in der Initialisierung?",
+       "o": [
+        "Speicher prüfen, Lernwerte laden, Treiber starten",
+        "Fehlerspeicher löschen und Lernwerte zurücksetzen",
+        "Die Batterie über den Generator nachladen lassen",
+        "Das Fahrzeug entriegeln und die Zündung anfordern"
+       ],
+       "a": 0,
+       "e": "Erst nach erfolgreicher Initialisierung geht das Gerät in den Betrieb.",
+       "id": "ecu.m3.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wie heißt das AUTOSAR-Modul, das Start und Herunterfahren steuert?",
+       "o": [
+        "ECU State Manager (EcuM)",
+        "Diagnostic Event Manager (Dem)",
+        "CAN Network Management (CanNm)",
+        "Runtime Environment (RTE)"
+       ],
+       "a": 0,
+       "e": "EcuM arbeitet mit dem BSW Mode Manager zusammen.",
+       "id": "ecu.m3.l1.q5"
+      }
+     ],
+     "figs": [
+      {
+       "after": 11,
+       "w": "ecustate",
+       "cap": "Zustandssimulator: Schalte Klemmen und Signale und beobachte den Zustand."
+      }
+     ]
+    },
+    {
+     "id": "ecu.m3.l2",
+     "title": "Notlauf und sicherer Zustand",
+     "min": 6,
+     "body": [
+      "Fällt eine wichtige Funktion aus, darf das Fahrzeug nicht unkontrolliert reagieren. Das Steuergerät schaltet dann in einen Notlauf oder in einen sicheren Zustand.",
+      "## Ersatzwerte",
+      "Fällt ein Sensor aus, rechnet die Software mit einem Ersatzwert oder Modell weiter. Fehlt etwa der Ansauglufttemperatursensor, nimmt sie einen festen Wert. Der Motor läuft, aber nicht optimal.",
+      "## Leistungsbegrenzung",
+      "Bei schwereren Fehlern wird die Leistung begrenzt, die Drehzahl beschränkt oder die Drosselklappe in eine Notlaufstellung gebracht. Der Fahrer kann so noch sicher weiterfahren oder anhalten (umgangssprachlich „Limp Home“).",
+      "## Abschalten",
+      "Kann eine sichere Funktion nicht mehr gewährleistet werden, etwa bei widersprüchlichen Fahrpedalsignalen, wird zum Beispiel die Momentanforderung auf Leerlauf begrenzt oder die Einspritzung abgeschaltet. Welcher Zustand „sicher“ ist, wird in der Sicherheitsanalyse festgelegt."
+     ],
+     "key": [
+      "Sensorausfall → Ersatzwert oder Modell.",
+      "Schwere Fehler → Leistung oder Drehzahl begrenzen.",
+      "Der sichere Zustand ist in der Sicherheitsanalyse definiert."
+     ],
+     "src": [
+      {
+       "n": "Arbeitskreis EGAS: Standardisiertes E-Gas-Überwachungskonzept für Benzin- und Diesel-Motorsteuerungen (öffentliches Konzeptpapier)"
+      },
+      {
+       "n": "ISO 26262: Funktionale Sicherheit von Straßenfahrzeugen, Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/68383.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Notlauf (Limp Home)",
+       "b": "Eingeschränkter Betrieb nach einem Fehler, der sicheres Weiterfahren oder Anhalten erlaubt.",
+       "id": "ecu.m3.l2.k1"
+      },
+      {
+       "f": "Ersatzwert",
+       "b": "Fester oder berechneter Wert, mit dem die Software statt eines ausgefallenen Sensors rechnet.",
+       "id": "ecu.m3.l2.k2"
+      },
+      {
+       "f": "Sicherer Zustand",
+       "b": "Zustand, in dem vom System keine unzulässige Gefahr ausgeht, z. B. Leerlaufmoment.",
+       "id": "ecu.m3.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Der Ansauglufttemperatursensor fällt aus. Was ist eine typische Reaktion?",
+       "o": [
+        "Mit Ersatzwert weiterrechnen",
+        "Den Motor sofort und dauerhaft abstellen",
+        "Den Fehlerspeicher löschen und neu starten",
+        "Die Leerlaufdrehzahl deutlich erhöhen"
+       ],
+       "a": 0,
+       "e": "Ein Ersatzwert hält den Motor betriebsbereit.",
+       "id": "ecu.m3.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist bei widersprüchlichen Fahrpedalsignalen eine sinnvolle Reaktion?",
+       "o": [
+        "Die Momentanforderung begrenzen",
+        "Den höheren der beiden Werte nehmen",
+        "Den Mittelwert beider Sensoren verwenden",
+        "Die Warnleuchte zur Beruhigung ausschalten"
+       ],
+       "a": 0,
+       "e": "Ungewollte Beschleunigung muss sicher verhindert werden.",
+       "id": "ecu.m3.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wer legt fest, was der sichere Zustand ist?",
+       "o": [
+        "Die Gefährdungs- und Risikoanalyse",
+        "Der Fahrer über das Kombiinstrument",
+        "Die Werkstatt bei der Inspektion",
+        "Das Gateway anhand der Busdaten"
+       ],
+       "a": 0,
+       "e": "Gefährdungs- und Risikoanalyse nach ISO 26262 bestimmen die Sicherheitsziele.",
+       "id": "ecu.m3.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet Limp Home?",
+       "o": [
+        "Eingeschränktes Weiterfahren nach Fehler",
+        "Automatisches Einparken nach einem Fehler",
+        "Rückfahrt zur Werkstatt per Smartphone-App",
+        "Motorstart per Fernbedienung bei Kälte"
+       ],
+       "a": 0,
+       "e": "Der Notlauf erlaubt sicheres Erreichen eines Ziels mit reduzierter Leistung.",
+       "id": "ecu.m3.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist typisch für einen Notlauf?",
+       "o": [
+        "Reduzierte Leistung oder begrenzte Drehzahl",
+        "Höhere Höchstgeschwindigkeit als normal",
+        "Abgeschaltete Fehlerspeicherung",
+        "Deaktivierte Warnleuchte im Kombiinstrument"
+       ],
+       "a": 0,
+       "e": "Der Fahrer soll sicher weiterkommen, aber eingeschränkt.",
+       "id": "ecu.m3.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m3.l3",
+     "title": "Programmiermodus und Bootloader",
+     "min": 6,
+     "body": [
+      "Zum Aktualisieren der Software wechselt das Steuergerät in einen eigenen Zustand: den Programmiermodus. Dafür ist ein Bootloader zuständig, ein kleines, eigenständiges Programm, das beim Start entscheidet, ob die Anwendung läuft oder neue Software geladen wird.",
+      "## Der typische Ablauf über UDS",
+      "Ein Tester wechselt per Diagnose in die programmierende Sitzung (UDS-Dienst 0x10, Sitzung 0x02), entsperrt das Steuergerät mit SecurityAccess (0x27), löscht den Speicher über RoutineControl (0x31), überträgt die Daten mit RequestDownload (0x34), TransferData (0x36) und RequestTransferExit (0x37), prüft das Ergebnis und setzt das Steuergerät zurück (ECUReset, 0x11).",
+      "## Sicherheit",
+      "Nur signierte Software darf geladen werden. Secure Boot prüft beim Start, ob der Code unverändert ist. Das schützt vor Manipulation, etwa am Abgasverhalten, und ist durch Vorschriften wie UN R155 und R156 für neue Fahrzeuge vorgeschrieben.",
+      "## Wenn etwas schiefgeht",
+      "Bricht das Flashen ab, bleibt der Bootloader erhalten. Das Steuergerät startet im Programmiermodus und kann erneut beschrieben werden."
+     ],
+     "key": [
+      "Bootloader entscheidet: Anwendung starten oder neu programmieren.",
+      "UDS-Ablauf: 0x10 02 → 0x27 → 0x31 → 0x34/0x36/0x37 → 0x11.",
+      "Nur signierte Software; Secure Boot prüft beim Start."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      },
+      {
+       "n": "UNECE: UN-Regelungen R155 (Cyber Security) und R156 (Software Update)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Bootloader",
+       "b": "Kleines Startprogramm, das die Anwendung startet oder neue Software lädt.",
+       "id": "ecu.m3.l3.k1"
+      },
+      {
+       "f": "UDS 0x10 02",
+       "b": "DiagnosticSessionControl: Wechsel in die programmierende Sitzung.",
+       "id": "ecu.m3.l3.k2"
+      },
+      {
+       "f": "UDS 0x27",
+       "b": "SecurityAccess: Entsperren geschützter Funktionen per Schlüsselaustausch.",
+       "id": "ecu.m3.l3.k3"
+      },
+      {
+       "f": "UDS 0x34 / 0x36 / 0x37",
+       "b": "RequestDownload, TransferData, RequestTransferExit: Datenübertragung beim Flashen.",
+       "id": "ecu.m3.l3.k4"
+      },
+      {
+       "f": "Secure Boot",
+       "b": "Prüfung beim Start, ob die Software unverändert und signiert ist.",
+       "id": "ecu.m3.l3.k5"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Ordne die UDS-Schritte beim Flashen.",
+       "o": [
+        "Programmiersitzung starten (0x10 02)",
+        "Entsperren (0x27)",
+        "Speicher löschen (0x31)",
+        "Daten übertragen (0x34, 0x36, 0x37)",
+        "Steuergerät zurücksetzen (0x11)"
+       ],
+       "e": "So läuft ein typischer Programmiervorgang ab.",
+       "id": "ecu.m3.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bleibt erhalten, wenn ein Flashvorgang abbricht?",
+       "o": [
+        "Der separat geschützte Bootloader",
+        "Die neue Anwendung",
+        "Der Fehlerspeicher des Testers",
+        "Die Busverbindung"
+       ],
+       "a": 0,
+       "e": "Der Bootloader ist separat geschützt und ermöglicht einen neuen Versuch.",
+       "id": "ecu.m3.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher UDS-Dienst entsperrt geschützte Funktionen?",
+       "o": [
+        "SecurityAccess (0x27)",
+        "ReadDataByIdentifier (0x22)",
+        "TesterPresent (0x3E)",
+        "ClearDiagnosticInformation (0x14)"
+       ],
+       "a": 0,
+       "e": "SecurityAccess nutzt einen Seed-Key-Austausch.",
+       "id": "ecu.m3.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient Secure Boot?",
+       "o": [
+        "Nur signierte Software startet",
+        "Der Motor startet nach dem Flashen schneller",
+        "Der Fehlerspeicher wird beim Start gesichert",
+        "Die Batterie wird im Schlafmodus geschont"
+       ],
+       "a": 0,
+       "e": "Manipulierte Software wird erkannt und nicht ausgeführt.",
+       "id": "ecu.m3.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher UDS-Dienst setzt das Steuergerät nach dem Flashen zurück?",
+       "o": [
+        "ECUReset (0x11)",
+        "TesterPresent (0x3E)",
+        "ReadDataByIdentifier (0x22)",
+        "ControlDTCSetting (0x85)"
+       ],
+       "a": 0,
+       "e": "Nach dem Reset startet die neue Software.",
+       "id": "ecu.m3.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ecu.m4",
+   "level": 2,
+   "title": "EPM: Kurbel- und Nockenwellenposition",
+   "desc": "Wie das Steuergerät jederzeit weiß, wo jeder Kolben steht: Geberrad, Synchronisation, Phase und Winkeluhr.",
+   "lessons": [
+    {
+     "id": "ecu.m4.l1",
+     "title": "Geberrad und Kurbelwellensensor",
+     "min": 7,
+     "body": [
+      "Damit Einspritzung und Zündung im richtigen Moment passieren, muss das Steuergerät den Kurbelwinkel kennen, auf ein Grad genau und schneller als der Motor dreht. Dieses Positionsmanagement wird oft EPM (Engine Position Management) genannt.",
+      "## Das Geberrad 60-2",
+      "Auf der Kurbelwelle sitzt ein Zahnrad mit Platz für 60 Zähne, von denen 2 fehlen. Die 58 vorhandenen Zähne liegen also im Abstand von 6 Grad. Die Lücke markiert eine feste Bezugsposition.",
+      "## Der Sensor",
+      "Ein Sensor tastet die Zähne ab. Ältere Systeme nutzen induktive Sensoren, deren Signal mit der Drehzahl stärker wird. Heute sind aktive Sensoren (Hall- oder magnetoresistiv) verbreitet: Sie liefern saubere Rechteckflanken schon bei sehr kleiner Drehzahl, teils sogar mit Erkennung der Drehrichtung, was beim Start-Stopp-Betrieb wichtig ist.",
+      "## Drehzahl aus Zahnzeiten",
+      "Die Zeit zwischen zwei Zahnflanken ergibt die Drehzahl: Bei 6 Grad pro Zahn und 1 ms Zahnzeit dreht die Welle 6 Grad pro Millisekunde, das sind 1.000 Umdrehungen pro Minute.",
+      "Sieh dir unten an, wie Rad und Signal zusammenhängen."
+     ],
+     "key": [
+      "EPM: Kurbelwinkel jederzeit genau kennen.",
+      "60-2-Geberrad: 58 Zähne à 6°, Lücke als Bezug.",
+      "Drehzahl = Winkel pro Zeit aus den Zahnzeiten."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      },
+      {
+       "n": "Bosch Generic Timer Module (GTM): öffentliche Produktbeschreibung; in AURIX-Controllern u. a. für winkelbasierte Motorfunktionen eingesetzt"
+      }
+     ],
+     "cards": [
+      {
+       "f": "EPM (Engine Position Management)",
+       "b": "Funktion, die aus Kurbel- und Nockenwellensignalen die genaue Motorposition bestimmt.",
+       "id": "ecu.m4.l1.k1"
+      },
+      {
+       "f": "Geberrad 60-2",
+       "b": "Zahnrad mit 60 Teilungen, davon 2 Zähne fehlend; 6° pro Zahn, Lücke als Bezugsmarke.",
+       "id": "ecu.m4.l1.k2"
+      },
+      {
+       "f": "Aktiver Drehzahlsensor",
+       "b": "Hall- oder magnetoresistiver Sensor mit eigener Versorgung, liefert Rechtecksignale schon bei sehr niedriger Drehzahl.",
+       "id": "ecu.m4.l1.k3"
+      },
+      {
+       "f": "Zahnzeit",
+       "b": "Zeit zwischen zwei Zahnflanken; daraus berechnet sich die Drehzahl.",
+       "id": "ecu.m4.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie viele Grad Kurbelwinkel liegen bei einem 60-2-Geberrad zwischen zwei Zähnen?",
+       "a": 6,
+       "unit": "°",
+       "tol": 0,
+       "e": "360° ÷ 60 Teilungen = 6°.",
+       "id": "ecu.m4.l1.q1"
+      },
+      {
+       "t": "num",
+       "q": "Die Zahnzeit beträgt 0,5 ms. Wie hoch ist die Drehzahl in 1/min?",
+       "a": 2000,
+       "unit": "1/min",
+       "tol": 1,
+       "e": "6° pro 0,5 ms = 12° pro ms = 12.000° pro s = 33,3 U/s = 2.000 1/min.",
+       "id": "ecu.m4.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum sind aktive Sensoren beim Start-Stopp-Betrieb vorteilhaft?",
+       "o": [
+        "Saubere Signale schon bei sehr kleiner Drehzahl",
+        "Sie brauchen überhaupt keine Versorgungsspannung",
+        "Sie sind in jedem Fall günstiger als induktive",
+        "Sie messen die Öltemperatur nebenbei mit"
+       ],
+       "a": 0,
+       "e": "Induktive Sensoren liefern bei Kriechdrehzahl kaum Signal; manche aktive erkennen auch die Drehrichtung.",
+       "id": "ecu.m4.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient die Zahnlücke?",
+       "o": [
+        "Als eindeutige Bezugsposition auf dem Rad",
+        "Zur besseren Kühlung des Geberrads",
+        "Um Gewicht an der Kurbelwelle zu sparen",
+        "Damit der Sensor zwischendurch ruhen kann"
+       ],
+       "a": 0,
+       "e": "Nur die Lücke unterscheidet eine Stelle eindeutig von allen anderen.",
+       "id": "ecu.m4.l1.q4"
+      },
+      {
+       "t": "num",
+       "q": "Wie viele Zähne hat ein 60-2-Geberrad tatsächlich?",
+       "a": 58,
+       "unit": "",
+       "tol": 0,
+       "e": "60 Teilungen minus 2 fehlende Zähne.",
+       "id": "ecu.m4.l1.q5"
+      }
+     ],
+     "figs": [
+      {
+       "after": 7,
+       "w": "crank",
+       "cap": "Geberrad 60-2 und Sensorsignal: Die lange Pause ist die Lücke."
+      }
+     ]
+    },
+    {
+     "id": "ecu.m4.l2",
+     "title": "Synchronisation und Phase",
+     "min": 7,
+     "body": [
+      "Beim Start weiß das Steuergerät noch nicht, wo der Motor steht. Es muss sich synchronisieren.",
+      "## Die Lücke finden",
+      "Die Software vergleicht aufeinanderfolgende Zahnzeiten. An der Lücke fehlen zwei Zähne, die Zeit ist dort etwa dreimal so lang wie bei einem normalen Zahn. Ein typischer Test: Ist eine Zahnzeit deutlich länger als die vorige und die nächste wieder normal, war es die Lücke. Danach zählt die Software die Zähne ab und kennt die Kurbelposition.",
+      "## Warum der Nockenwellensensor nötig ist",
+      "Ein Viertaktmotor braucht für einen Arbeitszyklus zwei Kurbelwellenumdrehungen, also 720 Grad. Die Kurbelwelle allein sagt nicht, ob ein Zylinder im Verdichtungs- oder im Ausstoßtakt ist. Die Nockenwelle dreht nur halb so schnell; ihr Sensor liefert die Phaseninformation. Erst Kurbelwelle plus Nockenwelle ergeben eine eindeutige Position im 720-Grad-Zyklus.",
+      "## Schnellstart",
+      "Damit der Motor rasch anspringt, nutzen moderne Systeme speziell geformte Nockenwellen-Geberräder und gespeicherte Stoppositionen, um möglichst früh synchron zu sein.",
+      "## Synchronisationsverlust",
+      "Passen gezählte Zähne und Lücke nicht mehr zusammen, etwa durch Störimpulse, verliert die Software die Synchronisation, unterdrückt Einspritzung und Zündung kurz und synchronisiert neu. Ein solches Ereignis wird diagnostiziert."
+     ],
+     "key": [
+      "Synchronisation: Lücke über das Zahnzeit-Verhältnis finden, dann Zähne zählen.",
+      "720° pro Arbeitsspiel: Nockenwelle liefert die Phase.",
+      "Synchronisationsverlust → Einspritzung und Zündung kurz aus, neu synchronisieren."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      },
+      {
+       "n": "Bosch Generic Timer Module (GTM): öffentliche Produktbeschreibung; in AURIX-Controllern u. a. für winkelbasierte Motorfunktionen eingesetzt"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Synchronisation",
+       "b": "Bestimmung der absoluten Kurbelposition, z. B. durch Erkennen der Zahnlücke.",
+       "id": "ecu.m4.l2.k1"
+      },
+      {
+       "f": "Phase (Nockenwelle)",
+       "b": "Information, in welcher der beiden Kurbelwellenumdrehungen eines Arbeitsspiels sich der Motor befindet.",
+       "id": "ecu.m4.l2.k2"
+      },
+      {
+       "f": "720° Kurbelwinkel",
+       "b": "Ein vollständiges Arbeitsspiel eines Viertaktmotors (zwei Kurbelwellenumdrehungen).",
+       "id": "ecu.m4.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Warum reicht der Kurbelwellensensor allein beim Viertakter nicht für die Einspritzung?",
+       "o": [
+        "Er unterscheidet die zwei Umdrehungen nicht",
+        "Er ist für Einspritzung grundsätzlich zu ungenau",
+        "Er misst nur die Temperatur der Kurbelwelle",
+        "Er funktioniert erst oberhalb von 3.000 1/min"
+       ],
+       "a": 0,
+       "e": "Ohne Nockenwelle bleibt eine 360°-Mehrdeutigkeit.",
+       "id": "ecu.m4.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "Wie lang ist die Zahnzeit an der Lücke ungefähr im Vergleich zu einem normalen Zahn (Faktor)?",
+       "a": 3,
+       "unit": "",
+       "tol": 0,
+       "e": "Zwei fehlende Zähne: Die Zeit reicht über drei Teilungen.",
+       "id": "ecu.m4.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert bei Synchronisationsverlust typischerweise?",
+       "o": [
+        "Einspritzung und Zündung aus, neu synchronisieren",
+        "Der Motor beschleunigt kurz auf Höchstdrehzahl",
+        "Der Fehlerspeicher wird vollständig gelöscht",
+        "Die Nockenwelle wird auf Anschlag verstellt"
+       ],
+       "a": 0,
+       "e": "Ohne sichere Position darf nicht eingespritzt oder gezündet werden.",
+       "id": "ecu.m4.l2.q3"
+      },
+      {
+       "t": "num",
+       "q": "Wie viel Grad Kurbelwinkel umfasst ein Arbeitsspiel eines Viertaktmotors?",
+       "a": 720,
+       "unit": "°",
+       "tol": 0,
+       "e": "Zwei Umdrehungen à 360°.",
+       "id": "ecu.m4.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wie schnell dreht die Nockenwelle im Vergleich zur Kurbelwelle?",
+       "o": [
+        "Halb so schnell",
+        "Genauso schnell",
+        "Doppelt so schnell",
+        "Viermal so schnell"
+       ],
+       "a": 0,
+       "e": "Eine Nockenwellenumdrehung pro Arbeitsspiel (720° Kurbelwinkel).",
+       "id": "ecu.m4.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m4.l3",
+     "title": "Winkeluhr und winkelsynchrone Aufgaben",
+     "min": 6,
+     "body": [
+      "Zwischen zwei Zähnen vergehen bei hoher Drehzahl nur Mikrosekunden, und trotzdem müssen Zündung und Einspritzung auf Bruchteile eines Grads genau erfolgen. Dafür rechnet das Steuergerät eine fein aufgelöste Winkeluhr.",
+      "## Interpolation",
+      "Aus den letzten Zahnzeiten wird vorhergesagt, wie schnell sich die Welle weiterdreht, und der Winkel zwischen den Zähnen fein unterteilt. In AURIX-Controllern kann das Generic Timer Module mit einer digitalen Phasenregelschleife (DPLL) diese Aufgabe in Hardware erledigen.",
+      "## Winkelsynchrone Tasks",
+      "Bestimmte Softwareteile laufen nicht nach Zeit, sondern nach Winkel, zum Beispiel einmal pro Zylinder-Segment. Bei 6.000 Umdrehungen pro Minute und sechs Zylindern sind das 300 Segmente pro Sekunde. Mit der Drehzahl wird es also immer enger für die Rechenzeit.",
+      "## Dynamik",
+      "Beim Beschleunigen oder bei Zündaussetzern schwankt die Drehzahl innerhalb einer Umdrehung. Gute Vorhersagen berücksichtigen das, sonst verschiebt sich der berechnete Winkel. Aus diesen feinen Schwankungen lässt sich übrigens auch auf Zündaussetzer schließen, eine wichtige OBD-Diagnose."
+     ],
+     "key": [
+      "Winkeluhr: feine Interpolation zwischen den Zähnen.",
+      "Winkelsynchrone Tasks laufen pro Segment; Rechenzeit wird bei hoher Drehzahl knapp.",
+      "Drehzahlschwankungen dienen auch der Aussetzererkennung."
+     ],
+     "src": [
+      {
+       "n": "Bosch Generic Timer Module (GTM): öffentliche Produktbeschreibung; in AURIX-Controllern u. a. für winkelbasierte Motorfunktionen eingesetzt"
+      },
+      {
+       "n": "Infineon: AURIX 32-bit TriCore Mikrocontroller (Produktübersicht und Dokumentation)",
+       "u": "https://www.infineon.com/cms/en/product/microcontroller/32-bit-tricore-microcontroller/"
+      },
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Winkeluhr",
+       "b": "Fein aufgelöster, vorhergesagter Kurbelwinkel zwischen den Zahnflanken.",
+       "id": "ecu.m4.l3.k1"
+      },
+      {
+       "f": "DPLL",
+       "b": "Digitale Phasenregelschleife; im GTM zur Erzeugung eines winkelproportionalen Takts genutzt.",
+       "id": "ecu.m4.l3.k2"
+      },
+      {
+       "f": "Segment",
+       "b": "Kurbelwinkelbereich je Zylinder (z. B. 720° ÷ 6 = 120° beim Sechszylinder).",
+       "id": "ecu.m4.l3.k3"
+      },
+      {
+       "f": "Aussetzererkennung",
+       "b": "Diagnose von Verbrennungsaussetzern, u. a. über Drehzahlschwankungen der Kurbelwelle.",
+       "id": "ecu.m4.l3.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie viele Grad umfasst ein Segment beim Sechszylinder-Viertakter?",
+       "a": 120,
+       "unit": "°",
+       "tol": 0,
+       "e": "720° ÷ 6 = 120°.",
+       "id": "ecu.m4.l3.q1"
+      },
+      {
+       "t": "num",
+       "q": "Wie viele Segmente pro Sekunde fallen bei 6.000 1/min beim Sechszylinder an?",
+       "a": 300,
+       "unit": "",
+       "tol": 0,
+       "e": "100 Umdrehungen/s = 50 Arbeitsspiele/s, mal 6 Zylinder = 300.",
+       "id": "ecu.m4.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu nutzt man die DPLL im GTM?",
+       "o": [
+        "Einen fein aufgelösten Winkeltakt zwischen den Zähnen erzeugen",
+        "CAN-Nachrichten vor dem Senden verschlüsseln",
+        "Den externen Watchdog regelmäßig bedienen",
+        "Flash-Speicher vor dem Programmieren löschen"
+       ],
+       "a": 0,
+       "e": "Sie liefert eine feine Winkelauflösung in Hardware.",
+       "id": "ecu.m4.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Woran kann man Zündaussetzer erkennen?",
+       "o": [
+        "An Drehzahlschwankungen der Kurbelwelle",
+        "Am Ladezustand und Innenwiderstand der Batterie",
+        "An der Außentemperatur beim Motorstart",
+        "An der Auslastung des Antriebs-CAN"
+       ],
+       "a": 0,
+       "e": "Fehlt eine Verbrennung, verzögert die Kurbelwelle messbar.",
+       "id": "ecu.m4.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum wird Rechenzeit bei hoher Drehzahl knapp?",
+       "o": [
+        "Winkelsynchrone Tasks kommen häufiger",
+        "Der Controller taktet bei Hitze langsamer",
+        "Der Bus braucht dann mehr Rechenzeit",
+        "Das Betriebssystem pausiert Zeittasks"
+       ],
+       "a": 0,
+       "e": "Mehr Segmente pro Sekunde bedeuten mehr Aufrufe.",
+       "id": "ecu.m4.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ecu.m5",
+   "level": 2,
+   "title": "Bussysteme und Vernetzung",
+   "desc": "CAN, CAN FD, FlexRay, LIN, Automotive Ethernet, Sub-Busse und Netzwerkmanagement.",
+   "lessons": [
+    {
+     "id": "ecu.m5.l1",
+     "title": "CAN und CAN FD",
+     "min": 7,
+     "body": [
+      "Das Controller Area Network (CAN) ist seit Jahrzehnten das Rückgrat der Fahrzeugkommunikation. Alle Teilnehmer hängen an zwei verdrillten Leitungen (CAN-High und CAN-Low) und senden Nachrichten mit einer Kennung (ID), nicht an eine Adresse.",
+      "## Arbitrierung",
+      "Wollen zwei Steuergeräte gleichzeitig senden, gewinnt die Nachricht mit der kleineren ID, ohne dass Daten verloren gehen: Ein dominantes Bit (0) überschreibt ein rezessives (1). Wer ein rezessives Bit sendet und ein dominantes liest, hört auf. Kleine IDs haben deshalb hohe Priorität.",
+      "## Klassisches CAN",
+      "Ein klassischer CAN-Frame trägt höchstens 8 Byte Nutzdaten, bei typischen 500 kbit/s im Antriebsbereich. Eine Prüfsumme (CRC) und Bestätigung (ACK) sichern die Übertragung; Steuergeräte mit vielen Fehlern schalten sich selbst vom Bus ab (Bus-Off).",
+      "## CAN FD",
+      "CAN FD (Flexible Data-Rate) erlaubt bis zu 64 Byte pro Frame und schaltet in der Datenphase auf eine höhere Bitrate um, oft 2 bis 5 Mbit/s. Die Arbitrierung läuft weiter langsam, damit sie bei der Leitungslänge funktioniert. So passt deutlich mehr Information durch denselben Bus, etwa für Flashen oder gesicherte Botschaften mit Signatur.",
+      "## Absicherung der Inhalte",
+      "Für sicherheitsrelevante Signale werden Zähler und Prüfsummen in die Nutzdaten gepackt (in AUTOSAR: End-to-End-Protection), damit der Empfänger veraltete oder verfälschte Werte erkennt."
+     ],
+     "key": [
+      "CAN: Nachrichten mit ID, kleinere ID gewinnt die Arbitrierung.",
+      "Klassisch bis 8 Byte; CAN FD bis 64 Byte mit schnellerer Datenphase.",
+      "E2E-Schutz: Zähler und CRC im Inhalt sicherheitsrelevanter Signale."
+     ],
+     "src": [
+      {
+       "n": "CAN in Automation (CiA): Grundlagen zu Classical CAN und CAN FD",
+       "u": "https://www.can-cia.org/can-knowledge/"
+      },
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD), ISO 17458 (FlexRay), ISO 17987 (LIN), IEEE 802.3bw/bp (100/1000BASE-T1)"
+      },
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (u. a. ECU State Manager, BSW Mode Manager, Network Management)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "CAN-Arbitrierung",
+       "b": "Bitweiser Wettstreit beim gleichzeitigen Senden: Dominante 0 gewinnt, die kleinere ID setzt sich verlustfrei durch.",
+       "id": "ecu.m5.l1.k1"
+      },
+      {
+       "f": "CAN FD",
+       "b": "Weiterentwicklung von CAN mit bis zu 64 Byte Nutzdaten und höherer Bitrate in der Datenphase.",
+       "id": "ecu.m5.l1.k2"
+      },
+      {
+       "f": "Bus-Off",
+       "b": "Zustand, in dem ein Steuergerät mit zu vielen Fehlern nicht mehr am Bus sendet.",
+       "id": "ecu.m5.l1.k3"
+      },
+      {
+       "f": "E2E-Protection",
+       "b": "Schutz von Signalinhalten durch Zähler und Prüfsumme, um Verlust, Wiederholung oder Verfälschung zu erkennen.",
+       "id": "ecu.m5.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Zwei Steuergeräte senden gleichzeitig: ID 0x120 und ID 0x0F0. Wer gewinnt?",
+       "o": [
+        "0x0F0",
+        "0x120",
+        "Beide kollidieren und senden neu",
+        "Das zuerst eingeschaltete"
+       ],
+       "a": 0,
+       "e": "Die kleinere ID hat mehr führende dominante Bits.",
+       "id": "ecu.m5.l1.q1"
+      },
+      {
+       "t": "num",
+       "q": "Wie viele Byte Nutzdaten passen höchstens in einen CAN-FD-Frame?",
+       "a": 64,
+       "unit": "Byte",
+       "tol": 0,
+       "e": "Klassisches CAN: 8 Byte, CAN FD: bis 64 Byte.",
+       "id": "ecu.m5.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum bleibt die Arbitrierungsphase bei CAN FD langsam?",
+       "o": [
+        "Das Bit muss die ganze Leitung erreichen",
+        "Um Strom in den Transceivern zu sparen",
+        "Weil die ID verschlüsselt übertragen wird",
+        "Weil schnelle Bits mehr Lizenzgebühren kosten"
+       ],
+       "a": 0,
+       "e": "Bei der Arbitrierung müssen sich die Signale über die ganze Leitung ausbreiten.",
+       "id": "ecu.m5.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient ein Botschaftszähler im Nutzinhalt?",
+       "o": [
+        "Veraltete oder wiederholte Nachrichten erkennen",
+        "Die Bitrate der Datenphase erhöhen",
+        "Die Botschafts-ID auf 11 Bit verkürzen",
+        "Schlafende Steuergeräte am Bus wecken"
+       ],
+       "a": 0,
+       "e": "Bleibt der Zähler stehen, ist der Sender ausgefallen oder die Nachricht alt.",
+       "id": "ecu.m5.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viele Byte Nutzdaten trägt ein klassischer CAN-Frame höchstens?",
+       "o": [
+        "8",
+        "16",
+        "32",
+        "64"
+       ],
+       "a": 0,
+       "e": "64 Byte sind erst mit CAN FD möglich.",
+       "id": "ecu.m5.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m5.l2",
+     "title": "FlexRay, LIN und Ethernet",
+     "min": 7,
+     "body": [
+      "Nicht jede Aufgabe passt zu CAN. Im Fahrzeug arbeiten deshalb mehrere Bussysteme nebeneinander.",
+      "## FlexRay",
+      "FlexRay arbeitet mit bis zu 10 Mbit/s pro Kanal und hat einen festen Zeitplan: Jeder Teilnehmer bekommt im statischen Segment eines Zyklus seine Zeitschlitze (TDMA). Dadurch ist genau vorhersagbar, wann eine Nachricht ankommt (deterministisch). Zwei Kanäle können redundant genutzt werden. Ein dynamisches Segment bietet zusätzlich Platz für ereignisgesteuerte Nachrichten. FlexRay wurde vor allem für Fahrwerk, Antrieb und sicherheitsrelevante Verbünde eingesetzt; in neuen Architekturen wird es oft durch CAN FD und Ethernet ersetzt.",
+      "## LIN",
+      "Das Local Interconnect Network ist ein einfacher, günstiger Eindrahtbus mit bis zu etwa 20 kbit/s. Ein Master fragt Slaves zyklisch ab (Master-Slave). Typische Teilnehmer sind intelligente Sensoren und Aktoren, zum Beispiel Generator- oder Batteriesensoren, Klappen oder Lüfter.",
+      "## Automotive Ethernet",
+      "Für hohe Datenmengen (Kameras, Zentralrechner, Backbone) wird Ethernet über ein einzelnes verdrilltes Adernpaar genutzt, etwa 100BASE-T1 oder 1000BASE-T1. Darauf laufen Protokolle wie SOME/IP für Dienste und DoIP für Diagnose und Flashen.",
+      "## Sub-Busse",
+      "Häufig bildet ein Steuergerät mit seinen direkten Partnern einen eigenen, abgeschotteten Bus, oft Sub-CAN oder privater CAN genannt. Beispiele sind Verbindungen zu einem Getriebesteuergerät oder intelligenten Aktoren. Das entlastet die Hauptbusse und trennt sicherheitskritische Kommunikation. Wie solche Busse heißen und aufgebaut sind, ist herstellerspezifisch."
+     ],
+     "key": [
+      "FlexRay: festes Zeitraster, deterministisch, bis 10 Mbit/s, zwei Kanäle.",
+      "LIN: einfacher Master-Slave-Eindrahtbus bis ca. 20 kbit/s.",
+      "Ethernet (T1) für hohe Datenraten; Sub-Busse trennen lokale Verbünde ab."
+     ],
+     "src": [
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD), ISO 17458 (FlexRay), ISO 17987 (LIN), IEEE 802.3bw/bp (100/1000BASE-T1)"
+      },
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (u. a. ECU State Manager, BSW Mode Manager, Network Management)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "FlexRay",
+       "b": "Deterministischer Bus mit festem Zeitplan (TDMA), bis 10 Mbit/s je Kanal, zwei Kanäle möglich.",
+       "id": "ecu.m5.l2.k1"
+      },
+      {
+       "f": "TDMA",
+       "b": "Zeitmultiplex: Jeder Teilnehmer sendet nur in fest zugeteilten Zeitschlitzen.",
+       "id": "ecu.m5.l2.k2"
+      },
+      {
+       "f": "LIN",
+       "b": "Einfacher Eindrahtbus für Sensoren und Aktoren; ein Master steuert alle Übertragungen.",
+       "id": "ecu.m5.l2.k3"
+      },
+      {
+       "f": "100BASE-T1",
+       "b": "Automotive Ethernet mit 100 Mbit/s über ein einzelnes verdrilltes Adernpaar.",
+       "id": "ecu.m5.l2.k4"
+      },
+      {
+       "f": "Sub-CAN / privater CAN",
+       "b": "Lokaler CAN-Verbund eines Steuergeräts mit direkten Partnern, getrennt vom Hauptnetz (herstellerspezifisch).",
+       "id": "ecu.m5.l2.k5"
+      },
+      {
+       "f": "DoIP",
+       "b": "Diagnose über IP (ISO 13400): UDS-Kommunikation über Ethernet.",
+       "id": "ecu.m5.l2.k6"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist die besondere Stärke von FlexRay?",
+       "o": [
+        "Deterministisches Zeitverhalten durch festes Zeitraster",
+        "Besonders niedrige Kosten pro Knoten",
+        "Übertragung über nur einen einzigen Draht",
+        "Kabellose Übertragung zwischen Steuergeräten"
+       ],
+       "a": 0,
+       "e": "Das feste Zeitraster garantiert, wann jede Nachricht kommt.",
+       "id": "ecu.m5.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie wird beim LIN-Bus gesendet?",
+       "o": [
+        "Der Master fragt die Slaves ab",
+        "Jeder sendet frei mit Arbitrierung",
+        "Nach festen Zeitslots ohne Master",
+        "Über Funk"
+       ],
+       "a": 0,
+       "e": "LIN arbeitet streng nach dem Master-Slave-Prinzip.",
+       "id": "ecu.m5.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Bus passt am besten für eine Frontkamera mit hoher Datenrate?",
+       "o": [
+        "Automotive Ethernet (z. B. 1000BASE-T1)",
+        "LIN mit Master-Slave-Abfrage",
+        "Klassisches CAN mit 500 kbit/s",
+        "Ein eigener Sub-LIN-Strang"
+       ],
+       "a": 0,
+       "e": "Videodaten brauchen Bandbreiten im Bereich von 100 Mbit/s und mehr.",
+       "id": "ecu.m5.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient ein Sub-CAN?",
+       "o": [
+        "Lokale Kommunikation vom Hauptnetz trennen",
+        "Die Bordnetzbatterie im Stand nachzuladen",
+        "Den LIN-Bus im ganzen Fahrzeug zu ersetzen",
+        "Fehlerspeicher anderer Steuergeräte zu löschen"
+       ],
+       "a": 0,
+       "e": "Er entlastet die Hauptbusse und schottet lokale Verbünde ab.",
+       "id": "ecu.m5.l2.q4"
+      },
+      {
+       "t": "order",
+       "q": "Ordne nach typischer maximaler Datenrate, von niedrig nach hoch.",
+       "o": [
+        "LIN",
+        "Klassisches CAN",
+        "FlexRay",
+        "1000BASE-T1"
+       ],
+       "e": "Etwa 20 kbit/s, 1 Mbit/s, 10 Mbit/s, 1 Gbit/s.",
+       "id": "ecu.m5.l2.q5"
+      },
+      {
+       "t": "mc",
+       "q": "Welches Protokoll nutzt man für Diagnose über Ethernet?",
+       "o": [
+        "DoIP",
+        "LIN",
+        "XCP on CAN",
+        "FlexRay-NM"
+       ],
+       "a": 0,
+       "e": "DoIP (ISO 13400) transportiert UDS über IP.",
+       "id": "ecu.m5.l2.q6"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m5.l3",
+     "title": "Netzwerkmanagement und Gateway",
+     "min": 5,
+     "body": [
+      "Damit die Batterie nicht leer wird, müssen alle Steuergeräte eines Busses gemeinsam einschlafen und aufwachen. Das regelt das Netzwerkmanagement.",
+      "## So funktioniert es",
+      "Jedes Steuergerät, das den Bus noch braucht, sendet regelmäßig eine Netzwerkmanagement-Botschaft. Hört ein Steuergerät eine Weile keine solche Botschaft mehr und braucht selbst nichts, bereitet es den Schlaf vor. Schweigen alle, schläft der ganze Bus ein. Eine neue Botschaft weckt ihn wieder. In AUTOSAR heißt das Modul CanNm (bzw. FrNm für FlexRay).",
+      "## Teilnetzbetrieb",
+      "Beim Partial Networking schlafen nur die Steuergeräte, die gerade nicht gebraucht werden, während andere auf demselben Bus weiterarbeiten. Spezielle Transceiver wachen nur bei bestimmten Botschaften auf. Das spart Energie, gerade wenn im Stand Funktionen wie Klimatisierung oder Laden laufen.",
+      "## Gateway",
+      "Ein Gateway-Steuergerät verbindet die verschiedenen Busse, leitet Signale weiter, übersetzt zwischen Protokollen und schützt als Firewall die inneren Netze. Diagnosezugriffe von außen gehen meist zuerst durch das Gateway."
+     ],
+     "key": [
+      "Netzwerkmanagement: Alle schlafen gemeinsam, eine Botschaft weckt alle.",
+      "Partial Networking: Nur benötigte Steuergeräte bleiben wach.",
+      "Gateway verbindet Busse und wirkt als Firewall."
+     ],
+     "src": [
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (u. a. ECU State Manager, BSW Mode Manager, Network Management)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Netzwerkmanagement (NM)",
+       "b": "Koordiniert gemeinsames Einschlafen und Aufwachen der Steuergeräte eines Busses.",
+       "id": "ecu.m5.l3.k1"
+      },
+      {
+       "f": "Partial Networking",
+       "b": "Teilnetzbetrieb: Ein Teil der Steuergeräte schläft, während andere auf demselben Bus weiterkommunizieren.",
+       "id": "ecu.m5.l3.k2"
+      },
+      {
+       "f": "Gateway",
+       "b": "Steuergerät, das Busse verbindet, Botschaften weiterleitet und Zugriffe filtert.",
+       "id": "ecu.m5.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Ein Steuergerät hört keine NM-Botschaften mehr und braucht den Bus nicht. Was tut es?",
+       "o": [
+        "Es bereitet das gemeinsame Einschlafen vor",
+        "Es meldet einen Busfehler im Fehlerspeicher",
+        "Es erhöht die Bitrate, um Partner zu finden",
+        "Es führt einen Reset durch und startet neu"
+       ],
+       "a": 0,
+       "e": "Das ist das Grundprinzip des koordinierten Einschlafens.",
+       "id": "ecu.m5.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was spart Partial Networking?",
+       "o": [
+        "Energie, weil nicht alle Steuergeräte wach sind",
+        "Kabel, weil weniger Busse verlegt werden",
+        "Rechenzeit im Motorsteuergerät während der Fahrt",
+        "Speicherplatz im Flash der Steuergeräte"
+       ],
+       "a": 0,
+       "e": "Nur benötigte Teilnehmer bleiben aktiv.",
+       "id": "ecu.m5.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Aufgabe hat ein zentrales Gateway nicht?",
+       "o": [
+        "Einspritzventile ansteuern",
+        "Botschaften zwischen Bussen weiterleiten",
+        "Zugriffe von außen filtern",
+        "Zwischen Protokollen übersetzen"
+       ],
+       "a": 0,
+       "e": "Die Einspritzung steuert das Motorsteuergerät selbst.",
+       "id": "ecu.m5.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wie heißt das AUTOSAR-Modul für das Netzwerkmanagement auf CAN?",
+       "o": [
+        "CanNm",
+        "EcuM",
+        "Dem",
+        "Xcp"
+       ],
+       "a": 0,
+       "e": "EcuM steuert Steuergerätezustände, Dem den Fehlerspeicher.",
+       "id": "ecu.m5.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wie wird ein schlafender Bus wieder geweckt?",
+       "o": [
+        "Durch eine neue Botschaft",
+        "Durch Abklemmen der Batterie",
+        "Durch einen Watchdog-Reset",
+        "Nur durch Klemme 50"
+       ],
+       "a": 0,
+       "e": "Ein Steuergerät mit Bedarf sendet und weckt die anderen.",
+       "id": "ecu.m5.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ecu.m6",
+   "level": 2,
+   "title": "Software und Konfiguration",
+   "desc": "AUTOSAR-Schichten, Datenstand, Kalibrierung über A2L und XCP, Codierung und Flashen.",
+   "lessons": [
+    {
+     "id": "ecu.m6.l1",
+     "title": "Die Software-Architektur",
+     "min": 7,
+     "body": [
+      "Die Software eines modernen Steuergeräts ist in Schichten aufgebaut, verbreitet nach dem Standard AUTOSAR Classic Platform.",
+      "## Die Schichten",
+      "Ganz unten abstrahiert der Microcontroller Abstraction Layer die Hardware (Treiber für ADC, Timer, CAN). Darüber liegen die Basissoftware-Dienste: Kommunikation, Speicherverwaltung, Diagnose (Fehlerspeicher Dem, Diagnosekommunikation Dcm), Zustandsverwaltung und das Betriebssystem. Die Runtime Environment (RTE) verbindet die Basissoftware mit den Anwendungskomponenten (Software Components), in denen die eigentlichen Motorfunktionen stecken.",
+      "## Betriebssystem und Tasks",
+      "Ein Echtzeitbetriebssystem (AUTOSAR OS, aus OSEK hervorgegangen) startet Tasks in festen Zeitrastern, etwa alle 1, 10 oder 100 ms, und winkelsynchron zur Kurbelwelle. Prioritäten sorgen dafür, dass zeitkritische Aufgaben zuerst dran sind.",
+      "## Warum Schichten?",
+      "Funktionen können wiederverwendet und auf andere Hardware portiert werden, Zulieferer und Hersteller können getrennt entwickeln. Ein Teil der Software, besonders bei Motorsteuerungen, ist allerdings nicht nach AUTOSAR strukturiert, sondern herstellerspezifisch."
+     ],
+     "key": [
+      "AUTOSAR-Schichten: MCAL → Basissoftware → RTE → Anwendung.",
+      "Echtzeit-OS startet Tasks zeit- und winkelsynchron.",
+      "Schichten ermöglichen Wiederverwendung und getrennte Entwicklung."
+     ],
+     "src": [
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (u. a. ECU State Manager, BSW Mode Manager, Network Management)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "MCAL",
+       "b": "Microcontroller Abstraction Layer: unterste AUTOSAR-Schicht mit Hardwaretreibern.",
+       "id": "ecu.m6.l1.k1"
+      },
+      {
+       "f": "RTE",
+       "b": "Runtime Environment: verbindet Anwendungskomponenten mit der Basissoftware und untereinander.",
+       "id": "ecu.m6.l1.k2"
+      },
+      {
+       "f": "Dem",
+       "b": "Diagnostic Event Manager: AUTOSAR-Modul für Fehlerspeicher und Fehlerstatus.",
+       "id": "ecu.m6.l1.k3"
+      },
+      {
+       "f": "Dcm",
+       "b": "Diagnostic Communication Manager: AUTOSAR-Modul, das Diagnoseanfragen (z. B. UDS) beantwortet.",
+       "id": "ecu.m6.l1.k4"
+      },
+      {
+       "f": "Task",
+       "b": "Programmteil, den das Betriebssystem zyklisch, ereignis- oder winkelgesteuert startet.",
+       "id": "ecu.m6.l1.k5"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Ordne die AUTOSAR-Schichten von unten (Hardware) nach oben.",
+       "o": [
+        "Mikrocontroller",
+        "MCAL",
+        "Basissoftware-Dienste",
+        "RTE",
+        "Anwendungskomponenten"
+       ],
+       "e": "Die RTE trennt Anwendung und Basissoftware.",
+       "id": "ecu.m6.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welches AUTOSAR-Modul verwaltet den Fehlerspeicher?",
+       "o": [
+        "Dem",
+        "Dcm",
+        "RTE",
+        "MCAL"
+       ],
+       "a": 0,
+       "e": "Dcm beantwortet Diagnoseanfragen und holt die Daten beim Dem.",
+       "id": "ecu.m6.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was verbindet Anwendungskomponenten mit der Basissoftware?",
+       "o": [
+        "Die Runtime Environment (RTE)",
+        "Bootloader",
+        "Watchdog",
+        "Gateway"
+       ],
+       "a": 0,
+       "e": "Die Runtime Environment ist die Zwischenschicht.",
+       "id": "ecu.m6.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum laufen manche Tasks winkelsynchron statt zeitgesteuert?",
+       "o": [
+        "Zündung und Einspritzung hängen am Winkel",
+        "Weil sie weniger Speicher als Zeittasks brauchen",
+        "Weil das Betriebssystem keine Uhrzeit kennt",
+        "Weil sie ausschließlich im Leerlauf laufen"
+       ],
+       "a": 0,
+       "e": "Motorvorgänge richten sich nach dem Winkel, nicht nach der Uhr.",
+       "id": "ecu.m6.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Aus welchem Standard ist AUTOSAR OS hervorgegangen?",
+       "o": [
+        "OSEK/VDX",
+        "POSIX",
+        "Linux",
+        "ISO 26262"
+       ],
+       "a": 0,
+       "e": "AUTOSAR OS erweitert OSEK/VDX.",
+       "id": "ecu.m6.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m6.l2",
+     "title": "Datenstand und Kalibrierung",
+     "min": 7,
+     "body": [
+      "Dieselbe Software kann sehr verschiedene Motoren steuern. Den Unterschied machen die Kalibrierdaten (Datenstand, Applikationsdaten).",
+      "## Programm und Daten",
+      "Das Programm enthält die Algorithmen. Die Daten legen fest, wie sie sich verhalten: Kennwerte (einzelne Zahlen), Kennlinien (eine Eingangsgröße) und Kennfelder (zwei Eingangsgrößen, etwa Zündwinkel über Drehzahl und Last). Ein Motorsteuergerät hat davon oft zehntausende.",
+      "## Applikation",
+      "Applikationsingenieure stimmen diese Daten am Prüfstand und im Fahrzeug ab. Dafür verbindet sich ein Mess- und Kalibrierwerkzeug mit dem Steuergerät, typischerweise über das Protokoll XCP (über CAN, CAN FD, FlexRay oder Ethernet). Es kann Variablen in Echtzeit messen und Parameter im laufenden Betrieb verstellen.",
+      "## Die A2L-Datei",
+      "Damit das Werkzeug weiß, an welcher Speicheradresse welcher Wert liegt, in welcher Einheit und mit welcher Umrechnung, gibt es eine Beschreibungsdatei im ASAM-Format A2L. Sie passt immer genau zu einem Softwarestand.",
+      "## Sicherheit",
+      "Im Serienfahrzeug sind Kalibrierzugänge gesperrt oder abgesichert, damit niemand unbemerkt Abgas- oder Sicherheitsverhalten verändern kann."
+     ],
+     "key": [
+      "Programm (Algorithmen) und Daten (Kennwerte, Kennlinien, Kennfelder) sind getrennt.",
+      "XCP: Messen und Verstellen im laufenden Betrieb.",
+      "A2L beschreibt Adressen, Einheiten und Umrechnungen für einen Softwarestand."
+     ],
+     "src": [
+      {
+       "n": "ASAM MCD-1 XCP: Mess- und Kalibrierprotokoll",
+       "u": "https://www.asam.net/standards/detail/mcd-1-xcp/"
+      },
+      {
+       "n": "ASAM MCD-2 MC: Beschreibungsdatei für Mess- und Kalibrierdaten (A2L)",
+       "u": "https://www.asam.net/standards/detail/mcd-2-mc/"
+      },
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Kennfeld",
+       "b": "Tabelle mit zwei Eingangsgrößen, z. B. Zündwinkel über Drehzahl und Last; dazwischen wird interpoliert.",
+       "id": "ecu.m6.l2.k1"
+      },
+      {
+       "f": "Kennlinie",
+       "b": "Tabelle mit einer Eingangsgröße.",
+       "id": "ecu.m6.l2.k2"
+      },
+      {
+       "f": "XCP",
+       "b": "ASAM-Protokoll zum Messen und Kalibrieren von Steuergeräten im laufenden Betrieb.",
+       "id": "ecu.m6.l2.k3"
+      },
+      {
+       "f": "A2L",
+       "b": "ASAM-Beschreibungsdatei mit Adressen, Datentypen und Umrechnungen der Mess- und Kalibriergrößen.",
+       "id": "ecu.m6.l2.k4"
+      },
+      {
+       "f": "Applikation",
+       "b": "Abstimmung der Kalibrierdaten eines Steuergeräts auf Motor und Fahrzeug.",
+       "id": "ecu.m6.l2.k5"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist ein Kennfeld?",
+       "o": [
+        "Eine Tabelle mit zwei Eingangsgrößen, z. B. Drehzahl und Last",
+        "Ein Fehlerspeichereintrag mit Umgebungsdaten",
+        "Ein Busprotokoll für Mess- und Kalibrierdaten",
+        "Ein RAM-Bereich für Variablen der Anwendung"
+       ],
+       "a": 0,
+       "e": "Beispiel: Zündwinkel abhängig von Drehzahl und Last.",
+       "id": "ecu.m6.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient die A2L-Datei?",
+       "o": [
+        "Sie beschreibt Adressen und Umrechnungen",
+        "Sie enthält den kompletten Programmcode",
+        "Sie verschlüsselt die Busverbindung zum Tester",
+        "Sie speichert Fehlercodes für die Werkstatt"
+       ],
+       "a": 0,
+       "e": "Ohne A2L wüsste das Werkzeug nicht, wie es Rohdaten deuten soll.",
+       "id": "ecu.m6.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was kann man mit XCP tun?",
+       "o": [
+        "Messen und im Betrieb verstellen",
+        "Ausschließlich Fehlercodes auslesen",
+        "Ausschließlich neue Software flashen",
+        "Das Fahrzeug per GPS orten und verfolgen"
+       ],
+       "a": 0,
+       "e": "XCP ist das Mess- und Kalibrierprotokoll.",
+       "id": "ecu.m6.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum muss die A2L genau zum Softwarestand passen?",
+       "o": [
+        "Mit jedem Softwarestand können sich Adressen ändern",
+        "Sonst wird die Datei für das Werkzeug zu groß",
+        "Weil der Bus sonst langsamer überträgt",
+        "Das ist nur eine Konvention ohne Wirkung"
+       ],
+       "a": 0,
+       "e": "Neue Software kann Größen an andere Adressen legen.",
+       "id": "ecu.m6.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist eine Kennlinie?",
+       "o": [
+        "Tabelle mit einem Eingang",
+        "Tabelle mit zwei Eingängen",
+        "Ein einzelner fester Zahlenwert",
+        "Eine Liste aller Fehlercodes"
+       ],
+       "a": 0,
+       "e": "Kennwert: ein Wert · Kennlinie: ein Eingang · Kennfeld: zwei Eingänge.",
+       "id": "ecu.m6.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m6.l3",
+     "title": "Varianten und Codierung",
+     "min": 5,
+     "body": [
+      "Ein Motorsteuergerät wird oft für viele Fahrzeugvarianten genutzt: andere Getriebe, Länder, Abgasnormen oder Ausstattungen. Statt für jede eine eigene Software zu bauen, nutzt man Varianten im Datenstand und Codierung.",
+      "## Codierung",
+      "Bei der Codierung schreibt ein Werkstatt- oder Bandtester Konfigurationswerte in das Steuergerät, meist per UDS-Dienst WriteDataByIdentifier (0x2E). Sie aktivieren oder deaktivieren Funktionen, zum Beispiel ob eine Anhängerkupplung verbaut ist.",
+      "## Variantenauswahl",
+      "Alternativ enthält der Datenstand mehrere Datensätze, und das Steuergerät wählt beim Start den passenden aus, etwa über eine Fahrzeugkennung vom Bus.",
+      "## Lernwerte",
+      "Davon zu unterscheiden sind Lernwerte, die das Steuergerät im Betrieb selbst ermittelt, etwa Adaptionen von Gemisch oder Drosselklappe. Sie werden im nichtflüchtigen Speicher abgelegt und nach Reparaturen gegebenenfalls zurückgesetzt."
+     ],
+     "key": [
+      "Varianten über Codierung oder Datensatzauswahl statt eigener Software.",
+      "Codierung meist per UDS 0x2E.",
+      "Lernwerte ermittelt das Steuergerät im Betrieb selbst."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      },
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Codierung",
+       "b": "Schreiben von Konfigurationswerten, die Funktionen einer Variante aktivieren oder deaktivieren.",
+       "id": "ecu.m6.l3.k1"
+      },
+      {
+       "f": "UDS 0x2E",
+       "b": "WriteDataByIdentifier: schreibt einen Datenwert unter einer Kennung (DID).",
+       "id": "ecu.m6.l3.k2"
+      },
+      {
+       "f": "Lernwert (Adaption)",
+       "b": "Vom Steuergerät im Betrieb ermittelter Korrekturwert, z. B. für das Gemisch.",
+       "id": "ecu.m6.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Mit welchem UDS-Dienst wird typischerweise codiert?",
+       "o": [
+        "WriteDataByIdentifier (0x2E)",
+        "ReadDTCInformation (0x19)",
+        "TesterPresent (0x3E)",
+        "InputOutputControl (0x2F)"
+       ],
+       "a": 0,
+       "e": "0x2E schreibt Daten unter einer Kennung.",
+       "id": "ecu.m6.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was unterscheidet Lernwerte von Codierwerten?",
+       "o": [
+        "Lernwerte ermittelt das Gerät selbst",
+        "Lernwerte schreibt die Werkstatt mit dem Tester",
+        "Lernwerte liegen im RAM und gehen beim Abschalten verloren",
+        "Es gibt keinen Unterschied, beides ist dasselbe"
+       ],
+       "a": 0,
+       "e": "Codierwerte kommen von außen, Lernwerte entstehen im Betrieb.",
+       "id": "ecu.m6.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum nutzt man Codierung statt einer eigenen Software je Variante?",
+       "o": [
+        "Es müssen weniger Softwarestände gepflegt und freigegeben werden",
+        "Weil codierte Funktionen schneller rechnen",
+        "Weil Software sich technisch nicht kopieren lässt",
+        "Weil die Abgasnorm genau das vorschreibt"
+       ],
+       "a": 0,
+       "e": "Jeder Softwarestand muss entwickelt, getestet und freigegeben werden.",
+       "id": "ecu.m6.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wann ist ein Zurücksetzen von Lernwerten sinnvoll?",
+       "o": [
+        "Nach dem Tausch eines betroffenen Bauteils",
+        "Bei jedem Tankstopp, damit das Gemisch stimmt",
+        "Bei jedem Motorstart automatisch und vollständig",
+        "Nie, Lernwerte dürfen nicht verändert werden"
+       ],
+       "a": 0,
+       "e": "Die alten Adaptionen passen nicht mehr zum neuen Bauteil.",
+       "id": "ecu.m6.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wo werden Lernwerte gespeichert?",
+       "o": [
+        "Im nichtflüchtigen Speicher",
+        "Nur im RAM bis zum Abschalten",
+        "Im Kalibrierwerkzeug der Applikation",
+        "In der A2L-Datei"
+       ],
+       "a": 0,
+       "e": "Sie müssen den nächsten Start überdauern.",
+       "id": "ecu.m6.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ecu.m7",
+   "level": 3,
+   "title": "Funktionale Sicherheit",
+   "desc": "ISO 26262, ASIL, das E-Gas-Überwachungskonzept und der Umgang mit Fehlern.",
+   "lessons": [
+    {
+     "id": "ecu.m7.l1",
+     "title": "ISO 26262 und ASIL",
+     "min": 7,
+     "body": [
+      "Fehlfunktionen elektronischer Systeme dürfen niemanden gefährden. Die Norm ISO 26262 beschreibt, wie man sicherheitsrelevante Fahrzeugelektronik entwickelt.",
+      "## Gefährdungs- und Risikoanalyse",
+      "Zuerst wird untersucht, welche Fehlfunktionen gefährlich sein können, etwa ungewolltes Beschleunigen. Jede Gefährdung wird nach drei Kriterien bewertet: Schwere (Severity), Häufigkeit der Fahrsituation (Exposure) und Beherrschbarkeit durch den Fahrer (Controllability).",
+      "## ASIL",
+      "Daraus ergibt sich eine Sicherheitsstufe: QM (normales Qualitätsmanagement reicht) oder ASIL A bis D, wobei D die strengsten Anforderungen hat. Ein Sicherheitsziel wie „Kein ungewolltes Antriebsmoment“ erbt den ASIL und bestimmt, wie sorgfältig Hardware und Software entwickelt, geprüft und überwacht werden müssen.",
+      "## Was das für das Steuergerät heißt",
+      "Sicherheitsrelevante Funktionen brauchen unabhängige Überwachung, Speicherschutz zwischen Softwareteilen verschiedener ASIL, diagnostizierbare Hardware (etwa Lockstep-Kerne, Speicherprüfung) und einen definierten sicheren Zustand."
+     ],
+     "key": [
+      "ISO 26262: Entwicklung sicherheitsrelevanter Fahrzeugelektronik.",
+      "Bewertung nach Schwere, Häufigkeit, Beherrschbarkeit.",
+      "QM und ASIL A bis D; D ist am strengsten."
+     ],
+     "src": [
+      {
+       "n": "ISO 26262: Funktionale Sicherheit von Straßenfahrzeugen, Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/68383.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "ASIL",
+       "b": "Automotive Safety Integrity Level A bis D; D stellt die höchsten Anforderungen.",
+       "id": "ecu.m7.l1.k1"
+      },
+      {
+       "f": "QM",
+       "b": "Quality Management: keine besonderen Sicherheitsanforderungen über normale Qualität hinaus.",
+       "id": "ecu.m7.l1.k2"
+      },
+      {
+       "f": "Sicherheitsziel",
+       "b": "Oberste Sicherheitsanforderung, z. B. „kein ungewolltes Antriebsmoment“, mit zugeordnetem ASIL.",
+       "id": "ecu.m7.l1.k3"
+      },
+      {
+       "f": "S, E, C",
+       "b": "Severity (Schwere), Exposure (Häufigkeit), Controllability (Beherrschbarkeit): Kriterien der Risikoanalyse.",
+       "id": "ecu.m7.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Stufe hat die strengsten Anforderungen?",
+       "o": [
+        "ASIL D",
+        "ASIL A",
+        "QM",
+        "ASIL B"
+       ],
+       "a": 0,
+       "e": "Die Reihenfolge ist QM, A, B, C, D.",
+       "id": "ecu.m7.l1.q1"
+      },
+      {
+       "t": "multi",
+       "q": "Nach welchen Kriterien wird eine Gefährdung bewertet?",
+       "o": [
+        "Schwere",
+        "Häufigkeit der Situation",
+        "Beherrschbarkeit",
+        "Kosten des Bauteils"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Kosten spielen bei der ASIL-Einstufung keine Rolle.",
+       "id": "ecu.m7.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein typisches Sicherheitsziel bei der Motorsteuerung?",
+       "o": [
+        "Kein ungewolltes Antriebsmoment",
+        "Möglichst niedriger Verbrauch im Zyklus",
+        "Ein schneller Motorstart nach Start-Stopp",
+        "Ein besonders leiser und ruhiger Leerlauf"
+       ],
+       "a": 0,
+       "e": "Ungewollte Beschleunigung ist eine zentrale Gefährdung.",
+       "id": "ecu.m7.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum braucht man Speicherschutz zwischen Softwareteilen?",
+       "o": [
+        "Damit QM-Code keine ASIL-Daten verfälscht",
+        "Damit im RAM mehr Speicher frei bleibt",
+        "Damit die Software nach dem Reset schneller startet",
+        "Damit Fehlercodes automatisch gelöscht werden"
+       ],
+       "a": 0,
+       "e": "Man spricht von Rückwirkungsfreiheit (Freedom from Interference).",
+       "id": "ecu.m7.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet Controllability in der Risikoanalyse?",
+       "o": [
+        "Wie gut der Fahrer die Situation beherrschen kann",
+        "Häufigkeit der Fahrsituation",
+        "Schwere möglicher Verletzungen",
+        "Prüfbarkeit in der Werkstatt"
+       ],
+       "a": 0,
+       "e": "Kann der Fahrer die Situation noch beherrschen?",
+       "id": "ecu.m7.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m7.l2",
+     "title": "Das E-Gas-Überwachungskonzept",
+     "min": 7,
+     "body": [
+      "Bei elektronischem Gaspedal (E-Gas) gibt es keine mechanische Verbindung zur Drosselklappe mehr. Die Motorsteuerung muss also selbst sicherstellen, dass sie kein ungewolltes Moment erzeugt. Dafür haben deutsche Hersteller und Zulieferer im Arbeitskreis EGAS ein standardisiertes 3-Ebenen-Konzept beschrieben.",
+      "## Ebene 1: Funktion",
+      "Hier läuft die normale Motorsteuerung: Fahrerwunsch, Momentenstruktur, Einspritzung, Zündung.",
+      "## Ebene 2: Funktionsüberwachung",
+      "Eine unabhängig programmierte, vereinfachte Berechnung prüft, ob das tatsächlich erzeugte Moment zum zulässigen Moment passt. Sie nutzt eigene Signale und redundant gespeicherte Daten. Ist das Ist-Moment zu hoch, leitet sie eine Fehlerreaktion ein.",
+      "## Ebene 3: Rechnerüberwachung",
+      "Sie stellt sicher, dass der Rechner für Ebene 2 selbst korrekt arbeitet. Klassisch stellt ein separater Überwachungsbaustein Fragen, die der Controller richtig und rechtzeitig beantworten muss (Frage-Antwort-Verfahren). Antwortet er falsch, kann der Baustein unabhängig die Endstufen abschalten.",
+      "## Redundante Fahrpedalsignale",
+      "Das Fahrpedal hat zwei unabhängige Sensoren, oft mit unterschiedlichen Kennlinien. Passen sie nicht zusammen, wird die Momentanforderung begrenzt."
+     ],
+     "key": [
+      "Ebene 1: Funktion · Ebene 2: Funktionsüberwachung · Ebene 3: Rechnerüberwachung.",
+      "Ebene 2 vergleicht Ist-Moment mit zulässigem Moment.",
+      "Ebene 3: Frage-Antwort mit unabhängigem Überwachungsbaustein."
+     ],
+     "src": [
+      {
+       "n": "Arbeitskreis EGAS: Standardisiertes E-Gas-Überwachungskonzept für Benzin- und Diesel-Motorsteuerungen (öffentliches Konzeptpapier)"
+      },
+      {
+       "n": "ISO 26262: Funktionale Sicherheit von Straßenfahrzeugen, Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/68383.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "E-Gas",
+       "b": "Elektronisches Gaspedal ohne mechanische Verbindung zur Drosselklappe.",
+       "id": "ecu.m7.l2.k1"
+      },
+      {
+       "f": "Ebene 2 (EGAS)",
+       "b": "Unabhängige Funktionsüberwachung, die das Ist-Moment gegen das zulässige Moment prüft.",
+       "id": "ecu.m7.l2.k2"
+      },
+      {
+       "f": "Ebene 3 (EGAS)",
+       "b": "Rechnerüberwachung, z. B. Frage-Antwort-Verfahren mit separatem Überwachungsbaustein.",
+       "id": "ecu.m7.l2.k3"
+      },
+      {
+       "f": "Fahrpedal mit zwei Sensoren",
+       "b": "Redundante Erfassung; Abweichungen führen zur Begrenzung der Momentanforderung.",
+       "id": "ecu.m7.l2.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Ordne die drei EGAS-Ebenen von 1 bis 3.",
+       "o": [
+        "Funktion",
+        "Funktionsüberwachung",
+        "Rechnerüberwachung"
+       ],
+       "e": "Jede Ebene überwacht die darunterliegende.",
+       "id": "ecu.m7.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was prüft die Ebene 2?",
+       "o": [
+        "Ob Ist- und zulässiges Moment passen",
+        "Ob der Antriebs-CAN fehlerfrei arbeitet",
+        "Ob die Batterie ausreichend geladen ist",
+        "Ob der Fehlerspeicher leer und gealtert ist"
+       ],
+       "a": 0,
+       "e": "Sie ist eine unabhängige Plausibilisierung der Momentenberechnung.",
+       "id": "ecu.m7.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie überwacht Ebene 3 klassischerweise den Rechner?",
+       "o": [
+        "Frage-Antwort mit einem separaten Baustein",
+        "Mit einem zweiten, unabhängigen Fahrpedal",
+        "Über eine regelmäßige Prüfung in der Werkstatt",
+        "Über einen Vergleich mit der Außentemperatur"
+       ],
+       "a": 0,
+       "e": "Falsche oder späte Antworten führen zur Abschaltung.",
+       "id": "ecu.m7.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum hat das Fahrpedal zwei Sensoren?",
+       "o": [
+        "Um Sensorfehler sicher zu erkennen",
+        "Um die Auflösung zu verdoppeln",
+        "Für Links- und Rechtslenker",
+        "Damit eines als Reserve im Kofferraum liegt"
+       ],
+       "a": 0,
+       "e": "Nur der Vergleich zweier unabhängiger Signale deckt Fehler auf.",
+       "id": "ecu.m7.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was kann der Überwachungsbaustein der Ebene 3 bei falschen Antworten tun?",
+       "o": [
+        "Endstufen unabhängig abschalten",
+        "Den Fehlerspeicher löschen",
+        "Die Software neu flashen",
+        "Das Fahrpedal kalibrieren"
+       ],
+       "a": 0,
+       "e": "Er wirkt unabhängig vom überwachten Rechner.",
+       "id": "ecu.m7.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m7.l3",
+     "title": "Fehlerreaktionen und Toleranzzeit",
+     "min": 5,
+     "body": [
+      "Erkennen allein reicht nicht: Der Fehler muss rechtzeitig zu einer sicheren Reaktion führen.",
+      "## Fehlertoleranzzeit",
+      "Zwischen dem Auftreten eines Fehlers und einer möglichen Gefährdung vergeht eine gewisse Zeit (Fault Tolerant Time Interval). Erkennung und Reaktion zusammen müssen schneller sein. Bei ungewolltem Moment geht es oft um Bruchteile einer Sekunde.",
+      "## Typische Reaktionen",
+      "Je nach Fehler: Ersatzwert nutzen, Moment begrenzen, Drosselklappe in Notlaufstellung, Einspritzung einzelner oder aller Zylinder abschalten, im Extremfall Endstufen hardwareseitig sperren. Gleichzeitig wird der Fehler gespeichert und eine Warnung angezeigt.",
+      "## Fail-safe statt fail-operational",
+      "Für Verbrennungsmotoren genügt meist ein sicherer Zustand durch Abschalten oder Begrenzen. Bei automatisiertem Fahren muss das System dagegen oft weiterarbeiten können (fail-operational), was deutlich mehr Redundanz verlangt."
+     ],
+     "key": [
+      "Erkennung plus Reaktion müssen innerhalb der Fehlertoleranzzeit liegen.",
+      "Reaktionen: Ersatzwert, Begrenzung, Abschaltung, Endstufen sperren.",
+      "Motor: meist fail-safe; automatisiertes Fahren: oft fail-operational."
+     ],
+     "src": [
+      {
+       "n": "ISO 26262: Funktionale Sicherheit von Straßenfahrzeugen, Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/68383.html"
+      },
+      {
+       "n": "Arbeitskreis EGAS: Standardisiertes E-Gas-Überwachungskonzept für Benzin- und Diesel-Motorsteuerungen (öffentliches Konzeptpapier)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Fehlertoleranzzeit (FTTI)",
+       "b": "Zeit vom Fehlereintritt bis zu einer möglichen Gefährdung; Erkennung und Reaktion müssen schneller sein.",
+       "id": "ecu.m7.l3.k1"
+      },
+      {
+       "f": "Fail-safe",
+       "b": "Bei Fehler wird ein sicherer Zustand eingenommen, etwa durch Abschalten.",
+       "id": "ecu.m7.l3.k2"
+      },
+      {
+       "f": "Fail-operational",
+       "b": "Bei Fehler arbeitet das System mit eingeschränkter Funktion sicher weiter.",
+       "id": "ecu.m7.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was muss innerhalb der Fehlertoleranzzeit passieren?",
+       "o": [
+        "Erkennung und sichere Reaktion",
+        "Nur das Speichern des Fehlers im Fehlerspeicher",
+        "Nur die Anzeige des Fehlers im Kombiinstrument",
+        "Ein Werkstattbesuch mit Auslesen des Fehlers"
+       ],
+       "a": 0,
+       "e": "Die Reaktion muss greifen, bevor eine Gefährdung entsteht.",
+       "id": "ecu.m7.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welches Prinzip genügt bei Motorsteuerungen meist?",
+       "o": [
+        "Fail-safe",
+        "Fail-operational",
+        "Fail-silent ohne Reaktion",
+        "Keines"
+       ],
+       "a": 0,
+       "e": "Abschalten oder Begrenzen führt meist in einen sicheren Zustand.",
+       "id": "ecu.m7.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist fail-operational aufwendiger?",
+       "o": [
+        "Es muss trotz Fehler weiterarbeiten",
+        "Weil dafür deutlich mehr Fehlercodes nötig sind",
+        "Weil die Steuergeräte dann mehr Strom brauchen",
+        "Weil die ISO 26262 fail-safe ausdrücklich verbietet"
+       ],
+       "a": 0,
+       "e": "Dafür braucht es redundante Sensoren, Rechner und Versorgungen.",
+       "id": "ecu.m7.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Reaktion ist die stärkste?",
+       "o": [
+        "Endstufen hardwareseitig unabhängig sperren",
+        "Mit einem plausiblen Ersatzwert weiterrechnen",
+        "Die Warnleuchte im Kombiinstrument einschalten",
+        "Den Fehler mit Umgebungsdaten speichern"
+       ],
+       "a": 0,
+       "e": "Sie wirkt unabhängig von der Software.",
+       "id": "ecu.m7.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür steht FTTI?",
+       "o": [
+        "Fault Tolerant Time Interval",
+        "Fast Transfer Timing Index",
+        "Functional Test Trigger Input",
+        "Flash Timeout Transfer Item"
+       ],
+       "a": 0,
+       "e": "Fehlertoleranzzeit nach ISO 26262.",
+       "id": "ecu.m7.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ecu.m8",
+   "level": 3,
+   "title": "Diagnose aus Sicht des Steuergeräts",
+   "desc": "Wie Fehler erkannt, entprellt, gespeichert und über UDS und OBD ausgelesen werden.",
+   "lessons": [
+    {
+     "id": "ecu.m8.l1",
+     "title": "Vom Fehlerereignis zum DTC",
+     "min": 7,
+     "body": [
+      "Jede Überwachung im Steuergerät meldet ihr Ergebnis als Ereignis: bestanden oder nicht bestanden. Daraus wird ein Fehlercode (DTC, Diagnostic Trouble Code).",
+      "## Entprellen",
+      "Ein einzelnes „nicht bestanden“ macht noch keinen Fehler. Ein Zähler oder Timer muss eine Schwelle erreichen, bevor der Fehler als bestätigt gilt (zum Beispiel über eine Zählerentprellung, die bei Fehlschlag hoch- und bei Erfolg herunterzählt).",
+      "## Statusbits",
+      "Jeder DTC hat ein Statusbyte (in ISO 14229 definiert), etwa „Test im aktuellen Zyklus fehlgeschlagen“, „ausstehend“ (pending), „bestätigt“ (confirmed) und „Warnleuchte angefordert“. Abgasrelevante Fehler werden oft erst nach mehreren Fahrzyklen bestätigt.",
+      "## Umgebungsdaten",
+      "Beim Eintrag speichert das Steuergerät Umgebungsdaten wie Drehzahl, Last, Temperatur oder Kilometerstand. Der Freeze Frame (Snapshot) hilft der Werkstatt später zu verstehen, unter welchen Bedingungen der Fehler auftrat.",
+      "## Heilung und Löschen",
+      "Läuft die Überwachung wieder fehlerfrei, gilt der Fehler als geheilt; der Eintrag bleibt aber eine Weile im Speicher (Alterung), bis er automatisch gelöscht wird. Eine Werkstatt kann ihn mit UDS-Dienst 0x14 löschen."
+     ],
+     "key": [
+      "Überwachung → Ereignis → Entprellung → DTC.",
+      "Statusbits: pending, confirmed, Warnleuchte angefordert u. a.",
+      "Freeze Frame speichert die Bedingungen beim Fehler."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      },
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (u. a. ECU State Manager, BSW Mode Manager, Network Management)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "DTC",
+       "b": "Diagnostic Trouble Code: gespeicherter Fehlercode.",
+       "id": "ecu.m8.l1.k1"
+      },
+      {
+       "f": "Pending DTC",
+       "b": "Ausstehender Fehler: im aktuellen oder letzten Zyklus erkannt, noch nicht bestätigt.",
+       "id": "ecu.m8.l1.k2"
+      },
+      {
+       "f": "Confirmed DTC",
+       "b": "Bestätigter Fehler nach Erfüllung der Bestätigungsbedingungen, z. B. über mehrere Fahrzyklen.",
+       "id": "ecu.m8.l1.k3"
+      },
+      {
+       "f": "Freeze Frame",
+       "b": "Umgebungsdaten zum Zeitpunkt des Fehlereintrags.",
+       "id": "ecu.m8.l1.k4"
+      },
+      {
+       "f": "Alterung (Aging)",
+       "b": "Automatisches Löschen eines geheilten Fehlers nach einer Anzahl fehlerfreier Zyklen.",
+       "id": "ecu.m8.l1.k5"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Ordne den Weg eines Fehlers.",
+       "o": [
+        "Überwachung schlägt fehl",
+        "Entprellung erreicht Schwelle",
+        "DTC wird ausstehend (pending)",
+        "DTC wird bestätigt (confirmed)"
+       ],
+       "e": "Erst die Bestätigung führt bei OBD-Fehlern zur Warnleuchte.",
+       "id": "ecu.m8.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Freeze Frame?",
+       "o": [
+        "Gespeicherte Umgebungsdaten beim Fehler",
+        "Ein eingefrorener Bildschirm des Diagnosetesters",
+        "Ein gesperrter Bereich im Flash-Speicher",
+        "Ein Fehler, der den ganzen Bus anhält"
+       ],
+       "a": 0,
+       "e": "Er zeigt die Bedingungen, unter denen der Fehler auftrat.",
+       "id": "ecu.m8.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Mit welchem UDS-Dienst löscht die Werkstatt Fehler?",
+       "o": [
+        "ClearDiagnosticInformation (0x14)",
+        "ReadDTCInformation (0x19)",
+        "RequestDownload (0x34)",
+        "ControlDTCSetting (0x85)"
+       ],
+       "a": 0,
+       "e": "0x19 liest Fehler, 0x14 löscht sie.",
+       "id": "ecu.m8.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert mit einem geheilten Fehler, der nicht gelöscht wird?",
+       "o": [
+        "Er altert und wird später gelöscht",
+        "Er bleibt für immer im Fehlerspeicher stehen",
+        "Er wird sofort nach der Heilung gelöscht",
+        "Er wird als Botschaft zum Gateway geschickt"
+       ],
+       "a": 0,
+       "e": "Die Alterung entfernt ihn nach mehreren fehlerfreien Zyklen.",
+       "id": "ecu.m8.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet ein „pending“ DTC?",
+       "o": [
+        "Erkannt, noch nicht bestätigt",
+        "Bestätigt und Warnleuchte an",
+        "Gelöscht, aber noch angezeigt",
+        "Geheilt und gealtert"
+       ],
+       "a": 0,
+       "e": "Pending heißt ausstehend.",
+       "id": "ecu.m8.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m8.l2",
+     "title": "UDS-Sitzungen und Dienste",
+     "min": 6,
+     "body": [
+      "Über Unified Diagnostic Services (ISO 14229) spricht ein Tester mit dem Steuergerät. Jede Anfrage beginnt mit einer Dienstkennung (Service ID).",
+      "## Sitzungen",
+      "Das Steuergerät startet in der Standardsitzung (Default Session, 0x01). Für erweiterte Funktionen wechselt der Tester in die Extended Session (0x03), zum Flashen in die Programming Session (0x02). Ohne regelmäßiges TesterPresent (0x3E) fällt das Steuergerät nach einer Zeit zurück in die Standardsitzung.",
+      "## Wichtige Dienste",
+      "ReadDataByIdentifier (0x22) liest Werte wie Softwareversion oder Messwerte, WriteDataByIdentifier (0x2E) schreibt sie. ReadDTCInformation (0x19) liest Fehler. RoutineControl (0x31) startet Routinen wie Selbsttests. InputOutputControl (0x2F) steuert Aktoren direkt, etwa für einen Stellgliedtest.",
+      "## Antworten",
+      "Eine positive Antwort hat die Dienstkennung plus 0x40 (auf 0x22 antwortet das Steuergerät mit 0x62). Eine negative Antwort beginnt mit 0x7F und enthält einen Fehlercode (Negative Response Code), etwa „Sicherheitszugang verweigert“ oder „Bedingungen nicht korrekt“."
+     ],
+     "key": [
+      "Sitzungen: Default 0x01, Programming 0x02, Extended 0x03.",
+      "Positive Antwort = Service-ID + 0x40; negative beginnt mit 0x7F.",
+      "Wichtige Dienste: 0x22, 0x2E, 0x19, 0x31, 0x2F, 0x3E."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "UDS 0x22",
+       "b": "ReadDataByIdentifier: liest einen Datenwert über seine Kennung (DID).",
+       "id": "ecu.m8.l2.k1"
+      },
+      {
+       "f": "UDS 0x19",
+       "b": "ReadDTCInformation: liest Fehlercodes und ihren Status.",
+       "id": "ecu.m8.l2.k2"
+      },
+      {
+       "f": "UDS 0x2F",
+       "b": "InputOutputControlByIdentifier: steuert Ein- oder Ausgänge direkt, z. B. für Stellgliedtests.",
+       "id": "ecu.m8.l2.k3"
+      },
+      {
+       "f": "UDS 0x3E",
+       "b": "TesterPresent: hält eine Nicht-Standardsitzung aufrecht.",
+       "id": "ecu.m8.l2.k4"
+      },
+      {
+       "f": "Negative Response 0x7F",
+       "b": "Ablehnung einer Anfrage mit Fehlercode (NRC).",
+       "id": "ecu.m8.l2.k5"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Ein Tester sendet 0x22. Mit welcher Kennung beginnt die positive Antwort?",
+       "o": [
+        "0x62",
+        "0x22",
+        "0x7F",
+        "0x60"
+       ],
+       "a": 0,
+       "e": "0x22 + 0x40 = 0x62.",
+       "id": "ecu.m8.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert ohne TesterPresent in der Extended Session?",
+       "o": [
+        "Rückfall in die Standardsitzung",
+        "Das Steuergerät schaltet ab",
+        "Der Fehlerspeicher wird gelöscht",
+        "Nichts"
+       ],
+       "a": 0,
+       "e": "Ein Timeout setzt die Sitzung zurück.",
+       "id": "ecu.m8.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Womit beginnt eine negative Antwort?",
+       "o": [
+        "0x7F",
+        "0x40",
+        "0x00",
+        "0xFF"
+       ],
+       "a": 0,
+       "e": "Danach folgen die abgelehnte Service-ID und der NRC.",
+       "id": "ecu.m8.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Dienst eignet sich für einen Stellgliedtest?",
+       "o": [
+        "InputOutputControl (0x2F)",
+        "ReadDataByIdentifier (0x22)",
+        "SecurityAccess (0x27)",
+        "ClearDiagnosticInformation (0x14)"
+       ],
+       "a": 0,
+       "e": "Damit kann der Tester einen Aktor direkt ansteuern.",
+       "id": "ecu.m8.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "In welcher Sitzung startet ein Steuergerät?",
+       "o": [
+        "Default Session (0x01)",
+        "Programming Session (0x02)",
+        "Extended Session (0x03)",
+        "Safety System Session (0x04)"
+       ],
+       "a": 0,
+       "e": "Die Standardsitzung ist der Ausgangszustand.",
+       "id": "ecu.m8.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ecu.m8.l3",
+     "title": "OBD: Warnleuchte und Bereitschaft",
+     "min": 6,
+     "body": [
+      "On-Board-Diagnose (OBD) ist gesetzlich vorgeschrieben: Das Fahrzeug muss abgasrelevante Fehler selbst erkennen und anzeigen.",
+      "## Die Warnleuchte",
+      "Die Motorkontrollleuchte (MIL, Malfunction Indicator Lamp) leuchtet, wenn ein abgasrelevanter Fehler bestätigt ist. Bei Zündaussetzern, die den Katalysator schädigen können, blinkt sie.",
+      "## Readiness",
+      "Bestimmte Überwachungen laufen nur unter speziellen Bedingungen, etwa die Katalysatorprüfung bei warmem Motor und konstanter Fahrt. Readiness-Bits zeigen an, ob jede Überwachung seit dem letzten Löschen mindestens einmal gelaufen ist. Bei der Abgasuntersuchung wird das geprüft.",
+      "## Wie oft geprüft wird",
+      "Die Vorschriften verlangen, dass Überwachungen im Alltag häufig genug laufen. Gemessen wird das als Verhältnis aus Überwachungsdurchläufen und Fahrzyklen (IUMPR, In-Use Monitor Performance Ratio). Dazu mehr in einem eigenen Kurs.",
+      "## Zugang",
+      "Über die genormte OBD-Buchse kann jedes Diagnosegerät abgasrelevante Daten lesen, etwa über die OBD-Dienste nach SAE J1979 bzw. ISO 15031; neuere Fahrzeuge nutzen zunehmend UDS-basierte OBD (SAE J1979-2)."
+     ],
+     "key": [
+      "MIL leuchtet bei bestätigtem Abgasfehler, blinkt bei katalysatorschädigenden Aussetzern.",
+      "Readiness: Ist jede Überwachung einmal gelaufen?",
+      "IUMPR misst, wie oft Überwachungen im Alltag laufen."
+     ],
+     "src": [
+      {
+       "n": "SAE J1979 / J1979-2: OBD-Dienste (E/E Diagnostic Test Modes)",
+       "u": "https://www.sae.org/standards/content/j1979_202104/"
+      },
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      },
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "MIL",
+       "b": "Malfunction Indicator Lamp: Motorkontrollleuchte für abgasrelevante Fehler.",
+       "id": "ecu.m8.l3.k1"
+      },
+      {
+       "f": "Readiness",
+       "b": "Statusanzeige, ob die einzelnen OBD-Überwachungen seit dem letzten Löschen vollständig gelaufen sind.",
+       "id": "ecu.m8.l3.k2"
+      },
+      {
+       "f": "IUMPR",
+       "b": "In-Use Monitor Performance Ratio: Verhältnis von Überwachungsdurchläufen zu Fahrzyklen im Alltag.",
+       "id": "ecu.m8.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wann blinkt die Motorkontrollleuchte?",
+       "o": [
+        "Bei katalysatorschädigenden Aussetzern",
+        "Wenn der Tank fast leer ist",
+        "Während die Software geflasht wird",
+        "Wenn der Kofferraum offen steht"
+       ],
+       "a": 0,
+       "e": "Blinken warnt vor sofortiger Schädigung des Katalysators.",
+       "id": "ecu.m8.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeigen Readiness-Bits?",
+       "o": [
+        "Ob jede Überwachung seit dem Löschen gelaufen ist",
+        "Ob der Motor seine Betriebstemperatur erreicht hat",
+        "Ob aktuell bestätigte Fehler gespeichert sind",
+        "Ob das Fahrzeug fahrbereit und entriegelt ist"
+       ],
+       "a": 0,
+       "e": "Nach dem Löschen sind sie zunächst nicht gesetzt.",
+       "id": "ecu.m8.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist Fehlerlöschen kurz vor der Abgasuntersuchung keine gute Idee?",
+       "o": [
+        "Danach fehlt die Readiness der Überwachungen",
+        "Die MIL leuchtet danach dauerhaft weiter",
+        "Das Steuergerät wird für Diagnose gesperrt",
+        "Der gespeicherte Kilometerstand wird gelöscht"
+       ],
+       "a": 0,
+       "e": "Fehlende Readiness wird bei der Prüfung erkannt.",
+       "id": "ecu.m8.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt IUMPR?",
+       "o": [
+        "Wie oft Überwachungen im Alltag tatsächlich laufen",
+        "Wie viele Fehler insgesamt gespeichert sind",
+        "Wie schnell der Diagnosebus übertragen kann",
+        "Wie alt das Steuergerät seit der Produktion ist"
+       ],
+       "a": 0,
+       "e": "Es ist ein Verhältnis aus Durchläufen und Fahrzyklen.",
+       "id": "ecu.m8.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet MIL?",
+       "o": [
+        "Malfunction Indicator Lamp",
+        "Motor Idle Limit",
+        "Monitor Interval Length",
+        "Main Injection Level"
+       ],
+       "a": 0,
+       "e": "Die Motorkontrollleuchte.",
+       "id": "ecu.m8.l3.q5"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
