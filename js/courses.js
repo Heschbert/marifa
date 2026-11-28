@@ -85,20 +85,20 @@
   function list() {
     ui.setView(function () { withCourses(list); });
     var h = ui.sechead("course", "Kurse", "Deine Uni: Fachwissen Schritt für Schritt, vom Einstieg bis zum Experten.");
+    /* Kompakt: Fakultät als kleine Überschrift, Kurse als einzeilige Karten, geplante Kurse als Chips */
+    var lastC = null; C.list.forEach(function (c) { var p = P(c.id); if (p.last && c.lById[p.last] && (!lastC || (p.at || 0) > (P(lastC.id).at || 0))) lastC = c; });
+    if (lastC) { var ll = lastC.lById[P(lastC.id).last]; h += '<button class="cgo" data-act="cles" data-c="' + esc(lastC.id) + '" data-l="' + esc(ll.id) + '"><span class="cgoic" aria-hidden="true">▶</span><span class="grow"><span class="small">Weiter in ' + esc(lastC.title) + "</span><b>" + esc(ll.title) + "</b></span></button>"; }
     (C.idx.faculties || [{ id: "", t: "Kurse", ico: "🎓", sub: "" }]).forEach(function (f) {
       var cs = C.list.filter(function (c) { return (c.fac || "") === f.id; }), pl = (C.idx.planned || []).filter(function (x) { return x.fac === f.id; });
       if (!cs.length && !pl.length) return;
-      h += '<div class="fac"><span class="facic" aria-hidden="true">' + esc(f.ico) + '</span><div class="grow"><b>' + esc(f.t) + '</b><div class="small mute">' + esc(f.sub) + "</div></div></div>";
+      h += '<div class="fac"><span class="facic" aria-hidden="true">' + esc(f.ico) + "</span><b>" + esc(f.t) + "</b></div>";
       cs.forEach(function (c) {
         var p = progress(c), d = due(c), n = d.q.length + d.k.length, les = 0; c.modules.forEach(function (m) { les += (m.lessons || []).length; });
-        h += '<button class="item ccard" data-act="crs1" data-c="' + esc(c.id) + '">' + ui.ring(p, "var(--course)", Math.round(p) + "%") +
-          '<div class="grow"><div class="t">' + esc(c.title) + '</div><div class="small mute">' + esc(c.sub) + "</div>" +
-          '<div class="small" style="margin-top:4px">' + c.modules.length + " Module · " + les + " Lektionen" + (n ? ' · <b class="due">' + n + " fällig</b>" : "") + "</div></div>" +
+        h += '<button class="ccard2" data-act="crs1" data-c="' + esc(c.id) + '">' + ui.ring(p, "var(--course)", Math.round(p) + "%") +
+          '<span class="grow"><b>' + esc(c.title) + '</b><span class="small mute">' + c.modules.length + " Module · " + les + " Lektionen" + (n ? ' · <b class="due">' + n + " fällig</b>" : "") + "</span></span>" +
           '<span class="chev" aria-hidden="true">›</span></button>';
       });
-      pl.forEach(function (x) {
-        h += '<div class="item ccard off"><span class="ico" aria-hidden="true">…</span><div class="grow"><div class="t">' + esc(x.t) + '</div><div class="small mute">' + esc(x.sub) + '</div><div class="small" style="margin-top:4px">In Vorbereitung</div></div></div>';
-      });
+      if (pl.length) h += '<details class="cplan" data-keep="cplan-' + esc(f.id) + '"><summary class="small mute">' + (pl.length === 1 ? "1 Kurs" : pl.length + " Kurse") + " in Vorbereitung</summary><div>" + pl.map(function (x) { return '<span class="cpchip" title="' + esc(x.sub) + '">' + esc(x.t) + "</span>"; }).join("") + "</div></details>";
     });
     ui.show(h, "courses", "course");
   }
@@ -165,7 +165,7 @@
   function lesson(cid, lid) {
     var c = C.byId[cid], l = c && c.lById[lid]; if (!l) return list();
     ui.setView(function () { withCourses(function () { lesson(cid, lid); }); });
-    P(cid).last = lid; WF.store.save();
+    P(cid).last = lid; P(cid).at = Date.now(); WF.store.save();
     var h = '<button class="ghost" data-act="cmod" data-c="' + esc(cid) + '" data-m="' + esc(l.mod.id) + '">‹ ' + esc(l.mod.title) + "</button><h1>" + esc(l.title) + '</h1><p class="small mute">' + l.min + " Minuten Lesezeit · Stand " + esc(c.stand) + "</p>";
     h += volNote(c, l);
     h += '<article class="lesson">';
@@ -250,13 +250,52 @@
       perm(q).forEach(function (k) { h += '<button class="ans tl" data-act="cord" data-k="' + k + '"><span class="num" aria-hidden="true"></span><span>' + esc(q.o[k]) + "</span></button>"; });
       h += "</div>" + btn("ccheck", "Prüfen", { primary: true });
     } else if (q.t === "num") {
-      h += '<div class="numin"><input id="cnum" inputmode="decimal" autocomplete="off" placeholder="Zahl eingeben" aria-label="Antwort in ' + esc(q.unit || "") + '"><span>' + esc(q.unit || "") + "</span></div>" + btn("ccheck", "Prüfen", { primary: true });
+      h += '<div class="numin"><input id="cnum" inputmode="none" autocomplete="off" placeholder="Zahl oder Rechnung" aria-label="Antwort in ' + esc(q.unit || "") + '"><span>' + esc(q.unit || "") + '</span></div><div class="calcres small mute" id="cres" aria-live="polite"></div>' + calcPad() + btn("ccheck", "Prüfen", { primary: true });
     }
     h += '<div id="fb" aria-live="polite"></div>';
     ui.show(h, null, "course");
     var inp = document.getElementById("cnum");
-    if (inp) inp.addEventListener("keydown", function (e) { if (e.key === "Enter") H.ccheck(); });
+    if (inp) { inp.addEventListener("keydown", function (e) { if (e.key === "Enter") H.ccheck(); }); inp.addEventListener("input", calcShow); }
   }
+  /* ---------- Taschenrechner für Zahlenfragen ----------
+     Eigener kleiner Parser (kein eval, CSP-tauglich): + − × ÷ ^ √ und Klammern, Komma als Dezimaltrennzeichen. */
+  function numTok(t) {
+    /* Komma = Dezimaltrennzeichen; Punkt nur als Tausendertrennzeichen, wenn danach genau drei Ziffern folgen (7.300) */
+    if (t.indexOf(",") >= 0) t = t.replace(/\./g, "").replace(",", "."); else if (/^\d{1,3}(\.\d{3})+$/.test(t)) t = t.replace(/\./g, "");
+    return /^(\d+\.?\d*|\.\d+)$/.test(t) ? parseFloat(t) : NaN;
+  }
+  function calc(str) {
+    var s = String(str || "").replace(/\s/g, "").replace(/[×*]/g, "*").replace(/[÷:/]/g, "/").replace(/[−–]/g, "-");
+    if (!s) return null;
+    var toks = s.match(/[\d.,]+|[-+*/^()√]/g); if (!toks || toks.join("") !== s) return null;
+    var i = 0;
+    function peek() { return toks[i]; }
+    function expr() { var v = term(); while (peek() === "+" || peek() === "-") { var o = toks[i++], r = term(); v = o === "+" ? v + r : v - r; } return v; }
+    function term() { var v = unary(); while (peek() === "*" || peek() === "/") { var o = toks[i++], r = unary(); v = o === "*" ? v * r : v / r; } return v; }
+    function unary() { if (peek() === "-") { i++; return -unary(); } if (peek() === "+") { i++; return unary(); } if (peek() === "√") { i++; return Math.sqrt(unary()); } return power(); }
+    function power() { var b = prim(); if (peek() === "^") { i++; return Math.pow(b, unary()); } return b; }
+    function prim() { var t = toks[i++]; if (t === "(") { var v = expr(); if (toks[i] === ")") i++; return v; } if (t === undefined) return NaN; return numTok(t); }
+    var v = expr();
+    return i === toks.length && isFinite(v) ? v : null;
+  }
+  function calcFmt(v) { return (Math.round(v * 1e6) / 1e6).toLocaleString("de-DE", { maximumFractionDigits: 6 }); }
+  function calcShow() {
+    var inp = document.getElementById("cnum"), out = document.getElementById("cres"); if (!inp || !out) return;
+    var t = inp.value, v = calc(t);
+    out.textContent = /[-+×÷*/^√()−]/.test(t.replace(/^-/, "")) ? (v === null ? "Rechnung unvollständig" : "= " + calcFmt(v)) : "";
+  }
+  function calcPad() {
+    var K = ["7", "8", "9", "(", ")", "4", "5", "6", "×", "÷", "1", "2", "3", "+", "−", "0", ",", "^", "√", "⌫"];
+    return '<div class="calc" role="group" aria-label="Taschenrechner">' + K.map(function (k) { return '<button class="ck' + (/\d|,/.test(k) ? "" : " op") + '" data-act="ckey" data-k="' + k + '"' + (k === "⌫" ? ' aria-label="Löschen"' : "") + ">" + k + "</button>"; }).join("") +
+      '<button class="ck op wide2" data-act="ckey" data-k="C">C</button><button class="ck eq wide3" data-act="ckey" data-k="=">=</button></div>';
+  }
+  H.ckey = function (d) {
+    var inp = document.getElementById("cnum"); if (!inp || inp.disabled) return;
+    if (d.k === "C") inp.value = ""; else if (d.k === "⌫") inp.value = inp.value.slice(0, -1);
+    else if (d.k === "=") { var v = calc(inp.value); if (v === null) return ui.toast({ title: "Rechnung unvollständig" }); inp.value = calcFmt(v).replace(/\./g, ""); }
+    else inp.value += d.k;
+    calcShow();
+  };
   H.cpick = function (d, t) {
     var q = cur(); if (Q.done) return;
     if (q.t === "mc") return finish(+d.k === q.a, [+d.k]);
@@ -275,11 +314,8 @@
     if (q.t === "multi") { if (!Q.sel.length) return ui.toast({ title: "Wähle mindestens eine Antwort" }); var a = q.a.slice().sort().join(), s = Q.sel.slice().sort().join(); return finish(a === s, Q.sel); }
     if (q.t === "order") { if (Q.sel.length < q.o.length) return ui.toast({ title: "Noch " + (q.o.length - Q.sel.length) + " antippen" }); return finish(Q.sel.every(function (k, i) { return k === i; }), Q.sel); }
     if (q.t === "num") {
-      var raw = String(document.getElementById("cnum").value).replace(/\s/g, "");
-      /* Komma = Dezimaltrennzeichen; Punkt nur als Tausendertrennzeichen, wenn danach genau drei Ziffern folgen (7.300) */
-      if (raw.indexOf(",") >= 0) raw = raw.replace(/\./g, "").replace(",", "."); else if (/^\d{1,3}(\.\d{3})+$/.test(raw)) raw = raw.replace(/\./g, "");
-      var v = parseFloat(raw);
-      if (isNaN(v)) return ui.toast({ title: "Bitte eine Zahl eingeben" });
+      var v = calc(document.getElementById("cnum").value);
+      if (v === null) return ui.toast({ title: "Bitte eine Zahl oder gültige Rechnung eingeben" });
       return finish(Math.abs(v - q.a) <= (q.tol || 0), [v]);
     }
   };
@@ -302,7 +338,7 @@
     } else if (q.t === "order") {
       [].forEach.call(document.querySelectorAll("#copts .ans"), function (b) { var k = +b.dataset.k; b.disabled = true; b.classList.add(given.indexOf(k) === k ? "ok" : "bad"); });
     } else { var inp = document.getElementById("cnum"); inp.disabled = true; inp.classList.add(ok ? "ok" : "bad"); }
-    [].forEach.call(document.querySelectorAll('[data-act="ccheck"]'), function (b) { b.remove(); });
+    [].forEach.call(document.querySelectorAll('[data-act="ccheck"], .calc'), function (b) { b.remove(); });
     /* Werten: nur der erste Versuch zählt für das Ergebnis */
     var gain = 0;
     if (firstTry) {

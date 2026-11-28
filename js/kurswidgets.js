@@ -19,13 +19,17 @@
   /* HTML-Platzhalter in der Lektion */
   KW.html = function (f) { var id = "kw" + (++n); return '<figure class="fig kwfig"><div class="kw" id="' + id + '" data-w="' + esc(f.w) + '"></div>' + (f.cap ? "<figcaption>" + esc(f.cap) + "</figcaption>" : "") + "</figure>"; };
   /* Nach dem Anzeigen: alle Platzhalter füllen */
-  KW.mount = function () { [].forEach.call(document.querySelectorAll(".kw[data-w]"), function (e) { if (W[e.dataset.w]) W[e.dataset.w](e.id); }); };
+  KW.mount = function () {
+    [].forEach.call(document.querySelectorAll(".kw[data-w]"), function (e) { if (W[e.dataset.w]) W[e.dataset.w](e.id); });
+    /* Safari gibt SVGs mit height:auto sonst teils keine Höhe: Seitenverhältnis aus der viewBox fest setzen */
+    [].forEach.call(document.querySelectorAll(".kw svg.kwsvg[viewBox]"), function (g) { var v = g.getAttribute("viewBox").split(/\s+/); g.style.aspectRatio = v[2] + " / " + v[3]; });
+  };
   var W = {};
 
   /* ---------- Münzwurf: Gesetz der großen Zahlen ---------- */
   W.coin = function (id) {
     ST[id] = { n: 0, k: 0, hist: [] };
-    el(id).innerHTML = '<div class="kwstat" id="' + id + '-s"></div><svg class="kwsvg" id="' + id + '-g" viewBox="0 0 300 140" preserveAspectRatio="none"></svg>' +
+    el(id).innerHTML = '<div class="kwstat" id="' + id + '-s"></div><svg class="kwsvg" id="' + id + '-g" viewBox="0 0 300 140"></svg>' +
       '<div class="kwrow">' + b("kwcoin", "+10", id) + b("kwcoin100", "+100", id) + b("kwcoin1k", "+1.000", id, true) + b("kwcoinr", "Neu", id) + "</div>";
     drawCoin(id);
   };

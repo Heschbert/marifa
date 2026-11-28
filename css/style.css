@@ -962,3 +962,32 @@ button.shic svg { margin-left: 2px; }
 .kwst span.on { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); font-weight: 700; }
 .kwtog { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 10px 0 6px; }
 .kwtog .kwb { font-size: 13px; }
+
+/* Kursliste kompakt (3.16) */
+.fac { margin: 18px 0 8px; gap: 10px; }
+.fac .facic { width: 30px; height: 30px; border-radius: 10px; font-size: 15px; }
+.fac b { font-size: 16px; }
+.ccard2 { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; padding: 10px 12px; margin-bottom: 8px; border-radius: 14px; border: 1px solid var(--line); background: var(--card); color: var(--fg); font: inherit; cursor: pointer; }
+.ccard2 .grow { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ccard2 .grow > b { font-size: 15px; line-height: 1.25; }
+.ccard2 .ring { width: 40px; height: 40px; }
+.ccard2 .ring::before { inset: 4px; }
+.ccard2 .ring b { font-size: 10px; }
+.cplan { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 2px 0 4px; }
+.cpchip { font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 1px dashed var(--line); color: var(--mute); }
+.cgo { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; margin: 4px 0 4px; padding: 12px 14px; border-radius: 16px; border: 0; background: var(--course); color: var(--course-fg); font: inherit; cursor: pointer; }
+.cgo .grow { display: flex; flex-direction: column; min-width: 0; }
+.cgo .small { opacity: .85; }
+.cgoic { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: rgba(127,127,127,.22); flex: none; }
+/* Taschenrechner bei Zahlenfragen */
+.calcres { min-height: 1.3em; margin: -6px 0 8px 4px; }
+.calc { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin-bottom: 12px; }
+.ck { font: inherit; font-size: 19px; font-weight: 600; padding: 11px 0; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--fg); cursor: pointer; }
+.ck.op { background: var(--soft); color: var(--accent); }
+.ck.eq { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+.ck:active { transform: scale(.96); }
+.ck.wide2 { grid-column: span 2; }
+.ck.wide3 { grid-column: span 3; }
+.cplan { display: block; margin: 0 0 4px 4px; }
+.cplan summary { cursor: pointer; padding: 2px 0; }
+.cplan > div { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
