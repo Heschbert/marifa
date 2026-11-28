@@ -1,0 +1,2817 @@
+{
+ "id": "diag",
+ "title": "Fahrzeugdiagnose: OBD und UDS",
+ "sub": "Von der Motorkontrollleuchte bis zum Flashen: Fehlercodes, OBD-Dienste, UDS, DoIP und Praxis",
+ "audience": "Alle, die Fahrzeugdiagnose verstehen wollen, von Werkstatt bis Steuergeräte-Entwicklung",
+ "stand": "11/2026",
+ "version": 1,
+ "review": "Allgemeines, öffentlich dokumentiertes Wissen (Quellen je Lektion); keine hersteller- oder projektspezifischen Details. Noch nicht durch eine Fachperson geprüft. Vorschriften ändern sich: Für verbindliche Arbeit immer den aktuellen Rechtstext prüfen.",
+ "levels": [
+  {
+   "id": 1,
+   "title": "Grundlagen"
+  },
+  {
+   "id": 2,
+   "title": "Fortgeschritten"
+  },
+  {
+   "id": 3,
+   "title": "Experte"
+  }
+ ],
+ "modules": [
+  {
+   "id": "diag.m1",
+   "level": 1,
+   "title": "Warum Fahrzeuge sich selbst prüfen",
+   "desc": "On-Board- und Off-Board-Diagnose, Geschichte der OBD und der Weg eines Fehlers.",
+   "lessons": [
+    {
+     "id": "diag.m1.l1",
+     "title": "Diagnose: Was und wofür?",
+     "min": 5,
+     "body": [
+      "Ein modernes Fahrzeug hat dutzende Steuergeräte. Jedes überwacht seine Sensoren, Aktoren und Funktionen und merkt sich, was schiefgeht. Das nennt man Diagnose.",
+      "## On-Board und Off-Board",
+      "On-Board-Diagnose läuft im Fahrzeug selbst: Überwachungen erkennen Fehler, speichern sie und schalten bei Bedarf eine Warnleuchte ein. Off-Board-Diagnose nutzt ein externes Gerät, den Tester. Er liest Fehler aus, zeigt Messwerte, startet Prüfroutinen und programmiert Steuergeräte.",
+      "## Drei Zielgruppen",
+      "Die Entwicklung braucht Diagnose zum Absichern und Fehlersuchen, die Produktion zum Prüfen und Codieren am Band, die Werkstatt zur Reparatur. Und der Gesetzgeber verlangt, dass abgasrelevante Fehler erkannt und angezeigt werden, damit Fahrzeuge im Alltag sauber bleiben."
+     ],
+     "key": [
+      "On-Board: Fahrzeug überwacht sich selbst.",
+      "Off-Board: Tester liest aus, misst, programmiert.",
+      "Nutzer: Entwicklung, Produktion, Werkstatt, Gesetzgeber."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      },
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "On-Board-Diagnose",
+       "b": "Selbstüberwachung im Fahrzeug: Fehler erkennen, speichern, anzeigen.",
+       "id": "diag.m1.l1.k1"
+      },
+      {
+       "f": "Off-Board-Diagnose",
+       "b": "Diagnose mit externem Tester: auslesen, messen, prüfen, programmieren.",
+       "id": "diag.m1.l1.k2"
+      },
+      {
+       "f": "Tester",
+       "b": "Externes Diagnosegerät oder Software, das mit den Steuergeräten kommuniziert.",
+       "id": "diag.m1.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist Off-Board-Diagnose?",
+       "o": [
+        "Diagnose mit einem externen Tester",
+        "Selbstüberwachung im Steuergerät während der Fahrt",
+        "Eine Prüfung nur bei abgestelltem Motor",
+        "Diagnose ausschließlich über das Kombiinstrument"
+       ],
+       "a": 0,
+       "e": "Off-Board heißt: Das Werkzeug sitzt außerhalb des Fahrzeugs.",
+       "id": "diag.m1.l1.q1"
+      },
+      {
+       "t": "multi",
+       "q": "Wer nutzt Diagnosefunktionen?",
+       "o": [
+        "Entwicklung",
+        "Produktion am Band",
+        "Werkstatt",
+        "Navigationsdienst"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Navigation hat mit Diagnose nichts zu tun.",
+       "id": "diag.m1.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum verlangt der Gesetzgeber On-Board-Diagnose?",
+       "o": [
+        "Damit Abgasfehler im Alltag auffallen",
+        "Damit Werkstätten mehr Umsatz machen",
+        "Damit Fahrzeuge schneller fahren dürfen",
+        "Damit Steuergeräte weniger Strom brauchen"
+       ],
+       "a": 0,
+       "e": "Defekte Abgassysteme sollen nicht unbemerkt bleiben.",
+       "id": "diag.m1.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was gehört nicht zur Off-Board-Diagnose?",
+       "o": [
+        "Zündaussetzer während der Fahrt erkennen",
+        "Fehlerspeicher mit einem Tester auslesen",
+        "Ein Steuergerät neu programmieren",
+        "Einen Stellgliedtest in der Werkstatt starten"
+       ],
+       "a": 0,
+       "e": "Die Aussetzererkennung läuft im Steuergerät selbst, also on-board.",
+       "id": "diag.m1.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür nutzt die Produktion Diagnose am Band?",
+       "o": [
+        "Prüfen und Codieren",
+        "Lackieren der Karosserie",
+        "Tanken der Fahrzeuge",
+        "Planung der Schichten"
+       ],
+       "a": 0,
+       "e": "Am Bandende werden Steuergeräte geprüft, codiert und teils programmiert.",
+       "id": "diag.m1.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m1.l2",
+     "title": "Eine kurze Geschichte der OBD",
+     "min": 6,
+     "body": [
+      "Die On-Board-Diagnose kommt aus Kalifornien. Wegen massiver Smogprobleme verlangte die Behörde CARB ab Ende der 1980er-Jahre erste Überwachungen (später OBD I genannt).",
+      "## OBD II",
+      "Ab Modelljahr 1996 wurde OBD II in den USA für Pkw verpflichtend. Neu waren eine genormte Diagnosebuchse, genormte Fehlercodes und genormte Dienste. Seitdem kann jedes Scan-Tool abgasrelevante Daten jedes Fahrzeugs lesen.",
+      "## EOBD in Europa",
+      "Europa zog mit der European On-Board Diagnosis (EOBD) nach: für neue Benziner ab 2001, für Diesel-Pkw ab 2003/2004. Die Anforderungen wurden mit jeder Euro-Stufe verschärft, etwa mit Vorgaben zur Überwachungshäufigkeit (IUMPR).",
+      "## Heute",
+      "Moderne Fahrzeuge nutzen CAN statt der alten K-Leitung, zunehmend auch Ethernet (DoIP). Mit SAE J1979-2 wird OBD auf UDS-Basis umgestellt (oft OBDonUDS genannt). Die Grundidee bleibt: Fehler erkennen, speichern, anzeigen und genormt auslesbar machen."
+     ],
+     "key": [
+      "OBD stammt aus Kalifornien (CARB).",
+      "OBD II in den USA ab Modelljahr 1996; EOBD in der EU ab 2001 (Benziner).",
+      "Trend: CAN, DoIP und OBD auf UDS-Basis (J1979-2)."
+     ],
+     "src": [
+      {
+       "n": "CARB: OBD-II-Vorschriften (California Code of Regulations, Title 13, Section 1968.2)"
+      },
+      {
+       "n": "SAE J1979: E/E Diagnostic Test Modes (OBD-Dienste)",
+       "u": "https://www.sae.org/standards/content/j1979_202104/"
+      },
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "CARB",
+       "b": "California Air Resources Board: kalifornische Behörde, Vorreiter der OBD-Vorschriften.",
+       "id": "diag.m1.l2.k1"
+      },
+      {
+       "f": "OBD II",
+       "b": "US-Standard der On-Board-Diagnose, Pflicht ab Modelljahr 1996.",
+       "id": "diag.m1.l2.k2"
+      },
+      {
+       "f": "EOBD",
+       "b": "European On-Board Diagnosis: europäisches Gegenstück, Pflicht für neue Benziner ab 2001.",
+       "id": "diag.m1.l2.k3"
+      },
+      {
+       "f": "OBDonUDS",
+       "b": "OBD-Kommunikation auf Basis von UDS nach SAE J1979-2.",
+       "id": "diag.m1.l2.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Ab welchem Modelljahr war OBD II in den USA Pflicht?",
+       "o": [
+        "1996",
+        "1988",
+        "2001",
+        "2010"
+       ],
+       "a": 0,
+       "e": "1988 kamen erste Vorgaben in Kalifornien, 2001 EOBD für Benziner in der EU.",
+       "id": "diag.m1.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was brachte OBD II neu?",
+       "o": [
+        "Genormte Buchse, Codes und Dienste",
+        "Erstmals elektronische Einspritzung",
+        "Den ersten Airbag im Pkw",
+        "Die Pflicht zum Katalysator"
+       ],
+       "a": 0,
+       "e": "Die Normung machte herstellerübergreifende Scan-Tools möglich.",
+       "id": "diag.m1.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Ab wann galt EOBD für neue Benziner in der EU?",
+       "o": [
+        "2001",
+        "1996",
+        "1992",
+        "2014"
+       ],
+       "a": 0,
+       "e": "Diesel-Pkw folgten wenige Jahre später.",
+       "id": "diag.m1.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt SAE J1979-2?",
+       "o": [
+        "OBD auf UDS-Basis",
+        "Die Form der Diagnosebuchse",
+        "Die Abgasgrenzwerte von Euro 7",
+        "Den LIN-Bus im Fahrzeug"
+       ],
+       "a": 0,
+       "e": "Die Buchse ist in SAE J1962 festgelegt.",
+       "id": "diag.m1.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Woher stammt die OBD-Idee?",
+       "o": [
+        "Aus Kalifornien",
+        "Aus Japan",
+        "Aus der EU-Kommission",
+        "Von der Formel 1"
+       ],
+       "a": 0,
+       "e": "Die Behörde CARB reagierte auf massive Luftverschmutzung.",
+       "id": "diag.m1.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m1.l3",
+     "title": "Der Weg eines Fehlers",
+     "min": 6,
+     "body": [
+      "Wie wird aus einer kaputten Lambdasonde ein Eintrag, den die Werkstatt liest? Der Weg ist bei fast allen Steuergeräten gleich.",
+      "## 1. Überwachung",
+      "Eine Diagnosefunktion (Monitor) prüft eine Bedingung, etwa ob die Sondenspannung plausibel ist. Ergebnis: bestanden oder fehlgeschlagen.",
+      "## 2. Entprellung und Speicherung",
+      "Ein Fehler muss sich bestätigen, bevor er zählt. Danach wird er im Fehlerspeicher als DTC mit Status und Umgebungsdaten abgelegt.",
+      "## 3. Reaktion und Anzeige",
+      "Das Steuergerät reagiert, etwa mit einem Ersatzwert. Bei abgasrelevanten Fehlern leuchtet die Motorkontrollleuchte (MIL).",
+      "## 4. Auslesen und Reparieren",
+      "In der Werkstatt liest der Tester DTC, Status und Umgebungsdaten aus. Nach der Reparatur wird der Fehler gelöscht, und die Überwachung muss erneut laufen, um die Reparatur zu bestätigen."
+     ],
+     "key": [
+      "Monitor → Entprellung → DTC mit Status und Umgebungsdaten.",
+      "Reaktion: Ersatzwert, Notlauf, ggf. Warnleuchte.",
+      "Nach Reparatur: löschen und Überwachung erneut laufen lassen."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      },
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      },
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Monitor",
+       "b": "Diagnosefunktion, die eine Komponente oder Funktion überwacht und bestanden oder fehlgeschlagen meldet.",
+       "id": "diag.m1.l3.k1"
+      },
+      {
+       "f": "DTC",
+       "b": "Diagnostic Trouble Code: gespeicherter Fehlercode mit Status.",
+       "id": "diag.m1.l3.k2"
+      },
+      {
+       "f": "MIL",
+       "b": "Malfunction Indicator Lamp: Motorkontrollleuchte für abgasrelevante Fehler.",
+       "id": "diag.m1.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Bringe den Weg eines Fehlers in die richtige Reihenfolge.",
+       "o": [
+        "Monitor erkennt Abweichung",
+        "Entprellung bestätigt den Fehler",
+        "DTC wird gespeichert",
+        "Tester liest den Fehler aus",
+        "Reparatur und Löschen"
+       ],
+       "e": "Erst wenn sich ein Fehler bestätigt, wird er gespeichert.",
+       "id": "diag.m1.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was liefert ein Monitor als Ergebnis?",
+       "o": [
+        "Bestanden oder fehlgeschlagen",
+        "Einen fertigen Reparaturauftrag",
+        "Die Uhrzeit des letzten Tankstopps",
+        "Eine neue Softwareversion"
+       ],
+       "a": 0,
+       "e": "Monitore melden Prüfergebnisse an das Fehlermanagement.",
+       "id": "diag.m1.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum muss die Überwachung nach dem Löschen erneut laufen?",
+       "o": [
+        "Um die Reparatur zu bestätigen",
+        "Weil der Tester sonst blockiert",
+        "Damit die Batterie geladen wird",
+        "Weil die MIL sonst blinkt"
+       ],
+       "a": 0,
+       "e": "Erst ein erneutes „bestanden“ zeigt, dass der Fehler wirklich weg ist.",
+       "id": "diag.m1.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wann leuchtet die Motorkontrollleuchte typischerweise?",
+       "o": [
+        "Bei bestätigtem Abgasfehler",
+        "Bei jedem kurzen Störimpuls",
+        "Nur beim Motorstart",
+        "Wenn der Tester angeschlossen ist"
+       ],
+       "a": 0,
+       "e": "Kurze Störungen werden entprellt; die MIL kommt bei bestätigten Abgasfehlern.",
+       "id": "diag.m1.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was speichert das Steuergerät zusätzlich zum Fehlercode?",
+       "o": [
+        "Status und Umfeld",
+        "Den Namen des Fahrers",
+        "Das Navigationsziel",
+        "Die Radiosender"
+       ],
+       "a": 0,
+       "e": "Status und Umgebungsdaten (Freeze Frame) helfen bei der Fehlersuche.",
+       "id": "diag.m1.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "diag.m2",
+   "level": 1,
+   "title": "Fehlermanagement im Steuergerät",
+   "desc": "Monitore, Entprellung, Statusbits, Umgebungsdaten, Alterung und Fahrzyklen.",
+   "lessons": [
+    {
+     "id": "diag.m2.l1",
+     "title": "Monitore und Fahrzyklen",
+     "min": 6,
+     "body": [
+      "Nicht jede Überwachung kann jederzeit laufen. Man unterscheidet kontinuierliche und nicht kontinuierliche Monitore.",
+      "## Kontinuierlich",
+      "Manche Prüfungen laufen ständig, etwa die Erkennung von Kurzschlüssen und Unterbrechungen (oft „Comprehensive Components“ genannt), die Zündaussetzererkennung oder die Überwachung des Kraftstoffsystems.",
+      "## Nicht kontinuierlich",
+      "Andere brauchen besondere Bedingungen: Die Katalysatorprüfung braucht einen warmen Motor und stabile Fahrt, die Tankentlüftungsprüfung bestimmte Temperaturen und Füllstände. Sie laufen oft nur einmal pro Fahrt.",
+      "## Der Fahrzyklus",
+      "Viele Regeln beziehen sich auf den Fahrzyklus (Operation Cycle): von Motorstart bis Abstellen, mit bestimmten Mindestbedingungen. Wie oft ein Fehler bestätigt sein muss, wann die MIL angeht und wann ein Fehler altert, wird in Fahrzyklen gezählt."
+     ],
+     "key": [
+      "Kontinuierlich: z. B. Kurzschluss-/Unterbrechungsprüfung, Aussetzer.",
+      "Nicht kontinuierlich: z. B. Katalysator, Tankentlüftung.",
+      "Viele Regeln zählen in Fahrzyklen."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      },
+      {
+       "n": "CARB: OBD-II-Vorschriften (California Code of Regulations, Title 13, Section 1968.2)"
+      },
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Kontinuierlicher Monitor",
+       "b": "Überwachung, die im Betrieb ständig läuft, z. B. elektrische Prüfungen oder Aussetzererkennung.",
+       "id": "diag.m2.l1.k1"
+      },
+      {
+       "f": "Nicht kontinuierlicher Monitor",
+       "b": "Überwachung, die nur unter bestimmten Bedingungen läuft, z. B. Katalysatorprüfung.",
+       "id": "diag.m2.l1.k2"
+      },
+      {
+       "f": "Fahrzyklus (Operation Cycle)",
+       "b": "Zeitraum vom Start bis zum Abstellen; Bezugsgröße für Bestätigung, MIL und Alterung.",
+       "id": "diag.m2.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welcher Monitor läuft typischerweise nicht kontinuierlich?",
+       "o": [
+        "Katalysatorwirkungsgrad",
+        "Kurzschlussprüfung eines Ventils",
+        "Zündaussetzererkennung",
+        "Unterbrechung eines Sensorkreises"
+       ],
+       "a": 0,
+       "e": "Die Katalysatorprüfung braucht warmen Motor und stabile Bedingungen.",
+       "id": "diag.m2.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Fahrzyklus?",
+       "o": [
+        "Start bis Abstellen",
+        "Eine Umdrehung der Kurbelwelle",
+        "Ein Werkstattaufenthalt",
+        "Die Zeit zwischen zwei Inspektionen"
+       ],
+       "a": 0,
+       "e": "Auf ihn beziehen sich Bestätigung, MIL-Regeln und Alterung.",
+       "id": "diag.m2.l1.q2"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Prüfungen laufen typischerweise kontinuierlich?",
+       "o": [
+        "Zündaussetzer",
+        "Elektrische Kurzschlussprüfung",
+        "Tankentlüftungs-Dichtheit",
+        "Katalysatorprüfung"
+       ],
+       "a": [
+        0,
+        1
+       ],
+       "e": "Tankentlüftung und Katalysator brauchen besondere Bedingungen.",
+       "id": "diag.m2.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum läuft die Tankentlüftungsprüfung nicht bei jeder Fahrt?",
+       "o": [
+        "Sie braucht bestimmte Temperaturen und Füllstände",
+        "Sie ist gesetzlich nur jährlich erlaubt",
+        "Sie würde den Motor beschädigen",
+        "Sie braucht einen angeschlossenen Tester"
+       ],
+       "a": 0,
+       "e": "Physikalische Randbedingungen müssen stimmen, sonst ist das Ergebnis nicht aussagekräftig.",
+       "id": "diag.m2.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu zählt man Fahrzyklen?",
+       "o": [
+        "Für Bestätigung und Alterung",
+        "Für den Kilometerstand",
+        "Für die Kraftstoffanzeige",
+        "Für die Radioempfangsqualität"
+       ],
+       "a": 0,
+       "e": "Viele Fehlerregeln sind in Fahrzyklen definiert.",
+       "id": "diag.m2.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m2.l2",
+     "title": "Entprellung und Statusbits",
+     "min": 7,
+     "body": [
+      "Ein einzelnes Fehlerergebnis kann ein Ausreißer sein. Deshalb wird entprellt.",
+      "## Entprellverfahren",
+      "Beim Zählerverfahren zählt ein Zähler bei jedem Fehlschlag hoch und bei jedem Erfolg herunter. Erreicht er die obere Schwelle, gilt der Fehler im Zyklus als aufgetreten. Beim Zeitverfahren muss die Abweichung eine Mindestzeit anstehen. Beides findet sich zum Beispiel im AUTOSAR-Modul Dem.",
+      "## Das Statusbyte nach UDS",
+      "Jeder DTC trägt acht Statusbits (ISO 14229): Bit 0 testFailed (aktuell fehlerhaft), Bit 1 testFailedThisOperationCycle, Bit 2 pendingDTC (ausstehend), Bit 3 confirmedDTC (bestätigt), Bit 4 testNotCompletedSinceLastClear, Bit 5 testFailedSinceLastClear, Bit 6 testNotCompletedThisOperationCycle und Bit 7 warningIndicatorRequested (Warnleuchte angefordert).",
+      "## Lesen üben",
+      "Status 0x2F bedeutet binär 0010 1111: Bits 0, 1, 2, 3 und 5 sind gesetzt. Der Fehler ist also aktuell vorhanden, trat in diesem Zyklus auf, ist ausstehend und bestätigt und seit dem letzten Löschen schon einmal fehlgeschlagen. Eine Warnleuchte ist nicht angefordert (Bit 7 = 0)."
+     ],
+     "key": [
+      "Entprellen per Zähler oder Zeit.",
+      "8 Statusbits; wichtig: Bit 0 testFailed, Bit 2 pending, Bit 3 confirmed, Bit 7 Warnleuchte.",
+      "Status als Hex-Byte lesen: Bits einzeln auswerten."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      },
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Zählerentprellung",
+       "b": "Zähler steigt bei Fehlschlag, sinkt bei Erfolg; an der Schwelle gilt der Fehler als aufgetreten.",
+       "id": "diag.m2.l2.k1"
+      },
+      {
+       "f": "Bit 3 confirmedDTC",
+       "b": "Fehler ist bestätigt und dauerhaft gespeichert.",
+       "id": "diag.m2.l2.k2"
+      },
+      {
+       "f": "Bit 7 warningIndicatorRequested",
+       "b": "Der Fehler fordert eine Warnleuchte an.",
+       "id": "diag.m2.l2.k3"
+      },
+      {
+       "f": "Bit 0 testFailed",
+       "b": "Das letzte Prüfergebnis war fehlerhaft.",
+       "id": "diag.m2.l2.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welches Statusbit zeigt einen bestätigten Fehler?",
+       "o": [
+        "Bit 3 confirmedDTC",
+        "Bit 0 testFailed",
+        "Bit 4 testNotCompletedSinceLastClear",
+        "Bit 6 testNotCompletedThisOperationCycle"
+       ],
+       "a": 0,
+       "e": "Bit 2 ist pending, Bit 3 confirmed.",
+       "id": "diag.m2.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Ein DTC hat den Status 0x80. Was bedeutet das?",
+       "o": [
+        "Nur die Warnleuchte ist angefordert",
+        "Der Fehler ist aktuell und bestätigt",
+        "Der Test ist seit dem Löschen nicht gelaufen",
+        "Der Fehler wurde gerade gelöscht"
+       ],
+       "a": 0,
+       "e": "0x80 = Bit 7 gesetzt, alle anderen 0.",
+       "id": "diag.m2.l2.q2"
+      },
+      {
+       "t": "num",
+       "q": "Ein Status hat genau die Bits 0 und 3 gesetzt. Welcher Dezimalwert ergibt sich?",
+       "a": 9,
+       "unit": "",
+       "tol": 0,
+       "e": "Bit 0 = 1, Bit 3 = 8; zusammen 9 (0x09).",
+       "id": "diag.m2.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wie arbeitet eine Zählerentprellung?",
+       "o": [
+        "Hoch bei Fehler, runter bei Erfolg",
+        "Jeder Fehler wird sofort bestätigt",
+        "Fehler werden nur nachts gezählt",
+        "Der Zähler läuft nur beim Flashen"
+       ],
+       "a": 0,
+       "e": "An der oberen Schwelle gilt der Fehler als aufgetreten.",
+       "id": "diag.m2.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was sagt Bit 4 testNotCompletedSinceLastClear = 1?",
+       "o": [
+        "Prüfung seit Löschen nie beendet",
+        "Der Fehler ist bestätigt",
+        "Die Warnleuchte ist an",
+        "Der Fehler trat gerade auf"
+       ],
+       "a": 0,
+       "e": "Nach dem Löschen ist dieses Bit gesetzt, bis die Prüfung einmal abgeschlossen wurde.",
+       "id": "diag.m2.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m2.l3",
+     "title": "Umgebungsdaten, Alterung, Verdrängung",
+     "min": 6,
+     "body": [
+      "Ein Fehlercode allein sagt wenig. Erst die Umstände machen die Fehlersuche möglich.",
+      "## Snapshot und Extended Data",
+      "Beim Auftreten speichert das Steuergerät einen Snapshot (Freeze Frame) mit Messwerten wie Drehzahl, Last, Temperatur und Kilometerstand. Erweiterte Daten (Extended Data Records) enthalten Zähler, etwa wie oft der Fehler auftrat oder wie viele Zyklen seither vergangen sind. Ausgelesen werden sie über UDS 0x19 mit eigenen Unterfunktionen.",
+      "## Alterung",
+      "Wird ein Fehler nicht mehr erkannt, zählt ein Alterungszähler fehlerfreie Zyklen. Ist eine Schwelle erreicht, wird der Eintrag automatisch gelöscht. So verschwinden einmalige, behobene Fehler von selbst.",
+      "## Verdrängung",
+      "Der Fehlerspeicher hat nur begrenzt Plätze. Ist er voll, entscheidet eine Verdrängungsregel, welcher Eintrag weichen muss, meist nach Priorität und Alter. Abgasrelevante und sicherheitsrelevante Fehler haben hohe Priorität."
+     ],
+     "key": [
+      "Snapshot: Messwerte beim Auftreten; Extended Data: Zähler und Zusatzinfos.",
+      "Alterung löscht geheilte Fehler nach fehlerfreien Zyklen.",
+      "Voller Speicher → Verdrängung nach Priorität."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      },
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Snapshot (Freeze Frame)",
+       "b": "Umgebungsdaten zum Zeitpunkt eines Fehlers, z. B. Drehzahl und Temperatur.",
+       "id": "diag.m2.l3.k1"
+      },
+      {
+       "f": "Extended Data Record",
+       "b": "Zusatzdaten zu einem DTC, z. B. Auftretenszähler oder Alterungszähler.",
+       "id": "diag.m2.l3.k2"
+      },
+      {
+       "f": "Verdrängung (Displacement)",
+       "b": "Regel, welcher Eintrag weichen muss, wenn der Fehlerspeicher voll ist.",
+       "id": "diag.m2.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was passiert bei der Alterung eines Fehlers?",
+       "o": [
+        "Er wird nach fehlerfreien Zyklen gelöscht",
+        "Er wird nach einem Jahr zum Hersteller gesendet",
+        "Er wird immer wichtiger",
+        "Er wird in einen anderen DTC umgewandelt"
+       ],
+       "a": 0,
+       "e": "Geheilte Fehler sollen nicht ewig im Speicher bleiben.",
+       "id": "diag.m2.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was speichert ein Snapshot?",
+       "o": [
+        "Messwerte beim Fehler",
+        "Die Seriennummer des Testers",
+        "Eine Kopie der gesamten Software",
+        "Den Code zum Entsperren"
+       ],
+       "a": 0,
+       "e": "Drehzahl, Last, Temperaturen usw. zeigen die Umstände.",
+       "id": "diag.m2.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was entscheidet die Verdrängungsregel?",
+       "o": [
+        "Wer bei vollem Speicher weicht",
+        "Wann die Warnleuchte blinkt",
+        "Welche Bitrate der Bus nutzt",
+        "Wann der Motor abschaltet"
+       ],
+       "a": 0,
+       "e": "Wichtige Fehler sollen nicht von unwichtigen verdrängt werden.",
+       "id": "diag.m2.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Mit welchem UDS-Dienst liest man Snapshots und Extended Data?",
+       "o": [
+        "0x19 ReadDTCInformation",
+        "0x2E WriteDataByIdentifier",
+        "0x11 ECUReset",
+        "0x3E TesterPresent"
+       ],
+       "a": 0,
+       "e": "0x19 hat dafür eigene Unterfunktionen.",
+       "id": "diag.m2.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was enthält ein Extended Data Record typischerweise?",
+       "o": [
+        "Auftretenszähler",
+        "Ein Foto der Fehlerstelle",
+        "Den Wartungsplan",
+        "Die Garantiebedingungen"
+       ],
+       "a": 0,
+       "e": "Zähler helfen, sporadische Fehler einzuschätzen.",
+       "id": "diag.m2.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "diag.m3",
+   "level": 1,
+   "title": "Fehlercodes lesen",
+   "desc": "Aufbau der DTCs nach SAE J2012: Buchstabe, Ziffern, Fehlerart und typische Beispiele.",
+   "lessons": [
+    {
+     "id": "diag.m3.l1",
+     "title": "Aufbau eines DTC",
+     "min": 7,
+     "body": [
+      "OBD-Fehlercodes haben ein festes Format, zum Beispiel P0301. Wer es kennt, versteht schon viel, bevor er nachschlägt.",
+      "## Der Buchstabe",
+      "P steht für Powertrain (Antrieb), C für Chassis (Fahrwerk), B für Body (Karosserie, Innenraum) und U für Network (Kommunikation).",
+      "## Die erste Ziffer",
+      "0 bedeutet einen genormten Code (SAE/ISO), gleich bei allen Herstellern. 1 bedeutet einen herstellerspezifischen Code. Bei P gibt es außerdem 2 (genormt) und 3 (gemischt).",
+      "## Die zweite Ziffer bei P-Codes",
+      "Sie nennt das Teilsystem: 1 und 2 Luft-/Kraftstoffzumessung (2 vor allem Einspritzkreise), 3 Zündung und Aussetzer, 4 zusätzliche Abgasregelung (z. B. Katalysator, Abgasrückführung), 5 Geschwindigkeit und Leerlauf, 6 Steuergerät und Ausgänge, 7 bis 9 Getriebe.",
+      "## Die letzten beiden Ziffern",
+      "Sie kennzeichnen den konkreten Fehler. P0301 heißt: Aussetzer in Zylinder 1 erkannt. P0420: Wirkungsgrad des Katalysators (Bank 1) unter Schwelle.",
+      "Probiere unten den Code-Entschlüssler aus."
+     ],
+     "key": [
+      "Buchstabe: P Antrieb, C Fahrwerk, B Karosserie, U Netzwerk.",
+      "Erste Ziffer: 0 genormt, 1 herstellerspezifisch.",
+      "Bei P: zweite Ziffer = Teilsystem (3 = Zündung/Aussetzer)."
+     ],
+     "src": [
+      {
+       "n": "SAE J2012: Diagnostic Trouble Code Definitions"
+      }
+     ],
+     "cards": [
+      {
+       "f": "P-Code",
+       "b": "Powertrain: Motor und Getriebe.",
+       "id": "diag.m3.l1.k1"
+      },
+      {
+       "f": "U-Code",
+       "b": "Network: Kommunikationsfehler, z. B. fehlende Botschaft eines Steuergeräts.",
+       "id": "diag.m3.l1.k2"
+      },
+      {
+       "f": "P0xxx",
+       "b": "Genormter Antriebs-Code, bei allen Herstellern gleich.",
+       "id": "diag.m3.l1.k3"
+      },
+      {
+       "f": "P0301",
+       "b": "Zündaussetzer in Zylinder 1 erkannt.",
+       "id": "diag.m3.l1.k4"
+      },
+      {
+       "f": "P0420",
+       "b": "Katalysatorwirkungsgrad unter Schwelle (Bank 1).",
+       "id": "diag.m3.l1.k5"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wofür steht U in einem Fehlercode?",
+       "o": [
+        "Netzwerk",
+        "Unterboden",
+        "Umweltdaten",
+        "Ultraschallsensoren"
+       ],
+       "a": 0,
+       "e": "U-Codes betreffen die Kommunikation zwischen Steuergeräten.",
+       "id": "diag.m3.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet die 1 in P1234?",
+       "o": [
+        "Herstellercode",
+        "Genormter Code",
+        "Fehler in Zylinder 1",
+        "Erster Fehler im Speicher"
+       ],
+       "a": 0,
+       "e": "0 genormt, 1 herstellerspezifisch.",
+       "id": "diag.m3.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt P0304?",
+       "o": [
+        "Aussetzer in Zylinder 4",
+        "Katalysator Bank 4 defekt",
+        "Lambdasonde 4 unterbrochen",
+        "Getriebestufe 4 fehlerhaft"
+       ],
+       "a": 0,
+       "e": "P03xx = Zündung/Aussetzer; 04 = Zylinder 4.",
+       "id": "diag.m3.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welches Teilsystem kennzeichnet P04xx?",
+       "o": [
+        "Abgasregelung",
+        "Getriebe",
+        "Zündung und Aussetzer",
+        "Steuergerät und Ausgänge"
+       ],
+       "a": 0,
+       "e": "Hier finden sich z. B. Katalysator und Abgasrückführung.",
+       "id": "diag.m3.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Ein Code beginnt mit C. Wo liegt der Fehler?",
+       "o": [
+        "Im Fahrwerk",
+        "In der Karosserie",
+        "In der Kommunikation",
+        "Im Motor"
+       ],
+       "a": 0,
+       "e": "C steht für Chassis.",
+       "id": "diag.m3.l1.q5"
+      }
+     ],
+     "figs": [
+      {
+       "after": 9,
+       "w": "dtc",
+       "cap": "Gib einen Fehlercode ein und sieh, was jedes Zeichen bedeutet."
+      }
+     ]
+    },
+    {
+     "id": "diag.m3.l2",
+     "title": "UDS-DTCs und Fehlerart",
+     "min": 6,
+     "body": [
+      "Im UDS-Fehlerspeicher hat ein DTC drei Byte. Die ersten zwei Byte entsprechen dem fünfstelligen Code nach SAE J2012, das dritte Byte ist die Fehlerart (Failure Type Byte, FTB).",
+      "## Vom Hex-Wert zum Code",
+      "Die obersten zwei Bit des ersten Bytes geben den Buchstaben an (00 = P, 01 = C, 10 = B, 11 = U). Die übrigen Bits ergeben die vier Ziffern. Aus 0x0301 wird so P0301, aus 0xC100 wird U0100.",
+      "## Die Fehlerart",
+      "Das FTB präzisiert den Fehler, etwa 0x11 Kurzschluss nach Masse, 0x12 Kurzschluss nach Plus, 0x13 Unterbrechung, 0x1C Spannung außerhalb des Bereichs oder 0x00 ohne nähere Angabe. Ein Code mit FTB, zum Beispiel P0201-13, heißt also: Einspritzventil Zylinder 1, Stromkreis unterbrochen.",
+      "## Wer ist zuständig?",
+      "Die Bedeutung der Codes ist in SAE J2012 (bzw. ISO 15031-6) festgelegt. Herstellerspezifische Codes stehen in den Diagnosedaten des Herstellers, etwa in ODX-Dateien."
+     ],
+     "key": [
+      "UDS-DTC = 2 Byte Code + 1 Byte Fehlerart (FTB).",
+      "Obere 2 Bit: 00 P, 01 C, 10 B, 11 U.",
+      "FTB z. B. 0x11 Kurzschluss Masse, 0x12 Kurzschluss Plus, 0x13 Unterbrechung."
+     ],
+     "src": [
+      {
+       "n": "SAE J2012: Diagnostic Trouble Code Definitions"
+      },
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Failure Type Byte (FTB)",
+       "b": "Drittes DTC-Byte, das die Fehlerart angibt, z. B. Unterbrechung.",
+       "id": "diag.m3.l2.k1"
+      },
+      {
+       "f": "FTB 0x13",
+       "b": "Stromkreis unterbrochen (circuit open).",
+       "id": "diag.m3.l2.k2"
+      },
+      {
+       "f": "U0100",
+       "b": "Kommunikationsverlust zum Motorsteuergerät (ECM/PCM).",
+       "id": "diag.m3.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was steht im dritten Byte eines UDS-DTC?",
+       "o": [
+        "Die Fehlerart (FTB)",
+        "Der Kilometerstand",
+        "Die Anzahl der Fehler",
+        "Das Statusbyte"
+       ],
+       "a": 0,
+       "e": "Das Statusbyte wird separat übertragen.",
+       "id": "diag.m3.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Buchstabe gehört zu den oberen Bits 11?",
+       "o": [
+        "U",
+        "P",
+        "C",
+        "B"
+       ],
+       "a": 0,
+       "e": "00 P, 01 C, 10 B, 11 U.",
+       "id": "diag.m3.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet FTB 0x13?",
+       "o": [
+        "Unterbrechung",
+        "Kurzschluss nach Masse",
+        "Kurzschluss nach Plus",
+        "Signal unplausibel"
+       ],
+       "a": 0,
+       "e": "0x11 Masse, 0x12 Plus, 0x13 offen.",
+       "id": "diag.m3.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was wird aus dem Hex-Wert 0x0420?",
+       "o": [
+        "P0420",
+        "C0420",
+        "U0420",
+        "B0420"
+       ],
+       "a": 0,
+       "e": "Obere Bits 00 ergeben P.",
+       "id": "diag.m3.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wo findet man die Bedeutung herstellerspezifischer Codes?",
+       "o": [
+        "In Herstellerdaten",
+        "In SAE J2012 vollständig",
+        "Auf der OBD-Buchse aufgedruckt",
+        "Im Fahrzeugschein"
+       ],
+       "a": 0,
+       "e": "Die Norm beschreibt nur die genormten Codes.",
+       "id": "diag.m3.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m3.l3",
+     "title": "Typische Codes in der Praxis",
+     "min": 6,
+     "body": [
+      "Einige Codes begegnen einem immer wieder. Wichtig ist: Ein Code nennt das Symptom, das die Überwachung sieht, nicht automatisch das defekte Teil.",
+      "## Beispiele",
+      "P0300 zufällige oder mehrere Aussetzer, P0171 Gemisch zu mager (Bank 1), P0420 Katalysatorwirkungsgrad zu niedrig, P0442 kleines Leck im Tankentlüftungssystem, P0128 Kühlmitteltemperatur unter Regelschwelle (etwa Thermostat), U0100 Kommunikation zum Motorsteuergerät verloren.",
+      "## Symptom statt Ursache",
+      "P0171 „zu mager“ kann von einem Unterdruckleck, einem verschmutzten Luftmassenmesser, schwacher Kraftstoffpumpe oder undichten Injektoren kommen. P0420 tritt oft auf, weil der Katalysator gealtert ist, kann aber auch von einer fehlerhaften Lambdasonde oder einem Leck vor der Sonde stammen.",
+      "## Gute Praxis",
+      "Snapshot und Status anschauen, Messwerte prüfen, mit Prüfplänen gezielt eingrenzen und erst dann Teile tauschen. Teiletausch nach Bauchgefühl ist teuer und löst das Problem oft nicht."
+     ],
+     "key": [
+      "Ein Code beschreibt ein Symptom, nicht zwingend das defekte Teil.",
+      "Beispiele: P0300, P0171, P0420, P0442, U0100.",
+      "Erst Daten prüfen und eingrenzen, dann Teile tauschen."
+     ],
+     "src": [
+      {
+       "n": "SAE J2012: Diagnostic Trouble Code Definitions"
+      },
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "P0171",
+       "b": "System zu mager (Bank 1).",
+       "id": "diag.m3.l3.k1"
+      },
+      {
+       "f": "P0442",
+       "b": "Kleines Leck im Kraftstoffverdunstungssystem erkannt.",
+       "id": "diag.m3.l3.k2"
+      },
+      {
+       "f": "P0300",
+       "b": "Zufällige oder mehrere Zündaussetzer erkannt.",
+       "id": "diag.m3.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Aussage über Fehlercodes stimmt?",
+       "o": [
+        "Sie beschreiben ein Symptom",
+        "Sie nennen immer das defekte Bauteil",
+        "Sie sind bei allen Herstellern frei erfunden",
+        "Sie verschwinden nie von selbst"
+       ],
+       "a": 0,
+       "e": "Die Ursache muss man oft erst eingrenzen.",
+       "id": "diag.m3.l3.q1"
+      },
+      {
+       "t": "multi",
+       "q": "Was kann P0171 (zu mager) verursachen?",
+       "o": [
+        "Unterdruckleck",
+        "Verschmutzter Luftmassenmesser",
+        "Schwache Kraftstoffpumpe",
+        "Zu volle Scheibenwaschanlage"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Alles, was zu viel Luft oder zu wenig Kraftstoff bewirkt.",
+       "id": "diag.m3.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet P0300?",
+       "o": [
+        "Mehrere Aussetzer",
+        "Aussetzer nur in Zylinder 3",
+        "Kein Zündfunke beim Start",
+        "Zündspule 3 unterbrochen"
+       ],
+       "a": 0,
+       "e": "Die 00 steht für „nicht einem Zylinder zuzuordnen“.",
+       "id": "diag.m3.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist die beste erste Reaktion auf einen DTC?",
+       "o": [
+        "Snapshot und Messwerte prüfen",
+        "Sofort das genannte Teil tauschen",
+        "Den Fehler löschen und abwarten",
+        "Die Batterie abklemmen"
+       ],
+       "a": 0,
+       "e": "Daten zeigen, unter welchen Bedingungen der Fehler auftrat.",
+       "id": "diag.m3.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was meldet U0100?",
+       "o": [
+        "Motorsteuergerät stumm",
+        "Batteriespannung zu niedrig",
+        "Kühlmittel zu kalt",
+        "Katalysator verbraucht"
+       ],
+       "a": 0,
+       "e": "U-Codes betreffen Netzwerkkommunikation.",
+       "id": "diag.m3.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "diag.m4",
+   "level": 2,
+   "title": "OBD: Buchse, Dienste und Daten",
+   "desc": "Die genormte Schnittstelle, OBD-Dienste, Messwerte (PIDs), MIL und Readiness.",
+   "lessons": [
+    {
+     "id": "diag.m4.l1",
+     "title": "Die OBD-Buchse",
+     "min": 5,
+     "body": [
+      "Die 16-polige Diagnosebuchse nach SAE J1962 (bzw. ISO 15031-3) muss in Reichweite des Fahrersitzes liegen, meist unter dem Armaturenbrett.",
+      "## Wichtige Pins",
+      "Pin 16 ist Batterieplus (Klemme 30), Pin 4 Fahrzeugmasse und Pin 5 Signalmasse. Pin 6 und 14 sind CAN-High und CAN-Low. Pin 7 (und 15) führte bei älteren Fahrzeugen die K-Leitung (ISO 9141, ISO 14230). Die übrigen Pins dürfen Hersteller teils frei belegen, etwa für Ethernet (DoIP).",
+      "## Was man darüber erreicht",
+      "Genormt sind die abgasrelevanten Daten. Über dieselbe Buchse sprechen Werkstatt-Tester aber auch alle anderen Steuergeräte an, sofern das Gateway den Zugriff zulässt. Viele Hersteller schützen erweiterte Zugriffe inzwischen durch Authentifizierung."
+     ],
+     "key": [
+      "16-polige Buchse nach SAE J1962 nahe dem Fahrer.",
+      "Pin 16 Plus, 4/5 Masse, 6/14 CAN.",
+      "Erweiterter Zugriff läuft über das Gateway, oft geschützt."
+     ],
+     "src": [
+      {
+       "n": "SAE J1962: Diagnostic Connector (OBD-Buchse)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SAE J1962",
+       "b": "Norm der 16-poligen OBD-Diagnosebuchse.",
+       "id": "diag.m4.l1.k1"
+      },
+      {
+       "f": "Pin 6 / Pin 14",
+       "b": "CAN-High / CAN-Low an der OBD-Buchse.",
+       "id": "diag.m4.l1.k2"
+      },
+      {
+       "f": "Pin 16",
+       "b": "Batterieplus (Dauerplus) an der OBD-Buchse.",
+       "id": "diag.m4.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wie viele Pins hat die OBD-Buchse?",
+       "o": [
+        "16",
+        "8",
+        "12",
+        "24"
+       ],
+       "a": 0,
+       "e": "Festgelegt in SAE J1962.",
+       "id": "diag.m4.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Pins führen CAN-High und CAN-Low?",
+       "o": [
+        "6 und 14",
+        "4 und 5",
+        "7 und 15",
+        "1 und 9"
+       ],
+       "a": 0,
+       "e": "7 und 15 waren für die K-Leitung.",
+       "id": "diag.m4.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was liegt an Pin 16?",
+       "o": [
+        "Plus",
+        "Signalmasse",
+        "CAN-High",
+        "Ethernet"
+       ],
+       "a": 0,
+       "e": "Darüber versorgen sich viele Scan-Tools.",
+       "id": "diag.m4.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wo muss die OBD-Buchse liegen?",
+       "o": [
+        "In Reichweite des Fahrersitzes",
+        "Im Motorraum neben der Batterie",
+        "Im Kofferraum",
+        "Hinter dem Kennzeichen"
+       ],
+       "a": 0,
+       "e": "Leicht erreichbar für Prüfer und Werkstatt.",
+       "id": "diag.m4.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür stand Pin 7 bei älteren Fahrzeugen?",
+       "o": [
+        "K-Line",
+        "CAN-High",
+        "Masse",
+        "Zündung"
+       ],
+       "a": 0,
+       "e": "ISO 9141 und ISO 14230 (KWP2000) nutzten die K-Leitung.",
+       "id": "diag.m4.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m4.l2",
+     "title": "OBD-Dienste und PIDs",
+     "min": 7,
+     "body": [
+      "OBD-Anfragen bestehen aus einem Dienst (früher „Mode“) und oft einem Parameter (PID).",
+      "## Die wichtigsten Dienste",
+      "0x01 aktuelle Daten, 0x02 Freeze-Frame-Daten, 0x03 gespeicherte (bestätigte) DTCs, 0x04 DTCs und Diagnosedaten löschen, 0x06 Ergebnisse der Überwachungstests, 0x07 ausstehende DTCs, 0x08 Steuerung von Bordsystemen, 0x09 Fahrzeuginformationen (z. B. Fahrgestellnummer, Kalibrierkennung CALID und Prüfsumme CVN) und 0x0A permanente DTCs.",
+      "## PIDs umrechnen",
+      "PID 0x0C liefert die Drehzahl in zwei Byte A und B: Drehzahl = (256 × A + B) ÷ 4. PID 0x0D liefert die Geschwindigkeit direkt in km/h. PID 0x05 liefert die Kühlmitteltemperatur: Wert minus 40 in °C.",
+      "## Funktional und physikalisch",
+      "Auf CAN fragt ein Scan-Tool meist funktional an (alle OBD-Steuergeräte zugleich, 11-Bit-ID 0x7DF). Die Antworten kommen von 0x7E8 bis 0x7EF. Physikalische Anfragen an ein bestimmtes Steuergerät gehen an 0x7E0 bis 0x7E7."
+     ],
+     "key": [
+      "Dienste: 01 Daten, 02 Freeze Frame, 03 DTCs, 04 Löschen, 07 pending, 09 Fahrzeuginfo, 0A permanent.",
+      "PID 0x0C: Drehzahl = (256A + B) ÷ 4.",
+      "Funktionale Anfrage an 0x7DF, Antworten ab 0x7E8."
+     ],
+     "src": [
+      {
+       "n": "SAE J1979: E/E Diagnostic Test Modes (OBD-Dienste)",
+       "u": "https://www.sae.org/standards/content/j1979_202104/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Dienst 0x03",
+       "b": "Liest gespeicherte, bestätigte abgasrelevante DTCs.",
+       "id": "diag.m4.l2.k1"
+      },
+      {
+       "f": "Dienst 0x09",
+       "b": "Fahrzeuginformationen, z. B. VIN, CALID, CVN.",
+       "id": "diag.m4.l2.k2"
+      },
+      {
+       "f": "PID 0x0C",
+       "b": "Motordrehzahl: (256 × A + B) ÷ 4 in 1/min.",
+       "id": "diag.m4.l2.k3"
+      },
+      {
+       "f": "0x7DF",
+       "b": "Funktionale OBD-Anfrage-ID auf CAN (11 Bit).",
+       "id": "diag.m4.l2.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Mit welchem OBD-Dienst liest man ausstehende (pending) Fehler?",
+       "o": [
+        "0x07",
+        "0x03",
+        "0x04",
+        "0x0A"
+       ],
+       "a": 0,
+       "e": "0x03 gespeicherte, 0x0A permanente DTCs.",
+       "id": "diag.m4.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "PID 0x0C liefert A = 0x0F (15) und B = 0xA0 (160). Wie hoch ist die Drehzahl in 1/min?",
+       "a": 1000,
+       "unit": "1/min",
+       "tol": 0,
+       "e": "(256 × 15 + 160) ÷ 4 = 4000 ÷ 4 = 1000.",
+       "id": "diag.m4.l2.q2"
+      },
+      {
+       "t": "num",
+       "q": "PID 0x05 liefert den Wert 130. Welche Kühlmitteltemperatur in °C ist das?",
+       "a": 90,
+       "unit": "°C",
+       "tol": 0,
+       "e": "130 − 40 = 90.",
+       "id": "diag.m4.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche ID nutzt eine funktionale OBD-Anfrage auf CAN?",
+       "o": [
+        "0x7DF",
+        "0x7E8",
+        "0x100",
+        "0x7FF"
+       ],
+       "a": 0,
+       "e": "0x7E8 ff. sind Antworten.",
+       "id": "diag.m4.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was liefert Dienst 0x09?",
+       "o": [
+        "Fahrzeugdaten (VIN)",
+        "Aktuelle Drehzahl",
+        "Gespeicherte Fehler",
+        "Den Befehl zum Löschen"
+       ],
+       "a": 0,
+       "e": "Dazu gehören auch CALID und CVN.",
+       "id": "diag.m4.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m4.l3",
+     "title": "MIL, Readiness und permanente Fehler",
+     "min": 6,
+     "body": [
+      "Für die Abgasuntersuchung und die Werkstatt ist wichtig, ob das Fahrzeug fehlerfrei ist und ob alle Prüfungen gelaufen sind.",
+      "## Monitorstatus",
+      "PID 0x01 von Dienst 0x01 liefert: ob die MIL an ist, wie viele bestätigte Fehler vorliegen und für jeden Monitor, ob er unterstützt wird und ob er seit dem letzten Löschen abgeschlossen ist (Readiness).",
+      "## Readiness nach dem Löschen",
+      "Löschen setzt alle Monitore auf „nicht abgeschlossen“. Erst nach passenden Fahrten sind sie wieder bereit. Prüfstellen erkennen so, ob jemand kurz vorher Fehler gelöscht hat.",
+      "## Permanente DTCs",
+      "In den USA gibt es permanente DTCs (Dienst 0x0A): Sie lassen sich nicht per Tester löschen, sondern verschwinden erst, wenn der Monitor selbst wieder „bestanden“ meldet. Ob und wie das in anderen Märkten gilt, hängt von der jeweiligen Vorschrift ab."
+     ],
+     "key": [
+      "PID 0x01: MIL-Status, Fehleranzahl, Readiness je Monitor.",
+      "Löschen setzt die Readiness zurück.",
+      "Permanente DTCs (USA) verschwinden erst, wenn der Monitor besteht."
+     ],
+     "src": [
+      {
+       "n": "SAE J1979: E/E Diagnostic Test Modes (OBD-Dienste)",
+       "u": "https://www.sae.org/standards/content/j1979_202104/"
+      },
+      {
+       "n": "CARB: OBD-II-Vorschriften (California Code of Regulations, Title 13, Section 1968.2)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Readiness",
+       "b": "Status, ob ein Monitor seit dem letzten Löschen vollständig gelaufen ist.",
+       "id": "diag.m4.l3.k1"
+      },
+      {
+       "f": "Permanenter DTC",
+       "b": "Fehler, der nicht per Tester gelöscht werden kann, sondern erst durch einen bestandenen Monitor.",
+       "id": "diag.m4.l3.k2"
+      },
+      {
+       "f": "PID 0x01",
+       "b": "Monitorstatus: MIL, Anzahl DTCs, Readiness der Monitore.",
+       "id": "diag.m4.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was zeigt die Readiness eines Monitors?",
+       "o": [
+        "Ob er seit Löschen lief",
+        "Ob er gerade einen Fehler meldet",
+        "Wie alt das Steuergerät ist",
+        "Ob der Tester verbunden ist"
+       ],
+       "a": 0,
+       "e": "Nach dem Löschen sind Monitore zunächst „nicht bereit“.",
+       "id": "diag.m4.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie verschwindet ein permanenter DTC?",
+       "o": [
+        "Wenn der Monitor besteht",
+        "Durch Löschen mit Dienst 0x04",
+        "Durch Abklemmen der Batterie",
+        "Nach 24 Stunden automatisch"
+       ],
+       "a": 0,
+       "e": "Genau das macht ihn „permanent“.",
+       "id": "diag.m4.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum fällt kurz vorher gelöschter Fehlerspeicher bei der Prüfung auf?",
+       "o": [
+        "Readiness fehlt",
+        "Die MIL blinkt dauerhaft",
+        "Der Kilometerstand steht auf null",
+        "Die VIN wird gelöscht"
+       ],
+       "a": 0,
+       "e": "Fehlende Readiness verrät das Löschen.",
+       "id": "diag.m4.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Daten liefert PID 0x01?",
+       "o": [
+        "MIL, Fehlerzahl, Readiness",
+        "Drehzahl und Geschwindigkeit",
+        "Fahrgestellnummer und CVN",
+        "Die Freeze-Frame-Daten"
+       ],
+       "a": 0,
+       "e": "Er ist die Übersicht über den OBD-Zustand.",
+       "id": "diag.m4.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert mit der Readiness beim Löschen (Dienst 0x04)?",
+       "o": [
+        "Alle Monitore zurück",
+        "Sie bleibt unverändert",
+        "Sie wird auf „bereit“ gesetzt",
+        "Nur die MIL wird zurückgesetzt"
+       ],
+       "a": 0,
+       "e": "Deshalb ist Löschen vor der Prüfung keine gute Idee.",
+       "id": "diag.m4.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "diag.m5",
+   "level": 2,
+   "title": "UDS-Grundlagen",
+   "desc": "Anfragen und Antworten, Sitzungen, negative Antworten und Zeitverhalten.",
+   "lessons": [
+    {
+     "id": "diag.m5.l1",
+     "title": "Anfrage und Antwort",
+     "min": 6,
+     "body": [
+      "Unified Diagnostic Services (ISO 14229) ist die gemeinsame Sprache zwischen Tester und Steuergerät. Das Prinzip ist einfach: Der Tester fragt (Request), das Steuergerät antwortet (Response).",
+      "## Aufbau",
+      "Das erste Byte ist die Dienstkennung (Service Identifier, SID), etwa 0x22 für ReadDataByIdentifier. Danach folgen Unterfunktion oder Parameter. Beispiel: 22 F1 90 fragt den Datenwert F190 ab, in vielen Fahrzeugen die Fahrgestellnummer.",
+      "## Positive Antwort",
+      "Die Antwort beginnt mit SID + 0x40: Auf 0x22 kommt 0x62, gefolgt von der Kennung und den Daten, also 62 F1 90 und dann die 17 Zeichen der VIN.",
+      "## Negative Antwort",
+      "Kann das Steuergerät die Anfrage nicht erfüllen, antwortet es mit 7F, der abgelehnten SID und einem Negative Response Code (NRC), zum Beispiel 7F 22 31: Anfrage außerhalb des gültigen Bereichs.",
+      "Probiere unten den UDS-Simulator aus."
+     ],
+     "key": [
+      "Request: SID + Parameter; positive Response: SID + 0x40.",
+      "Negative Response: 7F + SID + NRC.",
+      "Beispiel: 22 F1 90 → 62 F1 90 + VIN."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SID",
+       "b": "Service Identifier: erstes Byte einer UDS-Anfrage, bestimmt den Dienst.",
+       "id": "diag.m5.l1.k1"
+      },
+      {
+       "f": "Positive Response",
+       "b": "Antwort mit SID + 0x40, z. B. 0x62 auf 0x22.",
+       "id": "diag.m5.l1.k2"
+      },
+      {
+       "f": "Negative Response",
+       "b": "Antwort 7F + abgelehnte SID + NRC.",
+       "id": "diag.m5.l1.k3"
+      },
+      {
+       "f": "DID F190",
+       "b": "Häufig genutzte Datenkennung für die Fahrgestellnummer (VIN).",
+       "id": "diag.m5.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welches Byte beginnt die positive Antwort auf 0x2E?",
+       "o": [
+        "0x6E",
+        "0x2E",
+        "0x7F",
+        "0xAE"
+       ],
+       "a": 0,
+       "e": "0x2E + 0x40 = 0x6E.",
+       "id": "diag.m5.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet die Antwort 7F 22 31?",
+       "o": [
+        "0x22 abgelehnt, Bereich",
+        "0x22 erfolgreich ausgeführt",
+        "0x31 erfolgreich ausgeführt",
+        "Steuergerät wird zurückgesetzt"
+       ],
+       "a": 0,
+       "e": "NRC 0x31 = requestOutOfRange.",
+       "id": "diag.m5.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was fragt 22 F1 90 typischerweise ab?",
+       "o": [
+        "Die VIN",
+        "Den Fehlerspeicher",
+        "Die Drehzahl",
+        "Den Sicherheitsschlüssel"
+       ],
+       "a": 0,
+       "e": "F190 ist in ISO 14229 als VIN-Kennung vorgesehen.",
+       "id": "diag.m5.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Womit beginnt jede UDS-Anfrage?",
+       "o": [
+        "Mit der SID",
+        "Mit der Fahrgestellnummer",
+        "Mit dem Statusbyte",
+        "Mit einer Prüfsumme"
+       ],
+       "a": 0,
+       "e": "Die SID bestimmt, was der Tester will.",
+       "id": "diag.m5.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welches erste Byte hat jede negative Antwort?",
+       "o": [
+        "0x7F",
+        "0x40",
+        "0x00",
+        "0xFF"
+       ],
+       "a": 0,
+       "e": "Danach folgen die abgelehnte SID und der NRC.",
+       "id": "diag.m5.l1.q5"
+      }
+     ],
+     "figs": [
+      {
+       "after": 7,
+       "w": "uds",
+       "cap": "UDS-Simulator: Wähle eine Anfrage und sieh die Antwort des Steuergeräts."
+      }
+     ]
+    },
+    {
+     "id": "diag.m5.l2",
+     "title": "Sitzungen und Zeitverhalten",
+     "min": 6,
+     "body": [
+      "Nicht jeder Dienst ist immer erlaubt. Welche Funktionen verfügbar sind, hängt von der Diagnosesitzung ab.",
+      "## Die Standardsitzungen",
+      "0x01 Default Session: Grundzustand nach dem Start, nur Basisdienste. 0x03 Extended Session: erweiterte Dienste wie Stellgliedtests oder Schreiben von Daten. 0x02 Programming Session: Software laden. Gewechselt wird mit 0x10, etwa 10 03.",
+      "## TesterPresent",
+      "Verlässt der Tester eine Nicht-Standardsitzung ohne Meldung, fällt das Steuergerät nach dem S3-Timeout (typisch 5 Sekunden) zurück in die Default Session. Mit TesterPresent (0x3E) hält der Tester die Sitzung offen. 3E 80 unterdrückt dabei die Antwort.",
+      "## Antwortzeiten",
+      "Das Steuergerät muss innerhalb von P2 antworten (oft 50 ms). Braucht es länger, sendet es die negative Antwort mit NRC 0x78 (responsePending) und hat dann bis P2* Zeit (oft 5 s). 0x78 heißt also nicht Fehler, sondern „bitte warten“."
+     ],
+     "key": [
+      "Sitzungen: 01 Default, 02 Programming, 03 Extended; Wechsel mit 0x10.",
+      "TesterPresent (0x3E) verhindert den Rückfall nach S3.",
+      "NRC 0x78: Anfrage erhalten, Antwort folgt."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "0x10 DiagnosticSessionControl",
+       "b": "Wechselt die Diagnosesitzung.",
+       "id": "diag.m5.l2.k1"
+      },
+      {
+       "f": "S3-Timeout",
+       "b": "Zeit, nach der eine Nicht-Standardsitzung ohne Testeraktivität endet (oft 5 s).",
+       "id": "diag.m5.l2.k2"
+      },
+      {
+       "f": "NRC 0x78",
+       "b": "responsePending: Anfrage erhalten, Antwort dauert länger.",
+       "id": "diag.m5.l2.k3"
+      },
+      {
+       "f": "P2 / P2*",
+       "b": "Antwortzeitgrenzen des Steuergeräts: normal (P2) und nach 0x78 verlängert (P2*).",
+       "id": "diag.m5.l2.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was bedeutet NRC 0x78?",
+       "o": [
+        "Bitte warten",
+        "Dienst nicht unterstützt",
+        "Sicherheitszugang verweigert",
+        "Falsche Nachrichtenlänge"
+       ],
+       "a": 0,
+       "e": "Das Steuergerät bittet um Geduld.",
+       "id": "diag.m5.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Anfrage wechselt in die Extended Session?",
+       "o": [
+        "10 03",
+        "10 01",
+        "11 01",
+        "3E 00"
+       ],
+       "a": 0,
+       "e": "0x10 mit Sitzung 0x03.",
+       "id": "diag.m5.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert ohne TesterPresent in der Extended Session?",
+       "o": [
+        "Rückfall in die Default Session",
+        "Das Steuergerät schaltet ab",
+        "Die Programmiersitzung startet",
+        "Nichts, die Sitzung bleibt ewig"
+       ],
+       "a": 0,
+       "e": "Nach dem S3-Timeout endet die Sitzung.",
+       "id": "diag.m5.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was bewirkt 3E 80?",
+       "o": [
+        "TesterPresent ohne Antwort",
+        "Reset des Steuergeräts",
+        "Löschen aller Fehler",
+        "Wechsel in die Programmiersitzung"
+       ],
+       "a": 0,
+       "e": "Bit 7 der Unterfunktion unterdrückt die positive Antwort.",
+       "id": "diag.m5.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "In welcher Sitzung startet ein Steuergerät?",
+       "o": [
+        "Default Session",
+        "Extended Session",
+        "Programming Session",
+        "Safety Session"
+       ],
+       "a": 0,
+       "e": "Nach Reset oder Start immer die Default Session.",
+       "id": "diag.m5.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m5.l3",
+     "title": "Negative Response Codes",
+     "min": 6,
+     "body": [
+      "Negative Antworten sagen genau, warum etwas nicht geht. Wer die wichtigsten NRCs kennt, findet Fehler im Ablauf schnell.",
+      "## Häufige Codes",
+      "0x11 serviceNotSupported: Dienst gibt es nicht. 0x12 subFunctionNotSupported: Unterfunktion gibt es nicht. 0x13 incorrectMessageLengthOrInvalidFormat: Länge oder Format falsch. 0x22 conditionsNotCorrect: Bedingungen nicht erfüllt, etwa Motor läuft. 0x24 requestSequenceError: falsche Reihenfolge. 0x31 requestOutOfRange: Parameter oder Kennung ungültig.",
+      "## Rund um Sicherheit",
+      "0x33 securityAccessDenied: Steuergerät ist gesperrt. 0x35 invalidKey: falscher Schlüssel. 0x36 exceededNumberOfAttempts: zu viele Fehlversuche. 0x37 requiredTimeDelayNotExpired: Wartezeit nach Fehlversuchen läuft noch.",
+      "## Sitzung",
+      "0x7F serviceNotSupportedInActiveSession: Den Dienst gibt es, aber nicht in dieser Sitzung. 0x7E gilt entsprechend für Unterfunktionen. Lösung: vorher mit 0x10 in die passende Sitzung wechseln."
+     ],
+     "key": [
+      "0x11/0x12 nicht unterstützt, 0x13 Länge/Format, 0x22 Bedingungen, 0x24 Reihenfolge, 0x31 Bereich.",
+      "Sicherheit: 0x33, 0x35, 0x36, 0x37.",
+      "0x7F/0x7E: in dieser Sitzung nicht erlaubt."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "NRC 0x22",
+       "b": "conditionsNotCorrect: Voraussetzungen nicht erfüllt (z. B. Motor läuft).",
+       "id": "diag.m5.l3.k1"
+      },
+      {
+       "f": "NRC 0x33",
+       "b": "securityAccessDenied: geschützte Funktion, Steuergerät nicht entsperrt.",
+       "id": "diag.m5.l3.k2"
+      },
+      {
+       "f": "NRC 0x7F",
+       "b": "serviceNotSupportedInActiveSession: Dienst in aktueller Sitzung nicht erlaubt.",
+       "id": "diag.m5.l3.k3"
+      },
+      {
+       "f": "NRC 0x24",
+       "b": "requestSequenceError: Anfrage in falscher Reihenfolge.",
+       "id": "diag.m5.l3.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Der Tester sendet 2E in der Default Session und bekommt 7F 2E 7F. Was hilft?",
+       "o": [
+        "Erst Extended Session",
+        "Die Anfrage einfach wiederholen",
+        "Das Steuergerät stromlos machen",
+        "Den Fehlerspeicher löschen"
+       ],
+       "a": 0,
+       "e": "NRC 0x7F: Dienst gibt es, aber nicht in dieser Sitzung.",
+       "id": "diag.m5.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher NRC kommt bei falschem Schlüssel?",
+       "o": [
+        "0x35 invalidKey",
+        "0x33 securityAccessDenied",
+        "0x31 requestOutOfRange",
+        "0x13 incorrectMessageLength"
+       ],
+       "a": 0,
+       "e": "0x33 kommt, wenn man ungeschützt Geschütztes versucht.",
+       "id": "diag.m5.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet NRC 0x22?",
+       "o": [
+        "Bedingungen falsch",
+        "Dienst nicht unterstützt",
+        "Antwort folgt später",
+        "Kennung ungültig"
+       ],
+       "a": 0,
+       "e": "Etwa: Stellgliedtest nicht bei laufendem Motor.",
+       "id": "diag.m5.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet NRC 0x24?",
+       "o": [
+        "Falsche Reihenfolge",
+        "Zu viele Fehlversuche",
+        "Länge der Nachricht falsch",
+        "Sitzung abgelaufen"
+       ],
+       "a": 0,
+       "e": "Beispiel: Schlüssel senden, ohne vorher den Seed angefragt zu haben.",
+       "id": "diag.m5.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Nach mehreren falschen Schlüsseln kommt 0x36. Was heißt das?",
+       "o": [
+        "Zu viele Fehlversuche",
+        "Schlüssel ist richtig",
+        "Dienst nicht unterstützt",
+        "Steuergerät beschäftigt"
+       ],
+       "a": 0,
+       "e": "Danach folgt meist eine Wartezeit (0x37).",
+       "id": "diag.m5.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "diag.m6",
+   "level": 2,
+   "title": "UDS im Detail",
+   "desc": "Fehlerspeicher lesen, Daten und Routinen, Stellglieder und Zugriffsschutz.",
+   "lessons": [
+    {
+     "id": "diag.m6.l1",
+     "title": "Fehlerspeicher über 0x19",
+     "min": 6,
+     "body": [
+      "ReadDTCInformation (0x19) ist der vielseitigste Diagnosedienst. Über Unterfunktionen wählt der Tester, was er sehen will.",
+      "## Wichtige Unterfunktionen",
+      "0x01 zählt DTCs, die zu einer Statusmaske passen. 0x02 liefert die DTCs selbst mit Status. 0x04 liest einen Snapshot zu einem DTC, 0x06 dessen Extended Data. 0x0A listet alle unterstützten DTCs.",
+      "## Die Statusmaske",
+      "Mit der Maske filtert man: 19 02 08 liefert alle DTCs, bei denen Bit 3 (confirmed) gesetzt ist. 19 02 FF liefert alle Einträge mit irgendeinem gesetzten Bit. Die Antwort beginnt mit 59 02, gefolgt von der Maske, die das Steuergerät unterstützt (Availability Mask), und dann je DTC drei Byte Code plus ein Byte Status.",
+      "## Löschen",
+      "ClearDiagnosticInformation (0x14) mit der Gruppe FF FF FF löscht alle Fehler. Dabei werden auch Snapshots, Zähler und die Readiness zurückgesetzt."
+     ],
+     "key": [
+      "0x19 01 zählen, 02 lesen, 04 Snapshot, 06 Extended Data, 0A alle unterstützten.",
+      "Statusmaske filtert, z. B. 08 = bestätigte Fehler.",
+      "0x14 FF FF FF löscht alles inklusive Zusatzdaten."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "19 02",
+       "b": "ReadDTCInformation: DTCs nach Statusmaske lesen.",
+       "id": "diag.m6.l1.k1"
+      },
+      {
+       "f": "19 04",
+       "b": "Snapshot-Daten (Freeze Frame) zu einem DTC lesen.",
+       "id": "diag.m6.l1.k2"
+      },
+      {
+       "f": "14 FF FF FF",
+       "b": "ClearDiagnosticInformation: alle Fehler löschen.",
+       "id": "diag.m6.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Anfrage liefert alle bestätigten Fehler?",
+       "o": [
+        "19 02 08",
+        "19 01 FF",
+        "14 FF FF FF",
+        "22 F1 90"
+       ],
+       "a": 0,
+       "e": "Maske 0x08 = Bit 3 confirmed.",
+       "id": "diag.m6.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Womit beginnt die positive Antwort auf 19 02?",
+       "o": [
+        "59 02",
+        "19 42",
+        "7F 19",
+        "62 02"
+       ],
+       "a": 0,
+       "e": "0x19 + 0x40 = 0x59.",
+       "id": "diag.m6.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viele Byte belegt ein DTC samt Status in der Antwort?",
+       "o": [
+        "4",
+        "2",
+        "3",
+        "8"
+       ],
+       "a": 0,
+       "e": "3 Byte DTC + 1 Byte Status.",
+       "id": "diag.m6.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was wird beim Löschen mit 0x14 zurückgesetzt?",
+       "o": [
+        "Fehler, Daten, Readiness",
+        "Nur die Warnleuchte",
+        "Die Software des Steuergeräts",
+        "Die Codierung"
+       ],
+       "a": 0,
+       "e": "Deshalb müssen danach Monitore neu laufen.",
+       "id": "diag.m6.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was liefert 19 06?",
+       "o": [
+        "Extended Data",
+        "Die Anzahl der Fehler",
+        "Die Fahrgestellnummer",
+        "Die Softwareversion"
+       ],
+       "a": 0,
+       "e": "Extended Data enthält z. B. Zähler.",
+       "id": "diag.m6.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m6.l2",
+     "title": "Daten, Routinen und Stellglieder",
+     "min": 6,
+     "body": [
+      "Neben Fehlern braucht die Werkstatt Messwerte, Prüfabläufe und die Möglichkeit, Teile gezielt anzusteuern.",
+      "## Daten lesen und schreiben",
+      "ReadDataByIdentifier (0x22) liest Werte über eine 2-Byte-Kennung (DID), etwa Softwareversion, Seriennummer oder Messwerte. WriteDataByIdentifier (0x2E) schreibt, zum Beispiel Codierung oder Anlernwerte. Bereiche wie F1xx sind in ISO 14229 für Identifikationsdaten vorgesehen.",
+      "## Routinen",
+      "RoutineControl (0x31) startet (01), stoppt (02) oder fragt Ergebnisse ab (03), jeweils mit einer 2-Byte-Routinekennung. Beispiele: Selbsttest, Drosselklappe anlernen, Speicher löschen vor dem Flashen, Prüfsumme prüfen.",
+      "## Stellglieder",
+      "InputOutputControlByIdentifier (0x2F) übernimmt einen Ausgang vorübergehend: zum Beispiel Lüfter auf 50 % setzen (shortTermAdjustment, 03) und danach die Kontrolle zurückgeben (returnControlToECU, 00). So prüft man, ob der Aktor mechanisch und elektrisch funktioniert."
+     ],
+     "key": [
+      "0x22/0x2E: Daten über DIDs lesen und schreiben.",
+      "0x31: Routinen starten (01), stoppen (02), Ergebnis (03).",
+      "0x2F: Ausgänge vorübergehend übernehmen; 00 gibt die Kontrolle zurück."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "DID",
+       "b": "Data Identifier: 2-Byte-Kennung eines Datenwerts.",
+       "id": "diag.m6.l2.k1"
+      },
+      {
+       "f": "0x31 RoutineControl",
+       "b": "Startet, stoppt oder liest Ergebnisse von Routinen im Steuergerät.",
+       "id": "diag.m6.l2.k2"
+      },
+      {
+       "f": "0x2F 03",
+       "b": "shortTermAdjustment: Ausgang vorübergehend auf einen Wert setzen.",
+       "id": "diag.m6.l2.k3"
+      },
+      {
+       "f": "0x2F 00",
+       "b": "returnControlToECU: Kontrolle an das Steuergerät zurückgeben.",
+       "id": "diag.m6.l2.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Mit welcher Unterfunktion startet man eine Routine über 0x31?",
+       "o": [
+        "01",
+        "02",
+        "03",
+        "00"
+       ],
+       "a": 0,
+       "e": "02 stoppt, 03 liefert das Ergebnis.",
+       "id": "diag.m6.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was tut 2F … 00?",
+       "o": [
+        "Gibt Kontrolle zurück",
+        "Schaltet den Ausgang dauerhaft ab",
+        "Löscht den Fehlerspeicher",
+        "Setzt die Sitzung zurück"
+       ],
+       "a": 0,
+       "e": "returnControlToECU beendet den Stellgliedtest.",
+       "id": "diag.m6.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür eignet sich RoutineControl?",
+       "o": [
+        "Drosselklappe anlernen",
+        "Fahrgestellnummer lesen",
+        "Sitzung wechseln",
+        "Fehler zählen"
+       ],
+       "a": 0,
+       "e": "Routinen sind Abläufe im Steuergerät.",
+       "id": "diag.m6.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wie lang ist ein DID?",
+       "o": [
+        "2 Byte",
+        "1 Byte",
+        "3 Byte",
+        "4 Byte"
+       ],
+       "a": 0,
+       "e": "Etwa F1 90 für die VIN.",
+       "id": "diag.m6.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Dienst schreibt eine Codierung?",
+       "o": [
+        "0x2E (WDBI)",
+        "0x22 ReadDataByIdentifier",
+        "0x2F InputOutputControl",
+        "0x19 ReadDTCInformation"
+       ],
+       "a": 0,
+       "e": "Codierwerte liegen hinter DIDs.",
+       "id": "diag.m6.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m6.l3",
+     "title": "Zugriffsschutz: 0x27 und 0x29",
+     "min": 7,
+     "body": [
+      "Manche Funktionen sind gefährlich, wenn jeder sie nutzen kann: Software laden, Wegfahrsperre anlernen, Kilometerstand, sicherheitsrelevante Codierung. Deshalb sind sie geschützt.",
+      "## SecurityAccess (0x27)",
+      "Der klassische Weg: Der Tester fordert mit einer ungeraden Unterfunktion (z. B. 27 01) einen Zufallswert an, den Seed. Er berechnet daraus mit einem geheimen Algorithmus den Key und sendet ihn mit der folgenden geraden Unterfunktion (27 02). Stimmt er, ist das Steuergerät für diese Stufe entsperrt.",
+      "## Schwächen",
+      "Ist der Algorithmus symmetrisch und in vielen Testern hinterlegt, kann er durchsickern. Zu kurze Seeds oder fehlende Sperrzeiten erleichtern Angriffe.",
+      "## Authentication (0x29)",
+      "Seit der Ausgabe 2020 von ISO 14229 gibt es 0x29. Damit authentisiert sich der Tester zum Beispiel über Zertifikate (PKI) und beweist den Besitz eines privaten Schlüssels. Rechte lassen sich pro Rolle vergeben, etwa Werkstatt oder Entwicklung.",
+      "## Weitere Hilfsdienste",
+      "Beim Flashen schaltet der Tester mit CommunicationControl (0x28) normale Botschaften ab und mit ControlDTCSetting (0x85) die Fehlerspeicherung, damit keine Folgefehler entstehen."
+     ],
+     "key": [
+      "0x27: Seed anfordern (ungerade), Key senden (gerade).",
+      "0x29: Authentisierung z. B. per Zertifikat, rollenbasiert.",
+      "0x28 und 0x85 schalten Kommunikation und Fehlerspeicherung beim Flashen ab."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Seed",
+       "b": "Zufallswert, den das Steuergerät bei 0x27 an den Tester schickt.",
+       "id": "diag.m6.l3.k1"
+      },
+      {
+       "f": "Key",
+       "b": "Aus dem Seed berechneter Schlüssel, den der Tester zurücksendet.",
+       "id": "diag.m6.l3.k2"
+      },
+      {
+       "f": "0x29 Authentication",
+       "b": "UDS-Dienst zur Authentisierung, z. B. mit Zertifikaten.",
+       "id": "diag.m6.l3.k3"
+      },
+      {
+       "f": "0x85 ControlDTCSetting",
+       "b": "Schaltet die Speicherung von Fehlern vorübergehend ab oder an.",
+       "id": "diag.m6.l3.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Ordne den SecurityAccess-Ablauf.",
+       "o": [
+        "Tester sendet 27 01",
+        "Steuergerät sendet Seed",
+        "Tester berechnet Key",
+        "Tester sendet 27 02 mit Key",
+        "Steuergerät ist entsperrt"
+       ],
+       "e": "Ungerade Unterfunktion: Seed anfordern; gerade: Key senden.",
+       "id": "diag.m6.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Unterfunktion fordert den Seed an?",
+       "o": [
+        "Ungerade (01)",
+        "Eine gerade, z. B. 02",
+        "Immer 00",
+        "Immer FF"
+       ],
+       "a": 0,
+       "e": "Gerade Unterfunktionen senden den Key.",
+       "id": "diag.m6.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Vorteil von 0x29 gegenüber 0x27?",
+       "o": [
+        "Zertifikate statt Geheimnis",
+        "Kürzere Anfragen auf dem Bus",
+        "Kein Schlüssel nötig",
+        "Funktioniert nur ohne Sitzung"
+       ],
+       "a": 0,
+       "e": "Asymmetrische Verfahren schützen besser vor durchgesickerten Algorithmen.",
+       "id": "diag.m6.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum schaltet man beim Flashen 0x85 ab?",
+       "o": [
+        "Gegen Folgefehler",
+        "Um die Bitrate zu erhöhen",
+        "Um den Seed zu verkürzen",
+        "Um die VIN zu ändern"
+       ],
+       "a": 0,
+       "e": "Ohne normale Kommunikation würden andere Steuergeräte Fehler speichern.",
+       "id": "diag.m6.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Funktion ist typischerweise geschützt?",
+       "o": [
+        "Software laden",
+        "Fahrgestellnummer lesen",
+        "TesterPresent senden",
+        "Default Session wählen"
+       ],
+       "a": 0,
+       "e": "Programmieren kann Sicherheit und Abgasverhalten verändern.",
+       "id": "diag.m6.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "diag.m7",
+   "level": 3,
+   "title": "Transport und Werkzeuge",
+   "desc": "ISO-TP auf CAN, DoIP auf Ethernet, Diagnosedaten (ODX, OTX) und SOVD.",
+   "lessons": [
+    {
+     "id": "diag.m7.l1",
+     "title": "ISO-TP: lange Nachrichten auf CAN",
+     "min": 7,
+     "body": [
+      "Ein CAN-Frame trägt 8 Byte (CAN FD bis 64). Diagnoseantworten sind oft länger, eine VIN allein hat 17 Zeichen. ISO 15765-2 (ISO-TP) zerlegt deshalb lange Nachrichten.",
+      "## Rahmentypen",
+      "Single Frame (SF): ganze Nachricht passt in einen Frame. First Frame (FF): erster Teil einer langen Nachricht mit der Gesamtlänge. Consecutive Frame (CF): Folgeteile mit laufender Nummer 1, 2, … 15, 0, 1, … Flow Control (FC): Der Empfänger sagt, wie viele Frames am Stück kommen dürfen (Block Size) und mit welchem Mindestabstand (STmin).",
+      "## Ein Beispiel",
+      "Der Tester fragt 22 F1 90 (Single Frame). Die Antwort mit 20 Byte kommt als First Frame mit Länge 20 und den ersten 6 Byte, der Tester sendet Flow Control, dann folgen zwei Consecutive Frames.",
+      "## Grenzen",
+      "Klassisch sind bis zu 4095 Byte pro Nachricht möglich; neuere Ausgaben erlauben mit erweitertem First Frame deutlich mehr. Fürs schnelle Flashen großer Software nutzt man heute CAN FD oder Ethernet."
+     ],
+     "key": [
+      "ISO-TP zerlegt lange Nachrichten: SF, FF, CF, FC.",
+      "Flow Control steuert Blockgröße und Abstand.",
+      "Klassisch bis 4095 Byte pro Nachricht."
+     ],
+     "src": [
+      {
+       "n": "ISO 15765-2: Transportprotokoll auf CAN (ISO-TP), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/66574.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Single Frame",
+       "b": "ISO-TP-Rahmen für Nachrichten, die in einen CAN-Frame passen.",
+       "id": "diag.m7.l1.k1"
+      },
+      {
+       "f": "First Frame",
+       "b": "Erster Rahmen einer langen Nachricht mit Gesamtlänge.",
+       "id": "diag.m7.l1.k2"
+      },
+      {
+       "f": "Consecutive Frame",
+       "b": "Folgerahmen mit laufender Sequenznummer.",
+       "id": "diag.m7.l1.k3"
+      },
+      {
+       "f": "Flow Control",
+       "b": "Rahmen des Empfängers mit Blockgröße und Mindestabstand (STmin).",
+       "id": "diag.m7.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Ordne den Ablauf einer langen Antwort.",
+       "o": [
+        "First Frame vom Steuergerät",
+        "Flow Control vom Tester",
+        "Consecutive Frame 1",
+        "Consecutive Frame 2"
+       ],
+       "e": "Ohne Flow Control dürfen keine Folgerahmen kommen.",
+       "id": "diag.m7.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was enthält der First Frame?",
+       "o": [
+        "Die Gesamtlänge",
+        "Nur die Sequenznummer",
+        "Die Blockgröße",
+        "Die Fahrgestellnummer"
+       ],
+       "a": 0,
+       "e": "Damit weiß der Empfänger, wie viel noch kommt.",
+       "id": "diag.m7.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wer sendet den Flow-Control-Rahmen?",
+       "o": [
+        "Der Empfänger",
+        "Immer das Steuergerät",
+        "Das Gateway",
+        "Der Sender der langen Nachricht"
+       ],
+       "a": 0,
+       "e": "Der Empfänger steuert das Tempo.",
+       "id": "diag.m7.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Sequenznummer folgt auf 15 (0xF)?",
+       "o": [
+        "0",
+        "16",
+        "1",
+        "15"
+       ],
+       "a": 0,
+       "e": "Die Nummer ist 4 Bit lang und läuft über.",
+       "id": "diag.m7.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum braucht man ISO-TP überhaupt?",
+       "o": [
+        "Nachrichten sind oft länger",
+        "CAN kann keine Zahlen übertragen",
+        "Um Fehler zu verschlüsseln",
+        "Damit OBD-Buchsen kleiner werden"
+       ],
+       "a": 0,
+       "e": "Ein klassischer CAN-Frame trägt nur 8 Byte.",
+       "id": "diag.m7.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m7.l2",
+     "title": "DoIP: Diagnose über Ethernet",
+     "min": 6,
+     "body": [
+      "Steuergeräte-Software wird immer größer. Über CAN dauert das Flashen vieler Gigabyte zu lange. Diagnostics over IP (DoIP, ISO 13400) bringt UDS auf Ethernet.",
+      "## So funktioniert es",
+      "Der Tester verbindet sich über Ethernet mit dem Fahrzeug, typischerweise mit einem zentralen DoIP-Gateway. Nach Fahrzeugsuche (Vehicle Identification) und Routing Activation leitet das Gateway UDS-Nachrichten an die Zielsteuergeräte weiter, auch an solche hinter CAN.",
+      "## Technik",
+      "DoIP nutzt TCP und UDP auf Port 13400. Jede Nachricht hat einen kleinen DoIP-Header mit Typ und Länge, Steuergeräte werden über logische Adressen angesprochen.",
+      "## Vorteile",
+      "Viel höhere Datenrate, Flashen mehrerer Steuergeräte parallel und Diagnose über größere Entfernung, etwa am Bandende oder (abgesichert) aus der Ferne. Physikalisch kann der Zugang über die OBD-Buchse erfolgen, deren freie Pins der Hersteller dafür belegt."
+     ],
+     "key": [
+      "DoIP (ISO 13400): UDS über Ethernet, Port 13400.",
+      "Ablauf: Fahrzeugsuche → Routing Activation → UDS.",
+      "Vorteil: schnelles, paralleles Flashen."
+     ],
+     "src": [
+      {
+       "n": "ISO 13400: Diagnostic communication over Internet Protocol (DoIP)",
+       "u": "https://www.iso.org/standard/74785.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "DoIP",
+       "b": "Diagnostics over Internet Protocol nach ISO 13400.",
+       "id": "diag.m7.l2.k1"
+      },
+      {
+       "f": "Routing Activation",
+       "b": "DoIP-Schritt, nach dem das Gateway Diagnosenachrichten weiterleitet.",
+       "id": "diag.m7.l2.k2"
+      },
+      {
+       "f": "Port 13400",
+       "b": "Standardport von DoIP für TCP und UDP.",
+       "id": "diag.m7.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Norm beschreibt DoIP?",
+       "o": [
+        "ISO 13400",
+        "ISO 14229",
+        "ISO 15765",
+        "SAE J1962"
+       ],
+       "a": 0,
+       "e": "ISO 14229 ist UDS selbst, 15765 der CAN-Transport.",
+       "id": "diag.m7.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welchen Port nutzt DoIP standardmäßig?",
+       "o": [
+        "13400",
+        "80",
+        "443",
+        "1234"
+       ],
+       "a": 0,
+       "e": "Der Port entspricht der Normnummer.",
+       "id": "diag.m7.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Schritt kommt vor der UDS-Kommunikation?",
+       "o": [
+        "Routing Activation",
+        "SecurityAccess 0x27",
+        "ECUReset",
+        "ClearDTC"
+       ],
+       "a": 0,
+       "e": "Erst danach leitet das Gateway weiter.",
+       "id": "diag.m7.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist der Hauptvorteil von DoIP?",
+       "o": [
+        "Schnelles Flashen",
+        "Keine Kabel mehr nötig",
+        "Kein UDS mehr nötig",
+        "Geringere Stromaufnahme"
+       ],
+       "a": 0,
+       "e": "Ethernet bietet ein Vielfaches der CAN-Datenrate.",
+       "id": "diag.m7.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Können Steuergeräte hinter CAN per DoIP erreicht werden?",
+       "o": [
+        "Ja, über das Gateway",
+        "Nein, nur Ethernet-Steuergeräte",
+        "Nur mit einer zweiten Buchse",
+        "Nur in der Programmiersitzung"
+       ],
+       "a": 0,
+       "e": "Das Gateway übersetzt zwischen Ethernet und CAN.",
+       "id": "diag.m7.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m7.l3",
+     "title": "Diagnosedaten: ODX, OTX und SOVD",
+     "min": 6,
+     "body": [
+      "Ein Tester muss wissen, welche Dienste ein Steuergerät kann, was die Bytes bedeuten und welche Abläufe gelten. Dafür gibt es standardisierte Beschreibungsformate.",
+      "## ODX",
+      "Open Diagnostic Data Exchange (ODX, ISO 22901) beschreibt in XML die Diagnoseschnittstelle: Dienste, DIDs, DTCs mit Texten, Umrechnungen, Sitzungen und Flash-Daten. Ein Tester liest die ODX-Daten und kann damit jedes beschriebene Steuergerät bedienen.",
+      "## OTX",
+      "Open Test sequence eXchange (OTX, ISO 13209) beschreibt Prüfabläufe: geführte Fehlersuche, Bandende-Prüfungen oder Inbetriebnahme, unabhängig vom Testerprogramm.",
+      "## SOVD",
+      "Service-Oriented Vehicle Diagnostics (SOVD, von ASAM) ist eine moderne REST-Schnittstelle über HTTP. Sie passt zu Fahrzeugen mit Zentralrechnern und Software-Diensten und erlaubt Diagnose lokal, in der Werkstatt oder aus der Ferne. UDS bleibt für klassische Steuergeräte darunter bestehen.",
+      "## Schnittstellen zur Hardware",
+      "Zwischen Tester-Software und Fahrzeug sitzt ein Kommunikationsadapter (VCI). Genormte Programmierschnittstellen wie SAE J2534 (Pass-Thru) oder ISO 22900 (D-PDU API) erlauben, verschiedene Adapter zu nutzen."
+     ],
+     "key": [
+      "ODX: Beschreibung der Diagnoseschnittstelle in XML.",
+      "OTX: Beschreibung von Prüfabläufen.",
+      "SOVD: REST-basierte Diagnose für moderne Architekturen."
+     ],
+     "src": [
+      {
+       "n": "ASAM: Standards für Diagnose (ODX, OTX, SOVD) und Messen/Kalibrieren",
+       "u": "https://www.asam.net/standards/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "ODX",
+       "b": "Open Diagnostic Data Exchange (ISO 22901): XML-Beschreibung von Diagnosediensten, DIDs, DTCs.",
+       "id": "diag.m7.l3.k1"
+      },
+      {
+       "f": "OTX",
+       "b": "Open Test sequence eXchange (ISO 13209): Beschreibung von Prüfabläufen.",
+       "id": "diag.m7.l3.k2"
+      },
+      {
+       "f": "SOVD",
+       "b": "Service-Oriented Vehicle Diagnostics: REST-API für Fahrzeugdiagnose (ASAM).",
+       "id": "diag.m7.l3.k3"
+      },
+      {
+       "f": "VCI",
+       "b": "Vehicle Communication Interface: Adapter zwischen Tester und Fahrzeug.",
+       "id": "diag.m7.l3.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was beschreibt ODX?",
+       "o": [
+        "Diagnoseschnittstelle",
+        "Abgasgrenzwerte",
+        "Die Form der OBD-Buchse",
+        "Das Fahrwerk"
+       ],
+       "a": 0,
+       "e": "Dienste, DIDs, DTCs, Umrechnungen und mehr.",
+       "id": "diag.m7.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür ist OTX gedacht?",
+       "o": [
+        "Prüfabläufe",
+        "CAN-Frames zerlegen",
+        "Schlüssel berechnen",
+        "Fehler entprellen"
+       ],
+       "a": 0,
+       "e": "Etwa geführte Fehlersuche oder Bandende-Prüfung.",
+       "id": "diag.m7.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Technik nutzt SOVD?",
+       "o": [
+        "REST über HTTP",
+        "K-Leitung",
+        "LIN-Bus",
+        "Analoge Spannungen"
+       ],
+       "a": 0,
+       "e": "Passend für Zentralrechner und Fernzugriff.",
+       "id": "diag.m7.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist SAE J2534?",
+       "o": [
+        "Pass-Thru-API",
+        "Ein Abgasgrenzwert",
+        "Ein Fehlercode",
+        "Ein Bussystem"
+       ],
+       "a": 0,
+       "e": "Sie macht Adapter austauschbar.",
+       "id": "diag.m7.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Ersetzt SOVD UDS vollständig?",
+       "o": [
+        "Nein, beide bleiben",
+        "Ja, ab sofort überall",
+        "Ja, aber nur bei Diesel",
+        "Nein, SOVD ist nur für Motorräder"
+       ],
+       "a": 0,
+       "e": "Beide existieren nebeneinander.",
+       "id": "diag.m7.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "diag.m8",
+   "level": 3,
+   "title": "Diagnose in der Praxis",
+   "desc": "Systematische Fehlersuche, Flashen, Ferndiagnose und Zugangsregeln.",
+   "lessons": [
+    {
+     "id": "diag.m8.l1",
+     "title": "Systematische Fehlersuche",
+     "min": 6,
+     "body": [
+      "Gute Diagnose ist ein Vorgehen, kein Ratespiel.",
+      "## Der Ablauf",
+      "1. Beanstandung verstehen: Was, wann, wie oft? 2. Fehlerspeicher aller Steuergeräte lesen, nicht nur des Motors. 3. Status und Umgebungsdaten auswerten: aktuell oder sporadisch? 4. Messwerte und Stellgliedtests nutzen. 5. Gezielt messen, etwa Spannung, Widerstand oder Signalverlauf. 6. Reparieren. 7. Löschen und mit einer Probefahrt bestätigen.",
+      "## Folgefehler erkennen",
+      "Fällt die Versorgung eines Sensors aus, melden oft mehrere Steuergeräte Fehler. Ein Busfehler erzeugt viele U-Codes. Wer zuerst den gemeinsamen Nenner sucht, spart Zeit.",
+      "## Geführte Fehlersuche",
+      "Hersteller-Tester bieten geführte Prüfpläne: Sie fragen Messwerte ab, schlagen Messungen vor und grenzen Schritt für Schritt ein. Die Abläufe sind oft in OTX oder ähnlichen Formaten beschrieben."
+     ],
+     "key": [
+      "Beanstandung → alle Fehlerspeicher → Status/Daten → Messen → Reparieren → Bestätigen.",
+      "Folgefehler: gemeinsamen Nenner suchen.",
+      "Geführte Fehlersuche grenzt systematisch ein."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Sporadischer Fehler",
+       "b": "Fehler, der nur zeitweise auftritt; Status testFailed = 0, aber confirmed = 1.",
+       "id": "diag.m8.l1.k1"
+      },
+      {
+       "f": "Folgefehler",
+       "b": "Fehler, der durch einen anderen Fehler ausgelöst wird, z. B. viele U-Codes bei Busstörung.",
+       "id": "diag.m8.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Ordne die Schritte einer systematischen Fehlersuche.",
+       "o": [
+        "Beanstandung verstehen",
+        "Fehlerspeicher aller Steuergeräte lesen",
+        "Status und Umgebungsdaten auswerten",
+        "Gezielt messen",
+        "Reparieren und Probefahrt"
+       ],
+       "e": "Erst Informationen sammeln, dann eingreifen.",
+       "id": "diag.m8.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Viele Steuergeräte melden U-Codes gleichzeitig. Was liegt nahe?",
+       "o": [
+        "Gemeinsames Bus- oder Stromproblem",
+        "Alle Steuergeräte sind defekt",
+        "Der Tester ist falsch eingestellt",
+        "Der Kraftstoff ist schlecht"
+       ],
+       "a": 0,
+       "e": "Ein gemeinsamer Nenner erklärt viele Folgefehler.",
+       "id": "diag.m8.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Status: testFailed = 0, confirmed = 1. Was bedeutet das?",
+       "o": [
+        "Gerade nicht aktiv",
+        "Der Fehler ist gerade aktiv",
+        "Der Fehler wurde nie bestätigt",
+        "Der Test lief nie"
+       ],
+       "a": 0,
+       "e": "Typisch für sporadische oder behobene Fehler.",
+       "id": "diag.m8.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum liest man alle Steuergeräte aus?",
+       "o": [
+        "Ursache und Folgefehler können verteilt sein",
+        "Weil es gesetzlich vorgeschrieben ist",
+        "Weil der Motor sonst nicht startet",
+        "Weil der Tester sonst blockiert"
+       ],
+       "a": 0,
+       "e": "Die eigentliche Ursache liegt oft in einem anderen Steuergerät.",
+       "id": "diag.m8.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wie bestätigt man eine Reparatur?",
+       "o": [
+        "Löschen, Monitor laufen lassen",
+        "Nur den Fehler löschen",
+        "Batterie abklemmen",
+        "Kilometerstand prüfen"
+       ],
+       "a": 0,
+       "e": "Erst ein erneutes „bestanden“ zeigt den Erfolg.",
+       "id": "diag.m8.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m8.l2",
+     "title": "Software-Update in Werkstatt und per OTA",
+     "min": 6,
+     "body": [
+      "Viele Fehler werden heute durch Software behoben. Ein Update läuft in der Werkstatt über den Tester oder drahtlos als Over-the-Air-Update (OTA).",
+      "## Werkstatt-Flashen",
+      "Ablauf: Batterieladegerät anschließen (Spannung stabil halten), in die Programmiersitzung wechseln, Zugriff freischalten, Speicher löschen, Daten übertragen, Prüfsumme und Signatur prüfen lassen, Reset, danach codieren und Grundeinstellungen durchführen.",
+      "## OTA",
+      "Bei OTA lädt das Fahrzeug das Update über Mobilfunk, prüft es und installiert es zu einem sicheren Zeitpunkt, oft in eine zweite Speicherbank (A/B), damit bei einem Fehler die alte Version weiterläuft.",
+      "## Regeln",
+      "Für neue Fahrzeuge in der EU schreibt die UN-Regelung R156 ein Software-Update-Managementsystem vor: Hersteller müssen dokumentieren, welche Software im Fahrzeug ist (z. B. über eine Software-Identifikationsnummer, RXSWIN), Updates absichern und Auswirkungen auf die Typgenehmigung bewerten."
+     ],
+     "key": [
+      "Flashen: Spannung stabil, Programmiersitzung, Freischalten, Löschen, Übertragen, Prüfen, Reset.",
+      "OTA oft mit A/B-Speicher für sichere Rückfallebene.",
+      "UN R156 verlangt ein Software-Update-Managementsystem."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      },
+      {
+       "n": "UNECE: UN-Regelung Nr. 156 (Software Update und SUMS)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      }
+     ],
+     "cards": [
+      {
+       "f": "OTA-Update",
+       "b": "Software-Update über Mobilfunk, ohne Werkstattbesuch.",
+       "id": "diag.m8.l2.k1"
+      },
+      {
+       "f": "A/B-Partition",
+       "b": "Zwei Speicherbänke: Update in die inaktive Bank, Umschalten erst nach Erfolg.",
+       "id": "diag.m8.l2.k2"
+      },
+      {
+       "f": "RXSWIN",
+       "b": "Software-Identifikationsnummer nach R156, die genehmigungsrelevante Software kennzeichnet.",
+       "id": "diag.m8.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Warum schließt man beim Flashen ein Ladegerät an?",
+       "o": [
+        "Spannungseinbruch bricht ab",
+        "Damit die Software schneller lädt",
+        "Weil das Gesetz es verlangt",
+        "Damit der Motor läuft"
+       ],
+       "a": 0,
+       "e": "Ein Abbruch kann das Steuergerät im Bootloader zurücklassen.",
+       "id": "diag.m8.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient eine A/B-Partition?",
+       "o": [
+        "Rückfall auf alte Version",
+        "Doppelte Rechenleistung",
+        "Zwei Fahrer speichern",
+        "Mehr Platz für Musik"
+       ],
+       "a": 0,
+       "e": "Umgeschaltet wird erst nach erfolgreicher Prüfung.",
+       "id": "diag.m8.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Regelung fordert ein Software-Update-Managementsystem?",
+       "o": [
+        "UN R156",
+        "UN R155",
+        "Euro 7",
+        "SAE J1962"
+       ],
+       "a": 0,
+       "e": "R155 betrifft Cybersecurity.",
+       "id": "diag.m8.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was folgt nach dem Flashen oft?",
+       "o": [
+        "Codieren",
+        "Nichts mehr",
+        "Abgasuntersuchung",
+        "Reifenwechsel"
+       ],
+       "a": 0,
+       "e": "Neue Software braucht passende Konfiguration und Anlernwerte.",
+       "id": "diag.m8.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Vorteil von OTA-Updates?",
+       "o": [
+        "Kein Werkstattbesuch nötig",
+        "Keine Absicherung nötig",
+        "Funktioniert ohne Speicher",
+        "Keine Prüfung der Software"
+       ],
+       "a": 0,
+       "e": "Absicherung und Prüfung bleiben Pflicht.",
+       "id": "diag.m8.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "diag.m8.l3",
+     "title": "Ferndiagnose und Zugang",
+     "min": 6,
+     "body": [
+      "Vernetzte Fahrzeuge können Diagnosedaten auch aus der Ferne liefern: zur Pannenhilfe, zur Vorbereitung eines Werkstatttermins oder zur Flottenüberwachung.",
+      "## Möglichkeiten",
+      "Das Fahrzeug meldet Fehler an ein Backend, die Werkstatt sieht sie vor dem Termin und bestellt passende Teile. Manche Hersteller bieten Fernzugriff durch geschulte Experten, die mit der Werkstatt zusammen diagnostizieren.",
+      "## Datenschutz und Sicherheit",
+      "Diagnosedaten können Rückschlüsse auf Fahrer zulassen. Übertragung und Speicherung unterliegen dem Datenschutz (in der EU der DSGVO), und der Fernzugang muss nach UN R155 abgesichert sein.",
+      "## Wer darf was?",
+      "Unabhängige Werkstätten haben in der EU ein Recht auf Zugang zu Reparatur- und Wartungsinformationen (RMI). Für sicherheitsrelevante Funktionen, etwa an der Wegfahrsperre, gibt es ein besonderes Zulassungsverfahren für Werkstattpersonal (SERMI). Viele Hersteller verlangen für erweiterte Diagnose eine Anmeldung mit Benutzerkonto."
+     ],
+     "key": [
+      "Ferndiagnose: Fehler vorab sehen, Teile vorbereiten, Experten zuschalten.",
+      "Datenschutz (DSGVO) und Cybersecurity (R155) gelten.",
+      "EU: Zugangsrecht unabhängiger Werkstätten; SERMI für sicherheitsrelevante Funktionen."
+     ],
+     "src": [
+      {
+       "n": "UNECE: UN-Regelung Nr. 155 (Cyber Security und CSMS)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      },
+      {
+       "n": "Verordnung (EU) 2018/858, Kapitel XIV: Zugang zu Reparatur- und Wartungsinformationen",
+       "u": "https://eur-lex.europa.eu/eli/reg/2018/858/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "RMI",
+       "b": "Repair and Maintenance Information: Reparatur- und Wartungsinformationen, zu denen unabhängige Werkstätten Zugang haben müssen.",
+       "id": "diag.m8.l3.k1"
+      },
+      {
+       "f": "SERMI",
+       "b": "Zulassungsverfahren für Werkstattpersonal, das sicherheitsrelevante Funktionen (z. B. Wegfahrsperre) bearbeiten darf.",
+       "id": "diag.m8.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist ein Nutzen der Ferndiagnose?",
+       "o": [
+        "Teile vorab bestellen",
+        "Fahrzeug fährt schneller",
+        "Keine Wartung mehr nötig",
+        "Fehler verschwinden automatisch"
+       ],
+       "a": 0,
+       "e": "Die Werkstatt ist vorbereitet, bevor das Auto kommt.",
+       "id": "diag.m8.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welches Recht haben unabhängige Werkstätten in der EU?",
+       "o": [
+        "Zugang zu Infos",
+        "Kostenlose Ersatzteile",
+        "Zugriff auf alle Kundendaten",
+        "Software beliebig zu ändern"
+       ],
+       "a": 0,
+       "e": "Geregelt in der Typgenehmigungsverordnung 2018/858.",
+       "id": "diag.m8.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür gibt es SERMI?",
+       "o": [
+        "Wegfahrsperre u. Ä.",
+        "Abgasmessungen",
+        "Reifendruckkontrolle",
+        "Lackierarbeiten"
+       ],
+       "a": 0,
+       "e": "Nur geprüftes Personal soll solche Funktionen bearbeiten.",
+       "id": "diag.m8.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Regel gilt für Diagnosedaten mit Personenbezug in der EU?",
+       "o": [
+        "Die DSGVO",
+        "Keine Regel",
+        "Nur die Straßenverkehrsordnung",
+        "Nur interne Herstellerregeln"
+       ],
+       "a": 0,
+       "e": "Personenbezogene Daten sind geschützt.",
+       "id": "diag.m8.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was verlangt UN R155 für den Fernzugang?",
+       "o": [
+        "Schutz vor Angriffen",
+        "Eine bestimmte Bitrate",
+        "Eine zweite OBD-Buchse",
+        "Einen festen Werkstattpartner"
+       ],
+       "a": 0,
+       "e": "R155 fordert ein Cybersecurity-Managementsystem.",
+       "id": "diag.m8.l3.q5"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

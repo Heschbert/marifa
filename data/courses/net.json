@@ -1,0 +1,2021 @@
+{
+ "id": "net",
+ "title": "Fahrzeugkommunikation und Vernetzung",
+ "sub": "E/E-Architektur, CAN bis CAN XL, LIN, FlexRay, Automotive Ethernet, SOME/IP, TSN, OTA und V2X",
+ "audience": "Alle, die verstehen wollen, wie Steuergeräte miteinander und mit der Außenwelt kommunizieren",
+ "stand": "11/2026",
+ "version": 1,
+ "review": "Allgemeines, öffentlich dokumentiertes Wissen (Quellen je Lektion); keine hersteller- oder projektspezifischen Details. Noch nicht durch eine Fachperson geprüft. Vorschriften ändern sich: Für verbindliche Arbeit immer den aktuellen Rechtstext prüfen.",
+ "levels": [
+  {
+   "id": 1,
+   "title": "Grundlagen"
+  },
+  {
+   "id": 2,
+   "title": "Fortgeschritten"
+  },
+  {
+   "id": 3,
+   "title": "Experte"
+  }
+ ],
+ "modules": [
+  {
+   "id": "net.m1",
+   "level": 1,
+   "title": "E/E-Architektur",
+   "desc": "Wie Steuergeräte, Busse und Rechner im Fahrzeug organisiert sind und wohin die Entwicklung geht.",
+   "lessons": [
+    {
+     "id": "net.m1.l1",
+     "title": "Vom Kabelbaum zum Netzwerk",
+     "min": 5,
+     "body": [
+      "Frühe Fahrzeuge hatten für jede Funktion eigene Leitungen. Mit wachsender Elektronik wurde der Kabelbaum schwer, teuer und fehleranfällig. Die Lösung: Steuergeräte teilen sich Datenleitungen, die Busse.",
+      "## Heute",
+      "Ein Oberklassefahrzeug kann über hundert Steuergeräte haben, verbunden über mehrere Busse unterschiedlicher Geschwindigkeit. Der Kabelbaum gehört zu den schwersten und teuersten Einzelteilen der Elektrik.",
+      "## Das E/E-Netzwerk",
+      "Die elektrische und elektronische Architektur (E/E-Architektur) legt fest, welche Funktion in welchem Steuergerät läuft, wie Steuergeräte verbunden sind und wie Energie verteilt wird. Sie ist eine der wichtigsten Entscheidungen bei einer neuen Fahrzeugplattform."
+     ],
+     "key": [
+      "Busse ersetzen viele Einzelleitungen.",
+      "Moderne Fahrzeuge: viele Steuergeräte und mehrere Busse.",
+      "E/E-Architektur: Funktionen, Vernetzung, Energieverteilung."
+     ],
+     "src": [
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "E/E-Architektur",
+       "b": "Aufbau der Elektrik und Elektronik eines Fahrzeugs: Funktionen, Steuergeräte, Vernetzung, Energie.",
+       "id": "net.m1.l1.k1"
+      },
+      {
+       "f": "Kabelbaum",
+       "b": "Gesamtheit der Leitungen im Fahrzeug; schwer, teuer und aufwendig in der Fertigung.",
+       "id": "net.m1.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Warum wurden Busse eingeführt?",
+       "o": [
+        "Weniger Leitungen und Gewicht",
+        "Damit Fahrzeuge lauter werden",
+        "Um Kraftstoff zu ersetzen",
+        "Weil Steuergeräte keine Pins haben"
+       ],
+       "a": 0,
+       "e": "Mehrere Steuergeräte teilen sich eine Datenleitung.",
+       "id": "net.m1.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was legt die E/E-Architektur fest?",
+       "o": [
+        "Funktionen und Vernetzung",
+        "Nur die Lackfarbe",
+        "Nur die Reifengröße",
+        "Nur das Motorgeräusch"
+       ],
+       "a": 0,
+       "e": "Sie ist eine Grundsatzentscheidung jeder Plattform.",
+       "id": "net.m1.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viele Steuergeräte kann ein modernes Oberklassefahrzeug haben?",
+       "o": [
+        "Über hundert",
+        "Genau eins",
+        "Etwa fünf",
+        "Keins"
+       ],
+       "a": 0,
+       "e": "Deshalb ist die Vernetzung so wichtig.",
+       "id": "net.m1.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Problem großer Kabelbäume?",
+       "o": [
+        "Gewicht und Kosten",
+        "Zu wenig Kupfer",
+        "Zu schnelle Daten",
+        "Zu wenig Steuergeräte"
+       ],
+       "a": 0,
+       "e": "Auch die Fertigung ist aufwendig.",
+       "id": "net.m1.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Bus im Fahrzeug?",
+       "o": [
+        "Geteilte Datenleitung",
+        "Ein Steuergerät für Türen",
+        "Ein Akku",
+        "Ein Sensor"
+       ],
+       "a": 0,
+       "e": "Mehrere Teilnehmer kommunizieren darüber.",
+       "id": "net.m1.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "net.m1.l2",
+     "title": "Domänen und Gateways",
+     "min": 6,
+     "body": [
+      "Lange war die Architektur nach Funktionsbereichen (Domänen) geordnet: Antrieb, Fahrwerk, Karosserie, Infotainment, Fahrerassistenz.",
+      "## Domänenbusse",
+      "Jede Domäne hatte eigene Busse, etwa einen Antriebs-CAN, einen Karosserie-CAN und MOST oder Ethernet für Infotainment. Ein zentrales Gateway verband die Domänen und leitete Botschaften weiter.",
+      "## Domänenrechner",
+      "Später übernahmen leistungsstarke Domänenrechner viele Funktionen ihrer Domäne. Kleinere Steuergeräte wurden zu einfachen Sensor- und Aktorknoten.",
+      "## Schwächen",
+      "Funktionen, die mehrere Domänen brauchen, etwa automatisiertes Fahren oder Energiemanagement, machen viel Kommunikation zwischen Domänen nötig. Die Leitungen folgen den Funktionen, nicht dem Bauraum, und werden lang."
+     ],
+     "key": [
+      "Domänen: Antrieb, Fahrwerk, Karosserie, Infotainment, Assistenz.",
+      "Gateway verbindet Domänenbusse.",
+      "Schwäche: domänenübergreifende Funktionen, lange Leitungen."
+     ],
+     "src": [
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Domäne",
+       "b": "Funktionsbereich der E/E-Architektur, z. B. Antrieb oder Karosserie.",
+       "id": "net.m1.l2.k1"
+      },
+      {
+       "f": "Gateway",
+       "b": "Steuergerät, das Busse verbindet, Botschaften weiterleitet und filtert.",
+       "id": "net.m1.l2.k2"
+      },
+      {
+       "f": "Domänenrechner",
+       "b": "Leistungsstarker Rechner, der viele Funktionen einer Domäne bündelt.",
+       "id": "net.m1.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was verbindet die Domänenbusse?",
+       "o": [
+        "Das Gateway",
+        "Die OBD-Buchse",
+        "Der Anlasser",
+        "Die Lichtmaschine"
+       ],
+       "a": 0,
+       "e": "Es leitet Botschaften zwischen Domänen weiter.",
+       "id": "net.m1.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist eine Schwäche der Domänenarchitektur?",
+       "o": [
+        "Viel Querverkehr",
+        "Zu wenig Steuergeräte",
+        "Zu kurze Leitungen",
+        "Keine Gateways"
+       ],
+       "a": 0,
+       "e": "Moderne Funktionen sind domänenübergreifend.",
+       "id": "net.m1.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was übernimmt ein Domänenrechner?",
+       "o": [
+        "Funktionen der Domäne",
+        "Nur die Uhrzeit",
+        "Nur das Radio",
+        "Die Stromversorgung"
+       ],
+       "a": 0,
+       "e": "Kleine Steuergeräte werden zu einfachen Knoten.",
+       "id": "net.m1.l2.q3"
+      },
+      {
+       "t": "multi",
+       "q": "Welche sind typische Domänen?",
+       "o": [
+        "Antrieb",
+        "Karosserie",
+        "Infotainment",
+        "Tankstelle"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Die Tankstelle ist keine Fahrzeugdomäne.",
+       "id": "net.m1.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wonach richten sich die Leitungen in der Domänenarchitektur?",
+       "o": [
+        "Nach Funktion",
+        "Nach dem Bauraum",
+        "Nach der Farbe",
+        "Nach dem Gewicht"
+       ],
+       "a": 0,
+       "e": "Deshalb werden sie oft lang.",
+       "id": "net.m1.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "net.m1.l3",
+     "title": "Zonen und Zentralrechner",
+     "min": 6,
+     "body": [
+      "Neue Plattformen gehen zu einer Zonenarchitektur über.",
+      "## Die Idee",
+      "Das Fahrzeug wird räumlich in Zonen geteilt, etwa vorne links, vorne rechts, hinten. Ein Zonensteuergerät sammelt Sensoren und Aktoren seiner Zone, verteilt Energie und ist über schnelles Ethernet mit einem oder wenigen Zentralrechnern verbunden. Die Funktionen laufen zentral als Software.",
+      "## Vorteile",
+      "Kürzere Leitungen, weniger Steuergeräte, einfacher Austausch und Updates von Software, Rechenleistung für anspruchsvolle Funktionen. Man spricht vom softwaredefinierten Fahrzeug (Software-Defined Vehicle).",
+      "## Herausforderungen",
+      "Zentralrechner werden sicherheitskritisch und brauchen Redundanz. Die Software wird komplex, Echtzeitanforderungen müssen über Ethernet erfüllt werden (etwa mit TSN), und klassische Steuergeräte bleiben für viele Jahre parallel bestehen."
+     ],
+     "key": [
+      "Zonen: räumliche Bündelung von Sensoren, Aktoren und Energie.",
+      "Zentralrechner führen Funktionen als Software aus.",
+      "Software-Defined Vehicle; Herausforderung: Redundanz, Echtzeit, Komplexität."
+     ],
+     "src": [
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Zonenarchitektur",
+       "b": "Räumliche Gliederung: Zonensteuergeräte sammeln Ein-/Ausgänge, Zentralrechner führen Funktionen aus.",
+       "id": "net.m1.l3.k1"
+      },
+      {
+       "f": "Software-Defined Vehicle",
+       "b": "Fahrzeug, dessen Funktionen überwiegend durch Software auf Zentralrechnern bestimmt und aktualisierbar sind.",
+       "id": "net.m1.l3.k2"
+      },
+      {
+       "f": "TSN",
+       "b": "Time-Sensitive Networking: Ethernet-Erweiterungen für garantierte Latenzen.",
+       "id": "net.m1.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wonach gliedert die Zonenarchitektur?",
+       "o": [
+        "Nach dem Ort",
+        "Nach Funktionsbereichen",
+        "Nach Lieferanten",
+        "Nach Farben"
+       ],
+       "a": 0,
+       "e": "Zonen sind räumlich.",
+       "id": "net.m1.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Vorteil der Zonenarchitektur?",
+       "o": [
+        "Kürzere Leitungen",
+        "Mehr Steuergeräte",
+        "Kein Ethernet nötig",
+        "Keine Software mehr"
+       ],
+       "a": 0,
+       "e": "Sensoren hängen am nächsten Zonensteuergerät.",
+       "id": "net.m1.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet Software-Defined Vehicle?",
+       "o": [
+        "Funktionen als Software",
+        "Fahrzeug ohne Software",
+        "Software nur im Radio",
+        "Fahrzeug fährt per Fernsteuerung"
+       ],
+       "a": 0,
+       "e": "Funktionen laufen zentral und lassen sich updaten.",
+       "id": "net.m1.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient TSN?",
+       "o": [
+        "Echtzeit-Ethernet",
+        "Verschlüsselung von CAN",
+        "Laden der Batterie",
+        "Zählen von Fehlern"
+       ],
+       "a": 0,
+       "e": "Echtzeit über Ethernet.",
+       "id": "net.m1.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was wird bei Zentralrechnern besonders wichtig?",
+       "o": [
+        "Redundanz für Sicherheit",
+        "Möglichst wenig Speicher",
+        "Analoge Signale",
+        "Lange Leitungen"
+       ],
+       "a": 0,
+       "e": "Fällt der Zentralrechner aus, fallen viele Funktionen aus.",
+       "id": "net.m1.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net.m2",
+   "level": 1,
+   "title": "CAN im Detail",
+   "desc": "Frameaufbau, Bitstuffing, Fehlerbehandlung, CAN FD und CAN XL.",
+   "lessons": [
+    {
+     "id": "net.m2.l1",
+     "title": "Der CAN-Frame",
+     "min": 7,
+     "body": [
+      "Ein klassischer CAN-Datenframe besteht aus festen Feldern.",
+      "## Aufbau",
+      "Start of Frame (1 dominantes Bit), Identifier (11 Bit, im erweiterten Format 29 Bit), Steuerbits (u. a. RTR, IDE), Data Length Code (DLC, 4 Bit, 0 bis 8 Byte), Datenfeld, CRC (15 Bit plus Begrenzer), ACK-Feld, End of Frame (7 rezessive Bits).",
+      "## Bitstuffing",
+      "Nach fünf gleichen Bits fügt der Sender ein entgegengesetztes Bit ein. So bleiben genug Flanken für die Synchronisation der Empfänger. Die Empfänger entfernen die Stuffbits wieder. Dadurch schwankt die Länge eines Frames je nach Inhalt.",
+      "## Elektrisch",
+      "CAN arbeitet differenziell auf zwei Leitungen: dominant (logisch 0) etwa 3,5 V auf CAN-High und 1,5 V auf CAN-Low, rezessiv (logisch 1) beide etwa 2,5 V. Die Leitungsenden werden mit je 120 Ohm abgeschlossen, zusammen also etwa 60 Ohm, die man mit dem Multimeter zwischen CAN-High und CAN-Low messen kann."
+     ],
+     "key": [
+      "Frame: SOF, ID (11/29 Bit), Steuerbits, DLC, Daten, CRC, ACK, EOF.",
+      "Bitstuffing nach 5 gleichen Bits.",
+      "Abschluss 2 × 120 Ω → etwa 60 Ω messbar."
+     ],
+     "src": [
+      {
+       "n": "CAN in Automation (CiA): Grundlagen zu CAN, CAN FD und CAN XL",
+       "u": "https://www.can-cia.org/can-knowledge/"
+      },
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "DLC",
+       "b": "Data Length Code: gibt die Anzahl der Datenbytes an.",
+       "id": "net.m2.l1.k1"
+      },
+      {
+       "f": "Bitstuffing",
+       "b": "Einfügen eines Gegenbits nach fünf gleichen Bits zur Synchronisation.",
+       "id": "net.m2.l1.k2"
+      },
+      {
+       "f": "Abschlusswiderstand",
+       "b": "120 Ω an jedem Busende; parallel etwa 60 Ω.",
+       "id": "net.m2.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Welchen Widerstand misst man zwischen CAN-High und CAN-Low an einem intakten Bus (in Ohm)?",
+       "a": 60,
+       "unit": "Ω",
+       "tol": 2,
+       "e": "Zwei 120-Ω-Abschlüsse parallel ergeben 60 Ω.",
+       "id": "net.m2.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie lang ist der Standard-Identifier?",
+       "o": [
+        "11 Bit",
+        "8 Bit",
+        "16 Bit",
+        "32 Bit"
+       ],
+       "a": 0,
+       "e": "Erweitert sind es 29 Bit.",
+       "id": "net.m2.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient Bitstuffing?",
+       "o": [
+        "Mehr Flanken",
+        "Verschlüsselung",
+        "Mehr Nutzdaten",
+        "Kürzere Leitungen"
+       ],
+       "a": 0,
+       "e": "Nach 5 gleichen Bits folgt ein Gegenbit.",
+       "id": "net.m2.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Pegel ist dominant?",
+       "o": [
+        "Logisch 0",
+        "Logisch 1",
+        "Beide gleich",
+        "Keiner"
+       ],
+       "a": 0,
+       "e": "Dominant überschreibt rezessiv.",
+       "id": "net.m2.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Man misst 120 Ω statt 60 Ω. Was liegt nahe?",
+       "o": [
+        "Ein Abschlusswiderstand fehlt",
+        "Der Bus ist perfekt",
+        "Kurzschluss zwischen den Leitungen",
+        "Zu viele Steuergeräte"
+       ],
+       "a": 0,
+       "e": "Nur noch ein Abschluss ist wirksam.",
+       "id": "net.m2.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "net.m2.l2",
+     "title": "Fehlerbehandlung",
+     "min": 6,
+     "body": [
+      "CAN ist für raue Umgebungen gebaut. Fehler werden erkannt, gemeldet und isoliert.",
+      "## Erkennung",
+      "Fünf Mechanismen: Bitfehler (Sender liest anderes Bit als gesendet), Stuffingfehler (sechs gleiche Bits), CRC-Fehler, Formfehler (fester Wert verletzt) und ACK-Fehler (niemand bestätigt).",
+      "## Fehlerframes",
+      "Wer einen Fehler bemerkt, sendet einen Fehlerframe und zerstört damit die laufende Nachricht für alle. Der Sender wiederholt sie automatisch.",
+      "## Fehlerzähler und Zustände",
+      "Jeder Knoten hat einen Sende- und Empfangsfehlerzähler. Im Zustand Error Active nimmt er normal teil. Ab Zählerstand 128 ist er Error Passive und darf Fehler nur noch zurückhaltend melden. Ab Sendefehlerzähler 256 geht er in den Bus-Off und trennt sich vom Bus. So kann ein defekter Knoten den Bus nicht dauerhaft stören."
+     ],
+     "key": [
+      "Fehlerarten: Bit, Stuffing, CRC, Form, ACK.",
+      "Fehlerframe zerstört die Nachricht, Sender wiederholt.",
+      "Zustände: Error Active → Error Passive (128) → Bus-Off (256)."
+     ],
+     "src": [
+      {
+       "n": "CAN in Automation (CiA): Grundlagen zu CAN, CAN FD und CAN XL",
+       "u": "https://www.can-cia.org/can-knowledge/"
+      },
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Error Passive",
+       "b": "Knotenzustand ab Fehlerzähler 128 mit eingeschränkter Fehlermeldung.",
+       "id": "net.m2.l2.k1"
+      },
+      {
+       "f": "Bus-Off",
+       "b": "Knoten hat sich wegen zu vieler Sendefehler vom Bus getrennt (Sendefehlerzähler ≥ 256).",
+       "id": "net.m2.l2.k2"
+      },
+      {
+       "f": "ACK-Fehler",
+       "b": "Kein Empfänger hat den Frame bestätigt.",
+       "id": "net.m2.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Ab welchem Sendefehlerzählerstand geht ein Knoten in Bus-Off?",
+       "o": [
+        "256",
+        "128",
+        "96",
+        "32"
+       ],
+       "a": 0,
+       "e": "Ab 128 ist er Error Passive.",
+       "id": "net.m2.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert nach einem Fehlerframe?",
+       "o": [
+        "Sender wiederholt",
+        "Die Nachricht gilt als zugestellt",
+        "Der Bus schaltet ab",
+        "Alle Steuergeräte starten neu"
+       ],
+       "a": 0,
+       "e": "Automatische Wiederholung ist Teil von CAN.",
+       "id": "net.m2.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Ein Steuergerät sendet allein am Bus. Welcher Fehler tritt auf?",
+       "o": [
+        "ACK-Fehler",
+        "Stuffingfehler",
+        "CRC-Fehler",
+        "Formfehler"
+       ],
+       "a": 0,
+       "e": "Niemand bestätigt den Frame.",
+       "id": "net.m2.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dienen die Fehlerzustände?",
+       "o": [
+        "Störer isolieren",
+        "Die Bitrate erhöhen",
+        "Strom sparen",
+        "Daten verschlüsseln"
+       ],
+       "a": 0,
+       "e": "Ein defekter Knoten soll den Bus nicht blockieren.",
+       "id": "net.m2.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Stuffingfehler?",
+       "o": [
+        "Sechs gleiche Bits",
+        "Falsche Prüfsumme",
+        "Fehlende Bestätigung",
+        "Falsche ID"
+       ],
+       "a": 0,
+       "e": "Nach fünf gleichen Bits hätte ein Gegenbit kommen müssen.",
+       "id": "net.m2.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "net.m2.l3",
+     "title": "CAN FD und CAN XL",
+     "min": 6,
+     "body": [
+      "Klassisches CAN stößt bei Datenmengen an Grenzen. Zwei Weiterentwicklungen helfen.",
+      "## CAN FD",
+      "Flexible Data-Rate: bis 64 Byte Nutzdaten, höhere Bitrate in der Datenphase (oft 2 bis 5 Mbit/s), verbesserte CRC. Die Arbitrierung bleibt langsam. Ein spezielles Bit (BRS) zeigt die Umschaltung an. Klassische CAN-Controller verstehen CAN-FD-Frames nicht und melden Fehler, daher müssen alle Knoten eines Busses CAN FD können oder davor geschützt sein.",
+      "## CAN XL",
+      "Die dritte Generation erlaubt bis 2.048 Byte Nutzdaten und Datenraten von 10 Mbit/s und mehr. Sie kann Ethernet-Frames transportieren und schließt die Lücke zwischen CAN FD und Automotive Ethernet.",
+      "## Bitrate rechnen",
+      "Bei 500 kbit/s dauert ein Bit 2 Mikrosekunden. Ein klassischer Frame mit 8 Byte hat ohne Stuffing etwa 111 Bit (Standard-ID), also rund 0,22 ms. Daraus ergibt sich, wie viele Botschaften ein Bus pro Sekunde schafft."
+     ],
+     "key": [
+      "CAN FD: 64 Byte, schnellere Datenphase, bessere CRC.",
+      "CAN XL: bis 2.048 Byte, 10+ Mbit/s.",
+      "Klassische Controller vertragen keine FD-Frames."
+     ],
+     "src": [
+      {
+       "n": "CAN in Automation (CiA): Grundlagen zu CAN, CAN FD und CAN XL",
+       "u": "https://www.can-cia.org/can-knowledge/"
+      },
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "BRS",
+       "b": "Bit Rate Switch: CAN-FD-Bit, das die schnellere Datenphase anzeigt.",
+       "id": "net.m2.l3.k1"
+      },
+      {
+       "f": "CAN XL",
+       "b": "CAN-Generation mit bis zu 2.048 Byte Nutzdaten und 10+ Mbit/s.",
+       "id": "net.m2.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie viele Mikrosekunden dauert ein Bit bei 500 kbit/s?",
+       "a": 2,
+       "unit": "µs",
+       "tol": 0,
+       "e": "1 ÷ 500.000 s = 2 µs.",
+       "id": "net.m2.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viele Nutzdaten erlaubt CAN XL?",
+       "o": [
+        "Bis 2.048 Byte",
+        "8 Byte",
+        "64 Byte",
+        "1 Megabyte"
+       ],
+       "a": 0,
+       "e": "CAN FD: 64 Byte.",
+       "id": "net.m2.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert, wenn ein klassischer Controller einen CAN-FD-Frame sieht?",
+       "o": [
+        "Er meldet Fehler",
+        "Er liest ihn korrekt",
+        "Er ignoriert ihn still",
+        "Er beschleunigt sich"
+       ],
+       "a": 0,
+       "e": "Deshalb müssen gemischte Busse geplant werden.",
+       "id": "net.m2.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeigt das BRS-Bit an?",
+       "o": [
+        "Schnelle Datenphase",
+        "Ende des Frames",
+        "Fehler im Frame",
+        "Erweiterte ID"
+       ],
+       "a": 0,
+       "e": "Bit Rate Switch.",
+       "id": "net.m2.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was kann CAN XL zusätzlich transportieren?",
+       "o": [
+        "Ethernet-Frames",
+        "Analoge Audiosignale",
+        "Strom für Aktoren",
+        "Hochspannung"
+       ],
+       "a": 0,
+       "e": "Es schließt die Lücke zu Ethernet.",
+       "id": "net.m2.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net.m3",
+   "level": 2,
+   "title": "LIN, FlexRay und Beschreibungsdateien",
+   "desc": "Einfache und deterministische Busse und wie Kommunikation beschrieben wird.",
+   "lessons": [
+    {
+     "id": "net.m3.l1",
+     "title": "LIN genauer",
+     "min": 6,
+     "body": [
+      "Der LIN-Bus (Local Interconnect Network, ISO 17987) ist für einfache, kostengünstige Knoten gedacht.",
+      "## Prinzip",
+      "Ein Master steuert alles. Er sendet einen Header (Break, Sync-Byte 0x55, geschützte ID). Der zuständige Slave oder der Master selbst antwortet mit bis zu 8 Datenbytes und einer Prüfsumme. Die Abfolge der Header steht in einer Schedule-Tabelle.",
+      "## Technik",
+      "Eine Datenleitung, Pegel bezogen auf die Batteriespannung, bis etwa 20 kbit/s. Slaves brauchen keinen Quarz, weil sie sich am Sync-Byte auf den Takt des Masters einstellen.",
+      "## Einsatz",
+      "Fensterheber, Spiegel, Sitzmotoren, Regen-Licht-Sensoren, Klimaklappen, Generatorregler, Batteriesensoren. Beschrieben wird ein LIN-Cluster in einer LDF-Datei (LIN Description File)."
+     ],
+     "key": [
+      "LIN: Master sendet Header, Slave antwortet.",
+      "Schedule-Tabelle bestimmt die Abfolge; bis ca. 20 kbit/s.",
+      "Beschreibung in der LDF-Datei."
+     ],
+     "src": [
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Schedule-Tabelle",
+       "b": "Festgelegte Reihenfolge der LIN-Header, die der Master sendet.",
+       "id": "net.m3.l1.k1"
+      },
+      {
+       "f": "LDF",
+       "b": "LIN Description File: beschreibt Knoten, Frames, Signale und Schedules eines LIN-Clusters.",
+       "id": "net.m3.l1.k2"
+      },
+      {
+       "f": "Sync-Byte 0x55",
+       "b": "LIN-Byte, an dem sich Slaves auf den Takt des Masters einstellen.",
+       "id": "net.m3.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wer startet bei LIN jede Übertragung?",
+       "o": [
+        "Der Master",
+        "Jeder Slave frei",
+        "Das Gateway",
+        "Der Fahrer"
+       ],
+       "a": 0,
+       "e": "Slaves antworten nur auf Header.",
+       "id": "net.m3.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum brauchen LIN-Slaves keinen Quarz?",
+       "o": [
+        "Takt aus Sync-Byte",
+        "Sie senden nie",
+        "Sie nutzen GPS",
+        "Sie haben keinen Takt"
+       ],
+       "a": 0,
+       "e": "Das spart Kosten.",
+       "id": "net.m3.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Datei beschreibt einen LIN-Cluster?",
+       "o": [
+        "LDF",
+        "DBC",
+        "A2L",
+        "ODX"
+       ],
+       "a": 0,
+       "e": "DBC beschreibt typischerweise CAN.",
+       "id": "net.m3.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein typischer LIN-Teilnehmer?",
+       "o": [
+        "Fensterhebermotor",
+        "Zentralrechner für automatisiertes Fahren",
+        "Frontkamera",
+        "Motorsteuergerät"
+       ],
+       "a": 0,
+       "e": "LIN ist für einfache Knoten gedacht.",
+       "id": "net.m3.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was legt die Schedule-Tabelle fest?",
+       "o": [
+        "Header-Reihenfolge",
+        "Die Farbe der Kabel",
+        "Die Bitrate von CAN",
+        "Den Fehlerspeicher"
+       ],
+       "a": 0,
+       "e": "Der Master arbeitet sie zyklisch ab.",
+       "id": "net.m3.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "net.m3.l2",
+     "title": "FlexRay genauer",
+     "min": 6,
+     "body": [
+      "FlexRay (ISO 17458) entstand für Anwendungen, die ein exakt vorhersagbares Zeitverhalten brauchen.",
+      "## Der Zyklus",
+      "Die Kommunikation läuft in festen Zyklen. Im statischen Segment hat jede Nachricht einen festen Zeitschlitz. Im dynamischen Segment können ereignisgesteuerte Nachrichten nach Priorität gesendet werden. Dazu kommen ein Symbolfenster und eine Ruhezeit (Network Idle Time) zur Uhrenkorrektur.",
+      "## Globale Zeit",
+      "Alle Knoten synchronisieren ihre Uhren über Sync-Frames. So entsteht eine gemeinsame Zeitbasis, auf die sich Regelungen über mehrere Steuergeräte stützen können.",
+      "## Redundanz und Ausblick",
+      "Zwei Kanäle (A und B) können dieselben Daten redundant übertragen oder die Bandbreite verdoppeln, je bis 10 Mbit/s. FlexRay ist aufwendig in der Planung; neue Architekturen setzen zunehmend auf CAN FD und Ethernet mit TSN."
+     ],
+     "key": [
+      "FlexRay-Zyklus: statisches Segment (feste Slots), dynamisches Segment, Symbolfenster, Ruhezeit.",
+      "Gemeinsame globale Zeit über Sync-Frames.",
+      "Zwei Kanäle à 10 Mbit/s; zunehmend abgelöst."
+     ],
+     "src": [
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Statisches Segment",
+       "b": "FlexRay-Bereich mit festen Zeitschlitzen je Nachricht.",
+       "id": "net.m3.l2.k1"
+      },
+      {
+       "f": "Dynamisches Segment",
+       "b": "FlexRay-Bereich für ereignisgesteuerte Nachrichten nach Priorität.",
+       "id": "net.m3.l2.k2"
+      },
+      {
+       "f": "Sync-Frame",
+       "b": "FlexRay-Nachricht zur Synchronisation der Uhren aller Knoten.",
+       "id": "net.m3.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist im statischen Segment festgelegt?",
+       "o": [
+        "Feste Zeitschlitze",
+        "Nur die Fehlerframes",
+        "Die Spannung",
+        "Die Kabelfarbe"
+       ],
+       "a": 0,
+       "e": "Daher das deterministische Verhalten.",
+       "id": "net.m3.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dienen Sync-Frames?",
+       "o": [
+        "Uhren abgleichen",
+        "Daten verschlüsseln",
+        "Fehler zählen",
+        "Steuergeräte wecken"
+       ],
+       "a": 0,
+       "e": "Es entsteht eine globale Zeitbasis.",
+       "id": "net.m3.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viele Kanäle hat FlexRay?",
+       "o": [
+        "Zwei",
+        "Einen",
+        "Vier",
+        "Acht"
+       ],
+       "a": 0,
+       "e": "Kanal A und B.",
+       "id": "net.m3.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert im dynamischen Segment?",
+       "o": [
+        "Ereignis-Nachrichten",
+        "Nur Uhrenkorrektur",
+        "Nur Diagnose",
+        "Nichts"
+       ],
+       "a": 0,
+       "e": "Für Daten, die nicht zyklisch anfallen.",
+       "id": "net.m3.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Womit wird FlexRay in neuen Architekturen oft ersetzt?",
+       "o": [
+        "CAN FD, Ethernet",
+        "LIN",
+        "Analoge Leitungen",
+        "Funk"
+       ],
+       "a": 0,
+       "e": "Planung und Kosten sind bei FlexRay hoch.",
+       "id": "net.m3.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "net.m3.l3",
+     "title": "Kommunikation beschreiben: DBC, ARXML",
+     "min": 6,
+     "body": [
+      "Damit Hunderte Steuergeräte zusammenpassen, muss genau festgelegt sein, wer welche Botschaft wann mit welchem Inhalt sendet. Das steht in Kommunikationsbeschreibungen, oft „K-Matrix“ genannt.",
+      "## Was beschrieben wird",
+      "Botschaften mit ID, Länge, Zykluszeit und Sender; Signale mit Startbit, Länge, Byte-Reihenfolge, Umrechnung (Faktor und Offset), Einheit, Wertebereich und Empfängern.",
+      "## Formate",
+      "DBC ist ein verbreitetes Textformat für CAN. AUTOSAR nutzt ARXML (XML) für die gesamte Systembeschreibung, inklusive CAN, LIN, FlexRay und Ethernet. FIBEX ist ein ASAM-Format, das unter anderem für FlexRay genutzt wurde, LDF für LIN.",
+      "## Rechenbeispiel",
+      "Ein Signal Motordrehzahl hat Faktor 0,25 und Offset 0. Der Rohwert 4.000 bedeutet dann 4.000 × 0,25 = 1.000 1/min. Mit diesen Beschreibungen erzeugen Werkzeuge Code und zeigen Messdaten im Klartext an."
+     ],
+     "key": [
+      "K-Matrix: Botschaften, Signale, Sender, Empfänger, Zykluszeiten.",
+      "Formate: DBC (CAN), ARXML (AUTOSAR), LDF (LIN), FIBEX.",
+      "Physikalischer Wert = Rohwert × Faktor + Offset."
+     ],
+     "src": [
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      },
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "K-Matrix",
+       "b": "Kommunikationsmatrix: Festlegung aller Botschaften, Signale, Sender und Empfänger.",
+       "id": "net.m3.l3.k1"
+      },
+      {
+       "f": "DBC",
+       "b": "Textformat zur Beschreibung von CAN-Botschaften und -Signalen.",
+       "id": "net.m3.l3.k2"
+      },
+      {
+       "f": "ARXML",
+       "b": "AUTOSAR-XML-Format für System- und Kommunikationsbeschreibungen.",
+       "id": "net.m3.l3.k3"
+      },
+      {
+       "f": "Faktor und Offset",
+       "b": "Umrechnung: physikalischer Wert = Rohwert × Faktor + Offset.",
+       "id": "net.m3.l3.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Ein Signal hat Faktor 0,5 und Offset −40. Rohwert 200. Welcher physikalische Wert ergibt sich?",
+       "a": 60,
+       "unit": "",
+       "tol": 0,
+       "e": "200 × 0,5 − 40 = 60.",
+       "id": "net.m3.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welches Format nutzt AUTOSAR für Systembeschreibungen?",
+       "o": [
+        "ARXML",
+        "DBC",
+        "LDF",
+        "PDF"
+       ],
+       "a": 0,
+       "e": "XML-basiert, deckt alle Bussysteme ab.",
+       "id": "net.m3.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was steht in einer K-Matrix?",
+       "o": [
+        "Botschaften und Signale",
+        "Ersatzteilpreise",
+        "Abgasgrenzwerte",
+        "Kundendaten"
+       ],
+       "a": 0,
+       "e": "Sie ist der Vertrag aller Steuergeräte.",
+       "id": "net.m3.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür ist DBC typisch?",
+       "o": [
+        "CAN",
+        "LIN-Schedules",
+        "Diagnoseabläufe",
+        "Software-Updates"
+       ],
+       "a": 0,
+       "e": "Ein verbreitetes Textformat.",
+       "id": "net.m3.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was nützt eine maschinenlesbare Beschreibung?",
+       "o": [
+        "Code und Anzeige",
+        "Den Lack schützen",
+        "Kraftstoff sparen",
+        "Reifen wechseln"
+       ],
+       "a": 0,
+       "e": "Werkzeuge lesen sie direkt.",
+       "id": "net.m3.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net.m4",
+   "level": 2,
+   "title": "Automotive Ethernet",
+   "desc": "Physik, Netzwerktechnik, SOME/IP, Zeitsynchronisation und TSN.",
+   "lessons": [
+    {
+     "id": "net.m4.l1",
+     "title": "Ethernet im Fahrzeug",
+     "min": 6,
+     "body": [
+      "Büro-Ethernet nutzt vier Adernpaare. Im Fahrzeug zählt jedes Gramm, deshalb gibt es Varianten mit einem einzigen verdrillten Paar (Single Pair Ethernet).",
+      "## Varianten",
+      "10BASE-T1S (10 Mbit/s, auch als gemeinsamer Bus mit mehreren Teilnehmern), 100BASE-T1 (100 Mbit/s), 1000BASE-T1 (1 Gbit/s) und Multi-Gigabit-Varianten für Kameras und Zentralrechner.",
+      "## Topologie",
+      "Klassisches Ethernet ist Punkt-zu-Punkt: Jedes Steuergerät hängt an einem Switch. Switches leiten Frames anhand der MAC-Adresse weiter, VLANs trennen logische Netze. 10BASE-T1S erlaubt dagegen mehrere Teilnehmer an einer Leitung, ähnlich wie CAN.",
+      "## Darüber",
+      "Auf Ethernet laufen IP, UDP und TCP, darauf Protokolle wie SOME/IP für Dienste, DoIP für Diagnose und XCP für Messen und Kalibrieren."
+     ],
+     "key": [
+      "Single Pair Ethernet: 10BASE-T1S, 100BASE-T1, 1000BASE-T1, Multi-Gigabit.",
+      "Punkt-zu-Punkt mit Switches, VLANs; T1S auch als Bus.",
+      "Darüber IP/UDP/TCP, SOME/IP, DoIP, XCP."
+     ],
+     "src": [
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "100BASE-T1",
+       "b": "Automotive Ethernet mit 100 Mbit/s über ein verdrilltes Adernpaar.",
+       "id": "net.m4.l1.k1"
+      },
+      {
+       "f": "10BASE-T1S",
+       "b": "10-Mbit/s-Ethernet, auch als Bus mit mehreren Teilnehmern nutzbar.",
+       "id": "net.m4.l1.k2"
+      },
+      {
+       "f": "VLAN",
+       "b": "Virtuelles LAN: logische Trennung von Netzen auf gemeinsamer Hardware.",
+       "id": "net.m4.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist das Besondere an Automotive Ethernet (T1)?",
+       "o": [
+        "Ein Adernpaar",
+        "Vier Adernpaare wie im Büro",
+        "Lichtwellenleiter",
+        "Funkübertragung"
+       ],
+       "a": 0,
+       "e": "Das spart Gewicht und Kosten.",
+       "id": "net.m4.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Variante erlaubt mehrere Teilnehmer an einer Leitung?",
+       "o": [
+        "10BASE-T1S",
+        "100BASE-T1",
+        "1000BASE-T1",
+        "Keine"
+       ],
+       "a": 0,
+       "e": "Ähnlich einem CAN-Bus.",
+       "id": "net.m4.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was tut ein Ethernet-Switch?",
+       "o": [
+        "Leitet nach MAC weiter",
+        "Lädt die Batterie",
+        "Misst Abgase",
+        "Verschlüsselt CAN"
+       ],
+       "a": 0,
+       "e": "Jedes Gerät hängt an einem Port.",
+       "id": "net.m4.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welches Protokoll dient Diagnose über Ethernet?",
+       "o": [
+        "DoIP",
+        "LIN",
+        "SOME/IP-SD",
+        "FlexRay"
+       ],
+       "a": 0,
+       "e": "Diagnostics over IP.",
+       "id": "net.m4.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Datenrate hat 1000BASE-T1?",
+       "o": [
+        "1 Gbit/s",
+        "10 Mbit/s",
+        "100 Mbit/s",
+        "20 kbit/s"
+       ],
+       "a": 0,
+       "e": "Für Kameras und Backbone.",
+       "id": "net.m4.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "net.m4.l2",
+     "title": "SOME/IP und Dienste",
+     "min": 6,
+     "body": [
+      "Auf Ethernet kommunizieren Steuergeräte oft nicht mehr über feste Botschaften, sondern über Dienste (serviceorientiert).",
+      "## SOME/IP",
+      "Scalable service-Oriented MiddlewarE over IP ist in AUTOSAR verbreitet. Ein Steuergerät bietet einen Dienst an (Server), andere nutzen ihn (Clients). Es gibt Methoden (Anfrage und Antwort), Events (Benachrichtigungen) und Fields (Werte mit Lesen, Schreiben und Benachrichtigung).",
+      "## Service Discovery",
+      "Mit SOME/IP-SD meldet ein Server, welche Dienste er anbietet, und Clients abonnieren, was sie brauchen. So muss nicht jede Verbindung fest eingetragen sein.",
+      "## Weitere Ansätze",
+      "In Zentralrechnern und Adaptive AUTOSAR finden sich auch Middlewares wie DDS. Das Prinzip bleibt: Funktionen bieten Schnittstellen an, statt nur Signale zyklisch zu senden."
+     ],
+     "key": [
+      "Serviceorientiert: Server bieten Dienste, Clients nutzen sie.",
+      "SOME/IP: Methoden, Events, Fields.",
+      "SOME/IP-SD: Dienste anbieten und abonnieren."
+     ],
+     "src": [
+      {
+       "n": "SOME/IP: Spezifikation (AUTOSAR) und Projektseite",
+       "u": "https://some-ip.com/"
+      },
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SOME/IP",
+       "b": "Serviceorientierte Middleware über IP, verbreitet in AUTOSAR.",
+       "id": "net.m4.l2.k1"
+      },
+      {
+       "f": "SOME/IP-SD",
+       "b": "Service Discovery: Dienste anbieten, finden und abonnieren.",
+       "id": "net.m4.l2.k2"
+      },
+      {
+       "f": "Event (SOME/IP)",
+       "b": "Benachrichtigung eines Servers an abonnierte Clients.",
+       "id": "net.m4.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was bietet ein SOME/IP-Server an?",
+       "o": [
+        "Dienste",
+        "Strom",
+        "Abgaswerte",
+        "Zündfunken"
+       ],
+       "a": 0,
+       "e": "Clients nutzen diese Dienste.",
+       "id": "net.m4.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient SOME/IP-SD?",
+       "o": [
+        "Dienste finden",
+        "Daten verschlüsseln",
+        "Uhren synchronisieren",
+        "Fehler löschen"
+       ],
+       "a": 0,
+       "e": "So müssen Verbindungen nicht fest eingetragen sein.",
+       "id": "net.m4.l2.q2"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Elemente kennt SOME/IP?",
+       "o": [
+        "Methoden",
+        "Events",
+        "Fields",
+        "Zündwinkel"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Zündwinkel sind ein Motorthema.",
+       "id": "net.m4.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist der Unterschied zum klassischen CAN-Ansatz?",
+       "o": [
+        "Dienste statt Signale",
+        "Kein Unterschied",
+        "SOME/IP nutzt analoge Leitungen",
+        "CAN ist schneller"
+       ],
+       "a": 0,
+       "e": "Kommunikation wird schnittstellenorientiert.",
+       "id": "net.m4.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Middleware findet sich zusätzlich oft in Zentralrechnern?",
+       "o": [
+        "DDS",
+        "LIN",
+        "K-Leitung",
+        "OBD"
+       ],
+       "a": 0,
+       "e": "Data Distribution Service.",
+       "id": "net.m4.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "net.m4.l3",
+     "title": "Zeit und Echtzeit auf Ethernet",
+     "min": 6,
+     "body": [
+      "Für Regelungen und Sensorfusion braucht das Fahrzeug eine gemeinsame Zeit und garantierte Laufzeiten.",
+      "## Zeitsynchronisation",
+      "Mit gPTP (IEEE 802.1AS) gleichen Steuergeräte ihre Uhren über das Netz ab. So können zum Beispiel Kamera- und Radardaten mit gemeinsamen Zeitstempeln fusioniert werden.",
+      "## TSN",
+      "Time-Sensitive Networking ist eine Sammlung von IEEE-Standards: Zeitgesteuerte Warteschlangen (Time-Aware Shaper) reservieren Zeitfenster für kritische Daten, Datenstrom-Reservierung garantiert Bandbreite, und redundante Pfade erhöhen die Ausfallsicherheit.",
+      "## Warum das wichtig ist",
+      "Ohne solche Mechanismen könnte ein großer Datenstrom, etwa ein Software-Download, kritische Steuerdaten verzögern. TSN macht Ethernet echtzeitfähig und ermöglicht so den Umstieg von FlexRay und vielen CAN-Verbindungen."
+     ],
+     "key": [
+      "gPTP (802.1AS): gemeinsame Zeit im Netz.",
+      "TSN: Zeitfenster, Bandbreitenreservierung, Redundanz.",
+      "Echtzeit-Ethernet ermöglicht zentrale Architekturen."
+     ],
+     "src": [
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "gPTP",
+       "b": "Generalized Precision Time Protocol (IEEE 802.1AS) zur Uhrensynchronisation im Netz.",
+       "id": "net.m4.l3.k1"
+      },
+      {
+       "f": "Time-Aware Shaper",
+       "b": "TSN-Mechanismus, der Zeitfenster für kritische Daten reserviert.",
+       "id": "net.m4.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wozu dient gPTP?",
+       "o": [
+        "Uhren abgleichen",
+        "Daten komprimieren",
+        "Steuergeräte flashen",
+        "Fehler entprellen"
+       ],
+       "a": 0,
+       "e": "IEEE 802.1AS.",
+       "id": "net.m4.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was verhindert TSN?",
+       "o": [
+        "Verzögerung kritischer Daten",
+        "Dass Kabel brechen",
+        "Dass Batterien altern",
+        "Dass Fehler gespeichert werden"
+       ],
+       "a": 0,
+       "e": "Zeitfenster und Reservierung schützen kritischen Verkehr.",
+       "id": "net.m4.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum braucht Sensorfusion gemeinsame Zeitstempel?",
+       "o": [
+        "Zur Zuordnung",
+        "Um Strom zu sparen",
+        "Um Daten zu verschlüsseln",
+        "Für die Uhrzeitanzeige"
+       ],
+       "a": 0,
+       "e": "Sonst passen Kamera- und Radarbilder nicht zusammen.",
+       "id": "net.m4.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist TSN?",
+       "o": [
+        "IEEE-Standards",
+        "Ein Fehlercode",
+        "Ein Steckertyp",
+        "Ein CAN-Format"
+       ],
+       "a": 0,
+       "e": "Für zeitkritische Kommunikation.",
+       "id": "net.m4.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Technik kann TSN-Ethernet in neuen Architekturen ersetzen?",
+       "o": [
+        "FlexRay",
+        "Die OBD-Buchse",
+        "Den Kabelbaum komplett",
+        "Die Batterie"
+       ],
+       "a": 0,
+       "e": "Echtzeitfähiges Ethernet übernimmt deterministische Aufgaben.",
+       "id": "net.m4.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net.m5",
+   "level": 3,
+   "title": "Fahrzeug und Außenwelt",
+   "desc": "Telematik, eCall, Over-the-Air und V2X.",
+   "lessons": [
+    {
+     "id": "net.m5.l1",
+     "title": "Telematik und eCall",
+     "min": 6,
+     "body": [
+      "Moderne Fahrzeuge sind ständig online. Eine Telematikeinheit mit Mobilfunkmodem (LTE, zunehmend 5G) verbindet das Fahrzeug mit dem Backend des Herstellers.",
+      "## Dienste",
+      "Fernzugriff per App (Klima vorheizen, verriegeln), Verkehrsinformationen, Ferndiagnose, Software-Updates, Flottenmanagement und Notruf.",
+      "## eCall",
+      "In der EU müssen neue Pkw- und leichte Nfz-Typen seit 31. März 2018 eCall haben. Bei einem schweren Unfall (etwa Airbagauslösung) wählt das Fahrzeug automatisch die Notrufnummer 112, sendet einen Mindestdatensatz (Position, Fahrtrichtung, Fahrzeugtyp, Zeit) und öffnet eine Sprechverbindung.",
+      "## Netzwechsel",
+      "Weil 2G- und 3G-Netze abgeschaltet werden, wird eCall auf neuere Mobilfunktechnik umgestellt (NG-eCall). Ältere Systeme können je nach Land und Netz eingeschränkt sein."
+     ],
+     "key": [
+      "Telematik verbindet Fahrzeug und Backend.",
+      "eCall: Pflicht für neue Typen seit 31.03.2018, wählt automatisch 112.",
+      "Umstieg auf neuere Mobilfunknetze (NG-eCall)."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2015/758: eCall-Pflicht für neue Fahrzeugtypen",
+       "u": "https://eur-lex.europa.eu/eli/reg/2015/758/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Telematikeinheit",
+       "b": "Steuergerät mit Mobilfunk, das Fahrzeug und Backend verbindet.",
+       "id": "net.m5.l1.k1"
+      },
+      {
+       "f": "eCall",
+       "b": "Automatischer Notruf an 112 nach schwerem Unfall, EU-Pflicht für neue Typen seit 2018.",
+       "id": "net.m5.l1.k2"
+      },
+      {
+       "f": "MSD",
+       "b": "Minimum Set of Data: Mindestdatensatz des eCall (Position, Richtung, Zeit u. a.).",
+       "id": "net.m5.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Nummer wählt eCall?",
+       "o": [
+        "112",
+        "110",
+        "911",
+        "0800 eCall"
+       ],
+       "a": 0,
+       "e": "Den europäischen Notruf.",
+       "id": "net.m5.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Seit wann ist eCall für neue Typen in der EU Pflicht?",
+       "o": [
+        "31. März 2018",
+        "1. Januar 2010",
+        "2025",
+        "1996"
+       ],
+       "a": 0,
+       "e": "Verordnung (EU) 2015/758.",
+       "id": "net.m5.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was sendet eCall automatisch?",
+       "o": [
+        "Position und Zeit",
+        "Das Fahrtenbuch",
+        "Die Musikliste",
+        "Den Reifendruck allein"
+       ],
+       "a": 0,
+       "e": "Den Mindestdatensatz (MSD).",
+       "id": "net.m5.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum wird eCall umgestellt?",
+       "o": [
+        "2G/3G endet",
+        "Weil 112 abgeschafft wird",
+        "Weil Unfälle seltener sind",
+        "Weil Satelliten fehlen"
+       ],
+       "a": 0,
+       "e": "Next Generation eCall nutzt neuere Netze.",
+       "id": "net.m5.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was gehört nicht zu Telematikdiensten?",
+       "o": [
+        "Zündung regeln",
+        "Software-Updates",
+        "Fernzugriff per App",
+        "Ferndiagnose"
+       ],
+       "a": 0,
+       "e": "Zündung regelt das Motorsteuergerät lokal.",
+       "id": "net.m5.l1.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "net.m5.l2",
+     "title": "Over-the-Air-Updates",
+     "min": 6,
+     "body": [
+      "Over-the-Air (OTA) bedeutet, Software über Mobilfunk ins Fahrzeug zu bringen.",
+      "## Ablauf",
+      "Das Backend stellt ein Update-Paket bereit, das Fahrzeug lädt es im Hintergrund, prüft Signatur und Integrität und installiert es, wenn der Zustand sicher ist (Fahrzeug steht, Batterie ausreichend, Fahrer zugestimmt). Mehrere Steuergeräte werden koordiniert aktualisiert.",
+      "## Technik",
+      "Ein Update-Master im Fahrzeug verteilt die Daten an die Zielsteuergeräte, intern oft über UDS oder Ethernet. A/B-Speicher erlauben die Installation im Hintergrund und ein Zurückfallen auf die alte Version. Delta-Updates übertragen nur Unterschiede und sparen Datenvolumen.",
+      "## Regeln",
+      "UN R156 verlangt ein Software-Update-Managementsystem beim Hersteller, und UN R155 die Absicherung gegen Angriffe. Updates, die genehmigungsrelevante Funktionen betreffen, müssen bewertet und dokumentiert werden."
+     ],
+     "key": [
+      "OTA: laden, prüfen, im sicheren Zustand installieren.",
+      "Update-Master, A/B-Speicher, Delta-Updates.",
+      "R156 (Update-Management) und R155 (Cybersecurity)."
+     ],
+     "src": [
+      {
+       "n": "UNECE: UN-Regelung Nr. 156 (Software Update und SUMS)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      },
+      {
+       "n": "UNECE: UN-Regelung Nr. 155 (Cyber Security und CSMS)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Update-Master",
+       "b": "Fahrzeugfunktion, die OTA-Updates koordiniert und an Steuergeräte verteilt.",
+       "id": "net.m5.l2.k1"
+      },
+      {
+       "f": "Delta-Update",
+       "b": "Update, das nur die Unterschiede zur installierten Version überträgt.",
+       "id": "net.m5.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wann wird ein OTA-Update typischerweise installiert?",
+       "o": [
+        "Im Stand",
+        "Während der Autobahnfahrt",
+        "Während des Bremsens",
+        "Nur nachts um drei"
+       ],
+       "a": 0,
+       "e": "Sicherheit geht vor.",
+       "id": "net.m5.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was spart ein Delta-Update?",
+       "o": [
+        "Datenvolumen",
+        "Kraftstoff",
+        "Reifen",
+        "Steuergeräte"
+       ],
+       "a": 0,
+       "e": "Nur Unterschiede werden übertragen.",
+       "id": "net.m5.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was prüft das Fahrzeug vor der Installation?",
+       "o": [
+        "Signatur",
+        "Die Wettervorhersage",
+        "Den Kontostand",
+        "Die Musikliste"
+       ],
+       "a": 0,
+       "e": "Nur echte, unveränderte Updates.",
+       "id": "net.m5.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was regelt UN R156?",
+       "o": [
+        "Updates",
+        "Abgasgrenzwerte",
+        "Reifenabrieb",
+        "Lichtfarben"
+       ],
+       "a": 0,
+       "e": "R155 betrifft Cybersecurity.",
+       "id": "net.m5.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient der A/B-Speicher bei OTA?",
+       "o": [
+        "Rückfallebene",
+        "Doppelte Rechenleistung",
+        "Zwei Sprachen",
+        "Zwei Fahrer"
+       ],
+       "a": 0,
+       "e": "Die alte Version bleibt bis zum erfolgreichen Umschalten aktiv.",
+       "id": "net.m5.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "net.m5.l3",
+     "title": "V2X: Fahrzeuge reden miteinander",
+     "min": 6,
+     "body": [
+      "Vehicle-to-Everything (V2X) bedeutet direkte Kommunikation zwischen Fahrzeugen (V2V), mit der Infrastruktur (V2I) und weiteren Teilnehmern.",
+      "## Technologien",
+      "Zwei Ansätze konkurrieren: ITS-G5 (in den USA DSRC), basierend auf WLAN IEEE 802.11p, und C-V2X, basierend auf Mobilfunk, mit direkter Kommunikation über die PC5-Schnittstelle ohne Netz. Beide nutzen das 5,9-GHz-Band.",
+      "## Nachrichten",
+      "In Europa sind Nachrichten nach ETSI standardisiert, etwa Cooperative Awareness Messages (CAM: ich bin hier, so schnell, in diese Richtung) und Decentralized Environmental Notification Messages (DENM: Warnung vor Gefahr, z. B. Stauende oder Baustelle).",
+      "## Sicherheit und Datenschutz",
+      "Nachrichten werden mit Zertifikaten signiert, damit niemand falsche Warnungen einschleusen kann. Pseudonyme Zertifikate wechseln regelmäßig, damit Fahrzeuge nicht verfolgt werden können. Die Verbreitung wächst, ist aber noch begrenzt."
+     ],
+     "key": [
+      "V2X: V2V, V2I und mehr.",
+      "ITS-G5 (802.11p) vs. C-V2X (PC5), 5,9 GHz.",
+      "CAM und DENM; signiert mit wechselnden Pseudonym-Zertifikaten."
+     ],
+     "src": [
+      {
+       "n": "ETSI: Intelligent Transport Systems (ITS, u. a. ITS-G5 und C-ITS-Nachrichten)",
+       "u": "https://www.etsi.org/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "CAM",
+       "b": "Cooperative Awareness Message: regelmäßige Statusnachricht eines Fahrzeugs (Position, Geschwindigkeit).",
+       "id": "net.m5.l3.k1"
+      },
+      {
+       "f": "DENM",
+       "b": "Decentralized Environmental Notification Message: Warnung vor einem Ereignis, z. B. Stauende.",
+       "id": "net.m5.l3.k2"
+      },
+      {
+       "f": "C-V2X",
+       "b": "Mobilfunkbasierte V2X-Kommunikation, auch direkt über PC5 ohne Netz.",
+       "id": "net.m5.l3.k3"
+      },
+      {
+       "f": "Pseudonym-Zertifikat",
+       "b": "Regelmäßig wechselndes Zertifikat, das Verfolgung von Fahrzeugen erschwert.",
+       "id": "net.m5.l3.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was meldet eine CAM?",
+       "o": [
+        "Ort und Tempo",
+        "Einen Unfall auf der Gegenspur",
+        "Die Musik des Fahrers",
+        "Den Ölstand"
+       ],
+       "a": 0,
+       "e": "Regelmäßige Statusnachricht.",
+       "id": "net.m5.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dienen wechselnde Pseudonym-Zertifikate?",
+       "o": [
+        "Schutz vor Tracking",
+        "Die Reichweite erhöhen",
+        "Strom sparen",
+        "Nachrichten verkürzen"
+       ],
+       "a": 0,
+       "e": "Datenschutz trotz Signatur.",
+       "id": "net.m5.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Worauf basiert ITS-G5?",
+       "o": [
+        "WLAN 802.11p",
+        "Bluetooth",
+        "CAN",
+        "LIN"
+       ],
+       "a": 0,
+       "e": "In den USA als DSRC bekannt.",
+       "id": "net.m5.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet V2I?",
+       "o": [
+        "Fahrzeug zu Infrastruktur",
+        "Fahrzeug zu Internet-Radio",
+        "Fahrzeug zu Inspektion",
+        "Fahrzeug zu Innenraum"
+       ],
+       "a": 0,
+       "e": "Etwa Ampeln oder Baustellenbaken.",
+       "id": "net.m5.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum werden V2X-Nachrichten signiert?",
+       "o": [
+        "Gegen falsche Warnungen",
+        "Damit sie schneller sind",
+        "Damit sie kürzer sind",
+        "Für die Werbung"
+       ],
+       "a": 0,
+       "e": "Empfänger prüfen die Echtheit.",
+       "id": "net.m5.l3.q5"
+      }
+     ],
+     "vol": true
+    }
+   ]
+  },
+  {
+   "id": "net.m6",
+   "level": 3,
+   "title": "Netzwerke entwickeln und testen",
+   "desc": "Netzwerkmanagement, Analyse, Restbussimulation und typische Fehler.",
+   "lessons": [
+    {
+     "id": "net.m6.l1",
+     "title": "Netzwerkmanagement und Energie",
+     "min": 6,
+     "body": [
+      "Ein Fahrzeug im Stand darf seine Batterie nicht leersaugen. Gleichzeitig sollen manche Funktionen auch im Stand laufen.",
+      "## Koordiniertes Schlafen",
+      "Netzwerkmanagement-Botschaften zeigen, wer den Bus noch braucht. Erst wenn niemand mehr sendet, schlafen alle gemeinsam ein (in AUTOSAR z. B. CanNm, UdpNm für Ethernet).",
+      "## Teilnetze",
+      "Partial Networking lässt nur die nötigen Steuergeräte wach. Spezielle Transceiver erkennen Weckbotschaften selbst, ohne den Controller zu starten.",
+      "## Typischer Fehler",
+      "Ein Steuergerät, das nicht einschläft, hält den ganzen Bus wach. Folge: leere Batterie nach einigen Tagen. Die Suche nach dem „Wachhalter“ gehört zu den klassischen Netzwerkdiagnosen; dazu misst man den Ruhestrom und beobachtet, wer weiter sendet."
+     ],
+     "key": [
+      "NM: gemeinsam einschlafen, wenn niemand den Bus braucht.",
+      "Partial Networking: nur nötige Teilnehmer wach.",
+      "Klassischer Fehler: Wachhalter entleert die Batterie."
+     ],
+     "src": [
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Wachhalter",
+       "b": "Steuergerät, das nicht einschläft und dadurch den Bus wach hält.",
+       "id": "net.m6.l1.k1"
+      },
+      {
+       "f": "Ruhestrom",
+       "b": "Stromaufnahme des abgestellten Fahrzeugs; zu hoch bei Wachhaltern.",
+       "id": "net.m6.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was passiert, wenn ein Steuergerät nicht einschläft?",
+       "o": [
+        "Batterie wird leer",
+        "Nichts",
+        "Der Motor startet",
+        "Das Radio wird lauter"
+       ],
+       "a": 0,
+       "e": "Ein klassischer Fehler in der Werkstatt.",
+       "id": "net.m6.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie findet man einen Wachhalter?",
+       "o": [
+        "Ruhestrom messen",
+        "Reifen wechseln",
+        "Öl wechseln",
+        "Lack polieren"
+       ],
+       "a": 0,
+       "e": "Wer sendet noch, wenn alle schlafen sollten?",
+       "id": "net.m6.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was erkennt ein Transceiver mit Partial Networking selbst?",
+       "o": [
+        "Wecksignale",
+        "Abgaswerte",
+        "Reifendruck",
+        "Fahrerprofile"
+       ],
+       "a": 0,
+       "e": "Ohne den Controller zu starten.",
+       "id": "net.m6.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wie heißt das AUTOSAR-NM für Ethernet?",
+       "o": [
+        "UdpNm",
+        "CanNm",
+        "FrNm",
+        "LinNm"
+       ],
+       "a": 0,
+       "e": "Netzwerkmanagement über UDP.",
+       "id": "net.m6.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wann schläft ein Bus mit NM ein?",
+       "o": [
+        "Wenn keiner sendet",
+        "Sofort bei Zündung aus",
+        "Nur nachts",
+        "Nie"
+       ],
+       "a": 0,
+       "e": "Alle müssen zustimmen.",
+       "id": "net.m6.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "net.m6.l2",
+     "title": "Analysieren und simulieren",
+     "min": 6,
+     "body": [
+      "Netzwerke entwickelt man mit Werkzeugen, die Busverkehr mitschneiden, darstellen und simulieren.",
+      "## Mitschnitt",
+      "Ein Bus-Interface zeichnet alle Frames mit Zeitstempel auf. Mit der Kommunikationsbeschreibung (DBC, ARXML) werden Rohdaten zu Signalen mit Namen und Einheit. Auf Ethernet nutzt man ähnliche Werkzeuge oder Wireshark mit passenden Dissektoren.",
+      "## Restbussimulation",
+      "Soll ein einzelnes Steuergerät getestet werden, simuliert ein Werkzeug alle anderen Teilnehmer: Es sendet deren Botschaften mit plausiblen Werten. So arbeitet das Steuergerät, als säße es im Fahrzeug.",
+      "## HiL-Tests",
+      "Bei Hardware-in-the-Loop-Tests hängt das echte Steuergerät an einem Simulator, der Sensoren, Aktoren und Busse in Echtzeit nachbildet. So lassen sich auch gefährliche Situationen und Fehler sicher testen."
+     ],
+     "key": [
+      "Mitschnitt + Beschreibung = Signale im Klartext.",
+      "Restbussimulation ersetzt fehlende Steuergeräte.",
+      "HiL: echtes Steuergerät, simulierte Umgebung."
+     ],
+     "src": [
+      {
+       "n": "Normen: ISO 11898 (CAN, CAN FD, CAN XL), ISO 17987 (LIN), ISO 17458 (FlexRay), IEEE 802.3 (Automotive Ethernet)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Restbussimulation",
+       "b": "Simulation aller anderen Busteilnehmer, damit ein Steuergerät isoliert getestet werden kann.",
+       "id": "net.m6.l2.k1"
+      },
+      {
+       "f": "HiL",
+       "b": "Hardware-in-the-Loop: echtes Steuergerät an einer Echtzeitsimulation der Umgebung.",
+       "id": "net.m6.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was macht eine Restbussimulation?",
+       "o": [
+        "Ersetzt fehlende Knoten",
+        "Löscht Fehler",
+        "Misst Abgase",
+        "Lädt Batterien"
+       ],
+       "a": 0,
+       "e": "Das Prüfling-Steuergerät merkt keinen Unterschied.",
+       "id": "net.m6.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was braucht man, um Rohdaten als Signale anzuzeigen?",
+       "o": [
+        "Die K-Matrix",
+        "Den Fahrzeugschein",
+        "Ein Navigationsgerät",
+        "Eine Abgasmessung"
+       ],
+       "a": 0,
+       "e": "DBC oder ARXML.",
+       "id": "net.m6.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Vorteil von HiL-Tests?",
+       "o": [
+        "Gefahrlos testen",
+        "Keine Hardware nötig",
+        "Kein Strom nötig",
+        "Keine Software nötig"
+       ],
+       "a": 0,
+       "e": "Fehler lassen sich gezielt einspeisen.",
+       "id": "net.m6.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Womit lassen sich Ethernet-Mitschnitte analysieren?",
+       "o": [
+        "Mit Wireshark",
+        "Nur mit dem Multimeter",
+        "Mit einem Thermometer",
+        "Mit dem Kilometerzähler"
+       ],
+       "a": 0,
+       "e": "Mit passenden Dissektoren für Fahrzeugprotokolle.",
+       "id": "net.m6.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeichnet ein Mitschnitt auf?",
+       "o": [
+        "Alle Frames",
+        "Nur Fehler",
+        "Nur die Uhrzeit",
+        "Nur den Kilometerstand"
+       ],
+       "a": 0,
+       "e": "Grundlage jeder Analyse.",
+       "id": "net.m6.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "net.m6.l3",
+     "title": "Typische Netzwerkfehler finden",
+     "min": 6,
+     "body": [
+      "Netzwerkfehler zeigen sich oft als viele Fehlercodes in verschiedenen Steuergeräten.",
+      "## Physikalische Fehler",
+      "Kurzschluss zwischen CAN-High und CAN-Low, Kurzschluss nach Masse oder Plus, fehlender Abschlusswiderstand, Kontaktprobleme in Steckern, Feuchtigkeit. Erste Messungen: Widerstand zwischen den Leitungen bei ausgeschaltetem Fahrzeug (Soll etwa 60 Ω) und Pegel mit dem Oszilloskop.",
+      "## Logische Fehler",
+      "Fehlende Botschaften (Timeout), falsche Zykluszeiten, falsche Inhalte, Zähler oder Prüfsummen, die nicht passen (E2E-Fehler), Teilnehmer im Bus-Off.",
+      "## Vorgehen",
+      "Erst prüfen, welche Steuergeräte U-Codes speichern und welche Partner sie vermissen. Fehlt ein Teilnehmer bei allen, liegt das Problem bei ihm oder seiner Versorgung. Fehlen viele auf einem Bus, liegt es eher am Bus selbst."
+     ],
+     "key": [
+      "Physikalisch: Kurzschlüsse, Abschluss, Stecker; messen mit Ohmmeter und Oszilloskop.",
+      "Logisch: Timeouts, Zykluszeiten, E2E-Fehler, Bus-Off.",
+      "U-Codes vergleichen: Wer fehlt bei wem?"
+     ],
+     "src": [
+      {
+       "n": "CAN in Automation (CiA): Grundlagen zu CAN, CAN FD und CAN XL",
+       "u": "https://www.can-cia.org/can-knowledge/"
+      },
+      {
+       "n": "SAE J2012: Diagnostic Trouble Code Definitions"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Timeout (Botschaft)",
+       "b": "Erwartete Botschaft bleibt länger aus als erlaubt.",
+       "id": "net.m6.l3.k1"
+      },
+      {
+       "f": "E2E-Fehler",
+       "b": "Zähler oder Prüfsumme einer gesicherten Botschaft passt nicht.",
+       "id": "net.m6.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Alle Steuergeräte vermissen die Botschaften desselben Teilnehmers. Was liegt nahe?",
+       "o": [
+        "Fehler bei diesem Knoten",
+        "Der Bus ist überall defekt",
+        "Die Software aller ist fehlerhaft",
+        "Das Radio stört"
+       ],
+       "a": 0,
+       "e": "Gemeinsamer Nenner ist der fehlende Teilnehmer.",
+       "id": "net.m6.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Man misst 0 Ω zwischen CAN-High und CAN-Low. Was ist los?",
+       "o": [
+        "Kurzschluss",
+        "Alles in Ordnung",
+        "Ein Abschluss fehlt",
+        "Der Bus schläft"
+       ],
+       "a": 0,
+       "e": "Soll sind etwa 60 Ω.",
+       "id": "net.m6.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein logischer Netzwerkfehler?",
+       "o": [
+        "Falsche Zykluszeit",
+        "Gebrochenes Kabel",
+        "Korrodierter Stecker",
+        "Feuchtigkeit im Stecker"
+       ],
+       "a": 0,
+       "e": "Die anderen sind physikalische Fehler.",
+       "id": "net.m6.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Womit sieht man die Pegel auf dem Bus?",
+       "o": [
+        "Mit dem Oszilloskop",
+        "Mit dem Reifendruckprüfer",
+        "Mit dem Thermometer",
+        "Mit der Waage"
+       ],
+       "a": 0,
+       "e": "Es zeigt Flanken und Störungen.",
+       "id": "net.m6.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeigt ein E2E-Fehler?",
+       "o": [
+        "Zähler/CRC falsch",
+        "Die Batterie ist leer",
+        "Der Tank ist voll",
+        "Die Software ist aktuell"
+       ],
+       "a": 0,
+       "e": "Inhalte sind veraltet oder verfälscht.",
+       "id": "net.m6.l3.q5"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

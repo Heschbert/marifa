@@ -1060,3 +1060,30 @@ button.shic svg { margin-left: 2px; }
 @media (prefers-reduced-motion: reduce) { .pbub, .pdeco, .pfinal.open .pnode.big { animation: none; } }
 .punit .pnode.cur { animation-name: upulse; }
 @keyframes upulse { 50% { box-shadow: 0 6px 0 color-mix(in srgb, var(--u) 60%, #000), 0 0 0 13px color-mix(in srgb, var(--u) 10%, transparent); } }
+
+/* Kurs-Widgets Fahrzeugtechnik (3.18): DTC, UDS, IUMPR, SAE */
+.kwin { width: 100%; font: inherit; font-size: 22px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; padding: 10px 14px; margin-top: 6px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--soft); color: var(--fg); }
+.kwdtc { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 12px 0 8px; }
+.kwdc { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 4px; border-radius: 12px; background: var(--soft); text-align: center; }
+.kwdc b { font-size: 24px; color: var(--accent); letter-spacing: .05em; }
+.kwdc span { font-size: 11px; line-height: 1.3; color: var(--mute); }
+.kwgridb { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin: 8px 0; }
+.kwgridb .kwb { display: flex; flex-direction: column; align-items: flex-start; text-align: left; gap: 1px; padding: 8px 10px; }
+.kwgridb .kwb b { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13px; }
+.kwgridb .kwb small { font-size: 11px; color: var(--mute); font-weight: 500; }
+.kwlog { display: flex; flex-direction: column; gap: 6px; margin: 8px 0 4px; }
+.kwmsg { border-radius: 12px; padding: 8px 10px; border-left: 4px solid var(--line); background: var(--soft); display: flex; flex-direction: column; gap: 2px; }
+.kwmsg.ok { border-left-color: var(--ok); } .kwmsg.bad { border-left-color: var(--bad); }
+.kwmsg.old { opacity: .6; }
+.kwmsg code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12.5px; word-break: break-all; }
+.kwmsg span { font-size: 12.5px; color: var(--mute); }
+.kwtrack { fill: var(--soft); }
+.kwgood { fill: var(--ok); } .kwmid { fill: #f5b100; } .kwlow { fill: var(--bad); }
+.kwsae { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin-bottom: 8px; }
+.kwsae .kwb { font-size: 18px; font-weight: 800; padding: 10px 0; }
+.kwtab { display: grid; grid-template-columns: 42% 58%; gap: 6px 10px; margin: 8px 0 10px; font-size: 13.5px; align-items: center; }
+.kwtab > div { color: var(--mute); }
+.kwtab span { font-weight: 700; }
+.kwtab .sys { color: var(--accent); } .kwtab .hum { color: #e07c00; }
+.kwdtc { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.kwdc { min-width: 0; overflow-wrap: anywhere; hyphens: auto; }

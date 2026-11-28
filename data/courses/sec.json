@@ -1,0 +1,2056 @@
+{
+ "id": "sec",
+ "title": "Automotive Security",
+ "sub": "Angriffe verstehen und abwehren: R155, R156, ISO/SAE 21434, TARA, Kryptografie, sichere Diagnose und Updates",
+ "audience": "Alle, die verstehen wollen, wie Fahrzeuge gegen Cyberangriffe geschützt werden",
+ "stand": "11/2026",
+ "version": 1,
+ "review": "Allgemeines, öffentlich dokumentiertes Wissen (Quellen je Lektion); keine hersteller- oder projektspezifischen Details. Noch nicht durch eine Fachperson geprüft. Vorschriften ändern sich: Für verbindliche Arbeit immer den aktuellen Rechtstext prüfen.",
+ "levels": [
+  {
+   "id": 1,
+   "title": "Grundlagen"
+  },
+  {
+   "id": 2,
+   "title": "Fortgeschritten"
+  },
+  {
+   "id": 3,
+   "title": "Experte"
+  }
+ ],
+ "modules": [
+  {
+   "id": "sec.m1",
+   "level": 1,
+   "title": "Bedrohungen und Angriffsflächen",
+   "desc": "Warum Fahrzeuge Ziel von Angriffen sind, bekannte Fälle und typische Einfallstore.",
+   "lessons": [
+    {
+     "id": "sec.m1.l1",
+     "title": "Warum Fahrzeuge angreifbar sind",
+     "min": 5,
+     "body": [
+      "Ein modernes Fahrzeug ist ein vernetzter Computer auf Rädern: viele Steuergeräte, Mobilfunk, WLAN, Bluetooth, Funkschlüssel, Ladeanschluss und Apps. Jede Verbindung kann ein Einfallstor sein.",
+      "## Was auf dem Spiel steht",
+      "Sicherheit von Menschen (Eingriffe in Bremsen oder Lenkung), Diebstahl, Privatsphäre (Bewegungsprofile, Kontakte), Manipulation (Kilometerstand, Abgas, Leistung) und der Ruf des Herstellers.",
+      "## Security ist nicht Safety",
+      "Safety (funktionale Sicherheit) schützt vor zufälligen Fehlern und Ausfällen. Security (Angriffssicherheit) schützt vor absichtlichen Angriffen. Beides hängt zusammen: Ein Angriff kann ein Sicherheitsrisiko erzeugen."
+     ],
+     "key": [
+      "Viele Schnittstellen = viele Einfallstore.",
+      "Schutzgüter: Leben, Eigentum, Privatsphäre, Integrität, Ruf.",
+      "Safety: zufällige Fehler; Security: absichtliche Angriffe."
+     ],
+     "src": [
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Safety",
+       "b": "Funktionale Sicherheit: Schutz vor Gefahren durch Fehlfunktionen.",
+       "id": "sec.m1.l1.k1"
+      },
+      {
+       "f": "Security",
+       "b": "Angriffssicherheit: Schutz vor absichtlichen Angriffen.",
+       "id": "sec.m1.l1.k2"
+      },
+      {
+       "f": "Angriffsfläche",
+       "b": "Gesamtheit der Schnittstellen, über die ein Angreifer ein System erreichen kann.",
+       "id": "sec.m1.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was unterscheidet Security von Safety?",
+       "o": [
+        "Security schützt vor absichtlichen Angriffen",
+        "Security schützt nur vor Rost",
+        "Safety betrifft nur Software",
+        "Es gibt keinen Unterschied"
+       ],
+       "a": 0,
+       "e": "Safety betrifft zufällige Fehler und Ausfälle.",
+       "id": "sec.m1.l1.q1"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Schnittstellen vergrößern die Angriffsfläche?",
+       "o": [
+        "Mobilfunk",
+        "Bluetooth",
+        "Funkschlüssel",
+        "Der Lack"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Der Lack ist keine Datenschnittstelle.",
+       "id": "sec.m1.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was kann ein Angriff auf Fahrzeuge gefährden?",
+       "o": [
+        "Leben, Eigentum, Daten",
+        "Nur den Kraftstoffverbrauch",
+        "Nur das Radio",
+        "Gar nichts"
+       ],
+       "a": 0,
+       "e": "Die Schutzgüter sind vielfältig.",
+       "id": "sec.m1.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Kann ein Security-Angriff ein Safety-Risiko erzeugen?",
+       "o": [
+        "Ja, etwa Bremsen",
+        "Nein, nie",
+        "Nur bei Elektroautos",
+        "Nur in der Werkstatt"
+       ],
+       "a": 0,
+       "e": "Deshalb müssen beide Disziplinen zusammenarbeiten.",
+       "id": "sec.m1.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist eine Angriffsfläche?",
+       "o": [
+        "Alle Zugänge",
+        "Die Karosserieoberfläche",
+        "Die Reifenlauffläche",
+        "Der Kofferraum"
+       ],
+       "a": 0,
+       "e": "Je kleiner, desto besser.",
+       "id": "sec.m1.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "sec.m1.l2",
+     "title": "Bekannte Fälle",
+     "min": 6,
+     "body": [
+      "Einige Angriffe haben die Branche geprägt.",
+      "## Fernangriff 2015",
+      "Die Sicherheitsforscher Charlie Miller und Chris Valasek zeigten 2015, dass sie einen Jeep Cherokee über das Mobilfunknetz erreichen konnten: über eine Lücke im Infotainmentsystem bis auf den CAN-Bus, mit Einfluss auf Fahrfunktionen. Der Hersteller rief rund 1,4 Millionen Fahrzeuge zurück.",
+      "## Relay-Angriffe auf Keyless",
+      "Diebe verlängern mit zwei Funkgeräten die Reichweite des Schlüssels im Haus bis zum Auto. Das Fahrzeug glaubt, der Schlüssel sei nah, und öffnet. Gegenmittel sind Laufzeitmessung (Ultra-Wideband) oder Schlüssel mit Bewegungssensor.",
+      "## CAN-Injection",
+      "Diebe öffneten etwa Kabel hinter einem Scheinwerfer und speisten Botschaften direkt in einen Bus ein, die das Fahrzeug entriegelten. Das zeigt: Auch der physische Zugang zu Leitungen ist eine Angriffsfläche, und Botschaften ohne Authentisierung lassen sich fälschen."
+     ],
+     "key": [
+      "2015: Fernangriff über Infotainment bis CAN, 1,4 Mio. Rückrufe.",
+      "Relay-Angriffe verlängern die Schlüsselreichweite.",
+      "CAN-Injection: ungeschützte Botschaften lassen sich fälschen."
+     ],
+     "src": [
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      },
+      {
+       "n": "UNECE: UN-Regelung Nr. 155 (Cyber Security und CSMS)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Relay-Angriff",
+       "b": "Verlängerung der Funkreichweite eines Schlüssels mit zwei Geräten, um ein Fahrzeug zu öffnen.",
+       "id": "sec.m1.l2.k1"
+      },
+      {
+       "f": "CAN-Injection",
+       "b": "Einspeisen gefälschter Botschaften direkt in einen Fahrzeugbus.",
+       "id": "sec.m1.l2.k2"
+      },
+      {
+       "f": "UWB",
+       "b": "Ultra-Wideband: Funktechnik mit genauer Laufzeitmessung gegen Relay-Angriffe.",
+       "id": "sec.m1.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was war das Einfallstor beim Fernangriff 2015?",
+       "o": [
+        "Infotainment",
+        "Die OBD-Buchse",
+        "Der Tankdeckel",
+        "Ein Reifendrucksensor"
+       ],
+       "a": 0,
+       "e": "Von dort ging es bis auf den CAN-Bus.",
+       "id": "sec.m1.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie funktioniert ein Relay-Angriff?",
+       "o": [
+        "Schlüsselfunk wird verlängert",
+        "Schlüssel wird kopiert und neu gefräst",
+        "Die Batterie wird abgeklemmt",
+        "Das Fenster wird eingeschlagen"
+       ],
+       "a": 0,
+       "e": "Das Auto hält den Schlüssel für nah.",
+       "id": "sec.m1.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was hilft gegen Relay-Angriffe?",
+       "o": [
+        "UWB-Laufzeit",
+        "Lautere Hupe",
+        "Größere Schlüssel",
+        "Mehr Spiegel"
+       ],
+       "a": 0,
+       "e": "Die Signallaufzeit verrät die Entfernung.",
+       "id": "sec.m1.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeigte CAN-Injection?",
+       "o": [
+        "Fälschbare Botschaften",
+        "CAN ist abhörsicher",
+        "Scheinwerfer sind unwichtig",
+        "Fahrzeuge brauchen keine Busse"
+       ],
+       "a": 0,
+       "e": "Authentisierte Botschaften (SecOC) helfen.",
+       "id": "sec.m1.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viele Fahrzeuge wurden nach 2015 zurückgerufen?",
+       "o": [
+        "1,4 Millionen",
+        "Etwa 100",
+        "Keine",
+        "Etwa 50 Millionen"
+       ],
+       "a": 0,
+       "e": "Es war der erste große Cyber-Rückruf.",
+       "id": "sec.m1.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "sec.m1.l3",
+     "title": "Angreifer und Angriffspfade",
+     "min": 6,
+     "body": [
+      "Wer greift an und wie?",
+      "## Angreifertypen",
+      "Kriminelle (Diebstahl, Erpressung), Tuner und Halter (Leistung, Kilometerstand, Abgas), Forscher (Lücken finden und melden), staatliche Akteure. Ihre Mittel und Motive unterscheiden sich stark.",
+      "## Pfade",
+      "Fern (Mobilfunk, Backend, App), nah (Bluetooth, WLAN, Schlüsselfunk, Reifendrucksensoren, V2X), mit physischem Zugang (OBD-Buchse, Ladeanschluss, Busleitungen, Ausbau von Steuergeräten) und über die Lieferkette (manipulierte Bauteile oder Software).",
+      "## Der typische Weg",
+      "Angreifer suchen einen erreichbaren Einstieg, verschaffen sich dort Kontrolle und bewegen sich dann weiter in Richtung kritischer Funktionen (laterale Bewegung). Deshalb setzt man auf mehrere Schutzschichten: Selbst wenn eine fällt, halten die anderen (Defense in Depth)."
+     ],
+     "key": [
+      "Angreifer: Kriminelle, Halter/Tuner, Forscher, Staaten.",
+      "Pfade: fern, nah, physisch, Lieferkette.",
+      "Defense in Depth: mehrere Schutzschichten."
+     ],
+     "src": [
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Defense in Depth",
+       "b": "Mehrere unabhängige Schutzschichten, damit ein einzelner Durchbruch nicht reicht.",
+       "id": "sec.m1.l3.k1"
+      },
+      {
+       "f": "Laterale Bewegung",
+       "b": "Vorgehen eines Angreifers, sich vom Einstiegspunkt zu weiteren Systemen vorzuarbeiten.",
+       "id": "sec.m1.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was bedeutet Defense in Depth?",
+       "o": [
+        "Mehrere Schutzschichten",
+        "Ein einziger starker Schutz",
+        "Schutz nur im Motorraum",
+        "Tiefe Garage"
+       ],
+       "a": 0,
+       "e": "Fällt eine Schicht, halten die anderen.",
+       "id": "sec.m1.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Angreifertyp manipuliert oft den Kilometerstand?",
+       "o": [
+        "Betrüger",
+        "Sicherheitsforscher",
+        "Staatliche Akteure",
+        "Niemand"
+       ],
+       "a": 0,
+       "e": "Motive unterscheiden sich stark.",
+       "id": "sec.m1.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein physischer Angriffspfad?",
+       "o": [
+        "Die OBD-Buchse",
+        "Das Mobilfunknetz",
+        "Die Smartphone-App",
+        "Das Backend"
+       ],
+       "a": 0,
+       "e": "Dafür braucht man Zugang zum Fahrzeug.",
+       "id": "sec.m1.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt laterale Bewegung?",
+       "o": [
+        "Sich weiterarbeiten",
+        "Seitliches Einparken",
+        "Spurwechsel auf der Autobahn",
+        "Bewegung der Lenkung"
+       ],
+       "a": 0,
+       "e": "Deshalb trennt man Netze.",
+       "id": "sec.m1.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Lieferketten-Angriff?",
+       "o": [
+        "Manipulierte Bauteile oder Software",
+        "Diebstahl eines Lkw",
+        "Stau auf der Autobahn",
+        "Verspätete Lieferung"
+       ],
+       "a": 0,
+       "e": "Der Angriff steckt schon im Produkt.",
+       "id": "sec.m1.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sec.m2",
+   "level": 1,
+   "title": "Regeln: R155, R156, ISO/SAE 21434",
+   "desc": "Was Gesetzgeber und Normen verlangen.",
+   "lessons": [
+    {
+     "id": "sec.m2.l1",
+     "title": "UN R155: Cybersecurity-Managementsystem",
+     "min": 6,
+     "body": [
+      "Die UN-Regelung Nr. 155 verpflichtet Hersteller, ein Cybersecurity-Managementsystem (CSMS) zu betreiben und jeden Fahrzeugtyp gegen Cyberangriffe abzusichern.",
+      "## Geltung in der EU",
+      "Für neue Fahrzeugtypen gilt R155 in der EU seit Juli 2022, für alle neu zugelassenen Fahrzeuge der betroffenen Klassen seit Juli 2024. Fahrzeuge ohne Nachweis dürfen nicht neu zugelassen werden, was zu Produktionsstopps einzelner älterer Modelle führte.",
+      "## Was gefordert wird",
+      "Prozesse über den gesamten Lebenszyklus: Risiken erkennen und bewerten, Schutzmaßnahmen umsetzen, testen, Angriffe im Feld überwachen und auf neue Bedrohungen reagieren, auch bei Lieferanten. Ein Anhang listet typische Bedrohungen und Gegenmaßnahmen.",
+      "## Zwei Nachweise",
+      "Das CSMS des Herstellers wird zertifiziert (gilt drei Jahre). Für jeden Fahrzeugtyp wird zusätzlich geprüft, ob die Risiken angemessen behandelt sind."
+     ],
+     "key": [
+      "R155: CSMS beim Hersteller und abgesicherte Fahrzeugtypen.",
+      "EU: neue Typen seit 07/2022, alle Neuzulassungen seit 07/2024.",
+      "Lebenszyklus: erkennen, schützen, testen, überwachen, reagieren."
+     ],
+     "src": [
+      {
+       "n": "UNECE: UN-Regelung Nr. 155 (Cyber Security und CSMS)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      }
+     ],
+     "cards": [
+      {
+       "f": "CSMS",
+       "b": "Cyber Security Management System: Organisation und Prozesse eines Herstellers für Cybersecurity.",
+       "id": "sec.m2.l1.k1"
+      },
+      {
+       "f": "UN R155",
+       "b": "UN-Regelung zu Cybersecurity und CSMS für Fahrzeuge.",
+       "id": "sec.m2.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Seit wann gilt R155 für alle neu zugelassenen Fahrzeuge (betroffene Klassen) in der EU?",
+       "o": [
+        "Juli 2024",
+        "Juli 2022",
+        "Januar 2030",
+        "Januar 2015"
+       ],
+       "a": 0,
+       "e": "Neue Typen seit Juli 2022.",
+       "id": "sec.m2.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein CSMS?",
+       "o": [
+        "Prozesse",
+        "Ein Steuergerät",
+        "Ein Fehlercode",
+        "Eine Firewall"
+       ],
+       "a": 0,
+       "e": "Es umfasst den gesamten Lebenszyklus.",
+       "id": "sec.m2.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie lange gilt ein CSMS-Zertifikat?",
+       "o": [
+        "Drei Jahre",
+        "Einen Tag",
+        "Für immer",
+        "Zehn Jahre"
+       ],
+       "a": 0,
+       "e": "Danach wird erneut geprüft.",
+       "id": "sec.m2.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was folgte für manche ältere Modelle aus R155?",
+       "o": [
+        "Stopp",
+        "Steuersenkung",
+        "Höhere Leistung",
+        "Nichts"
+       ],
+       "a": 0,
+       "e": "Ohne Nachweis keine Neuzulassung.",
+       "id": "sec.m2.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Gilt R155 auch für Lieferanten?",
+       "o": [
+        "Ja, mit Lieferkette",
+        "Nein, Lieferanten sind ausgenommen",
+        "Nur für Reifenhersteller",
+        "Nur außerhalb der EU"
+       ],
+       "a": 0,
+       "e": "Risiken in der Lieferkette müssen behandelt werden.",
+       "id": "sec.m2.l1.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "sec.m2.l2",
+     "title": "UN R156: Software-Updates",
+     "min": 6,
+     "body": [
+      "Die UN-Regelung Nr. 156 regelt Software-Updates, in der Werkstatt wie Over-the-Air. Sie gilt in der EU zu denselben Stichtagen wie R155.",
+      "## SUMS",
+      "Hersteller brauchen ein Software-Update-Managementsystem (SUMS): Sie müssen wissen, welche Software in welchem Fahrzeug steckt, Updates absichern, Abhängigkeiten prüfen und bewerten, ob ein Update genehmigungsrelevante Funktionen ändert.",
+      "## RXSWIN",
+      "Die Regulation X Software Identification Number kennzeichnet Software, die für eine bestimmte Typgenehmigung relevant ist. Ändert ein Update diese Software, ändert sich die RXSWIN, und das muss dokumentiert sein.",
+      "## Für OTA-Updates",
+      "Fahrer müssen informiert werden, das Update darf die Sicherheit nicht gefährden, und bei Fehlschlag muss das Fahrzeug in einen sicheren Zustand zurückkehren können. Benötigt ein Update besondere Bedingungen (etwa Fahrzeug steht), muss es diese sicherstellen."
+     ],
+     "key": [
+      "R156: SUMS für sichere, nachvollziehbare Updates.",
+      "RXSWIN kennzeichnet genehmigungsrelevante Software.",
+      "OTA: Information, Sicherheit, Rückfallebene."
+     ],
+     "src": [
+      {
+       "n": "UNECE: UN-Regelung Nr. 156 (Software Update und SUMS)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SUMS",
+       "b": "Software Update Management System nach UN R156.",
+       "id": "sec.m2.l2.k1"
+      },
+      {
+       "f": "RXSWIN",
+       "b": "Regulation X Software Identification Number: Kennung genehmigungsrelevanter Software.",
+       "id": "sec.m2.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was kennzeichnet die RXSWIN?",
+       "o": [
+        "Relevante Software",
+        "Die Fahrgestellnummer",
+        "Die Reifengröße",
+        "Den Kilometerstand"
+       ],
+       "a": 0,
+       "e": "Sie ändert sich mit relevanten Updates.",
+       "id": "sec.m2.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was muss bei einem fehlgeschlagenen OTA-Update möglich sein?",
+       "o": [
+        "Sicherer Zustand",
+        "Nichts",
+        "Weiterfahren ohne Bremsen",
+        "Automatische Abmeldung"
+       ],
+       "a": 0,
+       "e": "Das Fahrzeug darf nicht unsicher werden.",
+       "id": "sec.m2.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was muss ein SUMS unter anderem wissen?",
+       "o": [
+        "Welche Software in welchem Fahrzeug steckt",
+        "Wer das Fahrzeug fährt",
+        "Wo der Fahrer wohnt",
+        "Welche Musik läuft"
+       ],
+       "a": 0,
+       "e": "Ohne Übersicht keine sicheren Updates.",
+       "id": "sec.m2.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Gilt R156 auch für Updates in der Werkstatt?",
+       "o": [
+        "Ja, für alle",
+        "Nein, nur für OTA",
+        "Nur für Elektroautos",
+        "Nur für Lkw"
+       ],
+       "a": 0,
+       "e": "Werkstatt und OTA sind erfasst.",
+       "id": "sec.m2.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Ab wann gilt R156 in der EU für alle Neuzulassungen?",
+       "o": [
+        "Juli 2024",
+        "Juli 2020",
+        "Januar 2035",
+        "Nie"
+       ],
+       "a": 0,
+       "e": "Zu denselben Stichtagen wie R155.",
+       "id": "sec.m2.l2.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "sec.m2.l3",
+     "title": "ISO/SAE 21434",
+     "min": 6,
+     "body": [
+      "Die Norm ISO/SAE 21434 (2021) beschreibt, wie Cybersecurity im Engineering umgesetzt wird. Sie ist der wichtigste Weg, die Anforderungen von R155 praktisch zu erfüllen.",
+      "## Inhalte",
+      "Organisation und Kultur, Risikomanagement (TARA), Konzeptphase mit Cybersecurity-Zielen, Produktentwicklung mit Anforderungen und Verifikation, Validierung, Produktion, Betrieb und Wartung inklusive Schwachstellenmanagement bis zur Außerbetriebnahme.",
+      "## CAL",
+      "Ähnlich wie ASIL bei der funktionalen Sicherheit gibt es Cybersecurity Assurance Levels (CAL 1 bis 4). Sie legen fest, wie gründlich Maßnahmen umgesetzt und geprüft werden. Die Norm führt sie als informativen Ansatz.",
+      "## Zusammenspiel",
+      "ISO/SAE 21434 sagt nicht, welche Verschlüsselung zu nutzen ist, sondern wie man systematisch zu angemessenen Maßnahmen kommt. Sie arbeitet eng mit ISO 26262 zusammen, weil Angriffe Sicherheitsfolgen haben können."
+     ],
+     "key": [
+      "ISO/SAE 21434: Cybersecurity-Engineering über den Lebenszyklus.",
+      "TARA ist das Herzstück; CAL 1–4 als Gründlichkeitsstufen.",
+      "Sagt wie, nicht welche Technik; eng verzahnt mit ISO 26262."
+     ],
+     "src": [
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "ISO/SAE 21434",
+       "b": "Norm für Cybersecurity-Engineering von Straßenfahrzeugen (2021).",
+       "id": "sec.m2.l3.k1"
+      },
+      {
+       "f": "CAL",
+       "b": "Cybersecurity Assurance Level 1–4: Gründlichkeit von Maßnahmen und Prüfungen.",
+       "id": "sec.m2.l3.k2"
+      },
+      {
+       "f": "Cybersecurity-Ziel",
+       "b": "Oberste Schutzanforderung, abgeleitet aus der Risikoanalyse.",
+       "id": "sec.m2.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist das Herzstück von ISO/SAE 21434?",
+       "o": [
+        "Die Risikoanalyse TARA",
+        "Eine bestimmte Verschlüsselung",
+        "Ein Steckertyp",
+        "Ein Fehlercode"
+       ],
+       "a": 0,
+       "e": "Daraus folgen Ziele und Maßnahmen.",
+       "id": "sec.m2.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein CAL?",
+       "o": [
+        "Gründlichkeitsstufe",
+        "Ein Kalibrierwert",
+        "Eine Abgasstufe",
+        "Ein Bussystem"
+       ],
+       "a": 0,
+       "e": "Ähnlich der Idee hinter ASIL.",
+       "id": "sec.m2.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Schreibt die Norm konkrete Algorithmen vor?",
+       "o": [
+        "Nein",
+        "Ja, nur AES",
+        "Ja, nur RSA",
+        "Ja, nur Passwörter"
+       ],
+       "a": 0,
+       "e": "Maßnahmen folgen aus der Analyse.",
+       "id": "sec.m2.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Mit welcher Norm arbeitet 21434 eng zusammen?",
+       "o": [
+        "ISO 26262",
+        "ISO 9001 allein",
+        "SAE J1962",
+        "Euro 7"
+       ],
+       "a": 0,
+       "e": "Angriffe können Safety-Folgen haben.",
+       "id": "sec.m2.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Endet die Norm mit dem Produktionsstart?",
+       "o": [
+        "Nein, länger",
+        "Ja",
+        "Ja, mit der Typgenehmigung",
+        "Ja, mit dem ersten Update"
+       ],
+       "a": 0,
+       "e": "Betrieb und Schwachstellenmanagement gehören dazu.",
+       "id": "sec.m2.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sec.m3",
+   "level": 2,
+   "title": "Risiken analysieren: TARA",
+   "desc": "Schutzgüter, Bedrohungen, Angriffspfade, Bewertung und Maßnahmen.",
+   "lessons": [
+    {
+     "id": "sec.m3.l1",
+     "title": "Schutzgüter und Schadensszenarien",
+     "min": 6,
+     "body": [
+      "Die Threat Analysis and Risk Assessment (TARA) beginnt mit der Frage: Was wollen wir schützen?",
+      "## Schutzgüter",
+      "Schutzgüter (Assets) sind zum Beispiel Botschaften auf einem Bus, Schlüssel im Steuergerät, Software, Kalibrierdaten oder persönliche Daten. Für jedes Gut wird festgelegt, welche Eigenschaft wichtig ist: Vertraulichkeit, Integrität oder Verfügbarkeit.",
+      "## Schadensszenarien",
+      "Was passiert, wenn eine Eigenschaft verletzt wird? Wird die Integrität der Bremsbotschaft verletzt, kann das Fahrzeug ungewollt bremsen. Wird die Vertraulichkeit der Standortdaten verletzt, entsteht ein Bewegungsprofil.",
+      "## Auswirkung bewerten",
+      "Die Auswirkung wird in vier Kategorien bewertet: Sicherheit (Safety), finanziell, betrieblich und Privatsphäre, jeweils von vernachlässigbar bis schwerwiegend."
+     ],
+     "key": [
+      "TARA startet mit Schutzgütern und ihren Eigenschaften (V, I, V).",
+      "Schadensszenario: Folge einer Verletzung.",
+      "Auswirkung: Safety, finanziell, betrieblich, Privatsphäre."
+     ],
+     "src": [
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "TARA",
+       "b": "Threat Analysis and Risk Assessment: Bedrohungs- und Risikoanalyse.",
+       "id": "sec.m3.l1.k1"
+      },
+      {
+       "f": "Asset",
+       "b": "Schutzgut, z. B. Schlüssel, Software, Botschaften oder Daten.",
+       "id": "sec.m3.l1.k2"
+      },
+      {
+       "f": "CIA",
+       "b": "Confidentiality, Integrity, Availability: Vertraulichkeit, Integrität, Verfügbarkeit.",
+       "id": "sec.m3.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Womit beginnt eine TARA?",
+       "o": [
+        "Mit den Schutzgütern",
+        "Mit dem Kauf von Software",
+        "Mit einem Penetrationstest",
+        "Mit der Werbung"
+       ],
+       "a": 0,
+       "e": "Erst festlegen, was geschützt werden soll.",
+       "id": "sec.m3.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Eigenschaft ist bei einer Bremsbotschaft besonders wichtig?",
+       "o": [
+        "Integrität",
+        "Vertraulichkeit",
+        "Farbe",
+        "Lautstärke"
+       ],
+       "a": 0,
+       "e": "Gefälschte Werte wären gefährlich.",
+       "id": "sec.m3.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Eigenschaft ist bei Standortdaten besonders wichtig?",
+       "o": [
+        "Geheimhaltung",
+        "Integrität",
+        "Verfügbarkeit",
+        "Lautstärke"
+       ],
+       "a": 0,
+       "e": "Sonst drohen Bewegungsprofile.",
+       "id": "sec.m3.l1.q3"
+      },
+      {
+       "t": "multi",
+       "q": "In welchen Kategorien wird die Auswirkung bewertet?",
+       "o": [
+        "Safety",
+        "Finanziell",
+        "Privatsphäre",
+        "Lackqualität"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Dazu kommt betrieblich.",
+       "id": "sec.m3.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Schadensszenario?",
+       "o": [
+        "Folge eines Angriffs",
+        "Ein Unfallbericht der Polizei",
+        "Ein Werkstattauftrag",
+        "Eine Garantieleistung"
+       ],
+       "a": 0,
+       "e": "Etwa: ungewolltes Bremsen.",
+       "id": "sec.m3.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "sec.m3.l2",
+     "title": "Bedrohungen und Angriffspfade",
+     "min": 6,
+     "body": [
+      "Als Nächstes fragt man: Wie könnte jemand das Schutzgut angreifen?",
+      "## STRIDE",
+      "Ein bewährtes Hilfsmittel ist STRIDE: Spoofing (vortäuschen einer Identität), Tampering (Manipulation), Repudiation (Abstreiten), Information Disclosure (Ausspähen), Denial of Service (Lahmlegen), Elevation of Privilege (Rechte ausweiten).",
+      "## Angriffspfade",
+      "Für jede Bedrohung wird beschrieben, über welche Schritte ein Angreifer sie umsetzen könnte, zum Beispiel: Bluetooth-Lücke im Infotainment → Kontrolle über das Infotainment → gefälschte Botschaft über das Gateway → Bremsbotschaft.",
+      "## Machbarkeit",
+      "Die Angriffsmachbarkeit wird bewertet, etwa nach benötigter Zeit, Fachwissen, Wissen über das Ziel, Gelegenheit (Zugang) und Ausrüstung. Ein Angriff, der Wochen, Spezialwissen und teure Geräte braucht, ist weniger wahrscheinlich als einer mit frei verfügbaren Werkzeugen."
+     ],
+     "key": [
+      "STRIDE: Spoofing, Tampering, Repudiation, Information Disclosure, DoS, Elevation of Privilege.",
+      "Angriffspfade beschreiben Schritte zum Ziel.",
+      "Machbarkeit: Zeit, Wissen, Zugang, Ausrüstung."
+     ],
+     "src": [
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "STRIDE",
+       "b": "Bedrohungskategorien: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege.",
+       "id": "sec.m3.l2.k1"
+      },
+      {
+       "f": "Angriffsmachbarkeit",
+       "b": "Bewertung, wie leicht ein Angriff umsetzbar ist (Zeit, Wissen, Zugang, Ausrüstung).",
+       "id": "sec.m3.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wofür steht das S in STRIDE?",
+       "o": [
+        "Spoofing",
+        "Safety",
+        "Software",
+        "Speed"
+       ],
+       "a": 0,
+       "e": "Vortäuschen einer Identität.",
+       "id": "sec.m3.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist Tampering?",
+       "o": [
+        "Manipulation von Daten oder Software",
+        "Ausspähen von Daten",
+        "Lahmlegen eines Dienstes",
+        "Abstreiten einer Handlung"
+       ],
+       "a": 0,
+       "e": "Das T in STRIDE.",
+       "id": "sec.m3.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet Denial of Service?",
+       "o": [
+        "Lahmlegen",
+        "Rechte ausweiten",
+        "Daten verschlüsseln",
+        "Identität vortäuschen"
+       ],
+       "a": 0,
+       "e": "Die Verfügbarkeit wird angegriffen.",
+       "id": "sec.m3.l2.q3"
+      },
+      {
+       "t": "multi",
+       "q": "Was fließt in die Angriffsmachbarkeit ein?",
+       "o": [
+        "Benötigte Zeit",
+        "Fachwissen",
+        "Zugang",
+        "Lieblingsfarbe des Angreifers"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Dazu Ausrüstung und Zielwissen.",
+       "id": "sec.m3.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Angriff ist wahrscheinlicher?",
+       "o": [
+        "Einer mit frei verfügbaren Werkzeugen",
+        "Einer, der Spezialchips für Millionen braucht",
+        "Einer, der Jahre dauert",
+        "Einer, der Insiderwissen erfordert"
+       ],
+       "a": 0,
+       "e": "Geringe Hürden erhöhen die Machbarkeit.",
+       "id": "sec.m3.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "sec.m3.l3",
+     "title": "Risiko behandeln",
+     "min": 6,
+     "body": [
+      "Aus Auswirkung und Machbarkeit ergibt sich das Risiko, oft über eine Matrix.",
+      "## Vier Optionen",
+      "Vermeiden (Funktion weglassen oder anders gestalten), reduzieren (Schutzmaßnahmen), teilen (etwa über Verträge oder Versicherungen) und akzeptieren (wenn das Restrisiko vertretbar ist, mit Begründung).",
+      "## Cybersecurity-Ziele und -Anforderungen",
+      "Für reduzierte Risiken werden Ziele formuliert, etwa „Bremsbotschaften dürfen nicht unbemerkt gefälscht werden können“. Daraus folgen technische Anforderungen, etwa SecOC mit 128-Bit-Schlüsseln und Freshness-Werten.",
+      "## Iterativ",
+      "Eine TARA ist nie fertig. Neue Angriffstechniken, neue Schwachstellen oder Funktionsänderungen erfordern eine Neubewertung über den ganzen Lebenszyklus."
+     ],
+     "key": [
+      "Risiko = Auswirkung × Machbarkeit (Matrix).",
+      "Optionen: vermeiden, reduzieren, teilen, akzeptieren.",
+      "Ziele → Anforderungen; TARA wird laufend aktualisiert."
+     ],
+     "src": [
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Risikobehandlung",
+       "b": "Entscheidung, ein Risiko zu vermeiden, zu reduzieren, zu teilen oder zu akzeptieren.",
+       "id": "sec.m3.l3.k1"
+      },
+      {
+       "f": "Restrisiko",
+       "b": "Risiko, das nach Maßnahmen verbleibt und begründet akzeptiert wird.",
+       "id": "sec.m3.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "multi",
+       "q": "Welche Optionen der Risikobehandlung gibt es?",
+       "o": [
+        "Vermeiden",
+        "Reduzieren",
+        "Akzeptieren",
+        "Ignorieren ohne Begründung"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Akzeptieren braucht immer eine Begründung; dazu kommt Teilen.",
+       "id": "sec.m3.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist eine typische Anforderung aus dem Ziel „Bremsbotschaften nicht fälschbar“?",
+       "o": [
+        "MAC (SecOC)",
+        "Bremsen lauter machen",
+        "Größere Bremsscheiben",
+        "Mehr Bremsflüssigkeit"
+       ],
+       "a": 0,
+       "e": "Ein Message Authentication Code verhindert Fälschungen.",
+       "id": "sec.m3.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wann muss eine TARA neu bewertet werden?",
+       "o": [
+        "Bei Neuem",
+        "Nie",
+        "Nur beim Verkauf",
+        "Nur bei Unfällen"
+       ],
+       "a": 0,
+       "e": "Sie begleitet den ganzen Lebenszyklus.",
+       "id": "sec.m3.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Woraus ergibt sich das Risiko?",
+       "o": [
+        "Wirkung × Machbarkeit",
+        "Aus der Fahrzeugfarbe",
+        "Aus der Motorleistung",
+        "Aus dem Verkaufspreis"
+       ],
+       "a": 0,
+       "e": "Oft über eine Matrix.",
+       "id": "sec.m3.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet „Risiko vermeiden“?",
+       "o": [
+        "Weglassen",
+        "Eine Versicherung abschließen",
+        "Das Risiko hinnehmen",
+        "Das Risiko verschweigen"
+       ],
+       "a": 0,
+       "e": "Ohne Angriffsfläche kein Angriff.",
+       "id": "sec.m3.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sec.m4",
+   "level": 2,
+   "title": "Kryptografie im Fahrzeug",
+   "desc": "Schlüssel und Hardware-Sicherheit, Secure Boot, gesicherte Botschaften und PKI.",
+   "lessons": [
+    {
+     "id": "sec.m4.l1",
+     "title": "Bausteine der Kryptografie",
+     "min": 6,
+     "body": [
+      "Kryptografie liefert die Werkzeuge, mit denen Fahrzeuge Vertraulichkeit, Integrität und Echtheit sichern.",
+      "## Symmetrisch",
+      "Beide Seiten teilen einen Schlüssel, etwa AES mit 128 Bit. Schnell und für Steuergeräte gut geeignet, aber der Schlüssel muss sicher verteilt und geschützt werden. Ein MAC (zum Beispiel CMAC auf AES-Basis) zeigt, dass eine Nachricht unverändert von jemandem mit dem Schlüssel stammt.",
+      "## Asymmetrisch",
+      "Ein Schlüsselpaar aus öffentlichem und privatem Schlüssel, etwa RSA oder elliptische Kurven (ECDSA). Mit dem privaten Schlüssel signiert der Hersteller Software, mit dem öffentlichen prüft das Steuergerät. Den öffentlichen Schlüssel darf jeder kennen.",
+      "## Hashfunktionen",
+      "Eine Hashfunktion wie SHA-256 bildet beliebige Daten auf einen kurzen Fingerabdruck ab. Schon eine kleine Änderung ergibt einen völlig anderen Hash. Signaturen werden über den Hash gebildet."
+     ],
+     "key": [
+      "Symmetrisch (AES, CMAC): schnell, gemeinsamer Schlüssel.",
+      "Asymmetrisch (RSA, ECDSA): signieren mit privatem, prüfen mit öffentlichem Schlüssel.",
+      "Hash (SHA-256): Fingerabdruck der Daten."
+     ],
+     "src": [
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      },
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      }
+     ],
+     "cards": [
+      {
+       "f": "MAC",
+       "b": "Message Authentication Code: prüft Integrität und Herkunft mit gemeinsamem Schlüssel.",
+       "id": "sec.m4.l1.k1"
+      },
+      {
+       "f": "Digitale Signatur",
+       "b": "Mit privatem Schlüssel erzeugt, mit öffentlichem Schlüssel prüfbar.",
+       "id": "sec.m4.l1.k2"
+      },
+      {
+       "f": "SHA-256",
+       "b": "Kryptografische Hashfunktion mit 256 Bit Ausgabe.",
+       "id": "sec.m4.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Womit prüft ein Steuergerät eine Software-Signatur?",
+       "o": [
+        "Öffentlicher Schlüssel",
+        "Mit dem privaten Schlüssel des Herstellers",
+        "Mit dem Passwort des Fahrers",
+        "Mit der Fahrgestellnummer"
+       ],
+       "a": 0,
+       "e": "Der private Schlüssel bleibt beim Hersteller.",
+       "id": "sec.m4.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Vorteil symmetrischer Verfahren?",
+       "o": [
+        "Sie sind schnell",
+        "Man braucht keinen Schlüssel",
+        "Jeder darf den Schlüssel kennen",
+        "Sie sind unknackbar ohne Schlüsselschutz"
+       ],
+       "a": 0,
+       "e": "Gut für Steuergeräte mit wenig Rechenleistung.",
+       "id": "sec.m4.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert mit dem Hash bei kleiner Datenänderung?",
+       "o": [
+        "Völlig anders",
+        "Er bleibt gleich",
+        "Er wird kürzer",
+        "Er wird null"
+       ],
+       "a": 0,
+       "e": "Das macht Manipulation erkennbar.",
+       "id": "sec.m4.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeigt ein MAC?",
+       "o": [
+        "Echtheit",
+        "Die Uhrzeit",
+        "Die Bitrate",
+        "Die Temperatur"
+       ],
+       "a": 0,
+       "e": "Integrität und Herkunft.",
+       "id": "sec.m4.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Darf der öffentliche Schlüssel bekannt sein?",
+       "o": [
+        "Ja",
+        "Nein, niemals",
+        "Nur dem Fahrer",
+        "Nur der Werkstatt"
+       ],
+       "a": 0,
+       "e": "Nur der private Schlüssel ist geheim.",
+       "id": "sec.m4.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "sec.m4.l2",
+     "title": "HSM und Secure Boot",
+     "min": 6,
+     "body": [
+      "Schlüssel nützen nur, wenn sie geschützt sind. Deshalb haben moderne Mikrocontroller ein Hardware-Sicherheitsmodul (HSM).",
+      "## Das HSM",
+      "Ein abgeschotteter Bereich mit eigenem Prozessor, Speicher und Krypto-Beschleunigern. Schlüssel verlassen das HSM nicht; die Anwendung bittet das HSM nur, etwas zu verschlüsseln, zu signieren oder zu prüfen. Zusätzlich liefert es echte Zufallszahlen.",
+      "## Secure Boot",
+      "Beim Start prüft das HSM oder ein unveränderlicher Startcode, ob die Software unverändert ist, etwa per Signatur oder MAC. Nur dann startet sie. Eine Vertrauenskette (Chain of Trust) prüft jede Stufe die nächste.",
+      "## Secure Flashing und Debug-Schutz",
+      "Beim Flashen wird nur signierte Software akzeptiert. Debug-Schnittstellen wie JTAG werden in Serie gesperrt oder durch Authentisierung geschützt, damit niemand über sie Speicher und Schlüssel ausliest."
+     ],
+     "key": [
+      "HSM: Schlüssel bleiben drin; Krypto und Zufall in Hardware.",
+      "Secure Boot: Vertrauenskette prüft jede Stufe.",
+      "Secure Flashing; Debug-Schnittstellen sperren."
+     ],
+     "src": [
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      },
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "HSM",
+       "b": "Hardware Security Module: geschützter Bereich im Controller für Schlüssel und Kryptografie.",
+       "id": "sec.m4.l2.k1"
+      },
+      {
+       "f": "Chain of Trust",
+       "b": "Vertrauenskette: Jede Startstufe prüft die Echtheit der nächsten.",
+       "id": "sec.m4.l2.k2"
+      },
+      {
+       "f": "JTAG",
+       "b": "Debug-Schnittstelle von Prozessoren; in Serie gesperrt oder geschützt.",
+       "id": "sec.m4.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Verlassen Schlüssel das HSM?",
+       "o": [
+        "Nein",
+        "Ja, bei jedem Start",
+        "Ja, für die Werkstatt",
+        "Nur nachts"
+       ],
+       "a": 0,
+       "e": "Die Anwendung bekommt nur Ergebnisse.",
+       "id": "sec.m4.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist eine Chain of Trust?",
+       "o": [
+        "Stufe prüft Stufe",
+        "Eine Kette am Lenkrad",
+        "Eine Liste der Lieferanten",
+        "Ein Fehlerspeicher"
+       ],
+       "a": 0,
+       "e": "Vom unveränderlichen Startcode bis zur Anwendung.",
+       "id": "sec.m4.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum sperrt man JTAG in Serie?",
+       "o": [
+        "Gegen Auslesen",
+        "Um Strom zu sparen",
+        "Damit der Bus schneller wird",
+        "Wegen der Abgasnorm"
+       ],
+       "a": 0,
+       "e": "Debug-Zugänge sind mächtige Angriffspunkte.",
+       "id": "sec.m4.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was liefert ein HSM zusätzlich?",
+       "o": [
+        "Zufall",
+        "Kraftstoff",
+        "Musik",
+        "Licht"
+       ],
+       "a": 0,
+       "e": "Wichtig für Seeds, Schlüssel und Nonces.",
+       "id": "sec.m4.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was prüft Secure Boot?",
+       "o": [
+        "Ob die Software unverändert ist",
+        "Ob der Fahrer angeschnallt ist",
+        "Ob der Tank voll ist",
+        "Ob die Reifen neu sind"
+       ],
+       "a": 0,
+       "e": "Per Signatur oder MAC.",
+       "id": "sec.m4.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "sec.m4.l3",
+     "title": "Gesicherte Botschaften und PKI",
+     "min": 7,
+     "body": [
+      "Klassische CAN-Botschaften haben keine Absenderprüfung. Jeder am Bus kann alles senden.",
+      "## SecOC",
+      "AUTOSAR Secure Onboard Communication (SecOC) hängt an kritische Botschaften einen gekürzten MAC und einen Freshness-Wert (Zähler oder Zeit). Der Empfänger prüft beides. Gefälschte Botschaften fallen am falschen MAC auf, wieder eingespielte alte Botschaften (Replay) am veralteten Freshness-Wert.",
+      "## Abwägungen",
+      "Auf klassischem CAN mit 8 Byte ist Platz knapp, deshalb werden MACs gekürzt, etwa auf 24 bis 64 Bit. CAN FD und Ethernet lassen mehr Raum. Schlüssel werden pro Fahrzeug unterschiedlich verteilt, damit ein ausgelesener Schlüssel nicht alle Fahrzeuge öffnet.",
+      "## PKI",
+      "Für Kommunikation mit Backend, Werkstatt oder anderen Fahrzeugen nutzt man eine Public-Key-Infrastruktur: Zertifikate bestätigen, dass ein öffentlicher Schlüssel zu einem bestimmten Teilnehmer gehört. Gesperrte Zertifikate kommen auf Sperrlisten. Auf Ethernet schützen TLS oder MACsec die Verbindungen."
+     ],
+     "key": [
+      "SecOC: gekürzter MAC + Freshness gegen Fälschung und Replay.",
+      "Fahrzeugindividuelle Schlüssel begrenzen Schäden.",
+      "PKI mit Zertifikaten; TLS/MACsec auf Ethernet."
+     ],
+     "src": [
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      },
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SecOC",
+       "b": "AUTOSAR Secure Onboard Communication: MAC und Freshness für Busbotschaften.",
+       "id": "sec.m4.l3.k1"
+      },
+      {
+       "f": "Freshness-Wert",
+       "b": "Zähler oder Zeitstempel, der wiederholte alte Botschaften erkennbar macht.",
+       "id": "sec.m4.l3.k2"
+      },
+      {
+       "f": "Replay-Angriff",
+       "b": "Erneutes Einspielen einer aufgezeichneten, echten Botschaft.",
+       "id": "sec.m4.l3.k3"
+      },
+      {
+       "f": "PKI",
+       "b": "Public-Key-Infrastruktur: Zertifikate, Zertifizierungsstellen, Sperrlisten.",
+       "id": "sec.m4.l3.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wogegen schützt der Freshness-Wert?",
+       "o": [
+        "Replay",
+        "Rost",
+        "Kurzschlüsse",
+        "Überhitzung"
+       ],
+       "a": 0,
+       "e": "Alte Botschaften haben veraltete Zähler.",
+       "id": "sec.m4.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum werden MACs auf klassischem CAN gekürzt?",
+       "o": [
+        "Wenig Platz im 8-Byte-Frame",
+        "Damit sie unsicherer werden",
+        "Weil CAN keine Zahlen kann",
+        "Wegen der Abgasnorm"
+       ],
+       "a": 0,
+       "e": "Ein Kompromiss aus Sicherheit und Platz.",
+       "id": "sec.m4.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum nutzt man fahrzeugindividuelle Schlüssel?",
+       "o": [
+        "Ein Schlüssel öffnet nicht alle",
+        "Weil es billiger ist",
+        "Weil Schlüssel sonst rosten",
+        "Damit Updates schneller sind"
+       ],
+       "a": 0,
+       "e": "Skalierbare Angriffe werden verhindert.",
+       "id": "sec.m4.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was bestätigt ein Zertifikat?",
+       "o": [
+        "Schlüsselbesitz",
+        "Die Fahrzeugfarbe",
+        "Den Abgaswert",
+        "Die Uhrzeit"
+       ],
+       "a": 0,
+       "e": "Ausgestellt von einer Zertifizierungsstelle.",
+       "id": "sec.m4.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was schützt Ethernet-Verbindungen?",
+       "o": [
+        "TLS, MACsec",
+        "LIN",
+        "Klemme 15",
+        "Bitstuffing"
+       ],
+       "a": 0,
+       "e": "Auf verschiedenen Schichten.",
+       "id": "sec.m4.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sec.m5",
+   "level": 3,
+   "title": "Diagnose, Updates und Schnittstellen schützen",
+   "desc": "Zugriffsschutz, sichere Updates, Gateway und Funkschnittstellen.",
+   "lessons": [
+    {
+     "id": "sec.m5.l1",
+     "title": "Diagnosezugang absichern",
+     "min": 6,
+     "body": [
+      "Diagnose ist mächtig: Software laden, Codierung ändern, Stellglieder bewegen. Deshalb ist sie ein beliebtes Angriffsziel, etwa für Kilometermanipulation oder Diebstahl über das Anlernen neuer Schlüssel.",
+      "## Klassisch: Seed und Key",
+      "UDS SecurityAccess (0x27) mit geheimem Algorithmus schützt seit Jahrzehnten. Schwäche: Ist der Algorithmus bekannt, ist der Schutz weg, und er steckt in vielen Testern.",
+      "## Modern: Authentisierung",
+      "UDS Authentication (0x29) mit Zertifikaten und rollenbasierten Rechten. Der Tester bekommt vom Backend des Herstellers ein Zertifikat für einen bestimmten Zweck und Zeitraum, oft nach Anmeldung der Werkstatt.",
+      "## Weitere Maßnahmen",
+      "Das Gateway filtert Diagnosezugriffe von der OBD-Buchse, kritische Funktionen erfordern zusätzlich eine Online-Freigabe, und Zugriffe werden protokolliert."
+     ],
+     "key": [
+      "Diagnose ist mächtig und daher Angriffsziel.",
+      "0x27 Seed/Key: Algorithmus kann durchsickern.",
+      "0x29 mit Zertifikaten und Rollen; Gateway filtert, Zugriffe werden protokolliert."
+     ],
+     "src": [
+      {
+       "n": "ISO 14229-1: Unified Diagnostic Services (UDS), Normtext kostenpflichtig",
+       "u": "https://www.iso.org/standard/72439.html"
+      },
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Rollenbasierte Rechte",
+       "b": "Zugriffsrechte abhängig von der Rolle, z. B. Werkstatt, Entwicklung, Prüfstelle.",
+       "id": "sec.m5.l1.k1"
+      },
+      {
+       "f": "Online-Freigabe",
+       "b": "Freischaltung einer kritischen Funktion über das Backend des Herstellers.",
+       "id": "sec.m5.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Warum ist 0x27 mit geheimem Algorithmus problematisch?",
+       "o": [
+        "Leck möglich",
+        "Er ist zu langsam",
+        "Er braucht Ethernet",
+        "Er ist nicht genormt"
+       ],
+       "a": 0,
+       "e": "Er steckt in vielen Testern.",
+       "id": "sec.m5.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bietet 0x29?",
+       "o": [
+        "Zertifikate",
+        "Mehr Bitrate",
+        "Längere Kabel",
+        "Keine Sicherheit"
+       ],
+       "a": 0,
+       "e": "Rechte für Zweck und Zeitraum.",
+       "id": "sec.m5.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was tut das Gateway beim Diagnosezugriff?",
+       "o": [
+        "Es filtert Zugriffe",
+        "Es löscht alle Fehler",
+        "Es lädt die Batterie",
+        "Es misst Abgase"
+       ],
+       "a": 0,
+       "e": "Nicht jeder darf an jedes Steuergerät.",
+       "id": "sec.m5.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Manipulation ist ein typisches Ziel von Angriffen auf Diagnose?",
+       "o": [
+        "Kilometer",
+        "Reifen aufpumpen",
+        "Scheiben reinigen",
+        "Licht einschalten"
+       ],
+       "a": 0,
+       "e": "Auch Schlüssel anlernen für Diebstahl.",
+       "id": "sec.m5.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum protokolliert man Diagnosezugriffe?",
+       "o": [
+        "Um Missbrauch nachvollziehen zu können",
+        "Um Speicher zu füllen",
+        "Für die Werbung",
+        "Wegen der Musik"
+       ],
+       "a": 0,
+       "e": "Nachvollziehbarkeit schreckt ab und hilft bei Vorfällen.",
+       "id": "sec.m5.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "sec.m5.l2",
+     "title": "Sichere Updates",
+     "min": 6,
+     "body": [
+      "Updates schließen Lücken, sind aber selbst ein Einfallstor, wenn sie nicht abgesichert sind.",
+      "## Ende-zu-Ende geschützt",
+      "Der Hersteller signiert das Update in einer geschützten Umgebung. Das Fahrzeug prüft die Signatur im Steuergerät, nicht nur im Backend oder in der Telematikeinheit. So hilft auch ein kompromittierter Übertragungsweg dem Angreifer nicht.",
+      "## Rollback-Schutz",
+      "Angreifer könnten eine alte Software mit bekannter Lücke einspielen. Ein Versionszähler im geschützten Speicher verhindert, dass ältere Versionen installiert werden (Anti-Rollback).",
+      "## Uptane",
+      "Für OTA gibt es Frameworks wie Uptane: Mehrere Rollen und Schlüssel signieren getrennt, sodass auch ein einzelner gestohlener Schlüssel nicht ausreicht, um manipulierte Updates zu verteilen."
+     ],
+     "key": [
+      "Signatur im Ziel-Steuergerät prüfen (Ende-zu-Ende).",
+      "Anti-Rollback: keine älteren Versionen.",
+      "Uptane: getrennte Rollen und Schlüssel für OTA."
+     ],
+     "src": [
+      {
+       "n": "UNECE: UN-Regelung Nr. 156 (Software Update und SUMS)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      },
+      {
+       "n": "Uptane: Framework zur Absicherung von Software-Updates im Fahrzeug",
+       "u": "https://uptane.org/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Anti-Rollback",
+       "b": "Schutz gegen das Installieren älterer, verwundbarer Softwareversionen.",
+       "id": "sec.m5.l2.k1"
+      },
+      {
+       "f": "Uptane",
+       "b": "Offenes Framework für sichere OTA-Updates mit getrennten Rollen und Schlüsseln.",
+       "id": "sec.m5.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wo sollte die Update-Signatur geprüft werden?",
+       "o": [
+        "Im Ziel",
+        "Nur im Backend",
+        "Nur im Smartphone",
+        "Gar nicht"
+       ],
+       "a": 0,
+       "e": "Ende-zu-Ende-Schutz.",
+       "id": "sec.m5.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wogegen schützt Anti-Rollback?",
+       "o": [
+        "Alte Versionen",
+        "Rollen des Fahrzeugs am Berg",
+        "Rost",
+        "Diebstahl der Räder"
+       ],
+       "a": 0,
+       "e": "Ein Versionszähler verhindert Rückschritte.",
+       "id": "sec.m5.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist die Idee hinter Uptane?",
+       "o": [
+        "Getrennte Rollen",
+        "Ein einziger Masterschlüssel",
+        "Unsignierte Updates",
+        "Updates per USB-Stick"
+       ],
+       "a": 0,
+       "e": "Ein gestohlener Schlüssel reicht nicht.",
+       "id": "sec.m5.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum sind Updates selbst ein Risiko?",
+       "o": [
+        "Ungeschützte Updates könnten manipuliert sein",
+        "Weil sie zu klein sind",
+        "Weil sie Benzin verbrauchen",
+        "Weil sie das Radio stören"
+       ],
+       "a": 0,
+       "e": "Deshalb Signaturen und Prüfungen.",
+       "id": "sec.m5.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wo wird der Versionszähler für Anti-Rollback gespeichert?",
+       "o": [
+        "Geschützt",
+        "Im Handschuhfach",
+        "Auf dem Display",
+        "In der Cloud-Werbung"
+       ],
+       "a": 0,
+       "e": "Er darf nicht manipulierbar sein.",
+       "id": "sec.m5.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "sec.m5.l3",
+     "title": "Gateway und Funkschnittstellen",
+     "min": 6,
+     "body": [
+      "Ein zentrales Gateway ist die Firewall des Fahrzeugs.",
+      "## Netztrennung",
+      "Infotainment, Telematik und Diagnose liegen in eigenen Netzen. Das Gateway lässt nur definierte Botschaften und Dienste durch, und zwar nur in der nötigen Richtung. Ein kompromittiertes Infotainment soll so keine Bremsbotschaften senden können.",
+      "## Funkschnittstellen",
+      "Bluetooth, WLAN, Mobilfunk, Schlüsselfunk, Reifendrucksensoren und V2X sind aus der Ferne erreichbar. Maßnahmen: aktuelle Protokollversionen, Authentisierung beim Koppeln, Härtung der Software (unnötige Dienste abschalten), Isolation per Virtualisierung und regelmäßige Updates.",
+      "## Ladeschnittstelle",
+      "Beim Laden kommunizieren Fahrzeug und Ladesäule, etwa nach ISO 15118 mit Plug & Charge über Zertifikate. Auch diese Schnittstelle gehört in die Risikoanalyse."
+     ],
+     "key": [
+      "Gateway: Netztrennung, Filter nach Botschaft, Dienst und Richtung.",
+      "Funkschnittstellen härten, authentisieren, isolieren, aktualisieren.",
+      "Ladeschnittstelle (ISO 15118) ist Teil der Analyse."
+     ],
+     "src": [
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Netztrennung",
+       "b": "Aufteilung in getrennte Netze mit kontrollierten Übergängen.",
+       "id": "sec.m5.l3.k1"
+      },
+      {
+       "f": "Härtung",
+       "b": "Reduzieren der Angriffsfläche, z. B. durch Abschalten unnötiger Dienste.",
+       "id": "sec.m5.l3.k2"
+      },
+      {
+       "f": "ISO 15118",
+       "b": "Norm für Kommunikation zwischen Fahrzeug und Ladesäule, inklusive Plug & Charge.",
+       "id": "sec.m5.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was soll die Netztrennung verhindern?",
+       "o": [
+        "Infotainment sendet Bremsbefehle",
+        "Dass das Radio lauter wird",
+        "Dass Reifen platzen",
+        "Dass der Tank leer wird"
+       ],
+       "a": 0,
+       "e": "Das Gateway filtert streng.",
+       "id": "sec.m5.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist Härtung?",
+       "o": [
+        "Dienste abschalten",
+        "Stahl verstärken",
+        "Reifen aufpumpen",
+        "Lack versiegeln"
+       ],
+       "a": 0,
+       "e": "Weniger Angriffsfläche.",
+       "id": "sec.m5.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Norm regelt Plug & Charge?",
+       "o": [
+        "ISO 15118",
+        "ISO 26262",
+        "SAE J1962",
+        "ISO 14229"
+       ],
+       "a": 0,
+       "e": "Mit Zertifikaten zwischen Fahrzeug und Ladesäule.",
+       "id": "sec.m5.l3.q3"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Schnittstellen sind aus der Ferne erreichbar?",
+       "o": [
+        "Bluetooth",
+        "Mobilfunk",
+        "Reifendrucksensor-Funk",
+        "Interne Busleitung im Motorraum"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Die Busleitung braucht physischen Zugang.",
+       "id": "sec.m5.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was filtert ein Gateway zusätzlich zur Botschaft?",
+       "o": [
+        "Die Richtung",
+        "Die Farbe",
+        "Die Temperatur",
+        "Den Kraftstoff"
+       ],
+       "a": 0,
+       "e": "Manche Daten dürfen nur in eine Richtung fließen.",
+       "id": "sec.m5.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sec.m6",
+   "level": 3,
+   "title": "Im Betrieb: erkennen und reagieren",
+   "desc": "Angriffserkennung, Security Operations, Schwachstellen und Tests.",
+   "lessons": [
+    {
+     "id": "sec.m6.l1",
+     "title": "Angriffe erkennen",
+     "min": 6,
+     "body": [
+      "Kein Schutz ist perfekt. Deshalb müssen Angriffe im Feld erkannt werden, wie es R155 verlangt.",
+      "## Intrusion Detection",
+      "Ein Intrusion Detection System (IDS) im Fahrzeug beobachtet den Busverkehr und das Verhalten von Steuergeräten: unbekannte Botschafts-IDs, falsche Zykluszeiten, plötzliche Lastspitzen, fehlgeschlagene Authentisierungen, ungewöhnliche Diagnoseanfragen. In AUTOSAR gibt es dafür den IdsM, der Sicherheitsereignisse sammelt.",
+      "## Melden statt eingreifen",
+      "Meist reagiert das IDS nicht selbst, sondern meldet Auffälligkeiten an das Backend. Ein automatischer Eingriff könnte selbst ein Sicherheitsrisiko sein, etwa wenn eine legitime Botschaft fälschlich blockiert wird.",
+      "## Fehlalarme",
+      "Gute Erkennung braucht ein genaues Bild des Normalverhaltens. Sonst erzeugt sie viele Fehlalarme, die echte Angriffe verdecken."
+     ],
+     "key": [
+      "IDS beobachtet Busverkehr und Steuergeräteverhalten.",
+      "Meist melden statt eingreifen.",
+      "Normalverhalten genau kennen, sonst Fehlalarme."
+     ],
+     "src": [
+      {
+       "n": "AUTOSAR Classic Platform: Spezifikationen (Dem, Dcm, SecOC, IdsM u. a.)",
+       "u": "https://www.autosar.org/standards/classic-platform"
+      },
+      {
+       "n": "UNECE: UN-Regelung Nr. 155 (Cyber Security und CSMS)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      }
+     ],
+     "cards": [
+      {
+       "f": "IDS",
+       "b": "Intrusion Detection System: erkennt Anzeichen von Angriffen.",
+       "id": "sec.m6.l1.k1"
+      },
+      {
+       "f": "IdsM",
+       "b": "AUTOSAR Intrusion Detection System Manager: sammelt und filtert Sicherheitsereignisse.",
+       "id": "sec.m6.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "multi",
+       "q": "Welche Auffälligkeiten erkennt ein Fahrzeug-IDS?",
+       "o": [
+        "Unbekannte Botschafts-IDs",
+        "Falsche Zykluszeiten",
+        "Fehlgeschlagene Authentisierungen",
+        "Leerer Wischwassertank"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Der Wischwassertank ist kein Sicherheitsereignis.",
+       "id": "sec.m6.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum greift ein IDS meist nicht selbst ein?",
+       "o": [
+        "Fehleingriff wäre riskant",
+        "Weil es keinen Strom hat",
+        "Weil es verboten ist zu melden",
+        "Weil es zu langsam ist"
+       ],
+       "a": 0,
+       "e": "Lieber melden und Experten bewerten lassen.",
+       "id": "sec.m6.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wohin meldet das IDS?",
+       "o": [
+        "Ans Backend",
+        "An die Polizei direkt",
+        "An das Radio",
+        "An den Fahrer per SMS"
+       ],
+       "a": 0,
+       "e": "Dort werden Meldungen ausgewertet.",
+       "id": "sec.m6.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was braucht gute Erkennung?",
+       "o": [
+        "Normalverhalten",
+        "Möglichst viele Fehlalarme",
+        "Keine Daten",
+        "Einen lauten Alarm"
+       ],
+       "a": 0,
+       "e": "Sonst gehen echte Angriffe unter.",
+       "id": "sec.m6.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Regelung verlangt Erkennung im Feld?",
+       "o": [
+        "UN R155",
+        "Euro 7",
+        "SAE J1962",
+        "ISO 15765"
+       ],
+       "a": 0,
+       "e": "Überwachen und reagieren über den Lebenszyklus.",
+       "id": "sec.m6.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "sec.m6.l2",
+     "title": "Vehicle SOC und Vorfälle",
+     "min": 6,
+     "body": [
+      "Meldungen aus Millionen Fahrzeugen landen in einem Vehicle Security Operations Center (VSOC).",
+      "## Aufgaben",
+      "Meldungen sammeln und korrelieren (passiert das gleiche in vielen Fahrzeugen?), Bedrohungsinformationen auswerten, Vorfälle bewerten und Reaktionen auslösen.",
+      "## Reaktion",
+      "Je nach Schwere: Beobachten, Backend-Dienste anpassen, Zertifikate sperren, Software-Update entwickeln und verteilen, im Extremfall Funktionen abschalten oder Fahrzeuge zurückrufen. Behörden müssen informiert werden, wenn es Vorschriften verlangen.",
+      "## Lernen",
+      "Jeder Vorfall fließt zurück in die Entwicklung: TARA aktualisieren, Schutzmaßnahmen verbessern, Tests ergänzen."
+     ],
+     "key": [
+      "VSOC sammelt, korreliert und bewertet Meldungen.",
+      "Reaktionen: Zertifikate sperren, Updates, ggf. Rückruf.",
+      "Vorfälle fließen zurück in TARA und Entwicklung."
+     ],
+     "src": [
+      {
+       "n": "UNECE: UN-Regelung Nr. 155 (Cyber Security und CSMS)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      },
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "VSOC",
+       "b": "Vehicle Security Operations Center: zentrale Stelle zur Überwachung und Reaktion auf Angriffe.",
+       "id": "sec.m6.l2.k1"
+      },
+      {
+       "f": "Korrelation",
+       "b": "Verknüpfen vieler Meldungen, um Muster und Kampagnen zu erkennen.",
+       "id": "sec.m6.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was macht ein VSOC?",
+       "o": [
+        "Sammeln, reagieren",
+        "Fahrzeuge lackieren",
+        "Reifen wechseln",
+        "Abgase messen"
+       ],
+       "a": 0,
+       "e": "Zentrale Überwachung der Flotte.",
+       "id": "sec.m6.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum korreliert man Meldungen?",
+       "o": [
+        "Um Muster in vielen Fahrzeugen zu erkennen",
+        "Um Speicher zu sparen",
+        "Für die Statistik der Farben",
+        "Um Fahrer zu bewerten"
+       ],
+       "a": 0,
+       "e": "Ein Einzelfall kann Zufall sein, eine Welle eher nicht.",
+       "id": "sec.m6.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Reaktion ist bei einem gestohlenen Zertifikat sinnvoll?",
+       "o": [
+        "Zertifikat sperren",
+        "Nichts tun",
+        "Alle Fahrzeuge verschrotten",
+        "Den Fahrer anrufen"
+       ],
+       "a": 0,
+       "e": "Sperrlisten machen es wertlos.",
+       "id": "sec.m6.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert nach einem Vorfall in der Entwicklung?",
+       "o": [
+        "TARA aktualisieren",
+        "Nichts",
+        "Die Abteilung wird geschlossen",
+        "Die Software wird gelöscht"
+       ],
+       "a": 0,
+       "e": "Lernen aus Vorfällen.",
+       "id": "sec.m6.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist die stärkste Reaktion?",
+       "o": [
+        "Rückruf",
+        "Beobachten",
+        "Eine E-Mail schreiben",
+        "Ein Plakat aufhängen"
+       ],
+       "a": 0,
+       "e": "Nur bei schweren Fällen.",
+       "id": "sec.m6.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "sec.m6.l3",
+     "title": "Schwachstellen und Tests",
+     "min": 6,
+     "body": [
+      "Sicherheit wird geprüft, bevor und nachdem Fahrzeuge auf die Straße kommen.",
+      "## Tests in der Entwicklung",
+      "Code-Analyse, Prüfen der Sicherheitsanforderungen, Fuzzing (Schnittstellen mit zufälligen oder fehlerhaften Eingaben bombardieren) und Penetrationstests, bei denen Fachleute wie Angreifer vorgehen.",
+      "## Schwachstellenmanagement",
+      "Software enthält Fremdkomponenten (Open Source, Zulieferer). Eine Liste aller Bestandteile (Software Bill of Materials, SBOM) hilft, schnell zu sehen, welche Fahrzeuge von einer neu bekannten Lücke betroffen sind.",
+      "## Coordinated Disclosure",
+      "Viele Hersteller bieten Sicherheitsforschern einen Meldeweg an, manche zahlen Prämien (Bug Bounty). Gefundene Lücken werden zuerst vertraulich gemeldet und erst nach Behebung veröffentlicht."
+     ],
+     "key": [
+      "Tests: Code-Analyse, Fuzzing, Penetrationstests.",
+      "SBOM zeigt betroffene Fahrzeuge bei neuen Lücken.",
+      "Coordinated Disclosure und Bug Bounty."
+     ],
+     "src": [
+      {
+       "n": "ISO/SAE 21434: Road vehicles, Cybersecurity engineering",
+       "u": "https://www.iso.org/standard/70918.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Fuzzing",
+       "b": "Test mit zufälligen oder fehlerhaften Eingaben, um Abstürze und Lücken zu finden.",
+       "id": "sec.m6.l3.k1"
+      },
+      {
+       "f": "Penetrationstest",
+       "b": "Gezielter Angriffstest durch Fachleute.",
+       "id": "sec.m6.l3.k2"
+      },
+      {
+       "f": "SBOM",
+       "b": "Software Bill of Materials: Liste aller Softwarebestandteile.",
+       "id": "sec.m6.l3.k3"
+      },
+      {
+       "f": "Coordinated Disclosure",
+       "b": "Vertrauliche Meldung einer Lücke, Veröffentlichung erst nach Behebung.",
+       "id": "sec.m6.l3.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist Fuzzing?",
+       "o": [
+        "Zufallseingaben",
+        "Polieren von Steckern",
+        "Messung des Reifendrucks",
+        "Ein Abgastest"
+       ],
+       "a": 0,
+       "e": "Findet Abstürze und unerwartetes Verhalten.",
+       "id": "sec.m6.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient eine SBOM?",
+       "o": [
+        "Betroffene Fahrzeuge bei Lücken schnell finden",
+        "Ersatzteile bestellen",
+        "Kraftstoff abrechnen",
+        "Fahrzeuge lackieren"
+       ],
+       "a": 0,
+       "e": "Sie listet alle Softwarebestandteile.",
+       "id": "sec.m6.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet Coordinated Disclosure?",
+       "o": [
+        "Erst vertraulich",
+        "Sofort im Internet veröffentlichen",
+        "Nie melden",
+        "Nur dem Fahrer sagen"
+       ],
+       "a": 0,
+       "e": "Zeit zum Beheben, bevor Angreifer davon wissen.",
+       "id": "sec.m6.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wer führt Penetrationstests durch?",
+       "o": [
+        "Fachleute, die wie Angreifer vorgehen",
+        "Die Kunden beim Kauf",
+        "Der Gesetzgeber",
+        "Die Lackiererei"
+       ],
+       "a": 0,
+       "e": "Kontrolliert und beauftragt.",
+       "id": "sec.m6.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Bug Bounty?",
+       "o": [
+        "Prämie",
+        "Ein Strafzettel",
+        "Ein Insektenschutz",
+        "Ein Rabatt für Neuwagen"
+       ],
+       "a": 0,
+       "e": "Belohnt verantwortungsvolle Forschung.",
+       "id": "sec.m6.l3.q5"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

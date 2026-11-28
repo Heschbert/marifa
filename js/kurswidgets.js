@@ -1,6 +1,6 @@
 /* Interaktive Elemente für Kurslektionen (Animationen und Simulationen).
    In einer Lektion: "figs": [{ "after": <Absatz>, "w": "<name>", "cap": "<Bildunterschrift>" }].
-   Vorhanden: coin, birthday, tree2, dice, bayes, monty, galton, normal, pi, ecublock, ecustate, crank.
+   Vorhanden: coin, birthday, tree2, dice, bayes, monty, galton, normal, pi, ecublock, ecustate, crank, dtc, uds, iumpr, sae.
    Alles läuft lokal im Browser, ohne externe Bibliotheken. Bedienung über data-act / data-input (CSP-tauglich). */
 (function () {
   "use strict";
@@ -353,4 +353,110 @@
   H.kwcrun = function (d, t) { var S = ST[d.id]; S.run = !S.run; t.textContent = S.run ? "Pause" : "Weiter"; };
   H.kwcglitch = function (d) { ST[d.id].glitch = true; };
   H.kwcnew = function (d) { var S = ST[d.id]; S.sync = false; S.cnt = 0; S.last = null; S.msg = "Neu gestartet: Position unbekannt, suche Lücke …"; S.a += Math.random() * 360; S.tr = []; };
+  /* ---------- Fehlercode-Entschlüssler (SAE J2012) ---------- */
+  var DTCL = { P: "Powertrain: Motor und Getriebe", C: "Chassis: Fahrwerk, Bremsen, Lenkung", B: "Body: Karosserie und Innenraum", U: "Network: Kommunikation zwischen Steuergeräten" };
+  var DTCP = { "0": "Luft-/Kraftstoffzumessung, Zusatzemissionen", "1": "Luft-/Kraftstoffzumessung", "2": "Luft-/Kraftstoffzumessung (Einspritzkreise)", "3": "Zündung und Aussetzer", "4": "Zusätzliche Abgasregelung (z. B. Katalysator, AGR)", "5": "Geschwindigkeit, Leerlauf, Hilfseingänge", "6": "Steuergerät und Ausgänge", "7": "Getriebe", "8": "Getriebe", "9": "Getriebe", A: "Hybrid/Elektroantrieb", B: "Hybrid/Elektroantrieb", C: "Hybrid/Elektroantrieb" };
+  var DTCN = { P0301: "Aussetzer Zylinder 1 erkannt", P0300: "Zufällige/mehrere Aussetzer", P0420: "Katalysatorwirkungsgrad unter Schwelle (Bank 1)", P0171: "System zu mager (Bank 1)", P0442: "Kleines Leck Tankentlüftung", P0128: "Kühlmitteltemperatur unter Regelschwelle", U0100: "Kommunikation zum Motorsteuergerät verloren" };
+  W.dtc = function (id) {
+    el(id).innerHTML = '<label class="kwr"><span>Fehlercode:</span><input class="kwin" maxlength="5" value="P0301" autocomplete="off" autocapitalize="characters" spellcheck="false" data-input="kwdtc" data-id="' + id + '" aria-label="Fehlercode"></label>' +
+      '<div class="kwrow">' + ["P0301", "P0420", "P0171", "U0100", "C0035", "B1234"].map(function (c) { return '<button class="btn kwb" data-act="kwdtcx" data-id="' + id + '" data-k="' + c + '">' + c + "</button>"; }).join("") + "</div>" +
+      '<div class="kwdtc" id="' + id + '-d"></div><div class="kwinfo small" id="' + id + '-h"></div>';
+    H.kwdtc(el(id).querySelector("input"));
+  };
+  H.kwdtcx = function (d) { var i = el(d.id).querySelector("input"); i.value = d.k; H.kwdtc(i); };
+  H.kwdtc = function (inp) {
+    var id = inp.dataset.id, s = inp.value.toUpperCase().replace(/[^PCBU0-9A-F]/g, ""), out = el(id + "-d"), hx = el(id + "-h");
+    if (!/^[PCBU][0-3][0-9A-F]{3}$/.test(s)) { out.innerHTML = ""; hx.textContent = "Format: Buchstabe P, C, B oder U, dann eine Ziffer 0–3 und drei Zeichen 0–9 oder A–F (z. B. P0301)."; return; }
+    var L = s[0], d1 = s[1], d2 = s[2], gen = d1 === "0" || (L === "P" && d1 === "2"), man = d1 === "1" || (L !== "P" && d1 === "2");
+    var parts = [[L, DTCL[L]], [d1, gen ? "Genormter Code (gleich bei allen Herstellern)" : man ? "Herstellerspezifischer Code" : L === "P" ? "Gemischt: teils herstellerspezifisch, teils genormt" : "Reserviert"],
+      [d2, L === "P" ? DTCP[d2] || "Teilsystem" : "Teilbereich innerhalb der Gruppe"], [s.slice(3), "Konkreter Fehler (laut Tabelle)" + (DTCN[s] ? ": " + DTCN[s] : "")]];
+    out.innerHTML = parts.map(function (p) { return '<div class="kwdc"><b>' + esc(p[0]) + "</b><span>" + esc(p[1]) + "</span></div>"; }).join("");
+    var v = ("PCBU".indexOf(L) << 14) | (+d1 << 12) | (parseInt(d2, 16) << 8) | parseInt(s.slice(3), 16);
+    hx.innerHTML = "Im UDS-Fehlerspeicher als zwei Byte: <b>0x" + ("0000" + v.toString(16).toUpperCase()).slice(-4) + "</b>, dazu ein drittes Byte für die Fehlerart (FTB), z. B. 0x13 Unterbrechung." + (DTCN[s] ? "" : " Die genaue Bedeutung steht in SAE J2012 oder in den Herstellerdaten.");
+  };
+
+  /* ---------- UDS-Simulator (vereinfachtes Demo-Steuergerät) ---------- */
+  var UREQ = [["1003", "10 03", "Extended Session"], ["1002", "10 02", "Programming Session"], ["22F190", "22 F1 90", "VIN lesen"], ["221234", "22 12 34", "Unbekannte DID"], ["2701", "27 01", "Seed anfordern"],
+    ["2702ok", "27 02 + Key", "Richtiger Key"], ["2702bad", "27 02 + Key", "Falscher Key"], ["2EF190", "2E F1 90 …", "VIN schreiben"], ["190208", "19 02 08", "Bestätigte Fehler"], ["3101FF00", "31 01 FF 00", "Speicher löschen"], ["3E00", "3E 00", "TesterPresent"], ["1101", "11 01", "ECU-Reset"]];
+  var NRC = { "7F": "serviceNotSupportedInActiveSession", "7E": "subFunctionNotSupportedInActiveSession", "31": "requestOutOfRange", "33": "securityAccessDenied", "35": "invalidKey", "36": "exceededNumberOfAttempts", "24": "requestSequenceError", "22": "conditionsNotCorrect" };
+  function hex2(n) { return ("0" + n.toString(16).toUpperCase()).slice(-2); }
+  W.uds = function (id) {
+    ST[id] = { ses: 1, unl: false, seed: null, bad: 0, log: [] };
+    el(id).innerHTML = '<div class="kwst" id="' + id + '-s"></div><div class="kwgridb">' + UREQ.map(function (r) { return '<button class="btn kwb" data-act="kwuds" data-id="' + id + '" data-k="' + r[0] + '"><b>' + r[1] + "</b><small>" + r[2] + "</small></button>"; }).join("") + "</div>" +
+      '<div class="kwlog" id="' + id + '-l" aria-live="polite"></div><button class="link small" data-act="kwudsr" data-id="' + id + '">Zurücksetzen</button>';
+    drawUds(id);
+  };
+  function udsAnswer(S, k) {
+    var neg = function (sid, c, why) { return ["7F " + sid + " " + c, false, "Negative Antwort: " + NRC[c] + ". " + why]; };
+    switch (k) {
+      case "1003": S.ses = 3; S.unl = false; S.seed = null; return ["50 03 00 32 01 F4", true, "Extended Session aktiv. 00 32 = P2 50 ms, 01 F4 = P2* 5.000 ms (in 10-ms-Schritten)."];
+      case "1002": if (S.ses === 1) return neg("10", "22", "Viele Steuergeräte erlauben die Programmiersitzung nur aus der Extended Session."); S.ses = 2; S.unl = false; S.seed = null; return ["50 02 00 32 01 F4", true, "Programming Session aktiv: Der Bootloader übernimmt."];
+      case "22F190": var vin = "MARIFA00000000001"; return ["62 F1 90 " + vin.split("").map(function (c) { return hex2(c.charCodeAt(0)); }).join(" "), true, "Positive Antwort 0x62 mit der VIN als ASCII: " + vin + " (Demo-Wert)."];
+      case "221234": return neg("22", "31", "Diese Kennung kennt das Steuergerät nicht.");
+      case "2701": if (S.ses === 1) return neg("27", "7F", "SecurityAccess gibt es nicht in der Default Session."); if (S.bad >= 3) return neg("27", "36", "Zu viele Fehlversuche. Erst nach einer Wartezeit oder einem Reset geht es weiter.");
+        S.seed = Math.floor(Math.random() * 0xFFFFFFFF) >>> 0; var sd = ("00000000" + S.seed.toString(16).toUpperCase()).slice(-8).match(/../g).join(" "); return ["67 01 " + sd, true, "Seed erhalten. Der Tester berechnet daraus den Key (hier ein einfacher Demo-Algorithmus: Seed XOR 5A5A5A5A)."];
+      case "2702ok": case "2702bad": if (S.ses === 1) return neg("27", "7F", "Nicht in der Default Session."); if (S.seed === null) return neg("27", "24", "Erst den Seed anfordern (27 01).");
+        S.seed = null; if (k === "2702bad") { S.bad++; return neg("27", S.bad >= 3 ? "36" : "35", S.bad >= 3 ? "Dritter Fehlversuch: gesperrt." : "Falscher Key (Versuch " + S.bad + " von 3)."); } S.unl = true; S.bad = 0; return ["67 02", true, "Entsperrt. Geschützte Dienste sind jetzt erlaubt."];
+      case "2EF190": if (S.ses === 1) return neg("2E", "7F", "Schreiben ist in der Default Session nicht erlaubt."); if (!S.unl) return neg("2E", "33", "Erst mit SecurityAccess entsperren."); return ["6E F1 90", true, "Geschrieben. (Echte Steuergeräte schützen die VIN meist stärker.)"];
+      case "190208": return ["59 02 FF 03 01 00 2F 04 20 00 08", true, "Zwei bestätigte Fehler: P0301 (Status 0x2F: aktuell, ausstehend, bestätigt) und P0420 (Status 0x08: bestätigt, gerade nicht aktiv)."];
+      case "3101FF00": if (S.ses !== 2) return neg("31", "7F", "Speicher löschen geht nur in der Programming Session."); if (!S.unl) return neg("31", "33", "Erst entsperren."); return ["71 01 FF 00 00", true, "Routine gestartet: Speicher gelöscht. Jetzt könnte mit 34/36/37 neue Software übertragen werden."];
+      case "3E00": return ["7E 00", true, "TesterPresent: Die aktuelle Sitzung bleibt offen."];
+      case "1101": S.ses = 1; S.unl = false; S.seed = null; return ["51 01", true, "Reset: zurück in der Default Session, Sperre wieder aktiv."];
+    }
+  }
+  H.kwuds = function (d) {
+    var S = ST[d.id], r = UREQ.filter(function (x) { return x[0] === d.k; })[0], a = udsAnswer(S, d.k);
+    var req = d.k === "2702ok" || d.k === "2702bad" ? "27 02 …" : d.k === "2EF190" ? "2E F1 90 …" : r[1];
+    S.log.unshift({ q: req, a: a[0], ok: a[1], t: a[2] }); S.log = S.log.slice(0, 4); drawUds(d.id);
+  };
+  H.kwudsr = function (d) { W.uds(d.id); };
+  function drawUds(id) {
+    var S = ST[id]; el(id + "-s").innerHTML = ["Default", "Programming", "Extended"].map(function (n, i) { return '<span class="' + (S.ses === i + 1 ? "on" : "") + '">' + n + "</span>"; }).join("") + '<span class="' + (S.unl ? "on" : "") + '">' + (S.unl ? "🔓 entsperrt" : "🔒 gesperrt") + "</span>";
+    el(id + "-l").innerHTML = S.log.length ? S.log.map(function (x, i) { return '<div class="kwmsg' + (x.ok ? " ok" : " bad") + (i ? " old" : "") + '"><code>→ ' + esc(x.q) + "</code><code>← " + esc(x.a) + "</code><span>" + esc(x.t) + "</span></div>"; }).join("") : '<p class="small mute">Tippe eine Anfrage an. Tipp: Erst 27 01 in der Default Session probieren, dann 10 03.</p>';
+  }
+
+  /* ---------- IUMPR-Rechner ---------- */
+  var TRIP = { k: ["Kurzstrecke", false, 0.05], p: ["Pendeln", true, 0.45], a: ["Autobahn", true, 0.8] };
+  W.iumpr = function (id) {
+    ST[id] = { n: 0, d: 0, ign: 0 };
+    el(id).innerHTML = range(id, "kwiu", 1, 5, 1, 2, "Freigabebedingungen (1 locker … 5 streng):") +
+      '<div class="kwrow">' + b("kwiuk", "+ Kurzstrecke", id) + b("kwiup", "+ Pendeln", id) + b("kwiua", "+ Autobahn", id) + b("kwiu20", "+20 gemischt", id, true) + "</div>" +
+      '<div class="kwbig" id="' + id + '-r"></div><svg class="kwsvg" id="' + id + '-g" viewBox="0 0 300 54"></svg><div class="kwstat small" id="' + id + '-s"></div><button class="link small" data-act="kwiur" data-id="' + id + '">Zurücksetzen</button>';
+    H.kwiu(el(id).querySelector("input"));
+  };
+  function trip(id, t) {
+    var S = ST[id], T = TRIP[t], strict = +el(id).querySelector("input").value, p = T[2] * (1.2 - 0.2 * strict);
+    S.ign++; if (T[1]) S.d++; if (Math.random() < p) S.n++;
+  }
+  function drawIu(id) {
+    var S = ST[id], r = S.d ? S.n / S.d : 0, X = function (v) { return 10 + Math.min(1, v) * 280; };
+    el(id + "-r").innerHTML = (S.d ? fmt(r, 3) : "–") + '<span class="small mute"> IUMPR = ' + S.n + " ÷ " + S.d + "</span>";
+    el(id + "-g").innerHTML = '<rect x="10" y="14" width="280" height="16" rx="8" class="kwtrack"/><rect x="10" y="14" width="' + (X(r) - 10).toFixed(1) + '" height="16" rx="8" class="' + (r >= 0.336 ? "kwgood" : r >= 0.1 ? "kwmid" : "kwlow") + '"/>' +
+      [[0.1, "EU 0,1"], [0.336, "CARB 0,336"]].map(function (t) { return '<line x1="' + X(t[0]) + '" x2="' + X(t[0]) + '" y1="8" y2="36" class="kwref"/><text x="' + X(t[0]) + '" y="48" class="kwt" text-anchor="middle">' + t[1] + "</text>"; }).join("");
+    el(id + "-s").innerHTML = "Zähler <b>" + S.n + "</b> · Nenner <b>" + S.d + "</b> · Zündzyklen <b>" + S.ign + "</b><br>" + (S.d < 5 ? "Fahre ein paar Runden." : r >= 0.336 ? "Schafft auch die strenge CARB-Quote." : r >= 0.1 ? "Schafft die EU-Mindestquote 0,1." : "Unter der Mindestquote: Freigabebedingungen lockern oder Monitor früher laufen lassen.") + " Kurzstrecken unter 10 Minuten zählen nicht für den Nenner.";
+  }
+  H.kwiu = function (inp) { el(inp.dataset.id + "-kwiuv").textContent = inp.value; drawIu(inp.dataset.id); };
+  H.kwiuk = function (d) { trip(d.id, "k"); drawIu(d.id); }; H.kwiup = function (d) { trip(d.id, "p"); drawIu(d.id); }; H.kwiua = function (d) { trip(d.id, "a"); drawIu(d.id); };
+  H.kwiu20 = function (d) { for (var i = 0; i < 20; i++) trip(d.id, ["k", "k", "p", "p", "a"][Math.floor(Math.random() * 5)]); drawIu(d.id); };
+  H.kwiur = function (d) { ST[d.id] = { n: 0, d: 0, ign: 0 }; drawIu(d.id); };
+
+  /* ---------- SAE-Stufen vergleichen ---------- */
+  var SAE = [
+    ["Keine Automatisierung", "Mensch", "Mensch", "Mensch", "–", "Warnsysteme, z. B. Spurverlassenswarnung"],
+    ["Assistiert", "Mensch + System (längs oder quer)", "Mensch", "Mensch", "Begrenzt", "Abstandsregeltempomat"],
+    ["Teilautomatisiert", "System (längs und quer)", "Mensch", "Mensch", "Begrenzt", "Spurführung mit Abstandsregelung"],
+    ["Bedingt automatisiert", "System", "System", "Mensch nach Aufforderung", "Begrenzt (ODD)", "Stau- und Autobahnpilot nach UN R157"],
+    ["Hochautomatisiert", "System", "System", "System", "Begrenzt (ODD)", "Robotaxi oder Shuttle in festem Gebiet"],
+    ["Vollautomatisiert", "System", "System", "System", "Unbegrenzt", "Gibt es bisher nicht"]];
+  W.sae = function (id) {
+    el(id).innerHTML = '<div class="kwsae" role="group" aria-label="Stufe wählen">' + [0, 1, 2, 3, 4, 5].map(function (i) { return '<button class="btn kwb" data-act="kwsae" data-id="' + id + '" data-k="' + i + '">' + i + "</button>"; }).join("") + '</div><div id="' + id + '-t"></div>';
+    H.kwsae({ id: id, k: "2" });
+  };
+  H.kwsae = function (d) {
+    var i = +d.k, s = SAE[i], who = function (t) { return '<span class="' + (/System/.test(t) ? "sys" : /Mensch/.test(t) ? "hum" : "") + '">' + esc(t) + "</span>"; };
+    [].forEach.call(el(d.id).querySelectorAll(".kwsae button"), function (x) { x.classList.toggle("primary", x.dataset.k === d.k); });
+    el(d.id + "-t").innerHTML = '<div class="kwbig">Stufe ' + i + '<span class="small mute"> · ' + esc(s[0]) + "</span></div>" +
+      '<div class="kwtab"><div>Lenken und Bremsen</div>' + who(s[1]) + "<div>Umgebung überwachen</div>" + who(s[2]) + "<div>Rückfallebene</div>" + who(s[3]) + "<div>Einsatzbereich</div><span>" + esc(s[4]) + "</span><div>Beispiel</div><span>" + esc(s[5]) + "</span></div>" +
+      '<div class="kwinfo small">' + (i < 3 ? "Der Mensch fährt und muss ständig aufmerksam sein. Das ist Assistenz, keine Automatisierung." : i === 3 ? "Im Einsatzbereich darf sich der Mensch abwenden, muss aber nach Aufforderung rechtzeitig übernehmen." : "Kein Mensch muss eingreifen; das System erreicht bei Problemen selbst einen sicheren Zustand.") + "</div>";
+  };
 })();

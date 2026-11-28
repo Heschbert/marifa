@@ -1,0 +1,2056 @@
+{
+ "id": "ad",
+ "title": "Autonomes Fahren",
+ "sub": "SAE-Stufen, Sensorik, Wahrnehmung mit KI, Planung, Sicherheit (ISO 26262, SOTIF), Tests und Recht",
+ "audience": "Alle, die verstehen wollen, wie automatisierte Fahrzeuge funktionieren und abgesichert werden",
+ "stand": "11/2026",
+ "version": 1,
+ "review": "Allgemeines, öffentlich dokumentiertes Wissen (Quellen je Lektion); keine hersteller- oder projektspezifischen Details. Noch nicht durch eine Fachperson geprüft. Vorschriften ändern sich: Für verbindliche Arbeit immer den aktuellen Rechtstext prüfen.",
+ "levels": [
+  {
+   "id": 1,
+   "title": "Grundlagen"
+  },
+  {
+   "id": 2,
+   "title": "Fortgeschritten"
+  },
+  {
+   "id": 3,
+   "title": "Experte"
+  }
+ ],
+ "modules": [
+  {
+   "id": "ad.m1",
+   "level": 1,
+   "title": "Stufen und Begriffe",
+   "desc": "SAE-Level 0 bis 5, Fahraufgabe, Einsatzbereich und Rückfallebene.",
+   "lessons": [
+    {
+     "id": "ad.m1.l1",
+     "title": "Die SAE-Stufen",
+     "min": 7,
+     "body": [
+      "Die Norm SAE J3016 teilt Fahrautomatisierung in sechs Stufen. Entscheidend ist: Wer fährt, und wer überwacht?",
+      "## Stufe 0 bis 2: Der Mensch fährt",
+      "Stufe 0: keine Automatisierung, höchstens Warnungen. Stufe 1: Ein System unterstützt längs oder quer, etwa Abstandsregeltempomat. Stufe 2: Längs und quer zugleich, etwa Spurführung mit Abstandsregelung. Der Mensch muss aber ständig überwachen und sofort eingreifen können. Das sind Assistenzsysteme.",
+      "## Stufe 3: Das System fährt, der Mensch ist Rückfallebene",
+      "In einem festgelegten Einsatzbereich fährt das System selbst und überwacht die Umgebung. Der Mensch darf sich abwenden, muss aber nach Aufforderung rechtzeitig übernehmen.",
+      "## Stufe 4 und 5",
+      "Stufe 4: Das System fährt im Einsatzbereich vollständig und erreicht bei Problemen selbst einen sicheren Zustand, ohne dass ein Mensch übernehmen muss. Stufe 5: wie Stufe 4, aber ohne Einschränkung des Einsatzbereichs. Stufe 5 gibt es bisher nicht.",
+      "Probiere unten den Stufen-Vergleich aus."
+     ],
+     "key": [
+      "Stufe 0–2: Mensch fährt und überwacht (Assistenz).",
+      "Stufe 3: System fährt, Mensch übernimmt nach Aufforderung.",
+      "Stufe 4: System fährt im Bereich ohne Mensch; Stufe 5: überall."
+     ],
+     "src": [
+      {
+       "n": "SAE J3016: Taxonomy and Definitions for Terms Related to Driving Automation Systems",
+       "u": "https://www.sae.org/standards/content/j3016_202104/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SAE J3016",
+       "b": "Norm mit den Stufen 0–5 der Fahrautomatisierung.",
+       "id": "ad.m1.l1.k1"
+      },
+      {
+       "f": "Stufe 2",
+       "b": "Teilautomatisiert: Längs- und Querführung, Mensch überwacht ständig.",
+       "id": "ad.m1.l1.k2"
+      },
+      {
+       "f": "Stufe 3",
+       "b": "Bedingt automatisiert: System fährt im Einsatzbereich, Mensch ist Rückfallebene nach Aufforderung.",
+       "id": "ad.m1.l1.k3"
+      },
+      {
+       "f": "Stufe 4",
+       "b": "Hochautomatisiert: System fährt im Einsatzbereich ohne Rückfall auf den Menschen.",
+       "id": "ad.m1.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Ab welcher Stufe darf sich der Mensch im Einsatzbereich abwenden?",
+       "o": [
+        "Stufe 3",
+        "Stufe 1",
+        "Stufe 2",
+        "Stufe 5"
+       ],
+       "a": 0,
+       "e": "Bei Stufe 2 muss er ständig überwachen.",
+       "id": "ad.m1.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was unterscheidet Stufe 4 von Stufe 3?",
+       "o": [
+        "Kein Mensch als Rückfall",
+        "Stufe 4 hat keine Sensoren",
+        "Stufe 4 fährt nur auf Parkplätzen",
+        "Es gibt keinen Unterschied"
+       ],
+       "a": 0,
+       "e": "Das System erreicht selbst einen sicheren Zustand.",
+       "id": "ad.m1.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Ein Auto hält Abstand und Spur, der Fahrer muss ständig überwachen. Welche Stufe?",
+       "o": [
+        "Stufe 2",
+        "Stufe 3",
+        "Stufe 4",
+        "Stufe 0"
+       ],
+       "a": 0,
+       "e": "Längs und quer zugleich, aber mit Überwachung durch den Menschen.",
+       "id": "ad.m1.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Gibt es heute Fahrzeuge der Stufe 5?",
+       "o": [
+        "Nein",
+        "Ja, in jedem Neuwagen",
+        "Ja, aber nur Lkw",
+        "Ja, seit 1990"
+       ],
+       "a": 0,
+       "e": "Stufe 5 bedeutet: überall, ohne Einschränkung.",
+       "id": "ad.m1.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Stufe ist ein Abstandsregeltempomat allein?",
+       "o": [
+        "Stufe 1",
+        "Stufe 2",
+        "Stufe 3",
+        "Stufe 4"
+       ],
+       "a": 0,
+       "e": "Er unterstützt nur längs.",
+       "id": "ad.m1.l1.q5"
+      }
+     ],
+     "figs": [
+      {
+       "after": 7,
+       "w": "sae",
+       "cap": "Wähle eine Stufe und sieh, wer fährt, wer überwacht und wer Rückfallebene ist."
+      }
+     ]
+    },
+    {
+     "id": "ad.m1.l2",
+     "title": "Fahraufgabe und Einsatzbereich",
+     "min": 6,
+     "body": [
+      "Drei Begriffe aus SAE J3016 machen viele Diskussionen klarer.",
+      "## Dynamische Fahraufgabe (DDT)",
+      "Alles, was beim Fahren laufend passiert: Lenken, Beschleunigen, Bremsen sowie die Umgebung beobachten und darauf reagieren (OEDR, Object and Event Detection and Response). Nicht dazu gehören Planungsaufgaben wie die Routenwahl.",
+      "## Einsatzbereich (ODD)",
+      "Die Operational Design Domain beschreibt, wo und unter welchen Bedingungen ein System funktioniert: Straßentyp, Geschwindigkeit, Wetter, Tageszeit, Region. Ein Stau-Pilot kann etwa auf Autobahnen bis zu einer Höchstgeschwindigkeit bei trockenem Wetter funktionieren.",
+      "## Rückfallebene (Fallback)",
+      "Was passiert, wenn das System an seine Grenze kommt oder ausfällt? Bei Stufe 3 übernimmt der Mensch nach einer Übernahmeaufforderung. Bei Stufe 4 bringt das System das Fahrzeug selbst in einen risikominimalen Zustand (Minimal Risk Condition), etwa Anhalten am Seitenstreifen."
+     ],
+     "key": [
+      "DDT: Lenken, Beschleunigen, Bremsen, Umgebung beobachten und reagieren.",
+      "ODD: wo und unter welchen Bedingungen das System funktioniert.",
+      "Fallback: Mensch (Stufe 3) oder System selbst (Stufe 4)."
+     ],
+     "src": [
+      {
+       "n": "SAE J3016: Taxonomy and Definitions for Terms Related to Driving Automation Systems",
+       "u": "https://www.sae.org/standards/content/j3016_202104/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "DDT",
+       "b": "Dynamic Driving Task: dynamische Fahraufgabe.",
+       "id": "ad.m1.l2.k1"
+      },
+      {
+       "f": "ODD",
+       "b": "Operational Design Domain: festgelegter Einsatzbereich eines Systems.",
+       "id": "ad.m1.l2.k2"
+      },
+      {
+       "f": "Minimal Risk Condition",
+       "b": "Risikominimaler Zustand, z. B. sicheres Anhalten.",
+       "id": "ad.m1.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Gehört die Routenwahl zur dynamischen Fahraufgabe?",
+       "o": [
+        "Nein",
+        "Ja, immer",
+        "Nur bei Stufe 5",
+        "Nur nachts"
+       ],
+       "a": 0,
+       "e": "DDT umfasst die laufenden Fahrhandlungen.",
+       "id": "ad.m1.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt die ODD?",
+       "o": [
+        "Wo und wann ein System funktioniert",
+        "Die Farbe des Fahrzeugs",
+        "Die Batteriekapazität",
+        "Den Kaufpreis"
+       ],
+       "a": 0,
+       "e": "Straßentyp, Tempo, Wetter, Region.",
+       "id": "ad.m1.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wer ist bei Stufe 4 die Rückfallebene?",
+       "o": [
+        "System",
+        "Der Fahrer",
+        "Die Polizei",
+        "Die Werkstatt"
+       ],
+       "a": 0,
+       "e": "Es erreicht selbst einen risikominimalen Zustand.",
+       "id": "ad.m1.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Beispiel für eine Minimal Risk Condition?",
+       "o": [
+        "Sicher am Seitenstreifen anhalten",
+        "Weiterfahren mit Höchstgeschwindigkeit",
+        "Hupen und weiterfahren",
+        "Den Motor abwürgen auf der Kreuzung"
+       ],
+       "a": 0,
+       "e": "Das Risiko wird minimiert.",
+       "id": "ad.m1.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet OEDR?",
+       "o": [
+        "Erkennen und reagieren",
+        "Optimale Energie-Durchschnittsreichweite",
+        "Offizielle EU-Datenrichtlinie",
+        "Online-Entwicklungsdienst"
+       ],
+       "a": 0,
+       "e": "Teil der dynamischen Fahraufgabe.",
+       "id": "ad.m1.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ad.m1.l3",
+     "title": "Assistenz oder Automatisierung?",
+     "min": 5,
+     "body": [
+      "Im Alltag werden Begriffe oft vermischt. Für Sicherheit und Recht ist die Unterscheidung entscheidend.",
+      "## Assistenz (Stufe 0–2)",
+      "Der Mensch ist immer verantwortlich. Hände am Lenkrad oder zumindest Blick auf die Straße. Fahrerbeobachtungskameras prüfen zunehmend, ob der Fahrer aufmerksam ist.",
+      "## Automatisierung (ab Stufe 3)",
+      "Im Einsatzbereich ist das System für die Fahraufgabe zuständig. Daraus folgen andere Anforderungen an Technik, Absicherung und Haftung.",
+      "## Gefahr der Überschätzung",
+      "Wer ein Stufe-2-System für autonom hält, wendet sich womöglich ab. Studien und Unfälle zeigen, dass Missverständnisse gefährlich sind. Deshalb achten Behörden auf klare Bezeichnungen und wirksame Fahrerüberwachung."
+     ],
+     "key": [
+      "Stufe 0–2: Mensch immer verantwortlich.",
+      "Ab Stufe 3: System im Einsatzbereich zuständig.",
+      "Überschätzung von Assistenz ist gefährlich."
+     ],
+     "src": [
+      {
+       "n": "SAE J3016: Taxonomy and Definitions for Terms Related to Driving Automation Systems",
+       "u": "https://www.sae.org/standards/content/j3016_202104/"
+      },
+      {
+       "n": "Verordnung (EU) 2019/2144 (General Safety Regulation): Fahrerassistenz- und Sicherheitssysteme",
+       "u": "https://eur-lex.europa.eu/eli/reg/2019/2144/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Fahrerbeobachtung",
+       "b": "Kamera- oder sensorbasierte Prüfung der Aufmerksamkeit des Fahrers.",
+       "id": "ad.m1.l3.k1"
+      },
+      {
+       "f": "Assistenzsystem",
+       "b": "System der Stufen 0–2, das den Fahrer unterstützt, aber nicht ersetzt.",
+       "id": "ad.m1.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wer ist bei einem Stufe-2-System verantwortlich?",
+       "o": [
+        "Immer der Mensch",
+        "Das System",
+        "Der Hersteller allein",
+        "Niemand"
+       ],
+       "a": 0,
+       "e": "Es ist ein Assistenzsystem.",
+       "id": "ad.m1.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum sind Fahrerbeobachtungskameras wichtig?",
+       "o": [
+        "Aufmerksamkeit prüfen",
+        "Sie filmen für soziale Medien",
+        "Sie messen Abgase",
+        "Sie ersetzen Spiegel"
+       ],
+       "a": 0,
+       "e": "Gegen Überschätzung und Ablenkung.",
+       "id": "ad.m1.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist gefährlich an falschen Bezeichnungen?",
+       "o": [
+        "Überschätzung",
+        "Sie kosten Steuern",
+        "Sie verlängern Lieferzeiten",
+        "Nichts"
+       ],
+       "a": 0,
+       "e": "Missverständnisse können zu Unfällen führen.",
+       "id": "ad.m1.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Ab welcher Stufe spricht man von Automatisierung im engeren Sinn?",
+       "o": [
+        "Ab Stufe 3",
+        "Ab Stufe 1",
+        "Ab Stufe 2",
+        "Erst ab Stufe 5"
+       ],
+       "a": 0,
+       "e": "Dann ist das System für die Fahraufgabe zuständig.",
+       "id": "ad.m1.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Darf sich der Fahrer bei Stufe 2 dauerhaft abwenden?",
+       "o": [
+        "Nein",
+        "Ja",
+        "Nur auf der Autobahn",
+        "Nur bei Regen"
+       ],
+       "a": 0,
+       "e": "Er muss ständig überwachen.",
+       "id": "ad.m1.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ad.m2",
+   "level": 1,
+   "title": "Sensoren",
+   "desc": "Kamera, Radar, Lidar, Ultraschall und warum man mehrere braucht.",
+   "lessons": [
+    {
+     "id": "ad.m2.l1",
+     "title": "Kamera",
+     "min": 5,
+     "body": [
+      "Kameras sind das vielseitigste Sensorprinzip: Sie erkennen Fahrspuren, Schilder, Ampeln, Fahrzeuge, Fußgänger und vieles mehr.",
+      "## Stärken",
+      "Hohe Auflösung, Farbe, günstig. Mit neuronalen Netzen lassen sich Objekte klassifizieren und sogar Entfernungen schätzen, besonders mit Stereokameras.",
+      "## Schwächen",
+      "Kameras messen Entfernung und Geschwindigkeit nicht direkt. Gegenlicht, Dunkelheit, Nebel, Regen und verschmutzte Linsen verschlechtern das Bild. Deshalb brauchen sie Heizung, Reinigung und Ergänzung durch andere Sensoren.",
+      "## Einsatz",
+      "Frontkamera hinter der Windschutzscheibe, Rundumsichtkameras, Innenraumkamera zur Fahrerbeobachtung."
+     ],
+     "key": [
+      "Kamera: vielseitig, hochauflösend, günstig.",
+      "Entfernung und Tempo nicht direkt gemessen.",
+      "Empfindlich für Licht, Wetter, Schmutz."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Stereokamera",
+       "b": "Zwei Kameras im Abstand, die Entfernungen aus dem Bildversatz berechnen.",
+       "id": "ad.m2.l1.k1"
+      },
+      {
+       "f": "Klassifikation",
+       "b": "Zuordnung eines erkannten Objekts zu einer Klasse, z. B. Fußgänger.",
+       "id": "ad.m2.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was kann eine Kamera besonders gut?",
+       "o": [
+        "Objekte erkennen",
+        "Geschwindigkeit direkt messen",
+        "Durch dichten Nebel sehen",
+        "Ohne Licht arbeiten"
+       ],
+       "a": 0,
+       "e": "Ihre Stärke ist die Bildinformation.",
+       "id": "ad.m2.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist eine Schwäche von Kameras?",
+       "o": [
+        "Gegenlicht",
+        "Zu hohe Auflösung",
+        "Zu wenig Farben",
+        "Sie sind zu billig"
+       ],
+       "a": 0,
+       "e": "Deshalb ergänzt man sie.",
+       "id": "ad.m2.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie schätzt eine Stereokamera Entfernungen?",
+       "o": [
+        "Aus Bildversatz",
+        "Mit Ultraschall",
+        "Mit Radar",
+        "Mit GPS"
+       ],
+       "a": 0,
+       "e": "Ähnlich wie zwei Augen.",
+       "id": "ad.m2.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient die Innenraumkamera?",
+       "o": [
+        "Fahrer",
+        "Spurerkennung",
+        "Parkplatzsuche",
+        "Abgasmessung"
+       ],
+       "a": 0,
+       "e": "Prüft Aufmerksamkeit und Müdigkeit.",
+       "id": "ad.m2.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was brauchen Kameras im Alltag oft?",
+       "o": [
+        "Heizung",
+        "Kühlwasser",
+        "Kraftstoff",
+        "Öl"
+       ],
+       "a": 0,
+       "e": "Gegen Beschlag, Eis und Schmutz.",
+       "id": "ad.m2.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "ad.m2.l2",
+     "title": "Radar, Lidar, Ultraschall",
+     "min": 6,
+     "body": [
+      "Weitere Sensoren messen, was Kameras nur schätzen.",
+      "## Radar",
+      "Radar sendet Funkwellen (im Fahrzeug meist um 77 GHz) und misst Entfernung und, über den Doppler-Effekt, direkt die Relativgeschwindigkeit. Es funktioniert bei Nacht, Regen und Nebel gut. Die Auflösung ist geringer, neuere 4D-Imaging-Radare verbessern sie deutlich.",
+      "## Lidar",
+      "Lidar tastet die Umgebung mit Laserlicht ab und erzeugt eine genaue 3D-Punktwolke. Stärken: präzise Form und Entfernung. Schwächen: teurer, empfindlicher bei starkem Regen, Nebel oder Schnee.",
+      "## Ultraschall",
+      "Ultraschallsensoren in den Stoßfängern messen kurze Entfernungen (wenige Meter) und dienen vor allem beim Parken.",
+      "## Keine Wunderwaffe",
+      "Jeder Sensor hat Stärken und Schwächen. Deshalb kombinieren automatisierte Fahrzeuge mehrere Sensortypen."
+     ],
+     "key": [
+      "Radar (≈ 77 GHz): Entfernung und Relativgeschwindigkeit, wetterfest.",
+      "Lidar: genaue 3D-Punktwolke, teurer, wetterempfindlich.",
+      "Ultraschall: Nahbereich zum Parken."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Radar",
+       "b": "Sensor mit Funkwellen; misst Entfernung und per Doppler die Relativgeschwindigkeit.",
+       "id": "ad.m2.l2.k1"
+      },
+      {
+       "f": "Lidar",
+       "b": "Sensor mit Laserlicht; erzeugt eine 3D-Punktwolke.",
+       "id": "ad.m2.l2.k2"
+      },
+      {
+       "f": "Doppler-Effekt",
+       "b": "Frequenzverschiebung durch Relativbewegung; erlaubt direkte Geschwindigkeitsmessung.",
+       "id": "ad.m2.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welcher Sensor misst die Relativgeschwindigkeit direkt?",
+       "o": [
+        "Radar",
+        "Kamera",
+        "Ultraschall",
+        "Lidar ohne Mehrfachmessung"
+       ],
+       "a": 0,
+       "e": "Über den Doppler-Effekt.",
+       "id": "ad.m2.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Sensor liefert eine genaue 3D-Punktwolke?",
+       "o": [
+        "Lidar",
+        "Ultraschall",
+        "Mikrofon",
+        "Regensensor"
+       ],
+       "a": 0,
+       "e": "Laserlicht tastet die Umgebung ab.",
+       "id": "ad.m2.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür nutzt man Ultraschall vor allem?",
+       "o": [
+        "Parken im Nahbereich",
+        "Autobahnfahrt bei 130 km/h",
+        "Schilder lesen",
+        "Ampelfarben erkennen"
+       ],
+       "a": 0,
+       "e": "Reichweite nur wenige Meter.",
+       "id": "ad.m2.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welcher Sensor ist bei Nebel am robustesten?",
+       "o": [
+        "Radar",
+        "Kamera",
+        "Lidar",
+        "Keiner funktioniert"
+       ],
+       "a": 0,
+       "e": "Funkwellen durchdringen Nebel gut.",
+       "id": "ad.m2.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "In welchem Frequenzbereich arbeiten Fahrzeugradare meist?",
+       "o": [
+        "Um 77 GHz",
+        "Um 50 Hz",
+        "Um 2,4 kHz",
+        "Um 100 MHz"
+       ],
+       "a": 0,
+       "e": "Ältere Systeme nutzten auch 24 GHz.",
+       "id": "ad.m2.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ad.m2.l3",
+     "title": "Warum mehrere Sensoren?",
+     "min": 5,
+     "body": [
+      "Kein Sensor sieht alles. Redundanz und Vielfalt machen das Gesamtsystem robust.",
+      "## Ergänzung",
+      "Die Kamera erkennt, was etwas ist; Radar misst, wie schnell es sich bewegt; Lidar zeigt die genaue Form. Zusammen entsteht ein vollständigeres Bild.",
+      "## Redundanz",
+      "Fällt ein Sensor aus oder ist geblendet, liefern andere noch Informationen. Unterschiedliche Messprinzipien haben unterschiedliche Schwächen, deshalb fallen sie selten gleichzeitig aus.",
+      "## Der Streit um Lidar",
+      "Einige Hersteller setzen fast nur auf Kameras und argumentieren, Menschen führen ja auch nur mit Augen. Andere halten Lidar und Radar für unverzichtbar, gerade für höhere Stufen. Welche Strategie sich durchsetzt, ist offen."
+     ],
+     "key": [
+      "Sensoren ergänzen sich: was (Kamera), wie schnell (Radar), welche Form (Lidar).",
+      "Vielfalt = Redundanz mit unterschiedlichen Schwächen.",
+      "Kamera-only vs. Multi-Sensor ist umstritten."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      },
+      {
+       "n": "ISO 21448: Safety of the intended functionality (SOTIF)",
+       "u": "https://www.iso.org/standard/77490.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Sensorredundanz",
+       "b": "Mehrere Sensoren für dieselbe Information, damit ein Ausfall nicht alles lahmlegt.",
+       "id": "ad.m2.l3.k1"
+      },
+      {
+       "f": "Diversität",
+       "b": "Nutzung unterschiedlicher Messprinzipien, damit Fehler nicht gleichzeitig auftreten.",
+       "id": "ad.m2.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Warum nutzt man unterschiedliche Messprinzipien?",
+       "o": [
+        "Sie haben unterschiedliche Schwächen",
+        "Weil es billiger ist",
+        "Weil Gesetze Kameras verbieten",
+        "Damit das Auto schwerer wird"
+       ],
+       "a": 0,
+       "e": "Sie fallen selten gleichzeitig aus.",
+       "id": "ad.m2.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was liefert die Kamera im Verbund vor allem?",
+       "o": [
+        "Was ein Objekt ist",
+        "Die genaue Geschwindigkeit",
+        "Die Temperatur",
+        "Den Luftdruck"
+       ],
+       "a": 0,
+       "e": "Klassifikation.",
+       "id": "ad.m2.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Ist die Frage Kamera-only gegen Multi-Sensor entschieden?",
+       "o": [
+        "Nein, offen",
+        "Ja, nur Kameras",
+        "Ja, nur Lidar",
+        "Ja, nur Ultraschall"
+       ],
+       "a": 0,
+       "e": "Hersteller verfolgen verschiedene Strategien.",
+       "id": "ad.m2.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert bei Blendung der Kamera in einem Multi-Sensor-System?",
+       "o": [
+        "Andere Sensoren liefern weiter",
+        "Das Fahrzeug fährt blind weiter",
+        "Alles fällt aus",
+        "Die Kamera wird abgeschaltet und vergessen"
+       ],
+       "a": 0,
+       "e": "Darum Redundanz.",
+       "id": "ad.m2.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist Diversität bei Sensoren?",
+       "o": [
+        "Verschiedene Messprinzipien",
+        "Verschiedene Farben",
+        "Verschiedene Hersteller-Logos",
+        "Verschiedene Preise"
+       ],
+       "a": 0,
+       "e": "Etwa Licht, Funk und Laser.",
+       "id": "ad.m2.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ad.m3",
+   "level": 2,
+   "title": "Wahrnehmen und Verstehen",
+   "desc": "Objekterkennung mit KI, Sensorfusion, Lokalisierung und Karten.",
+   "lessons": [
+    {
+     "id": "ad.m3.l1",
+     "title": "Objekterkennung mit neuronalen Netzen",
+     "min": 6,
+     "body": [
+      "Aus Pixeln und Punkten werden Objekte: Das leisten heute meist neuronale Netze.",
+      "## Wie es funktioniert",
+      "Ein Netz wird mit sehr vielen beschrifteten Beispielen trainiert: Bilder, auf denen Fahrzeuge, Fußgänger, Radfahrer und Fahrbahnmarkierungen markiert sind. Danach erkennt es solche Objekte in neuen Bildern und gibt Position, Klasse und eine Konfidenz aus.",
+      "## Daten sind alles",
+      "Die Qualität hängt von den Trainingsdaten ab. Seltene Situationen (ein Pferdewagen, ein umgekippter Lkw, ein Mensch im Kostüm) sind schwer abzudecken. Man spricht vom Long Tail. Hersteller sammeln deshalb gezielt Daten aus Flotten und erzeugen synthetische Daten in Simulationen.",
+      "## Grenzen",
+      "Netze können sich sicher irren, sind schwer erklärbar und reagieren manchmal unerwartet auf kleine Veränderungen. Deshalb braucht man Plausibilisierung, mehrere Sensoren und eine sorgfältige Absicherung (SOTIF)."
+     ],
+     "key": [
+      "Neuronale Netze erkennen Objekte nach Training mit beschrifteten Daten.",
+      "Long Tail: seltene Situationen sind die große Herausforderung.",
+      "Grenzen: sichere Fehler, schwer erklärbar → Absicherung nötig."
+     ],
+     "src": [
+      {
+       "n": "ISO 21448: Safety of the intended functionality (SOTIF)",
+       "u": "https://www.iso.org/standard/77490.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Konfidenz",
+       "b": "Vom Netz ausgegebene Sicherheit seiner Erkennung; nicht gleich Wahrscheinlichkeit, richtig zu liegen.",
+       "id": "ad.m3.l1.k1"
+      },
+      {
+       "f": "Long Tail",
+       "b": "Viele seltene Situationen, die zusammen relevant sind und schwer abzudecken.",
+       "id": "ad.m3.l1.k2"
+      },
+      {
+       "f": "Synthetische Daten",
+       "b": "Künstlich erzeugte Trainingsdaten, z. B. aus Simulationen.",
+       "id": "ad.m3.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist der Long Tail?",
+       "o": [
+        "Seltene Fälle",
+        "Ein langer Kabelbaum",
+        "Ein Anhänger",
+        "Eine lange Autobahn"
+       ],
+       "a": 0,
+       "e": "Die große Herausforderung beim Training.",
+       "id": "ad.m3.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was braucht ein neuronales Netz zum Lernen?",
+       "o": [
+        "Beispiele",
+        "Nur ein Foto",
+        "Ein Lenkrad",
+        "Kraftstoff"
+       ],
+       "a": 0,
+       "e": "Trainingsdaten bestimmen die Qualität.",
+       "id": "ad.m3.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was gibt ein Erkennungsnetz typischerweise aus?",
+       "o": [
+        "Ort und Klasse",
+        "Nur die Uhrzeit",
+        "Den Kraftstoffstand",
+        "Die Motortemperatur"
+       ],
+       "a": 0,
+       "e": "Etwa: Fußgänger, hier, 92 %.",
+       "id": "ad.m3.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum nutzt man synthetische Daten?",
+       "o": [
+        "Um seltene Fälle abzudecken",
+        "Weil echte Daten verboten sind",
+        "Weil sie immer besser sind",
+        "Um Speicher zu sparen"
+       ],
+       "a": 0,
+       "e": "Gefährliche Situationen lassen sich gefahrlos erzeugen.",
+       "id": "ad.m3.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet eine hohe Konfidenz?",
+       "o": [
+        "Sicher, aber nicht garantiert",
+        "Die Erkennung ist garantiert richtig",
+        "Der Sensor ist defekt",
+        "Das Objekt ist weit weg"
+       ],
+       "a": 0,
+       "e": "Konfidenz ist keine Garantie.",
+       "id": "ad.m3.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "ad.m3.l2",
+     "title": "Sensorfusion und Tracking",
+     "min": 6,
+     "body": [
+      "Jeder Sensor liefert ein eigenes, unvollständiges Bild. Die Sensorfusion setzt daraus ein gemeinsames Umfeldmodell zusammen.",
+      "## Ebenen der Fusion",
+      "Bei der späten Fusion erkennt jeder Sensor zunächst selbst Objekte, die dann zusammengeführt werden. Bei der frühen Fusion werden Rohdaten kombiniert und gemeinsam ausgewertet. Beides hat Vor- und Nachteile.",
+      "## Tracking",
+      "Objekte werden über die Zeit verfolgt. Ein Filter (klassisch ein Kalman-Filter) sagt vorher, wo ein Objekt im nächsten Moment sein wird, und korrigiert die Vorhersage mit neuen Messungen. So entstehen stabile Spuren mit Position, Geschwindigkeit und Richtung.",
+      "## Unsicherheit",
+      "Jede Messung ist ungenau. Gute Fusion berücksichtigt, wie sicher jeder Sensor in der aktuellen Situation ist, etwa Radar bei Nebel mehr als der Kamera."
+     ],
+     "key": [
+      "Fusion: gemeinsames Umfeldmodell aus mehreren Sensoren.",
+      "Spät (Objekte) oder früh (Rohdaten).",
+      "Tracking mit Vorhersage und Korrektur, z. B. Kalman-Filter."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Sensorfusion",
+       "b": "Zusammenführen der Daten mehrerer Sensoren zu einem gemeinsamen Umfeldmodell.",
+       "id": "ad.m3.l2.k1"
+      },
+      {
+       "f": "Kalman-Filter",
+       "b": "Verfahren, das Zustände vorhersagt und mit Messungen korrigiert.",
+       "id": "ad.m3.l2.k2"
+      },
+      {
+       "f": "Umfeldmodell",
+       "b": "Interne Darstellung aller relevanten Objekte und Freiräume um das Fahrzeug.",
+       "id": "ad.m3.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was macht ein Kalman-Filter?",
+       "o": [
+        "Vorhersage + Korrektur",
+        "Daten löschen",
+        "Bilder färben",
+        "Strom filtern"
+       ],
+       "a": 0,
+       "e": "Grundlage vieler Tracking-Verfahren.",
+       "id": "ad.m3.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist späte Fusion?",
+       "o": [
+        "Objekte je Sensor",
+        "Rohdaten werden kombiniert",
+        "Fusion nach Fahrtende",
+        "Fusion nur nachts"
+       ],
+       "a": 0,
+       "e": "Danach werden Objektlisten zusammengeführt.",
+       "id": "ad.m3.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was liefert Tracking über die Zeit?",
+       "o": [
+        "Stabile Spuren mit Position und Geschwindigkeit",
+        "Nur Einzelbilder",
+        "Die Musikliste",
+        "Den Reifendruck"
+       ],
+       "a": 0,
+       "e": "Objekte werden verfolgt.",
+       "id": "ad.m3.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wem vertraut gute Fusion bei Nebel mehr?",
+       "o": [
+        "Dem Radar",
+        "Der Kamera",
+        "Dem Ultraschall auf 100 m",
+        "Keinem"
+       ],
+       "a": 0,
+       "e": "Fusion gewichtet nach Situation.",
+       "id": "ad.m3.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist das Umfeldmodell?",
+       "o": [
+        "Bild der Umgebung",
+        "Ein Modellauto",
+        "Eine Wettervorhersage",
+        "Ein Straßenatlas aus Papier"
+       ],
+       "a": 0,
+       "e": "Grundlage für die Planung.",
+       "id": "ad.m3.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ad.m3.l3",
+     "title": "Lokalisierung und Karten",
+     "min": 6,
+     "body": [
+      "Um sicher zu fahren, muss das Fahrzeug wissen, wo es ist, oft auf wenige Zentimeter genau.",
+      "## GNSS allein reicht nicht",
+      "Satellitennavigation (GNSS wie GPS oder Galileo) ist ohne Korrektur meist auf einige Meter genau und fällt in Tunneln oder Häuserschluchten aus. Korrekturdienste (RTK) verbessern die Genauigkeit deutlich.",
+      "## Weitere Quellen",
+      "Inertialsensoren und Raddrehzahlen schätzen die Bewegung über kurze Zeiten (Koppelnavigation). Kamera und Lidar erkennen Landmarken und vergleichen sie mit einer Karte.",
+      "## HD-Karten",
+      "Hochgenaue Karten enthalten Fahrspuren, Markierungen, Schilder und Höhenprofile. Sie helfen bei Lokalisierung und Vorausschau, müssen aber aktuell gehalten werden. Manche Systeme setzen auf leichtere Karten und mehr Wahrnehmung im Fahrzeug."
+     ],
+     "key": [
+      "GNSS allein: einige Meter, Ausfälle in Tunneln; RTK verbessert.",
+      "Koppelnavigation mit Inertialsensoren und Raddrehzahl.",
+      "HD-Karten helfen, müssen aber aktuell sein."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "GNSS",
+       "b": "Global Navigation Satellite System, z. B. GPS oder Galileo.",
+       "id": "ad.m3.l3.k1"
+      },
+      {
+       "f": "RTK",
+       "b": "Real-Time Kinematic: Korrekturverfahren für zentimetergenaue Satellitenpositionen.",
+       "id": "ad.m3.l3.k2"
+      },
+      {
+       "f": "HD-Karte",
+       "b": "Hochgenaue Karte mit Spuren, Markierungen und Schildern.",
+       "id": "ad.m3.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wo fällt GNSS häufig aus?",
+       "o": [
+        "In Tunneln",
+        "Auf freiem Feld",
+        "Auf dem Meer",
+        "In der Wüste"
+       ],
+       "a": 0,
+       "e": "Satellitensignale fehlen.",
+       "id": "ad.m3.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was verbessert die GNSS-Genauigkeit deutlich?",
+       "o": [
+        "RTK",
+        "Lauteres Radio",
+        "Größere Räder",
+        "Mehr Kraftstoff"
+       ],
+       "a": 0,
+       "e": "Bis in den Zentimeterbereich.",
+       "id": "ad.m3.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist Koppelnavigation?",
+       "o": [
+        "Mitkoppeln per Sensoren",
+        "Navigation mit Papierkarte",
+        "Kopplung mit dem Smartphone",
+        "Navigation per Funk"
+       ],
+       "a": 0,
+       "e": "Überbrückt kurze Ausfälle.",
+       "id": "ad.m3.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Nachteil von HD-Karten?",
+       "o": [
+        "Sie müssen aktuell gehalten werden",
+        "Sie sind zu ungenau",
+        "Sie zeigen keine Straßen",
+        "Sie brauchen Kraftstoff"
+       ],
+       "a": 0,
+       "e": "Baustellen ändern sich schnell.",
+       "id": "ad.m3.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wie genau ist GNSS ohne Korrektur typischerweise?",
+       "o": [
+        "Einige Meter",
+        "Wenige Millimeter",
+        "Mehrere Kilometer",
+        "Gar nicht"
+       ],
+       "a": 0,
+       "e": "Für Spurhaltung zu ungenau.",
+       "id": "ad.m3.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ad.m4",
+   "level": 2,
+   "title": "Planen, Regeln und Architektur",
+   "desc": "Verhaltensplanung, Trajektorien, Regelung und redundante Architektur.",
+   "lessons": [
+    {
+     "id": "ad.m4.l1",
+     "title": "Verhalten und Trajektorie planen",
+     "min": 6,
+     "body": [
+      "Aus dem Umfeldmodell muss das System entscheiden, was es tut.",
+      "## Vorhersage",
+      "Zunächst wird geschätzt, was andere Verkehrsteilnehmer vorhaben: Wechselt das Auto vorne die Spur? Will der Fußgänger queren? Oft werden mehrere mögliche Zukünfte mit Wahrscheinlichkeiten betrachtet.",
+      "## Verhaltensplanung",
+      "Dann wird ein Manöver gewählt: Spur halten, folgen, Spur wechseln, anhalten, ausweichen. Regeln (Verkehrsrecht), Sicherheitsabstände und Komfort fließen ein.",
+      "## Trajektorie",
+      "Die Bewegungsplanung berechnet eine konkrete Bahn mit Geschwindigkeit über die Zeit, die kollisionsfrei, fahrbar und komfortabel ist. Sie wird viele Male pro Sekunde neu berechnet.",
+      "## Lernende Ansätze",
+      "Neben klassischen Verfahren setzen manche auf durchgehend gelernte Systeme (End-to-End), die direkt aus Sensordaten Fahrbefehle erzeugen. Sie sind leistungsfähig, aber schwer abzusichern und zu erklären."
+     ],
+     "key": [
+      "Vorhersage → Verhaltensplanung → Trajektorie.",
+      "Trajektorie: kollisionsfrei, fahrbar, komfortabel; laufend neu berechnet.",
+      "End-to-End-Lernen: leistungsfähig, schwer abzusichern."
+     ],
+     "src": [
+      {
+       "n": "ISO 21448: Safety of the intended functionality (SOTIF)",
+       "u": "https://www.iso.org/standard/77490.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Trajektorie",
+       "b": "Geplante Bahn mit Geschwindigkeitsverlauf über die Zeit.",
+       "id": "ad.m4.l1.k1"
+      },
+      {
+       "f": "Verhaltensplanung",
+       "b": "Wahl des Manövers, z. B. folgen, Spurwechsel, anhalten.",
+       "id": "ad.m4.l1.k2"
+      },
+      {
+       "f": "End-to-End",
+       "b": "Ansatz, bei dem ein gelerntes System direkt aus Sensordaten Fahrbefehle erzeugt.",
+       "id": "ad.m4.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Ordne die Planungsschritte.",
+       "o": [
+        "Vorhersage anderer Teilnehmer",
+        "Manöver wählen",
+        "Trajektorie berechnen",
+        "Regelung setzt um"
+       ],
+       "e": "Vom Verstehen zum Handeln.",
+       "id": "ad.m4.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was muss eine Trajektorie sein?",
+       "o": [
+        "Sicher und fahrbar",
+        "Möglichst kurz und schnell",
+        "Immer gerade",
+        "Immer langsam"
+       ],
+       "a": 0,
+       "e": "Dazu regelkonform.",
+       "id": "ad.m4.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie oft wird die Trajektorie neu berechnet?",
+       "o": [
+        "Ständig",
+        "Einmal pro Fahrt",
+        "Einmal pro Tag",
+        "Nur beim Start"
+       ],
+       "a": 0,
+       "e": "Die Umgebung ändert sich ständig.",
+       "id": "ad.m4.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Nachteil von End-to-End-Ansätzen?",
+       "o": [
+        "Schwer abzusichern und zu erklären",
+        "Sie brauchen keine Daten",
+        "Sie sind immer schlechter",
+        "Sie funktionieren nur nachts"
+       ],
+       "a": 0,
+       "e": "Für die Zulassung eine Herausforderung.",
+       "id": "ad.m4.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was gehört zur Vorhersage?",
+       "o": [
+        "Absichten",
+        "Wetter für morgen",
+        "Kraftstoffpreise",
+        "Werkstatttermine"
+       ],
+       "a": 0,
+       "e": "Will das Auto vorne die Spur wechseln?",
+       "id": "ad.m4.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "ad.m4.l2",
+     "title": "Regelung und Aktorik",
+     "min": 5,
+     "body": [
+      "Die geplante Trajektorie muss in Lenk-, Brems- und Antriebsbefehle übersetzt werden.",
+      "## Regelung",
+      "Längsregler stellen Beschleunigung und Bremsung ein, Querregler den Lenkwinkel. Sie gleichen ständig Soll und Ist ab und berücksichtigen Fahrzeugdynamik, Fahrbahn und Verzögerungen.",
+      "## By-Wire",
+      "Damit ein System eingreifen kann, müssen Lenkung, Bremse und Antrieb elektronisch ansteuerbar sein. Elektrische Servolenkung und elektronische Bremssysteme machen das möglich. Bei höheren Stufen braucht man redundante Aktorik, etwa eine zweite Bremsansteuerung und doppelte Versorgung der Lenkung.",
+      "## Grenzen",
+      "Physik bleibt Physik: Haftung, Bremsweg und Trägheit begrenzen, was möglich ist. Planung und Regelung müssen diese Grenzen kennen."
+     ],
+     "key": [
+      "Längs- und Querregelung setzen die Trajektorie um.",
+      "By-Wire-Aktorik; höhere Stufen brauchen Redundanz.",
+      "Physikalische Grenzen (Haftung, Bremsweg) beachten."
+     ],
+     "src": [
+      {
+       "n": "ISO 26262: Funktionale Sicherheit von Straßenfahrzeugen",
+       "u": "https://www.iso.org/standard/68383.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Querregelung",
+       "b": "Regelung des Lenkwinkels zum Folgen der Trajektorie.",
+       "id": "ad.m4.l2.k1"
+      },
+      {
+       "f": "By-Wire",
+       "b": "Elektronische Ansteuerung von Lenkung, Bremse oder Antrieb.",
+       "id": "ad.m4.l2.k2"
+      },
+      {
+       "f": "Redundante Aktorik",
+       "b": "Doppelte Ansteuerung oder Versorgung von Lenkung und Bremse.",
+       "id": "ad.m4.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was regelt die Querregelung?",
+       "o": [
+        "Den Lenkwinkel",
+        "Die Bremse",
+        "Den Kraftstoff",
+        "Die Klimaanlage"
+       ],
+       "a": 0,
+       "e": "Längsregelung: Beschleunigen und Bremsen.",
+       "id": "ad.m4.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum brauchen höhere Stufen redundante Bremsansteuerung?",
+       "o": [
+        "Kein Mensch",
+        "Weil es schöner aussieht",
+        "Wegen der Abgasnorm",
+        "Für mehr Leistung"
+       ],
+       "a": 0,
+       "e": "Das System muss auch bei Fehlern sicher bremsen.",
+       "id": "ad.m4.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet By-Wire?",
+       "o": [
+        "Elektronisch",
+        "Mechanisches Seil",
+        "Hydraulik ohne Strom",
+        "Funkfernbedienung"
+       ],
+       "a": 0,
+       "e": "Voraussetzung für automatisierte Eingriffe.",
+       "id": "ad.m4.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was begrenzt die Regelung physikalisch?",
+       "o": [
+        "Haftung und Bremsweg",
+        "Die Software-Version",
+        "Die Farbe",
+        "Der Fahrzeugname"
+       ],
+       "a": 0,
+       "e": "Physik bleibt Physik.",
+       "id": "ad.m4.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was gleicht ein Regler ständig ab?",
+       "o": [
+        "Soll und Ist",
+        "Preise",
+        "Fahrerprofile",
+        "Musik"
+       ],
+       "a": 0,
+       "e": "Grundprinzip jeder Regelung.",
+       "id": "ad.m4.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ad.m4.l3",
+     "title": "Sichere Architektur",
+     "min": 6,
+     "body": [
+      "Ein automatisiertes Fahrzeug darf bei einem einzelnen Fehler nicht einfach ausfallen, denn bei Stufe 4 steht kein Mensch bereit. Es muss fail-operational sein, also eingeschränkt weiterfunktionieren, bis ein sicherer Zustand erreicht ist.",
+      "## Redundanz überall",
+      "Zwei unabhängige Rechnerpfade, redundante Sensorik, doppelte Energieversorgung, redundante Kommunikation und Aktorik. Oft prüft ein unabhängiger, einfacherer Pfad den Hauptpfad und kann übernehmen.",
+      "## Überwachung",
+      "Ein Sicherheitsüberwacher prüft, ob die geplante Trajektorie kollisionsfrei und physikalisch plausibel ist. Ist sie es nicht, greift er mit einer Notfalltrajektorie ein.",
+      "## Rechenleistung",
+      "Wahrnehmung mit neuronalen Netzen braucht enorme Rechenleistung, oft spezialisierte Chips. Abwärme, Energiebedarf und Kosten sind ernste Randbedingungen."
+     ],
+     "key": [
+      "Stufe 4 braucht fail-operational statt fail-safe.",
+      "Redundante Rechner, Sensoren, Energie, Kommunikation, Aktorik.",
+      "Sicherheitsüberwacher mit Notfalltrajektorie."
+     ],
+     "src": [
+      {
+       "n": "ISO 26262: Funktionale Sicherheit von Straßenfahrzeugen",
+       "u": "https://www.iso.org/standard/68383.html"
+      },
+      {
+       "n": "ISO 21448: Safety of the intended functionality (SOTIF)",
+       "u": "https://www.iso.org/standard/77490.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Fail-operational",
+       "b": "Bei einem Fehler eingeschränkt weiterfunktionieren, bis ein sicherer Zustand erreicht ist.",
+       "id": "ad.m4.l3.k1"
+      },
+      {
+       "f": "Notfalltrajektorie",
+       "b": "Vorberechnete Bahn in einen risikominimalen Zustand.",
+       "id": "ad.m4.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Warum reicht fail-safe bei Stufe 4 oft nicht?",
+       "o": [
+        "Kein Mensch steht sofort bereit",
+        "Fail-safe ist verboten",
+        "Weil Abschalten immer sicher ist",
+        "Weil es zu teuer ist"
+       ],
+       "a": 0,
+       "e": "Abschalten auf der Autobahn wäre gefährlich.",
+       "id": "ad.m4.l3.q1"
+      },
+      {
+       "t": "multi",
+       "q": "Was wird bei hochautomatisierten Fahrzeugen redundant ausgelegt?",
+       "o": [
+        "Rechner",
+        "Energieversorgung",
+        "Lenkung und Bremse",
+        "Sitzbezüge"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Sitzbezüge sind nicht sicherheitsrelevant.",
+       "id": "ad.m4.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was macht ein Sicherheitsüberwacher?",
+       "o": [
+        "Prüft die Bahn",
+        "Überwacht die Musik",
+        "Zählt Kilometer",
+        "Misst Abgase"
+       ],
+       "a": 0,
+       "e": "Er greift bei Gefahr ein.",
+       "id": "ad.m4.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist eine Notfalltrajektorie?",
+       "o": [
+        "Bahn in einen risikominimalen Zustand",
+        "Schnellster Weg zur Werkstatt",
+        "Umleitung bei Stau",
+        "Route zur Tankstelle"
+       ],
+       "a": 0,
+       "e": "Etwa sicher anhalten.",
+       "id": "ad.m4.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist eine Randbedingung leistungsfähiger KI-Rechner im Fahrzeug?",
+       "o": [
+        "Abwärme",
+        "Zu wenig Gewicht",
+        "Zu niedrige Kosten",
+        "Zu geringe Größe"
+       ],
+       "a": 0,
+       "e": "Rechenleistung kostet Energie.",
+       "id": "ad.m4.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ad.m5",
+   "level": 3,
+   "title": "Absichern und Testen",
+   "desc": "ISO 26262, SOTIF, Szenarien, Simulation und Sicherheitsnachweis.",
+   "lessons": [
+    {
+     "id": "ad.m5.l1",
+     "title": "Funktionale Sicherheit und SOTIF",
+     "min": 6,
+     "body": [
+      "Zwei Normen ergänzen sich bei der Absicherung.",
+      "## ISO 26262",
+      "Sie behandelt Gefahren durch Fehlfunktionen: Ein Sensor fällt aus, ein Rechner macht Fehler, eine Leitung bricht. Mit ASIL, Redundanz, Diagnose und sicheren Zuständen werden diese Risiken beherrscht.",
+      "## ISO 21448 (SOTIF)",
+      "Safety of the Intended Functionality behandelt Gefahren, die ohne Fehler entstehen: Das System funktioniert wie entworfen, aber die Spezifikation oder die Leistungsfähigkeit reicht nicht, etwa wenn die Kamera bei tiefstehender Sonne einen Fußgänger übersieht. Ziel ist, unbekannte unsichere Situationen zu finden und zu reduzieren.",
+      "## Vier Bereiche",
+      "SOTIF denkt in bekannten und unbekannten, sicheren und unsicheren Szenarien. Analyse und Tests verschieben möglichst viel aus „unbekannt unsicher“ nach „bekannt“ und dann nach „sicher“."
+     ],
+     "key": [
+      "ISO 26262: Gefahren durch Fehlfunktionen.",
+      "ISO 21448 (SOTIF): Gefahren ohne Fehler, durch Grenzen der Funktion.",
+      "Ziel: unbekannte unsichere Szenarien finden und reduzieren."
+     ],
+     "src": [
+      {
+       "n": "ISO 26262: Funktionale Sicherheit von Straßenfahrzeugen",
+       "u": "https://www.iso.org/standard/68383.html"
+      },
+      {
+       "n": "ISO 21448: Safety of the intended functionality (SOTIF)",
+       "u": "https://www.iso.org/standard/77490.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SOTIF",
+       "b": "Safety of the Intended Functionality (ISO 21448): Sicherheit trotz Leistungsgrenzen ohne Fehler.",
+       "id": "ad.m5.l1.k1"
+      },
+      {
+       "f": "Triggering Condition",
+       "b": "Auslösende Bedingung, unter der eine Funktionsgrenze zu einer Gefahr führt, z. B. Gegenlicht.",
+       "id": "ad.m5.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Norm behandelt Gefahren ohne technischen Fehler?",
+       "o": [
+        "ISO 21448",
+        "ISO 26262",
+        "ISO 14229",
+        "SAE J1962"
+       ],
+       "a": 0,
+       "e": "Etwa Leistungsgrenzen der Wahrnehmung.",
+       "id": "ad.m5.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Eine Kamera übersieht bei Gegenlicht einen Fußgänger, ohne defekt zu sein. Welche Norm ist zuständig?",
+       "o": [
+        "SOTIF",
+        "ISO 26262",
+        "UN R155",
+        "Euro 7"
+       ],
+       "a": 0,
+       "e": "Funktionsgrenze, kein Fehler.",
+       "id": "ad.m5.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was behandelt ISO 26262?",
+       "o": [
+        "Fehlfunktionen",
+        "Abgasgrenzwerte",
+        "Cyberangriffe",
+        "Diagnoseprotokolle"
+       ],
+       "a": 0,
+       "e": "Etwa Ausfall eines Sensors.",
+       "id": "ad.m5.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist das Ziel von SOTIF?",
+       "o": [
+        "Unbekanntes finden",
+        "Kraftstoff sparen",
+        "Mehr Leistung",
+        "Billigere Sensoren"
+       ],
+       "a": 0,
+       "e": "Bekannt und sicher machen.",
+       "id": "ad.m5.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist eine Triggering Condition?",
+       "o": [
+        "Auslöser einer Gefahr",
+        "Ein Startknopf",
+        "Ein Fehlercode",
+        "Eine Ampelfarbe"
+       ],
+       "a": 0,
+       "e": "Zum Beispiel tiefstehende Sonne.",
+       "id": "ad.m5.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "ad.m5.l2",
+     "title": "Szenarien und Simulation",
+     "min": 6,
+     "body": [
+      "Wie testet man ein System, das in unendlich vielen Situationen fahren soll?",
+      "## Kilometer reichen nicht",
+      "Um statistisch zu zeigen, dass ein System sicherer ist als Menschen, bräuchte man ohne weitere Methoden Hunderte Millionen bis Milliarden Testkilometer. Das ist praktisch nicht machbar und müsste nach jedem Update wiederholt werden.",
+      "## Szenariobasiertes Testen",
+      "Stattdessen beschreibt man relevante Szenarien systematisch, etwa Einscheren mit verschiedenen Abständen und Geschwindigkeiten. Formate wie ASAM OpenSCENARIO machen sie austauschbar. Kritische Fälle werden gezielt gesucht und variiert.",
+      "## Testpyramide",
+      "Die meisten Tests laufen in Simulation (Software-in-the-Loop), dann auf Prüfständen (Hardware-in-the-Loop), auf abgesperrten Testgeländen und schließlich im Realverkehr. Simulation ist nur so gut wie ihre Modelle; deshalb muss sie gegen reale Messungen validiert werden."
+     ],
+     "key": [
+      "Reine Testkilometer reichen statistisch nicht.",
+      "Szenariobasiert testen, Formate wie OpenSCENARIO.",
+      "Pyramide: Simulation → HiL → Testgelände → Straße; Simulation validieren."
+     ],
+     "src": [
+      {
+       "n": "ISO 21448: Safety of the intended functionality (SOTIF)",
+       "u": "https://www.iso.org/standard/77490.html"
+      },
+      {
+       "n": "ASAM: Standards für Diagnose (ODX, OTX, SOVD) und Messen/Kalibrieren",
+       "u": "https://www.asam.net/standards/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Szenariobasiertes Testen",
+       "b": "Systematische Beschreibung und Variation relevanter Verkehrssituationen für Tests.",
+       "id": "ad.m5.l2.k1"
+      },
+      {
+       "f": "OpenSCENARIO",
+       "b": "ASAM-Format zur Beschreibung dynamischer Testszenarien.",
+       "id": "ad.m5.l2.k2"
+      },
+      {
+       "f": "SiL",
+       "b": "Software-in-the-Loop: Test der Software in einer simulierten Umgebung.",
+       "id": "ad.m5.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Warum reichen reine Testkilometer nicht?",
+       "o": [
+        "Es bräuchte unrealistisch viele Kilometer",
+        "Straßen sind zu kurz",
+        "Fahrzeuge halten nicht",
+        "Gesetze verbieten Tests"
+       ],
+       "a": 0,
+       "e": "Und nach jedem Update erneut.",
+       "id": "ad.m5.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt OpenSCENARIO?",
+       "o": [
+        "Szenarien",
+        "Abgasgrenzwerte",
+        "Diagnosedienste",
+        "Busbotschaften"
+       ],
+       "a": 0,
+       "e": "Ein ASAM-Standard.",
+       "id": "ad.m5.l2.q2"
+      },
+      {
+       "t": "order",
+       "q": "Ordne die Teststufen von viel zu wenig Testumfang.",
+       "o": [
+        "Simulation",
+        "Hardware-in-the-Loop",
+        "Testgelände",
+        "Realverkehr"
+       ],
+       "e": "Die meisten Tests laufen virtuell.",
+       "id": "ad.m5.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was muss man mit Simulation unbedingt tun?",
+       "o": [
+        "Sie gegen reale Messungen validieren",
+        "Sie geheim halten",
+        "Sie nur einmal nutzen",
+        "Sie ohne Modelle betreiben"
+       ],
+       "a": 0,
+       "e": "Sonst testet man ein falsches Abbild.",
+       "id": "ad.m5.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein typisches Testszenario?",
+       "o": [
+        "Einscheren",
+        "Tanken an der Tankstelle",
+        "Waschen in der Waschanlage",
+        "Parken in der Garage ohne Verkehr"
+       ],
+       "a": 0,
+       "e": "Kritisch und variierbar.",
+       "id": "ad.m5.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "ad.m5.l3",
+     "title": "Der Sicherheitsnachweis",
+     "min": 6,
+     "body": [
+      "Am Ende muss der Hersteller überzeugend begründen, dass sein System sicher genug ist.",
+      "## Safety Case",
+      "Ein Sicherheitsnachweis (Safety Case) ist eine strukturierte Argumentation mit Belegen: Welche Gefahren gibt es, welche Maßnahmen wirken, welche Tests zeigen die Wirksamkeit, welche Restrisiken bleiben und warum sind sie akzeptabel. Die Norm UL 4600 beschreibt Anforderungen an solche Nachweise für autonome Produkte.",
+      "## Wie sicher ist sicher genug?",
+      "Oft wird gefordert, automatisiertes Fahren müsse mindestens so sicher sein wie ein guter menschlicher Fahrer oder eine positive Risikobilanz haben. Die Ethik-Kommission der Bundesregierung formulierte 2017 Leitlinien, etwa dass Systeme Unfälle möglichst vermeiden müssen und dass bei unvermeidbaren Unfällen keine Abwägung nach persönlichen Merkmalen wie Alter oder Geschlecht erfolgen darf.",
+      "## Im Betrieb",
+      "Nach dem Marktstart werden Daten aus dem Feld beobachtet, Vorfälle analysiert und das System verbessert. Der Sicherheitsnachweis lebt mit dem Produkt."
+     ],
+     "key": [
+      "Safety Case: strukturierte Argumentation mit Belegen.",
+      "Maßstab: positive Risikobilanz; Ethik-Leitlinien 2017.",
+      "Nachweis wird im Betrieb fortgeschrieben."
+     ],
+     "src": [
+      {
+       "n": "ISO 26262: Funktionale Sicherheit von Straßenfahrzeugen",
+       "u": "https://www.iso.org/standard/68383.html"
+      },
+      {
+       "n": "ISO 21448: Safety of the intended functionality (SOTIF)",
+       "u": "https://www.iso.org/standard/77490.html"
+      },
+      {
+       "n": "Bericht der Ethik-Kommission Automatisiertes und Vernetztes Fahren (BMVI, 2017)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Safety Case",
+       "b": "Strukturierte, belegte Argumentation, warum ein System sicher genug ist.",
+       "id": "ad.m5.l3.k1"
+      },
+      {
+       "f": "UL 4600",
+       "b": "Norm zu Sicherheitsnachweisen für autonome Produkte.",
+       "id": "ad.m5.l3.k2"
+      },
+      {
+       "f": "Positive Risikobilanz",
+       "b": "Anspruch, dass automatisiertes Fahren insgesamt weniger Schaden verursacht als menschliches Fahren.",
+       "id": "ad.m5.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist ein Safety Case?",
+       "o": [
+        "Sicherheitsargument",
+        "Ein Koffer für Werkzeug",
+        "Ein Crashtest-Dummy",
+        "Ein Fehlercode"
+       ],
+       "a": 0,
+       "e": "Gefahren, Maßnahmen, Belege, Restrisiken.",
+       "id": "ad.m5.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was sagt die Ethik-Kommission 2017 zu unvermeidbaren Unfällen?",
+       "o": [
+        "Keine Merkmal-Abwägung",
+        "Ältere Menschen zuerst schützen",
+        "Der Fahrer entscheidet per Knopf",
+        "Zufall entscheidet"
+       ],
+       "a": 0,
+       "e": "Persönliche Merkmale dürfen keine Rolle spielen.",
+       "id": "ad.m5.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Endet der Sicherheitsnachweis mit der Zulassung?",
+       "o": [
+        "Nein",
+        "Ja",
+        "Ja, nach dem ersten Unfall",
+        "Ja, nach einem Jahr"
+       ],
+       "a": 0,
+       "e": "Felddaten fließen ein.",
+       "id": "ad.m5.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt UL 4600?",
+       "o": [
+        "Safety Cases",
+        "Abgaswerte",
+        "Steckverbinder",
+        "Reifenprofile"
+       ],
+       "a": 0,
+       "e": "Eine Norm für Safety Cases.",
+       "id": "ad.m5.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet positive Risikobilanz?",
+       "o": [
+        "Weniger Schaden",
+        "Mehr Gewinn für den Hersteller",
+        "Niedrigere Versicherung",
+        "Mehr Fahrspaß"
+       ],
+       "a": 0,
+       "e": "Ein oft genannter Maßstab.",
+       "id": "ad.m5.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ad.m6",
+   "level": 3,
+   "title": "Recht und Zulassung",
+   "desc": "UN R157, Stufe-4-Gesetz in Deutschland, Haftung und Daten.",
+   "lessons": [
+    {
+     "id": "ad.m6.l1",
+     "title": "UN R157: Automatisierter Spurhalter",
+     "min": 6,
+     "body": [
+      "Die UN-Regelung Nr. 157 (Automated Lane Keeping Systems, ALKS) war 2021 die erste international verbindliche Regelung für Stufe 3.",
+      "## Inhalt",
+      "Das System darf auf Straßen ohne Fußgänger und Radfahrer mit baulich getrennten Richtungsfahrbahnen fahren, also auf autobahnähnlichen Straßen. Anfangs galt eine Höchstgeschwindigkeit von 60 km/h; seit einer Änderung 2022 sind bis 130 km/h und Spurwechsel möglich.",
+      "## Pflichten",
+      "Das System muss den Fahrer überwachen (ist er übernahmebereit?), rechtzeitig zur Übernahme auffordern, bei ausbleibender Übernahme ein risikominimierendes Manöver ausführen und Daten in einem Speicher (DSSAD) aufzeichnen, etwa wann das System aktiv war und wann übernommen wurde.",
+      "## Praxis",
+      "In Deutschland erhielt Ende 2021 erstmals ein Serienfahrzeug eine Genehmigung für ein Stufe-3-System nach R157, zunächst bis 60 km/h. Weitere Hersteller und höhere Geschwindigkeiten folgten."
+     ],
+     "key": [
+      "UN R157 (ALKS): erste verbindliche Stufe-3-Regel (2021).",
+      "Autobahnähnliche Straßen; seit 2022 bis 130 km/h und Spurwechsel.",
+      "Pflichten: Fahrerüberwachung, Übernahmeaufforderung, Notmanöver, Datenspeicher (DSSAD)."
+     ],
+     "src": [
+      {
+       "n": "UNECE: UN-Regelung Nr. 157 (Automated Lane Keeping Systems)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      }
+     ],
+     "cards": [
+      {
+       "f": "ALKS",
+       "b": "Automated Lane Keeping System: Stufe-3-System nach UN R157.",
+       "id": "ad.m6.l1.k1"
+      },
+      {
+       "f": "DSSAD",
+       "b": "Data Storage System for Automated Driving: Datenspeicher für automatisiertes Fahren.",
+       "id": "ad.m6.l1.k2"
+      },
+      {
+       "f": "Übernahmeaufforderung",
+       "b": "Signal an den Fahrer, die Fahraufgabe wieder zu übernehmen.",
+       "id": "ad.m6.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Stufe regelt UN R157?",
+       "o": [
+        "Stufe 3",
+        "Stufe 1",
+        "Stufe 2",
+        "Stufe 5"
+       ],
+       "a": 0,
+       "e": "Automated Lane Keeping.",
+       "id": "ad.m6.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Höchstgeschwindigkeit erlaubt R157 seit der Änderung 2022?",
+       "o": [
+        "130 km/h",
+        "60 km/h",
+        "250 km/h",
+        "30 km/h"
+       ],
+       "a": 0,
+       "e": "Anfangs waren es 60 km/h.",
+       "id": "ad.m6.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeichnet der DSSAD auf?",
+       "o": [
+        "Wer wann fuhr",
+        "Die Lieblingsmusik",
+        "Die Kraftstoffpreise",
+        "Die Reifenmarke"
+       ],
+       "a": 0,
+       "e": "Wichtig für Haftungsfragen.",
+       "id": "ad.m6.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was muss das System tun, wenn der Fahrer nicht übernimmt?",
+       "o": [
+        "Ein risikominimierendes Manöver ausführen",
+        "Weiterfahren wie bisher",
+        "Laut hupen und beschleunigen",
+        "Den Motor sofort abwürgen"
+       ],
+       "a": 0,
+       "e": "Etwa kontrolliert anhalten.",
+       "id": "ad.m6.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Auf welchen Straßen darf ein ALKS fahren?",
+       "o": [
+        "Autobahnähnliche",
+        "Überall in der Stadt",
+        "Nur auf Feldwegen",
+        "Nur auf Parkplätzen"
+       ],
+       "a": 0,
+       "e": "Baulich getrennte Richtungsfahrbahnen.",
+       "id": "ad.m6.l1.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "ad.m6.l2",
+     "title": "Stufe 4 in Deutschland",
+     "min": 6,
+     "body": [
+      "Deutschland hat 2021 als eines der ersten Länder einen Rechtsrahmen für Stufe-4-Fahrzeuge im Regelbetrieb geschaffen (Gesetz zum autonomen Fahren, Änderungen im Straßenverkehrsgesetz §§ 1d bis 1l, dazu die Verordnung AFGBV).",
+      "## Festgelegter Betriebsbereich",
+      "Fahrzeuge mit autonomer Fahrfunktion dürfen in einem behördlich genehmigten Betriebsbereich fahren, etwa auf einer Shuttle-Strecke, im Nahverkehr oder bei Logistikfahrten zwischen Standorten.",
+      "## Technische Aufsicht",
+      "Statt eines Fahrers im Fahrzeug gibt es eine Technische Aufsicht: eine Person, die aus der Ferne das Fahrzeug überwacht, Fahrmanöver freigeben oder das Fahrzeug deaktivieren kann. Sie lenkt aber nicht ständig fern.",
+      "## Weitere Pflichten",
+      "Der Halter muss die Fahrzeuge warten und eine Haftpflichtversicherung haben; Hersteller müssen Sicherheitsnachweise erbringen und eine Cybersecurity-Absicherung nachweisen."
+     ],
+     "key": [
+      "Deutschland 2021: Rechtsrahmen für Stufe 4 im Regelbetrieb (StVG §§ 1d–1l, AFGBV).",
+      "Fahren nur im genehmigten Betriebsbereich.",
+      "Technische Aufsicht aus der Ferne statt Fahrer."
+     ],
+     "src": [
+      {
+       "n": "Straßenverkehrsgesetz (StVG) §§ 1d–1l: Kraftfahrzeuge mit autonomer Fahrfunktion",
+       "u": "https://www.gesetze-im-internet.de/stvg/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Technische Aufsicht",
+       "b": "Person, die ein Stufe-4-Fahrzeug aus der Ferne überwacht und Manöver freigeben oder es deaktivieren kann.",
+       "id": "ad.m6.l2.k1"
+      },
+      {
+       "f": "Festgelegter Betriebsbereich",
+       "b": "Behördlich genehmigtes Gebiet, in dem ein autonomes Fahrzeug fahren darf.",
+       "id": "ad.m6.l2.k2"
+      },
+      {
+       "f": "AFGBV",
+       "b": "Autonome-Fahrzeuge-Genehmigungs-und-Betriebs-Verordnung (Deutschland).",
+       "id": "ad.m6.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was macht die Technische Aufsicht?",
+       "o": [
+        "Überwacht aus der Ferne",
+        "Lenkt ständig per Joystick",
+        "Sitzt immer im Fahrzeug",
+        "Repariert Reifen"
+       ],
+       "a": 0,
+       "e": "Sie fährt nicht ständig fern.",
+       "id": "ad.m6.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wo dürfen Stufe-4-Fahrzeuge in Deutschland fahren?",
+       "o": [
+        "Im genehmigten Betriebsbereich",
+        "Überall ohne Genehmigung",
+        "Nur auf Privatgelände",
+        "Nur im Ausland"
+       ],
+       "a": 0,
+       "e": "Der Bereich wird behördlich festgelegt.",
+       "id": "ad.m6.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wann schuf Deutschland diesen Rechtsrahmen?",
+       "o": [
+        "2021",
+        "1995",
+        "2010",
+        "2035"
+       ],
+       "a": 0,
+       "e": "Als eines der ersten Länder.",
+       "id": "ad.m6.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein typischer Einsatz?",
+       "o": [
+        "Shuttle im Nahverkehr",
+        "Formel-1-Rennen",
+        "Rallye durch die Wüste",
+        "Fahrschulunterricht"
+       ],
+       "a": 0,
+       "e": "Feste Strecken und Gebiete.",
+       "id": "ad.m6.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Pflicht hat der Halter?",
+       "o": [
+        "Wartung, Versicherung",
+        "Ständig mitfahren",
+        "Den Code schreiben",
+        "Keine"
+       ],
+       "a": 0,
+       "e": "Ähnlich wie bei normalen Fahrzeugen, plus Zusatzpflichten.",
+       "id": "ad.m6.l2.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "ad.m6.l3",
+     "title": "Haftung, Daten und Akzeptanz",
+     "min": 6,
+     "body": [
+      "Wer haftet, wenn ein automatisiertes Fahrzeug einen Unfall verursacht?",
+      "## Haftung in Deutschland",
+      "Der Halter haftet weiter verschuldensunabhängig für Schäden aus dem Betrieb (Halterhaftung), abgesichert durch die Pflichtversicherung. Je nach Fall kann die Versicherung Regress beim Hersteller nehmen, etwa über die Produkthaftung. Ein Fahrer haftet bei Stufe 3 nicht, wenn er sich bestimmungsgemäß auf das System verlassen hat, wohl aber, wenn er eine Übernahmeaufforderung ignoriert.",
+      "## Daten",
+      "Datenspeicher zeigen, ob das System oder der Mensch gefahren ist. Für Stufe-3-Fahrzeuge regelt das StVG, welche Daten wie lange gespeichert werden. Datenschutz und Aufklärung von Unfällen müssen abgewogen werden.",
+      "## Akzeptanz",
+      "Vertrauen entsteht durch Transparenz, nachvollziehbares Verhalten und eine gute Sicherheitsbilanz. Einzelne Unfälle automatisierter Fahrzeuge erhalten große Aufmerksamkeit und können Vertrauen schnell beschädigen.",
+      "## Ehrlicher Ausblick",
+      "Wie schnell sich höhere Stufen verbreiten, ist offen. Robotaxis fahren in einigen Städten bereits ohne Fahrer, aber mit großem Aufwand und in begrenzten Gebieten."
+     ],
+     "key": [
+      "Halterhaftung bleibt; Regress beim Hersteller möglich.",
+      "Fahrer bei Stufe 3 haftet bei ignorierter Übernahmeaufforderung.",
+      "Datenspeicher klären, wer gefahren ist; Akzeptanz braucht Transparenz."
+     ],
+     "src": [
+      {
+       "n": "Straßenverkehrsgesetz (StVG) §§ 1d–1l: Kraftfahrzeuge mit autonomer Fahrfunktion",
+       "u": "https://www.gesetze-im-internet.de/stvg/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Halterhaftung",
+       "b": "Verschuldensunabhängige Haftung des Halters für Schäden aus dem Fahrzeugbetrieb.",
+       "id": "ad.m6.l3.k1"
+      },
+      {
+       "f": "Produkthaftung",
+       "b": "Haftung des Herstellers für Schäden durch fehlerhafte Produkte.",
+       "id": "ad.m6.l3.k2"
+      },
+      {
+       "f": "Robotaxi",
+       "b": "Fahrerloses Taxi der Stufe 4 in einem begrenzten Gebiet.",
+       "id": "ad.m6.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wer haftet in Deutschland zunächst für Schäden aus dem Fahrzeugbetrieb?",
+       "o": [
+        "Der Halter",
+        "Immer der Hersteller allein",
+        "Der Staat",
+        "Niemand"
+       ],
+       "a": 0,
+       "e": "Regress beim Hersteller ist möglich.",
+       "id": "ad.m6.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wann haftet ein Fahrer bei Stufe 3?",
+       "o": [
+        "Bei Ignorieren",
+        "Immer",
+        "Nie",
+        "Nur bei Regen"
+       ],
+       "a": 0,
+       "e": "Bestimmungsgemäßer Gebrauch entlastet.",
+       "id": "ad.m6.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dienen Datenspeicher bei Unfällen?",
+       "o": [
+        "Wer fuhr",
+        "Werbung anzeigen",
+        "Musik speichern",
+        "Kraftstoff abrechnen"
+       ],
+       "a": 0,
+       "e": "Wichtig für Haftung.",
+       "id": "ad.m6.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was stärkt die Akzeptanz?",
+       "o": [
+        "Transparenz",
+        "Geheimhaltung",
+        "Mehr Werbung",
+        "Höhere Preise"
+       ],
+       "a": 0,
+       "e": "Vertrauen entsteht durch Nachvollziehbarkeit.",
+       "id": "ad.m6.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wo fahren Robotaxis heute?",
+       "o": [
+        "In wenigen Städten",
+        "Überall auf der Welt",
+        "Nirgends",
+        "Nur auf Rennstrecken"
+       ],
+       "a": 0,
+       "e": "Mit großem Aufwand.",
+       "id": "ad.m6.l3.q5"
+      }
+     ],
+     "vol": true
+    }
+   ]
+  }
+ ]
+}

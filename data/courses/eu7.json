@@ -1,0 +1,2058 @@
+{
+ "id": "eu7",
+ "title": "Euro 7, OBD-Vorschriften und IUMPR",
+ "sub": "Abgasgesetzgebung verstehen: Euro-Stufen, Euro 7, Überwachungspflichten, IUMPR und Marktüberwachung",
+ "audience": "Alle in Entwicklung, Applikation und Werkstatt, die Abgas- und OBD-Vorschriften verstehen wollen",
+ "stand": "11/2026",
+ "version": 1,
+ "review": "Allgemeines, öffentlich dokumentiertes Wissen (Quellen je Lektion); keine hersteller- oder projektspezifischen Details. Noch nicht durch eine Fachperson geprüft. Vorschriften ändern sich: Für verbindliche Arbeit immer den aktuellen Rechtstext prüfen.",
+ "levels": [
+  {
+   "id": 1,
+   "title": "Grundlagen"
+  },
+  {
+   "id": 2,
+   "title": "Fortgeschritten"
+  },
+  {
+   "id": 3,
+   "title": "Experte"
+  }
+ ],
+ "modules": [
+  {
+   "id": "eu7.m1",
+   "level": 1,
+   "title": "Abgasgesetzgebung im Überblick",
+   "desc": "Schadstoffe, Euro-Stufen, Typgenehmigung, WLTP und RDE.",
+   "lessons": [
+    {
+     "id": "eu7.m1.l1",
+     "title": "Welche Schadstoffe und warum",
+     "min": 5,
+     "body": [
+      "Verbrennungsmotoren erzeugen neben CO2 auch Schadstoffe, die Gesundheit und Umwelt direkt schaden. Abgasnormen begrenzen sie.",
+      "## Die wichtigsten",
+      "Stickoxide (NOx) reizen die Atemwege und bilden Ozon. Kohlenmonoxid (CO) ist giftig. Unverbrannte Kohlenwasserstoffe (HC) tragen zu Smog bei. Partikel werden nach Masse (PM) und Anzahl (PN) begrenzt, weil gerade sehr kleine Partikel tief in die Lunge gelangen.",
+      "## CO2 ist anders geregelt",
+      "CO2 ist kein Schadstoff im engeren Sinn, sondern ein Treibhausgas. Es wird über eigene Flottengrenzwerte geregelt, nicht über die Euro-Normen.",
+      "## Die Werkzeuge im Fahrzeug",
+      "Drei-Wege-Katalysator (Benziner, CO, HC und NOx), Oxidationskatalysator und SCR-System mit Harnstofflösung (Diesel, NOx), Partikelfilter (Diesel und zunehmend Benziner) und Abgasrückführung. Damit sie im Alltag funktionieren, gibt es OBD."
+     ],
+     "key": [
+      "Begrenzte Schadstoffe: NOx, CO, HC, Partikelmasse und -anzahl.",
+      "CO2 wird über Flottengrenzwerte geregelt, nicht über Euro-Normen.",
+      "Katalysatoren, SCR, Partikelfilter und AGR senken Emissionen."
+     ],
+     "src": [
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      },
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "NOx",
+       "b": "Stickoxide; reizen Atemwege, bilden Ozon und Feinstaub.",
+       "id": "eu7.m1.l1.k1"
+      },
+      {
+       "f": "PN",
+       "b": "Partikelanzahl pro km; erfasst sehr kleine Partikel.",
+       "id": "eu7.m1.l1.k2"
+      },
+      {
+       "f": "SCR",
+       "b": "Selektive katalytische Reduktion: NOx-Minderung mit Harnstofflösung (AdBlue).",
+       "id": "eu7.m1.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wie wird CO2 bei Pkw in der EU begrenzt?",
+       "o": [
+        "Über Flottengrenzwerte",
+        "Über die Euro-Normen",
+        "Gar nicht",
+        "Nur über die Kfz-Steuer"
+       ],
+       "a": 0,
+       "e": "Die Euro-Normen begrenzen Schadstoffe wie NOx und Partikel.",
+       "id": "eu7.m1.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum begrenzt man auch die Partikelanzahl?",
+       "o": [
+        "Feine Partikel sind leicht, aber schädlich",
+        "Weil Masse nicht messbar ist",
+        "Damit der Tank länger hält",
+        "Weil es billiger zu messen ist"
+       ],
+       "a": 0,
+       "e": "Die Masse unterschätzt die Wirkung feiner Partikel.",
+       "id": "eu7.m1.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was mindert NOx beim Diesel besonders wirksam?",
+       "o": [
+        "SCR (AdBlue)",
+        "Ein größerer Tank",
+        "Ein Luftfilter",
+        "Ein Turbolader"
+       ],
+       "a": 0,
+       "e": "SCR reduziert NOx zu Stickstoff und Wasser.",
+       "id": "eu7.m1.l1.q3"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Stoffe begrenzen Euro-Normen?",
+       "o": [
+        "NOx",
+        "CO",
+        "Partikel",
+        "CO2"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "CO2 hat eigene Flottenregeln.",
+       "id": "eu7.m1.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was macht ein Drei-Wege-Katalysator?",
+       "o": [
+        "Mindert CO, HC, NOx",
+        "Filtert Partikel aus Dieselabgas",
+        "Kühlt das Abgas",
+        "Erhöht die Leistung"
+       ],
+       "a": 0,
+       "e": "Er braucht ein Gemisch nahe Lambda 1.",
+       "id": "eu7.m1.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "eu7.m1.l2",
+     "title": "Von Euro 1 bis Euro 6",
+     "min": 6,
+     "body": [
+      "Die Euro-Normen für Pkw begannen 1992 mit Euro 1. Jede Stufe senkte Grenzwerte oder verschärfte die Prüfung.",
+      "## Meilensteine",
+      "Euro 1 (1992) brachte praktisch den geregelten Katalysator für Benziner. Euro 3 (2000) brachte die OBD-Pflicht (EOBD) für Benziner. Euro 5 (2009) machte Partikelfilter beim Diesel praktisch notwendig. Euro 6 (2014/2015) senkte vor allem die NOx-Grenze für Diesel deutlich.",
+      "## Die Wende nach 2015",
+      "Der Dieselskandal zeigte: Laborwerte und Realität klafften weit auseinander, teils durch unzulässige Abschalteinrichtungen. Die Antwort waren ein neuer Prüfzyklus (WLTP) und Messungen auf der Straße (RDE), eingeführt mit den Stufen Euro 6c, 6d-TEMP und 6d.",
+      "## Typgenehmigung",
+      "Neue Fahrzeugtypen brauchen eine Typgenehmigung. Der Hersteller weist bei einer Prüforganisation nach, dass der Typ alle Vorschriften erfüllt, und die Behörde erteilt die Genehmigung. Ab einem Stichtag gilt eine Stufe für neue Typen, ein Jahr später meist für alle neu zugelassenen Fahrzeuge."
+     ],
+     "key": [
+      "Euro 1 1992 … Euro 6 2014/2015.",
+      "Nach dem Dieselskandal: WLTP und RDE (Euro 6c/6d).",
+      "Typgenehmigung: erst neue Typen, später alle Neuzulassungen."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      },
+      {
+       "n": "Verordnung (EG) Nr. 715/2007 (Euro 5 und 6)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2007/715/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Euro 6d",
+       "b": "Abgasstufe mit RDE-Pflicht und strengen Vorgaben für reale Emissionen.",
+       "id": "eu7.m1.l2.k1"
+      },
+      {
+       "f": "Typgenehmigung",
+       "b": "Behördliche Bestätigung, dass ein Fahrzeugtyp alle Vorschriften erfüllt.",
+       "id": "eu7.m1.l2.k2"
+      },
+      {
+       "f": "Abschalteinrichtung",
+       "b": "Unzulässige Funktion, die die Abgasreinigung im Alltag mindert; nach EU-Recht grundsätzlich verboten.",
+       "id": "eu7.m1.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wann begann Euro 1 für Pkw?",
+       "o": [
+        "1992",
+        "1985",
+        "2000",
+        "2009"
+       ],
+       "a": 0,
+       "e": "Euro 6 folgte 2014/2015.",
+       "id": "eu7.m1.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeigte der Dieselskandal 2015?",
+       "o": [
+        "Labor und Straße wichen ab",
+        "Diesel stoßen kein NOx aus",
+        "Benziner haben keine Katalysatoren",
+        "Die OBD war abgeschafft"
+       ],
+       "a": 0,
+       "e": "Teilweise durch unzulässige Abschalteinrichtungen.",
+       "id": "eu7.m1.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Mit welcher Stufe kam EOBD für Benziner?",
+       "o": [
+        "Euro 3",
+        "Euro 1",
+        "Euro 5",
+        "Euro 6d"
+       ],
+       "a": 0,
+       "e": "Euro 3 galt ab 2000/2001.",
+       "id": "eu7.m1.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was gilt meist ein Jahr nach dem Stichtag für neue Typen?",
+       "o": [
+        "Gilt für alle Neuwagen",
+        "Die Stufe wird abgeschafft",
+        "Die Grenzwerte verdoppeln sich",
+        "Die OBD entfällt"
+       ],
+       "a": 0,
+       "e": "So haben Hersteller Zeit für den Übergang.",
+       "id": "eu7.m1.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wer erteilt die Typgenehmigung?",
+       "o": [
+        "Eine Behörde",
+        "Der Hersteller selbst",
+        "Die Werkstatt",
+        "Der Fahrzeughalter"
+       ],
+       "a": 0,
+       "e": "In Deutschland das Kraftfahrt-Bundesamt (KBA).",
+       "id": "eu7.m1.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "eu7.m1.l3",
+     "title": "WLTP und RDE",
+     "min": 6,
+     "body": [
+      "Wie sauber ein Fahrzeug ist, hängt davon ab, wie man misst.",
+      "## WLTP",
+      "Die Worldwide harmonized Light vehicles Test Procedure ersetzte ab 2017 den alten NEFZ. Sie ist dynamischer, länger und näher an realem Fahren. Gemessen wird auf dem Rollenprüfstand unter festgelegten Bedingungen.",
+      "## RDE",
+      "Real Driving Emissions bedeutet: Messung auf der Straße mit einem tragbaren Messsystem (PEMS). Die Fahrt enthält Stadt-, Land- und Autobahnanteile und muss bestimmte Grenzen für Temperatur, Höhe und Fahrdynamik einhalten.",
+      "## Konformitätsfaktor",
+      "Weil mobile Messung ungenauer ist als das Labor, durften RDE-Werte die Grenzwerte um einen Faktor überschreiten. Dieser Spielraum wurde schrittweise verkleinert. Euro 7 behält Prüfungen im Realbetrieb bei und passt die Randbedingungen an."
+     ],
+     "key": [
+      "WLTP (Prüfstand) ersetzte ab 2017 den NEFZ.",
+      "RDE: Messung auf der Straße mit PEMS.",
+      "Konformitätsfaktor als Messtoleranz, schrittweise verkleinert."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "WLTP",
+       "b": "Weltweit harmonisiertes Prüfverfahren für leichte Fahrzeuge auf dem Rollenprüfstand.",
+       "id": "eu7.m1.l3.k1"
+      },
+      {
+       "f": "RDE",
+       "b": "Real Driving Emissions: Abgasmessung im realen Straßenverkehr.",
+       "id": "eu7.m1.l3.k2"
+      },
+      {
+       "f": "PEMS",
+       "b": "Portable Emissions Measurement System: tragbares Abgasmesssystem.",
+       "id": "eu7.m1.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wo wird bei RDE gemessen?",
+       "o": [
+        "Auf der Straße",
+        "Auf dem Rollenprüfstand",
+        "Im Windkanal",
+        "In der Werkstatt"
+       ],
+       "a": 0,
+       "e": "Mit tragbarem Messsystem (PEMS).",
+       "id": "eu7.m1.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ersetzte WLTP?",
+       "o": [
+        "Den NEFZ",
+        "Die OBD",
+        "Die Abgasuntersuchung",
+        "Die Typgenehmigung"
+       ],
+       "a": 0,
+       "e": "Der Neue Europäische Fahrzyklus war zu realitätsfern.",
+       "id": "eu7.m1.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu diente der Konformitätsfaktor bei RDE?",
+       "o": [
+        "Toleranz der Messung",
+        "Um Diesel zu bevorzugen",
+        "Um die Steuer zu berechnen",
+        "Als Grenzwert für CO2"
+       ],
+       "a": 0,
+       "e": "Mobile Messung ist ungenauer als das Labor.",
+       "id": "eu7.m1.l3.q3"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Abschnitte enthält eine RDE-Fahrt?",
+       "o": [
+        "Stadt",
+        "Landstraße",
+        "Autobahn",
+        "Rennstrecke"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Eine Rennstrecke gehört nicht dazu.",
+       "id": "eu7.m1.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet PEMS?",
+       "o": [
+        "Tragbares Abgasmesssystem",
+        "Prüfstand mit Motorbremse",
+        "Programm für Emissionsschätzung",
+        "Partikelfilter mit Sensor"
+       ],
+       "a": 0,
+       "e": "Portable Emissions Measurement System.",
+       "id": "eu7.m1.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eu7.m2",
+   "level": 2,
+   "title": "Euro 7: Was sich ändert",
+   "desc": "Grenzwerte, Lebensdauer, Bremsen, Reifen, Batterien und Zeitplan.",
+   "lessons": [
+    {
+     "id": "eu7.m2.l1",
+     "title": "Grundidee und Zeitplan",
+     "min": 6,
+     "body": [
+      "Euro 7 ist die Verordnung (EU) 2024/1257. Sie fasst die Regeln für Pkw, Transporter, Busse und Lkw in einem Rechtsakt zusammen.",
+      "## Zeitplan",
+      "Für neue Pkw-Typen gilt Euro 7 ab dem 29. November 2026, für alle neu zugelassenen Pkw ab dem 29. November 2027. Busse und Lkw folgen später, 2028 und 2029. Viele technische Details stehen in Durchführungsrechtsakten, die die Kommission nachträglich erlässt.",
+      "## Was neu ist",
+      "Erstmals werden Emissionen aus Bremsen und Reifenabrieb begrenzt, also auch bei Elektroautos. Für Batterien von Elektro- und Plug-in-Hybridfahrzeugen gibt es Mindestanforderungen an die Haltbarkeit. Emissionsvorschriften müssen über eine längere Lebensdauer eingehalten werden, und Fahrzeuge sollen ihre Emissionen besser selbst überwachen.",
+      "## Was gleich bleibt",
+      "Die Abgasgrenzwerte für Pkw bleiben weitgehend auf Euro-6-Niveau, gelten aber kraftstoffneutral. Kritiker hielten Euro 7 deshalb für zu schwach, die Industrie für zu teuer; das Ergebnis war ein Kompromiss."
+     ],
+     "key": [
+      "Euro 7 = Verordnung (EU) 2024/1257.",
+      "Neue Pkw-Typen ab 29.11.2026, alle neuen Pkw ab 29.11.2027.",
+      "Neu: Bremsen, Reifen, Batteriehaltbarkeit, längere Lebensdauer."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2024/1257 (Euro 7), Amtsblatt der EU",
+       "u": "https://eur-lex.europa.eu/eli/reg/2024/1257/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Verordnung (EU) 2024/1257",
+       "b": "Rechtsakt der Abgasstufe Euro 7 für Pkw, Transporter, Busse und Lkw.",
+       "id": "eu7.m2.l1.k1"
+      },
+      {
+       "f": "Durchführungsrechtsakt",
+       "b": "Nachgeordnete Kommissionsverordnung mit technischen Details zu einer Verordnung.",
+       "id": "eu7.m2.l1.k2"
+      },
+      {
+       "f": "Kraftstoffneutral",
+       "b": "Gleiche Grenzwerte für Benzin- und Dieselfahrzeuge.",
+       "id": "eu7.m2.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Ab wann gilt Euro 7 für neue Pkw-Typen?",
+       "o": [
+        "29. November 2026",
+        "1. Januar 2025",
+        "29. November 2030",
+        "1. September 2014"
+       ],
+       "a": 0,
+       "e": "Ein Jahr später für alle neu zugelassenen Pkw.",
+       "id": "eu7.m2.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was regelt Euro 7 erstmals?",
+       "o": [
+        "Bremsen und Reifen",
+        "CO2-Flottengrenzwerte",
+        "Die Form der OBD-Buchse",
+        "Die Höchstgeschwindigkeit"
+       ],
+       "a": 0,
+       "e": "Damit betrifft Euro 7 auch Elektroautos.",
+       "id": "eu7.m2.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie ändern sich die Abgasgrenzwerte für Pkw?",
+       "o": [
+        "Euro 6 für alle Kraftstoffe",
+        "Sie halbieren sich überall",
+        "Sie entfallen ganz",
+        "Nur Diesel werden strenger"
+       ],
+       "a": 0,
+       "e": "Die großen Änderungen liegen bei Lebensdauer und neuen Quellen.",
+       "id": "eu7.m2.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wo stehen viele technische Details von Euro 7?",
+       "o": [
+        "In Durchführungsrechtsakten",
+        "Im Grundgesetz",
+        "In der Straßenverkehrsordnung",
+        "In Herstellerhandbüchern"
+       ],
+       "a": 0,
+       "e": "Die Kommission erlässt sie nachträglich.",
+       "id": "eu7.m2.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Gilt Euro 7 auch für Elektroautos?",
+       "o": [
+        "Ja, teilweise",
+        "Nein, gar nicht",
+        "Nur für Abgaswerte",
+        "Nur für Plug-in-Hybride"
+       ],
+       "a": 0,
+       "e": "Abgasregeln betreffen sie nicht, die neuen Bereiche schon.",
+       "id": "eu7.m2.l1.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "eu7.m2.l2",
+     "title": "Grenzwerte und Lebensdauer",
+     "min": 6,
+     "body": [
+      "Für Pkw gelten unter Euro 7 Abgasgrenzwerte wie bisher für Euro-6-Benziner, etwa 60 mg/km NOx und 4,5 mg/km Partikelmasse, jetzt auch für Diesel. Die Partikelanzahl wird künftig ab 10 Nanometer Partikelgröße gezählt (PN10) statt ab 23 nm; dadurch werden noch kleinere Partikel erfasst.",
+      "## Längere Haltbarkeit",
+      "Bisher mussten die Werte 160.000 km bzw. 5 Jahre eingehalten werden. Euro 7 unterscheidet eine Hauptlebensdauer von 160.000 km oder 8 Jahren und eine zusätzliche Lebensdauer bis 200.000 km oder 10 Jahre, in der etwas höhere Werte zulässig sind.",
+      "## Konsequenzen für die Technik",
+      "Katalysatoren, Sensoren und Partikelfilter müssen länger halten. Die OBD muss Alterung zuverlässig erkennen, und Hersteller müssen nachweisen, dass Fahrzeuge auch nach vielen Jahren die Grenzwerte einhalten.",
+      "## Achtung",
+      "Diese Zahlen stammen aus der Verordnung (EU) 2024/1257. Für verbindliche Arbeit bitte immer den aktuellen Rechtstext und die Durchführungsrechtsakte prüfen."
+     ],
+     "key": [
+      "Pkw: z. B. 60 mg/km NOx, 4,5 mg/km PM, für Benzin und Diesel.",
+      "Partikelanzahl ab 10 nm (PN10).",
+      "Hauptlebensdauer 160.000 km/8 Jahre, zusätzlich bis 200.000 km/10 Jahre."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2024/1257 (Euro 7), Amtsblatt der EU",
+       "u": "https://eur-lex.europa.eu/eli/reg/2024/1257/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "PN10",
+       "b": "Partikelanzahl, gezählt ab 10 nm Partikelgröße (statt bisher 23 nm).",
+       "id": "eu7.m2.l2.k1"
+      },
+      {
+       "f": "Hauptlebensdauer (Euro 7)",
+       "b": "160.000 km oder 8 Jahre, in denen die Grenzwerte gelten.",
+       "id": "eu7.m2.l2.k2"
+      },
+      {
+       "f": "Zusätzliche Lebensdauer (Euro 7)",
+       "b": "Bis 200.000 km oder 10 Jahre, mit etwas höheren zulässigen Werten.",
+       "id": "eu7.m2.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Welche NOx-Grenze gilt für Euro-7-Pkw in mg/km?",
+       "a": 60,
+       "unit": "mg/km",
+       "tol": 0,
+       "e": "Wie bei Euro-6-Benzinern, jetzt für alle Kraftstoffe.",
+       "id": "eu7.m2.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet PN10?",
+       "o": [
+        "Zählung ab 10 nm",
+        "Höchstens 10 Partikel pro km",
+        "Partikelmasse 10 mg/km",
+        "Messung alle 10 km"
+       ],
+       "a": 0,
+       "e": "Bisher begann die Zählung bei 23 nm.",
+       "id": "eu7.m2.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie lang ist die Hauptlebensdauer für Pkw unter Euro 7?",
+       "o": [
+        "160.000 km oder 8 Jahre",
+        "100.000 km oder 5 Jahre",
+        "300.000 km oder 15 Jahre",
+        "50.000 km oder 3 Jahre"
+       ],
+       "a": 0,
+       "e": "Dazu kommt eine zusätzliche Lebensdauer bis 200.000 km/10 Jahre.",
+       "id": "eu7.m2.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was folgt aus der längeren Lebensdauer für die OBD?",
+       "o": [
+        "Sie muss Alterung zuverlässig erkennen",
+        "Sie kann entfallen",
+        "Sie muss seltener prüfen",
+        "Sie wird nur noch in der Werkstatt genutzt"
+       ],
+       "a": 0,
+       "e": "Gealterte Komponenten sollen nicht unbemerkt bleiben.",
+       "id": "eu7.m2.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was gilt für Diesel unter Euro 7 bei NOx?",
+       "o": [
+        "Gleiche Grenze",
+        "Eine doppelt so hohe Grenze",
+        "Keine Grenze",
+        "Eine halb so hohe Grenze"
+       ],
+       "a": 0,
+       "e": "Die Grenzwerte sind kraftstoffneutral.",
+       "id": "eu7.m2.l2.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "eu7.m2.l3",
+     "title": "Bremsen, Reifen und Batterien",
+     "min": 6,
+     "body": [
+      "Mit sinkenden Abgasemissionen wächst der Anteil anderer Quellen. Euro 7 nimmt sie erstmals in den Blick.",
+      "## Bremsen",
+      "Beim Bremsen entstehen Abriebpartikel. Euro 7 begrenzt die Partikelmasse aus Bremsen (PM10, in mg/km), gemessen nach einem eigenen Prüfverfahren. Für Elektroautos, die viel rekuperieren und daher weniger mechanisch bremsen, gelten strengere Werte.",
+      "## Reifen",
+      "Reifen verlieren Material durch Abrieb. Euro 7 führt Abriebgrenzen ein, die schrittweise ab Ende der 2020er-Jahre gelten. Die Messmethoden werden international (UNECE) entwickelt.",
+      "## Batterien",
+      "Für Elektro- und Plug-in-Hybrid-Pkw muss die Batterie Mindestwerte halten: 80 % der ursprünglichen Kapazität nach 5 Jahren oder 100.000 km und 72 % nach 8 Jahren oder 160.000 km. Das Fahrzeug muss den Batteriezustand (State of Health) ermitteln und anzeigen können.",
+      "## Umweltpass",
+      "Jedes Fahrzeug bekommt einen Umweltpass (Environmental Vehicle Passport) mit Informationen zu Emissionen, Verbrauch und Batteriehaltbarkeit zum Zeitpunkt der Zulassung."
+     ],
+     "key": [
+      "Bremsen: Partikelgrenze (PM10), strenger für E-Autos.",
+      "Reifen: Abriebgrenzen ab Ende der 2020er.",
+      "Batterie Pkw: 80 % nach 5 J./100.000 km, 72 % nach 8 J./160.000 km."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2024/1257 (Euro 7), Amtsblatt der EU",
+       "u": "https://eur-lex.europa.eu/eli/reg/2024/1257/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "State of Health (SoH)",
+       "b": "Gesundheitszustand der Batterie, z. B. verbleibende Kapazität in Prozent.",
+       "id": "eu7.m2.l3.k1"
+      },
+      {
+       "f": "Umweltpass (EVP)",
+       "b": "Dokument mit Umweltdaten eines Fahrzeugs nach Euro 7.",
+       "id": "eu7.m2.l3.k2"
+      },
+      {
+       "f": "Rekuperation",
+       "b": "Bremsen durch den Elektromotor, der dabei Strom erzeugt; schont die Reibbremse.",
+       "id": "eu7.m2.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie viel Prozent Kapazität muss eine Pkw-Batterie nach 5 Jahren oder 100.000 km mindestens haben?",
+       "a": 80,
+       "unit": "%",
+       "tol": 0,
+       "e": "Nach 8 Jahren oder 160.000 km sind es 72 %.",
+       "id": "eu7.m2.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum gelten für E-Autos strengere Bremsgrenzwerte?",
+       "o": [
+        "Sie rekuperieren",
+        "Ihre Bremsen sind größer",
+        "Sie sind schwerer",
+        "Sie fahren langsamer"
+       ],
+       "a": 0,
+       "e": "Die Reibbremse wird weniger genutzt.",
+       "id": "eu7.m2.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was muss ein E-Auto nach Euro 7 über die Batterie anzeigen können?",
+       "o": [
+        "Batteriezustand (SoH)",
+        "Die Zellchemie im Detail",
+        "Den Hersteller der Zellen",
+        "Die Ladesäulen in der Nähe"
+       ],
+       "a": 0,
+       "e": "Der State of Health zeigt den Alterungszustand.",
+       "id": "eu7.m2.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist der Umweltpass?",
+       "o": [
+        "Umweltdaten-Dokument",
+        "Eine Plakette für Umweltzonen",
+        "Ein Steuerbescheid",
+        "Ein Fahrtenbuch"
+       ],
+       "a": 0,
+       "e": "Er enthält z. B. Emissions- und Batteriedaten.",
+       "id": "eu7.m2.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wer entwickelt die Messmethoden für Reifenabrieb?",
+       "o": [
+        "Bei der UNECE",
+        "Jeder Hersteller selbst",
+        "Die Reifenhändler",
+        "Die Versicherungen"
+       ],
+       "a": 0,
+       "e": "So gelten einheitliche Verfahren.",
+       "id": "eu7.m2.l3.q5"
+      }
+     ],
+     "vol": true
+    }
+   ]
+  },
+  {
+   "id": "eu7.m3",
+   "level": 2,
+   "title": "OBD-Vorschriften",
+   "desc": "Was überwacht werden muss, Schwellenwerte, Warnleuchte und Nachweise.",
+   "lessons": [
+    {
+     "id": "eu7.m3.l1",
+     "title": "Was die OBD überwachen muss",
+     "min": 6,
+     "body": [
+      "Die Vorschriften legen fest, welche Funktionen überwacht werden müssen. Für Euro 6 stehen sie in Anhang XI der Verordnung (EU) 2017/1151, in den USA in den CARB-Vorschriften.",
+      "## Typische Pflichtmonitore",
+      "Katalysator, Zündaussetzer, Kraftstoffsystem, Lambdasonden und deren Heizung, Abgasrückführung, Tankentlüftung (bei Benzinern), Partikelfilter, SCR-System und NOx-Sensoren (bei Diesel) sowie alle abgasrelevanten elektrischen Komponenten (Kurzschluss, Unterbrechung, Plausibilität).",
+      "## Schwellenwert oder Funktion",
+      "Manche Fehler müssen erkannt werden, bevor die Emissionen einen OBD-Schwellenwert (OTL) überschreiten. Andere werden schon gemeldet, wenn eine Funktion grundsätzlich ausfällt, etwa wenn ein Bauteil fehlt oder nicht reagiert.",
+      "## Der Hersteller entscheidet das Wie",
+      "Die Vorschrift sagt, was erkannt werden muss, nicht wie. Die konkreten Diagnoseverfahren entwickelt der Hersteller und weist ihre Wirksamkeit bei der Typgenehmigung nach."
+     ],
+     "key": [
+      "Pflichtmonitore: Katalysator, Aussetzer, Kraftstoffsystem, Sonden, AGR, Tankentlüftung, DPF, SCR, Komponenten.",
+      "Fehler teils vor Überschreiten von OBD-Schwellenwerten (OTL) melden.",
+      "Vorschrift sagt Was, Hersteller entwickelt das Wie."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      },
+      {
+       "n": "CARB: OBD-II-Vorschriften (California Code of Regulations, Title 13, Section 1968.2)"
+      },
+      {
+       "n": "Konrad Reif (Hrsg.): Ottomotor-Management und Dieselmotor-Management, Bosch Fachinformation Automobil (Springer Vieweg)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "OTL (OBD Threshold Limit)",
+       "b": "Emissionsschwelle, bei deren drohender Überschreitung die OBD einen Fehler melden muss.",
+       "id": "eu7.m3.l1.k1"
+      },
+      {
+       "f": "Comprehensive Components",
+       "b": "Überwachung aller abgasrelevanten elektrischen Bauteile auf Schaltungsfehler und Plausibilität.",
+       "id": "eu7.m3.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "multi",
+       "q": "Welche Funktionen muss die OBD typischerweise überwachen?",
+       "o": [
+        "Katalysator",
+        "Zündaussetzer",
+        "Lambdasonden",
+        "Radio"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Das Radio ist nicht abgasrelevant.",
+       "id": "eu7.m3.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein OTL?",
+       "o": [
+        "Ein OBD-Schwellenwert",
+        "Eine Typgenehmigungsnummer",
+        "Ein Diagnoseprotokoll",
+        "Ein Kraftstofftyp"
+       ],
+       "a": 0,
+       "e": "OBD Threshold Limit.",
+       "id": "eu7.m3.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wer entwickelt die konkreten Diagnoseverfahren?",
+       "o": [
+        "Der Hersteller",
+        "Die EU-Kommission",
+        "Die Werkstatt",
+        "Der TÜV allein"
+       ],
+       "a": 0,
+       "e": "Die Vorschrift definiert die Anforderungen, nicht die Algorithmen.",
+       "id": "eu7.m3.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was gehört bei Dieseln zusätzlich zu den Pflichtmonitoren?",
+       "o": [
+        "SCR und NOx-Sensor",
+        "Tankentlüftung",
+        "Zündkerzen",
+        "Drei-Wege-Katalysator"
+       ],
+       "a": 0,
+       "e": "Tankentlüftung betrifft vor allem Benziner.",
+       "id": "eu7.m3.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wo stehen die OBD-Anforderungen für Euro-6-Pkw?",
+       "o": [
+        "2017/1151, Anhang XI",
+        "In der StVO",
+        "In SAE J1962",
+        "Im Fahrzeugschein"
+       ],
+       "a": 0,
+       "e": "Dort sind auch die IUMPR-Regeln beschrieben.",
+       "id": "eu7.m3.l1.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "eu7.m3.l2",
+     "title": "Warnleuchte, Fehlerspeicher, Zugang",
+     "min": 6,
+     "body": [
+      "Die Vorschriften regeln auch, wie Fehler angezeigt und ausgelesen werden.",
+      "## MIL",
+      "Die Motorkontrollleuchte muss bei einem bestätigten abgasrelevanten Fehler angehen. Bei Zündaussetzern, die den Katalysator schädigen können, muss sie blinken. Nach mehreren fehlerfreien Fahrzyklen darf sie wieder ausgehen, der Fehler bleibt aber zunächst gespeichert.",
+      "## Zähler",
+      "Gespeichert werden muss unter anderem, wie viele Kilometer mit eingeschalteter MIL gefahren wurden. So sieht man, wie lange ein Fehler ignoriert wurde.",
+      "## Zugang",
+      "Abgasrelevante Informationen müssen über die genormte Buchse und genormte Protokolle für jedes Diagnosegerät lesbar sein, ohne herstellerspezifische Freischaltung. Das schützt Prüfstellen und freie Werkstätten.",
+      "## Aufforderungssysteme",
+      "Bei Dieseln mit SCR gibt es zusätzlich Warn- und Aufforderungssysteme: Fehlt Harnstofflösung oder ist das System manipuliert, wird der Fahrer gewarnt und nach einer Frist die Leistung oder der Neustart eingeschränkt."
+     ],
+     "key": [
+      "MIL leuchtet bei bestätigten Abgasfehlern, blinkt bei katalysatorschädigenden Aussetzern.",
+      "Gefahrene Strecke mit MIL wird gezählt.",
+      "Abgasdaten für jedes Diagnosegerät frei lesbar."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      },
+      {
+       "n": "SAE J1979: E/E Diagnostic Test Modes (OBD-Dienste)",
+       "u": "https://www.sae.org/standards/content/j1979_202104/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Distanz mit MIL an",
+       "b": "Gespeicherte Strecke, die mit eingeschalteter Motorkontrollleuchte gefahren wurde.",
+       "id": "eu7.m3.l2.k1"
+      },
+      {
+       "f": "Aufforderungssystem (SCR)",
+       "b": "Warnt bei fehlender Harnstofflösung oder Manipulation und schränkt nach einer Frist den Betrieb ein.",
+       "id": "eu7.m3.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wann muss die MIL blinken?",
+       "o": [
+        "Bei Kat-Schaden",
+        "Bei leerem Kraftstofftank",
+        "Beim Flashen",
+        "Bei jedem Kaltstart"
+       ],
+       "a": 0,
+       "e": "Blinken warnt vor akuter Schädigung.",
+       "id": "eu7.m3.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum wird die Strecke mit eingeschalteter MIL gezählt?",
+       "o": [
+        "Ignorierte Fehler zeigen",
+        "Für die Kfz-Steuer",
+        "Für den Kilometerzähler",
+        "Für die Navigation"
+       ],
+       "a": 0,
+       "e": "Das hilft Prüfern und Werkstätten.",
+       "id": "eu7.m3.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert bei einem SCR-Diesel ohne Harnstofflösung nach einer Frist?",
+       "o": [
+        "Leistung sinkt",
+        "Nichts",
+        "Der Motor läuft schneller",
+        "Die MIL geht aus"
+       ],
+       "a": 0,
+       "e": "Das Aufforderungssystem soll den Betrieb ohne NOx-Minderung verhindern.",
+       "id": "eu7.m3.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wer darf abgasrelevante OBD-Daten lesen?",
+       "o": [
+        "Jedes Scan-Tool",
+        "Nur Vertragswerkstätten",
+        "Nur der Hersteller",
+        "Nur die Polizei"
+       ],
+       "a": 0,
+       "e": "Genormter, freier Zugang ist Pflicht.",
+       "id": "eu7.m3.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Darf die MIL nach Behebung wieder ausgehen?",
+       "o": [
+        "Ja, später",
+        "Nein, nie mehr",
+        "Nur in der Werkstatt",
+        "Nur nach einem Jahr"
+       ],
+       "a": 0,
+       "e": "Der Fehler bleibt aber zunächst gespeichert.",
+       "id": "eu7.m3.l2.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "eu7.m3.l3",
+     "title": "Nachweis bei der Typgenehmigung",
+     "min": 6,
+     "body": [
+      "Der Hersteller muss zeigen, dass seine OBD funktioniert.",
+      "## Demonstration",
+      "Bei der Typprüfung werden gezielt fehlerhafte Bauteile eingebaut oder Fehler simuliert, etwa ein gealterter Katalysator. Die OBD muss den Fehler im vorgesehenen Prüfzyklus erkennen und die MIL einschalten, bevor die Schwellenwerte überschritten werden.",
+      "## Dokumentation",
+      "Für jeden Monitor beschreibt der Hersteller, was überwacht wird, unter welchen Bedingungen der Monitor läuft, welche Fehlercodes es gibt und wie die Entprellung funktioniert. Die Behörde prüft diese Unterlagen.",
+      "## Im Feld",
+      "Nach der Zulassung prüfen Hersteller und Behörden, ob die OBD auch im Alltag funktioniert. Dazu gehören die Überwachungshäufigkeit (IUMPR) und Prüfungen von Fahrzeugen im Verkehr. Mängel können zu Rückrufen führen."
+     ],
+     "key": [
+      "Typprüfung: Fehler einbauen, OBD muss erkennen und MIL schalten.",
+      "Dokumentation aller Monitore für die Behörde.",
+      "Im Feld: IUMPR und Prüfungen im Verkehr, ggf. Rückruf."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "OBD-Demonstration",
+       "b": "Nachweis bei der Typprüfung, dass eingebaute Fehler erkannt werden.",
+       "id": "eu7.m3.l3.k1"
+      },
+      {
+       "f": "Rückruf",
+       "b": "Pflichtmaßnahme des Herstellers, um Mängel an ausgelieferten Fahrzeugen zu beheben.",
+       "id": "eu7.m3.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wie wird die OBD bei der Typprüfung getestet?",
+       "o": [
+        "Mit eingebauten Fehlern",
+        "Nur durch Lesen der Software",
+        "Gar nicht",
+        "Durch eine Umfrage bei Kunden"
+       ],
+       "a": 0,
+       "e": "Etwa mit einem künstlich gealterten Katalysator.",
+       "id": "eu7.m3.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt die OBD-Dokumentation?",
+       "o": [
+        "Monitore und Codes",
+        "Die Farbe des Fahrzeugs",
+        "Die Preise der Ersatzteile",
+        "Die Werbestrategie"
+       ],
+       "a": 0,
+       "e": "Die Behörde prüft diese Unterlagen.",
+       "id": "eu7.m3.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was kann bei Mängeln der OBD im Feld folgen?",
+       "o": [
+        "Ein Rückruf",
+        "Eine Steuersenkung",
+        "Nichts",
+        "Eine neue Typgenehmigung ohne Prüfung"
+       ],
+       "a": 0,
+       "e": "Hersteller müssen Mängel beheben.",
+       "id": "eu7.m3.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was muss die OBD bei der Demonstration tun?",
+       "o": [
+        "Erkennen, MIL an",
+        "Fehler verbergen",
+        "Den Motor abschalten",
+        "Die Typgenehmigung anfordern"
+       ],
+       "a": 0,
+       "e": "Und zwar bevor Schwellenwerte überschritten werden.",
+       "id": "eu7.m3.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was wird im Feld zusätzlich geprüft?",
+       "o": [
+        "Die IUMPR",
+        "Die Lackqualität",
+        "Die Radiofrequenzen",
+        "Die Sitzbezüge"
+       ],
+       "a": 0,
+       "e": "Monitore müssen im Alltag oft genug laufen.",
+       "id": "eu7.m3.l3.q5"
+      }
+     ],
+     "vol": true
+    }
+   ]
+  },
+  {
+   "id": "eu7.m4",
+   "level": 2,
+   "title": "IUMPR: Wie oft wird überwacht?",
+   "desc": "Zähler, Bedingungen, Mindestquoten und das Auslesen der Werte.",
+   "lessons": [
+    {
+     "id": "eu7.m4.l1",
+     "title": "Die Idee hinter IUMPR",
+     "min": 6,
+     "body": [
+      "Ein Monitor, der nie läuft, findet keinen Fehler. Deshalb verlangen die Vorschriften, dass Überwachungen im Alltag häufig genug ausgeführt werden. Das misst die In-Use Monitor Performance Ratio (IUMPR).",
+      "## Das Verhältnis",
+      "IUMPR = Zähler ÷ Nenner. Der Zähler (Numerator) zählt, wie oft der Monitor alle Bedingungen erfüllt hatte, um einen Fehler zu erkennen. Der Nenner (Denominator) zählt, wie viele geeignete Fahrten es gab. Beide erhöhen sich höchstens einmal pro Fahrzyklus.",
+      "## Ein Beispiel",
+      "In 50 geeigneten Fahrten konnte die Katalysatorprüfung 20-mal vollständig laufen. IUMPR = 20 ÷ 50 = 0,4.",
+      "## Mindestquote",
+      "In der EU verlangt Euro 6 für die Monitore eine Mindestquote von 0,1, also mindestens jede zehnte geeignete Fahrt. In Kalifornien liegt sie für viele Monitore bei 0,336. Für Euro 7 regeln Durchführungsrechtsakte die Details; dort bitte die aktuellen Werte prüfen.",
+      "Probiere unten den IUMPR-Rechner aus."
+     ],
+     "key": [
+      "IUMPR = Zähler (Monitor konnte erkennen) ÷ Nenner (geeignete Fahrten).",
+      "Beide höchstens +1 pro Fahrzyklus.",
+      "Mindestquote Euro 6: 0,1; CARB oft 0,336."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      },
+      {
+       "n": "CARB: OBD-II-Vorschriften (California Code of Regulations, Title 13, Section 1968.2)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "IUMPR",
+       "b": "In-Use Monitor Performance Ratio: Verhältnis aus Überwachungsdurchläufen und geeigneten Fahrten.",
+       "id": "eu7.m4.l1.k1"
+      },
+      {
+       "f": "Numerator (Zähler)",
+       "b": "Zählt Fahrten, in denen ein Monitor alle Bedingungen zur Fehlererkennung erfüllt hatte.",
+       "id": "eu7.m4.l1.k2"
+      },
+      {
+       "f": "Denominator (Nenner)",
+       "b": "Zählt Fahrten, die die allgemeinen (und ggf. speziellen) Bedingungen erfüllen.",
+       "id": "eu7.m4.l1.k3"
+      },
+      {
+       "f": "Mindestquote 0,1",
+       "b": "Euro-6-Anforderung: Monitor muss in mindestens 10 % der geeigneten Fahrten laufen.",
+       "id": "eu7.m4.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Ein Monitor lief in 30 von 120 geeigneten Fahrten. Wie hoch ist die IUMPR?",
+       "a": 0.25,
+       "unit": "",
+       "tol": 0.001,
+       "e": "30 ÷ 120 = 0,25.",
+       "id": "eu7.m4.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie oft darf der Zähler pro Fahrzyklus höchstens steigen?",
+       "o": [
+        "Einmal",
+        "Beliebig oft",
+        "Zehnmal",
+        "Nie"
+       ],
+       "a": 0,
+       "e": "Sonst würden lange Fahrten das Verhältnis verfälschen.",
+       "id": "eu7.m4.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Mindestquote verlangt Euro 6 in der EU?",
+       "o": [
+        "0,1",
+        "0,336",
+        "0,5",
+        "1,0"
+       ],
+       "a": 0,
+       "e": "0,336 ist ein typischer CARB-Wert.",
+       "id": "eu7.m4.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was zählt der Nenner?",
+       "o": [
+        "Geeignete Fahrten",
+        "Gefundene Fehler",
+        "Gefahrene Kilometer",
+        "Motorstarts insgesamt"
+       ],
+       "a": 0,
+       "e": "Fahrten, die die Bedingungen erfüllen.",
+       "id": "eu7.m4.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum gibt es IUMPR überhaupt?",
+       "o": [
+        "Damit Monitore laufen",
+        "Um Kraftstoff zu sparen",
+        "Um Fehler zu verstecken",
+        "Um die Werkstattkosten zu senken"
+       ],
+       "a": 0,
+       "e": "Ein Monitor, der nie läuft, findet nichts.",
+       "id": "eu7.m4.l1.q5"
+      }
+     ],
+     "figs": [
+      {
+       "after": 7,
+       "w": "iumpr",
+       "cap": "IUMPR-Rechner: Simuliere Fahrten und sieh, ob der Monitor die Mindestquote schafft."
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "eu7.m4.l2",
+     "title": "Wann zählt der Nenner?",
+     "min": 7,
+     "body": [
+      "Der allgemeine Nenner (General Denominator) erhöht sich, wenn eine Fahrt typische Mindestbedingungen erfüllt. In EU und USA sind sie ähnlich:",
+      "## Allgemeine Bedingungen",
+      "Mindestens 600 Sekunden Gesamtfahrzeit seit Motorstart, davon mindestens 300 Sekunden bei 40 km/h oder schneller, mindestens 30 Sekunden ununterbrochener Leerlauf, Umgebungstemperatur von mindestens −7 °C und Höhe unter etwa 2.440 m.",
+      "## Spezielle Bedingungen",
+      "Für manche Monitore kommen Zusatzbedingungen hinzu, etwa bei der Tankentlüftungsprüfung eine bestimmte Standzeit und Temperatur. Bei Kaltstart-Monitoren zählt nur eine Fahrt nach Kaltstart.",
+      "## Der Zündzyklus-Zähler",
+      "Zusätzlich gibt es einen Zähler für Zündzyklen. Er zeigt, wie viele Starts insgesamt stattfanden, und hilft, die Nennerwerte einzuordnen.",
+      "## Warum so streng?",
+      "Die Bedingungen sorgen dafür, dass nur Fahrten zählen, auf denen ein vernünftig ausgelegter Monitor auch laufen kann. Kurzstrecken von zwei Minuten zählen nicht."
+     ],
+     "key": [
+      "Allgemeiner Nenner: ≥ 600 s Fahrt, ≥ 300 s ≥ 40 km/h, ≥ 30 s Leerlauf, ≥ −7 °C, < ca. 2.440 m.",
+      "Einige Monitore haben Zusatzbedingungen.",
+      "Zündzyklus-Zähler zählt alle Starts."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      },
+      {
+       "n": "CARB: OBD-II-Vorschriften (California Code of Regulations, Title 13, Section 1968.2)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "General Denominator",
+       "b": "Allgemeiner Nenner: zählt Fahrten mit typischen Mindestbedingungen.",
+       "id": "eu7.m4.l2.k1"
+      },
+      {
+       "f": "Zündzyklus-Zähler",
+       "b": "Zählt alle Motorstarts bzw. Zündzyklen.",
+       "id": "eu7.m4.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie viele Sekunden Fahrt bei mindestens 40 km/h braucht der allgemeine Nenner?",
+       "a": 300,
+       "unit": "s",
+       "tol": 0,
+       "e": "Dazu insgesamt mindestens 600 s Fahrzeit.",
+       "id": "eu7.m4.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "Wie viele Sekunden ununterbrochener Leerlauf sind nötig?",
+       "a": 30,
+       "unit": "s",
+       "tol": 0,
+       "e": "Mindestens 30 Sekunden am Stück.",
+       "id": "eu7.m4.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Zählt eine Kurzstrecke von 3 Minuten für den allgemeinen Nenner?",
+       "o": [
+        "Nein, zu kurz",
+        "Ja, jede Fahrt zählt",
+        "Nur im Winter",
+        "Nur bei Dieseln"
+       ],
+       "a": 0,
+       "e": "600 s = 10 Minuten.",
+       "id": "eu7.m4.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Ab welcher Umgebungstemperatur zählt eine Fahrt?",
+       "o": [
+        "Ab −7 °C",
+        "Ab 0 °C",
+        "Ab 20 °C",
+        "Immer"
+       ],
+       "a": 0,
+       "e": "Bei strengerer Kälte zählt sie nicht.",
+       "id": "eu7.m4.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was zählt der Zündzyklus-Zähler?",
+       "o": [
+        "Alle Starts",
+        "Nur Fahrten über 40 km/h",
+        "Nur Fehler",
+        "Nur Tankstopps"
+       ],
+       "a": 0,
+       "e": "Er ordnet die Nennerwerte ein.",
+       "id": "eu7.m4.l2.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "eu7.m4.l3",
+     "title": "IUMPR in Entwicklung und Feld",
+     "min": 6,
+     "body": [
+      "IUMPR ist kein reines Papierthema. Wer Monitore entwickelt, muss die Freigabebedingungen so wählen, dass die Quote im Alltag erreicht wird.",
+      "## Zielkonflikt",
+      "Strenge Freigabebedingungen machen einen Monitor robust gegen Fehlalarme, lassen ihn aber seltener laufen. Lockere Bedingungen erhöhen die Quote, riskieren aber falsche Fehler. Die Kunst liegt im Abwägen.",
+      "## Auslesen",
+      "Die Werte stehen über OBD-Dienst 0x09 bereit (für Benziner InfoType 0x08, für Diesel 0x0B): allgemeiner Nenner, Zündzyklen und für jede Monitorgruppe Zähler und Nenner. Mit UDS-basierter OBD gibt es entsprechende Kennungen.",
+      "## Felddaten",
+      "Hersteller sammeln IUMPR-Daten aus Fahrzeugflotten und melden sie den Behörden. Liegt eine Monitorgruppe im Durchschnitt unter der Mindestquote, drohen Nachbesserungen bis hin zum Rückruf.",
+      "## Typische Ursachen niedriger Quoten",
+      "Kurzstreckenbetrieb, Fahrprofile mit wenig Konstantfahrt, Monitore, die nur einmal pro Fahrt und erst spät laufen, oder Konflikte mit anderen Funktionen (etwa wenn Partikelfilterregeneration und Katalysatorprüfung sich gegenseitig blockieren)."
+     ],
+     "key": [
+      "Zielkonflikt: Robustheit gegen Laufhäufigkeit.",
+      "Auslesen über OBD-Dienst 0x09 (InfoType 08 bzw. 0B).",
+      "Feldmeldungen; zu niedrige Quoten können zum Rückruf führen."
+     ],
+     "src": [
+      {
+       "n": "SAE J1979: E/E Diagnostic Test Modes (OBD-Dienste)",
+       "u": "https://www.sae.org/standards/content/j1979_202104/"
+      },
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Freigabebedingung",
+       "b": "Bedingung, unter der ein Monitor laufen darf, z. B. Temperatur oder Last.",
+       "id": "eu7.m4.l3.k1"
+      },
+      {
+       "f": "InfoType 0x08 / 0x0B",
+       "b": "OBD-Dienst-09-Daten mit IUMPR-Zählern (Benziner bzw. Diesel).",
+       "id": "eu7.m4.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was passiert, wenn man Freigabebedingungen sehr streng wählt?",
+       "o": [
+        "Robuster, aber seltener",
+        "Höhere Quote und weniger Fehlalarme",
+        "Keine Auswirkung",
+        "Der Monitor läuft öfter"
+       ],
+       "a": 0,
+       "e": "Das ist der zentrale Zielkonflikt.",
+       "id": "eu7.m4.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Über welchen OBD-Dienst liest man IUMPR-Werte?",
+       "o": [
+        "0x09",
+        "0x03",
+        "0x04",
+        "0x07"
+       ],
+       "a": 0,
+       "e": "InfoType 0x08 für Benziner, 0x0B für Diesel.",
+       "id": "eu7.m4.l3.q2"
+      },
+      {
+       "t": "multi",
+       "q": "Was senkt die IUMPR typischerweise?",
+       "o": [
+        "Viel Kurzstrecke",
+        "Monitore, die spät in der Fahrt laufen",
+        "Blockaden durch andere Funktionen",
+        "Lange Autobahnfahrten"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Lange Konstantfahrten helfen eher.",
+       "id": "eu7.m4.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was droht bei dauerhaft zu niedriger Quote im Feld?",
+       "o": [
+        "Rückruf",
+        "Eine Prämie",
+        "Nichts",
+        "Eine neue Euro-Stufe"
+       ],
+       "a": 0,
+       "e": "Behörden können Maßnahmen verlangen.",
+       "id": "eu7.m4.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wer meldet IUMPR-Felddaten an die Behörden?",
+       "o": [
+        "Die Hersteller",
+        "Die Fahrer",
+        "Die Tankstellen",
+        "Die Versicherer"
+       ],
+       "a": 0,
+       "e": "Hersteller sammeln Daten aus Flotten.",
+       "id": "eu7.m4.l3.q5"
+      }
+     ],
+     "vol": true
+    }
+   ]
+  },
+  {
+   "id": "eu7.m5",
+   "level": 3,
+   "title": "Überwachen und schützen",
+   "desc": "On-Board-Monitoring, Verbrauchsüberwachung und Schutz vor Manipulation.",
+   "lessons": [
+    {
+     "id": "eu7.m5.l1",
+     "title": "On-Board-Monitoring (OBM)",
+     "min": 6,
+     "body": [
+      "Euro 7 geht über die klassische OBD hinaus: Fahrzeuge sollen ihre Emissionen im Betrieb überwachen (On-Board-Monitoring, OBM) und bei deutlichen Überschreitungen reagieren.",
+      "## Von Fehlern zu Emissionen",
+      "Klassische OBD erkennt defekte Bauteile. OBM soll zusätzlich die tatsächlichen Emissionen beobachten, etwa über NOx- und andere Sensoren oder Modelle, und Überschreitungen erkennen, auch wenn kein einzelnes Bauteil als defekt gilt.",
+      "## Was das bedeutet",
+      "Sensoren müssen genauer und langlebiger werden. Die Software braucht verlässliche Modelle und muss Messunsicherheiten berücksichtigen. Wie genau OBM umgesetzt wird, regeln Durchführungsrechtsakte, die sich teils noch entwickeln.",
+      "## Ehrlicher Hinweis",
+      "Die genaue Ausgestaltung von OBM für Pkw ist ein laufendes Thema. Prüfe für konkrete Arbeit immer den aktuellen Stand der Rechtsakte und Leitfäden."
+     ],
+     "key": [
+      "OBM: Emissionen im Betrieb überwachen, nicht nur Bauteilfehler.",
+      "Braucht genaue, langlebige Sensoren und gute Modelle.",
+      "Details in Durchführungsrechtsakten, Stand prüfen."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2024/1257 (Euro 7), Amtsblatt der EU",
+       "u": "https://eur-lex.europa.eu/eli/reg/2024/1257/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "OBM",
+       "b": "On-Board-Monitoring: Überwachung der tatsächlichen Emissionen im Fahrzeug (Euro 7).",
+       "id": "eu7.m5.l1.k1"
+      },
+      {
+       "f": "NOx-Sensor",
+       "b": "Sensor im Abgasstrang, der die NOx-Konzentration misst.",
+       "id": "eu7.m5.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist der Unterschied zwischen OBM und klassischer OBD?",
+       "o": [
+        "OBM misst Emissionen",
+        "OBM ersetzt alle Sensoren",
+        "OBM ist nur für Elektroautos",
+        "Es gibt keinen Unterschied"
+       ],
+       "a": 0,
+       "e": "OBD erkennt vor allem defekte Bauteile.",
+       "id": "eu7.m5.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was braucht OBM technisch besonders?",
+       "o": [
+        "Gute Sensoren",
+        "Größere Tanks",
+        "Lautere Warnsignale",
+        "Stärkere Batterien"
+       ],
+       "a": 0,
+       "e": "Ohne gute Messung keine verlässliche Überwachung.",
+       "id": "eu7.m5.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wo werden Details zu OBM geregelt?",
+       "o": [
+        "In Rechtsakten",
+        "In der Betriebsanleitung",
+        "Im Kaufvertrag",
+        "In der Werkstattrechnung"
+       ],
+       "a": 0,
+       "e": "Der Stand entwickelt sich weiter.",
+       "id": "eu7.m5.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Kann OBM eine Überschreitung ohne defektes Bauteil erkennen?",
+       "o": [
+        "Ja, das ist das Ziel",
+        "Nein, nie",
+        "Nur bei Dieseln",
+        "Nur in der Werkstatt"
+       ],
+       "a": 0,
+       "e": "Es geht um die tatsächlichen Emissionen.",
+       "id": "eu7.m5.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was muss die Software bei OBM berücksichtigen?",
+       "o": [
+        "Messunsicherheiten",
+        "Die Lieblingsmusik",
+        "Den Reifendruck allein",
+        "Die Uhrzeit"
+       ],
+       "a": 0,
+       "e": "Sonst drohen Fehlalarme.",
+       "id": "eu7.m5.l1.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "eu7.m5.l2",
+     "title": "Verbrauchsüberwachung (OBFCM)",
+     "min": 5,
+     "body": [
+      "Seit 2021 müssen neue Pkw in der EU ihren realen Kraftstoff- und Energieverbrauch aufzeichnen (On-Board Fuel and Energy Consumption Monitoring, OBFCM).",
+      "## Was gespeichert wird",
+      "Gesamtkraftstoffverbrauch und gefahrene Strecke über die Lebensdauer, bei Plug-in-Hybriden zusätzlich Strecken und Energie im elektrischen Betrieb und die ins Netz geladene Energie.",
+      "## Wozu",
+      "Die EU vergleicht so den realen Verbrauch mit den Laborwerten. Gerade bei Plug-in-Hybriden zeigte sich, dass der reale Verbrauch deutlich über den Prüfwerten liegen kann, weil seltener geladen wird als angenommen. Diese Daten fließen in künftige Regeln ein.",
+      "## Zugriff",
+      "Die Werte sind über die OBD-Schnittstelle lesbar. Hersteller dürfen sie mit Zustimmung des Halters übermitteln, Behörden können sie bei technischen Überprüfungen auslesen."
+     ],
+     "key": [
+      "OBFCM: realer Verbrauch und Strecke werden im Fahrzeug gespeichert.",
+      "Plug-in-Hybride: elektrische Anteile werden zusätzlich erfasst.",
+      "Abgleich Realität gegen Labor für künftige Regeln."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      },
+      {
+       "n": "Verordnung (EU) 2019/631 (CO2-Flottengrenzwerte, Art. 12: realer Verbrauch)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2019/631/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "OBFCM",
+       "b": "On-Board Fuel and Energy Consumption Monitoring: Aufzeichnung des realen Verbrauchs im Fahrzeug.",
+       "id": "eu7.m5.l2.k1"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Seit wann gilt OBFCM für neue Pkw in der EU?",
+       "o": [
+        "2021",
+        "1996",
+        "2010",
+        "2030"
+       ],
+       "a": 0,
+       "e": "Eingeführt mit den CO2-Regeln.",
+       "id": "eu7.m5.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeigte OBFCM bei Plug-in-Hybriden?",
+       "o": [
+        "Real deutlich höher",
+        "Sie verbrauchen gar nichts",
+        "Sie laden zu oft",
+        "Sie fahren nur elektrisch"
+       ],
+       "a": 0,
+       "e": "Weil seltener geladen wird als angenommen.",
+       "id": "eu7.m5.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu nutzt die EU die OBFCM-Daten?",
+       "o": [
+        "Realität vs. Labor",
+        "Für Strafzettel",
+        "Für Werbung",
+        "Für die Navigation"
+       ],
+       "a": 0,
+       "e": "Die Daten fließen in künftige Regeln ein.",
+       "id": "eu7.m5.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wie sind die OBFCM-Daten zugänglich?",
+       "o": [
+        "Über die OBD-Schnittstelle",
+        "Nur über das Radio",
+        "Gar nicht",
+        "Nur per Brief vom Hersteller"
+       ],
+       "a": 0,
+       "e": "Behörden können sie bei Prüfungen auslesen.",
+       "id": "eu7.m5.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was wird bei Plug-in-Hybriden zusätzlich erfasst?",
+       "o": [
+        "E-Anteil",
+        "Die Reifenmarke",
+        "Die Sitzposition",
+        "Die Musiklautstärke"
+       ],
+       "a": 0,
+       "e": "So lässt sich der elektrische Anteil bewerten.",
+       "id": "eu7.m5.l2.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "eu7.m5.l3",
+     "title": "Schutz vor Manipulation",
+     "min": 6,
+     "body": [
+      "Abgasreinigung kostet etwas: Harnstofflösung, Regenerationen, manchmal Leistung. Manche versuchen deshalb, Systeme abzuschalten oder zu überlisten. Die Vorschriften verlangen Schutz dagegen.",
+      "## Typische Manipulationen",
+      "AdBlue-Emulatoren, die dem Steuergerät ein funktionierendes SCR vorgaukeln, entfernte Partikelfilter oder Katalysatoren, abgeschaltete Abgasrückführung, veränderte Software (Chiptuning) oder manipulierte Sensoren.",
+      "## Gegenmaßnahmen",
+      "Plausibilitätsprüfungen zwischen Sensoren, Erkennung fehlender Bauteile, abgesicherte Software (Signaturen, Secure Boot) und gegen Veränderung geschützte Kalibrierdaten. Euro 7 verschärft die Anforderungen an Manipulationsschutz ausdrücklich.",
+      "## Rechtslage",
+      "Manipulationen an der Abgasreinigung sind in der EU verboten und führen zum Erlöschen der Betriebserlaubnis. Auch unzulässige Abschalteinrichtungen durch Hersteller sind verboten; Ausnahmen gibt es nur eng begrenzt, etwa zum Schutz des Motors vor Schäden."
+     ],
+     "key": [
+      "Manipulationen: Emulatoren, entfernte Filter, AGR aus, Chiptuning.",
+      "Schutz: Plausibilisierung, Bauteilerkennung, signierte Software.",
+      "Manipulation und unzulässige Abschalteinrichtungen sind verboten."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2024/1257 (Euro 7), Amtsblatt der EU",
+       "u": "https://eur-lex.europa.eu/eli/reg/2024/1257/oj"
+      },
+      {
+       "n": "Verordnung (EG) Nr. 715/2007, Art. 5 (Abschalteinrichtungen)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2007/715/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "AdBlue-Emulator",
+       "b": "Manipulationsgerät, das dem Steuergerät ein funktionierendes SCR-System vortäuscht.",
+       "id": "eu7.m5.l3.k1"
+      },
+      {
+       "f": "Manipulationsschutz (Anti-Tampering)",
+       "b": "Maßnahmen gegen unzulässige Veränderungen an Abgasreinigung und Software.",
+       "id": "eu7.m5.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "multi",
+       "q": "Welche Maßnahmen schützen gegen Manipulation?",
+       "o": [
+        "Plausibilisierung zwischen Sensoren",
+        "Signierte Software",
+        "Erkennung fehlender Bauteile",
+        "Größere Auspuffblenden"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Blenden haben keine Schutzwirkung.",
+       "id": "eu7.m5.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was macht ein AdBlue-Emulator?",
+       "o": [
+        "Täuscht SCR vor",
+        "Füllt AdBlue automatisch nach",
+        "Misst die NOx-Werte genauer",
+        "Kühlt den Katalysator"
+       ],
+       "a": 0,
+       "e": "Das ist eine verbotene Manipulation.",
+       "id": "eu7.m5.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was folgt in der EU auf eine Manipulation der Abgasreinigung?",
+       "o": [
+        "Erlaubnis erlischt",
+        "Eine Steuerermäßigung",
+        "Nichts",
+        "Eine längere Garantie"
+       ],
+       "a": 0,
+       "e": "Zudem drohen Bußgelder.",
+       "id": "eu7.m5.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wann sind Abschalteinrichtungen ausnahmsweise erlaubt?",
+       "o": [
+        "Eng, etwa Motorschutz",
+        "Immer bei Kälte",
+        "Immer auf der Autobahn",
+        "Nie, ohne Ausnahme"
+       ],
+       "a": 0,
+       "e": "Die Ausnahmen werden streng ausgelegt.",
+       "id": "eu7.m5.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum hilft Secure Boot gegen Manipulation?",
+       "o": [
+        "Fremde Software startet nicht",
+        "Der Motor wird leiser",
+        "Der Verbrauch sinkt",
+        "Die OBD wird abgeschaltet"
+       ],
+       "a": 0,
+       "e": "Nur signierte Software läuft.",
+       "id": "eu7.m5.l3.q5"
+      }
+     ],
+     "vol": true
+    }
+   ]
+  },
+  {
+   "id": "eu7.m6",
+   "level": 3,
+   "title": "Nachweise und Marktüberwachung",
+   "desc": "Prüfungen von Fahrzeugen im Verkehr, Behördenkontrollen und Folgen von Verstößen.",
+   "lessons": [
+    {
+     "id": "eu7.m6.l1",
+     "title": "Übereinstimmung in Betrieb",
+     "min": 6,
+     "body": [
+      "Mit der Typgenehmigung ist es nicht getan. Der Hersteller muss nachweisen, dass Fahrzeuge auch nach Jahren im Alltag die Vorschriften einhalten. Das heißt Übereinstimmung in Betrieb (In-Service Conformity, ISC).",
+      "## Ablauf",
+      "Aus Fahrzeugen im Verkehr werden Stichproben gezogen, typischerweise mit unterschiedlichen Laufleistungen. Sie werden im Labor und auf der Straße gemessen. Auch OBD und IUMPR werden geprüft.",
+      "## Ergebnis",
+      "Hält eine Stichprobe die Grenzwerte nicht ein, muss der Hersteller die Ursache finden und Abhilfe schaffen, oft durch ein Software-Update oder Bauteiltausch im Rahmen eines Rückrufs.",
+      "## Unabhängige Prüfungen",
+      "Seit der Reform des Typgenehmigungsrechts (Verordnung (EU) 2018/858) prüfen auch Behörden und anerkannte Dritte selbst Fahrzeuge aus dem Markt."
+     ],
+     "key": [
+      "ISC: Hersteller prüft Fahrzeuge aus dem Verkehr.",
+      "Labor- und Straßenmessungen, auch OBD und IUMPR.",
+      "Mängel → Abhilfe, oft per Rückruf."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      },
+      {
+       "n": "Verordnung (EU) 2018/858 (Typgenehmigung und Marktüberwachung)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2018/858/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "ISC (In-Service Conformity)",
+       "b": "Übereinstimmung in Betrieb: Prüfung von Fahrzeugen im Verkehr auf Einhaltung der Vorschriften.",
+       "id": "eu7.m6.l1.k1"
+      },
+      {
+       "f": "Stichprobe",
+       "b": "Auswahl von Fahrzeugen aus dem Verkehr für Prüfungen.",
+       "id": "eu7.m6.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was prüft die Übereinstimmung in Betrieb?",
+       "o": [
+        "Fahrzeuge im Alltag",
+        "Nur Prototypen",
+        "Nur den Lack",
+        "Nur neue Fahrzeuge im Werk"
+       ],
+       "a": 0,
+       "e": "Es geht um die Einhaltung im realen Betrieb.",
+       "id": "eu7.m6.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was folgt, wenn eine Stichprobe durchfällt?",
+       "o": [
+        "Abhilfe schaffen",
+        "Nichts",
+        "Die Grenzwerte werden angehoben",
+        "Die Fahrzeuge werden verschrottet"
+       ],
+       "a": 0,
+       "e": "Oft per Software-Update im Rückruf.",
+       "id": "eu7.m6.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wer prüft seit 2018/858 zusätzlich Fahrzeuge aus dem Markt?",
+       "o": [
+        "Behörden und Dritte",
+        "Nur die Hersteller",
+        "Nur die Fahrer",
+        "Niemand"
+       ],
+       "a": 0,
+       "e": "Das stärkt die Marktüberwachung.",
+       "id": "eu7.m6.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Werden bei ISC auch OBD-Funktionen geprüft?",
+       "o": [
+        "Ja, inklusive IUMPR",
+        "Nein, nur Abgas",
+        "Nur bei Elektroautos",
+        "Nur auf Anfrage der Kunden"
+       ],
+       "a": 0,
+       "e": "Die OBD muss im Alltag funktionieren.",
+       "id": "eu7.m6.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Womit wird bei ISC gemessen?",
+       "o": [
+        "Im Labor und auf der Straße",
+        "Nur mit dem Kilometerzähler",
+        "Nur per Umfrage",
+        "Nur im Simulator"
+       ],
+       "a": 0,
+       "e": "Beides gehört dazu.",
+       "id": "eu7.m6.l1.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "eu7.m6.l2",
+     "title": "Lehren aus dem Dieselskandal",
+     "min": 6,
+     "body": [
+      "2015 wurde bekannt, dass Software in Millionen Dieselfahrzeugen erkannte, wann sie auf dem Prüfstand lief, und nur dann die Abgasreinigung voll arbeiten ließ. Im Alltag lagen die NOx-Emissionen um ein Vielfaches höher.",
+      "## Folgen",
+      "Milliardenstrafen und Schadenersatz, Rückrufe mit Software-Updates, strafrechtliche Verfahren und ein massiver Vertrauensverlust. Politisch führte der Skandal zu RDE-Messungen, unabhängigen Marktprüfungen und strengerer Behördenaufsicht.",
+      "## Was das für Entwicklerinnen und Entwickler heißt",
+      "Jede Funktion, die die Abgasreinigung unter bestimmten Bedingungen verändert, muss begründet, dokumentiert und gegenüber der Behörde offengelegt werden. Viele Hersteller haben interne Prüfprozesse dafür eingeführt. Wer Zweifel hat, ob eine Funktion zulässig ist, sollte sie ansprechen und nicht stillschweigend umsetzen.",
+      "## Der Kern",
+      "Gesetze messen nicht nur Grenzwerte, sie verlangen ehrliches Verhalten über den ganzen Betrieb. Technik, die einen Test erkennt und sich dann anders verhält, ist unzulässig."
+     ],
+     "key": [
+      "2015: Software erkannte den Prüfstand und reinigte nur dort voll.",
+      "Folgen: Strafen, Rückrufe, RDE, strengere Aufsicht.",
+      "Abgasrelevante Strategien müssen begründet und offengelegt werden."
+     ],
+     "src": [
+      {
+       "n": "Verordnung (EG) Nr. 715/2007, Art. 5 (Abschalteinrichtungen)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2007/715/oj"
+      },
+      {
+       "n": "Verordnung (EU) 2017/1151 (WLTP, RDE, OBD-Anforderungen für Pkw, Anhang XI)",
+       "u": "https://eur-lex.europa.eu/eli/reg/2017/1151/oj"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Prüfstandserkennung",
+       "b": "Unzulässige Funktion, die einen Test erkennt und das Emissionsverhalten anpasst.",
+       "id": "eu7.m6.l2.k1"
+      },
+      {
+       "f": "Offenlegungspflicht",
+       "b": "Pflicht, abgasrelevante Strategien gegenüber der Genehmigungsbehörde zu beschreiben und zu begründen.",
+       "id": "eu7.m6.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was machte die Software im Dieselskandal?",
+       "o": [
+        "Sie erkannte den Prüfstand",
+        "Sie senkte den Verbrauch im Alltag",
+        "Sie schaltete die OBD ab",
+        "Sie erhöhte die Leistung im Test"
+       ],
+       "a": 0,
+       "e": "Nur dort arbeitete die Abgasreinigung voll.",
+       "id": "eu7.m6.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist die richtige Reaktion bei Zweifeln an einer Funktion?",
+       "o": [
+        "Ansprechen und klären",
+        "Stillschweigend umsetzen",
+        "Den Code verstecken",
+        "Die Funktion umbenennen"
+       ],
+       "a": 0,
+       "e": "Transparenz schützt Kunden, Unternehmen und dich selbst.",
+       "id": "eu7.m6.l2.q2"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Folgen hatte der Skandal?",
+       "o": [
+        "RDE-Messungen",
+        "Unabhängige Marktprüfungen",
+        "Rückrufe mit Software-Updates",
+        "Abschaffung der OBD"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Die OBD wurde nicht abgeschafft.",
+       "id": "eu7.m6.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was müssen Hersteller zu abgasrelevanten Strategien tun?",
+       "o": [
+        "Offenlegen",
+        "Sie geheim halten",
+        "Sie nur mündlich erklären",
+        "Nichts"
+       ],
+       "a": 0,
+       "e": "Die Behörde muss sie bewerten können.",
+       "id": "eu7.m6.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Aussage stimmt?",
+       "o": [
+        "Testerkennung ist unzulässig",
+        "Nur Grenzwerte im Labor zählen",
+        "Alltagsemissionen sind egal",
+        "Software darf alles, was nicht verboten wird"
+       ],
+       "a": 0,
+       "e": "Das Verhalten im gesamten Betrieb zählt.",
+       "id": "eu7.m6.l2.q5"
+      }
+     ],
+     "vol": true
+    },
+    {
+     "id": "eu7.m6.l3",
+     "title": "Die Abgasuntersuchung",
+     "min": 5,
+     "body": [
+      "Auch für den einzelnen Halter gilt: Das Fahrzeug wird regelmäßig geprüft. In Deutschland ist die Abgasuntersuchung (AU) Teil der Hauptuntersuchung.",
+      "## Ablauf",
+      "Der Prüfer liest über die OBD-Buchse Fehlerspeicher, MIL-Status und Readiness aus. Bei Fahrzeugen mit modernen Systemen wird zusätzlich gemessen: Bei Benzinern traditionell CO und Lambda, bei Dieseln die Trübung und seit 2023 bei neueren Fahrzeugen die Partikelanzahl.",
+      "## Typische Durchfallgründe",
+      "Leuchtende MIL, abgasrelevante Fehler im Speicher, nicht erreichte Readiness nach kurz vorher gelöschtem Fehlerspeicher oder auffällige Messwerte, etwa durch einen ausgebauten Partikelfilter.",
+      "## Tipp",
+      "Fehler nicht kurz vor der Prüfung löschen, sondern reparieren und danach normal fahren, damit die Monitore wieder bereit sind."
+     ],
+     "key": [
+      "AU: OBD auslesen (Fehler, MIL, Readiness) plus Messung.",
+      "Diesel seit 2023 mit Partikelanzahlmessung (neuere Fahrzeuge).",
+      "Gelöschter Speicher fällt über die Readiness auf."
+     ],
+     "src": [
+      {
+       "n": "Kraftfahrt-Bundesamt und StVZO § 29 mit Anlage VIII (Hauptuntersuchung)",
+       "u": "https://www.gesetze-im-internet.de/stvzo_2012/__29.html"
+      }
+     ],
+     "cards": [
+      {
+       "f": "AU",
+       "b": "Abgasuntersuchung, Teil der Hauptuntersuchung in Deutschland.",
+       "id": "eu7.m6.l3.k1"
+      },
+      {
+       "f": "Partikelanzahlmessung (AU)",
+       "b": "Messung der Partikelanzahl bei neueren Dieseln, deckt z. B. defekte oder fehlende Filter auf.",
+       "id": "eu7.m6.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was liest der Prüfer bei der AU über die OBD aus?",
+       "o": [
+        "Fehler, MIL, Readiness",
+        "Die Fahrtenhistorie",
+        "Die Navigationsziele",
+        "Die Musikliste"
+       ],
+       "a": 0,
+       "e": "Dazu kommt eine Messung.",
+       "id": "eu7.m6.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was deckt die Partikelanzahlmessung bei Dieseln auf?",
+       "o": [
+        "Fehlende Filter",
+        "Falschen Reifendruck",
+        "Leere Batterien",
+        "Defekte Scheinwerfer"
+       ],
+       "a": 0,
+       "e": "Ein fehlender Filter erzeugt sehr hohe Partikelzahlen.",
+       "id": "eu7.m6.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum fällt ein kurz vorher gelöschter Fehlerspeicher auf?",
+       "o": [
+        "Readiness fehlt",
+        "Die MIL blinkt",
+        "Der Tank ist leer",
+        "Die VIN fehlt"
+       ],
+       "a": 0,
+       "e": "Monitore brauchen Fahrten, um bereit zu werden.",
+       "id": "eu7.m6.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist der beste Weg vor der AU bei Fehlern?",
+       "o": [
+        "Reparieren, fahren",
+        "Fehler löschen",
+        "Batterie abklemmen",
+        "OBD-Buchse abdecken"
+       ],
+       "a": 0,
+       "e": "Dann sind die Monitore wieder bereit.",
+       "id": "eu7.m6.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Ist die AU in Deutschland Teil der Hauptuntersuchung?",
+       "o": [
+        "Ja",
+        "Nein, völlig getrennt",
+        "Nur bei Elektroautos",
+        "Nur bei Oldtimern"
+       ],
+       "a": 0,
+       "e": "Sie wird gemeinsam mit der HU durchgeführt.",
+       "id": "eu7.m6.l3.q5"
+      }
+     ],
+     "vol": true
+    }
+   ]
+  }
+ ]
+}

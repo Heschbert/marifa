@@ -45,33 +45,32 @@
    "id": "ecu",
    "file": "ecu.json",
    "fac": "auto"
+  },
+  {
+   "id": "diag",
+   "file": "diag.json",
+   "fac": "auto"
+  },
+  {
+   "id": "eu7",
+   "file": "eu7.json",
+   "fac": "auto"
+  },
+  {
+   "id": "net",
+   "file": "net.json",
+   "fac": "auto"
+  },
+  {
+   "id": "sec",
+   "file": "sec.json",
+   "fac": "auto"
+  },
+  {
+   "id": "ad",
+   "file": "ad.json",
+   "fac": "auto"
   }
  ],
- "planned": [
-  {
-   "fac": "auto",
-   "t": "Fahrzeugdiagnose: OBD und UDS",
-   "sub": "Von der MIL-Lampe bis zu Diagnosediensten nach ISO 14229"
-  },
-  {
-   "fac": "auto",
-   "t": "Euro 7, OBD-Vorschriften und IUMPR",
-   "sub": "Neue Abgasnorm, Überwachungspflichten und Überwachungsquoten"
-  },
-  {
-   "fac": "auto",
-   "t": "Fahrzeugkommunikation und Vernetzung",
-   "sub": "CAN, LIN, Automotive Ethernet, SOME/IP, V2X"
-  },
-  {
-   "fac": "auto",
-   "t": "Automotive Security",
-   "sub": "UN R155/R156, ISO/SAE 21434, sichere Updates"
-  },
-  {
-   "fac": "auto",
-   "t": "Autonomes Fahren",
-   "sub": "SAE-Stufen, Sensorik, funktionale Sicherheit, Zulassung"
-  }
- ]
+ "planned": []
 }

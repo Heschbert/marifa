@@ -1,0 +1,91 @@
+# Kürzere Fassungen richtiger Antworten, damit die richtige Antwort nicht auffällig oft die längste ist.
+A = {}
+def add(prefix, d): A.update({prefix + "." + k: v for k, v in d.items()})
+
+add("diag", {
+ "m1.l1.q4": "Zündaussetzer während der Fahrt erkennen", "m1.l1.q5": "Prüfen und Codieren", "m1.l2.q4": "OBD auf UDS-Basis",
+ "m1.l3.q4": "Bei bestätigtem Abgasfehler", "m1.l3.q5": "Status und Umfeld", "m2.l1.q2": "Start bis Abstellen",
+ "m2.l1.q4": "Sie braucht passende Temperatur und Füllstand", "m2.l1.q5": "Für Bestätigung und Alterung", "m2.l2.q4": "Hoch bei Fehler, runter bei Erfolg",
+ "m2.l2.q5": "Prüfung seit Löschen nie beendet", "m2.l3.q2": "Messwerte beim Fehler", "m2.l3.q3": "Wer bei vollem Speicher weicht",
+ "m2.l3.q5": "Auftretenszähler", "m3.l1.q1": "Netzwerk", "m3.l1.q2": "Herstellercode", "m3.l1.q4": "Abgasregelung",
+ "m3.l2.q5": "In Herstellerdaten", "m3.l3.q3": "Mehrere Aussetzer", "m3.l3.q5": "Motorsteuergerät stumm",
+ "m4.l1.q3": "Plus", "m4.l1.q5": "K-Line", "m4.l2.q5": "Fahrzeugdaten (VIN)", "m4.l3.q1": "Ob er seit Löschen lief",
+ "m4.l3.q2": "Wenn der Monitor besteht", "m4.l3.q3": "Readiness fehlt", "m4.l3.q4": "MIL, Fehlerzahl, Readiness",
+ "m4.l3.q5": "Alle Monitore zurück", "m5.l1.q2": "0x22 abgelehnt, Bereich", "m5.l1.q3": "Die VIN", "m5.l1.q4": "Mit der SID",
+ "m5.l2.q1": "Bitte warten", "m5.l3.q1": "Erst Extended Session", "m5.l3.q3": "Bedingungen falsch", "m5.l3.q4": "Falsche Reihenfolge",
+ "m6.l1.q4": "Fehler, Daten, Readiness", "m6.l1.q5": "Extended Data", "m6.l2.q2": "Gibt Kontrolle zurück", "m6.l2.q5": "0x2E (WDBI)",
+ "m6.l3.q2": "Ungerade (01)", "m6.l3.q3": "Zertifikate statt Geheimnis", "m6.l3.q4": "Gegen Folgefehler", "m7.l1.q2": "Die Gesamtlänge",
+ "m7.l1.q3": "Der Empfänger", "m7.l1.q5": "Nachrichten sind oft länger", "m7.l2.q2": "13400", "m7.l2.q4": "Schnelles Flashen",
+ "m7.l3.q1": "Diagnoseschnittstelle", "m7.l3.q2": "Prüfabläufe", "m7.l3.q4": "Pass-Thru-API", "m7.l3.q5": "Nein, beide bleiben",
+ "m8.l1.q2": "Gemeinsames Bus- oder Stromproblem", "m8.l1.q3": "Gerade nicht aktiv", "m8.l1.q4": "Ursache liegt oft woanders",
+ "m8.l1.q5": "Löschen, Monitor laufen lassen", "m8.l2.q1": "Spannungseinbruch bricht ab", "m8.l2.q2": "Rückfall auf alte Version",
+ "m8.l2.q4": "Codieren", "m8.l3.q1": "Teile vorab bestellen", "m8.l3.q2": "Zugang zu Infos", "m8.l3.q3": "Wegfahrsperre u. Ä.", "m8.l3.q5": "Schutz vor Angriffen",
+})
+add("eu7", {
+ "m1.l1.q2": "Feine Partikel sind leicht, aber schädlich", "m1.l1.q3": "SCR (AdBlue)", "m1.l1.q5": "Mindert CO, HC, NOx",
+ "m1.l2.q2": "Labor und Straße wichen ab", "m1.l2.q4": "Gilt für alle Neuwagen", "m1.l2.q5": "Eine Behörde", "m1.l3.q3": "Toleranz der Messung",
+ "m2.l1.q2": "Bremsen und Reifen", "m2.l1.q3": "Euro 6 für alle Kraftstoffe", "m2.l1.q5": "Ja, teilweise", "m2.l2.q2": "Zählung ab 10 nm",
+ "m2.l2.q5": "Gleiche Grenze", "m2.l3.q2": "Sie rekuperieren", "m2.l3.q3": "Batteriezustand (SoH)", "m2.l3.q4": "Umweltdaten-Dokument",
+ "m2.l3.q5": "Bei der UNECE", "m3.l1.q2": "Ein OBD-Schwellenwert", "m3.l1.q4": "SCR und NOx-Sensor", "m3.l1.q5": "2017/1151, Anhang XI",
+ "m3.l2.q1": "Bei Kat-Schaden", "m3.l2.q2": "Ignorierte Fehler zeigen", "m3.l2.q3": "Leistung sinkt", "m3.l2.q4": "Jedes Scan-Tool",
+ "m3.l2.q5": "Ja, später", "m3.l3.q1": "Mit eingebauten Fehlern", "m3.l3.q2": "Monitore und Codes", "m3.l3.q4": "Erkennen, MIL an",
+ "m3.l3.q5": "Die IUMPR", "m4.l1.q5": "Damit Monitore laufen", "m4.l2.q3": "Nein, zu kurz", "m4.l3.q1": "Robuster, aber seltener",
+ "m4.l3.q4": "Rückruf", "m5.l1.q1": "OBM misst Emissionen", "m5.l1.q2": "Gute Sensoren", "m5.l1.q3": "In Rechtsakten",
+ "m5.l2.q2": "Real deutlich höher", "m5.l2.q3": "Realität vs. Labor", "m5.l2.q5": "E-Anteil", "m5.l3.q2": "Täuscht SCR vor",
+ "m5.l3.q3": "Erlaubnis erlischt", "m5.l3.q4": "Eng, etwa Motorschutz", "m5.l3.q5": "Fremde Software startet nicht",
+ "m6.l1.q1": "Fahrzeuge im Alltag", "m6.l1.q2": "Abhilfe schaffen", "m6.l1.q3": "Behörden und Dritte", "m6.l2.q4": "Offenlegen",
+ "m6.l2.q5": "Testerkennung ist unzulässig", "m6.l3.q1": "Fehler, MIL, Readiness", "m6.l3.q2": "Fehlende Filter", "m6.l3.q3": "Readiness fehlt",
+ "m6.l3.q4": "Reparieren, fahren",
+})
+add("net", {
+ "m1.l1.q2": "Funktionen und Vernetzung", "m1.l1.q5": "Geteilte Datenleitung", "m1.l2.q1": "Das Gateway", "m1.l2.q2": "Viel Querverkehr",
+ "m1.l2.q3": "Funktionen der Domäne", "m1.l2.q5": "Nach Funktion", "m1.l3.q1": "Nach dem Ort", "m1.l3.q3": "Funktionen als Software",
+ "m1.l3.q4": "Echtzeit-Ethernet", "m2.l1.q3": "Mehr Flanken", "m2.l2.q2": "Sender wiederholt", "m2.l2.q4": "Störer isolieren",
+ "m2.l2.q5": "Sechs gleiche Bits", "m2.l3.q4": "Schnelle Datenphase", "m3.l1.q1": "Der Master", "m3.l1.q2": "Takt aus Sync-Byte",
+ "m3.l1.q5": "Header-Reihenfolge", "m3.l2.q1": "Feste Zeitschlitze", "m3.l2.q2": "Uhren abgleichen", "m3.l2.q4": "Ereignis-Nachrichten",
+ "m3.l2.q5": "CAN FD, Ethernet", "m3.l3.q3": "Botschaften und Signale", "m3.l3.q4": "CAN", "m3.l3.q5": "Code und Anzeige",
+ "m4.l1.q1": "Ein Adernpaar", "m4.l1.q3": "Leitet nach MAC weiter", "m4.l2.q2": "Dienste finden", "m4.l2.q4": "Dienste statt Signale",
+ "m4.l3.q1": "Uhren abgleichen", "m4.l3.q2": "Verzögerung kritischer Daten", "m4.l3.q3": "Zur Zuordnung", "m4.l3.q4": "IEEE-Standards",
+ "m5.l1.q3": "Position und Zeit", "m5.l1.q4": "2G/3G endet", "m5.l1.q5": "Zündung regeln", "m5.l2.q1": "Im Stand",
+ "m5.l2.q3": "Signatur", "m5.l2.q4": "Updates", "m5.l2.q5": "Rückfallebene", "m5.l3.q1": "Ort und Tempo", "m5.l3.q2": "Schutz vor Tracking",
+ "m5.l3.q3": "WLAN 802.11p", "m5.l3.q5": "Gegen falsche Warnungen", "m6.l1.q1": "Batterie wird leer", "m6.l1.q2": "Ruhestrom messen",
+ "m6.l1.q3": "Wecksignale", "m6.l1.q5": "Wenn keiner sendet", "m6.l2.q1": "Ersetzt fehlende Knoten", "m6.l2.q2": "Die K-Matrix",
+ "m6.l2.q3": "Gefahrlos testen", "m6.l2.q4": "Mit Wireshark", "m6.l2.q5": "Alle Frames", "m6.l3.q1": "Fehler bei diesem Knoten",
+ "m6.l3.q2": "Kurzschluss", "m6.l3.q3": "Falsche Zykluszeit", "m6.l3.q5": "Zähler/CRC falsch",
+})
+add("sec", {
+ "m1.l1.q1": "Security: gegen Angriffe", "m1.l1.q3": "Leben, Eigentum, Daten", "m1.l1.q4": "Ja, etwa Bremsen", "m1.l1.q5": "Alle Zugänge",
+ "m1.l2.q1": "Infotainment", "m1.l2.q2": "Schlüsselfunk wird verlängert", "m1.l2.q3": "UWB-Laufzeit", "m1.l2.q4": "Fälschbare Botschaften",
+ "m1.l2.q5": "1,4 Millionen", "m1.l3.q2": "Betrüger", "m1.l3.q4": "Sich weiterarbeiten", "m1.l3.q5": "Manipulierte Teile",
+ "m2.l1.q2": "Prozesse", "m2.l1.q4": "Stopp", "m2.l1.q5": "Ja, mit Lieferkette", "m2.l2.q1": "Relevante Software",
+ "m2.l2.q2": "Sicherer Zustand", "m2.l2.q3": "Welche Software wo", "m2.l2.q4": "Ja, für alle", "m2.l3.q2": "Gründlichkeitsstufe",
+ "m2.l3.q3": "Nein", "m2.l3.q5": "Nein, länger", "m3.l1.q3": "Geheimhaltung", "m3.l1.q5": "Folge eines Angriffs",
+ "m3.l2.q2": "Manipulation", "m3.l2.q3": "Lahmlegen", "m3.l3.q2": "MAC (SecOC)", "m3.l3.q3": "Bei Neuem", "m3.l3.q4": "Wirkung × Machbarkeit",
+ "m3.l3.q5": "Weglassen", "m4.l1.q1": "Öffentlicher Schlüssel", "m4.l1.q3": "Völlig anders", "m4.l1.q4": "Echtheit", "m4.l2.q1": "Nein",
+ "m4.l2.q2": "Stufe prüft Stufe", "m4.l2.q3": "Gegen Auslesen", "m4.l2.q4": "Zufall", "m4.l2.q5": "Unverändertheit", "m4.l3.q1": "Replay",
+ "m4.l3.q3": "Ein Schlüssel öffnet nicht alle", "m4.l3.q4": "Schlüsselbesitz", "m4.l3.q5": "TLS, MACsec", "m5.l1.q1": "Leck möglich",
+ "m5.l1.q2": "Zertifikate", "m5.l1.q4": "Kilometer", "m5.l1.q5": "Nachvollziehbarkeit", "m5.l2.q1": "Im Ziel", "m5.l2.q2": "Alte Versionen",
+ "m5.l2.q3": "Getrennte Rollen", "m5.l2.q4": "Manipulierbar", "m5.l2.q5": "Geschützt", "m5.l3.q1": "Infotainment sendet Bremsbefehle",
+ "m5.l3.q2": "Dienste abschalten", "m6.l1.q2": "Fehleingriff wäre riskant", "m6.l1.q3": "Ans Backend", "m6.l1.q4": "Normalverhalten",
+ "m6.l2.q1": "Sammeln, reagieren", "m6.l2.q2": "Muster erkennen", "m6.l2.q4": "TARA aktualisieren", "m6.l2.q5": "Rückruf",
+ "m6.l3.q1": "Zufallseingaben", "m6.l3.q2": "Betroffene finden", "m6.l3.q3": "Erst vertraulich", "m6.l3.q4": "Fachleute", "m6.l3.q5": "Prämie",
+})
+add("ad", {
+ "m1.l1.q2": "Kein Mensch als Rückfall", "m1.l2.q1": "Nein", "m1.l2.q2": "Wo es funktioniert", "m1.l2.q3": "System",
+ "m1.l2.q5": "Erkennen und reagieren", "m1.l3.q2": "Aufmerksamkeit prüfen", "m1.l3.q3": "Überschätzung", "m2.l1.q1": "Objekte erkennen",
+ "m2.l1.q2": "Gegenlicht", "m2.l1.q3": "Aus Bildversatz", "m2.l1.q4": "Fahrer", "m2.l1.q5": "Heizung", "m2.l3.q1": "Andere Schwächen",
+ "m2.l3.q3": "Nein, offen", "m3.l1.q1": "Seltene Fälle", "m3.l1.q2": "Beispiele", "m3.l1.q3": "Ort und Klasse", "m3.l1.q5": "Sicher, aber nicht garantiert",
+ "m3.l2.q1": "Vorhersage + Korrektur", "m3.l2.q2": "Objekte je Sensor", "m3.l2.q3": "Stabile Spuren", "m3.l2.q5": "Bild der Umgebung",
+ "m3.l3.q2": "RTK", "m3.l3.q3": "Mitkoppeln per Sensoren", "m3.l3.q4": "Veralten schnell", "m4.l1.q2": "Sicher und fahrbar",
+ "m4.l1.q3": "Ständig", "m4.l1.q4": "Schwer prüfbar", "m4.l1.q5": "Absichten", "m4.l2.q2": "Kein Mensch", "m4.l2.q3": "Elektronisch",
+ "m4.l3.q3": "Prüft die Bahn", "m4.l3.q4": "Weg in Sicherheit", "m4.l3.q5": "Abwärme", "m5.l1.q1": "ISO 21448", "m5.l1.q2": "SOTIF",
+ "m5.l1.q3": "Fehlfunktionen", "m5.l1.q4": "Unbekanntes finden", "m5.l1.q5": "Auslöser einer Gefahr", "m5.l2.q1": "Zu viele km nötig",
+ "m5.l2.q2": "Szenarien", "m5.l2.q4": "Validieren", "m5.l2.q5": "Einscheren", "m5.l3.q1": "Sicherheitsargument", "m5.l3.q2": "Keine Merkmal-Abwägung",
+ "m5.l3.q3": "Nein", "m5.l3.q4": "Safety Cases", "m5.l3.q5": "Weniger Schaden", "m6.l1.q3": "Wer wann fuhr", "m6.l1.q4": "Sicher anhalten",
+ "m6.l1.q5": "Autobahnähnliche", "m6.l2.q1": "Überwacht aus der Ferne", "m6.l2.q2": "Im Betriebsbereich", "m6.l2.q5": "Wartung, Versicherung",
+ "m6.l3.q1": "Der Halter", "m6.l3.q2": "Bei Ignorieren", "m6.l3.q3": "Wer fuhr", "m6.l3.q4": "Transparenz", "m6.l3.q5": "In wenigen Städten",
+})
+# Ausgleich: einige Originale wieder zulassen, sonst wäre die richtige Antwort zu oft die kürzeste
+for k in ["sec.m1.l1.q1", "sec.m1.l3.q5", "sec.m2.l2.q3", "sec.m3.l2.q2", "sec.m4.l2.q5", "sec.m5.l2.q4", "sec.m6.l2.q2", "sec.m6.l3.q2", "sec.m6.l3.q4", "sec.m5.l1.q5",
+          "ad.m3.l2.q3", "ad.m4.l1.q4", "ad.m5.l2.q1", "ad.m5.l2.q4", "ad.m6.l1.q4", "ad.m4.l3.q4", "ad.m3.l3.q4", "ad.m2.l3.q1", "ad.m6.l2.q2", "ad.m1.l2.q2", "diag.m8.l1.q4", "diag.m2.l1.q4"]:
+    A.pop(k, None)
