@@ -1,0 +1,2823 @@
+{
+ "id": "devops",
+ "title": "DevOps: vom Einstieg zum Experten",
+ "sub": "Kultur und DORA, Git, CI, Continuous Delivery, Container und Kubernetes, Infrastructure as Code, GitOps, Observability, SRE, DevSecOps und DevOps für Steuergeräte",
+ "audience": "Einsteiger ohne Vorwissen bis Fortgeschrittene, die Software schneller und sicherer ausliefern wollen",
+ "stand": "11/2026",
+ "version": 1,
+ "review": "Allgemeines, öffentlich dokumentiertes Wissen (Quellen je Lektion); keine hersteller- oder projektspezifischen Details. Noch nicht durch eine Fachperson geprüft. Vorschriften ändern sich: Für verbindliche Arbeit immer den aktuellen Rechtstext prüfen.",
+ "levels": [
+  {
+   "id": 1,
+   "title": "Grundlagen"
+  },
+  {
+   "id": 2,
+   "title": "Fortgeschritten"
+  },
+  {
+   "id": 3,
+   "title": "Experte"
+  }
+ ],
+ "modules": [
+  {
+   "id": "devops.m1",
+   "level": 1,
+   "title": "Was DevOps wirklich ist",
+   "desc": "Kultur, Prinzipien, Wertstrom und die Kennzahlen, an denen man gute Teams erkennt.",
+   "lessons": [
+    {
+     "id": "devops.m1.l1",
+     "title": "Die Mauer zwischen Dev und Ops",
+     "min": 5,
+     "body": [
+      "Früher arbeiteten Entwicklung (Dev) und Betrieb (Ops) getrennt. Entwickler wollten schnell Neues liefern, der Betrieb wollte Stabilität. Software wurde „über die Mauer geworfen“: selten, in großen Paketen, mit langen Nächten bei jedem Release.",
+      "## Die Idee",
+      "DevOps verbindet beides: Teams verantworten ihre Software von der Idee bis zum Betrieb („you build it, you run it“). Ziel ist, Änderungen schnell, sicher und häufig auszuliefern. Der Begriff entstand um 2009, unter anderem durch die erste DevOpsDays-Konferenz von Patrick Debois in Gent.",
+      "## Was DevOps nicht ist",
+      "DevOps ist kein Werkzeug, keine Stellenbezeichnung und keine eigene Abteilung zwischen Dev und Ops. Wer nur Werkzeuge kauft, aber Silos und Übergaben behält, hat kein DevOps. Es ist vor allem eine Arbeitsweise und Kultur, unterstützt durch Automatisierung."
+     ],
+     "key": [
+      "Früher: Silos, seltene große Releases, Übergaben.",
+      "DevOps: gemeinsame Verantwortung von Idee bis Betrieb.",
+      "Kultur und Arbeitsweise, nicht Werkzeug oder Abteilung."
+     ],
+     "src": [
+      {
+       "n": "G. Kim, J. Humble, P. Debois, J. Willis: The DevOps Handbook (IT Revolution)"
+      },
+      {
+       "n": "N. Forsgren, J. Humble, G. Kim: Accelerate (IT Revolution, 2018)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "DevOps",
+       "b": "Arbeitsweise und Kultur, die Entwicklung und Betrieb verbindet, um schnell und sicher zu liefern.",
+       "id": "devops.m1.l1.k1"
+      },
+      {
+       "f": "You build it, you run it",
+       "b": "Das Team, das Software baut, betreibt sie auch.",
+       "id": "devops.m1.l1.k2"
+      },
+      {
+       "f": "Silo",
+       "b": "Abgeschottete Abteilung mit eigenen Zielen und Übergaben an andere.",
+       "id": "devops.m1.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist DevOps im Kern?",
+       "o": [
+        "Kultur und Arbeitsweise",
+        "Ein bestimmtes Werkzeug",
+        "Eine neue Abteilung",
+        "Eine Programmiersprache"
+       ],
+       "a": 0,
+       "e": "Werkzeuge unterstützen, ersetzen die Kultur aber nicht.",
+       "id": "devops.m1.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet „you build it, you run it“?",
+       "o": [
+        "Team betreibt selbst",
+        "Jeder baut sein eigenes Auto",
+        "Ops schreibt den Code",
+        "Tests laufen nur nachts"
+       ],
+       "a": 0,
+       "e": "Verantwortung endet nicht beim Commit.",
+       "id": "devops.m1.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was war typisch vor DevOps?",
+       "o": [
+        "Seltene, große Releases",
+        "Tägliche kleine Releases",
+        "Keine Tests",
+        "Keine Server"
+       ],
+       "a": 0,
+       "e": "Mit hohem Risiko pro Release.",
+       "id": "devops.m1.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wann entstand der Begriff DevOps etwa?",
+       "o": [
+        "Um 2009",
+        "Um 1970",
+        "Um 1995",
+        "Um 2020"
+       ],
+       "a": 0,
+       "e": "DevOpsDays in Gent 2009.",
+       "id": "devops.m1.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist kein DevOps?",
+       "o": [
+        "Eine DevOps-Abteilung",
+        "Gemeinsame Verantwortung",
+        "Automatisierte Auslieferung",
+        "Schnelles Feedback"
+       ],
+       "a": 0,
+       "e": "Das wäre nur ein weiteres Silo.",
+       "id": "devops.m1.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m1.l2",
+     "title": "CALMS und die drei Wege",
+     "min": 6,
+     "body": [
+      "Zwei Modelle helfen, DevOps zu verstehen.",
+      "## CALMS",
+      "Culture (Zusammenarbeit, Vertrauen, Lernen aus Fehlern), Automation (alles Wiederholbare automatisieren), Lean (kleine Schritte, Verschwendung vermeiden, Fluss), Measurement (messen statt raten) und Sharing (Wissen und Verantwortung teilen).",
+      "## Die drei Wege",
+      "Aus dem DevOps Handbook: Erstens Flow, also schneller Fluss von der Idee bis zum Kunden durch kleine Pakete und wenig Wartezeit. Zweitens Feedback, also schnelle Rückmeldung aus Tests, Betrieb und Nutzung. Drittens kontinuierliches Lernen und Experimentieren, auch aus Fehlern.",
+      "## Wertstrom",
+      "Wertstromanalyse (Value Stream Mapping) zeigt, wo Zeit verloren geht. Oft wird nur ein kleiner Teil der Durchlaufzeit wirklich gearbeitet; der Rest ist Warten auf Freigaben, Tests oder Umgebungen."
+     ],
+     "key": [
+      "CALMS: Culture, Automation, Lean, Measurement, Sharing.",
+      "Drei Wege: Flow, Feedback, Lernen.",
+      "Wertstromanalyse findet Wartezeiten."
+     ],
+     "src": [
+      {
+       "n": "G. Kim, J. Humble, P. Debois, J. Willis: The DevOps Handbook (IT Revolution)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "CALMS",
+       "b": "Culture, Automation, Lean, Measurement, Sharing: Säulen von DevOps.",
+       "id": "devops.m1.l2.k1"
+      },
+      {
+       "f": "Wertstromanalyse",
+       "b": "Darstellung aller Schritte von Idee bis Kunde, um Wartezeiten zu finden.",
+       "id": "devops.m1.l2.k2"
+      },
+      {
+       "f": "Durchlaufzeit",
+       "b": "Zeit von Beginn bis Auslieferung einer Änderung.",
+       "id": "devops.m1.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wofür steht das L in CALMS?",
+       "o": [
+        "Lean",
+        "Linux",
+        "Logging",
+        "Load"
+       ],
+       "a": 0,
+       "e": "Kleine Schritte, Fluss, Verschwendung vermeiden.",
+       "id": "devops.m1.l2.q1"
+      },
+      {
+       "t": "order",
+       "q": "Ordne die drei Wege.",
+       "o": [
+        "Flow",
+        "Feedback",
+        "Kontinuierliches Lernen"
+       ],
+       "e": "Fluss, Rückmeldung, Lernen.",
+       "id": "devops.m1.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeigt eine Wertstromanalyse oft?",
+       "o": [
+        "Viel Wartezeit",
+        "Zu wenig Server",
+        "Zu viele Tests",
+        "Zu schnelle Releases"
+       ],
+       "a": 0,
+       "e": "Arbeitszeit ist oft nur ein kleiner Teil.",
+       "id": "devops.m1.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was meint der erste Weg?",
+       "o": [
+        "Fluss zum Kunden",
+        "Mehr Meetings",
+        "Längere Releases",
+        "Mehr Dokumente"
+       ],
+       "a": 0,
+       "e": "Kleine Pakete, wenig Warten.",
+       "id": "devops.m1.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was meint Measurement?",
+       "o": [
+        "Messen statt raten",
+        "Server wiegen",
+        "Code zählen",
+        "Arbeitszeit kontrollieren"
+       ],
+       "a": 0,
+       "e": "Entscheidungen auf Daten stützen.",
+       "id": "devops.m1.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m1.l3",
+     "title": "Die DORA-Kennzahlen",
+     "min": 7,
+     "body": [
+      "Das Forschungsprogramm DORA hat über Jahre tausende Teams befragt. Ergebnis (beschrieben im Buch „Accelerate“): Vier Kennzahlen unterscheiden leistungsstarke von schwachen Teams.",
+      "## Die vier Schlüssel",
+      "Deployment-Frequenz (wie oft wird ausgeliefert), Lead Time for Changes (Zeit vom Commit bis Produktion), Change Failure Rate (Anteil der Auslieferungen, die Probleme verursachen) und Time to Restore (wie schnell ein Ausfall behoben ist).",
+      "## Die überraschende Erkenntnis",
+      "Geschwindigkeit und Stabilität sind kein Widerspruch. Die besten Teams liefern häufig und haben gleichzeitig weniger Fehler und schnellere Wiederherstellung. Kleine Änderungen sind leichter zu prüfen und zurückzunehmen.",
+      "## Vorsicht",
+      "Kennzahlen dienen dem Lernen, nicht der Bewertung einzelner Menschen. Werden sie zu Zielen gemacht, werden sie manipuliert (Goodharts Gesetz)."
+     ],
+     "key": [
+      "DORA: Deployment-Frequenz, Lead Time, Change Failure Rate, Time to Restore.",
+      "Tempo und Stabilität gehen zusammen.",
+      "Kennzahlen zum Lernen, nicht zur Personenbewertung."
+     ],
+     "src": [
+      {
+       "n": "DORA (DevOps Research and Assessment): State of DevOps Reports und Kennzahlen",
+       "u": "https://dora.dev/"
+      },
+      {
+       "n": "N. Forsgren, J. Humble, G. Kim: Accelerate (IT Revolution, 2018)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Lead Time for Changes",
+       "b": "Zeit vom Commit bis zur Änderung in Produktion.",
+       "id": "devops.m1.l3.k1"
+      },
+      {
+       "f": "Change Failure Rate",
+       "b": "Anteil der Auslieferungen, die zu Fehlern oder Rücknahmen führen.",
+       "id": "devops.m1.l3.k2"
+      },
+      {
+       "f": "Time to Restore",
+       "b": "Zeit bis zur Wiederherstellung nach einem Ausfall.",
+       "id": "devops.m1.l3.k3"
+      },
+      {
+       "f": "Goodharts Gesetz",
+       "b": "Wird eine Kennzahl zum Ziel, hört sie auf, eine gute Kennzahl zu sein.",
+       "id": "devops.m1.l3.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "multi",
+       "q": "Welche gehören zu den vier DORA-Kennzahlen?",
+       "o": [
+        "Deployment-Frequenz",
+        "Lead Time for Changes",
+        "Change Failure Rate",
+        "Anzahl Codezeilen"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Die vierte ist Time to Restore.",
+       "id": "devops.m1.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was fanden die DORA-Studien?",
+       "o": [
+        "Tempo und Stabilität passen",
+        "Schnell heißt instabil",
+        "Langsam ist immer sicher",
+        "Nur große Firmen sind gut"
+       ],
+       "a": 0,
+       "e": "Kleine Änderungen sind sicherer.",
+       "id": "devops.m1.l3.q2"
+      },
+      {
+       "t": "num",
+       "q": "Von 40 Deployments führten 6 zu Problemen. Wie hoch ist die Change Failure Rate in Prozent?",
+       "a": 15,
+       "unit": "%",
+       "tol": 0.1,
+       "e": "6 ÷ 40 = 0,15.",
+       "id": "devops.m1.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür sollte man DORA-Kennzahlen nicht nutzen?",
+       "o": [
+        "Personenbewertung",
+        "Verbesserungen erkennen",
+        "Trends beobachten",
+        "Engpässe finden"
+       ],
+       "a": 0,
+       "e": "Sonst werden sie manipuliert.",
+       "id": "devops.m1.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was misst Lead Time for Changes?",
+       "o": [
+        "Commit → Produktion",
+        "Idee bis Meeting",
+        "Urlaub bis Rückkehr",
+        "Bug bis Ticket"
+       ],
+       "a": 0,
+       "e": "Wie schnell eine fertige Änderung beim Kunden ist.",
+       "id": "devops.m1.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "devops.m2",
+   "level": 1,
+   "title": "Versionskontrolle mit Git",
+   "desc": "Commits, Branches, Zusammenarbeit über Pull Requests und Branching-Strategien.",
+   "lessons": [
+    {
+     "id": "devops.m2.l1",
+     "title": "Git-Grundlagen",
+     "min": 6,
+     "body": [
+      "Versionskontrolle ist das Fundament von DevOps: Alles, was das System ausmacht, liegt versioniert in einem Repository, nicht nur Code, auch Konfiguration, Infrastruktur und Pipelines.",
+      "## Git",
+      "Git wurde 2005 von Linus Torvalds für den Linux-Kernel entwickelt. Es ist verteilt: Jede Kopie (Clone) enthält die vollständige Historie.",
+      "## Die wichtigsten Begriffe",
+      "Ein Commit ist ein Schnappschuss mit Autor, Zeit, Nachricht und Verweis auf den Vorgänger, eindeutig über einen Hash benannt. Die Staging Area sammelt Änderungen für den nächsten Commit (git add). Ein Branch ist ein beweglicher Zeiger auf einen Commit. Push und Pull gleichen mit einem entfernten Repository (Remote) ab.",
+      "## Gute Commits",
+      "Klein, in sich geschlossen, mit einer Nachricht, die erklärt, warum etwas geändert wurde. So lässt sich die Historie lesen, Fehler eingrenzen (git bisect) und Änderungen gezielt zurücknehmen (git revert)."
+     ],
+     "key": [
+      "Alles versionieren: Code, Konfiguration, Infrastruktur, Pipelines.",
+      "Git: verteilt, Commits mit Hash, Branches als Zeiger.",
+      "Kleine Commits mit „Warum“-Nachricht."
+     ],
+     "src": [
+      {
+       "n": "Git-Dokumentation und Pro Git (S. Chacon, B. Straub)",
+       "u": "https://git-scm.com/book/de/v2"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Commit",
+       "b": "Versionierter Schnappschuss mit Hash, Autor, Zeit und Nachricht.",
+       "id": "devops.m2.l1.k1"
+      },
+      {
+       "f": "Branch",
+       "b": "Beweglicher Zeiger auf einen Commit; Entwicklungszweig.",
+       "id": "devops.m2.l1.k2"
+      },
+      {
+       "f": "git revert",
+       "b": "Erzeugt einen neuen Commit, der einen früheren rückgängig macht.",
+       "id": "devops.m2.l1.k3"
+      },
+      {
+       "f": "git bisect",
+       "b": "Binäre Suche in der Historie nach dem Commit, der einen Fehler einführte.",
+       "id": "devops.m2.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist ein Branch in Git?",
+       "o": [
+        "Ein Zeiger",
+        "Eine Kopie aller Dateien",
+        "Ein Server",
+        "Ein Backup auf Band"
+       ],
+       "a": 0,
+       "e": "Deshalb sind Branches billig.",
+       "id": "devops.m2.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was macht git revert?",
+       "o": [
+        "Hebt Commit auf",
+        "Löscht die Historie",
+        "Lädt Code herunter",
+        "Erstellt einen Branch"
+       ],
+       "a": 0,
+       "e": "Die Historie bleibt erhalten.",
+       "id": "devops.m2.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet „verteilt“ bei Git?",
+       "o": [
+        "Volle Historie überall",
+        "Code liegt nur auf einem Server",
+        "Dateien werden zufällig verteilt",
+        "Nur ein Nutzer zur Zeit"
+       ],
+       "a": 0,
+       "e": "Arbeiten auch offline möglich.",
+       "id": "devops.m2.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dient git bisect?",
+       "o": [
+        "Fehler-Commit finden",
+        "Branches zusammenführen",
+        "Passwörter speichern",
+        "Server starten"
+       ],
+       "a": 0,
+       "e": "Binäre Suche.",
+       "id": "devops.m2.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was gehört in eine gute Commit-Nachricht?",
+       "o": [
+        "Warum geändert wurde",
+        "Das Wetter",
+        "Nur „fix“",
+        "Der komplette Code"
+       ],
+       "a": 0,
+       "e": "Das Was zeigt der Diff.",
+       "id": "devops.m2.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m2.l2",
+     "title": "Zusammenarbeit: Pull Requests und Reviews",
+     "min": 6,
+     "body": [
+      "In Teams wird Code meist über Pull Requests (bei GitLab Merge Requests) zusammengeführt.",
+      "## Ablauf",
+      "Eine Entwicklerin erstellt einen Branch, committet, pusht und öffnet einen Pull Request. Automatische Prüfungen laufen (Build, Tests, Analyse), Kolleginnen und Kollegen prüfen den Code (Review). Nach Freigabe wird zusammengeführt (Merge).",
+      "## Gute Reviews",
+      "Kleine Pull Requests werden schneller und gründlicher geprüft. Reviews prüfen Verständlichkeit, Korrektheit, Tests und Risiken, nicht Formatierung (das erledigen Werkzeuge). Ton: freundlich, konkret, auf den Code bezogen, nicht auf die Person.",
+      "## Merge-Varianten",
+      "Merge-Commit behält die Verzweigung sichtbar. Squash fasst alle Commits zu einem zusammen. Rebase setzt Commits auf den neuesten Stand und erzeugt eine gerade Historie. Teams legen eine Variante fest."
+     ],
+     "key": [
+      "Branch → Pull Request → automatische Prüfungen → Review → Merge.",
+      "Kleine PRs, Review auf Inhalt, freundlicher Ton.",
+      "Merge, Squash oder Rebase: im Team festlegen."
+     ],
+     "src": [
+      {
+       "n": "Git-Dokumentation und Pro Git (S. Chacon, B. Straub)",
+       "u": "https://git-scm.com/book/de/v2"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Pull Request",
+       "b": "Anfrage, Änderungen eines Branches nach Prüfung zusammenzuführen.",
+       "id": "devops.m2.l2.k1"
+      },
+      {
+       "f": "Squash",
+       "b": "Zusammenfassen mehrerer Commits zu einem.",
+       "id": "devops.m2.l2.k2"
+      },
+      {
+       "f": "Rebase",
+       "b": "Commits auf eine neue Basis setzen; ergibt eine gerade Historie.",
+       "id": "devops.m2.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "order",
+       "q": "Ordne den Ablauf eines Pull Requests.",
+       "o": [
+        "Branch erstellen",
+        "Committen und pushen",
+        "Pull Request öffnen",
+        "Prüfungen und Review",
+        "Merge"
+       ],
+       "e": "Automatik und Menschen prüfen vor dem Merge.",
+       "id": "devops.m2.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum sind kleine Pull Requests besser?",
+       "o": [
+        "Besser prüfbar",
+        "Sie sehen schöner aus",
+        "Sie brauchen keine Tests",
+        "Sie sind verpflichtend"
+       ],
+       "a": 0,
+       "e": "Große Diffs werden oft nur überflogen.",
+       "id": "devops.m2.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was sollte ein Review nicht beschäftigen?",
+       "o": [
+        "Formatierung",
+        "Korrektheit",
+        "Tests",
+        "Verständlichkeit"
+       ],
+       "a": 0,
+       "e": "Das machen Formatierer und Linter.",
+       "id": "devops.m2.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was macht Squash?",
+       "o": [
+        "Fasst zusammen",
+        "Löscht den Branch",
+        "Verschlüsselt Code",
+        "Startet Tests"
+       ],
+       "a": 0,
+       "e": "Ein Commit pro Änderung.",
+       "id": "devops.m2.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Worauf bezieht sich gutes Feedback?",
+       "o": [
+        "Auf den Code",
+        "Auf die Person",
+        "Auf die Kleidung",
+        "Auf das Gehalt"
+       ],
+       "a": 0,
+       "e": "Sachlich und konkret.",
+       "id": "devops.m2.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m2.l3",
+     "title": "Branching-Strategien",
+     "min": 7,
+     "body": [
+      "Wie lange leben Branches, und wie oft wird integriert? Davon hängt viel ab.",
+      "## Git Flow",
+      "Viele langlebige Branches (develop, release, hotfix, feature). Passt zu Software mit seltenen, geplanten Releases, führt aber zu großen Zusammenführungen und Konflikten.",
+      "## Trunk-Based Development",
+      "Alle integrieren mindestens täglich in den Hauptzweig (trunk oder main), Branches leben nur Stunden bis wenige Tage. Unfertige Funktionen werden mit Feature Flags versteckt. Die DORA-Forschung zeigt einen Zusammenhang mit hoher Lieferleistung.",
+      "## Der Kern",
+      "Je länger Code getrennt lebt, desto teurer wird die Integration („Merge-Hölle“). Häufige Integration hält Konflikte klein.",
+      "## Releases kennzeichnen",
+      "Ausgelieferte Stände werden mit Tags markiert, oft nach Semantic Versioning: MAJOR.MINOR.PATCH. MAJOR bei inkompatiblen Änderungen, MINOR bei neuen kompatiblen Funktionen, PATCH bei Fehlerbehebungen."
+     ],
+     "key": [
+      "Git Flow: viele langlebige Branches, seltene Releases.",
+      "Trunk-Based: täglich integrieren, kurze Branches, Feature Flags.",
+      "Semantic Versioning: MAJOR.MINOR.PATCH."
+     ],
+     "src": [
+      {
+       "n": "N. Forsgren, J. Humble, G. Kim: Accelerate (IT Revolution, 2018)"
+      },
+      {
+       "n": "Semantic Versioning 2.0.0",
+       "u": "https://semver.org/lang/de/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Trunk-Based Development",
+       "b": "Alle integrieren häufig in den Hauptzweig; Branches leben kurz.",
+       "id": "devops.m2.l3.k1"
+      },
+      {
+       "f": "Feature Flag",
+       "b": "Schalter, mit dem Funktionen ohne neues Deployment ein- oder ausgeschaltet werden.",
+       "id": "devops.m2.l3.k2"
+      },
+      {
+       "f": "Semantic Versioning",
+       "b": "Versionsschema MAJOR.MINOR.PATCH nach Art der Änderung.",
+       "id": "devops.m2.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Version 2.4.1 bekommt eine inkompatible API-Änderung. Welche Version folgt?",
+       "o": [
+        "3.0.0",
+        "2.5.0",
+        "2.4.2",
+        "2.4.1-neu"
+       ],
+       "a": 0,
+       "e": "MAJOR erhöht, Rest auf 0.",
+       "id": "devops.m2.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeichnet Trunk-Based Development aus?",
+       "o": [
+        "Tägliche Integration",
+        "Monatelange Feature-Branches",
+        "Kein Hauptzweig",
+        "Keine Tests"
+       ],
+       "a": 0,
+       "e": "Konflikte bleiben klein.",
+       "id": "devops.m2.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie versteckt man unfertige Funktionen im Hauptzweig?",
+       "o": [
+        "Mit Feature Flags",
+        "Mit Kommentaren",
+        "Mit langen Branches",
+        "Gar nicht"
+       ],
+       "a": 0,
+       "e": "Code ist ausgeliefert, aber aus.",
+       "id": "devops.m2.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Version 1.3.0 bekommt eine Fehlerbehebung. Welche Version folgt?",
+       "o": [
+        "1.3.1",
+        "1.4.0",
+        "2.0.0",
+        "1.3.0.1"
+       ],
+       "a": 0,
+       "e": "PATCH erhöht.",
+       "id": "devops.m2.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum wird späte Integration teuer?",
+       "o": [
+        "Konflikte wachsen",
+        "Git wird langsamer",
+        "Server kosten mehr",
+        "Tests verschwinden"
+       ],
+       "a": 0,
+       "e": "Die „Merge-Hölle“.",
+       "id": "devops.m2.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "devops.m3",
+   "level": 1,
+   "title": "Continuous Integration",
+   "desc": "Automatischer Build, Testpyramide, Pipelines und schnelles Feedback.",
+   "lessons": [
+    {
+     "id": "devops.m3.l1",
+     "title": "Was CI bedeutet",
+     "min": 6,
+     "body": [
+      "Continuous Integration (CI) heißt: Alle integrieren ihre Änderungen häufig in den Hauptzweig, und jede Integration wird automatisch gebaut und getestet.",
+      "## Die Regeln",
+      "Mindestens täglich integrieren. Jeder Commit löst einen automatischen Build mit Tests aus. Ein roter (fehlgeschlagener) Build wird sofort repariert, er hat Vorrang vor neuer Arbeit. Der Build ist schnell, idealerweise unter 10 Minuten.",
+      "## Werkzeuge",
+      "CI-Server wie Jenkins, GitLab CI, GitHub Actions oder Azure Pipelines führen Pipelines aus, die als Code im Repository beschrieben sind (etwa in YAML).",
+      "## Häufiges Missverständnis",
+      "Einen CI-Server zu haben ist noch keine CI. Wer wochenlang auf eigenen Branches arbeitet und nur dort Tests laufen lässt, integriert nicht kontinuierlich.",
+      "Probiere unten den Pipeline-Simulator aus."
+     ],
+     "key": [
+      "CI: häufig integrieren, jeder Commit wird gebaut und getestet.",
+      "Roter Build hat Vorrang; Build schnell halten.",
+      "CI-Server ≠ CI; Pipelines als Code."
+     ],
+     "src": [
+      {
+       "n": "J. Humble, D. Farley: Continuous Delivery (Addison-Wesley, 2010)"
+      },
+      {
+       "n": "N. Forsgren, J. Humble, G. Kim: Accelerate (IT Revolution, 2018)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Continuous Integration",
+       "b": "Häufige Integration in den Hauptzweig mit automatischem Build und Test.",
+       "id": "devops.m3.l1.k1"
+      },
+      {
+       "f": "Roter Build",
+       "b": "Fehlgeschlagener Build; muss sofort repariert werden.",
+       "id": "devops.m3.l1.k2"
+      },
+      {
+       "f": "Pipeline as Code",
+       "b": "Beschreibung der CI/CD-Pipeline als Datei im Repository.",
+       "id": "devops.m3.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was hat Vorrang, wenn der Build rot ist?",
+       "o": [
+        "Den Build reparieren",
+        "Neue Features",
+        "Feierabend",
+        "Den Test löschen"
+       ],
+       "a": 0,
+       "e": "Sonst bauen alle auf Fehlern auf.",
+       "id": "devops.m3.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Ist ein CI-Server allein schon CI?",
+       "o": [
+        "Nein",
+        "Ja, immer",
+        "Nur mit Jenkins",
+        "Nur mit YAML"
+       ],
+       "a": 0,
+       "e": "Es geht um die Praxis.",
+       "id": "devops.m3.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie schnell sollte ein CI-Build idealerweise sein?",
+       "o": [
+        "Unter etwa 10 Minuten",
+        "Mehrere Stunden",
+        "Eine Woche",
+        "Egal"
+       ],
+       "a": 0,
+       "e": "Schnelles Feedback ist der Sinn.",
+       "id": "devops.m3.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wo wird eine moderne Pipeline beschrieben?",
+       "o": [
+        "Als Code im Repository",
+        "Auf Papier",
+        "Nur in der Weboberfläche",
+        "Im Kopf des Admins"
+       ],
+       "a": 0,
+       "e": "Versioniert und prüfbar.",
+       "id": "devops.m3.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wie oft sollte man mindestens integrieren?",
+       "o": [
+        "Täglich",
+        "Monatlich",
+        "Jährlich",
+        "Nur beim Release"
+       ],
+       "a": 0,
+       "e": "Kontinuierlich heißt häufig.",
+       "id": "devops.m3.l1.q5"
+      }
+     ],
+     "figs": [
+      {
+       "after": 7,
+       "w": "pipe",
+       "cap": "Pipeline-Simulator: Baue einen Fehler ein und sieh, wo die Pipeline stoppt und wie schnell du es erfährst."
+      }
+     ]
+    },
+    {
+     "id": "devops.m3.l2",
+     "title": "Die Testpyramide",
+     "min": 7,
+     "body": [
+      "Automatisierte Tests sind die Sicherheitsleine für häufige Änderungen. Aber nicht alle Tests sind gleich.",
+      "## Die Pyramide",
+      "Unten viele Unit-Tests: Sie prüfen kleine Einheiten isoliert, laufen in Millisekunden und zeigen genau, was kaputt ist. In der Mitte Integrationstests: Sie prüfen das Zusammenspiel, etwa mit einer Datenbank. Oben wenige End-to-End-Tests: Sie prüfen das ganze System aus Nutzersicht, sind aber langsam und anfällig.",
+      "## Die Eistüte",
+      "Viele Teams haben es umgekehrt: kaum Unit-Tests, viele manuelle und End-to-End-Tests. Das macht Feedback langsam und Tests instabil.",
+      "## Flaky Tests",
+      "Tests, die mal grün, mal rot sind, ohne dass sich etwas geändert hat, zerstören Vertrauen. Sie müssen schnell repariert oder unter Quarantäne gestellt werden.",
+      "## Mehr als Funktion",
+      "Dazu kommen statische Analyse (Linter, Typprüfung), Sicherheitsscans und Last- oder Performancetests."
+     ],
+     "key": [
+      "Pyramide: viele Unit-, weniger Integrations-, wenige End-to-End-Tests.",
+      "Eistüte (umgekehrt) macht Feedback langsam.",
+      "Flaky Tests zerstören Vertrauen: reparieren oder isolieren."
+     ],
+     "src": [
+      {
+       "n": "J. Humble, D. Farley: Continuous Delivery (Addison-Wesley, 2010)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Unit-Test",
+       "b": "Schneller, isolierter Test einer kleinen Code-Einheit.",
+       "id": "devops.m3.l2.k1"
+      },
+      {
+       "f": "End-to-End-Test",
+       "b": "Test des ganzen Systems aus Nutzersicht; langsam und aufwendig.",
+       "id": "devops.m3.l2.k2"
+      },
+      {
+       "f": "Flaky Test",
+       "b": "Test, der ohne Änderung mal besteht und mal fehlschlägt.",
+       "id": "devops.m3.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Welche Tests sollte es am meisten geben?",
+       "o": [
+        "Unit-Tests",
+        "End-to-End-Tests",
+        "Manuelle Tests",
+        "Lasttests"
+       ],
+       "a": 0,
+       "e": "Schnell, präzise, günstig.",
+       "id": "devops.m3.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Flaky Test?",
+       "o": [
+        "Wechselhaft",
+        "Ein besonders schneller Test",
+        "Ein Test ohne Assertions",
+        "Ein Sicherheitstest"
+       ],
+       "a": 0,
+       "e": "Er untergräbt Vertrauen.",
+       "id": "devops.m3.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist das Problem der Eistüte?",
+       "o": [
+        "Langsames Feedback",
+        "Zu viele Unit-Tests",
+        "Zu schnelle Builds",
+        "Zu wenig Server"
+       ],
+       "a": 0,
+       "e": "Viele End-to-End- und manuelle Tests.",
+       "id": "devops.m3.l2.q3"
+      },
+      {
+       "t": "order",
+       "q": "Ordne die Testarten von schnell zu langsam.",
+       "o": [
+        "Unit-Test",
+        "Integrationstest",
+        "End-to-End-Test"
+       ],
+       "e": "Je höher, desto langsamer.",
+       "id": "devops.m3.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was gehört zusätzlich in eine gute Pipeline?",
+       "o": [
+        "Analyse und Scans",
+        "Nur manuelle Tests",
+        "Ein Kaffeeautomat",
+        "Nichts"
+       ],
+       "a": 0,
+       "e": "Mehr als nur Funktionstests.",
+       "id": "devops.m3.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m3.l3",
+     "title": "Pipelines gestalten",
+     "min": 6,
+     "body": [
+      "Eine Pipeline besteht aus Stufen (Stages), die nacheinander oder parallel laufen.",
+      "## Typische Stufen",
+      "Checkout, Build, Unit-Tests und statische Analyse, Paketieren (Artefakt), Integrationstests, Bereitstellen in Testumgebungen, weitere Tests, Freigabe für Produktion.",
+      "## Prinzipien",
+      "Fail fast: Schnelle, günstige Prüfungen zuerst. Einmal bauen, überall verwenden: Dasselbe Artefakt wandert durch alle Stufen, statt pro Umgebung neu gebaut zu werden. Parallelisieren, wo möglich. Caches für Abhängigkeiten nutzen.",
+      "## Artefakte und Reproduzierbarkeit",
+      "Artefakte (Pakete, Container-Images, Firmware) werden versioniert in einem Repository abgelegt. Abhängigkeiten werden auf feste Versionen gepinnt, damit derselbe Commit immer dasselbe Ergebnis liefert."
+     ],
+     "key": [
+      "Stufen: Build, Tests, Artefakt, Deploy, weitere Tests, Freigabe.",
+      "Fail fast, einmal bauen überall verwenden, parallelisieren, cachen.",
+      "Artefakte versioniert ablegen; Abhängigkeiten pinnen."
+     ],
+     "src": [
+      {
+       "n": "J. Humble, D. Farley: Continuous Delivery (Addison-Wesley, 2010)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Artefakt",
+       "b": "Ergebnis eines Builds, z. B. Paket, Container-Image oder Firmware.",
+       "id": "devops.m3.l3.k1"
+      },
+      {
+       "f": "Build once, deploy many",
+       "b": "Dasselbe Artefakt durchläuft alle Umgebungen.",
+       "id": "devops.m3.l3.k2"
+      },
+      {
+       "f": "Fail fast",
+       "b": "Schnelle Prüfungen zuerst, um früh abzubrechen.",
+       "id": "devops.m3.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was bedeutet „build once, deploy many“?",
+       "o": [
+        "Ein Artefakt für alle",
+        "Für jede Umgebung neu bauen",
+        "Nur einmal im Jahr bauen",
+        "Nur lokal bauen"
+       ],
+       "a": 0,
+       "e": "Sonst testet man etwas anderes als man ausliefert.",
+       "id": "devops.m3.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Prüfung gehört an den Anfang?",
+       "o": [
+        "Schnelle Tests",
+        "Lange Lasttests",
+        "Manuelle Abnahme",
+        "Produktions-Deploy"
+       ],
+       "a": 0,
+       "e": "Fail fast.",
+       "id": "devops.m3.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum pinnt man Abhängigkeiten?",
+       "o": [
+        "Reproduzierbare Builds",
+        "Damit sie schöner aussehen",
+        "Weil es schneller tippt",
+        "Damit sie verschwinden"
+       ],
+       "a": 0,
+       "e": "Gleicher Commit, gleiches Ergebnis.",
+       "id": "devops.m3.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wo legt man Artefakte ab?",
+       "o": [
+        "Im Repository",
+        "Per E-Mail",
+        "Auf einem USB-Stick",
+        "Im Chat"
+       ],
+       "a": 0,
+       "e": "Versioniert und nachvollziehbar.",
+       "id": "devops.m3.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschleunigt Pipelines?",
+       "o": [
+        "Parallel und Cache",
+        "Mehr manuelle Schritte",
+        "Längere Tests",
+        "Weniger Automatisierung"
+       ],
+       "a": 0,
+       "e": "Feedback wird schneller.",
+       "id": "devops.m3.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "devops.m4",
+   "level": 2,
+   "title": "Continuous Delivery und Deployment",
+   "desc": "Auslieferungsstrategien, Feature Flags, Rollback und Release-Management.",
+   "lessons": [
+    {
+     "id": "devops.m4.l1",
+     "title": "Delivery oder Deployment?",
+     "min": 6,
+     "body": [
+      "Zwei Begriffe, die oft verwechselt werden.",
+      "## Continuous Delivery",
+      "Jede Änderung, die die Pipeline besteht, ist jederzeit auslieferbar. Ob und wann sie in Produktion geht, entscheidet ein Mensch per Knopfdruck. Der Weg dorthin ist voll automatisiert und erprobt.",
+      "## Continuous Deployment",
+      "Jede Änderung, die alle Prüfungen besteht, geht automatisch in Produktion, ohne manuellen Schritt. Das setzt sehr gute Tests, Überwachung und schnelle Rücknahme voraus.",
+      "## Deployment ist nicht Release",
+      "Deployment heißt: Code ist in Produktion installiert. Release heißt: Nutzer bekommen die Funktion. Mit Feature Flags lassen sich beide trennen. Code ist ausgerollt, aber erst später für alle eingeschaltet.",
+      "## Warum es sich lohnt",
+      "Kleine, häufige Auslieferungen reduzieren das Risiko pro Änderung, verkürzen die Zeit bis zum Feedback und machen Releases langweilig, und das ist gut so."
+     ],
+     "key": [
+      "Continuous Delivery: jederzeit auslieferbar, Mensch entscheidet.",
+      "Continuous Deployment: automatisch bis Produktion.",
+      "Deployment ≠ Release; Feature Flags trennen beides."
+     ],
+     "src": [
+      {
+       "n": "J. Humble, D. Farley: Continuous Delivery (Addison-Wesley, 2010)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Continuous Delivery",
+       "b": "Jede bestandene Änderung ist jederzeit per Knopfdruck auslieferbar.",
+       "id": "devops.m4.l1.k1"
+      },
+      {
+       "f": "Continuous Deployment",
+       "b": "Jede bestandene Änderung geht automatisch in Produktion.",
+       "id": "devops.m4.l1.k2"
+      },
+      {
+       "f": "Release",
+       "b": "Freischalten einer Funktion für Nutzer, getrennt vom technischen Deployment möglich.",
+       "id": "devops.m4.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was unterscheidet Continuous Deployment von Delivery?",
+       "o": [
+        "Kein manueller Schritt",
+        "Keine Tests",
+        "Nur nachts",
+        "Nur für Mobile Apps"
+       ],
+       "a": 0,
+       "e": "Delivery: Mensch drückt den Knopf.",
+       "id": "devops.m4.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist der Unterschied zwischen Deployment und Release?",
+       "o": [
+        "Installiert vs. für Nutzer freigeschaltet",
+        "Es gibt keinen",
+        "Release ist technisch, Deployment fachlich",
+        "Deployment ist nur für Hardware"
+       ],
+       "a": 0,
+       "e": "Feature Flags trennen beides.",
+       "id": "devops.m4.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum senken kleine Auslieferungen das Risiko?",
+       "o": [
+        "Weniger pro Schritt",
+        "Weil Server sich freuen",
+        "Weil Tests entfallen",
+        "Weil niemand hinschaut"
+       ],
+       "a": 0,
+       "e": "Fehler sind leichter zu finden und zurückzunehmen.",
+       "id": "devops.m4.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was setzt Continuous Deployment voraus?",
+       "o": [
+        "Gute Tests",
+        "Möglichst wenig Tests",
+        "Monatliche Releases",
+        "Manuelle Abnahme"
+       ],
+       "a": 0,
+       "e": "Sonst gehen Fehler direkt raus.",
+       "id": "devops.m4.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet „Releases sollen langweilig sein“?",
+       "o": [
+        "Routine statt Drama",
+        "Keine neuen Funktionen",
+        "Lange Meetings",
+        "Releases nur freitags"
+       ],
+       "a": 0,
+       "e": "Häufig geübt, automatisiert, risikoarm.",
+       "id": "devops.m4.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m4.l2",
+     "title": "Auslieferungsstrategien",
+     "min": 7,
+     "body": [
+      "Wie bringt man eine neue Version in Produktion, ohne alle Nutzer zu gefährden?",
+      "## Rolling Update",
+      "Instanzen werden nach und nach ersetzt. Einfach und ohne doppelte Ressourcen, aber eine Zeit lang laufen alte und neue Version gemischt.",
+      "## Blue/Green",
+      "Zwei vollständige Umgebungen. Die neue Version (Green) wird neben der laufenden (Blue) aufgebaut und getestet, dann wird der Verkehr umgeschaltet. Rücknahme heißt: zurückschalten. Nachteil: doppelte Ressourcen.",
+      "## Canary",
+      "Die neue Version bekommt zuerst einen kleinen Teil des Verkehrs, etwa 1 bis 5 %. Kennzahlen wie Fehlerrate und Latenz werden verglichen. Ist alles gut, wird schrittweise erhöht, sonst zurückgerollt. Name nach den Kanarienvögeln, die Bergleute vor Gas warnten.",
+      "## Datenbanken",
+      "Schwierig sind Schemaänderungen. Bewährt ist das Expand-Contract-Muster: erst erweitern (neue Spalte, alter und neuer Code funktionieren), dann umstellen, zuletzt Altes entfernen."
+     ],
+     "key": [
+      "Rolling: schrittweise ersetzen.",
+      "Blue/Green: umschalten, schnelles Zurück, doppelte Ressourcen.",
+      "Canary: kleiner Anteil zuerst, nach Kennzahlen erhöhen; Expand-Contract für Datenbanken."
+     ],
+     "src": [
+      {
+       "n": "J. Humble, D. Farley: Continuous Delivery (Addison-Wesley, 2010)"
+      },
+      {
+       "n": "Google: Site Reliability Engineering (Bücher frei online)",
+       "u": "https://sre.google/books/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Blue/Green Deployment",
+       "b": "Zwei Umgebungen; Verkehr wird auf die neue umgeschaltet.",
+       "id": "devops.m4.l2.k1"
+      },
+      {
+       "f": "Canary Release",
+       "b": "Neue Version erst für einen kleinen Anteil, dann schrittweise mehr.",
+       "id": "devops.m4.l2.k2"
+      },
+      {
+       "f": "Expand-Contract",
+       "b": "Schemaänderung in Schritten: erweitern, umstellen, Altes entfernen.",
+       "id": "devops.m4.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist ein Nachteil von Blue/Green?",
+       "o": [
+        "Doppelte Ressourcen",
+        "Kein Rollback möglich",
+        "Nur für Datenbanken",
+        "Sehr langsames Umschalten"
+       ],
+       "a": 0,
+       "e": "Zwei vollständige Umgebungen.",
+       "id": "devops.m4.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viel Verkehr bekommt ein Canary anfangs typischerweise?",
+       "o": [
+        "1 bis 5 %",
+        "100 %",
+        "50 %",
+        "0 %"
+       ],
+       "a": 0,
+       "e": "Klein starten, dann erhöhen.",
+       "id": "devops.m4.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was vergleicht man beim Canary?",
+       "o": [
+        "Fehlerrate und Latenz",
+        "Farben der Oberfläche",
+        "Anzahl der Entwickler",
+        "Lizenzkosten"
+       ],
+       "a": 0,
+       "e": "Gegen die alte Version.",
+       "id": "devops.m4.l2.q3"
+      },
+      {
+       "t": "order",
+       "q": "Ordne das Expand-Contract-Muster.",
+       "o": [
+        "Schema erweitern",
+        "Code umstellen",
+        "Altes entfernen"
+       ],
+       "e": "Immer kompatibel bleiben.",
+       "id": "devops.m4.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert beim Rolling Update?",
+       "o": [
+        "Schrittweiser Ersatz",
+        "Alles wird gleichzeitig ersetzt",
+        "Nichts",
+        "Nur Datenbanken werden ersetzt"
+       ],
+       "a": 0,
+       "e": "Zeitweise laufen beide Versionen.",
+       "id": "devops.m4.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m4.l3",
+     "title": "Feature Flags und Rollback",
+     "min": 6,
+     "body": [
+      "Zwei Werkzeuge machen Auslieferung sicher: Schalter und Rückwege.",
+      "## Feature Flags",
+      "Ein Flag schaltet eine Funktion zur Laufzeit ein oder aus, für alle, für bestimmte Gruppen oder für einen Prozentsatz. So lassen sich Funktionen testen, schrittweise freigeben oder bei Problemen sofort abschalten (Kill Switch).",
+      "## Flag-Schulden",
+      "Jedes Flag verdoppelt mögliche Pfade im Code. Alte Flags müssen entfernt werden, sonst wird der Code unübersichtlich und riskant.",
+      "## Rollback oder Roll Forward",
+      "Rollback heißt: auf die vorige Version zurück. Roll Forward heißt: schnell eine korrigierte Version ausliefern. Beides muss geübt sein. Rollback wird schwierig, wenn Datenformate schon geändert wurden; deshalb Expand-Contract.",
+      "## Automatische Rücknahme",
+      "Fortgeschrittene Pipelines überwachen nach dem Deployment Kennzahlen und nehmen bei Verschlechterung automatisch zurück."
+     ],
+     "key": [
+      "Feature Flags: Laufzeitschalter, schrittweise Freigabe, Kill Switch.",
+      "Alte Flags entfernen, sonst Flag-Schulden.",
+      "Rollback oder Roll Forward; automatische Rücknahme nach Kennzahlen."
+     ],
+     "src": [
+      {
+       "n": "J. Humble, D. Farley: Continuous Delivery (Addison-Wesley, 2010)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Kill Switch",
+       "b": "Flag, mit dem eine fehlerhafte Funktion sofort abgeschaltet wird.",
+       "id": "devops.m4.l3.k1"
+      },
+      {
+       "f": "Roll Forward",
+       "b": "Fehlerbehebung durch schnelle Auslieferung einer korrigierten Version.",
+       "id": "devops.m4.l3.k2"
+      },
+      {
+       "f": "Flag-Schulden",
+       "b": "Unübersichtlichkeit durch alte, nicht entfernte Feature Flags.",
+       "id": "devops.m4.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist ein Kill Switch?",
+       "o": [
+        "Sofort-Aus",
+        "Ein Not-Aus am Server",
+        "Ein Löschbefehl für Git",
+        "Ein Virenscanner"
+       ],
+       "a": 0,
+       "e": "Ohne neues Deployment.",
+       "id": "devops.m4.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum müssen alte Flags entfernt werden?",
+       "o": [
+        "Mehr Codepfade",
+        "Sie kosten Lizenzgebühren",
+        "Sie verlangsamen Git",
+        "Gar nicht nötig"
+       ],
+       "a": 0,
+       "e": "Flag-Schulden.",
+       "id": "devops.m4.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist Roll Forward?",
+       "o": [
+        "Schnell nachbessern",
+        "Alte Version wiederherstellen",
+        "Server neu starten",
+        "Alles löschen"
+       ],
+       "a": 0,
+       "e": "Statt zurück nach vorn.",
+       "id": "devops.m4.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wann wird ein Rollback schwierig?",
+       "o": [
+        "Nach Datenänderung",
+        "Wenn der Build grün ist",
+        "Wenn es regnet",
+        "Wenn Tests existieren"
+       ],
+       "a": 0,
+       "e": "Deshalb Expand-Contract.",
+       "id": "devops.m4.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was können Feature Flags zusätzlich?",
+       "o": [
+        "Prozentuale Freigabe",
+        "Code kompilieren",
+        "Server kühlen",
+        "Passwörter speichern"
+       ],
+       "a": 0,
+       "e": "Etwa 10 % der Nutzer.",
+       "id": "devops.m4.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "devops.m5",
+   "level": 2,
+   "title": "Container und Kubernetes",
+   "desc": "Images, Container, Orchestrierung, Deployments, Services und Probes.",
+   "lessons": [
+    {
+     "id": "devops.m5.l1",
+     "title": "Container verstehen",
+     "min": 7,
+     "body": [
+      "„Bei mir läuft es“ war jahrzehntelang ein Problem: Software verhielt sich je nach Rechner anders. Container lösen das, indem sie Anwendung und Abhängigkeiten zusammen verpacken.",
+      "## Container vs. virtuelle Maschine",
+      "Eine virtuelle Maschine emuliert einen ganzen Rechner mit eigenem Betriebssystem. Ein Container teilt sich den Kernel des Hosts und isoliert nur Prozesse, Dateisystem und Netzwerk (unter Linux über Namespaces und cgroups). Container starten daher in Sekunden und brauchen wenig Ressourcen, isolieren aber schwächer.",
+      "## Images und Schichten",
+      "Ein Image ist eine unveränderliche Vorlage, beschrieben in einem Dockerfile. Jede Anweisung erzeugt eine Schicht (Layer); unveränderte Schichten werden zwischengespeichert. Multi-Stage-Builds trennen Bau- und Laufzeitumgebung und machen Images klein.",
+      "## Gute Praxis",
+      "Kleine Basis-Images, keine Geheimnisse im Image, nicht als root laufen, ein Prozess pro Container, Konfiguration über Umgebungsvariablen. Images werden in einer Registry gespeichert und mit Tags oder besser einem Digest eindeutig referenziert."
+     ],
+     "key": [
+      "Container teilen den Kernel; VM emuliert ganzen Rechner.",
+      "Image = unveränderliche Vorlage mit Schichten (Dockerfile).",
+      "Kleine Images, keine Geheimnisse, nicht root, Digest statt nur Tag."
+     ],
+     "src": [
+      {
+       "n": "Docker-Dokumentation",
+       "u": "https://docs.docker.com/"
+      },
+      {
+       "n": "The Twelve-Factor App",
+       "u": "https://12factor.net/de/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Container",
+       "b": "Isolierter Prozess mit eigener Sicht auf Dateisystem und Netzwerk, teilt den Host-Kernel.",
+       "id": "devops.m5.l1.k1"
+      },
+      {
+       "f": "Image",
+       "b": "Unveränderliche Vorlage für Container, aus Schichten aufgebaut.",
+       "id": "devops.m5.l1.k2"
+      },
+      {
+       "f": "Multi-Stage-Build",
+       "b": "Dockerfile mit getrennten Bau- und Laufzeitstufen für kleine Images.",
+       "id": "devops.m5.l1.k3"
+      },
+      {
+       "f": "Digest",
+       "b": "Hash eines Images; eindeutige, unveränderliche Referenz.",
+       "id": "devops.m5.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was teilen sich Container mit dem Host?",
+       "o": [
+        "Den Kernel",
+        "Nichts",
+        "Die Festplatte komplett",
+        "Den Bildschirm"
+       ],
+       "a": 0,
+       "e": "Deshalb starten sie so schnell.",
+       "id": "devops.m5.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was erzeugt jede Anweisung im Dockerfile?",
+       "o": [
+        "Eine Schicht",
+        "Einen Container",
+        "Einen Server",
+        "Einen Branch"
+       ],
+       "a": 0,
+       "e": "Schichten werden gecacht.",
+       "id": "devops.m5.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wozu dienen Multi-Stage-Builds?",
+       "o": [
+        "Kleine Laufzeit-Images",
+        "Mehr Sicherheitslücken",
+        "Längere Builds",
+        "Mehr Tags"
+       ],
+       "a": 0,
+       "e": "Compiler bleiben draußen.",
+       "id": "devops.m5.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum referenziert man Images besser per Digest?",
+       "o": [
+        "Eindeutig",
+        "Kürzer zu tippen",
+        "Schöner",
+        "Weil Tags verboten sind"
+       ],
+       "a": 0,
+       "e": "Ein Tag wie „latest“ kann sich ändern.",
+       "id": "devops.m5.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was gehört nicht in ein Image?",
+       "o": [
+        "Passwörter",
+        "Die Anwendung",
+        "Ihre Abhängigkeiten",
+        "Ein Startbefehl"
+       ],
+       "a": 0,
+       "e": "Geheimnisse kommen zur Laufzeit.",
+       "id": "devops.m5.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m5.l2",
+     "title": "Kubernetes-Grundlagen",
+     "min": 7,
+     "body": [
+      "Viele Container auf vielen Servern zu betreiben, braucht einen Orchestrator. Der Standard ist Kubernetes (K8s), 2014 von Google als Open Source veröffentlicht und heute von der CNCF betreut.",
+      "## Deklarativ",
+      "Man beschreibt den gewünschten Zustand in YAML, etwa „drei Instanzen dieses Images“. Kubernetes vergleicht ständig Soll und Ist und gleicht ab (Reconciliation). Stirbt ein Container, startet es einen neuen.",
+      "## Wichtige Objekte",
+      "Pod: kleinste Einheit, ein oder wenige Container mit gemeinsamer Netzwerkadresse. Deployment: verwaltet Pods einer Anwendung inklusive Rolling Updates. Service: stabile Adresse und Lastverteilung für wechselnde Pods. Ingress: Zugang von außen per HTTP. ConfigMap und Secret: Konfiguration und Geheimnisse. Namespace: logische Trennung.",
+      "## Architektur",
+      "Die Control Plane (API-Server, Scheduler, Controller, etcd als Datenspeicher) trifft Entscheidungen. Auf den Worker-Knoten startet der kubelet die Container."
+     ],
+     "key": [
+      "Kubernetes: Orchestrator, seit 2014, CNCF.",
+      "Deklarativ: Soll beschreiben, Kubernetes gleicht ab.",
+      "Pod, Deployment, Service, Ingress, ConfigMap, Secret, Namespace."
+     ],
+     "src": [
+      {
+       "n": "Kubernetes-Dokumentation",
+       "u": "https://kubernetes.io/de/docs/home/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Pod",
+       "b": "Kleinste Kubernetes-Einheit aus einem oder wenigen Containern.",
+       "id": "devops.m5.l2.k1"
+      },
+      {
+       "f": "Deployment (K8s)",
+       "b": "Verwaltet die Pods einer Anwendung, inklusive Updates und Skalierung.",
+       "id": "devops.m5.l2.k2"
+      },
+      {
+       "f": "Service (K8s)",
+       "b": "Stabile Adresse und Lastverteilung für wechselnde Pods.",
+       "id": "devops.m5.l2.k3"
+      },
+      {
+       "f": "Reconciliation",
+       "b": "Ständiger Abgleich von Soll- und Ist-Zustand.",
+       "id": "devops.m5.l2.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was ist die kleinste Einheit in Kubernetes?",
+       "o": [
+        "Pod",
+        "Node",
+        "Cluster",
+        "Image"
+       ],
+       "a": 0,
+       "e": "Ein oder wenige Container.",
+       "id": "devops.m5.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bietet ein Service?",
+       "o": [
+        "Stabile Adresse",
+        "Speicherplatz",
+        "Ein Image",
+        "Ein Git-Repository"
+       ],
+       "a": 0,
+       "e": "Pods kommen und gehen.",
+       "id": "devops.m5.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet deklarativ?",
+       "o": [
+        "Soll beschreiben",
+        "Jeden Schritt einzeln befehlen",
+        "Nur Dokumentation",
+        "Code ohne Tests"
+       ],
+       "a": 0,
+       "e": "Reconciliation.",
+       "id": "devops.m5.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wo speichert Kubernetes seinen Zustand?",
+       "o": [
+        "In etcd",
+        "In Git",
+        "In Excel",
+        "Im Browser"
+       ],
+       "a": 0,
+       "e": "Ein verteilter Schlüssel-Wert-Speicher.",
+       "id": "devops.m5.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was startet auf den Worker-Knoten die Container?",
+       "o": [
+        "Der kubelet",
+        "Der Scheduler",
+        "Ingress",
+        "etcd"
+       ],
+       "a": 0,
+       "e": "Der Scheduler entscheidet nur wo.",
+       "id": "devops.m5.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m5.l3",
+     "title": "Betrieb in Kubernetes",
+     "min": 7,
+     "body": [
+      "Damit Anwendungen in Kubernetes stabil laufen, braucht es ein paar Bausteine.",
+      "## Probes",
+      "Die Liveness-Probe prüft, ob ein Container noch lebt; schlägt sie fehl, wird er neu gestartet. Die Readiness-Probe prüft, ob er Anfragen annehmen kann; bis dahin bekommt er keinen Verkehr. Die Startup-Probe schützt langsam startende Anwendungen.",
+      "## Ressourcen",
+      "Requests reservieren CPU und Speicher für die Planung, Limits begrenzen den Verbrauch. Überschreitet ein Container sein Speicherlimit, wird er beendet (OOMKilled).",
+      "## Skalierung",
+      "Der Horizontal Pod Autoscaler erhöht oder senkt die Zahl der Pods anhand von Kennzahlen wie CPU-Last. Cluster-Autoscaler fügen Knoten hinzu.",
+      "## Typische Fehler",
+      "CrashLoopBackOff (Container stürzt immer wieder ab), ImagePullBackOff (Image nicht ladbar), Pending (keine passende Ressource frei). Erste Schritte: kubectl describe und kubectl logs.",
+      "## Ehrlicher Hinweis",
+      "Kubernetes ist mächtig, aber komplex. Für kleine Anwendungen sind einfachere Plattformen oft die bessere Wahl."
+     ],
+     "key": [
+      "Liveness (neu starten), Readiness (Verkehr), Startup (langsamer Start).",
+      "Requests und Limits; Speicherlimit überschritten → OOMKilled.",
+      "HPA skaliert; Fehler: CrashLoopBackOff, ImagePullBackOff, Pending."
+     ],
+     "src": [
+      {
+       "n": "Kubernetes-Dokumentation",
+       "u": "https://kubernetes.io/de/docs/home/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Liveness-Probe",
+       "b": "Prüft, ob ein Container lebt; bei Fehlschlag Neustart.",
+       "id": "devops.m5.l3.k1"
+      },
+      {
+       "f": "Readiness-Probe",
+       "b": "Prüft, ob ein Container Anfragen annehmen kann.",
+       "id": "devops.m5.l3.k2"
+      },
+      {
+       "f": "OOMKilled",
+       "b": "Container wurde wegen Überschreitung des Speicherlimits beendet.",
+       "id": "devops.m5.l3.k3"
+      },
+      {
+       "f": "CrashLoopBackOff",
+       "b": "Container stürzt wiederholt ab; Kubernetes wartet zunehmend länger.",
+       "id": "devops.m5.l3.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was passiert, wenn die Readiness-Probe fehlschlägt?",
+       "o": [
+        "Kein Verkehr",
+        "Der Pod wird gelöscht",
+        "Der Cluster startet neu",
+        "Nichts"
+       ],
+       "a": 0,
+       "e": "Neustart wäre Liveness.",
+       "id": "devops.m5.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet OOMKilled?",
+       "o": [
+        "Speicher voll",
+        "Image nicht gefunden",
+        "Netzwerk getrennt",
+        "Probe zu langsam"
+       ],
+       "a": 0,
+       "e": "Out of Memory.",
+       "id": "devops.m5.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeigt ImagePullBackOff?",
+       "o": [
+        "Image fehlt",
+        "Speicher voll",
+        "Zu viel Verkehr",
+        "Pod ist fertig"
+       ],
+       "a": 0,
+       "e": "Falscher Name, Tag oder fehlende Rechte.",
+       "id": "devops.m5.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was skaliert der Horizontal Pod Autoscaler?",
+       "o": [
+        "Die Anzahl der Pods",
+        "Die Größe der Images",
+        "Die Zahl der Entwickler",
+        "Die Bandbreite"
+       ],
+       "a": 0,
+       "e": "Anhand von Kennzahlen wie CPU.",
+       "id": "devops.m5.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Womit beginnt man die Fehlersuche bei einem Pod?",
+       "o": [
+        "describe, logs",
+        "Server ausschalten",
+        "Image löschen",
+        "Neuen Cluster bauen"
+       ],
+       "a": 0,
+       "e": "Ereignisse und Ausgaben lesen.",
+       "id": "devops.m5.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "devops.m6",
+   "level": 2,
+   "title": "Infrastructure as Code und GitOps",
+   "desc": "Infrastruktur als Code, Zustandsverwaltung, Konfigurationsmanagement und GitOps.",
+   "lessons": [
+    {
+     "id": "devops.m6.l1",
+     "title": "Infrastructure as Code",
+     "min": 7,
+     "body": [
+      "Server, Netzwerke und Datenbanken per Hand einzurichten ist langsam, fehleranfällig und nicht nachvollziehbar. Infrastructure as Code (IaC) beschreibt Infrastruktur in versionierten Dateien.",
+      "## Deklarativ mit Terraform",
+      "Terraform (und der offene Fork OpenTofu, entstanden 2023 nach einer Lizenzänderung) beschreibt Ressourcen in HCL. terraform plan zeigt, was sich ändern würde, terraform apply setzt es um. Eine Zustandsdatei (State) merkt sich, welche realen Ressourcen zu welcher Beschreibung gehören; sie muss geschützt und gemeinsam genutzt werden (Remote State mit Sperre).",
+      "## Weitere Werkzeuge",
+      "Cloud-eigene Werkzeuge (z. B. CloudFormation), Pulumi mit gängigen Programmiersprachen, Crossplane in Kubernetes.",
+      "## Drift",
+      "Ändert jemand die Infrastruktur per Hand, weicht die Realität vom Code ab (Drift). Regelmäßige Plans zeigen Drift; die Regel lautet: Änderungen nur über Code."
+     ],
+     "key": [
+      "IaC: Infrastruktur versioniert in Dateien.",
+      "Terraform/OpenTofu: plan zeigt, apply setzt um; State schützen.",
+      "Drift vermeiden: Änderungen nur über Code."
+     ],
+     "src": [
+      {
+       "n": "Terraform-Dokumentation (HashiCorp) und OpenTofu",
+       "u": "https://developer.hashicorp.com/terraform/docs"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Infrastructure as Code",
+       "b": "Beschreibung von Infrastruktur in versionierten Dateien.",
+       "id": "devops.m6.l1.k1"
+      },
+      {
+       "f": "Terraform State",
+       "b": "Datei, die Beschreibung und reale Ressourcen verknüpft.",
+       "id": "devops.m6.l1.k2"
+      },
+      {
+       "f": "Drift",
+       "b": "Abweichung der realen Infrastruktur vom Code.",
+       "id": "devops.m6.l1.k3"
+      },
+      {
+       "f": "terraform plan",
+       "b": "Zeigt geplante Änderungen, ohne sie umzusetzen.",
+       "id": "devops.m6.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was zeigt terraform plan?",
+       "o": [
+        "Vorschau",
+        "Die Kosten der Firma",
+        "Den Git-Verlauf",
+        "Die Logs"
+       ],
+       "a": 0,
+       "e": "Apply setzt sie dann um.",
+       "id": "devops.m6.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist Drift?",
+       "o": [
+        "Abweichung",
+        "Ein Autorennen",
+        "Ein Git-Befehl",
+        "Ein Container-Fehler"
+       ],
+       "a": 0,
+       "e": "Meist durch Handänderungen.",
+       "id": "devops.m6.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum muss der State geschützt werden?",
+       "o": [
+        "Verknüpft Ressourcen",
+        "Er enthält Musik",
+        "Er ist leer",
+        "Er ist unwichtig"
+       ],
+       "a": 0,
+       "e": "Enthält oft auch sensible Werte.",
+       "id": "devops.m6.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist OpenTofu?",
+       "o": [
+        "Terraform-Fork",
+        "Eine Datenbank",
+        "Ein Container",
+        "Eine CI-Plattform"
+       ],
+       "a": 0,
+       "e": "Entstanden 2023 nach Lizenzänderung.",
+       "id": "devops.m6.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist die Regel gegen Drift?",
+       "o": [
+        "Änderungen nur über Code",
+        "Häufiger per Hand ändern",
+        "State löschen",
+        "Plans vermeiden"
+       ],
+       "a": 0,
+       "e": "Und Drift regelmäßig prüfen.",
+       "id": "devops.m6.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m6.l2",
+     "title": "Unveränderliche Infrastruktur",
+     "min": 6,
+     "body": [
+      "Früher wurden Server über Jahre gepflegt und gepatcht. Jeder war ein wenig anders (Schneeflocke).",
+      "## Pets vs. Cattle",
+      "Haustiere (Pets) haben Namen und werden gepflegt. Nutztiere (Cattle) sind gleichartig und werden ersetzt, wenn sie krank sind. Moderne Infrastruktur behandelt Server wie Cattle.",
+      "## Immutable Infrastructure",
+      "Statt einen laufenden Server zu ändern, baut man ein neues Image mit der Änderung und ersetzt die alten Instanzen. Konfiguration ist damit reproduzierbar, und Rücknahme heißt: altes Image wieder verwenden.",
+      "## Konfigurationsmanagement",
+      "Werkzeuge wie Ansible (agentenlos über SSH), Puppet oder Chef bringen Systeme in einen beschriebenen Zustand. Sie sind idempotent: mehrfaches Ausführen ergibt dasselbe Ergebnis. Sie werden heute oft zum Bauen von Images statt zum Ändern laufender Server genutzt."
+     ],
+     "key": [
+      "Pets (gepflegt) vs. Cattle (ersetzt).",
+      "Immutable: neues Image bauen statt Server ändern.",
+      "Konfigurationsmanagement idempotent, z. B. Ansible über SSH."
+     ],
+     "src": [
+      {
+       "n": "G. Kim, J. Humble, P. Debois, J. Willis: The DevOps Handbook (IT Revolution)"
+      },
+      {
+       "n": "The Twelve-Factor App",
+       "u": "https://12factor.net/de/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Immutable Infrastructure",
+       "b": "Server werden nicht geändert, sondern durch neu gebaute ersetzt.",
+       "id": "devops.m6.l2.k1"
+      },
+      {
+       "f": "Idempotent",
+       "b": "Mehrfache Ausführung ergibt dasselbe Ergebnis.",
+       "id": "devops.m6.l2.k2"
+      },
+      {
+       "f": "Pets vs. Cattle",
+       "b": "Bild für individuell gepflegte vs. austauschbare Server.",
+       "id": "devops.m6.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was bedeutet idempotent?",
+       "o": [
+        "Wiederholbar gleich",
+        "Nur einmal ausführbar",
+        "Zufälliges Ergebnis",
+        "Nie ausführbar"
+       ],
+       "a": 0,
+       "e": "Wichtig für Automatisierung.",
+       "id": "devops.m6.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie ändert man immutable Infrastruktur?",
+       "o": [
+        "Neu bauen",
+        "Per SSH patchen",
+        "Gar nicht",
+        "Per Telefon"
+       ],
+       "a": 0,
+       "e": "Rücknahme: altes Image.",
+       "id": "devops.m6.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie arbeitet Ansible?",
+       "o": [
+        "Agentenlos über SSH",
+        "Nur mit Agenten",
+        "Über FTP",
+        "Per E-Mail"
+       ],
+       "a": 0,
+       "e": "Keine Software auf dem Zielsystem nötig.",
+       "id": "devops.m6.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Schneeflocken-Server?",
+       "o": [
+        "Unikat",
+        "Ein gekühlter Server",
+        "Ein neuer Server",
+        "Ein Cloud-Dienst"
+       ],
+       "a": 0,
+       "e": "Genau das will man vermeiden.",
+       "id": "devops.m6.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Wie behandelt man Server als Cattle?",
+       "o": [
+        "Austauschbar",
+        "Mit Namen und Pflege",
+        "Nie neu starten",
+        "Nur manuell"
+       ],
+       "a": 0,
+       "e": "Krank → ersetzen.",
+       "id": "devops.m6.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m6.l3",
+     "title": "GitOps",
+     "min": 6,
+     "body": [
+      "GitOps überträgt das Prinzip von Pull Requests auf den Betrieb.",
+      "## Die Prinzipien (OpenGitOps)",
+      "Der gewünschte Zustand ist deklarativ beschrieben, versioniert und unveränderlich gespeichert (meist in Git), wird automatisch gezogen (pull) und kontinuierlich abgeglichen.",
+      "## So funktioniert es",
+      "Ein Agent im Cluster, etwa Argo CD oder Flux, beobachtet ein Git-Repository und gleicht den Cluster ständig damit ab. Wer etwas ändern will, öffnet einen Pull Request. Nach dem Merge zieht der Agent die Änderung.",
+      "## Vorteile",
+      "Volle Nachvollziehbarkeit (Git-Historie als Änderungsprotokoll), einfaches Zurücknehmen (git revert), weniger Zugriffsrechte nötig (die CI muss nicht in den Cluster schreiben), Drift wird automatisch korrigiert.",
+      "## Push vs. Pull",
+      "Klassische Pipelines pushen Änderungen in die Umgebung. GitOps zieht sie aus Git. Das verringert die Angriffsfläche, weil keine Pipeline dauerhaft Schreibrechte auf Produktion braucht."
+     ],
+     "key": [
+      "GitOps: deklarativ, versioniert, gezogen, kontinuierlich abgeglichen.",
+      "Agent (Argo CD, Flux) gleicht Cluster mit Git ab.",
+      "Nachvollziehbar, einfach zurückzunehmen, weniger Rechte (Pull statt Push)."
+     ],
+     "src": [
+      {
+       "n": "OpenGitOps: GitOps-Prinzipien (CNCF)",
+       "u": "https://opengitops.dev/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "GitOps",
+       "b": "Betrieb über deklarativen, in Git versionierten Zustand, den ein Agent automatisch abgleicht.",
+       "id": "devops.m6.l3.k1"
+      },
+      {
+       "f": "Argo CD / Flux",
+       "b": "Verbreitete GitOps-Agenten für Kubernetes.",
+       "id": "devops.m6.l3.k2"
+      },
+      {
+       "f": "Pull-basiertes Deployment",
+       "b": "Die Umgebung zieht Änderungen selbst, statt sie von außen zu bekommen.",
+       "id": "devops.m6.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wer gleicht bei GitOps den Cluster ab?",
+       "o": [
+        "Ein Agent im Cluster",
+        "Ein Mensch per Hand",
+        "Die CI per Push",
+        "Niemand"
+       ],
+       "a": 0,
+       "e": "Etwa Argo CD oder Flux.",
+       "id": "devops.m6.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie nimmt man bei GitOps eine Änderung zurück?",
+       "o": [
+        "git revert",
+        "Server neu installieren",
+        "Cluster löschen",
+        "Per E-Mail"
+       ],
+       "a": 0,
+       "e": "Der Agent zieht den alten Stand.",
+       "id": "devops.m6.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist Pull sicherer als Push?",
+       "o": [
+        "Weniger Schreibrechte",
+        "Pull ist schneller",
+        "Push ist verboten",
+        "Pull braucht kein Netzwerk"
+       ],
+       "a": 0,
+       "e": "Kleinere Angriffsfläche.",
+       "id": "devops.m6.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert bei Drift unter GitOps?",
+       "o": [
+        "Wird korrigiert",
+        "Sie bleibt",
+        "Der Cluster stürzt ab",
+        "Git wird gelöscht"
+       ],
+       "a": 0,
+       "e": "Kontinuierlicher Abgleich.",
+       "id": "devops.m6.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was dient bei GitOps als Änderungsprotokoll?",
+       "o": [
+        "Die Git-Historie",
+        "Ein Excel-Blatt",
+        "Das Gedächtnis",
+        "Der Chat"
+       ],
+       "a": 0,
+       "e": "Wer, was, wann, warum.",
+       "id": "devops.m6.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "devops.m7",
+   "level": 3,
+   "title": "Observability und SRE",
+   "desc": "Metriken, Logs, Traces, SLOs, Fehlerbudgets und Umgang mit Störungen.",
+   "lessons": [
+    {
+     "id": "devops.m7.l1",
+     "title": "Beobachtbarkeit",
+     "min": 7,
+     "body": [
+      "Monitoring sagt, ob etwas kaputt ist. Observability hilft zu verstehen, warum, auch bei Fehlern, die niemand vorhergesehen hat.",
+      "## Drei Signale",
+      "Metriken: Zahlen über Zeit, etwa Anfragen pro Sekunde oder Fehlerrate; günstig und gut für Alarme. Logs: einzelne Ereignisse mit Details; am besten strukturiert (etwa JSON). Traces: der Weg einer Anfrage durch viele Dienste, mit Zeit pro Schritt.",
+      "## Standards",
+      "OpenTelemetry ist ein offener Standard zum Erfassen von Metriken, Logs und Traces, unabhängig vom Anbieter. Verbreitet sind Prometheus für Metriken und Grafana für Dashboards.",
+      "## Was messen?",
+      "Die vier goldenen Signale aus dem Google-SRE-Buch: Latenz, Verkehr, Fehler und Sättigung. Für Dienste die RED-Methode (Rate, Errors, Duration), für Ressourcen die USE-Methode (Utilization, Saturation, Errors).",
+      "## Gute Alarme",
+      "Alarmieren auf Symptome, die Nutzer spüren, nicht auf jede Ursache. Jeder Alarm braucht eine klare Handlung, sonst entsteht Alarmmüdigkeit."
+     ],
+     "key": [
+      "Metriken, Logs, Traces; OpenTelemetry als Standard.",
+      "Goldene Signale: Latenz, Verkehr, Fehler, Sättigung; RED und USE.",
+      "Auf Nutzersymptome alarmieren, jeder Alarm mit Handlung."
+     ],
+     "src": [
+      {
+       "n": "Google: Site Reliability Engineering (Bücher frei online)",
+       "u": "https://sre.google/books/"
+      },
+      {
+       "n": "OpenTelemetry-Dokumentation",
+       "u": "https://opentelemetry.io/docs/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Trace",
+       "b": "Aufzeichnung des Wegs einer Anfrage durch mehrere Dienste.",
+       "id": "devops.m7.l1.k1"
+      },
+      {
+       "f": "Vier goldene Signale",
+       "b": "Latenz, Verkehr, Fehler, Sättigung.",
+       "id": "devops.m7.l1.k2"
+      },
+      {
+       "f": "OpenTelemetry",
+       "b": "Offener Standard zur Erfassung von Metriken, Logs und Traces.",
+       "id": "devops.m7.l1.k3"
+      },
+      {
+       "f": "Alarmmüdigkeit",
+       "b": "Abstumpfung durch zu viele, oft unnötige Alarme.",
+       "id": "devops.m7.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was zeigt ein Trace?",
+       "o": [
+        "Anfrageweg",
+        "Die CPU-Temperatur",
+        "Den Git-Verlauf",
+        "Die Kosten"
+       ],
+       "a": 0,
+       "e": "Mit Zeit pro Schritt.",
+       "id": "devops.m7.l1.q1"
+      },
+      {
+       "t": "multi",
+       "q": "Welche gehören zu den vier goldenen Signalen?",
+       "o": [
+        "Latenz",
+        "Fehler",
+        "Sättigung",
+        "Codezeilen"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Das vierte ist Verkehr.",
+       "id": "devops.m7.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Worauf sollte man vorrangig alarmieren?",
+       "o": [
+        "Nutzersymptome",
+        "Auf jede kleine Ursache",
+        "Auf nichts",
+        "Auf Commits"
+       ],
+       "a": 0,
+       "e": "Sonst Alarmmüdigkeit.",
+       "id": "devops.m7.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wofür steht RED?",
+       "o": [
+        "Rate, Errors, Duration",
+        "Red, Error, Danger",
+        "Run, Execute, Deploy",
+        "Read, Edit, Delete"
+       ],
+       "a": 0,
+       "e": "Für Dienste.",
+       "id": "devops.m7.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist OpenTelemetry?",
+       "o": [
+        "Offener Standard",
+        "Ein Cloud-Anbieter",
+        "Eine Datenbank",
+        "Ein Git-Server"
+       ],
+       "a": 0,
+       "e": "Anbieterunabhängig.",
+       "id": "devops.m7.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m7.l2",
+     "title": "SLI, SLO und Fehlerbudget",
+     "min": 7,
+     "body": [
+      "Site Reliability Engineering (SRE) wurde bei Google entwickelt: Betrieb als Ingenieursdisziplin. Zentrales Werkzeug sind Zuverlässigkeitsziele.",
+      "## Begriffe",
+      "Ein SLI (Service Level Indicator) misst etwas, das Nutzern wichtig ist, etwa den Anteil erfolgreicher Anfragen unter 300 ms. Ein SLO (Objective) ist das Ziel dafür, etwa 99,9 % über 30 Tage. Ein SLA (Agreement) ist ein Vertrag mit Konsequenzen, meist lockerer als das SLO.",
+      "## Fehlerbudget",
+      "100 % ist unrealistisch und unnötig teuer. Die Differenz zum SLO ist das Fehlerbudget: Bei 99,9 % über 30 Tage sind das etwa 43 Minuten Ausfall. Solange Budget übrig ist, darf das Team riskantere Änderungen ausliefern. Ist es aufgebraucht, hat Stabilität Vorrang.",
+      "## Warum das wirkt",
+      "Das Fehlerbudget löst den alten Streit zwischen Tempo und Stabilität mit einer gemeinsamen, messbaren Regel.",
+      "Rechne unten mit dem SLO-Rechner."
+     ],
+     "key": [
+      "SLI misst, SLO ist das Ziel, SLA ist der Vertrag.",
+      "Fehlerbudget = 100 % − SLO; 99,9 % / 30 Tage ≈ 43 min.",
+      "Budget übrig: Tempo; Budget weg: Stabilität."
+     ],
+     "src": [
+      {
+       "n": "Google: Site Reliability Engineering (Bücher frei online)",
+       "u": "https://sre.google/books/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SLI",
+       "b": "Service Level Indicator: Messgröße für Zuverlässigkeit aus Nutzersicht.",
+       "id": "devops.m7.l2.k1"
+      },
+      {
+       "f": "SLO",
+       "b": "Service Level Objective: Zielwert für einen SLI.",
+       "id": "devops.m7.l2.k2"
+      },
+      {
+       "f": "SLA",
+       "b": "Service Level Agreement: Vertrag mit Konsequenzen bei Verfehlung.",
+       "id": "devops.m7.l2.k3"
+      },
+      {
+       "f": "Fehlerbudget",
+       "b": "Erlaubte Unzuverlässigkeit: 100 % minus SLO.",
+       "id": "devops.m7.l2.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie viele Minuten Ausfall erlaubt ein SLO von 99,9 % über 30 Tage?",
+       "a": 43.2,
+       "unit": "min",
+       "tol": 0.5,
+       "e": "30 × 24 × 60 = 43.200 min, davon 0,1 % = 43,2 min.",
+       "id": "devops.m7.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "Wie viele Minuten erlaubt 99,99 % über 30 Tage?",
+       "a": 4.32,
+       "unit": "min",
+       "tol": 0.1,
+       "e": "0,01 % von 43.200 min.",
+       "id": "devops.m7.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert, wenn das Fehlerbudget aufgebraucht ist?",
+       "o": [
+        "Stabilität hat Vorrang",
+        "Mehr riskante Releases",
+        "SLO wird gelöscht",
+        "Nichts"
+       ],
+       "a": 0,
+       "e": "Gemeinsame Regel statt Streit.",
+       "id": "devops.m7.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist meist lockerer: SLO oder SLA?",
+       "o": [
+        "Das SLA",
+        "Das SLO",
+        "Beide gleich",
+        "Keins"
+       ],
+       "a": 0,
+       "e": "Puffer zwischen Ziel und Vertrag.",
+       "id": "devops.m7.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist 100 % kein gutes Ziel?",
+       "o": [
+        "Zu teuer",
+        "Zu einfach",
+        "Verboten",
+        "Nicht messbar"
+       ],
+       "a": 0,
+       "e": "Nutzer merken den Unterschied oft nicht.",
+       "id": "devops.m7.l2.q5"
+      }
+     ],
+     "figs": [
+      {
+       "after": 7,
+       "w": "slo",
+       "cap": "SLO-Rechner: Wähle ein Ziel und sieh, wie Störungen das Fehlerbudget aufbrauchen."
+      }
+     ]
+    },
+    {
+     "id": "devops.m7.l3",
+     "title": "Störungen und Postmortems",
+     "min": 6,
+     "body": [
+      "Störungen passieren. Entscheidend ist, wie ein Team reagiert und lernt.",
+      "## Incident Management",
+      "Klare Rollen helfen: Incident Commander koordiniert, andere untersuchen und beheben, eine Person kommuniziert nach außen. Ziel ist zuerst die Wiederherstellung (Mitigation), die Ursachenanalyse kommt danach.",
+      "## Rufbereitschaft",
+      "Wer betreibt, ist auch erreichbar (On-Call). Gute Rufbereitschaft ist fair verteilt, hat Runbooks für bekannte Probleme und wenige, sinnvolle Alarme.",
+      "## Blameless Postmortem",
+      "Nach einer Störung schreibt das Team einen Bericht: Ablauf, Auswirkung, Ursachen, was gut lief, was nicht, konkrete Maßnahmen. Ohne Schuldzuweisung: Menschen handeln mit dem Wissen, das sie hatten; die Frage ist, wie das System Fehler zuließ. Nur so sprechen Menschen offen über Fehler.",
+      "## Lernen",
+      "Maßnahmen werden verfolgt und umgesetzt. Manche Teams üben Ausfälle gezielt (Chaos Engineering, Game Days), um Schwächen zu finden, bevor sie Kunden treffen."
+     ],
+     "key": [
+      "Rollen: Incident Commander, Untersuchung, Kommunikation; erst wiederherstellen.",
+      "On-Call fair, mit Runbooks und sinnvollen Alarmen.",
+      "Blameless Postmortem; Chaos Engineering zum Üben."
+     ],
+     "src": [
+      {
+       "n": "Google: Site Reliability Engineering (Bücher frei online)",
+       "u": "https://sre.google/books/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Incident Commander",
+       "b": "Koordiniert die Reaktion auf eine Störung.",
+       "id": "devops.m7.l3.k1"
+      },
+      {
+       "f": "Runbook",
+       "b": "Anleitung für den Umgang mit bekannten Problemen.",
+       "id": "devops.m7.l3.k2"
+      },
+      {
+       "f": "Blameless Postmortem",
+       "b": "Störungsbericht ohne Schuldzuweisung mit Fokus auf Systemverbesserung.",
+       "id": "devops.m7.l3.k3"
+      },
+      {
+       "f": "Chaos Engineering",
+       "b": "Gezieltes Einbringen von Fehlern, um Schwächen zu finden.",
+       "id": "devops.m7.l3.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was hat bei einer Störung zuerst Vorrang?",
+       "o": [
+        "Wiederherstellung",
+        "Schuldige finden",
+        "Ursachenanalyse in Ruhe",
+        "Dokumentation"
+       ],
+       "a": 0,
+       "e": "Erst den Schaden begrenzen.",
+       "id": "devops.m7.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum sind Postmortems „blameless“?",
+       "o": [
+        "Für Offenheit",
+        "Weil niemand Fehler macht",
+        "Weil es Zeit spart",
+        "Weil Chefs es nicht lesen"
+       ],
+       "a": 0,
+       "e": "Systeme verbessern statt Menschen bestrafen.",
+       "id": "devops.m7.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein Runbook?",
+       "o": [
+        "Anleitung",
+        "Ein Laufband",
+        "Ein Git-Branch",
+        "Ein Container"
+       ],
+       "a": 0,
+       "e": "Hilft auch nachts um drei.",
+       "id": "devops.m7.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist Chaos Engineering?",
+       "o": [
+        "Fehler gezielt üben",
+        "Unordnung im Code",
+        "Zufällige Releases",
+        "Server ohne Plan"
+       ],
+       "a": 0,
+       "e": "Etwa an Game Days.",
+       "id": "devops.m7.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was koordiniert der Incident Commander?",
+       "o": [
+        "Die Reaktion",
+        "Die Urlaubsplanung",
+        "Das Budget",
+        "Das Marketing"
+       ],
+       "a": 0,
+       "e": "Er muss nicht selbst reparieren.",
+       "id": "devops.m7.l3.q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "devops.m8",
+   "level": 3,
+   "title": "DevSecOps und DevOps im Fahrzeug",
+   "desc": "Sicherheit in der Pipeline, Lieferkette und DevOps für eingebettete Software.",
+   "lessons": [
+    {
+     "id": "devops.m8.l1",
+     "title": "Sicherheit in der Pipeline",
+     "min": 7,
+     "body": [
+      "DevSecOps bedeutet: Sicherheit ist von Anfang an Teil des Ablaufs, nicht eine Prüfung kurz vor dem Release (Shift Left).",
+      "## Automatisierte Prüfungen",
+      "SAST (statische Analyse des Quellcodes auf Schwachstellen), SCA (Prüfung der Abhängigkeiten auf bekannte Lücken), DAST (Tests gegen die laufende Anwendung), Container- und IaC-Scans sowie Secret-Scanning (versehentlich eingecheckte Passwörter und Schlüssel).",
+      "## Geheimnisse",
+      "Passwörter und Schlüssel gehören nie ins Repository. Sie liegen in einem Secret-Manager (etwa Vault oder dem Dienst der Cloud) und werden zur Laufzeit bereitgestellt. Wurde ein Geheimnis eingecheckt, reicht Löschen nicht; es muss ausgetauscht werden, weil es in der Historie bleibt.",
+      "## Minimale Rechte",
+      "Pipelines und Dienste bekommen nur die Rechte, die sie wirklich brauchen. Kurzlebige Zugangsdaten (etwa über OIDC) sind besser als langlebige Token."
+     ],
+     "key": [
+      "Shift Left: Sicherheit früh und automatisch.",
+      "SAST, SCA, DAST, Container-/IaC-Scans, Secret-Scanning.",
+      "Geheimnisse im Secret-Manager; geleakte austauschen; minimale Rechte."
+     ],
+     "src": [
+      {
+       "n": "OWASP: Projekte zu Anwendungssicherheit (u. a. Top 10, DevSecOps)",
+       "u": "https://owasp.org/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SAST",
+       "b": "Statische Sicherheitsanalyse des Quellcodes.",
+       "id": "devops.m8.l1.k1"
+      },
+      {
+       "f": "SCA",
+       "b": "Software Composition Analysis: Prüfung von Abhängigkeiten auf bekannte Schwachstellen.",
+       "id": "devops.m8.l1.k2"
+      },
+      {
+       "f": "DAST",
+       "b": "Dynamische Sicherheitstests gegen die laufende Anwendung.",
+       "id": "devops.m8.l1.k3"
+      },
+      {
+       "f": "Shift Left",
+       "b": "Prüfungen möglichst früh im Ablauf durchführen.",
+       "id": "devops.m8.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was prüft SCA?",
+       "o": [
+        "Fremde Pakete",
+        "Den eigenen Code statisch",
+        "Die laufende Anwendung",
+        "Die Hardware"
+       ],
+       "a": 0,
+       "e": "Software Composition Analysis.",
+       "id": "devops.m8.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Ein Passwort wurde versehentlich gepusht. Was ist zu tun?",
+       "o": [
+        "Passwort austauschen",
+        "Nur die Datei löschen",
+        "Nichts",
+        "Den Commit umbenennen"
+       ],
+       "a": 0,
+       "e": "Es bleibt in der Historie.",
+       "id": "devops.m8.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet Shift Left?",
+       "o": [
+        "Sicherheit früh im Ablauf",
+        "Code nach links einrücken",
+        "Später testen",
+        "Server umziehen"
+       ],
+       "a": 0,
+       "e": "Früh ist billiger.",
+       "id": "devops.m8.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist besser als langlebige Token?",
+       "o": [
+        "Kurzlebige Token",
+        "Passwörter im Code",
+        "Geteilte Admin-Konten",
+        "Keine Anmeldung"
+       ],
+       "a": 0,
+       "e": "Etwa über OIDC.",
+       "id": "devops.m8.l1.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Was testet DAST?",
+       "o": [
+        "Die laufende Anwendung",
+        "Nur Quellcode",
+        "Nur Abhängigkeiten",
+        "Nur Dokumentation"
+       ],
+       "a": 0,
+       "e": "Dynamisch, von außen.",
+       "id": "devops.m8.l1.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m8.l2",
+     "title": "Die Software-Lieferkette",
+     "min": 7,
+     "body": [
+      "Moderne Software besteht großteils aus fremden Bausteinen. Angriffe auf diese Lieferkette treffen viele auf einmal.",
+      "## Warnende Beispiele",
+      "Ende 2021 betraf die Lücke Log4Shell in der weit verbreiteten Java-Bibliothek Log4j unzählige Systeme. Andere Angriffe manipulierten Build-Systeme oder Pakete in öffentlichen Registries, etwa durch täuschend ähnliche Paketnamen.",
+      "## Gegenmaßnahmen",
+      "SBOM (Software Bill of Materials, etwa in den Formaten SPDX oder CycloneDX) listet alle Bestandteile; bei einer neuen Lücke weiß man sofort, wer betroffen ist. Signierte Artefakte (etwa mit Sigstore/cosign) beweisen Herkunft und Unverändertheit. Provenienz-Nachweise beschreiben, wie ein Artefakt gebaut wurde.",
+      "## SLSA",
+      "Das Rahmenwerk SLSA beschreibt Stufen für eine vertrauenswürdige Lieferkette: von dokumentiertem Build bis zu gehärteten, isolierten Build-Systemen mit fälschungssicherer Provenienz.",
+      "## Regulierung",
+      "Regeln wie der EU Cyber Resilience Act oder im Fahrzeug UN R155 machen Lieferkettensicherheit zunehmend zur Pflicht."
+     ],
+     "key": [
+      "Lieferkettenangriffe treffen viele (z. B. Log4Shell 2021).",
+      "SBOM (SPDX, CycloneDX), signierte Artefakte, Provenienz.",
+      "SLSA-Stufen; Regulierung macht es zur Pflicht."
+     ],
+     "src": [
+      {
+       "n": "SLSA: Supply-chain Levels for Software Artifacts",
+       "u": "https://slsa.dev/"
+      },
+      {
+       "n": "OWASP: Projekte zu Anwendungssicherheit (u. a. Top 10, DevSecOps)",
+       "u": "https://owasp.org/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "SBOM",
+       "b": "Liste aller Softwarebestandteile, z. B. im Format SPDX oder CycloneDX.",
+       "id": "devops.m8.l2.k1"
+      },
+      {
+       "f": "Provenienz",
+       "b": "Nachweis, wie und woraus ein Artefakt gebaut wurde.",
+       "id": "devops.m8.l2.k2"
+      },
+      {
+       "f": "SLSA",
+       "b": "Rahmenwerk mit Stufen für Lieferkettensicherheit.",
+       "id": "devops.m8.l2.k3"
+      },
+      {
+       "f": "Log4Shell",
+       "b": "Schwere Lücke in Log4j (2021), Beispiel für Lieferkettenrisiken.",
+       "id": "devops.m8.l2.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wozu dient eine SBOM?",
+       "o": [
+        "Betroffene finden",
+        "Server kühlen",
+        "Code formatieren",
+        "Kosten senken"
+       ],
+       "a": 0,
+       "e": "Liste aller Bestandteile.",
+       "id": "devops.m8.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was beweist eine Signatur am Artefakt?",
+       "o": [
+        "Herkunft",
+        "Dass es fehlerfrei ist",
+        "Dass es schnell ist",
+        "Dass es billig ist"
+       ],
+       "a": 0,
+       "e": "Nicht die Qualität.",
+       "id": "devops.m8.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was war Log4Shell?",
+       "o": [
+        "Java-Lücke",
+        "Ein Linux-Befehl",
+        "Ein Cloud-Ausfall",
+        "Ein Git-Fehler"
+       ],
+       "a": 0,
+       "e": "Ende 2021, enorm verbreitet.",
+       "id": "devops.m8.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt SLSA?",
+       "o": [
+        "Lieferketten-Stufen",
+        "Eine Programmiersprache",
+        "Ein SLO-Ziel",
+        "Ein Container-Format"
+       ],
+       "a": 0,
+       "e": "Supply-chain Levels for Software Artifacts.",
+       "id": "devops.m8.l2.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Formate gibt es für SBOMs?",
+       "o": [
+        "SPDX und CycloneDX",
+        "JPEG und PNG",
+        "MP3 und WAV",
+        "DOCX und PDF"
+       ],
+       "a": 0,
+       "e": "Maschinenlesbare Standards.",
+       "id": "devops.m8.l2.q5"
+      }
+     ]
+    },
+    {
+     "id": "devops.m8.l3",
+     "title": "DevOps für Steuergeräte",
+     "min": 7,
+     "body": [
+      "Lassen sich DevOps-Prinzipien auf eingebettete, sicherheitsrelevante Fahrzeugsoftware übertragen? Ja, mit Anpassungen.",
+      "## Besonderheiten",
+      "Software läuft auf spezieller Hardware, Tests brauchen Prüfstände, Normen wie ISO 26262 und Automotive SPICE verlangen Nachweise, und Auslieferung ins Feld ist seltener und streng reguliert (UN R156). „Täglich in Produktion“ heißt hier: täglich ein potenziell freigabefähiger, geprüfter Stand.",
+      "## Die Pipeline im Fahrzeugumfeld",
+      "Build mit qualifizierten Compilern, statische Analyse (etwa MISRA), Unit-Tests auf dem Host, Software-in-the-Loop mit virtuellen Steuergeräten, Hardware-in-the-Loop-Prüfstände als Pipeline-Stufen, automatisch erzeugte Nachweise (Rückverfolgbarkeit von Anforderungen zu Tests).",
+      "## Was es bringt",
+      "Schnelleres Feedback statt Fehler erst im Integrationstest nach Wochen, reproduzierbare Stände, automatisch erzeugte Dokumentation für Audits und eine Grundlage für sichere OTA-Updates.",
+      "## Herausforderungen",
+      "Knappe Prüfstände, lange HiL-Laufzeiten, Werkzeugqualifizierung, Zusammenarbeit über Hersteller und Zulieferer hinweg und eine Kultur, die von langen Releasezyklen geprägt ist. Erfahrungen und Reifegrad unterscheiden sich stark zwischen Unternehmen."
+     ],
+     "key": [
+      "Prinzipien gelten, aber mit Prüfständen, Normen und Regulierung.",
+      "Pipeline: qualifizierter Build, MISRA, Unit, SiL, HiL, Rückverfolgbarkeit.",
+      "Nutzen: schnelles Feedback, reproduzierbar, Audit-Nachweise; Hürden: Prüfstände, Kultur."
+     ],
+     "src": [
+      {
+       "n": "VDA QMC: Automotive SPICE (Prozessbewertungsmodell)",
+       "u": "https://vda-qmc.de/automotive-spice/"
+      },
+      {
+       "n": "ISO 26262: Funktionale Sicherheit von Straßenfahrzeugen",
+       "u": "https://www.iso.org/standard/68383.html"
+      },
+      {
+       "n": "UNECE: UN-Regelung Nr. 156 (Software Update und SUMS)",
+       "u": "https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Automotive SPICE",
+       "b": "Prozessbewertungsmodell für Software-Entwicklung im Automobilbereich.",
+       "id": "devops.m8.l3.k1"
+      },
+      {
+       "f": "Rückverfolgbarkeit",
+       "b": "Nachweisbare Verbindung von Anforderungen über Code zu Tests.",
+       "id": "devops.m8.l3.k2"
+      },
+      {
+       "f": "Werkzeugqualifizierung",
+       "b": "Nachweis, dass ein Werkzeug für sicherheitsrelevante Entwicklung geeignet ist.",
+       "id": "devops.m8.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was bedeutet „häufig ausliefern“ bei Steuergeräten realistisch?",
+       "o": [
+        "Oft prüfbereit sein",
+        "Täglich OTA an alle Fahrzeuge",
+        "Gar nichts",
+        "Nur jährlich bauen"
+       ],
+       "a": 0,
+       "e": "Feldauslieferung bleibt reguliert.",
+       "id": "devops.m8.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist ein typischer Engpass?",
+       "o": [
+        "Knappe HiL-Prüfstände",
+        "Zu viele Prüfstände",
+        "Zu schnelle Compiler",
+        "Fehlende Fahrzeuge"
+       ],
+       "a": 0,
+       "e": "Prüfstände sind teuer und belegt.",
+       "id": "devops.m8.l3.q2"
+      },
+      {
+       "t": "multi",
+       "q": "Welche Stufen passen in eine Steuergeräte-Pipeline?",
+       "o": [
+        "Statische Analyse (MISRA)",
+        "Software-in-the-Loop",
+        "Hardware-in-the-Loop",
+        "Manuelles Kopieren per USB"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "e": "Manuelles Kopieren widerspricht der Automatisierung.",
+       "id": "devops.m8.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was erzeugt eine gute Pipeline zusätzlich für Audits?",
+       "o": [
+        "Nachweise",
+        "Werbematerial",
+        "Urlaubspläne",
+        "Nichts"
+       ],
+       "a": 0,
+       "e": "Automatisch statt per Hand.",
+       "id": "devops.m8.l3.q4"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Regelung betrifft Updates im Feld?",
+       "o": [
+        "UN R156",
+        "Euro 7",
+        "SAE J1962",
+        "ISO 15765"
+       ],
+       "a": 0,
+       "e": "Software-Update-Management.",
+       "id": "devops.m8.l3.q5"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

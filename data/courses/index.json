@@ -80,6 +80,11 @@
    "id": "abgas",
    "file": "abgas.json",
    "fac": "auto"
+  },
+  {
+   "id": "devops",
+   "file": "devops.json",
+   "fac": "info"
   }
  ],
  "planned": []

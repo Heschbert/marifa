@@ -116,3 +116,21 @@ add("abgas", {
  "m8.l1.q1": "Filter fehlt", "m8.l1.q2": "Volumenstrom", "m8.l1.q3": "Partikel leiten", "m8.l2.q2": "NOx vorher/nachher", "m8.l2.q4": "Warnen, drosseln",
  "m8.l3.q2": "Gute Sensorik", "m8.l3.q5": "In Rechtsakten",
 })
+add("devops", {
+ "m1.l1.q2": "Team betreibt selbst", "m1.l1.q5": "Eine DevOps-Abteilung", "m1.l2.q4": "Fluss zum Kunden", "m1.l3.q2": "Tempo und Stabilität passen",
+ "m1.l3.q4": "Personenbewertung", "m1.l3.q5": "Commit → Produktion", "m2.l1.q1": "Ein Zeiger", "m2.l1.q2": "Hebt Commit auf",
+ "m2.l1.q3": "Volle Historie überall", "m2.l1.q4": "Fehler-Commit finden", "m2.l2.q2": "Besser prüfbar", "m2.l2.q4": "Fasst zusammen",
+ "m2.l3.q2": "Tägliche Integration", "m2.l3.q5": "Konflikte wachsen", "m3.l1.q2": "Nein", "m3.l2.q2": "Wechselhaft",
+ "m3.l2.q3": "Langsames Feedback", "m3.l2.q5": "Analyse und Scans", "m3.l3.q1": "Ein Artefakt für alle", "m3.l3.q2": "Schnelle Tests",
+ "m3.l3.q4": "Im Repository", "m3.l3.q5": "Parallel und Cache", "m4.l1.q1": "Kein manueller Schritt", "m4.l1.q3": "Weniger pro Schritt",
+ "m4.l1.q4": "Gute Tests", "m4.l2.q5": "Schrittweiser Ersatz", "m4.l3.q1": "Sofort-Aus", "m4.l3.q2": "Mehr Codepfade",
+ "m4.l3.q3": "Schnell nachbessern", "m4.l3.q4": "Nach Datenänderung", "m5.l1.q4": "Eindeutig", "m5.l1.q5": "Passwörter",
+ "m5.l2.q2": "Stabile Adresse", "m5.l2.q3": "Soll beschreiben", "m5.l3.q1": "Kein Verkehr", "m5.l3.q2": "Speicher voll",
+ "m5.l3.q3": "Image fehlt", "m5.l3.q5": "describe, logs", "m6.l1.q1": "Vorschau", "m6.l1.q2": "Abweichung", "m6.l1.q3": "Verknüpft Ressourcen",
+ "m6.l1.q4": "Terraform-Fork", "m6.l2.q1": "Wiederholbar gleich", "m6.l2.q2": "Neu bauen", "m6.l2.q4": "Unikat",
+ "m6.l2.q5": "Austauschbar", "m6.l3.q3": "Weniger Schreibrechte", "m6.l3.q4": "Wird korrigiert", "m7.l1.q1": "Anfrageweg",
+ "m7.l1.q3": "Nutzersymptome", "m7.l1.q5": "Offener Standard", "m7.l2.q5": "Zu teuer", "m7.l3.q2": "Für Offenheit",
+ "m7.l3.q3": "Anleitung", "m7.l3.q4": "Fehler gezielt üben", "m7.l3.q5": "Die Reaktion", "m8.l1.q1": "Fremde Pakete",
+ "m8.l1.q4": "Kurzlebige Token", "m8.l2.q1": "Betroffene finden", "m8.l2.q2": "Herkunft", "m8.l2.q3": "Java-Lücke", "m8.l2.q4": "Lieferketten-Stufen",
+ "m8.l3.q1": "Oft prüfbereit sein", "m8.l3.q4": "Nachweise",
+})

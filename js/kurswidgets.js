@@ -1,6 +1,6 @@
 /* Interaktive Elemente für Kurslektionen (Animationen und Simulationen).
    In einer Lektion: "figs": [{ "after": <Absatz>, "w": "<name>", "cap": "<Bildunterschrift>" }].
-   Vorhanden: coin, birthday, tree2, dice, bayes, monty, galton, normal, pi, ecublock, ecustate, crank, dtc, uds, iumpr, sae, lambda.
+   Vorhanden: coin, birthday, tree2, dice, bayes, monty, galton, normal, pi, ecublock, ecustate, crank, dtc, uds, iumpr, sae, lambda, pipe, slo.
    Alles läuft lokal im Browser, ohne externe Bibliotheken. Bedienung über data-act / data-input (CSP-tauglich). */
 (function () {
   "use strict";
@@ -484,4 +484,56 @@
     el(id + "-v").innerHTML = '<span><b>' + fmt(jumpV(l), 2) + " V</b>Sprungsonde</span><span><b>" + (Math.abs(ip) < 0.004 ? "≈ 0" : ip > 0 ? "+ positiv" : "− negativ") + "</b>Pumpstrom</span>" +
       '<span class="c1"><b>' + Math.round(convOx(l) * 100) + " %</b>CO/HC</span><span class=\"c2\"><b>" + Math.round(convNox(l) * 100) + " %</b>NOx</span>";
   };
+  /* ---------- CI/CD-Pipeline-Simulator ---------- */
+  var STG = { lint: ["Lint", 1], build: ["Build", 3], unit: ["Unit-Tests", 4], integ: ["Integration", 8], stage: ["Deploy Test", 3], e2e: ["End-to-End", 15], prod: ["Freigabe", 1] };
+  var BUGS = [["", "Kein Fehler"], ["lint", "Tippfehler"], ["unit", "Logikfehler"], ["integ", "Schnittstellenfehler"], ["e2e", "Fehler in der Oberfläche"]];
+  W.pipe = function (id) {
+    ST[id] = { bug: "unit", fast: true, run: 0, res: null };
+    el(id).innerHTML = '<div class="kwst" id="' + id + '-b"></div><div class="kwrow">' + b("kwpord", "Reihenfolge wechseln", id) + b("kwpgo", "▶ Commit pushen", id, true) + "</div>" +
+      '<div class="kwpipe" id="' + id + '-p"></div><div class="kwinfo small" id="' + id + '-i" aria-live="polite"></div>';
+    drawPipe(id);
+  };
+  function pipeOrder(S) { return S.fast ? ["lint", "build", "unit", "integ", "stage", "e2e", "prod"] : ["build", "stage", "e2e", "integ", "unit", "lint", "prod"]; }
+  function drawPipe(id, upto, failAt) {
+    var S = ST[id]; if (!el(id + "-b")) return;
+    el(id + "-b").innerHTML = BUGS.map(function (x) { return '<span class="' + (S.bug === x[0] ? "on" : "") + '" data-act="kwpbug" data-id="' + id + '" data-k="' + x[0] + '" role="button" tabindex="0">' + x[1] + "</span>"; }).join("");
+    var t = 0;
+    el(id + "-p").innerHTML = pipeOrder(S).map(function (k, i) {
+      t += STG[k][1]; var cls = upto === undefined || i > upto ? "" : k === failAt ? "bad" : "ok";
+      return '<div class="kwps ' + cls + '"><b>' + STG[k][0] + "</b><small>" + STG[k][1] + " min · Σ " + t + "</small></div>";
+    }).join('<span class="kwpa">›</span>');
+  }
+  H.kwpbug = function (d) { ST[d.id].bug = d.k; drawPipe(d.id); el(d.id + "-i").textContent = ""; };
+  H.kwpord = function (d) { var S = ST[d.id]; S.fast = !S.fast; drawPipe(d.id); el(d.id + "-i").textContent = S.fast ? "Schnelle Prüfungen zuerst (fail fast)." : "Ungünstig: langsame Tests zuerst."; };
+  H.kwpgo = function (d) {
+    var S = ST[d.id], ord = pipeOrder(S), i = 0, t = 0, run = ++S.run;
+    (function step() {
+      if (S.run !== run || !el(d.id)) return;
+      var k = ord[i]; t += STG[k][1];
+      var fail = S.bug && k === S.bug;
+      drawPipe(d.id, i, fail ? k : null);
+      if (fail) { el(d.id + "-i").innerHTML = "❌ Gestoppt bei <b>" + STG[k][0] + "</b>. Feedback nach <b>" + t + " Minuten</b>." + (t > 10 ? " Zu spät: Wer schnelle Prüfungen zuerst laufen lässt, erfährt viele Fehler in wenigen Minuten." : " Schnelles Feedback: so soll es sein."); return; }
+      if (++i < ord.length) setTimeout(step, 380); else el(d.id + "-i").innerHTML = "✅ Alles grün nach <b>" + t + " Minuten</b>. Dieses Artefakt ist auslieferbar." + (S.bug ? "" : "");
+    })();
+  };
+
+  /* ---------- SLO- und Fehlerbudget-Rechner ---------- */
+  W.slo = function (id) {
+    ST[id] = { slo: 99.9, used: 0 };
+    el(id).innerHTML = '<div class="kwsae">' + [99, 99.5, 99.9, 99.95, 99.99].map(function (v) { return '<button class="btn kwb" data-act="kwslo" data-id="' + id + '" data-k="' + v + '">' + String(v).replace(".", ",") + "</button>"; }).join("") + "</div>" +
+      '<div class="kwbig" id="' + id + '-r"></div><svg class="kwsvg" id="' + id + '-g" viewBox="0 0 300 30"></svg>' +
+      '<div class="kwrow">' + b("kwslo5", "+ Störung 5 min", id) + b("kwslo30", "+ Störung 30 min", id) + b("kwslor", "Neu", id) + '</div><div class="kwinfo small" id="' + id + '-i"></div>';
+    drawSlo(id);
+  };
+  function drawSlo(id) {
+    var S = ST[id], budget = 43200 * (100 - S.slo) / 100, left = budget - S.used, f = Math.max(0, Math.min(1, S.used / budget));
+    [].forEach.call(el(id).querySelectorAll(".kwsae button"), function (x) { x.classList.toggle("primary", +x.dataset.k === S.slo); });
+    el(id + "-r").innerHTML = fmt(budget, budget < 10 ? 2 : 1) + ' min<span class="small mute"> Fehlerbudget pro 30 Tage bei ' + String(S.slo).replace(".", ",") + " %</span>";
+    el(id + "-g").innerHTML = '<rect x="0" y="6" width="300" height="18" rx="9" class="kwtrack"/><rect x="0" y="6" width="' + (f * 300).toFixed(1) + '" height="18" rx="9" class="' + (f >= 1 ? "kwlow" : f > 0.7 ? "kwmid" : "kwgood") + '"/>';
+    el(id + "-i").innerHTML = "Verbraucht <b>" + fmt(S.used) + " min</b> · " + (left < 0 ? "überzogen um <b>" + fmt(-left, 1) : "übrig <b>" + fmt(left, 1)) + " min</b><br>" +
+      (left < 0 ? "Budget überzogen: Jetzt hat Stabilität Vorrang, riskante Releases warten." : f > 0.7 ? "Budget wird knapp: vorsichtiger ausliefern." : "Genug Budget: Das Team darf Neues ausprobieren.");
+  }
+  H.kwslo = function (d) { ST[d.id].slo = +d.k; drawSlo(d.id); };
+  H.kwslo5 = function (d) { ST[d.id].used += 5; drawSlo(d.id); }; H.kwslo30 = function (d) { ST[d.id].used += 30; drawSlo(d.id); };
+  H.kwslor = function (d) { ST[d.id].used = 0; drawSlo(d.id); };
 })();
