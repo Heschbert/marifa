@@ -169,7 +169,7 @@
   /* Kopfbereich der Rubriken: farbiges Band mit Symbol, damit man sofort sieht, wo man ist. */
   var SECICO = {"play": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M8 5v14l11-7z\"/></svg>", "learn": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 5h6a3 3 0 013 3v12a2 2 0 00-2-2H4zM20 5h-6a3 3 0 00-3 3v12a2 2 0 012-2h7z\"/></svg>", "course": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5\"/><path d=\"M22 9v6\"/></svg>"};
   ui.sechead = function (kind, title, sub, extra) {
-    return '<header class="sechead sh-' + kind + '"><div class="shrow"><span class="shic" aria-hidden="true">' + (SECICO[kind] || "") + '</span><div class="grow"><h1>' + esc(title) + "</h1>" + (sub ? "<p>" + esc(sub) + "</p>" : "") + "</div></div>" + (extra || "") + "</header>";
+    return '<header class="sechead sh-' + kind + '"><div class="shrow"><button class="shic" data-act="secgo" data-k="' + kind + '" aria-label="' + ({ play: "Jetzt spielen", learn: "Lernen starten", course: "Kurs fortsetzen" }[kind] || title) + '">' + (SECICO[kind] || "") + '</button><div class="grow"><h1>' + esc(title) + "</h1>" + (sub ? "<p>" + esc(sub) + "</p>" : "") + "</div></div>" + (extra || "") + "</header>";
   };
 
   /* ---------- Spielen (Startseite, blau) ---------- */
@@ -203,6 +203,18 @@
     if (fr) h += '<h2>Mit Freunden</h2><div class="tiles mini">' + fr + "</div>";
     show(h, "home", false);
   }
+  /* Das Symbol im Kopfband ist selbst ein Startknopf (viele tippen intuitiv darauf) */
+  H.secgo = function (d) {
+    var st = S();
+    if (d.k === "play") return H.quick();
+    if (d.k === "learn") {
+      var last = st.settings.last, fav = st.settings.fav || [];
+      if (last) return start("learn", last.c, last.s);
+      if (fav.length) return ui.startWith("learn", { c: null, s: null, sel: fav });
+      return start("learn", null, null);
+    }
+    if (d.k === "course" && H.cgoany) return H.cgoany();
+  };
   H.quick = function () { ui.startWith("classic", { c: ui.playC(), s: null }); };
   H.topicpick = function () { openState.topicpick = !openState.topicpick; home(); };
   /* Tagesrätsel als erste Zeile in „Heute“ */

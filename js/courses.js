@@ -181,6 +181,14 @@
   H.crs = function () { withCourses(list); };
   H.crs1 = function (d) { withCourses(function () { course(d.c); }); };
   H.cmod = function (d) { withCourses(function () { mod(d.c, d.m); }); };
+  /* Kopfband-Symbol bei Kurse: letzte Lektion fortsetzen, sonst den ersten Kurs öffnen */
+  H.cgoany = function () {
+    withCourses(function () {
+      var best = null;
+      C.list.forEach(function (c) { var p = P(c.id), l = p.last && c.lById[p.last]; if (l && !best) best = { c: c, l: l }; });
+      if (best) lesson(best.c.id, best.l.id); else if (C.list[0]) course(C.list[0].id);
+    });
+  };
   H.cles = function (d) { withCourses(function () { lesson(d.c, d.l); }); };
 
   /* ---------- Übung, Test, Wiederholung ---------- */

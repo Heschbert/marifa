@@ -882,3 +882,7 @@ body.play .nextbar { background: linear-gradient(to bottom, transparent, color-m
 .klist li { display: flex; align-items: center; gap: 8px; font-size: 15px; }
 .klist .kflag { height: 18px; }
 .klist li { min-width: 0; } .klist li .mute { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* 3.13: Kopfband-Symbol ist ein Startknopf */
+button.shic { border: 0; padding: 0; cursor: pointer; transition: transform .15s, background .15s; }
+button.shic:active { transform: scale(.92); background: rgba(255,255,255,.32); }
+button.shic svg { margin-left: 2px; }
