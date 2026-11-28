@@ -1,12 +1,72 @@
 {
+ "faculties": [
+  {
+   "id": "mathe",
+   "t": "Mathematik",
+   "ico": "∑",
+   "sub": "Rechnen mit Unsicherheit und Zahlen verstehen"
+  },
+  {
+   "id": "energie",
+   "t": "Energie & Technik",
+   "ico": "⚡",
+   "sub": "Strom, Speicher und Netze"
+  },
+  {
+   "id": "info",
+   "t": "Informatik",
+   "ico": "⌘",
+   "sub": "Künstliche Intelligenz und Software"
+  },
+  {
+   "id": "auto",
+   "t": "Fahrzeugtechnik",
+   "ico": "🚗",
+   "sub": "Diagnose, Abgas, Vernetzung, Sicherheit, autonomes Fahren"
+  }
+ ],
  "courses": [
   {
+   "id": "wkeit",
+   "file": "wkeit.json",
+   "fac": "mathe"
+  },
+  {
    "id": "bess",
-   "file": "bess.json"
+   "file": "bess.json",
+   "fac": "energie"
   },
   {
    "id": "ki",
-   "file": "ki.json"
+   "file": "ki.json",
+   "fac": "info"
+  }
+ ],
+ "planned": [
+  {
+   "fac": "auto",
+   "t": "Fahrzeugdiagnose: OBD und UDS",
+   "sub": "Von der MIL-Lampe bis zu Diagnosediensten nach ISO 14229"
+  },
+  {
+   "fac": "auto",
+   "t": "Euro 7, OBD-Vorschriften und IUMPR",
+   "sub": "Neue Abgasnorm, Überwachungspflichten und Überwachungsquoten"
+  },
+  {
+   "fac": "auto",
+   "t": "Fahrzeugkommunikation und Vernetzung",
+   "sub": "CAN, LIN, Automotive Ethernet, SOME/IP, V2X"
+  },
+  {
+   "fac": "auto",
+   "t": "Automotive Security",
+   "sub": "UN R155/R156, ISO/SAE 21434, sichere Updates"
+  },
+  {
+   "fac": "auto",
+   "t": "Autonomes Fahren",
+   "sub": "SAE-Stufen, Sensorik, funktionale Sicherheit, Zulassung"
   }
  ]
 }

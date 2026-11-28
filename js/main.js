@@ -45,6 +45,7 @@ import "./paths.js";
 import "./weeks.js";
 import "./onboard.js";
 import "./karte.js";
+import "./kurswidgets.js";
 
 /* Start: Daten laden, dann die Oberfläche öffnen. */
 const WF = window.WF;

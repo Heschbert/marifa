@@ -16,8 +16,13 @@
   C.load = function () {
     if (C.loaded) return Promise.resolve();
     return getJSON("data/courses/index.json").then(function (idx) {
+      C.idx = idx;
       return Promise.all(idx.courses.map(function (f) { return getJSON("data/courses/" + f.file); }));
-    }).then(function (arr) { C.list = arr; arr.forEach(prepare); C.loaded = true; });
+    }).then(function (arr) {
+      C.list = arr; arr.forEach(prepare);
+      arr.forEach(function (c, i) { c.fac = (C.idx.courses[i] || {}).fac || ""; });
+      C.loaded = true;
+    });
   };
   function prepare(c) {
     C.byId[c.id] = c; c.qs = []; c.cards = []; c.mById = {}; c.lById = {};
@@ -76,17 +81,25 @@
   function withCourses(f) { if (C.loaded) return f(); ui.loading(); C.load().then(f).catch(function (e) { ui.failed(String(e && e.message || e)); }); }
 
   /* ---------- Bildschirme ---------- */
+  /* Kursübersicht wie eine Universität: Fakultäten mit ihren Kursen; geplante Kurse sind sichtbar, aber noch gesperrt */
   function list() {
     ui.setView(function () { withCourses(list); });
-    var h = ui.sechead("course", "Kurse", "Fachwissen Schritt für Schritt: lesen, Karteikarten, üben, Test.");
-    C.list.forEach(function (c) {
-      var p = progress(c), d = due(c), n = d.q.length + d.k.length;
-      h += '<button class="item ccard" data-act="crs1" data-c="' + esc(c.id) + '">' + ui.ring(p, "var(--course)", Math.round(p) + "%") +
-        '<div class="grow"><div class="t">' + esc(c.title) + '</div><div class="small mute">' + esc(c.sub) + "</div>" +
-        '<div class="small" style="margin-top:4px">' + c.modules.filter(ready).length + " von " + c.modules.length + " Modulen verfügbar" + (n ? ' · <b class="due">' + n + " fällig</b>" : "") + "</div></div>" +
-        '<span class="chev" aria-hidden="true">›</span></button>';
+    var h = ui.sechead("course", "Kurse", "Deine Uni: Fachwissen Schritt für Schritt, vom Einstieg bis zum Experten.");
+    (C.idx.faculties || [{ id: "", t: "Kurse", ico: "🎓", sub: "" }]).forEach(function (f) {
+      var cs = C.list.filter(function (c) { return (c.fac || "") === f.id; }), pl = (C.idx.planned || []).filter(function (x) { return x.fac === f.id; });
+      if (!cs.length && !pl.length) return;
+      h += '<div class="fac"><span class="facic" aria-hidden="true">' + esc(f.ico) + '</span><div class="grow"><b>' + esc(f.t) + '</b><div class="small mute">' + esc(f.sub) + "</div></div></div>";
+      cs.forEach(function (c) {
+        var p = progress(c), d = due(c), n = d.q.length + d.k.length, les = 0; c.modules.forEach(function (m) { les += (m.lessons || []).length; });
+        h += '<button class="item ccard" data-act="crs1" data-c="' + esc(c.id) + '">' + ui.ring(p, "var(--course)", Math.round(p) + "%") +
+          '<div class="grow"><div class="t">' + esc(c.title) + '</div><div class="small mute">' + esc(c.sub) + "</div>" +
+          '<div class="small" style="margin-top:4px">' + c.modules.length + " Module · " + les + " Lektionen" + (n ? ' · <b class="due">' + n + " fällig</b>" : "") + "</div></div>" +
+          '<span class="chev" aria-hidden="true">›</span></button>';
+      });
+      pl.forEach(function (x) {
+        h += '<div class="item ccard off"><span class="ico" aria-hidden="true">…</span><div class="grow"><div class="t">' + esc(x.t) + '</div><div class="small mute">' + esc(x.sub) + '</div><div class="small" style="margin-top:4px">In Vorbereitung</div></div></div>';
+      });
     });
-    h += '<p class="small mute" style="margin-top:16px">Weitere Kurse folgen demselben Aufbau und kommen nach und nach dazu.</p>';
     ui.show(h, "courses", "course");
   }
   function course(cid) {
@@ -100,18 +113,30 @@
     h += ui.row("cgloss", "A–Z", "Glossar", c.cards.length + " Begriffe zum Nachschlagen", { c: cid });
     var vols = 0; c.modules.forEach(function (m) { m.lessons.forEach(function (l) { if (l.vol) vols++; }); });
     if (vols && ageMonths(c) >= 6) h += '<div class="card volold"><b>⚠ Teile des Kurses sind älter als 6 Monate</b><p class="small mute" style="margin:2px 0 0">' + vols + " Lektionen mit Regeln oder Marktdaten haben den Stand " + esc(c.stand) + ". Bitte vor Entscheidungen prüfen.</p></div>";
+    /* Lernpfad wie in einer Sprach-App: Lektionen als Stationen, die sich nacheinander freischalten; am Ende jedes Moduls der Test */
+    h += '<div class="cpath">';
+    var k = 0, curSet = false;
     c.levels.forEach(function (lv) {
       var mods = c.modules.filter(function (m) { return m.level === lv.id; }); if (!mods.length) return;
-      h += "<h2>Stufe " + lv.id + " · " + esc(lv.title) + "</h2>";
+      h += '<div class="plevel">Stufe ' + lv.id + " · " + esc(lv.title) + "</div>";
       mods.forEach(function (m) {
-        var st, ico, off = false;
-        if (!ready(m)) { st = "In Vorbereitung"; ico = "…"; off = true; }
-        else if (modPassed(m)) { st = "Bestanden · " + p.mods[m.id].best + " %"; ico = "✓"; }
-        else if (!modOpen(m)) { st = "Gesperrt: erst das vorige Modul bestehen"; ico = "🔒"; off = true; }
-        else { st = lessonsDone(m) + " von " + m.lessons.length + " Lektionen"; ico = String(c.modules.indexOf(m) + 1); }
-        h += '<button class="item cmodi' + (off ? " off" : "") + '" data-act="cmod" data-c="' + esc(cid) + '" data-m="' + esc(m.id) + '"' + (off ? " disabled" : "") + '><span class="ico" aria-hidden="true">' + ico + '</span><div class="grow"><div class="t">' + esc(m.title) + '</div><div class="small mute">' + esc(m.desc) + '</div><div class="small" style="margin-top:3px">' + esc(st) + '</div></div><span class="chev" aria-hidden="true">›</span></button>';
+        var open = modOpen(m), passed = modPassed(m);
+        h += '<button class="pmod' + (open ? "" : " off") + '" data-act="cmod" data-c="' + esc(cid) + '" data-m="' + esc(m.id) + '"><b>' + esc(m.title) + '</b><span class="small">' + esc(m.desc) + "</span>" +
+          '<span class="pmst">' + (!ready(m) ? "In Vorbereitung" : passed ? "Bestanden · " + p.mods[m.id].best + " %" : !open ? "🔒 Erst das vorige Modul bestehen" : lessonsDone(m) + " von " + m.lessons.length + " Lektionen") + "</span></button>";
+        (m.lessons || []).forEach(function (l, i) {
+          var done = lessonDone(c, l), avail = open && (i === 0 || lessonDone(c, m.lessons[i - 1]) || !!p.open), isCur = !done && avail && !curSet;
+          if (isCur) curSet = true;
+          var cls = done ? "done" : isCur ? "cur" : avail ? "open" : "lock";
+          h += '<div class="pnode-wrap pos' + (k++ % 4) + '"><button class="pnode ' + cls + '" data-act="' + (avail || done ? "cles" : "clock") + '" data-c="' + esc(cid) + '" data-l="' + esc(l.id) + '" aria-label="' + esc(l.title) + '">' +
+            (done ? "✓" : avail ? String(i + 1) : "🔒") + "</button>" + '<span class="plabel">' + (isCur ? "<b>Start</b> · " : "") + esc(l.title) + "</span></div>";
+        });
+        if (ready(m)) {
+          var all = lessonsDone(m) === m.lessons.length || !!p.open;
+          h += '<div class="pnode-wrap pos' + (k++ % 4) + '"><button class="pnode test ' + (passed ? "done" : all ? "open" : "lock") + '" data-act="' + (all ? "ctest" : "clock") + '" data-c="' + esc(cid) + '" data-m="' + esc(m.id) + '" aria-label="Modultest">🏆</button><span class="plabel">Modultest' + (passed ? " · bestanden" : "") + "</span></div>";
+        }
       });
     });
+    h += "</div>";
     var op = P(cid).open;
     h += '<div class="card unlock"><div class="grow"><b>' + (op ? "Alle Module freigeschaltet" : "Module der Reihe nach") + '</b><div class="small mute">' + (op ? "Jedes Modul und jeder Test ist sofort verfügbar." : "Ein Modul öffnet sich nach bestandenem Test des vorigen.") + "</div></div>" + '<button class="link" data-act="copen" data-c="' + esc(cid) + '">' + (op ? "Reihenfolge an" : "Alle freischalten") + "</button></div>";
     h += "<h2>Abschluss</h2>";
@@ -146,13 +171,14 @@
     h += '<article class="lesson">';
     l.body.forEach(function (t, i) {
       h += t.indexOf("## ") === 0 ? "<h3>" + esc(t.slice(3)) + "</h3>" : "<p>" + esc(t) + "</p>";
-      (l.figs || []).forEach(function (f) { if (f.after === i) h += '<figure class="fig"><img src="' + esc(f.src) + '" alt="' + esc(f.cap) + '" loading="lazy"><figcaption>' + esc(f.cap) + "</figcaption></figure>"; });
+      (l.figs || []).forEach(function (f) { if (f.after === i) h += f.w && WF.kw ? WF.kw.html(f) : '<figure class="fig"><img src="' + esc(f.src) + '" alt="' + esc(f.cap) + '" loading="lazy"><figcaption>' + esc(f.cap) + "</figcaption></figure>"; });
     });
     h += "</article>";
     if (l.key && l.key.length) h += '<div class="card keybox"><b>Das Wichtigste</b><ul>' + l.key.map(function (k) { return "<li>" + esc(k) + "</li>"; }).join("") + "</ul></div>";
     h += '<details class="card"><summary><b>Quellen</b> <span class="small mute">(' + l.src.length + ")</span></summary>" + sources(l.src) + "</details>";
     h += '<div class="grid2" style="margin-top:12px">' + btn("ccards", "Karteikarten", { sub: l.cards.length + " Karten", data: { c: cid, l: lid } }) + btn("cprac", "Übung starten", { primary: true, sub: l.qs.length + " Fragen", data: { c: cid, l: lid } }) + "</div>";
     ui.show(h, "courses", "course");
+    if (WF.kw) WF.kw.mount();
   }
   /* Glossar: alle Karteikarten des Kurses A–Z, mit Suche */
   function gloss(cid, q) {
@@ -180,6 +206,7 @@
   H.copen = function (d) { var p = P(d.c); p.open = !p.open; WF.store.save(); course(d.c); };
   H.crs = function () { withCourses(list); };
   H.crs1 = function (d) { withCourses(function () { course(d.c); }); };
+  H.clock = function () { ui.toast({ title: "Noch gesperrt", sub: "Erst die vorige Station abschließen. Oder unten „Alle Module freischalten“." }); };
   H.cmod = function (d) { withCourses(function () { mod(d.c, d.m); }); };
   /* Kopfband-Symbol bei Kurse: letzte Lektion fortsetzen, sonst den ersten Kurs öffnen */
   H.cgoany = function () {

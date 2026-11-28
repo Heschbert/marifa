@@ -1,0 +1,2984 @@
+{
+ "id": "wkeit",
+ "title": "Wahrscheinlichkeit & Statistik",
+ "sub": "Vom Bauchgefühl zum sicheren Rechnen: Zufall, Kombinatorik, Bayes, Verteilungen, Tests und Risiken verstehen",
+ "audience": "Alle, die Wahrscheinlichkeiten verstehen und sicher berechnen wollen, ohne Vorkenntnisse",
+ "stand": "11/2026",
+ "version": 1,
+ "review": "Inhalt nach Lehrbuchstandard erstellt (Quellen je Lektion); noch nicht durch eine Fachperson geprüft.",
+ "levels": [
+  {
+   "id": 1,
+   "title": "Grundlagen"
+  },
+  {
+   "id": 2,
+   "title": "Fortgeschritten"
+  },
+  {
+   "id": 3,
+   "title": "Experte"
+  }
+ ],
+ "modules": [
+  {
+   "id": "wkeit.m1",
+   "level": 1,
+   "title": "Zufall und Wahrscheinlichkeit",
+   "desc": "Was eine Wahrscheinlichkeit ist, wie man sie berechnet und schätzt.",
+   "lessons": [
+    {
+     "id": "wkeit.m1.l1",
+     "title": "Was ist eine Wahrscheinlichkeit?",
+     "min": 5,
+     "body": [
+      "Eine Wahrscheinlichkeit ist eine Zahl zwischen 0 und 1, die angibt, wie sicher ein Ereignis eintritt. 0 heißt: kommt nie vor. 1 heißt: kommt sicher vor. Dazwischen liegt alles Ungewisse. Statt 0,25 sagt man oft 25 %.",
+      "## Die Laplace-Regel",
+      "Sind alle Ergebnisse gleich wahrscheinlich, gilt: Wahrscheinlichkeit = Anzahl der günstigen Ergebnisse geteilt durch Anzahl aller möglichen Ergebnisse. Beim Würfel ist die Chance auf eine 6 also 1 von 6, das sind etwa 16,7 %. Die Chance auf eine gerade Zahl ist 3 von 6 = 1/2.",
+      "## Ergebnis, Ereignis, Ergebnismenge",
+      "Ein Ergebnis ist ein einzelner Ausgang, etwa „Würfel zeigt 4“. Die Ergebnismenge Ω (Omega) enthält alle möglichen Ergebnisse, beim Würfel {1, 2, 3, 4, 5, 6}. Ein Ereignis ist eine Teilmenge davon, zum Beispiel „gerade Zahl“ = {2, 4, 6}.",
+      "## Wann die Regel nicht passt",
+      "Die Laplace-Regel gilt nur, wenn alle Ergebnisse wirklich gleich wahrscheinlich sind. „Morgen regnet es oder nicht“ sind zwei Ergebnisse, aber nicht jeweils 50 %. Dann braucht man Erfahrungswerte oder ein Modell."
+     ],
+     "key": [
+      "Wahrscheinlichkeit: Zahl von 0 (nie) bis 1 (sicher).",
+      "Laplace: günstige ÷ mögliche Ergebnisse, nur bei gleich wahrscheinlichen Ergebnissen.",
+      "Ereignis = Teilmenge der Ergebnismenge Ω."
+     ],
+     "src": [
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      },
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Wahrscheinlichkeit",
+       "b": "Zahl zwischen 0 und 1 (oder 0 bis 100 %), die angibt, wie sicher ein Ereignis eintritt.",
+       "id": "wkeit.m1.l1.k1"
+      },
+      {
+       "f": "Laplace-Regel",
+       "b": "P(E) = günstige Ergebnisse ÷ mögliche Ergebnisse, wenn alle Ergebnisse gleich wahrscheinlich sind.",
+       "id": "wkeit.m1.l1.k2"
+      },
+      {
+       "f": "Ergebnismenge Ω",
+       "b": "Menge aller möglichen Ergebnisse eines Zufallsexperiments.",
+       "id": "wkeit.m1.l1.k3"
+      },
+      {
+       "f": "Ereignis",
+       "b": "Teilmenge der Ergebnismenge, z. B. „gerade Zahl“ beim Würfeln.",
+       "id": "wkeit.m1.l1.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wie groß ist die Wahrscheinlichkeit, mit einem fairen Würfel eine Zahl größer als 4 zu würfeln?",
+       "o": [
+        "1/3",
+        "1/2",
+        "1/6",
+        "2/3"
+       ],
+       "a": 0,
+       "e": "Günstig sind 5 und 6, also 2 von 6 Ergebnissen = 1/3.",
+       "id": "wkeit.m1.l1.q1"
+      },
+      {
+       "t": "num",
+       "q": "In einer Tüte sind 3 rote und 7 blaue Kugeln. Wie groß ist die Wahrscheinlichkeit, blind eine rote zu ziehen (in Prozent)?",
+       "a": 30,
+       "unit": "%",
+       "tol": 0.5,
+       "e": "3 günstige von 10 möglichen Kugeln = 3/10 = 30 %.",
+       "id": "wkeit.m1.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Aussage ist falsch?",
+       "o": [
+        "Eine Wahrscheinlichkeit kann 1,2 sein",
+        "0,5 entspricht genau 50 Prozent",
+        "1 bedeutet: Das Ereignis tritt sicher ein",
+        "0 bedeutet: Das Ereignis tritt nie ein"
+       ],
+       "a": 0,
+       "e": "Wahrscheinlichkeiten liegen immer zwischen 0 und 1.",
+       "id": "wkeit.m1.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum darf man für „Morgen regnet es“ nicht einfach 1/2 annehmen?",
+       "o": [
+        "Die Ausgänge sind nicht gleich wahrscheinlich",
+        "Weil es deutlich mehr als zwei mögliche Ausgänge gibt",
+        "Weil Wetter gar nicht zufällig ist",
+        "Weil 1/2 keine gültige Wahrscheinlichkeit ist"
+       ],
+       "a": 0,
+       "e": "Laplace setzt gleich wahrscheinliche Ergebnisse voraus. Beim Wetter hängt es von der Lage ab.",
+       "id": "wkeit.m1.l1.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m1.l2",
+     "title": "Häufigkeit und das Gesetz der großen Zahlen",
+     "min": 5,
+     "body": [
+      "Oft kennt man die Wahrscheinlichkeit nicht vorher. Dann probiert man es aus: Die relative Häufigkeit ist die Anzahl der Treffer geteilt durch die Anzahl der Versuche. Wirft man eine Reißzwecke 200-mal und landet sie 120-mal auf dem Rücken, ist die relative Häufigkeit 120/200 = 0,6.",
+      "## Das Gesetz der großen Zahlen",
+      "Bei wenigen Versuchen schwankt die relative Häufigkeit stark. Je mehr Versuche, desto näher liegt sie in der Regel an der tatsächlichen Wahrscheinlichkeit. Probiere es unten aus: Nach 10 Münzwürfen sind 70 % Kopf völlig normal, nach 10.000 Würfen liegt der Anteil sehr nah an 50 %.",
+      "## Was das Gesetz nicht sagt",
+      "Es sagt nicht, dass sich „Pech ausgleichen muss“. Die Münze hat kein Gedächtnis. Nach fünfmal Kopf ist Zahl nicht wahrscheinlicher. Der Anteil nähert sich 50 %, weil die neuen Würfe die alten Ausreißer verdünnen, nicht weil sie sie ausgleichen."
+     ],
+     "key": [
+      "Relative Häufigkeit = Treffer ÷ Versuche.",
+      "Bei vielen Versuchen nähert sie sich der Wahrscheinlichkeit.",
+      "Zufall hat kein Gedächtnis: Ausreißer werden verdünnt, nicht ausgeglichen."
+     ],
+     "src": [
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      },
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Relative Häufigkeit",
+       "b": "Anteil der Treffer an allen Versuchen: Treffer ÷ Versuche.",
+       "id": "wkeit.m1.l2.k1"
+      },
+      {
+       "f": "Gesetz der großen Zahlen",
+       "b": "Bei vielen unabhängigen Wiederholungen nähert sich die relative Häufigkeit der Wahrscheinlichkeit an.",
+       "id": "wkeit.m1.l2.k2"
+      },
+      {
+       "f": "Spielerfehlschluss",
+       "b": "Irrtum, dass nach einer Serie das Gegenteil „fällig“ sei. Unabhängige Ereignisse haben kein Gedächtnis.",
+       "id": "wkeit.m1.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Ein Basketballer trifft 45 von 60 Freiwürfen. Wie hoch ist die relative Trefferhäufigkeit (in Prozent)?",
+       "a": 75,
+       "unit": "%",
+       "tol": 0.5,
+       "e": "45 ÷ 60 = 0,75 = 75 %.",
+       "id": "wkeit.m1.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Eine Münze zeigte sechsmal Kopf. Wie wahrscheinlich ist Kopf beim siebten Wurf?",
+       "o": [
+        "50 %",
+        "Unter 50 %",
+        "Über 50 %",
+        "Genau 1/7"
+       ],
+       "a": 0,
+       "e": "Die Würfe sind unabhängig. Jeder Wurf hat wieder 50 %.",
+       "id": "wkeit.m1.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt das Gesetz der großen Zahlen?",
+       "o": [
+        "Der Anteil nähert sich der Wahrscheinlichkeit",
+        "Nach Pech kommt zwingend Glück",
+        "Seltene Ereignisse passieren nie",
+        "Ab 100 Würfen ist alles exakt"
+       ],
+       "a": 0,
+       "e": "Bei vielen Wiederholungen liegt die relative Häufigkeit nah an der Wahrscheinlichkeit, aber nie garantiert exakt.",
+       "id": "wkeit.m1.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum sind 7 von 10 Kopf bei einer fairen Münze kein Grund zur Sorge?",
+       "o": [
+        "Kleine Stichproben schwanken stark",
+        "Weil die Münze sich erst einspielen muss",
+        "Weil Kopf schwerer ist",
+        "Weil 70 % fast 50 % sind"
+       ],
+       "a": 0,
+       "e": "Kleine Stichproben schwanken stark. Erst bei vielen Würfen wird der Anteil stabil.",
+       "id": "wkeit.m1.l2.q4"
+      }
+     ],
+     "figs": [
+      {
+       "after": 3,
+       "w": "coin",
+       "cap": "Simuliere Münzwürfe und beobachte, wie sich der Anteil von Kopf einpendelt."
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m1.l3",
+     "title": "Gegenereignis und „mindestens einmal“",
+     "min": 5,
+     "body": [
+      "Das Gegenereignis von E heißt „nicht E“. Zusammen sind sie sicher, also gilt P(nicht E) = 1 − P(E). Die Chance, keine 6 zu würfeln, ist 1 − 1/6 = 5/6.",
+      "## Der Trick für „mindestens einmal“",
+      "Fragen nach „mindestens einmal“ rechnet man fast immer über das Gegenteil, nämlich „kein einziges Mal“. Beispiel: Wie wahrscheinlich ist mindestens eine 6 bei vier Würfen? Keine 6 in einem Wurf: 5/6. Keine 6 in vier Würfen: (5/6)⁴ ≈ 0,482. Also mindestens eine 6: 1 − 0,482 ≈ 0,518, gut 51,8 %.",
+      "## Warum das wichtig ist",
+      "Kleine Risiken summieren sich. Hat ein Bauteil pro Jahr eine Ausfallchance von 2 %, fällt es in 10 Jahren mit 1 − 0,98¹⁰ ≈ 18 % mindestens einmal aus, vorausgesetzt, die Jahre sind unabhängig. Das unterschätzt man im Bauch fast immer.",
+      "## Typischer Fehler",
+      "Man darf die Einzelchancen nicht einfach addieren: Viermal 1/6 wären 4/6 ≈ 67 %, das ist falsch. Bei sechs Würfen käme man sogar auf 100 %, und trotzdem kann man sechsmal keine 6 würfeln."
+     ],
+     "key": [
+      "P(nicht E) = 1 − P(E).",
+      "„Mindestens einmal“ = 1 − „keinmal“.",
+      "Einzelchancen nicht addieren, sondern das Gegenteil multiplizieren."
+     ],
+     "src": [
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      },
+      {
+       "n": "Khan Academy: Statistics and Probability",
+       "u": "https://www.khanacademy.org/math/statistics-probability"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Gegenereignis",
+       "b": "„Nicht E“. Es gilt P(nicht E) = 1 − P(E).",
+       "id": "wkeit.m1.l3.k1"
+      },
+      {
+       "f": "Mindestens einmal",
+       "b": "Über das Gegenteil rechnen: 1 − P(keinmal). Bei unabhängigen Versuchen: 1 − (1 − p)ⁿ.",
+       "id": "wkeit.m1.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie groß ist die Wahrscheinlichkeit, bei zwei Würfen mindestens eine 6 zu würfeln (in Prozent, gerundet)?",
+       "a": 30.6,
+       "unit": "%",
+       "tol": 0.6,
+       "e": "1 − (5/6)² = 1 − 25/36 = 11/36 ≈ 30,6 %.",
+       "id": "wkeit.m1.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Ein Medikament hat bei 1 % der Einnahmen eine Nebenwirkung. Wie groß ist das Risiko bei 50 unabhängigen Einnahmen, sie mindestens einmal zu erleben?",
+       "o": [
+        "Etwa 39 %",
+        "Genau 50 %",
+        "Etwa 1 %",
+        "Etwa 99 %"
+       ],
+       "a": 0,
+       "e": "1 − 0,99⁵⁰ ≈ 1 − 0,605 = 0,395, also etwa 39 %.",
+       "id": "wkeit.m1.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ist „4 × 1/6 = 67 %“ für „mindestens eine 6 in vier Würfen“ falsch?",
+       "o": [
+        "Mehrfach-Sechsen zählen doppelt",
+        "Würfel haben kein Gedächtnis",
+        "Weil 1/6 falsch ist",
+        "Weil man durch 4 teilen muss"
+       ],
+       "a": 0,
+       "e": "Addieren zählt Würfe mit zwei oder mehr Sechsen mehrfach. Richtig ist 1 − (5/6)⁴ ≈ 52 %.",
+       "id": "wkeit.m1.l3.q3"
+      },
+      {
+       "t": "num",
+       "q": "Die Chance, eine Prüfung nicht zu bestehen, ist 0,15. Wie groß ist die Chance, sie zu bestehen (in Prozent)?",
+       "a": 85,
+       "unit": "%",
+       "tol": 0.5,
+       "e": "1 − 0,15 = 0,85.",
+       "id": "wkeit.m1.l3.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m1.l4",
+     "title": "Prozent, Bruch, Chancen (Odds)",
+     "min": 4,
+     "body": [
+      "Dieselbe Wahrscheinlichkeit lässt sich verschieden schreiben: 1/4 = 0,25 = 25 %. Wer sicher umrechnet, versteht Nachrichten, Studien und Wettquoten besser.",
+      "## Chancen (Odds)",
+      "Im Englischen und bei Wetten sind „Odds“ verbreitet: das Verhältnis von günstig zu ungünstig. Bei p = 0,2 stehen die Chancen 1 : 4 (eins zu vier), denn auf einen Treffer kommen vier Nicht-Treffer. Umgekehrt: Chancen von a : b entsprechen der Wahrscheinlichkeit a ÷ (a + b).",
+      "## Natürliche Häufigkeiten",
+      "Menschen verstehen „3 von 1.000“ meist besser als „0,3 %“. Darum rechnen gute Risikoangaben in ganzen Personen. Das hilft später bei bedingten Wahrscheinlichkeiten enorm."
+     ],
+     "key": [
+      "1/4 = 0,25 = 25 %.",
+      "Odds a : b ↔ Wahrscheinlichkeit a ÷ (a + b).",
+      "„x von 1.000“ ist oft verständlicher als Prozent."
+     ],
+     "src": [
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      },
+      {
+       "n": "Harding-Zentrum für Risikokompetenz (Universität Potsdam)",
+       "u": "https://www.hardingcenter.de/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Odds (Chancen)",
+       "b": "Verhältnis günstig : ungünstig. Bei p = 0,2 → 1 : 4.",
+       "id": "wkeit.m1.l4.k1"
+      },
+      {
+       "f": "Natürliche Häufigkeit",
+       "b": "Angabe in ganzen Fällen, z. B. „3 von 1.000“, statt in Prozent.",
+       "id": "wkeit.m1.l4.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Die Chancen stehen 1 : 3. Wie groß ist die Wahrscheinlichkeit (in Prozent)?",
+       "a": 25,
+       "unit": "%",
+       "tol": 0.5,
+       "e": "1 ÷ (1 + 3) = 0,25.",
+       "id": "wkeit.m1.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie schreibt man 0,4 % als natürliche Häufigkeit?",
+       "o": [
+        "4 von 1.000",
+        "4 von 100",
+        "40 von 1.000",
+        "1 von 4"
+       ],
+       "a": 0,
+       "e": "0,4 % = 0,004 = 4 von 1.000.",
+       "id": "wkeit.m1.l4.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie stehen die Chancen bei einer Wahrscheinlichkeit von 75 %?",
+       "o": [
+        "3 : 1",
+        "1 : 3",
+        "3 : 4",
+        "4 : 3"
+       ],
+       "a": 0,
+       "e": "75 günstig zu 25 ungünstig = 3 : 1.",
+       "id": "wkeit.m1.l4.q3"
+      },
+      {
+       "t": "num",
+       "q": "Wie viel Prozent sind 3 von 40?",
+       "a": 7.5,
+       "unit": "%",
+       "tol": 0.1,
+       "e": "3 ÷ 40 = 0,075.",
+       "id": "wkeit.m1.l4.q4"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wkeit.m2",
+   "level": 1,
+   "title": "Zählen ohne Abzählen",
+   "desc": "Kombinatorik: wie viele Möglichkeiten es gibt, ohne alle aufzuschreiben.",
+   "lessons": [
+    {
+     "id": "wkeit.m2.l1",
+     "title": "Die Produktregel",
+     "min": 4,
+     "body": [
+      "Viele Wahrscheinlichkeiten scheitern am Zählen. Die wichtigste Regel ist einfach: Wählt man nacheinander aus mehreren Stufen, multipliziert man die Anzahl der Möglichkeiten.",
+      "## Beispiele",
+      "3 Hosen und 4 Shirts ergeben 3 · 4 = 12 Outfits. Eine vierstellige PIN aus den Ziffern 0 bis 9 hat 10 · 10 · 10 · 10 = 10.000 Möglichkeiten. Ein Passwort aus 8 Kleinbuchstaben (26 Buchstaben) hat 26⁸ ≈ 209 Milliarden Möglichkeiten.",
+      "## Warum lange Passwörter sicherer sind",
+      "Jede zusätzliche Stelle multipliziert die Anzahl. Eine Stelle mehr aus 26 Zeichen macht das Durchprobieren 26-mal aufwändiger. Deshalb ist Länge wichtiger als ein einzelnes Sonderzeichen."
+     ],
+     "key": [
+      "Mehrere Stufen: Möglichkeiten multiplizieren.",
+      "PIN mit 4 Ziffern: 10⁴ = 10.000.",
+      "Jede Stelle mehr vervielfacht die Möglichkeiten."
+     ],
+     "src": [
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      },
+      {
+       "n": "Khan Academy: Statistics and Probability",
+       "u": "https://www.khanacademy.org/math/statistics-probability"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Produktregel",
+       "b": "Bei mehreren unabhängigen Auswahlstufen werden die Anzahlen multipliziert.",
+       "id": "wkeit.m2.l1.k1"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Ein Menü hat 3 Vorspeisen, 5 Hauptgerichte und 2 Desserts. Wie viele Menüs gibt es?",
+       "a": 30,
+       "unit": "",
+       "tol": 0,
+       "e": "3 · 5 · 2 = 30.",
+       "id": "wkeit.m2.l1.q1"
+      },
+      {
+       "t": "num",
+       "q": "Wie viele dreistellige Zahlencodes (000 bis 999) gibt es?",
+       "a": 1000,
+       "unit": "",
+       "tol": 0,
+       "e": "10 · 10 · 10 = 1.000.",
+       "id": "wkeit.m2.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viel mehr Kombinationen hat eine 6-stellige PIN gegenüber einer 4-stelligen?",
+       "o": [
+        "100-mal so viele",
+        "Doppelt so viele Möglichkeiten",
+        "50 % mehr",
+        "20-mal so viele"
+       ],
+       "a": 0,
+       "e": "10⁶ ÷ 10⁴ = 10² = 100.",
+       "id": "wkeit.m2.l1.q3"
+      },
+      {
+       "t": "num",
+       "q": "Ein Fahrradschloss hat 3 Ringe mit je 10 Ziffern. Wie viele Kombinationen gibt es?",
+       "a": 1000,
+       "unit": "",
+       "tol": 0,
+       "e": "10 · 10 · 10 = 1.000.",
+       "id": "wkeit.m2.l1.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m2.l2",
+     "title": "Reihenfolgen: Permutationen",
+     "min": 5,
+     "body": [
+      "Wie viele Reihenfolgen gibt es für n verschiedene Dinge? Für den ersten Platz gibt es n Kandidaten, für den zweiten noch n − 1 und so weiter. Das ergibt n · (n − 1) · … · 1 = n! (gesprochen „n Fakultät“).",
+      "## Fakultät wächst rasant",
+      "3! = 6, 5! = 120, 10! = 3.628.800. Schon 13 Personen können sich auf über 6 Milliarden Arten in eine Reihe stellen.",
+      "## Nur einige Plätze besetzen",
+      "Werden nur k von n Plätzen vergeben und die Reihenfolge zählt, rechnet man n · (n − 1) · … (k Faktoren). Beispiel: Gold, Silber und Bronze unter 10 Läufern: 10 · 9 · 8 = 720 Möglichkeiten."
+     ],
+     "key": [
+      "n verschiedene Dinge: n! Reihenfolgen.",
+      "k von n Plätzen mit Reihenfolge: n · (n − 1) · … (k Faktoren).",
+      "Fakultäten wachsen extrem schnell."
+     ],
+     "src": [
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      },
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Fakultät n!",
+       "b": "n · (n − 1) · … · 1. Anzahl der Reihenfolgen von n verschiedenen Dingen. 0! = 1.",
+       "id": "wkeit.m2.l2.k1"
+      },
+      {
+       "f": "Permutation",
+       "b": "Eine Anordnung (Reihenfolge) von Dingen.",
+       "id": "wkeit.m2.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Auf wie viele Arten können sich 5 Personen in eine Reihe stellen?",
+       "a": 120,
+       "unit": "",
+       "tol": 0,
+       "e": "5! = 120.",
+       "id": "wkeit.m2.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "Ein Verein wählt aus 8 Mitgliedern Vorsitz, Stellvertretung und Kasse (verschiedene Ämter). Wie viele Möglichkeiten?",
+       "a": 336,
+       "unit": "",
+       "tol": 0,
+       "e": "8 · 7 · 6 = 336.",
+       "id": "wkeit.m2.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist 0! ?",
+       "o": [
+        "1",
+        "0",
+        "Nicht definiert",
+        "Unendlich"
+       ],
+       "a": 0,
+       "e": "Per Definition ist 0! = 1; es gibt genau eine Art, nichts anzuordnen.",
+       "id": "wkeit.m2.l2.q3"
+      },
+      {
+       "t": "num",
+       "q": "Wie viele verschiedene „Wörter“ lassen sich aus den Buchstaben A, B, C, D bilden, wenn jeder genau einmal vorkommt?",
+       "a": 24,
+       "unit": "",
+       "tol": 0,
+       "e": "4! = 24.",
+       "id": "wkeit.m2.l2.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m2.l3",
+     "title": "Auswahl ohne Reihenfolge: n über k",
+     "min": 6,
+     "body": [
+      "Beim Lotto zählt nur, welche Zahlen man hat, nicht in welcher Reihenfolge sie gezogen wurden. Dann teilt man die Anzahl mit Reihenfolge durch die k! Reihenfolgen jeder Auswahl. Das ergibt den Binomialkoeffizienten „n über k“ = n! ÷ (k! · (n − k)!).",
+      "## Beispiel Lotto 6 aus 49",
+      "49 · 48 · 47 · 46 · 45 · 44 Möglichkeiten mit Reihenfolge, geteilt durch 6! = 720, ergibt 13.983.816 Tipps. Die Chance auf 6 Richtige ist also etwa 1 zu 14 Millionen; mit Superzahl (eine von 10) etwa 1 zu 140 Millionen.",
+      "## Kleines Beispiel zum Nachrechnen",
+      "Aus 5 Freunden 2 für eine Fahrgemeinschaft auswählen: 5 · 4 ÷ 2 = 10 Möglichkeiten. Prüfe es durch Aufschreiben: AB, AC, AD, AE, BC, BD, BE, CD, CE, DE."
+     ],
+     "key": [
+      "Ohne Reihenfolge: n über k = n! ÷ (k! · (n − k)!).",
+      "Lotto 6 aus 49: 13.983.816 Möglichkeiten.",
+      "Mit Reihenfolge zählt man k! mal zu viel."
+     ],
+     "src": [
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      },
+      {
+       "n": "LOTTO 6aus49 (Deutscher Lotto- und Totoblock)",
+       "u": "https://www.lotto.de/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Binomialkoeffizient (n über k)",
+       "b": "Anzahl der Möglichkeiten, k von n Dingen ohne Reihenfolge auszuwählen: n! ÷ (k! · (n − k)!).",
+       "id": "wkeit.m2.l3.k1"
+      },
+      {
+       "f": "Lotto 6 aus 49",
+       "b": "13.983.816 mögliche Tipps; mit Superzahl etwa 1 zu 140 Millionen für den Jackpot.",
+       "id": "wkeit.m2.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie viele Möglichkeiten gibt es, aus 6 Personen ein Team aus 3 zu bilden?",
+       "a": 20,
+       "unit": "",
+       "tol": 0,
+       "e": "6 · 5 · 4 ÷ 3! = 120 ÷ 6 = 20.",
+       "id": "wkeit.m2.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wann braucht man „n über k“ statt der Produktregel mit Reihenfolge?",
+       "o": [
+        "Reihenfolge egal",
+        "Wenn Zurücklegen ausdrücklich erlaubt ist",
+        "Wenn n kleiner als k ist",
+        "Wenn alle Dinge gleich sind"
+       ],
+       "a": 0,
+       "e": "Bei der Auswahl ohne Reihenfolge teilt man durch die k! Reihenfolgen.",
+       "id": "wkeit.m2.l3.q2"
+      },
+      {
+       "t": "num",
+       "q": "Ein Pokerblatt hat 5 Karten aus 52. Wie viele Blätter gibt es (Zahl ohne Punkte)?",
+       "a": 2598960,
+       "unit": "",
+       "tol": 0,
+       "e": "52 über 5 = 2.598.960.",
+       "id": "wkeit.m2.l3.q3"
+      },
+      {
+       "t": "num",
+       "q": "Wie viele Möglichkeiten gibt es, 2 von 10 Bewerbern einzuladen?",
+       "a": 45,
+       "unit": "",
+       "tol": 0,
+       "e": "10 · 9 ÷ 2 = 45.",
+       "id": "wkeit.m2.l3.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m2.l4",
+     "title": "Das Geburtstagsparadoxon",
+     "min": 5,
+     "body": [
+      "Wie viele Menschen braucht man, damit mit über 50 % zwei am selben Tag Geburtstag haben? Die meisten schätzen 183. Die Antwort ist 23.",
+      "## Warum so wenige?",
+      "Es geht nicht um deinen Geburtstag, sondern um irgendein Paar. Bei 23 Personen gibt es 23 · 22 ÷ 2 = 253 Paare. Man rechnet wieder über das Gegenteil: Alle haben verschiedene Geburtstage mit (365/365) · (364/365) · … · (343/365) ≈ 0,493. Also ein gemeinsamer Geburtstag mit etwa 50,7 % (Schaltjahre vernachlässigt).",
+      "## Bedeutung im Alltag",
+      "Das Prinzip erklärt, warum „unglaubliche Zufälle“ häufig sind: Es gibt so viele Möglichkeiten für irgendein Zusammentreffen, dass irgendeines fast immer passiert. In der IT nutzt man es zur Abschätzung, wann Kollisionen bei Prüfsummen auftreten."
+     ],
+     "key": [
+      "Bei 23 Personen über 50 %, bei 50 Personen etwa 97 %.",
+      "Es zählen alle Paare, nicht nur die eigenen Paare.",
+      "Über das Gegenteil rechnen: alle verschieden."
+     ],
+     "src": [
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      },
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Geburtstagsparadoxon",
+       "b": "Schon ab 23 Personen haben mit über 50 % zwei denselben Geburtstag, weil es sehr viele Paare gibt.",
+       "id": "wkeit.m2.l4.k1"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie viele Paare lassen sich aus 10 Personen bilden?",
+       "a": 45,
+       "unit": "",
+       "tol": 0,
+       "e": "10 · 9 ÷ 2 = 45.",
+       "id": "wkeit.m2.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum unterschätzen wir die Chance gemeinsamer Geburtstage?",
+       "o": [
+        "Wir denken an uns statt an alle Paare",
+        "Sommer-Geburtstage sind häufiger",
+        "Weil das Jahr 366 Tage hat",
+        "Weil Zwillinge mitzählen"
+       ],
+       "a": 0,
+       "e": "Die Zahl der Paare wächst viel schneller als die Zahl der Personen.",
+       "id": "wkeit.m2.l4.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Mit welcher Wahrscheinlichkeit teilen sich in einer Gruppe von 50 Personen mindestens zwei den Geburtstag?",
+       "o": [
+        "Etwa 97 %",
+        "Etwa 14 %",
+        "Etwa 50 %",
+        "Genau 100 %"
+       ],
+       "a": 0,
+       "e": "Rechnung über das Gegenteil ergibt etwa 97 %.",
+       "id": "wkeit.m2.l4.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Ab wie vielen Personen ist ein gemeinsamer Geburtstag wahrscheinlicher als nicht?",
+       "o": [
+        "23",
+        "183",
+        "365",
+        "57"
+       ],
+       "a": 0,
+       "e": "Bei 23 Personen liegt die Wahrscheinlichkeit bei etwa 50,7 %.",
+       "id": "wkeit.m2.l4.q4"
+      }
+     ],
+     "figs": [
+      {
+       "after": 2,
+       "w": "birthday",
+       "cap": "Verändere die Gruppengröße und sieh, wie schnell die Wahrscheinlichkeit steigt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wkeit.m3",
+   "level": 2,
+   "title": "Mehrstufige Experimente",
+   "desc": "Baumdiagramme, Pfadregeln, Ziehen mit und ohne Zurücklegen, Unabhängigkeit.",
+   "lessons": [
+    {
+     "id": "wkeit.m3.l1",
+     "title": "Baumdiagramm und Pfadregeln",
+     "min": 6,
+     "body": [
+      "Läuft ein Zufallsexperiment in mehreren Schritten ab, zeichnet man ein Baumdiagramm: Jede Verzweigung ist ein Schritt, an jeden Ast schreibt man die Wahrscheinlichkeit.",
+      "## Erste Pfadregel: entlang des Pfads multiplizieren",
+      "Die Wahrscheinlichkeit eines ganzen Pfads ist das Produkt der Wahrscheinlichkeiten auf seinen Ästen. Zweimal Kopf beim Münzwurf: 1/2 · 1/2 = 1/4.",
+      "## Zweite Pfadregel: Pfade addieren",
+      "Gehören mehrere Pfade zum selben Ereignis, addiert man ihre Wahrscheinlichkeiten. Genau einmal Kopf bei zwei Würfen: Kopf-Zahl (1/4) plus Zahl-Kopf (1/4) = 1/2.",
+      "## Kontrolle",
+      "An jeder Verzweigung ergeben die Äste zusammen 1, und alle Pfade zusammen ergeben ebenfalls 1. Wer das prüft, findet die meisten Rechenfehler."
+     ],
+     "key": [
+      "Pfad: Wahrscheinlichkeiten multiplizieren (UND).",
+      "Mehrere Pfade zum selben Ereignis: addieren (ODER).",
+      "Äste je Verzweigung und alle Pfade ergeben jeweils 1."
+     ],
+     "src": [
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      },
+      {
+       "n": "Khan Academy: Statistics and Probability",
+       "u": "https://www.khanacademy.org/math/statistics-probability"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Erste Pfadregel",
+       "b": "Wahrscheinlichkeit eines Pfads = Produkt der Astwahrscheinlichkeiten.",
+       "id": "wkeit.m3.l1.k1"
+      },
+      {
+       "f": "Zweite Pfadregel",
+       "b": "Wahrscheinlichkeit eines Ereignisses = Summe der Wahrscheinlichkeiten seiner Pfade.",
+       "id": "wkeit.m3.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie groß ist die Wahrscheinlichkeit für dreimal Kopf bei drei Münzwürfen (in Prozent)?",
+       "a": 12.5,
+       "unit": "%",
+       "tol": 0.1,
+       "e": "1/2 · 1/2 · 1/2 = 1/8 = 12,5 %.",
+       "id": "wkeit.m3.l1.q1"
+      },
+      {
+       "t": "num",
+       "q": "Ein Bus ist mit 80 % pünktlich, der Anschlusszug mit 90 % (unabhängig). Wie groß ist die Chance, dass beide pünktlich sind (in Prozent)?",
+       "a": 72,
+       "unit": "%",
+       "tol": 0.5,
+       "e": "0,8 · 0,9 = 0,72.",
+       "id": "wkeit.m3.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Wie groß ist die Wahrscheinlichkeit, bei zwei Würfen genau einmal Kopf zu werfen?",
+       "o": [
+        "1/2",
+        "1/4",
+        "3/4",
+        "1/3"
+       ],
+       "a": 0,
+       "e": "Zwei Pfade (KZ und ZK) mit je 1/4, zusammen 1/2.",
+       "id": "wkeit.m3.l1.q3"
+      },
+      {
+       "t": "order",
+       "q": "Bringe die Schritte zum Lösen einer Baumaufgabe in die richtige Reihenfolge.",
+       "o": [
+        "Stufen und Ausgänge festlegen",
+        "Wahrscheinlichkeiten an die Äste schreiben",
+        "Passende Pfade markieren",
+        "Entlang der Pfade multiplizieren",
+        "Pfadwahrscheinlichkeiten addieren"
+       ],
+       "e": "So geht man jede mehrstufige Aufgabe systematisch an.",
+       "id": "wkeit.m3.l1.q4"
+      }
+     ],
+     "figs": [
+      {
+       "after": 4,
+       "w": "tree2",
+       "cap": "Baumdiagramm zum Ausprobieren: Ändere die Wahrscheinlichkeit p für „Treffer“."
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m3.l2",
+     "title": "Ziehen mit und ohne Zurücklegen",
+     "min": 6,
+     "body": [
+      "In einer Urne liegen 3 rote und 2 blaue Kugeln. Man zieht zweimal. Ob man die erste Kugel zurücklegt, ändert die Rechnung.",
+      "## Mit Zurücklegen",
+      "Die Urne ist beim zweiten Zug wie vorher. Zwei rote: 3/5 · 3/5 = 9/25 = 36 %.",
+      "## Ohne Zurücklegen",
+      "Nach einer roten Kugel liegen nur noch 2 rote unter 4 Kugeln. Zwei rote: 3/5 · 2/4 = 6/20 = 30 %. Die Wahrscheinlichkeiten im zweiten Schritt hängen vom ersten ab.",
+      "## Wo das vorkommt",
+      "Ohne Zurücklegen: Lotto, Kartenspiele, Stichproben aus einer Lieferung. Mit Zurücklegen: Würfeln, Münzwurf, oder wenn die Grundgesamtheit so groß ist, dass ein Zug sie kaum verändert, etwa bei Umfragen unter Millionen Menschen."
+     ],
+     "key": [
+      "Mit Zurücklegen: Wahrscheinlichkeiten bleiben gleich.",
+      "Ohne Zurücklegen: Nenner und Zähler ändern sich nach jedem Zug.",
+      "Große Grundgesamtheit: ohne Zurücklegen ≈ mit Zurücklegen."
+     ],
+     "src": [
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      },
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Ziehen ohne Zurücklegen",
+       "b": "Nach jedem Zug ändert sich die Zusammensetzung; die Wahrscheinlichkeiten im nächsten Schritt hängen vom vorigen ab.",
+       "id": "wkeit.m3.l2.k1"
+      },
+      {
+       "f": "Ziehen mit Zurücklegen",
+       "b": "Die Ausgangslage ist bei jedem Zug gleich; die Züge sind unabhängig.",
+       "id": "wkeit.m3.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Urne mit 4 grünen und 6 gelben Kugeln, zwei Züge ohne Zurücklegen. Wahrscheinlichkeit für zwei grüne (in Prozent, gerundet)?",
+       "a": 13.3,
+       "unit": "%",
+       "tol": 0.4,
+       "e": "4/10 · 3/9 = 12/90 ≈ 13,3 %.",
+       "id": "wkeit.m3.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "Dieselbe Urne, aber mit Zurücklegen. Wahrscheinlichkeit für zwei grüne (in Prozent)?",
+       "a": 16,
+       "unit": "%",
+       "tol": 0.3,
+       "e": "4/10 · 4/10 = 0,16.",
+       "id": "wkeit.m3.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Aus einem Skatblatt (32 Karten, 4 Asse) werden zwei Karten gezogen. Wie rechnet man „zwei Asse“?",
+       "o": [
+        "4/32 · 3/31",
+        "4/32 · 4/32",
+        "4/32 + 3/31",
+        "2 · 4/32"
+       ],
+       "a": 0,
+       "e": "Ohne Zurücklegen: Nach dem ersten Ass bleiben 3 Asse unter 31 Karten.",
+       "id": "wkeit.m3.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Bei welcher Situation darf man näherungsweise mit Zurücklegen rechnen?",
+       "o": [
+        "Umfrage unter Millionen Wahlberechtigten",
+        "Zwei Karten aus einem Skatblatt",
+        "Lottozahlen ziehen",
+        "Zwei Socken aus einer Schublade mit vier Socken"
+       ],
+       "a": 0,
+       "e": "Bei sehr großer Grundgesamtheit verändert ein Zug die Anteile kaum.",
+       "id": "wkeit.m3.l2.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m3.l3",
+     "title": "Unabhängigkeit",
+     "min": 5,
+     "body": [
+      "Zwei Ereignisse heißen unabhängig, wenn das Eintreten des einen die Wahrscheinlichkeit des anderen nicht verändert. Dann gilt P(A und B) = P(A) · P(B).",
+      "## Unabhängig oder nicht?",
+      "Zwei Würfelwürfe sind unabhängig. „Es regnet“ und „Der Regenschirm ist dabei“ sind abhängig. Zwei Kugeln ohne Zurücklegen sind abhängig.",
+      "## Der häufigste Fehler",
+      "Viele multiplizieren Wahrscheinlichkeiten, obwohl die Ereignisse zusammenhängen. Ein berühmtes Beispiel ist der Fall Sally Clark in England (1999): Ein Gutachter multiplizierte das Risiko für plötzlichen Kindstod zweimal miteinander, als wären zwei Fälle in einer Familie unabhängig. Genetische und Umweltfaktoren machen sie aber abhängig. Die Verurteilung wurde 2003 aufgehoben; die Royal Statistical Society hatte die Rechnung öffentlich kritisiert."
+     ],
+     "key": [
+      "Unabhängig: P(A und B) = P(A) · P(B).",
+      "Nur multiplizieren, wenn die Unabhängigkeit wirklich gilt.",
+      "Gemeinsame Ursachen machen Ereignisse abhängig."
+     ],
+     "src": [
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      },
+      {
+       "n": "Royal Statistical Society: Stellungnahme zu den statistischen Fehlern im Fall Sally Clark (2001)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Unabhängige Ereignisse",
+       "b": "Das Eintreten des einen ändert die Wahrscheinlichkeit des anderen nicht: P(A und B) = P(A) · P(B).",
+       "id": "wkeit.m3.l3.k1"
+      }
+     ],
+     "qs": [
+      {
+       "t": "multi",
+       "q": "Welche Paare von Ereignissen sind (praktisch) unabhängig?",
+       "o": [
+        "Zwei Würfe derselben Münze",
+        "Würfelergebnis und Wochentag",
+        "Regen und nasse Straße",
+        "Zwei Kugeln ohne Zurücklegen aus einer kleinen Urne"
+       ],
+       "a": [
+        0,
+        1
+       ],
+       "e": "Regen macht die Straße nass; ohne Zurücklegen ändert der erste Zug den zweiten.",
+       "id": "wkeit.m3.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Warum war die Rechnung im Fall Sally Clark falsch?",
+       "o": [
+        "Zwei Fälle in einer Familie sind nicht unabhängig",
+        "Weil man hätte addieren müssen",
+        "Weil die Zahl zu klein war",
+        "Vor Gericht zählen Zahlen nicht"
+       ],
+       "a": 0,
+       "e": "Gemeinsame genetische und Umweltfaktoren machen zwei Fälle in einer Familie abhängig.",
+       "id": "wkeit.m3.l3.q2"
+      },
+      {
+       "t": "num",
+       "q": "Eine Ampel ist zu 40 % grün, eine zweite unabhängige zu 50 %. Wahrscheinlichkeit, dass beide grün sind (in Prozent)?",
+       "a": 20,
+       "unit": "%",
+       "tol": 0.2,
+       "e": "0,4 · 0,5 = 0,2.",
+       "id": "wkeit.m3.l3.q3"
+      },
+      {
+       "t": "num",
+       "q": "Zwei unabhängige Ereignisse: P(A) = 0,3, P(B) = 0,5. Wie groß ist P(A und B) in Prozent?",
+       "a": 15,
+       "unit": "%",
+       "tol": 0.2,
+       "e": "0,3 · 0,5 = 0,15.",
+       "id": "wkeit.m3.l3.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m3.l4",
+     "title": "Der Spielerfehlschluss und Serien",
+     "min": 4,
+     "body": [
+      "Beim Roulette in Monte Carlo fiel 1913 der Überlieferung nach 26-mal hintereinander Schwarz. Viele setzten immer höher auf Rot, weil Rot „fällig“ sei, und verloren viel Geld. Diesen Denkfehler nennt man Spielerfehlschluss.",
+      "## Serien sind normal",
+      "Echter Zufall erzeugt mehr Serien, als wir erwarten. Bei 100 Münzwürfen ist eine Serie von 6 gleichen Seiten wahrscheinlicher als nicht. Wer „zufällige“ Folgen von Hand erfindet, wechselt zu oft.",
+      "## Gegenteil: heiße Hand",
+      "Manchmal glauben wir das Umgekehrte: Wer getroffen hat, trifft weiter. Ob es im Sport eine echte „heiße Hand“ gibt, ist in der Forschung umstritten; bei Glücksspielen mit unabhängigen Runden gibt es sie sicher nicht."
+     ],
+     "key": [
+      "Unabhängige Runden haben kein Gedächtnis.",
+      "Lange Serien sind im echten Zufall häufig.",
+      "Von Hand erfundene Zufallsfolgen wechseln zu oft."
+     ],
+     "src": [
+      {
+       "n": "Gerd Gigerenzer: Das Einmaleins der Skepsis. Über den richtigen Umgang mit Zahlen und Risiken (Berlin Verlag)"
+      },
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Monte-Carlo-Fehlschluss",
+       "b": "Anderer Name für den Spielerfehlschluss, nach der berühmten Schwarz-Serie im Casino von Monte Carlo 1913.",
+       "id": "wkeit.m3.l4.k1"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Beim Roulette kam zehnmal Rot. Was gilt für die nächste Runde (europäisches Roulette)?",
+       "o": [
+        "Rot und Schwarz je 18/37",
+        "Schwarz ist jetzt wahrscheinlicher",
+        "Rot ist jetzt wahrscheinlicher",
+        "Die Null ist jetzt wahrscheinlicher"
+       ],
+       "a": 0,
+       "e": "Jede Runde ist unabhängig: 18 rote, 18 schwarze, 1 grüne Zahl.",
+       "id": "wkeit.m3.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Folge ist bei 10 fairen Münzwürfen wahrscheinlicher: KKKKKKKKKK oder KZKZZKZKKZ?",
+       "o": [
+        "Beide gleich",
+        "Die gemischte, unregelmäßige Folge",
+        "Die Folge mit nur Kopf",
+        "Das hängt vom Wetter ab"
+       ],
+       "a": 0,
+       "e": "Jede bestimmte Folge hat (1/2)¹⁰ = 1/1024.",
+       "id": "wkeit.m3.l4.q2"
+      },
+      {
+       "t": "num",
+       "q": "Wie groß ist die Wahrscheinlichkeit für fünfmal hintereinander Schwarz beim europäischen Roulette (in Prozent, gerundet)?",
+       "a": 2.7,
+       "unit": "%",
+       "tol": 0.1,
+       "e": "(18/37)⁵ ≈ 0,027, also etwa 2,7 %.",
+       "id": "wkeit.m3.l4.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum wirken echte Zufallsfolgen oft „nicht zufällig“?",
+       "o": [
+        "Sie enthalten mehr Serien als erwartet",
+        "Weil Computer schlecht würfeln",
+        "Weil Zufall immer abwechselt",
+        "Weil Serien verboten sind"
+       ],
+       "a": 0,
+       "e": "Lange Serien sind normal; Menschen erwarten zu viel Abwechslung.",
+       "id": "wkeit.m3.l4.q4"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wkeit.m4",
+   "level": 2,
+   "title": "Bedingte Wahrscheinlichkeit und Bayes",
+   "desc": "Wie neue Informationen Wahrscheinlichkeiten verändern, von der Vierfeldertafel bis zum Ziegenproblem.",
+   "lessons": [
+    {
+     "id": "wkeit.m4.l1",
+     "title": "Bedingte Wahrscheinlichkeit und Vierfeldertafel",
+     "min": 6,
+     "body": [
+      "P(A | B) ist die Wahrscheinlichkeit für A, wenn man schon weiß, dass B eingetreten ist. Man liest: „A unter der Bedingung B“. Man betrachtet nur noch die Fälle, in denen B gilt, und fragt, wie viele davon auch A sind: P(A | B) = P(A und B) ÷ P(B).",
+      "## Die Vierfeldertafel",
+      "Bei zwei Merkmalen hilft eine Tabelle mit vier Feldern. Beispiel: Von 1.000 Personen sind 300 Raucher. 60 Raucher und 40 Nichtraucher haben chronischen Husten. P(Husten | Raucher) = 60/300 = 20 %. P(Husten | Nichtraucher) = 40/700 ≈ 5,7 %.",
+      "## Die Richtung ist entscheidend",
+      "P(Husten | Raucher) ist etwas anderes als P(Raucher | Husten). Von den 100 Hustenden rauchen 60, also P(Raucher | Husten) = 60 %. Die beiden Richtungen zu verwechseln, ist einer der häufigsten Fehler überhaupt, auch in Medizin und vor Gericht."
+     ],
+     "key": [
+      "P(A | B) = P(A und B) ÷ P(B).",
+      "Vierfeldertafel: zwei Merkmale, vier Kombinationen.",
+      "P(A | B) ≠ P(B | A): Richtung immer prüfen."
+     ],
+     "src": [
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      },
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Bedingte Wahrscheinlichkeit P(A | B)",
+       "b": "Wahrscheinlichkeit von A, wenn B bekannt ist: P(A und B) ÷ P(B).",
+       "id": "wkeit.m4.l1.k1"
+      },
+      {
+       "f": "Vierfeldertafel",
+       "b": "Tabelle mit zwei Merkmalen und ihren vier Kombinationen samt Summen.",
+       "id": "wkeit.m4.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Von 200 Schülern spielen 80 ein Instrument, davon 30 Klavier. Wie groß ist P(Klavier | Instrument) in Prozent?",
+       "a": 37.5,
+       "unit": "%",
+       "tol": 0.2,
+       "e": "30 ÷ 80 = 0,375.",
+       "id": "wkeit.m4.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "„90 % der Autounfälle passieren in der Nähe des Wohnorts.“ Was folgt daraus?",
+       "o": [
+        "Nicht unbedingt mehr Gefahr",
+        "Dass Fahren in der Nähe des Wohnorts besonders gefährlich ist",
+        "Dass man weit weg fahren sollte",
+        "Dass Ortskundige schlechter fahren"
+       ],
+       "a": 0,
+       "e": "Man fährt dort einfach viel mehr. Gefragt wäre das Risiko pro Kilometer, nicht der Anteil der Unfälle.",
+       "id": "wkeit.m4.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist P(Raucher | Husten) im Beispiel der Lektion?",
+       "o": [
+        "60 %",
+        "20 %",
+        "30 %",
+        "5,7 %"
+       ],
+       "a": 0,
+       "e": "60 von 100 Hustenden rauchen.",
+       "id": "wkeit.m4.l1.q3"
+      },
+      {
+       "t": "num",
+       "q": "Von 1.000 Personen sind 300 Raucher. Wie groß ist P(Raucher) in Prozent?",
+       "a": 30,
+       "unit": "%",
+       "tol": 0.1,
+       "e": "300 ÷ 1.000 = 0,3.",
+       "id": "wkeit.m4.l1.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m4.l2",
+     "title": "Der Satz von Bayes mit natürlichen Häufigkeiten",
+     "min": 7,
+     "body": [
+      "Der Satz von Bayes beantwortet: Wie wahrscheinlich ist eine Ursache, wenn ich eine Beobachtung gemacht habe? Formal: P(A | B) = P(B | A) · P(A) ÷ P(B). Mit Prozentzahlen ist das schwer. Mit ganzen Personen wird es leicht.",
+      "## Beispiel: ein Test",
+      "Eine Krankheit hat 1 % der Menschen. Ein Test erkennt 90 % der Kranken (Sensitivität) und schlägt bei 9 % der Gesunden fälschlich an. Stell dir 1.000 Personen vor: 10 sind krank, davon testen 9 positiv. 990 sind gesund, davon testen etwa 89 positiv. Insgesamt sind 98 Tests positiv, aber nur 9 davon krank. Ein positiver Test bedeutet hier also nur eine Wahrscheinlichkeit von etwa 9 %, krank zu sein.",
+      "## Warum das überrascht",
+      "Die Basisrate, also wie häufig die Krankheit überhaupt ist, wird intuitiv übersehen. Bei seltenen Krankheiten sind die meisten positiven Tests falsch-positiv, selbst bei guten Tests. Deshalb bestätigt man Befunde mit einem zweiten Test.",
+      "## Probiere es aus",
+      "Mit dem Werkzeug unten kannst du Häufigkeit, Sensitivität und Fehlalarmrate verändern und siehst sofort, wie viele der Positiven wirklich krank sind."
+     ],
+     "key": [
+      "Bayes: von der Beobachtung auf die Ursache schließen.",
+      "Mit 1.000 gedachten Personen rechnen statt mit Prozenten.",
+      "Die Basisrate entscheidet, wie aussagekräftig ein positiver Befund ist."
+     ],
+     "src": [
+      {
+       "n": "Gerd Gigerenzer: Das Einmaleins der Skepsis. Über den richtigen Umgang mit Zahlen und Risiken (Berlin Verlag)"
+      },
+      {
+       "n": "Harding-Zentrum für Risikokompetenz (Universität Potsdam)",
+       "u": "https://www.hardingcenter.de/"
+      },
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Satz von Bayes",
+       "b": "P(A | B) = P(B | A) · P(A) ÷ P(B). Rechnet von der Beobachtung zurück auf die Ursache.",
+       "id": "wkeit.m4.l2.k1"
+      },
+      {
+       "f": "Basisrate (Prävalenz)",
+       "b": "Wie häufig ein Merkmal in der Gruppe insgesamt ist, z. B. 1 % haben die Krankheit.",
+       "id": "wkeit.m4.l2.k2"
+      },
+      {
+       "f": "Sensitivität",
+       "b": "Anteil der Kranken, die der Test richtig erkennt.",
+       "id": "wkeit.m4.l2.k3"
+      },
+      {
+       "f": "Spezifität",
+       "b": "Anteil der Gesunden, die der Test richtig als gesund erkennt (1 − Fehlalarmrate).",
+       "id": "wkeit.m4.l2.k4"
+      },
+      {
+       "f": "Positiver Vorhersagewert",
+       "b": "Anteil der positiv Getesteten, die wirklich krank sind.",
+       "id": "wkeit.m4.l2.k5"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "1.000 Personen, 2 % krank, Test erkennt alle Kranken, 5 % Fehlalarme bei Gesunden. Wie viele positive Tests gibt es ungefähr?",
+       "a": 69,
+       "unit": "",
+       "tol": 1,
+       "e": "20 Kranke positiv plus 5 % von 980 ≈ 49 Gesunde, zusammen etwa 69.",
+       "id": "wkeit.m4.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "Im selben Beispiel: Wie viel Prozent der Positiven sind wirklich krank (gerundet)?",
+       "a": 29,
+       "unit": "%",
+       "tol": 1.5,
+       "e": "20 ÷ 69 ≈ 29 %.",
+       "id": "wkeit.m4.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum sind bei seltenen Krankheiten viele positive Tests falsch?",
+       "o": [
+        "Weil es viel mehr Gesunde als Kranke gibt",
+        "Tests sind absichtlich ungenau",
+        "Weil Kranke den Test oft verweigern",
+        "Weil die Sensitivität zu hoch ist"
+       ],
+       "a": 0,
+       "e": "Schon wenige Prozent Fehlalarme bei sehr vielen Gesunden übertreffen die Zahl der echten Treffer.",
+       "id": "wkeit.m4.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist die beste Reaktion auf einen positiven Suchtest bei einer seltenen Krankheit?",
+       "o": [
+        "Mit einem anderen Test bestätigen",
+        "Sofort mit der Behandlung beginnen",
+        "Den Test einfach ignorieren",
+        "Den gleichen Test sehr oft wiederholen"
+       ],
+       "a": 0,
+       "e": "Ein unabhängiger Bestätigungstest senkt den Anteil falsch-positiver Befunde stark.",
+       "id": "wkeit.m4.l2.q4"
+      }
+     ],
+     "figs": [
+      {
+       "after": 5,
+       "w": "bayes",
+       "cap": "Natürliche Häufigkeiten: 1.000 Personen, wie viele der Positiven sind wirklich krank?"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m4.l3",
+     "title": "Typische Fallen mit Bedingungen",
+     "min": 5,
+     "body": [
+      "Bedingte Wahrscheinlichkeiten tauchen überall auf, oft gut versteckt.",
+      "## Der Trugschluss des Anklägers",
+      "Vor Gericht heißt es: „Die Wahrscheinlichkeit, dass ein Unschuldiger zufällig dieses DNA-Profil hat, ist 1 zu 1 Million.“ Daraus folgt nicht, dass der Angeklagte mit 99,9999 % schuldig ist. In einer Stadt mit 3 Millionen Menschen würden etwa 3 Personen passen. Ohne weitere Beweise wäre der Angeklagte nur einer von etwa 4 möglichen Kandidaten.",
+      "## Survivorship Bias als Bedingung",
+      "Wer nur erfolgreiche Firmen untersucht, betrachtet P(Merkmal | Erfolg) und nicht P(Erfolg | Merkmal). Abgebrochene Studien, gescheiterte Gründer und verlorene Flugzeuge fehlen im Datensatz.",
+      "## Faustregel",
+      "Frage immer: „Unter welcher Bedingung wurde gezählt, und wie groß ist die Gruppe, aus der ich auswähle?“"
+     ],
+     "key": [
+      "P(Spur | unschuldig) ist nicht P(unschuldig | Spur).",
+      "Immer die Größe der Grundgesamtheit bedenken.",
+      "Auswahl nur der Erfolgreichen verzerrt die Bedingung."
+     ],
+     "src": [
+      {
+       "n": "Gerd Gigerenzer: Das Einmaleins der Skepsis. Über den richtigen Umgang mit Zahlen und Risiken (Berlin Verlag)"
+      },
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Trugschluss des Anklägers",
+       "b": "Verwechslung von P(Beweis | unschuldig) mit P(unschuldig | Beweis).",
+       "id": "wkeit.m4.l3.k1"
+      },
+      {
+       "f": "Survivorship Bias",
+       "b": "Verzerrung, weil nur die „Überlebenden“ betrachtet werden.",
+       "id": "wkeit.m4.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Ein Fingerabdruck passt zufällig bei 1 von 100.000 Menschen. In einer Region leben 500.000 Menschen. Wie viele würden ungefähr passen?",
+       "o": [
+        "Etwa 5",
+        "Genau 1",
+        "Etwa 100.000",
+        "Keiner"
+       ],
+       "a": 0,
+       "e": "500.000 ÷ 100.000 = 5. Der Treffer allein beweist daher wenig.",
+       "id": "wkeit.m4.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Frage stellt Survivorship Bias richtig?",
+       "o": [
+        "Wie viele mit dem Merkmal scheiterten?",
+        "Was haben alle Erfolgreichen gemeinsam?",
+        "Wer ist am erfolgreichsten?",
+        "Wie lange gibt es die Firmen schon am Markt?"
+       ],
+       "a": 0,
+       "e": "Erst der Vergleich mit den Gescheiterten zeigt, ob ein Merkmal hilft.",
+       "id": "wkeit.m4.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Ein DNA-Merkmal passt zufällig bei 1 von 1 Million. Was folgt allein daraus?",
+       "o": [
+        "Wenig ohne weitere Hinweise",
+        "Der Verdächtige ist sicher schuldig",
+        "Der Verdächtige ist sicher unschuldig",
+        "Die Probe ist ungültig"
+       ],
+       "a": 0,
+       "e": "In einer großen Bevölkerung passen auch andere Personen; der Treffer allein reicht nicht.",
+       "id": "wkeit.m4.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Frage hilft gegen Fehlschlüsse mit Bedingungen?",
+       "o": [
+        "Unter welcher Bedingung wurde gezählt?",
+        "Wie hoch ist die Zahl insgesamt?",
+        "Wer hat die Studie bezahlt?",
+        "Wie alt sind die Daten?"
+       ],
+       "a": 0,
+       "e": "Erst die Bedingung klärt, welche Richtung P(A | B) gemeint ist.",
+       "id": "wkeit.m4.l3.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m4.l4",
+     "title": "Das Ziegenproblem",
+     "min": 6,
+     "body": [
+      "In einer Spielshow gibt es drei Türen. Hinter einer steht ein Auto, hinter den anderen Ziegen. Du wählst eine Tür. Der Moderator, der weiß, wo das Auto steht, öffnet eine andere Tür mit einer Ziege und bietet dir an zu wechseln. Solltest du?",
+      "## Die Antwort: Wechseln verdoppelt die Chance",
+      "Bleibst du, gewinnst du mit 1/3, denn deine erste Wahl war mit 1/3 richtig. Wechselst du, gewinnst du mit 2/3. Denn in 2 von 3 Fällen hattest du zuerst eine Ziege gewählt, und der Moderator muss dann die andere Ziege zeigen. Das Auto steht dann sicher hinter der verbleibenden Tür.",
+      "## Warum es so schwer zu glauben ist",
+      "Es sieht aus wie zwei gleichwertige Türen. Aber die Tür des Moderators ist nicht zufällig geöffnet: Er öffnet nie die Autotür. Diese Information steckt in seiner Handlung. Als Marilyn vos Savant die Lösung 1990 in einer Zeitschrift veröffentlichte, widersprachen ihr tausende Leser, darunter Mathematiker. Teste es selbst unten.",
+      "## Hilfreicher Gedanke",
+      "Stell dir 100 Türen vor. Du wählst eine, der Moderator öffnet 98 Ziegentüren. Würdest du bei deiner ersten Tür bleiben?"
+     ],
+     "key": [
+      "Bleiben: 1/3, wechseln: 2/3.",
+      "Der Moderator öffnet nie die Autotür, das ist Information.",
+      "Mit 100 Türen denken macht es anschaulich."
+     ],
+     "src": [
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      },
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Ziegenproblem (Monty-Hall-Problem)",
+       "b": "Nach dem Öffnen einer Ziegentür durch den wissenden Moderator gewinnt Wechseln mit 2/3, Bleiben nur mit 1/3.",
+       "id": "wkeit.m4.l4.k1"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Mit welcher Wahrscheinlichkeit gewinnt man beim Ziegenproblem, wenn man wechselt?",
+       "o": [
+        "2/3",
+        "1/2",
+        "1/3",
+        "3/4"
+       ],
+       "a": 0,
+       "e": "In 2 von 3 Fällen war die erste Wahl eine Ziege, dann führt Wechseln sicher zum Auto.",
+       "id": "wkeit.m4.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was ändert sich, wenn der Moderator die Tür zufällig öffnet und dabei zufällig eine Ziege zeigt?",
+       "o": [
+        "Bleiben und Wechseln je 1/2",
+        "Dann ist Wechseln noch besser",
+        "Dann ist Bleiben besser",
+        "Nichts ändert sich, immer 2/3"
+       ],
+       "a": 0,
+       "e": "Ohne Wissen des Moderators enthält das Öffnen keine Information über die anderen Türen; dann sind beide Türen gleich wahrscheinlich.",
+       "id": "wkeit.m4.l4.q2"
+      },
+      {
+       "t": "num",
+       "q": "Bei 100 Türen wählst du eine, der wissende Moderator öffnet 98 Ziegentüren. Wie hoch ist die Gewinnchance beim Wechseln (in Prozent)?",
+       "a": 99,
+       "unit": "%",
+       "tol": 0.5,
+       "e": "Deine erste Tür hat 1 %, die verbleibende Tür 99 %.",
+       "id": "wkeit.m4.l4.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist der Schlüssel zum Verständnis des Ziegenproblems?",
+       "o": [
+        "Der Moderator weiß, wo das Auto ist",
+        "Die Türen sind unterschiedlich groß",
+        "Ziegen sind schwer zu verstecken",
+        "Man darf nur einmal wählen"
+       ],
+       "a": 0,
+       "e": "Weil der Moderator nie die Autotür öffnet, steckt in seiner Wahl Information.",
+       "id": "wkeit.m4.l4.q4"
+      }
+     ],
+     "figs": [
+      {
+       "after": 4,
+       "w": "monty",
+       "cap": "Spiel selbst oder lass den Computer 1.000 Runden spielen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wkeit.m5",
+   "level": 2,
+   "title": "Zufallsgrößen, Erwartungswert, Streuung",
+   "desc": "Was man im Mittel erwarten kann und wie stark es schwankt.",
+   "lessons": [
+    {
+     "id": "wkeit.m5.l1",
+     "title": "Zufallsgröße und Verteilung",
+     "min": 5,
+     "body": [
+      "Eine Zufallsgröße X ordnet jedem Ergebnis eine Zahl zu, etwa die Augenzahl eines Würfels oder den Gewinn in Euro. Die Wahrscheinlichkeitsverteilung sagt, mit welcher Wahrscheinlichkeit X welchen Wert annimmt.",
+      "## Beispiel: Summe zweier Würfel",
+      "Die Summe kann 2 bis 12 sein, aber nicht gleich wahrscheinlich. Für die 7 gibt es 6 Kombinationen (1+6, 2+5, …, 6+1) von 36, also 1/6. Für die 2 oder die 12 gibt es nur je eine. Die Verteilung hat die Form eines Dachs. Probiere die Simulation unten aus.",
+      "## Darstellung",
+      "Verteilungen stellt man als Tabelle oder Säulendiagramm dar. Die Summe aller Wahrscheinlichkeiten ist immer 1."
+     ],
+     "key": [
+      "Zufallsgröße: Ergebnis → Zahl.",
+      "Verteilung: welcher Wert mit welcher Wahrscheinlichkeit.",
+      "Summe zweier Würfel: 7 ist am häufigsten (1/6)."
+     ],
+     "src": [
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      },
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Zufallsgröße",
+       "b": "Funktion, die jedem Ergebnis eines Zufallsexperiments eine Zahl zuordnet.",
+       "id": "wkeit.m5.l1.k1"
+      },
+      {
+       "f": "Wahrscheinlichkeitsverteilung",
+       "b": "Angabe, mit welcher Wahrscheinlichkeit eine Zufallsgröße welche Werte annimmt.",
+       "id": "wkeit.m5.l1.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie viele der 36 Kombinationen zweier Würfel ergeben die Summe 8?",
+       "a": 5,
+       "unit": "",
+       "tol": 0,
+       "e": "2+6, 3+5, 4+4, 5+3, 6+2.",
+       "id": "wkeit.m5.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Augensumme ist bei zwei Würfeln am wahrscheinlichsten?",
+       "o": [
+        "7",
+        "6",
+        "12",
+        "Alle gleich"
+       ],
+       "a": 0,
+       "e": "Die 7 hat mit 6 von 36 die meisten Kombinationen.",
+       "id": "wkeit.m5.l1.q2"
+      },
+      {
+       "t": "num",
+       "q": "Wahrscheinlichkeit für die Summe 2 bei zwei Würfeln (in Prozent, gerundet)?",
+       "a": 2.8,
+       "unit": "%",
+       "tol": 0.2,
+       "e": "1/36 ≈ 2,8 %.",
+       "id": "wkeit.m5.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ergibt die Summe aller Wahrscheinlichkeiten einer Verteilung?",
+       "o": [
+        "Immer 1",
+        "Immer 0",
+        "Den Erwartungswert",
+        "Die Anzahl der Werte"
+       ],
+       "a": 0,
+       "e": "Irgendein Wert tritt sicher ein.",
+       "id": "wkeit.m5.l1.q4"
+      }
+     ],
+     "figs": [
+      {
+       "after": 2,
+       "w": "dice",
+       "cap": "Würfle virtuell mit zwei Würfeln und vergleiche mit der Theorie."
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m5.l2",
+     "title": "Der Erwartungswert",
+     "min": 6,
+     "body": [
+      "Der Erwartungswert E(X) ist der Mittelwert, den man bei sehr vielen Wiederholungen erwarten kann. Man rechnet: jeden Wert mal seine Wahrscheinlichkeit, alles addiert.",
+      "## Beispiel Würfel",
+      "E = 1·1/6 + 2·1/6 + … + 6·1/6 = 21/6 = 3,5. Kein einzelner Wurf zeigt 3,5, aber der Durchschnitt vieler Würfe liegt nahe 3,5.",
+      "## Faires Spiel und Glücksspiel",
+      "Ein Spiel ist fair, wenn der Erwartungswert des Gewinns 0 ist. Beim europäischen Roulette gewinnt ein Euro auf Rot mit 18/37 einen Euro und verliert mit 19/37 einen Euro: E = 18/37 − 19/37 = −1/37 ≈ −2,7 Cent pro Euro. Auf Dauer verliert man also im Schnitt 2,7 % des Einsatzes.",
+      "## Lotto",
+      "Beim Lotto fließt nur etwa die Hälfte der Einsätze als Gewinn zurück. Der Erwartungswert eines Tipps liegt deshalb weit unter dem Preis. Wer spielt, kauft Spannung, keine Rendite."
+     ],
+     "key": [
+      "E(X) = Σ Wert · Wahrscheinlichkeit.",
+      "Würfel: E = 3,5.",
+      "Roulette: −2,7 % pro Einsatz; fair wäre E = 0."
+     ],
+     "src": [
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      },
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      },
+      {
+       "n": "LOTTO 6aus49: Ausschüttung von 50 % der Spieleinsätze laut Teilnahmebedingungen (Deutscher Lotto- und Totoblock)",
+       "u": "https://www.lotto.de/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Erwartungswert",
+       "b": "Langfristiger Mittelwert einer Zufallsgröße: Summe aus Wert mal Wahrscheinlichkeit.",
+       "id": "wkeit.m5.l2.k1"
+      },
+      {
+       "f": "Faires Spiel",
+       "b": "Spiel, bei dem der Erwartungswert des Gewinns 0 ist.",
+       "id": "wkeit.m5.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Ein Los kostet 2 €. Mit 10 % gewinnt man 10 €, sonst nichts. Wie hoch ist der erwartete Reingewinn pro Los in Euro?",
+       "a": -1,
+       "unit": "€",
+       "tol": 0.01,
+       "e": "0,1 · 10 € − 2 € = 1 € − 2 € = −1 €.",
+       "id": "wkeit.m5.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "Erwartungswert der Augensumme zweier Würfel?",
+       "a": 7,
+       "unit": "",
+       "tol": 0,
+       "e": "3,5 + 3,5 = 7.",
+       "id": "wkeit.m5.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet ein Erwartungswert von −0,05 € bei einem 1-€-Spiel?",
+       "o": [
+        "Im Schnitt 5 Cent Verlust pro Spiel",
+        "Jedes einzelne Spiel kostet genau 5 Cent",
+        "Man gewinnt 5 % der Spiele",
+        "Das Spiel ist fair"
+       ],
+       "a": 0,
+       "e": "Der Erwartungswert ist ein langfristiger Durchschnitt, kein fester Betrag pro Runde.",
+       "id": "wkeit.m5.l2.q3"
+      },
+      {
+       "t": "num",
+       "q": "Bei einem Spiel gewinnt man mit 1/4 Wahrscheinlichkeit 8 €, sonst 0 €. Wie hoch muss der Einsatz sein, damit es fair ist (in Euro)?",
+       "a": 2,
+       "unit": "€",
+       "tol": 0.01,
+       "e": "Erwarteter Gewinn 8 € · 1/4 = 2 €.",
+       "id": "wkeit.m5.l2.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m5.l3",
+     "title": "Varianz und Standardabweichung",
+     "min": 6,
+     "body": [
+      "Zwei Spiele können den gleichen Erwartungswert haben und sich trotzdem völlig anders anfühlen: Eines zahlt immer 1 €, das andere mit 1 % 100 € und sonst nichts. Der Unterschied ist die Streuung.",
+      "## Varianz",
+      "Die Varianz misst die durchschnittliche quadrierte Abweichung vom Erwartungswert: Var(X) = Σ (Wert − E)² · Wahrscheinlichkeit. Beim Würfel ist sie 35/12 ≈ 2,92.",
+      "## Standardabweichung",
+      "Die Standardabweichung σ ist die Wurzel der Varianz und hat dieselbe Einheit wie die Daten. Beim Würfel ist σ ≈ 1,71. Faustregel: Die meisten Werte liegen innerhalb von ein bis zwei Standardabweichungen um den Mittelwert.",
+      "## Wozu man das braucht",
+      "In der Geldanlage gilt die Schwankung oft als Maß für das Risiko. In der Qualitätssicherung zeigt eine kleine Standardabweichung, dass ein Prozess gleichmäßig arbeitet."
+     ],
+     "key": [
+      "Gleicher Erwartungswert, verschiedene Streuung möglich.",
+      "Varianz: mittlere quadrierte Abweichung.",
+      "Standardabweichung = √Varianz, gleiche Einheit wie die Daten."
+     ],
+     "src": [
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      },
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Varianz",
+       "b": "Mittlere quadrierte Abweichung vom Erwartungswert.",
+       "id": "wkeit.m5.l3.k1"
+      },
+      {
+       "f": "Standardabweichung σ",
+       "b": "Wurzel aus der Varianz; typisches Maß der Streuung in der Einheit der Daten.",
+       "id": "wkeit.m5.l3.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Ein Spiel zahlt mit 50 % 0 € und mit 50 % 2 €. Wie groß ist die Standardabweichung in Euro?",
+       "a": 1,
+       "unit": "€",
+       "tol": 0.01,
+       "e": "E = 1 €. Abweichungen ±1 €, quadriert 1, Varianz 1, Wurzel 1 €.",
+       "id": "wkeit.m5.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Zwei Anlagen bringen im Mittel 5 % Rendite. A schwankt zwischen 4 und 6 %, B zwischen −20 und +30 %. Was gilt?",
+       "o": [
+        "B hat die größere Streuung",
+        "Beide haben dasselbe Risiko",
+        "A hat die größere Streuung",
+        "B hat den höheren Erwartungswert"
+       ],
+       "a": 0,
+       "e": "Gleicher Mittelwert, aber B streut viel stärker.",
+       "id": "wkeit.m5.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum quadriert man bei der Varianz die Abweichungen?",
+       "o": [
+        "Damit sich ± Werte nicht aufheben",
+        "Damit die Zahl kleiner wird",
+        "Weil Quadrieren schneller ist",
+        "Damit das Ergebnis Prozent ist"
+       ],
+       "a": 0,
+       "e": "Ohne Quadrieren wäre die Summe der Abweichungen vom Mittelwert immer 0.",
+       "id": "wkeit.m5.l3.q3"
+      },
+      {
+       "t": "num",
+       "q": "Ein Würfel hat die Varianz 35/12. Wie groß ist die Standardabweichung (gerundet auf zwei Stellen)?",
+       "a": 1.71,
+       "unit": "",
+       "tol": 0.01,
+       "e": "√(35/12) ≈ 1,71.",
+       "id": "wkeit.m5.l3.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m5.l4",
+     "title": "Entscheiden mit Erwartungswert",
+     "min": 5,
+     "body": [
+      "Der Erwartungswert hilft bei Entscheidungen unter Unsicherheit, aber er ist nicht alles.",
+      "## Versicherungen",
+      "Eine Haftpflichtversicherung hat aus Kundensicht einen negativen Erwartungswert, denn der Versicherer will Kosten decken und verdienen. Trotzdem ist sie sinnvoll: Sie schützt vor seltenen, aber ruinösen Schäden. Bei kleinen, verkraftbaren Schäden (Handyversicherung) lohnt es sich meist eher, das Risiko selbst zu tragen.",
+      "## Risiko und Nutzen",
+      "Menschen bewerten Verluste stärker als gleich große Gewinne. Deshalb zieht man oft 50 € sicher einer 50:50-Chance auf 100 € vor, obwohl der Erwartungswert gleich ist. Das ist nicht unbedingt falsch: Es kommt darauf an, was man sich leisten kann.",
+      "## Faustregel",
+      "Bei häufigen, kleinen Entscheidungen den Erwartungswert maximieren. Bei seltenen, existenzbedrohenden Risiken absichern, auch wenn es im Schnitt etwas kostet."
+     ],
+     "key": [
+      "Erwartungswert = langfristiger Durchschnitt.",
+      "Ruinöse Risiken absichern, kleine selbst tragen.",
+      "Verlustaversion: Verluste wiegen schwerer als Gewinne."
+     ],
+     "src": [
+      {
+       "n": "Gerd Gigerenzer: Das Einmaleins der Skepsis. Über den richtigen Umgang mit Zahlen und Risiken (Berlin Verlag)"
+      },
+      {
+       "n": "Verbraucherzentrale: Ratgeber zu Versicherungen",
+       "u": "https://www.verbraucherzentrale.de/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Verlustaversion",
+       "b": "Verluste werden stärker gewichtet als gleich große Gewinne.",
+       "id": "wkeit.m5.l4.k1"
+      },
+      {
+       "f": "Versicherungsprinzip",
+       "b": "Seltene, große Schäden auf viele verteilen; im Schnitt kostet es etwas, schützt aber vor dem Ruin.",
+       "id": "wkeit.m5.l4.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wann ist eine Versicherung trotz negativen Erwartungswerts sinnvoll?",
+       "o": [
+        "Bei existenzbedrohendem Schaden",
+        "Wenn der mögliche Schaden sehr klein ist",
+        "Wenn man nie Pech hat",
+        "Wenn sie besonders günstig wirkt"
+       ],
+       "a": 0,
+       "e": "Gegen ruinöse Schäden lohnt sich die Absicherung, auch wenn sie im Schnitt kostet.",
+       "id": "wkeit.m5.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Option A: 100 € sicher. Option B: 50 % auf 250 €, sonst 0 €. Welche hat den höheren Erwartungswert?",
+       "o": [
+        "B mit 125 €",
+        "A mit 100 €",
+        "Beide gleich",
+        "Das lässt sich nicht sagen"
+       ],
+       "a": 0,
+       "e": "0,5 · 250 € = 125 € > 100 €. Ob man B wählt, hängt aber auch vom Risiko ab.",
+       "id": "wkeit.m5.l4.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt Verlustaversion?",
+       "o": [
+        "Verluste wiegen schwerer als Gewinne",
+        "Man meidet jedes Risiko völlig",
+        "Gewinne zählen doppelt",
+        "Verluste werden vergessen"
+       ],
+       "a": 0,
+       "e": "Ein Verlust von 100 € fühlt sich stärker an als ein Gewinn von 100 €.",
+       "id": "wkeit.m5.l4.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Versicherung ist für die meisten Haushalte am wichtigsten?",
+       "o": [
+        "Private Haftpflicht",
+        "Handyversicherung",
+        "Brillenversicherung",
+        "Reisegepäckversicherung"
+       ],
+       "a": 0,
+       "e": "Haftpflichtschäden können existenzbedrohend sein; die anderen betreffen kleine, tragbare Schäden.",
+       "id": "wkeit.m5.l4.q4"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wkeit.m6",
+   "level": 3,
+   "title": "Wichtige Verteilungen",
+   "desc": "Binomial, Normal, Poisson und der zentrale Grenzwertsatz.",
+   "lessons": [
+    {
+     "id": "wkeit.m6.l1",
+     "title": "Die Binomialverteilung",
+     "min": 7,
+     "body": [
+      "Wiederholt man ein Experiment n-mal unabhängig, und jedes Mal gibt es nur Treffer (Wahrscheinlichkeit p) oder Niete, dann zählt X die Treffer. X ist binomialverteilt.",
+      "## Die Formel",
+      "P(X = k) = (n über k) · pᵏ · (1 − p)ⁿ⁻ᵏ. „n über k“ zählt, an welchen Stellen die k Treffer liegen; pᵏ · (1 − p)ⁿ⁻ᵏ ist die Wahrscheinlichkeit eines solchen Pfads.",
+      "## Beispiel",
+      "Genau 5-mal Kopf bei 10 Münzwürfen: (10 über 5) · 0,5¹⁰ = 252/1024 ≈ 24,6 %. Selbst das wahrscheinlichste Ergebnis tritt also nur in jedem vierten Durchgang auf.",
+      "## Kennzahlen",
+      "Erwartungswert n · p, Standardabweichung √(n · p · (1 − p)). Bei 100 Münzwürfen: im Mittel 50 Kopf, Standardabweichung 5.",
+      "## Galtonbrett",
+      "Eine Kugel fällt durch Reihen von Nägeln und springt jedes Mal zufällig nach links oder rechts. Die Zahl der Rechtssprünge ist binomialverteilt. Unten siehst du, wie die Kugeln die typische Glockenform aufbauen."
+     ],
+     "key": [
+      "Binomial: n unabhängige Versuche, Trefferwahrscheinlichkeit p.",
+      "P(X = k) = (n über k) · pᵏ · (1 − p)ⁿ⁻ᵏ.",
+      "E = n·p, σ = √(n·p·(1−p))."
+     ],
+     "src": [
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      },
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      },
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Binomialverteilung",
+       "b": "Anzahl der Treffer bei n unabhängigen Versuchen mit gleicher Trefferwahrscheinlichkeit p.",
+       "id": "wkeit.m6.l1.k1"
+      },
+      {
+       "f": "Bernoulli-Experiment",
+       "b": "Ein Versuch mit genau zwei Ausgängen: Treffer oder Niete.",
+       "id": "wkeit.m6.l1.k2"
+      },
+      {
+       "f": "Galtonbrett",
+       "b": "Kugeln fallen durch Nagelreihen; die Verteilung in den Fächern ist binomial und ähnelt einer Glocke.",
+       "id": "wkeit.m6.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Wie groß ist P(genau 2 Sechsen bei 3 Würfen) in Prozent (gerundet)?",
+       "a": 6.9,
+       "unit": "%",
+       "tol": 0.2,
+       "e": "3 · (1/6)² · (5/6) = 15/216 ≈ 6,9 %.",
+       "id": "wkeit.m6.l1.q1"
+      },
+      {
+       "t": "num",
+       "q": "Erwartete Anzahl Sechsen bei 60 Würfen?",
+       "a": 10,
+       "unit": "",
+       "tol": 0,
+       "e": "n·p = 60 · 1/6 = 10.",
+       "id": "wkeit.m6.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Voraussetzung gehört NICHT zur Binomialverteilung?",
+       "o": [
+        "p wird größer",
+        "Die Versuche sind voneinander unabhängig",
+        "Es gibt nur Treffer oder Niete",
+        "Die Anzahl der Versuche steht fest"
+       ],
+       "a": 0,
+       "e": "p muss bei jedem Versuch gleich bleiben.",
+       "id": "wkeit.m6.l1.q3"
+      },
+      {
+       "t": "num",
+       "q": "Wie groß ist die Standardabweichung der Anzahl „Kopf“ bei 100 Münzwürfen?",
+       "a": 5,
+       "unit": "",
+       "tol": 0,
+       "e": "√(100 · 0,5 · 0,5) = √25 = 5.",
+       "id": "wkeit.m6.l1.q4"
+      }
+     ],
+     "figs": [
+      {
+       "after": 7,
+       "w": "galton",
+       "cap": "Galtonbrett: Lass Kugeln fallen und beobachte, wie die Verteilung entsteht."
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m6.l2",
+     "title": "Die Normalverteilung",
+     "min": 6,
+     "body": [
+      "Viele Größen in Natur und Technik verteilen sich glockenförmig um einen Mittelwert: Körpergröße, Messfehler, Füllmengen. Das Modell dafür ist die Normalverteilung mit Mittelwert μ und Standardabweichung σ.",
+      "## Die 68-95-99,7-Regel",
+      "Etwa 68 % der Werte liegen innerhalb von μ ± 1σ, etwa 95 % innerhalb von μ ± 2σ und etwa 99,7 % innerhalb von μ ± 3σ. Beispiel: Füllmenge 500 ml, σ = 4 ml. Dann liegen rund 95 % der Flaschen zwischen 492 und 508 ml.",
+      "## Standardisieren",
+      "Mit z = (x − μ) ÷ σ rechnet man jeden Wert in „Standardabweichungen vom Mittelwert“ um. Ein z-Wert von 2 heißt: zwei Standardabweichungen über dem Durchschnitt, das erreichen nur etwa 2,3 %.",
+      "## Vorsicht",
+      "Nicht alles ist normalverteilt. Einkommen, Vermögen, Schadenshöhen oder Börsencrashs haben „dicke Ränder“: Extreme sind viel häufiger, als die Normalverteilung vorhersagt."
+     ],
+     "key": [
+      "68-95-99,7: Anteile innerhalb 1, 2, 3 σ.",
+      "z = (x − μ) ÷ σ.",
+      "Nicht alles ist normalverteilt, Extreme oft häufiger."
+     ],
+     "src": [
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      },
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Normalverteilung",
+       "b": "Glockenförmige Verteilung, festgelegt durch Mittelwert μ und Standardabweichung σ.",
+       "id": "wkeit.m6.l2.k1"
+      },
+      {
+       "f": "68-95-99,7-Regel",
+       "b": "Anteil der Werte innerhalb μ ± 1σ, 2σ, 3σ bei der Normalverteilung.",
+       "id": "wkeit.m6.l2.k2"
+      },
+      {
+       "f": "z-Wert",
+       "b": "(x − μ) ÷ σ: Abstand vom Mittelwert in Standardabweichungen.",
+       "id": "wkeit.m6.l2.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "IQ-Tests sind auf μ = 100 und σ = 15 genormt. Wie viel Prozent liegen ungefähr zwischen 85 und 115?",
+       "a": 68,
+       "unit": "%",
+       "tol": 1,
+       "e": "Das ist μ ± 1σ, also etwa 68 %.",
+       "id": "wkeit.m6.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "Welcher z-Wert gehört zu x = 130 bei μ = 100, σ = 15?",
+       "a": 2,
+       "unit": "",
+       "tol": 0,
+       "e": "(130 − 100) ÷ 15 = 2.",
+       "id": "wkeit.m6.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Größe ist am wenigsten normalverteilt?",
+       "o": [
+        "Vermögen der Haushalte",
+        "Körpergröße erwachsener Frauen",
+        "Messfehler einer Waage",
+        "Füllmenge einer Abfüllanlage"
+       ],
+       "a": 0,
+       "e": "Vermögen ist stark schief verteilt: wenige sehr hohe Werte.",
+       "id": "wkeit.m6.l2.q3"
+      },
+      {
+       "t": "num",
+       "q": "Wie viel Prozent der Werte liegen bei einer Normalverteilung ungefähr innerhalb von μ ± 2σ?",
+       "a": 95,
+       "unit": "%",
+       "tol": 1,
+       "e": "68-95-99,7-Regel.",
+       "id": "wkeit.m6.l2.q4"
+      }
+     ],
+     "figs": [
+      {
+       "after": 3,
+       "w": "normal",
+       "cap": "Normalverteilung: Wähle den Bereich μ ± kσ und sieh den Anteil."
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m6.l3",
+     "title": "Seltene Ereignisse: Poisson",
+     "min": 5,
+     "body": [
+      "Wie viele Anrufe kommen pro Minute, wie viele Fehler pro Seite, wie viele Unfälle pro Monat an einer Kreuzung? Wenn Ereignisse unabhängig und mit konstanter mittlerer Rate λ auftreten, ist ihre Anzahl Poisson-verteilt.",
+      "## Formel",
+      "P(X = k) = λᵏ · e^(−λ) ÷ k!. Erwartungswert und Varianz sind beide λ.",
+      "## Beispiel",
+      "Eine Hotline bekommt im Schnitt 2 Anrufe pro Minute. Die Wahrscheinlichkeit für eine Minute ganz ohne Anruf ist e^(−2) ≈ 13,5 %. Für genau 2 Anrufe: 2² · e^(−2) ÷ 2 ≈ 27,1 %.",
+      "## Häufung ist normal",
+      "Auch rein zufällig auftretende Ereignisse kommen in Klumpen. Drei Unfälle in einer Woche an einer sonst ruhigen Kreuzung können Zufall sein; erst ein Vergleich mit der Poisson-Erwartung zeigt, ob etwas auffällig ist."
+     ],
+     "key": [
+      "Poisson: Anzahl seltener, unabhängiger Ereignisse bei Rate λ.",
+      "E = Var = λ.",
+      "Zufällige Ereignisse häufen sich manchmal ganz natürlich."
+     ],
+     "src": [
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      },
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Poisson-Verteilung",
+       "b": "Anzahl von Ereignissen in einem Zeitraum bei konstanter mittlerer Rate λ; E = Var = λ.",
+       "id": "wkeit.m6.l3.k1"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Mittlere Rate 1 Ereignis pro Stunde. Wahrscheinlichkeit für keine Ereignisse in einer Stunde (in Prozent, gerundet)?",
+       "a": 36.8,
+       "unit": "%",
+       "tol": 0.3,
+       "e": "e^(−1) ≈ 0,368.",
+       "id": "wkeit.m6.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was gilt bei der Poisson-Verteilung für Erwartungswert und Varianz?",
+       "o": [
+        "Beide sind gleich λ",
+        "Die Varianz ist λ²",
+        "Der Erwartungswert ist 1",
+        "Beide sind 0"
+       ],
+       "a": 0,
+       "e": "Das ist eine Besonderheit der Poisson-Verteilung.",
+       "id": "wkeit.m6.l3.q2"
+      },
+      {
+       "t": "num",
+       "q": "Mittlere Rate 3 Fehler pro Seite. Wie viele Fehler erwartet man auf 10 Seiten?",
+       "a": 30,
+       "unit": "",
+       "tol": 0,
+       "e": "λ addiert sich: 10 · 3 = 30.",
+       "id": "wkeit.m6.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Situation passt am besten zur Poisson-Verteilung?",
+       "o": [
+        "Anrufe pro Minute bei einer Hotline",
+        "Körpergröße von Erwachsenen",
+        "Augensumme zweier Würfel",
+        "Ergebnis eines Münzwurfs"
+       ],
+       "a": 0,
+       "e": "Zählungen seltener, unabhängiger Ereignisse in einem Zeitraum.",
+       "id": "wkeit.m6.l3.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m6.l4",
+     "title": "Der zentrale Grenzwertsatz",
+     "min": 6,
+     "body": [
+      "Warum taucht die Glockenkurve so oft auf? Der zentrale Grenzwertsatz liefert den Grund: Addiert oder mittelt man viele unabhängige Zufallsgrößen, ist das Ergebnis annähernd normalverteilt, egal wie die einzelnen Größen verteilt sind (solange ihre Varianz endlich ist).",
+      "## Anschaulich",
+      "Ein Würfel ist gleichverteilt, keine Glocke. Die Summe von zwei Würfeln ist schon ein Dach. Die Summe von zehn Würfeln sieht bereits aus wie eine Glocke. Das Galtonbrett zeigt dasselbe: jede Kugel macht viele kleine, zufällige Schritte.",
+      "## Folgen für Mittelwerte",
+      "Der Mittelwert aus n Messungen streut um den wahren Wert mit Standardabweichung σ ÷ √n. Viermal so viele Messungen halbieren also die Unsicherheit. Darauf beruhen Umfragen, Qualitätskontrollen und Konfidenzintervalle."
+     ],
+     "key": [
+      "Summen und Mittelwerte vieler unabhängiger Größen → annähernd normal.",
+      "Streuung des Mittelwerts: σ ÷ √n.",
+      "Vierfache Stichprobe → halbe Unsicherheit."
+     ],
+     "src": [
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      },
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Zentraler Grenzwertsatz",
+       "b": "Summen und Mittelwerte vieler unabhängiger Zufallsgrößen sind annähernd normalverteilt.",
+       "id": "wkeit.m6.l4.k1"
+      },
+      {
+       "f": "Standardfehler",
+       "b": "Streuung eines Mittelwerts: σ ÷ √n.",
+       "id": "wkeit.m6.l4.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Wie verändert sich die Unsicherheit eines Mittelwerts, wenn man statt 100 nun 400 Messungen macht?",
+       "o": [
+        "Sie halbiert sich",
+        "Sie viertelt sich",
+        "Sie bleibt gleich",
+        "Sie verdoppelt sich"
+       ],
+       "a": 0,
+       "e": "σ ÷ √n: √400 = 20 statt √100 = 10, also halb so groß.",
+       "id": "wkeit.m6.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was besagt der zentrale Grenzwertsatz im Kern?",
+       "o": [
+        "Mittelwerte werden annähernd normalverteilt",
+        "Alle einzelnen Daten sind am Ende normalverteilt",
+        "Große Stichproben haben keine Streuung",
+        "Zufall verschwindet bei vielen Daten"
+       ],
+       "a": 0,
+       "e": "Er gilt für Summen und Mittelwerte, nicht für die einzelnen Daten.",
+       "id": "wkeit.m6.l4.q2"
+      },
+      {
+       "t": "num",
+       "q": "Standardabweichung einer Messung 12. Wie groß ist der Standardfehler des Mittelwerts aus 36 Messungen?",
+       "a": 2,
+       "unit": "",
+       "tol": 0,
+       "e": "12 ÷ √36 = 12 ÷ 6 = 2.",
+       "id": "wkeit.m6.l4.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Warum ähnelt die Summe von zehn Würfeln einer Glockenkurve?",
+       "o": [
+        "Der zentrale Grenzwertsatz",
+        "Weil Würfel normalverteilt sind",
+        "Weil zehn eine runde Zahl ist",
+        "Gesetz der kleinen Zahlen"
+       ],
+       "a": 0,
+       "e": "Summen vieler unabhängiger Größen werden annähernd normal.",
+       "id": "wkeit.m6.l4.q4"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wkeit.m7",
+   "level": 3,
+   "title": "Statistik: von Daten zu Aussagen",
+   "desc": "Stichproben, Konfidenzintervalle, Tests, p-Werte und typische Fehlschlüsse.",
+   "lessons": [
+    {
+     "id": "wkeit.m7.l1",
+     "title": "Stichprobe und Konfidenzintervall",
+     "min": 7,
+     "body": [
+      "Man kann selten alle befragen. Eine Stichprobe soll die Grundgesamtheit abbilden. Das klappt nur, wenn sie zufällig gezogen wird. Freiwillige Online-Umfragen sind meist verzerrt, weil sich vor allem Interessierte melden.",
+      "## Wie genau ist ein Ergebnis?",
+      "Ein Konfidenzintervall gibt einen Bereich an, der den wahren Wert mit einer gewählten Sicherheit, meist 95 %, überdeckt. Für einen Anteil p aus n Befragten ist der Standardfehler √(p · (1 − p) ÷ n). Das 95-%-Intervall ist ungefähr p ± 1,96 Standardfehler.",
+      "## Beispiel Wahlumfrage",
+      "1.000 Befragte, 30 % für Partei A. Standardfehler √(0,3 · 0,7 ÷ 1000) ≈ 1,45 Prozentpunkte. Intervall etwa 30 % ± 2,8 Punkte, also rund 27 bis 33 %. Ein Unterschied von einem Punkt zur Vorwoche ist damit kaum aussagekräftig.",
+      "## Richtig lesen",
+      "Das 95-%-Intervall heißt: Das Verfahren liefert bei vielen Wiederholungen in 95 % der Fälle ein Intervall, das den wahren Wert enthält. Es heißt nicht, dass 95 % der Befragten in diesem Bereich liegen."
+     ],
+     "key": [
+      "Nur zufällige Stichproben sind verlässlich.",
+      "Standardfehler eines Anteils: √(p(1−p)/n).",
+      "95-%-Intervall ≈ Schätzung ± 1,96 Standardfehler."
+     ],
+     "src": [
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      },
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Stichprobe",
+       "b": "Teil der Grundgesamtheit, der untersucht wird; sollte zufällig gezogen sein.",
+       "id": "wkeit.m7.l1.k1"
+      },
+      {
+       "f": "Konfidenzintervall",
+       "b": "Bereich, der mit gewählter Sicherheit (oft 95 %) den wahren Wert überdeckt.",
+       "id": "wkeit.m7.l1.k2"
+      },
+      {
+       "f": "Selbstselektion",
+       "b": "Verzerrung, weil Teilnehmende sich selbst auswählen.",
+       "id": "wkeit.m7.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Umfrage mit n = 1.000 und p = 50 %. Wie groß ist der Standardfehler in Prozentpunkten (gerundet)?",
+       "a": 1.6,
+       "unit": "Punkte",
+       "tol": 0.1,
+       "e": "√(0,5 · 0,5 ÷ 1000) ≈ 0,0158.",
+       "id": "wkeit.m7.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Wie viele Befragte braucht man ungefähr, um den Standardfehler gegenüber 1.000 Befragten zu halbieren?",
+       "o": [
+        "4.000",
+        "2.000",
+        "1.500",
+        "10.000"
+       ],
+       "a": 0,
+       "e": "Standardfehler ∝ 1/√n: vierfache Stichprobe, halber Fehler.",
+       "id": "wkeit.m7.l1.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist das Hauptproblem einer Umfrage per Link auf einer Fanseite?",
+       "o": [
+        "Selbstselektion der Leute",
+        "Zu viele Fragen auf einmal",
+        "Zu kleine Schrift",
+        "Online-Umfragen sind verboten"
+       ],
+       "a": 0,
+       "e": "Wer teilnimmt, ist nicht zufällig ausgewählt.",
+       "id": "wkeit.m7.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was bedeutet ein 95-%-Konfidenzintervall richtig?",
+       "o": [
+        "Das Verfahren trifft in 95 % der Fälle",
+        "95 % der Befragten liegen darin",
+        "Der Wert ist zu 95 % richtig",
+        "95 % haben geantwortet"
+       ],
+       "a": 0,
+       "e": "Die 95 % beziehen sich auf das Verfahren bei vielen Wiederholungen.",
+       "id": "wkeit.m7.l1.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m7.l2",
+     "title": "Hypothesentest und p-Wert",
+     "min": 8,
+     "body": [
+      "Ein Test prüft, ob Daten zu einer Annahme passen. Die Nullhypothese H₀ ist die „langweilige“ Annahme: Es gibt keinen Effekt, die Münze ist fair, das Medikament wirkt nicht besser als Placebo.",
+      "## Der p-Wert",
+      "Der p-Wert ist die Wahrscheinlichkeit, unter der Annahme, dass H₀ stimmt, ein mindestens so extremes Ergebnis zu bekommen wie das beobachtete. Ein kleiner p-Wert heißt: Die Daten passen schlecht zu H₀.",
+      "## Beispiel",
+      "Eine Münze zeigt in 100 Würfen 61-mal Kopf. Wäre sie fair, erwartet man 50 ± 5 (eine Standardabweichung). 61 liegt mehr als zwei Standardabweichungen darüber; der zweiseitige p-Wert liegt bei etwa 3 %. Üblich ist die Grenze 5 %: Man würde H₀ verwerfen.",
+      "## Was der p-Wert NICHT ist",
+      "Er ist nicht die Wahrscheinlichkeit, dass H₀ wahr ist. Er sagt nichts über die Größe oder Wichtigkeit eines Effekts. Die American Statistical Association warnte 2016 ausdrücklich davor, Entscheidungen nur an der Grenze p < 0,05 festzumachen.",
+      "## Mehrfaches Testen",
+      "Testet man 20 Hypothesen, die alle falsch sind, wird im Schnitt eine zufällig „signifikant“. Wer viele Tests rechnet und nur die Treffer berichtet, findet Scheineffekte."
+     ],
+     "key": [
+      "p-Wert: Wahrscheinlichkeit für so extreme Daten, wenn H₀ stimmt.",
+      "Kein Maß für die Wahrheit von H₀ oder die Effektgröße.",
+      "Viele Tests → zufällige Treffer."
+     ],
+     "src": [
+      {
+       "n": "Wasserstein & Lazar (2016): The ASA Statement on p-Values, The American Statistician",
+       "u": "https://doi.org/10.1080/00031305.2016.1154108"
+      },
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Nullhypothese H₀",
+       "b": "Ausgangsannahme ohne Effekt, die ein Test zu widerlegen versucht.",
+       "id": "wkeit.m7.l2.k1"
+      },
+      {
+       "f": "p-Wert",
+       "b": "Wahrscheinlichkeit, unter H₀ ein mindestens so extremes Ergebnis zu erhalten.",
+       "id": "wkeit.m7.l2.k2"
+      },
+      {
+       "f": "Signifikanzniveau α",
+       "b": "Vorher festgelegte Grenze (oft 5 %), unter der man H₀ verwirft.",
+       "id": "wkeit.m7.l2.k3"
+      },
+      {
+       "f": "p-Hacking",
+       "b": "So lange Daten oder Tests variieren, bis ein p-Wert unter 0,05 herauskommt.",
+       "id": "wkeit.m7.l2.k4"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Was bedeutet p = 0,03?",
+       "o": [
+        "Unter H₀ wären solche Daten selten (≈ 3 %)",
+        "H₀ ist mit 3 % Wahrscheinlichkeit wahr",
+        "Der Effekt ist genau 3 % groß",
+        "Das Ergebnis ist zu 97 % sicher"
+       ],
+       "a": 0,
+       "e": "Der p-Wert ist eine Aussage über die Daten unter der Annahme H₀, nicht über H₀ selbst.",
+       "id": "wkeit.m7.l2.q1"
+      },
+      {
+       "t": "num",
+       "q": "20 unabhängige Tests, bei denen jeweils kein Effekt besteht, α = 5 %. Wie viele „signifikante“ Ergebnisse erwartet man im Schnitt?",
+       "a": 1,
+       "unit": "",
+       "tol": 0,
+       "e": "20 · 0,05 = 1.",
+       "id": "wkeit.m7.l2.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Ein Medikament senkt den Blutdruck signifikant (p = 0,001) um 0,5 mmHg. Was folgt?",
+       "o": [
+        "Echt, aber kaum relevant",
+        "Der Effekt ist groß",
+        "Das Medikament wirkt bei allen Patienten gleich",
+        "Die Studie ist falsch"
+       ],
+       "a": 0,
+       "e": "Signifikanz sagt nichts über die praktische Bedeutung.",
+       "id": "wkeit.m7.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist p-Hacking?",
+       "o": [
+        "Testen, bis p < 0,05 herauskommt",
+        "Einen Test einmal sauber rechnen",
+        "Die Stichprobe vorher festlegen",
+        "Ergebnisse vollständig berichten"
+       ],
+       "a": 0,
+       "e": "Vielfaches Ausprobieren erzeugt zufällige „Signifikanzen“.",
+       "id": "wkeit.m7.l2.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m7.l3",
+     "title": "Fehler 1. und 2. Art",
+     "min": 5,
+     "body": [
+      "Jeder Test kann sich auf zwei Arten irren. Fehler 1. Art: H₀ wird verworfen, obwohl sie stimmt, ein falscher Alarm. Fehler 2. Art: H₀ wird beibehalten, obwohl sie falsch ist, ein übersehener Effekt.",
+      "## Abwägen",
+      "Senkt man α, gibt es weniger falsche Alarme, aber man übersieht mehr echte Effekte. Größere Stichproben verringern beide Fehler gleichzeitig. Die Wahrscheinlichkeit, einen echten Effekt zu finden, heißt Teststärke (Power).",
+      "## Im Alltag",
+      "Ein Rauchmelder, der zu empfindlich ist, piept beim Kochen (Fehler 1. Art). Einer, der zu unempfindlich ist, schweigt beim Brand (Fehler 2. Art). Welcher Fehler schlimmer ist, entscheidet, wo man die Grenze setzt."
+     ],
+     "key": [
+      "Fehler 1. Art: falscher Alarm.",
+      "Fehler 2. Art: übersehener Effekt.",
+      "Größere Stichproben senken beide Fehler."
+     ],
+     "src": [
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      },
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Fehler 1. Art",
+       "b": "H₀ wird verworfen, obwohl sie wahr ist (falsch-positiv).",
+       "id": "wkeit.m7.l3.k1"
+      },
+      {
+       "f": "Fehler 2. Art",
+       "b": "H₀ wird beibehalten, obwohl sie falsch ist (falsch-negativ).",
+       "id": "wkeit.m7.l3.k2"
+      },
+      {
+       "f": "Teststärke (Power)",
+       "b": "Wahrscheinlichkeit, einen tatsächlich vorhandenen Effekt zu erkennen.",
+       "id": "wkeit.m7.l3.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Ein Spamfilter sortiert eine wichtige Mail aus. Welcher Fehler ist das, wenn H₀ „kein Spam“ lautet?",
+       "o": [
+        "Fehler 1. Art",
+        "Fehler 2. Art",
+        "Gar kein Fehler",
+        "Ein Messfehler"
+       ],
+       "a": 0,
+       "e": "H₀ war wahr und wurde verworfen: falscher Alarm.",
+       "id": "wkeit.m7.l3.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was senkt Fehler 1. und 2. Art gleichzeitig?",
+       "o": [
+        "Mehr Daten sammeln",
+        "Ein kleineres Signifikanzniveau α",
+        "Ein größeres α",
+        "Weniger Daten"
+       ],
+       "a": 0,
+       "e": "Mehr Daten machen den Test in beide Richtungen genauer.",
+       "id": "wkeit.m7.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Ein Corona-Schnelltest zeigt negativ, obwohl die Person infiziert ist. Welcher Fehler ist das (H₀: nicht infiziert)?",
+       "o": [
+        "Fehler 2. Art",
+        "Fehler 1. Art",
+        "Kein Fehler",
+        "Ein Rundungsfehler"
+       ],
+       "a": 0,
+       "e": "H₀ ist falsch, wird aber beibehalten: übersehener Effekt.",
+       "id": "wkeit.m7.l3.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was ist die Teststärke (Power)?",
+       "o": [
+        "Chance, einen echten Effekt zu finden",
+        "Größe der Stichprobe",
+        "Höhe des p-Werts",
+        "Anzahl der Hypothesen"
+       ],
+       "a": 0,
+       "e": "Power = 1 − Wahrscheinlichkeit des Fehlers 2. Art.",
+       "id": "wkeit.m7.l3.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m7.l4",
+     "title": "Berühmte Fehlschlüsse in Daten",
+     "min": 6,
+     "body": [
+      "## Simpson-Paradox",
+      "Ein Trend kann in jeder Teilgruppe in die eine Richtung zeigen und insgesamt in die andere. Klassisch: Behandlung A ist bei leichten und bei schweren Fällen besser als B, insgesamt aber schlechter, weil A viel häufiger bei schweren Fällen eingesetzt wurde. Immer prüfen, ob eine dritte Größe die Gruppen ungleich verteilt.",
+      "## Regression zur Mitte",
+      "Auf extreme Messwerte folgen im Schnitt weniger extreme, einfach durch Zufall. Wer nach einer schlechten Woche eine Maßnahme einführt, sieht danach fast immer eine Verbesserung, auch ohne Wirkung.",
+      "## Korrelation ist nicht Kausalität",
+      "Eisverkauf und Badeunfälle steigen gemeinsam, weil beides vom Wetter abhängt. Ein Zusammenhang allein beweist keine Ursache.",
+      "## Absolute und relative Risiken",
+      "„Das Risiko halbiert sich“ kann bedeuten: von 2 auf 1 von 1.000. Die absolute Senkung ist 1 von 1.000. Gute Angaben nennen beides."
+     ],
+     "key": [
+      "Simpson: Gesamttrend kann Teiltrends umkehren.",
+      "Extreme werden im Schnitt von normaleren Werten gefolgt.",
+      "Absolute Zahlen statt nur relativer Änderungen."
+     ],
+     "src": [
+      {
+       "n": "Gerd Gigerenzer: Das Einmaleins der Skepsis. Über den richtigen Umgang mit Zahlen und Risiken (Berlin Verlag)"
+      },
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      },
+      {
+       "n": "Harding-Zentrum für Risikokompetenz (Universität Potsdam)",
+       "u": "https://www.hardingcenter.de/"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Simpson-Paradox",
+       "b": "Ein Zusammenhang kehrt sich um, wenn man Daten zusammenfasst statt nach Gruppen zu betrachten.",
+       "id": "wkeit.m7.l4.k1"
+      },
+      {
+       "f": "Regression zur Mitte",
+       "b": "Auf extreme Werte folgen durch Zufall im Schnitt weniger extreme.",
+       "id": "wkeit.m7.l4.k2"
+      },
+      {
+       "f": "Störvariable (Confounder)",
+       "b": "Dritte Größe, die zwei andere beeinflusst und einen Scheinzusammenhang erzeugt.",
+       "id": "wkeit.m7.l4.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Nach einer extrem schlechten Klausur bekommt eine Klasse Nachhilfe; die nächste Klausur ist besser. Was ist eine wichtige alternative Erklärung?",
+       "o": [
+        "Regression zur Mitte",
+        "Simpson-Paradox",
+        "Geburtstagsparadoxon",
+        "Gesetz der großen Zahlen"
+       ],
+       "a": 0,
+       "e": "Auch ohne Nachhilfe wäre nach einem Ausreißer im Schnitt ein normaleres Ergebnis zu erwarten.",
+       "id": "wkeit.m7.l4.q1"
+      },
+      {
+       "t": "num",
+       "q": "Ein Risiko sinkt von 4 auf 3 von 1.000. Um wie viel Prozent sinkt es relativ?",
+       "a": 25,
+       "unit": "%",
+       "tol": 0.5,
+       "e": "1 ÷ 4 = 25 % relativ, absolut nur 1 von 1.000.",
+       "id": "wkeit.m7.l4.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Warum kann eine Klinik in jeder Gruppe besser und insgesamt schlechter abschneiden?",
+       "o": [
+        "Sie behandelt mehr schwere Fälle",
+        "Weil sie mehr Personal beschäftigt",
+        "Weil sie weniger Patienten hat",
+        "Das ist mathematisch unmöglich"
+       ],
+       "a": 0,
+       "e": "Ungleich verteilte Schweregrade erzeugen das Simpson-Paradox.",
+       "id": "wkeit.m7.l4.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Eisverkauf und Badeunfälle hängen zusammen. Was ist die wahrscheinlichste Erklärung?",
+       "o": [
+        "Beides hängt vom Wetter ab",
+        "Eis verursacht Badeunfälle",
+        "Badeunfälle machen hungrig",
+        "Reiner Messfehler"
+       ],
+       "a": 0,
+       "e": "Eine Störvariable (Temperatur) beeinflusst beide.",
+       "id": "wkeit.m7.l4.q4"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wkeit.m8",
+   "level": 3,
+   "title": "Expertenwissen",
+   "desc": "Bayessches Denken, Markow-Ketten, Monte-Carlo-Simulation und Risikokommunikation.",
+   "lessons": [
+    {
+     "id": "wkeit.m8.l1",
+     "title": "Bayessches Denken: Meinungen aktualisieren",
+     "min": 6,
+     "body": [
+      "Bayes ist mehr als eine Formel für Tests. Es ist eine Art zu denken: Man startet mit einer Einschätzung (Prior), sieht neue Daten und erhält eine aktualisierte Einschätzung (Posterior). Wie stark man sie ändert, hängt davon ab, wie viel wahrscheinlicher die Daten unter der einen als unter der anderen Annahme sind.",
+      "## Mit Chancen rechnen",
+      "Besonders elegant ist Bayes in Odds: Posterior-Chancen = Prior-Chancen · Likelihood-Quotient. Beispiel: Prior 1 : 99 (1 %). Ein positiver Test ist bei Kranken 10-mal wahrscheinlicher als bei Gesunden (Likelihood-Quotient 10). Posterior 10 : 99, also etwa 9,2 %.",
+      "## Mehrere Hinweise",
+      "Unabhängige Hinweise kann man nacheinander einrechnen: Jeder multipliziert die Chancen mit seinem Quotienten. Zwei unabhängige positive Tests mit Quotient 10 machen aus 1 : 99 schon 100 : 99, also gut 50 %.",
+      "## Haltung",
+      "Starke Behauptungen brauchen starke Belege. Wer seine Prior-Einschätzung offenlegt und mit jedem Beleg vernünftig anpasst, liegt auf Dauer seltener falsch."
+     ],
+     "key": [
+      "Prior → Daten → Posterior.",
+      "Posterior-Odds = Prior-Odds · Likelihood-Quotient.",
+      "Unabhängige Hinweise nacheinander multiplizieren."
+     ],
+     "src": [
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      },
+      {
+       "n": "Gerd Gigerenzer: Das Einmaleins der Skepsis. Über den richtigen Umgang mit Zahlen und Risiken (Berlin Verlag)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Prior",
+       "b": "Einschätzung vor den neuen Daten.",
+       "id": "wkeit.m8.l1.k1"
+      },
+      {
+       "f": "Posterior",
+       "b": "Aktualisierte Einschätzung nach den Daten.",
+       "id": "wkeit.m8.l1.k2"
+      },
+      {
+       "f": "Likelihood-Quotient",
+       "b": "Wie viel wahrscheinlicher die Beobachtung unter Hypothese A als unter B ist.",
+       "id": "wkeit.m8.l1.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Prior-Chancen 1 : 4, Likelihood-Quotient 8. Wie groß ist die Posterior-Wahrscheinlichkeit (in Prozent, gerundet)?",
+       "a": 67,
+       "unit": "%",
+       "tol": 1,
+       "e": "Posterior-Odds 8 : 4 = 2 : 1, also 2/3 ≈ 67 %.",
+       "id": "wkeit.m8.l1.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was beschreibt der Prior?",
+       "o": [
+        "Die Einschätzung vorher",
+        "Das Ergebnis nach der Rechnung mit den Daten",
+        "Die Fehlalarmrate",
+        "Die Größe der Stichprobe"
+       ],
+       "a": 0,
+       "e": "Prior = vorher, Posterior = nachher.",
+       "id": "wkeit.m8.l1.q2"
+      },
+      {
+       "t": "num",
+       "q": "Prior 1 : 1 (50 %), Likelihood-Quotient 3. Posterior in Prozent?",
+       "a": 75,
+       "unit": "%",
+       "tol": 0.5,
+       "e": "Odds 3 : 1 → 3/4 = 75 %.",
+       "id": "wkeit.m8.l1.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Was passiert mit den Chancen bei zwei unabhängigen Hinweisen mit Quotient 4 und 5?",
+       "o": [
+        "Sie werden mit 20 multipliziert",
+        "Sie werden mit 9 multipliziert",
+        "Sie bleiben gleich",
+        "Sie werden halbiert"
+       ],
+       "a": 0,
+       "e": "Quotienten unabhängiger Hinweise multiplizieren sich: 4 · 5 = 20.",
+       "id": "wkeit.m8.l1.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m8.l2",
+     "title": "Markow-Ketten: Zufall mit Gedächtnis für den letzten Schritt",
+     "min": 6,
+     "body": [
+      "Bei einer Markow-Kette hängt der nächste Zustand nur vom aktuellen Zustand ab, nicht von der ganzen Vorgeschichte. Beispiel Wetter: Ist heute Sonne, ist morgen mit 80 % wieder Sonne und mit 20 % Regen. Ist heute Regen, regnet es morgen mit 60 %, mit 40 % scheint die Sonne.",
+      "## Langfristiges Gleichgewicht",
+      "Viele Ketten pendeln sich auf eine feste Verteilung ein. Im Beispiel gilt im Gleichgewicht: Anteil Sonne = 0,4 ÷ (0,2 + 0,4) = 2/3. Unabhängig vom Starttag ist also langfristig an etwa zwei von drei Tagen Sonne.",
+      "## Anwendungen",
+      "Markow-Ketten stecken in Texteingabe-Vorschlägen, in Warteschlangenmodellen, in der Bewertung von Webseiten (PageRank) und in Simulationsverfahren der Statistik."
+     ],
+     "key": [
+      "Nächster Zustand hängt nur vom aktuellen ab.",
+      "Übergangswahrscheinlichkeiten beschreiben die Kette.",
+      "Viele Ketten erreichen ein stabiles Gleichgewicht."
+     ],
+     "src": [
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      },
+      {
+       "n": "Norbert Henze: Stochastik für Einsteiger (Springer Spektrum, Lehrbuch)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Markow-Kette",
+       "b": "Zufallsprozess, bei dem der nächste Zustand nur vom aktuellen Zustand abhängt.",
+       "id": "wkeit.m8.l2.k1"
+      },
+      {
+       "f": "Stationäre Verteilung",
+       "b": "Langfristige Verteilung, die sich durch weitere Schritte nicht mehr ändert.",
+       "id": "wkeit.m8.l2.k2"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Heute Sonne. Wie wahrscheinlich ist übermorgen Sonne im Beispiel der Lektion (in Prozent)?",
+       "a": 72,
+       "unit": "%",
+       "tol": 0.5,
+       "e": "S→S→S: 0,8 · 0,8 = 0,64; S→R→S: 0,2 · 0,4 = 0,08; zusammen 0,72.",
+       "id": "wkeit.m8.l2.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Was zeichnet eine Markow-Kette aus?",
+       "o": [
+        "Nur der aktuelle Zustand bestimmt den nächsten",
+        "Die ganze Vergangenheit bestimmt den nächsten Schritt",
+        "Alle Zustände sind gleich wahrscheinlich",
+        "Sie endet immer nach drei Schritten"
+       ],
+       "a": 0,
+       "e": "Das ist die Markow-Eigenschaft („Gedächtnislosigkeit“ bis auf den letzten Zustand).",
+       "id": "wkeit.m8.l2.q2"
+      },
+      {
+       "t": "num",
+       "q": "Im Wetterbeispiel (Sonne→Sonne 0,8; Regen→Sonne 0,4): Wie groß ist der langfristige Anteil Regentage (in Prozent, gerundet)?",
+       "a": 33,
+       "unit": "%",
+       "tol": 1,
+       "e": "1 − 2/3 ≈ 33 %.",
+       "id": "wkeit.m8.l2.q3"
+      },
+      {
+       "t": "mc",
+       "q": "Wo kommen Markow-Ketten zum Einsatz?",
+       "o": [
+        "Bewertung von Webseiten (PageRank)",
+        "Beim Würfeln mit einem Würfel",
+        "Beim Berechnen von Fakultäten",
+        "Beim Ziehen ohne Zurücklegen"
+       ],
+       "a": 0,
+       "e": "PageRank modelliert einen Zufallssurfer als Markow-Kette.",
+       "id": "wkeit.m8.l2.q4"
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m8.l3",
+     "title": "Monte-Carlo-Simulation",
+     "min": 5,
+     "body": [
+      "Wenn eine Rechnung zu schwer ist, kann man den Zufall nachspielen: tausende Male simulieren und auszählen. Diese Methode heißt Monte-Carlo-Simulation, nach dem Casino.",
+      "## Beispiel: π schätzen",
+      "Man wirft zufällige Punkte in ein Quadrat mit Seitenlänge 1. Der Anteil, der im Viertelkreis mit Radius 1 landet, nähert sich π/4. Mit 10.000 Punkten erhält man π meist auf etwa zwei Nachkommastellen genau.",
+      "## Wofür man es nutzt",
+      "Risikoanalysen in Finanzen und Technik, Wettervorhersagen mit vielen Läufen, Teilchenphysik, Projektplanung mit unsicheren Dauern. Das Ziegenproblem und das Galtonbrett in diesem Kurs sind ebenfalls kleine Monte-Carlo-Simulationen.",
+      "## Genauigkeit",
+      "Der Fehler schrumpft wie 1 ÷ √(Anzahl der Läufe). Für eine Stelle mehr Genauigkeit braucht man etwa hundertmal so viele Läufe."
+     ],
+     "key": [
+      "Zufall nachspielen statt exakt rechnen.",
+      "Fehler ∝ 1/√Läufe.",
+      "Eine Stelle mehr Genauigkeit ≈ 100-mal mehr Läufe."
+     ],
+     "src": [
+      {
+       "n": "Seeing Theory: visuelle Einführung in Wahrscheinlichkeit und Statistik (Brown University)",
+       "u": "https://seeing-theory.brown.edu/"
+      },
+      {
+       "n": "OpenStax: Introductory Statistics 2e (frei verfügbares Lehrbuch)",
+       "u": "https://openstax.org/details/books/introductory-statistics-2e"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Monte-Carlo-Simulation",
+       "b": "Näherung einer Größe durch viele zufällige Wiederholungen eines Modells.",
+       "id": "wkeit.m8.l3.k1"
+      }
+     ],
+     "qs": [
+      {
+       "t": "mc",
+       "q": "Ein Monte-Carlo-Ergebnis soll 10-mal genauer werden. Wie viele Läufe braucht man ungefähr?",
+       "o": [
+        "100-mal so viele",
+        "10-mal so viele",
+        "2-mal so viele",
+        "1.000-mal so viele"
+       ],
+       "a": 0,
+       "e": "Fehler ∝ 1/√n: zehnfache Genauigkeit braucht hundertfaches n.",
+       "id": "wkeit.m8.l3.q1"
+      },
+      {
+       "t": "num",
+       "q": "Von 1.000 Zufallspunkten im Einheitsquadrat liegen 786 im Viertelkreis. Welcher Schätzwert für π ergibt sich?",
+       "a": 3.144,
+       "unit": "",
+       "tol": 0.002,
+       "e": "4 · 0,786 = 3,144.",
+       "id": "wkeit.m8.l3.q2"
+      },
+      {
+       "t": "mc",
+       "q": "Woher hat die Monte-Carlo-Methode ihren Namen?",
+       "o": [
+        "Vom Casino",
+        "Von einem Mathematiker namens Monte",
+        "Von einer Automarke",
+        "Von einem Rennen"
+       ],
+       "a": 0,
+       "e": "Der Name spielt auf das Casino in Monte Carlo an, also auf Zufall.",
+       "id": "wkeit.m8.l3.q3"
+      },
+      {
+       "t": "num",
+       "q": "Ein Würfelspiel wird 10.000-mal simuliert, 1.670-mal fällt eine Sechs. Welcher Schätzwert für P(6) ergibt sich (in Prozent)?",
+       "a": 16.7,
+       "unit": "%",
+       "tol": 0.1,
+       "e": "1.670 ÷ 10.000 = 0,167.",
+       "id": "wkeit.m8.l3.q4"
+      }
+     ],
+     "figs": [
+      {
+       "after": 3,
+       "w": "pi",
+       "cap": "Monte Carlo: Schätze π mit zufälligen Punkten."
+      }
+     ]
+    },
+    {
+     "id": "wkeit.m8.l4",
+     "title": "Risiken richtig kommunizieren",
+     "min": 6,
+     "body": [
+      "Expertenwissen zeigt sich daran, Risiken so zu erklären, dass andere gute Entscheidungen treffen können.",
+      "## Drei Regeln",
+      "Erstens: absolute Zahlen nennen („von 1.000 Personen …“), nicht nur relative Änderungen. Zweitens: den Bezugsrahmen angeben („pro Jahr“, „über 10 Jahre“). Drittens: Nutzen und Schaden mit derselben Bezugsgröße zeigen.",
+      "## Faktenboxen",
+      "Das Harding-Zentrum für Risikokompetenz stellt Faktenboxen bereit: zwei Spalten mit und ohne Maßnahme, jeweils für 1.000 Personen, mit Nutzen und Schaden. So sieht man auf einen Blick, wie vielen geholfen wird und wie vielen geschadet.",
+      "## Number needed to treat",
+      "Die Anzahl der notwendigen Behandlungen (NNT) ist 1 ÷ absolute Risikoreduktion. Senkt eine Maßnahme ein Risiko von 2 % auf 1 %, müssen 100 Personen behandelt werden, damit einer profitiert.",
+      "## Unsicherheit zeigen",
+      "Gute Angaben nennen Spannbreiten und den Stand der Daten. Wer Unsicherheit verschweigt, verliert Vertrauen, sobald die Realität abweicht."
+     ],
+     "key": [
+      "Absolute Zahlen, Bezugszeitraum, gleiche Bezugsgröße für Nutzen und Schaden.",
+      "NNT = 1 ÷ absolute Risikoreduktion.",
+      "Unsicherheit offen zeigen."
+     ],
+     "src": [
+      {
+       "n": "Harding-Zentrum für Risikokompetenz (Universität Potsdam)",
+       "u": "https://www.hardingcenter.de/"
+      },
+      {
+       "n": "Gerd Gigerenzer: Das Einmaleins der Skepsis. Über den richtigen Umgang mit Zahlen und Risiken (Berlin Verlag)"
+      }
+     ],
+     "cards": [
+      {
+       "f": "Faktenbox",
+       "b": "Übersicht für 1.000 Personen mit und ohne Maßnahme, Nutzen und Schaden nebeneinander.",
+       "id": "wkeit.m8.l4.k1"
+      },
+      {
+       "f": "NNT (Number Needed to Treat)",
+       "b": "Wie viele behandelt werden müssen, damit eine Person profitiert: 1 ÷ absolute Risikoreduktion.",
+       "id": "wkeit.m8.l4.k2"
+      },
+      {
+       "f": "Absolute Risikoreduktion",
+       "b": "Differenz der Risiken mit und ohne Maßnahme, z. B. 2 % − 1 % = 1 Prozentpunkt.",
+       "id": "wkeit.m8.l4.k3"
+      }
+     ],
+     "qs": [
+      {
+       "t": "num",
+       "q": "Eine Impfung senkt das Erkrankungsrisiko in einer Saison von 5 % auf 1 %. Wie groß ist die NNT?",
+       "a": 25,
+       "unit": "",
+       "tol": 0,
+       "e": "Absolute Reduktion 4 % = 0,04; 1 ÷ 0,04 = 25.",
+       "id": "wkeit.m8.l4.q1"
+      },
+      {
+       "t": "mc",
+       "q": "Welche Angabe ist am verständlichsten?",
+       "o": [
+        "Ohne: 20 von 1.000, mit: 10",
+        "Das Risiko sinkt um 50 Prozent",
+        "Die Maßnahme ist hochwirksam",
+        "Signifikante Reduktion"
+       ],
+       "a": 0,
+       "e": "Natürliche Häufigkeiten mit gleicher Bezugsgröße zeigen Nutzen in absoluten Zahlen.",
+       "id": "wkeit.m8.l4.q2"
+      },
+      {
+       "t": "order",
+       "q": "Ordne die Schritte einer guten Risikoangabe.",
+       "o": [
+        "Bezugsgruppe und Zeitraum nennen",
+        "Risiko ohne Maßnahme in absoluten Zahlen",
+        "Risiko mit Maßnahme in absoluten Zahlen",
+        "Mögliche Schäden in derselben Form",
+        "Unsicherheit und Datenstand angeben"
+       ],
+       "e": "So entsteht eine faire, vollständige Risikoangabe.",
+       "id": "wkeit.m8.l4.q3"
+      },
+      {
+       "t": "num",
+       "q": "Ein Risiko sinkt von 10 auf 8 von 1.000. Wie groß ist die NNT?",
+       "a": 500,
+       "unit": "",
+       "tol": 0,
+       "e": "Absolute Reduktion 2/1.000 = 0,002; 1 ÷ 0,002 = 500.",
+       "id": "wkeit.m8.l4.q4"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -18,7 +18,8 @@ Module ohne Lektionen erscheinen als „In Vorbereitung“. So ist der ganze Leh
 ## Neuen Kurs anlegen
 
 1. Datei `data/courses/<id>.json` anlegen (Vorlage: `bess.json`).
-2. In `data/courses/index.json` eintragen: `{ "id": "<id>", "file": "<id>.json" }`.
+2. In `data/courses/index.json` eintragen: `{ "id": "<id>", "file": "<id>.json", "fac": "<Fakultät>" }`.
+   Fakultäten stehen unter `faculties` (id, t, ico, sub). Geplante Kurse ohne Inhalt unter `planned` erscheinen als „In Vorbereitung“.
 3. `node tools/check-courses.mjs` muss 0 Fehler melden.
 4. `node tools/version.mjs` und hochladen.
 
@@ -33,6 +34,12 @@ Module ohne Lektionen erscheinen als „In Vorbereitung“. So ist der ganze Leh
   - `multi`: `o` Optionen, `a` Liste der richtigen Indizes (mindestens 2)
   - `order`: `o` in RICHTIGER Reihenfolge (die App mischt)
   - `num`: `a` Zahl, `unit` Einheit, `tol` erlaubte Abweichung
+
+## Bilder und Animationen
+
+`figs` in einer Lektion: `{ "after": <Absatz-Index>, "src": "img/…", "cap": "…" }` für ein Bild oder
+`{ "after": …, "w": "<name>", "cap": "…" }` für eine interaktive Animation aus `js/kurswidgets.js`
+(vorhanden: coin, birthday, tree2, dice, bayes, monty, galton, normal, pi).
 
 ## IDs
 
@@ -52,4 +59,5 @@ Vokabeln: Lektion = Wortfeld, `body` kurz (Grammatik-Hinweis), `cards` = Wort �
 `qs` = Übersetzung wählen (`mc`) oder Satzglieder ordnen (`order`). Alles andere bleibt gleich.
 
 Die Quelldateien des Batteriespeicher-Kurses liegen als Python-Skripte in `tools/kurs-bess-quelle.py` (Modul 1) und `tools/kurs-bess-m2-8.py`
-(erzeugt `bess.json`). Neue Kurse können direkt als JSON geschrieben werden.
+(erzeugt `bess.json`). Der Kurs Wahrscheinlichkeit & Statistik entsteht aus `tools/kurs-wkeit/` (`python3 tools/kurs-wkeit/main.py`).
+Neue Kurse können direkt als JSON geschrieben werden.
